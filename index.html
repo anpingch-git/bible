@@ -2,8 +2,48 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>出埃及記查經筆記</title>
+    <title>查經筆記</title>
     <script src="https://cdn.tailwindcss.com"></script>
+//「遞迴掃描」區分新舊約
+    <script>
+    const USER = "anpingch-git"; 
+    const REPO = "bible";
+    const ROOT = "archive";
+
+    async function loadArchive() {
+        const gallery = document.getElementById('gallery');
+        gallery.innerHTML = ''; 
+
+        // 1. 抓取第一層：新/舊約
+        const resT = await fetch(`https://api.github.com/repos/${USER}/${REPO}/contents/${ROOT}`);
+        const testaments = await resT.json();
+
+        for (let t of testaments) {
+            if (t.type === "dir") {
+                // 顯示「舊約」或「新約」大標題
+                gallery.innerHTML += `<div class="col-span-full mt-16 text-4xl font-black text-[#f9d21b] border-b-2 border-[#f9d21b] pb-2 uppercase">${t.name}</div>`;
+
+                // 2. 抓取第二層：卷名
+                const resB = await fetch(t.url);
+                const books = await resB.json();
+
+                for (let b of books) {
+                    if (b.type === "dir") {
+                        // 顯示「卷名」中標題
+                        gallery.innerHTML += `<div class="col-span-full mt-8 mb-4 text-2xl font-bold text-gray-400 pl-4 border-l-4 border-gray-600">${b.name}</div>`;
+
+                        // 3. 抓取第三層：HTML 檔案
+                        const resF = await fetch(b.url);
+                        const files = await resF.json();
+                        // ... 此處接續產生卡片的 HTML ...
+                    }
+                }
+            }
+        }
+    }
+    loadArchive();
+</script> 
+  
     <style>
         body { background-color: #0a0a0a; color: #e5e5e5; }
         .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s; }

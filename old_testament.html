@@ -7,11 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #050505; color: #fff; font-family: sans-serif; overflow-x: hidden; }
-        .banner-bg {
-            background-image: linear-gradient(to bottom, rgba(5,5,5,0.2) 0%, rgba(5,5,5,1) 100%), url('https://opal.google/board/blobs/94a41ff0-2e03-482b-9d8b-3041e6384364');
-            background-size: cover; background-position: center 30%;
-        }
-        .gold-gradient {
+        /* 修改後的 CSS 區塊 */
+    .banner-bg {
+    background-image: linear-gradient(to bottom, rgba(5,5,5,0.2) 0%, rgba(5,5,5,1) 100%), 
+                      url('https://opal.google/board/blobs/94a41ff0-2e03-482b-9d8b-3041e6384364');
+    background-size: cover;
+    background-position: center;
+    /* 核心語法：固定背景不隨捲軸移動 */
+    background-attachment: fixed; 
+    /* 確保在不同瀏覽器下的相容性 */
+    background-repeat: no-repeat;
+    }
+           .gold-gradient {
             background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }

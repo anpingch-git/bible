@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太 10:32-42: 顛覆價值的跟隨——十字架的呼召與賞賜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18d',
+                            300: '#fbe452',
+                            400: '#f9d325',
+                            500: '#eeb80c',
+                            600: '#ce9108',
+                            700: '#a46809',
+                            800: '#87510e',
+                            900: '#734210',
+                        },
+                        dark: {
+                            bg: '#0a0a0c',
+                            card: '#16161a',
+                            accent: '#1e1e24'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 26, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f9d325 0%, #ce9108 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: #16161a;
+            border-radius: 24px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(238, 184, 12, 0.3);
+        }
+        .outline-btn {
+            background: rgba(238, 184, 12, 0.05);
+            border: 1px solid rgba(238, 184, 12, 0.2);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(238, 184, 12, 0.15);
+            transform: translateY(-2px);
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #eeb80c;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px -5px rgba(238, 184, 12, 0.4);
+            z-index: 50;
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 0.25rem;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #eeb80c;
+            transition: width 0.3s ease;
+        }
+        .nav-item:hover::after {
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-gold-400 font-bold tracking-tight text-sm md:text-base truncate mr-4">太 10:32-42</span>
+            <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium">
+                <a href="#prayer" class="nav-item">禱告</a>
+                <a href="#outline" class="nav-item">大綱</a>
+                <a href="#sermon" class="nav-item">講章</a>
+                <a href="#quotes" class="nav-item">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/eb8943e0-2559-4549-a634-12df522460d3' alt='media_1' class="w-full h-full object-cover opacity-40" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl animate-fade">
+            <div class="inline-block px-4 py-1 rounded-full bg-gold-500/20 border border-gold-500/30 text-gold-400 text-xs md:text-sm font-semibold mb-6 tracking-[0.2em]">
+                MATTHEW 10:32-42
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black leading-tight mb-6">
+                <span class="gradient-text">顛覆價值</span>的跟隨
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 font-light tracking-wide">
+                —— 十字架的呼召與賞賜 ——
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 relative">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-12 mb-20 scroll-mt-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">開路禱告</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-[2rem] border-gold-500/10 italic text-lg md:text-xl leading-relaxed text-gray-300">
+                「主啊，我們來到祢的面前，承認我們的心常常被世界的安逸和人際的關係所牽絆。求祢賜給我們無懼的勇氣，使我們敢於在人面前真實地認信祢；求祢賜給我們屬靈的眼光，使我們明白背起十字架跟從祢的呼召，並不是剝奪，而是真正生命的得著。當我們面對信仰帶來的衝突時，求祢做我們最深的滿足；也求祢開廣我們的心，讓我們能在給出一杯涼水的微小服事中，看見接待祢的榮耀與喜樂。奉主耶穌基督的名求，阿們。」
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="mb-20 scroll-mt-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講道大綱</h2>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                <a href="#section-1" class="outline-btn p-5 rounded-2xl flex flex-col group">
+                    <span class="text-gold-500 text-xs font-bold mb-1 opacity-60 group-hover:opacity-100">第一部分 | 太 10:32-33</span>
+                    <span class="text-gray-200 font-semibold">無懼的認信：在世界面前的忠誠</span>
+                </a>
+                <a href="#section-2" class="outline-btn p-5 rounded-2xl flex flex-col group">
+                    <span class="text-gold-500 text-xs font-bold mb-1 opacity-60 group-hover:opacity-100">第二部分 | 太 10:34-36</span>
+                    <span class="text-gray-200 font-semibold">必然的衝突：超越血肉的忠誠</span>
+                </a>
+                <a href="#section-3" class="outline-btn p-5 rounded-2xl flex flex-col group">
+                    <span class="text-gold-500 text-xs font-bold mb-1 opacity-60 group-hover:opacity-100">第三部分 | 太 10:37-39</span>
+                    <span class="text-gray-200 font-semibold">捨己的呼召：失喪與得著的弔詭</span>
+                </a>
+                <a href="#section-4" class="outline-btn p-5 rounded-2xl flex flex-col group">
+                    <span class="text-gold-500 text-xs font-bold mb-1 opacity-60 group-hover:opacity-100">第四部分 | 太 10:40-42</span>
+                    <span class="text-gray-200 font-semibold">永恆的賞賜：微小接待中的榮耀</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-12">
+                <!-- Section 1 -->
+                <article id="section-1" class="section-card scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-baseline">
+                        <span class="text-4xl mr-3 opacity-20 italic">01</span> 無懼的認信
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-dark-bg/50 p-6 rounded-xl border-l-4 border-gold-500">
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white block mb-2">太 10:32-33</strong> 「凡在人面前認我的，我在我天上的父面前也必認他；凡在人面前不認我的，我在我天上的父面前也必不認他。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵原文</h4>
+                                <p class="text-gray-300"><strong>認 (ὁμολογήσει)</strong>：意為「說相同的話」、「公開承認」。代表在意志和行動上與基督的價值觀完全結盟。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵問題</h4>
+                                <p class="text-gray-300 italic text-sm">如何才算「在人面前認主」？</p>
+                                <p class="text-gray-400 text-sm mt-2">在職場倫理、人際抉擇與價值觀判斷上不妥協，誠實活出基督徒身份。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-white/5">
+                            <p class="text-sm text-gray-400 mb-2 font-semibold">【名言】</p>
+                            <blockquote class="text-gray-300 text-sm leading-relaxed border-l-2 border-white/10 pl-4 italic">
+                                「廉價的恩典是沒有門徒代價的恩典，是沒有十字架的恩典，是沒有活生生和道成肉身之耶穌基督的恩典。」——潘霍華
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="section-2" class="section-card scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-baseline">
+                        <span class="text-4xl mr-3 opacity-20 italic">02</span> 必然的衝突
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-dark-bg/50 p-6 rounded-xl border-l-4 border-gold-500">
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white block mb-2">太 10:34-36</strong> 「你們不要想我來是叫地上太平；我來並不是叫地上太平，乃是叫地上動刀兵...人的仇敵就是自己家裡的人。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵原文</h4>
+                                <p class="text-gray-300"><strong>刀兵 (μάχαιραν)</strong>：直譯為「劍」。象徵福音具有「分割」與「劃清界線」的本質。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵問題</h4>
+                                <p class="text-gray-300 italic text-sm">為何平安之君帶來「刀兵」？</p>
+                                <p class="text-gray-400 text-sm mt-2">真實的和平必須建立在真理之上。降服基督必然會與世俗價值觀產生本質上的摩擦。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-white/5">
+                            <p class="text-sm text-gray-400 mb-2 font-semibold">【名言】</p>
+                            <blockquote class="text-gray-300 text-sm leading-relaxed border-l-2 border-white/10 pl-4 italic">
+                                「如果我們把家庭當作終極的拯救與生命的意義，家庭就會成為我們的偶像。」——提摩太·凱勒
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="section-3" class="section-card scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-baseline">
+                        <span class="text-4xl mr-3 opacity-20 italic">03</span> 捨己的呼召
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-dark-bg/50 p-6 rounded-xl border-l-4 border-gold-500">
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white block mb-2">太 10:37-39</strong> 「不背著他的十字架跟從我的，不配作我的門徒。得著生命的，將要失喪生命；為我失喪生命的，將要得著生命。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵原文</h4>
+                                <p class="text-gray-300"><strong>十字架 (σταυρὸν)</strong>：象徵徹底的降服、羞辱與生命主權的終結。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵問題</h4>
+                                <p class="text-gray-300 italic text-sm">「失喪與得著」的真義？</p>
+                                <p class="text-gray-400 text-sm mt-2">只有當我們願意為基督放棄自我中心的掌控，才會在基督裡找到真正的豐盛。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-white/5">
+                            <p class="text-sm text-gray-400 mb-2 font-semibold">【名言】</p>
+                            <blockquote class="text-gray-300 text-sm leading-relaxed border-l-2 border-white/10 pl-4 italic">
+                                「十字架只做一件事：它終結舊有的生命。」——陶恕
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 4 -->
+                <article id="section-4" class="section-card scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-baseline">
+                        <span class="text-4xl mr-3 opacity-20 italic">04</span> 永恆的賞賜
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-dark-bg/50 p-6 rounded-xl border-l-4 border-gold-500">
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white block mb-2">太 10:40-42</strong> 「無論何人，因為門徒的名，只把一杯涼水給這小子裡的一個個人喝，我實在告訴你們，這人不能不得賞賜。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵原文</h4>
+                                <p class="text-gray-300"><strong>接待 (δεχόμενος)</strong>：意為「歡迎」、「接納」。顯示了基督與祂跟隨者之間不可分割的聯合。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-3">關鍵問題</h4>
+                                <p class="text-gray-300 italic text-sm">為何微小的舉動能得大賞賜？</p>
+                                <p class="text-gray-400 text-sm mt-2">價值不在規模的大小，而在動機是否「因為基督的名」。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-white/5">
+                            <p class="text-sm text-gray-400 mb-2 font-semibold">【名言】</p>
+                            <blockquote class="text-gray-300 text-sm leading-relaxed border-l-2 border-white/10 pl-4 italic">
+                                「當你看見任何一個基督的肢體需要幫助時，你會看見基督自己。」——約翰·加爾文
+                            </blockquote>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript -->
+        <section id="sermon" class="mb-20 scroll-mt-20">
+            <div class="flex items-center space-x-3 mb-10">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-12">
+                <div class="bg-dark-accent p-8 rounded-3xl">
+                    <h4 class="text-gold-400 text-lg font-bold mb-4">【引言】</h4>
+                    <p class="text-gray-300 leading-loose text-lg">弟兄姊妹，今天我們要看的是一段極具顛覆性的經文。我們常以為信仰帶來的是舒適、無條件的安逸與無盡的和平；但耶穌在《馬太福音》第十章，卻向我們發出了一個極具挑戰的呼召。這是一個**顛覆價值的跟隨：十字架的呼召與十字架的賞賜**。</p>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-3"></span>一、 無懼的認信</h4>
+                        <p class="text-gray-400 leading-relaxed">耶穌首先說：「凡在人面前認我的，我在我天上的父面前也必認他。」這裡的「認」，不是默默點頭，而是公開結盟。潘霍華曾嚴厲地警告我們不可追求「沒有十字架的廉價恩典」。在現今的時代，真正的認信，就是在那些會讓我們付出代價的時刻，依然選擇站在耶穌這一邊。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-3"></span>二、 必然的衝突</h4>
+                        <p class="text-gray-400 leading-relaxed">和平之君為何帶來刀劍？因為福音的真理具有絕對的排他性。提摩太·凱勒提醒我們：如果我們把家庭當作終極的拯救，家庭就會成為我們的偶像。當我們將耶穌放在生命的首位時，我們對基督的忠誠必須超越血肉的忠誠。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-3"></span>三、 捨己的呼召</h4>
+                        <p class="text-gray-400 leading-relaxed">十字架從來不是用來裝飾的，它代表著「自我主權的死亡」。耶穌告訴我們一個偉大的弔詭：極力抓住自己生命的，最終會失去一切；但為了基督甘願放手、捨棄自我的，卻要得著永恆的豐盛。正如陶恕所言，十字架只做一件事，就是終結舊有的生命。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 flex items-center"><span class="w-2 h-2 bg-gold-500 rounded-full mr-3"></span>四、 永恆的賞賜</h4>
+                        <p class="text-gray-400 leading-relaxed">神看重的不僅僅是轟轟烈烈的殉道，祂同樣看重我們在日常中為祂所做的微小服事。當你接待一位屬神的僕人，你就是在接待基督自己。那杯看似微不足道的涼水，在永恆的國度裡，將被銘記並得著屬天的榮耀。</p>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/5 pt-12">
+                    <h4 class="text-gold-400 text-lg font-bold mb-4">【結論】</h4>
+                    <p class="text-gray-300 leading-loose text-lg">弟兄姊妹，耶穌對我們的呼召，從來不是一條舒適的捷徑，而是一條認信與捨己的十字架道路。但別忘了，這條路的盡頭，是無比榮耀的賞賜。讓我們勇敢地在世界面前認祂，背起十字架，並在每一個微小的愛心行動中，活出屬天的價值！</p>
+                    
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <span class="px-4 py-2 bg-gold-500/10 border border-gold-500/20 rounded-full text-gold-400 font-bold"># 認信</span>
+                        <span class="px-4 py-2 bg-gold-500/10 border border-gold-500/20 rounded-full text-gold-400 font-bold"># 捨己</span>
+                        <span class="px-4 py-2 bg-gold-500/10 border border-gold-500/20 rounded-full text-gold-400 font-bold"># 賞賜</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">回應與行動</h2>
+            </div>
+            <div class="grid gap-6">
+                <div class="glass p-6 rounded-2xl flex items-start space-x-4">
+                    <div class="bg-gold-500 text-black rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
+                    <div>
+                        <h4 class="font-bold text-gold-400 mb-1">公開信仰身份</h4>
+                        <p class="text-gray-400 text-sm">本週在工作場合或學校中，自然且勇敢地讓人知道你是基督徒，不隱藏信仰。</p>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl flex items-start space-x-4">
+                    <div class="bg-gold-500 text-black rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
+                    <div>
+                        <h4 class="font-bold text-gold-400 mb-1">放棄一項自我權利</h4>
+                        <p class="text-gray-400 text-sm">主動放棄一件你原本堅持的個人權利（如放下爭論、放棄娛樂時間去陪伴家人）。</p>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl flex items-start space-x-4">
+                    <div class="bg-gold-500 text-black rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
+                    <div>
+                        <h4 class="font-bold text-gold-400 mb-1">遞出一杯涼水</h4>
+                        <p class="text-gray-400 text-sm">本週具體地去關心、奉獻或幫助一位陷入低谷的基督徒或全職服事者。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="mb-20 scroll-mt-20">
+            <div class="flex items-center space-x-3 mb-10">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/20">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-6 space-y-6">
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「廉價的恩典是沒有門徒代價的恩典，是沒有十字架的恩典，是沒有活生生和道成肉身之耶穌基督的恩典。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 潘霍華，《追隨基督》</p>
+                </div>
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「十字架不會妥協，不講和約，也不給予任何餘地。十字架只做一件事：它終結舊有的生命。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「這是我個人的立場，我無法退讓。願上帝幫助我，阿們。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 馬丁·路德，1521年沃爾姆斯議會辯護詞</p>
+                </div>
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「如果我們把家庭當作終極的拯救與生命的意義，家庭就會成為我們的偶像；而偶像遲早會要求我們獻上活人為祭。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 提摩太·凱勒，《假神眾生相》</p>
+                </div>
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「一個愛基督的人，當他看見任何一個基督的肢體需要幫助時，他會覺得這是他不可推卸的責任，因為他看見的是基督自己。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「如果基督對你而言不是一切，那麼祂對你而言就什麼都不是。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 司布真，《司布真講道集》</p>
+                </div>
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「門徒訓練是在同一個方向上長期的順服。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 畢德生，《長闊高深的順服》</p>
+                </div>
+                <div class="break-inside-avoid bg-dark-card p-6 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 italic mb-4">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 潘霍華，《追隨基督》</p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-16 p-6 border-t border-white/5 text-center">
+                <p class="text-gray-600 text-xs tracking-widest">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating To Top Button -->
+    <a href="#prayer" class="floating-btn" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+</body>
+</html>

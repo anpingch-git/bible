@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太 16:1-12 看透表象的信心：防備法利賽人的酵</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18d',
+                            300: '#fce34f',
+                            400: '#f9d226',
+                            500: '#eab308', // Primary Gold
+                            600: '#ca8a04',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#121217',
+                            700: '#1c1c24',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0c; color: #e5e7eb; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .glass-gold { background: rgba(234, 179, 8, 0.05); backdrop-filter: blur(8px); border: 1px solid rgba(234, 179, 8, 0.2); }
+        .gradient-text { background: linear-gradient(135deg, #fce34f 0%, #ca8a04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-item { position: relative; transition: color 0.3s ease; }
+        .nav-item::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #eab308; transition: width 0.3s ease; }
+        .nav-item:hover::after { width: 100%; }
+        .section-card { transition: transform 0.3s ease, border-color 0.3s ease; }
+        .section-card:hover { transform: translateY(-4px); border-color: rgba(234, 179, 8, 0.4); }
+        .outline-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .outline-btn:hover { background: rgba(234, 179, 8, 0.1); transform: scale(1.02); }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500/30">
+
+    <!-- Sticky Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-gold-500 font-display font-bold text-lg md:text-xl tracking-tight">太 16:1-12</div>
+        <div class="flex gap-4 md:gap-8 text-sm md:text-base font-semibold tracking-wide">
+            <a href="#prayer" class="nav-item">禱告</a>
+            <a href="#outline" class="nav-item">大綱</a>
+            <a href="#sermon" class="nav-item">講章</a>
+            <a href="#quotes" class="nav-item">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/ed75a527-158f-45f6-87a7-a59d5e480956' alt='Banner' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-fade-in">
+            <span class="inline-block px-4 py-1 rounded-full bg-gold-500/20 text-gold-400 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 border border-gold-500/30">馬太福音 16:1-12</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black mb-6 leading-tight">
+                看透表象的信心：<br/><span class="gradient-text">防備法利賽人的酵</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
+                在試探與憂慮中，尋見那唯一的記號。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 md:py-24 space-y-24 md:space-y-32">
+
+        <!-- 1. Prayer -->
+        <section id="prayer" class="scroll-mt-32 animate-slide-up">
+            <div class="glass-gold p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9-3.93-9-9s3.93-9 9-9m2 0c5.07 0 9 3.93 9 9s-3.93 9-9 9V2z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-3">
+                    <span class="p-2 bg-gold-500 rounded-lg text-dark-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </span>
+                    同心禱告
+                </h2>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 italic font-light">
+                    「主啊，我們來到祢面前，承認我們時常如同當日的法利賽人與門徒，被眼前的環境、物質的缺乏與世俗的眼光蒙蔽了雙眼。求祢賜給我們屬靈的洞察力，不盲目追求外在的神蹟，而是深深相信祢已經成就的十字架與復活之恩。求祢赦免我們的小信，幫助我們回想祢過去豐盛的供應，使我們不再為世上的餅憂慮。更求祢賜給我們真理的智慧，謹慎防備一切偏離福音的教導與世俗的酵。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Outline Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <h2 class="text-3xl font-display font-bold mb-10 flex items-center gap-3">
+                <span class="p-2 bg-gold-500 rounded-lg text-dark-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </span>
+                信息大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="outline-btn glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold tracking-widest uppercase mb-2 block">PART 01</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">盲目的試探：求神蹟卻看不見神</h3>
+                    </div>
+                    <span class="text-gray-500 text-sm mt-4 font-mono">太 16:1-4</span>
+                </a>
+                <a href="#part2" class="outline-btn glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold tracking-widest uppercase mb-2 block">PART 02</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">錯誤的焦點：為餅憂慮卻忘了主</h3>
+                    </div>
+                    <span class="text-gray-500 text-sm mt-4 font-mono">太 16:5-8</span>
+                </a>
+                <a href="#part3" class="outline-btn glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold tracking-widest uppercase mb-2 block">PART 03</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">真理的覺醒：防備錯謬的教導</h3>
+                    </div>
+                    <span class="text-gray-500 text-sm mt-4 font-mono">太 16:9-12</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 Deep Dive -->
+                <article id="part1" class="scroll-mt-32 space-y-10">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-5xl font-black text-gold-500/20 font-display">01</span>
+                        <h3 class="text-3xl font-display font-bold">盲目的試探：求神蹟卻看不見神 <span class="text-lg font-normal text-gray-500 ml-2">(太 16:1-4)</span></h3>
+                    </div>
+                    <div class="glass p-8 rounded-3xl border-l-4 border-gold-500">
+                        <p class="text-gray-300 italic text-lg leading-relaxed">「法利賽人和撒都該人來試探耶穌，請他從天上顯個神蹟給他們看...耶穌回答說...一個邪惡淫亂的世代求神蹟，除了約拿的神蹟以外，再沒有神蹟給他看。」</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 關鍵原文解析</h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white block">神蹟 (Sign)</strong> <span class="text-gray-400">希臘原文 sēmeion (σημεῖον)。指「記號、標記、帶有信息的奇蹟」。</span></li>
+                                <li><strong class="text-white block">分辨 (Discern)</strong> <span class="text-gray-400">希臘原文 diakrinō (διακρίνω)。指「審視、區分、評估」。</span></li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 關鍵問題</h4>
+                            <p class="text-white font-semibold">為什麼耶穌拒絕行神蹟給法利賽人和撒都該人看？</p>
+                            <p class="text-gray-400 leading-relaxed">因為他們的要求並非出於尋求真理的信心，而是出於「試探」與不信。當人帶著敵意與剛硬的心時，再大的神蹟也無法產生真實的信仰。</p>
+                        </div>
+                    </div>
+                    <div class="bg-dark-800 p-8 rounded-2xl border border-white/5">
+                        <p class="text-gray-400 italic mb-4 font-serif">「法利賽人的悲劇在於，他們對宗教的規條瞭如指掌，對神卻一無所知。」</p>
+                        <p class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                    </div>
+                </article>
+
+                <!-- Part 2 Deep Dive -->
+                <article id="part2" class="scroll-mt-32 space-y-10">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-5xl font-black text-gold-500/20 font-display">02</span>
+                        <h3 class="text-3xl font-display font-bold">錯誤的焦點：為餅憂慮卻忘了主 <span class="text-lg font-normal text-gray-500 ml-2">(太 16:5-8)</span></h3>
+                    </div>
+                    <div class="glass p-8 rounded-3xl border-l-4 border-gold-500">
+                        <p class="text-gray-300 italic text-lg leading-relaxed">「門徒渡到那邊去，忘了帶餅...門徒彼此議論說：『這是因為我們沒有帶餅吧。』耶穌看出來，就說：『你們這小信的人，為什麼因為沒有餅彼此議論呢？』」</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 關鍵原文解析</h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white block">議論 (Reasoning)</strong> <span class="text-gray-400">希臘原文 dialogizomai (διαλογίζομαι)。指「盤算、反覆思考、爭論」，通常帶有焦慮、猜疑的負面意涵。</span></li>
+                                <li><strong class="text-white block">小信 (Little faith)</strong> <span class="text-gray-400">希臘原文 oligopistos (ὀλιγὀπιστος)。指對神的看顧與大能缺乏信賴。</span></li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 關鍵問題</h4>
+                            <p class="text-white font-semibold">門徒為什麼會把耶穌的屬靈警告誤解為「沒有帶餅」？</p>
+                            <p class="text-gray-400 leading-relaxed">因為門徒的心思完全被物質的缺乏佔據。當人過度聚焦於世俗需要，就會產生「屬靈的耳聾」。小信使人視角狹隘，忘記了主就在船上。</p>
+                        </div>
+                    </div>
+                    <div class="bg-dark-800 p-8 rounded-2xl border border-white/5">
+                        <p class="text-gray-400 italic mb-4 font-serif">「小信能將你的靈魂帶上天堂，但大信能將天堂帶進你的靈魂。小信的人要在世上經歷許多不必要的痛苦。」</p>
+                        <p class="text-gold-500 text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                    </div>
+                </article>
+
+                <!-- Part 3 Deep Dive -->
+                <article id="part3" class="scroll-mt-32 space-y-10">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-5xl font-black text-gold-500/20 font-display">03</span>
+                        <h3 class="text-3xl font-display font-bold">真理的覺醒：防備錯謬的教導 <span class="text-lg font-normal text-gray-500 ml-2">(太 16:9-12)</span></h3>
+                    </div>
+                    <div class="glass p-8 rounded-3xl border-l-4 border-gold-500">
+                        <p class="text-gray-300 italic text-lg leading-relaxed">「『你們還不明白嗎？不記得那五個餅分給五千人、又收拾了多少籃子的零碎嗎？...乃是防備法利賽人和撒都該人的教訓。』」</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 關鍵原文解析</h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white block">酵 (Leaven)</strong> <span class="text-gray-400">希臘原文 zymē (ζύμη)。代表隱藏、微小卻能迅速蔓延並敗壞全體的影響力。</span></li>
+                                <li><strong class="text-white block">教訓 (Doctrine)</strong> <span class="text-gray-400">希臘原文 didachē (διδαχή)。指所教導的內容、教義。</span></li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> 關鍵問題</h4>
+                            <p class="text-white font-semibold">「法利賽人和撒都該人的酵」在今天代表什麼？</p>
+                            <p class="text-gray-400 leading-relaxed">法利賽人的酵代表「律法主義、假冒為善」；撒都該人的酵代表「世俗主義、理性主義」。防備的方法是「回想」與「記得」神過去的恩典。</p>
+                        </div>
+                    </div>
+                    <div class="bg-dark-800 p-8 rounded-2xl border border-white/5">
+                        <p class="text-gray-400 italic mb-4 font-serif">「律法主義說：『我順服，所以我蒙悅納』；福音說：『我蒙悅納，所以我順服。』這就是我們必須防備的酵。」</p>
+                        <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Application -->
+        <section class="scroll-mt-32">
+            <h2 class="text-3xl font-display font-bold mb-10 flex items-center gap-3">
+                <span class="p-2 bg-gold-500 rounded-lg text-dark-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </span>
+                應用與行動
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white mb-4">應用方向</h3>
+                    <div class="space-y-4">
+                        <div class="glass p-5 rounded-xl">檢視尋求神的動機：是滿足好奇與私慾，還是敬拜主？</div>
+                        <div class="glass p-5 rounded-xl">打破物質焦慮的迴圈：回想生命中的「五餅二魚」。</div>
+                        <div class="glass p-5 rounded-xl">培養屬靈辨識力：檢視吸收的教導是否夾雜錯誤的「酵」。</div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white mb-4">回應行動</h3>
+                    <div class="space-y-4">
+                        <div class="glass-gold p-5 rounded-xl border-l-4 border-gold-500"><strong>建立感恩筆記</strong>：本週寫下三個神過去奇妙供應的事件。</div>
+                        <div class="glass-gold p-5 rounded-xl border-l-4 border-gold-500"><strong>過濾屬靈資訊</strong>：用聖經真理檢驗目前的媒體資訊。</div>
+                        <div class="glass-gold p-5 rounded-xl border-l-4 border-gold-500"><strong>改變禱告焦點</strong>：求神開屬靈眼睛，看見祂正在動工的地方。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Sermon Text -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-display font-bold mb-12 text-center flex items-center justify-center gap-3">
+                    <span class="p-2 bg-gold-500 rounded-lg text-dark-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </span>
+                    講章全文
+                </h2>
+                <div class="prose prose-invert prose-gold max-w-none space-y-8 text-gray-300 leading-loose text-lg">
+                    <p class="font-bold text-2xl text-white">看透表象的信心：防備法利賽人的酵</p>
+                    <p>弟兄姐妹們，我們時常以為，只要看見足夠多的神蹟，我們的信心就會堅定不移；我們也常以為，生活中只要不再缺乏，我們就不會焦慮。然而，在馬太福音第16章，耶穌卻讓我們看見一個截然不同的屬靈真相。今天，我們將透過這段經文，學習如何擁有「看透表象的信心」。</p>
+                    
+                    <h3 class="text-gold-500 font-bold text-xl">第一段：盲目的試探：求神蹟卻看不見神</h3>
+                    <p>「法利賽人和撒都該人來試探耶穌，請他從天上顯個神蹟給他們看。」(太 16:1) 這群當時的宗教領袖，其實已經看過耶穌無數的神蹟，但他們的心是盲目的。耶穌直接點出他們的矛盾：「你們知道分辨天上的氣色，倒不能分辨這時候的神蹟。」</p>
+                    <p>耶穌拒絕了他們，提出了約拿的神蹟。弟兄姐妹，最大的神蹟不是天降異象，而是神成為人，為你我的罪死在十架上。當我們的心只想要神解決眼前的麻煩，卻不想要神自己時，我們就落入了法利賽人的試探中。</p>
+                    
+                    <h3 class="text-gold-500 font-bold text-xl">第二段：錯誤的焦點：為餅憂慮卻忘了主</h3>
+                    <p>鏡頭一轉，來到了門徒身上。他們忘了帶餅，便開始彼此議論。多麼真實的寫照！我們豈不也常是如此？當我們生命面臨一點物質的缺乏、一點計畫的失誤時，我們的心就被焦慮填滿。</p>
+                    <p>耶穌責備他們是「小信的人」。小信，不是沒有信仰，而是你的信仰在現實的壓力面前失去了作用。當我們只定睛於「沒有帶餅」，我們就會忘記那位能「無中生有」的主正與我們同在一條船上。憂慮，往往是因為我們放錯了焦點。</p>
+
+                    <h3 class="text-gold-500 font-bold text-xl">第三段：真理的覺醒：防備錯謬的教導</h3>
+                    <p>為了解決門徒的盲點，耶穌給出了對治小信的解藥——回想。過去神如何供應，現在神依然掌權！耶穌提醒他們要防備「酵」，就是今天教會中依然存在的威脅：律法主義與世俗主義。</p>
+                    <p>只要一點點的「靠行為得救」或是「迎合世界價值觀」的教導滲透進來，就會像酵一樣敗壞我們對十字架恩典的純粹倚靠。我們必須時刻防備，用神話語的真理來保護我們的心。不要讓錯謬的酵，偷走了我們在基督裡的真自由。</p>
+                </div>
+                
+                <div class="mt-16 flex flex-wrap gap-4 justify-center">
+                    <span class="px-6 py-2 rounded-full bg-dark-700 text-gold-500 border border-gold-500/20 font-bold">#神蹟</span>
+                    <span class="px-6 py-2 rounded-full bg-dark-700 text-gold-500 border border-gold-500/20 font-bold">#回想</span>
+                    <span class="px-6 py-2 rounded-full bg-dark-700 text-gold-500 border border-gold-500/20 font-bold">#防備</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Quotes -->
+        <section id="quotes" class="scroll-mt-32">
+            <h2 class="text-3xl font-display font-bold mb-10 flex items-center gap-3">
+                <span class="p-2 bg-gold-500 rounded-lg text-dark-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                </span>
+                名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass p-6 rounded-2xl section-card">
+                    <p class="text-gray-300 italic mb-4 font-serif">「恩典是白白得來的，但絕不是廉價的；這恩典之所以昂貴，是因為它使神付出了祂兒子的生命。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl section-card">
+                    <p class="text-gray-300 italic mb-4 font-serif">「如果神在今天收回聖靈，教會中百分之九十五的活動還會照常進行，我們甚至不會察覺到有什麼不同。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl section-card">
+                    <p class="text-gray-300 italic mb-4 font-serif">「你不能阻止鳥兒從你頭上飛過，但你可以阻止牠們在你頭髮裡築巢。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl section-card">
+                    <p class="text-gray-300 italic mb-4 font-serif">「在十字架前，我們不能保有我們的驕傲；因為十字架告訴我們，我們的罪惡深重到除了神的兒子為我們死，別無他法。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl section-card">
+                    <p class="text-gray-300 italic mb-4 font-serif">「福音是：我的罪惡與敗壞遠超自己所敢相信的；但我同時在基督裡蒙愛與蒙接納的程度，也遠超自己所敢盼望的。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl section-card">
+                    <p class="text-gray-300 italic mb-4 font-serif">「人的心靈就像是一座永不休止的偶像製造工廠。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+            </div>
+
+            <!-- Warning -->
+            <div class="mt-20 text-center py-8 border-t border-white/10">
+                <p class="text-gray-500 text-sm tracking-widest flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 100;
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = target.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

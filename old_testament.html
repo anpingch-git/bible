@@ -1,57 +1,67 @@
-<!DOCTYPE html>
+       // const USER = "anpingch-git"; 
+       // const REPO = "bible";
+       //const BASE_PATH = 'archive/舊約'; // 指定只抓取「舊約」資料夾 
+
+      <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>舊約全書 - 數位圖書館</title>
+    <title>舊約全書 - 研經筆記</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>body { background-color: #050505; color: #fff; }</style>
 </head>
 <body class="p-8">
-    <header class="flex justify-between mb-8 border-b border-yellow-900/30 pb-4">
+    <header class="flex justify-between items-center mb-8 border-b border-yellow-900/30 pb-4">
         <h1 class="text-3xl font-bold text-yellow-500">📜 舊約全書</h1>
         <a href="index.html" class="text-gray-400 hover:text-white">← 返回首頁</a>
     </header>
-    <div id="gallery" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div id="gallery" class="space-y-12">
         <div id="loading" class="text-gray-500">正在翻開舊約卷軸...</div>
     </div>
 
     <script>
-        // ⚠️ 請修改以下三個參數
-        const USER = "anpingch-git"; 
-        const REPO = "bible";
-        const BASE_PATH = 'archive/舊約'; // 指定只抓取「舊約」資料夾 
+        // ⚠️ 請務必填寫您的正確資訊
+        const OWNER = 'anpingch-git'; 
+        const REPO = 'bible';
+        const BASE_PATH = 'archive/舊約'; // 關鍵：只抓取舊約目錄 [cite: 683]
 
         async function loadBooks() {
             const gallery = document.getElementById('gallery');
             try {
                 const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${BASE_PATH}`);
-                if (!response.ok) throw new Error();
-                const books = await response.json();
-                
+                if (!response.ok) throw new Error("API 路徑錯誤");
+                const folders = await response.json();
                 document.getElementById('loading').remove();
-                for (const book of books) {
-                    if (book.type === 'dir') {
-                        // 抓取各卷下的檔案
-                        const resFiles = await fetch(book.url);
+
+                for (const folder of folders) {
+                    if (folder.type === 'dir') {
+                        const resFiles = await fetch(folder.url);
                         const files = await resFiles.json();
-                        renderBookSection(book.name, files);
+                        renderSection(folder.name, files);
                     }
                 }
             } catch (e) {
-                gallery.innerHTML = "❌ 載入失敗：請確認 archive/舊約/ 資料夾是否存在，且 OWNER/REPO 設定正確。";
+                gallery.innerHTML = "❌ 載入失敗：請檢查 GitHub 設定或資料夾路徑。"; [cite: 699]
             }
         }
 
-        function renderBookSection(name, files) {
+        function renderSection(bookName, files) {
             const container = document.getElementById('gallery');
+            const section = document.createElement('section');
             const htmlFiles = files.filter(f => f.name.endsWith('.html'));
-            htmlFiles.forEach(file => {
-                const card = document.createElement('a');
-                card.href = file.path;
-                card.className = "p-4 border border-white/10 rounded-xl bg-white/5 hover:border-yellow-500/50 block";
-                card.innerHTML = `<h3 class="text-yellow-500 font-bold">${name}</h3><p class="text-sm text-gray-400">${file.name.replace('.html','')}</p>`;
-                container.appendChild(card);
-            });
+            
+            section.innerHTML = `
+                <h2 class="text-xl font-bold text-yellow-600 mb-4 border-l-4 border-yellow-600 pl-3">${bookName}</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    ${htmlFiles.map(f => `
+                        <a href="${f.path}" class="p-4 border border-white/10 rounded-xl bg-white/5 hover:border-yellow-500/50 block transition-all">
+                            <p class="text-sm text-gray-400 mb-1">${f.name.split('_')[0] || ''}</p>
+                            <h3 class="text-white font-bold">${f.name.replace('.html','').split('_').slice(1).join(' ')}</h3>
+                        </a>
+                    `).join('')}
+                </div>
+            `;
+            container.appendChild(section);
         }
         loadBooks();
     </script>

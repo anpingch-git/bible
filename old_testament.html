@@ -122,8 +122,14 @@
                     if (book.type === 'dir') {
                         const resFiles = await fetch(book.url);
                         const files = await resFiles.json();
-                        // 只過濾出 .html 檔案
-                        const htmlFiles = files.filter(f => f.name.endsWith('.html'));
+                        // 修改後的代碼：過濾後立即按檔名日期排序
+                           const htmlFiles = files
+                           .filter(f => f.name.endsWith('.html'))
+                           .sort((a, b) => {
+                               // 假設檔名格式為 "20240327_經卷_主題.html"
+                               // localeCompare 配合 'reverse' 效果，讓大的日期（新）排在前面
+                               return b.name.localeCompare(a.name);
+                            });
 
                         if (htmlFiles.length > 0) {
                             renderBookSection(book.name, htmlFiles);

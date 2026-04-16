@@ -76,29 +76,29 @@
             gallery.appendChild(section);
         }
 
-        function createCard(f) {
-            // 假設檔名格式：日期_章節_主題.html
-            const parts = f.name.replace('.html', '').split('_');
-            const date = parts[0] || '';
-            const chapter = parts[1] || '';
-            const title = parts[2] || '查看內容';
+        function createCard(file, bookName) {
+    const parts = file.name.replace('.html', '').split('_');
+    const date = parts[0] || '';
+    const chapter = parts[1] || bookName;
+    const title = parts[2] || '閱讀筆記';
 
-            return `
-                 <a href="${f.path}" class="glass-card group block p-8 rounded-3xl hover:border-yellow-500 transition-all">
-                    <div class="relative z-10">
-                       <div class="text-yellow-500/60 text-xs font-mono mb-4 uppercase tracking-widest">${date}</div>
+    return `
+        <a href="${file.path}" class="glass-card group block rounded-2xl p-8 relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="text-yellow-500/50 text-xs font-mono tracking-widest mb-4 uppercase">${date}</div>
                 
-                       <div class="text-3xl md:text-4xl font-black text-white mb-3 group-hover:text-yellow-400 transition-colors leading-tight">
-                          ${title}
-                       </div>
+                <div class="text-3xl md:text-4xl font-black text-slate-200 mb-3 group-hover:text-yellow-400 transition-colors leading-tight drop-shadow-sm">
+                    ${title}
+                </div>
                 
-                      <div class="text-lg text-gray-400 font-medium tracking-wide">
-                        ${chapter}
-                      </div>
-                    </div>
-                </a>
-            `;
-        }
+                <div class="text-lg text-gray-400/80 font-medium tracking-wide">
+                    ${chapter}
+                </div>
+            </div>
+        </a>
+    `;
+}
+		
         loadBooks();
     </script>
 </body>

@@ -77,10 +77,30 @@
         }
 
         function createCard(file, bookName) {
+    // 1. 先用底線切割
     const parts = file.name.replace('.html', '').split('_');
     const date = parts[0] || '';
-    const chapter = parts[1] || bookName;
-    const title = parts[2] || '閱讀筆記';
+    let chapter = '';
+    let title = '';
+
+    if (parts.length >= 3) {
+        // 如果有三個部分 (日期_章節_主題)
+        chapter = parts[1];
+        title = parts[2];
+    } else if (parts.length === 2) {
+        // 核心修正：如果只有兩個部分 (日期_章節 主題)
+        // 尋找第二部分中的第一個空格來拆分
+        const content = parts[1].trim();
+        const firstSpaceIndex = content.indexOf(' ');
+        
+        if (firstSpaceIndex !== -1) {
+            chapter = content.substring(0, firstSpaceIndex);
+            title = content.substring(firstSpaceIndex + 1);
+        } else {
+            chapter = bookName;
+            title = content;
+        }
+    }
 
     return `
         <a href="${file.path}" class="glass-card group block rounded-2xl p-8 relative overflow-hidden transition-all duration-300">

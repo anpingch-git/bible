@@ -3,134 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>舊約研經資料</title>
+    <title>舊約研經資料 - 數位圖書館</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #050505; color: #fff; margin: 0; }
+        /* 基礎設定 */
+        body { 
+            background-color: #050505; 
+            color: #fff; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 核心效果：全螢幕固定背景層 */
         .fixed-background {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
-            background-image: linear-gradient(to bottom, rgba(5,5,5,0.3) 0%, rgba(5,5,5,0.95) 100%), 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+            background-image: linear-gradient(to bottom, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.95) 100%), 
                               url('https://opal.google/board/blobs/94a41ff0-2e03-482b-9d8b-3041e6384364');
-            background-size: cover; background-position: center; background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
+
+        /* 內容包裹層 */
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            background: transparent;
+        }
+
+        /* 金色漸層大標題 */
         .gold-gradient {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+
+        /* 毛玻璃科技感卡片 */
         .glass-card {
-            background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            background: rgba(212, 175, 55, 0.08);
+            transform: translateY(-4px);
+        }
+
+        /* 下載按鈕樣式 */
+        .btn-download {
+            font-size: 10px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* 自訂捲動軸 */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
+        ::-webkit-scrollbar-thumb { background: rgba(212, 175, 55, 0.3); border-radius: 10px; }
     </style>
 </head>
 <body>
+
     <div class="fixed-background"></div>
-    <div class="relative z-10">
-        <div class="w-full h-[50vh] flex flex-col justify-end p-8 md:p-20">
-            <a href="index.html" class="absolute top-10 left-10 text-xl text-white/70 hover:text-white glass-card px-6 py-3 rounded-full">← 返回首頁</a>
-            <h1 class="text-7xl md:text-9xl font-black gold-gradient tracking-tighter mb-4 drop-shadow-2xl">舊約全書</h1>
-            <p class="text-2xl md:text-3xl text-white/80 italic tracking-widest">「惟有神的話必永遠立定」</p>
+
+    <div class="content-wrapper">
+        
+        <div class="w-full h-[45vh] md:h-[55vh] flex flex-col justify-end p-8 md:p-20 relative">
+            <div class="absolute top-8 left-8">
+                <a href="index.html" class="glass-card px-5 py-2 rounded-full text-sm font-medium text-white/80 hover:text-white inline-flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    返回圖書館首頁
+                </a>
+            </div>
+            
+            <div class="max-w-4xl">
+                <span class="text-yellow-500 text-sm tracking-[0.4em] font-light uppercase opacity-90 block mb-3">The Old Testament</span>
+                <h1 class="text-6xl md:text-8xl font-black gold-gradient tracking-widest mb-4 drop-shadow-2xl">舊約全書</h1>
+                <p class="text-white/70 text-xl md:text-2xl italic font-light leading-relaxed">
+                    「草必枯乾，花必凋殘，惟有我們神的話必永遠立定。」
+                </p>
+            </div>
         </div>
 
         <main class="max-w-7xl mx-auto px-8 pb-32">
             <div id="gallery" class="space-y-24">
-                <div id="loading" class="text-center py-20 text-3xl text-gray-500 animate-pulse">正在翻開聖經卷軸...</div>
+                <div id="loading" class="flex flex-col items-center justify-center py-20 space-y-4">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-500"></div>
+                    <div class="text-gray-400 text-lg tracking-widest animate-pulse">正在開啟研經卷軸...</div>
+                </div>
             </div>
         </main>
     </div>
 
     <script>
+        // === 🔴 請在此更換您的帳號資訊 ===
         const OWNER = 'anpingch-git'; 
-        const REPO = 'bible';
-        const BASE_PATH = 'archive/舊約'; // 🔴 確保資料夾名稱完全正確
-        
-        async function loadBooks() {
+        const REPO = 'bible';   
+        const BASE_PATH = 'archive/舊約'; 
+
+        async function loadOldTestament() {
+            const gallery = document.getElementById('gallery');
             try {
+                // 1. 抓取舊約下的經卷資料夾
                 const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${BASE_PATH}`);
-                const books = await response.json();
+                if (!response.ok) throw new Error();
+                const folders = await response.json();
+                
                 document.getElementById('loading').remove();
 
-                for (const book of books) {
-                    if (book.type === 'dir') {
-                        const resFiles = await fetch(book.url);
+                for (const folder of folders) {
+                    if (folder.type === 'dir') {
+                        // 2. 抓取卷內檔案
+                        const resFiles = await fetch(folder.url);
                         const files = await resFiles.json();
-                        // 排序：新日期在前
-                        const htmlFiles = files.filter(f => f.name.endsWith('.html'))
-                                               .sort((a, b) => b.name.localeCompare(a.name));
+                        
+                        // 3. 排序：新日期在前 (降冪排序)
+                        const htmlFiles = files
+                            .filter(f => f.name.endsWith('.html'))
+                            .sort((a, b) => b.name.localeCompare(a.name));
 
-                        if (htmlFiles.length > 0) renderSection(book.name, htmlFiles);
+                        if (htmlFiles.length > 0) {
+                            renderSection(folder.name, htmlFiles);
+                        }
                     }
                 }
-            } catch (e) { console.error(e); }
+            } catch (e) {
+                gallery.innerHTML = `<div class="text-center p-20 glass-card rounded-3xl"><p class="text-red-400 text-xl">載入失敗，請確認 GitHub 設定。</p></div>`;
+            }
         }
 
-        function renderSection(name, files) {
+        function renderSection(bookName, files) {
             const gallery = document.getElementById('gallery');
             const section = document.createElement('section');
+            
             section.innerHTML = `
-                <h2 class="text-4xl font-bold text-yellow-500 mb-10 border-l-8 border-yellow-500 pl-6">${name}</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    ${files.map(f => createCard(f)).join('')}
+                <div class="flex items-center gap-4 mb-10">
+                    <h2 class="text-3xl font-bold text-yellow-500/90 tracking-widest">${bookName}</h2>
+                    <div class="h-[1px] flex-grow bg-gradient-to-r from-yellow-500/30 to-transparent"></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    ${files.map(f => createCard(f, bookName)).join('')}
                 </div>
             `;
             gallery.appendChild(section);
         }
 
-function createCard(file, bookName) {
-    // 1. 取得去副檔名後的純檔名
-    const fullFileName = file.name.replace('.html', '');
-    const parts = fullFileName.split('_');
-    const date = parts[0] || '';
-    
-    let chapter = '';
-    let title = '';
+        function createCard(file, bookName) {
+            // 解析新版檔名格式：日期_章節_主題_ID.html
+            const fullFileName = file.name.replace('.html', '');
+            const parts = fullFileName.split('_');
+            
+            const date = parts[0] || '';
+            const chapter = parts[1] || bookName;
+            const title = parts[2] || '閱讀分享';
+            const docId = parts[3]; // 這是從 GAS 傳過來的 Google 文件 ID
 
-    if (parts.length >= 3) {
-        // 格式：日期_章節_主題.html
-        chapter = parts[1];
-        title = parts[2];
-    } else if (parts.length === 2) {
-        // 格式：2026-02-26_太 21-1-11 迎見謙卑的榮耀君王
-        const content = parts[1].trim();
-        
-        // 使用正規表示法尋找「數字後面的第一個空格」作為拆分點
-        // 這樣可以確保「太 21-1-11」被完整保留在 chapter
-        const match = content.match(/(\D+\s?\d+[-:]?\d*[-:]?\d*)\s+(.*)/);
-
-        if (match) {
-            chapter = match[1]; // 抓到「太 21-1-11」
-            title = match[2];   // 抓到「迎見謙卑的榮耀君王」
-        } else {
-            // 如果沒空格或匹配失敗，保守處理
-            const firstSpaceIndex = content.indexOf(' ');
-            if (firstSpaceIndex !== -1) {
-                chapter = content.substring(0, firstSpaceIndex);
-                title = content.substring(firstSpaceIndex + 1);
-            } else {
-                chapter = bookName;
-                title = content;
+            // 只有當 docId 存在且不是 "NoDoc" 時才顯示下載鈕
+            let downloadSection = "";
+            if (docId && docId !== "NoDoc") {
+                downloadSection = `
+                    <div class="flex gap-2 mt-5 pt-4 border-t border-white/10">
+                        <a href="https://docs.google.com/document/d/${docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/30">WORD 下載</a>
+                        <a href="https://docs.google.com/document/d/${docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300 hover:bg-red-600 hover:text-white border border-red-500/30">PDF 下載</a>
+                    </div>
+                `;
             }
-        }
-    }
 
-    return `
-        <a href="${file.path}" class="glass-card group block rounded-2xl p-8 relative overflow-hidden transition-all duration-300">
-            <div class="relative z-10">
-                <div class="text-yellow-600/50 text-xs font-mono tracking-widest mb-4 uppercase">${date}</div>
-                
-                <div class="text-3xl md:text-4xl font-black text-orange-50/90 mb-3 group-hover:text-yellow-400 transition-colors leading-tight tracking-tight">
-                    ${title}
+            return `
+                <div class="glass-card group rounded-2xl p-8 flex flex-col justify-between">
+                    <a href="${file.path}" class="block">
+                        <div class="text-yellow-600/50 text-xs font-mono tracking-[0.2em] mb-4 uppercase">${date}</div>
+                        
+                        <h3 class="text-3xl font-black text-orange-50/90 mb-3 group-hover:text-yellow-400 transition-colors leading-tight tracking-tight">
+                            ${title}
+                        </h3>
+                        
+                        <p class="text-lg text-gray-400/70 font-medium tracking-wide">
+                            ${chapter}
+                        </p>
+                    </a>
+                    ${downloadSection}
                 </div>
-                
-                <div class="text-lg text-gray-400/70 font-medium tracking-wide">
-                    ${chapter}
-                </div>
-            </div>
-        </a>
-    `;
-}
-		
-        loadBooks();
+            `;
+        }
+
+        // 啟動加載
+        loadOldTestament();
     </script>
 </body>
 </html>

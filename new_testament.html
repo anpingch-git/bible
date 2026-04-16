@@ -77,28 +77,39 @@
         }
 
         function createCard(file, bookName) {
-    // 1. 先用底線切割
-    const parts = file.name.replace('.html', '').split('_');
+    // 1. 取得去副檔名後的純檔名
+    const fullFileName = file.name.replace('.html', '');
+    const parts = fullFileName.split('_');
     const date = parts[0] || '';
+    
     let chapter = '';
     let title = '';
 
     if (parts.length >= 3) {
-        // 如果有三個部分 (日期_章節_主題)
+        // 格式：日期_章節_主題.html
         chapter = parts[1];
         title = parts[2];
     } else if (parts.length === 2) {
-        // 核心修正：如果只有兩個部分 (日期_章節 主題)
-        // 尋找第二部分中的第一個空格來拆分
+        // 格式：2026-02-26_太 21-1-11 迎見謙卑的榮耀君王
         const content = parts[1].trim();
-        const firstSpaceIndex = content.indexOf(' ');
         
-        if (firstSpaceIndex !== -1) {
-            chapter = content.substring(0, firstSpaceIndex);
-            title = content.substring(firstSpaceIndex + 1);
+        // 使用正規表示法尋找「數字後面的第一個空格」作為拆分點
+        // 這樣可以確保「太 21-1-11」被完整保留在 chapter
+        const match = content.match(/(\D+\s?\d+[-:]?\d*[-:]?\d*)\s+(.*)/);
+
+        if (match) {
+            chapter = match[1]; // 抓到「太 21-1-11」
+            title = match[2];   // 抓到「迎見謙卑的榮耀君王」
         } else {
-            chapter = bookName;
-            title = content;
+            // 如果沒空格或匹配失敗，保守處理
+            const firstSpaceIndex = content.indexOf(' ');
+            if (firstSpaceIndex !== -1) {
+                chapter = content.substring(0, firstSpaceIndex);
+                title = content.substring(firstSpaceIndex + 1);
+            } else {
+                chapter = bookName;
+                title = content;
+            }
         }
     }
 

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出8:20-32: 劃定界線的恩典與不妥協的信仰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8d6',
+                            200: '#fdf1ad',
+                            300: '#fbe479',
+                            400: '#f9d14a',
+                            500: '#f4b521',
+                            600: '#d98f16',
+                            700: '#b56a15',
+                            800: '#945318',
+                            900: '#7a4419',
+                        },
+                        deep: {
+                            900: '#0a0a0c',
+                            800: '#121217',
+                            700: '#1a1a24'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.2s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(26, 26, 36, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9d14a 0%, #d98f16 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(249, 209, 74, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .outline-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .outline-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #f9d14a;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        .outline-btn:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500/30">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 px-4 py-3 sm:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="font-accent font-bold text-gold-400 tracking-tighter text-sm sm:text-base">出8:20-32</span>
+            <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/49a73577-dc12-4281-8ef0-c2ed3b1ebd41' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-deep-900 via-deep-900/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-slide-up">
+            <div class="inline-block px-4 py-1 mb-6 border border-gold-500/30 rounded-full bg-gold-500/10 text-gold-400 text-xs font-accent tracking-[0.2em]">
+                EXODUS 8:20-32
+            </div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-display font-black mb-8 leading-tight tracking-tight">
+                劃定界線的<span class="text-gradient">恩典</span><br>與不妥協的信仰
+            </h1>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full mb-8"></div>
+            <p class="text-gray-400 text-lg sm:text-xl font-light tracking-wide max-w-2xl mx-auto">
+                在混亂的世界中，神為屬祂的子民保留了平安的歌珊地，呼召我們走出埃及，進入全然的敬拜。
+            </p>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass p-8 sm:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="bg-gold-500 p-3 rounded-2xl shadow-lg shadow-gold-500/20">
+                        <svg class="w-6 h-6 text-deep-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold">開場禱告</h2>
+                </div>
+                <p class="text-xl sm:text-2xl leading-relaxed text-gray-300 italic font-light">
+                    「主阿，我們來到祢面前，承認祢是全地的主。在充滿混亂與誘惑的世界中，感謝祢為屬祢的子民劃定恩典的界線，如同祢當年將歌珊地分別出來一樣。求祢賜給我們摩西般的勇氣與屬靈洞察力，識破這個世界企圖要我們『妥協』與『不要走太遠』的謊言。求祢鑒察我們的心，不叫我們在困境挪去後就硬著心腸，而是賜給我們真實悔改與完全順服的靈。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold-500 p-3 rounded-2xl">
+                    <svg class="w-6 h-6 text-deep-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="glass p-6 rounded-2xl section-card group">
+                    <span class="text-gold-500 font-accent font-bold text-sm tracking-widest block mb-2">PART 01</span>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-gold-400 transition-colors">神聖的區別</h3>
+                    <p class="text-gray-500 text-sm">出8:20-24</p>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl section-card group">
+                    <span class="text-gold-500 font-accent font-bold text-sm tracking-widest block mb-2">PART 02</span>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-gold-400 transition-colors">世界的誘惑</h3>
+                    <p class="text-gray-500 text-sm">出8:25-28</p>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl section-card group">
+                    <span class="text-gold-500 font-accent font-bold text-sm tracking-widest block mb-2">PART 03</span>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-gold-400 transition-colors">虛假的悔改</h3>
+                    <p class="text-gray-500 text-sm">出8:29-32</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <article id="part1" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-32">
+                                <h4 class="text-2xl font-display font-bold mb-4 text-gold-400">第一段：神聖的區別</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">在全地顯明主權 (出8:20-24)</p>
+                                <div class="mt-8 space-y-4">
+                                    <div class="bg-white/5 p-4 rounded-xl border-l-4 border-gold-500">
+                                        <p class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-1">關鍵字詞</p>
+                                        <p class="font-bold">「分別」(Peduth / פְּדוּת)</p>
+                                        <p class="text-gray-400 text-xs mt-1">帶有「救贖」或「贖價」之意。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="bg-deep-800 p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 0011.458 7.235A8 8 0 119 4.804z"></path></svg>
+                                    引用經文
+                                </h5>
+                                <p class="text-gray-300 leading-relaxed">
+                                    (出8:22) 當那日，我必分別我百姓所住的歌珊地，使那裡沒有成群的蒼蠅，好叫你知道我是天下的耶和華。 (出8:23) 我要將我的百姓和你的百姓分別出來。明天必有這神蹟。
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold mb-4">關鍵問題：神為何要在第四災才開始分別歌珊地？</h5>
+                                <p class="text-gray-400 leading-relaxed">前三災打破了埃及眾神的能力；但從第四災開始，神要啟示祂不僅是「降災的神」，更是「守約施慈愛、保護祂子民的神」。證明災難不是盲目機率，而是出自一位有絕對主權的「天下的耶和華」。</p>
+                            </div>
+                            <div class="p-6 bg-gold-900/10 rounded-2xl border border-gold-900/20">
+                                <p class="text-gray-300 italic leading-relaxed">「基督徒是神在世上插下的一面旗幟，宣告這地是屬於祂的。」—— 司布真</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 2 -->
+                <article id="part2" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-32">
+                                <h4 class="text-2xl font-display font-bold mb-4 text-gold-400">第二段：世界的誘惑</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">看似讓步的妥協 (出8:25-28)</p>
+                                <div class="mt-8 space-y-4">
+                                    <div class="bg-white/5 p-4 rounded-xl border-l-4 border-gold-500">
+                                        <p class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-1">關鍵字詞</p>
+                                        <p class="font-bold">「在這地」與「不要走遠」</p>
+                                        <p class="text-gray-400 text-xs mt-1">代表世界對信徒的牽制與控制。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="bg-deep-800 p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 0011.458 7.235A8 8 0 119 4.804z"></path></svg>
+                                    引用經文
+                                </h5>
+                                <p class="text-gray-300 leading-relaxed">
+                                    (出8:25) 法老召了摩西、亞倫來，說：「你們去，在這地祭祀你們的神吧！」 (出8:28) 法老說：「我容你們去... 只是不要走得很遠。求你們為我祈禱。」
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold mb-4">關鍵問題：法老的妥協方案為何如此危險？</h5>
+                                <p class="text-gray-400 leading-relaxed">法老的提議是撒但最狡猾的策略：你可以信，但價值觀必須留在世界裡。「不要走得很遠」是一條無形的繩索，讓你以為有自由，實則仍被世界拴住。摩西堅持「走三天路程」代表徹底切割與委身。</p>
+                            </div>
+                            <div class="p-6 bg-gold-900/10 rounded-2xl border border-gold-900/20">
+                                <p class="text-gray-300 italic leading-relaxed">「如果你與世界妥協，世界就會把你吞噬。半個基督徒其實就是一個完整的世俗人。」—— 陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 3 -->
+                <article id="part3" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-32">
+                                <h4 class="text-2xl font-display font-bold mb-4 text-gold-400">第三段：虛假的悔改</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">災禍過後的剛硬 (出8:29-32)</p>
+                                <div class="mt-8 space-y-4">
+                                    <div class="bg-white/5 p-4 rounded-xl border-l-4 border-gold-500">
+                                        <p class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-1">關鍵字詞</p>
+                                        <p class="font-bold">「硬著心」(Kabad / כָּבַד)</p>
+                                        <p class="text-gray-400 text-xs mt-1">原意為沉重、遲鈍、無感覺。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="bg-deep-800 p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 0011.458 7.235A8 8 0 119 4.804z"></path></svg>
+                                    引用經文
+                                </h5>
+                                <p class="text-gray-300 leading-relaxed">
+                                    (出8:31) 耶和華就照摩西的話行，叫成群的蒼蠅離開... 一個也沒有留下。 (出8:32) 這一次法老又硬著心，不容百姓去。
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold mb-4">關鍵問題：為什麼災難撤除後法老立刻硬心？</h5>
+                                <p class="text-gray-400 leading-relaxed">法老要的是「除掉麻煩」，而不是「降服於神」。這是一種功利性的悔改。當痛苦（蒼蠅）消失時，妥協的動機也隨之消失。這提醒我們，若只在乎解決困難而不尋求主權轉移，我們隨時會重蹈覆轍。</p>
+                            </div>
+                            <div class="p-6 bg-gold-900/10 rounded-2xl border border-gold-900/20">
+                                <p class="text-gray-300 italic leading-relaxed">「廉價的恩典是沒有門徒代價的恩典，是沒有十字架的恩典。」—— 潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold-500 p-3 rounded-2xl">
+                    <svg class="w-6 h-6 text-deep-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20l-7-7m0 0l-7-7m7 7V3"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold text-gradient">講章全文</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none space-y-12">
+                <div class="text-3xl font-display font-black text-center mb-16 underline decoration-gold-500/30 underline-offset-8">
+                    出8:20-32: 劃定界線的恩典與不妥協的信仰
+                </div>
+                
+                <p class="text-xl leading-relaxed text-gray-300">
+                    弟兄姊妹們，今天我們要從出埃及記第8章，來看一場神與法老之間，關於「界線」與「妥協」的激烈交鋒。
+                </p>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">一、 神聖的區別——在全地顯明主權</h3>
+                    <p class="text-lg leading-loose text-gray-300">
+                        首先，我們看到<span class="text-white font-bold">「神聖的區別」</span>。在出埃及記8章22-23節，神清楚地宣告：<span class="text-gold-300 bg-gold-500/10 px-1">「當那日，我必分別我百姓所住的歌珊地，使那裡沒有成群的蒼蠅，好叫你知道我是天下的耶和華。我要將我的百姓和你的百姓分別出來。」</span>
+                        前三個災難，埃及人和以色列人共同承受了。但到了第四災「蠅災」，神劃下了一條界線。這個「分別」，在原文中帶著「救贖」的意義。神不是隨便畫條線，神是用恩典將祂的子民包裹起來。
+                        為什麼要這麼做？<span class="text-white font-bold">「好叫你知道我是天下的耶和華。」</span> 神要證明，災難不是自然機率，而是祂的主權。弟兄姊妹，今天世界充滿了風暴與蒼蠅般的災禍，但神完全有能力在你的職場、家庭中，為你保留一塊平安的「歌珊地」。神要透過保守你，向這個世界宣告祂的真實！
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">二、 世界的誘惑——看似讓步的妥協</h3>
+                    <p class="text-lg leading-loose text-gray-300">
+                        當蒼蠅佈滿埃及，法老受不了了。於是我們看到第二點：<span class="text-white font-bold">「世界的誘惑」</span>。法老提出了看似寬宏大量的妥協方案。
+                        第25節，法老說：「你們去，在這地祭祀你們的神吧！」 摩西拒絕了，因為埃及人厭惡以色列人的祭祀。如果我們用世界的標準來敬拜神，遲早會被世界的亂石打死。
+                        於是第28節法老又說：<span class="text-gold-300 font-bold">「我容你們去... 只是不要走得很遠。」</span> 
+                        這句話是撒但對基督徒最常說的謊言！<span class="text-white font-black underline decoration-red-500 decoration-4">「不要走得很遠！」</span> 世界告訴你：「你可以去教會，你可以信耶穌，但拜託，不要太認真、不要太狂熱、不要改變你的商業手段、不要改變你的娛樂方式。」
+                        這是一條無形的長繩，把你拴在埃及。摩西堅決要求「走三天的路程」，因為真實的信仰沒有妥協的餘地，一半的順服就是不順服。我們必須徹底與世界的價值觀切割！
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">三、 虛假的悔改——災禍過後的剛硬</h3>
+                    <p class="text-lg leading-loose text-gray-300">
+                        最後，我們看到法老<span class="text-white font-bold">「虛假的悔改」</span>。
+                        摩西答應為法老禱告。第31節：<span class="text-gold-300 font-bold">「耶和華就照摩西的話行，叫成群的蒼蠅離開法老和他的臣僕並他的百姓，一個也沒有留下。」</span> 恩典何等浩大，蒼蠅一隻都不剩。
+                        但第32節給了我們極大的警惕：<span class="text-red-400 font-bold">「這一次法老又硬著心，不容百姓去。」</span>
+                        法老要的從來不是神，他要的只是神把「麻煩」拿走。當痛苦消失，他妥協的動機就不見了，心立刻變硬。
+                        弟兄姊妹，這是不是我們有時候的寫照？我們在病痛中、在財務危機中痛哭悔改，但當危機一解除，我們是不是又立刻回到原來遠離神的生活？這叫作功利的懊悔，不叫真實的悔改。真實的悔改不是只求神「趕走蒼蠅」，而是願意讓神「接管生命」。
+                    </p>
+                </div>
+
+                <div class="bg-gold-500/5 border border-gold-500/20 p-8 rounded-3xl mt-20">
+                    <h4 class="text-xl font-bold text-gold-400 mb-6 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        應用與實踐
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <span class="text-gold-500 font-black text-2xl">01.</span>
+                            <p class="mt-2 text-gray-300">確信神的保護與主權：不隨世人恐慌，相信神能為我們劃出恩典的「歌珊地」。</p>
+                        </div>
+                        <div>
+                            <span class="text-gold-500 font-black text-2xl">02.</span>
+                            <p class="mt-2 text-gray-300">檢視生命中的「法老式妥協」：反省自己是否接受了世界「不要走太遠」的謊言。</p>
+                        </div>
+                        <div>
+                            <span class="text-gold-500 font-black text-2xl">03.</span>
+                            <p class="mt-2 text-gray-300">分辨真實與虛假的悔改：禱告是為了「趕走麻煩」，還是讓祂接管主權？</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-4 mt-20">
+                    <span class="px-6 py-2 bg-deep-700 rounded-full border border-white/10 text-gold-400 font-bold">區別 Distinction</span>
+                    <span class="px-6 py-2 bg-deep-700 rounded-full border border-white/10 text-gold-400 font-bold">妥協 Compromise</span>
+                    <span class="px-6 py-2 bg-deep-700 rounded-full border border-white/10 text-gold-400 font-bold">順服 Obedience</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="scroll-mt-32">
+            <div class="glass p-8 sm:p-12 rounded-3xl">
+                <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                    <div class="bg-gold-500 p-2 rounded-lg">
+                        <svg class="w-5 h-5 text-deep-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                    </div>
+                    回應行動
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-gold-500/20 flex-shrink-0 flex items-center justify-center text-gold-400 font-bold">1</div>
+                        <p class="text-gray-300 text-lg">本週具體找出一個你過去一直與世界價值觀妥協的領域，向神宣告你要「走三天的路程」徹底與之切割。</p>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-gold-500/20 flex-shrink-0 flex items-center justify-center text-gold-400 font-bold">2</div>
+                        <p class="text-gray-300 text-lg">在你的辦公桌或家中設立一個禱告祭壇，每天花10分鐘為該環境守望，求神的同在與屬世的焦慮劃清界線。</p>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-gold-500/20 flex-shrink-0 flex items-center justify-center text-gold-400 font-bold">3</div>
+                        <p class="text-gray-300 text-lg">做一次「不求好處」的認罪禱告，花時間單單為自己對神的不信和悖逆悔改，操練真實降伏於神的主權。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold-500 p-3 rounded-2xl">
+                    <svg class="w-6 h-6 text-deep-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold text-gradient">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-2xl relative border-l-4 border-gold-500">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">「廉價的恩典是傳揚不需悔改的赦免，不需教會管教的洗禮，不需認罪的聖餐。廉價的恩典是沒有門徒代價的恩典，是沒有十字架的恩典。」</p>
+                    <cite class="text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl relative border-l-4 border-gold-500">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">「如果你與世界妥協，世界就會把你吞噬。半個基督徒其實就是一個完整的世俗人。」</p>
+                    <cite class="text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl relative border-l-4 border-gold-500">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">「真理是不能妥協的。我們寧可失去整個世界，也不願失去哪怕是一丁點的真理。」</p>
+                    <cite class="text-gold-500 font-bold">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl relative border-l-4 border-gold-500">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">「悔改不僅僅是對過去的罪惡感到懊悔，而是全心全意地轉向神，並在生活中結出順服的果子。」</p>
+                    <cite class="text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl relative border-l-4 border-gold-500">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">「一個真實重生的基督徒，他的生命中必然有一條與世界清晰可見的分界線。這不是出於驕傲，而是出於神的聖潔。」</p>
+                    <cite class="text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl relative border-l-4 border-gold-500">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">「神之所以遲遲不挪去我們的苦難，往往是因為我們的心還未準備好在順境中依然尊祂為主。」</p>
+                    <cite class="text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-gray-500 text-sm italic py-8 border-t border-white/5">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Prayer Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center shadow-2xl shadow-gold-500/40 hover:scale-110 transition-transform z-40">
+        <svg class="w-6 h-6 text-deep-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

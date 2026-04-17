@@ -164,41 +164,43 @@
         }
 
         function createCard(file, bookName) {
-    // 取得去掉 .html 的純檔名
-    const fullFileName = file.name.replace('.html', '');
-    const parts = fullFileName.split('_');
-    
-    // 核心優化：從最後往回抓取
-    const docId = parts.length >= 4 ? parts.pop() : "NoDoc"; // 最後一段必為 ID 或 NoDoc
-    const title = parts.length >= 3 ? parts.pop() : '閱讀分享';  // 倒數第二段為標題
-    const chapter = parts.length >= 2 ? parts.pop() : bookName; // 倒數第三段為章節
-    const date = parts[0] || ''; // 第一段為日期
+            // 解析新版檔名格式：日期_章節_主題_ID.html
+            const fullFileName = file.name.replace('.html', '');
+            const parts = fullFileName.split('_');
+            
+            const date = parts[0] || '';
+            const chapter = parts[1] || bookName;
+            const title = parts[2] || '閱讀分享';
+            const docId = parts[3]; // 這是從 GAS 傳過來的 Google 文件 ID
 
-    let downloadSection = "";
-    if (docId && docId !== "NoDoc") {
-        downloadSection = `
-            <div class="flex gap-2 mt-5 pt-4 border-t border-white/10">
-                <a href="https://docs.google.com/document/d/${docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/30">WORD 下載</a>
-                <a href="https://docs.google.com/document/d/${docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300 hover:bg-red-600 hover:text-white border border-red-500/30">PDF 下載</a>
-            </div>
-        `;
-    }
+            // 只有當 docId 存在且不是 "NoDoc" 時才顯示下載鈕
+            let downloadSection = "";
+            if (docId && docId !== "NoDoc") {
+                downloadSection = `
+                    <div class="flex gap-2 mt-5 pt-4 border-t border-white/10">
+                        <a href="https://docs.google.com/document/d/${docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/30">WORD 下載</a>
+                        <a href="https://docs.google.com/document/d/${docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300 hover:bg-red-600 hover:text-white border border-red-500/30">PDF 下載</a>
+                    </div>
+                `;
+            }
 
-    return `
-        <div class="glass-card group rounded-2xl p-8 flex flex-col justify-between">
-            <a href="${file.path}" class="block">
-                <div class="text-yellow-600/50 text-xs font-mono tracking-[0.2em] mb-4 uppercase">${date}</div>
-                <h3 class="text-3xl font-black text-orange-50/90 mb-3 group-hover:text-yellow-400 transition-colors leading-tight tracking-tight">
-                    ${title}
-                </h3>
-                <p class="text-lg text-gray-400/70 font-medium tracking-wide">
-                    ${chapter}
-                </p>
-            </a>
-            ${downloadSection}
-        </div>
-    `;
-}
+            return `
+                <div class="glass-card group rounded-2xl p-8 flex flex-col justify-between">
+                    <a href="${file.path}" class="block">
+                        <div class="text-yellow-600/50 text-xs font-mono tracking-[0.2em] mb-4 uppercase">${date}</div>
+                        
+                        <h3 class="text-3xl font-black text-orange-50/90 mb-3 group-hover:text-yellow-400 transition-colors leading-tight tracking-tight">
+                            ${title}
+                        </h3>
+                        
+                        <p class="text-lg text-gray-400/70 font-medium tracking-wide">
+                            ${chapter}
+                        </p>
+                    </a>
+                    ${downloadSection}
+                </div>
+            `;
+        }
 
         // 啟動加載
         loadOldTestament();

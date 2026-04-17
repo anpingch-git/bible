@@ -164,18 +164,24 @@
         }
 
         function createCard(file, bookName) {
-    // 取得去掉 .html 的純檔名
     const fullFileName = file.name.replace('.html', '');
+    // 使用底線拆分
     const parts = fullFileName.split('_');
     
-    // 核心優化：從最後往回抓取
-    const docId = parts.length >= 4 ? parts.pop() : "NoDoc"; // 最後一段必為 ID 或 NoDoc
-    const title = parts.length >= 3 ? parts.pop() : '閱讀分享';  // 倒數第二段為標題
-    const chapter = parts.length >= 2 ? parts.pop() : bookName; // 倒數第三段為章節
-    const date = parts[0] || ''; // 第一段為日期
+    // 1. 取得 ID (最後一段)
+    const docId = parts.length >= 4 ? parts[parts.length - 1] : "NoDoc";
+    
+    // 2. 取得標題 (倒數第二段)
+    const title = parts.length >= 3 ? parts[parts.length - 2] : "閱讀分享";
+    
+    // 3. 取得章節 (倒數第三段)
+    const chapter = parts.length >= 2 ? parts[parts.length - 3] : bookName;
+    
+    // 4. 取得日期 (第一段)
+    const date = parts[0] || "";
 
     let downloadSection = "";
-    if (docId && docId !== "NoDoc") {
+    if (docId && docId !== "NoDoc" && docId.length > 20) { // 增加 ID 長度檢查防呆
         downloadSection = `
             <div class="flex gap-2 mt-5 pt-4 border-t border-white/10">
                 <a href="https://docs.google.com/document/d/${docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/30">WORD 下載</a>

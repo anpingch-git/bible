@@ -22,7 +22,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s ease;
         }
         .glass-card:hover { border-color: rgba(212, 175, 55, 0.4); transform: translateY(-4px); }
-        .btn-download { font-size: 10px; padding: 4px 10px; border-radius: 4px; transition: all 0.2s; text-transform: uppercase; font-weight: bold; }
+        .btn-download { font-size: 10px; padding: 4px 10px; border-radius: 4px; transition: all 0.2s; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -32,7 +32,7 @@
     <div class="relative z-10">
         <div class="w-full h-[40vh] flex flex-col justify-end p-8 md:p-20">
             <a href="index.html" class="mb-10 w-fit glass-card px-5 py-2 rounded-full text-sm font-medium text-white/80 hover:text-white inline-flex items-center gap-2">
-                ← 返回圖書館首頁
+                ← 返回首頁
             </a>
             <div class="max-w-4xl">
                 <h1 class="text-6xl md:text-8xl font-black gold-gradient tracking-widest mb-4">舊約全書</h1>
@@ -42,7 +42,7 @@
 
         <main class="max-w-7xl mx-auto px-8 pb-32">
             <div id="gallery" class="space-y-20">
-                <div id="loading" class="text-center py-20 text-gray-400 animate-pulse">正在讀取卷軸...</div>
+                <div id="loading" class="text-center py-20 text-gray-400 animate-pulse">正在開啟研經卷軸...</div>
             </div>
         </main>
     </div>
@@ -58,19 +58,12 @@
                 const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${BASE_PATH}`);
                 if (!response.ok) throw new Error();
                 const folders = await response.json();
-                
                 document.getElementById('loading').remove();
-
                 for (const folder of folders) {
                     if (folder.type === 'dir') {
                         const resFiles = await fetch(folder.url);
                         const files = await resFiles.json();
-                        
-                        // 排序：最新的日期排在最前面
-                        const htmlFiles = files
-                            .filter(f => f.name.endsWith('.html'))
-                            .sort((a, b) => b.name.localeCompare(a.name));
-
+                        const htmlFiles = files.filter(f => f.name.endsWith('.html')).sort((a, b) => b.name.localeCompare(a.name));
                         if (htmlFiles.length > 0) renderSection(folder.name, htmlFiles);
                     }
                 }
@@ -94,28 +87,23 @@
             gallery.appendChild(section);
         }
 
-        /**
-         * 🚀 核心優化：解決 ID 內含底線的解析邏輯
-         */
         function createCard(file, bookName) {
             const fullFileName = file.name.replace('.html', '');
             const parts = fullFileName.split('_');
-            
-            // 採用「前三段固定，後段全拿」的邏輯
             const date = parts[0] || "";
-            const chapter = parts[1] || bookName;
-            const title = parts[2] || "閱讀分享";
-            
-            // 關鍵修正：將第三段之後的所有內容重新用底線結合，還原完整的 Google ID
+            // 美化：章節橫線變冒號
+            const chapter = (parts[1] || bookName).replace(/-/g, ':');
+            // 美化：標題橫線變空格
+            let title = (parts[2] || "閱讀分享").replace(/-/g, ' ');
+            // 關鍵修正：組合所有 ID 部分
             const docId = parts.slice(3).join('_');
 
             let downloadSection = "";
-            // 檢查還原後的 ID 長度是否正常
             if (docId && docId !== "NoDoc" && docId.length > 20) {
                 downloadSection = `
                     <div class="flex gap-2 mt-5 pt-4 border-t border-white/10">
-                        <a href="https://docs.google.com/document/d/${docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/30">Word 下載</a>
-                        <a href="https://docs.google.com/document/d/${docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300 hover:bg-red-600 hover:text-white border border-red-500/30">PDF 下載</a>
+                        <a href="https://docs.google.com/document/d/${docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/30">Word</a>
+                        <a href="https://docs.google.com/document/d/${docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300 hover:bg-red-600 hover:text-white border border-red-500/30">PDF</a>
                     </div>
                 `;
             }
@@ -124,18 +112,13 @@
                 <div class="glass-card group rounded-2xl p-8 flex flex-col justify-between">
                     <a href="${file.path}" class="block">
                         <div class="text-yellow-600/50 text-xs font-mono mb-4">${date}</div>
-                        <h3 class="text-3xl font-black text-orange-50/90 mb-3 group-hover:text-yellow-400 transition-colors leading-tight">
-                            ${title}
-                        </h3>
-                        <p class="text-lg text-gray-400/70 font-medium">
-                            ${chapter}
-                        </p>
+                        <h3 class="text-2xl font-black text-orange-50/90 mb-3 group-hover:text-yellow-400 transition-colors leading-tight">${title}</h3>
+                        <p class="text-lg text-gray-400/70 font-medium">${chapter}</p>
                     </a>
                     ${downloadSection}
                 </div>
             `;
         }
-
         loadOldTestament();
     </script>
 </body>

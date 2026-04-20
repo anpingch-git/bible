@@ -92,7 +92,8 @@
             const parts = fullFileName.split('_');
             const date = parts[0] || "";
             // 美化：章節橫線變冒號
-            const chapter = (parts[1] || bookName).replace(/-/g, ':');
+            // const chapter = (parts[1] || bookName).replace(/-/g, ':');
+			const chapter = parts[1] || bookName;
             // 美化：標題橫線變空格
             let title = (parts[2] || "閱讀分享").replace(/-/g, ' ');
             // 關鍵修正：組合所有 ID 部分

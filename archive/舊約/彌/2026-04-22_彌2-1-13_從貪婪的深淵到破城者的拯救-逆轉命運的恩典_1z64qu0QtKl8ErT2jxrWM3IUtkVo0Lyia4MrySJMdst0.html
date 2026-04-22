@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彌2:1-13:從貪婪的深淵到破城者的拯救：逆轉命運的恩典</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        deepNavy: '#050a14',
+                        accentBlue: '#3b82f6',
+                        cardBg: 'rgba(20, 25, 40, 0.7)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050a14;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+            margin: 4rem 0;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .sticky-nav {
+            backdrop-filter: blur(15px);
+            background: rgba(5, 10, 20, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .quote-icon {
+            opacity: 0.1;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 4rem;
+        }
+        .pulse-btn {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+    </style>
+</head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="sticky-nav fixed top-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-gold font-bold text-lg md:text-xl tracking-tighter font-display">彌迦書 2:1-13</div>
+        <div class="flex gap-4 md:gap-8 text-sm font-medium tracking-widest uppercase">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/dab2b421-aa8f-4a8c-8150-74e550dab2f8' alt='Banner' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-deepNavy via-deepNavy/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h2 class="text-gold font-bold tracking-widest mb-4 animate-fade-in text-lg md:text-xl">彌 2:1-13</h2>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 gradient-text leading-tight">從貪婪的深淵到<br/>破城者的拯救</h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light italic">「逆轉命運的恩典」</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 md:px-12 pb-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-20">
+            <div class="glass-card p-8 md:p-16 relative overflow-hidden">
+                <div class="flex items-center gap-4 mb-8">
+                    <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
+                    <h2 class="text-3xl font-display font-bold">開路禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-200 font-light first-letter:text-5xl first-letter:font-bold first-letter:text-gold first-letter:mr-3 first-letter:float-left">
+                    主啊，我們來到祢的面前，承認我們的心時常被世俗的貪婪與虛假的平安所蒙蔽。求祢的聖靈光照我們，如同先知彌迦時代的真光，揭露我們在暗處圖謀的自私與驕傲。主啊，賜給我們順服的耳朵，不再抗拒祢公義的責備，而是勇敢面對祢真理的檢驗。當我們深陷於罪惡與環境的圍困時，求祢作我們那「破城者」，親自走在我們前頭，打破一切死亡與罪惡的門閂，引領我們進入祢應許的豐盛草場。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="py-12">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 15.75h16.5m-16.5 3.75h16.5M3.75 4.5h16.5m-16.5 3.75h16.5M3.75 8.25h16.5M3.75 12h16.5" /></svg>
+                <h2 class="text-3xl font-display font-bold">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#section-1" class="glass-card p-6 hover:border-gold/50 transition-all group">
+                    <span class="text-gold font-bold block mb-2 opacity-60">第一段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">當貪婪成為預謀：<br/>上帝公義的審判</h3>
+                    <div class="mt-4 text-xs tracking-widest text-slate-500 uppercase">彌 2:1-5</div>
+                </a>
+                <a href="#section-2" class="glass-card p-6 hover:border-gold/50 transition-all group">
+                    <span class="text-gold font-bold block mb-2 opacity-60">第二段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">拒絕真理的耳朵：<br/>虛假平安的網羅</h3>
+                    <div class="mt-4 text-xs tracking-widest text-slate-500 uppercase">彌 2:6-11</div>
+                </a>
+                <a href="#section-3" class="glass-card p-6 hover:border-gold/50 transition-all group">
+                    <span class="text-gold font-bold block mb-2 opacity-60">第三段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">破城者的前導：<br/>絕望中的榮耀復興</h3>
+                    <div class="mt-4 text-xs tracking-widest text-slate-500 uppercase">彌 2:12-13</div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-32">
+                <!-- Segment 1 -->
+                <div id="section-1" class="scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="h-px w-12 bg-gold"></span>
+                        <h3 class="text-2xl font-display font-bold text-gold">第一段：上帝公義的審判 (2:1-5)</h3>
+                    </div>
+                    <div class="bg-slate-900/50 border-l-4 border-gold p-8 rounded-r-2xl mb-12 italic text-lg text-slate-300">
+                        「禍哉，那些在床上圖謀罪孽、造作奸惡的！...我籌劃災禍降與這族；這禍在你們的頸項上不能解脫。」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass-card p-8">
+                            <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                                關鍵原文解析
+                            </h4>
+                            <p><strong class="text-white">籌劃/圖謀 (חָשַׁב - chashab)</strong>：惡人夜間在床上「圖謀」罪孽；而上帝也用同一個字回應，說祂正在「籌劃」災禍。這顯明了上帝報應的精確性。</p>
+                        </div>
+                        <div class="glass-card p-8">
+                            <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="font-bold text-white mb-2">當權力與貪婪結合時，上帝的公義如何介入？</p>
+                            <p class="text-sm opacity-80">上帝的公義是不會沉睡的。罪惡往往有一種反噬的力量，上帝宣告祂的審判如同無法解脫的枷鎖。</p>
+                        </div>
+                        <div class="glass-card p-8 md:col-span-2 bg-gradient-to-br from-slate-900 to-deepNavy">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                                <div>
+                                    <h4 class="text-gold font-bold mb-4 uppercase tracking-widest text-xs">實例與故事</h4>
+                                    <p class="text-slate-300">精明的企業家利用漏洞併購小公司，奪取生計。最終企業因貪腐崩塌。人在暗處的算計，終究敵不過上帝在明處的公義天平。</p>
+                                </div>
+                                <div class="border-l border-slate-700 pl-8">
+                                    <h4 class="text-gold font-bold mb-4 uppercase tracking-widest text-xs">名言佳句</h4>
+                                    <blockquote class="text-xl font-display italic text-white">「上帝的公義絕不是一種抽象的概念，而是祂對這個被罪惡蹂躪的世界所採取的最深沉的愛與干預。」</blockquote>
+                                    <cite class="block mt-4 text-sm text-gold">— 提摩太·凱勒</cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segment 2 -->
+                <div id="section-2" class="scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="h-px w-12 bg-accentBlue"></span>
+                        <h3 class="text-2xl font-display font-bold text-accentBlue">第二段：虛假平安的網羅 (2:6-11)</h3>
+                    </div>
+                    <div class="bg-slate-900/50 border-l-4 border-accentBlue p-8 rounded-r-2xl mb-12 italic text-lg text-slate-300">
+                        「他們說：你們不可說預言...若有人心存虛假，用謊言說：我要向你說清酒濃酒的預言，那人就必作這民的先知。」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass-card p-8">
+                            <h4 class="text-accentBlue font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                                關鍵原文解析
+                            </h4>
+                            <p><strong class="text-white">說預言 (נָטַף - nataph)</strong>：字面意思是「滴下」。假先知試圖阻止彌迦「滴下」責備。人心的偏好：拒絕真理的重擔，只想要悅耳的「滴下」。</p>
+                        </div>
+                        <div class="glass-card p-8">
+                            <h4 class="text-accentBlue font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="font-bold text-white mb-2">我們為何常常喜歡聽「清酒濃酒」的假預言？</p>
+                            <p class="text-sm opacity-80">人類天生逃避痛苦。假先知提供「廉價的恩典」。真正的信仰不是尋找舒適圈，而是願意讓上帝的道來修剪我們。</p>
+                        </div>
+                        <div class="glass-card p-8 md:col-span-2 bg-gradient-to-br from-slate-900 to-deepNavy">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                                <div>
+                                    <h4 class="text-accentBlue font-bold mb-4 uppercase tracking-widest text-xs">實例與故事</h4>
+                                    <p class="text-slate-300">癌症病人拒絕誠實醫生的手術建議，轉向庸醫喝甜茶。短暫的虛假平安換來的是死亡。靈性上的假先知給的是麻醉劑，而非解藥。</p>
+                                </div>
+                                <div class="border-l border-slate-700 pl-8">
+                                    <h4 class="text-accentBlue font-bold mb-4 uppercase tracking-widest text-xs">名言佳句</h4>
+                                    <blockquote class="text-xl font-display italic text-white">「廉價的恩典是我們教會的死敵...是沒有十字架的恩典。」</blockquote>
+                                    <cite class="block mt-4 text-sm text-accentBlue">— 潘霍華</cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segment 3 -->
+                <div id="section-3" class="scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="h-px w-12 bg-white"></span>
+                        <h3 class="text-2xl font-display font-bold text-white">第三段：破城者的前導 (2:12-13)</h3>
+                    </div>
+                    <div class="bg-slate-900/80 border-l-4 border-white p-8 rounded-r-2xl mb-12 italic text-lg text-slate-100">
+                        「開路的在他們前面上去；他們直闖過城門...他們的王在前面行；耶和華引導他們。」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass-card p-8">
+                            <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                                關鍵原文解析
+                            </h4>
+                            <p><strong class="text-gold">開路的/破城者 (הַפֹּרֵץ - ha-porets)</strong>：意思是「打破、突破、闖過」。耶和華親自打破城門，帶領祂的百姓突破重圍。這是一個極具力量的字眼。</p>
+                        </div>
+                        <div class="glass-card p-8">
+                            <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="font-bold text-white mb-2">認識上帝是「破城者」對我們有什麼意義？</p>
+                            <p class="text-sm opacity-80">基督藉著十字架和復活，打破了罪惡與死亡的牢籠。無論面臨多大的困境，只要跟隨這位王，就能經歷突破。</p>
+                        </div>
+                        <div class="glass-card p-8 md:col-span-2 bg-gradient-to-br from-slate-800 to-deepNavy">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                                <div>
+                                    <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">實例與故事</h4>
+                                    <p class="text-slate-200">1914年薛克頓在南極船毀人困，他親自翻越冰川山脈打破死局。耶穌基督就是那位屬靈的「薛克頓」，祂闖過陰間為我們打開永生大門。</p>
+                                </div>
+                                <div class="border-l border-slate-600 pl-8">
+                                    <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">名言佳句</h4>
+                                    <blockquote class="text-xl font-display italic text-white">「基督是那位『破城者』，祂已經粉碎了罪惡的枷鎖...只要王走在我們前頭，就沒有任何障礙能攔阻前進。」</blockquote>
+                                    <cite class="block mt-4 text-sm text-gold">— 司布真</cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="py-20 max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" /></svg>
+                <h2 class="text-4xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-lg max-w-none text-slate-300 space-y-8">
+                <p class="text-2xl font-light text-slate-100">弟兄姊妹，今天我們要進入彌迦書第二章。這是一段充滿張力的經文，它帶我們看見人類最深沉的黑暗，但也向我們展現了上帝最榮耀的拯救。</p>
+                <p class="text-xl font-bold border-l-4 border-gold pl-4 text-white">今日主題：從貪婪的深淵到破城者的拯救：逆轉命運的恩典。</p>
+
+                <div class="space-y-6 pt-8">
+                    <h3 class="text-3xl font-display font-bold text-gold">一、 當貪婪成為預謀：上帝公義的審判</h3>
+                    <p>在經文的開始，先知彌迦用一個嚴厲的詞「禍哉」打破了夜的寧靜。<span class="text-white font-bold">「禍哉，那些在床上圖謀罪孽、造作奸惡的！天一發亮，因手有能力就行出來了。」</span></p>
+                    <p>這不是一時衝動，這是一種類似冷戰的「預謀」。希伯來文的「圖謀」（chashab）指的是精心的策劃。當時的權貴在夜晚失眠，不是為了思想上帝的律法，而是在算計如何奪取。但上帝說：人算計窮人，上帝就籌劃審判。</p>
+                </div>
+
+                <div class="space-y-6 pt-8">
+                    <h3 class="text-3xl font-display font-bold text-gold">二、 拒絕真理的耳朵：虛假平安的網羅</h3>
+                    <p>面對先知警告，這些人說：<span class="text-white font-bold">「你們不可說預言；不可不住地羞辱我們。」</span></p>
+                    <p>他們喜歡聽「清酒濃酒」的預言。潘霍華稱這為<span class="text-gold font-bold">「廉價的恩典」</span>。我們常常像那個諱疾醫醫的病人，寧願聽庸醫說「你很健康」，也不願意讓真正的大醫師切除我們靈魂上的毒瘤。虛假的平安無法帶來真正的安息，唯有誠實面對上帝的真理，才是蒙恩的起點。</p>
+                </div>
+
+                <div class="space-y-6 pt-8">
+                    <h3 class="text-3xl font-display font-bold text-gold">三、 破城者的前導：絕望中的榮耀復興</h3>
+                    <p>彌迦書最奇妙的地方在於，在最黑暗的審判宣告之後，上帝的光芒突然破雲而出！<span class="text-white font-bold">「開路的在他們前面上去；他們直闖過城門...他們的王在前面行。」</span></p>
+                    <p class="text-xl text-white font-bold p-6 glass-card border-gold/30">這裡的「開路的」，原文是 ha-porets，意思是「破城者」。</p>
+                    <p>這就是福音！這位「破城者」是誰？就是我們的主耶穌基督！祂親自進入死亡的陰間，在復活的那天，這位「破城者」打破了死亡的門閂！你現在的生活是否也面臨著看似無法突破的城門？不要看那高聳的城牆，要看那位走在你前面的「破城者」！</p>
+                </div>
+            </article>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Applications & Action -->
+        <section class="py-12 bento-grid">
+            <div class="col-span-12 md:col-span-7 glass-card p-10 bg-gradient-to-br from-gold/10 to-transparent border-gold/20">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" /></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">01</span>
+                        <p><strong class="text-white">檢視內心的貪婪與權力欲：</strong> 我們是否在暗處「圖謀」如何利用他人來成就自己的利益？</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">02</span>
+                        <p><strong class="text-white">分辨真理與虛假平安：</strong> 重新擁抱聖經中那些「令人不舒服」的警告與責備。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">03</span>
+                        <p><strong class="text-white">仰望基督的突破：</strong> 不要倚靠自己的力量突圍，而是專注跟隨那位「開路者」。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-12 md:col-span-5 glass-card p-10 flex flex-col justify-center items-center text-center">
+                <div class="text-gold mb-4 font-black text-6xl">3</div>
+                <div class="text-xl font-display font-bold tracking-widest text-white uppercase">結論關鍵字</div>
+                <div class="mt-6 flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-white">貪婪</span>
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-white">審判</span>
+                    <span class="px-4 py-2 bg-gold/20 rounded-full text-gold font-bold">突破</span>
+                </div>
+            </div>
+            <div class="col-span-12 glass-card p-10 border-accentBlue/20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                    <svg class="w-8 h-8 text-accentBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    回應與實踐行動
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/5">
+                        <div class="text-accentBlue font-bold text-lg mb-3">認罪與賠償</div>
+                        <p class="text-sm opacity-80">具體求聖靈光照，若曾在職場、金錢上佔人便宜，向神認罪並做出補償。</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/5">
+                        <div class="text-accentBlue font-bold text-lg mb-3">咀嚼「扎心」經文</div>
+                        <p class="text-sm opacity-80">本週靈修研讀先知書中嚴厲的教導，並寫下一句刺透自己心靈的真理。</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/5">
+                        <div class="text-accentBlue font-bold text-lg mb-3">為「城門」禱告</div>
+                        <p class="text-sm opacity-80">寫下無法跨越的障礙，每天宣告彌迦書2:13，求「破城者」在前頭行。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Carousel/List -->
+        <section id="quotes" class="py-20">
+            <div class="flex items-center justify-between mb-12">
+                <div class="flex items-center gap-4">
+                    <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
+                    <h2 class="text-3xl font-display font-bold">屬靈前輩佳句</h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 relative">
+                    <div class="quote-icon">"</div>
+                    <p class="text-slate-200 mb-4 relative z-10">「廉價的恩典是我們教會的死敵。廉價的恩典就是宣揚不需要悔改的赦免......是沒有十字架的恩典。」</p>
+                    <div class="text-gold text-sm font-bold">— 潘霍華，《追隨基督》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 relative">
+                    <div class="quote-icon">"</div>
+                    <p class="text-slate-200 mb-4 relative z-10">「基督是那位『破城者』，祂已經粉碎了罪惡的枷鎖、死亡的牢門和地獄的銅牆鐵壁。」</p>
+                    <div class="text-gold text-sm font-bold">— 司布真，《早晚靈修》</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 relative">
+                    <div class="quote-icon">"</div>
+                    <p class="text-slate-200 mb-4 relative z-10">「人類的心靈是一個製造偶像的工廠。我們總是企圖將上帝的恩賜變成取代上帝本身的終極追求。」</p>
+                    <div class="text-gold text-sm font-bold">— 約翰·加爾文，《基督教要義》</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 relative">
+                    <div class="quote-icon">"</div>
+                    <p class="text-slate-200 mb-4 relative z-10">「上帝的公義絕不是一種抽象的概念，而是祂對這個被罪惡蹂躪的世界所採取的最深沉的愛與干預。」</p>
+                    <div class="text-gold text-sm font-bold">— 提摩太·凱勒，《慷慨的公義》</div>
+                </div>
+                <!-- More quotes... -->
+                <div class="glass-card p-8 relative">
+                    <div class="quote-icon">"</div>
+                    <p class="text-slate-200 mb-4 relative z-10">「如果我們不願意面對上帝真理的刺痛，我們就永遠無法經歷祂恩典的醫治。」</p>
+                    <div class="text-gold text-sm font-bold">— 陶恕，《神之追尋》</div>
+                </div>
+                <div class="glass-card p-8 relative">
+                    <div class="quote-icon">"</div>
+                    <p class="text-slate-200 mb-4 relative z-10">「福音的本質是：我們比自己所敢承認的更敗壞；但同時，我們在基督裡卻比自己所敢盼望的更蒙愛。」</p>
+                    <div class="text-gold text-sm font-bold">— 提摩太·凱勒，《婚姻的意義》</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Message -->
+        <div class="mt-12 text-center text-slate-500 text-sm italic">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold text-deepNavy rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform pulse-btn z-[100]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" /></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for browsers that don't support scroll-smooth
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Offset for sticky header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

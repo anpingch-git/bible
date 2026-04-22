@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽2:6-21:當主降臨的日子：拆毀虛浮的驕傲，唯獨耶和華被尊崇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fff9eb',
+                            100: '#fbebc4',
+                            200: '#f8d98d',
+                            300: '#f4c153',
+                            400: '#f0ac2a',
+                            500: '#e38e11',
+                            600: '#c66d0b',
+                            700: '#a54f0d',
+                            800: '#873f11',
+                            900: '#703512',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161a',
+                            accent: '#1f1f27'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f4c153 0%, #e38e11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f4c153;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(10,10,12,0.4), rgba(10,10,12,1));
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f4c153;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-gold-400 font-display font-bold tracking-wider text-sm md:text-base">
+                賽2:6-21
+            </div>
+            <div class="flex space-x-6 md:space-x-10 text-sm uppercase tracking-widest font-medium">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner / Hero Section -->
+    <header class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/85555e28-f1f8-4d77-9779-51c74ebda88a' alt='media_1' class="w-full h-full object-cover scale-105 animate-pulse-slow opacity-60" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="inline-block px-4 py-1 rounded-full border border-gold-500/30 text-gold-400 text-xs md:text-sm tracking-[0.2em] mb-6 uppercase">Isaiah 2:6-21</span>
+            <h1 class="text-4xl md:text-7xl font-display font-black leading-tight mb-8">
+                當主降臨的日子：<br/>
+                <span class="text-gradient">拆毀虛浮的驕傲</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 font-light tracking-wide max-w-2xl mx-auto">
+                唯獨耶和華被尊崇。在那日，眼目高傲的必降為卑，性情狂傲的都必屈膝。
+            </p>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-gold-900 to-gold-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+            <div class="relative glass rounded-2xl p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-20 h-20 flex-shrink-0 flex items-center justify-center rounded-full bg-gold-900/30 border border-gold-500/50">
+                    <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-display font-bold text-gold-400 mb-6 flex items-center gap-3">
+                        禱告
+                    </h2>
+                    <p class="text-xl md:text-2xl leading-relaxed text-gray-200 italic font-light">
+                        「榮耀與威嚴的主，我們來到祢面前，承認我們的心常常偏離祢，去倚靠眼見的財富、勢力與人的聰明。我們在這個充滿偶像的世界中，不知不覺建立了自己的高塔與堡壘，企圖尋找虛假的安全感。主啊，求祢的光照進我們生命的最深處，拆毀我們心中一切虛浮的驕傲。求祢赦免我們拜偶像的罪，讓我們看清這世上一切的受造物終必朽壞，唯有祢是我們永恆的磐石。願祢在我們心中被高舉，願我們在祢的威嚴面前存敬畏謙卑的心，單單仰望祢的拯救。奉主耶穌基督的聖名禱告，阿們。」
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation Outline Buttons -->
+        <section id="outline" class="space-y-10">
+            <div class="flex flex-col items-center text-center">
+                <h2 class="text-4xl font-display font-bold mb-4 tracking-tight">大綱導覽</h2>
+                <div class="h-1 w-20 bg-gold-500 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="group relative p-8 glass rounded-2xl border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                        <span class="text-9xl font-black italic">01</span>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="text-gold-500 text-sm font-bold tracking-widest block mb-4 uppercase">Isaiah 2:6-9</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">被神棄絕的根源——以世俗偶像取代真神</h3>
+                        <div class="mt-6 flex items-center text-xs text-gold-600 font-bold tracking-widest uppercase">
+                            查看解析 <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#section-2" class="group relative p-8 glass rounded-2xl border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                        <span class="text-9xl font-black italic">02</span>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="text-gold-500 text-sm font-bold tracking-widest block mb-4 uppercase">Isaiah 2:10-17</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">主降臨的日子——一切受造的驕傲必被降卑</h3>
+                        <div class="mt-6 flex items-center text-xs text-gold-600 font-bold tracking-widest uppercase">
+                            查看解析 <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#section-3" class="group relative p-8 glass rounded-2xl border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                        <span class="text-9xl font-black italic">03</span>
+                    </div>
+                    <div class="relative z-10">
+                        <span class="text-gold-500 text-sm font-bold tracking-widest block mb-4 uppercase">Isaiah 2:18-21</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">榮耀顯現的結局——拋棄虛無，直面神的威嚴</h3>
+                        <div class="mt-6 flex items-center text-xs text-gold-600 font-bold tracking-widest uppercase">
+                            查看解析 <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- In-depth Analysis (Component Based) -->
+        <section class="space-y-32">
+            
+            <!-- Section 1 Detail -->
+            <div id="section-1" class="scroll-mt-32 space-y-12">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gold-600 rounded-xl flex items-center justify-center text-black font-black">1</div>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">第一段：被神棄絕的根源</h2>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="md:col-span-2 glass rounded-3xl p-8 md:p-12 border-l-4 border-l-gold-500">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-4">引用經文</h4>
+                        <p class="text-xl md:text-2xl leading-relaxed font-serif italic text-white">
+                            「耶和華，你離棄了你百姓雅各家，是因他們充滿了東方的風俗，作觀兆的，像非利士人一樣，並與外邦人擊掌。他們的國滿了金銀，財寶也毫無窮盡；他們的地滿了馬匹，車輛也毫無窮盡。他們的地滿了偶像；他們跪拜自己手所造的，就是自己指頭所做的。卑賤人屈膝；尊貴人下拜；所以不可原諒他們。」
+                        </p>
+                    </div>
+                    <div class="glass rounded-3xl p-8">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">關鍵原文 KEYWORDS</h4>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-2xl font-display font-bold text-white">נָטַשׁ</span>
+                                    <span class="text-gray-500 text-sm">natash</span>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-1">離棄：指「放棄、拒絕、撇下」。神任憑百姓陷入自己選擇的錯誤。</p>
+                            </div>
+                            <div>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-2xl font-display font-bold text-white">אֱלִיל</span>
+                                    <span class="text-gray-500 text-sm">elil</span>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-1">偶像：字根含有「虛無、無價值」的意思。諷刺神明毫無實質。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl p-8 md:p-10">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">關鍵問題解析</h4>
+                        <div class="space-y-4">
+                            <p class="text-white font-bold text-lg">為什麼倚靠財富、力量在神眼中與拜偶像無異？</p>
+                            <p class="text-gray-400 leading-relaxed">當受造物取代了創造主，成為心中的終極倚靠時，它就成了偶像。今日我們雖然不拜木石，但如果安全感建立在存款、事業或政治上，我們同樣陷入了罪中。</p>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl p-8 md:p-10 bg-gradient-to-br from-dark-card to-gold-900/10">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">生命例證</h4>
+                        <p class="text-gray-300 italic">一位成功的企業家在重病時意識到，他花了一輩子建造的「安全感系統」（金錢、人脈、科技），在生死面前完全是不堪一擊的虛假偶像。</p>
+                    </div>
+                </div>
+                <div class="text-center p-8 glass rounded-2xl border-dashed border-gold-900 border-2">
+                    <p class="text-2xl font-serif text-white">「人心是一座永不休止的偶像製造廠。」</p>
+                    <p class="text-gold-500 mt-4 font-display">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+            </div>
+
+            <!-- Section 2 Detail -->
+            <div id="section-2" class="scroll-mt-32 space-y-12">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gold-600 rounded-xl flex items-center justify-center text-black font-black">2</div>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">第二段：主降臨的日子</h2>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="glass rounded-3xl p-8 bg-dark-accent">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">關鍵原文 KEYWORDS</h4>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-2xl font-display font-bold text-white">שָׁפֵל</span>
+                                    <span class="text-gray-500 text-sm">shaphel</span>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-1">降為卑：被壓低、下沉、屈辱。神對人類驕傲的最終審判。</p>
+                            </div>
+                            <div>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-2xl font-display font-bold text-white">שָׂגַב</span>
+                                    <span class="text-gray-500 text-sm">sagab</span>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-1">尊崇：被高舉、安全。強調唯有神是真正崇高無法被超越的。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 glass rounded-3xl p-8 md:p-12 border-l-4 border-l-gold-500">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-4">引用經文</h4>
+                        <p class="text-xl md:text-2xl leading-relaxed font-serif italic text-white">
+                            「到那日，眼目高傲的必降為卑；性情狂傲的都必屈膝；惟獨耶和華被尊崇。必有萬軍耶和華降罰的一個日子，要臨到驕傲狂妄的，一切自高的都必降為卑；又臨到黎巴嫩高大的香柏樹和巴珊的橡樹；又臨到一切高山的峻嶺；又臨到高臺和堅固城牆；又臨到他施的船隻並一切可愛的美物。」
+                        </p>
+                    </div>
+                    <div class="glass rounded-3xl p-8 md:p-10 bg-gold-900/10">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">歷史縮影</h4>
+                        <p class="text-gray-300 italic">1912年鐵達尼號的沉沒是人類驕傲被降卑的歷史縮影。這艘「連上帝也沉不了的船」在冰山面前瞬間屈膝，象徵人類科技在造物主面前的渺小。</p>
+                    </div>
+                    <div class="glass rounded-3xl p-8 md:p-10">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">關鍵問題解析</h4>
+                        <p class="text-white font-bold text-lg mb-4">香柏樹、高山、城牆與船隻象徵什麼？</p>
+                        <p class="text-gray-400 leading-relaxed">這些代表人類引以為傲的資源、地勢、軍事與經濟。神針對這些，是因為人類常藉此證明自我的全能。主降臨的日子，將拆毀一切使人驕傲的依靠。</p>
+                    </div>
+                </div>
+                <div class="text-center p-8 glass rounded-2xl border-dashed border-gold-900 border-2">
+                    <p class="text-2xl font-serif text-white">「除非我們看到上帝的威嚴，否則我們永遠無法看見自己的渺小。」</p>
+                    <p class="text-gold-500 mt-4 font-display">— 陶恕 (A.W. Tozer)</p>
+                </div>
+            </div>
+
+            <!-- Section 3 Detail -->
+            <div id="section-3" class="scroll-mt-32 space-y-12">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gold-600 rounded-xl flex items-center justify-center text-black font-black">3</div>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">第三段：榮耀顯現的結局</h2>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="md:col-span-2 glass rounded-3xl p-8 md:p-12 border-l-4 border-l-gold-500">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-4">引用經文</h4>
+                        <p class="text-xl md:text-2xl leading-relaxed font-serif italic text-white">
+                            「偶像必全然廢棄。耶和華興起，使地大震動的時候，人就進入石洞，進入土穴，躲避耶和華的驚嚇和他威嚴的榮光。到那日，人必將為拜而造的金偶像、銀偶像拋給田鼠和蝙蝠。」
+                        </p>
+                    </div>
+                    <div class="glass rounded-3xl p-8 bg-dark-accent">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">關鍵原文 KEYWORDS</h4>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-2xl font-display font-bold text-white">פַּחַד</span>
+                                    <span class="text-gray-500 text-sm">pachad</span>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-1">驚嚇：指深層的恐懼、敬畏、戰慄。</p>
+                            </div>
+                            <div>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-2xl font-display font-bold text-white">הָדָר</span>
+                                    <span class="text-gray-500 text-sm">hadar</span>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-1">威嚴的榮光：神尊貴的光輝，與偶像的「虛無」形成強烈對比。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl p-8 md:p-10">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">關鍵問題解析</h4>
+                        <p class="text-white font-bold text-lg mb-4">為何將金銀偶像拋給田鼠和蝙蝠？</p>
+                        <p class="text-gray-400 leading-relaxed">當神的真實審判顯現，人們終於醒悟金銀偶像毫無拯救能力，瞬間從珍寶變為定罪的累贅。田鼠和蝙蝠象徵黑暗污穢的洞穴，這是虛假偶像最終的歸宿。</p>
+                    </div>
+                    <div class="glass rounded-3xl p-8 md:p-10 bg-gradient-to-tr from-gold-900/20 to-transparent">
+                        <h4 class="text-gold-400 uppercase tracking-tighter font-bold text-xs mb-6">現實比喻</h4>
+                        <p class="text-gray-300 italic">如同極端通膨時，價值連城的鈔票變成廢紙。當永恆的真實顯露，屬世的價值觀將徹底翻轉。</p>
+                    </div>
+                </div>
+                <div class="text-center p-8 glass rounded-2xl border-dashed border-gold-900 border-2">
+                    <p class="text-2xl font-serif text-white">「任何事物若不是在上帝裡面被愛，它終將成為一個可怕的重擔。」</p>
+                    <p class="text-gold-500 mt-4 font-display">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="space-y-16">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-4 tracking-tight">講章文稿</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+
+            <article class="glass rounded-[3rem] p-8 md:p-20 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-gold-500/5 blur-[100px] -mr-32 -mt-32"></div>
+                
+                <div class="prose prose-invert prose-gold max-w-none space-y-12">
+                    <header class="text-center mb-16">
+                        <h3 class="text-3xl md:text-5xl font-display font-black text-white leading-tight">
+                            賽2:6-21: 當主降臨的日子：<br/><span class="text-gold-400">拆毀虛浮的驕傲，唯獨耶和華被尊崇</span>
+                        </h3>
+                    </header>
+
+                    <div class="space-y-8 text-lg md:text-xl leading-relaxed text-gray-300">
+                        <p>弟兄姊妹，我們生活在一個充滿自豪感的時代。我們為人類的科技進步、經濟發展、軍事力量和高樓大廈感到驕傲。我們喜歡掌控，喜歡把安全感建立在看得見、摸得著的事物上。然而，以賽亞書第二章卻對這種建立在受造物之上的安全感，發出了極其嚴厲的警告。今天，我們要透過賽2:6-21的經文，來看看當主降臨的日子，神將如何拆毀我們虛浮的驕傲。</p>
+                        
+                        <div class="pl-6 border-l-4 border-gold-500 space-y-4">
+                            <h4 class="text-2xl md:text-3xl font-bold text-white">第一段：被神棄絕的根源——以世俗偶像取代真神</h4>
+                            <p>神為什麼離棄祂的百姓？因為他們的心被其他東西佔滿了。經文說他們「滿了金銀」、「滿了馬匹」、「滿了偶像」。這三個「滿了」描繪出一幅諷刺的畫面：以色列人不再倚靠帶領他們出埃及的耶和華，而是轉向金錢尋求安全。在神的眼中，<span class="text-gold-400 font-bold underline decoration-gold-800">倚靠財富與軍力，就是拜偶像！</span></p>
+                            <p class="font-serif italic text-gold-200">「人心是一座永不休止的偶像製造廠。」</p>
+                        </div>
+
+                        <div class="pl-6 border-l-4 border-gold-500 space-y-4">
+                            <h4 class="text-2xl md:text-3xl font-bold text-white">第二段：主降臨的日子——一切受造的驕傲必被降卑</h4>
+                            <p>當我們活在驕傲之中，上帝會如何回應？經文宣告：<span class="text-white font-extrabold italic">「到那日，眼目高傲的必降為卑；性情狂傲的都必屈膝；惟獨耶和華被尊崇。」</span> 神刻意針對黎巴嫩的香柏樹、巴珊的橡樹、高山與城牆，因為人類常常藉由這些成就來宣稱「我不需要上帝」。</p>
+                            <p class="font-serif italic text-gold-200">「除非我們看到上帝的威嚴，否則我們永遠無法看見自己的渺小。」</p>
+                        </div>
+
+                        <div class="pl-6 border-l-4 border-gold-500 space-y-4">
+                            <h4 class="text-2xl md:text-3xl font-bold text-white">第三段：榮耀顯現的結局——拋棄虛無，直面神的威嚴</h4>
+                            <p>當神真正的威嚴顯露時，人們曾經耗費重金打造的金銀偶像，在那日竟然被像垃圾一樣，拋給生活在黑暗洞穴裡的田鼠和蝙蝠。為什麼？因為當神「威嚴的榮光」顯現時，人們終於發現，<span class="text-gold-400 font-bold">這些偶像在真實的審判面前毫無拯救能力。</span></p>
+                            <p class="font-serif italic text-gold-200">「任何事物若不是在上帝裡面被愛，它終將成為一個可怕的重擔。」</p>
+                        </div>
+
+                        <p class="text-2xl font-bold text-white mt-12 text-center p-8 bg-gold-900/20 rounded-2xl border border-gold-500/30">
+                            弟兄姊妹，這段經文呼召我們醒悟。讓我們今天就謙卑屈膝，在我們的心中、在我們的生活中，惟獨耶和華被尊崇！
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application & Action Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass rounded-3xl p-10 space-y-8">
+                <h3 class="text-3xl font-display font-bold text-gold-400 flex items-center gap-3">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <p class="text-gray-300">檢視生命的依靠：找出生活中隱藏的「金銀與馬匹」。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <p class="text-gray-300">拆毀心中的高臺：辨識引以為傲的「香柏樹與城牆」。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <p class="text-gray-300">培養敬畏的眼光：重新建立對神威嚴的敬畏。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">04</span>
+                        <p class="text-gray-300">投資永恆的價值：將資源投資在神永恆的國度。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass rounded-3xl p-10 space-y-8 border-t-4 border-t-gold-600">
+                <h3 class="text-3xl font-display font-bold text-gold-400 flex items-center gap-3">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <h5 class="font-bold text-white mb-2">靈性健檢行動</h5>
+                        <p class="text-sm text-gray-400">本週寫下最害怕失去的三樣東西。在禱告中交給神，宣告神是最終的安全感。</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <h5 class="font-bold text-white mb-2">刻意放下控制的操練</h5>
+                        <p class="text-sm text-gray-400">在挑戰中放棄用「聰明」強求結果，練習降服與倚靠。</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                        <h5 class="font-bold text-white mb-2">守安息日的實踐</h5>
+                        <p class="text-sm text-gray-400">設立半天停止追求成就，藉此承認自己不是維持世界運轉的上帝。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-display font-bold mb-4 tracking-tight">名言佳句</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote Items -->
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「每當我們將任何事物看得比上帝更重要，那事物就成為我們的偶像。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 提摩太·凱勒, 《山寨版的上帝》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「人的本性，可以說是一座永不休止的偶像製造廠。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 約翰·加爾文, 《基督教要義》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「驕傲是生在人骨子裡的罪，我們必須將其連根拔起。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 查爾斯·司布真, 《晨星與夕暮》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「除非我們看到上帝的威嚴，否則我們永遠無法看見自己的渺小。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 陶恕, 《渴慕神》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「十字架是上帝對人類驕傲的最終定罪。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 約翰·史托德, 《當代基督十架》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「偶像崇拜並不僅僅是向假神屈膝，更是將心信靠在創造主以外的事物上。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 馬丁·路德, 《加拉太書註釋》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「真宗教的本質在於神聖的愛，而這愛會使靈魂在神面前深深降卑。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 喬納森·愛德華茲, 《宗教情操真偽辨》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「我們生活的世界並不是用來讓我們予取予求的，而是用來讓我們敬拜神的。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 畢德生, 《長久順服同一個方向》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「當基督呼召一個人時，祂是呼召他來死。這死正是對我們驕傲與自我中心的終結。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 潘霍華, 《作門徒的代價》</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-l-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200">「一個沒有被神的威嚴壓倒的人，他的信仰只不過是膚淺的兒戲。」</p>
+                    <p class="mt-4 text-gold-500 font-bold text-sm">— 查爾斯·司布真, 《晨星與夕暮》</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10 border-t border-white/5">
+            <div class="flex flex-col items-center gap-4 text-gray-500 text-sm">
+                <p>關鍵字：偶像 (Idol) • 降卑 (Humbled) • 尊崇 (Exalted)</p>
+                <div class="bg-red-900/20 text-red-400 px-6 py-2 rounded-full border border-red-900/30">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+</body>
+</html>

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>舊約研經資料 - 數位圖書館</title>
+    <title>新約研經資料 - 數位圖書館</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #050505; color: #fff; font-family: system-ui, -apple-system, sans-serif; margin: 0; }
         .fixed-background {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; 
             background-image: linear-gradient(to bottom, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.95) 100%), 
-                              url('https://opal.google/board/blobs/94a41ff0-2e03-482b-9d8b-3041e6384364');
+                              url('/archive/image/new-testament/c5c84cc9-5ec8-42f0-aede-1b8a81140c06.jpg');
             background-size: cover; background-position: center; background-repeat: no-repeat;
         }
         .gold-gradient {
@@ -35,8 +35,8 @@
                 ← 返回首頁
             </a>
             <div class="max-w-4xl">
-                <h1 class="text-6xl md:text-8xl font-black gold-gradient tracking-widest mb-4">舊約全書</h1>
-                <p class="text-white/70 text-xl italic font-light">「神的話必永遠立定。」</p>
+                <h1 class="text-6xl md:text-8xl font-black gold-gradient tracking-widest mb-4">新約全書</h1>
+                <p class="text-white/70 text-xl italic font-light">「草必枯乾，花必凋殘，惟有我們神的話必永遠立定。」</p>
             </div>
         </div>
 
@@ -50,9 +50,9 @@
     <script>
         const OWNER = 'anpingch-git'; 
         const REPO = 'bible';   
-        const BASE_PATH = 'archive/舊約'; 
+        const BASE_PATH = 'archive/新約'; 
 
-        async function loadOldTestament() {
+        async function loadNewTestament() {
             const gallery = document.getElementById('gallery');
             try {
                 const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${BASE_PATH}`);
@@ -91,12 +91,8 @@
             const fullFileName = file.name.replace('.html', '');
             const parts = fullFileName.split('_');
             const date = parts[0] || "";
-            // 美化：章節橫線變冒號
-            // const chapter = (parts[1] || bookName).replace(/-/g, ':');
-			const chapter = parts[1] || bookName;
-            // 美化：標題橫線變空格
+            const chapter = (parts[1] || bookName).replace(/-/g, ':');
             let title = (parts[2] || "閱讀分享").replace(/-/g, ' ');
-            // 關鍵修正：組合所有 ID 部分
             const docId = parts.slice(3).join('_');
 
             let downloadSection = "";
@@ -120,7 +116,7 @@
                 </div>
             `;
         }
-        loadOldTestament();
+        loadNewTestament();
     </script>
 </body>
 </html>

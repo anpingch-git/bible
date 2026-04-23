@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查經筆記圖書館</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0a; color: #e5e5e5; font-family: sans-serif; }
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            transition: all 0.3s ease; 
+        }
+        .book-btn {
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: 1px solid rgba(249, 210, 27, 0.2);
+            color: #f9d21b;
+            transition: all 0.2s;
+        }
+        .book-btn:hover { background: #f9d21b; color: #000; transform: scale(1.1); }
+        .book-btn.disabled { opacity: 0.2; cursor: not-allowed; border-color: gray; color: gray; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-12">
+            <h1 id="page-title" class="text-5xl font-black tracking-tighter text-[#f9d21b] mb-4 uppercase">Bible Study Map</h1>
+            <div id="back-btn" class="hidden text-[#f9d21b] cursor-pointer font-bold inline-block hover:underline" onclick="showMap()">← 回到經卷地圖</div>
+        </header>
+
+        <div id="map-view" class="space-y-12">
+            <div>
+                <h2 class="text-2xl font-bold mb-6 border-l-4 border-[#f9d21b] pl-4">舊約 Old Testament</h2>
+                <div id="ot-grid" class="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-13 gap-4"></div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-6 border-l-4 border-white pl-4 text-white">新約 New Testament</h2>
+                <div id="nt-grid" class="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-13 gap-4"></div>
+            </div>
+        </div>
+
+        <div id="gallery-view" class="hidden">
+            <div id="note-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+
+        <div id="status" class="text-center py-20 text-gray-600">載入資料庫中...</div>
+    </div>
+
+    <script>
+        const DB_URL = "database.json";
+        let fullDatabase = [];
+
+        const otBooks = ["創", "出", "利", "民", "申", "書", "士", "得", "撒上", "撒下", "王上", "王下", "代上", "代下", "拉", "尼", "帖", "伯", "詩", "箴", "傳", "歌", "賽", "耶", "哀", "結", "但", "何", "珥", "摩", "俄", "拿", "彌", "鴻", "哈", "番", "該", "撒", "瑪"];
+        const ntBooks = ["太", "可", "路", "約", "徒", "羅", "林前", "林後", "加", "弗", "腓", "歌", "帖前", "帖後", "提前", "提後", "多", "門", "來", "雅", "彼前", "彼後", "約一", "約二", "約三", "猶", "啟"];
+
+        async function init() {
+            try {
+                const response = await fetch(DB_URL);
+                fullDatabase = await response.json();
+                document.getElementById('status').classList.add('hidden');
+                renderMap();
+            } catch (e) {
+                document.getElementById('status').innerText = "無法載入資料庫，請先確認 database.json 是否已產生。";
+            }
+        }
+
+        function renderMap() {
+            const otContainer = document.getElementById('ot-grid');
+            const ntContainer = document.getElementById('nt-grid');
+            
+            // 建立經卷按鈕
+            const makeGrid = (books, container) => {
+                books.forEach(b => {
+                    // 檢查該經卷是否有內容
+                    const count = fullDatabase.filter(item => item.chapter.startsWith(b)).length;
+                    const btn = document.createElement('div');
+                    btn.className = `book-btn rounded-xl ${count === 0 ? 'disabled' : ''}`;
+                    btn.innerText = b;
+                    if (count > 0) {
+                        btn.onclick = () => showBook(b);
+                        btn.title = `共有 ${count} 篇筆記`;
+                    }
+                    container.appendChild(btn);
+                });
+            };
+
+            makeGrid(otBooks, otContainer);
+            makeGrid(ntBooks, ntContainer);
+        }
+
+        function showBook(bookName) {
+            document.getElementById('map-view').classList.add('hidden');
+            document.getElementById('gallery-view').classList.remove('hidden');
+            document.getElementById('back-btn').classList.remove('hidden');
+            document.getElementById('page-title').innerText = bookName + " 埃及記 - 查經筆記"; // 可動態對應全名
+
+            const grid = document.getElementById('note-grid');
+            grid.innerHTML = '';
+            
+            const filtered = fullDatabase.filter(item => item.chapter.startsWith(bookName));
+            
+            filtered.sort((a, b) => b.date.localeCompare(a.date)).forEach(file => {
+                // 自動判斷路徑：根據您之前的 GAS 分類邏輯，檔案應該存在 archive/新舊約/卷名/ 下
+                // 這裡我們暫時用絕對路徑，若 database.json 內有包含 path 欄位則更精準
+                const filePath = `archive/${file.name}`; 
+
+                grid.innerHTML += `
+                    <a href="${filePath}" class="glass-card rounded-3xl p-8 flex flex-col justify-between h-64">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-[#f9d21b]/20 text-[#f9d21b] text-[10px] px-3 py-1 rounded-full font-bold">${file.chapter}</span>
+                                <span class="text-gray-600 text-[10px] font-mono">${file.date}</span>
+                            </div>
+                            <h2 class="text-2xl font-bold leading-tight text-white line-clamp-2">${file.title}</h2>
+                        </div>
+                        <div class="text-[#f9d21b] text-sm font-bold mt-4">READ NOTE →</div>
+                    </a>`;
+            });
+        }
+
+        function showMap() {
+            document.getElementById('map-view').classList.remove('hidden');
+            document.getElementById('gallery-view').classList.add('hidden');
+            document.getElementById('back-btn').classList.add('hidden');
+            document.getElementById('page-title').innerText = "Bible Study Map";
+        }
+
+        init();
+    </script>
+</body>
+</html>

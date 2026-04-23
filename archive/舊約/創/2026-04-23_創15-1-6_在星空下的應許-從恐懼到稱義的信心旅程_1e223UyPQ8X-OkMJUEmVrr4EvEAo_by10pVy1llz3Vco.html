@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創15:1-6 在星空下的應許：從恐懼到稱義的信心旅程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0a0f1d',
+                            800: '#111827',
+                            700: '#1e293b',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        stellar: '#6366f1',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0f1d;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(245, 158, 11, 0.4);
+            transform: translateY(-5px);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .star-bg {
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500/30 selection:text-gold-400">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3 md:px-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-sm md:text-base font-bold text-gold-400 tracking-tight">創世記 15:1-6</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+                <a href="#prayer" class="nav-link uppercase tracking-widest text-slate-300">禱告</a>
+                <a href="#outline" class="nav-link uppercase tracking-widest text-slate-300">大綱</a>
+                <a href="#sermon" class="nav-link uppercase tracking-widest text-slate-300">講章</a>
+                <a href="#quotes" class="nav-link uppercase tracking-widest text-slate-300">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-16 star-bg">
+        <div class="absolute inset-0 bg-gradient-to-b from-navy-900/20 via-navy-900/60 to-navy-900 z-0"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="mb-6 inline-block">
+                <div class="p-4 rounded-full bg-gold-500/10 border border-gold-500/20 animate-pulse-slow">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold font-display leading-tight mb-4 text-gradient">
+                在星空下的應許：<br>從恐懼到稱義的信心旅程
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 font-light tracking-wide max-w-2xl mx-auto">
+                創世記 15:1-6 — 當我們面對未知的漫長等待，上帝是我們的盾牌。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-32 relative">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-20 scroll-mt-20">
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-gold-500"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="p-3 bg-gold-500/10 rounded-xl text-gold-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </span>
+                    <h2 class="text-3xl font-bold font-display">序言禱告</h2>
+                </div>
+                <p class="text-xl leading-relaxed text-slate-300 font-light italic">
+                    「主耶和華，我們的盾牌，我們極大的賞賜！當我們面對生命中的未知、現實的挫折與漫長的等待時，我們的心常常充滿恐懼與懷疑。求祢像當年引導亞伯蘭一樣，在我們靈魂的黑夜中發出祢微小卻堅定的聲音。幫助我們不隱藏我們的軟弱，而是真實地將掙扎帶到祢面前。求祢打開我們的屬靈眼睛，帶領我們仰望那宣告祢榮耀的星空，使我們看見祢應許的浩大。賜給我們真實的信心，不是倚靠眼見的環境，而是全然信靠祢的信實，使我們能在基督裡被稱為義。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Image Placeholder Integrated -->
+        <div class="mb-20 rounded-3xl overflow-hidden shadow-2xl shadow-stellar/20 border border-white/10 group">
+            <img src='https://opal.google/board/blobs/db4d3df3-8780-4eed-8bef-54a265faf449' alt='星空下的應許' class="w-full h-auto object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700" />
+        </div>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="py-12 scroll-mt-20">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-stellar/10 rounded-xl text-stellar">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="group p-6 rounded-2xl glass-card text-left hover:bg-stellar/10 border-l-4 border-stellar">
+                    <span class="text-stellar text-xs font-bold tracking-widest block mb-2">PART 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-stellar transition-colors">恐懼中的宣告與保障</h3>
+                    <p class="text-sm text-slate-400 mt-2">創世記 15:1</p>
+                </a>
+                <a href="#part2" class="group p-6 rounded-2xl glass-card text-left hover:bg-stellar/10 border-l-4 border-stellar">
+                    <span class="text-stellar text-xs font-bold tracking-widest block mb-2">PART 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-stellar transition-colors">現實的掙扎與真實的呼求</h3>
+                    <p class="text-sm text-slate-400 mt-2">創世記 15:2-4</p>
+                </a>
+                <a href="#part3" class="group p-6 rounded-2xl glass-card text-left hover:bg-stellar/10 border-l-4 border-stellar">
+                    <span class="text-stellar text-xs font-bold tracking-widest block mb-2">PART 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-stellar transition-colors">仰望星空的信心與稱義</h3>
+                    <p class="text-sm text-slate-400 mt-2">創世記 15:5-6</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-32">
+                <!-- Segment 1 -->
+                <article id="part1" class="scroll-mt-32">
+                    <h3 class="text-2xl md:text-4xl font-bold text-gold-400 mb-8 flex items-center gap-4">
+                        <span class="w-12 h-12 flex items-center justify-center rounded-full border border-gold-400/30 text-xl font-display">01</span>
+                        恐懼中的宣告與保障
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                        <div class="lg:col-span-4 space-y-6">
+                            <div class="p-6 rounded-2xl glass-card">
+                                <h4 class="text-stellar font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M12.48 3.64l-4.18 4.18c-.39.39-.39 1.02 0 1.41L12.48 13.41c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L10.31 8.5l3.58-3.58c.39-.39.39-1.02 0-1.41s-1.02-.39-1.41 0z"/></svg>
+                                    關鍵原文
+                                </h4>
+                                <div class="text-2xl font-bold mb-1">盾牌 (מָגֵן - Magen)</div>
+                                <p class="text-sm text-slate-400">意指保護者、遮蓋物。上帝不是說「我會給你一個盾牌」，而是說「我『是』你的盾牌」。</p>
+                            </div>
+                            <div class="p-6 rounded-2xl glass-card">
+                                <h4 class="text-stellar font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-sm italic text-slate-300">當上帝說「我是你的盾牌」時，這對我們的「恐懼」有何實際意義？</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <blockquote class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-6 py-2">
+                                「亞伯蘭，你不要懼怕！我是你的盾牌，必大大地賞賜你。」
+                            </blockquote>
+                            <div class="prose prose-invert max-w-none">
+                                <p class="text-slate-300 leading-relaxed text-lg">亞伯蘭剛經歷完戰爭，可能害怕敵人的報復，也面臨年老無子的恐懼。上帝的回答不是給予他軍隊，而是給予「祂自己」。這意味著消除恐懼的解藥不是掌控環境，而是認識並擁有這位至高者。當神成為我們的盾牌，任何臨到我們身上的事，都必須先經過祂的允許。</p>
+                            </div>
+                            <div class="bg-navy-800/50 p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-xs font-bold uppercase tracking-widest text-gold-500 mb-4">名言佳句</h5>
+                                <p class="text-xl font-medium">「對上帝的敬畏，能驅散對世界上一切事物的恐懼。」</p>
+                                <footer class="mt-2 text-slate-500 text-sm">— 司布真 (Charles Spurgeon)</footer>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Segment 2 -->
+                <article id="part2" class="scroll-mt-32">
+                    <h3 class="text-2xl md:text-4xl font-bold text-gold-400 mb-8 flex items-center gap-4">
+                        <span class="w-12 h-12 flex items-center justify-center rounded-full border border-gold-400/30 text-xl font-display">02</span>
+                        現實的掙扎與真實的呼求
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                        <div class="lg:col-span-4 space-y-6">
+                            <div class="p-6 rounded-2xl glass-card">
+                                <h4 class="text-stellar font-bold mb-3 flex items-center gap-2">關鍵原文</h4>
+                                <div class="text-2xl font-bold mb-1">後嗣 (יָרַשׁ - Yarash)</div>
+                                <p class="text-sm text-slate-400">意為繼承、佔有、承受。在古代近東，無子嗣意味著失去未來和產業的延續。</p>
+                            </div>
+                            <div class="p-6 rounded-2xl glass-card">
+                                <h4 class="text-stellar font-bold mb-3 flex items-center gap-2">關鍵問題</h4>
+                                <p class="text-sm italic text-slate-300">我們可以向上帝表達我們的懷疑和失望嗎？</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <blockquote class="text-xl font-bold text-white border-l-4 border-gold-500 pl-6 py-2">
+                                「主耶和華啊，我既無子，你還賜我甚麼呢？...你沒有給我兒子。」
+                            </blockquote>
+                            <div class="prose prose-invert max-w-none">
+                                <p class="text-slate-300 leading-relaxed text-lg">亞伯蘭毫不掩飾他的失望。這顯示出聖經中真實的信仰並非假裝一切都好，而是將最深的痛苦和懷疑帶到神面前。神並沒有因為亞伯蘭的質疑而發怒，反而給予更清晰、更具體的應許。這告訴我們，真誠的抱怨勝過虛偽的敬虔，神經得起我們的質疑。</p>
+                            </div>
+                            <div class="bg-navy-800/50 p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-xs font-bold uppercase tracking-widest text-gold-500 mb-4">名言佳句</h5>
+                                <p class="text-xl font-medium">「信心不是壓抑懷疑，而是在懷疑中仍走向神。」</p>
+                                <footer class="mt-2 text-slate-500 text-sm">— 提摩太·凱勒 (Timothy Keller)</footer>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Segment 3 -->
+                <article id="part3" class="scroll-mt-32">
+                    <h3 class="text-2xl md:text-4xl font-bold text-gold-400 mb-8 flex items-center gap-4">
+                        <span class="w-12 h-12 flex items-center justify-center rounded-full border border-gold-400/30 text-xl font-display">03</span>
+                        仰望星空的信心與稱義
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                        <div class="lg:col-span-4 space-y-6">
+                            <div class="p-6 rounded-2xl glass-card">
+                                <h4 class="text-stellar font-bold mb-3 flex items-center gap-2">關鍵原文</h4>
+                                <div class="text-2xl font-bold mb-1">信 (אָמַן - Aman)</div>
+                                <p class="text-sm text-slate-400 mb-4">「阿們」的字根。將重量完全倚靠在神的信實上。</p>
+                                <div class="text-2xl font-bold mb-1">義 (צְדָקָה - Tsedaqah)</div>
+                                <p class="text-sm text-slate-400">指關係中的正確狀態、符合神標準的公義。</p>
+                            </div>
+                            <div class="p-6 rounded-2xl glass-card">
+                                <h4 class="text-stellar font-bold mb-3 flex items-center gap-2">關鍵問題</h4>
+                                <p class="text-sm italic text-slate-300">什麼是聖經中所說的「信心」？為什麼信心能被算為「義」？</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <blockquote class="text-xl font-bold text-white border-l-4 border-gold-500 pl-6 py-2">
+                                「你向天觀看，數算眾星...亞伯蘭信耶和華，耶和華就以此為他的義。」
+                            </blockquote>
+                            <div class="prose prose-invert max-w-none">
+                                <p class="text-slate-300 leading-relaxed text-lg">信心本身沒有功勞，信心的價值在於其「對象」。亞伯蘭在自己的身體已經如同枯木的情況下，選擇相信創造宇宙、佈滿星空的神。神將這信心算為義，預表了福音的核心：我們不是靠行為稱義，而是靠著接受並信靠神的應許來與神和好。</p>
+                            </div>
+                            <div class="bg-navy-800/50 p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-xs font-bold uppercase tracking-widest text-gold-500 mb-4">名言佳句</h5>
+                                <p class="text-xl font-medium">「信心是一種活潑的、勇敢的對上帝恩典的信靠，它如此確定，以至於信徒甘願為之死上一千次。」</p>
+                                <footer class="mt-2 text-slate-500 text-sm">— 馬丁·路德 (Martin Luther)</footer>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="py-24 scroll-mt-20">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-gold-500/10 rounded-xl text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display">講章全文</h2>
+            </div>
+            
+            <div class="glass-card p-8 md:p-16 rounded-[2rem] leading-loose text-slate-300 space-y-8">
+                <h3 class="text-3xl font-bold text-white mb-10 text-center">創15:1-6：在星空下的應許：從恐懼到稱義的信心旅程</h3>
+                
+                <p>各位弟兄姊妹，平安。今天我們要來看一段聖經中最美麗、也最具神學份量的對話之一。這發生在一個無星的黑夜與一個佈滿繁星的夜晚之間。當現實的殘酷與上帝的應許發生劇烈衝撞時，我們該如何自處？創世記十五章給了我們解答。</p>
+
+                <h4 class="text-2xl font-bold text-gold-400 mt-12">第一段：恐懼中的宣告與保障</h4>
+                <p>經文的第一節說：<strong class="text-white">「這事以後，耶和華在異象中有話對亞伯蘭說：『亞伯蘭，你不要懼怕！我是你的盾牌，必大大地賞賜你。』」</strong></p>
+                <p>「這事以後」是指亞伯蘭剛剛打完一場大仗，他擊敗了四王聯軍。但在勝利的背後，他陷入了極大的恐懼。他害怕敵人的報復，更害怕自己垂垂老矣卻後繼無人。就在這個時候，上帝來了。上帝沒有給他一支軍隊，也沒有給他一座堡壘，上帝給了他一個宣告：<strong class="text-white">「我是你的盾牌」</strong>。</p>
+                <p>在原文中，「盾牌」代表著第一線的防護。上帝不是說「我會給你保護」，而是說<strong class="text-gold-400">「我本身就是你的保護」</strong>。這是一個極大的安慰。司布真曾說過：<strong class="text-white">「對上帝的敬畏，能驅散對世界上一切事物的恐懼。」</strong> 當我們真正認識到創造天地的神是我們的盾牌時，即使暴風雨依舊在窗外肆虐，我們也能在祂的懷中安然入睡。</p>
+
+                <h4 class="text-2xl font-bold text-gold-400 mt-12">第二段：現實的掙扎與真實的呼求</h4>
+                <p>然而，亞伯蘭的反應非常真實。亞伯蘭毫不掩飾他的失望：<strong class="text-white">「主耶和華啊，我既無子，你還賜我甚麼呢？」</strong> 他甚至帶著一點情緒說：<strong class="text-white">「你沒有給我兒子」</strong>。</p>
+                <p>我們常常以為，有信心的人是不會懷疑、不會抱怨的。但亞伯蘭向我們展示了真實的信仰樣貌。他把生命中最痛的空白攤開在神面前。提摩太·凱勒曾說：<strong class="text-gold-400">「信心不是壓抑懷疑，而是在懷疑中仍走向神。」</strong> 神不怕我們的質疑，祂怕的是我們帶著虛偽的面具遠離祂。</p>
+
+                <h4 class="text-2xl font-bold text-gold-400 mt-12">第三段：仰望星空的信心與稱義</h4>
+                <p>接著，這段經文迎來了最高潮。上帝領他走到外邊，說：<strong class="text-white">「你向天觀看，數算眾星，能數得過來嗎？你的後裔將要如此。」</strong></p>
+                <p>亞伯蘭原本一直看著自己的帳篷、看著自己衰敗的身體。上帝的解藥是：<strong class="text-gold-400">「走到外邊」</strong>。上帝要他抬起頭，看看那浩瀚無垠的星空。聖經寫下了改變歷史的一句話：<strong class="text-white text-xl">「亞伯蘭信耶和華，耶和華就以此為他的義。」</strong></p>
+                <p>亞伯蘭沒有做任何偉大的事，他只是在那個星空下，選擇放棄自己的籌算，把自己生命的重量，完全交託給那位發出應許的神。正如馬丁·路德所說：<strong class="text-white">「信心是一種活潑的、勇敢的對上帝恩典的信靠。」</strong> 今天，我們仰望的是十字架。當我們放下自己的努力，單單信靠基督的救恩時，我們也被神稱為義了。</p>
+            </div>
+        </section>
+
+        <!-- Summary Keywords & Action -->
+        <section class="py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-gold-500 font-bold mb-4 uppercase tracking-widest text-sm">結論關鍵字</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-6 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-400 font-bold">盾牌</span>
+                        <span class="px-6 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-400 font-bold">應許</span>
+                        <span class="px-6 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-400 font-bold">稱義</span>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <h3 class="text-stellar font-bold mb-4 uppercase tracking-widest text-sm">應用方向</h3>
+                    <ul class="text-slate-400 space-y-2 text-sm">
+                        <li>• 誠實面對恐懼與神對話</li>
+                        <li>• 轉換眼光，走出帳篷</li>
+                        <li>• 安息於因信稱義的恩典</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 space-y-6">
+                <h3 class="text-2xl font-bold flex items-center gap-3">
+                    <span class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-sm">✓</span>
+                    回應行動
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-navy-800 rounded-2xl border border-white/5">
+                        <p class="font-bold mb-2">1. 宣告</p>
+                        <p class="text-sm text-slate-400">寫下恐懼清單，並宣告「耶和華是我的盾牌」。</p>
+                    </div>
+                    <div class="p-6 bg-navy-800 rounded-2xl border border-white/5">
+                        <p class="font-bold mb-2">2. 靜默</p>
+                        <p class="text-sm text-slate-400">找一個晚上仰望星空，默想神的偉大與信實。</p>
+                    </div>
+                    <div class="p-6 bg-navy-800 rounded-2xl border border-white/5">
+                        <p class="font-bold mb-2">3. 分享</p>
+                        <p class="text-sm text-slate-400">與低谷中的肢體分享一段幫助過你的聖經應許。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24 scroll-mt-20">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-stellar/10 rounded-xl text-stellar">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-6">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「信心是一種活潑的、勇敢的對上帝恩典的信靠，它如此確定，以至於信徒甘願為之死上一千次。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 馬丁·路德 (Martin Luther)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「信心並非相信上帝會照著我們所求的去做，而是相信無論祂做什麼，都是絕對正確的。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「真宗教的本質，在很大程度上存在於神聖的情感之中。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「在這個講究速成的世代，基督徒的生命其實是在同一個方向上漫長的順服。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 畢德生 (Eugene Peterson)</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「我們一切的智慧，若稱得上是真實且可靠的智慧，幾乎都包含兩部分：對上帝的認識，以及對我們自己的認識。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「上帝有時將我們放在黑暗中，好讓我們能夠學習看見祂的面光。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「進入上帝同在的唯一途徑，是帶著全然誠實的心。我們若隱藏真實的自己，就無法遇見真實的上帝。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「信心的本質就是安息，不再依靠自己的努力，而是安息於基督已經為我們完成的工作上。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 約翰·史托德 (John Stott)</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <p class="text-slate-200 mb-4 italic">「如果你的上帝從來沒有與你的觀念發生衝突，那麼你所信奉的很可能只是你自己，而不是那位創造天地的神。」</p>
+                        <p class="text-xs text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 p-8 border-t border-white/5 text-center">
+                <p class="text-slate-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-navy-900 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all hover:scale-110 active:scale-95 animate-float z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

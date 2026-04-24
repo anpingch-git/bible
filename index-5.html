@@ -99,23 +99,6 @@
             }
         }
 
-async function init() {
-        try {
-            // 修正：加上隨機參數 ?v=... 強制瀏覽器抓取 GitHub 最新版，不讀取舊快取
-            const res = await fetch(DB_URL + "?v=" + new Date().getTime());
-            const data = await res.json();
-            
-            // 修正：因為 GAS 現在多包了一層 { version, files }，這裡改為讀取 data.files
-            fullDatabase = data.files || data; 
-            
-            document.getElementById('loading-status').classList.add('hidden');
-            renderMap();
-        } catch (e) {
-            document.getElementById('loading-status').innerText = "連線失敗，請稍後再試。";
-        }
-    }
-	
-
         // 渲染地圖按鈕
         function renderMap() {
             const otContainer = document.getElementById('ot-grid');
@@ -151,43 +134,36 @@ async function init() {
             grid.innerHTML = '';
             
             const filtered = fullDatabase.filter(item => item.chapter.startsWith(bookName));
-            const filtered = fullDatabase.filter(item => {
-            // 避免因日期變更導致 path 錯誤，直接使用來自 JSON 的最新 path
-            return item.chapter.startsWith(bookName);
-        });
             
-			filtered.forEach(file => {
-            let downloadSection = "";
-            // 這裡會抓到您修正後完整的 docId
-            if (file.docId && file.docId !== "NoDoc" && file.docId.length > 10) {
-                downloadSection = `
-                    <div class="flex gap-2 mt-5 pt-4 border-t border-white/10">
-                        <a href="https://docs.google.com/document/d/${file.docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300">Word</a>
-                        <a href="https://docs.google.com/document/d/${file.docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300">PDF</a>
-                    </div>`;
-            }
-
-            // 【關鍵點】：href 使用 file.path，這會自動對應到最新的檔名 (含新日期)
-            grid.innerHTML += `
-                <div class="glass-card rounded-2xl p-8 flex flex-col justify-between h-80">
-                    <a href="${file.path}">
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="bg-yellow-500/10 text-[#f9d21b] text-[10px] px-3 py-1 rounded-full border border-yellow-500/20">${file.chapter}</span>
-                            <span class="text-gray-500 text-[10px] font-mono">${file.date}</span>
+            filtered.forEach(file => {
+                // 處理下載連結 (支援 docId 從 JSON 讀取)
+                let downloadSection = "";
+                if (file.docId && file.docId !== "NoDoc") {
+                    downloadSection = `
+                        <div class="flex gap-2 mt-5 pt-5 border-t border-white/5">
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=docx" class="btn-download bg-blue-500/10 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/20">Word</a>
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=pdf" class="btn-download bg-red-500/10 text-red-300 hover:bg-red-600 hover:text-white border border-red-500/20">PDF</a>
                         </div>
-                        <h2 class="text-2xl font-black text-orange-50/90 line-clamp-2">${file.title}</h2>
-                    </a>
-                    <div>
-                        ${downloadSection}
-                        <a href="${file.path}" class="block text-[#f9d21b] text-[10px] font-bold mt-5 tracking-[0.2em] hover:underline uppercase">Read Full Note →</a>
-                    </div>
-                </div>`;
-        });
-        window.scrollTo(0, 0);
-    }
-			
-			
-			
+                    `;
+                }
+
+                grid.innerHTML += `
+                    <div class="glass-card rounded-2xl p-8 flex flex-col justify-between h-80">
+                        <a href="${file.path}" class="block group">
+                            <div class="flex justify-between items-start mb-6">
+                                <span class="bg-yellow-500/10 text-[#f9d21b] text-[10px] px-3 py-1 rounded-full font-bold border border-yellow-500/20 tracking-tighter">${file.chapter}</span>
+                                <span class="text-gray-500 text-[10px] font-mono">${file.date}</span>
+                            </div>
+                            <h2 class="text-2xl font-black leading-tight text-orange-50/90 group-hover:text-[#f9d21b] transition-colors line-clamp-2">${file.title}</h2>
+                        </a>
+                        <div>
+                            ${downloadSection}
+                            <a href="${file.path}" class="block text-[#f9d21b] text-[10px] font-bold mt-5 tracking-[0.2em] hover:underline uppercase">Read Full Note →</a>
+                        </div>
+                    </div>`;
+            });
+            window.scrollTo(0, 0);
+        }
 
         // 返回地圖視圖
         function showMap() {

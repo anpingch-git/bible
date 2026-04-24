@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查經筆記數位圖書館</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
+        body { background-color: #050505; color: #fff; font-family: 'Noto Sans TC', sans-serif; margin: 0; }
+        .fixed-background {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; 
+            background-image: linear-gradient(to bottom, rgba(5,5,5,0.6) 0%, rgba(5,5,5,0.95) 100%), 
+                              url('https://anpingch-git.github.io/bible/archive/image/old-testament/1ff3d2d3-8500-4ec6-ac75-a759229699ba.jpg');
+            background-size: cover; background-position: center; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.4s ease; }
+        .glass-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.07); border-color: rgba(249, 210, 27, 0.3); }
+        .btn-download { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 6px; transition: all 0.2s; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <div class="fixed-background"></div>
+    <div class="max-w-7xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 id="page-title" class="text-5xl md:text-7xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-700 mb-4 uppercase">Bible Map</h1>
+            <p id="sub-title" class="text-gray-400 tracking-[0.3em] text-sm font-light">數位查經筆記圖書館</p>
+            <div id="back-btn" class="hidden mt-8 text-[#f9d21b] cursor-pointer font-bold hover:underline" onclick="showMap()">← 回到地圖首頁</div>
+        </header>
+
+        <div id="map-view" class="space-y-20">
+            </div>
+
+        <div id="gallery-view" class="hidden">
+            <div id="note-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"></div>
+        </div>
+    </div>
+
+    <script>
+        const DB_URL = "database.json";
+        let fullDatabase = [];
+
+        async function init() {
+            const res = await fetch(DB_URL);
+            fullDatabase = await res.json();
+            renderMap();
+        }
+
+        // 顯示該經卷的卡片
+        function showBook(bookName) {
+            document.getElementById('map-view').classList.add('hidden');
+            document.getElementById('gallery-view').classList.remove('hidden');
+            document.getElementById('back-btn').classList.remove('hidden');
+            document.getElementById('page-title').innerText = bookName;
+
+            const grid = document.getElementById('note-grid');
+            grid.innerHTML = '';
+            
+            const filtered = fullDatabase.filter(item => item.chapter.startsWith(bookName));
+            
+            filtered.forEach(file => {
+                // 產生下載按鈕邏輯
+                let downloadSection = "";
+                if (file.docId && file.docId !== "NoDoc") {
+                    downloadSection = `
+                        <div class="flex gap-2 mt-4 pt-4 border-t border-white/5">
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=docx" class="btn-download bg-blue-500/10 text-blue-300 hover:bg-blue-600 hover:text-white border border-blue-500/20">Word</a>
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=pdf" class="btn-download bg-red-500/10 text-red-300 hover:bg-red-600 hover:text-white border border-red-500/20">PDF</a>
+                        </div>
+                    `;
+                }
+
+                grid.innerHTML += `
+                    <div class="glass-card rounded-2xl p-8 flex flex-col justify-between h-80">
+                        <a href="${file.path}">
+                            <div class="flex justify-between items-start mb-6">
+                                <span class="bg-yellow-500/10 text-[#f9d21b] text-[10px] px-3 py-1 rounded-full font-bold border border-yellow-500/20">${file.chapter}</span>
+                                <span class="text-gray-500 text-[10px] font-mono">${file.date}</span>
+                            </div>
+                            <h2 class="text-2xl font-black leading-tight text-orange-50/90 line-clamp-2">${file.title}</h2>
+                        </a>
+                        <div>
+                            ${downloadSection}
+                            <a href="${file.path}" class="block text-[#f9d21b] text-xs font-bold mt-5 tracking-widest hover:underline uppercase">Read Online →</a>
+                        </div>
+                    </div>`;
+            });
+        }
+
+        function showMap() {
+            location.reload(); // 最簡單的回到首頁方式
+        }
+
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽8:1-22 黑暗中的真光：在危機中唯獨敬畏主</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18e',
+                            300: '#fbe453',
+                            400: '#f9d326',
+                            500: '#e6ba11',
+                            600: '#c8920b',
+                            700: '#9f6a0d',
+                            800: '#835412',
+                            900: '#704516',
+                        },
+                        dark: {
+                            base: '#050505',
+                            card: '#121212',
+                            accent: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(18, 18, 18, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f9d326 0%, #e6ba11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 4px;
+            background: #f9d326;
+            margin-top: 0.5rem;
+            border-radius: 2px;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f9d326;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .hover-card {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-5px);
+            border-color: #f9d326;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="font-display font-bold text-lg md:text-xl truncate">
+                <span class="gradient-text">賽8:1-22</span> 黑暗中的真光
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+            <!-- Mobile Menu Indicator -->
+            <div class="md:hidden text-[10px] uppercase tracking-widest opacity-60">Scroll for more</div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/e1e78a7f-caa9-45e6-be1e-a2d0da3ca3f5' alt='Banner' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-base via-transparent to-dark-base"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-fade-in">
+            <h2 class="text-gold-400 font-display font-semibold tracking-[0.2em] mb-4 text-sm md:text-lg">ISAIAH 8:1-22</h2>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 leading-tight">黑暗中的真光：<br/><span class="gradient-text">在危機中唯獨敬畏主</span></h1>
+            <p class="text-lg md:text-xl opacity-80 font-light max-w-2xl mx-auto">當世人恐懼同謀與大河翻騰，我們當尊萬軍之耶和華為聖，以祂為聖所。</p>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-20 space-y-32">
+
+        <!-- 1. Prayer Section -->
+        <section id="prayer" class="max-w-3xl mx-auto text-center scroll-mt-24">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-400/10 mb-8">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-8">開路禱告</h2>
+            <p class="text-xl leading-relaxed font-light italic opacity-90 text-gray-300">
+                「親愛的天父，我們來到祢面前，承認在動盪與未知的世代中，我們的心常被恐懼與焦慮淹沒...主啊，求祢開啟我們的屬靈眼睛，讓我們尊萬軍之耶和華為聖，以祢為我們所當畏懼的。願祢成為我們的聖所...」
+            </p>
+        </section>
+
+        <!-- 2. Outline with Quick Links -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl font-display font-black section-header mb-2 uppercase">講道大綱</h2>
+                    <p class="opacity-60">透過三個核心視角解析賽8:1-22</p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#part1" class="px-5 py-2 rounded-full glass border-gold-400/30 hover:border-gold-400 text-sm font-medium transition-all">第一段：拒絕生命活水</a>
+                    <a href="#part2" class="px-5 py-2 rounded-full glass border-gold-400/30 hover:border-gold-400 text-sm font-medium transition-all">第二段：恐懼的轉移</a>
+                    <a href="#part3" class="px-5 py-2 rounded-full glass border-gold-400/30 hover:border-gold-400 text-sm font-medium transition-all">第三段：持守神的訓誨</a>
+                </div>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-16">
+                
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24 bg-dark-card rounded-3xl p-8 md:p-12 border border-white/5 hover-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-gold-400 font-display text-5xl font-black opacity-20">01</span>
+                        <h3 class="text-2xl md:text-3xl font-bold">拒絕生命活水，招致世界狂潮</h3>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="bg-black/40 p-6 rounded-2xl border-l-4 border-gold-500">
+                                <h4 class="text-gold-400 text-sm font-bold uppercase mb-2">經文範圍：賽 8:1-8</h4>
+                                <p class="text-gray-400 leading-relaxed text-sm">耶和華對我說：「你取一個大牌，拿通用的筆...寫上瑪黑珥‧沙拉勒‧哈施‧罷斯...這百姓既厭棄西羅亞緩流的水，喜悅利汛和利瑪利的兒子；因此，主必使大河翻騰的水猛然沖來...」</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵解析</h4>
+                                <p class="text-gray-300">為什麼我們經常厭棄神「西羅亞緩流的水」，而寧願尋求世俗的力量？西羅亞的水是平靜的，在危急時看起來缺乏戲劇性的拯救力量。我們常對神那看似安靜的引導感到不耐煩，最終卻反被世俗的狂潮（亞述）所吞沒。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gold-500/10 p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-2">💡 屬靈例證</h4>
+                                <p class="text-sm text-gray-300 italic">拒絕平凡卻救命的救生圈，而選擇投靠龐大卻致命的走私破船。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl italic">
+                                <p class="text-sm">「人心是一個製造偶像的工廠。當我們覺得神的恩典不夠用時，我們就會轉向其他事物尋求拯救。」</p>
+                                <p class="text-right text-gold-400 text-xs mt-2">— 約翰·加爾文</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24 bg-dark-card rounded-3xl p-8 md:p-12 border border-white/5 hover-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-gold-400 font-display text-5xl font-black opacity-20">02</span>
+                        <h3 class="text-2xl md:text-3xl font-bold">恐懼的轉移：以神為聖所</h3>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="bg-black/40 p-6 rounded-2xl border-l-4 border-gold-500">
+                                <h4 class="text-gold-400 text-sm font-bold uppercase mb-2">經文範圍：賽 8:9-15</h4>
+                                <p class="text-gray-400 leading-relaxed text-sm">「...他們所怕的，你們不要怕，也不要畏懼。但要尊萬軍之耶和華為聖，以他為你們所當怕的，所當畏懼的。他必作為聖所...」</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵解析</h4>
+                                <p class="text-gray-300 text-lg font-medium text-gold-50 border-l-2 border-gold-400/30 pl-4">當對神的敬畏在我們心中放到最大時，對世界的恐懼就會縮小到零。</p>
+                                <p class="mt-4 text-gray-300">唯一的解決之道是「尊萬軍之耶和華為聖」。敬畏神的人，神就作他們的聖所；不敬畏神的人，神就成了審判他們的絆腳石。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gold-500/10 p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-2">💡 屬靈例證</h4>
+                                <p class="text-sm text-gray-300 italic">在森林裡遇到野狗的孩子，因為身邊守護的雄獅而感到平安。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl italic">
+                                <p class="text-sm">「一個真正敬畏神的人，就什麼都不怕了；一個不敬畏神的人，就什麼都怕。」</p>
+                                <p class="text-right text-gold-400 text-xs mt-2">— 陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24 bg-dark-card rounded-3xl p-8 md:p-12 border border-white/5 hover-card">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-gold-400 font-display text-5xl font-black opacity-20">03</span>
+                        <h3 class="text-2xl md:text-3xl font-bold">在幽暗中持守神的訓誨</h3>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="bg-black/40 p-6 rounded-2xl border-l-4 border-gold-500">
+                                <h4 class="text-gold-400 text-sm font-bold uppercase mb-2">經文範圍：賽 8:16-22</h4>
+                                <p class="text-gray-400 leading-relaxed text-sm">「人當以訓誨和法度為標準；他們所說的，若不與此相符，必不得見晨光...」</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵解析</h4>
+                                <p class="text-gray-300">在極大的焦慮中，人們容易尋求超自然的捷徑（交鬼、巫術）。但真正的門徒應當「等候」並回到「訓誨和法度」中。遠離神話語的結果，就是陷入更深的焦躁與烏黑的黑暗中。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gold-500/10 p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-2">💡 屬靈例證</h4>
+                                <p class="text-sm text-gray-300 italic">被困礦坑深處的礦工，唯一獲救希望是緊緊抓住連結地面的通訊電纜。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl italic">
+                                <p class="text-sm">「正是在最深的黑暗中，神的話語才成為我們腳前的燈、路上的光。」</p>
+                                <p class="text-right text-gold-400 text-xs mt-2">— 潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="bg-gradient-to-br from-gold-900/20 to-black p-12 rounded-[3rem] border border-gold-400/20">
+            <h2 class="text-3xl font-display font-black mb-12 text-center gradient-text">應用與行動</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-gold-400 text-black flex items-center justify-center font-bold">1</div>
+                    <h3 class="text-xl font-bold">檢視心中「亞述」</h3>
+                    <p class="text-gray-400 text-sm">反省自己在面對危機時，是尋求世界快速但具破壞性的解決方案，還是願意安靜等候神。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-gold-400 text-black flex items-center justify-center font-bold">2</div>
+                    <h3 class="text-xl font-bold">以敬畏取代恐懼</h3>
+                    <p class="text-gray-400 text-sm">操練將眼光轉向萬軍之耶和華，在禱告中尊祂為大，讓神的同在成為你的聖所。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-gold-400 text-black flex items-center justify-center font-bold">3</div>
+                    <h3 class="text-xl font-bold">回歸聖經權威</h3>
+                    <p class="text-gray-400 text-sm">決心將《聖經》作為檢驗一切教導與決定的唯一標準。若不符訓誨法度，勇敢拒絕。</p>
+                </div>
+            </div>
+            
+            <!-- Three Keywords -->
+            <div class="mt-20 flex flex-wrap justify-center gap-8 md:gap-16">
+                <div class="text-center">
+                    <div class="text-5xl font-black font-display text-white/10 uppercase mb-2">FEAR GOD</div>
+                    <div class="text-2xl font-bold text-gold-400">敬畏</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-black font-display text-white/10 uppercase mb-2">SANCTUARY</div>
+                    <div class="text-2xl font-bold text-gold-400">聖所</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-black font-display text-white/10 uppercase mb-2">TORAH</div>
+                    <div class="text-2xl font-bold text-gold-400">訓誨</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Sermon Full Text -->
+        <section id="sermon" class="max-w-4xl mx-auto scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-black section-header mb-4 inline-block">講章文稿</h2>
+                <p class="text-gold-400 font-bold italic text-lg">賽8:1-22: 黑暗中的真光</p>
+            </div>
+            <div class="prose prose-invert prose-gold max-w-none space-y-8 text-gray-300 leading-relaxed text-lg">
+                <p>弟兄姊妹們，平安。當我們打開今天的新聞，或者審視我們自己的生活，我們經常會被一種情緒所籠罩——那就是「恐懼」。我們害怕經濟衰退、害怕健康亮紅燈、害怕關係破裂、害怕未來的不可預測。</p>
+                
+                <h3 class="text-2xl font-bold text-white border-l-4 border-gold-400 pl-4 mt-12">第一、拒絕生命活水，招致世界狂潮</h3>
+                <p>猶大人犯了一個致命的錯誤。以賽亞書8:6說：<span class="text-gold-200 font-bold">「這百姓既厭棄西羅亞緩流的水，喜悅利汛和利瑪利的兒子」</span>。西羅亞的水是象徵著上帝安靜、穩妥、源源不絕的保護。但是亞哈斯王和猶大的百姓覺得這水「太慢了」、「太安靜了」。他們想要看得見的強大武力，所以他們轉向了亞述。</p>
+                
+                <h3 class="text-2xl font-bold text-white border-l-4 border-gold-400 pl-4 mt-12">第二、恐懼的轉移：以神為聖所</h3>
+                <p>神說：「他們所怕的，你們不要怕。」為什麼可以不怕？因為我們要<span class="text-gold-200 font-bold">「尊萬軍之耶和華為聖，以他為你們所當怕的」</span>。這是一條恐懼轉移的定律。當你生命中對上帝的敬畏被放大到極致時，你對世界、對人、對環境的恐懼就會被縮小到零。</p>
+                
+                <h3 class="text-2xl font-bold text-white border-l-4 border-gold-400 pl-4 mt-12">第三、在幽暗中持守神的訓誨</h3>
+                <p>在最深的黑暗中，神的話語是我們唯一的指南針。以賽亞發出了震耳欲聾的呼喊：<span class="text-gold-200 font-bold">「人當以訓誨和法度為標準；他們所說的，若不與此相符，必不得見晨光。」</span>正是在這個時候，我們更要像先知一樣宣告：「我要等候那掩面不顧雅各家的耶和華；我也要仰望他。」</p>
+            </div>
+        </section>
+
+        <!-- 8. Quotes Bento Grid -->
+        <section id="quotes" class="scroll-mt-24">
+            <h2 class="text-3xl font-display font-bold mb-12 flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.34315 15.3602 2 17.017 2H19.017C20.6739 2 22.017 3.34315 22.017 5V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V5C3.017 3.34315 4.36015 2 6.017 2H8.017C9.67386 2 11.017 3.34315 11.017 5V15C11.017 18.3137 8.33071 21 5.017 21H3.017Z"/></svg>
+                屬靈前輩名言佳句
+            </h2>
+            <div class="bento-grid">
+                <div class="glass p-8 rounded-3xl border-l-4 border-gold-400">
+                    <p class="text-lg leading-relaxed mb-4">「一個真正敬畏神的人，就什麼都不怕了；一個不敬畏神的人，就什麼都怕。」</p>
+                    <cite class="text-gold-400 font-bold not-italic">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <p class="text-lg leading-relaxed mb-4">「正是在最深的黑暗中，神的話語才成為我們腳前的燈、路上的光。」</p>
+                    <cite class="text-gold-400 font-bold not-italic">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl bg-gold-400/5">
+                    <p class="text-lg leading-relaxed mb-4">「人心的本質就是一個永無休止的偶像製造廠。」</p>
+                    <cite class="text-gold-400 font-bold not-italic">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <p class="text-lg leading-relaxed mb-4">「如果你把任何事物看得比神更重要，那個事物就會成為你的神，最終它會摧毀你。」</p>
+                    <cite class="text-gold-400 font-bold not-italic">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <p class="text-lg leading-relaxed mb-4">「恐懼的心會讓我們想掌控一切，但敬畏神的心會讓我們將一切交託給祂。」</p>
+                    <cite class="text-gold-400 font-bold not-italic">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="max-w-2xl mx-auto space-y-8">
+            <h2 class="text-3xl font-display font-bold text-center">回應行動</h2>
+            <ul class="space-y-4">
+                <li class="flex items-start gap-4 glass p-6 rounded-2xl">
+                    <span class="text-gold-400 mt-1">●</span>
+                    <div>
+                        <strong class="text-white">背誦經文：</strong>
+                        本週背誦以賽亞書8:13「但要尊萬軍之耶和華為聖，以他為你們所當怕的，所當畏懼的。」
+                    </div>
+                </li>
+                <li class="flex items-start gap-4 glass p-6 rounded-2xl">
+                    <span class="text-gold-400 mt-1">●</span>
+                    <div>
+                        <strong class="text-white">恐懼交託：</strong>
+                        寫下一件目前讓你感到極度焦慮的事，宣告神是你的「聖所」。
+                    </div>
+                </li>
+                <li class="flex items-start gap-4 glass p-6 rounded-2xl">
+                    <span class="text-gold-400 mt-1">●</span>
+                    <div>
+                        <strong class="text-white">晨光先行：</strong>
+                        醒來後先用15分鐘閱讀聖經，再查看手機訊息。
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer Warning -->
+        <div class="text-center py-12 border-t border-white/5 opacity-40 text-xs tracking-widest">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Scroll to Top -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-400 text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky toolbar reveal on scroll
+        let lastScrollTop = 0;
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                nav.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop;
+            nav.style.transition = 'transform 0.3s ease-in-out';
+        });
+    </script>
+</body>
+</html>

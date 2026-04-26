@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽19:23-20:6: 當應許的榮耀遇見現實的考驗：打破虛假的倚靠</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'Outfit', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #020617; color: #f8fafc; }
+        .glass { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to bottom right, #fde68a, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-5px); border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.2); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background: #fbbf24; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: rgba(245, 158, 11, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s;
+            backdrop-filter: blur(4px);
+        }
+        .floating-btn:hover { background: #f59e0b; transform: scale(1.1); }
+    </style>
+</head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3 sm:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="text-sm font-bold text-gold-400 tracking-wider">
+                <span class="opacity-70">經文章節:</span> 賽19:23-20:6
+            </div>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Hero Section -->
+    <header class="relative h-[60vh] sm:h-[80vh] w-full overflow-hidden flex items-end">
+        <img src='https://opal.google/board/blobs/1f2a6371-5451-4272-beef-3b09a4069563' alt='Isaiah Vision' class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-6 pb-12 sm:pb-24 w-full">
+            <h2 class="text-gold-400 font-bold tracking-[0.2em] mb-4 text-sm sm:text-base uppercase">Isaiah 19:23-20:6</h2>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-black mb-6 leading-tight">
+                當應許的榮耀遇見<br/>
+                <span class="text-gradient">現實的考驗</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-light">
+                打破虛假的倚靠：從末世榮耀的異象到先知赤身的記號。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-32">
+        
+        <!-- 1. 禱告 Section -->
+        <section id="prayer" class="relative">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-2xl border border-gold-500/20">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">謙卑禱告</h2>
+            </div>
+            <div class="glass p-8 sm:p-12 rounded-[2rem] border-l-4 border-l-gold-500 italic text-xl sm:text-2xl leading-relaxed text-slate-200">
+                「主耶和華，歷史的主宰，我們來到祢面前。祢的意念高過我們的意念，祢的恩典甚至能將昔日的死敵轉化為祢的子民。然而，在現實的困境中，我們的心卻常像當年的猶大一樣，四處尋找屬世的「埃及」與「古實」作為倚靠，卻忘記了祢才是我們唯一的避難所。求聖靈開啟我們的眼睛，藉著先知以賽亞的宣告與行動，拆毀我們生命中一切虛假的保障。賜我們赤露敞開的誠實，以及單單仰望祢的勇氣。奉主耶穌基督的聖名祈求，阿們。」
+            </div>
+        </section>
+
+        <!-- 2. 分段大綱 Section -->
+        <section id="outline">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-blue-500/10 rounded-2xl border border-blue-500/20">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">講道大綱</h2>
+            </div>
+
+            <!-- Quick Navigation Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+                <a href="#part1" class="glass p-6 rounded-2xl card-hover flex flex-col justify-center text-center group">
+                    <span class="text-xs text-gold-500 font-bold mb-2 tracking-widest uppercase">第一段</span>
+                    <span class="font-bold text-lg group-hover:text-gold-400 transition-colors">超越仇恨的終末應許</span>
+                    <span class="text-xs text-slate-400 mt-2">賽19:23-25</span>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl card-hover flex flex-col justify-center text-center group">
+                    <span class="text-xs text-gold-500 font-bold mb-2 tracking-widest uppercase">第二段</span>
+                    <span class="font-bold text-lg group-hover:text-gold-400 transition-colors">令人震驚的先知記號</span>
+                    <span class="text-xs text-slate-400 mt-2">賽20:1-4</span>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl card-hover flex flex-col justify-center text-center group">
+                    <span class="text-xs text-gold-500 font-bold mb-2 tracking-widest uppercase">第三段</span>
+                    <span class="font-bold text-lg group-hover:text-gold-400 transition-colors">錯置倚靠的破滅與覺醒</span>
+                    <span class="text-xs text-slate-400 mt-2">賽20:5-6</span>
+                </a>
+            </div>
+
+            <!-- Detailed Breakdown -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-gold-400 mb-4 font-serif">第一段：超越仇恨的終末應許</h3>
+                            <p class="text-sm text-slate-400 mb-6">賽19:23-25</p>
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">關鍵原文</h4>
+                                <p class="text-xl font-bold mb-1">福源 (בְּרָכָה)</p>
+                                <p class="text-sm text-slate-400">Berakhah：意指「祝福」。神宣告以色列將與埃及、亞述共同成為全地的祝福。</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.443 1.103m-2.454-1.348L9.75 21H3V3h18v6h-2.25L15 15h-2.25l-4.522-7.348z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-slate-300">這展現了上帝恩典的普世性與終極的復和。神的終末計畫中，救恩是要打破人類歷史上最深的仇恨之牆，沒有任何國度是神無法翻轉的。</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700">
+                                    <h4 class="text-xs font-bold text-slate-500 uppercase mb-3 tracking-tighter">實踐例證</h4>
+                                    <p class="text-sm leading-relaxed text-slate-300">彭柯麗（Corrie ten Boom）原諒納粹看守的故事，展現了超然的基督之愛如何化解血海深仇。</p>
+                                </div>
+                                <div class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700 italic">
+                                    <h4 class="text-xs font-bold text-slate-500 uppercase mb-3 tracking-tighter">屬靈佳句</h4>
+                                    <p class="text-sm leading-relaxed text-slate-300">「福音的恩典能將我們最深的仇敵轉化為在基督裡的弟兄。」—— 約翰·史托德</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row-reverse gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-gold-400 mb-4 font-serif">第二段：令人震驚的先知記號</h3>
+                            <p class="text-sm text-slate-400 mb-6">賽20:1-4</p>
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">關鍵原文</h4>
+                                <p class="text-xl font-bold mb-1">露身赤腳 (עָרוֹם וְיָחֵף)</p>
+                                <p class="text-sm text-slate-400">Arom v'yachef：象徵失去尊嚴、無助與戰俘的極大羞辱。</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass p-8 rounded-3xl border-r-4 border-r-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.443 1.103m-2.454-1.348L9.75 21H3V3h18v6h-2.25L15 15h-2.25l-4.522-7.348z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-slate-300">神使用先知的肉身作為視覺震撼的「行動信息」。戳破猶大對埃及與古實的幻想：任何取代上帝的世俗倚靠，最終都會剝奪我們的尊嚴與平安。</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700 italic">
+                                    <h4 class="text-xs font-bold text-slate-500 uppercase mb-3 tracking-tighter">屬靈佳句</h4>
+                                    <p class="text-sm leading-relaxed text-slate-300">「放棄一切人為的保障，才能體驗完全順服帶來的安全。」—— 潘霍華</p>
+                                </div>
+                                <div class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700">
+                                    <h4 class="text-xs font-bold text-slate-500 uppercase mb-3 tracking-tighter">實踐例證</h4>
+                                    <p class="text-sm leading-relaxed text-slate-300">《國王的新衣》：以賽亞就是那個說實話的孩子，揭露了政治盟約的虛無與破產。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-gold-400 mb-4 font-serif">第三段：錯置倚靠的破滅與覺醒</h3>
+                            <p class="text-sm text-slate-400 mb-6">賽20:5-6</p>
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">關鍵原文</h4>
+                                <p class="text-xl font-bold mb-1">仰望 (מַבָּט)</p>
+                                <p class="text-sm text-slate-400">Mabbat：期待、注視的焦點，代表人們危難中安全感的最終去處。</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.443 1.103m-2.454-1.348L9.75 21H3V3h18v6h-2.25L15 15h-2.25l-4.522-7.348z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-slate-300">「驚惶羞愧」與「不過是如此」是偶像破滅的典型反應。幻滅正是屬靈覺醒的契機，逼迫我們將目光轉向那唯一不動搖的磐石。</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700">
+                                    <h4 class="text-xs font-bold text-slate-500 uppercase mb-3 tracking-tighter">實踐例證</h4>
+                                    <p class="text-sm leading-relaxed text-slate-300">鐵達尼號富商在生死存亡之際，發現黃金不如一個解渴的橘子。這正是「不過是如此」的真實寫照。</p>
+                                </div>
+                                <div class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700 italic">
+                                    <h4 class="text-xs font-bold text-slate-500 uppercase mb-3 tracking-tighter">屬靈佳句</h4>
+                                    <p class="text-sm leading-relaxed text-slate-300">「最主要的期待若不是上帝，最終都會背叛我們，讓我們蒙羞。」—— 提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 應用與實踐 Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-10 bg-gradient-to-br from-slate-900 to-slate-950 rounded-[3rem] border border-slate-800">
+                <h3 class="text-2xl font-serif font-bold mb-8 flex items-center gap-4">
+                    <span class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center text-slate-950">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </span>
+                    應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black">01</span>
+                        <p class="text-slate-300"><strong class="text-white block mb-1">檢視生命的「埃及與古實」</strong>反思面臨危機（財務、健康、關係）時，第一時間求救的對象是什麼？</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black">02</span>
+                        <p class="text-slate-300"><strong class="text-white block mb-1">擁抱上帝不可思議的恩典</strong>學習為競爭對手、甚至是曾傷害我們的人禱告，相信福音的復和力。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black">03</span>
+                        <p class="text-slate-300"><strong class="text-white block mb-1">操練為神付代價的順服</strong>是否願意為了活出真理，承受世人的不解與嘲笑？</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-10 bg-gold-500/5 rounded-[3rem] border border-gold-500/20">
+                <h3 class="text-2xl font-serif font-bold mb-8 flex items-center gap-4">
+                    <span class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-950">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    </span>
+                    回應行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="glass p-5 rounded-2xl flex items-start gap-4">
+                        <input type="checkbox" class="mt-1.5 h-5 w-5 rounded border-slate-700 bg-slate-800 text-gold-500">
+                        <div>
+                            <p class="font-bold text-white">偶像盤點</p>
+                            <p class="text-sm text-slate-400">寫下三個你最害怕失去的事物，宣告神才是唯一的仰望。</p>
+                        </div>
+                    </div>
+                    <div class="glass p-5 rounded-2xl flex items-start gap-4">
+                        <input type="checkbox" class="mt-1.5 h-5 w-5 rounded border-slate-700 bg-slate-800 text-gold-500">
+                        <div>
+                            <p class="font-bold text-white">為仇敵禱告</p>
+                            <p class="text-sm text-slate-400">選擇一位對立者，每天為他的生命蒙福與認識神禱告。</p>
+                        </div>
+                    </div>
+                    <div class="glass p-5 rounded-2xl flex items-start gap-4">
+                        <input type="checkbox" class="mt-1.5 h-5 w-5 rounded border-slate-700 bg-slate-800 text-gold-500">
+                        <div>
+                            <p class="font-bold text-white">勇敢的見證</p>
+                            <p class="text-sm text-slate-400">做一件過去因害怕他人眼光而不敢做的順服之舉。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 講章文稿 Section -->
+        <section id="sermon" class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-gold-500 tracking-[0.3em] uppercase mb-4">Sermon Transcript</h2>
+                <h3 class="text-4xl md:text-5xl font-serif font-black leading-tight">當應許的榮耀遇見現實的考驗：<br/><span class="text-gold-400">打破虛假的倚靠</span></h3>
+            </div>
+            <div class="space-y-10 text-lg leading-relaxed text-slate-300 font-light">
+                <p>弟兄姊妹們，今天我們所讀的這段經文，呈現了兩幅極端對比的畫面。在以賽亞書第19章的結尾，我們看見了一幅無比榮耀的終末圖畫；但緊接著在第20章，先知以賽亞卻用極其屈辱的行動，把我們拉回殘酷的現實。這兩個畫面交織在一起，對今天的我們發出了一個極具震撼力的挑戰：在現實的風暴中，你到底倚靠誰？</p>
+                
+                <div class="pl-6 border-l-2 border-gold-500/30 py-2">
+                    <p class="font-serif text-2xl text-white font-bold mb-4">首先，我們來看第一段：超越仇恨的終末應許。</p>
+                    <p class="mb-4">經文宣告：<span class="text-gold-400 font-bold">「埃及我的百姓，亞述我手的工作，以色列我的產業，都有福了！」</span> 在當時，這句話簡直不可思議。埃及是曾經奴役他們的殘酷主子，亞述是即將摧毀北國的暴政。但在神的應許中，萬軍之耶和華要打破人類歷史中最深的仇恨之牆。這提醒我們，上帝的恩典大過一切歷史的傷痕。</p>
+                </div>
+
+                <div class="pl-6 border-l-2 border-blue-500/30 py-2">
+                    <p class="font-serif text-2xl text-white font-bold mb-4">然而，這帶我們進入第二段：令人震驚的先知記號。</p>
+                    <p class="mb-4">亞述大軍壓境，猶大不求告神，反而想與埃及結盟。神給了以賽亞一個驚人的命令：<span class="text-white font-bold">「解掉腰間的麻布，脫下腳上的鞋。」</span> 於是以賽亞<span class="text-gold-400 font-bold">「露身赤腳行走三年」</span>。神要用這個極端視覺化的記號，戳破猶大國虛假的幻想！當我們把生命安全感建立在屬世事物上時，就像穿著「國王的新衣」，直到災難來臨，才發現自己無比赤裸脆弱。</p>
+                </div>
+
+                <div class="pl-6 border-l-2 border-slate-500/30 py-2">
+                    <p class="font-serif text-2xl text-white font-bold mb-4">這就帶來了最終的結局：第三段：錯置倚靠的破滅與覺醒。</p>
+                    <p class="mb-4">先知預言那些錯置倚靠之人會驚呼：<span class="text-gold-400 font-bold">「看哪，我們素所仰望的... 不過是如此！我們怎能逃脫呢？」</span> 「不過是如此！」這五個字是多麼痛心的醒悟。神允許我們的偶像破滅，不是為了毀滅我們，而是為了喚醒我們，將目光（Mabbat）從朽壞的事物轉向唯一的磐石。</p>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 mt-12">
+                    <p class="text-xl text-white font-medium mb-6">結論</p>
+                    <p>弟兄姊妹，今天你生命的「埃及」是什麼？當危機來臨時，你第一時間是抓取人的方法，還是屈膝在神面前？求主打破我們虛假的倚靠，讓我們學習以賽亞的順服，緊緊抓住神那超越一切的恩典。因為唯有在基督裡，我們才有真實的平安與得救的盼望！</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <span class="px-4 py-1 bg-gold-500/20 text-gold-400 rounded-full text-sm font-bold border border-gold-500/30">恩典 Grace</span>
+                        <span class="px-4 py-1 bg-gold-500/20 text-gold-400 rounded-full text-sm font-bold border border-gold-500/30">順服 Obedience</span>
+                        <span class="px-4 py-1 bg-gold-500/20 text-gold-400 rounded-full text-sm font-bold border border-gold-500/30">倚靠 Trust</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. 名言佳句 Section -->
+        <section id="quotes" class="pb-20">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-red-500/10 rounded-2xl border border-red-500/20">
+                    <svg class="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">屬靈前輩佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-8 rounded-2xl card-hover border-t-2 border-t-gold-500">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「虛假的神明（偶像）無法賜予真正的平安，它們只會在你最需要拯救的時候，證明它們不過是虛無。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 提摩太·凱勒 (Timothy Keller)</div>
+                    <div class="text-xs text-slate-500">《山寨版的上帝》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-8 rounded-2xl card-hover">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「人心的本質就是一座不斷製造偶像的工廠，我們總是試圖在創造主之外尋找安全的避風港。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 約翰·加爾文 (John Calvin)</div>
+                    <div class="text-xs text-slate-500">《基督教要義》</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-8 rounded-2xl card-hover">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「恩典的奇妙在於，它不單單饒恕了罪人，它更將敵擋上帝的仇敵收納為祂懷中的兒女。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 查理·司布真 (Charles Spurgeon)</div>
+                    <div class="text-xs text-slate-500">《清晨與甘露》</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-8 rounded-2xl card-hover border-t-2 border-t-gold-500">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「當基督呼召一個人的時候，祂是叫他來死。這種順服的代價是重大的，但這正是恩典的真實所在。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 潘霍華 (Dietrich Bonhoeffer)</div>
+                    <div class="text-xs text-slate-500">《追隨基督》</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-8 rounded-2xl card-hover">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「如果我們生命中最渴望的不是上帝，那麼我們所渴望的那個事物最終一定會成為奴役我們的暴君。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 陶恕 (A.W. Tozer)</div>
+                    <div class="text-xs text-slate-500">《渴慕神》</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-8 rounded-2xl card-hover border-t-2 border-t-gold-500">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「信心不是相信神會按照我的計畫行事，而是完全信靠神，即使祂的計畫完全顛覆了我的倚靠。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 馬丁·路德 (Martin Luther)</div>
+                    <div class="text-xs text-slate-500">《加拉太書註釋》</div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass p-8 rounded-2xl card-hover">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「十字架不僅是我們得救的確據，更是打破人類一切敵意與驕傲的終極武器。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 約翰·史托德 (John Stott)</div>
+                    <div class="text-xs text-slate-500">《當代基督十架》</div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass p-8 rounded-2xl card-hover border-t-2 border-t-gold-500">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「在崇尚速成和表象的世代，順服是一場在同一個方向上的長期抗戰，它要求我們脫去偽裝。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 畢德生 (Eugene Peterson)</div>
+                    <div class="text-xs text-slate-500">《長道相伴》</div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass p-8 rounded-2xl card-hover">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「真實的屬靈情感必定會引導我們放棄對世界的虛假依戀，並將我們完全的盼望定睛於上帝。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 喬納森·愛德華茲 (Jonathan Edwards)</div>
+                    <div class="text-xs text-slate-500">《宗教情操真偽辨》</div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass p-8 rounded-2xl card-hover border-t-2 border-t-gold-500">
+                    <p class="text-lg text-slate-200 mb-6 italic leading-relaxed">「我們之所以容易陷入恐懼和羞愧，是因為我們把敬畏錯置在那些無力拯救我們的受造物上。」</p>
+                    <div class="text-sm font-bold text-gold-500">— 陶恕 (A.W. Tozer)</div>
+                    <div class="text-xs text-slate-500">《神的屬性》</div>
+                </div>
+            </div>
+
+            <div class="mt-20 p-6 glass rounded-2xl border border-red-500/20 text-center text-slate-500 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Up Arrow -->
+    <a href="#prayer" class="floating-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

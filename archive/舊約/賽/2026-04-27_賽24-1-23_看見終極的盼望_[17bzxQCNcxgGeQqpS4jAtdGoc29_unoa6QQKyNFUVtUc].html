@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽24:1-23 破碎的世界與榮耀的掌權：看見終極的盼望</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fbe260',
+                            400: '#f9ce2f',
+                            500: '#f2b210',
+                            600: '#d68e0a',
+                            700: '#b2690d',
+                            800: '#915312',
+                            900: '#774514',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161e',
+                            accent: '#1e202e'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 30, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9ce2f 0%, #d68e0a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding: 5rem 1.5rem;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .icon-container {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f2b21022 0%, #f2b21044 100%);
+            color: #f9ce2f;
+            margin-bottom: 1.5rem;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            transition: all 0.3s ease;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(242, 178, 16, 0.3);
+        }
+        .btn-outline {
+            border: 1px solid rgba(242, 178, 16, 0.4);
+            transition: all 0.2s;
+        }
+        .btn-outline:hover {
+            background: #f2b210;
+            color: #000;
+            border-color: #f2b210;
+        }
+        #scroll-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+        }
+        @media (max-width: 640px) {
+            .section-padding { padding: 3rem 1rem; }
+            .hero-title { font-size: 2.25rem; line-height: 1.2; }
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Top Toolbar -->
+    <nav class="sticky-nav glass border-b border-white/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="text-gold-400 font-bold tracking-tight">賽24:1-23</div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Hero Section -->
+    <header class="relative w-full overflow-hidden bg-black py-20 md:py-32">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src='https://opal.google/board/blobs/7682b5ac-0005-4431-86a2-04ec7b685ec1' alt='Banner' class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-dark-base via-dark-base/60 to-transparent"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <h1 class="hero-title font-display text-5xl md:text-7xl font-black mb-6 text-gradient tracking-tighter">
+                破碎的世界與榮耀的掌權
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 font-light max-w-3xl mx-auto">
+                看見終極的盼望 — 以賽亞書 24:1-23
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 md:px-6">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding">
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-8 text-white">起始禱告</h2>
+                <div class="text-xl md:text-2xl leading-relaxed text-gray-300 font-serif italic">
+                    「主耶和華，萬軍之神，當我們觀看這世界的動盪、敗壞與荒涼時，我們承認這地被其上的居民污穢了，我們也常在這悖逆的洪流中得罪了祢。主啊，求祢開啟我們的屬靈眼睛，讓我們在各樣的震動與拆毀中，看見祢公義的審判，更看見祢最終要在錫安作王的榮耀。求祢保守我們在荒涼中仍能高唱凱歌，在詭詐的世代中持守忠心，直到祢榮耀掌權的那日。奉主耶穌基督的名求，阿們。」
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="section-padding">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+                <div>
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                    </div>
+                    <h2 class="text-4xl font-display font-bold text-white">信息大綱</h2>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="btn-outline glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-400 text-sm font-bold mb-4 block uppercase tracking-widest">第一階段</span>
+                    <h3 class="text-xl font-bold text-white mb-2">萬物荒涼：罪的普世代價</h3>
+                    <p class="text-gray-400 text-sm italic">賽 24:1-13</p>
+                </a>
+                <a href="#part2" class="btn-outline glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-400 text-sm font-bold mb-4 block uppercase tracking-widest">第二階段</span>
+                    <h3 class="text-xl font-bold text-white mb-2">廢墟中的讚美與哀歌</h3>
+                    <p class="text-gray-400 text-sm italic">賽 24:14-16</p>
+                </a>
+                <a href="#part3" class="btn-outline glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-400 text-sm font-bold mb-4 block uppercase tracking-widest">第三階段</span>
+                    <h3 class="text-xl font-bold text-white mb-2">審判的必然與榮耀掌權</h3>
+                    <p class="text-gray-400 text-sm italic">賽 24:17-23</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Part 1 -->
+            <div id="part1" class="mb-32 scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="h-px flex-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></span>
+                    <h3 class="text-2xl font-bold text-gold-400 px-4">第一段深度解析</h3>
+                    <span class="h-px flex-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></span>
+                </div>
+                <div class="bento-grid">
+                    <div class="glass p-8 rounded-3xl md:col-span-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            引用經文 (24:1-13)
+                        </h4>
+                        <div class="text-gray-300 leading-relaxed max-h-60 overflow-y-auto pr-4 scrollbar-thin">
+                            看哪，耶和華使地空虛，變為荒涼；又翻轉大地，將居民分散。那時百姓怎樣，祭司也怎樣；僕人怎樣，主人也怎樣；婢女怎樣，主母也怎樣；買物的怎樣，賣物的也怎樣；放債的怎樣，借債的也怎樣；取利的怎樣，出利的也怎樣。地必全然空虛，盡被劫掠；因為這話是耶和華說的。地上悲哀衰殘，世界敗落衰殘；地上居高位的人也敗落了。地被其上的居民污穢；因為他們犯了律法，廢了律例，背了永約。所以，咒詛吞滅大地，住其上的顯為有罪...
+                        </div>
+                    </div>
+                    <div class="glass p-8 rounded-3xl">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h.01M7 15h.01M13 7h.01M13 11h.01M13 15h.01M17 7h.01M17 11h.01M17 15h.01"></path></svg>
+                            關鍵字解析
+                        </h4>
+                        <p class="text-2xl font-bold text-white mb-2">污穢 (Defiled)</p>
+                        <p class="text-sm text-gray-400 italic mb-4">חָנֵף (chanaph)</p>
+                        <p class="text-gray-300">不僅指物質上的污染，更深層次是指道德與屬靈上的敗壞。因為人類背棄了與神的約，這片土地失去了神聖的保護。</p>
+                    </div>
+                    <div class="glass p-8 rounded-3xl">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            問題與回答
+                        </h4>
+                        <p class="text-white font-bold mb-2">為什麼罪會導致「地」被污穢？</p>
+                        <p class="text-gray-300 text-sm">人類被立為管家，當管家背叛創造主，全地就跟著受咒詛（羅8:20-22）。社會階級的瓦解說明了罪的代價是普世性的。</p>
+                    </div>
+                    <div class="glass p-8 rounded-3xl bg-gold-400/5">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            佳句名言
+                        </h4>
+                        <p class="text-xl text-gray-200 italic">「人類的墮落卻將這面反映神榮耀的鏡子打碎，使全地沾染了罪的污穢。」</p>
+                        <p class="text-right text-gold-500 font-bold mt-4">— 約翰·加爾文</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Part 2 -->
+            <div id="part2" class="mb-32 scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="h-px flex-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></span>
+                    <h3 class="text-2xl font-bold text-gold-400 px-4">第二段深度解析</h3>
+                    <span class="h-px flex-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></span>
+                </div>
+                <div class="bento-grid">
+                    <div class="glass p-8 rounded-3xl md:col-span-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">關鍵字: 詭詐 (בָּגַד)</h4>
+                        <p class="text-gray-300 leading-relaxed">
+                            以賽亞連續使用這個詞，強調世界極度的背叛與虛假。先知擁有一種雙重視角：他既聽見了末後餘民的讚美，看見終極盼望；同時也深切感受到當下「詭詐大行詭詐」的悲慘。真正的信仰是在廢墟中既能唱出盼望，也願為罪惡流淚。
+                        </p>
+                        <div class="mt-8 p-4 bg-white/5 rounded-xl border-l-4 border-gold-500">
+                            <h5 class="text-sm font-bold text-gold-500 mb-1">例證 / 小故事</h5>
+                            <p class="text-sm text-gray-400">潘霍華牧師在納粹權下，看見教會對暴行視而不見，他內心充滿如以賽亞般的痛苦，無法對「詭詐」保持沉默。</p>
+                        </div>
+                    </div>
+                    <div class="glass p-8 rounded-3xl flex flex-col justify-center items-center text-center">
+                        <h4 class="text-gold-400 font-bold mb-4">佳句名言</h4>
+                        <p class="text-lg text-gray-200 font-serif">「我們是在這個充滿苦難與詭詐的世界中，承擔起基督的十字架。」</p>
+                        <p class="text-gold-500 font-bold mt-4">— 潘霍華</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Part 3 -->
+            <div id="part3" class="mb-32 scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="h-px flex-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></span>
+                    <h3 class="text-2xl font-bold text-gold-400 px-4">第三段深度解析</h3>
+                    <span class="h-px flex-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"></span>
+                </div>
+                <div class="bento-grid">
+                    <div class="glass p-8 rounded-3xl">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵字: 作王 (מָלַךְ)</h4>
+                        <p class="text-gray-300 text-sm">意指實質且最終地統治全宇宙。世界的震動是為了顯明那不可震動的國。</p>
+                    </div>
+                    <div class="glass p-8 rounded-3xl">
+                        <h4 class="text-gold-400 font-bold mb-4">震動中的安穩</h4>
+                        <p class="text-gray-300 text-sm">唯一的安穩不在於逃避災難，而在於降服於那位在錫安山作王的萬軍之耶和華。世界的體系崩塌時，正是神榮耀國度顯現的時刻。</p>
+                    </div>
+                    <div class="glass p-8 rounded-3xl md:col-span-1 bg-gold-400/10">
+                        <h4 class="text-gold-400 font-bold mb-4">佳句名言</h4>
+                        <p class="text-gray-200 italic">「無論現在情況多麼黑暗，神已經掌權，並且祂的國度必然完全降臨。」</p>
+                        <p class="text-right text-gold-500 font-bold mt-2">— 提摩太·凱勒</p>
+                    </div>
+                    <div class="relative rounded-3xl overflow-hidden md:col-span-3 h-64">
+                        <img src='https://opal.google/board/blobs/3f762438-42f0-4179-bbef-acef4ab11681' class="w-full h-full object-cover opacity-60" alt="Glory Reign" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h5 class="text-3xl md:text-5xl font-black text-white text-center">萬軍之耶和華必作王</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold mb-12 text-white">講章文稿</h2>
+                
+                <div class="space-y-12 text-lg md:text-xl text-gray-300 leading-relaxed font-serif">
+                    <p class="text-2xl text-gold-400 font-bold border-l-4 border-gold-500 pl-6 mb-8">
+                        破碎的世界與榮耀的掌權：看見終極的盼望
+                    </p>
+                    
+                    <p>弟兄姊妹們，當我們打開新聞，看到的是戰爭、疫病、極端氣候、經濟動盪，以及人心的詭詐與敗壞。我們不禁會問：這個世界到底怎麼了？歷史將要走向何方？今天我們要看的以賽亞書24章，被稱為「以賽亞的啟示錄」。在這段經文中，先知帶領我們穿透現今的混亂，看見一幅震撼人心的末世圖畫。</p>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-4">萬物荒涼：罪的普世代價</h4>
+                        <p>以賽亞書24章一開始，就宣告了一個令人畏懼的景象。第1節說：「看哪，耶和華使地空虛，變為荒涼；又翻轉大地，將居民分散。」這不是局部的災難，而是普世性的傾覆。</p>
+                        <p class="my-6 bg-dark-card p-6 rounded-2xl border border-white/10 text-gold-100 font-bold italic">
+                            「地被其上的居民污穢；因為他們犯了律法，廢了律例，背了永約。」（賽24:5）
+                        </p>
+                        <p>這是整段經文的關鍵！大自然的荒涼、社會的解體，根本原因在於「人」的問題。我們必須明白，罪是有普世代價的。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-4">廢墟中的讚美與哀歌：看見真實的敗壞</h4>
+                        <p>當審判臨到，全地荒涼時，經文的畫面突然一轉。第14節說，有一群餘民要在四方高聲歡呼。但先知以賽亞的反應卻出人意料。第16節，他說：「我卻說：我消滅了！我消滅了，我有禍了！詭詐的行詭詐；詭詐的大行詭詐。」</p>
+                        <p>這就是一個真正屬神之人的深度。我們要在廢墟中為神未來的得勝歡呼，但同時也要為這世代的敗壞與靈魂的失喪流淚哀痛。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-4">審判的必然與榮耀的掌權：上帝最終的得勝</h4>
+                        <p>當這一切舊有的、敗壞的體系完全崩塌時，歷史來到了最高潮：</p>
+                        <p class="my-6 bg-dark-card p-6 rounded-2xl border border-white/10 text-gold-100 font-bold italic">
+                            「那時，月亮要蒙羞，日頭要慚愧；因為萬軍之耶和華必在錫安山，在耶路撒冷作王；在敬老面前必有榮耀。」（賽24:23）
+                        </p>
+                        <p>弟兄姊妹，這就是我們終極的盼望！當世界的根基震動時，不要驚惶。因為這一切的震動，都是為了迎來那不可震動的國度。日頭和月亮是天體中最榮耀的光體，但在萬軍之耶和華的榮耀面前，它們都要黯然失色。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response and Application -->
+        <section class="section-padding">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-gold-400">應用方向</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-4"><span class="text-gold-500 font-bold">01</span> 檢視屬靈的環保：是否參與了「詭詐」？</li>
+                        <li class="flex gap-4"><span class="text-gold-500 font-bold">02</span> 擁抱張力中的信仰：哀慟與讚美並行。</li>
+                        <li class="flex gap-4"><span class="text-gold-500 font-bold">03</span> 定睛終極的盼望：仰望在錫安作王的耶和華。</li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="text-2xl font-display font-bold mb-6 text-gold-400">回應行動</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-4"><span class="text-gold-500 font-bold">●</span> 認罪與清理：求主寶血潔淨生活中的污穢。</li>
+                        <li class="flex gap-4"><span class="text-gold-500 font-bold">●</span> 哀求與讚美：每日5分鐘為世代呼求。</li>
+                        <li class="flex gap-4"><span class="text-gold-500 font-bold">●</span> 重新對焦：宣告賽24:23「萬軍之耶和華必作王」。</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <h4 class="text-sm font-bold text-gray-500 uppercase tracking-tighter mb-4">結論關鍵字</h4>
+                <div class="flex justify-center gap-4">
+                    <span class="px-6 py-2 rounded-full border border-gold-500/30 text-gold-400">污穢 (Sin)</span>
+                    <span class="px-6 py-2 rounded-full border border-gold-500/30 text-gold-400">震動 (Judgment)</span>
+                    <span class="px-6 py-2 rounded-full border border-gold-500/30 text-gold-400">作王 (Reign)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-padding">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h2 class="text-4xl font-display font-bold mb-12 text-white">名言佳句</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「恩典是白白的，但絕不是廉價的。廉價的恩典是我們自己給自己的恩典，是沒有十字架的恩典。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 潘霍華, 《追隨基督》</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「一個害怕神的人，什麼都不怕；一個不害怕神的人，什麼都怕。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 司布真, 《司布真講道集》</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「如果神不是宇宙的絕對主宰，祂就不是神。神的主權是我們在動盪世界中唯一的安息之處。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 陶恕, 《神的屬性》</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「聖經裡的盼望不是一種『一廂情願』，而是一種確信：無論現在情況多麼黑暗，神已經掌權。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 提摩太·凱勒, 《加拉太書》</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「十字架是神對罪的嚴厲審判，也是神對罪人無比愛的最深表達。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 約翰·史托德, 《當代基督十架》</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「即使世界明天就要毀滅，我今天依然要種下我的蘋果樹。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 馬丁·路德</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「人類的墮落卻將這面反映神榮耀的鏡子打碎，使全地沾染了罪的污穢。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 約翰·加爾文, 《基督教要義》</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「神掌管著歷史的每一個微小細節。沒有一粒灰塵的飄落，不在祂永恆的旨意與護理之中。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 喬納森·愛德華茲</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「我們必須學習在黑暗中敬拜。當一切外在的依靠都被剝奪時，正是我們信仰最真實的時刻。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 畢德生, 《長天老日》</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass p-6 rounded-2xl hover-lift">
+                    <p class="text-gray-300 italic mb-4">「基督徒的盼望並非建基於人類的進步，而是建基於那位將要再來更新萬物的榮耀君王。」</p>
+                    <p class="text-sm font-bold text-gold-500">— 提摩太·凱勒, 《被隱藏的聖誕節》</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-6 rounded-xl bg-red-900/20 border border-red-500/30 text-red-400 text-center text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <button id="scroll-to-top" onclick="window.scrollTo({top: document.getElementById('prayer').offsetTop - 100, behavior: 'smooth'})" class="w-12 h-12 rounded-full bg-gold-500 text-black flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script>
+        const btn = document.getElementById('scroll-to-top');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                btn.style.display = "flex";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+</html>
+

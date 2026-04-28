@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽19:1-22: 擊打與醫治：當崩潰成為拯救的序曲</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffbea',
+                            100: '#fff1c5',
+                            200: '#ffe485',
+                            300: '#ffd046',
+                            400: '#ffb31a',
+                            500: '#f99207',
+                            600: '#e27103',
+                            700: '#bc5005',
+                            800: '#993f0a',
+                            900: '#7e340c',
+                        },
+                        egypt: {
+                            dark: '#0a0d12',
+                            card: '#161b22',
+                            accent: '#c9a15b',
+                            text: '#e6edf3'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0d12; color: #e6edf3; font-family: 'Outfit', 'Noto Sans TC', sans-serif; }
+        .glass-card {
+            background: rgba(22, 27, 34, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(201, 161, 91, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #c9a15b;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        .title-gradient {
+            background: linear-gradient(to right, #f99207, #c9a15b, #fff1c5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .bento-grid { grid-template-columns: 1fr; }
+        }
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #c9a15b;
+            color: #0a0d12;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(201, 161, 91, 0.4);
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        .scroll-top-btn:hover { transform: translateY(-5px); }
+        .section-icon {
+            font-size: 2rem;
+            margin-right: 0.75rem;
+            filter: drop-shadow(0 0 8px rgba(201, 161, 91, 0.6));
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Banner Section -->
+    <header id="top" class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/e0f5bdfd-36ce-48be-88ac-5aae2f2429e2' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-egypt-dark/60 to-egypt-dark"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <span class="inline-block px-4 py-1 mb-6 text-sm font-semibold tracking-widest text-egypt-accent uppercase border border-egypt-accent rounded-full bg-egypt-accent/10">以賽亞書 19:1-22</span>
+            <h1 class="text-5xl md:text-7xl font-display font-black mb-6 leading-tight title-gradient">擊打與醫治<br><span class="text-3xl md:text-5xl">當崩潰成為拯救的序曲</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 font-light max-w-2xl mx-auto italic">「耶和華必擊打埃及，又擊打又醫治，埃及人就歸向耶和華。」</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation Tool bar -->
+    <nav class="sticky top-0 z-50 bg-egypt-dark/90 backdrop-blur-md border-b border-egypt-accent/20 py-4 px-6 shadow-xl">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-egypt-accent font-bold tracking-wider text-sm md:text-base">賽19:1-22</div>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#prayer" class="nav-link text-gray-400 hover:text-egypt-accent">禱告</a>
+                <a href="#outline" class="nav-link text-gray-400 hover:text-egypt-accent">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-400 hover:text-egypt-accent">講章</a>
+                <a href="#quotes" class="nav-link text-gray-400 hover:text-egypt-accent">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 md:py-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="glass-card rounded-3xl p-8 md:p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 text-egypt-accent opacity-10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M11,21V19H13V21H11M11,17V11H13V17H11M11,9V7H13V9H11M20,2H4C2.9,2 2,2.9 2,4V16C2,17.1 2.9,18 4,18H8L12,22L16,18H20C21.1,18 22,17.1 22,16V4C22,2.9 21.1,2 20,2Z"/></svg>
+                </div>
+                <div class="flex items-center mb-8">
+                    <span class="section-icon">🙏</span>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-egypt-accent">開路禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed font-light text-gray-200">
+                    主耶和華，掌管歷史與萬國的主宰，我們來到祢面前。當我們讀到祢如何臨到埃及，震動他們所倚靠的偶像、資源與智慧時，我們求祢也鑒察我們的心。主啊，我們常像埃及一樣，倚靠眼見的財富、世俗的聰明與人為的保障，卻忘記祢才是我們唯一的磐石。求祢賜給我們屬靈的眼光，讓我們明白祢的拆毀是為了重建，祢的擊打是為了醫治。當我們的「埃及」面臨崩潰時，願我們不陷入絕望，而是轉眼仰望祢，向祢呼求。求祢差遣拯救者耶穌基督，在我們的生命中設立祭壇，使我們全心歸向祢。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline">
+            <div class="flex items-center mb-12">
+                <span class="section-icon">📜</span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-egypt-accent">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="group relative overflow-hidden rounded-2xl glass-card p-8 hover:border-egypt-accent transition-all duration-500 hover:-translate-y-2">
+                    <div class="absolute -right-4 -bottom-4 text-8xl font-black text-egypt-accent/5 group-hover:text-egypt-accent/10 transition-colors">01</div>
+                    <p class="text-sm text-egypt-accent/80 font-semibold mb-2">第一部分</p>
+                    <h3 class="text-2xl font-bold mb-4">虛假安全感的瓦解</h3>
+                    <p class="text-gray-400 text-sm">賽19:1-4</p>
+                </a>
+                <a href="#part2" class="group relative overflow-hidden rounded-2xl glass-card p-8 hover:border-egypt-accent transition-all duration-500 hover:-translate-y-2">
+                    <div class="absolute -right-4 -bottom-4 text-8xl font-black text-egypt-accent/5 group-hover:text-egypt-accent/10 transition-colors">02</div>
+                    <p class="text-sm text-egypt-accent/80 font-semibold mb-2">第二部分</p>
+                    <h3 class="text-2xl font-bold mb-4">屬世資源與智慧的破滅</h3>
+                    <p class="text-gray-400 text-sm">賽19:5-15</p>
+                </a>
+                <a href="#part3" class="group relative overflow-hidden rounded-2xl glass-card p-8 hover:border-egypt-accent transition-all duration-500 hover:-translate-y-2">
+                    <div class="absolute -right-4 -bottom-4 text-8xl font-black text-egypt-accent/5 group-hover:text-egypt-accent/10 transition-colors">03</div>
+                    <p class="text-sm text-egypt-accent/80 font-semibold mb-2">第三部分</p>
+                    <h3 class="text-2xl font-bold mb-4">從審判走向醫治的拯救</h3>
+                    <p class="text-gray-400 text-sm">賽19:16-22</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Sections -->
+        <section class="space-y-32">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-24">
+                <div class="flex items-center mb-8 border-l-4 border-egypt-accent pl-6">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">第一段：虛假安全感的瓦解</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="glass-card p-8 rounded-3xl bg-opacity-40">
+                            <h4 class="text-egypt-accent font-bold mb-4 flex items-center"><span class="mr-2">📖</span> 引用經文 (賽19:1-4)</h4>
+                            <p class="text-lg leading-relaxed text-gray-300 italic">「論埃及的默示：看哪，耶和華乘駕輕快的雲，臨到埃及。埃及的偶像在他面前戰兢；埃及人的心在裡面消化...我必將埃及人交在殘忍主的手中；強暴王必轄制他們。這是主—萬軍之耶和華說的。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-egypt-accent/5 rounded-2xl border border-egypt-accent/10">
+                                <h4 class="text-egypt-accent font-bold mb-2">關鍵字：偶像 (אֱלִיל)</h4>
+                                <p class="text-sm text-gray-400">字面意思是「無有」、「虛無」。指人們倚靠的事物本質上是完全無力且虛空的。</p>
+                            </div>
+                            <div class="p-6 bg-egypt-accent/5 rounded-2xl border border-egypt-accent/10">
+                                <h4 class="text-egypt-accent font-bold mb-2">關鍵字：激動 (סָכַךְ)</h4>
+                                <p class="text-sm text-gray-400">有「交織」、「激起」之意。表明社會撕裂是神在審判中顯明社會結構的脆弱。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-egypt-accent font-bold flex items-center"><span class="mr-2">❓</span> 關鍵解析</h4>
+                            <p class="text-gray-300 leading-relaxed">安穩的生活常成為我們心中的「偶像」，讓我們誤以為安全感來自於良好的社會秩序、穩定的政權或和諧的人際關係。神容許動盪，是為了打破我們對「虛無之物」的依賴，迫使我們面對靈魂深處真正的匱乏。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="glass-card p-6 rounded-2xl border-t-4 border-t-gold-600">
+                            <h4 class="text-gold-500 font-bold mb-3">生命例證</h4>
+                            <p class="text-sm text-gray-400 leading-loose">一位成功的企業家在金融風暴中失去所有。當過去倚靠的權貴（偶像）都避不見面時，他在絕望谷底遇見神。這場崩潰成為他生命的轉捩點。</p>
+                        </div>
+                        <blockquote class="border-l-2 border-egypt-accent p-6 italic text-gray-400 bg-egypt-accent/5 rounded-r-2xl">
+                            「偶像就是任何對你來說比上帝更重要的事情。」<br>
+                            <span class="block mt-2 text-egypt-accent font-semibold">— 提摩太·凱勒</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-24">
+                <div class="flex items-center mb-8 border-l-4 border-egypt-accent pl-6">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">第二段：屬世資源與智慧的破滅</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="glass-card p-8 rounded-3xl bg-opacity-40">
+                            <h4 class="text-egypt-accent font-bold mb-4 flex items-center"><span class="mr-2">📖</span> 引用經文 (賽19:5-15)</h4>
+                            <p class="text-lg leading-relaxed text-gray-300 italic">「海中的水必絕盡，河也乾涸枯竭...法老大有智慧的謀士，所籌劃的成為愚謀...耶和華使乖謬的靈摻入埃及中間；首領使埃及一切所做的都有差錯。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-egypt-accent/5 rounded-2xl border border-egypt-accent/10">
+                                <h4 class="text-egypt-accent font-bold mb-2">關鍵字：乖謬 (עִוְעִים)</h4>
+                                <p class="text-sm text-gray-400">意為「扭曲」、「混亂」。描述一種判斷力完全錯亂、無法看清現實的狀態。</p>
+                            </div>
+                            <div class="p-6 bg-egypt-accent/5 rounded-2xl border border-egypt-accent/10">
+                                <h4 class="text-egypt-accent font-bold mb-2">關鍵字：智慧人 (חָכָם)</h4>
+                                <p class="text-sm text-gray-400">指有經驗的策略家。但在這裡，人的最高智慧在神的旨意前顯得荒謬。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-egypt-accent font-bold flex items-center"><span class="mr-2">❓</span> 關鍵解析</h4>
+                            <p class="text-gray-300 leading-relaxed">尼羅河是經濟命脈，謀士是政治大腦。這段經文表明，無論是自然資源的枯竭還是人類理性的當機，都在上帝的掌管之下。我們不應繼續在舊框架裡尋找答案，而是要謙卑尋求「耶和華所定的旨意」。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="glass-card p-6 rounded-2xl border-t-4 border-t-gold-600">
+                            <h4 class="text-gold-500 font-bold mb-3">歷史反思</h4>
+                            <p class="text-sm text-gray-400 leading-loose">1912年鐵達尼號的沉沒。這艘「連上帝也沉不了的船」在冰山面前不堪一擊。正如埃及的資源與智慧，在神震動下徹底失效。</p>
+                        </div>
+                        <blockquote class="border-l-2 border-egypt-accent p-6 italic text-gray-400 bg-egypt-accent/5 rounded-r-2xl">
+                            「如果上帝的智慧能夠被我們理解，那祂就不配得敬拜了。」<br>
+                            <span class="block mt-2 text-egypt-accent font-semibold">— 陶恕</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-24">
+                <div class="flex items-center mb-8 border-l-4 border-egypt-accent pl-6">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">第三段：從審判走向醫治的拯救</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="glass-card p-8 rounded-3xl bg-opacity-40">
+                            <h4 class="text-egypt-accent font-bold mb-4 flex items-center"><span class="mr-2">📖</span> 引用經文 (賽19:16-22)</h4>
+                            <p class="text-lg leading-relaxed text-gray-300 italic">「有一城必稱為『滅亡城』...在埃及地中必有為耶和華築的一座壇...耶和華必擊打埃及，又擊打又醫治，埃及人就歸向耶和華。他必應允他們的禱告，醫治他們。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-egypt-accent/5 rounded-2xl border border-egypt-accent/10">
+                                <h4 class="text-egypt-accent font-bold mb-2">關鍵字：擊打 (נָגַף)</h4>
+                                <p class="text-sm text-gray-400">意思是「打擊」、「使之受災」。通常用來描述神對罪惡的審判與刑罰。</p>
+                            </div>
+                            <div class="p-6 bg-egypt-accent/5 rounded-2xl border border-egypt-accent/10">
+                                <h4 class="text-egypt-accent font-bold mb-2">關鍵字：醫治 (רָפָא)</h4>
+                                <p class="text-sm text-gray-400">意思是「縫補」、「修復」。展現福音核心：降災是為了帶出徹底的醫治。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-egypt-accent font-bold flex items-center"><span class="mr-2">❓</span> 關鍵解析</h4>
+                            <p class="text-gray-300 leading-relaxed">「擊打」是針對罪惡的必要手術，而「醫治」是針對靈魂的救贖。神的管教就像外科醫生的手術刀，切開皮肉雖然痛，但目的是為了切除致命的毒瘤，挽救生命。祂擊打，是為了叫我們回轉呼求。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="glass-card p-6 rounded-2xl border-t-4 border-t-gold-600">
+                            <h4 class="text-gold-500 font-bold mb-3">醫治比喻</h4>
+                            <p class="text-sm text-gray-400 leading-loose">罹患惡性腫瘤的病人，若只給止痛藥是漠視生命。負責任的醫生會用手術刀切開身體，這把刀帶來了「擊打」，但也帶來了唯一的生機。</p>
+                        </div>
+                        <blockquote class="border-l-2 border-egypt-accent p-6 italic text-gray-400 bg-egypt-accent/5 rounded-r-2xl">
+                            「主擊傷我們，是為了醫治我們；祂的愛在最嚴厲的管教中，與在最甜蜜的應許中一樣深厚。」<br>
+                            <span class="block mt-2 text-egypt-accent font-semibold">— 司布真</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="relative">
+            <div class="flex items-center mb-12">
+                <span class="section-icon">🎙️</span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-egypt-accent">講章全文</h2>
+            </div>
+            <div class="glass-card rounded-3xl p-8 md:p-16 leading-loose space-y-12 text-gray-300 text-lg">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4 text-white">賽19:1-22: 擊打與醫治</h3>
+                    <div class="h-1 w-24 bg-egypt-accent mx-auto"></div>
+                </div>
+
+                <p>弟兄姊妹，平安。當我們面對生活中的動盪，不論是經濟的衰退、社會的撕裂，還是個人的危機時，我們常問：「神在哪裡？」今天我們要從以賽亞書19章來看上帝如何處理這些問題。這是一段關於埃及的預言，但它更是一部屬靈的病歷表，記錄了上帝如何透過 <span class="text-egypt-accent font-bold">拆毀</span> 帶來真正的 <span class="text-egypt-accent font-bold">醫治</span>。</p>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-6">第一段：虛假安全感的瓦解</h4>
+                    <p>首先，我們看到上帝臨到埃及，帶來了極大的震動。<span class="bg-egypt-accent/10 px-2 py-1 text-egypt-accent font-semibold">「看哪，耶和華乘駕輕快的雲，臨到埃及。埃及的偶像在他面前戰兢；埃及人的心在裡面消化。」（賽19:1）</span>埃及在當時是超級強國，代表著穩定與繁榮。但上帝一出手，祂首先對付的就是「偶像」。偶像在原文中意思是「虛無之物」。當神容許弟兄攻擊弟兄、社會發生內亂時，祂正在暴露一個事實：我們所倚賴的社會結構、人際網絡，如果不建立在神的基礎上，是極其脆弱的。當我們生命中的「埃及」發生動盪，那不是神失去了控制，而是神正在瓦解我們的虛假安全感。祂在問我們：「你真正倚靠的是什麼？」</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-6">第二段：屬世資源與智慧的破滅</h4>
+                    <p>接著，這場震動延伸到了經濟與政治的層面。<span class="bg-egypt-accent/10 px-2 py-1 text-egypt-accent font-semibold">「海中的水必絕盡，河也乾涸枯竭。」（賽19:5）</span>尼羅河是埃及的命脈，當尼羅河乾涸，所有的產業都隨之崩潰。不僅如此，埃及最引以為傲的謀士，那些絕頂聰明的人，他們的籌劃竟然成為了愚謀。<span class="bg-egypt-accent/10 px-2 py-1 text-egypt-accent font-semibold">「耶和華使乖謬的靈摻入埃及中間；首領使埃及一切所做的都有差錯。」（賽19:14）</span>我們常常驕傲於自己的專業、存款和人脈，認為我們有足夠的「智慧」來應對人生的風浪。但當上帝要讓我們看見自己的有限時，祂會讓我們的「尼羅河」乾涸，讓我們的「聰明」當機。當一切屬世資源都破滅時，正是我們學習謙卑、承認自己無能為力的最佳時刻。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-6">第三段：從審判走向醫治的拯救</h4>
+                    <p>然而，上帝的目的是為了毀滅嗎？絕對不是！這段經文最美的地方在於最後的翻轉。<span class="bg-egypt-accent/10 px-2 py-1 text-egypt-accent font-semibold">「耶和華必擊打埃及，又擊打又醫治，埃及人就歸向耶和華。他必應允他們的禱告，醫治他們。」（賽19:22）</span>這是一個極其震撼的宣告。上帝的擊打，是一場屬靈的外科手術。祂切開我們的驕傲，斬斷我們對偶像的依戀，過程雖然充滿痛苦，但祂的手術刀帶著無比的慈愛。當埃及人在欺壓中 <span class="text-white font-bold underline decoration-egypt-accent decoration-2">「哀求耶和華」</span> 時，神就差遣一位救主來拯救他們。弟兄姊妹，這不僅是給埃及的應許，更是給我們每一個人的福音。當我們在生命的絕境中向神呼求，神已經為我們差遣了那位終極的救主——耶穌基督。祂在十字架上代替我們承受了終極的擊打，好叫我們得著完全的醫治。</p>
+                </div>
+
+                <div class="pt-8 border-t border-egypt-accent/20">
+                    <p class="text-xl md:text-2xl font-bold text-egypt-accent italic">「今天，無論你的生命正經歷怎樣的崩潰與震動，請記住，這不是結局。崩潰，往往是拯救的序曲。」</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Actions Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Application -->
+            <div class="space-y-8">
+                <div class="flex items-center mb-6">
+                    <span class="section-icon">🎯</span>
+                    <h2 class="text-3xl font-display font-bold text-egypt-accent">應用方向</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-6 rounded-2xl glass-card flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-egypt-accent/20 flex items-center justify-center flex-shrink-0 text-egypt-accent font-bold">1</div>
+                        <p class="text-gray-300">檢視個人的「埃及」與「尼羅河」：評估目前的安全感建立在哪裡？求神光照心中的偶像。</p>
+                    </div>
+                    <div class="p-6 rounded-2xl glass-card flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-egypt-accent/20 flex items-center justify-center flex-shrink-0 text-egypt-accent font-bold">2</div>
+                        <p class="text-gray-300">用正確態度面對危機：不要急著用人為智慧解決，而是尋問上帝在動盪中的旨意。</p>
+                    </div>
+                    <div class="p-6 rounded-2xl glass-card flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-egypt-accent/20 flex items-center justify-center flex-shrink-0 text-egypt-accent font-bold">3</div>
+                        <p class="text-gray-300">在擊打中看見盼望：認識到痛苦管教是愛的「手術」，應主動呼求祂並為祂築壇。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div id="actions" class="space-y-8">
+                <div class="flex items-center mb-6">
+                    <span class="section-icon">⚡</span>
+                    <h2 class="text-3xl font-display font-bold text-egypt-accent">回應行動</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-6 rounded-2xl bg-egypt-accent text-egypt-dark font-bold flex gap-4 shadow-lg shadow-egypt-accent/20">
+                        <span class="text-2xl">📋</span>
+                        <div>
+                            <h5 class="text-lg">進行「偶像清查」</h5>
+                            <p class="text-sm font-medium opacity-80">寫下三個最害怕失去的事物，禱告將所有權交還給上帝。</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl glass-card border border-egypt-accent/40 flex gap-4">
+                        <span class="text-2xl">🏗️</span>
+                        <div>
+                            <h5 class="text-lg font-bold text-white">在危機中築壇</h5>
+                            <p class="text-sm text-gray-400">若面臨乾涸期，設立一個每天特定的禱告時間作為祭壇。</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl glass-card border border-egypt-accent/40 flex gap-4">
+                        <span class="text-2xl">🤝</span>
+                        <div>
+                            <h5 class="text-lg font-bold text-white">為受苦者代求</h5>
+                            <p class="text-sm text-gray-400">陪伴正在經歷生命「擊打」的肢體，一同宣告神的拯救。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes">
+            <div class="flex items-center mb-12">
+                <span class="section-icon">✨</span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-egypt-accent">名言佳句</h2>
+            </div>
+            <div class="bento-grid">
+                <div class="col-span-2 glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-xl font-medium mb-6">「人心就是一個製造偶像的工廠。」</p>
+                    <p class="text-egypt-accent font-bold">— 約翰·加爾文</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl">
+                    <p class="text-sm mb-4">「十字架的真理：神不是免除苦難，而是親自走入苦難。」</p>
+                    <p class="text-egypt-accent font-bold text-xs">— 約翰·史托德</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl">
+                    <p class="text-sm mb-4">「我們不該逃避苦難，而應在火爐中尋找神。」</p>
+                    <p class="text-egypt-accent font-bold text-xs">— 提摩太·凱勒</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl">
+                    <p class="text-sm mb-4">「廉價恩典是自己給的，重價恩典是基督的呼召。」</p>
+                    <p class="text-egypt-accent font-bold text-xs">— 潘霍華</p>
+                </div>
+                <div class="col-span-2 glass-card p-8 rounded-3xl bg-gradient-to-br from-egypt-accent/20 to-transparent">
+                    <p class="text-lg italic mb-4">「在神所有的屬性中，沒有一樣比祂的至高主權更讓信徒感到安慰。」</p>
+                    <p class="text-egypt-accent font-bold">— 喬納森·愛德華茲</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl">
+                    <p class="text-sm mb-4">「基督徒生命是同一個方向上的長久順服。」</p>
+                    <p class="text-egypt-accent font-bold text-xs">— 畢德生</p>
+                </div>
+                <div class="col-span-2 glass-card p-8 rounded-3xl border border-gold-400/30">
+                    <p class="text-lg mb-4 font-bold text-gold-200">「神唯一的獨生子未曾免於受苦，我們又怎能期望自己免於受苦呢？」</p>
+                    <p class="text-egypt-accent font-bold">— 馬丁·路德</p>
+                </div>
+                <div class="glass-card p-6 rounded-3xl">
+                    <p class="text-sm mb-4">「祂擊傷是為了醫治，擊打是為了痊癒。」</p>
+                    <p class="text-egypt-accent font-bold text-xs">— 司布真</p>
+                </div>
+            </div>
+            
+            <div class="mt-24 text-center">
+                <p class="text-gray-500 text-sm italic py-8 border-t border-gray-800">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Scroll to Top -->
+    <a href="#prayer" class="scroll-top-btn" title="回到禱告">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

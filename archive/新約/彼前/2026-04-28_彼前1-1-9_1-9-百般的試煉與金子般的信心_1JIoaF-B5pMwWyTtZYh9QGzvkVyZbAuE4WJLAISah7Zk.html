@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彼前1:1-9 百般的試煉與金子般的信心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        dark: {
+                            900: '#050505',
+                            800: '#111111',
+                            700: '#1a1a1a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: rgba(26, 26, 26, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(234, 179, 8, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(234, 179, 8, 0.2);
+        }
+        .hero-mask {
+            background: linear-gradient(0deg, #050505 0%, rgba(5, 5, 5, 0.4) 50%, rgba(5, 5, 5, 0) 100%);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #eab308;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+        .sparkle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.3;
+            pointer-events: none;
+            animation: float 10s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-gold-500 font-bold tracking-widest text-sm lg:text-base">彼前 1:1-9</span>
+            </div>
+            <div class="flex space-x-6 lg:space-x-12 text-sm font-medium tracking-tight">
+                <a href="#prayer" class="nav-link text-gray-400 hover:text-gold-400">禱告</a>
+                <a href="#outline" class="nav-link text-gray-400 hover:text-gold-400">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-400 hover:text-gold-400">講章</a>
+                <a href="#quotes" class="nav-link text-gray-400 hover:text-gold-400">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
+        <!-- Visual Simulation -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        <!-- God Ray Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-gold-500/10 to-dark-900 hero-mask"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="mb-6 inline-block py-1 px-4 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 text-xs tracking-widest uppercase animate-pulse-slow">
+                New Testament Series
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black font-display mb-6 tracking-tighter text-white">
+                <span class="gradient-text">百般的試煉</span><br>與金子般的信心
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 font-light leading-relaxed tracking-wide">
+                彼得前書 1:1-9 : 穿越苦難的活潑盼望
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 1. Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="max-w-3xl mx-auto text-center space-y-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 mb-4">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-3.32a2 2 0 01-1.112-2.383l1.112-4.108m16.456 6.491l8.228-3.32a2 2 0 001.112-2.383l-1.112-4.108M12 21l8.228-3.32a2 2 0 001.112-2.383l-1.112-4.108M12 21V10m0 0l-1.228 3.32a2 2 0 01-1.112 2.383l-1.112 4.108M12 10l1.228 3.32a2 2 0 001.112 2.383l1.112 4.108M12 10V3"></path></svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white tracking-tight">會前禱告</h2>
+                <div class="p-8 md:p-12 bento-card rounded-3xl border-gold-500/20 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm1-5C6.47 2 2 6.5 2 12s4.47 10 10 10 10-4.5 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light italic">
+                        「慈悲的阿爸父神，我們滿心感謝讚美祢。因著祢豐富的憐憫，藉著耶穌基督從死裡復活，祢重生了我們，賜給我們這份不能朽壞、不玷污、不衰殘的活潑盼望。主啊，雖然我們在此生會面臨百般的試煉與暫時的憂愁，求祢開我們的屬靈眼睛，讓我們看見這些試煉不過是煉淨我們信心的爐火，為要叫我們的信心比精金更顯寶貴。求聖靈幫助我們，雖未曾肉眼見過主，卻能深深愛祂，並在苦難中生發出說不出來、滿有榮光的大喜樂，直到我們得著靈魂的救恩。奉主耶穌基督得勝的名求，阿們。」
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Outline Section -->
+        <section id="outline" class="space-y-12">
+            <div class="text-center space-y-4">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 mb-4">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white tracking-tight">講道大綱</h2>
+            </div>
+
+            <!-- Outline Nav Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <a href="#section1" class="group p-6 bento-card rounded-2xl border-l-4 border-l-gold-600 flex flex-col justify-between hover:bg-gold-900/20">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest mb-4">第一段</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">根基與應許：活潑的盼望與天上的基業</h3>
+                    <p class="text-gray-500 text-sm mt-2">彼前 1:1-5</p>
+                </a>
+                <a href="#section2" class="group p-6 bento-card rounded-2xl border-l-4 border-l-gold-600 flex flex-col justify-between hover:bg-gold-900/20">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest mb-4">第二段</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">熬煉與確據：火中精金與信心的試驗</h3>
+                    <p class="text-gray-500 text-sm mt-2">彼前 1:6-7</p>
+                </a>
+                <a href="#section3" class="group p-6 bento-card rounded-2xl border-l-4 border-l-gold-600 flex flex-col justify-between hover:bg-gold-900/20">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest mb-4">第三段</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">愛慕與終局：未見之愛與靈魂的救恩</h3>
+                    <p class="text-gray-500 text-sm mt-2">彼前 1:8-9</p>
+                </a>
+            </div>
+
+            <!-- Section 1 Deep Dive -->
+            <div id="section1" class="pt-20 space-y-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gold-900"></div>
+                    <h3 class="text-2xl font-display font-bold text-gold-400">第一段深度解析</h3>
+                    <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gold-900"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Scripture Box -->
+                    <div class="lg:col-span-12 p-8 bento-card rounded-3xl bg-dark-800/40 border-gold-500/10">
+                        <p class="text-xl leading-relaxed text-gray-200">
+                            「耶穌基督的使徒彼得寫信給那分散在本都、加拉太、加帕多家、亞西亞、庇推尼寄居的，就是照父神的先見被揀選，藉著聖靈得成聖潔，以致順服耶穌基督，又蒙他血所灑的人... 願頌讚歸與我們主耶穌基督的父神！他曾照自己的大憐憫，藉耶穌基督從死裡復活，重生了我們，叫我們有活潑的盼望...」
+                        </p>
+                    </div>
+                    <!-- Details -->
+                    <div class="lg:col-span-4 p-6 bento-card rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center"><svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg> 原文詞彙</h4>
+                        <ul class="space-y-4 text-sm text-gray-400">
+                            <li><strong class="text-white">寄居的 (Parepidēmois):</strong> 暫時居留的外國人。</li>
+                            <li><strong class="text-white">活潑的盼望 (Elpida zōsan):</strong> Living hope，具有生命力的確切期待。</li>
+                            <li><strong class="text-white">不能朽壞 (Aphtharton):</strong> 永不腐壞，具有永恆的防腐性。</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-8 p-6 bento-card rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4">關鍵問題與解析</h4>
+                        <p class="text-white font-bold mb-2">為什麼彼得要稱我們的盼望為「活潑的盼望」，而不是一般的「希望」？</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            世人的希望往往建立在環境的變動上，一旦環境改變，希望就死了。但基督徒的盼望是「活」的，因為它的根基是「耶穌基督從死裡復活」。耶穌活著，所以我們的盼望也活著。
+                        </p>
+                        <div class="mt-6 pt-6 border-t border-white/5">
+                            <p class="text-gold-400/80 italic text-sm">「聖經中的盼望不是一種對未來的微弱渴望，而是一種對未來的堅定確信。」 —— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 Deep Dive -->
+            <div id="section2" class="pt-20 space-y-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gold-900"></div>
+                    <h3 class="text-2xl font-display font-bold text-gold-400">第二段深度解析</h3>
+                    <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gold-900"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12 p-8 bento-card rounded-3xl bg-dark-800/40 border-gold-500/10">
+                        <p class="text-xl leading-relaxed text-gray-200">
+                            「因此，你們是大有喜樂；但如今，在百般的試煉中暫時憂愁，叫你們的信心既被試驗，就比那被火試驗仍然能壞的金子更顯寶貴，可以在耶穌基督顯現的時候得著稱讚、榮耀、尊貴。」
+                        </p>
+                    </div>
+                    <div class="lg:col-span-7 p-6 bento-card rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4">煉淨的過程</h4>
+                        <p class="text-white font-bold mb-2">我們如何能在「百般的試煉中暫時憂愁」，卻同時「大有喜樂」？</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            憂愁是真實的情感，面對痛楚是正常的。然而，底層的「大有喜樂」源自於對「結局」的看透。我們知道這試煉是「暫時」的，且具有神聖的目的：煉淨信心。當焦點從「苦難的痛楚」轉移到「苦難的產物」時，就能在眼淚中喜樂。
+                        </p>
+                    </div>
+                    <div class="lg:col-span-5 p-6 bento-card rounded-2xl bg-gold-900/10">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center"><svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg> 煉金師的比喻</h4>
+                        <p class="text-sm text-gray-300 italic leading-relaxed">
+                            「當爐火升到最高溫，金子鎔化，渣滓撇去。當我能從清澈的金水表面，清晰地看到我自己的倒影時，我就知道金子已經純淨了。」神也是這樣熬煉我們，直到我們反射出基督的榮美。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 Deep Dive -->
+            <div id="section3" class="pt-20 space-y-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent to-gold-900"></div>
+                    <h3 class="text-2xl font-display font-bold text-gold-400">第三段深度解析</h3>
+                    <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gold-900"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12 p-8 bento-card rounded-3xl bg-dark-800/40 border-gold-500/10">
+                        <p class="text-xl leading-relaxed text-gray-200">
+                            「你們雖然沒有見過他，卻是愛他；如今雖不得看見，卻因信他就有說不出來、滿有榮光的大喜樂；並且得著你們信心的果效，就是靈魂的救恩。」
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 p-6 bento-card rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4">愛與果效</h4>
+                        <ul class="space-y-4 text-sm text-gray-400">
+                            <li><strong class="text-white">愛 (Agapate):</strong> 意志上的委身與深切愛慕。</li>
+                            <li><strong class="text-white">說不出來:</strong> 超越人類詞彙的。</li>
+                            <li><strong class="text-white">果效 / 結局:</strong> 終點、目標或頂峰。</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-8 p-6 bento-card rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4">未見之愛的故事</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            盲人女詩人芬尼·克羅斯比曾說：「如果我出生的時候可以向上帝祈求，我會求祂讓我天生瞎眼。因為當我到了天上，我睜開眼睛第一個看見的，就是我的救主耶穌！」她的肉眼從未見過主，但她的靈眼卻愛慕主至深。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sermon Content -->
+        <section id="sermon" class="relative py-20 bg-dark-800/30 rounded-[3rem] px-8 md:px-20 border border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16 space-y-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 mb-4">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-white">講章文稿</h2>
+                    <p class="text-gold-500 font-medium tracking-widest uppercase">Full Sermon Transcript</p>
+                </div>
+
+                <div class="prose prose-invert prose-gold max-w-none space-y-12 text-gray-300">
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-display font-bold text-white border-b border-gold-500/20 pb-4">彼前 1:1-9: 穿越苦難的活潑盼望</h3>
+                        <p class="text-lg leading-relaxed">
+                            弟兄姊妹，平安！我們人生中總會遇到各種突如其來的風暴。當疾病、失業、或者家庭危機襲來時，你心中的支柱是什麼？今天，我們將透過彼得前書第一章1到9節，來看見一個能夠<span class="text-gold-400 font-bold">穿越苦難的活潑盼望</span>。
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-gold-500">第一段：根基與應許——活潑的盼望與天上的基業</h4>
+                        <p class="text-lg leading-relaxed">
+                            這世界給我們的盼望是會死的——建立在經濟、健康、關係上，一旦這些垮了，盼望就死了。但神給我們的是<span class="text-white font-bold border-b-2 border-gold-500">「活潑的盼望」</span>！為什麼是活的？因為它建立在一個歷史的絕對事實上：<span class="text-gold-400 font-bold">耶穌基督從死裡復活！</span> 既然耶穌勝過了死亡，我們未來的基業就是被鎖在天上、由上帝親自看管的。
+                        </p>
+                    </div>
+
+                    <div class="bg-gold-500/5 p-8 rounded-2xl border-l-4 border-gold-500">
+                        <p class="text-xl text-white font-serif italic">「沒有任何金融海嘯能使它貶值，沒有任何疾病能使它朽壞。當我們知道結局是絕對穩妥的，我們在世上這短暫的『寄居』生活中，就有了無法撼動的底氣。」</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-gold-500">第二段：熬煉與確據——火中精金與信心的試驗</h4>
+                        <p class="text-lg leading-relaxed">
+                            試煉是一座高溫的火爐。神把我們放進去，不是為了毀滅我們，而是為了<span class="text-gold-400 font-bold">提煉我們</span>。當環境順遂時，我們很難分辨自己愛的是神的恩典，還是神自己。唯有在火爐中，虛假的安全感被燒毀，雜質被浮出撇去，我們那<span class="text-white font-bold">比精金更寶貴的信心</span>才被顯露出來。
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-gold-500">第三段：愛慕與終局——未見之愛與靈魂的救恩</h4>
+                        <p class="text-lg leading-relaxed">
+                            我們中間沒有人肉眼見過耶穌，但我們卻愛祂。這是一種超越感官的奇妙關係。當我們藉著神的話語、在聖靈的感動中經歷祂，我們就是在品嚐那<span class="text-gold-400 font-bold">「說不出來、滿有榮光的大喜樂」</span>。這喜樂不是來自外在物質的滿足，而是來自我們正穩步邁向靈魂的完全救恩。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Action & Application -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h3 class="text-3xl font-display font-bold text-white flex items-center">
+                    <span class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </span>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="p-6 bento-card rounded-2xl flex items-start">
+                        <span class="text-gold-500 mr-4 font-bold">01</span>
+                        <p class="text-gray-300">擁抱「寄居者」心態。不要把安全感投資在會朽壞的屬世事物，要定睛於天上的基業。</p>
+                    </li>
+                    <li class="p-6 bento-card rounded-2xl flex items-start">
+                        <span class="text-gold-500 mr-4 font-bold">02</span>
+                        <p class="text-gray-300">賦予苦難意義。面對困境不再問「為什麼是我？」而是問「主啊，祢要煉淨什麼雜質？」</p>
+                    </li>
+                    <li class="p-6 bento-card rounded-2xl flex items-start">
+                        <span class="text-gold-500 mr-4 font-bold">03</span>
+                        <p class="text-gray-300">操練未見之愛。刻意花時間與耶穌建立真實、親密的關係，追求那說不出來的大喜樂。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="text-3xl font-display font-bold text-white flex items-center">
+                    <span class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    </span>
+                    回應行動
+                </h3>
+                <ul class="space-y-4">
+                    <li class="p-6 bento-card rounded-2xl border-dashed border-gold-500/30">
+                        <h5 class="text-white font-bold mb-2">經文背誦</h5>
+                        <p class="text-gray-400 text-sm">背誦彼前 1:3-4，每天早晨宣告自己擁有「活潑的盼望」。</p>
+                    </li>
+                    <li class="p-6 bento-card rounded-2xl border-dashed border-gold-500/30">
+                        <h5 class="text-white font-bold mb-2">苦難轉化禱告</h5>
+                        <p class="text-gray-400 text-sm">寫下一個目前的「試煉」，禱告神藉此事將你的信心煉如精金。</p>
+                    </li>
+                    <li class="p-6 bento-card rounded-2xl border-dashed border-gold-500/30">
+                        <h5 class="text-white font-bold mb-2">無聲的愛慕</h5>
+                        <p class="text-gray-400 text-sm">每天撥出10分鐘放下手機，單單默想耶穌的愛與復活榮耀。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gold-500/10 border border-gold-500/30 mb-4">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white tracking-tight">屬靈前輩佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Quote 1 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between border-t-2 border-t-gold-500/50">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「上帝在我們的歡樂中對我們微語，在我們的良知中對我們說話，卻在我們的痛苦中對我們呼喊；痛苦是上帝用來喚醒這個耳聾世界的麥克風。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">魯益師 (C.S. Lewis)</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「當基督呼召一個人時，祂是呼召他來死。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">潘霍華 (Dietrich Bonhoeffer)</span>
+                        <p class="text-gray-500">《作門徒的代價》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between border-t-2 border-t-gold-500/50">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「星星在黑夜裡最亮，應許在試煉中最甜。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">司布真 (Charles Spurgeon)</span>
+                        <p class="text-gray-500">《早晚靈修》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「在神能極大地使用一個人之前，祂必須先深深地擊打他。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">陶恕 (A.W. Tozer)</span>
+                        <p class="text-gray-500">《渴慕神》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between border-t-2 border-t-gold-500/50">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「如果你有一個因復活而來的活潑盼望，你就擁有了一種能在任何苦難中支撐你的力量。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">提摩太·凱勒 (Timothy Keller)</span>
+                        <p class="text-gray-500">《與神同行熬過苦難》</p>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「信心並非相信神會按照我的意思去做，而是相信無論神做什麼，都是出於祂的良善與智慧。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">約翰·史托德 (John Stott)</span>
+                        <p class="text-gray-500">《當代基督十架》</p>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between border-t-2 border-t-gold-500/50">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「真正的屬靈情感，必然會產生出對基督那種超越眼見的、強烈而聖潔的愛。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">喬納森·愛德華茲 (Jonathan Edwards)</span>
+                        <p class="text-gray-500">《宗教情感》</p>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「喜樂是我們在認識到神與我們同在，且神在一切事上掌權時，自然流露出來的果子。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">盧雲 (Henri Nouwen)</span>
+                        <p class="text-gray-500">《浪子回頭》</p>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="p-8 bento-card rounded-3xl flex flex-col justify-between border-t-2 border-t-gold-500/50">
+                    <p class="text-gray-300 leading-relaxed mb-6 italic">「一個基督徒的信心，不是在平靜的港灣中被證明的，而是在狂風暴雨的海洋中被證實的。」</p>
+                    <div class="text-sm">
+                        <span class="text-white font-bold">馬丁·路德 (Martin Luther)</span>
+                        <p class="text-gray-500">《彼得前書注釋》</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center pt-20 border-t border-white/5">
+            <p class="text-gray-600 text-sm tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 hover:bg-gold-500 text-black rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <!-- Background Decoration Elements -->
+    <div class="sparkle w-1 h-1 top-1/4 left-10"></div>
+    <div class="sparkle w-2 h-2 top-1/2 right-20"></div>
+    <div class="sparkle w-1 h-1 bottom-1/4 left-1/2"></div>
+    <div class="sparkle w-3 h-3 top-20 right-1/4 animate-pulse"></div>
+
+</body>
+</html>

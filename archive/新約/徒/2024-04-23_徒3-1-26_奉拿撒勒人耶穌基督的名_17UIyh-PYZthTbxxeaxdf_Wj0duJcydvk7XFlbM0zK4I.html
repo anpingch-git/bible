@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒3:1-26:超越金銀的恩典：奉拿撒勒人耶穌基督的名</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8d3',
+                            200: '#fdf0a7',
+                            300: '#fbe271',
+                            400: '#f9d03a',
+                            500: '#f3b814',
+                            600: '#d7910d',
+                            700: '#b16a0e',
+                            800: '#905312',
+                            900: '#774414',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f9d03a 0%, #d7910d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: rgba(30, 41, 59, 0.4);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(243, 184, 20, 0.3);
+            transform: translateY(-4px);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f3b814;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .btn-outline {
+            border: 1px solid rgba(243, 184, 20, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-outline:hover {
+            background: rgba(243, 184, 20, 0.1);
+            border-color: #f3b814;
+            transform: scale(1.02);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+        .sticky-toolbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .float-btn {
+            box-shadow: 0 10px 25px -5px rgba(243, 184, 20, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Banner -->
+    <header class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/5b582c7f-98a9-4cc8-9cb2-2a1f506e1775' alt='Banner Image' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h2 class="text-gold-400 font-display font-semibold tracking-widest mb-4 opacity-90">使徒行傳 3:1-26</h2>
+            <h1 class="text-4xl md:text-6xl font-display font-bold leading-tight mb-6">
+                超越金銀的恩典：<br/>
+                <span class="gradient-text">奉拿撒勒人耶穌基督的名</span>
+            </h1>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-toolbar glass border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <span class="text-gold-400 font-display font-bold text-lg">徒 3:1-26</span>
+            <div class="flex items-center space-x-6 text-sm font-medium">
+                <a href="#prayer" class="nav-link text-slate-300 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-slate-300 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-slate-300 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-slate-300 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">開會禱告</h2>
+            </div>
+            <div class="section-card p-8 md:p-12">
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-200 italic font-light">
+                    「主耶穌，我們滿心感謝讚美祢。祢是生命的主，祢的名配得極大的榮耀與讚美。主啊，我們常像那生來瘸腿的人，在美門口只求金銀與短暫的滿足，卻忽略了祢能賜下全然醫治與翻轉生命的恩典。求祢赦免我們常常將眼光停留在物質的缺乏上，教導我們真實地「留意看」祢。求祢聖靈的大能今天再次充滿我們，讓我們經歷那奉拿撒勒人耶穌基督之名所帶來的神蹟，並賜給我們悔改歸正的勇氣，好叫我們從祢面前經歷那安舒更新的日子。奉耶穌基督得勝的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 rounded-2xl bg-blue-500/20 flex items-center justify-center text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="btn-outline rounded-3xl p-6 flex flex-col gap-3 group">
+                    <span class="text-gold-400 text-sm font-bold uppercase tracking-tighter">第一部分</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">金銀之外的奇妙翻轉</h3>
+                    <span class="text-slate-400 text-sm">徒 3:1-10</span>
+                </a>
+                <a href="#section2" class="btn-outline rounded-3xl p-6 flex flex-col gap-3 group">
+                    <span class="text-gold-400 text-sm font-bold uppercase tracking-tighter">第二部分</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">能力之源：榮耀耶穌的名</h3>
+                    <span class="text-slate-400 text-sm">徒 3:11-16</span>
+                </a>
+                <a href="#section3" class="btn-outline rounded-3xl p-6 flex flex-col gap-3 group">
+                    <span class="text-gold-400 text-sm font-bold uppercase tracking-tighter">第三部分</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">悔改歸正與萬物復興</h3>
+                    <span class="text-slate-400 text-sm">徒 3:17-26</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis: Section 1 -->
+        <section id="section1" class="scroll-mt-32 space-y-12">
+            <div class="flex items-baseline gap-4">
+                <span class="text-5xl font-display font-bold text-gold-500/20">01</span>
+                <h2 class="text-3xl font-display font-bold">第一段：金銀之外的奇妙翻轉</h2>
+            </div>
+            
+            <div class="bg-slate-900/50 rounded-[32px] p-8 md:p-12 border border-white/5 space-y-10">
+                <div>
+                    <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v10A7.968 7.968 0 0014.5 14c-1.255 0-2.443.29-3.5.804V4.804z"></path></svg>
+                        引用經文 (徒 3:1-10)
+                    </h4>
+                    <p class="text-slate-300 leading-relaxed bg-slate-950/50 p-6 rounded-2xl border-l-4 border-gold-500">
+                        （1）申初禱告的時候，彼得、約翰上聖殿去。（2）有一個人，生來是瘸腿的，天天被人抬來，放在殿的一個門口（那門名叫美門），要求進殿的人賙濟。（3）他看見彼得、約翰將要進殿，就求他們賙濟。（4）彼得、約翰定睛看他；彼得說：「你看我們！」（5）那人就留意看他們，指望得著甚麼。（6）彼得說：「金銀我都沒有，只把我所有的給你：我奉拿撒勒人耶穌基督的名，叫你起來行走！」（7）於是拉著他的右手，扶他起來；他的腳和踝子骨立刻健壯了，（8）就跳起來，站著，又行走，同他們進了殿，走著，跳著，讚美神。（9）百姓都看見他行走，讚美神；（10）認得他是那素常坐在殿的美門口求賙濟的，就因他所遇著的事滿心狂喜，詫異。
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2">關鍵原文</h4>
+                        <div class="space-y-4">
+                            <div class="bg-slate-800/50 p-4 rounded-xl">
+                                <span class="text-gold-200 font-bold block mb-1">留意看 (ἐπέχω, epecho)</span>
+                                <p class="text-sm text-slate-400">全神貫注、定睛注視。預備他領受超乎想像的恩典。</p>
+                            </div>
+                            <div class="bg-slate-800/50 p-4 rounded-xl">
+                                <span class="text-gold-200 font-bold block mb-1">健壯 (στερεόω, stereoo)</span>
+                                <p class="text-sm text-slate-400">醫學用語，意指使堅固、獲得力量。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2">關鍵問題與解析</h4>
+                        <div class="text-slate-300">
+                            <p class="font-semibold text-white mb-2 italic">為何神給了他沒有求的（醫治）？</p>
+                            <p class="text-sm leading-relaxed">神不給我們次好的，而是給我們最好的。禱告不是要改變神的心意來滿足清單，而是降服於神，讓祂賜下真正能使我們「起來行走」的恩典。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                    <h4 class="text-gold-400 font-bold mb-3 italic">屬靈佳句</h4>
+                    <p class="text-xl font-light">「如果我們完全明白上帝的計畫，我們就會發現，祂所給我們的，正是我們若知道一切真相後，自己會向上帝求的。」—— <span class="font-bold">提摩太·凱勒 (Timothy Keller)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section2" class="scroll-mt-32 space-y-12">
+            <div class="flex items-baseline gap-4">
+                <span class="text-5xl font-display font-bold text-gold-500/20">02</span>
+                <h2 class="text-3xl font-display font-bold">第二段：能力之源：榮耀耶穌的名</h2>
+            </div>
+            
+            <div class="bg-slate-900/50 rounded-[32px] p-8 md:p-12 border border-white/5 space-y-10">
+                <p class="text-slate-300 leading-relaxed bg-slate-950/50 p-6 rounded-2xl border-l-4 border-gold-500 italic">
+                    「以色列人哪，為甚麼把這事當作希奇呢？為甚麼定睛看我們，以為我們憑自己的能力和虔誠使這人行走呢？...我們因信他的名，他的名便叫你們所看見所認識的這人健壯了。」 (徒 3:12, 16)
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2">關鍵原文</h4>
+                        <div class="space-y-4">
+                            <div class="bg-slate-800/50 p-4 rounded-xl">
+                                <span class="text-gold-200 font-bold block mb-1">生命的主 (ἀρχηγός, archegos)</span>
+                                <p class="text-sm text-slate-400">創始者、元帥、源頭。耶穌本身就是生命的開創者。</p>
+                            </div>
+                            <div class="bg-slate-800/50 p-4 rounded-xl">
+                                <span class="text-gold-200 font-bold block mb-1">能力和虔誠 (δύναμις καὶ εὐσέβεια)</span>
+                                <p class="text-sm text-slate-400">彼得刻意撇清，神蹟發生純粹是因為耶穌的名。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2">關鍵問題與解析</h4>
+                        <div class="text-slate-300">
+                            <p class="font-semibold text-white mb-2 italic">為何我們容易將榮耀歸給自己？</p>
+                            <p class="text-sm leading-relaxed">彼得示範了如何立刻將眾人的目光從「自己」轉移到「耶穌」身上。服事者只是管道，真正的源頭是基督。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                    <h4 class="text-gold-400 font-bold mb-3 italic">屬靈佳句</h4>
+                    <p class="text-xl font-light">「傳道人不是展示自己的舞台，而是指向基督的路標。」—— <span class="font-bold">司布真 (Charles Spurgeon)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="section3" class="scroll-mt-32 space-y-12">
+            <div class="flex items-baseline gap-4">
+                <span class="text-5xl font-display font-bold text-gold-500/20">03</span>
+                <h2 class="text-3xl font-display font-bold">第三段：悔改歸正與萬物復興</h2>
+            </div>
+            
+            <div class="bg-slate-900/50 rounded-[32px] p-8 md:p-12 border border-white/5 space-y-10">
+                <p class="text-slate-300 leading-relaxed bg-slate-950/50 p-6 rounded-2xl border-l-4 border-gold-500 italic">
+                    「所以，你們當悔改歸正，使你們的罪得以塗抹，這樣，那安舒的日子就必從主面前來到。」 (徒 3:19)
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2">關鍵原文</h4>
+                        <div class="space-y-4">
+                            <div class="bg-slate-800/50 p-4 rounded-xl">
+                                <span class="text-gold-200 font-bold block mb-1">悔改歸正 (μετανοέω καὶ ἐπιστρέφω)</span>
+                                <p class="text-sm text-slate-400">心思意念的徹底改變，與行為方向上的轉回。</p>
+                            </div>
+                            <div class="bg-slate-800/50 p-4 rounded-xl">
+                                <span class="text-gold-200 font-bold block mb-1">安舒 (ἀνάψυξις, anapsuxis)</span>
+                                <p class="text-sm text-slate-400">意為喘息、涼爽的微風、復甦。靈魂深處的真正放鬆。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2">關鍵問題與解析</h4>
+                        <div class="text-slate-300">
+                            <p class="font-semibold text-white mb-2 italic">為何「安舒」必須建立在「悔改」之上？</p>
+                            <p class="text-sm leading-relaxed">罪如同靈魂的窒息物。真正的屬靈安舒（refreshing）是透過神將罪完全擦去。當生命「歸位」，痊癒才會臨到。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                    <h4 class="text-gold-400 font-bold mb-3 italic">屬靈佳句</h4>
+                    <p class="text-xl font-light">「廉價的恩典是傳揚不需悔改的赦免...重價的恩典是必須付上代價去尋找的寶藏，這代價就是你的生命。」—— <span class="font-bold">潘霍華 (Dietrich Bonhoeffer)</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">完整講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-gold max-w-none space-y-12 text-slate-300">
+                <div class="section-card p-10 md:p-16">
+                    <h3 class="text-3xl font-bold text-white mb-8 border-b border-gold-500/30 pb-4">徒3:1-26:超越金銀的恩典：奉拿撒勒人耶穌基督的名</h3>
+                    
+                    <p class="text-lg leading-relaxed">弟兄姊妹，平安。今天我們要透過使徒行傳第三章，來看一個熟悉卻充滿震撼的故事。這個故事發生在聖殿的美門口，關於一個乞丐、兩位使徒，以及一個超越世間一切財富的名字——耶穌基督。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">第一段：金銀之外的奇妙翻轉</h4>
+                    <p class="text-lg leading-relaxed">請看經文：<strong class="text-white text-xl">「彼得說：『金銀我都沒有，只把我所有的給你：我奉拿撒勒人耶穌基督的名，叫你起來行走！』於是拉著他的右手，扶他起來；他的腳和踝子骨立刻健壯了，就跳起來，站著，又行走，同他們進了殿，走著，跳著，讚美神。」（徒3:6-8）</strong></p>
+                    <p class="text-lg leading-relaxed">這是一個生來瘸腿的人，他每天最大的盼望，就是進殿的人能丟幾枚銅錢在他的破碗裡。當彼得和約翰走過來，彼得對他說：「你看我們！」這人在原文中是「留意看」(epecho)，他全神貫注，指望得著什麼。但彼得的回答可能讓他瞬間跌入谷底：「金銀我都沒有。」</p>
+                    <p class="text-lg leading-relaxed">弟兄姊妹，這是不是我們常常面對的處境？我們來到神面前，拿著我們的清單：「主啊，給我這個工作、給我這筆錢、解決我這個人際關係。」我們只求「金銀」，但神卻說：「我沒有你要的次好東西，但我有最好的。」彼得給了他什麼？彼得給了他「拿撒勒人耶穌基督的名」。結果，他那從來沒有支撐力的踝子骨，瞬間「健壯」(stereoo)了！</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">第二段：能力之源：榮耀耶穌的名</h4>
+                    <p class="text-lg leading-relaxed">當這群百姓看到這個素常討飯的瘸子竟然跳著讚美神，大家都驚呆了。我們來看彼得的反應：<strong class="text-white text-xl">「彼得看見，就對百姓說：『以色列人哪，為甚麼把這事當作希奇呢？為甚麼定睛看我們，以為我們憑自己的能力和虔誠使這人行走呢？...我們因信他的名，他的名便叫你們所看見所認識的這人健壯了。』」（徒3:12, 16）</strong></p>
+                    <p class="text-lg leading-relaxed">如果是我們，當幾千人崇拜地看著我們時，我們很容易會說：「是啊，這是我禁食禱告四十天的結果。」但彼得立刻拒絕了這份榮耀。他明確指出，這不是因為他的「能力和虔誠」(dynamis kai eusebeia)，這完全是因為他們殺了的那位「生命的主」(archegos)——耶穌基督。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">第三段：悔改歸正與萬物復興的應許</h4>
+                    <p class="text-lg leading-relaxed">彼得沒有停在神蹟上，他隨即發出了極其嚴厲卻充滿恩典的呼召：<strong class="text-white text-xl">「所以，你們當悔改歸正，使你們的罪得以塗抹，這樣，那安舒的日子就必從主面前來到。」（徒3:19-20）</strong></p>
+                    <p class="text-lg leading-relaxed">彼得告訴他們，這位於醫治瘸子的耶穌，正是被他們棄絕並釘死的那位。如今，你們必須「悔改歸正」(metanoeo kai epistrepho)。悔改是心思的轉變，歸正是腳步的轉回。為什麼要悔改？因為唯有罪被塗抹，那「安舒」(anapsuxis)的日子才會來到。</p>
+                    <p class="text-lg leading-relaxed">弟兄姊妹，今天神同樣把這超越金銀的恩典擺在我們面前。讓我們不再注視環境的缺乏，不再竊取神的榮耀，而是勇敢地悔改歸正，在耶穌基督的名裡，領受那真正安舒更新的日子！</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Summary: Keywords, Applications, Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Conclusions -->
+            <div class="section-card p-8">
+                <h3 class="text-gold-400 font-bold mb-6 text-xl">三個關鍵字結論</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center font-bold">1</span>
+                        <span class="text-lg font-bold">注視 (看環境轉向看基督)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center font-bold">2</span>
+                        <span class="text-lg font-bold">主名 (宣告耶穌基督的大能)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center font-bold">3</span>
+                        <span class="text-lg font-bold">更新 (悔改領受安舒復興)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Applications -->
+            <div class="section-card p-8">
+                <h3 class="text-blue-400 font-bold mb-6 text-xl">講道應用方向</h3>
+                <ul class="space-y-4 text-slate-400 text-sm leading-relaxed">
+                    <li><strong class="text-slate-200">檢視生命渴求：</strong> 省察禱告是否只停留在改善環境，而忽略生命翻轉。</li>
+                    <li><strong class="text-slate-200">高舉基督的名：</strong> 在成就與讚賞中，練習將榮耀歸給耶穌。</li>
+                    <li><strong class="text-slate-200">經歷悔改安舒：</strong> 勇於認罪悔改，將生命交給神復位。</li>
+                </ul>
+            </div>
+
+            <!-- Response Actions -->
+            <div class="section-card p-8">
+                <h3 class="text-emerald-400 font-bold mb-6 text-xl">回應實踐行動</h3>
+                <ul class="space-y-4 text-slate-400 text-sm">
+                    <li class="flex gap-2">
+                        <span class="text-emerald-500">▶</span>
+                        <span>列出無力領域，奉主名宣告醫治介入。</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-emerald-500">▶</span>
+                        <span>分享「你所有的」，為尋求幫助者禱告。</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-emerald-500">▶</span>
+                        <span>安排30分鐘獨處，做深度省察禱告。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 10 Quotes as Bento style cards -->
+                <div class="section-card p-6 border-l-4 border-gold-500">
+                    <p class="text-lg italic mb-4">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是重價的恩典。」</p>
+                    <p class="text-sm text-slate-400">—— 潘霍華 (Dietrich Bonhoeffer)，《追隨基督》</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-blue-500">
+                    <p class="text-lg italic mb-4">「上帝有時會延遲給予，但祂絕不食言。祂遲延是為了讓我們的渴望擴大。」</p>
+                    <p class="text-sm text-slate-400">—— 約翰·加爾文 (John Calvin)，《基督教要義》</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-emerald-500">
+                    <p class="text-lg italic mb-4">「真理與上帝的愛不是被設計用來滿足我們的好奇心，而是為了改變我們的生命。」</p>
+                    <p class="text-sm text-slate-400">—— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-purple-500">
+                    <p class="text-lg italic mb-4">「我們對神的認識，決定了我們的宗教信仰品質；心中對神所存的意念，決定了屬靈光景。」</p>
+                    <p class="text-sm text-slate-400">—— 陶恕 (A.W. Tozer)，《渴慕神》</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-red-500">
+                    <p class="text-lg italic mb-4">「十字架是上帝對人類罪惡的終極回應，也是祂對人類痛苦的最深參與。」</p>
+                    <p class="text-sm text-slate-400">—— 約翰·史托德 (John Stott)，《當代基督十架》</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-orange-500">
+                    <p class="text-lg italic mb-4">「信心不是相信神會按照我的意願行事，而是相信無論神做什麼，祂的旨意都是純全的。」</p>
+                    <p class="text-sm text-slate-400">—— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-indigo-500">
+                    <p class="text-lg italic mb-4">「基督教信仰不是一場百米衝刺，而是在同一個方向上的長久順服。」</p>
+                    <p class="text-sm text-slate-400">—— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-pink-500">
+                    <p class="text-lg italic mb-4">「我們若不把人帶到基督面前，我們的一切忙碌都不過是在地獄的邊緣玩耍。」</p>
+                    <p class="text-sm text-slate-400">—— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-cyan-500">
+                    <p class="text-lg italic mb-4">「我們比自己所敢承認的更敗壞；但同時，在基督裡，我們卻比自己所敢期盼的更蒙愛。」</p>
+                    <p class="text-sm text-slate-400">—— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="section-card p-6 border-l-4 border-yellow-500">
+                    <p class="text-lg italic mb-4">「如果基督徒的生活沒有表現出與世人不同的聖潔，那麼世界就有理由懷疑我們。」</p>
+                    <p class="text-sm text-slate-400">—— 約翰·史托德 (John Stott)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center py-12">
+            <p class="text-slate-500 text-sm flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center float-btn hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Fade-in Animation on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+

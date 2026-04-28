@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>查經筆記數位圖書館 v5.5</title>
+    <title>查經筆記數位圖書館 v6.0</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
@@ -57,7 +57,7 @@
         .btn-download:hover { transform: scale(1.05); filter: brightness(1.2); }
 
         /* 分頁按鈕 */
-        .page-btn { padding: 5px 12px; margin: 0 3px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; font-size: 12px; transition: 0.2s; }
+        .page-btn { padding: 5px 12px; margin: 0 3px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; font-size: 12px; transition: 0.2s; color: #fff; }
         .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; border-color: #f9d21b; }
 
         /* 浮動回到頂部按鈕 */
@@ -80,7 +80,7 @@
     <nav id="top-toolbar">
         <div class="max-w-7xl mx-auto w-full px-6 flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <span class="gold-gradient-text font-black text-xl tracking-tighter cursor-pointer" onclick="showMap()">BIBLE MAP</span>
+                <span id="toolbar-title" class="gold-gradient-text font-black text-2xl tracking-tighter cursor-pointer" onclick="showMap()">BIBLE MAP</span>
             </div>
             
             <div id="home-nav" class="flex gap-8 items-center">
@@ -98,7 +98,7 @@
     <div class="max-w-7xl mx-auto px-6">
         <header class="text-center mt-12 mb-16">
             <h1 id="page-title" class="text-6xl md:text-8xl font-black tracking-tighter gold-gradient-text mb-4 uppercase">Bible Map</h1>
-            <p id="sub-title" class="text-gray-400 tracking-[0.4em] text-xs font-light uppercase">數位查經筆記圖書館</p>
+            <p id="sub-title" class="text-gray-400 tracking-[0.4em] text-sm font-light uppercase">數位查經筆記圖書館</p>
         </header>
 
         <div id="map-view" class="space-y-24">
@@ -177,6 +177,10 @@
             document.getElementById('gallery-view').classList.remove('hidden');
             document.getElementById('gallery-nav').classList.remove('hidden');
             
+            // 🚀 修改置頂工具列文字為書卷縮寫 (例如：創)
+            document.getElementById('toolbar-title').innerText = abbr;
+            
+            // 內容頁標題則維持全名
             document.getElementById('page-title').innerText = bookFullName[abbr] || abbr;
             document.getElementById('sub-title').innerText = "SELECTED BIBLE STUDY NOTES";
             renderNotes();
@@ -194,8 +198,8 @@
                 if (file.docId && file.docId !== "NoDoc" && file.docId.length > 10) {
                     downloadSection = `
                         <div class="flex gap-3 mt-6 pt-5 border-t border-white/10">
-                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300">Word ↓</a>
-                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300">PDF ↓</a>
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300">Word</a>
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300">PDF</a>
                         </div>`;
                 }
 
@@ -215,7 +219,6 @@
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
-        // 將分頁按鈕渲染至置頂工具列
         function renderToolbarPagination() {
             const container = document.getElementById('toolbar-pagination');
             container.innerHTML = '';
@@ -236,6 +239,10 @@
             document.getElementById('home-nav').classList.remove('hidden');
             document.getElementById('gallery-view').classList.add('hidden');
             document.getElementById('gallery-nav').classList.add('hidden');
+            
+            // 🚀 還原置頂工具列文字為 BIBLE MAP
+            document.getElementById('toolbar-title').innerText = "BIBLE MAP";
+            
             document.getElementById('page-title').innerText = "Bible Map";
             document.getElementById('sub-title').innerText = "數位查經筆記圖書館";
             window.scrollTo({top: 0, behavior: 'smooth'});

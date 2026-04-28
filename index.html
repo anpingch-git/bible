@@ -8,9 +8,18 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
         
-        body { background-color: #050505; color: #fff; font-family: 'Noto Sans TC', sans-serif; margin: 0; overflow-x: hidden; }
+        /* 基礎設定 */
+        html { scroll-behavior: smooth; }
+        body { background-color: #050505; color: #fff; font-family: 'Noto Sans TC', sans-serif; margin: 0; padding-top: 80px; }
 
-        /* 1. 調亮底圖：將遮罩透明度從 0.65 降至 0.4 */
+        /* 置頂工具列：毛玻璃特效 */
+        #top-toolbar {
+            position: fixed; top: 0; left: 0; width: 100%; height: 70px;
+            z-index: 1000; background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex; align-items: center; transition: all 0.3s ease;
+        }
+
         .fixed-background {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; 
             background-image: linear-gradient(to bottom, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.85) 100%), 
@@ -18,103 +27,99 @@
             background-size: cover; background-position: center;
         }
 
-        /* 2. 卡片縮減大小並優化陰影 */
         .glass-card { 
-            background: rgba(255, 255, 255, 0.05); 
-            backdrop-filter: blur(20px); 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
         }
-        .glass-card:hover { 
-            transform: translateY(-8px); 
-            background: rgba(255, 255, 255, 0.1); 
-            border-color: rgba(249, 210, 27, 0.5); 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-        }
+        .glass-card:hover { transform: translateY(-8px); border-color: rgba(249, 210, 27, 0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
 
-        /* 3. 經卷按鈕 */
+        /* 導航按鈕 */
+        .nav-link { font-weight: 800; color: #aaa; transition: 0.3s; cursor: pointer; font-size: 14px; letter-spacing: 1px; }
+        .nav-link:hover { color: #f9d21b; }
+        
+        .back-home-btn {
+            background: rgba(249, 210, 27, 0.1); border: 1px solid #f9d21b; color: #f9d21b;
+            padding: 6px 16px; border-radius: 50px; font-weight: 900; font-size: 13px; transition: 0.3s;
+        }
+        .back-home-btn:hover { background: #f9d21b; color: #000; box-shadow: 0 0 15px rgba(249, 210, 27, 0.4); }
+
+        /* 書卷按鈕 */
         .book-btn {
-            aspect-ratio: 1 / 1;
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 900; font-size: 1.2rem; cursor: pointer;
-            border: 1px solid rgba(249, 210, 27, 0.2);
-            color: #f9d21b; transition: all 0.3s;
-            background: rgba(249, 210, 27, 0.05);
+            aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center;
+            font-weight: 900; font-size: 1.2rem; cursor: pointer; border: 1px solid rgba(249, 210, 27, 0.2);
+            color: #f9d21b; transition: 0.3s; background: rgba(249, 210, 27, 0.05);
         }
         .book-btn:hover { background: #f9d21b; color: #000; transform: scale(1.1); }
         .book-btn.disabled { opacity: 0.1; cursor: not-allowed; filter: grayscale(1); }
 
-        /* 4. 下載按鈕樣式 */
-        .btn-download { 
-            font-size: 12px; font-weight: 800; padding: 6px 16px; 
-            border-radius: 8px; transition: all 0.2s; 
-            text-transform: uppercase; letter-spacing: 1px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
+        /* 下載按鈕 */
+        .btn-download { font-size: 12px; font-weight: 800; padding: 6px 16px; border-radius: 8px; transition: 0.2s; border: 1px solid rgba(255, 255, 255, 0.15); }
         .btn-download:hover { transform: scale(1.05); filter: brightness(1.2); }
 
-        /* 5. 美化回到首頁按鈕 */
-        .nav-button {
-            background: rgba(249, 210, 27, 0.1);
-            border: 1px solid #f9d21b;
-            color: #f9d21b;
-            padding: 10px 24px;
-            border-radius: 50px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            transition: all 0.3s;
-        }
-        .nav-button:hover { background: #f9d21b; color: #000; box-shadow: 0 0 20px rgba(249, 210, 27, 0.4); }
+        /* 分頁按鈕 */
+        .page-btn { padding: 5px 12px; margin: 0 3px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; font-size: 12px; transition: 0.2s; color: #fff; }
+        .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; border-color: #f9d21b; }
 
-        /* 6. 分頁按鈕樣式 */
-        .page-btn {
-            padding: 8px 16px;
-            margin: 0 4px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            transition: 0.2s;
+        /* 浮動回到頂部按鈕 */
+        #scroll-to-top {
+            position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px;
+            background: #f9d21b; color: #000; border-radius: 50%; display: flex;
+            align-items: center; justify-content: center; font-size: 24px;
+            cursor: pointer; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            z-index: 999; opacity: 0; visibility: hidden; transition: 0.4s;
         }
-        .page-btn:hover:not(.active) { background: rgba(255,255,255,0.15); }
-        .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; }
+        #scroll-to-top.show { opacity: 1; visibility: visible; }
+        #scroll-to-top:hover { transform: scale(1.1); background: #fff; }
 
-        .gold-gradient-text {
-            background: linear-gradient(to right, #fff9c4, #f9d21b, #f57f17);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        }
+        .gold-gradient-text { background: linear-gradient(to right, #fff9c4, #f9d21b, #f57f17); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="p-6 md:p-12">
+<body>
     <div class="fixed-background"></div>
-    
-    <div class="max-w-7xl mx-auto">
-        <header class="text-center mb-16">
-            <h1 id="page-title" class="text-5xl md:text-8xl font-black tracking-tighter gold-gradient-text mb-4 uppercase">每日研經釋義</h1>
-            <p id="sub-title" class="text-gray-400 tracking-[0.4em] text-3xl font-light uppercase">講章大綱</p>
-            
-            <div id="back-btn" class="hidden mt-10">
-                <button class="nav-button" onclick="showMap()">← 回到首頁</button>
+
+    <nav id="top-toolbar">
+        <div class="max-w-7xl mx-auto w-full px-6 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <span id="toolbar-title" class="gold-gradient-text font-black text-2xl tracking-tighter cursor-pointer" onclick="showMap()">BIBLE MAP</span>
             </div>
+            
+            <div id="home-nav" class="flex gap-8 items-center">
+                <a href="#ot-section" class="nav-link">舊約聖經</a>
+                <a href="#nt-section" class="nav-link">新約聖經</a>
+            </div>
+
+            <div id="gallery-nav" class="hidden w-full flex justify-between items-center ml-10">
+                <button class="back-home-btn" onclick="showMap()">← 回到首頁</button>
+                <div id="toolbar-pagination" class="flex items-center"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6">
+        <header class="text-center mt-12 mb-16">
+            <h1 id="page-title" class="text-6xl md:text-8xl font-black tracking-tighter gold-gradient-text mb-4 uppercase">每日研經釋義</h1>
+            <p id="sub-title" class="text-gray-400 tracking-[0.4em] text-3xl font-light uppercase">講章大綱</p>
         </header>
 
-        <div id="map-view" class="space-y-20">
-            <section>
+        <div id="map-view" class="space-y-24">
+            <section id="ot-section">
                 <h2 class="text-2xl font-bold mb-8 tracking-[0.5em] text-yellow-500/60 uppercase border-b border-white/5 pb-4">舊約聖經</h2>
                 <div id="ot-grid" class="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-13 gap-3"></div>
             </section>
-            <section>
+            <section id="nt-section">
                 <h2 class="text-2xl font-bold mb-8 tracking-[0.5em] text-gray-500 uppercase border-b border-white/5 pb-4">新約聖經</h2>
                 <div id="nt-grid" class="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-13 gap-3"></div>
             </section>
         </div>
 
-        <div id="gallery-view" class="hidden">
+        <div id="gallery-view" class="hidden pb-20">
             <div id="note-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"></div>
-            <div id="pagination" class="flex justify-center items-center mt-16 space-x-2"></div>
         </div>
 
-        <div id="loading-status" class="text-center py-20 text-gray-500 font-mono text-sm tracking-widest uppercase">Initializing Library...</div>
+        <div id="loading-status" class="text-center py-20 text-gray-500 font-mono text-sm tracking-widest uppercase">Initializing...</div>
     </div>
+
+    <div id="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
 
     <script>
         const DB_URL = "database.json";
@@ -123,7 +128,6 @@
         let currentPage = 1;
         const itemsPerPage = 9;
 
-        // 書卷縮寫對照全名
         const bookFullName = {
             "創":"創世記","出":"出埃及記","利":"利未記","民":"民數記","申":"申命記","書":"約書亞記","士":"士師記","得":"路得記","撒上":"撒母耳記上","撒下":"撒母耳記下","王上":"列王紀上","王下":"列王紀下","代上":"歷代志上","代下":"歷代志下","拉":"以斯拉記","尼":"尼希米記","斯":"以斯帖記","伯":"約伯記","詩":"詩篇","箴":"箴言","傳":"傳道書","歌":"雅歌","賽":"以賽亞記","耶":"耶利米書","哀":"耶利米哀歌","結":"以西結書","但":"但以理書","何":"何西阿書","珥":"約珥書","摩":"阿摩司書","俄":"俄巴底亞書","拿":"約拿書","彌":"彌迦書","鴻":"那鴻書","哈":"哈巴谷書","番":"西番雅書","該":"哈該書","亞":"撒迦利亞書","瑪":"瑪拉基書",
             "太":"馬太福音","可":"馬可福音","路":"路加福音","約":"約翰福音","徒":"使徒行傳","羅":"羅馬書","林前":"哥林多前書","林後":"哥林多後書","加":"加拉太書","弗":"以弗所書","腓":"腓立比書","西":"歌羅西書","帖前":"帖撒羅尼迦前書","帖後":"帖撒羅尼迦後書","提前":"提摩太前書","提後":"提摩太後書","多":"提多書","門":"腓利門書","來":"希伯來書","雅":"雅各書","彼前":"彼得前書","彼後":"彼得後書","約一":"約翰一書","約二":"約翰二書","約三":"約翰三書","猶":"猶大書","啟":"啟示錄"
@@ -169,21 +173,22 @@
             currentPage = 1;
             
             document.getElementById('map-view').classList.add('hidden');
+            document.getElementById('home-nav').classList.add('hidden');
             document.getElementById('gallery-view').classList.remove('hidden');
-            document.getElementById('back-btn').classList.remove('hidden');
+            document.getElementById('gallery-nav').classList.remove('hidden');
             
-            // 點選書卷後顯示全名
+            // 🚀 修改置頂工具列文字為書卷縮寫 (例如：創)
+            document.getElementById('toolbar-title').innerText = abbr;
+            
+            // 內容頁標題則維持全名
             document.getElementById('page-title').innerText = bookFullName[abbr] || abbr;
             document.getElementById('sub-title').innerText = "講章大綱";
-            
             renderNotes();
         }
 
         function renderNotes() {
             const grid = document.getElementById('note-grid');
             grid.innerHTML = '';
-            
-            // 分頁邏輯
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const pageItems = filteredNotes.slice(start, end);
@@ -198,7 +203,6 @@
                         </div>`;
                 }
 
-                // 標題字體放大至 text-3xl，日期與經文放大至 text-sm
                 grid.innerHTML += `
                     <div class="glass-card rounded-3xl p-8 flex flex-col justify-between h-72">
                         <a href="${file.path}" class="block group">
@@ -208,43 +212,51 @@
                             </div>
                             <h2 class="text-3xl font-black leading-tight text-white/90 group-hover:text-[#f9d21b] transition-colors line-clamp-2">${file.title}</h2>
                         </a>
-                        <div>
-                            ${downloadSection}
-                        </div>
+                        <div>${downloadSection}</div>
                     </div>`;
             });
-
-            renderPagination();
-            window.scrollTo(0, 0);
+            renderToolbarPagination();
+            window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
-        function renderPagination() {
-            const container = document.getElementById('pagination');
+        function renderToolbarPagination() {
+            const container = document.getElementById('toolbar-pagination');
             container.innerHTML = '';
             const totalPages = Math.ceil(filteredNotes.length / itemsPerPage);
-            
             if (totalPages <= 1) return;
 
             for (let i = 1; i <= totalPages; i++) {
                 const btn = document.createElement('button');
                 btn.innerText = i;
                 btn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
-                btn.onclick = () => {
-                    currentPage = i;
-                    renderNotes();
-                };
+                btn.onclick = () => { currentPage = i; renderNotes(); };
                 container.appendChild(btn);
             }
         }
 
         function showMap() {
             document.getElementById('map-view').classList.remove('hidden');
+            document.getElementById('home-nav').classList.remove('hidden');
             document.getElementById('gallery-view').classList.add('hidden');
-            document.getElementById('back-btn').classList.add('hidden');
+            document.getElementById('gallery-nav').classList.add('hidden');
+            
+            // 🚀 還原置頂工具列文字為 BIBLE MAP
+            document.getElementById('toolbar-title').innerText = "BIBLE MAP";
+            
             document.getElementById('page-title').innerText = "每日研經釋義";
             document.getElementById('sub-title').innerText = "講章大綱";
-            window.scrollTo(0, 0);
+            window.scrollTo({top: 0, behavior: 'smooth'});
         }
+
+        // 浮動按鈕顯示邏輯
+        window.onscroll = function() {
+            const btn = document.getElementById('scroll-to-top');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        };
 
         init();
     </script>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查經筆記數位圖書館 v4.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
+        
+        body { 
+            background-color: #050505; 
+            color: #fff; 
+            font-family: 'Noto Sans TC', sans-serif; 
+            margin: 0; 
+            overflow-x: hidden;
+        }
+
+        /* 1. 高質感固定底圖 */
+        .fixed-background {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; 
+            background-image: linear-gradient(to bottom, rgba(5,5,5,0.65) 0%, rgba(5,5,5,0.95) 100%), 
+                              url('https://anpingch-git.github.io/bible/archive/image/old-testament/1ff3d2d3-8500-4ec6-ac75-a759229699ba.jpg');
+            background-size: cover; background-position: center;
+        }
+
+        /* 2. 毛玻璃透明卡片設計 */
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+        .glass-card:hover { 
+            transform: translateY(-8px); 
+            background: rgba(255, 255, 255, 0.07); 
+            border-color: rgba(249, 210, 27, 0.4); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+
+        /* 3. 經卷按鈕樣式 */
+        .book-btn {
+            aspect-ratio: 1 / 1;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 900; font-size: 1.1rem; cursor: pointer;
+            border: 1px solid rgba(249, 210, 27, 0.15);
+            color: #f9d21b; transition: all 0.3s;
+            background: rgba(249, 210, 27, 0.03);
+        }
+        .book-btn:hover { background: #f9d21b; color: #000; transform: scale(1.15); z-index: 10; }
+        .book-btn.disabled { opacity: 0.15; cursor: not-allowed; border-color: gray; color: gray; filter: grayscale(1); }
+
+        .btn-download { 
+            font-size: 10px; font-weight: 800; padding: 5px 12px; 
+            border-radius: 6px; transition: all 0.2s; 
+            text-transform: uppercase; letter-spacing: 1px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-download:hover { transform: scale(1.05); }
+
+        .gold-text {
+            background: linear-gradient(to right, #fef08a, #eab308, #854d0e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <div class="fixed-background"></div>
+    
+    <div class="max-w-7xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 id="page-title" class="text-6xl md:text-8xl font-black tracking-tighter gold-text mb-4 uppercase">Bible Map</h1>
+            <p id="sub-title" class="text-gray-500 tracking-[0.4em] text-xs font-light uppercase">Digital Scripture Library</p>
+            
+            <div id="back-btn" class="hidden mt-8 text-[#f9d21b] cursor-pointer font-bold flex items-center justify-center gap-2 hover:underline" onclick="showMap()">
+                <span>← 回到首頁</span>
+            </div>
+        </header>
+
+        <div id="map-view" class="space-y-20">
+            <section>
+                <h2 class="text-xs font-bold mb-8 tracking-[0.5em] text-gray-500 uppercase border-b border-white/5 pb-4">Old Testament 舊約聖經</h2>
+                <div id="ot-grid" class="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-13 gap-3"></div>
+            </section>
+            <section>
+                <h2 class="text-xs font-bold mb-8 tracking-[0.5em] text-gray-500 uppercase border-b border-white/5 pb-4">New Testament 新約聖經</h2>
+                <div id="nt-grid" class="grid grid-cols-5 md:grid-cols-10 lg:grid-cols-13 gap-3"></div>
+            </section>
+        </div>
+
+        <div id="gallery-view" class="hidden">
+            <div id="note-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"></div>
+        </div>
+
+        <div id="loading-status" class="text-center py-20 text-gray-600 font-mono text-sm tracking-widest">INITIALIZING DATABASE...</div>
+    </div>
+
+    <script>
+        const DB_URL = "database.json";
+        let fullDatabase = [];
+
+        // 經卷定義 (確保所有經卷都能被渲染)
+        const otBooks = ["創", "出", "利", "民", "申", "書", "士", "得", "撒上", "撒下", "王上", "王下", "代上", "代下", "拉", "尼", "斯", "伯", "詩", "箴", "傳", "歌", "賽", "耶", "哀", "結", "但", "何", "珥", "摩", "俄", "拿", "彌", "鴻", "哈", "番", "該", "亞", "瑪"];
+        const ntBooks = ["太", "可", "路", "約", "徒", "羅", "林前", "林後", "加", "弗", "腓", "西", "帖前", "帖後", "提前", "提後", "多", "門", "來", "雅", "彼前", "彼後", "約一", "約二", "約三", "猶", "啟"];
+
+        async function init() {
+            try {
+                // 防快取機制：加上隨機時間戳記
+                const res = await fetch(DB_URL + "?t=" + new Date().getTime());
+                const data = await res.json();
+                
+                // 相容處理：不論 JSON 是陣列還是物件包裝
+                fullDatabase = data.files || data; 
+                
+                document.getElementById('loading-status').classList.add('hidden');
+                renderMap();
+            } catch (e) {
+                document.getElementById('loading-status').innerText = "DATABASE CONNECTION FAILED.";
+                console.error(e);
+            }
+        }
+
+        // 產生首頁經卷按鈕
+        function renderMap() {
+            const otContainer = document.getElementById('ot-grid');
+            const ntContainer = document.getElementById('nt-grid');
+            
+            const makeButtons = (books, container) => {
+                books.forEach(b => {
+                    // 計算該經卷的筆記數量
+                    const count = fullDatabase.filter(item => item.chapter.startsWith(b)).length;
+                    const btn = document.createElement('div');
+                    btn.className = `book-btn rounded-lg ${count === 0 ? 'disabled' : ''}`;
+                    btn.innerText = b;
+                    if (count > 0) {
+                        btn.onclick = () => showBook(b);
+                        btn.title = `${b}: ${count} 篇筆記`;
+                    }
+                    container.appendChild(btn);
+                });
+            };
+
+            makeButtons(otBooks, otContainer);
+            makeButtons(ntBooks, ntContainer);
+        }
+
+        // 點擊後顯示筆記卡片
+        function showBook(bookName) {
+            document.getElementById('map-view').classList.add('hidden');
+            document.getElementById('gallery-view').classList.remove('hidden');
+            document.getElementById('back-btn').classList.remove('hidden');
+            document.getElementById('page-title').innerText = bookName;
+            document.getElementById('sub-title').innerText = "SELECTED BIBLE STUDY NOTES";
+
+            const grid = document.getElementById('note-grid');
+            grid.innerHTML = '';
+            
+            // 過濾該卷筆記
+            const filtered = fullDatabase.filter(item => item.chapter.startsWith(bookName));
+            
+            filtered.forEach(file => {
+                // 下載區塊：檢查是否有有效 docId (長度大於 10 代表不是 NoDoc)
+                let downloadSection = "";
+                if (file.docId && file.docId !== "NoDoc" && file.docId.length > 10) {
+                    downloadSection = `
+                        <div class="flex gap-2 mt-5 pt-4 border-t border-white/10">
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=docx" class="btn-download bg-blue-600/20 text-blue-300">Word ↓</a>
+                            <a href="https://docs.google.com/document/d/${file.docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300">PDF ↓</a>
+                        </div>
+                    `;
+                }
+
+                grid.innerHTML += `
+                    <div class="glass-card rounded-2xl p-8 flex flex-col justify-between h-80">
+                        <a href="${file.path}" class="block group">
+                            <div class="flex justify-between items-start mb-6">
+                                <span class="bg-yellow-500/10 text-[#f9d21b] text-[10px] px-3 py-1 rounded-full font-bold border border-yellow-500/20 tracking-tighter">${file.chapter}</span>
+                                <span class="text-gray-500 text-[10px] font-mono">${file.date}</span>
+                            </div>
+                            <h2 class="text-2xl font-black leading-tight text-orange-50/90 group-hover:text-[#f9d21b] transition-colors line-clamp-2">${file.title}</h2>
+                        </a>
+                        <div>
+                            ${downloadSection}
+                            <a href="${file.path}" class="block text-[#f9d21b] text-[10px] font-bold mt-5 tracking-[0.2em] hover:underline uppercase">下載完整查經內容 →</a>
+                        </div>
+                    </div>`;
+            });
+            window.scrollTo(0, 0);
+        }
+
+        // 返回首頁視圖
+        function showMap() {
+            document.getElementById('map-view').classList.remove('hidden');
+            document.getElementById('gallery-view').classList.add('hidden');
+            document.getElementById('back-btn').classList.add('hidden');
+            document.getElementById('page-title').innerText = "Bible Map";
+            document.getElementById('sub-title').innerText = "Digital Scripture Library";
+        }
+
+        init();
+    </script>
+</body>
+</html>

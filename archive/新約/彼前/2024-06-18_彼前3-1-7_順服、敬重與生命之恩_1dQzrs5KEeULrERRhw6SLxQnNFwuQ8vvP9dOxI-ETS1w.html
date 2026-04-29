@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彼前3:1-7:以基督為中心的家庭：順服、敬重與生命之恩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fef18f',
+                            300: '#fde254',
+                            400: '#fccc26',
+                            500: '#f1a80a',
+                            600: '#d48106',
+                            700: '#b05e08',
+                            800: '#8f4a0e',
+                            900: '#763e0f',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#16161a',
+                            700: '#23232a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(10,10,12,0) 0%, rgba(10,10,12,0.8) 70%, rgba(10,10,12,1) 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(241, 168, 10, 0.5);
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f1a80a;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        @media (min-width: 1024px) {
+            .bento-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .span-2 { grid-column: span 2; }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-gold-500 font-display font-bold text-sm md:text-lg tracking-wider truncate">
+                彼前3:1-7:以基督為中心的家庭
+            </div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest text-gray-300">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden pt-16">
+        <!-- Visual Simulation of the Prompt Description -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-40 scale-105"></div>
+            <div class="absolute inset-0 hero-gradient"></div>
+            <!-- God Rays Effect -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-30 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-200 via-transparent to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="inline-block px-4 py-1 border border-gold-500/30 rounded-full text-gold-400 text-xs font-semibold tracking-widest mb-6 uppercase animate-pulse">
+                1 Peter 3:1-7
+            </div>
+            <h1 class="font-display text-4xl md:text-7xl font-black text-white mb-6 leading-tight text-glow">
+                以基督為中心的家庭<br/>
+                <span class="text-gold-500">順服、敬重與生命之恩</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed italic">
+                「裡面存著長久溫柔、安靜的心為妝飾...一同承受生命之恩，便叫你們的禱告沒有阻礙。」
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 rounded-full bg-gold-500/10 flex items-center justify-center border border-gold-500/20 text-gold-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21c4.97 0 9-3.582 9-8s-4.03-8-9-8-9 3.582-9 8 4.03 8 9 8z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11v4m0 0v-4m0 4h.01M12 7h.01" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="font-display text-3xl font-bold mb-8 tracking-wide">開課禱告</h2>
+                <div class="glass-card p-8 md:p-12 rounded-3xl relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent"></div>
+                    <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic">
+                        「親愛的天父，我們為著祢所設立的婚姻與家庭關係向祢獻上感恩。求祢開啟我們的眼目，讓我們看見在基督裡的順服與敬重。賜給妻子們溫柔安靜的靈，賜給丈夫們屬靈的智慧，讓我們的家庭成為彰顯福音的導管，讓我們的禱告沒有阻礙。奉主耶穌基督的聖名禱告，阿們。」
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex flex-col items-center mb-16">
+                <div class="w-12 h-1 bg-gold-500 mb-6"></div>
+                <h2 class="font-display text-4xl font-bold tracking-widest flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    講道大綱
+                </h2>
+            </div>
+
+            <!-- Quick Access Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#section1" class="group glass-card p-6 rounded-2xl hover:bg-gold-500/10 transition-all duration-500 border-l-4 border-l-gold-500">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest block mb-2">PART 01</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">無言的見證：生命勝過話語</h3>
+                    <p class="text-gray-400 text-sm mt-2">彼前 3:1-2</p>
+                </a>
+                <a href="#section2" class="group glass-card p-6 rounded-2xl hover:bg-gold-500/10 transition-all duration-500 border-l-4 border-l-gold-400">
+                    <span class="text-gold-400 text-xs font-bold tracking-widest block mb-2">PART 02</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">內在的榮美：長存的溫柔平靜</h3>
+                    <p class="text-gray-400 text-sm mt-2">彼前 3:3-6</p>
+                </a>
+                <a href="#section3" class="group glass-card p-6 rounded-2xl hover:bg-gold-500/10 transition-all duration-500 border-l-4 border-l-gold-300">
+                    <span class="text-gold-300 text-xs font-bold tracking-widest block mb-2">PART 03</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">體恤與敬重：承受生命之恩</h3>
+                    <p class="text-gray-400 text-sm mt-2">彼前 3:7</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="text-4xl font-black text-gold-500/30 font-sans">01</div>
+                        <h3 class="text-3xl font-display font-bold">無言的見證：生命勝過話語</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="span-2 glass-card p-8 rounded-3xl">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 0010 0 7.993 7.993 0 00-7-7.196z" /><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" /></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-xl font-serif italic text-white leading-relaxed bg-white/5 p-6 rounded-xl border-l-2 border-gold-500">
+                                「你們作妻子的要順服自己的丈夫；這樣，若有不信從道理的丈夫，他們雖然不聽道，也可以因妻子的品行被感化過來；這正是因看見你們有貞潔的品行和敬畏的心。」
+                            </p>
+                            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h5 class="text-gold-400 text-sm font-bold uppercase tracking-widest mb-3">關鍵原文</h5>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-gold-500 font-bold">順服 (hypotassō):</span>
+                                            <span class="text-gray-400 text-sm">自願地服在權柄之下，這非價值的貶低，而是角色的秩序。</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-gold-500 font-bold">品行 (anastrophē):</span>
+                                            <span class="text-gray-400 text-sm">指整體生活方式、行為舉止。</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gold-500/5 p-6 rounded-2xl border border-gold-500/20">
+                                    <h5 class="text-gold-400 text-sm font-bold uppercase tracking-widest mb-3">關鍵問題與解析</h5>
+                                    <p class="text-sm text-gray-300 leading-relaxed">
+                                        為何強調品行勝過言語？人對「被說教」有防衛心，但「無言的見證」能穿透言語無法攻破的心房。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl flex flex-col justify-center border-t-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" /></svg>
+                                名言佳句
+                            </h4>
+                            <blockquote class="text-lg italic font-serif text-white">
+                                「愛不是一種感覺，而是一種行動；順服不是一種屈辱，而是在基督裡的自由與得勝。」
+                            </blockquote>
+                            <cite class="text-gold-500 text-sm mt-4 block">— 提摩太·凱勒 (Timothy Keller)</cite>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="text-4xl font-black text-gold-500/30 font-sans">02</div>
+                        <h3 class="text-3xl font-display font-bold">內在的榮美：長存的溫柔平靜</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="glass-card p-8 rounded-3xl border-b-4 border-gold-400">
+                            <h4 class="text-gold-400 font-bold mb-4">名言佳句</h4>
+                            <blockquote class="text-lg italic font-serif text-white">
+                                「上帝看重我們的所是，遠超過我們的所做與所穿。真實的美麗是聖靈在人內心雕刻的傑作。」
+                            </blockquote>
+                            <cite class="text-gold-400 text-sm mt-4 block">— 陶恕 (A.W. Tozer)</cite>
+                        </div>
+                        <div class="span-2 glass-card p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4">引用經文</h4>
+                            <p class="text-xl font-serif italic text-white leading-relaxed bg-white/5 p-6 rounded-xl border-l-2 border-gold-400">
+                                「只要以裡面存著長久溫柔，安靜的心為妝飾；這在神面前是極寶貴的。因為古時仰賴神的聖潔婦人正是以此為妝飾...」
+                            </p>
+                            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h5 class="text-gold-400 text-sm font-bold tracking-widest mb-3">關鍵原文</h5>
+                                    <div class="space-y-4">
+                                        <div class="bg-white/5 p-3 rounded-lg">
+                                            <span class="text-gold-400 font-bold block text-sm">裡面存著 (kryptos anthrōpos)</span>
+                                            <span class="text-gray-400 text-xs">直譯「心裡隱藏的人」，指內在屬靈生命。</span>
+                                        </div>
+                                        <div class="bg-white/5 p-3 rounded-lg">
+                                            <span class="text-gold-400 font-bold block text-sm">溫柔 (praus)</span>
+                                            <span class="text-gray-400 text-xs">受控制的力量，溫和卻充滿韌性。</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-gold-500/5 p-6 rounded-2xl border border-gold-400/20">
+                                    <h5 class="text-gold-400 text-sm font-bold tracking-widest mb-3">問題解析</h5>
+                                    <p class="text-sm text-gray-300">
+                                        神眼中的「美」源自於對祂的仰賴，這種信靠使人能在挑戰中保持平靜，是永不褪色的美。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="text-4xl font-black text-gold-500/30 font-sans">03</div>
+                        <h3 class="text-3xl font-display font-bold">體恤與敬重：承受生命之恩</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="span-2 glass-card p-8 rounded-3xl">
+                            <h4 class="text-gold-300 font-bold mb-4">引用經文</h4>
+                            <p class="text-xl font-serif italic text-white leading-relaxed bg-white/5 p-6 rounded-xl border-l-2 border-gold-300">
+                                「你們作丈夫的也要按情理和妻子同住；因她比你軟弱，與你一同承受生命之恩的，所以要敬重她。這樣，便叫你們的禱告沒有阻礙。」
+                            </p>
+                            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h5 class="text-gold-300 text-sm font-bold tracking-widest mb-3">關鍵原文</h5>
+                                    <ul class="space-y-3 text-sm">
+                                        <li><span class="text-gold-300 font-bold">按情理 (kata gnōsin):</span> 照著知識，用心了解妻子的需要。</li>
+                                        <li><span class="text-gold-300 font-bold">敬重 (timē):</span> 賦予價值，視為極其寶貴的珍寶。</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gold-500/5 p-6 rounded-2xl border border-gold-300/20">
+                                    <h5 class="text-gold-300 text-sm font-bold tracking-widest mb-3">嚴重警告</h5>
+                                    <p class="text-sm text-gray-300">
+                                        在水平的人際關係中虧負了配偶，在垂直的屬靈關係中必然無法與神暢通。神不接受踐踏配偶卻敬虔呼求的禱告。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl border-r-4 border-gold-300 flex flex-col justify-center">
+                            <h4 class="text-gold-300 font-bold mb-4">名言佳句</h4>
+                            <blockquote class="text-lg italic font-serif text-white">
+                                「婚姻不僅僅是你對配偶的愛，更是你在神面前的呼召。我們對待配偶的方式，就是我們對待基督的縮影。」
+                            </blockquote>
+                            <cite class="text-gold-300 text-sm mt-4 block">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Manuscript -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex flex-col items-center mb-16">
+                <div class="w-12 h-1 bg-gold-500 mb-6"></div>
+                <h2 class="font-display text-4xl font-bold tracking-widest flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    講章全文
+                </h2>
+            </div>
+            
+            <article class="max-w-4xl mx-auto glass-card p-10 md:p-20 rounded-[40px] shadow-2xl space-y-12">
+                <div class="text-center mb-16">
+                    <p class="text-gold-500 font-bold tracking-widest mb-4">SERMON MANUSCRIPT</p>
+                    <h3 class="text-3xl md:text-5xl font-display font-black text-white leading-tight">以基督為中心的婚姻：<br/>順服、敬重與生命之恩</h3>
+                </div>
+
+                <div class="prose prose-invert prose-gold max-w-none text-gray-300 text-lg leading-relaxed space-y-8">
+                    <p>弟兄姊妹平安，今天我們要透過《彼得前書》三章1到7節，來思想一個極為重要的主題：<strong class="text-white border-b-2 border-gold-500">以基督為中心的婚姻：順服、敬重與生命之恩。</strong> 當我們談到婚姻和家庭，我們常覺得這是個人的私領域，但在聖經看來，家庭卻是福音最真實的試金石。</p>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-display font-bold text-gold-400">一、無言的見證：生命勝過話語</h4>
+                        <p>經文一開始告訴我們：<span class="text-white italic">「你們作妻子的要順服自己的丈夫；這樣，若有不信從道理的丈夫，他們雖然不聽道，也可以因妻子的品行被感化過來。」</span>（彼前3:1）</p>
+                        <p>當我們面對未信主的家人時，我們常犯一個毛病：我們想用「說教」把他們辯進天國。但彼得提醒我們，<strong class="text-gold-500">福音最有力的見證，從來不是滔滔不絕的辯論，而是被神改變的生命。</strong></p>
+                        <p>記住，<strong class="text-white underline decoration-gold-500 decoration-2 underline-offset-4">在最親密的關係裡，生命永遠勝過話語。</strong></p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-display font-bold text-gold-400">二、內在的榮美：長存的溫柔平靜</h4>
+                        <p>彼得把焦點轉向了什麼是真正的「美」。他說：<span class="text-white italic">「只要以裡面存著長久溫柔，安靜的心為妝飾；這在神面前是極寶貴的。」</span>（彼前3:4）</p>
+                        <p>神告訴我們，有一種美是<strong class="text-gold-500">「長存的」</strong>，那就是隱藏在心裡的溫柔與平靜。這種溫柔不是軟弱，而是一種在基督裡的強大安全感。每一天不僅在鏡子前打扮我們的外表，更要在神的道中梳理我們的內心。</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-display font-bold text-gold-400">三、體恤與敬重：承受生命之恩</h4>
+                        <p>最後，彼得將矛頭轉向了丈夫：<span class="text-white italic">「你們作丈夫的也要按情理和妻子同住；因她比你軟弱，與你一同承受生命之恩的，所以要敬重她。這樣，便叫你們的禱告沒有阻礙。」</span>（彼前3:7）</p>
+                        <p><strong class="text-red-400">這是一句非常嚴厲的警告！</strong>丈夫對待妻子的方式，直接決定了他與神的關係。弟兄們，如果我們回到家對妻子呼來喝去，神說：<strong class="text-gold-500 uppercase tracking-tighter">你的禱告會有阻礙！</strong>我們不能在水平關係裡踐踏配偶，卻指望在垂直關係裡經歷神的同在。</p>
+                    </div>
+
+                    <div class="pt-10 border-t border-white/10 text-center">
+                        <p class="text-xl font-display italic text-gray-400">願我們的家，成為神恩典流通、禱告無阻礙的聖地！</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Action & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 rounded-3xl border-t-4 border-gold-500">
+                <h3 class="font-display text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    回應與實踐
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center font-bold text-sm">1</span>
+                        <div>
+                            <p class="font-bold text-white mb-1">安靜的服事</p>
+                            <p class="text-gray-400 text-sm">本週對家人停止一句平時會說的批評，改以一個具體的服事行動代替。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center font-bold text-sm">2</span>
+                        <div>
+                            <p class="font-bold text-white mb-1">刻意的了解</p>
+                            <p class="text-gray-400 text-sm">花至少一小時專心傾聽對方的感受，不插嘴、不急於解決問題，單單「按情理去了解」。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center font-bold text-sm">3</span>
+                        <div>
+                            <p class="font-bold text-white mb-1">修復的禱告</p>
+                            <p class="text-gray-400 text-sm">若關係中有嫌隙，今天就主動尋求和好，並為彼此的關係能「承受生命之恩」禱告5分鐘。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-3xl flex flex-col justify-center items-center text-center bg-gradient-to-br from-dark-800 to-dark-700">
+                <h3 class="font-display text-2xl font-bold mb-8">總結關鍵字</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="px-8 py-4 rounded-full bg-gold-500 text-dark-900 font-black text-xl shadow-lg shadow-gold-500/20">生命</div>
+                    <div class="px-8 py-4 rounded-full border-2 border-gold-500 text-gold-500 font-black text-xl">榮美</div>
+                    <div class="px-8 py-4 rounded-full bg-white/10 text-white font-black text-xl">敬重</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex flex-col items-center mb-16">
+                <div class="w-12 h-1 bg-gold-500 mb-6"></div>
+                <h2 class="font-display text-4xl font-bold tracking-widest flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                    名言佳句
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「我們對待配偶的方式，就是我們對待基督的縮影；婚姻不僅是你們彼此的相愛，更是神在你們身上的神聖呼召。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「婚姻的奧秘在於：兩個罪人竟然能藉著福音的恩典，在彼此的生命中看見基督的榮耀，並互相服事。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「上帝看重我們的所是，遠超過我們的所做。真實的美麗是聖靈在人內心深處雕刻的傑作。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「讓妻子使丈夫歡喜回家，讓丈夫使妻子遺憾他離家。婚姻的維繫需要無盡的饒恕與每日的恩典。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「一個家庭的堅固與否，取決於這個家庭是否將基督尊為主。在祈禱中一起屈膝的家庭，必定能一起站立得穩。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 葛理翰 (Billy Graham)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「你怎麼對待神給你的人，就證明你怎麼對待給你人的神。在婚姻中的敬重，是信仰最實際的倫理表現。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 唐崇榮 (Stephen Tong)</cite>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <p class="text-gray-500 text-xs tracking-[0.2em] font-medium bg-white/5 inline-block px-6 py-2 rounded-full border border-white/10">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for all anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

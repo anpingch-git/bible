@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩15:1-5:永不動搖的生命：與神同住的品格特徵</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        slate: {
+                            850: '#141c2f',
+                            950: '#0a0f1d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0f1d;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #facc15;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation Toolbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-panel py-4 px-6 flex justify-between items-center">
+        <div class="text-gold-400 font-bold tracking-wider text-sm md:text-base">詩篇 15:1-5</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/c683f1bd-eb74-4b83-95c3-0e8a125bbd59' alt='Banner Background' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/60 to-slate-950"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-serif text-4xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
+                <span class="gradient-text">永不動搖的生命</span><br/>
+                <span class="text-white text-3xl md:text-5xl">與神同住的品格特徵</span>
+            </h1>
+            <p class="text-gold-200 font-medium text-lg md:text-xl border-y border-gold-500/30 py-4 inline-block">
+                詩篇 15:1-5
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 -mt-20 relative z-20 pb-24">
+        
+        <!-- Golden Verse -->
+        <section class="max-w-4xl mx-auto mb-20">
+            <div class="glass-panel rounded-3xl p-8 md:p-12 text-center shadow-2xl ring-1 ring-white/10">
+                <div class="text-gold-500 mb-4">
+                    <svg class="w-10 h-10 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3C14.017 2.44772 14.4647 2 15.017 2H21.017C21.5693 2 22.017 2.44772 22.017 3V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.01697 21L2.01697 18C2.01697 16.8954 2.9124 16 4.01697 16H7.01697C7.56925 16 8.01697 15.5523 8.01697 15V9C8.01697 8.44772 7.56925 8 7.01697 8H4.01697C2.9124 8 2.01697 7.10457 2.01697 6V3C2.01697 2.44772 2.46468 2 3.01697 2H9.01697C9.56925 2 10.0169 2.44772 10.0169 3V15C10.0169 18.3137 7.33068 21 4.01697 21H2.01697Z"/></svg>
+                </div>
+                <h2 class="text-gold-300 text-lg font-bold uppercase tracking-widest mb-4">金句</h2>
+                <p class="font-serif text-2xl md:text-3xl font-bold leading-relaxed text-white">
+                    「耶和華啊，誰能寄居你的帳幕？誰能住在你的聖山？就是行為正直、作事公義、心裡說實話的人。」
+                </p>
+                <div class="mt-4 text-slate-400 font-medium">（詩篇 15:1-2）</div>
+            </div>
+        </section>
+
+        <!-- Prayer -->
+        <section id="prayer" class="max-w-3xl mx-auto mb-24 pt-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-gold-500/20 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3c1.268 0 2.49.234 3.62.661m-1.756 3.39a3 3 0 00-4.632 3.755M14.714 21a9.975 9.975 0 004.516-2.851m-3.44-2.04l.054.09A10.003 10.003 0 0021 11.03C21 5.49 16.51 1 11 1 7.017 1 3.593 3.322 2.03 6.661m1.756 3.39a3 3 0 004.632 3.755"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">開路禱告</h2>
+            </div>
+            <div class="text-lg md:text-xl text-slate-300 leading-loose italic font-light">
+                「主耶和華，我們來到祢的面前，心中帶著敬畏與渴望。祢是至高至聖的上帝，祢的帳幕充滿了榮耀，祢的聖山無瑕無疵。主啊，我們承認自己的軟弱與不足，若非祢的恩典，我們無人能站立得住。求祢藉著祢的話語光照我們，賜給我們一顆清潔的心與正直的靈，使我們不僅在口頭上敬拜祢，更在行為、言語、財務與人際關係上，活出與祢性情相符的生命。求祢幫助我們，即使吃虧也不違背對祢的承諾，使我們的生命建立在磐石上，永不動搖。奉主耶穌基督的聖名祈求，阿們。」
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="mb-16 pt-20">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-gold-500/20 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="glass-panel p-6 rounded-2xl hover:bg-gold-500/10 transition-all border-l-4 border-gold-500 group">
+                    <span class="text-gold-500 text-xs font-bold block mb-2 group-hover:translate-x-2 transition-transform">PART 01 | 詩 15:1</span>
+                    <h3 class="text-lg font-bold text-white">渴望與神同住的神聖叩問</h3>
+                </a>
+                <a href="#part2" class="glass-panel p-6 rounded-2xl hover:bg-gold-500/10 transition-all border-l-4 border-gold-500 group">
+                    <span class="text-gold-500 text-xs font-bold block mb-2 group-hover:translate-x-2 transition-transform">PART 02 | 詩 15:2-3</span>
+                    <h3 class="text-lg font-bold text-white">內外一致的誠實與敬虔</h3>
+                </a>
+                <a href="#part3" class="glass-panel p-6 rounded-2xl hover:bg-gold-500/10 transition-all border-l-4 border-gold-500 group">
+                    <span class="text-gold-500 text-xs font-bold block mb-2 group-hover:translate-x-2 transition-transform">PART 03 | 詩 15:4-5</span>
+                    <h3 class="text-lg font-bold text-white">堅守原則的抉擇與永恆應許</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Bento Sections -->
+        <div class="space-y-24 mb-24">
+            <!-- Section 1 -->
+            <article id="part1" class="scroll-mt-24">
+                <div class="mb-8">
+                    <div class="inline-block px-3 py-1 bg-gold-600/20 text-gold-400 rounded-full text-xs font-bold mb-4 tracking-tighter">SECTION 01</div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">渴望與神同住的神聖叩問</h2>
+                    <p class="text-gold-200 font-medium italic">經文範圍：詩篇 15:1</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="col-span-12 md:col-span-7 glass-panel rounded-3xl p-8 section-card">
+                        <div class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"></path></svg>
+                            關鍵問題與解析
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-4">大衛為什麼要問「誰能」？這反映了我們對神聖潔的什麼態度？</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            這個問題打破了人對「宗教參與」的隨便態度。大衛意識到，進入神的同在不是一種理所當然的權利，而是一種極大的特權。神的本質是絕對聖潔的，這句叩問提醒我們，不能帶著隨便、污穢或未經對付的罪來朝見神。它迫使我們從「神能為我做什麼」轉向「我當如何生活才能與神同行」。
+                        </p>
+                        <div class="mt-8 p-6 bg-slate-900/50 rounded-2xl border border-white/5 italic text-slate-400">
+                            「我們對神的聖潔認識得越深，我們就越會對自己的罪感到敏銳。」—— 陶恕 (A.W. Tozer)
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-5 flex flex-col gap-6">
+                        <div class="glass-panel rounded-3xl p-8 flex-1 section-card border-t-4 border-gold-600">
+                            <div class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2 uppercase tracking-widest">Original Text 關鍵原文</div>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-300 font-bold">寄居 (*gur*)</span>: 指作為客旅或外邦人尋求庇護。
+                                </li>
+                                <li>
+                                    <span class="text-gold-300 font-bold">住 (*shakan*)</span>: 指永久的定居、安息。象徵持續的親密同在。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gold-700/10 rounded-3xl p-8 flex-1 border border-gold-700/30">
+                            <div class="text-gold-400 text-sm font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM5.884 6.654a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 17.106a1 1 0 101.415-1.414l-.707-.707a1 1 0 10-1.414 1.414l.707.707zM10 18a1 1 0 100-2h-1a1 1 0 100 2h1zM15.364 15.686a1 1 0 001.415-1.415l-.708-.707a1 1 0 00-1.414 1.414l.707.708zM15 11a1 1 0 11-2 0 1 1 0 012 0zM10 7a1 1 0 100 2 1 1 0 000-2z"></path></svg>
+                                生活小故事
+                            </div>
+                            <p class="text-sm text-slate-300 italic">
+                                想像你收到了一張國宴的邀請函，你絕對不會穿著沾滿泥巴的工作服赴宴。你會沐浴更衣，注意言談。宇宙的君王邀請我們進入祂的帳幕，我們豈能不檢視自己生命的「穿著」？
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 2 -->
+            <article id="part2" class="scroll-mt-24">
+                <div class="mb-8">
+                    <div class="inline-block px-3 py-1 bg-gold-600/20 text-gold-400 rounded-full text-xs font-bold mb-4 tracking-tighter">SECTION 02</div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">內外一致的誠實與敬虔</h2>
+                    <p class="text-gold-200 font-medium italic">經文範圍：詩篇 15:2-3</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="col-span-12 md:col-span-5 flex flex-col gap-6">
+                        <div class="glass-panel rounded-3xl p-8 flex-1 section-card border-t-4 border-gold-600">
+                            <div class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2 uppercase tracking-widest">Original Text 關鍵原文</div>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-300 font-bold">正直 (*tamim*)</span>: 完整、無瑕疵。形容獻給神完美的祭物。
+                                </li>
+                                <li>
+                                    <span class="text-gold-300 font-bold">實話 (*emet*)</span>: 真實、可靠。品格值得信賴。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gold-700/10 rounded-3xl p-8 flex-1 border border-gold-700/30">
+                            <div class="text-gold-400 text-sm font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM5.884 6.654a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 17.106a1 1 0 101.415-1.414l-.707-.707a1 1 0 10-1.414 1.414l.707.707zM10 18a1 1 0 100-2h-1a1 1 0 100 2h1zM15.364 15.686a1 1 0 001.415-1.415l-.708-.707a1 1 0 00-1.414 1.414l.707.708zM15 11a1 1 0 11-2 0 1 1 0 012 0zM10 7a1 1 0 100 2 1 1 0 000-2z"></path></svg>
+                                生活小故事
+                            </div>
+                            <p class="text-sm text-slate-300 italic">
+                                建物若外表華麗但內部鋼筋生鏽，地震時必倒。若我們在教會表現屬靈，私下卻八卦批評，這就是缺乏「心裡說實話」的正直。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-7 glass-panel rounded-3xl p-8 section-card">
+                        <div class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"></path></svg>
+                            關鍵問題與解析
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-4">為什麼經文強調「心裡」說實話，而不只是口中說實話？</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            人可以口中說出漂亮或技術性不說謊的話，但心中卻充滿算計。「心裡說實話」代表動機的純潔。這表現在消極行為上：不讒謗、不惡待。一個心裡真實的人，他的舌頭會受到約束，因為他知道言語是心靈的溫度計。
+                        </p>
+                        <div class="mt-8 p-6 bg-slate-900/50 rounded-2xl border border-white/5 italic text-slate-400">
+                            「沒有比真實更需要勇氣的了；也沒有比虛偽更懦弱的了。」—— 潘霍華 (Dietrich Bonhoeffer)
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 3 -->
+            <article id="part3" class="scroll-mt-24">
+                <div class="mb-8">
+                    <div class="inline-block px-3 py-1 bg-gold-600/20 text-gold-400 rounded-full text-xs font-bold mb-4 tracking-tighter">SECTION 03</div>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">堅守原則的抉擇與永恆的應許</h2>
+                    <p class="text-gold-200 font-medium italic">經文範圍：詩篇 15:4-5</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="col-span-12 md:col-span-7 glass-panel rounded-3xl p-8 section-card">
+                        <div class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"></path></svg>
+                            關鍵問題與解析
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-4">「自己吃虧也不更改」在現代社會被視為愚蠢，為何在神眼中卻是根基？</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            現代社會追求「利益最大化」，合約往往在無利可圖時被撕毀。然而，神的性情是信實的。當一個人在面對財物損失依然堅守承諾，他就是在彰顯神的信實。神應許這樣的人「永不動搖」，因為他的生命根基不是建立在變動的財富，而是建立在神永恆的屬性上。
+                        </p>
+                        <div class="mt-8 p-6 bg-slate-900/50 rounded-2xl border border-white/5 italic text-slate-400">
+                            「品格就是你在無人知曉時的所作所為；而信仰的深度，常常在利益受損時才真正顯明。」—— 提摩太·凱勒 (Timothy Keller)
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-5 flex flex-col gap-6">
+                        <div class="glass-panel rounded-3xl p-8 flex-1 section-card border-t-4 border-gold-600">
+                            <div class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2 uppercase tracking-widest">Original Text 關鍵原文</div>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-300 font-bold">動搖 (*mot*)</span>: 滑跌、被推翻。經文否定後意為「絕對不會滑跌」。
+                                </li>
+                                <li>
+                                    <span class="text-gold-300 font-bold">吃虧 (*ra'a*)</span>: 遭受傷害、痛苦或壞處。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gold-700/10 rounded-3xl p-8 flex-1 border border-gold-700/30">
+                            <div class="text-gold-400 text-sm font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM5.884 6.654a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 17.106a1 1 0 101.415-1.414l-.707-.707a1 1 0 10-1.414 1.414l.707.707zM10 18a1 1 0 100-2h-1a1 1 0 100 2h1zM15.364 15.686a1 1 0 001.415-1.415l-.708-.707a1 1 0 00-1.414 1.414l.707.708zM15 11a1 1 0 11-2 0 1 1 0 012 0zM10 7a1 1 0 100 2 1 1 0 000-2z"></path></svg>
+                                生活小故事
+                            </div>
+                            <p class="text-sm text-slate-300 italic">
+                                一位企業家在原物料暴漲時堅持按原價交貨，即便虧損。這誠信震撼了客戶，換來後續十年大單與對信仰的興趣。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="max-w-4xl mx-auto mb-24 pt-20">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold-500/20 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <div class="glass-panel rounded-3xl p-8 md:p-16 space-y-10 text-slate-300 text-lg leading-loose">
+                <header class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-serif font-bold text-gold-400 mb-4">永不動搖的生命：與神同住的品格特徵</h3>
+                    <div class="w-24 h-1 bg-gold-600 mx-auto"></div>
+                </header>
+
+                <p>親愛的弟兄姊妹，我們常常追求生命中的安全感。我們渴望投資穩定、工作穩固、家庭安康。然而，這個世界沒有什麼是永不改變的。今天我們要透過詩篇第15篇，來看見一種真正「永不動搖」的生命。</p>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4 border-l-4 border-gold-500 pl-4">渴望與神同住的神聖叩問</h4>
+                    <p>詩篇一開始，大衛就提出了一個極為深刻的問題：<br/>
+                    <strong class="text-gold-300 text-xl block my-4">「耶和華啊，誰能寄居你的帳幕？誰能住在你的聖山？」（詩15:1）</strong>
+                    這個問題打破了我們對信仰的隨便態度。大衛問「誰能？」，因為他深知神的聖潔。神是宇宙的君王，祂的帳幕和聖山是絕對榮耀與聖潔的所在。我們不能穿著沾滿世界污穢的衣服，隨隨便便地闖入祂的同在。這是一個神聖的叩問：我們到底具備什麼樣的生命特質，才能與這位至聖者持續地同住、同行？陶恕曾說：「我們對神的聖潔認識得越深，我們就越會對自己的罪感到敏銳。」這個問題逼著我們從外在的宗教活動，轉向內在生命的檢視。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4 border-l-4 border-gold-500 pl-4">內外一致的誠實與敬虔</h4>
+                    <p>大衛接著回答了這個問題：<br/>
+                    <strong class="text-gold-300 text-xl block my-4">「就是行為正直、作事公義、心裡說實話的人。他不以舌頭讒謗人，不惡待朋友，也不隨夥毀謗鄰里。」（詩15:2-3）</strong>
+                    能與神同住的人，是一個「內外一致」的人。經文特別提到「心裡說實話」。我們很容易在表面上裝作虔誠，甚至嘴巴上說著屬靈的術語，但心裡卻充滿了算計、嫉妒和苦毒。一個心裡說實話的人，他的信仰絕不只是週末的裝飾品。潘霍華說過：「沒有比真實更需要勇氣的了；也沒有比虛偽更懦弱的了。」</p>
+                    <p class="mt-4">這樣的真實，最直接的考驗就是我們的「舌頭」。經文告訴我們，這個人不讒謗、不惡待、不毀謗。弟兄姊妹，當別人在八卦同事、批評教會弟兄姊妹的時候，你是跟著附和，還是勇敢地閉上嘴巴，甚至為對方說話？我們口中的言語，就是我們心靈誠實與否的溫度計。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4 border-l-4 border-gold-500 pl-4">堅守原則的抉擇與永恆的應許</h4>
+                    <p>最後，大衛指出了這種生命最艱難，卻也最榮耀的特質：<br/>
+                    <strong class="text-gold-300 text-xl block my-4">「他眼中藐視匪類，卻尊重那敬畏耶和華的人。他發了誓，雖然自己吃虧也不更改。他不放債取利，不受賄賂以害無辜。行這些事的人必永不動搖。」（詩15:4-5）</strong>
+                    在現代社會，「自己吃虧也不更改」聽起來像個笑話。只要不符合利益，合約可以撕毀，承諾可以忘記。但神在尋找那些願意為真理、為承諾付代價的人。因為我們的神，就是一位守約施慈愛的神；當我們即使吃虧也願意守住承諾時，我們就是在世人面前活出了神的性情！提摩太·凱勒牧師提醒我們：「信仰的深度，常常在利益受損時才真正顯明。」</p>
+                    <p class="mt-6 text-white text-xl font-bold italic text-center border-y border-gold-600/30 py-6">
+                        經文的最後給出了一個極大的應許：「行這些事的人必永不動搖。」
+                    </p>
+                    <p class="mt-6">世界的人把根基建立在金錢、人脈和謊言上，只要環境一變，他們就倒塌了。但當你選擇行為正直、心裡說實話、就算吃虧也堅守承諾時，你的生命就深深扎根在神永恆的磐石上。願我們都能擁有這樣與神同住、永不動搖的生命！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="max-w-4xl mx-auto mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Application -->
+                <div class="glass-panel rounded-3xl p-8 border-b-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        應用方向
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex gap-3"><span class="text-blue-400 font-bold">01.</span> 言語的過濾與把關：檢視是否帶有讒謗，立志成為流言蜚語的終結者。</li>
+                        <li class="flex gap-3"><span class="text-blue-400 font-bold">02.</span> 檢視承諾的重量：反思是否因為不便或吃虧而隨意反悔。</li>
+                        <li class="flex gap-3"><span class="text-blue-400 font-bold">03.</span> 財務的聖潔：在金錢處理上是否正直，是否利用別人的困境獲利。</li>
+                    </ul>
+                </div>
+                <!-- Action -->
+                <div class="glass-panel rounded-3xl p-8 border-b-4 border-green-500">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        回應行動
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex gap-3"><span class="text-green-400 font-bold">01.</span> 每日動機省察：睡前五分鐘求聖靈光照做事動機。</li>
+                        <li class="flex gap-3"><span class="text-green-400 font-bold">02.</span> 一週言語禁食：挑戰不參與任何抱怨或批評對話。</li>
+                        <li class="flex gap-3"><span class="text-green-400 font-bold">03.</span> 兌現未付承諾：列出未兌現清單，一個月內制定計畫完成。</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 glass-panel rounded-2xl p-6 text-center">
+                <h4 class="text-gold-400 text-sm font-bold uppercase tracking-widest mb-4">結論關鍵字</h4>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-6 py-2 bg-slate-800 rounded-full text-white font-bold border border-white/10">聖潔 Holiness</span>
+                    <span class="px-6 py-2 bg-slate-800 rounded-full text-white font-bold border border-white/10">真實 Integrity</span>
+                    <span class="px-6 py-2 bg-slate-800 rounded-full text-white font-bold border border-white/10">不動搖 Unshaken</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="max-w-5xl mx-auto mb-24 pt-20">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold-500/20 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「我們對神的聖潔認識得越深，我們就越會對自己的罪感到敏銳。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 陶恕 (A.W. Tozer)，《渴慕神》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「沒有比真實更需要勇氣的了；也沒有比虛偽更懦弱的了。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 潘霍華 (Dietrich Bonhoeffer)，《獄中書簡》</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「真正的品格是你在無人知曉時的所作所為；而信仰的深度，常常在利益受損時才真正顯明。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 提摩太·凱勒，《工作神學》</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「上帝所要求的聖潔，並非要我們脫離世界，而是在世界的日常瑣事中活出祂的同在。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 畢德生 (Eugene Peterson)</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「我們若要在公眾面前站立得住，就必須先在神面前跪得下來；唯有與神同住的人，才能在世人面前不動搖。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 司布真 (Charles Spurgeon)</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「真理不僅僅是我們要去相信的東西，它更是一種我們要去活出來的生命狀態。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 魏樂德 (Dallas Willard)</div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「心靈的潔淨比外表的敬虔更為重要，因為上帝鑒察的是我們最深處的動機。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 約翰·加爾文 (John Calvin)</div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「一個與神親密同行的人，必然是一個在金錢與言語上嚴格約束自己的人。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 約翰·史托德 (John Stott)</div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「真正的信仰情感，必然會結出日常生活中公義與誠實的果子。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 喬納森·愛德華茲</div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500 hover:border-gold-300 transition-colors">
+                    <p class="text-slate-200 mb-4 italic">「誠實不是一種策略，它是基督徒生命的核心，因為我們的神是真理的神。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 葛理翰 (Billy Graham)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <footer class="max-w-4xl mx-auto py-12 border-t border-white/5 text-center">
+            <p class="text-slate-500 text-sm bg-slate-900/50 inline-block px-4 py-2 rounded-lg border border-slate-800">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-600 text-slate-950 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all z-50 hover:scale-110 active:scale-95" title="回到禱告處">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

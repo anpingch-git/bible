@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彼前4:1-6:武裝心志，為主度餘生</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'Outfit', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-glass {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .card-glass:hover {
+            border-color: rgba(234, 179, 8, 0.3);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fef08a, #eab308, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            background: linear-gradient(to bottom, transparent, #020617);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #eab308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .scroll-to-top {
+            box-shadow: 0 0 20px rgba(234, 179, 8, 0.2);
+        }
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 1.5rem;
+            background: #eab308;
+            margin-right: 12px;
+            border-radius: 2px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-gold-500 font-display font-bold text-lg hidden sm:block">
+                    彼前 4:1-6
+                </div>
+                <div class="flex space-x-6 sm:space-x-8 text-sm font-medium">
+                    <a href="#prayer" class="nav-link hover:text-gold-400">禱告</a>
+                    <a href="#outline" class="nav-link hover:text-gold-400">大綱</a>
+                    <a href="#sermon" class="nav-link hover:text-gold-400">講章</a>
+                    <a href="#quotes" class="nav-link hover:text-gold-400">名言</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-[80vh] w-full overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/779473a6-e255-401c-b83b-0d12f233d257' alt='media_1' class="w-full h-full object-cover" />
+            <div class="absolute inset-0 banner-mask"></div>
+        </div>
+        <div class="relative z-10 h-full flex flex-col justify-end items-center pb-20 px-4 text-center">
+            <span class="text-gold-400 font-bold tracking-[0.3em] text-sm mb-4 uppercase">First Peter 4:1-6</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-black mb-6 leading-tight">
+                武裝心志<br/><span class="text-gradient">為主度餘生</span>
+            </h1>
+            <p class="max-w-2xl text-slate-300 text-lg md:text-xl font-light leading-relaxed">
+                以受苦為兵器，轉向基督的璀璨曙光，在世度餘下的光陰。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- Golden Verse Section -->
+        <section class="relative">
+            <div class="absolute -top-10 -left-10 text-9xl text-white/5 font-serif select-none">"</div>
+            <div class="card-glass p-8 md:p-12 rounded-3xl text-center border-l-4 border-l-gold-500">
+                <h2 class="text-gold-500 font-bold mb-6 flex justify-center items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    金句
+                </h2>
+                <p class="text-2xl md:text-3xl font-serif font-bold leading-relaxed text-slate-100">
+                    「基督既在肉身受苦，你們也當將這樣的心志作為兵器，因為在肉身受過苦的，就已經與罪斷絕了。你們存這樣的心，從今以後就可以不從人的情慾，只從神的旨意在世度餘下的光陰。」
+                </p>
+                <cite class="block mt-6 text-gold-400 font-medium not-italic">—— 彼得前書 4:1-2</cite>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <h2 class="section-title text-3xl font-bold mb-8 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                禱告
+            </h2>
+            <div class="text-lg leading-loose text-slate-300 italic bg-white/5 p-8 rounded-2xl border-l border-white/10">
+                主啊，我們來到祢的面前，感謝祢為我們在肉身受苦，甚至為我們死在十字架上。求祢賜給我們剛強的心志，將祢受苦的態度作為我們抵擋罪惡的兵器。幫助我們不再隨從世俗的情慾，而是單單順服祢的旨意，來度過我們在世上餘下的光陰。當我們面對世界的誤解與毀謗時，求祢賜我們忍耐與盼望，因為我們知道，我們最終要向祢這位審判活人死人的主交帳。願祢的真理今日光照我們，奉主耶穌基督的聖名祈求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="section-title text-3xl font-bold mb-8 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                分段大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <button onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth'})" class="card-glass p-6 text-left rounded-2xl group">
+                    <span class="text-gold-500 text-xs font-bold block mb-2 group-hover:tracking-widest transition-all">第一段 (4:1-2)</span>
+                    <h3 class="font-bold text-lg group-hover:text-gold-400">武裝心志：以受苦為兵器</h3>
+                </button>
+                <button onclick="document.getElementById('section2').scrollIntoView({behavior: 'smooth'})" class="card-glass p-6 text-left rounded-2xl group">
+                    <span class="text-gold-500 text-xs font-bold block mb-2 group-hover:tracking-widest transition-all">第二段 (4:3-4)</span>
+                    <h3 class="font-bold text-lg group-hover:text-gold-400">逆流而上：告別放蕩路</h3>
+                </button>
+                <button onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth'})" class="card-glass p-6 text-left rounded-2xl group">
+                    <span class="text-gold-500 text-xs font-bold block mb-2 group-hover:tracking-widest transition-all">第三段 (4:5-6)</span>
+                    <h3 class="font-bold text-lg group-hover:text-gold-400">永恆視角：向主交帳</h3>
+                </button>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-16">
+                <!-- Section 1 -->
+                <article id="section1" class="scroll-mt-24 border-t border-white/5 pt-12">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6">武裝心志——以受苦為兵器，與罪惡斷絕</h3>
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">引用經文</span>
+                            <p class="text-slate-200">基督既在肉身受苦，你們也當將這樣的心志作為兵器，因為在肉身受過苦的，就已經與罪斷絕了。你們存這樣的心，從今以後就可以不從人的情慾，只從神的旨意在世度餘下的光陰。</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="font-bold flex items-center text-gold-600"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"></path></svg>關鍵字釋義</h4>
+                                <ul class="space-y-2 text-slate-400 text-sm">
+                                    <li><strong class="text-slate-200">心志 (ennoia)</strong>：指思想、意念或態度。</li>
+                                    <li><strong class="text-slate-200">作為兵器 (hoplizomai)</strong>：軍事用語，意即「將自己武裝起來」準備戰鬥。</li>
+                                    <li><strong class="text-slate-200">與罪斷絕 (pauo)</strong>：停止、休止。指在意志和行動上不再受罪。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-bold flex items-center text-gold-600"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"></path></svg>問題與解析</h4>
+                                <p class="text-sm text-slate-400">當一個人準備好為主受苦，罪就失去了透過「舒適」引誘我們的施力點，使我們能專注於神的旨意。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/10 p-6 rounded-xl border-l-4 border-gold-500">
+                            <p class="text-slate-300 italic">「當基督呼召一個人的時候，祂是叫他來死。」—— 潘霍華</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="section2" class="scroll-mt-24 border-t border-white/5 pt-12">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6">逆流而上——告別荒宴醉酒，面對世人毀謗</h3>
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">引用經文</span>
+                            <p class="text-slate-200">因為往日隨從外邦人的心意行邪淫、惡慾、醉酒、荒宴、群飲，並可惡拜偶像的事，時候已經夠了。他們在這些事上，見你們不與他們同奔那放蕩無度的路，就以為奇怪，毀謗你們。</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="font-bold flex items-center text-gold-600"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"></path></svg>關鍵字釋義</h4>
+                                <ul class="space-y-2 text-slate-400 text-sm">
+                                    <li><strong class="text-slate-200">放蕩無度 (asotia)</strong>：揮霍、不受約束的墮落。</li>
+                                    <li><strong class="text-slate-200">以為奇怪 (xenizo)</strong>：感到驚訝、不可思議。</li>
+                                    <li><strong class="text-slate-200">毀謗 (blasphemeo)</strong>：口出惡言、抹黑。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-bold flex items-center text-gold-600"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"></path></svg>問題與解析</h4>
+                                <p class="text-sm text-slate-400">基督徒的聖潔生活照出了世俗的敗壞。為了合理化行為，世人透過嘲笑來減輕內心的良知譴責。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/10 p-6 rounded-xl border-l-4 border-gold-500">
+                            <p class="text-slate-300 italic">「世界如何對待基督，也必如何對待跟從祂的人。」—— 陶恕</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="section3" class="scroll-mt-24 border-t border-white/5 pt-12">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6">永恆視角——預備向主交帳，靠神靈魂存活</h3>
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">引用經文</span>
+                            <p class="text-slate-200">他們必交帳給那將要審判活人死人的主。為此，就是死人也曾有福音傳給他們，要叫他們的肉體按著人受審判，他們的靈性卻靠神活著。</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="font-bold flex items-center text-gold-600"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"></path></svg>關鍵字釋義</h4>
+                                <ul class="space-y-2 text-slate-400 text-sm">
+                                    <li><strong class="text-slate-200">交帳 (apodidomi logon)</strong>：財務或責任上的核算。</li>
+                                    <li><strong class="text-slate-200">審判活人死人的主</strong>：主權超越時間與生死。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-bold flex items-center text-gold-600"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"></path></svg>問題與解析</h4>
+                                <p class="text-sm text-slate-400">世人的審判是暫時的，即使肉身死亡，在永恆中靈魂卻因神而活，這給予信徒極大的安慰。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/10 p-6 rounded-xl border-l-4 border-gold-500">
+                            <p class="text-slate-300 italic">「確信有一位審判的上帝，使我們能在受苦中依然去愛。」—— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <h2 class="section-title text-3xl font-bold mb-8 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                講章文稿
+            </h2>
+            <div class="prose prose-invert prose-lg max-w-none text-slate-300 space-y-8 leading-relaxed">
+                <p class="text-2xl text-slate-100 font-medium">弟兄姊妹們，平安。今天我們要透過彼得前書第四章1到6節，來思想一個極為重要的主題：<strong class="text-gold-400">「武裝心志，為主度餘生」</strong>。</p>
+                
+                <div class="pl-6 border-l-2 border-slate-700">
+                    <h4 class="text-xl font-bold text-gold-500 mb-4">武裝心志：以受苦為兵器</h4>
+                    <p>彼得前書 4:1-2 告訴我們：<strong class="text-white">「基督既在肉身受苦，你們也當將這樣的心志作為兵器...」</strong>。弟兄姊妹，我們常常害怕受苦，但聖經卻呼召我們要將「受苦的心志」當作<strong class="text-gold-400">兵器</strong>。當你穿戴上準備為主付代價的裝甲時，魔鬼的誘惑就對你起不了作用。從今以後，我們活著不再是為了滿足自己，而是為了神的旨意度過<strong class="text-gold-400">餘下的光陰</strong>。</p>
+                </div>
+
+                <div class="pl-6 border-l-2 border-slate-700">
+                    <h4 class="text-xl font-bold text-gold-500 mb-4">逆流而上：面對世人毀謗</h4>
+                    <p>過去的日子，我們可能隨波逐流，但彼得說：<strong class="text-white">「時候已經夠了！」</strong>當你決定不跟著世界同奔放蕩的路時，不要期待世界會給你掌聲。世人會<strong class="text-gold-400">以為奇怪</strong>，甚至會<strong class="text-gold-400">毀謗</strong>你。不要因為別人的嘲笑就退縮，與世界產生衝突，正是你行在光明中的最佳證明！</p>
+                </div>
+
+                <div class="pl-6 border-l-2 border-slate-700">
+                    <h4 class="text-xl font-bold text-gold-500 mb-4">永恆視角：預備向主交帳</h4>
+                    <p>那些現在嘲笑你的人，有一天都要站在上帝面前<strong class="text-gold-400">交帳</strong>。這給了我們極大的安慰與釋放，我們不需要親手去報復。即使肉身殉道，但在永恆的法庭裡，我們的靈性卻要<strong class="text-white">靠神活著</strong>。世人的審判是暫時的，上帝的判決才是永遠的。</p>
+                </div>
+
+                <p class="text-xl font-bold text-slate-100 pt-6">弟兄姊妹，拿起你的兵器，珍惜你的餘生，因為我們最終都要向主交帳。願我們都能勇敢為主而活！</p>
+            </div>
+        </section>
+
+        <!-- Key Applications & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card-glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-gold-500 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">●</span><strong class="text-slate-100">心態重塑：</strong>將受苦視為操練屬靈肌肉的「兵器」。</li>
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">●</span><strong class="text-slate-100">時間管家：</strong>檢視並調整滿足情慾與尋求神旨意的時間比例。</li>
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">●</span><strong class="text-slate-100">關係界線：</strong>勇敢對不討神喜悅的邀約說「不」。</li>
+                </ul>
+            </div>
+            <div class="card-glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-gold-500 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">1.</span> 寫下三個決定要為主放棄的具體行為。</li>
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">2.</span> 本週每天為一個嘲笑你信仰的人禱告。</li>
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">3.</span> 每晚睡前問自己：「今日言行能坦然向主交帳嗎？」</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <h2 class="section-title text-3xl font-bold mb-12 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                名言佳句
+            </h2>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="break-inside-avoid card-glass p-6 rounded-2xl italic text-slate-300 border-l-2 border-gold-500/50">
+                    「當基督呼召一個人的時候，祂是叫他來死。」
+                    <span class="block mt-4 text-sm font-bold text-gold-600 not-italic">—— 潘霍華《追隨基督》</span>
+                </div>
+                <div class="break-inside-avoid card-glass p-6 rounded-2xl italic text-slate-300 border-l-2 border-gold-500/50">
+                    「如果聖靈今天離開教會，我們百分之九十五的活動仍會照常進行...」
+                    <span class="block mt-4 text-sm font-bold text-gold-600 not-italic">—— 陶恕《渴慕神》</span>
+                </div>
+                <div class="break-inside-avoid card-glass p-6 rounded-2xl italic text-slate-300 border-l-2 border-gold-500/50">
+                    「受苦是信徒最好的學校；在這裡，我們學會了那些在陽光燦爛的日子裡永遠無法學會的功課。」
+                    <span class="block mt-4 text-sm font-bold text-gold-600 not-italic">—— 司布真</span>
+                </div>
+                <div class="break-inside-avoid card-glass p-6 rounded-2xl italic text-slate-300 border-l-2 border-gold-500/50">
+                    「我們真正的身分是『神所愛的兒女』。」
+                    <span class="block mt-4 text-sm font-bold text-gold-600 not-italic">—— 盧雲《負傷的治療者》</span>
+                </div>
+                <div class="break-inside-avoid card-glass p-6 rounded-2xl italic text-slate-300 border-l-2 border-gold-500/50">
+                    「門徒的訓練就是『在同一個方向上長期的順服』。」
+                    <span class="block mt-4 text-sm font-bold text-gold-600 not-italic">—— 畢德生</span>
+                </div>
+                <div class="break-inside-avoid card-glass p-6 rounded-2xl italic text-slate-300 border-l-2 border-gold-500/50">
+                    「恩典的對立面不是努力，而是賺取。」
+                    <span class="block mt-4 text-sm font-bold text-gold-600 not-italic">—— 魏樂德</span>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center text-slate-500 text-sm py-12 border-t border-white/5">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <button onclick="document.getElementById('prayer').scrollIntoView({behavior: 'smooth'})" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-600 hover:bg-gold-500 text-slate-950 rounded-full flex items-center justify-center transition-all scroll-to-top z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+</body>
+</html>

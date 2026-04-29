@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽28:1-22:拆毀虛假的安全感，建造穩固的房角石</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0c',
+                        card: '#16161a',
+                        accent: '#c4a47c', // Muted Gold
+                        secondary: '#3b82f6', // Slate Blue
+                        danger: '#ef4444',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0c; color: #f3f4f6; }
+        .glass { background: rgba(22, 22, 26, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(135deg, #f3f4f6 0%, #c4a47c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bento-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="font-body selection:bg-accent selection:text-dark">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center px-4 md:px-8 justify-between">
+        <span class="font-display font-extrabold text-sm md:text-base tracking-wider text-accent truncate max-w-[40%]">賽28:1-22</span>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest text-gray-400">
+            <a href="#prayer" class="hover:text-accent transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-accent transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-accent transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-accent transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative min-h-[70vh] flex flex-col justify-end items-center text-center px-6 pb-20 pt-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/e7a14cf9-b3de-4c25-9a2d-2caf721a23af' alt='Banner Image' class="w-full h-full object-cover opacity-40" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 animate-fade-in">
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight text-gradient">
+                拆毀虛假的安全感<br>建造穩固的房角石
+            </h1>
+            <div class="inline-block px-4 py-1 border border-accent/50 rounded-full text-accent text-sm md:text-base mb-8 font-light tracking-[0.2em]">
+                以賽亞書 28:1-22
+            </div>
+            
+            <div class="max-w-3xl mx-auto glass p-8 rounded-3xl border-accent/20 relative">
+                <svg class="absolute -top-4 -left-4 w-10 h-10 text-accent/30 fill-current" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.34315 15.3601 2 17.017 2H20.017C21.6738 2 23.017 3.34315 23.017 5V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1 21L1 18C1 16.8954 1.89543 16 3 16H6C6.55228 16 7 15.5523 7 15V9C7 8.44772 6.55228 8 6 8H3C1.89543 8 1 7.10457 1 6V5C1 3.34315 2.34315 2 4 2H7C8.65685 2 10 3.34315 10 5V15C10 18.3137 7.31371 21 4 21H1" /></svg>
+                <p class="text-xl md:text-2xl font-medium leading-relaxed italic text-gray-200">
+                    「所以，主耶和華如此說：看哪，我在錫安放一塊石頭作為根基，是試驗過的石頭，是穩固根基，寶貴的房角石；<span class="text-accent underline underline-offset-8 decoration-1">信靠的人必不著急。</span>」
+                </p>
+                <cite class="block mt-6 text-sm text-accent/80 font-display">— 以賽亞書 28:16 —</cite>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-32 py-20">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="animate-slide-up">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-accent/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.917C2.464 9.646 3.12 7 5.433 7H18.567c2.313 0 2.969 2.646 1.661 4.083L12 21zM12 7V3m0 0l-3 3m3-3l3 3" /></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">禱告</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-[2.5rem] leading-loose text-lg text-gray-300">
+                主耶和華，我們來到祢面前，承認我們時常如同以法蓮一般，沉醉於屬世的成就與驕傲，甚至與虛假的安全感立約。求祢聖靈的光照亮我們內心的隱密處，拆毀我們用謊言建造的避難所。主啊，感謝祢在錫安為我們設立了那塊寶貴的房角石——耶穌基督。求祢賜我們堅定的信心，使我們在風暴中能以基督為我們唯一的根基，經歷「信靠的人必不著急」的真實平安。奉主耶穌基督的聖名祈求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="animate-slide-up">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-secondary/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="group glass p-6 rounded-3xl hover:border-accent/50 transition-all hover:translate-y-[-4px]">
+                    <span class="text-xs font-display text-accent mb-2 block tracking-widest">SECTION 01</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">屬世的驕傲與傾覆的危機</h3>
+                    <p class="text-sm text-gray-400">賽 28:1-8</p>
+                </a>
+                <a href="#part2" class="group glass p-6 rounded-3xl hover:border-accent/50 transition-all hover:translate-y-[-4px]">
+                    <span class="text-xs font-display text-accent mb-2 block tracking-widest">SECTION 02</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">拒絕神的話語與致命的妥協</h3>
+                    <p class="text-sm text-gray-400">賽 28:9-15</p>
+                </a>
+                <a href="#part3" class="group glass p-6 rounded-3xl hover:border-accent/50 transition-all hover:translate-y-[-4px]">
+                    <span class="text-xs font-display text-accent mb-2 block tracking-widest">SECTION 03</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">虛假的避難所與穩固的房角石</h3>
+                    <p class="text-sm text-gray-400">賽 28:16-22</p>
+                </a>
+            </div>
+
+            <!-- Deep Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-black text-white/10 font-display">01</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-accent">屬世的驕傲與傾覆的危機</h3>
+                    </div>
+                    
+                    <div class="bento-grid">
+                        <div class="md:col-span-2 glass p-8 rounded-3xl">
+                            <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-widest flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                經文內容 (28:1-8)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed italic">
+                                禍哉！以法蓮的酒徒，住在肥美谷的山上，他們心裡高傲，以所披戴榮美的朝華為冠冕，如同將殘之花。看哪，主有一大能大力者，像一陣冰雹，像毀滅的暴風，像漲溢的大水，他必用手將冠冕摔落於地...各席上滿了嘔吐的污穢，無一處乾淨。
+                            </p>
+                        </div>
+                        <div class="glass p-8 rounded-3xl border-l-4 border-accent/40">
+                            <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-widest flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h.01M7 15h.01M11 7h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01" /></svg>
+                                重要 Keyword
+                            </h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-accent font-bold">驕傲/高傲 (ge'ut)</span>
+                                    <p class="text-sm text-gray-400 mt-1">指狂妄、高舉自己。撒馬利亞的榮美如同「將殘之花」，短暫且虛幻。</p>
+                                </div>
+                                <div>
+                                    <span class="text-accent font-bold">酒徒 (shikkor)</span>
+                                    <p class="text-sm text-gray-400 mt-1">隱喻屬靈上的麻木與自我沉醉，無視即將到來的審判。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-widest">關鍵問題</h4>
+                            <p class="text-gray-200 font-medium mb-3">為什麼人容易沉醉於屬世的成就，而失去屬靈的警覺？</p>
+                            <p class="text-sm text-gray-400">屬世的成功常給人掌控的錯覺。我們將短暫的繁華當作永恆的保障，使我們對神的提醒變得麻木。</p>
+                        </div>
+                        <div class="glass p-8 rounded-3xl bg-accent/5 border-accent/10">
+                            <h4 class="text-sm font-bold text-accent mb-4 uppercase tracking-widest">例證：鐵達尼號</h4>
+                            <p class="text-sm text-gray-300 italic">「永不沉沒」的傲慢讓船員忽視了冰山警告，當驕傲撞上現實，冠冕瞬間摔落。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-black text-white/10 font-display">02</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-accent">拒絕神的話語與致命的妥協</h3>
+                    </div>
+                    
+                    <div class="bento-grid">
+                        <div class="md:col-span-2 glass p-8 rounded-3xl order-2 md:order-1">
+                            <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-widest flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                經文內容 (28:9-15)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed italic">
+                                譏誚先知的說：他要將知識指教誰呢？...他竟命上加命，令上加令...你們曾說：我們與死亡立約，與陰間結盟；因我們以謊言為避所，在虛假以下藏身。
+                            </p>
+                        </div>
+                        <div class="glass p-8 rounded-3xl border-l-4 border-secondary/40 order-1 md:order-2">
+                            <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-widest flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h.01M7 15h.01M11 7h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01" /></svg>
+                                重要 Keyword
+                            </h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-secondary font-bold italic">命上加命 (tsav la-tsav)</span>
+                                    <p class="text-sm text-gray-400 mt-1">擬聲詞，譏笑先知的講道如同幼兒牙牙學語般幼稚。</p>
+                                </div>
+                                <div>
+                                    <span class="text-secondary font-bold italic">與死亡立約 (karath berith et-mavet)</span>
+                                    <p class="text-sm text-gray-400 mt-1">轉向世俗政治（埃及）或異教尋求保護，而非信靠神。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass p-8 rounded-3xl md:col-span-3">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-widest">關鍵解析</h4>
+                                    <p class="text-gray-200 font-medium mb-3">當人厭煩神純粹的真理時，就會轉向複雜的世俗策略。</p>
+                                    <p class="text-sm text-gray-400 italic">提摩太·凱勒：「如果你把你生命的安全感建立在神以外的任何事物上，那事物最終會成為壓碎你的重擔。」</p>
+                                </div>
+                                <div class="bg-dark/50 p-6 rounded-2xl border border-white/5">
+                                    <h4 class="text-xs font-bold text-secondary mb-2 uppercase tracking-widest">生活例證</h4>
+                                    <p class="text-sm text-gray-300">在斷層帶蓋房卻買了「空殼保險」，這就是「以謊言為避所」，在災難面前毫無意義。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-black text-white/10 font-display">03</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-accent">虛假的避難所與穩固的房角石</h3>
+                    </div>
+                    
+                    <div class="bento-grid">
+                        <div class="md:col-span-2 glass p-8 rounded-3xl bg-gradient-to-br from-accent/5 to-transparent border-accent/20">
+                            <h4 class="text-sm font-bold text-accent mb-4 uppercase tracking-widest">房角石 (pinnah)</h4>
+                            <p class="text-gray-200 leading-relaxed mb-6">
+                                古代建築中最關鍵的基石，決定了結構的對齊與穩固。這指向未來的彌賽亞——耶穌基督。
+                            </p>
+                            <div class="p-6 bg-dark/40 rounded-2xl border border-accent/10 italic text-accent font-medium">
+                                「信靠的人必不著急 (lo yachish)」：在風暴中不慌亂、不奔逃，擁有一種極度安穩的靈命狀態。
+                            </div>
+                        </div>
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-widest">風阻尼器例證</h4>
+                            <p class="text-sm text-gray-400">
+                                台北101的阻尼球能抵銷外在震動。基督就是生命深處的「風阻尼球」，讓我們在狂風暴雨中不致動搖。
+                            </p>
+                        </div>
+                        <div class="md:col-span-3 glass p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                            <div class="flex-1">
+                                <h4 class="text-sm font-bold text-gray-500 mb-2 uppercase tracking-widest">前輩名言</h4>
+                                <blockquote class="text-xl font-medium text-white italic">「基督是我們靈魂唯一的磐石，除了這磐石，其他全都是會下沉的沙土。」</blockquote>
+                                <cite class="block mt-2 text-sm text-accent">— 司布真 (Charles Spurgeon)</cite>
+                            </div>
+                            <div class="w-full md:w-px h-px md:h-20 bg-gray-700"></div>
+                            <div class="flex-1">
+                                <h4 class="text-sm font-bold text-gray-500 mb-2 uppercase tracking-widest">屬靈重點</h4>
+                                <p class="text-gray-400">神沒應許不遇風暴，但應許當我們建基在基督這「試驗過的石頭」上，我們絕不會崩塌。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Application -->
+        <section class="animate-slide-up grid md:grid-cols-2 gap-12">
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-accent/10 rounded-2xl">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight">應用方向</h2>
+                </div>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-accent font-display text-lg font-bold">01</span>
+                        <p class="text-gray-300"><span class="text-white font-bold block">檢視生命的根基</span>盤點目前的財務、關係、成就或地位，是否成為你安全感的來源？是「謊言的避所」還是基督磐石？</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-display text-lg font-bold">02</span>
+                        <p class="text-gray-300"><span class="text-white font-bold block">重拾對神話語的敬畏</span>反思自己是否覺得聖經教導「太古板」，而更願意聽信世俗成功學？重新學習單純順服。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-display text-lg font-bold">03</span>
+                        <p class="text-gray-300"><span class="text-white font-bold block">在焦慮中練習安息</span>當面臨突如其來的危機時，察覺內心的「慌亂」。操練在禱告中轉向那塊房角石。</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-secondary/10 rounded-2xl">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight">回應與實踐</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="glass p-6 rounded-2xl flex items-start gap-4">
+                        <div class="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                        <p class="text-gray-300 text-sm"><strong>禁食與省察：</strong> 本週選擇一餐禁食，求神光照自己是否與世界妥協、與死亡立約。</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl flex items-start gap-4">
+                        <div class="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                        <p class="text-gray-300 text-sm"><strong>背誦經文：</strong> 將賽 28:16 寫在手機桌面或辦公桌，每天宣告三次。</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl flex items-start gap-4">
+                        <div class="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                        <p class="text-gray-300 text-sm"><strong>安息的操練：</strong> 遇事「著急」時，停下來安靜 3 分鐘禱告：「主啊，祢是我的房角石，我信靠祢，必不著急。」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="animate-slide-up scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-white/5 rounded-2xl">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            
+            <article class="glass p-8 md:p-16 rounded-[3rem] text-gray-300 leading-[2.2] space-y-12 text-lg">
+                <h3 class="text-3xl font-black text-white text-center mb-12">賽28:1-22: 拆毀虛假的安全感，建造穩固的房角石</h3>
+                
+                <p>弟兄姐妹，我們每個人在生活中都在尋找安全感。有的人把安全感建立在存款簿的數字上，有的人建立在完美的家庭關係上，有的人則建立在事業的成功與別人的讚美上。然而，當人生的風暴來臨時，這些東西真的靠得住嗎？今天我們要在以賽亞書28章中看到，神如何拆毀人造的虛假避風港，並親自為我們設立一個永不動搖的根基。</p>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-4">第一段：屬世的驕傲與傾覆的危機</h4>
+                    <p>在<strong class="text-white">以賽亞書 28:1</strong>，先知發出嚴厲的警告：<strong class="text-accent">「禍哉！以法蓮的酒徒，住在肥美谷的山上，他們心裡高傲，以所披戴榮美的朝華為冠冕，如同將殘之花。」</strong> 當時的北國以色列極其繁榮，他們的首都撒馬利亞建在美麗的山丘上，就像一頂「榮美的冠冕」。他們因為財富和軍事力量而驕傲，每天過著宴樂的生活。先知稱他們為「酒徒」，這不僅指他們愛喝酒，更是指他們「靈裡的沉醉與麻木」。他們沉醉在屬世的成就中，完全看不見亞述帝國這個毀滅性的暴風即將到來。</p>
+                    <p class="mt-4">我們是否也常常成為「屬靈的酒徒」？當我們的工作順利、家庭美滿時，我們很容易戴上「驕傲的冠冕」。陶恕曾說：<strong class="text-white">「驕傲是一座將神拒之門外的堡壘。」</strong> 當我們被安逸麻痺時，危機往往就在門口。神警告，這些驕傲的冠冕必被摔落在地。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-4">第二段：拒絕神的話語與致命的妥協</h4>
+                    <p>面對警告，南國猶大的領袖們卻嘲笑以賽亞：<strong class="text-accent">「他竟命上加命，令上加令，律上加律，例上加例，這裡一點，那裡一點。」</strong> 他們覺得神的話語太幼稚，就像在教小嬰兒。他們自作聰明，覺得單單「信靠神」是不夠的，於是他們轉向政治結盟，尋求埃及的保護。</p>
+                    <p class="mt-4">神在<strong class="text-white">賽 28:15</strong>指出他們的心態：<strong class="text-accent">「你們曾說：我們與死亡立約...以謊言為避所。」</strong> 弟兄姐妹，當我們覺得聖經的教導「不夠實用」時，我們就會開始用世俗的手段來保護自己。這就是「與死亡立約」。提摩太·凱勒提醒我們：「如果你把你生命的安全感建立在神以外的任何事物上，那事物最終會成為壓碎你的重擔。」</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-4">第三段：虛假的避難所與穩固的房角石</h4>
+                    <p>人在絕境中往往無路可走，但神卻在審判中彰顯了主權的恩典。<strong class="text-white">以賽亞書 28:16</strong>說：<strong class="text-accent">「看哪，我在錫安放一塊石頭作為根基，是試驗過的石頭，是穩固根基，寶貴的房角石；信靠的人必不著急。」</strong></p>
+                    <p class="mt-4">這塊石頭正是耶穌基督！祂是「試驗過的石頭」，祂經歷過試探、苦難、甚至死亡，卻依然得勝。神應許我們：<strong class="text-white">「信靠的人必不著急。」</strong> 不慌亂、不絕望奔逃。當人生的冰雹來襲時，如果你躲在「謊言的避所」裡，你一定會驚慌失措。但如果你的生命建基在基督上，你就能在風暴中經歷真正的安息與平靜。</p>
+                </div>
+
+                <div class="border-t border-accent/20 pt-8">
+                    <p class="text-xl font-medium text-white text-center">求神今天拆毀我們生命中一切虛假的安全感，讓我們單單把生命建造在基督這穩固的房角石上！阿們！</p>
+                </div>
+            </article>
+
+            <!-- Conclusion Keywords -->
+            <div class="mt-12 flex flex-wrap justify-center gap-4">
+                <span class="px-8 py-3 glass rounded-full border-accent/20 text-accent font-bold tracking-[0.2em]">1. 驕傲 (屬世的盲目)</span>
+                <span class="px-8 py-3 glass rounded-full border-accent/20 text-accent font-bold tracking-[0.2em]">2. 根基 (基督的穩固)</span>
+                <span class="px-8 py-3 glass rounded-full border-accent/20 text-accent font-bold tracking-[0.2em]">3. 安息 (信靠的平靜)</span>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="animate-slide-up scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-accent/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">名言佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass p-8 rounded-3xl break-inside-avoid border-l-4 border-accent">
+                    <p class="text-gray-200 mb-4 italic">「基督是我們靈魂唯一的磐石，除了這磐石，其他全都是會下沉的沙土。」</p>
+                    <span class="text-sm font-bold text-accent">司布真 — 《清晨甘露》</span>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid border-l-4 border-secondary">
+                    <p class="text-gray-200 mb-4 italic">「如果你把你生命的安全感建立在神以外的任何事物上，那事物最終會成為壓碎你的重擔。」</p>
+                    <span class="text-sm font-bold text-secondary">提摩太·凱勒 — 《被隱藏的眾神》</span>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid border-l-4 border-accent">
+                    <p class="text-gray-200 mb-4 italic">「驕傲是一座將神拒之門外的堡壘；我們若不將它拆毀，就無法看見神的面。」</p>
+                    <span class="text-sm font-bold text-accent">陶恕 — 《渴慕神》</span>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid border-l-4 border-secondary">
+                    <p class="text-gray-200 mb-4 italic">「廉價的恩典是我們教會的致命傷... 它是沒有門徒職分的恩典，是沒有十字架的恩典。」</p>
+                    <span class="text-sm font-bold text-secondary">潘霍華 — 《追隨基督》</span>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid border-l-4 border-accent">
+                    <p class="text-gray-200 mb-4 italic">「信心並非在於對未知的神抱持盲目的猜測，而是將我們安穩地安息在神話語的真理上。」</p>
+                    <span class="text-sm font-bold text-accent">約翰·加爾文 — 《基督教要義》</span>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid border-l-4 border-secondary">
+                    <p class="text-gray-200 mb-4 italic">「在這個充滿噪音和焦慮的世界裡，順服神的話語是我們唯一的錨。」</p>
+                    <span class="text-sm font-bold text-secondary">畢德生 — 《長久順服向同一方向》</span>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-8 glass rounded-2xl border-danger/20 text-center">
+                <p class="text-gray-500 text-xs tracking-widest">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-accent text-dark rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Simple Fade In Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0');
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            el.classList.add('opacity-0', 'transition-all', 'duration-700');
+            el.style.transform = 'translateY(20px)';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

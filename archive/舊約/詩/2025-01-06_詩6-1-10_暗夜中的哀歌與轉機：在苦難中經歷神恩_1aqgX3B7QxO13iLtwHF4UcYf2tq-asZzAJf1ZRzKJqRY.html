@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩6:1-10:暗夜中的哀歌與轉機：在苦難中經歷神恩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0c',
+                        surface: '#16161a',
+                        accent: {
+                            gold: '#d4af37',
+                            blue: '#4a9eff',
+                            red: '#ff4b5c'
+                        },
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        english: ['Outfit', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .outline-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px -5px rgba(212, 175, 55, 0.3);
+            border-color: #d4af37;
+        }
+        .bento-item {
+            transition: all 0.3s ease;
+        }
+        .bento-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating { animation: float 4s ease-in-out infinite; }
+    </style>
+</head>
+<body class="selection:bg-accent-gold/30 selection:text-accent-gold">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card !rounded-none border-t-0 border-x-0 py-4 px-6 flex justify-between items-center">
+        <div class="text-accent-gold font-display font-bold text-lg tracking-wider hidden md:block">
+            詩 6:1-10
+        </div>
+        <div class="flex gap-6 text-sm font-medium tracking-widest text-gray-400 mx-auto md:mx-0">
+            <a href="#prayer" class="nav-link hover:text-white">禱告</a>
+            <a href="#outline" class="nav-link hover:text-white">大綱</a>
+            <a href="#sermon" class="nav-link hover:text-white">講章</a>
+            <a href="#quotes" class="nav-link hover:text-white">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/ed038003-bf4a-4b3f-a613-7e6dcd65920c' alt='media_1' class="w-full h-full object-cover opacity-40" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/20 via-dark/60 to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <div class="mb-6 inline-block px-4 py-1 border border-accent-gold/40 rounded-full text-accent-gold text-xs font-english tracking-[0.3em] uppercase animate-pulse">
+                Psalms 6:1-10
+            </div>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight text-white tracking-tight">
+                暗夜中的哀歌與轉機：<br/>
+                <span class="text-accent-gold text-glow">在苦難中經歷神恩</span>
+            </h1>
+            <div class="flex flex-col items-center gap-4">
+                <div class="glass-card py-6 px-8 max-w-2xl border-accent-gold/20">
+                    <p class="text-xl md:text-2xl font-display italic text-gray-200 leading-relaxed">
+                        「耶和華聽了我的懇求；耶和華必收納我的禱告。」
+                    </p>
+                    <p class="mt-4 font-english text-accent-gold tracking-widest">— 詩篇 6:9 —</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 floating">
+            <svg class="w-6 h-6 text-accent-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-full bg-accent-gold/10 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-accent-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-widest">開聲禱告</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-5">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2Z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light first-letter:text-5xl first-letter:font-display first-letter:text-accent-gold first-letter:mr-3 first-letter:float-left">
+                    慈悲的阿爸天父，當我們落入生命的幽谷，身心靈承受極大疲憊與煎熬時，我們來到祢的施恩寶座前。主啊，有時我們如同大衛一樣，在暗夜中流淚，骨頭髮戰，心裡極其驚惶。求祢不要在怒中責備我們，求祢以祢豐盛的慈愛轉回搭救我們。即使在我們最軟弱、眼目因憂愁而乾癟之時，求祢賜下信心的微光。讓我們確信祢已聽見我們的懇求，祢必收納我們的禱告。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-full bg-accent-blue/10 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-widest">信息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="outline-btn glass-card p-6 border-l-4 border-l-accent-gold group">
+                    <span class="text-xs font-english text-gray-500 mb-2 block group-hover:text-accent-gold transition-colors">Section 01</span>
+                    <h3 class="text-lg font-bold mb-1">苦難中的呼求與求憐恤</h3>
+                    <p class="text-accent-gold text-sm font-english">詩 6:1-3</p>
+                </a>
+                <a href="#part2" class="outline-btn glass-card p-6 border-l-4 border-l-accent-blue group">
+                    <span class="text-xs font-english text-gray-500 mb-2 block group-hover:text-accent-blue transition-colors">Section 02</span>
+                    <h3 class="text-lg font-bold mb-1">靈魂的暗夜與極限的傾吐</h3>
+                    <p class="text-accent-blue text-sm font-english">詩 6:4-7</p>
+                </a>
+                <a href="#part3" class="outline-btn glass-card p-6 border-l-4 border-l-accent-red group">
+                    <span class="text-xs font-english text-gray-500 mb-2 block group-hover:text-accent-red transition-colors">Section 03</span>
+                    <h3 class="text-lg font-bold mb-1">信心的宣告與得勝的轉機</h3>
+                    <p class="text-accent-red text-sm font-english">詩 6:8-10</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Analysis (Bento Style) -->
+        <section class="space-y-24">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-32">
+                <div class="mb-12">
+                    <h3 class="text-4xl font-display font-black text-accent-gold mb-4">苦難中的呼求與求憐恤</h3>
+                    <div class="flex items-center gap-2 text-gray-400 font-english tracking-widest uppercase text-sm">
+                        <span>Psalms 6:1-3</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-12 glass-card p-8 bg-accent-gold/5 border-accent-gold/20">
+                        <p class="text-2xl font-display leading-relaxed text-white italic">
+                            「耶和華啊，求你不要在怒中責備我，也不要在烈怒中懲罰我！耶和華啊，求你可憐我，因為我軟弱。耶和華啊，求你醫治我，因為我的骨頭發戰。我心也極其驚惶。耶和華啊，你要到幾時才救我呢？」
+                        </p>
+                    </div>
+                    
+                    <div class="lg:col-span-4 glass-card p-6 bento-item">
+                        <h4 class="text-accent-gold font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            原文解讀
+                        </h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-lg font-bold text-white">可憐 (חָנַן)</p>
+                                <p class="text-sm text-gray-400">強者對弱者、上位者對下位者主動施予的恩典。</p>
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-white">發戰 (בָּהַל)</p>
+                                <p class="text-sm text-gray-400">驚惶、恐懼。形容極度恐懼到身體發抖。 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8 glass-card p-6 bento-item">
+                        <h4 class="text-accent-gold font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            關鍵問題與解析
+                        </h4>
+                        <p class="text-white font-medium mb-3">當我們落入極大的痛苦，甚至感覺是被神管教時，我們該如何向神禱告？</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            大衛示範了真實的信仰：即使在感覺神發怒的時刻，他不是逃離神，而是「逃向」神。他毫無保留地承認自己的軟弱，這種透明的哀歌，正是與神建立深厚關係的途徑。
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7 glass-card p-6 bento-item border-l-accent-gold border-l-2">
+                        <h4 class="text-accent-gold font-bold mb-4">故事與例證</h4>
+                        <p class="text-gray-300 italic leading-relaxed">
+                            一個打破了家裡珍貴花瓶的孩子，因為害怕父親的責打而躲在漆黑的衣櫥裡發抖。然而，當父親找到他時，孩子並沒有逃跑，而是撲進父親的懷裡大哭。大衛深知神的公義，但他更相信父親的憐憫。
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 glass-card p-6 flex flex-col justify-center bg-white/5 bento-item">
+                        <p class="text-xl font-display italic text-accent-gold mb-4">「我們唯一的避難所，就是從神的公義逃向神的憐憫。」</p>
+                        <p class="text-sm font-english text-gray-500">— 約翰·加爾文</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-32">
+                <div class="mb-12">
+                    <h3 class="text-4xl font-display font-black text-accent-blue mb-4">靈魂的暗夜與極限的傾吐</h3>
+                    <div class="flex items-center gap-2 text-gray-400 font-english tracking-widest uppercase text-sm">
+                        <span>Psalms 6:4-7</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-12 glass-card p-8 bg-accent-blue/5 border-accent-blue/20">
+                        <p class="text-2xl font-display leading-relaxed text-white italic">
+                            「耶和華啊，求你轉回搭救我！因你的慈愛拯救我。因為，在死地無人記念你，在陰間有誰稱謝你？我因唉哼而困乏；我每夜流淚，把床榻漂起，把褥子濕透。我因憂愁眼睛乾癟，又因我一切的敵人眼睛昏花。」
+                        </p>
+                    </div>
+                    
+                    <div class="lg:col-span-4 glass-card p-6 bento-item">
+                        <h4 class="text-accent-blue font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            原文解讀
+                        </h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-lg font-bold text-white">慈愛 (חֶסֶד - chesed)</p>
+                                <p class="text-sm text-gray-400">指「立約的愛、堅定不移的愛、忠誠」。呼求神的基礎是祂的屬性。</p>
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-white">轉回 (שׁוּב - shuv)</p>
+                                <p class="text-sm text-gray-400">意指「轉身、回頭」。代表著恢復關係與同在。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8 glass-card p-6 bento-item">
+                        <h4 class="text-accent-blue font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            關鍵問題與解析
+                        </h4>
+                        <p class="text-white font-medium mb-3">神的靜默常常是信徒最大的折磨，我們如何在絕望中保持盼望？</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            大衛將自己的生命意義完全與「敬拜神」綁在一起。在絕望中保持盼望的秘訣，在於緊緊抓住神的「hesed」(慈愛)，將自己的存活與神的榮耀連結。
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7 glass-card p-6 bento-item border-l-accent-blue border-l-2">
+                        <h4 class="text-accent-blue font-bold mb-4">實例分享</h4>
+                        <p class="text-gray-300 italic leading-relaxed">
+                            一位患重病的信徒在失眠長夜中感到無力禱告。牧師告訴他：「當你無力抓住神的時候，請記住，是神用祂的慈愛緊緊抓住了你。你的眼淚，就是最真實的禱告。」
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 glass-card p-6 flex flex-col justify-center bg-white/5 bento-item">
+                        <p class="text-xl font-display italic text-accent-blue mb-4">「當你無法看見神的手時，請相信神的心。」</p>
+                        <p class="text-sm font-english text-gray-500">— 查爾斯·司布真</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-32">
+                <div class="mb-12">
+                    <h3 class="text-4xl font-display font-black text-accent-red mb-4">信心的宣告與得勝的轉機</h3>
+                    <div class="flex items-center gap-2 text-gray-400 font-english tracking-widest uppercase text-sm">
+                        <span>Psalms 6:8-10</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-12 glass-card p-8 bg-accent-red/5 border-accent-red/20">
+                        <p class="text-2xl font-display leading-relaxed text-white italic">
+                            「你們一切作孽的人，離開我吧！因為耶和華聽了我哀哭的聲音。耶和華聽了我的懇求；耶和華必收納我的禱告。我的一切仇敵都必羞愧，大大驚惶；他們必要退後，忽然羞愧。」
+                        </p>
+                    </div>
+                    
+                    <div class="lg:col-span-4 glass-card p-6 bento-item">
+                        <h4 class="text-accent-red font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            原文解讀
+                        </h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-lg font-bold text-white">聽了 (שָׁמַע - shama)</p>
+                                <p class="text-sm text-gray-400">包含了「垂聽並採取行動」的意思。神聽見了，就意味著神即將介入。</p>
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-white">收納 (לָקַח - laqach)</p>
+                                <p class="text-sm text-gray-400">意指「拿取、接受」。神如同君王接受臣民的呈文般悅納了禱告。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8 glass-card p-6 bento-item">
+                        <h4 class="text-accent-red font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            關鍵問題與解析
+                        </h4>
+                        <p class="text-white font-medium mb-3">為什麼大衛的環境還沒有任何改變，他的語氣卻發生了 180 度的轉變？</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            這是因為「信心」的突破。真實的禱告會帶來屬靈的看見；當人在靈裡確知神已經「聽了」且「收納」了，外部環境的改變只是時間問題。信心的轉機發生在環境改變之前。
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7 glass-card p-6 bento-item border-l-accent-red border-l-2">
+                        <h4 class="text-accent-red font-bold mb-4">希望的敲擊</h4>
+                        <p class="text-gray-300 italic leading-relaxed">
+                            被困在倒塌礦坑裡的礦工，突然聽見救援隊有節奏的敲擊聲。他的環境還是黑暗的，但他充滿了力量和盼望，因為他知道：「上面的人聽見我的聲音了，他們正在救我的路上。」
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 glass-card p-6 flex flex-col justify-center bg-white/5 bento-item">
+                        <p class="text-xl font-display italic text-accent-red mb-4">「信心不是相信神會按照我的意思去做，而是相信神已經為我做出了最好的安排。」</p>
+                        <p class="text-sm font-english text-gray-500">— 提摩太·凱勒</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-full bg-accent-gold/10 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-accent-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-widest">講章文稿</h2>
+            </div>
+            
+            <div class="glass-card p-8 md:p-16 space-y-10">
+                <h3 class="text-3xl font-display font-black text-center text-accent-gold">暗夜中的哀歌與轉機：在苦難中經歷神恩</h3>
+                
+                <div class="prose prose-invert prose-gold max-w-none space-y-8 text-lg leading-relaxed text-gray-300">
+                    <p>各位弟兄姊妹，平安。我們的人生中，總會經歷一些無法向人訴說的暗夜。在那些時刻，我們不僅身體承受痛苦，心靈更是跌入谷底，甚至會覺得神是不是不要我們了？今天我們要看的詩篇第6篇，正是大衛在極度痛苦中寫下的第一篇「悔罪詩」。讓我們從大衛的經歷中，看見從絕望到得勝的軌跡。</p>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white border-l-4 border-accent-gold pl-4">第一段：苦難中的呼求與求憐恤</h4>
+                        <p>大衛一開始就發出了極其淒厲的呼求。他說：「<span class="text-accent-gold font-bold">耶和華啊，求你不要在怒中責備我，也不要在烈怒中懲罰我！</span>」大衛當時正處於極大的軟弱中，他形容自己「<span class="text-accent-gold font-bold">骨頭發戰</span>」，這是一種從內到外無法控制的驚懼。</p>
+                        <p>許多時候，我們落入苦難，第一個念頭是：「神是不是在懲罰我？」當我們自覺有罪，或是感受到神的管教時，人的天性就是躲藏。但大衛給了我們一個極美的示範：<span class="text-white font-bold">當你覺得神在發怒時，你唯一的避難所，就是逃向神的憐憫。</span></p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white border-l-4 border-accent-blue pl-4">第二段：靈魂的暗夜與極限的傾吐</h4>
+                        <p>大衛經歷了可怕的神的靜默。他對神說：「<span class="text-accent-blue font-bold">耶和華啊，求你轉回搭救我！因你的慈愛拯救我。</span>」</p>
+                        <p>這段時間有多痛苦？大衛說他「<span class="text-accent-blue font-bold">每夜流淚，把床榻漂起，把褥子濕透</span>」。你的眼淚曾經濕透枕頭嗎？當你無力抓住神的時候，記住，是神用祂的慈愛緊緊抓住了你。你在黑夜裡的每一滴眼淚，都是最真實的禱告。</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white border-l-4 border-accent-red pl-4">第三段：信心的宣告與得勝的轉機</h4>
+                        <p>到了第8節，大衛的語氣產生了180度的大轉變，他對周圍的仇敵大喊：「<span class="text-accent-red font-bold">你們一切作孽的人，離開我吧！</span>」為什麼？他的病可能還沒好，危機還沒解除，但他為什麼突然充滿了力量？</p>
+                        <p class="text-2xl font-display italic text-accent-red text-center py-6">
+                            「耶和華聽了我的懇求；耶和華必收納我的禱告。」
+                        </p>
+                        <p>這就是屬靈的轉機！轉機發生在大衛的心裡、靈裡。雖然他還身處黑暗，但他知道自己得救了！因為「神聽見了」。</p>
+                    </div>
+                    
+                    <p class="text-white font-medium border-t border-white/10 pt-8">親愛的弟兄姊妹，今天不論你正在經歷怎樣的暗夜，容許自己向神發出真實的哀歌。不要偽裝，誠實地來到神面前。當你將一切的重擔交託給神，緊緊抓住祂的慈愛時，你也要在信心中站立起來，向你的環境宣告：神已經聽見了！神已經收納了！在黑暗中，神正在為你預備最大的黎明。阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-8">
+                <h3 class="text-2xl font-display font-bold mb-6 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-lg bg-accent-gold/20 flex items-center justify-center text-accent-gold">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    </span>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-accent-gold">✦</span> 容許自己發出真實的哀歌，在誠實中建立與神的關係。</li>
+                    <li class="flex gap-3"><span class="text-accent-gold">✦</span> 在管教與痛苦中逃向神，將神的慈愛視為生命的底線。</li>
+                    <li class="flex gap-3"><span class="text-accent-gold">✦</span> 操練環境改變前的信心宣告，活出得勝、不退縮的生命。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8">
+                <h3 class="text-2xl font-display font-bold mb-6 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-lg bg-accent-blue/20 flex items-center justify-center text-accent-blue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    </span>
+                    實踐行動
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-accent-blue">1.</span> 寫下一篇個人的哀歌，誠實記錄痛苦並以宣告慈愛結束。</li>
+                    <li class="flex gap-3"><span class="text-accent-blue">2.</span> 尋找一位「代求夥伴」，分享軟弱並請對方陪同禱告。</li>
+                    <li class="flex gap-3"><span class="text-accent-blue">3.</span> 每天早晨朗讀詩篇 6:9，帶著盼望面對新的一天。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9125 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H13.017V21H14.017ZM6.01705 21L6.01705 18C6.01705 16.8954 6.91248 16 8.01705 16H11.0171C11.5693 16 12.0171 15.5523 12.0171 15V9C12.0171 8.44772 11.5693 8 11.0171 8H8.01705C7.46477 8 7.01705 8.44772 7.01705 9V12C7.01705 12.5523 6.56932 13 6.01705 13H5.01705V21H6.01705Z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-widest">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「我們唯一的避難所，就是從神的公義逃向神的憐憫。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「當你無法看見神的手時，請相信神的心。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 查爾斯·司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「信心不是相信神會按照我的意思去做，而是相信神已經為我做出了最好的安排。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「在最深的黑暗中，神正在為我們預備最大的黎明；人的盡頭，往往是神動工的起頭。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「眼淚是靈魂的洗禮，當我們在神面前傾吐憂傷時，我們的心便被祂的恩典洗淨。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 查爾斯·司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「神不是要我們在痛苦中保持堅強，而是要我們在軟弱中完全依賴祂的恩典。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「哀歌是通往真實敬拜的必經之路。沒有哀痛的信仰，往往缺乏深度的盼望。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「我們受苦時，神並非站在遠處觀望；祂與我們同在苦難的爐火中，並以祂的慈愛包裹我們。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「禱告不是要改變神的心意，而是讓神改變我們的生命。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 傅士德 (Richard Foster)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-200 italic mb-3">「當一切世上的安慰都失效時，神話語中的應許將成為我們靈魂最堅固的錨。」</p>
+                    <p class="text-sm font-english text-accent-gold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center text-gray-600 text-sm py-12 border-t border-white/5">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button (to Prayer section as requested) -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-accent-gold text-dark rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

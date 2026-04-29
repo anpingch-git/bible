@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩3:1-8: 當四面楚歌遇見四圍盾牌：在絕境中的安息與得勝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfcf0',
+                            100: '#f9f5d3',
+                            200: '#f3eaab',
+                            300: '#ebd978',
+                            400: '#e2c14c',
+                            500: '#d4a52d',
+                            600: '#b88124',
+                            700: '#95601f',
+                            800: '#7a4d1f',
+                            900: '#67401e',
+                        },
+                        navy: {
+                            900: '#0a0f1d',
+                            950: '#05070a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'glass': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #05070a;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d4a52d;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-arrow {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+        .section-icon {
+            filter: drop-shadow(0 0 8px rgba(212, 165, 45, 0.4));
+        }
+    </style>
+</head>
+<body class="font-body leading-relaxed">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-navy-950/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div class="text-gold-500 font-accent font-bold tracking-wider text-sm md:text-base">
+            詩 3:1-8
+        </div>
+        <div class="flex space-x-6 text-xs md:text-sm font-medium tracking-widest text-gray-400">
+            <a href="#prayer" class="nav-link hover:text-gold-400">禱告</a>
+            <a href="#outline" class="nav-link hover:text-gold-400">大綱</a>
+            <a href="#sermon" class="nav-link hover:text-gold-400">講章</a>
+            <a href="#quotes" class="nav-link hover:text-gold-400">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/65626dd5-56fd-4d8f-b039-eee9cb6613ce' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                當四面楚歌遇見<span class="text-gold-500">四圍盾牌</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 font-light tracking-wide mb-10">在絕境中的安息與得勝</p>
+            <div class="glass-card inline-block px-8 py-6 rounded-2xl border border-gold-500/30">
+                <p class="text-gold-400 font-display text-lg md:text-xl italic">
+                    「但你─耶和華是我四圍的盾牌，是我的榮耀，又是叫我擡起頭來的。」
+                </p>
+                <span class="block mt-3 text-gold-600 font-accent text-sm tracking-tighter">— 詩篇 3:3</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 1. Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <svg class="w-10 h-10 text-gold-500 section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white">依經文內容生成之禱告</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute -right-10 -bottom-10 opacity-5 transition-transform group-hover:scale-110 duration-700">
+                    <svg class="w-64 h-64 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic">
+                    「主耶和華，當我們的人生面臨四面楚歌、仇敵環伺的絕境時，我們的內心時常充滿恐懼與焦慮。世俗的聲音常對我們說，我們在神裡面已經沒有幫助了。然而，主啊，我們宣告祢是我們四圍的盾牌，是我的榮耀，更是叫我們在羞辱與困境中能再次抬起頭來的神。求祢賜給我們無畏的信心，使我們即便在風暴中也能安然躺臥睡覺，因為知道祢的手時常托住我們。求祢親自為我們爭戰，因為救恩單單屬乎祢，願祢的賜福臨到祢的百姓。奉主耶穌基督的聖名禱告，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Outline Section with Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <svg class="w-10 h-10 text-gold-500 section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path></svg>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <a href="#section1" class="glass-card hover:bg-gold-500/10 transition-all p-6 rounded-2xl flex flex-col justify-between border-l-4 border-l-gold-500">
+                    <span class="text-gold-500 font-accent font-bold mb-2">01</span>
+                    <h3 class="text-lg font-bold text-white">正視四面楚歌的現實 (詩 3:1-2)</h3>
+                </a>
+                <a href="#section2" class="glass-card hover:bg-gold-500/10 transition-all p-6 rounded-2xl flex flex-col justify-between border-l-4 border-l-gold-500">
+                    <span class="text-gold-500 font-accent font-bold mb-2">02</span>
+                    <h3 class="text-lg font-bold text-white">宣告四圍盾牌的護庇 (詩 3:3-4)</h3>
+                </a>
+                <a href="#section3" class="glass-card hover:bg-gold-500/10 transition-all p-6 rounded-2xl flex flex-col justify-between border-l-4 border-l-gold-500">
+                    <span class="text-gold-500 font-accent font-bold mb-2">03</span>
+                    <h3 class="text-lg font-bold text-white">經歷無所畏懼的平安 (詩 3:5-6)</h3>
+                </a>
+                <a href="#section4" class="glass-card hover:bg-gold-500/10 transition-all p-6 rounded-2xl flex flex-col justify-between border-l-4 border-l-gold-500">
+                    <span class="text-gold-500 font-accent font-bold mb-2">04</span>
+                    <h3 class="text-lg font-bold text-white">確信屬乎耶和華的救恩 (詩 3:7-8)</h3>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-28">
+                    <div class="mb-8">
+                        <span class="bg-gold-500 text-navy-950 px-4 py-1 text-sm font-bold rounded-full mb-4 inline-block">第一分段</span>
+                        <h3 class="text-3xl font-display font-bold text-white">絕境中的驚恐——正視四面楚歌的現實</h3>
+                        <p class="text-gold-500 mt-2 font-accent tracking-widest text-sm">詩篇 3:1-2</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    引用經文
+                                </h4>
+                                <p class="text-gray-300 italic border-l-2 border-gold-500/30 pl-4">「耶和華啊，我的敵人何其加增；有許多人起來攻擊我。有許多人議論我說：他得不著神的幫助。（細拉）」</p>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h4>
+                                <p class="font-bold text-white mb-2">問題：為什麼仇敵最致命的攻擊，往往是打擊我們對神的信任？</p>
+                                <p class="text-gray-400 leading-relaxed">解析：敵人不僅在肉體上追殺大衛，更在屬靈上摧毀他——「他得不著神的幫助」。撒但最可怕的戰術不是帶來環境的苦難，而是透過苦難讓我們相信「神已經放棄你了」。當我們認同這個謊言時，我們的防線就會徹底崩潰。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="glass-card p-6 rounded-2xl border-t-4 border-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-2xl font-bold text-white mb-1">加增 / 許多</p>
+                                <p class="text-gold-500 font-accent text-sm mb-2">רַב / *rab*</p>
+                                <p class="text-gray-400 text-sm italic">意指豐富、極多、無數的。大衛強調他所面臨的壓力是排山倒海、壓倒性的。</p>
+                            </div>
+                            <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                                <h4 class="text-gold-400 font-bold mb-2 italic">佳句名言</h4>
+                                <p class="text-white font-medium leading-snug">「我們對神的信心，往往是在我們完全看不見神的幫助時，才被真正地衡量出來。」</p>
+                                <span class="text-xs text-gold-600 mt-2 block">— 陶恕 (A.W. Tozer)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-28">
+                    <div class="mb-8">
+                        <span class="bg-gold-500 text-navy-950 px-4 py-1 text-sm font-bold rounded-full mb-4 inline-block">第二分段</span>
+                        <h3 class="text-3xl font-display font-bold text-white">絕境中的仰望——宣告四圍盾牌的護庇</h3>
+                        <p class="text-gold-500 mt-2 font-accent tracking-widest text-sm">詩篇 3:3-4</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    引用經文
+                                </h4>
+                                <p class="text-gray-300 italic border-l-2 border-gold-500/30 pl-4">「但你─耶和華是我四圍的盾牌，是我的榮耀，又是叫我擡起頭來的。我用我的聲音求告耶和華，他就從他的聖山上應允我。（細拉）」</p>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h4>
+                                <p class="font-bold text-white mb-2">問題：在充滿羞辱的絕境中，神如何「叫我們抬起頭來」？</p>
+                                <p class="text-gray-400 leading-relaxed">解析：大衛因兒子的背叛而蒙羞，神不僅是防禦的盾牌，更是恢復我們尊嚴的「榮耀」。神親自用慈愛的手托住我們的下巴，將我們的視線從環境的絕望中轉移到祂的榮耀上。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="glass-card p-6 rounded-2xl border-t-4 border-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-2xl font-bold text-white mb-1">盾牌</p>
+                                <p class="text-gold-500 font-accent text-sm mb-2">מָגֵן / *magen*</p>
+                                <p class="text-gray-400 text-sm italic">指完全包圍、保護全身的大盾牌，象徵神全方位的保護。</p>
+                            </div>
+                            <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                                <h4 class="text-gold-400 font-bold mb-2 italic">佳句名言</h4>
+                                <p class="text-white font-medium leading-snug">「只要神被高舉在我們生命中正確的位置上，一千個問題都會立刻迎刃而解。」</p>
+                                <span class="text-xs text-gold-600 mt-2 block">— 陶恕 (A.W. Tozer)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-28">
+                    <div class="mb-8">
+                        <span class="bg-gold-500 text-navy-950 px-4 py-1 text-sm font-bold rounded-full mb-4 inline-block">第三分段</span>
+                        <h3 class="text-3xl font-display font-bold text-white">絕境中的安息——經歷無所畏懼的平安</h3>
+                        <p class="text-gold-500 mt-2 font-accent tracking-widest text-sm">詩篇 3:5-6</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    引用經文
+                                </h4>
+                                <p class="text-gray-300 italic border-l-2 border-gold-500/30 pl-4">「我躺下睡覺，我醒著，耶和華都保佑我。雖有成萬的百姓來周圍攻擊我，我也不怕。」</p>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h4>
+                                <p class="font-bold text-white mb-2">問題：為什麼在極大的危機中「睡覺」是一種屬靈的爭戰？</p>
+                                <p class="text-gray-400 leading-relaxed">解析：焦慮的人無法入睡，因為他們覺得如果不自己掌控局面，世界就會崩塌。睡覺，意味著我們承認自己的有限，放下掌控權，將生命主權交還給神。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="glass-card p-6 rounded-2xl border-t-4 border-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-2xl font-bold text-white mb-1">保佑 / 托住</p>
+                                <p class="text-gold-500 font-accent text-sm mb-2">סָמַך / *samakh*</p>
+                                <p class="text-gray-400 text-sm italic">意指支撐、扶持。這表明大衛之所以能入睡，是因為他感受到有一雙大手在穩穩地「托住」他。</p>
+                            </div>
+                            <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                                <h4 class="text-gold-400 font-bold mb-2 italic">佳句名言</h4>
+                                <p class="text-white font-medium leading-snug">「安息在神的手中，不代表風暴會立刻停止，而是我們在風暴中不再成為恐懼的奴隸。」</p>
+                                <span class="text-xs text-gold-600 mt-2 block">— 盧雲 (Henri Nouwen)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="section4" class="scroll-mt-28">
+                    <div class="mb-8">
+                        <span class="bg-gold-500 text-navy-950 px-4 py-1 text-sm font-bold rounded-full mb-4 inline-block">第四分段</span>
+                        <h3 class="text-3xl font-display font-bold text-white">絕境中的得勝——確信屬乎耶和華的救恩</h3>
+                        <p class="text-gold-500 mt-2 font-accent tracking-widest text-sm">詩篇 3:7-8</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    引用經文
+                                </h4>
+                                <p class="text-gray-300 italic border-l-2 border-gold-500/30 pl-4">「耶和華啊，求你起來！我的神啊，求你救我！因為你打了我一切仇敵的腮骨，敲碎了惡人的牙齒。救恩屬乎耶和華；願你賜福給你的百姓。（細拉）」</p>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h4>
+                                <p class="font-bold text-white mb-2">問題：宣告「救恩屬乎耶和華」對我們實際的行動有什麼影響？</p>
+                                <p class="text-gray-400 leading-relaxed">解析：這句話徹底排除了我們靠自己力量自救的驕傲。既然救恩全由神所掌管，我們就不需要使用血氣的手段。我們可以安心退到神的身後，讓神來對付那些「咬」我們的仇敵。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="glass-card p-6 rounded-2xl border-t-4 border-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-2xl font-bold text-white mb-1">起來</p>
+                                <p class="text-gold-500 font-accent text-sm mb-2">קוּם / *qum*</p>
+                                <p class="text-gray-400 text-sm italic">是呼求神介入、採取行動的強烈用詞。猶太人在抬起約櫃前行時常呼喊「耶和華啊，求你興起」。</p>
+                            </div>
+                            <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                                <h4 class="text-gold-400 font-bold mb-2 italic">佳句名言</h4>
+                                <p class="text-white font-medium leading-snug">「福音是這樣的：在我們裡面，我們比自己敢於相信的還要罪惡和充滿缺陷；然而同時，在耶穌基督裡，我們更被愛和蒙接納。」</p>
+                                <span class="text-xs text-gold-600 mt-2 block">— 提摩太·凱勒 (Timothy Keller)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Sermon Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <svg class="w-10 h-10 text-gold-500 section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path></svg>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white">講章文稿</h2>
+            </div>
+            <div class="glass-card p-8 md:p-16 rounded-[3rem] border border-white/5 space-y-10">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-5xl font-display font-black text-white mb-4">當四面楚歌遇見四圍盾牌：在絕境中經歷神</h3>
+                    <p class="text-gold-500 font-accent">詩篇 3:1-8</p>
+                </div>
+                
+                <div class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300 leading-loose">
+                    <p class="text-xl italic text-gray-400">弟兄姊妹，平安！在我們的人生旅途中，我們都曾經歷過一種感覺——那就是「四面楚歌」。也許是工作上突如其來的危機、財務的崩盤、人際關係的破裂。而最折磨人的，是內心的孤獨感與恐懼。</p>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">一、 絕境中的驚恐——正視四面楚歌的現實</h4>
+                        <p>大衛一開始的禱告是非常真實的：<strong class="text-gold-400">「耶和華啊，我的敵人何其加增；有許多人起來攻擊我。有許多人議論我說：他得不著神的幫助。」</strong></p>
+                        <p>大衛沒有假裝一切都很好。撒但最厲害的武器，不是讓你遇到困難，而是透過困難對你耳語：「你看，神放棄你了！你的信仰根本沒用。」正視你的恐懼和現實的艱難，把它們帶到神面前，這是我們得勝的第一步。</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">二、 絕境中的仰望——宣告四圍盾牌的護庇</h4>
+                        <p>然而，大衛沒有停留在絕望中。這篇詩篇出現了一個偉大的轉折：<strong class="text-gold-400">「但你─耶和華是我四圍的盾牌，是我的榮耀，又是叫我擡起頭來的。」</strong></p>
+                        <p>當環境逼著大衛低頭蒙羞時，他宣告了一個屬靈的現實：「神是我四圍的盾牌！」這裡的盾牌不是小圓盾，而是能夠把整個人包覆起來的大盾。神親自走過來，用祂慈愛的手托住你的下巴，輕輕把你的頭抬起來，讓你重新看見祂的榮耀。</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">三、 絕境中的安息——經歷無所畏懼的平安</h4>
+                        <p>因為有這四圍的盾牌，大衛做出了一個極其不可思議的舉動：<strong class="text-gold-400">「我躺下睡覺，我醒著，耶和華都保佑我。雖有成萬的百姓來周圍攻擊我，我也不怕。」</strong></p>
+                        <p>在成千上萬的追兵環伺下，大衛竟然「睡著了」！這不是神經大條，而是最高級的信心。睡覺，是我們向神宣告：「主啊，我承認自己的有限，我放手了，現在換祢接手。」正如盧雲所說，我們不再成為恐懼的奴隸。</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">四、 絕境中的得勝——確信屬乎耶和華的救恩</h4>
+                        <p>最後，大衛呼求神的介入：<strong class="text-gold-400">「耶和華啊，求你起來！救恩屬乎耶和華；願你賜福給你的百姓。」</strong></p>
+                        <p>大衛沒有說「我要起來報復」，而是說「求神起來」。這意味著我們不需要用血氣、仇恨或不義的手段來為自己伸冤。神會親自出手，打碎那些惡意攻擊我們之人的牙齒。當我們確信救恩全屬於神，我們的心就能從苦毒中得釋放。</p>
+                    </div>
+
+                    <div class="bg-navy-950 p-8 rounded-3xl border border-gold-500/20 text-center mt-12">
+                        <h4 class="text-2xl font-display font-bold text-white mb-4">結論：3個關鍵字</h4>
+                        <div class="flex justify-center space-x-12">
+                            <div class="flex flex-col items-center">
+                                <span class="text-3xl text-gold-500 font-black mb-2">1</span>
+                                <p class="font-bold text-white uppercase tracking-widest">仰望</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-3xl text-gold-500 font-black mb-2">2</span>
+                                <p class="font-bold text-white uppercase tracking-widest">盾牌</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-3xl text-gold-500 font-black mb-2">3</span>
+                                <p class="font-bold text-white uppercase tracking-widest">安息</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Actions Section -->
+        <section class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <svg class="w-10 h-10 text-gold-500 section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"></path></svg>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white">回應與實踐行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl group hover:border-gold-500/50 transition-colors">
+                    <h4 class="text-xl font-bold text-white mb-4">1. 清單交託法</h4>
+                    <p class="text-gray-400">寫下目前所有的壓力源（你的「仇敵」），在紙上畫一個大大的盾牌把這些字圈起來，寫上「神是我四圍的盾牌」。</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl group hover:border-gold-500/50 transition-colors">
+                    <h4 class="text-xl font-bold text-white mb-4">2. 睡前的信心宣告</h4>
+                    <p class="text-gray-400">每晚睡前30分鐘放下手機，默想詩篇3:5「我躺下睡覺，我醒著，耶和華都保佑我」，將憂慮正式交接給神。</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl group hover:border-gold-500/50 transition-colors">
+                    <h4 class="text-xl font-bold text-white mb-4">3. 背誦金句</h4>
+                    <p class="text-gray-400">將詩篇3:3貼在鏡子上。當感到挫折或想低頭放棄時，大聲朗讀宣告神是叫你抬起頭來的神。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <svg class="w-10 h-10 text-gold-500 section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path></svg>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white">名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「禱告不是克服神的不願意，而是把握住神的願意。」</p>
+                    <p class="text-gold-500 text-sm">— 馬丁·路德 / 《桌邊談》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「沒有一顆心會真正明白平安，直到它學會了將一切憂慮交託給那為我們擔當一切的主。」</p>
+                    <p class="text-gold-500 text-sm">— 司布真 / 《大衛寶庫》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid border-l-4 border-gold-500">
+                    <p class="text-lg text-white mb-4 font-display italic">「信仰的證據不在於我們如何談論上帝，而在於我們在苦難中如何安息在祂裡面。」</p>
+                    <p class="text-gold-500 text-sm">— 約翰·加爾文 / 《基督教要義》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「若沒有聖靈的內住與工作，我們的心就像是一個沒有盾牌防禦的城池，任由世界的焦慮攻取。」</p>
+                    <p class="text-gold-500 text-sm">— 喬納森·愛德華茲 / 《宗教情操真偽辨》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「當你面對無法理解的苦難時，不要懷疑在光明中上帝已經向你顯明的真理。」</p>
+                    <p class="text-gold-500 text-sm">— 葛理翰 / 《漫漫歸鄉路》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「你生命中最美好的事，往往發生在你不得不放棄自己掌控權的那一刻。」</p>
+                    <p class="text-gold-500 text-sm">— 查爾斯·史丹利 / 《信靠神的恩典》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「我們若在隱密處與神有深刻的相交，就能在公眾面前無畏地抵擋千軍萬馬。」</p>
+                    <p class="text-gold-500 text-sm">— 慕迪 / 《得勝的生活》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid border-l-4 border-gold-500">
+                    <p class="text-lg text-white mb-4 font-display italic">「真正的平安，不是來自於環境沒有麻煩，而是來自於知道上帝在一切麻煩中掌權。」</p>
+                    <p class="text-gold-500 text-sm">— 魏樂德 / 《神聖的渴慕》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「順服神不是一種痛苦的義務，而是在一個充滿敵意的世界中，唯一安全的避風港。」</p>
+                    <p class="text-gold-500 text-sm">— 畢德生 / 《長城上的長跑者》</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl break-inside-avoid">
+                    <p class="text-lg text-white mb-4 font-display italic">「上帝的同在不會使風暴立刻平息，但會使在風暴中的你不再懼怕，因為你知道誰與你同船。」</p>
+                    <p class="text-gold-500 text-sm">— 唐崇榮 / 《信仰、試煉與得勝》</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center py-10 border-t border-white/5">
+                <p class="text-xs text-gray-500 tracking-widest uppercase">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center text-navy-950 shadow-2xl hover:bg-gold-400 transition-colors z-50 floating-arrow">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path></svg>
+    </a>
+
+</body>
+</html>

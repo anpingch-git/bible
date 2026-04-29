@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩11:1-7:當根基動搖時：仰望寶座上的神</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfcf0',
+                            100: '#fbf7d6',
+                            200: '#f6efb1',
+                            300: '#f0e181',
+                            400: '#e7cc4d',
+                            500: '#d9b32a',
+                            600: '#bf921f',
+                            700: '#9d6f1c',
+                            800: '#82581e',
+                            900: '#6f4a1f',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141417',
+                            700: '#1c1c21',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-5px);
+            border-color: rgba(217, 179, 42, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f0e181 0%, #d9b32a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scroll-indicator {
+            width: 2px;
+            height: 60px;
+            background: linear-gradient(to bottom, #d9b32a, transparent);
+            animation: grow 2s infinite;
+        }
+        @keyframes grow {
+            0% { height: 0; opacity: 0; }
+            50% { height: 60px; opacity: 1; }
+            100% { height: 0; opacity: 0; }
+        }
+        .outline-btn {
+            border: 1px solid rgba(217, 179, 42, 0.3);
+            transition: all 0.3s;
+        }
+        .outline-btn:hover {
+            background: rgba(217, 179, 42, 0.1);
+            border-color: #d9b32a;
+        }
+        img {
+            filter: brightness(0.8) contrast(1.1);
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav px-6 py-4 flex justify-between items-center">
+        <span class="font-outfit font-bold text-gold-400 tracking-wider">詩11:1-7</span>
+        <div class="flex gap-6 text-sm font-medium tracking-wide">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors uppercase">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/4f877d85-e1f0-4f09-9056-c93464b31a86' alt='media_1' />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-slide-up">
+            <p class="font-outfit text-gold-400 tracking-[0.3em] mb-4 uppercase text-sm md:text-base font-semibold">Psalm 11:1-7</p>
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-6 leading-tight">
+                當根基動搖時：<br/><span class="gradient-text">仰望寶座上的神</span>
+            </h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mt-12">
+                <div class="px-6 py-3 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-sm">
+                    <span class="text-gold-300">金句：</span> 耶和華的寶座在天上
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+            <span class="text-[10px] tracking-[0.5em] text-white/40 uppercase">Scroll to Explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-24 space-y-32">
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="bento-card p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/3">
+                    <div class="w-20 h-20 bg-gold-500/20 rounded-3xl flex items-center justify-center mb-6">
+                        <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+                    </div>
+                    <h2 class="font-display text-4xl font-bold mb-4">會前禱告</h2>
+                    <p class="text-white/50 leading-relaxed font-light italic">在神的話語面前，我們先安靜己心，將恐懼交託。</p>
+                </div>
+                <div class="md:w-2/3 bg-white/5 p-8 rounded-3xl border-l-4 border-gold-500">
+                    <p class="text-xl md:text-2xl leading-relaxed font-display text-gold-50/90">
+                        全能的父神，當我們看見周遭的世界動盪不安，道德與公義的根基彷彿正在毀壞時，我們的心時常充滿恐懼，甚至想要逃避。主啊，求祢開啟我們屬靈的眼睛，讓我們不單單看見惡人所彎的弓與暗箭，更能看見祢穩固在天上的寶座。求祢的聖靈今天透過大衛的詩篇對我們說話，堅固我們的信心，讓我們不作驚恐飛逃的鳥，而是作堅定投靠祢的義人。奉主耶穌基督的聖名祈求，阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分段大綱導覽 -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold inline-block relative">
+                    信息大綱
+                    <div class="absolute -bottom-4 left-0 w-full h-1 bg-gold-500/30 rounded-full"></div>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+                <a href="#section1" class="bento-card p-8 text-center group">
+                    <span class="text-xs font-outfit text-gold-500 mb-4 block tracking-widest">Part 01</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">危機中的試探</h3>
+                    <p class="text-white/40 mt-2 text-sm">詩11:1-3</p>
+                    <div class="mt-6 w-10 h-10 rounded-full border border-white/10 mx-auto flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-900 transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                </a>
+                <a href="#section2" class="bento-card p-8 text-center group">
+                    <span class="text-xs font-outfit text-gold-500 mb-4 block tracking-widest">Part 02</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">視角的轉換</h3>
+                    <p class="text-white/40 mt-2 text-sm">詩11:4-5</p>
+                    <div class="mt-6 w-10 h-10 rounded-full border border-white/10 mx-auto flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-900 transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                </a>
+                <a href="#section3" class="bento-card p-8 text-center group">
+                    <span class="text-xs font-outfit text-gold-500 mb-4 block tracking-widest">Part 03</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">終局的確據</h3>
+                    <p class="text-white/40 mt-2 text-sm">詩11:6-7</p>
+                    <div class="mt-6 w-10 h-10 rounded-full border border-white/10 mx-auto flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-900 transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Section 1 Detail -->
+            <div id="section1" class="scroll-mt-32 space-y-12 mb-32">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-px flex-grow bg-white/10"></div>
+                    <span class="font-outfit text-gold-500 tracking-tighter text-xl">01</span>
+                    <h3 class="font-display text-3xl font-bold">第一段：危機中的試探——聽從恐懼還是堅定投靠？</h3>
+                    <div class="h-px flex-grow bg-white/10"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 border-l-gold-500 border-l-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 0010 0 7.993 7.993 0 00-7-7.196z"/></svg> 引用經文
+                        </h4>
+                        <p class="text-lg leading-relaxed text-gold-50/80 italic font-display">
+                            (詩 11:1-3) 我是投靠耶和華；你們怎麼對我說：你當像鳥飛往你的山去。看哪，惡人彎弓，把箭搭在弦上，要在暗中射那心裡正直的人。根基若毀壞，義人還能做甚麼呢？
+                        </p>
+                        <div class="mt-8 pt-6 border-t border-white/5">
+                            <span class="text-xs bg-gold-500/10 text-gold-400 px-3 py-1 rounded-full uppercase tracking-widest">關鍵字：投靠 (חָסָה / chasah)</span>
+                            <p class="mt-3 text-sm text-white/60">「尋求庇護」、「躲避危險」。這是一個實際行動，如同小雞躲在母雞的翅膀底下，尋求絕對的保護與安穩。</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bento-card p-6">
+                            <h4 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h4>
+                            <p class="text-sm text-white/90 leading-relaxed">
+                                <span class="block text-gold-200/50 mb-2">Q: 面對「根基毀壞」的恐懼，如何分辨是善意警告還是試探？</span>
+                                解析：真正的根基不在地上，而在神那裡。分辨的關鍵在於：這個聲音是讓我們更靠近神，還是讓我們單憑血氣去尋找世俗的避難所？
+                            </p>
+                        </div>
+                        <div class="bento-card p-6 bg-gold-900/10 border-gold-900/30">
+                            <h4 class="text-white/60 font-bold mb-3 italic">「我們之所以感到恐懼，是因為我們把人生的安全感建立在上帝以外的根基上。」</h4>
+                            <p class="text-right text-gold-500 text-xs">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 Detail -->
+            <div id="section2" class="scroll-mt-32 space-y-12 mb-32">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-px flex-grow bg-white/10"></div>
+                    <span class="font-outfit text-gold-500 tracking-tighter text-xl">02</span>
+                    <h3 class="font-display text-3xl font-bold">第二段：視角的轉換——看見天上掌權的寶座</h3>
+                    <div class="h-px flex-grow bg-white/10"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bento-card p-6">
+                            <h4 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h4>
+                            <p class="text-sm text-white/90 leading-relaxed">
+                                <span class="block text-gold-200/50 mb-2">Q: 神既然在寶座上掌權，為何仍容許惡人橫行，甚至讓義人經歷「試驗」？</span>
+                                解析：第4節是轉捩點，大衛視角從「暗箭」轉移到「寶座」。神的主權並未失控，祂正在用祂完美的時間表進行煉淨與審判。
+                            </p>
+                        </div>
+                        <div class="bento-card p-6 bg-gold-900/10 border-gold-900/30">
+                            <h4 class="text-white/60 font-bold mb-3 italic">「無論這個世界看起來多麼失控，在幕後總有一位未曾放棄祂權柄的上帝在掌管一切。」</h4>
+                            <p class="text-right text-gold-500 text-xs">— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                    <div class="bento-card p-8 border-l-gold-500 border-l-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 0010 0 7.993 7.993 0 00-7-7.196z"/></svg> 引用經文
+                        </h4>
+                        <p class="text-lg leading-relaxed text-gold-50/80 italic font-display">
+                            (詩 11:4-5) 耶和華在他的聖殿裡；耶和華的寶座在天上；他的慧眼察看世人。耶和華試驗義人；惟有惡人和喜愛強暴的人，他心裡恨惡。
+                        </p>
+                        <div class="mt-8 pt-6 border-t border-white/5">
+                            <span class="text-xs bg-gold-500/10 text-gold-400 px-3 py-1 rounded-full uppercase tracking-widest">關鍵字：察看 (חָזָה / chazah) 與 試驗 (בָּחַן / bachan)</span>
+                            <p class="mt-3 text-sm text-white/60">「察看」指洞悉一切；「試驗」如同金匠熬煉金屬，目的是為了去除雜質、驗證真實，而非為了摧毀。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 Detail -->
+            <div id="section3" class="scroll-mt-32 space-y-12">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-px flex-grow bg-white/10"></div>
+                    <span class="font-outfit text-gold-500 tracking-tighter text-xl">03</span>
+                    <h3 class="font-display text-3xl font-bold">第三段：終局的確據——公義的彰顯與朝見神面</h3>
+                    <div class="h-px flex-grow bg-white/10"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 border-l-gold-500 border-l-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 0010 0 7.993 7.993 0 00-7-7.196z"/></svg> 引用經文
+                        </h4>
+                        <p class="text-lg leading-relaxed text-gold-50/80 italic font-display">
+                            (詩 11:6-7) 他要向惡人密布網羅；有烈火、硫磺、熱風，作他們杯中的分。因為耶和華是公義的，他喜愛公義；正直人必得見他的面。
+                        </p>
+                        <div class="mt-8 pt-6 border-t border-white/5">
+                            <span class="text-xs bg-gold-500/10 text-gold-400 px-3 py-1 rounded-full uppercase tracking-widest">關鍵字：見他的面 (חָזָה פָּנִים / chazah panim)</span>
+                            <p class="mt-3 text-sm text-white/60">意味着獲得君王的接納與極大的榮耀。信仰的最高境界：神自己就是我們最大的獎賞與安慰。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bento-card p-6">
+                            <h4 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h4>
+                            <p class="text-sm text-white/90 leading-relaxed">
+                                <span class="block text-gold-200/50 mb-2">Q: 在不公義的世界中，為何能抱持不妥協的盼望？</span>
+                                解析：因為盼望基礎在於「神的本性」。惡人結局是毀滅，但義人的獎賞是「得見祂的面」。這說明神才是我們終極的滿足。
+                            </p>
+                        </div>
+                        <div class="bento-card p-6 bg-gold-900/10 border-gold-900/30">
+                            <h4 class="text-white/60 font-bold mb-3 italic">「信心的眼睛能穿透眼前最黑暗的烏雲，看見那永遠坐在寶座上、滿有恩典與公義的神的面光。」</h4>
+                            <p class="text-right text-gold-500 text-xs">— 約翰·加爾文 (John Calvin)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章文稿 -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold gradient-text">講道文稿</h2>
+                    <div class="mt-4 flex items-center justify-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-gold-500"></span>
+                        <span class="w-12 h-px bg-gold-500/30"></span>
+                        <span class="w-2 h-2 rounded-full bg-gold-500"></span>
+                    </div>
+                </div>
+
+                <article class="prose prose-invert prose-gold max-w-none space-y-8 text-white/80 leading-loose text-lg">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10 mb-12">
+                        <h4 class="text-gold-400 font-bold text-2xl mb-4 font-display">【前言】</h4>
+                        <p>各位弟兄姊妹，平安。想像一下，如果你所住的房子，地基突然開始龜裂、搖晃，你的第一反應是什麼？肯定是馬上逃跑。在人生的經歷中，我們也常遇到「根基動搖」的時刻：可能是經濟崩盤、健康亮起紅燈、社會道德淪喪，或是遭受莫名的惡意攻擊。當這一切發生時，我們的心情就如同詩篇11篇所描述的處境。今天，我們要透過這段經文，一起來思想：當根基動搖時，我們該往哪裡去？</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-gold-200 font-bold text-2xl font-display flex items-center gap-3">
+                            <span class="text-gold-500">I.</span> 危機中的試探——聽從恐懼還是堅定投靠？
+                        </h4>
+                        <p>詩篇11篇一開始，大衛正面臨極大的危機。他的朋友出於好意，對他說：「你當像鳥飛往你的山去。看哪，惡人彎弓，把箭搭在弦上，要在暗中射那心裡正直的人。」這是一個非常真實的恐懼。<strong class="text-gold-400 text-xl block my-4 border-l-2 border-gold-500 pl-4">根基若毀壞，義人還能做甚麼呢？（詩11:3）</strong>這句話道出了多少人在面對社會動盪、職場不公時的無奈與絕望。</p>
+                        <p>朋友們勸大衛快逃，但大衛的第一句話卻是：<strong class="text-gold-100 italic underline decoration-gold-500/50 underline-offset-8">「我是投靠耶和華」</strong>。大衛拒絕了這種建立在恐懼上的建議。當世界告訴我們「你必須靠自己找後路、你必須妥協才能生存」時，大衛選擇了「投靠」，這是一種躲進神翅膀蔭下的堅定行動。</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-gold-200 font-bold text-2xl font-display flex items-center gap-3">
+                            <span class="text-gold-500">II.</span> 視角的轉換——看見天上掌權的寶座
+                        </h4>
+                        <p>面對朋友的恐慌，大衛沒有停留在地上的絕望中，他進行了一個極為重要的視角轉換。在第4節，大衛宣告：<strong class="text-gold-400 text-2xl block my-6 text-center font-display leading-relaxed">「耶和華在他的聖殿裡；耶和華的寶座在天上；他的慧眼察看世人。」</strong></p>
+                        <p>這是何等榮耀的宣告！地上雖然有惡人彎弓搭箭，但天上的寶座卻從未動搖。神沒有打盹，祂的慧眼正在「察看」世人。有時候，我們覺得神好像沉默了，任憑惡人橫行。但經文告訴我們：<strong class="text-gold-100">「耶和華試驗義人」</strong>。神容許這些風暴發生，不是因為祂失去了控制，而是祂正在像銀匠一樣，透過烈火熬煉我們的生命，試驗我們的信心。</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-gold-200 font-bold text-2xl font-display flex items-center gap-3">
+                            <span class="text-gold-500">III.</span> 終局的確據——公義的彰顯與朝見神面
+                        </h4>
+                        <p>最後，大衛為我們描繪了最終的結局。神絕不忽視罪惡，第6節提到神要向惡人密布網羅，有烈火作他們杯中的分。神必定會施行審判，因為祂是公義的。然而，對於那些在試煉中依然保持正直的人，神給予了一個最美的應許：<strong class="text-gold-400 text-2xl block my-6 text-center border-y border-gold-500/20 py-4">「因為耶和華是公義的，他喜愛公義；正直人必得見他的面。」（詩11:7）</strong></p>
+                        <p>「得見祂的面」，這是全宇宙中最大的獎賞。在世上，我們或許會失去地上的利益、名聲甚至財產，但沒有任何人事物能奪走我們朝見神面的特權。當烏雲散去，當所有的委屈被神親自洗刷時，我們將看見那滿有榮光、對我們微笑的主的臉龐。</p>
+                    </div>
+
+                    <div class="bg-gold-500/10 p-8 rounded-3xl border border-gold-500/20 mt-12">
+                        <h4 class="text-gold-400 font-bold text-2xl mb-4 font-display">【結語】</h4>
+                        <p>弟兄姊妹，當你生命中的根基正在動搖時，不要像鳥一樣驚惶逃向地上的山。抬起你的頭，看見那位坐在天上寶座上的主。祂在察看，祂在掌權，祂也應許我們，只要我們堅定投靠祂，我們終必在榮耀中得見祂的面。願神賜給我們這樣的信心！</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 應用方向與實踐 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-10">
+                <h3 class="font-display text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    講道應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 p-4 bg-white/5 rounded-2xl">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <p class="text-sm">拒絕恐懼的聲音：檢視逃跑的衝動是否出於不信。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 bg-white/5 rounded-2xl">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <p class="text-sm">在禱告中轉移視角：操練將眼目轉向天上的寶座。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 bg-white/5 rounded-2xl">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <p class="text-sm">擁抱熬煉的過程：視挫折為「試驗」與煉淨的機會。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 bg-white/5 rounded-2xl">
+                        <span class="text-gold-500 font-bold">04</span>
+                        <p class="text-sm">以神為終極滿足：將「得見神面」視為最大獎賞。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card p-10 bg-gold-600 text-dark-900">
+                <h3 class="font-display text-2xl font-bold mb-8 flex items-center gap-3 text-dark-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    回應與實踐行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="bg-white/20 p-6 rounded-2xl">
+                        <h5 class="font-bold mb-2">1. 寫下並交託恐懼</h5>
+                        <p class="text-sm">寫下讓你感到「根基毀壞」的恐懼，畫上十字架並宣告主權。</p>
+                    </div>
+                    <div class="bg-white/20 p-6 rounded-2xl">
+                        <h5 class="font-bold mb-2">2. 十分鐘寶座默想</h5>
+                        <p class="text-sm">每日撥出10分鐘默想詩篇11:4，用神掌權的畫面取代焦慮。</p>
+                    </div>
+                    <div class="bg-white/20 p-6 rounded-2xl">
+                        <h5 class="font-bold mb-2">3. 在小事上堅持正直</h5>
+                        <p class="text-sm">面對利益衝突時，選擇誠實態度，相信神正在察看。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言佳句 -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold gradient-text">名言佳句</h2>
+                <p class="text-white/40 mt-4">Cloud of Witnesses</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bento-card p-8">
+                    <p class="text-white/80 italic mb-4 leading-relaxed">「恩典的代價是巨大的，因為它付出了上帝兒子的生命；但這恩典又是白白賜予的，因為它使我們得以真正投靠在天父的保護之下。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-white/80 italic mb-4 leading-relaxed">「信心就是走上由愛所建造的階梯，並從盼望所開啟的窗戶向外望見神的寶座。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-white/80 italic mb-4 leading-relaxed">「真正的信心不是去改變上帝的心意，而是安息在祂的主權與應許之中，即使地動山搖也不退縮。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-white/80 italic mb-4 leading-relaxed">「十字架是上帝公義與慈愛最完美的交會，它向我們保證，惡人的強暴終被審判，而信靠祂的人必得見祂的榮光。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-white/80 italic mb-4 leading-relaxed">「真正的屬靈喜樂，不是建立在環境的順遂上，而是建立在認識上帝的至高主權與看見祂榮耀的本質上。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-white/80 italic mb-4 leading-relaxed">「當我們深知自己是被天父深深愛著的孩子時，我們就不必再向世界逃跑去尋求庇護，因為祂的懷抱就是我們唯一的家。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="bento-card p-8 md:col-span-2">
+                    <p class="text-white/80 italic mb-4 leading-relaxed">「在一個充滿混亂與速成文化的世界裡，基督徒的生命呼召我們向著同一個方向，作長久、專一的順服與仰望。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 畢德生 (Eugene Peterson)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 警語 -->
+        <footer class="pt-12 border-t border-white/5 text-center text-white/20 text-xs tracking-[0.2em]">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </footer>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth transition for floating button visibility based on scroll position
+        window.addEventListener('scroll', () => {
+            const fab = document.querySelector('.fixed.bottom-8');
+            if (window.scrollY > 300) {
+                fab.style.opacity = '1';
+                fab.style.pointerEvents = 'auto';
+            } else {
+                fab.style.opacity = '0';
+                fab.style.pointerEvents = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩12:1-8: 在虛謊世代中堅立的純淨之道</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(251, 191, 36, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+        .floating-arrow {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: #fbbf24;
+            color: #020617;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(251, 191, 36, 0.4);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .floating-arrow:hover {
+            transform: translateY(-5px);
+            background: #f59e0b;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.9)), 
+                        url('https://images.unsplash.com/photo-1464802686167-b939a67e06a1?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .outline-btn {
+            border: 1px solid rgba(251, 191, 36, 0.4);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(251, 191, 36, 0.1);
+            border-color: #fbbf24;
+        }
+        .verse-highlight {
+            border-left: 4px solid #fbbf24;
+            padding-left: 1.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="font-body leading-relaxed overflow-x-hidden">
+
+    <!-- Sticky Toolbar -->
+    <nav class="glass-nav fixed top-0 w-full z-50 px-4 py-3 md:py-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
+            <span class="font-display font-bold text-gold-400 text-lg md:text-xl tracking-tight mr-4">詩篇 12:1-8</span>
+            <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase tracking-widest">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors uppercase tracking-widest">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase tracking-widest">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase tracking-widest">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner / Hero -->
+    <header class="relative min-h-[70vh] flex flex-col justify-center items-center text-center px-6 hero-bg overflow-hidden pt-20">
+        <div class="z-10 animate-fade-in">
+            <div class="inline-block px-4 py-1 mb-6 rounded-full border border-gold-400/30 bg-gold-400/10 text-gold-400 text-xs font-bold tracking-[0.2em] uppercase">
+                Psalms 12:1-8
+            </div>
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-6 tracking-tight">
+                在虛謊世代中堅立的<br><span class="gradient-text">純淨之道</span>
+            </h1>
+            <div class="max-w-3xl mx-auto mb-8">
+                <img src='https://opal.google/board/blobs/96037938-1311-4086-863a-9b6b9cd90cf8' alt='media_1' class="w-full h-auto rounded-2xl shadow-2xl border border-white/10" />
+            </div>
+            <div class="max-w-2xl mx-auto glass-card p-6 md:p-8 rounded-2xl">
+                <p class="text-gold-100 text-lg md:text-2xl font-serif italic mb-4 leading-relaxed">
+                    「耶和華的言語是純淨的言語，如同銀子在泥爐中煉過七次。」
+                </p>
+                <div class="w-12 h-1 bg-gold-400 mx-auto rounded-full"></div>
+                <p class="mt-4 font-display text-sm font-semibold tracking-widest opacity-60">詩篇 12:6</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-xl bg-gold-400/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m-4-4h8" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-3xl font-extrabold tracking-tight">會前禱告</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-5 text-8xl font-serif">“</div>
+                <p class="text-xl text-slate-200 leading-relaxed font-serif">
+                    主耶和華啊，我們來到祢面前，承認我們生活在一個充滿虛謊、誇大與心口不一的世代。當我們看見虔誠人減少、忠信人隱沒時，我們的心中常感無力與徬徨。求祢赦免我們有時也隨波逐流，用油滑的嘴唇保護自己。主啊，祢的話語如同泥爐中煉過七次的銀子，毫無雜質、純淨無瑕。求祢興起，為困苦人伸冤，將我們安置在祢所賜的穩妥之地。求祢的真理護衛我們的心，使我們在這彎曲悖謬的世代中，仍能堅定倚靠祢的應許，作誠實無偽的兒女。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline / Navigation -->
+        <section id="outline" class="section-padding border-t border-white/5">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-xl bg-gold-400/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-3xl font-extrabold tracking-tight">訊息大綱</h2>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section1" class="outline-btn p-6 rounded-2xl text-left group">
+                    <span class="block text-gold-400 text-xs font-bold mb-2">PART 01</span>
+                    <h3 class="font-bold text-lg leading-tight group-hover:text-gold-400 transition-colors">虛謊世代的危機——當言語成為操弄的工具</h3>
+                    <p class="mt-2 text-xs opacity-60">詩 12:1-4</p>
+                </a>
+                <a href="#section2" class="outline-btn p-6 rounded-2xl text-left group">
+                    <span class="block text-gold-400 text-xs font-bold mb-2">PART 02</span>
+                    <h3 class="font-bold text-lg leading-tight group-hover:text-gold-400 transition-colors">純淨話語的應許——當神為困苦人發聲</h3>
+                    <p class="mt-2 text-xs opacity-60">詩 12:5-6</p>
+                </a>
+                <a href="#section3" class="outline-btn p-6 rounded-2xl text-left group">
+                    <span class="block text-gold-400 text-xs font-bold mb-2">PART 03</span>
+                    <h3 class="font-bold text-lg leading-tight group-hover:text-gold-400 transition-colors">超越環境的保守——在黑暗中經歷穩妥</h3>
+                    <p class="mt-2 text-xs opacity-60">詩 12:7-8</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Section 1 -->
+            <div id="section1" class="mb-20 scroll-mt-24">
+                <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-gold-400 text-slate-950 flex items-center justify-center text-sm font-black">01</span>
+                    虛謊世代的危機
+                </h3>
+                <div class="glass-card p-8 rounded-3xl space-y-8">
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-4">引用經文</h4>
+                        <div class="verse-highlight text-lg text-slate-200">
+                            (詩 12:1-4)「（大衛的詩，交與伶長。調用第八。）耶和華啊，求你幫助，因虔誠人斷絕了；世人中間的忠信人沒有了。人人向鄰舍說謊；他們說話，是嘴唇油滑，心口不一。凡油滑的嘴唇和誇大的舌頭，耶和華必要剪除。他們曾說：我們必能以舌頭得勝；我們的嘴唇是我們自己的，誰能作我們的主呢？」
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-3">關鍵字解析</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-400 font-bold block mb-1">虔誠人 (Chasid / חָסִיד)</span>
+                                    <p class="text-sm opacity-80">指對神忠誠、守約、滿有慈愛與恩慈的人。</p>
+                                </li>
+                                <li>
+                                    <span class="text-gold-400 font-bold block mb-1">油滑 (chalaqoth / חֲלָקוֹת)</span>
+                                    <p class="text-sm opacity-80">原意為「光滑、奉承」，指為了個人利益而說的好聽卻虛假的話。</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-3">問題與回答</h4>
+                            <p class="text-sm font-semibold mb-2">Q: 為什麼人們喜歡使用「油滑的嘴唇」？這反映了怎樣的屬靈光景？</p>
+                            <p class="text-sm opacity-80">A: 使用油滑的言語，本質上是一種「權力的掌控」。當人不尊神為主時，就會將言語當作武器或防衛機制，試圖透過操控資訊與人際關係來保障自己的利益。這反映出對神主權的不信。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <p class="text-sm italic opacity-90 leading-relaxed">
+                            <span class="font-bold text-gold-400 block mb-2">例證：職場的掙扎</span>
+                            一位剛進入職場的年輕人發現公司裡升遷最快的往往是那些懂得對上司阿諛奉承、對同事心口不一的人。雖然堅持真實可能短期吃虧，但這種短暫的得勝最終往往會因謊言被揭穿而失去信用。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Section 2 -->
+            <div id="section2" class="mb-20 scroll-mt-24">
+                <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-gold-400 text-slate-950 flex items-center justify-center text-sm font-black">02</span>
+                    純淨話語的應許
+                </h3>
+                <div class="glass-card p-8 rounded-3xl space-y-8">
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-4">引用經文</h4>
+                        <div class="verse-highlight text-lg text-slate-200">
+                            (詩 12:5-6)「耶和華說：因為困苦人的冤屈和貧窮人的歎息，我現在要起來，把他安置在他所切慕的穩妥之地。耶和華的言語是純淨的言語，如同銀子在泥爐中煉過七次。」
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-3">關鍵字解析</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-400 font-bold block mb-1">純淨 (tahor / טָהוֹר)</span>
+                                    <p class="text-sm opacity-80">潔淨的、純潔的，沒有任何道德上的瑕疵與雜質。</p>
+                                </li>
+                                <li>
+                                    <span class="text-gold-400 font-bold block mb-1">煉過七次 (mezuqqad shiv'atayim)</span>
+                                    <p class="text-sm opacity-80">在聖經中，「七」代表完全。比喻神的話語是經過絕對考驗、百分之百真實可靠的。</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-3">問題與回答</h4>
+                            <p class="text-sm font-semibold mb-2">Q: 在充滿謊言的環境中，神「純淨的言語」對我們有何實際的作用？</p>
+                            <p class="text-sm opacity-80">A: 世人的承諾常帶有條件或動機，但神的言語沒有欺瞞。神的話語不僅是道德的標準，更是我們靈魂的避難所，讓我們在混亂中找到唯一可以完全信賴的錨。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <p class="text-sm italic opacity-90 leading-relaxed">
+                            <span class="font-bold text-gold-400 block mb-2">例證：銀匠與倒影</span>
+                            古代銀匠提煉銀子時，會一直煉到能從銀子表面清晰看見自己的倒影。神的話語就像這純淨的銀子，能完美地反映出神信實與公義的屬性。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Section 3 -->
+            <div id="section3" class="mb-20 scroll-mt-24">
+                <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-gold-400 text-slate-950 flex items-center justify-center text-sm font-black">03</span>
+                    超越環境的保守
+                </h3>
+                <div class="glass-card p-8 rounded-3xl space-y-8">
+                    <div>
+                        <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-4">引用經文</h4>
+                        <div class="verse-highlight text-lg text-slate-200">
+                            (詩 12:7-8)「耶和華啊，你必保護他們；你必保佑他們永遠脫離這世代的人。下流人在世人中升高，惡人就到處遊行。」
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-3">關鍵字解析</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-400 font-bold block mb-1">保護 (shamar / שָׁמַר)</span>
+                                    <p class="text-sm opacity-80">看守、保守、護衛，如同牧羊人看守羊群。</p>
+                                </li>
+                                <li>
+                                    <span class="text-gold-400 font-bold block mb-1">下流人 (zulluth / זֻלּוּת)</span>
+                                    <p class="text-sm opacity-80">指毫無價值、卑劣的事物或行為。</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold tracking-widest text-gold-400/60 uppercase mb-3">問題與回答</h4>
+                            <p class="text-sm font-semibold mb-2">Q: 為何神應許了保護，現實環境卻依然看似險惡？</p>
+                            <p class="text-sm opacity-80">A: 神的保護並不總是立刻消除環境中的所有邪惡。神在第7節的保護，是指保守我們的心懷意念不被同化。這是一種「在風暴中賜下平安」，而非「挪去風暴」的保護。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <p class="text-sm italic opacity-90 leading-relaxed">
+                            <span class="font-bold text-gold-400 block mb-2">例證：暴雨中的燈塔</span>
+                            海岸邊的燈塔外海浪狂暴，但內部卻堅固平靜。神的保護就是那座燈塔，祂沒有立刻讓海浪停止，但祂保證在燈塔裡的人絕對安全。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Directions -->
+        <section class="section-padding border-t border-white/5">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-xl bg-gold-400/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-3xl font-extrabold tracking-tight">應用方向</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 rounded-3xl">
+                    <span class="text-4xl mb-4 block">⚖️</span>
+                    <h3 class="font-bold text-xl mb-3 text-gold-400">檢視口舌聖潔</h3>
+                    <p class="text-sm opacity-80">反省自己在職場、家庭或教會中，是否曾為了討好人或推卸責任而使用「油滑的嘴唇」？</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <span class="text-4xl mb-4 block">⚓</span>
+                    <h3 class="font-bold text-xl mb-3 text-gold-400">錨定神的話語</h3>
+                    <p class="text-sm opacity-80">每天閱讀、咀嚼「煉過七次」的神的話語，過濾世俗的虛假資訊與社群媒體的比較。</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <span class="text-4xl mb-4 block">🛡️</span>
+                    <h3 class="font-bold text-xl mb-3 text-gold-400">在不公中信靠</h3>
+                    <p class="text-sm opacity-80">當因為堅持誠實而遭遇吃虧時，不失去盼望，深信神必在祂定的時間起來為困苦人發聲。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Transcript -->
+        <section id="sermon" class="section-padding border-t border-white/5">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 rounded-xl bg-gold-400/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-3xl font-extrabold tracking-tight">講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-gold max-w-none space-y-10 text-lg leading-relaxed">
+                <div class="p-8 md:p-12 glass-card rounded-3xl border-l-8 border-gold-400">
+                    <h2 class="text-3xl font-black text-gold-400 mb-8 font-display">詩12:1-8: 在虛謊世代中堅立的純淨之道</h2>
+                    
+                    <p>各位弟兄姊妹，平安。當我們打開新聞，或是滑著社群媒體時，我們常常看見的是什麼？是包裝過的謊言、是帶有目的的奉承，還是心口不一的承諾？大衛在詩篇第12篇中，深刻地描繪了一個充滿虛謊的世代。今天，我們就要透過這段經文，來看見在這黑暗世代中的一線曙光。</p>
+
+                    <h3 class="text-2xl font-bold mt-12 mb-4">第一段：虛謊世代的危機——當言語成為操弄的工具</h3>
+                    <p>經文告訴我們：「<span class="text-gold-100 font-bold italic">人人向鄰舍說謊；他們說話，是嘴唇油滑，心口不一。</span>」在這個世代，虔誠人似乎斷絕了。人們高喊：「我們必能以舌頭得勝！」言語不再是傳遞真理的工具，而變成了爭奪權力、保護自己、甚至操弄別人的武器。</p>
+                    <div class="bg-white/5 p-6 rounded-xl border-l-4 border-gold-400 my-8">
+                        <p class="font-bold text-xl text-white">我們必須謹慎，因為當我們開始依賴謊言和奉承來生存時，我們其實是在宣告：我們不再需要神作我們的主。</p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-12 mb-4">第二段：純淨話語的應許——當神為困苦人發聲</h3>
+                    <p>然而，在充滿欺騙的環境中，神不會永遠沉默。第5節神宣告祂要「起來」，為困苦人發聲。緊接著，詩人寫下了這首詩的金句：</p>
+                    <p class="text-2xl font-serif text-gold-400 font-black py-8 border-y border-white/10 text-center my-8">
+                        「耶和華的言語是純淨的言語，如同銀子在泥爐中煉過七次。」（詩篇 12:6）
+                    </p>
+                    <p>這個世界的承諾可能充滿雜質，可能隨時變卦，但神的話語卻是經過最高溫的提煉，毫無瑕疵。就像銀匠在泥爐中煉銀，直到能清楚看見自己的倒影。神的話語也完美地倒影出祂的信實。當我們在世人的謊言中受傷時，<span class="text-gold-400 font-bold underline decoration-2 underline-offset-4">只有這「煉過七次」的純淨話語，能成為我們靈魂最穩妥的錨。</span></p>
+
+                    <h3 class="text-2xl font-bold mt-12 mb-4">第三段：超越環境的保守——在黑暗中經歷穩妥</h3>
+                    <p>最後，詩人宣告：「<span class="italic opacity-80">耶和華啊，你必保護他們...</span>」但有趣的是，第8節馬上接著說：「<span class="italic opacity-80">下流人在世人中升高，惡人就到處遊行。</span>」這是不是矛盾呢？絕對不是。這告訴我們一個深刻的屬靈現實：</p>
+                    <div class="bg-gold-400 text-slate-950 p-6 rounded-xl font-bold text-xl my-8">
+                        神的保護，不是立刻將我們抽離風暴，而是在風暴中成為我們的堅固臺。
+                    </div>
+                    <p>外面的世界可能依然惡人當道、價值觀顛倒，但只要我們藏身在神純淨的話語中，祂的保守就大過這世界的一切。我們不需要用這世界的虛謊來武裝自己，因為神親自護衛我們。</p>
+
+                    <div class="mt-16 pt-8 border-t border-white/10">
+                        <h4 class="text-gold-400 font-black text-xl mb-4">結論與呼召</h4>
+                        <p>弟兄姊妹，讓我們在這個充滿<span class="text-gold-400 font-bold">虛謊</span>的世代中，緊緊抓住神<span class="text-gold-400 font-bold">純淨</span>的話語，並在祂的<span class="text-gold-400 font-bold">保守</span>中得著安息。願我們本週都能實踐「言語的聖潔」，用誠實代替奉承，用真理代替誇大。阿們。</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="pb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-xl bg-gold-400/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-3xl font-extrabold tracking-tight">回應行動</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-start gap-4 p-6 glass-card rounded-2xl">
+                    <span class="text-gold-400 font-bold text-xl">01</span>
+                    <p class="text-slate-200"><span class="font-bold text-white">實行「言語禁食」：</span>本週挑戰自己，不誇大其辭、不說奉承話、不參與八卦。讓「是就說是，不是就說不是」成為溝通原則。</p>
+                </div>
+                <div class="flex items-start gap-4 p-6 glass-card rounded-2xl">
+                    <span class="text-gold-400 font-bold text-xl">02</span>
+                    <p class="text-slate-200"><span class="font-bold text-white">背誦並默想金句：</span>將詩篇12:6寫在便利貼上，貼在鏡子或電腦螢幕前，每天早晨宣告神話語的真實與純淨。</p>
+                </div>
+                <div class="flex items-start gap-4 p-6 glass-card rounded-2xl">
+                    <span class="text-gold-400 font-bold text-xl">03</span>
+                    <p class="text-slate-200"><span class="font-bold text-white">為受屈者代禱：</span>本週特別尋找一位在生活中或職場上遭遇不公義對待、感到困苦的人，為他禱告並傳遞安慰。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Section -->
+        <section id="quotes" class="section-padding border-t border-white/5">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 rounded-xl bg-gold-400/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-3xl font-extrabold tracking-tight">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Cards -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「聖經是活的，它有手，能抓住我；它有腳，能追上我。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 馬丁·路德 (Martin Luther)</p>
+                    <p class="text-xs opacity-40">《馬丁·路德桌邊談話錄》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「如果你的神從來沒有對你說過一句你不喜歡聽的話，那麼你敬拜的其實不是神，而是你自己。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    <p class="text-xs opacity-40">《理性的信仰》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「說真話並不是一件可以隨心所欲的事；它是必須學習的。這意味著要在具體情境中尋找合乎神心意的言語。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    <p class="text-xs opacity-40">《倫理學》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「在我們這個充滿喋喋不休與噪音的世界裡，我們很難聽見神那微小、溫柔的聲音。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 盧雲 (Henri Nouwen)</p>
+                    <p class="text-xs opacity-40">《尋找回家的路》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「我們閱讀聖經，不是為了獲取資訊，而是為了生命的轉化；不是為了知道更多，而是為了成為不一樣的人。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 畢德生 (Eugene Peterson)</p>
+                    <p class="text-xs opacity-40">《吃這書卷》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「沒有真理的愛是太軟弱的，沒有愛的真理則是太嚴厲的。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                    <p class="text-xs opacity-40">《當代基督門徒》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「順服神，把結果交給祂。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 查爾斯·史丹利 (Charles Stanley)</p>
+                    <p class="text-xs opacity-40">《與神同行》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「神的話語是一座無窮無盡的寶庫，包含著無限的智慧與恩典，供我們一生去挖掘。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                    <p class="text-xs opacity-40">《宗教情操真偽辨》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「聖經被賜下來，不是為了增加我們的知識，而是為了改變我們的行為。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 慕迪 (D.L. Moody)</p>
+                    <p class="text-xs opacity-40">慕迪講道集</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-200 italic mb-4">「聖經不僅是一本記載歷史的書，它是一封神寫給你的情書，充滿了祂對你的應許與保護。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 葛理翰 (Billy Graham)</p>
+                    <p class="text-xs opacity-40">《漫漫歸鄉路》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="py-12 border-t border-white/5 text-center">
+            <p class="text-xs text-slate-500 tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Arrow -->
+    <a href="#prayer" class="floating-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Intersection Observer for animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

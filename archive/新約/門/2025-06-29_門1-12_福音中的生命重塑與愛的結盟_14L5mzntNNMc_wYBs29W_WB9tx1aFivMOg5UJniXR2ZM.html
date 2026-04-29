@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>門1-12:從無益到有益：福音中的生命重塑與愛的結盟</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkBg: '#0A0A0B',
+                        cardBg: '#161618',
+                        accent: '#C5A059',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 24, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F1D27C 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: #161618;
+            border-radius: 24px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: #D4AF37;
+            transform: scale(1.02);
+        }
+        .floating-arrow {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2D2D2D;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-display font-bold text-gold text-sm md:text-base hidden sm:inline">門 1-12</span>
+            <div class="flex gap-6 md:gap-10 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-300">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[70vh] md:h-[85vh] w-full overflow-hidden flex items-end">
+        <img src='https://opal.google/board/blobs/e4e04f03-7d0c-4b97-b7dd-35130cf3167e' alt='保羅在獄中撰寫書信' class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/40 to-transparent"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-6 pb-16 md:pb-24 w-full">
+            <div class="inline-block px-4 py-1 mb-4 rounded-full bg-gold/20 border border-gold/30 text-gold text-xs font-bold tracking-widest uppercase">
+                腓利門書 1:1-12
+            </div>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 leading-tight max-w-4xl">
+                從無益到有益：<br/>
+                <span class="gold-gradient">福音中的生命重塑</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
+                在和解與希望的戲劇感中，見證保羅如何以愛心連結肢體，讓破碎的生命在基督裡重新煥發價值。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-20">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-card scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-2xl bg-gold/10 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A4.833 4.833 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 7.165 6 9.388 6 12v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">起始禱告</h2>
+            </div>
+            <div class="text-lg md:text-xl text-gray-300 leading-loose italic border-l-4 border-gold/30 pl-8 py-2">
+                親愛的天父，我們感謝祢在基督裡賜下那能翻轉生命的恩典。求祢開啟我們的心眼，讓我們能像保羅一樣，在各樣的境遇中看見祢的旨意，並以愛心彼此連結。主啊，賜給我們如同腓利門般的愛心與信心，使我們能成為暢快聖徒心腸的器皿；也求祢賜下恩典，讓我們能接納那些曾經跌倒、曾經「無益」的人，看見他們在基督裡已成為「有益」的新造之人。願我們的行事為人不是出於勉強，而是出於甘心，讓福音的生命力在我們的團契中真實流露。奉主耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-2xl bg-gold/10 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">信息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#section1" class="outline-btn p-6 rounded-3xl flex flex-col justify-between">
+                    <span class="text-gold text-xs font-bold tracking-widest mb-4">第一階段</span>
+                    <h3 class="text-lg font-bold leading-snug">真實的屬靈夥伴：在恩典與平安中同工</h3>
+                    <p class="mt-4 text-xs text-gray-500">門 1:1-3</p>
+                </a>
+                <a href="#section2" class="outline-btn p-6 rounded-3xl flex flex-col justify-between">
+                    <span class="text-gold text-xs font-bold tracking-widest mb-4">第二階段</span>
+                    <h3 class="text-lg font-bold leading-snug">愛與信心的流露：使人得安慰的生命</h3>
+                    <p class="mt-4 text-xs text-gray-500">門 1:4-7</p>
+                </a>
+                <a href="#section3" class="outline-btn p-6 rounded-3xl flex flex-col justify-between">
+                    <span class="text-gold text-xs font-bold tracking-widest mb-4">第三階段</span>
+                    <h3 class="text-lg font-bold leading-snug">從無益到有益：福音帶來的生命翻轉</h3>
+                    <p class="mt-4 text-xs text-gray-500">門 1:8-12</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <div class="space-y-16">
+            <!-- Section 1 -->
+            <section id="section1" class="section-card scroll-mt-24">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <span class="text-gold opacity-50">#</span> 第一段：真實的屬靈夥伴
+                </h3>
+                <div class="bg-black/30 p-6 rounded-2xl mb-8 border border-white/5">
+                    <div class="text-gold font-bold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.804C3.057 15.09 4.245 14.804 5.5 14.804c1.33 0 2.59.32 3.7.892l.8-.401.8.401c1.11-.572 2.37-.892 3.7-.892 1.255 0 2.443.29 3.5.804V4.804C16.943 4.29 15.755 4 14.5 4a7.968 7.968 0 00-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                        經文範圍：門1:1-3
+                    </div>
+                    <p class="text-gray-400">「為基督耶穌被囚的保羅，同兄弟提摩太，寫信給我們所親愛的同工腓利門，和妹子亞腓亞並與我們同當兵的亞基布，以及在你家的教會。願恩惠、平安從神我們的父和主耶穌基督歸與你們！」</p>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-gold font-bold mb-2 uppercase tracking-tighter text-sm">關鍵原文解析</h4>
+                        <p class="text-white font-medium">同工 (Fellow worker / *synergos*)</p>
+                        <p class="text-gray-400 mt-1">意指在同一個目標上共同勞苦的人。保羅沒有用使徒的權威壓制腓利門，而是稱他為「所親愛的同工」，這拉近了彼此的距離，表明在福音的事工上，他們是地位平等的夥伴。</p>
+                    </div>
+                    <div>
+                        <h4 class="text-gold font-bold mb-2 uppercase tracking-tighter text-sm">深度問答</h4>
+                        <p class="text-white font-medium">問：保羅為何強調自己是「為基督耶穌被囚的」？</p>
+                        <p class="text-gray-400 mt-1">保羅刻意放下他一貫使用的「使徒」頭銜，以「被囚者」的軟弱身分來發言。這展現一種基於「愛」而非「權威」的請求。當我們在基督裡受苦時，我們的軟弱反而能成為連結肢體、傳遞恩典的強大管道。</p>
+                    </div>
+                    <div class="border-t border-white/5 pt-6">
+                        <div class="flex items-start gap-4 italic text-gray-300">
+                            <span class="text-gold text-4xl leading-none">“</span>
+                            <p class="text-lg">基督徒的團契不是一個理想，而是一個從神而來的現實；它不是一種屬靈的體驗，而是一種屬靈的實在。</p>
+                        </div>
+                        <p class="text-right text-gold text-sm mt-2">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="section-card scroll-mt-24">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <span class="text-gold opacity-50">#</span> 第二段：愛與信心的流露
+                </h3>
+                <div class="bg-black/30 p-6 rounded-2xl mb-8 border border-white/5">
+                    <div class="text-gold font-bold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.804C3.057 15.09 4.245 14.804 5.5 14.804c1.33 0 2.59.32 3.7.892l.8-.401.8.401c1.11-.572 2.37-.892 3.7-.892 1.255 0 2.443.29 3.5.804V4.804C16.943 4.29 15.755 4 14.5 4a7.968 7.968 0 00-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                        經文範圍：門1:4-7
+                    </div>
+                    <p class="text-gray-400">「我禱告的時候提到你，常為你感謝我的神；因聽見你的愛心並你向主耶穌和眾聖徒的信心。願你與人所同有的信心顯出功效...兄弟啊，我為你的愛心，大有快樂，大得安慰，因眾聖徒的心腸從你得到暢快。」</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-gold font-bold mb-2 uppercase tracking-tighter text-sm">關鍵字眼</h4>
+                        <ul class="space-y-4">
+                            <li>
+                                <p class="text-white font-medium">同有的 (Sharing / *koinonia*)</p>
+                                <p class="text-sm text-gray-400">指將信心付諸實踐的分享與參與。</p>
+                            </li>
+                            <li>
+                                <p class="text-white font-medium">心腸 (Hearts / *splagchna*)</p>
+                                <p class="text-sm text-gray-400">代表人類最深層的情感。腓利門的服事滋潤了信徒內心深處。</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-gold font-bold mb-2 uppercase tracking-tighter text-sm">小故事：一杯熱茶的暢快</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            有一位教會弟兄，他不是在台上講道的牧師，但他總是默默地觀察誰在聚會時面帶愁容。會後，他總會遞上一杯熱茶，或者發一則短短的經文訊息問候。正是這些不顯眼卻充滿愛的行動，讓許多人在枯乾時，靈魂得到了「暢快」。
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-8 border-t border-white/5 pt-6 italic text-gray-300">
+                    <p class="text-lg">「福音是這樣的：你所本來的樣子，比你所敢相信的還要敗壞；但在基督裡，你所蒙的愛和接納，比你所敢盼望的還要偉大。」</p>
+                    <p class="text-right text-gold text-sm mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="section-card scroll-mt-24">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <span class="text-gold opacity-50">#</span> 第三段：從無益到有益
+                </h3>
+                <div class="bg-black/30 p-6 rounded-2xl mb-8 border border-white/5">
+                    <div class="text-gold font-bold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.804C3.057 15.09 4.245 14.804 5.5 14.804c1.33 0 2.59.32 3.7.892l.8-.401.8.401c1.11-.572 2.37-.892 3.7-.892 1.255 0 2.443.29 3.5.804V4.804C16.943 4.29 15.755 4 14.5 4a7.968 7.968 0 00-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                        經文範圍：門1:8-12
+                    </div>
+                    <p class="text-gray-400">「我雖然靠著基督能放膽吩咐你合宜的事，然而像我這有年紀的保羅...寧可憑著愛心求你...就是為我在捆鎖中所生的兒子阿尼西母求你。他從前與你沒有益處，但如今與你我都有益處。」</p>
+                </div>
+                <div class="space-y-6">
+                    <p class="text-gray-300">
+                        這是一個極具深意的雙關語。「阿尼西母」(Onesimus) 在希臘文中的意思就是<span class="text-gold font-bold">「有益處的」</span>。保羅說他從前是 *achrēston*（無益的），但現在因為福音的翻轉，他成為了 *euchrēston*（大有益處的）。
+                    </p>
+                    <div class="bg-gold/5 p-6 rounded-2xl border-l-2 border-gold/50">
+                        <p class="text-white font-bold mb-2">例證：約翰·牛頓的奇異恩典</p>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            約翰·牛頓曾是一個殘酷的奴隸船船長，對社會毫無益處。但經歷恩典後，他成了一位牧師，並寫下了《奇異恩典》，協助推動廢奴運動。福音使一個「無益」的罪魁，成為了「有益」的神僕。
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-8 border-t border-white/5 pt-6 italic text-gray-300">
+                    <p class="text-lg">「恩典是神對毫無價值之人的愛；或者更準確地說，是對那些本該受懲罰之人的愛。」</p>
+                    <p class="text-right text-gold text-sm mt-2">— 約翰·史托德 (John Stott)</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application & Actions -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section class="section-card bg-gold/5 border-gold/20">
+                <h3 class="text-xl font-bold mb-6 text-gold">講道應用方向</h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-3 text-sm">
+                        <div class="h-2 w-2 rounded-full bg-gold mt-1.5 shrink-0"></div>
+                        <p><span class="text-white font-bold">轉向愛心請求：</span> 學習保羅放下身段，以謙卑取代強勢命令。</p>
+                    </li>
+                    <li class="flex gap-3 text-sm">
+                        <div class="h-2 w-2 rounded-full bg-gold mt-1.5 shrink-0"></div>
+                        <p><span class="text-white font-bold">福音的眼光：</span> 看見「不可愛」之人在基督裡被重塑的潛力。</p>
+                    </li>
+                    <li class="flex gap-3 text-sm">
+                        <div class="h-2 w-2 rounded-full bg-gold mt-1.5 shrink-0"></div>
+                        <p><span class="text-white font-bold">暢快人心腸：</span> 讓自己的信仰轉化為實際愛人的行動。</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-card border-accent/20">
+                <h3 class="text-xl font-bold mb-6 text-white">回應與實踐</h3>
+                <ul class="space-y-4 text-sm text-gray-400">
+                    <li class="p-3 rounded-xl bg-white/5"><span class="text-gold font-bold">行動一：</span> 本週列出一位曾得罪你的人，在禱告中嘗試給予實質的饒恕。</li>
+                    <li class="p-3 rounded-xl bg-white/5"><span class="text-gold font-bold">行動二：</span> 觀察身邊一位艱難的肢體，透過送餐或陪伴去安慰他。</li>
+                    <li class="p-3 rounded-xl bg-white/5"><span class="text-gold font-bold">行動三：</span> 面對家人或同仁過犯時，練習「憑著愛心」去引導。</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-card scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-2xl bg-gold/10 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none text-gray-300 space-y-6 leading-relaxed">
+                <h3 class="text-2xl text-white font-bold mb-4">從無益到有益：福音中的生命重塑與愛的結盟</h3>
+                
+                <p>弟兄姊妹們，平安。當我們面對一個曾經深深傷害我們、背叛我們，甚至讓我們遭受巨大損失的人時，我們會作何反應？社會的邏輯告訴我們：要求賠償、劃清界線，甚至老死不相往來。但在基督的福音裡，有一種超越常理的邏輯，叫做「恩典的翻轉」。</p>
+
+                <h4 class="text-xl text-gold font-bold mt-8">第一、真實的屬靈夥伴：在恩典與平安中同工</h4>
+                <p>保羅在信的開頭強調自己是「被囚的」，並稱呼腓利門為「親愛的同工」。這告訴我們：<span class="text-white font-bold bg-gold/10 px-1">在基督裡，我們不靠階級地位建立關係，而是靠著共同的恩典與十字架的軟弱來連結。</span>當我們放下身段，不再以定罪姿態面對彼此時，我們才能成為真正的同工。</p>
+
+                <h4 class="text-xl text-gold font-bold mt-8">第二、愛與信心的流露：使人得安慰的生命</h4>
+                <p>「因眾聖徒的心腸從你得到暢快。」腓利門不是只在嘴上說說的基督徒，他的家就是教會，他接待人、服事人，讓聖徒心靈得到極大滋潤。提摩太·凱勒提醒我們：「在基督裡，我們所蒙的愛比我們所敢盼望的還要偉大。」因為經歷了這份愛，我們也理當成為暢快他人心腸的管道。</p>
+
+                <h4 class="text-xl text-gold font-bold mt-8">第三、從無益到有益：福音帶來的生命翻轉</h4>
+                <p>阿尼西母捲款潛逃，按法律可處死。但保羅說：<span class="text-white text-xl font-black block my-4 border-l-4 border-gold pl-4 py-2 bg-white/5">「他從前與你沒有益處，但如今與你我都有益處。」(門1:11)</span></p>
+                <p>這就是恩典的精髓。保羅沒有命令腓利門，而是「憑著愛心求」。因為真正的饒恕只能誕生於被基督愛觸動的自由意志中。律法叫人屈服，唯有愛能使人真正和好。</p>
+
+                <p class="mt-8 text-lg">弟兄姊妹，我們每個人從前在神面前都是「無益」的罪人，但因著耶穌基督的救贖，我們如今都成了對神國「有益」的器皿。既然領受了這份翻轉，我們是否願意用同樣的眼光，去接納身邊那些曾經得罪我們的人？求主幫助我們，活出福音的生命力，從無益到有益，在愛中彼此結盟！</p>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-card scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-2xl bg-gold/10 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1-10 mapped -->
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「基督徒的團契不是一個理想，而是一個從神而來的現實；它不是一種屬靈的體驗，而是一種屬靈的實在。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 潘霍華</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「福音是這樣的：你所本來的樣子，比你所敢相信的還要敗壞；但在基督裡，你所蒙的愛和接納，比你所敢盼望的還要偉大。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 提摩太·凱勒</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「恩典是神對毫無價值之人的愛；或者更準確地說，是對那些本該受懲罰之人的愛。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 約翰·史托德</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「沒有人會因為太過於看重上帝的恩典而跌倒，人跌倒都是因為他們對恩典的認識太過淺薄。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 約翰·加爾文</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「真理與愛心必須並行；沒有愛心的真理是殘酷的，沒有真理的愛心是虛偽的。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 唐崇榮</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「上帝隨時準備好要賜下恩典，但我們必須先倒空自己的驕傲，才能騰出空間來領受。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 慕迪</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「一個真正被恩典觸摸的人，他的內心必然會生發出對他人的憐憫與愛。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 喬納森·愛德華茲</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「我們蒙召不是要成為成功的人，而是要成為忠心的人。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 盧雲</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「信心是一條活潑的、無畏的對神恩典的確信；它如此確切，以至於信徒甘願為此死上一千次。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 馬丁·路德</span>
+                </div>
+                <div class="p-6 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「你若不將自己完全交託給神，你就無法體會祂完全的平安與大能。」</p>
+                    <span class="text-gold text-xs font-bold text-right">— 陶恕</span>
+                </div>
+            </div>
+
+            <!-- Caution -->
+            <div class="mt-16 p-6 rounded-2xl bg-red-900/10 border border-red-900/20 text-center">
+                <p class="text-red-400/80 text-sm tracking-widest">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl z-[60] floating-arrow group hover:scale-110 transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-darkBg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+        <span class="absolute right-full mr-4 bg-gold text-darkBg px-3 py-1 rounded text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">回到禱告</span>
+    </a>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽35:1-10 曠野綻放玫瑰：經歷神聖的復興與歸回</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fdf8d6',
+                            200: '#fbedad',
+                            300: '#f8de7a',
+                            400: '#f5cb4c',
+                            500: '#f1b126',
+                            600: '#d98d1a',
+                            700: '#b56818',
+                            800: '#94511a',
+                            900: '#7a431a',
+                        },
+                        sand: '#C2B280',
+                        divine: '#4A5568'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.5s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .sticky-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f1b126 0%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .outline-button {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-button:hover {
+            background: rgba(241, 177, 38, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(241, 177, 38, 0.5);
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            filter: drop-shadow(0 0 8px rgba(241, 177, 38, 0.5));
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 sticky-nav h-14 md:h-16 flex items-center px-4 md:px-8 justify-between">
+        <span class="text-xs md:text-sm font-bold tracking-widest text-gold-400">賽 35:1-10</span>
+        <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium tracking-wide">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/362402ce-5d14-40fd-8650-ab0ff3d5d73f' alt='以賽亞書 35:1-10 曠野綻放玫瑰' class="w-full h-full object-cover scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl animate-fade-in">
+            <h2 class="text-gold-400 text-lg md:text-2xl font-medium tracking-[0.2em] mb-4">ISAIAH 35:1-10</h2>
+            <h1 class="font-serif text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight">曠野綻放玫瑰<br/><span class="gradient-text">經歷神聖的復興與歸回</span></h1>
+            <div class="flex items-center justify-center space-x-4">
+                <div class="h-[1px] w-12 bg-gold-500/50"></div>
+                <p class="text-gray-300 tracking-widest text-sm md:text-base">主日講道資源頁面</p>
+                <div class="h-[1px] w-12 bg-gold-500/50"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 金句 Section -->
+        <section class="flex justify-center">
+            <div class="glass-panel p-8 md:p-16 relative overflow-hidden text-center max-w-3xl">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent opacity-50"></div>
+                <span class="text-4xl text-gold-500 opacity-30 absolute top-4 left-4 font-serif">“</span>
+                <h3 class="text-2xl md:text-3xl font-serif text-white leading-relaxed mb-6">
+                    並且耶和華救贖的民必歸回，歌唱來到錫安；永樂必歸到他們的頭上；他們必得著歡喜快樂，憂愁歎息盡都逃避。
+                </h3>
+                <p class="text-gold-400 font-bold tracking-widest">—— 以賽亞書 35:10</p>
+                <span class="text-4xl text-gold-500 opacity-30 absolute bottom-4 right-4 font-serif">”</span>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-12">
+                <span class="section-icon">🙏</span>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">禱告</h2>
+            </div>
+            <div class="glass-panel p-8 md:p-12 leading-loose text-lg text-gray-200 border-l-4 border-l-gold-500">
+                全能慈愛的阿爸天父，我們感謝祢。在我們生命的曠野和乾旱之地，祢應許要降下恩雨，使沙漠如玫瑰綻放。主啊，當我們軟弱、膽怯、看不見前路時，求祢的話語堅固我們發酸的腿，建立我們下垂的手。求祢開我們屬靈的眼睛與耳朵，使我們看見祢的榮耀，聽見祢的呼喚。引導我們走上那條為蒙救贖之人預備的「聖路」，使我們帶著歡呼喜樂歸向祢，讓一切的憂愁歎息盡都逃避。奉主耶穌基督的聖名祈求，阿們。
+            </div>
+        </section>
+
+        <!-- 大綱快速導航 -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-12">
+                <span class="section-icon">📜</span>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">分段大綱與解析</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section1" class="outline-button glass-panel p-6 flex flex-col justify-between group">
+                    <span class="text-xs text-gold-500 mb-2 font-bold uppercase tracking-widest">Part 01</span>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">曠野的翻轉：從枯乾到榮耀</h4>
+                    <span class="text-sm text-gray-400 italic">賽 35:1-4</span>
+                </a>
+                <a href="#section2" class="outline-button glass-panel p-6 flex flex-col justify-between group">
+                    <span class="text-xs text-gold-500 mb-2 font-bold uppercase tracking-widest">Part 02</span>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">生命的醫治：從殘缺到湧流</h4>
+                    <span class="text-sm text-gray-400 italic">賽 35:5-7</span>
+                </a>
+                <a href="#section3" class="outline-button glass-panel p-6 flex flex-col justify-between group">
+                    <span class="text-xs text-gold-500 mb-2 font-bold uppercase tracking-widest">Part 03</span>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">神聖的歸途：從流浪到安息</h4>
+                    <span class="text-sm text-gray-400 italic">賽 35:8-10</span>
+                </a>
+            </div>
+
+            <!-- Section 1 Detail -->
+            <div id="section1" class="scroll-mt-24 space-y-12 mb-24">
+                <div class="border-b border-gold-500/20 pb-4">
+                    <h3 class="text-2xl font-bold text-white mb-2">第一段：曠野的翻轉——從枯乾到榮耀</h3>
+                    <p class="text-gold-500">賽 35:1-4</p>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-xl italic text-gray-300 leading-relaxed border-l-2 border-gold-500/30">
+                    曠野和乾旱之地必然歡喜；沙漠也必快樂；又像玫瑰開花，必開花繁盛，樂上加樂，而且歡呼。利巴嫩的榮耀，並迦密與沙崙的華美，必賜給它。人必看見耶和華的榮耀，我們神的華美。你們要使軟弱的手堅壯，無力的膝穩固。對膽怯的人說：你們要剛強，不要懼怕。看哪，你們的神必來報仇，必來施行極大的報應；他必來拯救你們。
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8 space-y-6">
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">🔍</span>關鍵原文</h5>
+                            <p class="text-gray-300 leading-relaxed"><span class="font-bold text-white underline decoration-gold-500">堅壯 (Hebrew: חָזַק / Chazaq)</span>：意指「強壯、堅固、抓住」。在地面對極大爭戰或艱難時，神賜予人內在與外在的力量。</p>
+                        </div>
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">❓</span>關鍵問題</h5>
+                            <p class="text-white font-medium mb-2">當我們處在人生的曠野和枯乾中，如何能看見神的榮耀並重新得力？</p>
+                            <p class="text-gray-400 text-sm">解析：將眼光從「乾旱」轉向「神的拯救」。這份確據就能成為我們發酸手腳的支撐點。</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 space-y-6">
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">🌱</span>例證故事</h5>
+                            <p class="text-gray-300 leading-relaxed text-sm">「死亡谷」的超級綻放：即使在最乾旱之處，只要恩典雨水降下，最荒涼的時刻正是神蹟萌芽的起點。</p>
+                        </div>
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">💬</span>佳句名言</h5>
+                            <p class="italic text-white">「神在黑暗中給我們的應許，比在光明中給我們的更為寶貴；因為正是這黑暗，讓我們真實經歷祂是我們唯一的光。」<br><span class="text-xs text-gray-400 mt-1 block">— 司布真</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 Detail -->
+            <div id="section2" class="scroll-mt-24 space-y-12 mb-24">
+                <div class="border-b border-gold-500/20 pb-4">
+                    <h3 class="text-2xl font-bold text-white mb-2">第二段：生命的醫治——從殘缺到湧流</h3>
+                    <p class="text-gold-500">賽 35:5-7</p>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-xl italic text-gray-300 leading-relaxed border-l-2 border-gold-500/30">
+                    那時，瞎子的眼必睜開；聾子的耳必開通。那時，瘸子必跳躍像鹿；啞巴的舌頭必能歌唱。在曠野必有水發出；在沙漠必有河湧流。發光的沙要變為水池；乾渴之地要變為泉源。在野狗躺臥之處，必有青草、蘆葦，和蒲草。
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8 space-y-6">
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">🔍</span>關鍵原文</h5>
+                            <p class="text-gray-300 leading-relaxed"><span class="font-bold text-white underline decoration-gold-500">湧流 / 發出 (Hebrew: בָּקַע / Baqa')</span>：意為「劈開、裂開、破殼而出」。象徵神生命的大能突破我們心靈最剛硬、封閉的阻礙。</p>
+                        </div>
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">❓</span>關鍵問題</h5>
+                            <p class="text-white font-medium mb-2">神的醫治與活水，如何翻轉我們靈裡的殘缺與枯竭？</p>
+                            <p class="text-gray-400 text-sm">解析：神不僅改變外在環境，更深層次地醫治我們靈裡的殘缺（如看不見神作為、聽不見神聲音），使生命能爆發出自由與喜樂。</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 space-y-6">
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">🌱</span>例證故事</h5>
+                            <p class="text-gray-300 leading-relaxed text-sm">海倫·凱勒的世界：當「Water」這個字被寫在手上，她的生命被「劈開」了。她感謝神讓她盲聾，因為這讓她看見了屬靈世界。</p>
+                        </div>
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">💬</span>佳句名言</h5>
+                            <p class="italic text-white">「耶穌基督的福音不是來教導我們如何成為一個『好人』，而是讓一個『死人』活過來，讓殘缺的靈魂重新得以跳躍。」<br><span class="text-xs text-gray-400 mt-1 block">— 提摩太·凱勒</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 Detail -->
+            <div id="section3" class="scroll-mt-24 space-y-12 mb-24">
+                <div class="border-b border-gold-500/20 pb-4">
+                    <h3 class="text-2xl font-bold text-white mb-2">第三段：神聖的歸途——從流浪到安息</h3>
+                    <p class="text-gold-500">賽 35:8-10</p>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-xl italic text-gray-300 leading-relaxed border-l-2 border-gold-500/30">
+                    在那裡必有一條大道，稱為聖路。污穢人不得經過，必專為贖民行走；行路的人雖愚昧，也不致失迷。在那裡必沒有獅子，猛獸也不登這路；在那裡都遇不見，只有贖民在那裡行走。並且耶和華救贖的民必歸回，歌唱來到錫安；永樂必歸到他們的頭上；他們必得著歡喜快樂，憂愁歎息盡都逃避。
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8 space-y-6">
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">🔍</span>關鍵原文</h5>
+                            <p class="text-gray-300 leading-relaxed"><span class="font-bold text-white underline decoration-gold-500">救贖的民 (Hebrew: גָּאַל / Ga'al)</span>：意指「被贖回者」。親屬付出代價贖回為奴的家人，指神親自付代價將祂子民從罪與死中買贖。</p>
+                        </div>
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">❓</span>關鍵問題</h5>
+                            <p class="text-white font-medium mb-2">誰有資格走上這條「聖路」？我們如何確保自己行在其上？</p>
+                            <p class="text-gray-400 text-sm">解析：這條路「專為贖民行走」。唯有接受神恩典、被祂潔淨後才能踏上。路途上有神保守，但需持守聖潔與敬畏。</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 space-y-6">
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">🌱</span>例證故事</h5>
+                            <p class="text-gray-300 leading-relaxed text-sm">叢林中的安全高架道：有護欄防禦野獸，且有人為你付清了昂貴過路費。你只需要唱歌前行，就能回到安全的家。</p>
+                        </div>
+                        <div>
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center"><span class="mr-2">💬</span>佳句名言</h5>
+                            <p class="italic text-white">「通往神聖之路的門檻極高，要求我們放下一切罪惡；但這條路的恩典卻極深，深到即使最愚昧的人，只要牽著神的手，也絕不會迷路。」<br><span class="text-xs text-gray-400 mt-1 block">— 陶恕</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 應用方向 -->
+        <section class="glass-panel p-10 bg-gold-900/10">
+            <div class="flex items-center space-x-4 mb-10">
+                <span class="section-icon">💡</span>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">講道應用方向</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center font-bold text-black">1</div>
+                    <h4 class="text-xl font-bold">轉換眼光</h4>
+                    <p class="text-gray-400">不要只盯著「沙漠」，要宣告神即將展開的拯救，學習在曠野中讚美。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center font-bold text-black">2</div>
+                    <h4 class="text-xl font-bold">尋求醫治</h4>
+                    <p class="text-gray-400">求聖靈活水醫治屬靈的盲目與耳聾，恢復對神話語的敏銳度。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center font-bold text-black">3</div>
+                    <h4 class="text-xl font-bold">活出得勝</h4>
+                    <p class="text-gray-400">作為贖民應拒絕罪惡，專心走在聖路上，以終末的盼望面對現今挑戰。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 結論 -->
+        <section class="text-center py-20 bg-gradient-to-b from-transparent via-gold-500/5 to-transparent">
+            <h2 class="text-gold-400 text-sm uppercase tracking-widest mb-6">結論關鍵字</h2>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                <span class="text-4xl md:text-6xl font-serif font-black tracking-tighter hover:text-gold-400 transition-colors cursor-default">復興</span>
+                <span class="text-4xl md:text-6xl font-serif font-black tracking-tighter hover:text-gold-400 transition-colors cursor-default">醫治</span>
+                <span class="text-4xl md:text-6xl font-serif font-black tracking-tighter hover:text-gold-400 transition-colors cursor-default">聖路</span>
+            </div>
+        </section>
+
+        <!-- 回應行動 -->
+        <section class="space-y-12">
+            <div class="flex items-center space-x-4 mb-6">
+                <span class="section-icon">👣</span>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">回應與實踐</h2>
+            </div>
+            <div class="bento-grid">
+                <div class="glass-panel p-8 hover:bg-gold-500/5 transition-all">
+                    <p class="text-gold-500 font-black text-4xl mb-4 opacity-20">01</p>
+                    <p class="text-lg leading-relaxed">寫下目前生命中最枯乾、最軟弱的一個領域，每天用賽35章應許禱告，宣告神要使這地開出玫瑰。</p>
+                </div>
+                <div class="glass-panel p-8 hover:bg-gold-500/5 transition-all">
+                    <p class="text-gold-500 font-black text-4xl mb-4 opacity-20">02</p>
+                    <p class="text-lg leading-relaxed">主動聯繫一位正處於低潮或病痛中的肢體，用經文去鼓勵他，成為他「堅壯手、穩固膝」的幫助。</p>
+                </div>
+                <div class="glass-panel p-8 hover:bg-gold-500/5 transition-all">
+                    <p class="text-gold-500 font-black text-4xl mb-4 opacity-20">03</p>
+                    <p class="text-lg leading-relaxed">檢視生活模式，斷絕與「聖路」不符的習慣或隱而未現的罪，向神悔改，尋求屬靈同伴監督。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章全文 -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-12">
+                <span class="section-icon">📖</span>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">講章文稿</h2>
+            </div>
+            <div class="glass-panel p-8 md:p-16 space-y-10 leading-loose text-gray-200">
+                <h3 class="text-3xl md:text-4xl font-serif font-black text-center mb-12">賽 35:1-10: 曠野綻放玫瑰：經歷神聖的復興與歸回</h3>
+                
+                <p class="text-xl">弟兄姊妹，平安。今天我們要進入一段充滿盼望的經文——以賽亞書第三十五章。在我們的人生旅途中，常常會覺得自己正走在乾旱無水的曠野裡，前途茫茫，身心俱疲。但神今天要透過這段經文告訴我們：<span class="text-gold-400 font-bold border-b-2 border-gold-500/50">在神的恩典中，曠野不僅不是終點，反而是神蹟發生的舞臺。</span></p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">第一段：曠野的翻轉——從枯乾到榮耀</h4>
+                    <p>讓我們先看第一到第四節。經文說：「曠野和乾旱之地必然歡喜；沙漠也必快樂；又像玫瑰開花...人必看見耶和華的榮耀，我們神的華美。」</p>
+                    <p>弟兄姊妹，曠野怎麼可能自己歡喜？沙漠怎能開出玫瑰？這完全違背了自然規律。但這正是神工作的法則。當我們處在人生的低谷，當我們的手發軟、膝蓋發抖時，神對我們發出了一個命令：<span class="font-bold text-white underline decoration-gold-500">「你們要剛強，不要懼怕。看哪，你們的神必來...必來拯救你們。」</span></p>
+                    <p>這裡的「剛強」(Chazaq)，意思是要緊緊抓住神！生命最荒涼的時刻，往往是神恩雨降下的前夕。司布真曾說：「神在黑暗中給我們的應許，比在光明中給我們的更為寶貴。」你的曠野即將看見神的榮耀！</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">第二段：生命的醫治——從殘缺到湧流</h4>
+                    <p>接著，神不僅改變外在環境，祂更要進行內在的醫治。第五到第七節宣告：「那時，瞎子的眼必睜開；聾子的耳必開通。那時，瘸子必跳躍像鹿；啞巴的舌頭必能歌唱。」</p>
+                    <p>這是一幅何等震撼的畫面！神的大能要「湧流」(Baqa')，要劈開我們生命中最堅硬的磐石。許多時候，我們靈裡瞎眼，看不見神的帶領；我們靈裡耳聾，聽不見聖靈的微小聲音。但提摩太·凱勒提醒我們：「福音不是教導我們如何成為好人，而是讓死人活過來。」</p>
+                    <p><span class="text-gold-400 font-bold">當耶穌基督的救恩臨到，你生命中那被野狗佔據的乾渴之地，必然湧出活水的泉源。</span>神要醫治你最深處的殘缺，讓你能再次如鹿跳躍，唱出讚美的歌。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">第三段：神聖的歸途——從流浪到安息</h4>
+                    <p>最後，神為這些經歷醫治和復興的人，預備了一條回家的路。第八到第十節說：「在那裡必有一條大道，稱為聖路...污穢人不得經過，必專為贖民行走...在那裡必沒有獅子...只有贖民在那裡行走。」</p>
+                    <p>這條「聖路」是專為<span class="font-bold text-white">被救贖的民 (Ga'al)</span> 預備的。神親自付上了耶穌基督寶血的代價，把我們從世界的奴役中買贖回來。陶恕牧師說得很對：「通往神聖之路的門檻極高，要求我們放下一切罪惡；但這條路的恩典卻極深，牽著神的手，絕不會迷路。」</p>
+                    <p class="text-xl font-bold text-gold-400 text-center bg-white/5 py-6 rounded-lg">
+                        「並且耶和華救贖的民必歸回，歌唱來到錫安；永樂必歸到他們的頭上；他們必得著歡喜快樂，憂愁歎息盡都逃避。」
+                    </p>
+                    <p>弟兄姊妹，無論你現在身處多麼枯乾的曠野，神正向你發出邀請：接受祂的醫治，離開罪惡的泥沼，踏上這條聖路。讓我們帶著歡呼與喜樂，走向屬天的錫安，讓一切憂愁嘆息盡都逃避！阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言 Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-12">
+                <span class="section-icon">✨</span>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「基督徒的喜樂不是因為環境的順遂，而是因為知道自己被全能的神緊緊握在手中。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 司布真 / 《清晨甘露》</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「恩典是白白的，但絕不是廉價的。廉價的恩典是沒有十字架的恩典，是沒有耶穌基督的恩典。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 潘霍華 / 《追隨基督》</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「福音的真理是：我們比自己所敢相信的還要敗壞和充滿缺陷；但同時，我們在耶穌基督裡，比自己所敢盼望的還要被愛和被接納。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 提摩太·凱勒 / 《揮霍的上帝》</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「神正在尋找那些願意把一切都交給祂的人，好讓祂能完全充滿他們。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 陶恕 / 《渴慕神》</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「真正的醫治往往發生在我們願意勇敢面對自己內在最深的破碎，並將它帶到慈愛天父面前的那一刻。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 盧雲 / 《浪子回頭》</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「門徒的道路不是一場短跑，而是在同一個方向上長期的順服。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 畢德生 / 《長存的順服》</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「十字架不僅是神赦免我們罪惡的地方，更是神親自介入我們苦難、與我們同受痛苦的最高彰顯。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 約翰·史托德 / 《基督的十字架》</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「上帝的國度就是上帝的旨意得以成就的地方。當我們順服祂，我們的生活就成為祂國度的彰顯。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 魏樂德 / 《神聖的約定》</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「唯有當我們真實地認識上帝，我們才能真實地認識自己；也唯有當我們真實地認識自己，我們才能體會對上帝的認識。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 約翰·加爾文 / 《基督教要義》</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-panel p-6 border-l-2 border-gold-500/40">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「信心就是將自己毫無保留地投靠在神的話語上，相信祂所應許的，祂必成就。」</p>
+                    <p class="text-sm text-gold-500 font-bold">—— 馬丁·路德 / 《加拉太書註釋》</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center text-gray-500 text-sm">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full flex items-center justify-center shadow-2xl hover:bg-white transition-all transform hover:scale-110 z-50 animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for fade-in animations on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

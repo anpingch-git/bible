@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽31:1-9: 狂風中的避難所：放下虛假的倚靠，回轉歸向真神</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#feef8a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                        display: ['Ma Shan+Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(20, 20, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(250, 204, 21, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #facc15;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass py-4 px-6 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <span class="text-gold-400 font-bold tracking-wider hidden md:block">以賽亞書 31:1-9</span>
+            <div class="flex items-center space-x-6 text-sm font-semibold overflow-x-auto whitespace-nowrap scrollbar-hide">
+                <a href="#prayer-section" class="nav-link relative text-gray-300 hover:text-gold-400 transition">禱告</a>
+                <a href="#outline-section" class="nav-link relative text-gray-300 hover:text-gold-400 transition">大綱</a>
+                <a href="#sermon-section" class="nav-link relative text-gray-300 hover:text-gold-400 transition">講章</a>
+                <a href="#quotes-section" class="nav-link relative text-gray-300 hover:text-gold-400 transition">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 scale-105">
+            <img src='https://opal.google/board/blobs/626e86a2-f469-46fb-b437-b78954a535ba' alt='media_1' class="w-full h-full object-cover opacity-60 filter brightness-75" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-dark-900/50"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl px-6 text-center">
+            <p class="text-gold-400 font-bold tracking-[0.3em] mb-4 animate-pulse uppercase text-sm md:text-base">Isaiah 31:1-9</p>
+            <h1 class="text-4xl md:text-7xl font-serif font-black mb-8 leading-tight tracking-tight">
+                狂風中的避難所：<br/>
+                <span class="text-gradient">放下虛假的倚靠，回轉歸向真神</span>
+            </h1>
+            
+            <div class="glass p-6 md:p-8 rounded-2xl max-w-3xl mx-auto border-gold-500/20 shadow-2xl">
+                <p class="text-xl md:text-2xl font-serif italic text-gold-100/90 leading-relaxed mb-4">
+                    「禍哉！那些下埃及求幫助的，是因仗賴馬匹，倚靠甚多的車輛，並倚靠強壯的馬兵，卻不仰望以色列的聖者，也不求問耶和華。」
+                </p>
+                <p class="text-gold-500 font-bold">— 以賽亞書 31:1</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer-section" class="scroll-mt-32">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-gold-600/20 rounded-full flex items-center justify-center mb-6 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21c4.418 0 8-3.582 8-8V5l-8-3-8 3v8c0 4.418 3.582 8 8 8z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-10 text-white">開啟禱告</h2>
+                <div class="glass p-8 md:p-12 rounded-3xl max-w-4xl border-white/5 relative">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-5xl opacity-20">❝</span>
+                    <p class="text-lg md:text-xl leading-loose text-gray-300 font-serif">
+                        親愛的天父，我們承認在面對生命的風暴與危機時，我們常像昔日的猶大人一樣，急於尋找眼前的「埃及」——那些看得見的資源、金錢、人脈或世俗的法則來成為我們的倚靠。主啊，赦免我們瞎眼，忘記了祢才是那位大有能力的萬軍之耶和華。求祢的聖靈今天透過以賽亞書對我們的心說話，擊碎我們心中那些虛假的偶像與倚靠，呼召我們重新回轉、專心仰望祢。奉主耶穌基督得勝的名求，阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline-section" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-gold-600/20 rounded-xl flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">講道大綱導覽</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#outline-1" class="glass p-6 rounded-2xl bento-card border-l-4 border-l-gold-500">
+                    <p class="text-xs text-gold-400 font-bold mb-2">第 1-3 節</p>
+                    <h3 class="text-lg font-serif font-bold leading-tight">虛幻的倚靠：屬肉體的拯救必然落空</h3>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-xs font-semibold opacity-50">點擊探索 ➔</span>
+                    </div>
+                </a>
+                <a href="#outline-2" class="glass p-6 rounded-2xl bento-card border-l-4 border-l-gold-500">
+                    <p class="text-xs text-gold-400 font-bold mb-2">第 4-5 節</p>
+                    <h3 class="text-lg font-serif font-bold leading-tight">堅定的護衛：獅子與飛鳥般的萬軍耶和華</h3>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-xs font-semibold opacity-50">點擊探索 ➔</span>
+                    </div>
+                </a>
+                <a href="#outline-3" class="glass p-6 rounded-2xl bento-card border-l-4 border-l-gold-500">
+                    <p class="text-xs text-gold-400 font-bold mb-2">第 6-9 節</p>
+                    <h3 class="text-lg font-serif font-bold leading-tight">悔改的呼召：拋棄偶像，經歷屬神得勝</h3>
+                    <div class="mt-4 flex justify-end">
+                        <span class="text-xs font-semibold opacity-50">點擊探索 ➔</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <article id="outline-1" class="scroll-mt-32">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="px-3 py-1 bg-gold-600/30 text-gold-400 text-xs font-bold rounded-full">SECTION 01</span>
+                        <h3 class="text-2xl font-serif font-bold">第一段：虛幻的倚靠——屬肉體的拯救必然落空 (賽 31:1-3)</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-5 glass p-8 rounded-3xl border-gold-500/10">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 008 4h1a5 5 0 008-4 7.993 7.993 0 00-7-7.196V4a1 1 0 00-2 0v.804z" />
+                                </svg>
+                                引用經文
+                            </h4>
+                            <p class="text-gray-300 font-serif leading-relaxed italic border-l-2 border-gold-800/50 pl-4">
+                                禍哉！那些下埃及求幫助的，是因仗賴馬匹，倚靠甚多的車輛，並倚靠強壯的馬兵，卻不仰望以色列的聖者，也不求問耶和華。其實，耶和華有智慧... 埃及人不過是人，並非神；他們的馬不過是血肉，並非靈。
+                            </p>
+                            
+                            <div class="mt-8 space-y-6">
+                                <div>
+                                    <h4 class="text-gold-400 font-bold mb-2">關鍵原文</h4>
+                                    <ul class="space-y-3 text-sm">
+                                        <li class="bg-white/5 p-3 rounded-lg"><strong class="text-gold-200">仰望 (שָׁ生ָה / sha'ah)：</strong> 原意為「注視」、「定睛看」。</li>
+                                        <li class="bg-white/5 p-3 rounded-lg"><strong class="text-gold-200">血肉 (בָּשָׂר / basar) vs. 靈 (רוּחַ / ruach)：</strong> 脆弱肉體與永恆大能的對比。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 space-y-8">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    問題與解析
+                                </h4>
+                                <p class="text-gold-100 font-bold mb-2">為什麼我們在危機中總想先找「埃及」而不是找神？</p>
+                                <p class="text-gray-400 leading-relaxed">因為「埃及」是肉眼可見的。馬匹和戰車代表著強大的武力與立即的效率。人的墮落本性渴望掌控權與即時的安全感，而覺得「禱告」緩不濟急。</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-dark-800 p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold-600 font-bold text-xs uppercase mb-3">生活例證</h5>
+                                    <p class="text-sm text-gray-300 leading-relaxed">企業家面臨資金鏈斷裂，先找高利貸而非神，結果幫助人與被幫助的一同滅亡，直到徹底謙卑才重見曙光。</p>
+                                </div>
+                                <div class="bg-dark-800 p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold-600 font-bold text-xs uppercase mb-3">大師名言</h5>
+                                    <p class="text-sm italic font-serif text-gray-300">「偶像就是任何比上帝更根本地成為你生命意義和安全感來源的事物。」——提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="outline-2" class="scroll-mt-32">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="px-3 py-1 bg-gold-600/30 text-gold-400 text-xs font-bold rounded-full">SECTION 02</span>
+                        <h3 class="text-2xl font-serif font-bold">第二段：堅定的護衛——獅子與飛鳥般的萬軍之耶和華 (賽 31:4-5)</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-7 space-y-8 order-2 lg:order-1">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    問題與解析
+                                </h4>
+                                <p class="text-gold-100 font-bold mb-2">神有時像咆哮的獅子，有時像搧翅的飛鳥，反映了神怎樣的屬性？</p>
+                                <p class="text-gray-400 leading-relaxed">獅子代表「公義與威嚴」，對仇敵毫不退縮；飛鳥代表「慈愛與溫柔」，護衛幼鳥般保護子民。這表明神既有能力擊退外敵，又有溫柔撫慰恐懼。</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-dark-800 p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold-600 font-bold text-xs uppercase mb-3">護雛的鳥</h5>
+                                    <p class="text-sm text-gray-300 leading-relaxed">黃石公園大火後，被燒焦的母鳥張開翅膀，底下竟有生還的幼鳥。這是神「越門保守」的深刻寫照。</p>
+                                </div>
+                                <div class="bg-dark-800 p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold-600 font-bold text-xs uppercase mb-3">大師名言</h5>
+                                    <p class="text-sm italic font-serif text-gray-300">「上帝的旨意絕不會將你帶到上帝的恩典無法保護你的地方。」——葛理翰</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-5 glass p-8 rounded-3xl border-gold-500/10 order-1 lg:order-2">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 008 4h1a5 5 0 008-4 7.993 7.993 0 00-7-7.196V4a1 1 0 00-2 0v.804z" />
+                                </svg>
+                                引用經文
+                            </h4>
+                            <p class="text-gray-300 font-serif leading-relaxed italic border-l-2 border-gold-800/50 pl-4">
+                                獅子和少壯獅子護食咆哮，就是喊許多牧人來攻擊牠，牠總不因他們的聲音驚惶... 雀鳥怎樣搧翅覆雛，萬軍之耶和華也要照樣保護耶路撒冷。
+                            </p>
+                            
+                            <div class="mt-8 space-y-6">
+                                <div>
+                                    <h4 class="text-gold-400 font-bold mb-2">關鍵原文</h4>
+                                    <ul class="space-y-3 text-sm">
+                                        <li class="bg-white/5 p-3 rounded-lg"><strong class="text-gold-200">保護 (גָּנַן / ganan)：</strong> 「覆蓋」、「環繞防禦」。</li>
+                                        <li class="bg-white/5 p-3 rounded-lg"><strong class="text-gold-200">越門保守 (פָּסַח / pasach)：</strong> 「逾越節」(Passover) 字根。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="outline-3" class="scroll-mt-32">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="px-3 py-1 bg-gold-600/30 text-gold-400 text-xs font-bold rounded-full">SECTION 03</span>
+                        <h3 class="text-2xl font-serif font-bold">第三段：悔改的呼召——拋棄偶像，經歷屬神的得勝 (賽 31:6-9)</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-5 glass p-8 rounded-3xl border-gold-500/10">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 008 4h1a5 5 0 008-4 7.993 7.993 0 00-7-7.196V4a1 1 0 00-2 0v.804z" />
+                                </svg>
+                                引用經文
+                            </h4>
+                            <p class="text-gray-300 font-serif leading-relaxed italic border-l-2 border-gold-800/50 pl-4">
+                                以色列人哪，你們深深地悖逆耶和華，現今要歸向他。到那日，各人必將他製造惹罪的、金的銀的偶像拋棄了。亞述人必倒在刀下，並非人的刀。
+                            </p>
+                            
+                            <div class="mt-8 space-y-6">
+                                <div>
+                                    <h4 class="text-gold-400 font-bold mb-2">關鍵原文</h4>
+                                    <ul class="space-y-3 text-sm">
+                                        <li class="bg-white/5 p-3 rounded-lg"><strong class="text-gold-200">歸向 (שׁוּב / shub)：</strong> 180度的方向改變。</li>
+                                        <li class="bg-white/5 p-3 rounded-lg"><strong class="text-gold-200">拋棄 (מָאַס / ma'as)：</strong> 「拒絕」、「視為毫無價值」。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 space-y-8">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    問題與解析
+                                </h4>
+                                <p class="text-gold-100 font-bold mb-2">真正的悔改需要採取什麼實際的行動？</p>
+                                <p class="text-gray-400 leading-relaxed">悔改必須伴隨「拋棄偶像」的行動。當猶大國拋棄金銀偶像，亞述滅亡「並非人的刀」，證明人放下籌算，上帝的超然得勝就會彰顯。</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-dark-800 p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold-600 font-bold text-xs uppercase mb-3">堅固保障</h5>
+                                    <p class="text-sm text-gray-300 leading-relaxed">馬丁路德在宗教改革中不求世俗軍隊，深知真保障在神。他寫下《堅固保障》，歷史證明神用「並非人的刀」保守了改革。</p>
+                                </div>
+                                <div class="bg-dark-800 p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold-600 font-bold text-xs uppercase mb-3">大師名言</h5>
+                                    <p class="text-sm italic font-serif text-gray-300">「悔改不僅是為過去的罪惡哭泣，更是轉向耶穌基督，將生命交托給祂。」——約翰·史托德</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="glass p-10 rounded-[2rem] border-gold-500/10">
+                <h3 class="text-2xl font-serif font-bold mb-8 flex items-center gap-3">
+                    <span class="text-gold-400">●</span> 講道應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-600/20 text-gold-400 flex items-center justify-center font-bold text-sm">1</span>
+                        <p class="text-gray-300"><strong>診斷生命中的「埃及」：</strong> 檢視壓力時第一時間抓取的浮木是什麼？是金錢、人際還是自己的聰明？</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-600/20 text-gold-400 flex items-center justify-center font-bold text-sm">2</span>
+                        <p class="text-gray-300"><strong>經歷「越門保守」的平安：</strong> 練習安靜等候，默想獅子的大能與母鳥的溫柔，把掌控權交還給神。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-600/20 text-gold-400 flex items-center justify-center font-bold text-sm">3</span>
+                        <p class="text-gray-300"><strong>採取「拋棄偶像」的實踐：</strong> 找出取代神位置的事物，勇敢做出切割，以具體行動表明回轉。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass p-10 rounded-[2rem] border-gold-500/10 flex flex-col justify-center">
+                <h3 class="text-2xl font-serif font-bold mb-8 flex items-center gap-3">
+                    <span class="text-gold-400">●</span> 結論：關鍵字
+                </h3>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-gold-600/10 border border-gold-600/30 p-6 rounded-2xl text-center">
+                        <p class="text-gold-400 text-2xl font-bold font-serif mb-1">仰望</p>
+                        <p class="text-xs uppercase opacity-50">Look / Trust</p>
+                    </div>
+                    <div class="bg-gold-600/10 border border-gold-600/30 p-6 rounded-2xl text-center">
+                        <p class="text-gold-400 text-2xl font-bold font-serif mb-1">保護</p>
+                        <p class="text-xs uppercase opacity-50">Protection</p>
+                    </div>
+                    <div class="bg-gold-600/10 border border-gold-600/30 p-6 rounded-2xl text-center">
+                        <p class="text-gold-400 text-2xl font-bold font-serif mb-1">歸向</p>
+                        <p class="text-xs uppercase opacity-50">Return</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action Section -->
+        <section class="bg-gold-600/10 p-10 rounded-[2.5rem] border border-gold-600/20">
+            <h3 class="text-3xl font-serif font-bold mb-10 text-center">回應行動</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark-800/80 p-8 rounded-2xl hover:bg-dark-700 transition">
+                    <div class="w-10 h-10 mb-4 text-gold-400">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-gold-200 mb-3 text-lg">禱告停看聽</h4>
+                    <p class="text-sm text-gray-400">在做任何決定前，先停下來做3分鐘禱告，求問耶和華。</p>
+                </div>
+                <div class="bg-dark-800/80 p-8 rounded-2xl hover:bg-dark-700 transition">
+                    <div class="w-10 h-10 mb-4 text-gold-400">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-gold-200 mb-3 text-lg">撕毀埃及清單</h4>
+                    <p class="text-sm text-gray-400">寫下焦慮的事與非神方法。禱告後撕毀，象徵拋棄偶像。</p>
+                </div>
+                <div class="bg-dark-800/80 p-8 rounded-2xl hover:bg-dark-700 transition">
+                    <div class="w-10 h-10 mb-4 text-gold-400">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-gold-200 mb-3 text-lg">偶像禁食</h4>
+                    <p class="text-sm text-gray-400">節制佔據大量時間的源頭（如社群、股市），改為讀經仰望。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript Section -->
+        <section id="sermon-section" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-gold-600/20 rounded-xl flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">完整講章文稿</h2>
+            </div>
+
+            <div class="glass p-8 md:p-16 rounded-[3rem] border-white/5 space-y-10 leading-relaxed font-serif text-gray-300 max-w-4xl mx-auto shadow-inner">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl text-gold-400 font-bold mb-4">狂風中的避難所：放下虛假的倚靠，回轉歸向真神</h3>
+                    <div class="w-24 h-1 bg-gold-600 mx-auto opacity-30"></div>
+                </div>
+
+                <p class="text-lg">弟兄姐妹們，當你遭遇人生突如其來的風暴時，你第一個動作是什麼？是立刻拿起手機尋找能幫忙的人脈？還是焦慮地查看銀行戶頭的數字？今天，以賽亞書31章向我們發出了一個震撼的呼喊。</p>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-white border-l-4 border-gold-500 pl-4">【第一段：虛幻的倚靠——屬肉體的拯救必然落空】</h4>
+                    <p class="bg-gold-600/10 p-6 rounded-2xl italic text-gold-100 font-bold">「禍哉！那些下埃及求幫助的，是因仗賴馬匹，倚靠甚多的車輛，並倚靠強壯的馬兵，卻不仰望以色列的聖者，也不求問耶和華。」（賽 31:1）</p>
+                    <p>為什麼神要說「禍哉」？因為猶大國找錯了避難所。我們常犯同樣的錯誤，在危機中，我們總是喜歡尋找看得見、摸得著的「埃及」。但神提醒我們，世上一切的勢力不過是「血肉」，是短暫且脆弱的；唯有神是「靈」。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-white border-l-4 border-gold-500 pl-4">【第二段：堅定的護衛——獅子與飛鳥般的萬軍之耶和華】</h4>
+                    <p class="bg-gold-600/10 p-6 rounded-2xl italic text-gold-100 font-bold">「雀鳥怎樣搧翅覆雛，萬軍之耶和華也要照樣保護耶路撒冷。他必保護拯救，要越門保守。」（賽 31:5）</p>
+                    <p>神宣告祂自己就是那真正的避難所。面對仇敵，祂是護食咆哮的「獅子」；面對兒女，祂卻是搧翅覆雛的「飛鳥」。那宇宙間最強大的獅子，正用祂溫柔的翅膀將你緊緊包覆。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-white border-l-4 border-gold-500 pl-4">【第三段：悔改的呼召——拋棄偶像，經歷屬神的得勝】</h4>
+                    <p class="bg-gold-600/10 p-6 rounded-2xl italic text-gold-100 font-bold">「以色列人哪，你們深深地悖逆耶和華，現今要歸向他。」</p>
+                    <p>真正的悔改，不只是心裡覺得抱歉，而是需要實際的行動。當你願意真正拋下這些虛假的倚靠，單單仰望神時，我們會看見神親自出手。亞述人必倒在刀下，但「並非人的刀」。當你停止用自己的方法去掙扎，神那超越人所能想像的拯救就會臨到。</p>
+                </div>
+
+                <div class="text-center pt-10">
+                    <p class="text-xl font-bold text-gold-400">放下虛假的倚靠，真實地回轉歸向祂！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes-section" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-gold-600/20 rounded-xl flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl border-white/5 hover:border-gold-500/30 transition">
+                    <p class="text-gray-300 mb-3 italic font-serif leading-relaxed">「偶像就是任何比上帝更根本地成為你生命意義和安全感來源的事物。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">— 提摩太·凱勒，《山寨版的上帝》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5 hover:border-gold-500/30 transition">
+                    <p class="text-gray-300 mb-3 italic font-serif leading-relaxed">「人心的本質，就是一個不斷製造偶像的工廠。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5 hover:border-gold-500/30 transition">
+                    <p class="text-gray-300 mb-3 italic font-serif leading-relaxed">「除了上帝之外，我們所倚靠的任何事物，最終都會成為毀滅我們的網羅。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5 hover:border-gold-500/30 transition">
+                    <p class="text-gray-300 mb-3 italic font-serif leading-relaxed">「上帝的旨意絕不會將你帶到上帝的恩典無法保護你的地方。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">— 葛理翰，《葛理翰每日靈修》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5 hover:border-gold-500/30 transition">
+                    <p class="text-gray-300 mb-3 italic font-serif leading-relaxed">「信心就是對上帝的話語說『阿們』，並在看不見前方道路時依然緊抓不放。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">— 馬丁·路德，《加拉太書註釋》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-white/5 hover:border-gold-500/30 transition">
+                    <p class="text-gray-300 mb-3 italic font-serif leading-relaxed">「耶和華是我們的盾牌，在祂的翅膀下我們得著完全的安息。你若一無所有只剩上帝，你將發現上帝已經足夠。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">— 司布真，《清晨甘露》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="text-center pb-20">
+            <div class="inline-flex items-center gap-2 text-gray-500 text-sm bg-white/5 px-6 py-2 rounded-full">
+                <svg fill="currentColor" class="w-4 h-4" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Start Button -->
+    <a href="#prayer-section" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition active:scale-95 z-50 animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offset = 100; // Height of nav bar + extra
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

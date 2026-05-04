@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒12:1-11:黑夜中的微光：當切切的禱告啟動奇妙的拯救</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18d',
+                            300: '#fbe44f',
+                            400: '#f9d31d',
+                            500: '#eab308', // Primary gold
+                            600: '#ca8a04',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#16161a',
+                            700: '#23232a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #eab308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #f9d31d, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: rgba(234, 179, 8, 0.1);
+            border-radius: 12px;
+            color: #eab308;
+        }
+        .outline-button {
+            border: 1px solid rgba(234, 179, 8, 0.4);
+            transition: all 0.3s ease;
+        }
+        .outline-button:hover {
+            background: rgba(234, 179, 8, 0.1);
+            border-color: #eab308;
+            transform: translateY(-2px);
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #eab308;
+            color: #000;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(234, 179, 8, 0.3);
+            z-index: 50;
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Banner -->
+    <div class="relative w-full h-[60vh] md:h-[70vh] overflow-hidden">
+        <img src='https://opal.google/board/blobs/6fb9b566-9f53-4801-87f4-0ccb332e6893' alt='media_1' class="w-full h-full object-cover banner-mask brightness-50" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+            <span class="text-gold-400 font-display font-semibold tracking-widest mb-4 uppercase">Sermon Insights</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black font-display mb-6 tracking-tight">
+                黑夜中的微光
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-2xl font-light leading-relaxed">
+                當切切的禱告啟動奇妙的拯救
+            </p>
+            <div class="mt-8 flex items-center gap-2 text-gold-400 bg-black/40 px-6 py-2 rounded-full border border-gold-500/30 backdrop-blur-md">
+                <span class="font-bold">徒12:1-11</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="hidden md:block text-gold-500 font-bold tracking-tighter text-xl">徒12:1-11</div>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base font-medium overflow-x-auto no-scrollbar whitespace-nowrap">
+                <a href="#prayer" class="nav-link text-gray-300 hover:text-gold-400">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300 hover:text-gold-400">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300 hover:text-gold-400">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300 hover:text-gold-400">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Golden Verse -->
+        <section class="relative">
+            <div class="absolute -top-10 -left-10 text-9xl text-gold-500/10 font-black pointer-events-none italic">VERSE</div>
+            <div class="glass-card p-8 md:p-12 border-l-4 border-l-gold-500 text-center">
+                <h2 class="text-gold-500 text-sm font-bold tracking-[0.2em] mb-6 uppercase">年度金句</h2>
+                <blockquote class="text-2xl md:text-4xl font-bold leading-tight md:leading-relaxed mb-6">
+                    「於是彼得被囚在監裡；<span class="gradient-text">教會卻為他切切的禱告神。</span>」
+                </blockquote>
+                <p class="text-gray-400 font-display">使徒行傳 12:5</p>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center mb-8">
+                <span class="section-icon">🙏</span>
+                <h2 class="text-3xl font-bold tracking-tight">開路禱告</h2>
+            </div>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-6 bg-gradient-to-br from-white/5 to-transparent p-8 rounded-3xl border border-white/5">
+                <p>
+                    主啊，我們來到祢施恩的寶座前。在我們生命的黑夜中，有時我們如同彼得一樣，被各樣的困難、疾病、憂慮或罪惡的鐵鍊鎖著，看不見明天的希望。
+                </p>
+                <p>
+                    但主啊，我們相信祢是使鐵鍊斷裂的上帝，祢是掌管黑夜與明天的君王。求祢賜給我們如同初代教會般「切切禱告」的心，也賜給我們如同彼得在風暴中安睡的平靜。願祢的使者在我們的困境中彰顯奇妙的拯救，讓我們醒悟過來時，能將一切榮耀歸給祢。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center mb-8">
+                <span class="section-icon">📜</span>
+                <h2 class="text-3xl font-bold tracking-tight">訊息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="#part1" class="outline-button p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-gold-500 font-display text-2xl font-bold">01</span>
+                        <span class="text-lg font-bold group-hover:text-gold-400 transition-colors">黑暗中的危機與切切的呼求</span>
+                    </div>
+                    <span class="text-gray-500 text-sm font-display mt-2 md:mt-0">徒 12:1-5</span>
+                </a>
+                <a href="#part2" class="outline-button p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-gold-500 font-display text-2xl font-bold">02</span>
+                        <span class="text-lg font-bold group-hover:text-gold-400 transition-colors">絕境中的安息與超然的介入</span>
+                    </div>
+                    <span class="text-gray-500 text-sm font-display mt-2 md:mt-0">徒 12:6-8</span>
+                </a>
+                <a href="#part3" class="outline-button p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-gold-500 font-display text-2xl font-bold">03</span>
+                        <span class="text-lg font-bold group-hover:text-gold-400 transition-colors">鎖鏈後的醒悟與真實的拯救</span>
+                    </div>
+                    <span class="text-gray-500 text-sm font-display mt-2 md:mt-0">徒 12:9-11</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Section -->
+        <section class="space-y-32">
+            
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-32">
+                <div class="flex items-center mb-6">
+                    <span class="text-gold-500 font-display font-black text-6xl opacity-20 mr-4">I</span>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gold-400">黑暗中的危機與切切的呼求</h3>
+                </div>
+                
+                <div class="glass-card overflow-hidden">
+                    <div class="p-8 space-y-8">
+                        <div class="bg-dark-700/50 p-6 rounded-xl border-l-2 border-gold-500">
+                            <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">引用經文</h4>
+                            <p class="text-gray-300 italic">「希律拿了彼得，收在監裡...於是彼得被囚在監裡；教會卻為他切切的禱告神。」</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="flex items-center text-gold-400 font-bold mb-4">
+                                    <span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> 關鍵原文 (Keyword)
+                                </h4>
+                                <p class="text-gray-300">
+                                    <strong class="text-white">切切的 (ektenōs)：</strong> 意指「延伸、拉緊、竭盡全力」。形容肌肉緊繃到極點，或賽馬全力奔跑的姿態。這表明教會的禱告是靈裡付上極大代價、持續不斷且迫切的呼求。
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="flex items-center text-gold-400 font-bold mb-4">
+                                    <span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> 靈魂叩問 (Q&A)
+                                </h4>
+                                <p class="text-gray-300">
+                                    當過去的禱告似乎「失敗」，面對新的危機如何繼續？<br>
+                                    <span class="text-sm mt-2 block text-gray-400">解析：禱告的動力不建立在「神的方式成就」，而是「神的信實」。</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/10">
+                            <h4 class="font-bold text-gold-500 mb-2 italic">「禱告不是克服上帝的不情願，而是抓住上帝的最高意願。」</h4>
+                            <p class="text-right text-sm text-gray-500">— 馬丁·路德 (Martin Luther)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-32">
+                <div class="flex items-center mb-6">
+                    <span class="text-gold-500 font-display font-black text-6xl opacity-20 mr-4">II</span>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gold-400">絕境中的安息與超然的介入</h3>
+                </div>
+                <div class="glass-card p-8 space-y-8">
+                    <div class="bg-dark-700/50 p-6 rounded-xl border-l-2 border-gold-500">
+                        <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">引用經文</h4>
+                        <p class="text-gray-300 italic">「希律將要提他出來的前一夜，彼得被兩條鐵鍊鎖著，睡在兩個兵丁當中...天使拍彼得的肋旁，拍醒了他。」</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="flex items-center text-gold-400 font-bold mb-4">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> 關鍵原文 (Keyword)
+                            </h4>
+                            <p class="text-gray-300">
+                                <strong class="text-white">睡 (koimaō)：</strong> 指深沉的睡眠。彼得甚至需要天使「拍」（patassō，重擊）他的肋旁才能把他叫醒。
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="flex items-center text-gold-400 font-bold mb-4">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> 靈魂叩問 (Q&A)
+                            </h4>
+                            <p class="text-gray-300">
+                                這種超越環境的平安從何而來？<br>
+                                <span class="text-sm mt-2 block text-gray-400">解析：彼得的安睡是他對神主權完全交託的記號。放下掌控權，交給掌管明日的神。</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/10">
+                        <h4 class="font-bold text-gold-500 mb-2 italic">「信賴上帝，就是在不明白祂作為的時候，依然安息在祂的品格中。」</h4>
+                        <p class="text-right text-sm text-gray-500">— 查爾斯·史丹利 (Charles Stanley)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-32">
+                <div class="flex items-center mb-6">
+                    <span class="text-gold-500 font-display font-black text-6xl opacity-20 mr-4">III</span>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gold-400">鎖鏈後的醒悟與真實的拯救</h3>
+                </div>
+                <div class="glass-card p-8 space-y-8">
+                    <div class="bg-dark-700/50 p-6 rounded-xl border-l-2 border-gold-500">
+                        <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">引用經文</h4>
+                        <p class="text-gray-300 italic">「臨街的鐵門，那門自己開了...彼得醒悟過來，說：『我現在真知道主差遣他的使者，救我脫離希律的手...』」</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="flex items-center text-gold-400 font-bold mb-4">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> 關鍵原文 (Keyword)
+                            </h4>
+                            <p class="text-gray-300">
+                                <strong class="text-white">真知道 (alēthōs)：</strong> 意指「確切地、毫無疑問地」。從半夢半醒到認知到神真實的介入。
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="flex items-center text-gold-400 font-bold mb-4">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full mr-2"></span> 靈魂叩問 (Q&A)
+                            </h4>
+                            <p class="text-gray-300">
+                                為什麼當下往往渾然不覺，事後才「醒悟過來」？<br>
+                                <span class="text-sm mt-2 block text-gray-400">解析：神的拯救超乎邏輯，神不要我們停留在驚訝，而是引導我們一步步走出監牢。</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/10">
+                        <h4 class="font-bold text-gold-500 mb-2 italic">「我們總是往前看去過日子，但卻必須往後看才能明白人生的意義。」</h4>
+                        <p class="text-right text-sm text-gray-500">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="scroll-mt-32">
+            <div class="flex items-center mb-8">
+                <span class="section-icon">🎯</span>
+                <h2 class="text-3xl font-bold tracking-tight">講道應用方向</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-dark-800 border border-white/5 rounded-2xl">
+                    <h4 class="font-bold mb-2">面對無法改變的現實</h4>
+                    <p class="text-gray-400 text-sm">即使牢門緊鎖，不要低估神打破僵局的能力。鼓勵信徒將生命中的「死胡同」交給神。</p>
+                </div>
+                <div class="p-6 bg-dark-800 border border-white/5 rounded-2xl">
+                    <h4 class="font-bold mb-2">重拾切切禱告的祭壇</h4>
+                    <p class="text-gray-400 text-sm">禱告不能是敷衍，呼籲會眾在小組中為彼此的難處付代價地迫切代求。</p>
+                </div>
+                <div class="p-6 bg-dark-800 border border-white/5 rounded-2xl">
+                    <h4 class="font-bold mb-2">學習在風暴中「安睡」</h4>
+                    <p class="text-gray-400 text-sm">檢視焦慮，藉著宣告神的應許，將重擔卸下，經歷神所賜的安息。</p>
+                </div>
+                <div class="p-6 bg-dark-800 border border-white/5 rounded-2xl">
+                    <h4 class="font-bold mb-2">順服神一步步的引導</h4>
+                    <p class="text-gray-400 text-sm">先「束上帶子、穿上鞋、跟著走」，在順服中經歷神完全的拯救。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Keywords -->
+        <section class="flex flex-wrap justify-center gap-4 md:gap-8">
+            <div class="flex flex-col items-center">
+                <span class="text-gold-500 font-display font-black text-5xl mb-2">迫切</span>
+                <span class="text-gray-500 tracking-widest text-xs uppercase">Fervent</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="text-gold-500 font-display font-black text-5xl mb-2">安息</span>
+                <span class="text-gray-500 tracking-widest text-xs uppercase">Rest</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="text-gold-500 font-display font-black text-5xl mb-2">奇妙</span>
+                <span class="text-gray-500 tracking-widest text-xs uppercase">Miraculous</span>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center mb-8">
+                <span class="section-icon">📖</span>
+                <h2 class="text-3xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 prose prose-invert prose-gold max-w-none space-y-10">
+                <h2 class="text-3xl font-bold leading-tight gradient-text border-b border-white/10 pb-6">徒12:1-11:黑夜中的微光</h2>
+                
+                <p class="text-lg leading-relaxed text-gray-200">
+                    弟兄姊妹們，今天我們要進入使徒行傳第12章，來看一個充滿張力、危機與神蹟的故事。這段經文給了我們一個極大的盼望。我們的主題是：<span class="font-bold text-white">黑夜中的微光：當切切的禱告啟動奇妙的拯救。</span>
+                </p>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gold-400 mb-4">第一段：黑暗中的危機與切切的呼求</h3>
+                    <p class="text-gray-300">
+                        當時的教會正面臨前所未有的黑夜。希律王剛剛殺了雅各，看見猶太人高興，就得寸進尺，把彼得也抓了起來。然而，我們看見了整段經文的<span class="font-bold underline decoration-gold-500 underline-offset-4">金句：「於是彼得被囚在監裡；教會卻為他切切的禱告神。」</span>
+                        這個「切切的」，是指肌肉緊繃、竭盡全力的狀態。教會沒有氣餒，相反地，他們聚集在一起。這告訴我們，<span class="text-white font-bold">當現實越黑暗，我們的禱告就越要用力！</span>
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gold-400 mb-4">第二段：絕境中的安息與超然的介入</h3>
+                    <p class="text-gray-300">
+                        故事來到了行刑前一夜。彼得睡得極其深沉，連天使來了都沒醒。彼得怎麼能睡得著？因為他把生命的主權完全交給了神。<span class="text-white font-bold">真正的平安，不是因為鐵鍊被解開了，而是在鐵鍊中知道神與我同在。</span>就在這安息中，神超然的介入來臨了，鐵鍊自動脫落，拯救開始了！
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gold-400 mb-4">第三段：鎖鏈後的醒悟與真實的拯救</h3>
+                    <p class="text-gray-300">
+                        彼得迷迷糊糊地跟著天使走，直到那扇看似無法跨越的臨街鐵門「自己開了」。很多時候，神帶領我們度過難關，我們當下往往是懵懂的，但<span class="text-white font-bold">神要我們順服地穿上鞋、披上外衣、跟著走。當你走出困境，回頭一看，你就會「醒悟過來」。</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="bg-gold-500 p-8 md:p-12 rounded-[40px] text-black">
+            <h2 class="text-2xl font-black mb-8 flex items-center">
+                <span class="mr-3">🚀</span> 回應與實踐行動
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-2">
+                    <div class="text-3xl font-black opacity-30">01</div>
+                    <h4 class="font-bold text-lg">認領「不可能」禱告</h4>
+                    <p class="text-sm font-medium">本週為一個認為毫無希望的人或事，每天「切切的」禱告五分鐘。</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-3xl font-black opacity-30">02</div>
+                    <h4 class="font-bold text-lg">操練「安睡」交託</h4>
+                    <p class="text-sm font-medium">睡前寫下三個焦慮的「鐵鍊」，具體交給主，宣告：「我選擇安心睡覺。」</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-3xl font-black opacity-30">03</div>
+                    <h4 class="font-bold text-lg">分享「醒悟」恩典</h4>
+                    <p class="text-sm font-medium">記錄一段見證，並分享給一位正在經歷低潮的弟兄姊妹。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Carousel Style -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center mb-8">
+                <span class="section-icon">💡</span>
+                <h2 class="text-3xl font-bold tracking-tight">屬靈名言佳句</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「只有在我們承認自己完全無能為力的時候，我們才會開始真正地禱告。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 約翰·加爾文 (John Calvin)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「沒有一個人在沒有經過上帝允許的情況下，能碰上帝兒女的一根頭髮。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 馬丁·路德 (Martin Luther)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「當一切都絕望時，就是禱告最好的時機。即使在最深的黑夜，信心也能看見早晨的星光。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 司布真 (Charles Spurgeon)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「苦難不是上帝缺席的證明，而是祂正在預備我們經歷更深恩典的過程。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「上帝正在作工，只是我們常常沒有察覺。我們需要被聖靈開啟屬靈的眼睛。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 陶恕 (A.W. Tozer)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「只有順服的人才相信，只有相信的人才順服。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「恩典不反對努力，恩典只反對賺取。在屬靈成長中，我們必須有所行動。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 魏樂德 (Dallas Willard)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「基督徒的生活，就是在同一個方向上長期的順服。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 畢德生 (Eugene Peterson)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「等待是一段極為活躍的時期。等待意味著我們要專注於當下。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 盧雲 (Henri Nouwen)</p>
+                    </div>
+                    <div class="glass-card p-6 border-t-2 border-t-gold-500/50">
+                        <p class="text-gray-300 leading-relaxed mb-4">「在我們的軟弱中，神彰顯了祂最大的大能。」</p>
+                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">— 約翰·史托德 (John Stott)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-20 pb-10 text-center border-t border-white/5">
+            <p class="text-gray-500 text-sm flex items-center justify-center gap-2">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="floating-btn" title="回到禱告處">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+        </svg>
+    </a>
+
+</body>
+</html>

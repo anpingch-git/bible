@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查經筆記數位圖書館 v6.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
+        html { scroll-behavior: smooth; }
+        body { background-color: #050505; color: #fff; font-family: 'Noto Sans TC', sans-serif; margin: 0; padding-top: 80px; }
+        #top-toolbar { position: fixed; top: 0; left: 0; width: 100%; height: 70px; z-index: 1000; background: rgba(10, 10, 10, 0.7); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; transition: all 0.3s ease; }
+        .fixed-background { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-image: linear-gradient(to bottom, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.85) 100%), url('https://anpingch-git.github.io/bible/archive/image/old-testament/1ff3d2d3-8500-4ec6-ac75-a759229699ba.jpg'); background-size: cover; background-position: center; }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.4s; }
+        .glass-card:hover { transform: translateY(-8px); border-color: rgba(249, 210, 27, 0.5); }
+        .nav-link { font-weight: 800; color: #aaa; transition: 0.3s; cursor: pointer; font-size: 14px; }
+        .nav-link:hover { color: #f9d21b; }
+        .book-btn { aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; cursor: pointer; border: 1px solid rgba(249, 210, 27, 0.2); color: #f9d21b; transition: 0.3s; background: rgba(249, 210, 27, 0.05); }
+        .book-btn:hover { background: #f9d21b; color: #000; transform: scale(1.1); }
+        .book-btn.disabled { opacity: 0.1; cursor: not-allowed; }
+        .gold-gradient-text { background: linear-gradient(to right, #fff9c4, #f9d21b, #f57f17); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+    <div class="fixed-background"></div>
+    <nav id="top-toolbar">
+        <div class="max-w-7xl mx-auto w-full px-6 flex justify-between items-center">
+            <span id="toolbar-title" class="gold-gradient-text font-black text-2xl tracking-tighter cursor-pointer" onclick="showMap()">BIBLE MAP</span>
+            <div id="home-nav" class="flex gap-8 items-center">
+                <a href="#ot-section" class="nav-link">舊約</a> <a href="#nt-section" class="nav-link">新約</a>
+            </div>
+            <div id="gallery-nav" class="hidden w-full flex justify-between items-center ml-10">
+                <button class="bg-yellow-500/10 border border-yellow-500 text-yellow-500 px-4 py-1 rounded-full text-xs font-bold" onclick="showMap()">← 回首頁</button>
+                <div id="toolbar-pagination"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="max-w-7xl mx-auto px-6">
+        <header class="text-center mt-12 mb-16">
+            <h1 id="page-title" class="text-6xl md:text-8xl font-black tracking-tighter gold-gradient-text mb-4 uppercase">Bible Map</h1>
+        </header>
+        <div id="map-view" class="space-y-24">
+            <section id="ot-section"><div id="ot-grid" class="grid grid-cols-5 md:grid-cols-13 gap-3"></div></section>
+            <section id="nt-section"><div id="nt-grid" class="grid grid-cols-5 md:grid-cols-13 gap-3"></div></section>
+        </div>
+        <div id="gallery-view" class="hidden pb-20"><div id="note-grid" class="grid grid-cols-1 md:grid-cols-3 gap-10"></div></div>
+    </div>
+    <script>
+        const DB_URL = "database.json";
+        let fullDB = [], filtered = [], currentPage = 1, itemsPerPage = 9;
+        const bookFullName = {"創":"創世記","出":"出埃及記","詩":"詩篇","門":"腓利門書"}; // 此處可補完
+        const otBooks = ["創","出","利","民","申","書","士","得","撒上","撒下","王上","王下","代上","代下","拉","尼","斯","伯","詩","箴","傳","歌","賽","耶","哀","結","但","何","珥","摩","俄","拿","彌","鴻","哈","番","該","撒","瑪"];
+        const ntBooks = ["太","可","路","約","徒","羅","林前","林後","加","弗","腓","西","帖前","帖後","提前","提後","多","門","來","雅","彼前","彼後","約一","約二","約三","猶","啟"];
+
+        async function init() {
+            const res = await fetch(DB_URL + "?t=" + Date.now());
+            const data = await res.json(); fullDB = data.files || data;
+            renderMap();
+        }
+
+        function renderMap() {
+            const make = (books, el) => {
+                books.forEach(b => {
+                    const count = fullDB.filter(i => i.chapter.startsWith(b)).length;
+                    const btn = document.createElement('div');
+                    btn.className = `book-btn rounded-xl ${count===0?'disabled':''}`;
+                    btn.innerText = b; if(count>0) btn.onclick = () => showBook(b);
+                    document.getElementById(el).appendChild(btn);
+                });
+            };
+            make(otBooks, 'ot-grid'); make(ntBooks, 'nt-grid');
+        }
+
+        function showBook(abbr) {
+            filtered = fullDB.filter(i => i.chapter.startsWith(abbr));
+            document.getElementById('map-view').classList.add('hidden');
+            document.getElementById('gallery-view').classList.remove('hidden');
+            document.getElementById('home-nav').classList.add('hidden');
+            document.getElementById('gallery-nav').classList.remove('hidden');
+            document.getElementById('toolbar-title').innerText = abbr;
+            document.getElementById('page-title').innerText = bookFullName[abbr] || abbr;
+            renderNotes();
+        }
+
+        function renderNotes() {
+            const grid = document.getElementById('note-grid'); grid.innerHTML = '';
+            filtered.slice((currentPage-1)*itemsPerPage, currentPage*itemsPerPage).forEach(f => {
+                grid.innerHTML += `<div class="glass-card rounded-3xl p-8 h-72 flex flex-col justify-between">
+                    <a href="${f.path}">
+                        <span class="text-yellow-500 font-bold">${f.chapter}</span>
+                        <h2 class="text-2xl font-black mt-2">${f.title}</h2>
+                    </a>
+                    ${f.docId!=='NoDoc'?`<a href="https://docs.google.com/document/d/${f.docId}/export?format=pdf" class="text-xs text-red-400">PDF 下載</a>`:''}
+                </div>`;
+            });
+        }
+
+        function showMap() {
+            document.getElementById('map-view').classList.remove('hidden');
+            document.getElementById('gallery-view').classList.add('hidden');
+            document.getElementById('gallery-nav').classList.add('hidden');
+            document.getElementById('home-nav').classList.remove('hidden');
+            document.getElementById('toolbar-title').innerText = "BIBLE MAP";
+            document.getElementById('page-title').innerText = "Bible Map";
+        }
+        init();
+    </script>
+</body>
+</html>

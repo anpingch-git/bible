@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽41:1-16: 懼怕中的確據——看見掌權、同在與更新的上帝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#feef8a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-glass {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .card-glass:hover {
+            border-color: rgba(234, 179, 8, 0.4);
+            transform: translateY(-4px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fef9c3 0%, #eab308 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bible-text {
+            border-left: 4px solid #eab308;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #cbd5e1;
+        }
+        .btn-nav {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .btn-nav::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #eab308;
+            transition: width 0.3s ease;
+        }
+        .btn-nav:hover::after {
+            width: 100%;
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(234, 179, 8, 0.1);
+            border-radius: 50%;
+            color: #eab308;
+        }
+        .outline-btn {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            border-color: #eab308;
+            box-shadow: 0 0 20px rgba(234, 179, 8, 0.2);
+            transform: scale(1.02);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-btn {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Header Banner -->
+    <header class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
+        <img src='https://opal.google/board/blobs/c42e692f-31c2-460a-8ec2-0e905db26e0a' alt='media_1' class="absolute inset-0 w-full h-full object-cover opacity-60 scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/60 to-slate-950"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-black font-display mb-6 tracking-tight leading-tight">
+                懼怕中的確據<br/>
+                <span class="gradient-text">看見掌權、同在與更新的上帝</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-medium tracking-wide">賽 41:1-16</p>
+        </div>
+    </header>
+
+    <!-- Sticky Toolbar -->
+    <nav class="glass sticky top-0 z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="font-display font-bold text-lg hidden md:block">
+                <span class="text-gold-500">賽</span> 41:1-16
+            </div>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base font-medium mx-auto md:mx-0">
+                <a href="#prayer" class="btn-nav">禱告</a>
+                <a href="#outline" class="btn-nav">大綱</a>
+                <a href="#sermon" class="btn-nav">講章</a>
+                <a href="#quotes" class="btn-nav">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-32">
+
+        <!-- 金句 Section -->
+        <section class="flex flex-col items-center">
+            <div class="bg-gradient-to-br from-gold-600/20 to-transparent p-8 md:p-12 rounded-3xl border border-gold-500/20 text-center max-w-3xl relative">
+                <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold-500 text-slate-950 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">Golden Verse</span>
+                <p class="text-2xl md:text-3xl font-bold text-gold-100 leading-relaxed">
+                    「你不要害怕，因為我與你同在；不要驚惶，因為我是你的神。我必堅固你，我必幫助你；我必用我公義的右手扶持你。」
+                </p>
+                <p class="mt-4 text-gold-500 font-medium">（以賽亞書 41:10）</p>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold flex items-center mb-8">
+                <span class="section-icon">🙏</span> 禱告
+            </h2>
+            <div class="card-glass p-8 md:p-10 rounded-2xl text-lg text-slate-300 leading-loose italic">
+                親愛的天父，我們來到祢面前，承認我們常被眼前的環境、未知的風暴以及自身的軟弱所驚嚇。主啊，這個世界充滿了動盪與不安，人手所造的偶像與倚靠總是令人失望。但祢是創始成終的上帝，祢呼召我們作祢的僕人，並且應許與我們同在。懇求祢的聖靈今天藉著以賽亞書對我們的心說話，拔除我們內心的恐懼，用祢公義的右手緊緊扶持我們，將我們從軟弱的蟲，更新為能為主爭戰的器皿。奉主耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- 大綱快速導航 -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold flex items-center mb-10">
+                <span class="section-icon">📋</span> 大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section-1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-500 font-bold mb-2">第一段</span>
+                    <h3 class="text-xl font-bold">面對動盪的世界——看見掌管歷史的神</h3>
+                    <span class="mt-4 text-sm text-slate-400">賽41:1-7</span>
+                </a>
+                <a href="#section-2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-500 font-bold mb-2">第二段</span>
+                    <h3 class="text-xl font-bold">面對內心的懼怕——抓住神同在的應許</h3>
+                    <span class="mt-4 text-sm text-slate-400">賽41:8-13</span>
+                </a>
+                <a href="#section-3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-500 font-bold mb-2">第三段</span>
+                    <h3 class="text-xl font-bold">面對自身的軟弱——經歷神大能的翻轉</h3>
+                    <span class="mt-4 text-sm text-slate-400">賽41:14-16</span>
+                </a>
+            </div>
+
+            <!-- 分段解析內容 -->
+            <div class="space-y-24">
+                <!-- Segment 1 -->
+                <div id="section-1" class="scroll-mt-32">
+                    <div class="inline-block px-4 py-1 bg-gold-600/20 text-gold-400 rounded-lg text-sm font-bold mb-4">第一段 | 賽41:1-7</div>
+                    <h3 class="text-3xl font-black mb-8">面對動盪的世界——看見掌管歷史的神</h3>
+                    <div class="bible-text mb-8 text-lg">
+                        眾海島啊，當在我面前靜默；眾民當從新得力，都要近前來才可以說話...就是我耶和華！我是首先的，也與末後的同在。
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="card-glass p-6 rounded-xl">
+                            <h4 class="text-gold-500 font-bold mb-3">🔑 關鍵原文</h4>
+                            <ul class="space-y-3">
+                                <li><span class="font-bold text-slate-100">激起 (uwr)：</span> 意為「喚醒、激動、興起」。指上帝是歷史背後真正的推手。</li>
+                                <li><span class="font-bold text-slate-100">首先與末後：</span> 表明上帝的永恆性與絕對主權，掌管歷史的終局。</li>
+                            </ul>
+                        </div>
+                        <div class="card-glass p-6 rounded-xl">
+                            <h4 class="text-gold-500 font-bold mb-3">❓ 關鍵問題</h4>
+                            <p class="text-slate-300">當上帝興起環境中的變動時，世人的反應是「害怕與戰兢」。他們試圖透過結盟和製造偶像來尋求安全感。上帝呼籲眾人「靜默」，因為歷史是由祂掌管。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-slate-900/50 rounded-xl border border-slate-800">
+                        <h4 class="text-slate-400 font-bold mb-2 flex items-center">📖 例證與小故事</h4>
+                        <p class="text-slate-300 leading-relaxed italic">亂流中的小女孩：因為這架飛機的機長是我爸爸，他一定會帶我安全回家的。當我們認識天父是「機長」時，我們就有靜默的底氣。</p>
+                        <div class="mt-4 pt-4 border-t border-slate-800">
+                            <p class="text-gold-200">「當我們看見上帝的偉大與主權時，我們對這個世界的恐懼就會縮小到它應有的比例。」—— 陶恕</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segment 2 -->
+                <div id="section-2" class="scroll-mt-32">
+                    <div class="inline-block px-4 py-1 bg-gold-600/20 text-gold-400 rounded-lg text-sm font-bold mb-4">第二段 | 賽41:8-13</div>
+                    <h3 class="text-3xl font-black mb-8">面對內心的懼怕——抓住神同在的應許</h3>
+                    <div class="bible-text mb-8 text-lg">
+                        你不要害怕，因為我與你同在；不要驚惶，因為我是你的神...我耶和華你的神必攙著你的右手。
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="card-glass p-6 rounded-xl">
+                            <h4 class="text-gold-500 font-bold mb-3">🔑 關鍵原文</h4>
+                            <ul class="space-y-3">
+                                <li><span class="font-bold text-slate-100">扶持 (tamak)：</span> 意為「緊緊抓住、支撐」。上帝穩穩地握住我們，不讓我們跌倒。</li>
+                                <li><span class="font-bold text-slate-100">驚惶 (sha'ah)：</span> 原意為「四處張望」。描寫人在恐懼中焦慮地環顧。</li>
+                            </ul>
+                        </div>
+                        <div class="card-glass p-6 rounded-xl">
+                            <h4 class="text-gold-500 font-bold mb-3">❓ 關鍵問題</h4>
+                            <p class="text-slate-300">神憑什麼吩咐我們「不要害怕」？基礎是三個神聖事實：神的揀選、神的同在、神的能力。當我們知道是誰「攙著右手」時，懼怕就失去了權勢。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-slate-900/50 rounded-xl border border-slate-800">
+                        <h4 class="text-slate-400 font-bold mb-2 flex items-center">📖 例證與小故事</h4>
+                        <p class="text-slate-300 leading-relaxed italic">冰面上行走的孩子：使他站穩的不再是他自己腿部的力量，而是父親緊緊「扶持」的力量。神不是給我們沒有風浪的地圖，而是承諾在風浪中牽著我們的手。</p>
+                        <div class="mt-4 pt-4 border-t border-slate-800">
+                            <p class="text-gold-200">「『我與你同在』這句話，是上帝對一切恐懼開出的萬靈丹。」—— 司布真</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segment 3 -->
+                <div id="section-3" class="scroll-mt-32">
+                    <div class="inline-block px-4 py-1 bg-gold-600/20 text-gold-400 rounded-lg text-sm font-bold mb-4">第三段 | 賽41:14-16</div>
+                    <h3 class="text-3xl font-black mb-8">面對自身的軟弱——經歷神大能的翻轉</h3>
+                    <div class="bible-text mb-8 text-lg">
+                        你這蟲雅各和你們以色列人，不要害怕！...看哪，我已使你成為有快齒打糧的新器具；你要踏碎山嶺。
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="card-glass p-6 rounded-xl">
+                            <h4 class="text-gold-500 font-bold mb-3">🔑 關鍵原文</h4>
+                            <ul class="space-y-3">
+                                <li><span class="font-bold text-slate-100">蟲 (towla'ah)：</span> 極度卑微與軟弱的象徵。指微小、被人踐踏、無力自救的光景。</li>
+                                <li><span class="font-bold text-slate-100">救贖主 (ga'al)：</span> 指「至近的親屬」。表明神對我們負有極深切的愛與買贖的責任。</li>
+                            </ul>
+                        </div>
+                        <div class="card-glass p-6 rounded-xl">
+                            <h4 class="text-gold-500 font-bold mb-3">❓ 關鍵問題</h4>
+                            <p class="text-slate-300">為什麼神稱子民為「蟲雅各」？神專門揀選軟弱的。當救贖主介入時，極度的軟弱被轉化為極度的剛強，甚至能踏碎山嶺（克服巨大障礙）。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-slate-900/50 rounded-xl border border-slate-800">
+                        <h4 class="text-slate-400 font-bold mb-2 flex items-center">📖 例證與小故事</h4>
+                        <p class="text-slate-300 leading-relaxed italic">大師手中的舊提琴：當我們被交在「以色列的聖者」手中時，神的大能就能透過卑微的器皿，成就踏碎山嶺的奇蹟。</p>
+                        <div class="mt-4 pt-4 border-t border-slate-800">
+                            <p class="text-gold-200">「我們必須先成為一條蟲，才能經歷成為快齒打糧器具的翻轉。」—— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 應用與行動 -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold flex items-center mb-8">
+                    <span class="section-icon">🎯</span> 應用方向
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-8 h-8 rounded-full bg-gold-600 text-slate-950 flex-shrink-0 flex items-center justify-center font-bold">1</div>
+                        <p class="text-lg text-slate-300">檢視心中的「偶像」與安全感來源，挑戰是否過度倚靠人為的釘穩。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-8 h-8 rounded-full bg-gold-600 text-slate-950 flex-shrink-0 flex items-center justify-center font-bold">2</div>
+                        <p class="text-lg text-slate-300">用「神的真理」取代「恐懼的感覺」，操練宣告神的扶持。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-8 h-8 rounded-full bg-gold-600 text-slate-950 flex-shrink-0 flex items-center justify-center font-bold">3</div>
+                        <p class="text-lg text-slate-300">擁抱自身的軟弱，期待神將我們塑造為能為主爭戰的「新器具」。</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold flex items-center mb-8">
+                    <span class="section-icon">✅</span> 回應行動
+                </h2>
+                <div class="card-glass p-8 rounded-2xl space-y-6 border-l-4 border-l-gold-500">
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1">✨</div>
+                        <div>
+                            <strong class="text-gold-100">安靜與反思：</strong>
+                            <p class="text-slate-400">寫下最驚惶的三件事，宣告上帝掌管此事。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1">✨</div>
+                        <div>
+                            <strong class="text-gold-100">背誦與宣告：</strong>
+                            <p class="text-slate-400">將賽 41:10 貼在醒目處，焦慮時大聲朗讀。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1">✨</div>
+                        <div>
+                            <strong class="text-gold-100">代禱與分享：</strong>
+                            <p class="text-slate-400">主動為患難中的肢體禱告，分享神的翻轉應許。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章文稿 -->
+        <section id="sermon" class="scroll-mt-24">
+            <h2 class="text-4xl font-black flex items-center mb-12">
+                <span class="section-icon">🎙️</span> 講章文稿
+            </h2>
+            <div class="bg-slate-900/30 p-8 md:p-16 rounded-[2rem] border border-slate-800 space-y-12">
+                <div class="text-center">
+                    <h3 class="text-3xl font-black gradient-text mb-4">懼怕中的確據——看見掌權、同在與更新的上帝</h3>
+                    <p class="text-slate-500">經文：以賽亞書 41:1-16</p>
+                </div>
+                
+                <div class="space-y-8 text-xl leading-relaxed text-slate-300">
+                    <p>各位弟兄姊妹，平安！今天我們要看一段充滿力量的經文。我們活在一個充滿變動的時代，無論是國際局勢、經濟、或是我們個人生活中的疾病，都很容易讓我們陷入深深的恐懼中。當風暴來襲時，我們的第一反應往往是四處尋找抓手。但在今天的經文中，上帝給了我們一條完全不同的出路。</p>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-gold-400 mb-4">1. 面對動盪的世界——看見掌管歷史的神</h4>
+                        <p>上帝呼籲眾海島「<strong class="text-white">當在我面前靜默</strong>」。當上帝在東方激起領袖時，世人的反應是害怕戰兢，他們拼命想要打造更堅固的偶像、想要把自己的生活「釘穩」。但上帝宣告：<strong class="text-gold-100 font-bold">「我是首先的，也與末後的同在。」</strong> 弟兄姊妹，我們的神不是束手無策的神。祂是機長，祂在掌舵！</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-gold-400 mb-4">2. 面對內心的懼怕——抓住神同在的應許</h4>
+                        <p>在賽 41:10，我們看到了最有力量的應許：<strong class="text-gold-100 font-bold">「你不要害怕，因為我與你同在；不要驚惶，因為我是你的神。」</strong> 原文中「驚惶」是焦慮地四處張望。但神說：「看我！我是你的神！」我們不害怕的理由，是神那雙「扶持」的手。就像父親緊緊抓住了孩子，當神牽著你的手時，沒有任何環境能把你擊垮。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-gold-400 mb-4">3. 面對自身的軟弱——經歷神大能的翻轉</h4>
+                        <p>神用了一個令人震驚的稱呼：<strong class="text-white">「你這蟲雅各」</strong>。這是看透了我們天然生命的極度脆弱。但是，神宣告：<strong class="text-gold-100 font-bold">「我已使你成為有快齒打糧的新器具；你要踏碎山嶺！」</strong> 這關鍵在於那位「救贖主」。當徹底軟弱的蟲被交在全能救贖主手中時，神的能力要在人的軟弱上顯得完全！</p>
+                    </div>
+
+                    <div class="bg-gold-500/10 p-8 rounded-2xl border-l-4 border-gold-500">
+                        <p class="text-white font-bold mb-4">結論</p>
+                        <p>不要讓世界的動盪奪走你的平安，不要讓內心的恐懼癱瘓你的腳步。記住這三個確據：<strong class="text-gold-500">上帝掌權、上帝同在、上帝能翻轉你！</strong> 今天就讓神牽起你的右手，對你說：「不要害怕，我必幫助你！」阿們。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言佳句 -->
+        <section id="quotes" class="scroll-mt-24 pb-32">
+            <h2 class="text-3xl font-bold flex items-center mb-10">
+                <span class="section-icon">✨</span> 名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card-glass p-6 rounded-2xl italic">
+                    「上帝若不與我們同在，我們就一無所有；上帝若與我們同在，我們就無所畏懼。」
+                    <div class="mt-4 text-sm text-gold-500 font-bold">—— 司布真</div>
+                </div>
+                <div class="card-glass p-6 rounded-2xl italic">
+                    「對一個真正認識上帝主權的人來說，這世上沒有任何事物能使他驚慌失措。」
+                    <div class="mt-4 text-sm text-gold-500 font-bold">—— 陶恕</div>
+                </div>
+                <div class="card-glass p-6 rounded-2xl italic">
+                    「上帝的恩典總是先使我們看到自己如同蟲一般的軟弱，然後彰顯出祂能移山倒海的大能。」
+                    <div class="mt-4 text-sm text-gold-500 font-bold">—— 提摩太·凱勒</div>
+                </div>
+                <div class="card-glass p-6 rounded-2xl italic">
+                    「信心不是感覺自己有多堅強，是在驚惶時，依然死死抓住『我必幫助你』的應許。」
+                    <div class="mt-4 text-sm text-gold-500 font-bold">—— 馬丁·路德</div>
+                </div>
+                <div class="card-glass p-6 rounded-2xl italic">
+                    「信心是在感到無比驚惶時，依然死死抓住上帝『我必幫助你』的應許不放。」
+                    <div class="mt-4 text-sm text-gold-500 font-bold">—— 葛理翰</div>
+                </div>
+                <div class="card-glass p-6 rounded-2xl italic text-slate-500">
+                    「上帝從來不呼召裝備好的人，祂只裝備那些祂所呼召的人。」
+                    <div class="mt-4 text-sm text-gold-500/50 font-bold">—— 慕迪</div>
+                </div>
+            </div>
+
+            <!-- Warning and Terms -->
+            <div class="mt-20 text-center text-slate-500 text-sm border-t border-slate-900 pt-8">
+                <p class="mb-2">⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Back to top floating button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 hover:bg-gold-400 text-slate-950 rounded-full flex items-center justify-center shadow-2xl shadow-gold-500/20 z-50 transition-all float-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for buttons and nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

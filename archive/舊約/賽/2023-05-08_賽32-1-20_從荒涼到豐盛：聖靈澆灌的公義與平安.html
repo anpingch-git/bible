@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽32:1-20:從荒涼到豐盛：聖靈澆灌的公義與平安</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #facc15 0%, #fb923c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding: 80px 20px;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .outline-btn {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(250, 204, 21, 0.3);
+        }
+        .outline-btn:hover {
+            background: rgba(250, 204, 21, 0.1);
+            border-color: #facc15;
+            transform: translateY(-2px);
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: #facc15;
+            color: #020617;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(250, 204, 21, 0.3);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+            background: #eab308;
+        }
+        .media-container img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+            border-radius: 0 0 40px 40px;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Top Banner -->
+    <header class="media-container relative overflow-hidden">
+        <img src='https://opal.google/board/blobs/a86168fc-8858-413b-a44b-8233bb75accc' alt='media_1' class="brightness-50" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-t from-slate-950 via-transparent to-transparent">
+            <span class="text-gold-400 font-display font-semibold tracking-widest mb-4 animate-pulse-slow">ISAIAH 32:1-20</span>
+            <h1 class="text-4xl md:text-6xl font-black font-display mb-6 leading-tight max-w-4xl">
+                從荒涼到豐盛：<br><span class="gradient-text">聖靈澆灌的公義與平安</span>
+            </h1>
+            <div class="w-24 h-1 bg-gold-500 rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav glass-nav px-6 py-4 flex items-center justify-between">
+        <div class="text-sm font-display font-bold text-slate-400 hidden md:block">
+            賽 32:1-20
+        </div>
+        <div class="flex gap-6 text-sm font-medium tracking-wide">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Content Sections -->
+    <main class="max-w-6xl mx-auto">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding">
+            <div class="glass-card p-8 md:p-12 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M11 23l-4.12-6.18L0 12l6.88-4.82L11 1l4.12 6.18L22 12l-6.88 4.82L11 23z"/></svg>
+                </div>
+                <div class="flex justify-center mb-6">
+                    <span class="bg-gold-500/20 p-4 rounded-full">
+                        <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-1.41-1.41C5.42 14.7 2 11.53 2 7.72 2 4.56 4.56 2 7.72 2c1.81 0 3.55.84 4.69 2.17C13.56 2.84 15.3 2 17.11 2 20.27 2 22.83 4.56 22.83 7.72c0 3.81-3.42 6.98-8.59 11.87L12 21z"/></svg>
+                    </span>
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-8">啟動禱告</h2>
+                <p class="text-lg md:text-xl leading-relaxed text-slate-300 max-w-3xl mx-auto italic">
+                    「主阿，我們來到祢面前，承認我們時常如同經文中所說的，活在虛假的安逸與無慮之中，依靠世俗的保障過於倚靠祢。求祢赦免我們的屬靈盲目與沉睡。主啊，我們渴望祢公義的王權降臨在我們的生命中，作我們避風的港灣和避暴雨的藏身處。求祢從高天將聖靈澆灌我們，使我們生命中荒涼的曠野變為肥田，使我們的盲眼得開、聾耳得聽。願祢的公義在我們裡面結出真實的平安與平穩，直到永遠。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="px-6 py-12">
+            <h2 class="text-2xl font-display font-bold mb-8 flex items-center gap-3">
+                <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                講道大綱索引
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col group">
+                    <span class="text-gold-500 text-xs font-bold mb-2">第一階段</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400">公義的掌權與屬靈的覺醒</span>
+                    <span class="text-sm text-slate-500 mt-2">賽 32:1-8</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col group">
+                    <span class="text-gold-500 text-xs font-bold mb-2">第二階段</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400">震動虛假安逸的迷夢</span>
+                    <span class="text-sm text-slate-500 mt-2">賽 32:9-14</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col group">
+                    <span class="text-gold-500 text-xs font-bold mb-2">第三階段</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400">聖靈澆灌帶來真公義與平安</span>
+                    <span class="text-sm text-slate-500 mt-2">賽 32:15-20</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Sections -->
+        <section class="px-6 space-y-24 pb-24">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-gold-500 text-slate-950 flex items-center justify-center rounded-xl font-bold text-xl">01</div>
+                    <h3 class="text-2xl md:text-3xl font-bold">公義的掌權與屬靈的覺醒</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="glass-card p-6 border-l-4 border-gold-500">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed italic">「看哪，必有一王憑公義行政；必有首領藉公平掌權。必有一人像避風所和避暴雨的隱密處，又像河流在乾旱之地，像大磐石的影子在疲乏之地。那能看的人，眼不再昏迷；能聽的人，耳必得聽聞。冒失人的心必明白知識；結巴人的舌必說話通快...」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-gold-500 font-bold mb-4">關鍵原文 Keyword</h4>
+                                <ul class="space-y-3">
+                                    <li><span class="font-bold text-white">公義 (Tsedeq):</span> 不僅是公平，更是恢復正確關係的拯救行動。</li>
+                                    <li><span class="font-bold text-white">避風所 (Machabeh):</span> 在風暴中提供絕對安全與庇護。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-gold-500 font-bold mb-4">問題與解答 Q&A</h4>
+                                <p class="text-sm text-slate-300">為什麼公義王掌權會翻轉價值觀？<br><span class="text-white block mt-2">基督的真理光照良心，使我們具備屬靈洞察力，看清罪惡本質，恢復神國價值。</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-gold-500/10 p-6 rounded-2xl border border-gold-500/20">
+                            <h4 class="text-gold-400 font-bold mb-2">例證與故事</h4>
+                            <p class="text-sm text-slate-300 leading-relaxed">燈塔的光（公義的王）照亮漆黑海面，水手不僅找到避風所，也看清了致命的暗礁。基督真光讓我們看見世界虛假的尊貴。</p>
+                        </div>
+                        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl italic text-slate-400 text-sm">
+                            「當基督呼召一個人的時候，祂是叫他來死...必然是向著世界的價值觀徹底死去。」<br>—— 潘霍華
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-red-500 text-white flex items-center justify-center rounded-xl font-bold text-xl">02</div>
+                    <h3 class="text-2xl md:text-3xl font-bold">震動虛假安逸的迷夢</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="glass-card p-6 border-l-4 border-red-500">
+                            <h4 class="text-red-400 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed italic">「安逸的婦女啊，起來聽我的聲音！無慮的女子啊，再過一年多，必受驚嚇...脫去衣服，赤著身體，腰束麻布。她們必為美好的田地和多結果的葡萄樹，搥胸哀哭。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-red-500 font-bold mb-4">關鍵原文 Keyword</h4>
+                                <ul class="space-y-3">
+                                    <li><span class="font-bold text-white">安逸 (Sha'anan):</span> 負面意涵，指在罪惡中無動於衷的屬靈麻木。</li>
+                                    <li><span class="font-bold text-white">無慮 (Batach):</span> 錯誤的安全感，信靠物質而非上帝。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-red-500 font-bold mb-4">問題與解答 Q&A</h4>
+                                <p class="text-sm text-slate-300">為什麼要打破安逸？<br><span class="text-white block mt-2">上帝震動脆弱的物質保障，是為了喚醒我們，免得在虛假和平中走向永遠沉淪。</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-red-500/10 p-6 rounded-2xl border border-red-500/20">
+                            <h4 class="text-red-400 font-bold mb-2">例證與故事</h4>
+                            <p class="text-sm text-slate-300 leading-relaxed">鐵達尼號底艙進水時，頭等艙旅客仍深信永不沉沒而繼續飲酒。先知的警告雖破壞宴席，卻是為了救命。</p>
+                        </div>
+                        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl italic text-slate-400 text-sm">
+                            「現代基督徒最大的致命傷，就是我們太容易對現狀感到滿足...忘記了我們正處於屬靈爭戰中。」<br>—— 陶恕
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-xl font-bold text-xl">03</div>
+                    <h3 class="text-2xl md:text-3xl font-bold">聖靈澆灌帶來真正的公義與平安</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="glass-card p-6 border-l-4 border-blue-500">
+                            <h4 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed italic">「等到聖靈從上澆灌我們，曠野就變為肥田，肥田看如樹林。那時，公平要居在曠野；公義要居在肥田。公義的果效必是平安；公義的效驗必是平穩，直到永遠。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-blue-500 font-bold mb-4">關鍵原文 Keyword</h4>
+                                <ul class="space-y-3">
+                                    <li><span class="font-bold text-white">澆灌 (Arah):</span> 傾倒。上帝毫不保留地降下聖靈，帶來根本性改變。</li>
+                                    <li><span class="font-bold text-white">平安 (Shalom):</span> 完整健全。不只是沒戰爭，是全方位的豐盛。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="text-blue-500 font-bold mb-4">問題與解答 Q&A</h4>
+                                <p class="text-sm text-slate-300">真平安是如何產生的？<br><span class="text-white block mt-2">建立在上帝公義之上，唯有聖靈澆灌改變人心，使人活出公義，平穩才會臨到。</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-blue-500/10 p-6 rounded-2xl border border-blue-500/20">
+                            <h4 class="text-blue-400 font-bold mb-2">例證與故事</h4>
+                            <p class="text-sm text-slate-300 leading-relaxed">加州死亡谷遇罕見龐大降雨（澆灌）時，荒蕪沙漠中沉睡數十年的種子會突然爆發開花，稱作超級開花。</p>
+                        </div>
+                        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl italic text-slate-400 text-sm">
+                            「當聖靈降臨，基督教就成為改變生命的雷霆與閃電。」<br>—— 司布真
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="section-padding bg-slate-950/50">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center justify-center gap-4 mb-12">
+                    <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                    <h2 class="text-3xl md:text-4xl font-display font-black text-center">完整講章文稿</h2>
+                </div>
+                
+                <article class="prose prose-invert prose-gold lg:prose-xl mx-auto space-y-12">
+                    <div class="p-10 glass-card">
+                        <h3 class="text-gold-400 text-2xl font-bold mb-6">一、 公義的掌權與屬靈的覺醒</h3>
+                        <p class="text-slate-300 leading-loose">
+                            經文一開始給了我們一個榮耀的畫面：「**看哪，必有一王憑公義行政；必有首領藉公平掌權。必有一人像避風所和避暴雨的隱密處...**」<br>
+                            當我們面對生活中的風暴時，我們都在尋找藏身處。但以賽亞告訴我們，真正的避難所不是一個地方，而是「一個人」——就是那位憑公義掌權的君王耶穌基督。當基督在我們生命中掌權時，會發生什麼事？第3節說：「**那能看的人，眼不再昏迷；能聽的人，耳必得聽聞。**」這是一種屬靈的覺醒！這個世界常常顛倒是非，把愚頑當作尊貴，把欺詐當作高尚。主的真光照進來，我們就不再被世界的謊言欺騙，我們的心眼將被打開，看見真正的屬靈現實。
+                        </p>
+                    </div>
+
+                    <div class="p-10 glass-card">
+                        <h3 class="text-gold-400 text-2xl font-bold mb-6">二、 震動安逸的迷夢</h3>
+                        <p class="text-slate-300 leading-loose">
+                            然而，要經歷這樣的覺醒，神必須先對付我們的麻木。先知在第9節發出強烈的警告：「**安逸的婦女啊，起來聽我的聲音！無慮的女子啊，側耳聽我的言語！**」<br>
+                            這裡的「安逸」與「無慮」，指的不是神所賜的真平安，而是建立在物質豐裕、自滿與屬靈沉睡上的假安全感。我們常常像當年鐵達尼號上的人，外面已經危機四伏，裡面卻還在開著狂歡的派對。神要打破我們的假平安，好讓我們能緊緊抓住祂。
+                        </p>
+                    </div>
+
+                    <div class="p-10 glass-card bg-gold-500/5 border border-gold-500/30">
+                        <h3 class="text-gold-400 text-2xl font-bold mb-6">三、 聖靈的澆灌與永遠的平安</h3>
+                        <p class="text-slate-300 leading-loose">
+                            當我們的驕傲被拆毀，看見自己生命的荒涼時，盼望在哪裡？先知在第15節宣告了極大的應許：「**等到聖靈從上澆灌我們，曠野就變為肥田，肥田看如樹林。**」<br>
+                            這就是福音！我們無法靠自己改變荒涼的生命，唯有聖靈如同傾盆大雨般澆灌下來，死亡谷才會開出滿山遍野的花朵！當聖靈降臨，祂不僅帶來生命的豐盛，更帶來真正的改變。請特別注意我們今天的金句：
+                        </p>
+                        <div class="my-8 text-center bg-slate-900 p-8 rounded-3xl border-2 border-gold-500/50">
+                            <p class="text-2xl md:text-3xl font-black text-white mb-2">「公義的果效必是平安；公義的效驗必是平穩，直到永遠。」</p>
+                            <p class="text-gold-500 font-bold">(賽 32:17)</p>
+                        </div>
+                        <p class="text-slate-300 leading-loose">
+                            我們都渴望平安（Shalom），但世界給的平安是妥協的、短暫的。神的話清楚告訴我們：沒有公義，就沒有真平安。當聖靈澆灌，使我們在心思、言語、行為上活出上帝的公義時，那個結出來的果子，就是直到永遠的安穩。
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Summary Keywords & Action -->
+        <section class="section-padding grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-8">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    結論關鍵字
+                </h2>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-6 py-3 bg-slate-800 rounded-full text-gold-400 font-bold border border-gold-500/20">1. 覺醒 (Awakening)</span>
+                    <span class="px-6 py-3 bg-slate-800 rounded-full text-gold-400 font-bold border border-gold-500/20">2. 澆灌 (Outpouring)</span>
+                    <span class="px-6 py-3 bg-slate-800 rounded-full text-gold-400 font-bold border border-gold-500/20">3. 根基 (Foundation)</span>
+                </div>
+                
+                <h2 class="text-2xl font-bold mt-12 mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-2">● 檢視生命根基：誠實評估我們生活中的安全感來源。</li>
+                    <li class="flex gap-2">● 渴慕聖靈更新：承認靠著自己的努力無法將生命曠野變為肥田。</li>
+                    <li class="flex gap-2">● 活出公義與平安的因果：在各處勇敢地按神真理行事。</li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 bg-gold-500/10 border-gold-500/30">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3 text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    回應與實踐行動
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <p class="font-bold text-white mb-1">認罪與警醒</p>
+                            <p class="text-sm text-slate-400">本週花15分鐘安靜獨處，求聖靈光照自己生命中有哪些「虛假的安逸」。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <p class="font-bold text-white mb-1">渴慕的禱告</p>
+                            <p class="text-sm text-slate-400">每天早晨出門前，做一個「求聖靈澆灌」的禱告，求神賜下智慧的眼與耳。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <p class="font-bold text-white mb-1">撒下公義的種子</p>
+                            <p class="text-sm text-slate-400">這週內具體去行一件「公義與公平」的事，去經歷公義帶來的真實平安。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-padding">
+            <h2 class="text-3xl font-display font-black mb-12 text-center">屬靈前輩佳句名言</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items generated via loops would be cleaner, but static for speed -->
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「聖靈的工作不是要讓我們感覺很好，而是要讓我們變得聖潔。真平安是成聖的副產品。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「真正的恩典是重價的恩典，它定人的罪，也使人稱義；它不僅宣告平安，更呼召人背起十字架跟從主。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 潘霍華，《追隨基督》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「如果我們的生命中缺乏對社會邊緣人的憐憫與公義，這表明我們根本還沒有真正明白上帝在基督裡對我們施行的恩典。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 提摩太·凱勒，《慷慨的正義》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「我們太容易安於現狀，只要我們有一點點的宗教形式，就以為擁有了上帝。這種自滿是靈命成長最大的殺手。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「基督的十字架不僅是我們得平安的基礎，更是上帝公義最極致的展現；在十字架上，公義與平安彼此相親。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 約翰·史托德，《基督的十字架》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「屬靈生命的改變從不是靠我們擠出更多的道德努力，而是源於上帝聖靈的同在，將我們從內而外重新塑造。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 魏樂德，《品格的革命》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「在一個充滿喧囂和虛假安全感的世界裡，安靜與獨處是我們讓聖靈對我們的心說話、打破我們安逸迷夢的唯一途徑。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 盧雲，《建立生命的職事》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「聖靈的澆灌往往始於我們承認自己內在的徹底破產與荒涼。上帝只充滿那些被倒空的人。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 慕迪，《得勝的生命》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「真正的屬靈情感不僅僅是頭腦的知識或一時的激動，而是聖靈在人心中運行，結出公義與聖潔果實的持久動力。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 喬納森·愛德華茲，《宗教情操真偽辨》</p>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-gold-500/50 hover:border-gold-500 transition-all">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「當聖靈降臨在一個人身上時，祂會將那人生命中的曠野變成肥田。你無法隱藏聖靈的工作。」</p>
+                    <p class="text-gold-500 text-sm font-bold text-right">—— 查爾斯·史丹利，《聖靈：不可或缺的同在》</p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-24 p-8 border border-slate-800 rounded-3xl text-center text-slate-500 text-sm">
+                <svg class="w-8 h-8 mx-auto mb-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="floating-btn animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80; // height of sticky nav
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = target.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩23:1-6: 幽谷中的豐盛筵席——認識我們的好牧者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fff9eb',
+                            100: '#fbebc3',
+                            200: '#f7d687',
+                            300: '#f2bd4b',
+                            400: '#eeab27',
+                            500: '#d48c11',
+                            600: '#b86e0d',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#121216',
+                            700: '#1c1c24',
+                            600: '#2d2d3a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(28, 28, 36, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f2bd4b 0%, #eeab27 50%, #b86e0d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f2bd4b;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(212, 140, 17, 0.3);
+        }
+        .floating-arrow {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+        .banner-overlay {
+            background: linear-gradient(to bottom, rgba(10,10,12,0.2) 0%, rgba(10,10,12,0.95) 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card rounded-none border-t-0 border-x-0 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-gold-300 font-bold text-sm md:text-base tracking-wider">詩 23:1-6</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-400">
+            <a href="#prayer" class="nav-link hover:text-gold-300">禱告</a>
+            <a href="#outline" class="nav-link hover:text-gold-300">大綱</a>
+            <a href="#sermon" class="nav-link hover:text-gold-300">講章</a>
+            <a href="#quotes" class="nav-link hover:text-gold-300">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner Header -->
+    <header class="relative h-screen w-full flex items-end overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/32c316d4-ee0d-49b9-96fc-2962a9cdd897' alt='media_1' class="w-full h-full object-cover" />
+            <div class="absolute inset-0 banner-overlay"></div>
+        </div>
+        <div class="relative z-10 p-8 md:p-20 w-full max-w-6xl mx-auto">
+            <span class="inline-block px-4 py-1 rounded-full bg-gold-500/20 border border-gold-500/40 text-gold-300 text-xs font-bold tracking-widest mb-6 uppercase">Scripture Meditation</span>
+            <h1 class="text-4xl md:text-7xl font-serif font-black mb-6 leading-tight">
+                詩 23:1-6<br/>
+                <span class="text-gradient">幽谷中的豐盛筵席</span><br/>
+                <span class="text-2xl md:text-4xl block mt-2 font-sans font-light text-gray-300">認識我們的好牧者</span>
+            </h1>
+            <div class="glass-card p-6 md:p-8 border-l-4 border-l-gold-500 max-w-2xl mt-8">
+                <p class="text-gold-200 text-lg md:text-2xl font-serif italic leading-relaxed">
+                    「耶和華是我的牧者，我必不至缺乏。」
+                </p>
+                <p class="text-gray-500 mt-2 text-sm">— 詩篇 23:1</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Section 1: Prayer -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">會前禱告</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 text-lg md:text-xl leading-loose text-gray-300 font-light italic">
+                慈愛的天父，我們滿心感謝祢。祢是那為羊捨命的好牧者，無論我們身處青草地、可安歇的水邊，或是死蔭的幽谷，祢的杖和竿永遠引導、保護著我們。求祢的聖靈今天向我們的心說話，使我們在這變動不安的世界中，靈魂得著甦醒。幫助我們放下憑靠自己掙扎的重擔，單單仰望祢的供應與同在，深信祢的恩惠與慈愛必一生一世追隨著我們。奉主耶穌基督的聖名祈求，阿們。
+            </div>
+        </section>
+
+        <!-- Section 2: Outline Navigation -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">信息大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="outline-btn glass-card p-8 text-left group">
+                    <span class="text-gold-500 font-bold mb-2 block">第一階段</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-gold-300 transition-colors">青草地上的滿足與甦醒</h3>
+                    <p class="text-gray-500 text-sm">詩 23:1-3a</p>
+                </a>
+                <a href="#part2" class="outline-btn glass-card p-8 text-left group">
+                    <span class="text-gold-500 font-bold mb-2 block">第二階段</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-gold-300 transition-colors">死蔭幽谷中的無懼與同在</h3>
+                    <p class="text-gray-500 text-sm">詩 23:3b-4</p>
+                </a>
+                <a href="#part3" class="outline-btn glass-card p-8 text-left group">
+                    <span class="text-gold-500 font-bold mb-2 block">第三階段</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-gold-300 transition-colors">敵人面前的豐盛與永恆歸宿</h3>
+                    <p class="text-gray-500 text-sm">詩 23:5-6</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-40">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h4 class="text-gold-400 font-bold text-lg mb-4">第一段深度解析</h4>
+                            <div class="text-2xl font-serif font-bold mb-4">青草地上的滿足與甦醒</div>
+                            <div class="inline-block px-3 py-1 bg-dark-700 rounded text-gold-500 text-sm font-mono mb-4">詩 23:1-3a</div>
+                            <p class="text-gray-400 leading-relaxed italic border-l-2 border-gold-500/30 pl-4">「耶和華是我的牧者，我必不至缺乏。他使我躺臥在青草地上，領我在可安歇的水邊。他使我的靈魂甦醒。」</p>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div>
+                                <h5 class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-3">關鍵原文 / Keyword</h5>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="bg-dark-800 p-4 rounded-xl border border-white/5">
+                                        <div class="text-gold-300 font-bold">缺乏 (chasar / חָסֵר)</div>
+                                        <div class="text-sm text-gray-400 mt-1">「減少、枯竭、匱乏」。不僅是物質上的缺少，更是生命狀態中的空虛。</div>
+                                    </div>
+                                    <div class="bg-dark-800 p-4 rounded-xl border border-white/5">
+                                        <div class="text-gold-300 font-bold">甦醒 (shuv / שׁוּב)</div>
+                                        <div class="text-sm text-gray-400 mt-1">「轉回、恢復、帶回」。迷失或疲憊的羊被找回，生命力得到完全更新。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-3">關鍵解析 / Insight</h5>
+                                <p class="text-gray-300 mb-4 font-medium italic">為什麼在物質豐裕的現代，我們卻常感到靈魂的匱乏？如何讓神真正成為我們的「牧者」？</p>
+                                <p class="text-gray-400 leading-relaxed">我們的匱乏感往往來自於將受造物當作滿足的源頭。當大衛宣告「耶和華是我的牧者」時，他交出了生命的主權。羊無法自己尋找青草地，唯有徹底信任牧者的帶領，承認自己的有限，我們才能在神裡面找到「不至缺乏」的真正安息。</p>
+                            </div>
+                            <div class="bg-dark-700/50 p-6 rounded-2xl border-l-4 border-gold-600">
+                                <h5 class="text-xs font-bold text-gold-500 mb-2 italic">提摩太·凱勒 (Timothy Keller)</h5>
+                                <p class="text-gray-300 font-serif text-lg">「如果你以為擁有耶穌和擁有其他東西才能使你滿足，那麼你還沒有把耶穌當作真正的牧者；如果耶穌是你所擁有的一切，你就會發現，祂就是你所需要的一切。」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-40">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h4 class="text-gold-400 font-bold text-lg mb-4">第二段深度解析</h4>
+                            <div class="text-2xl font-serif font-bold mb-4">死蔭幽谷中的無懼與同在</div>
+                            <div class="inline-block px-3 py-1 bg-dark-700 rounded text-gold-500 text-sm font-mono mb-4">詩 23:3b-4</div>
+                            <p class="text-gray-400 leading-relaxed italic border-l-2 border-gold-500/30 pl-4">「為自己的名引導我走義路。我雖然行過死蔭的幽谷，也不怕遭害，因為你與我同在；你的杖，你的竿，都安慰我。」</p>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div>
+                                <h5 class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-3">關鍵原文 / Keyword</h5>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="bg-dark-800 p-4 rounded-xl border border-white/5">
+                                        <div class="text-gold-300 font-bold">死蔭 (tsalmaveth / צַלְמָוֶת)</div>
+                                        <div class="text-sm text-gray-400 mt-1">「陰影」與「死亡」組成，指極度的黑暗、深沉的危險。</div>
+                                    </div>
+                                    <div class="bg-dark-800 p-4 rounded-xl border border-white/5">
+                                        <div class="text-gold-300 font-bold">安慰 (nacham / נָחַם)</div>
+                                        <div class="text-sm text-gray-400 mt-1">「深吸一口氣、憐憫」。牧者的杖和竿帶給羊群深刻的安全感。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-3">關鍵解析 / Insight</h5>
+                                <p class="text-gray-300 mb-4 font-medium italic">既然神引導我們走「義路」，為什麼這條路上還會有「死蔭的幽谷」？</p>
+                                <p class="text-gray-400 leading-relaxed">幽谷並非神引導失敗，有時正是通往高山豐盛牧場的必經之路。大衛在經文中的代名詞從「祂」轉變成了「祢」。在青草地上，我們談論神（祂）；但在死蔭幽谷中，我們經歷神（祢）。苦難逼使我們與神面對面。</p>
+                            </div>
+                            <div class="bg-dark-700/50 p-6 rounded-2xl border-l-4 border-gold-600">
+                                <h5 class="text-xs font-bold text-gold-500 mb-2 italic">司布真 (Charles Spurgeon)</h5>
+                                <p class="text-gray-300 font-serif text-lg">「我們在幽谷中所學到的，比在山頂上學到的更多；神在黑夜中賜下的詩歌，比在白晝時更加甜美。」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-40">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h4 class="text-gold-400 font-bold text-lg mb-4">第三段深度解析</h4>
+                            <div class="text-2xl font-serif font-bold mb-4">敵人面前的豐盛與永恆的歸宿</div>
+                            <div class="inline-block px-3 py-1 bg-dark-700 rounded text-gold-500 text-sm font-mono mb-4">詩 23:5-6</div>
+                            <p class="text-gray-400 leading-relaxed italic border-l-2 border-gold-500/30 pl-4">「在我敵人面前，你為我擺設筵席；你用油膏了我的頭，使我的福杯滿溢。我一生一世必有恩惠慈愛隨著我；我且要住在耶和華的殿中，直到永遠。」</p>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div>
+                                <h5 class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-3">關鍵原文 / Keyword</h5>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="bg-dark-800 p-4 rounded-xl border border-white/5">
+                                        <div class="text-gold-300 font-bold">隨著 (radaph / רָדַף)</div>
+                                        <div class="text-sm text-gray-400 mt-1">「追趕、追擊」。神的恩典是主動、猛烈地「追趕」著我們。</div>
+                                    </div>
+                                    <div class="bg-dark-800 p-4 rounded-xl border border-white/5">
+                                        <div class="text-gold-300 font-bold">慈愛 (chesed / חֶסֶד)</div>
+                                        <div class="text-sm text-gray-400 mt-1">神堅定不移、立約的愛，不受人類軟弱的影響。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-xs uppercase tracking-widest text-gold-500 font-bold mb-3">關鍵解析 / Insight</h5>
+                                <p class="text-gray-300 mb-4 font-medium italic">當生活充滿敵對、攻擊與壓力時，神如何為我們「擺設筵席」？</p>
+                                <p class="text-gray-400 leading-relaxed">神沒有立刻把敵人消滅。神選擇在敵人的注視下為他擺設豐盛筵席，代表極大的安全感與確據。這告訴我們，內在的平安與喜樂不需要等到風暴平息，在風暴中心，因著神的恩惠追趕，我們已經可以享受滿溢的福杯。</p>
+                            </div>
+                            <div class="bg-dark-700/50 p-6 rounded-2xl border-l-4 border-gold-600">
+                                <h5 class="text-xs font-bold text-gold-500 mb-2 italic">畢德生 (Eugene Peterson)</h5>
+                                <p class="text-gray-300 font-serif text-lg">「神的恩惠與慈愛不是消極地跟隨在我們身後，而是如獵犬般積極地追尋我們，直到把我們追入祂永恆的家中。」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Applications -->
+        <section id="applications" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">應用與行動</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-gold-400 uppercase tracking-widest border-b border-gold-900 pb-2">講道應用方向</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-bold">01</span>
+                            <p class="text-gray-300"><strong class="text-white">檢視主權與知足：</strong>誠實面對生命中的「缺乏感」，學習將生活主權交還給牧者。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-bold">02</span>
+                            <p class="text-gray-300"><strong class="text-white">轉換苦難的視角：</strong>身處幽谷時，停止追問「為什麼」，轉而緊抓神的「同在」。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-bold">03</span>
+                            <p class="text-gray-300"><strong class="text-white">在風暴中享受筵席：</strong>不需等到問題解決才感恩，刻意數算神那主動「追趕」我們的慈愛。</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-gold-400 uppercase tracking-widest border-b border-gold-900 pb-2">回應或實踐行動</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-bold">★</span>
+                            <p class="text-gray-300"><strong class="text-white">每日宣告交託：</strong>起床宣告：「耶和華是我的牧者，我必不至缺乏」，並具體交託一件事。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-bold">★</span>
+                            <p class="text-gray-300"><strong class="text-white">幽谷感恩筆記：</strong>在挫折中寫下神的一項屬性，用神的「杖與竿」來安慰自己的心。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-bold">★</span>
+                            <p class="text-gray-300"><strong class="text-white">安靜默想筵席：</strong>本週挑選一天，想像神正為你倒滿福杯，然後再面對挑戰。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card p-10 bg-gradient-to-br from-gold-500/10 to-transparent flex flex-wrap justify-center gap-12 text-center">
+                <div>
+                    <div class="text-xs text-gold-500 font-bold uppercase tracking-widest mb-2">核心價值 A</div>
+                    <div class="text-3xl font-serif font-black text-white">滿足 Satisfaction</div>
+                </div>
+                <div>
+                    <div class="text-xs text-gold-500 font-bold uppercase tracking-widest mb-2">核心價值 B</div>
+                    <div class="text-3xl font-serif font-black text-white">同在 Presence</div>
+                </div>
+                <div>
+                    <div class="text-xs text-gold-500 font-bold uppercase tracking-widest mb-2">核心價值 C</div>
+                    <div class="text-3xl font-serif font-black text-white">追隨 Pursuit</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Sermon Full Text -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            
+            <div class="glass-card p-8 md:p-16 text-lg md:text-xl leading-relaxed text-gray-300 space-y-12 max-w-4xl mx-auto shadow-2xl">
+                <h3 class="text-2xl md:text-4xl font-serif font-bold text-white text-center border-b border-white/10 pb-8">詩23:1-6: 幽谷中的豐盛筵席——認識我們的好牧者</h3>
+                
+                <p>弟兄姐妹們，平安！我們今天所處的世界充滿了變動與不安，無論是經濟的壓力、健康的危機，還是人際關係的破碎，都時常讓我們感到疲憊與恐懼。然而，在聖經中最為人熟知的詩篇第23篇中，大衛王向我們描繪了一幅充滿安息與盼望的圖畫。今天的講道，我們要一起來認識這位在變動世界中永不改變的牧者。</p>
+
+                <div class="space-y-4">
+                    <h4 class="text-gold-300 font-bold text-2xl">青草地上的滿足與甦醒</h4>
+                    <p class="border-l-4 border-gold-500 pl-6 py-2 bg-gold-500/5 text-white font-bold">「耶和華是我的牧者，我必不至缺乏。」(詩篇 23:1)</p>
+                    <p>這是整篇詩篇的<span class="text-gold-300 font-bold">金句</span>，也是大衛生命的核心宣告。希伯來文中的「缺乏」，指的不僅是物質的沒有，更是靈魂的空洞。為什麼我們常感到匱乏？因為我們常讓金錢、工作或別人的眼光來做我們的牧者。羊群極易受驚、毫無防禦能力，牠們無法自己找到青草地，除非牧人親自帶領，排除一切恐懼與飢餓的干擾，牠們才能「躺臥」。當我們願意放下自己的掙扎，讓神引導我們到可安歇的水邊，祂必使我們的靈魂「甦醒」，也就是將我們迷失的生命重新尋回並修復。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-gold-300 font-bold text-2xl">死蔭幽谷中的無懼與同在</h4>
+                    <p class="border-l-4 border-gold-500 pl-6 py-2 bg-gold-500/5 text-white font-bold">「我雖然行過死蔭的幽谷，也不怕遭害，因為你與我同在。」</p>
+                    <p>幽谷不是神引導失敗的結果，它往往是通往更高豐盛之地的必經之路。請注意，在這節經文裡，大衛的稱呼改變了。在青草地上，他說「祂」使我躺臥；但在幽谷中，他說「祢」與我同在。苦難與黑暗逼使我們從客觀地「談論神」，轉變為主觀地「經歷神」。在幽谷中，神不再是遙遠的「祂」，而是緊緊牽著我們手的「祢」。牧羊人的「杖」擊退野獸，「竿」把跌倒的羊勾回來，這帶給羊群極大的安慰。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-gold-300 font-bold text-2xl">敵人面前的豐盛與永恆的歸宿</h4>
+                    <p class="border-l-4 border-gold-500 pl-6 py-2 bg-gold-500/5 text-white font-bold">「在我敵人面前，你為我擺設筵席...我一生一世必有恩惠慈愛隨著我。」</p>
+                    <p>當生活充滿敵對、攻擊與壓力時，神沒有立刻把敵人變不見。相反地，祂在敵人的注視下，為你擺設筵席！這是一種極大的得勝與安穩。真正的平安不是沒有風暴，而是在風暴中心可以坐下來享受神滿溢的福杯。更奇妙的是大衛用了一個詞：「隨著」。在原文裡，這是軍隊「追趕、追擊」的意思。神的恩惠與慈愛不是慢吞吞地跟在我們後面，而是像獵犬一樣，主動、猛烈地追趕著我們，直到把我們追進耶和華的殿中，直到永遠。</p>
+                </div>
+
+                <p class="text-center text-white font-medium pt-8 border-t border-white/10 italic">
+                    願我們都能深深經歷「耶和華是我的牧者，我必不至缺乏」的真實，一生一世安居在祂的殿中。
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 5: Quotes -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">屬靈前輩佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「有了神加上一切，並不比單單有神更多。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 陶恕 (A.W. Tozer)</span>
+                        <span class="text-gray-600 text-xs italic">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「如果你以為擁有耶穌和擁有其他東西才能使你滿足，那麼你還沒有把耶穌當作真正的牧者。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</span>
+                        <span class="text-gray-600 text-xs italic">《揮霍的上帝》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「我們在幽谷中所學到的，比在山頂上學到的更多；神在黑夜中賜下的詩歌，比在白晝時更加甜美。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</span>
+                        <span class="text-gray-600 text-xs italic">《大衛寶庫》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「神的恩惠與慈愛如獵犬般積極地追尋我們，直到把我們追入祂永恆的家中。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 畢德生 (Eugene Peterson)</span>
+                        <span class="text-gray-600 text-xs italic">《長期的順服》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「真正的平安不是避開苦難，而是在苦難的最深處，發現神溫柔的同在。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 盧雲 (Henri Nouwen)</span>
+                        <span class="text-gray-600 text-xs italic">《浪子回頭》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「當我們承認神是我們的牧者時，我們就等於承認自己是羊，既愚昧又容易走迷。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</span>
+                        <span class="text-gray-600 text-xs italic">《基督教要義》</span>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「即使世界充滿魔鬼，我們也不必害怕，因為好牧者的杖和竿不僅能安慰我們，更能擊碎惡者的頭。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 馬丁·路德 (Martin Luther)</span>
+                        <span class="text-gray-600 text-xs italic">《詩篇註釋》</span>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「神並不總是拯救我們脫離苦難，但祂總是在苦難中與我們同在。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                        <span class="text-gray-600 text-xs italic">《獄中書簡》</span>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「在祂為我安排的生命中，我擁有一個絕對安全、無比豐盛的居所。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 魏樂德 (Dallas Willard)</span>
+                        <span class="text-gray-600 text-xs italic">《靈性操練真諦》</span>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-6 border-l-2 border-gold-500">
+                    <p class="text-lg italic text-gray-300">「十字架是神與我們同在幽谷中的最高明證；祂跳入洶湧的波濤中拯救我們。」</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-gold-500 font-bold text-sm">— 約翰·史托德 (John Stott)</span>
+                        <span class="text-gray-600 text-xs italic">《基督十架》</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <footer class="pt-20 text-center border-t border-white/5">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-900/10 border border-red-900/30 rounded-full text-red-400 text-xs">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Floating Back to Prayer Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl z-50 floating-arrow hover:scale-110 transition-transform">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+</body>
+</html>

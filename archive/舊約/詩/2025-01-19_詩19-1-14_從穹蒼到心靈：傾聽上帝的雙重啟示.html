@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩19:1-14:從穹蒼到心靈：傾聽上帝的雙重啟示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9d3',
+                            200: '#fdf1a7',
+                            300: '#fbe371',
+                            400: '#f9d241',
+                            500: '#f4b810',
+                            600: '#d9940b',
+                            700: '#b56d0d',
+                            800: '#945511',
+                            900: '#7a4613',
+                        },
+                        obsidian: '#0a0a0c',
+                        void: '#050505',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e7eb;
+            font-family: 'Outfit', 'Noto Serif TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f4b810 0%, #f9d241 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f4b810;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .hero-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="text-gold-400 font-bold text-sm tracking-widest uppercase md:text-base">詩篇 19:1-14</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-tighter">
+                <a href="#prayer" class="nav-link relative text-gray-300 hover:text-gold-400 transition">禱告</a>
+                <a href="#outline" class="nav-link relative text-gray-300 hover:text-gold-400 transition">大綱</a>
+                <a href="#sermon" class="nav-link relative text-gray-300 hover:text-gold-400 transition">講章</a>
+                <a href="#quotes" class="nav-link relative text-gray-300 hover:text-gold-400 transition">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner / Hero Section -->
+    <header class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/7ac52ad3-5cfa-44c5-b6f9-8fa8a3da7025' alt='media_1' class="w-full h-full object-cover opacity-60 hero-mask" />
+            <div class="absolute inset-0 bg-gradient-to-t from-void via-transparent to-void/50"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
+                <span class="text-gradient">從穹蒼到心靈</span><br/>
+                <span class="text-white text-3xl md:text-5xl">傾聽上帝的雙重啟示</span>
+            </h1>
+            <div class="inline-block p-[1px] bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 rounded-full">
+                <div class="bg-obsidian px-6 py-2 rounded-full">
+                    <p class="text-gold-400 text-sm md:text-lg font-medium">詩篇 19:1-14</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Golden Verse Section -->
+        <section class="mt-[-80px] relative z-20">
+            <div class="glass p-8 md:p-12 rounded-3xl text-center shadow-2xl transform hover:scale-[1.01] transition duration-500">
+                <svg class="w-12 h-12 text-gold-500 mx-auto mb-6 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.34315 15.3602 2 17.017 2H19.017C20.6739 2 22.017 3.34315 22.017 5V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.01697 21L2.01697 18C2.01697 16.8954 2.9124 16 4.01697 16H7.01697C7.56925 16 8.01697 15.5523 8.01697 15V9C8.01697 8.44772 7.56925 8 7.01697 8H4.01697C2.9124 8 2.01697 7.10457 2.01697 6V5C2.01697 3.34315 3.36012 2 5.01697 2H7.01697C8.67382 2 10.017 3.34315 10.017 5V15C10.017 18.3137 7.33068 21 4.01697 21H2.01697Z"></path></svg>
+                <h2 class="text-gold-400 text-lg font-bold tracking-[0.2em] mb-4">金句</h2>
+                <p class="text-2xl md:text-4xl font-serif leading-relaxed text-white">
+                    「耶和華—我的磐石，我的救贖主啊，願我口中的言語、心裡的意念在你面前蒙悅納。」
+                </p>
+                <p class="mt-4 text-gold-500 font-display font-bold">（詩篇 19:14）</p>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-gold-500/10 p-3 rounded-xl border border-gold-500/20">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-bold text-white tracking-tight">禱告</h3>
+            </div>
+            <div class="bg-obsidian/50 p-8 rounded-3xl border border-white/5 font-serif text-xl leading-loose text-gray-300 italic">
+                創造天地萬物的主宰，我們讚美祢！祢的榮耀彰顯在浩瀚的穹蒼，祢的智慧雕刻在宇宙的每一個角落。主啊，我們更感謝祢賜下寶貴的話語，成為我們生命中的明燈。求祢的聖靈今天開啟我們的耳朵，讓我們不僅聽見大自然的無聲讚美，更能聽見祢律法中甦醒人心的呼喚。求祢潔淨我們隱而未現的過犯，讓我們口中的言語、心裡的意念，在祢面前都能蒙悅納。奉主耶穌基督的聖名祈求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-blue-500/10 p-3 rounded-xl border border-blue-500/20">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h3 class="text-3xl font-bold text-white tracking-tight">分段大綱</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="group glass p-6 rounded-2xl hover:bg-white/5 transition duration-300">
+                    <span class="text-gold-500 font-display font-black text-4xl block mb-4 opacity-30 group-hover:opacity-100 transition">01</span>
+                    <h4 class="text-white font-bold text-lg mb-2">上帝在創造中的榮耀</h4>
+                    <p class="text-gray-400 text-sm">詩19:1-6：無聲的啟示</p>
+                </a>
+                <a href="#section2" class="group glass p-6 rounded-2xl hover:bg-white/5 transition duration-300">
+                    <span class="text-gold-500 font-display font-black text-4xl block mb-4 opacity-30 group-hover:opacity-100 transition">02</span>
+                    <h4 class="text-white font-bold text-lg mb-2">上帝在律法中的全備</h4>
+                    <p class="text-gray-400 text-sm">詩19:7-11：甦醒的真理</p>
+                </a>
+                <a href="#section3" class="group glass p-6 rounded-2xl hover:bg-white/5 transition duration-300">
+                    <span class="text-gold-500 font-display font-black text-4xl block mb-4 opacity-30 group-hover:opacity-100 transition">03</span>
+                    <h4 class="text-white font-bold text-lg mb-2">上帝在人心中的潔淨</h4>
+                    <p class="text-gray-400 text-sm">詩19:12-14：敬虔的回應</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="space-y-40">
+            <!-- Section 1 -->
+            <section id="section1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="w-full md:w-1/3">
+                        <div class="sticky top-24">
+                            <span class="text-gold-500 font-display font-bold tracking-widest uppercase text-sm">Section 01</span>
+                            <h2 class="text-4xl font-bold text-white mt-4 leading-tight">上帝在創造中的榮耀：無聲的啟示</h2>
+                            <div class="mt-6 inline-flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg text-gray-400 text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                詩篇 19:1-6
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-12">
+                        <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <p class="text-gray-200 leading-relaxed font-serif text-lg">
+                                諸天述說神的榮耀；穹蒼傳揚他的手段。這日到那日發出言語；這夜到那夜傳出知識。無言無語，也無聲音可聽。它的量帶通遍天下，它的言語傳到地極...
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                    關鍵原文
+                                </h5>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <span class="text-white font-bold block">榮耀 (כָּבוֹד - Kabod)</span>
+                                        <span class="text-gray-400 text-sm">原意「重量」、「豐滿」。指上帝無限威嚴具體展现。</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white font-bold block">述說 (סָפַר - Saphar)</span>
+                                        <span class="text-gray-400 text-sm">意指「精確計算」或「宣告」。宇宙是精準的活字典。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    問題與回答
+                                </h5>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    <span class="text-gold-300 font-bold">問：無言之物如何說話？</span><br/>
+                                    解析：大自然透過日夜秩序傳達大能與信實。現代人因世俗噪音失去了對「普遍啟示」的敏銳度。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-8 rounded-3xl border border-gold-500/20">
+                            <h5 class="text-gold-400 font-bold mb-4">佳句例證</h5>
+                            <blockquote class="text-xl font-serif text-white italic mb-6">「這世界是上帝榮耀的劇場。」——約翰·加爾文</blockquote>
+                            <p class="text-gray-400 text-sm">阿波羅8號太空人環繞月球時，面對浩瀚宇宙，選擇朗讀《創世記》。人類在寂靜震撼中必承認那位設計者。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="w-full md:w-1/3">
+                        <div class="sticky top-24">
+                            <span class="text-gold-500 font-display font-bold tracking-widest uppercase text-sm">Section 02</span>
+                            <h2 class="text-4xl font-bold text-white mt-4 leading-tight">上帝在律法中的全備：甦醒的真理</h2>
+                            <div class="mt-6 inline-flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg text-gray-400 text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                詩篇 19:7-11
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-12">
+                        <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <p class="text-gray-200 leading-relaxed font-serif text-lg">
+                                耶和華的律法全備，能甦醒人心；耶和華的法度確定，能使愚人有智慧。耶和華的訓詞正直，能快活人的心...比金子可羨慕，且比極多的精金可羨慕。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                    關鍵原文
+                                </h5>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <span class="text-white font-bold block">甦醒 (שׁוּב - Shuv)</span>
+                                        <span class="text-gray-400 text-sm">原意「轉回」、「恢復」。上帝的話能使枯乾靈魂復甦。</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white font-bold block">律法 (תּוֹרָה - Torah)</span>
+                                        <span class="text-gray-400 text-sm">上帝的「指引」、「方向」。不僅是法律條文。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    問題與回答
+                                </h5>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    <span class="text-gold-300 font-bold">問：律法是否限制自由？</span><br/>
+                                    解析：真正的自由是活出被造目的。火車在軌道上才是自由且安全的；律法是引導人脫離死亡的指南針。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-8 rounded-3xl border border-gold-500/20">
+                            <h5 class="text-gold-400 font-bold mb-4">佳句例證</h5>
+                            <blockquote class="text-xl font-serif text-white italic mb-6">「聖經不是用來增加我們的知識，而是用來改變我們的生命。」——慕迪</blockquote>
+                            <p class="text-gray-400 text-sm">想像深山迷路的登山客，獲得地圖與指南針（律法）絕非束縛，而是重獲生命的希望。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="w-full md:w-1/3">
+                        <div class="sticky top-24">
+                            <span class="text-gold-500 font-display font-bold tracking-widest uppercase text-sm">Section 03</span>
+                            <h2 class="text-4xl font-bold text-white mt-4 leading-tight">上帝在人心中的潔淨：敬虔的回應</h2>
+                            <div class="mt-6 inline-flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg text-gray-400 text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                詩篇 19:12-14
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-12">
+                        <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <p class="text-gray-200 leading-relaxed font-serif text-lg">
+                                誰能知道自己的錯失呢？願你赦免我隱而未現的過錯。求你攔阻僕人不犯任意妄為的罪...耶和華—我的磐石，我的救贖主啊。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                    關鍵原文
+                                </h5>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <span class="text-white font-bold block">磐石 (צוּר - Tsur)</span>
+                                        <span class="text-gray-400 text-sm">巨大的岩石，象徵上帝是不可動搖的避難所。</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white font-bold block">救贖主 (גָּאַל - Ga'al)</span>
+                                        <span class="text-gray-400 text-sm">「至近的親屬」。預表上帝將我們從罪中買贖。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    問題與回答
+                                </h5>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    <span class="text-gold-300 font-bold">問：如何面對內心黑暗？</span><br/>
+                                    解析：神的話語如陽光照進房間，顯明灰塵。看見敗壞不應隱藏，而是呼求救贖主的恩典來更新。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-8 rounded-3xl border border-gold-500/20">
+                            <h5 class="text-gold-400 font-bold mb-4">佳句例證</h5>
+                            <blockquote class="text-xl font-serif text-white italic mb-6">「恩典之所在，就是光照出我們真實光景之處。」——提摩太·凱勒</blockquote>
+                            <p class="text-gray-400 text-sm">封閉房間拉開窗簾，強光顯明灰塵與蛛網。神的話不是為了羞辱，而是為了拯救後的「大掃除」。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-purple-500/10 p-3 rounded-xl border border-purple-500/20">
+                    <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-bold text-white tracking-tight">講章文稿</h3>
+            </div>
+
+            <div class="bg-obsidian glass p-10 md:p-16 rounded-[2rem] space-y-10 font-serif text-lg md:text-xl leading-[1.8] text-gray-300 shadow-3xl">
+                <h4 class="text-3xl md:text-5xl font-black text-white text-center mb-16 font-display underline decoration-gold-500 decoration-4 underline-offset-8">
+                    從穹蒼到心靈：傾聽上帝的雙重啟示
+                </h4>
+                
+                <p>弟兄姊妹們，我們生活在一個充滿噪音的時代。每天，我們被手機通知、新聞播報、社交媒體的聲音轟炸。然而，在這些嘈雜的聲音中，我們是否聽見了宇宙中最重要、最震撼的聲音？</p>
+
+                <div class="border-l-4 border-gold-500 pl-6 my-8">
+                    <h5 class="text-2xl font-bold text-white mb-4">一、 上帝在創造中的榮耀：無聲的啟示</h5>
+                    <p>經文說：「諸天述說神的榮耀；穹蒼傳揚他的手段。」大衛在曠野牧羊的夜晚，仰望無際的星空，他感受到了一種震懾靈魂的重量。那就是上帝的「榮耀」（Kabod）。</p>
+                </div>
+
+                <p>雖然大自然能告訴我們有一位偉大的造物主，但它不能告訴我們這位神的心意是什麼。因此，我們需要第二重啟示。</p>
+
+                <div class="border-l-4 border-gold-500 pl-6 my-8">
+                    <h5 class="text-2xl font-bold text-white mb-4">二、 上帝在律法中的全備：甦醒的真理</h5>
+                    <p>大衛形容神的話語 <span class="text-gold-400 font-bold underline">「比極多的精金可羨慕；比蜜甘甜」</span>。為什麼？因為上帝的律法是造物主給受造物的使用說明書。</p>
+                </div>
+
+                <p>當我們仰望星空看見神的偉大，又打開聖經看見神的聖潔時，我們必然會產生一種反應。</p>
+
+                <div class="border-l-4 border-gold-500 pl-6 my-8">
+                    <h5 class="text-2xl font-bold text-white mb-4">三、 上帝在人心中的潔淨：敬虔的回應</h5>
+                    <p>面對這無比榮耀與聖潔的光芒，大衛在神面前赤露敞開：<span class="text-white font-bold italic">「誰能知道自己的錯失呢？願你赦免我隱而未現的過錯。」</span></p>
+                </div>
+
+                <div class="bg-gold-500/10 p-8 rounded-2xl border border-gold-500/30 text-center my-12">
+                    <p class="text-gold-400 font-bold mb-4 uppercase tracking-widest text-sm">今日金句</p>
+                    <p class="text-2xl md:text-3xl text-white font-bold leading-relaxed">
+                        「耶和華—我的磐石，我的救贖主啊，願我口中的言語、心裡的意念在你面前蒙悅納。」
+                    </p>
+                </div>
+
+                <p class="text-center font-bold text-white text-2xl pt-8">弟兄姊妹，上帝的啟示從浩瀚的穹蒼，一路走進我們最深的心靈。阿們！</p>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass p-10 rounded-3xl">
+                <h4 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    講道應用方向
+                </h4>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="bg-gold-500/20 text-gold-400 h-8 w-8 rounded-full flex items-center justify-center shrink-0 font-bold">1</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">刻意觀察與敬拜</span>：刻意留出時間走到戶外，恢復對造物主的敬畏之心。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="bg-gold-500/20 text-gold-400 h-8 w-8 rounded-full flex items-center justify-center shrink-0 font-bold">2</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">轉換讀經的態度</span>：帶著尋找精金與蜂蜜的渴望閱讀聖經，讓神的話語甦醒人心。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="bg-gold-500/20 text-gold-400 h-8 w-8 rounded-full flex items-center justify-center shrink-0 font-bold">3</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">深度的內在省察</span>：求聖靈光照「隱而未現的過錯」與「心裡的意念」，尋求真正的聖潔。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-10 rounded-3xl border-gold-500/30 border-2">
+                <h4 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應或實踐行動
+                </h4>
+                <div class="space-y-6">
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                        <p class="text-white font-bold mb-1">本週戶外靜修</p>
+                        <p class="text-gray-400 text-sm italic">放下手機15分鐘，獨自一人在自然中安靜，透過受造物向神獻上感恩。</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                        <p class="text-white font-bold mb-1">咀嚼真理</p>
+                        <p class="text-gray-400 text-sm italic">將詩篇19:7-11寫在卡片上，每天早上朗讀一次。</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                        <p class="text-white font-bold mb-1">每日過濾禱告</p>
+                        <p class="text-gray-400 text-sm italic">每晚用詩篇19:14結束禱告，求聖靈指出今天有沒有得罪神的心思意念。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold-500/10 p-3 rounded-xl border border-gold-500/20">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-bold text-white tracking-tight">名言佳句</h3>
+            </div>
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Quote Items -->
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「這世界是上帝榮耀的劇場。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《基督教要義》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「一本常被翻破的聖經，通常屬於一個生命不破敗的人。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《司布真講道集》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「聖經不是用來增加我們的知識，而是用來改變我們的生命。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 慕迪 (D. L. Moody)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《慕迪講道集》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「上帝的律法不是限制我們自由的柵欄，而是讓我們能真正翱翔的翅膀。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《為何是他》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「聖經不僅是一本書，它是上帝正在對我們說話的聲音。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 (A. W. Tozer)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《渴慕神》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「我們不是單純地閱讀聖經，我們必須讓聖經來閱讀我們。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《團契生活》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「讀經的最終目的不是為了獲取資訊，而是為了與神建立親密的關係，讓話語成為血肉。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 畢德生 (Eugene Peterson)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《聖經好好吃》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「心靈的更新始於我們願意將心思意念完全降服於上帝真理的光照之下。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 魏樂德 (Dallas Willard)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《心靈的重塑》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「在靜默中，我們才能聽見那超越一切言語的聲音，那是在大自然與聖經深處呼喚我們的愛之音。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 盧雲 (Henri Nouwen)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《喧囂中的寧靜》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl hover:border-gold-500/50 transition">
+                    <p class="text-white font-serif italic mb-4">「普遍啟示叫人無可推諉，特殊啟示叫人因信得救。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 唐崇榮 (Stephen Tong)</p>
+                    <p class="text-gray-500 text-[10px] mt-1">《啟示與真理》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <section class="border-t border-white/10 pt-12">
+            <div class="flex flex-col items-center justify-center text-gray-500 text-sm space-y-2">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-400 hover:scale-110 transition active:scale-95 z-50">
+        <svg class="w-6 h-6 text-obsidian" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

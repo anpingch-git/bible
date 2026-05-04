@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒10:24-48: 跨越界線的福音：看見神不偏待人的恩典</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfae9',
+                            100: '#f9f2c6',
+                            200: '#f3e38c',
+                            300: '#ebcc52',
+                            400: '#e4b62a',
+                            500: '#d1991a',
+                            600: '#b47714',
+                            700: '#8f5613',
+                            800: '#754516',
+                            900: '#643a18',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#121212',
+                            700: '#1e1e1e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f3e38c 0%, #d1991a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d1991a;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .floating-arrow {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Header Banner -->
+    <header class="relative h-[80vh] w-full overflow-hidden flex items-end">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/431dcc47-59d0-4685-92d3-3c888feda736' alt='media_1' class="w-full h-full object-cover scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+            <div class="inline-block px-4 py-1 rounded-full border border-gold-500/50 text-gold-400 text-sm font-medium mb-4 backdrop-blur-sm">
+                使徒行傳 10:24-48
+            </div>
+            <h1 class="text-4xl md:text-7xl font-display font-black leading-tight mb-6">
+                跨越界線的福音：<br/>
+                <span class="gradient-text">看見神不偏待人的恩典</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass border-b border-white/5 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="hidden md:block text-gold-400 font-bold tracking-wider text-sm uppercase">徒 10:24-48</div>
+            <div class="flex gap-6 md:gap-10 text-sm font-medium">
+                <a href="#prayer" class="nav-link text-white/70 hover:text-white transition">禱告</a>
+                <a href="#outline" class="nav-link text-white/70 hover:text-white transition">大綱</a>
+                <a href="#sermon" class="nav-link text-white/70 hover:text-white transition">講章</a>
+                <a href="#quotes" class="nav-link text-white/70 hover:text-white transition">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 md:py-24 space-y-32">
+
+        <!-- Golden Verse Section -->
+        <section id="golden-verse" class="relative">
+            <div class="absolute -top-24 -left-12 text-gold-500/10 text-9xl font-black select-none pointer-events-none">VERSE</div>
+            <div class="glass rounded-3xl p-8 md:p-16 text-center border-gold-500/20">
+                <svg class="w-12 h-12 text-gold-500 mx-auto mb-8 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H12.017V4H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H4.017C3.46472 8 3.017 8.44772 3.017 9V12C3.017 12.5523 2.56928 13 2.017 13H1.017V4H11.017V15C11.017 18.3137 8.33072 21 5.017 21H3.017Z"/></svg>
+                <p class="text-2xl md:text-4xl font-medium leading-relaxed text-white">
+                    「彼得就開口說：『我真看出神是不偏待人。原來，各國中那敬畏主、行義的人都為主所悅納。』」
+                </p>
+                <p class="mt-8 text-gold-500 font-bold tracking-widest">— 使徒行傳 10:34-35</p>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21l-8.228-9.904A17.94 17.94 0 0112 3a17.94 17.94 0 018.228 8.096L12 21z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">開會禱告</h2>
+            </div>
+            <div class="glass rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 blur-3xl rounded-full -mr-16 -mt-16"></div>
+                <p class="text-xl leading-relaxed text-white/90 italic">
+                    親愛的天父，我們感謝祢，因為祢的救恩浩大，超越了人類所設定的一切藩籬與界線。主啊，求祢開啟我們的屬靈眼睛，如同當年祢開啟彼得的眼睛一樣，讓我們真看見祢是不偏待人的神。求聖靈今天在這聚集中動工，預備我們的心如同哥尼流的家，充滿對祢話語的渴慕與敬畏。求祢挪去我們心中的偏見與驕傲，賜給我們跨越界線的勇氣，去愛那些與我們不同的人，並將使人和平的福音傳給他們。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="section-card glass p-8 rounded-3xl border-l-4 border-gold-500 group">
+                    <span class="text-gold-500 font-bold text-sm block mb-4 group-hover:translate-x-2 transition-transform">PART 01</span>
+                    <h3 class="text-xl font-bold mb-4">預備領受的器皿——打破傳統的相遇</h3>
+                    <p class="text-white/40 text-sm">徒 10:24-33</p>
+                </a>
+                <a href="#section2" class="section-card glass p-8 rounded-3xl border-l-4 border-gold-500 group">
+                    <span class="text-gold-500 font-bold text-sm block mb-4 group-hover:translate-x-2 transition-transform">PART 02</span>
+                    <h3 class="text-xl font-bold mb-4">不偏待人的福音——宣告基督的救恩</h3>
+                    <p class="text-white/40 text-sm">徒 10:34-43</p>
+                </a>
+                <a href="#section3" class="section-card glass p-8 rounded-3xl border-l-4 border-gold-500 group">
+                    <span class="text-gold-500 font-bold text-sm block mb-4 group-hover:translate-x-2 transition-transform">PART 03</span>
+                    <h3 class="text-xl font-bold mb-4">聖靈打破的界線——毫無保留的接納</h3>
+                    <p class="text-white/40 text-sm">徒 10:44-48</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Content Sections -->
+        <div class="space-y-40">
+            
+            <!-- Section 1 -->
+            <section id="section1" class="scroll-mt-32">
+                <div class="flex items-baseline gap-4 mb-8">
+                    <span class="text-5xl font-black text-gold-500/20">01</span>
+                    <h2 class="text-3xl md:text-4xl font-bold">預備領受的器皿——打破傳統的相遇</h2>
+                </div>
+                
+                <div class="space-y-12">
+                    <div class="bg-white/5 border-l-4 border-gold-500 p-8 rounded-r-2xl italic text-lg leading-relaxed">
+                        <p class="mb-4 text-gold-400 font-bold">【引用經文】徒 10:24-33</p>
+                        24 又次日，他們進入該撒利亞，哥尼流已經請了他的親屬密友等候他們。... 33 所以我立時打發人去請你。你來了很好；你且看，我們都在神面前，要聽主所吩咐你的一切話。
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文與詞彙
+                            </h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">拜 (proskuneō)</strong>：意指「俯伏、敬拜、表達極度的尊敬」。彼得立刻拒絕，表明在神面前人人平等。</li>
+                                <li><strong class="text-white">聚集/都在 (pareimi)</strong>：意指「在場、準備好」。第33節帶有一種「我們已經就位、全神貫注等候」的強烈渴慕感。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                問題與解析
+                            </h4>
+                            <p class="text-white mb-2"><strong>為什麼哥尼流的家能夠經歷如此巨大的屬靈突破？</strong></p>
+                            <p class="text-white/70">因為他們擁有「預備好的心」。不預設個人立場、全然順服的態度，是聖靈動工的最佳土壤。</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-grid">
+                        <div class="col-span-12 md:col-span-7 glass p-8 rounded-3xl flex items-center gap-8">
+                            <div class="hidden md:block text-6xl">🧽</div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2">例證小故事</h4>
+                                <p class="text-white/80">一塊乾燥的海綿掉進水裡，瞬間就能吸滿水分；但一塊堅硬的石頭泡在水裡十年，切開來裡面依然是乾的。哥尼流的家就像那塊海綿，他們已經將心靈清空。</p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-5 bg-gold-500 p-8 rounded-3xl text-dark-900">
+                            <h4 class="font-black mb-2 uppercase text-xs tracking-widest opacity-60">名言佳句</h4>
+                            <p class="text-xl font-bold italic leading-tight">「如果我們的心靈沒有預備好，即使神在我們旁邊說話，我們也聽不見。」</p>
+                            <p class="mt-4 font-bold">— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="scroll-mt-32">
+                <div class="flex items-baseline gap-4 mb-8">
+                    <span class="text-5xl font-black text-gold-500/20">02</span>
+                    <h2 class="text-3xl md:text-4xl font-bold">不偏待人的福音——宣告基督的救恩</h2>
+                </div>
+                
+                <div class="space-y-12">
+                    <div class="bg-white/5 border-l-4 border-gold-500 p-8 rounded-r-2xl italic text-lg leading-relaxed">
+                        <p class="mb-4 text-gold-400 font-bold">【引用經文】徒 10:34-43</p>
+                        34 彼得就開口說：「我真看出神是不偏待人。 35 原來，各國中那敬畏主、行義的人都為主所悅納。」... 43 眾先知也為他作見證說：『凡信他的人，必藉著他的名得蒙赦罪。』
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文與詞彙
+                            </h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">不偏待人 (prosōpolēmptēs)</strong>：字面意思是「不看人的情面」、「不以貌取人」。</li>
+                                <li><strong class="text-white">和平 (eirēnē)</strong>：即 Shalom。暗示了猶太人與外邦人之間藉著基督拆毀了隔斷的牆。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                問題與解析
+                            </h4>
+                            <p class="text-white mb-2"><strong>彼得所傳遞的福音核心是什麼？這對當時有何震撼？</strong></p>
+                            <p class="text-white/70">福音的核心是基督的生、死、復活與赦罪。震撼之處在於救恩是毫無國界、毫無門檻的，只要「信」就能得著。</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-grid">
+                        <div class="col-span-12 md:col-span-5 bg-gold-500 p-8 rounded-3xl text-dark-900">
+                            <h4 class="font-black mb-2 uppercase text-xs tracking-widest opacity-60">名言佳句</h4>
+                            <p class="text-xl font-bold italic leading-tight">「十字架前，人人平等。」</p>
+                            <p class="mt-4 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                        <div class="col-span-12 md:col-span-7 glass p-8 rounded-3xl flex items-center gap-8">
+                            <div class="hidden md:block text-6xl">🏥</div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2">例證小故事</h4>
+                                <p class="text-white/80">在醫院的急診室裡，醫生進行「檢傷分類」時，絕對不會問病人的存款，而是看誰的傷病最危急。福音也是如此，基督的寶血對全人類一視同仁。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="scroll-mt-32">
+                <div class="flex items-baseline gap-4 mb-8">
+                    <span class="text-5xl font-black text-gold-500/20">03</span>
+                    <h2 class="text-3xl md:text-4xl font-bold">聖靈打破的界線——毫無保留的接納</h2>
+                </div>
+                
+                <div class="space-y-12">
+                    <div class="bg-white/5 border-l-4 border-gold-500 p-8 rounded-r-2xl italic text-lg leading-relaxed">
+                        <p class="mb-4 text-gold-400 font-bold">【引用經文】徒 10:44-48</p>
+                        44 彼得還說這話的時候，聖靈降在一切聽道的人身上。 45 那些奉割禮... 就都希奇；因聽見他們說方言，稱讚神為大。
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文與詞彙
+                            </h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">降在 (epipiptō)</strong>：有「突然落在...之上」、「擁抱」的意思。顯示聖靈的主動性。</li>
+                                <li><strong class="text-white">禁止 (kōluō)</strong>：意思是「攔阻、阻止」。表明當神已經接納時，人類無權攔阻。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                問題與解析
+                            </h4>
+                            <p class="text-white mb-2"><strong>為什麼聖靈要在彼得講道一半時就降臨？</strong></p>
+                            <p class="text-white/70">這是「神的神聖介入」。證明神接納他們完全是基於信，而非任何律法儀式或先變換身分。</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-grid">
+                        <div class="col-span-12 md:col-span-7 glass p-8 rounded-3xl flex items-center gap-8">
+                            <div class="hidden md:block text-6xl">🧱</div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2">例證小故事</h4>
+                                <p class="text-white/80">柏林圍牆倒塌那天，聖靈在這裡就像推倒圍牆的強大力量，瞬間拆毀了猶太與外邦之間幾百年的高牆，讓教會看見「我們是一家人」。</p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-5 bg-gold-500 p-8 rounded-3xl text-dark-900">
+                            <h4 class="font-black mb-2 uppercase text-xs tracking-widest opacity-60">名言佳句</h4>
+                            <p class="text-xl font-bold italic leading-tight">「聖靈是教會合一的最高保證。祂同時無可避免地將我們彼此聯合。」</p>
+                            <p class="mt-4 font-bold">— 約翰·史托德 (John Stott)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="glass p-10 rounded-[3rem]">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-gold-500 text-dark-900 flex items-center justify-center text-sm">✓</span>
+                    應用方向
+                </h3>
+                <ul class="space-y-6 text-white/80">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01.</span>
+                        <span>檢視心中的「界線與偏見」：打破不配得恩典的成見。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02.</span>
+                        <span>培養如同哥尼流的渴慕：在每次聚會中全然預備好。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03.</span>
+                        <span>勇敢跨出舒適圈傳福音：離開同溫層，接觸不同背景的人。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">04.</span>
+                        <span>順服聖靈的「意外」帶領：不以傳統框住神的作為。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-10 rounded-[3rem] bg-gradient-to-br from-white/5 to-gold-500/5">
+                <h3 class="text-2xl font-bold mb-8">結論關鍵字</h3>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                        <span class="text-xl">渴慕 (Thirst)</span>
+                        <span class="text-gold-500">Preparation</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                        <span class="text-xl">平等 (Impartiality)</span>
+                        <span class="text-gold-500">Equality</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-4">
+                        <span class="text-xl">突破 (Breakthrough)</span>
+                        <span class="text-gold-500">New Era</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="text-center py-20">
+            <h2 class="text-3xl font-display font-bold mb-12">回應與實踐行動</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl border border-white/10 hover:border-gold-500 transition">
+                    <div class="text-4xl mb-4">☕</div>
+                    <h4 class="font-bold text-gold-400 mb-2">主動邀約</h4>
+                    <p class="text-sm opacity-70">本週尋找一位不同背景的人，請他喝杯咖啡，操練不偏待人的愛。</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-white/10 hover:border-gold-500 transition">
+                    <div class="text-4xl mb-4">⏳</div>
+                    <h4 class="font-bold text-gold-400 mb-2">提前預備</h4>
+                    <p class="text-sm opacity-70">下主日參加崇拜前，提早十分鐘安靜坐下，在心裡默禱預備。</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-white/10 hover:border-gold-500 transition">
+                    <div class="text-4xl mb-4">🙏</div>
+                    <h4 class="font-bold text-gold-400 mb-2">代禱跨越</h4>
+                    <p class="text-sm opacity-70">為一個你不熟悉或曾有偏見的群體迫切禱告，求福音照亮他們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="scroll-mt-32 max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM7 8h4m-4 4h8m-8 4h8"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            <div class="prose prose-invert prose-gold max-w-none space-y-8 text-lg leading-relaxed text-white/90">
+                <p class="text-gold-400 font-black text-2xl mb-8">徒10:24-48: 跨越界線的福音：看見神不偏待人的恩典</p>
+                
+                <p>各位弟兄姊妹，平安！我們今天所讀的使徒行傳第10章，是初期教會歷史上最驚天動地的一個轉折點。這段經文不只是記載了一個人信主，更是記載了一堵高牆的倒塌。</p>
+
+                <div class="glass p-8 rounded-2xl">
+                    <h3 class="text-gold-400 font-bold text-xl mb-4">第一段：預備領受的器皿</h3>
+                    <p>當彼得踏入哥尼流的家。在當時，猶太人踏入外邦人家中是不合規矩的。但是，神已經動工。哥尼流對彼得說：<strong class="text-gold-300">「我們都在神面前，要聽主所吩咐你的一切話。」</strong> 這是一幅何等美麗的圖畫！</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl">
+                    <h3 class="text-gold-400 font-bold text-xl mb-4">第二段：不偏待人的福音</h3>
+                    <p>彼得脫口而出金句：<strong class="text-gold-300">「我真看出神是不偏待人。原來，各國中那敬畏主、行義的人都為主所悅納。」</strong> 他強調耶穌是「萬有的主」，救恩不是給少數VIP的特權，而是<strong class="text-gold-300">「凡信他的人，必藉著他的名得蒙赦罪。」</strong></p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl">
+                    <h3 class="text-gold-400 font-bold text-xl mb-4">第三段：聖靈打破的界線</h3>
+                    <p>最奇妙的是聖靈的「插嘴」。彼得講章甚至還沒講完，聖靈就迫不及待地降臨了！彼得看見神的作為，立刻宣告：<strong class="text-gold-300">「誰能禁止用水給他們施洗呢？」</strong> 於是，教會的門向全世界打開了。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-white font-medium mb-4 italic leading-relaxed">「福音是這樣的：我們比自己所敢相信的更加罪惡深重；但同時，我們在耶穌基督裡，比自己所敢盼望的更加被愛、被接納。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">提摩太·凱勒</span>
+                        <span class="text-xs text-white/30">《加拉太書查經》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-white font-medium mb-4 italic leading-relaxed">「基督徒的團契不是一個理想，而是一個神聖的現實。我們是藉著耶穌基督才屬於彼此的。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">潘霍華</span>
+                        <span class="text-xs text-white/30">《團契生活》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-white font-medium mb-4 italic leading-relaxed">「十字架是神恩典的極致展現。在十字架下，我們所有人都在同一平面上；沒有人能站得比別人高。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">約翰·史托德</span>
+                        <span class="text-xs text-white/30">《基督的十字架》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-white font-medium mb-4 italic leading-relaxed">「真正的接待，是創造一個自由的空間，讓陌生人可以進入，並成為朋友。它不是改變他人。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">盧雲</span>
+                        <span class="text-xs text-white/30">《尋找歸宿》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-white font-medium mb-4 italic leading-relaxed">「神將祂的啟示賜給那些已經預備好要順服的人。沒有順服的決心，查經也無法讓我們真認識神。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">陶恕</span>
+                        <span class="text-xs text-white/30">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-white font-medium mb-4 italic leading-relaxed">「教會不是一個由好人組成的博物館，而是一個由破碎的罪人所組成的醫院，他們共同經歷恩典。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">畢德生</span>
+                        <span class="text-xs text-white/30">《與馬同跑》</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-white/30 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition floating-arrow z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+</body>
+</html>

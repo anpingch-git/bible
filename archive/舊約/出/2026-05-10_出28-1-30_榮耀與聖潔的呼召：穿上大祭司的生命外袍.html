@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出28:1-30:榮耀與聖潔的呼召：穿上大祭司的生命外袍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Serif+TC:wght@500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        priest: {
+                            gold: '#D4AF37',
+                            blue: '#1E3A8A',
+                            purple: '#4C1D95',
+                            scarlet: '#991B1B',
+                            dark: '#0A0A0A',
+                            card: '#161616',
+                            accent: '#6366f1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Inter', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0A;
+            color: #E5E7EB;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: #161616;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: #D4AF37;
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-priest-gold font-bold text-sm tracking-widest hidden sm:block">
+                出28:1-30
+            </div>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#prayer" class="hover:text-priest-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-priest-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-priest-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-priest-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/44ea481d-40f0-4c19-b013-1d47b621e604' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-priest-dark via-priest-dark/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-display font-black leading-tight mb-6">
+                榮耀與聖潔的呼召：<br/>
+                <span class="gradient-text">穿上大祭司的生命外袍</span>
+            </h1>
+            <div class="inline-block px-4 py-2 bg-priest-gold/10 border border-priest-gold/30 rounded-full mb-8">
+                <p class="text-priest-gold font-semibold tracking-wide text-sm md:text-base">出埃及記 28:1-30</p>
+            </div>
+            <div class="max-w-2xl mx-auto p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
+                <p class="text-xl md:text-2xl font-serif italic leading-relaxed text-gray-200">
+                    「亞倫進聖所的時候，要將決斷胸牌，就是刻著以色列兒子名字的，帶在胸前，在耶和華面前常作記念。」
+                </p>
+                <p class="mt-4 text-priest-gold font-bold">— 出埃及記 28:29</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding">
+            <div class="max-w-3xl mx-auto bento-card p-8 md:p-12 rounded-[2rem] relative overflow-hidden">
+                <div class="absolute top-0 right-0 opacity-10 p-4">
+                    <svg class="w-24 h-24 text-priest-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9.08-4.1-9.08-9.13 0-2.45.96-4.66 2.52-6.28l1.41 1.41c-1.18 1.25-1.93 2.92-1.93 4.87 0 3.86 3.12 7 7.08 7s7.08-3.14 7.08-7c0-1.95-.75-3.62-1.93-4.87l1.41-1.41c1.56 1.62 2.52 3.83 2.52 6.28 0 5.03-4.01 9.13-9.08 9.13V2z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-8">
+                    <span class="p-3 bg-priest-gold/20 rounded-xl">🙏</span> 禱告
+                </h2>
+                <p class="text-xl leading-loose font-serif text-gray-300">
+                    主耶和華，我們感謝祢。祢是聖潔、榮耀的上帝，卻樂意呼召我們這群平凡的人，來到祢的施恩座前。透過出埃及記中大祭司的聖衣，我們看見祢對事奉者「為榮耀、為華美」的聖潔心意，更看見大祭司如何將百姓的名字背在肩上、放在心上。主啊，主耶穌基督是我們真正的大祭司，祂已將我們的名字銘刻在心；求聖靈光照我們，讓我們明白在新約中「君尊祭司」的職分，披戴基督的聖潔，在生活中活出代禱與順服的生命，尋求祢的旨意。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="pb-16">
+            <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-10">
+                <span class="p-3 bg-priest-purple/20 rounded-xl">📋</span> 大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="group bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-priest-gold text-xs font-bold tracking-widest mb-4 block">第一部分</span>
+                        <h3 class="text-xl font-bold group-hover:text-priest-gold transition-colors">呼召與分別——穿上榮耀與華美的聖衣</h3>
+                        <p class="text-sm text-gray-400 mt-2">出埃及記 28:1-5</p>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                        <span class="text-priest-gold">→</span>
+                    </div>
+                </a>
+                <a href="#section2" class="group bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-priest-gold text-xs font-bold tracking-widest mb-4 block">第二部分</span>
+                        <h3 class="text-xl font-bold group-hover:text-priest-gold transition-colors">肩負的重擔——背負群羊的代禱與記念</h3>
+                        <p class="text-sm text-gray-400 mt-2">出埃及記 28:6-14</p>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                        <span class="text-priest-gold">→</span>
+                    </div>
+                </a>
+                <a href="#section3" class="group bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-priest-gold text-xs font-bold tracking-widest mb-4 block">第三部分</span>
+                        <h3 class="text-xl font-bold group-hover:text-priest-gold transition-colors">胸懷的摯愛——貼近神心的決斷與尋求</h3>
+                        <p class="text-sm text-gray-400 mt-2">出埃及記 28:15-30</p>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                        <span class="text-priest-gold">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="space-y-24 py-16">
+            <!-- Section 1 Details -->
+            <section id="section1" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="h-px flex-1 bg-gradient-to-r from-priest-gold to-transparent"></span>
+                    <h2 class="text-2xl font-bold text-priest-gold">深度解析 01</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bento-card p-8 rounded-3xl">
+                            <h3 class="text-3xl font-display font-black mb-6">呼召與分別——穿上榮耀與華美的聖衣</h3>
+                            <div class="bg-white/5 border-l-4 border-priest-gold p-6 rounded-r-xl mb-8">
+                                <p class="text-lg leading-relaxed font-serif text-gray-200">
+                                    「你要從以色列人中，使你的哥哥亞倫和他的兒子拿答、亞比戶、以利亞撒、以他瑪一同就近你，給我供祭司的職分。你要給你哥哥亞倫做聖衣為榮耀，為華美。又要吩咐一切心中有智慧的，就是我用智慧的靈所充滿的，給亞倫做衣服，使他分別為聖，可以給我供祭司的職分...」
+                                </p>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-priest-gold font-bold mb-2 flex items-center gap-2 italic">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        原文透視
+                                    </h4>
+                                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <li class="bg-white/5 p-4 rounded-xl">
+                                            <span class="text-priest-accent block font-bold">榮耀 (Kavod / כָּבוֹド)</span>
+                                            <span class="text-sm text-gray-400">意指「重量」、「尊榮」、「威嚴」。指神本身的屬性彰顯。</span>
+                                        </li>
+                                        <li class="bg-white/5 p-4 rounded-xl">
+                                            <span class="text-priest-accent block font-bold">華美 (Tif'arah / תִּפְאָרָה)</span>
+                                            <span class="text-sm text-gray-400">意為「美麗」、「光彩」。反映神聖潔的光輝。</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-priest-blue/10 border border-priest-blue/20 p-6 rounded-2xl">
+                                    <h4 class="text-priest-accent font-bold mb-3 italic">關鍵提問：為什麼需要特製聖衣？</h4>
+                                    <p class="text-gray-300">聖衣的設計不是為了提升亞倫的社會地位，而是為了「遮蓋」他墮落的人性，並「彰顯」神的聖潔。今天，我們蒙召披戴基督，這就是新約信徒的「榮耀與華美」。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="bento-card p-6 rounded-3xl bg-priest-purple/5">
+                            <h4 class="text-sm font-bold text-priest-purple uppercase tracking-widest mb-4">生活應用例證</h4>
+                            <p class="text-gray-300 italic">「醫生的白袍不僅是專業身分，更是一種心理提醒：我現在身負救人的重責大任。同樣的，我們穿著基督賜下的屬靈聖衣，隨時代表著上帝的榮耀。」</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-3xl border-l-4 border-priest-gold">
+                            <p class="text-xl font-serif text-priest-gold italic">「神呼召我們，不是要我們追求安逸，而是要我們追求聖潔。」</p>
+                            <p class="mt-4 text-sm text-gray-500">— 約翰·加爾文</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 Details -->
+            <section id="section2" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="h-px flex-1 bg-gradient-to-r from-priest-scarlet to-transparent"></span>
+                    <h2 class="text-2xl font-bold text-priest-scarlet">深度解析 02</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bento-card p-8 rounded-3xl">
+                            <h3 class="text-3xl font-display font-black mb-6">肩負的重擔——背負群羊的代禱與記念</h3>
+                            <div class="bg-white/5 border-l-4 border-priest-scarlet p-6 rounded-r-xl mb-8">
+                                <p class="text-lg leading-relaxed font-serif text-gray-200">
+                                    「要取兩塊紅瑪瑙，在上面刻以色列兒子的名字...要將這兩塊寶石安在以弗得的兩條肩帶上，為以色列人做記念石。亞倫要在兩肩上擔他們的名字，在耶和華面前作為記念。」
+                                </p>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-priest-scarlet font-bold mb-2 flex items-center gap-2 italic">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        原文透視
+                                    </h4>
+                                    <div class="bg-white/5 p-4 rounded-xl">
+                                        <span class="text-priest-scarlet block font-bold">記念 (Zikkaron / זִכָּרוֹן)</span>
+                                        <span class="text-sm text-gray-400">不單指回想，更帶有「採取行動」的意義。意味著把百姓帶到神面前，促使神按約施恩。</span>
+                                    </div>
+                                </div>
+                                <div class="bg-priest-scarlet/10 border border-priest-scarlet/20 p-6 rounded-2xl">
+                                    <h4 class="text-priest-scarlet font-bold mb-3 italic">關鍵提問：肩膀上的名字有何意義？</h4>
+                                    <p class="text-gray-300">「肩膀」象徵力量與承擔。大祭司不是只為自己禱告，而是背負著全體神百姓的軟弱。這預表了耶穌基督將我們如同迷失的羊扛在肩上。對於今日信徒，這意味著「代禱」就是屬靈的肩膀承擔。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="bento-card p-6 rounded-3xl bg-priest-gold/5">
+                            <h4 class="text-sm font-bold text-priest-gold uppercase tracking-widest mb-4">生活應用例證</h4>
+                            <p class="text-gray-300 italic">「如同戰場上強壯的士兵扛著受傷的同袍。代禱正是如此：當有人因生活的打擊而無法自行走到神面前時，我們藉著禱告把他們扛在肩上，帶進神的同在。」</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-3xl border-l-4 border-priest-scarlet">
+                            <p class="text-xl font-serif text-priest-scarlet italic">「代禱就是將弟兄姊妹帶到基督的面前，看見他們在基督裡的樣子。」</p>
+                            <p class="mt-4 text-sm text-gray-500">— 潘霍華</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 Details -->
+            <section id="section3" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="h-px flex-1 bg-gradient-to-r from-priest-accent to-transparent"></span>
+                    <h2 class="text-2xl font-bold text-priest-accent">深度解析 03</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bento-card p-8 rounded-3xl">
+                            <h3 class="text-3xl font-display font-black mb-6">胸懷的摯愛——貼近神心的決斷與尋求</h3>
+                            <div class="bg-white/5 border-l-4 border-priest-accent p-6 rounded-r-xl mb-8">
+                                <p class="text-lg leading-relaxed font-serif text-gray-200">
+                                    「亞倫進聖所的時候，要將決斷胸牌，就是刻著以色列兒子名字的，帶在胸前...又要將烏陵和土明放在決斷的胸牌裡...在耶和華面前常將以色列人的決斷牌帶在胸前。」
+                                </p>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-priest-accent font-bold mb-2 flex items-center gap-2 italic">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        原文透視
+                                    </h4>
+                                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <li class="bg-white/5 p-4 rounded-xl">
+                                            <span class="text-priest-accent block font-bold">決斷 (Mishpat / מִשְׁפָּט)</span>
+                                            <span class="text-sm text-gray-400">意為「判斷」、「公義」。表明不依自身聰明，而是倚靠神的引導。</span>
+                                        </li>
+                                        <li class="bg-white/5 p-4 rounded-xl">
+                                            <span class="text-priest-accent block font-bold">胸前 (Al-lev / עַל־לֵב)</span>
+                                            <span class="text-sm text-gray-400">字面意思是「在心上」。代表深切的愛。</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-priest-accent/10 border border-priest-accent/20 p-6 rounded-2xl">
+                                    <h4 class="text-priest-accent font-bold mb-3 italic">關鍵提問：肩膀與胸前寶石的不同？</h4>
+                                    <p class="text-gray-300">肩膀代表「力量的承擔」，胸前代表「深切的愛」。十二塊不同的寶石表明在神眼中，每一位信徒都有獨特的價值。烏陵和土明提醒我們，祭司以愛為出發點，尋求神正確的判斷。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="bento-card p-6 rounded-3xl bg-priest-blue/5">
+                            <h4 class="text-sm font-bold text-priest-blue uppercase tracking-widest mb-4">生活應用例證</h4>
+                            <p class="text-gray-300 italic">「牧者在筆記本中夾著會友照片，每天清晨按手在照片上禱告。這正是『放在心上作記念』。當我們真心愛一個人時，我們會把他的事放在心上尋求神旨。」</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-3xl border-l-4 border-priest-accent">
+                            <p class="text-xl font-serif text-priest-accent italic">「基督在天上，把我們每個人的名字刻在祂的心上；祂永遠活著，為我們祈求。」</p>
+                            <p class="mt-4 text-sm text-gray-500">— 司布真</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="section-padding scroll-mt-24">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <div class="text-center">
+                    <h2 class="text-4xl font-display font-black mb-4">講章全文</h2>
+                    <div class="h-1 w-24 bg-priest-gold mx-auto"></div>
+                </div>
+
+                <article class="prose prose-invert prose-lg max-w-none font-serif leading-relaxed space-y-10 text-gray-200">
+                    <p class="text-2xl font-bold border-l-8 border-priest-gold pl-6 py-2 bg-white/5">
+                        經文範圍:出28:1-30:榮耀與聖潔的呼召：穿上大祭司的生命外袍
+                    </p>
+
+                    <p>
+                        各位弟兄姊妹，平安。當我們讀到舊約出埃及記時，常常會對那些繁瑣的會幕和祭司服飾感到困惑。然而，這些記載絕非無關緊要的歷史流水帳。今天我們要透過出埃及記 28 章，來看大祭司亞倫的聖衣。這件聖衣不僅是一件華麗的服裝，它更預表了我們的大祭司——耶穌基督的榮美，同時也向今天每一位被稱為「君尊祭司」的基督徒，發出生命的呼召。
+                    </p>
+
+                    <div class="p-8 bg-priest-dark border border-white/10 rounded-2xl shadow-2xl relative">
+                         <span class="absolute -top-4 left-6 px-4 py-1 bg-priest-gold text-black text-xs font-black rounded">金句精選</span>
+                         <p class="text-xl md:text-2xl font-black text-priest-gold">「亞倫進聖所的時候，要將決斷胸牌，就是刻著以色列兒子名字的，帶在胸前，在耶和華面前常作記念。」（出埃及記 28:29）</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-display font-bold text-white border-b border-white/10 pb-4">一、呼召與分別——穿上榮耀與華美的聖衣</h3>
+                        <p>神特別吩咐，這件衣服是為了「榮耀與華美」。祭司穿上這件衣服，不是為了在百姓面前炫耀，而是為了遮蓋他墮落的人性，彰顯神的聖潔。人憑著自己的本相，是無法站在聖潔的神面前的。</p>
+                        <p class="font-bold text-priest-accent">耶穌基督就是我們的聖衣。當我們受洗歸入基督，我們就是披戴基督了。你的生活、你的職場、你的家庭，就是你穿著這件「聖衣」服事的神聖場域。</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-display font-bold text-white border-b border-white/10 pb-4">二、肩負的重擔——背負群羊的代禱與記念</h3>
+                        <p>肩膀象徵著力量。祭司進到神面前時，他不是孤單一人，他的雙肩正沉甸甸地扛著全國百姓的重擔、軟弱與需要。這是一個多麼美麗的「代禱」畫面！</p>
+                        <p class="font-bold text-priest-scarlet">我們作為新約的祭司，必須用我們屬靈的肩膀，扛起我們的家人、朋友、國家的重擔，在神面前作「記念」，呼求神的恩典介入。</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-display font-bold text-white border-b border-white/10 pb-4">三、胸懷的摯愛——貼近神心的決斷與尋求</h3>
+                        <p>大祭司把這決斷胸牌帶在「胸前」，原文就是「在心上」。他不只用肩膀的力氣扛著百姓，更用內心深深愛著他們。胸牌裡還放著「烏陵和土明」，用來尋求神的旨意。真正的服事與帶領，不能只靠血氣與經驗。</p>
+                        <p class="font-bold text-priest-gold">弟兄姊妹，耶穌基督已經將你我的名字，如同寶石般刻在祂的心上。今天，祂也呼召我們穿上這件生命的聖衣：活出聖潔、在雙肩上記念軟弱的肢體、在胸懷中以愛尋求神的決斷。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Summary & Actions -->
+        <section class="section-padding">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 3 Keywords -->
+                <div class="bento-card p-10 rounded-[3rem] bg-gradient-to-br from-priest-dark to-priest-card">
+                    <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-3">
+                        <span class="p-3 bg-white/10 rounded-xl">✨</span> 結論關鍵字
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <span class="text-4xl font-black text-priest-gold opacity-50">01</span>
+                            <div>
+                                <h3 class="text-2xl font-bold">聖潔</h3>
+                                <p class="text-gray-400">分別為聖，披戴榮耀</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="text-4xl font-black text-priest-scarlet opacity-50">02</span>
+                            <div>
+                                <h3 class="text-2xl font-bold">記念</h3>
+                                <p class="text-gray-400">肩負重擔，代求不息</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="text-4xl font-black text-priest-accent opacity-50">03</span>
+                            <div>
+                                <h3 class="text-2xl font-bold">決斷</h3>
+                                <p class="text-gray-400">胸懷摯愛，尋求神旨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Action Points -->
+                <div class="bento-card p-10 rounded-[3rem] bg-white/[0.02]">
+                    <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-3">
+                        <span class="p-3 bg-white/10 rounded-xl">🚀</span> 回應行動
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-4 bg-white/5 rounded-2xl border border-white/5 hover:border-priest-gold/30 transition-all">
+                            <h4 class="font-bold text-priest-gold mb-1">1. 檢視生活穿著</h4>
+                            <p class="text-sm text-gray-300">本週花時間安靜省察，自己的言語、心思與行為，是否穿戴了基督的「聖衣」？重新分別為聖。</p>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-2xl border border-white/5 hover:border-priest-gold/30 transition-all">
+                            <h4 class="font-bold text-priest-gold mb-1">2. 建立代禱名單</h4>
+                            <p class="text-sm text-gray-300">寫下三個正陷入困境的人名，每天撥出五分鐘，專注地將他們「背在肩上」為他們代禱。</p>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-2xl border border-white/5 hover:border-priest-gold/30 transition-all">
+                            <h4 class="font-bold text-priest-gold mb-1">3. 凡事求問神</h4>
+                            <p class="text-sm text-gray-300">面對重大決定或衝突時，先暫停三秒鐘，在心裡禱告尋求神的「決斷」，再作出回應。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-padding scroll-mt-24">
+            <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-10">
+                <span class="p-3 bg-priest-accent/20 rounded-xl">💬</span> 屬靈名言
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「神呼召我們，不是要我們追求安逸，而是要我們追求聖潔。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「代禱就是將弟兄姊妹帶到基督的面前，看見他們在基督裡的樣子。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「基督在天上，把我們每個人的名字刻在祂的心上；祂永遠活著，為我們祈求。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「我們不只是為了自己得救而蒙召，我們被拯救是為了成為別人的祭司，把他們帶到神面前。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「一個不禱告的基督徒，就像一個沒有穿上盔甲的士兵，在屬靈的爭戰中毫無防備。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 慕迪 (D.L. Moody)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「真正的屬靈不在於我們做了什麼，而在於我們是誰；成聖是讓神的神聖性情滲透我們的全人。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「在禱告中，我們把這個破碎的世界舉起到神的面前，這就是祭司最深切的職分。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「除非我們認識到自己是多麼需要恩典，否則我們永遠無法真心將別人的軟弱背負在自己的肩上。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「基督徒的聖潔不是要遠離世界，而是在世界的中心活出與世人截然不同的榮耀生命。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-lg font-serif italic mb-4">「屬靈生命的操練，就是讓我們脫下舊人的衣服，穿上基督那件榮耀、光明的衣袍。」</p>
+                    <p class="text-sm text-priest-gold font-bold">— 魏樂德 (Dallas Willard)</p>
+                </div>
+            </div>
+
+            <div class="mt-16 p-6 border border-white/5 bg-white/5 rounded-xl text-center">
+                <p class="text-gray-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Prayer Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-priest-gold text-black rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 z-50 animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創34:1-31 當信仰與世界妥協：示劍的悲劇與無聲的危機</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fbe363',
+                            400: '#f9d233',
+                            500: '#f1b810',
+                            600: '#d4910a',
+                            700: '#ae6a0c',
+                            800: '#8e5311',
+                            900: '#764413',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1f1f27',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { transform: 'translateY(30px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(31, 31, 39, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(241, 184, 16, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9d233 0%, #ae6a0c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .floating-btn {
+            box-shadow: 0 8px 32px rgba(241, 184, 16, 0.3);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f1b810; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Top Toolbar -->
+    <nav class="glass-nav fixed top-0 w-full z-50 py-4 px-6 flex justify-between items-center">
+        <div class="text-gold-400 font-display font-extrabold text-lg tracking-tighter">創34:1-31</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest text-gray-400">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors uppercase">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner Header -->
+    <header class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/0ade9398-761e-4f0b-9ec1-ae6797847ccc' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 animate-slide-up">
+            <h2 class="text-gold-500 font-display font-semibold tracking-[0.3em] mb-4 uppercase">Genesis 34:1-31</h2>
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight max-w-4xl mx-auto">
+                當信仰與世界妥協：<br/><span class="text-gradient">示劍的悲劇與無聲的危機</span>
+            </h1>
+            <div class="w-24 h-1 bg-gold-600 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 -mt-32 relative z-20 pb-32">
+        
+        <!-- Golden Verse & Prayer -->
+        <section id="prayer" class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-24">
+            <div class="lg:col-span-5 glass-card p-10 rounded-3xl flex flex-col justify-center">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.45l8.15 14.1H3.85L12 5.45zM11 16h2v2h-2v-2zm0-7h2v5h-2V9z"/></svg>
+                    <h3 class="text-2xl font-bold text-gold-400">鑰節金句</h3>
+                </div>
+                <p class="text-xl md:text-2xl font-light italic leading-relaxed text-white">
+                    「雅各對西緬和利未說：『你們連累我，使我這地的居民中...有了臭名。我的人丁既然稀少，他們必聚集來擊殺我，我和全家的人都必滅絕。』」
+                </p>
+                <div class="mt-6 text-gold-600 font-bold">— 創世記 34:30</div>
+            </div>
+
+            <div class="lg:col-span-7 bg-gradient-to-br from-gold-600 to-gold-900 p-1 rounded-3xl shadow-2xl">
+                <div class="bg-dark-900 p-10 rounded-[calc(1.5rem-1px)] h-full">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        <h3 class="text-2xl font-bold text-gold-400">禱告詞</h3>
+                    </div>
+                    <p class="text-lg leading-loose text-gray-300">
+                        主啊！在這充滿誘惑與衝突的世界中，求祢保守我們的心勝過保守一切。當我們面對世俗的吸引時，賜給我們屬靈的分辨力，不輕易跨越聖潔的界線；當我們遭遇不公與傷害時，求祢攔阻我們血氣的報復，教導我們將主權交託於祢。赦免我們常像雅各一樣，只在乎世人的眼光與自身的安危，卻忽略了祢的公義與聖潔。求祢的靈再次對我們說話，拯救我們脫離屬靈的麻木與無聲的危機。奉主耶穌基督的名求，阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links (Bento Style Buttons) -->
+        <section id="outline" class="mb-24">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                <h3 class="text-3xl font-bold">講道大綱</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass-card p-8 rounded-2xl group border-l-4 border-l-gold-500">
+                    <span class="text-gold-500 font-display font-bold text-sm mb-2 block tracking-widest">PART 01</span>
+                    <h4 class="text-xl font-bold group-hover:text-gold-400 transition-colors">安全的錯覺：向世界靠近的致命代價</h4>
+                    <p class="mt-4 text-sm text-gray-500">創 34:1-12</p>
+                </a>
+                <a href="#part2" class="glass-card p-8 rounded-2xl group border-l-4 border-l-red-500">
+                    <span class="text-red-500 font-display font-bold text-sm mb-2 block tracking-widest">PART 02</span>
+                    <h4 class="text-xl font-bold group-hover:text-red-400 transition-colors">神聖的扭曲：將信仰淪為算計的工具</h4>
+                    <p class="mt-4 text-sm text-gray-500">創 34:13-24</p>
+                </a>
+                <a href="#part3" class="glass-card p-8 rounded-2xl group border-l-4 border-l-slate-400">
+                    <span class="text-slate-400 font-display font-bold text-sm mb-2 block tracking-widest">PART 03</span>
+                    <h4 class="text-xl font-bold group-hover:text-white transition-colors">報復的漩渦：失去上帝聲音的家庭</h4>
+                    <p class="mt-4 text-sm text-gray-500">創 34:25-31</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Section -->
+        <div class="space-y-32 mb-40">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28">
+                            <h2 class="text-gold-500 font-display font-bold text-6xl opacity-20 mb-2">01</h2>
+                            <h3 class="text-3xl font-black leading-tight mb-6">安全的錯覺：<br/>向世界靠近的致命代價</h3>
+                            <div class="p-6 bg-gold-900/20 rounded-2xl border border-gold-900/30 mb-6">
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                                    關鍵原文解析
+                                </h4>
+                                <ul class="space-y-3 text-sm text-gray-300">
+                                    <li><strong class="text-gold-200">出去見 (yatsa')：</strong> 跨越子民與異教文化的安全界線。</li>
+                                    <li><strong class="text-gold-200">玷污 (tame')：</strong> 身體侵害與聖潔身份的破壞。</li>
+                                </ul>
+                            </div>
+                            <blockquote class="border-l-2 border-gold-500 pl-6 italic text-gray-400">
+                                「整個世界的信徒都在試圖同時擁有世界與基督。」 —— 陶恕
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-10 rounded-3xl">
+                        <div class="mb-8">
+                            <h4 class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-4 underline decoration-gold-500 decoration-2">引用經文 (創 34:1-12)</h4>
+                            <p class="text-gray-300 leading-relaxed bg-dark-800/50 p-6 rounded-xl border border-white/5">
+                                利亞給雅各所生的女兒底拿出去，要見那地的女子們...示劍的心繫戀雅各的女兒底拿，喜愛這女子，甜言蜜語地安慰她...雅各聽見示劍玷污了他的女兒底拿。那時他的兒子們正和群畜在田野，雅各就閉口不言，等他們回來...
+                            </p>
+                        </div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-3">關鍵問題</h4>
+                                <p class="text-gray-400">為什麼底拿單純的「出去看看」，最終會演變成整個家族的悲劇？這對今日基督徒的邊界感有何提醒？</p>
+                                <div class="mt-4 p-5 bg-gold-950/30 rounded-xl border-l-4 border-gold-500">
+                                    <p class="text-gold-100">悲劇往往不是從重大的犯罪開始，而是從「邊緣的試探」與「好奇的靠近」開始。雅各一家停留在示劍城外，享受便利卻失去了警覺。當我們試圖尋找最靠近世界的邊界時，就是最危險的時刻。</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 bg-dark-700 rounded-full flex items-center justify-center shrink-0">💡</div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">例證：溫水煮青蛙</h4>
+                                    <p class="text-sm text-gray-400">許多基督徒在媒體選擇、交友圈或商業手法上，認為「只要不犯罪，靠近一點沒關係」，卻不知不覺中被世俗的價值觀「玷污」了思想。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28">
+                            <h2 class="text-red-500 font-display font-bold text-6xl opacity-20 mb-2">02</h2>
+                            <h3 class="text-3xl font-black leading-tight mb-6">神聖的扭曲：<br/>將信仰淪為算計的工具</h3>
+                            <div class="p-6 bg-red-900/10 rounded-2xl border border-red-900/30 mb-6">
+                                <h4 class="text-red-400 font-bold mb-2 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                                    關鍵原文解析
+                                </h4>
+                                <ul class="space-y-3 text-sm text-gray-300">
+                                    <li><strong class="text-red-200">詭詐 (mirmah)：</strong> 欺騙與背信。雅各子孫將此家族罪性發揚光大。</li>
+                                    <li><strong class="text-red-200">割禮 (mul)：</strong> 分別為聖的記號，在此卻被淪為謀殺的武器。</li>
+                                </ul>
+                            </div>
+                            <blockquote class="border-l-2 border-red-500 pl-6 italic text-gray-400">
+                                「真正的福音卻會徹底粉碎我們的驕傲。」 —— 提摩太·凱勒
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-10 rounded-3xl">
+                        <div class="mb-8">
+                            <h4 class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-4 underline decoration-red-500 decoration-2">引用經文 (創 34:13-24)</h4>
+                            <p class="text-gray-300 leading-relaxed bg-dark-800/50 p-6 rounded-xl border border-white/5">
+                                雅各的兒子們用詭詐的話回答示劍...對他們說：「我們不能把我們的妹子給沒有受割禮的人...惟有一件才可以應允：若你們所有的男丁都受割禮，和我們一樣，我們就把女兒給你們...」
+                            </p>
+                        </div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-3">關鍵問題</h4>
+                                <p class="text-gray-400">當神聖的信仰儀式（如割禮）被用來達成屬肉體的目的時，這反映出人性何等可怕的黑暗面？</p>
+                                <div class="mt-4 p-5 bg-red-950/20 rounded-xl border-l-4 border-red-500">
+                                    <p class="text-red-100">雅各的兒子們用屬靈術語包裝血氣復仇。今天，我們也可能利用「教會規條」掩飾自私或驕傲。當宗教失去與神的真實關係，它就成了最危險的武器。</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 bg-dark-700 rounded-full flex items-center justify-center shrink-0">⚔️</div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">例證：武器化的宗教</h4>
+                                    <p class="text-sm text-gray-400">歷史上許多戰爭或逼迫，都是以「上帝的旨意」為名，行滿足人類權力慾望之實。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28">
+                            <h2 class="text-slate-400 font-display font-bold text-6xl opacity-20 mb-2">03</h2>
+                            <h3 class="text-3xl font-black leading-tight mb-6">報復的漩渦：<br/>失去上帝聲音的家庭</h3>
+                            <div class="p-6 bg-slate-800/20 rounded-2xl border border-slate-700/30 mb-6">
+                                <h4 class="text-slate-300 font-bold mb-2 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                                    關鍵原文解析
+                                </h4>
+                                <ul class="space-y-3 text-sm text-gray-300">
+                                    <li><strong class="text-slate-200">連累 ('akar)：</strong> 帶來災禍、攪擾。使原本清澈的狀態變混濁。</li>
+                                    <li><strong class="text-slate-200">臭名 (ba'ash)：</strong> 發出惡臭。雅各更在乎自身的安全。</li>
+                                </ul>
+                            </div>
+                            <blockquote class="border-l-2 border-slate-500 pl-6 italic text-gray-400">
+                                「如果只為自己的安全和聲譽而活，他就已經失去了活在上帝面前的勇氣。」 —— 潘霍華
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-10 rounded-3xl">
+                        <div class="mb-8">
+                            <h4 class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-4 underline decoration-slate-400 decoration-2">引用經文 (創 34:25-31)</h4>
+                            <p class="text-gray-300 leading-relaxed bg-dark-800/50 p-6 rounded-xl border border-white/5">
+                                到第三天，眾人正在疼痛的時候...西緬和利未，各拿刀劍，來到城中，把一切男丁都殺了...雅各對西緬和利未說：「你們連累我，使我這地的居民中...有了臭名...我和全家的人都必滅絕。」
+                            </p>
+                        </div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-3">關鍵問題</h4>
+                                <p class="text-gray-400">雅各作為屬靈領袖，他的「沉默」與「自私」如何導致了家庭的失控？</p>
+                                <div class="mt-4 p-5 bg-slate-900 rounded-xl border-l-4 border-slate-400">
+                                    <p class="text-slate-100">整章神的名字未出現。雅各開口卻只在乎面子與安全。當領袖失去屬靈引導，下一代就會用血氣去尋求公義。這是一個失去上帝聲音後必然發生的極端失控。</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 bg-dark-700 rounded-full flex items-center justify-center shrink-0">🏚️</div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">例證：只在乎利益的父親</h4>
+                                    <p class="text-sm text-gray-400">當孩子遭遇校園危機，家長第一反應卻是「這會讓公司的股票跌多少？我的名聲全毀了！」這種反應會徹底摧毀家庭信任。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="mb-32">
+            <div class="max-w-4xl mx-auto glass-card rounded-[3rem] p-12 md:p-20 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-gold-500 via-red-500 to-slate-400"></div>
+                <div class="text-center mb-16">
+                    <span class="text-gold-500 font-display font-bold tracking-widest mb-4 block">SERMON MANUSCRIPT</span>
+                    <h2 class="text-3xl md:text-5xl font-black mb-4">講章全文</h2>
+                    <p class="text-gray-500">創34:1-31:當信仰與世界妥協：示劍的悲劇與無聲的危機</p>
+                </div>
+                <div class="prose prose-invert prose-gold max-w-none space-y-8 text-lg text-gray-300 leading-loose">
+                    <p>弟兄姊妹，平安。今天我們要看創世記中極為黑暗、令人痛心的一章——創世記第34章。在這整整31節的經文中，充滿了性侵、欺騙、大屠殺與無情的報復，而最令人感到窒息的是：<strong class="text-gold-400 underline decoration-gold-600/50">整章聖經中，上帝的名字一次也沒有出現。</strong> 這是一個失去上帝聲音的家庭，這是一個當信仰與世界妥協時，必然發生的悲劇。</p>
+                    
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-900 pb-2">一、安全的錯覺：向世界靠近的致命代價</h4>
+                    <p>故事的開頭在第1到12節。雅各一家來到了示劍城外，他們沒有繼續前往伯特利還願，而是在這裡買了地，安頓下來。底拿的動機也許只是單純的好奇，她想看看當地的流行、當地的文化。但她不知道，當她跨出那條立約子民與異教文化的界線時，危險已經降臨。示劍玷污了她。</p>
+                    <p>悲劇往往不是從重大的犯罪開始，而是從<strong class="text-white">「安全的錯覺」與「好奇的靠近」</strong>開始。許多時候，我們就像溫水裡的青蛙。當我們向世界妥協，失去了屬靈的界線，我們的心思意念就會被世俗所玷污。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-900 pb-2">二、神聖的扭曲：將信仰淪為算計的工具</h4>
+                    <p>面對底拿受辱，雅各的兒子們做出了回應。但他們的回應不是尋求上帝的公義，而是充滿了「詭詐」。他們利用了上帝與亞伯拉罕立約中最神聖的記號——<strong class="text-white">割禮</strong>，作為復仇的陷阱。</p>
+                    <p>這反映出人性極其可怕的黑暗面：<strong class="text-red-400">將信仰淪為算計的工具。</strong> 提摩太·凱勒曾說：「宗教很容易被武器化，用來作為自我稱義和定罪他人的工具。」當信仰失去了對上帝的敬畏，只剩下外表的儀式，這信仰就成了最危險的武器。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-900 pb-2">三、報復的漩渦：失去上帝聲音的家庭</h4>
+                    <p>最後，西緬和利未大屠殺。此時家長雅各終於打破沉默。但他開口說了什麼？他沒有為了流無辜人的血而哀慟，他沒有去安慰受重創的女兒底拿，他說：<strong class="text-white">「你們連累我，使我...有了臭名。」</strong></p>
+                    <p>雅各的心裡，只有自己的面子（臭名）和自己的安全（必滅絕）。當家庭的屬靈領袖只在乎公關危機，在罪惡面前閉口不言，下一代就會用最極端、血氣的方式去尋求他們心中的「公義」。</p>
+                    
+                    <div class="mt-12 p-8 bg-gold-900/10 rounded-2xl border border-gold-500/20 text-center">
+                        <p class="text-white font-bold mb-4 italic">「不要讓信仰與世界妥協，不要讓我們的生命成為沒有上帝同在的悲劇。」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
+            <div class="glass-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4"><span class="text-gold-500 font-black">01</span> <span class="text-gray-300"><strong>檢視界線：</strong> 評估生活是否為了便利正向世俗價值觀妥協。</span></li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-black">02</span> <span class="text-gray-300"><strong>屬靈真誠：</strong> 反省是否用「屬靈語言」包裝血氣動機。</span></li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-black">03</span> <span class="text-gray-300"><strong>面對傷害：</strong> 選擇血氣報復，還是尋求上帝的公義與醫治？</span></li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-black">04</span> <span class="text-gray-300"><strong>領袖責任：</strong> 不要在罪惡面前「閉口不言」，帶領群體回到神面前。</span></li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <div class="space-y-4">
+                    <div class="p-4 bg-dark-800 rounded-xl border border-white/5 group hover:border-gold-500 transition-all cursor-default">
+                        <p class="text-white font-bold group-hover:text-gold-400">斬斷一個試探的源頭</p>
+                        <p class="text-sm text-gray-500 mt-1">本週勇敢切斷一個可能讓你陷入試探的來源。</p>
+                    </div>
+                    <div class="p-4 bg-dark-800 rounded-xl border border-white/5 group hover:border-gold-500 transition-all cursor-default">
+                        <p class="text-white font-bold group-hover:text-gold-400">為隱藏的動機認罪</p>
+                        <p class="text-sm text-gray-500 mt-1">將審判的主權交還給神，誠實面對心中的憤怒。</p>
+                    </div>
+                    <div class="p-4 bg-dark-800 rounded-xl border border-white/5 group hover:border-gold-500 transition-all cursor-default">
+                        <p class="text-white font-bold group-hover:text-gold-400">重啟家庭/個人祭壇</p>
+                        <p class="text-sm text-gray-500 mt-1">主動帶領家人禱告，拒絕屬靈的沉默。</p>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-between">
+                    <span class="px-4 py-1 bg-gold-900/30 text-gold-500 rounded-full text-xs font-bold tracking-widest">#界線</span>
+                    <span class="px-4 py-1 bg-gold-900/30 text-gold-500 rounded-full text-xs font-bold tracking-widest">#聖潔</span>
+                    <span class="px-4 py-1 bg-gold-900/30 text-gold-500 rounded-full text-xs font-bold tracking-widest">#主權</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="mb-32">
+            <h3 class="text-3xl font-bold mb-12 flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.34315 15.3602 2 17.017 2H19.017C20.6739 2 22.017 3.34315 22.017 5V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.01697 21L2.01697 18C2.01697 16.8954 2.9124 16 4.01697 16H7.01697C7.56925 16 8.01697 15.5523 8.01697 15V9C8.01697 8.44772 7.56925 8 7.01697 8H4.01697C2.9124 8 2.01697 7.10457 2.01697 6V5C2.01697 3.34315 3.36012 2 5.01697 2H7.01697C8.67382 2 10.017 3.34315 10.017 5V15C10.017 18.3137 7.33068 21 4.01697 21H2.01697Z"/></svg>
+                佳句名言
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1-10 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「整個世界的信徒都在試圖同時擁有世界與基督。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 陶恕 (A.W. Tozer)，《渴慕神》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「宗教很容易被武器化，用來作為自我稱義和定罪他人的工具；但真正的福音卻會徹底粉碎我們的驕傲。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 提摩太·凱勒 (Timothy Keller)，《揮霍的上帝》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「一個人如果只為自己的安全和聲譽而活，他就已經失去了活在上帝面前的勇氣。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 潘霍華 (Dietrich Bonhoeffer)，《獄中書簡》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「最危險的妥協，就是那些看起來無害的小讓步。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 查爾斯·史丹利 (Charles Stanley)，《生命的把手》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「當上帝在我們的生活中缺席時，我們的心就會不可避免地製造出偶像來填補空缺。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 約翰·加爾文 (John Calvin)，《基督教要義》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「報復就像是自己喝下毒藥，卻希望別人死掉。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 盧雲 (Henri Nouwen)，《浪子回頭》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「世界之所以能輕易地征服我們，是因為我們沒有被基督的榮美所徹底征服。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 司布真 (Charles Spurgeon)，《清晨甘露》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「基督徒的聖潔不是躲避世界的隔離，而是在世界中卻不屬於世界的深刻介入。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 約翰·史托德 (John Stott)，《當代基督門徒》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「罪的本質就是人想要取代上帝，自己作主；而救恩的本質，則是讓上帝重新在我們生命中作主。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 葛理翰 (Billy Graham)，《與神和好》</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-white font-medium mb-3">「如果我們不刻地地操練在日常生活中聆聽神的聲音，我們就會在危機來臨時被世俗的噪音淹沒。」</p>
+                    <p class="text-xs text-gold-600 font-bold tracking-wide">— 魏樂德 (Dallas Willard)，《聽神的聲音》</p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-20 p-6 border border-white/5 rounded-2xl text-center">
+                <p class="text-gray-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center text-dark-900 floating-btn animate-float z-50 hover:bg-gold-400 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

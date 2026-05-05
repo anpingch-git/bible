@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽50:1-11:黑暗中的倚靠——受苦僕人的順服與得勝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0a',
+                        surface: '#161616',
+                        accent: '#c4a962', // Muted Gold
+                        secondary: '#404040',
+                        highlight: '#facc15'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(196, 169, 98, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #c4a962 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .outline-btn {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(196, 169, 98, 0.3);
+        }
+        .outline-btn:hover {
+            background: rgba(196, 169, 98, 0.1);
+            border-color: #c4a962;
+            transform: translateY(-2px);
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #c4a962;
+            color: #0a0a0a;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            z-index: 100;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Toolbar -->
+    <nav class="sticky-nav h-14 flex items-center px-4 md:px-8 overflow-x-auto no-scrollbar whitespace-nowrap">
+        <div class="flex items-center space-x-6 text-sm font-medium tracking-wider">
+            <span class="text-accent border-r border-secondary pr-4">賽 50:1-11</span>
+            <a href="#prayer" class="hover:text-accent transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-accent transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-accent transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-accent transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/9a0b9faa-7312-41c4-81ef-4a6f89a50fa2' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-serif font-black mb-4 text-gradient leading-tight">
+                黑暗中的倚靠<br>
+                <span class="text-2xl md:text-3xl font-sans font-light tracking-widest text-gray-300">受苦僕人的順服與得勝</span>
+            </h1>
+            <p class="text-accent text-lg md:text-xl font-medium tracking-wide">以賽亞書 50:1-11</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 md:px-8 py-12 space-y-24">
+
+        <!-- Golden Verse & Prayer Section -->
+        <section id="prayer" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="glass-card p-8 md:p-12 border-l-4 border-accent">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    <h2 class="text-2xl font-bold tracking-tight">鑰節金句</h2>
+                </div>
+                <blockquote class="text-xl md:text-2xl font-serif italic text-white leading-relaxed">
+                    「你們中間誰是敬畏耶和華、聽從他僕人之話的？這人行在暗中，沒有亮光。當倚靠耶和華的名，仗賴自己的神。」
+                </blockquote>
+                <p class="mt-4 text-accent font-medium text-right">— 以賽亞書 50:10</p>
+            </div>
+
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    <h2 class="text-2xl font-bold tracking-tight">禱告詞</h2>
+                </div>
+                <div class="text-gray-300 leading-loose text-lg whitespace-pre-line">
+                    主耶和華啊，祢是賜下安慰與救贖的神。當我們行在黑暗中，看不見前方的亮光時，求祢賜給我們受教的耳朵，能聽見祢微小的聲音；賜給我們順服的心，不退後也不退縮。求祢堅固我們的面容如同火石，使我們在逆境中單單倚靠祢的名，不仗賴自己所點的火把。願我們效法那受苦僕人的模樣，在試煉中彰顯祢的榮耀。奉主耶穌基督的聖名祈求，阿們。
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                    <h2 class="text-3xl font-black text-white">分段大綱</h2>
+                </div>
+                <p class="text-secondary font-medium tracking-widest uppercase">Select to navigate</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="#section1" class="outline-btn p-6 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-accent text-sm font-bold mb-2">段落一</span>
+                    <h3 class="text-white font-medium mb-1">超越被擄的絕望</h3>
+                    <span class="text-xs text-secondary italic">賽 50:1-3</span>
+                </a>
+                <a href="#section2" class="outline-btn p-6 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-accent text-sm font-bold mb-2">段落二</span>
+                    <h3 class="text-white font-medium mb-1">受教者的耳朵</h3>
+                    <span class="text-xs text-secondary italic">賽 50:4-6</span>
+                </a>
+                <a href="#section3" class="outline-btn p-6 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-accent text-sm font-bold mb-2">段落三</span>
+                    <h3 class="text-white font-medium mb-1">堅如火石的面容</h3>
+                    <span class="text-xs text-secondary italic">賽 50:7-9</span>
+                </a>
+                <a href="#section4" class="outline-btn p-6 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-accent text-sm font-bold mb-2">段落四</span>
+                    <h3 class="text-white font-medium mb-1">黑暗中的抉擇</h3>
+                    <span class="text-xs text-secondary italic">賽 50:10-11</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-20 pt-12">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-24 space-y-8">
+                    <div class="flex items-center gap-4">
+                        <div class="h-10 w-1 bg-accent"></div>
+                        <h3 class="text-2xl font-bold text-white">一、超越被擄的絕望——上帝的救贖大能 (50:1-3)</h3>
+                    </div>
+                    <div class="glass-card p-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-2 space-y-6">
+                            <p class="text-secondary italic text-sm">【經文】耶和華如此說：「我休你們的母親，休書在哪裡呢？我將你們賣給我哪一個債主呢？你們被賣，是因你們的罪孽；...我的膀臂豈是縮短、不能救贖嗎？」</p>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">● 關鍵問題</h4>
+                                <p class="text-gray-300 leading-relaxed">當我們身處困境時，為何常常覺得是上帝拋棄了我們，或是懷疑上帝的能力？</p>
+                                <div class="bg-dark/50 p-4 rounded-xl border border-white/5">
+                                    <p class="text-sm text-gray-400 italic">解析：人在苦難中常有一種錯覺，認為上帝的膀臂「縮短了」。但經文指出，隔離神與人的是人的「罪孽」，而非上帝缺乏能力。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-accent font-bold mb-2 flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 10-2 0v1a1 1 0 102 0zM13 16v-1a1 1 0 10-2 0v1a1 1 0 102 0zM14.243 14.243a1 1 0 101.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707z"></path></svg> 關鍵原文</h4>
+                                <p class="text-sm text-white font-medium">救贖 (Peduth / Ga'al)</p>
+                                <p class="text-xs text-gray-400 mt-1">指至近親屬履行義務將親人從奴役中買回。</p>
+                            </div>
+                            <div class="p-4 bg-accent/5 rounded-xl border border-accent/20">
+                                <h4 class="text-accent font-bold text-xs uppercase mb-2">名言佳句</h4>
+                                <p class="text-sm italic text-gray-300">「我們必須記住，神從不拋棄任何人，除非那人先拋棄了神。」——約翰·加爾文</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-24 space-y-8">
+                    <div class="flex items-center gap-4">
+                        <div class="h-10 w-1 bg-accent"></div>
+                        <h3 class="text-2xl font-bold text-white">二、受教的耳朵與順服的心——僕人的使命 (50:4-6)</h3>
+                    </div>
+                    <div class="glass-card p-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-2 space-y-6">
+                            <p class="text-secondary italic text-sm">【經文】主耶和華賜我受教者的舌頭...主每早晨提醒，提醒我的耳朵，使我能聽，像受教者一樣。</p>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">● 關鍵問題</h4>
+                                <p class="text-gray-300 leading-relaxed">我們如何才能擁有「受教者的舌頭」去安慰疲乏的人，並在面對攻擊時不退縮？</p>
+                                <div class="bg-dark/50 p-4 rounded-xl border border-white/5">
+                                    <p class="text-sm text-gray-400 italic">解析：「受教者的舌頭」源於「受教者的耳朵」。沒有先聆聽神的聲音，就無法說出造就人的話語。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-accent font-bold mb-2 flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3z"></path></svg> 關鍵原文</h4>
+                                <p class="text-sm text-white font-medium">受教者 (Limmud)</p>
+                                <p class="text-xs text-gray-400 mt-1">意為「門徒」、「受訓者」。強調願意不斷學習的態度。</p>
+                            </div>
+                            <div class="p-4 bg-accent/5 rounded-xl border border-accent/20">
+                                <h4 class="text-accent font-bold text-xs uppercase mb-2">名言佳句</h4>
+                                <p class="text-sm italic text-gray-300">「若不先學會靜默聆聽上帝的話語，就沒有權利對人說話。」——潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-24 space-y-8">
+                    <div class="flex items-center gap-4">
+                        <div class="h-10 w-1 bg-accent"></div>
+                        <h3 class="text-2xl font-bold text-white">三、堅如火石的面容——上帝必幫助我 (50:7-9)</h3>
+                    </div>
+                    <div class="glass-card p-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-2 space-y-6">
+                            <p class="text-secondary italic text-sm">【經文】主耶和華必幫助我...我硬著臉面好像堅石；我也知道我必不致蒙羞。稱我為義的與我相近。</p>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">● 關鍵問題</h4>
+                                <p class="text-gray-300 leading-relaxed">在面對世人的誤解、定罪或惡意攻擊時，我們自信的根基究竟在哪裡？</p>
+                                <div class="bg-dark/50 p-4 rounded-xl border border-white/5">
+                                    <p class="text-sm text-gray-400 italic">解析：自信並非出於驕傲，而是建立在「主耶和華必幫助我」的事實上。當上帝宣告我們為義，世人的定罪終將朽壞。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-accent font-bold mb-2 flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3z"></path></svg> 關鍵原文</h4>
+                                <p class="text-sm text-white font-medium">堅石/火石 (Challamish)</p>
+                                <p class="text-xs text-gray-400 mt-1">比喻一種堅定不移、毫不動搖的決心與意志。</p>
+                            </div>
+                            <div class="p-4 bg-accent/5 rounded-xl border border-accent/20">
+                                <h4 class="text-accent font-bold text-xs uppercase mb-2">名言佳句</h4>
+                                <p class="text-sm italic text-gray-300">「我們無需為自己的名譽辯護，因為將生命交託給神的人，神必負責。」——司布真</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="section4" class="scroll-mt-24 space-y-8">
+                    <div class="flex items-center gap-4">
+                        <div class="h-10 w-1 bg-accent"></div>
+                        <h3 class="text-2xl font-bold text-white">四、黑暗中的抉擇——真倚靠與假火光 (50:10-11)</h3>
+                    </div>
+                    <div class="glass-card p-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-2 space-y-6">
+                            <p class="text-secondary italic text-sm">【經文】這人行在暗中，沒有亮光。當倚靠耶和華的名，仗賴自己的神。凡你們點火，用火把圍繞自己的...你們必躺在悲慘之中。</p>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">● 關鍵問題</h4>
+                                <p class="text-gray-300 leading-relaxed">當敬畏神的人也陷入「沒有亮光」的黑暗期時，最大的試探是什麼？</p>
+                                <div class="bg-dark/50 p-4 rounded-xl border border-white/5">
+                                    <p class="text-sm text-gray-400 italic">解析：最大的試探是「自己點火把」——用人的血氣或手段解決問題。正確的抉擇是安息在神的掌權中。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-accent font-bold mb-2 flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3z"></path></svg> 關鍵原文</h4>
+                                <p class="text-sm text-white font-medium">倚靠 (Batach)</p>
+                                <p class="text-xs text-gray-400 mt-1">原意是「將全身的重量壓上去」，是行動上完全的交託。</p>
+                            </div>
+                            <div class="p-4 bg-accent/5 rounded-xl border border-accent/20">
+                                <h4 class="text-accent font-bold text-xs uppercase mb-2">名言佳句</h4>
+                                <p class="text-sm italic text-gray-300">「在黑暗中信靠神，比在光明中讚美神，更能顯出信心的真實。」——提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Draft Section -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                <h2 class="text-3xl font-black text-white">講章文稿</h2>
+            </div>
+            
+            <div class="glass-card p-8 md:p-16 space-y-12 text-gray-300 leading-loose text-lg">
+                <h3 class="text-3xl font-serif text-white font-black text-center mb-12">賽50:1-11:黑暗中的倚靠——受苦僕人的順服與得勝</h3>
+                
+                <p>各位弟兄姊妹，平安。當我們身處人生的低谷，面對誤解、逼迫，甚至是看不見盡頭的黑暗時，我們該如何自處？今天我們要透過《以賽亞書》50章1到11節，來看一位「受苦僕人」的榜樣。這段經文不只預言了耶穌基督在十字架上的受苦與得勝，更是為每一個在黑暗中摸索的基督徒，點亮了一盞屬天的明燈。</p>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-accent">超越被擄的絕望——上帝的救贖大能</h4>
+                    <p>首先，我們看見當時的以色列人身處被擄的絕望中。人在苦難中，常有一種錯覺，認為上帝的膀臂「縮短了」，無力拯救我們。<br>
+                    但神親自宣告：<span class="text-highlight font-bold">「我的膀臂豈是縮短、不能救贖嗎？我豈無拯救之力嗎？」</span>上帝能使海乾涸，能使諸天變黑。我們必須明白，隔離神與人的是人的「罪孽」與「不信」，而非上帝缺乏能力。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-accent">受教的耳朵與順服的心——僕人的使命</h4>
+                    <p>我們常常渴望擁有口才，能說出安慰人的話，但神告訴我們，<span class="text-highlight font-bold">「受教者的舌頭」必須源自於「受教者的耳朵」</span>。沒有每早晨的安靜聆聽，我們的言語就缺乏屬靈的重量。<br>
+                    僕人獲了極大的順服之力：<span class="text-highlight font-bold">「人打我的背，我任他打...人辱罵我，吐唾沫在我臉上，我並不掩面。」</span>真正的堅強，不是靠血氣反擊，而是出於對父神旨意的完全順服。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-accent">堅如火石的面容——上帝必幫助我</h4>
+                    <p>僕人為何能承受如此巨大的打擊？答案是：<span class="text-highlight font-bold">「主耶和華必幫助我，所以我不抱愧。我硬著臉面好像堅石。」</span><br>
+                    「堅石」代表著不屈不撓的意志。當我們知道終極的審判官——上帝，已經因著耶穌基督稱我們為義，我們就能把臉面定如堅石。那些與我們作對的聲音，終將如衣服漸漸舊了，消散在歷史的長河中。</p>
+                </div>
+
+                <div class="space-y-6 border-l-2 border-accent pl-6 italic">
+                    <h4 class="text-xl font-bold text-accent not-italic">黑暗中的抉擇——真倚靠與假火光</h4>
+                    <p>即使是「敬畏神」的人，有時候也會「行在暗中，沒有亮光」。神警告我們，不要企圖<span class="text-highlight font-bold">「自己點火把」</span>。什麼是自己點火把？就是用我們自己的血氣、人的手段、妥協的方法去尋找安全感。真正的出路是：<span class="text-highlight font-bold">「當倚靠耶和華的名，仗賴自己的神」</span>！在看不見亮光的時候，不焦躁、不亂動，安靜等候那為我們受苦、也為我們得勝的主。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="bento-grid">
+            <div class="col-span-12 lg:col-span-4 glass-card p-8">
+                <h3 class="text-accent font-bold mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    結論關鍵字
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4 text-2xl font-black text-white">
+                        <span class="text-accent/50 text-sm">01</span> 聆聽
+                    </li>
+                    <li class="flex items-center gap-4 text-2xl font-black text-white">
+                        <span class="text-accent/50 text-sm">02</span> 順服
+                    </li>
+                    <li class="flex items-center gap-4 text-2xl font-black text-white">
+                        <span class="text-accent/50 text-sm">03</span> 倚靠
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-12 lg:col-span-8 glass-card p-8">
+                <h3 class="text-accent font-bold mb-6 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                    回應與實踐
+                </h3>
+                <div class="space-y-4">
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10 hover:border-accent transition-colors">
+                        <p class="text-white font-medium">1. 建立早晨的「調音」時間</p>
+                        <p class="text-sm text-gray-400 mt-1">每天早晨撥出15分鐘安靜閱讀經文，求神「開通我的耳朵」。</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10 hover:border-accent transition-colors">
+                        <p class="text-white font-medium">2. 成為疲乏者的安慰</p>
+                        <p class="text-sm text-gray-400 mt-1">本週刻意尋找一位灰心的親友，傳一句神的話語或為他禱告。</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/10 hover:border-accent transition-colors">
+                        <p class="text-white font-medium">3. 熄滅一把「自造的火」</p>
+                        <p class="text-sm text-gray-400 mt-1">省察焦慮掌控的事，在禱告中宣告放手，專心等候神的帶領。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12 pb-24">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                <h2 class="text-3xl font-black text-white">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「只有對神的話語保持靜默的人，才能對人說出有力的話語。」</p>
+                    <p class="text-accent text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「在黑暗中信靠神，是靈命成長不可或缺的經歷。真正的信心是在沒有任何看見時，依然緊緊抓住神。」</p>
+                    <p class="text-accent text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「神有時會把我們放入黑暗中，為了讓我們學會不再倚靠自己的視覺，而是倚靠祂的牽引。」</p>
+                    <p class="text-accent text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「那些單純倚靠自己力量的人，就像是用火柴試圖照亮整個黑夜，最終只會燒傷自己的手。」</p>
+                    <p class="text-accent text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Additional quotes can be added similarly -->
+                 <div class="p-6 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「基督的十字架告訴我們，即使在最深、最沒有亮光的黑暗中，上帝依然在掌權並成就祂的救贖。」</p>
+                    <p class="text-accent text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「信心不是一種讓我們逃避黑暗的魔法，而是一種讓我們在黑暗中依然能夠安息在神國度裡的確據。」</p>
+                    <p class="text-accent text-sm font-bold">— 魏樂德 (Dallas Willard)</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-12">
+                <p class="text-secondary text-xs tracking-tighter">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Up Button -->
+    <a href="#prayer" class="floating-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple scroll spy for navigation highlight could be added here
+    </script>
+</body>
+</html>

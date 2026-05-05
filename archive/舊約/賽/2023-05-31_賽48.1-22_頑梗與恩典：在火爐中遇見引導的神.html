@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽48:1-22:頑梗與恩典：在火爐中遇見引導的神</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf0',
+                            100: '#fef7e1',
+                            200: '#fcebb8',
+                            300: '#fad984',
+                            400: '#f7c04a',
+                            500: '#f3a218',
+                            600: '#d7800f',
+                            700: '#b25f10',
+                            800: '#914b14',
+                            900: '#773e15',
+                        },
+                        charcoal: '#0a0a0a',
+                        surface: '#121212',
+                        accent: '#ffbd2e',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        english: ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f3a218 0%, #ffbd2e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-gradient {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(10,10,10,1)), url('https://opal.google/board/blobs/ee73df59-a451-4563-a411-b797cb916a91');
+            background-size: cover;
+            background-position: center;
+        }
+        .bento-card {
+            background: #1a1a1a;
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(243, 162, 24, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f3a218;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            filter: drop-shadow(0 0 8px rgba(243, 162, 24, 0.4));
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #f3a218;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(243, 162, 24, 0.3);
+            z-index: 100;
+            transition: transform 0.3s;
+        }
+        .scroll-to-top:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500 selection:text-black">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="font-english font-bold text-sm tracking-widest text-gold-400 hidden md:block">ISAIAH 48:1-22</span>
+            <div class="flex space-x-6 text-sm font-medium tracking-wide">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[80vh] flex items-end justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://opal.google/board/blobs/ee73df59-a451-4563-a411-b797cb916a91" alt="Isaiah 48 Banner" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl px-6 pb-20 text-center">
+            <p class="font-english text-gold-400 tracking-[0.3em] uppercase mb-4 text-sm animate-pulse">Scripture Series</p>
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-6 leading-tight">
+                賽48:1-22<br/>
+                <span class="text-gradient">頑梗與恩典：在火爐中遇見引導的神</span>
+            </h1>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 金句 Section -->
+        <section class="text-center">
+            <div class="inline-block px-4 py-1 rounded-full border border-gold-500/30 text-gold-400 text-xs font-bold mb-6 tracking-widest">
+                KEY VERSE
+            </div>
+            <p class="font-display text-2xl md:text-3xl italic leading-relaxed text-gold-100">
+                「耶和華─你的救贖主，以色列的聖者如此說：我是耶和華─你的神，教訓你，使你得益處，引導你所當行的路。」
+            </p>
+            <p class="mt-4 font-english text-gold-500/80">(以賽亞書 48:17)</p>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="relative">
+            <div class="absolute -top-12 -left-8 text-8xl text-white/5 font-serif pointer-events-none">Amen</div>
+            <div class="bento-card bg-gradient-to-br from-surface to-charcoal">
+                <h2 class="flex items-center text-2xl font-bold text-gold-400 mb-6">
+                    <span class="section-icon">🙏</span> 禱告詞
+                </h2>
+                <p class="text-lg leading-loose text-gray-300">
+                    主啊，我們常常如同以色列人一樣，嘴唇敬拜祢，心卻遠離祢；我們總是帶著頑梗的頸項，倚靠自己的聰明。感謝祢沒有按著我們的過犯對待我們，反而在苦難的爐中揀選我們、煉淨我們。求祢開我們的耳朵，聽見祢出巴比倫的呼召；賜我們順服的勇氣，走在祢引導的平安之路上。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- 大綱快速導覽 -->
+        <section id="outline" class="space-y-10">
+            <h2 class="flex items-center text-3xl font-bold font-display">
+                <span class="section-icon">📜</span> 分段大綱與解析
+            </h2>
+            
+            <!-- Quick Links -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#section1" class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold-500/50 hover:bg-gold-500/5 transition-all text-left">
+                    <p class="text-xs text-gold-400 font-bold mb-2 tracking-tighter">PART 01</p>
+                    <p class="font-bold text-sm">揭開偽善的面紗：直面內心的頑梗</p>
+                </a>
+                <a href="#section2" class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold-500/50 hover:bg-gold-500/5 transition-all text-left">
+                    <p class="text-xs text-gold-400 font-bold mb-2 tracking-tighter">PART 02</p>
+                    <p class="font-bold text-sm">苦難爐中的恩典：為神榮耀而受的熬煉</p>
+                </a>
+                <a href="#section3" class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold-500/50 hover:bg-gold-500/5 transition-all text-left">
+                    <p class="text-xs text-gold-400 font-bold mb-2 tracking-tighter">PART 03</p>
+                    <p class="font-bold text-sm">錯失的平安與重生的呼召：逃離巴比倫</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis 1 -->
+            <div id="section1" class="space-y-8 pt-12">
+                <div class="flex items-center space-x-4">
+                    <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500 text-black font-black text-xl">1</span>
+                    <h3 class="text-2xl font-bold">揭開偽善的面紗：直面內心的頑梗</h3>
+                </div>
+                <div class="bg-surface p-8 rounded-3xl border border-white/5 space-y-6">
+                    <div class="border-l-4 border-gold-500 pl-6 italic text-gray-400 text-sm">
+                        以賽亞書 48:1-8
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center text-sm uppercase tracking-widest"><span class="mr-2">🔍</span> 深度解析</h4>
+                            <p class="text-gray-300"><strong>重要關鍵字：</strong>「頑梗」(Stubborn)。希伯來原文為 <span class="font-english text-gold-300">קָשֶׁה (qasheh)</span>，意指「堅硬的、嚴厲的、固執的」。此處神形容百姓「頸項是鐵的，額是銅的」，生動描繪了屬靈上的傲慢與不屈服。</p>
+                            <p class="text-gray-300"><strong>關鍵問題：</strong>為什麼神要不斷預先宣告事情的發生？這段經文直指人心的軟弱：人極度容易將神的作為歸功於自己或偶像。神預告未來，是為了摧毀人的自義與自我中心。</p>
+                        </div>
+                        <div class="space-y-4 bg-white/5 p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold flex items-center text-sm uppercase tracking-widest"><span class="mr-2">💡</span> 例證與佳句</h4>
+                            <p class="text-gray-400 text-sm italic">就像一個固執的駕駛員，堅持憑自己的直覺開車而關閉GPS。直到迷路進入死胡同，才發現自己的方向感完全錯誤。</p>
+                            <div class="h-px bg-white/10 my-4"></div>
+                            <p class="text-sm font-bold text-gold-100">「福音是這樣的：我們比自己敢於相信的還要罪惡和破碎；但同時，我們在耶穌基督裡，比自己敢於盼望的還要被愛和被接納。」—— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis 2 -->
+            <div id="section2" class="space-y-8 pt-12">
+                <div class="flex items-center space-x-4">
+                    <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500 text-black font-black text-xl">2</span>
+                    <h3 class="text-2xl font-bold">苦難爐中的恩典：為神榮耀而受的熬煉</h3>
+                </div>
+                <div class="bg-surface p-8 rounded-3xl border border-white/5 space-y-6">
+                    <div class="border-l-4 border-gold-500 pl-6 italic text-gray-400 text-sm">
+                        以賽亞書 48:9-16
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center text-sm uppercase tracking-widest"><span class="mr-2">🔍</span> 深度解析</h4>
+                            <p class="text-gray-300"><strong>重要關鍵字：</strong>「熬煉」(Refine)。希伯來原文為 <span class="font-english text-gold-300">צָרַף (tsaraph)</span>，意思是「鎔煉、提煉、試驗」。神在苦難的爐中是帶著憐憫與揀選的恩典。</p>
+                            <p class="text-gray-300"><strong>關鍵問題：</strong>神為「自己的緣故」是否自私？不。神的名代表至高的善。神為祂的名拯救我們，是得救最穩固的保證，因為不建立在我們易變的行為上，而是建立在神永恆的信實上。</p>
+                        </div>
+                        <div class="space-y-4 bg-white/5 p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold flex items-center text-sm uppercase tracking-widest"><span class="mr-2">💡</span> 例證與佳句</h4>
+                            <p class="text-gray-400 text-sm italic">古代銀匠提煉銀子時，必須盯著火爐。何時煉好？「當我能在銀子中清晰看見自己倒影的時候。」</p>
+                            <div class="h-px bg-white/10 my-4"></div>
+                            <p class="text-sm font-bold text-gold-100">「主的子民被放入火爐中，不是為了吞噬他們，而是為了潔淨他們。」—— 司布真</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis 3 -->
+            <div id="section3" class="space-y-8 pt-12">
+                <div class="flex items-center space-x-4">
+                    <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500 text-black font-black text-xl">3</span>
+                    <h3 class="text-2xl font-bold">錯失的平安與重生的呼召：逃離巴比倫</h3>
+                </div>
+                <div class="bg-surface p-8 rounded-3xl border border-white/5 space-y-6">
+                    <div class="border-l-4 border-gold-500 pl-6 italic text-gray-400 text-sm">
+                        以賽亞書 48:17-22
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center text-sm uppercase tracking-widest"><span class="mr-2">🔍</span> 深度解析</h4>
+                            <p class="text-gray-300"><strong>重要關鍵字：</strong>「平安」(Peace)。希伯來原文為 <span class="font-english text-gold-300">שָׁלוֹם (shalom)</span>，代表「完整、健全、與神關係的和諧」。</p>
+                            <p class="text-gray-300"><strong>關鍵問題：</strong>為什麼「惡人必不得平安」？因為真正的平安只存在於順服神命令的道路上。拒絕神引導、執意留在巴比倫（世界誘惑）的人，終將失去真正的安息。</p>
+                        </div>
+                        <div class="space-y-4 bg-white/5 p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold flex items-center text-sm uppercase tracking-widest"><span class="mr-2">💡</span> 例證與佳句</h4>
+                            <p class="text-gray-400 text-sm italic">一隻習慣了籠子的小鳥，即使門開了也不敢飛。巴比倫就是我們的「籠子」。</p>
+                            <div class="h-px bg-white/10 my-4"></div>
+                            <p class="text-sm font-bold text-gold-100">「我們可以承受失去任何東西，甚至是一切，但我們絕對承擔不起失去神的平安。」—— 陶恕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 應用與行動 -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h2 class="flex items-center text-2xl font-bold">
+                    <span class="section-icon">🎯</span> 應用方向
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start bg-surface p-4 rounded-xl border border-white/5">
+                        <span class="text-gold-500 mr-4 font-bold">01</span>
+                        <p class="text-gray-300 text-sm"><strong>誠實面對自我</strong>：檢視生命中是否有「嘴唇敬拜，心卻遠離」的形式化，放下自我主權。</p>
+                    </li>
+                    <li class="flex items-start bg-surface p-4 rounded-xl border border-white/5">
+                        <span class="text-gold-500 mr-4 font-bold">02</span>
+                        <p class="text-gray-300 text-sm"><strong>擁抱熬煉恩典</strong>：在逆境中尋找神雕刻生命的痕跡，深信這是為著神的榮耀。</p>
+                    </li>
+                    <li class="flex items-start bg-surface p-4 rounded-xl border border-white/5">
+                        <span class="text-gold-500 mr-4 font-bold">03</span>
+                        <p class="text-gray-300 text-sm"><strong>採取斷捨離</strong>：找出生命中使我們妥協的「巴比倫」，果斷地逃離。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h2 class="flex items-center text-2xl font-bold">
+                    <span class="section-icon">🏃</span> 回應行動
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start bg-gold-500/10 p-4 rounded-xl border border-gold-500/20">
+                        <span class="text-gold-400 mr-4 font-bold">★</span>
+                        <p class="text-gray-200 text-sm"><strong>每日順服清單</strong>：寫下一件「放下自我主權」的小事，並於睡前檢視。</p>
+                    </li>
+                    <li class="flex items-start bg-gold-500/10 p-4 rounded-xl border border-gold-500/20">
+                        <span class="text-gold-400 mr-4 font-bold">★</span>
+                        <p class="text-gray-200 text-sm"><strong>轉化抱怨禱告</strong>：當遭遇挫折時，轉換為尋求神心意的禱告。</p>
+                    </li>
+                    <li class="flex items-start bg-gold-500/10 p-4 rounded-xl border border-gold-500/20">
+                        <span class="text-gold-400 mr-4 font-bold">★</span>
+                        <p class="text-gray-200 text-sm"><strong>逃離屬靈巴比倫</strong>：切斷一個明顯屬於世俗纏累的娛樂或消費習慣。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 講章文稿 -->
+        <section id="sermon" class="pt-20">
+            <div class="bento-card bg-surface">
+                <div class="max-w-2xl mx-auto space-y-12">
+                    <header class="text-center space-y-4">
+                        <span class="text-gold-500 font-english tracking-widest text-sm">SERMON MANUSCRIPT</span>
+                        <h2 class="text-3xl font-display font-black leading-tight">頑梗與恩典：<br/>在火爐中遇見引導的神</h2>
+                        <div class="w-20 h-1 bg-gold-500 mx-auto"></div>
+                    </header>
+                    
+                    <div class="prose prose-invert prose-gold max-w-none space-y-8 text-gray-300 leading-relaxed text-lg">
+                        <p>各位弟兄姊妹，平安。今天我們要透過以賽亞書48章，來看見一幅極其真實卻又充滿恩典的圖畫。這段經文是上帝對即將被擄到巴比倫的以色列人的沉痛宣告，同時也是最深情的呼喚。</p>
+
+                        <h3 class="text-gold-400 font-display text-2xl font-bold mt-12 mb-4">第一、揭開偽善的面紗：直面內心的頑梗</h3>
+                        <p>上帝一開始就毫不留情地揭開以色列人的面具。他們「<strong class="text-white">指著耶和華的名起誓，卻不憑誠實，不憑公義</strong>」。這是不是常常也是我們的寫照？我們身上貼著基督徒的標籤，但遇到困難時，我們倚靠的是自己的聰明、存款和人脈。</p>
+                        <p>上帝說：「<strong class="text-white">因為我素來知道你是頑梗的─你的頸項是鐵的；你的額是銅的。</strong>」神藉著祂話語的精準，打破了我們屬靈的傲慢，要我們承認：唯有祂是掌管一切的主宰。</p>
+
+                        <h3 class="text-gold-400 font-display text-2xl font-bold mt-12 mb-4">第二、苦難爐中的恩典：為神榮耀而受的熬煉</h3>
+                        <p>面對頑梗的百姓，神沒有毀滅他們。祂說：「<strong class="text-white">我熬煉你，卻不像熬煉銀子；你在苦難的爐中，我揀選你。</strong>」這是何等奇妙的恩典！銀子必須煉到毫無雜質，若神對我們如此苛求，我們早就在火爐中化為灰燼了。</p>
+                        <p class="bg-gold-500/5 p-6 border-l-2 border-gold-500">
+                            神宣告：「<strong class="text-gold-400">我為自己的緣故必行這事</strong>」。這不是神自私，而是我們得救的最強保障！因為我們的不堪，神若按我們的行為，早該丟棄我們。司布真曾說：「主的子民被放入火爐中，不是為了吞噬他們，而是為了潔淨他們。」
+                        </p>
+
+                        <h3 class="text-gold-400 font-display text-2xl font-bold mt-12 mb-4">第三、錯失的平安與重生的呼召：逃離巴比倫</h3>
+                        <p>經歷了熬煉，神發出了最懇切的呼籲：「<strong class="text-gold-400">我是耶和華─你的神，教訓你，使你得益處，引導你所當行的路。</strong>」神多麼渴望我們聽從祂！祂說，如果你們聽從，你們的「<strong class="text-white">平安就如河水；公義就如海浪。</strong>」</p>
+                        <p>神保證，當你勇敢走出來，祂必「<strong class="text-white">引導他們經過沙漠...使水從磐石而流。</strong>」最後神留下了一句震聾發聵的話：「<strong class="text-accent">惡人必不得平安！</strong>」讓我們放下頑梗，走在祂引導的平安之路上！</p>
+                    </div>
+
+                    <!-- 結論關鍵字 -->
+                    <div class="grid grid-cols-3 gap-4 pt-12 border-t border-white/10">
+                        <div class="text-center">
+                            <p class="text-gold-400 font-english text-xs tracking-widest mb-2">KEYWORD 01</p>
+                            <p class="font-bold text-xl">頑梗</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-gold-400 font-english text-xs tracking-widest mb-2">KEYWORD 02</p>
+                            <p class="font-bold text-xl">熬煉</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-gold-400 font-english text-xs tracking-widest mb-2">KEYWORD 03</p>
+                            <p class="font-bold text-xl">呼召</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言佳句 -->
+        <section id="quotes" class="space-y-12">
+            <h2 class="flex items-center text-3xl font-bold font-display">
+                <span class="section-icon">✍️</span> 屬靈前輩佳句名言
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card text-sm">
+                    <p class="text-gold-100 font-medium mb-4">「當基督呼召一個人時，祂是叫他來死。」</p>
+                    <p class="text-gold-500/60 font-english">—— 潘霍華 《追隨基督》</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card text-sm">
+                    <p class="text-gold-100 font-medium mb-4">「偶像就是任何對你來說比上帝更重要的東西。」</p>
+                    <p class="text-gold-500/60 font-english">—— 提摩太·凱勒 《山寨版的上帝》</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card text-sm">
+                    <p class="text-gold-100 font-medium mb-4">「對上帝的順服是我們靈魂得安息的唯一途徑。」</p>
+                    <p class="text-gold-500/60 font-english">—— 陶恕 《渴慕神》</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card text-sm">
+                    <p class="text-gold-100 font-medium mb-4">「神在最黑暗的雲層背後，往往隱藏著最甜蜜的微笑。」</p>
+                    <p class="text-gold-500/60 font-english">—— 司布真 《清晨甘露》</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card text-sm">
+                    <p class="text-gold-100 font-medium mb-4">「真正的屬靈生命，是從我們願意承認自己的破碎開始的。」</p>
+                    <p class="text-gold-500/60 font-english">—— 盧雲 《浪子回頭》</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card text-sm">
+                    <p class="text-gold-100 font-medium mb-4">「信心就是對上帝恩典的一種活潑、大膽的信靠。」</p>
+                    <p class="text-gold-500/60 font-english">—— 馬丁·路德 《羅馬書講義》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <section class="py-10 border-t border-white/5 text-center">
+            <p class="text-gray-600 text-xs tracking-widest">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="scroll-to-top" title="回到起點">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

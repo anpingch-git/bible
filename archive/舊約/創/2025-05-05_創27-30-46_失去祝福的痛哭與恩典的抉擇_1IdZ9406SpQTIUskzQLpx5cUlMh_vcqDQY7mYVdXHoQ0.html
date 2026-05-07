@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創27:30-46: 失去祝福的痛哭與恩典的抉擇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        slate: {
+                            850: '#111827',
+                            950: '#030712',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'Outfit', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #030712; color: #f3f4f6; }
+        .glass { background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-gradient-gold { background: linear-gradient(135deg, #eab308 0%, #a16207 100%); }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-5px); border-color: rgba(234, 179, 8, 0.4); box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #eab308; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .sticky-nav { position: sticky; top: 0; z-index: 50; }
+        .bento-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        @media (min-width: 1024px) { .bento-grid { grid-template-columns: repeat(3, 1fr); } .span-2 { grid-column: span 2; } }
+    </style>
+</head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Hero Banner -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/9e993433-6a17-43b6-9994-ed2294c8eb25' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <span class="inline-block px-4 py-1 mb-6 text-xs font-bold tracking-widest uppercase bg-gold-600 text-white rounded-full">Genesis 創世記 27:30-46</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 font-serif tracking-tight leading-tight">
+                失去祝福的<span class="text-gradient">痛哭</span><br>與恩典的抉擇
+            </h1>
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-medium text-slate-400">
+                <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-60h-6"/></svg> 主權</span>
+                <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg> 悔改</span>
+                <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg> 和睦</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-nav glass py-4 px-6 mb-12 shadow-2xl">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-gold-500 font-bold tracking-tighter text-lg font-display">創27:30-46</div>
+            <div class="flex gap-8 text-xs md:text-sm font-semibold tracking-widest text-slate-300">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24">
+        
+        <!-- 金句 Card -->
+        <section class="mb-20">
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform">
+                    <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V4H21.017C21.5693 4 22.017 4.44772 22.017 5V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM3.01701 21L3.01701 18C3.01701 16.8954 3.91244 16 5.01701 16H8.01701C8.56929 16 9.01701 15.5523 9.01701 15V9C9.01701 8.44772 8.56929 8 8.01701 8H4.01701C3.46473 8 3.01701 7.55228 3.01701 7V4H10.017C10.5693 4 11.017 4.44772 11.017 5V15C11.017 18.3137 8.33072 21 5.01701 21H3.01701Z"/></svg>
+                </div>
+                <h2 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    年度金句
+                </h2>
+                <blockquote class="text-2xl md:text-3xl font-serif leading-snug text-slate-100 italic">
+                    「以掃對他父親說：『父啊，你只有一樣可祝的福嗎？我父啊，求你也為我祝福！』以掃就放聲而哭。」
+                </blockquote>
+                <cite class="block mt-6 text-gold-400 font-bold not-italic">—— 創世記 27:38</cite>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="mb-24 scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-gradient-gold rounded-2xl flex items-center justify-center text-white shadow-lg shadow-gold-900/20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight">開會禱告 <span class="text-slate-600 ml-2 font-light">PRAYER</span></h2>
+            </div>
+            <div class="glass p-8 rounded-3xl border-l-4 border-gold-500">
+                <p class="text-lg text-slate-300 leading-relaxed italic">
+                    主啊，我們來到祢面前，懇求祢的光照耀我們內心的隱密處。在以撒一家的破碎與欺瞞中，我們看見了人性的軟弱、私慾的破壞力，以及錯失恩典的懊悔。求祢幫助我們不單單追求屬世的好處與祝福，而是真正看重與祢所立的約，存敬畏的心順服祢的主權。當我們面對家庭的裂痕與個人的過犯時，賜我們真實悔改的勇氣，而不是停留在懊惱與怨恨之中。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- 大綱快速導航 -->
+        <section id="outline" class="mb-24 scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-gradient-gold rounded-2xl flex items-center justify-center text-white shadow-lg shadow-gold-900/20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight">分段大綱 <span class="text-slate-600 ml-2 font-light">OUTLINE</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="glass p-6 rounded-2xl border border-slate-800 hover:border-gold-500/50 transition-all text-left group">
+                    <span class="text-gold-500 font-bold text-xs tracking-widest block mb-2">PART 01</span>
+                    <h3 class="font-bold text-slate-100 group-hover:text-gold-400 transition-colors">震驚與無奈——無法挽回的屬靈盲點</h3>
+                    <p class="text-slate-500 text-xs mt-2">創 27:30-35</p>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl border border-slate-800 hover:border-gold-500/50 transition-all text-left group">
+                    <span class="text-gold-500 font-bold text-xs tracking-widest block mb-2">PART 02</span>
+                    <h3 class="font-bold text-slate-100 group-hover:text-gold-400 transition-colors">懊悔與苦水——錯失恩典的屬世悲泣</h3>
+                    <p class="text-slate-500 text-xs mt-2">創 27:36-40</p>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl border border-slate-800 hover:border-gold-500/50 transition-all text-left group">
+                    <span class="text-gold-500 font-bold text-xs tracking-widest block mb-2">PART 03</span>
+                    <h3 class="font-bold text-slate-100 group-hover:text-gold-400 transition-colors">仇恨與分裂——罪行結出的家庭苦果</h3>
+                    <p class="text-slate-500 text-xs mt-2">創 27:41-46</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-6xl font-black text-slate-800 font-display">01</span>
+                        <h3 class="text-2xl font-bold text-gold-400">震驚與無奈——無法挽回的屬靈盲點</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="span-2 glass p-8 rounded-3xl card-hover">
+                            <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-4">引用經文</h4>
+                            <p class="text-slate-300 leading-relaxed bg-slate-900/50 p-6 rounded-xl border border-slate-800">
+                                以撒為雅各祝福已畢，雅各從他父親那裡才出來，他哥哥以掃正打獵回來... 以撒就大大的戰兢，說：「你未來之先，是誰打了野味拿來給我呢？我已經吃了，為他祝福；他將來也必蒙福。」以掃聽見他父親的話，就大大的出一聲，極其苦痛的呼叫說：「我父啊，求你也為我祝福！」
+                            </p>
+                            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="text-sm font-bold text-gold-600 mb-2">關鍵原文 Keyword</h4>
+                                    <p class="text-slate-200"><strong class="text-gold-300">戰兢 (charadah)</strong>: 意指「極大的恐懼、驚駭」。這是一種深層的靈魂震撼與恐懼。</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gold-600 mb-2">名言 Quote</h4>
+                                    <p class="text-slate-400 italic">「上帝的護理之工，往往在人的罪惡與籌算背後隱密地運行。」—— 約翰·加爾文</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass p-8 rounded-3xl border-t-4 border-gold-500 card-hover">
+                            <h4 class="text-sm font-bold text-gold-600 mb-4">問題與解析</h4>
+                            <p class="font-bold text-white mb-2">為什麼以撒發現真相後「大大的戰兢」而不收回祝福？</p>
+                            <p class="text-slate-400 text-sm">以撒意識到自己無法與神的主權抗衡。他的戰兢是對上帝敬畏的覺醒，他看見上帝竟然透過人的軟弱成就了旨意。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-6xl font-black text-slate-800 font-display">02</span>
+                        <h3 class="text-2xl font-bold text-gold-400">懊悔與苦水——錯失恩典的屬世悲泣</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="glass p-8 rounded-3xl border-t-4 border-gold-500 card-hover">
+                            <h4 class="text-sm font-bold text-gold-600 mb-4">關鍵問題</h4>
+                            <p class="font-bold text-white mb-2">以掃的眼淚出了什麼問題？</p>
+                            <p class="text-slate-400 text-sm">以掃的哭泣是「屬世的憂愁」。他哭泣是因為失去了物質利益，而非為自己褻慢神的心態而悔改。想要利益卻拒絕主，無法帶來生命恢復。</p>
+                        </div>
+                        <div class="span-2 glass p-8 rounded-3xl card-hover">
+                            <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-4">深度解析</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h5 class="text-gold-300 font-bold mb-2">祝福 (berakah)</h5>
+                                    <p class="text-slate-400 text-sm">不只是口頭祝願，更代表聖約的延續。以掃想要的只是好處，卻不想要賜予好處的那位神。</p>
+                                    <div class="mt-6 p-4 bg-slate-900 rounded-lg italic text-slate-400 text-sm">
+                                        「真正的悔改不只是流淚，更是轉向。」—— 司布真
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                                    <h5 class="text-white font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                        例證：作弊的學生
+                                    </h5>
+                                    <p class="text-slate-400 text-sm">一個學生作弊被抓而嚎啕大哭，是為了失去保送資格而哭，而非為了破壞誠信內疚。這正是「屬世的懊悔」。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-6xl font-black text-slate-800 font-display">03</span>
+                        <h3 class="text-2xl font-bold text-gold-400">仇恨與分裂——罪行結出的家庭苦果</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="span-2 glass p-8 rounded-3xl card-hover">
+                            <h4 class="text-sm font-bold text-gold-600 uppercase tracking-widest mb-4">代價分析</h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                <div class="p-4 bg-slate-900 rounded-xl"><div class="text-gold-500 font-bold mb-1">以撒</div><div class="text-xs text-slate-500">失去長子</div></div>
+                                <div class="p-4 bg-slate-900 rounded-xl"><div class="text-gold-500 font-bold mb-1">以掃</div><div class="text-xs text-slate-500">淪為殺手</div></div>
+                                <div class="p-4 bg-slate-900 rounded-xl"><div class="text-gold-500 font-bold mb-1">雅各</div><div class="text-xs text-slate-500">流亡二十年</div></div>
+                                <div class="p-4 bg-slate-900 rounded-xl"><div class="text-gold-500 font-bold mb-1">利百加</div><div class="text-xs text-slate-500">此生不再見</div></div>
+                            </div>
+                            <p class="mt-8 text-slate-300">
+                                <strong class="text-gold-300">怨恨 (satam)</strong>: 原意指「懷恨在心、蓄意敵對」。與撒但（Satan）詞根相關。懷藏怨恨，無異於自己喝下毒藥，卻期望別人死去。
+                            </p>
+                        </div>
+                        <div class="glass p-8 rounded-3xl border-t-4 border-gold-500 card-hover flex flex-col justify-center">
+                            <h4 class="text-sm font-bold text-gold-600 mb-4 font-display italic">THE WISDOM</h4>
+                            <p class="text-slate-100 font-serif text-lg">「饒恕是不讓過去控制未來。」</p>
+                            <p class="text-slate-500 text-sm mt-2">—— 盧雲 (Henri Nouwen)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講道文稿 Section -->
+        <section id="sermon" class="mb-24 scroll-mt-28">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-gradient-gold rounded-2xl flex items-center justify-center text-white shadow-lg shadow-gold-900/20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM7 8h6m-6 4h10m-10 4h10"/></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight">講道文稿 <span class="text-slate-600 ml-2 font-light">SERMON</span></h2>
+            </div>
+            
+            <article class="glass p-8 md:p-16 rounded-[3rem] shadow-inner">
+                <div class="max-w-3xl mx-auto space-y-8 text-slate-300 text-lg leading-relaxed">
+                    <div class="text-center mb-12">
+                        <h3 class="text-4xl font-black text-white mb-4 font-serif">失去祝福的痛哭與恩典的抉擇</h3>
+                        <p class="text-gold-500 font-bold">經文：創世記 27:30-46</p>
+                    </div>
+
+                    <p>各位弟兄姊妹，平安。</p>
+                    <p>今天我們要看的這段經文，是聖經中最令人心碎的家庭悲劇之一。一個家庭，四個成員：一個瞎眼且偏心的父親以撒，一個精於算計的母親利百加，一個輕看屬靈福分的長子以掃，以及一個靠欺騙抓取祝福的次子雅各。當人意的操控遇上神的主權，這場家庭風暴留下的只有滿地的心碎。</p>
+
+                    <div class="bg-gold-500/5 border-l-4 border-gold-500 p-6 my-10">
+                        <p class="text-gold-400 font-bold italic text-xl">
+                            「以掃對他父親說：『父啊，你只有一樣可祝的福嗎？我父啊，求你也為我祝福！』以掃就放聲而哭。」（創世記 27:38）
+                        </p>
+                    </div>
+
+                    <p>這聲慘痛的哭泣，迴盪在歷史的長廊裡。今天我們要透過三段大綱，來探討這個家庭的破裂，以及它如何成為我們靈命的鏡子。</p>
+
+                    <h4 class="text-2xl font-black text-white mt-12 mb-4 border-b border-slate-800 pb-2">第一段：震驚與無奈——無法挽回的屬靈盲點</h4>
+                    <p>當雅各帶著騙來的祝福前腳剛走，以掃後腳就帶著野味進來了。經文第33節說：<span class="text-gold-400 font-bold">「以撒就大大的戰兢」</span>。原文的「戰兢」（charadah）不是普通的發抖，而是極大的恐懼與驚駭。</p>
+                    <p>以撒為什麼怕成這樣？因為他在這一刻突然醒悟了。上帝早在雙子出生前就說過「將來大的要服事小的」，但以撒卻因為貪吃野味、偏愛以掃，一直試圖用自己的權威去推翻神的旨意。他的戰兢，是因為他發現<span class="text-white font-bold">自己竟然在與神作對，而神的主權卻奇妙地越過了人的罪惡與欺騙，成就了祂的定旨。</span></p>
+
+                    <h4 class="text-2xl font-black text-white mt-12 mb-4 border-b border-slate-800 pb-2">第二段：懊悔與苦水——錯失恩典的屬世悲泣</h4>
+                    <p>發現真相後，以掃放聲大哭。他哀求父親：「父啊，你只有一樣可祝的福嗎？」以掃的眼淚看似淒涼，但希伯來書卻警告我們，以掃是「貪戀世俗的」。為什麼？因為以掃要的只是「祝福」（berakah）背後的利益——財富、地位，卻不要那位賜福的神。</p>
+                    <p class="bg-slate-900 p-6 rounded-2xl italic">「真正的悔改不只是流淚，更是轉向；許多人為罪的後果哀哭，卻很少人為罪的本身哀哭。」—— 司布真</p>
+
+                    <h4 class="text-2xl font-black text-white mt-12 mb-4 border-b border-slate-800 pb-2">第三段：仇恨與分裂——罪行結出的家庭苦果</h4>
+                    <p>沒有真實悔改的懊惱，最終一定會發酵成仇恨。第41節說，以掃因這事就<span class="text-gold-400 font-bold">「怨恨」（satam）</span>雅各。這場風暴中，誰贏了？沒有人。以撒的偏心帶來分裂；以掃的苦毒使他淪為殺手；雅各被迫流亡二十年；而利百加至死都沒能再見愛子一面。</p>
+
+                    <p class="text-xl font-bold text-white text-center pt-12">
+                        求神幫助我們放開操控的雙手，降服於神的主權。
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- 應用方向 Bento -->
+        <section class="mb-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-gradient-gold rounded-2xl flex items-center justify-center text-white shadow-lg shadow-gold-900/20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight">實踐與應用 <span class="text-slate-600 ml-2 font-light">APPLICATION</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl card-hover border-b-4 border-blue-500/50">
+                    <div class="text-blue-500 font-black text-4xl mb-4">01</div>
+                    <h4 class="text-xl font-bold text-white mb-4">檢視渴慕</h4>
+                    <p class="text-slate-400 text-sm">我們來到神面前，是像以掃一樣只想要「神手中的好處」，還是真正渴慕「賜福的神」？</p>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover border-b-4 border-emerald-500/50">
+                    <div class="text-emerald-500 font-black text-4xl mb-4">02</div>
+                    <h4 class="text-xl font-bold text-white mb-4">分辨真假悔改</h4>
+                    <p class="text-slate-400 text-sm">我們的眼淚是出於失去利益的「屬世憂愁」，還是真正為得罪神而痛心的「屬神懊悔」？</p>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover border-b-4 border-rose-500/50">
+                    <div class="text-rose-500 font-black text-4xl mb-4">03</div>
+                    <h4 class="text-xl font-bold text-white mb-4">拒絕苦毒</h4>
+                    <p class="text-slate-400 text-sm">當衝突發生時，我們選擇讓苦毒生長，還是願意靠主尋求饒恕與和睦？</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言佳句 Grid -->
+        <section id="quotes" class="mb-24 scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-gradient-gold rounded-2xl flex items-center justify-center text-white shadow-lg shadow-gold-900/20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight">名言佳句 <span class="text-slate-600 ml-2 font-light">QUOTES</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="glass p-6 rounded-2xl border-l-4 border-gold-600 italic text-slate-300">
+                    「如果我們不是為了神自己而尋求神，我們就根本不是在尋求神。」—— 陶恕
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-slate-700 italic text-slate-300">
+                    「饒恕的意思是，拒絕讓別人對你造成的傷害，成為你未來生活的主宰。」—— 提摩太·凱勒
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-gold-600 italic text-slate-300">
+                    「廉價的恩典是不要悔改的赦免......是沒有十字架的恩典。」—— 潘霍華
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-slate-700 italic text-slate-300">
+                    「罪的本質就是人在扮演上帝；而救贖的本質，則是上帝成為了人。」—— 約翰·史托德
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-gold-600 italic text-slate-300">
+                    「人心的本質就是一座不斷製造偶像的工廠。」—— 約翰·加爾文
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-slate-700 italic text-slate-300">
+                    「悔改不是一種情緒的發洩，而是一個意志的決定。」—— 畢德生
+                </div>
+            </div>
+
+            <div class="mt-20 p-8 text-center bg-slate-900/50 rounded-3xl border border-slate-800 text-slate-500 text-sm">
+                <svg class="w-8 h-8 mx-auto mb-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-gold rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform z-50 group">
+        <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Optional: Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

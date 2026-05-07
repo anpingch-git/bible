@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出7:1-13 當順服遇上剛硬：看見掌權的耶和華</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#9A1B1E',
+                        deepBlue: '#0A0E17',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0E17;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 14, 23, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .section-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFF 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-overlay {
+            background: linear-gradient(to bottom, rgba(10,14,23,0.3) 0%, rgba(10,14,23,1) 100%);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .outline-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: #D4AF37;
+            color: #0A0E17;
+            border-color: #D4AF37;
+            font-weight: 600;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0A0E17; }
+        ::-webkit-scrollbar-thumb { background: #1F2937; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Banner -->
+    <header class="relative h-[60vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/510f4e4b-7136-49c2-a62d-fd2b8e85b99c' alt='聖經背景圖' class="w-full h-full object-cover opacity-60 scale-105" />
+            <div class="absolute inset-0 banner-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <p class="text-gold tracking-[0.3em] uppercase text-sm mb-4 font-semibold animate-pulse-slow">Exodus 7:1-13</p>
+            <h1 class="font-serif text-4xl md:text-6xl font-black mb-6 leading-tight gradient-text">
+                當順服遇上剛硬：<br>看見掌權的耶和華
+            </h1>
+            <div class="h-1 w-24 bg-gold mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="text-gold font-bold font-serif hidden md:block">出埃及記 7:1-13</div>
+            <div class="flex items-center gap-6 text-sm tracking-widest font-medium overflow-x-auto whitespace-nowrap pb-2 md:pb-0">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="pt-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold/10 rounded-xl text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="20 20 20 20" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">課前禱告</h2>
+            </div>
+            <div class="section-card p-8 md:p-12 leading-relaxed text-lg text-slate-300 italic border-l-4 border-gold">
+                「主耶和華，我們來到祢面前，承認祢是天地萬物的主宰，也是歷史與人心背後最終的掌權者。當我們面對環境的艱難、人心的剛硬，甚至自身的軟弱時，求祢透過出埃及記這段經文開啟我們的屬靈眼睛。讓我們看見祢的旨意無法被攔阻，祢的權能勝過世上一切的虛假。賜給我們如摩西與亞倫般『照樣而行』的順服之心，不看自己的年紀或限制，只單單仰望祢的呼召。奉主耶穌基督得勝的名求，阿們。」
+            </div>
+        </section>
+
+        <!-- 大綱快速導覽 -->
+        <section id="outline" class="pt-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold/10 rounded-xl text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl text-center group">
+                    <span class="block text-gold text-xs mb-2 opacity-60">第一段 (7:1-5)</span>
+                    <span class="text-sm font-semibold">超越人意的神聖主權</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl text-center group">
+                    <span class="block text-gold text-xs mb-2 opacity-60">第二段 (7:6-7)</span>
+                    <span class="text-sm font-semibold">毫無保留的絕對順服</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl text-center group">
+                    <span class="block text-gold text-xs mb-2 opacity-60">第三段 (7:8-13)</span>
+                    <span class="text-sm font-semibold">吞滅虛假的得勝印記</span>
+                </a>
+            </div>
+
+            <!-- 深度解析 - Part 1 -->
+            <div id="part1" class="space-y-12">
+                <div class="section-card p-8 border-t-4 border-gold">
+                    <h3 class="font-serif text-2xl font-bold text-gold mb-6">第一段：超越人意的神聖主權</h3>
+                    <div class="space-y-8">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-white/10 rounded text-xs font-bold uppercase tracking-widest text-gold mb-3">經文範圍：出 7:1-5</span>
+                            <p class="text-slate-400 italic text-sm leading-relaxed mb-4">耶和華對摩西說：「我使你在法老面前代替神，你的哥哥亞倫是替你說話的。凡我所吩咐你的，你都要說。你的哥哥亞倫要對法老說，容以色列人出他的地。我要使法老的心剛硬，也要在埃及地多行神蹟奇事。但法老必不聽你們；我要伸手重重地降罰在埃及，將我的軍隊以色列民從埃及地領出來。我伸手攻擊埃及，將以色列人從他們中間領出來的時候，埃及人就要知道我是耶和華。」</p>
+                        </div>
+                        <div class="bento-grid">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-2xl font-serif mb-2">知道 (יָדַע / yada)</p>
+                                <p class="text-sm text-slate-400">在希伯來文中不僅是認知，更包含經歷、體會與親密關係。神降災是為了讓抵擋者「經歷並承認」真神。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-2">關鍵問題 Q&A</h4>
+                                <p class="text-sm text-slate-300 leading-relaxed font-semibold">神為何「使」法老心剛硬？</p>
+                                <p class="text-xs text-slate-400 mt-2">這是一種「任憑」，撤去恩典的攔阻。神透過人類的悖逆，將計就計地彰顯救贖與審判。</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gold/5 rounded-2xl border border-gold/10">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 112 0v1a1 1 0 11-2 0zM13.536 14.95a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM14.95 6.464a1 1 0 010-1.414l.707-.707a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414 0zM10 14a4 4 0 100-8 4 4 0 000 8z" /></svg>
+                                名言佳句
+                            </h4>
+                            <p class="font-serif text-xl">「我們對神的主權認識得越深，我們在苦難中的內心就越安穩。」</p>
+                            <p class="text-right text-gold text-sm mt-2">—— 約翰·加爾文 (John Calvin)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 深度解析 - Part 2 -->
+            <div id="part2" class="mt-16 space-y-12">
+                <div class="section-card p-8 border-t-4 border-gold">
+                    <h3 class="font-serif text-2xl font-bold text-gold mb-6">第二段：毫無保留的絕對順服</h3>
+                    <div class="space-y-8">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-white/10 rounded text-xs font-bold uppercase tracking-widest text-gold mb-3">經文範圍：出 7:6-7</span>
+                            <p class="text-slate-400 italic text-sm leading-relaxed mb-4">摩西、亞倫這樣行；耶和華怎樣吩咐他們，他們就照樣行了。他們與法老說話的時候，摩西八十歲，亞倫八十三歲。</p>
+                        </div>
+                        <div class="bento-grid">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-2xl font-serif mb-2">照樣行 (עָשָׂה / asah)</p>
+                                <p class="text-sm text-slate-400">意指執行、完成。強調沒有打折扣、沒有自我修改的行動，完全對齊神的話語。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-2">關鍵問題 Q&A</h4>
+                                <p class="text-sm text-slate-300 leading-relaxed font-semibold">老邁的二人，順服動力為何？</p>
+                                <p class="text-xs text-slate-400 mt-2">不再是血氣，而是曠野40年破碎後的降服。順服神不看資源，只看呼召者的信實。</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gold/5 rounded-2xl border border-gold/10">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 112 0v1a1 1 0 11-2 0zM13.536 14.95a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM14.95 6.464a1 1 0 010-1.414l.707-.707a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414 0zM10 14a4 4 0 100-8 4 4 0 000 8z" /></svg>
+                                名言佳句
+                            </h4>
+                            <p class="font-serif text-xl">「唯有順服的人才能相信，唯有相信的人才會順服。」</p>
+                            <p class="text-right text-gold text-sm mt-2">—— 迪特里希·潘霍華 (Dietrich Bonhoeffer)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 深度解析 - Part 3 -->
+            <div id="part3" class="mt-16 space-y-12">
+                <div class="section-card p-8 border-t-4 border-gold">
+                    <h3 class="font-serif text-2xl font-bold text-gold mb-6">第三段：吞滅虛假的得勝印記</h3>
+                    <div class="space-y-8">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-white/10 rounded text-xs font-bold uppercase tracking-widest text-gold mb-3">經文範圍：出 7:8-13</span>
+                            <p class="text-slate-400 italic text-sm leading-relaxed mb-4">亞倫把杖丟在法老和臣僕面前，杖就變作蛇。於是法老召了博士和術士來；他們也用邪術照樣而行...但亞倫的杖吞了他們的杖。</p>
+                        </div>
+                        <div class="bento-grid">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-2xl font-serif mb-2">吞 (בָּלַע / bala')</p>
+                                <p class="text-sm text-slate-400">意指消滅。代表神的能力完全凌駕並瓦解了世界一切虛假的權勢與模仿。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-2">關鍵問題 Q&A</h4>
+                                <p class="text-sm text-slate-300 leading-relaxed font-semibold">如何分辨模仿的神蹟？</p>
+                                <p class="text-xs text-slate-400 mt-2">世界提供贗品（短暫平安、虛假繁榮）。但神的「吞滅」是決定性的記號。</p>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gold/5 rounded-2xl border border-gold/10">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 112 0v1a1 1 0 11-2 0zM13.536 14.95a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM14.95 6.464a1 1 0 010-1.414l.707-.707a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414 0zM10 14a4 4 0 100-8 4 4 0 000 8z" /></svg>
+                                名言佳句
+                            </h4>
+                            <p class="font-serif text-xl">「世界所給予的最好東西，不過是上帝真實同在的拙劣贗品。」</p>
+                            <p class="text-right text-gold text-sm mt-2">—— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 應用 & 方向 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="section-card p-8">
+                <h3 class="font-serif text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-gold">應用方向</span>
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3">
+                        <span class="text-gold font-bold">01</span>
+                        <span>在職場與家庭中接受「不可能的任務」，神可能要藉你的順服彰顯主權。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gold font-bold">02</span>
+                        <span>檢視生命中隱而未現的「法老」，求聖靈軟化我們內心剛硬的領域。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gold font-bold">03</span>
+                        <span>重新定義「成功」，不應以眼前效果衡量成敗，而應以「忠實」為標準。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-card p-8 bg-gold/10 border-gold/20">
+                <h3 class="font-serif text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-gold">回應行動</span>
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-3">
+                        <div class="w-2 h-2 rounded-full bg-gold mt-2"></div>
+                        <p class="text-sm"><strong class="text-white">降服：</strong> 本週花10分鐘在神面前，指認出生命中向神剛硬的部分。</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-2 h-2 rounded-full bg-gold mt-2"></div>
+                        <p class="text-sm"><strong class="text-white">實踐：</strong> 找出神感動你去做的一件微小卻困難的事，本週「照樣去行」。</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-2 h-2 rounded-full bg-gold mt-2"></div>
+                        <p class="text-sm"><strong class="text-white">代禱：</strong> 為一個你認為「不可能信主」的親友名字，相信神權能吞滅阻礙。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章文稿 -->
+        <section id="sermon" class="pt-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold/10 rounded-xl text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            <div class="section-card p-8 md:p-16 leading-[2] text-slate-300 text-lg space-y-8 font-serif">
+                <p class="text-center text-2xl font-bold text-gold mb-12">當順服遇上剛硬：看見掌權的耶和華</p>
+                <p>弟兄姊妹們，我們一生中常常會遇到一種情況：當我們滿懷熱忱，決心要順服上帝的呼召去行事時，迎面而來的不是坦途，而是一堵堅不可摧的牆。這堵牆可能是職場上強大的反對勢力、家人對信仰的極度排斥，甚至是一個看似完全無解的死結。</p>
+                <p>今天我們來看出埃及記7章1-13節，這裡有一場極其不對等的對決。一邊是高高在上、擁有全埃及帝國軍隊與財富的法老；另一邊是兩個年邁的老人：80歲的摩西和83歲的亞倫。他們手裡沒有兵器，只有一根木杖和神的一句話。</p>
+                
+                <h4 class="text-gold font-bold text-xl border-b border-gold/30 pb-2">第一、超越人意的神聖主權</h4>
+                <p>神預先告訴摩西：「對方是不會聽的。」我們不禁要問：既然知道他不聽，為什麼還要惹這個麻煩？其實，神是在撤去了恩典的攔阻，任憑法老本性中的狂妄完全暴露。神這麼做，是為了讓埃及人「知道我是耶和華」。當我們明白神在一切抵擋背後仍掌管全局時，我們的焦慮就會被平息。</p>
+
+                <h4 class="text-gold font-bold text-xl border-b border-gold/30 pb-2">第二、毫無保留的絕對順服</h4>
+                <p>摩西和亞倫「照樣行了」。在人生的黃昏，他們沒有修改神的計畫，沒有打折扣。順服不是看自己手裡有多少籌碼，而是看呼召我們的那位是誰。神不需要你的「大能」，神只需要你的「順服」。</p>
+
+                <h4 class="text-gold font-bold text-xl border-b border-gold/30 pb-2">第三、吞滅虛假的得勝印記</h4>
+                <p>世界的勢力似乎也能複製出「神蹟」，但亞倫的杖「吞了」他們的杖。這就是關鍵！不管世界的邪術多麼逼真，神的能力具有壓倒性的絕對優勢。世界所給予的，不過是上帝真實同在的拙劣贗品。</p>
+                
+                <p class="font-bold text-white bg-white/5 p-6 rounded-xl border-l-4 border-gold">結語：當我們看見這位掌權的耶和華，看見祂能吞滅一切仇敵的權勢時，我們唯一的選擇就是順服。無論你現在面對多大的艱難，請帶著你的「杖」走進去，勇敢地照著神的吩咐去行！</p>
+                
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <span class="px-4 py-2 bg-gold/10 text-gold rounded-full text-sm">#主權</span>
+                    <span class="px-4 py-2 bg-gold/10 text-gold rounded-full text-sm">#順服</span>
+                    <span class="px-4 py-2 bg-gold/10 text-gold rounded-full text-sm">#吞滅</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言佳句 -->
+        <section id="quotes" class="pt-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold/10 rounded-xl text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                    </svg>
+                </div>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">屬靈前輩佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quotes Loop -->
+                <div class="section-card p-6 flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「如果你的神從來沒有對你說過任何你不喜歡聽的話，那麼你所敬拜的神可能只是你自己的倒影。」</p>
+                    <p class="text-gold text-xs font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="section-card p-6 flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「廉價的恩典是我們教會的死敵。這恩典是昂貴的，因為它呼召我們跟從。」</p>
+                    <p class="text-gold text-xs font-bold">— 迪特里希·潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="section-card p-6 flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「上帝的護理不僅僅是看顧萬物，更是祂以無限的智慧管理一切。」</p>
+                    <p class="text-gold text-xs font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="section-card p-6 flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「信心不是盲目的跳躍，而是安息在上帝那永不改變的性格之上。」</p>
+                    <p class="text-gold text-xs font-bold">— 查理·司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- ... other quotes ... -->
+            </div>
+            
+            <div class="mt-12 text-center text-slate-500 text-xs tracking-widest border-t border-white/10 pt-8">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-12 h-12 bg-gold text-deepBlue rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navHeight = document.querySelector('nav').offsetHeight;
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - navHeight - 20,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

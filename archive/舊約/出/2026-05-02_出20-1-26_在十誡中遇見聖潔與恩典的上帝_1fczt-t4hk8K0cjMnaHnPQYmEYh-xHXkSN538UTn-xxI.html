@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出20:1-26: 自由的界線：在十誡中遇見聖潔與恩典的上帝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8d3',
+                            200: '#fdf1a7',
+                            300: '#fbe371',
+                            400: '#f9d141',
+                            500: '#f1b418',
+                            600: '#d68f10',
+                            700: '#b26911',
+                            800: '#915214',
+                            900: '#774316',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161e',
+                            accent: '#1f1f29'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 30, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9d141 0%, #f1b418 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: #16161e;
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(241, 180, 24, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f1b418;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-btn {
+            box-shadow: 0 8px 32px rgba(241, 180, 24, 0.3);
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .outline-btn {
+            border: 1px solid rgba(241, 180, 24, 0.4);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: #f1b418;
+            color: #0a0a0c;
+            transform: translateY(-2px);
+        }
+        .hero-mask {
+            background: linear-gradient(to bottom, transparent, #0a0a0c);
+        }
+        .quote-card {
+            border-left: 4px solid #f1b418;
+            background: rgba(241, 180, 24, 0.05);
+        }
+        .step-icon {
+            background: linear-gradient(135deg, #f9d141 0%, #f1b418 100%);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: #0a0a0c;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-gold-400 font-display font-bold tracking-wider text-lg md:text-xl">
+            出 20:1-26
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium tracking-widest text-gray-300">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+        <div class="md:hidden flex gap-4 text-xs font-bold text-gold-500">
+             <a href="#prayer">禱告</a>
+             <a href="#outline">大綱</a>
+             <a href="#sermon">講章</a>
+        </div>
+    </nav>
+
+    <!-- Banner Hero Section -->
+    <header class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <img src='https://opal.google/board/blobs/98119278-db45-480c-9cef-93e54238f28f' alt='聖經背景圖' class="absolute inset-0 w-full h-full object-cover opacity-60 scale-105 transition duration-[10s] hover:scale-100" />
+        <div class="absolute inset-0 hero-mask"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="mb-6 inline-block py-1 px-4 border border-gold-500 rounded-full text-gold-500 text-sm font-bold tracking-widest uppercase">
+                Exodus 20:1-26
+            </div>
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight font-display">
+                自由的界線：<br/>
+                <span class="text-gradient">在十誡中遇見聖潔與恩典</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 font-light tracking-wide">
+                上帝賜下律法，不是為了轄制我們，而是為了保護我們留在祂的愛與自由中。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-card scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display tracking-tight text-gradient">起始禱告</h2>
+            </div>
+            <div class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic text-center px-4">
+                「主耶和華我們的神，我們感謝祢。因為祢是先施恩拯救、將我們從罪惡與死亡的為奴之地領出來的上帝。主啊，祢賜下十誡與律法，不是為了轄制我們，而是為了保護我們留在祢的愛與自由中。求祢賜給我們一顆敬畏祢的心，使我們不至犯罪；也求祢開我們的眼睛，看見我們無法靠肉體的行為稱義，唯有倚靠中保耶穌基督的救恩，才能坦然無懼地來到祢的祭壇前。奉主耶穌基督的聖名祈求，阿們。」
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="section-card scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-gradient">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs font-bold text-gold-500 opacity-80 uppercase tracking-widest">Part 01 | 出20:1-11</span>
+                    <span class="text-lg font-bold">先有恩典，後有界線 (愛神的要求)</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs font-bold text-gold-500 opacity-80 uppercase tracking-widest">Part 02 | 出20:12-17</span>
+                    <span class="text-lg font-bold">核心的檢驗，內在的聖潔 (愛人的呼召)</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs font-bold text-gold-500 opacity-80 uppercase tracking-widest">Part 03 | 出20:18-21</span>
+                    <span class="text-lg font-bold">恐懼與敬畏的轉念 (中保的必要)</span>
+                </a>
+                <a href="#part4" class="outline-btn p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs font-bold text-gold-500 opacity-80 uppercase tracking-widest">Part 04 | 出20:22-26</span>
+                    <span class="text-lg font-bold">恩典的祭壇，捨棄人的功績</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Sections -->
+        <div class="space-y-12">
+            <!-- Part 1 -->
+            <section id="part1" class="section-card scroll-mt-24">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-gold-500 text-black text-xs font-black px-2 py-1 rounded">01</span>
+                    <h3 class="text-2xl font-bold">先有恩典，後有界線 (愛神的要求)</h3>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-dark-accent p-6 rounded-xl border-l-4 border-gold-500">
+                        <p class="text-sm text-gold-500 font-bold mb-2 uppercase tracking-widest">經文範圍：出 20:1-11</p>
+                        <p class="text-gray-300 italic leading-relaxed">神吩咐這一切的話說：「我是耶和華─你的神，曾將你從埃及地為奴之家領出來。除了我以外，你不可有別的神。不可為自己雕刻偶像...不可妄稱耶和華─你神的名...當記念安息日，守為聖日...」</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM9 13V7h2v6H9z"></path></svg>
+                                關鍵原文 (Keywords)
+                            </h4>
+                            <ul class="space-y-3 text-gray-400 text-sm">
+                                <li><strong class="text-white">領出來 (yatsa)</strong>：帶來、引導出。十誡的基礎建立在「神先拯救，人後順服」。</li>
+                                <li><strong class="text-white">別的 (acher)</strong>：不容許有任何事物取代神的首要地位。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="text-gray-400 text-sm">十誡到底是束縛人的規條，還是保障自由的護欄？律法就像懸崖邊的護欄，是為了防止我們墜入毀滅的深淵。</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 p-6 rounded-xl border border-gray-800">
+                        <h4 class="text-gold-500 font-bold mb-2">啟發性例證</h4>
+                        <p class="text-gray-400 text-sm">跳出魚缸的魚沒有獲得自由，而是迎來死亡。人類的自由只能存在於創造主的真理之中。</p>
+                    </div>
+                    <div class="quote-card p-6 italic text-gray-300">
+                        「律法就像一面鏡子，讓我們看見自己的軟弱、罪惡與無能，從而驅使我們轉向基督尋求恩典。」—— 約翰·加爾文
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="section-card scroll-mt-24">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-gold-500 text-black text-xs font-black px-2 py-1 rounded">02</span>
+                    <h3 class="text-2xl font-bold">核心的檢驗，內在的聖潔 (愛人的呼召)</h3>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-dark-accent p-6 rounded-xl border-l-4 border-gold-500">
+                        <p class="text-sm text-gold-500 font-bold mb-2 uppercase tracking-widest">經文範圍：出 20:12-17</p>
+                        <p class="text-gray-300 italic leading-relaxed">「當孝敬父母...不可殺人。不可姦淫。不可偷盜。不可作假見證陷害人。不可貪戀人的房屋；也不可貪戀人的妻子、僕婢、牛驢，並他一切所有的。」</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵原文 (Keywords)</h4>
+                            <ul class="space-y-3 text-gray-400 text-sm">
+                                <li><strong class="text-white">貪戀 (chamad)</strong>：渴望、深切地想要。這不僅是行為，更是內在心思的狀態。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵問題</h4>
+                            <p class="text-gray-400 text-sm">為什麼「不可貪戀」放最後？它是屬靈X光機，照出內心的敗壞，是所有罪惡的根源。</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 p-6 rounded-xl border border-gray-800">
+                        <h4 class="text-gold-500 font-bold mb-2">啟發性例證</h4>
+                        <p class="text-gray-400 text-sm">「貪戀」就像是腐爛的樹根，而行為上的罪只是枯黃的葉子。神要醫治的是內心的病根。</p>
+                    </div>
+                    <div class="quote-card p-6 italic text-gray-300">
+                        「人的心是一座製造偶像的工廠。任何事物一旦成為我們心中終極的渴望，它就成了偶像。」—— 提摩太·凱勒
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="section-card scroll-mt-24">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-gold-500 text-black text-xs font-black px-2 py-1 rounded">03</span>
+                    <h3 class="text-2xl font-bold">恐懼與敬畏的轉念 (中保的必要)</h3>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-dark-accent p-6 rounded-xl border-l-4 border-gold-500">
+                        <p class="text-sm text-gold-500 font-bold mb-2 uppercase tracking-widest">經文範圍：出 20:18-21</p>
+                        <p class="text-gray-300 italic leading-relaxed">眾百姓見雷轟、閃電、角聲...對摩西說：「求你和我們說話...不要神和我們說話，恐怕我們死亡。」摩西說：「不要懼怕；因為神降臨是要試驗你們，叫你們時常敬畏他...」</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵原文 (Keywords)</h4>
+                            <ul class="space-y-3 text-gray-400 text-sm">
+                                <li><strong class="text-white">懼怕 / 敬畏 (yare')</strong>：同一詞根，卻代表逃避神的恐懼 vs. 尊崇神的敬畏。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵問題</h4>
+                            <p class="text-gray-400 text-sm">恐懼使人遠離神，敬畏讓人遠離罪。我們無法直接面對聖潔，所以需要中保耶穌基督。</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 p-6 rounded-xl border border-gray-800">
+                        <h4 class="text-gold-500 font-bold mb-2">啟發性例證</h4>
+                        <p class="text-gray-400 text-sm">亞斯藍安全嗎？不安全，但祂是良善的。敬畏就是明白神擁有大能，卻安息在祂的慈愛中。</p>
+                    </div>
+                    <div class="quote-card p-6 italic text-gray-300">
+                        「敬畏神，這意味著我們對神的尊崇與愛，大過我們對世界上任何事物的恐懼與渴望。」—— 陶恕
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 4 -->
+            <section id="part4" class="section-card scroll-mt-24">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-gold-500 text-black text-xs font-black px-2 py-1 rounded">04</span>
+                    <h3 class="text-2xl font-bold">恩典的祭壇，捨棄人的功績 (純粹的敬拜)</h3>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-dark-accent p-6 rounded-xl border-l-4 border-gold-500">
+                        <p class="text-sm text-gold-500 font-bold mb-2 uppercase tracking-widest">經文範圍：出 20:22-26</p>
+                        <p class="text-gray-300 italic leading-relaxed">「...你若為我築一座石壇，不可用鑿成的石頭，因你在上頭一動家具，就把壇污穢了。你上我的壇，不可用臺階，免得露出你的下體來。」</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵原文 (Keywords)</h4>
+                            <ul class="space-y-3 text-gray-400 text-sm">
+                                <li><strong class="text-white">鑿成的石頭 (gazit)</strong>：人為雕琢的。</li>
+                                <li><strong class="text-white">污穢 (chalal)</strong>：褻瀆。一動人工，祭壇就污穢了。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵問題</h4>
+                            <p class="text-gray-400 text-sm">救恩容不下人為功勞或包裝。十字架完全是神的作為，人無法加上任何功德。</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 p-6 rounded-xl border border-gray-800">
+                        <h4 class="text-gold-500 font-bold mb-2">啟發性例證</h4>
+                        <p class="text-gray-400 text-sm">在名畫上擅自用蠟筆加幾筆，不是增色而是毀滅。基督的救恩已經完美無瑕，不需要我們的好行為來「增值」。</p>
+                    </div>
+                    <div class="quote-card p-6 italic text-gray-300">
+                        「我們得救是唯獨因著信，但在稱義的事上，人的行為完全沒有地位。」—— 馬丁·路德
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="section-card scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-gradient">講章全文</h2>
+            </div>
+            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed text-lg space-y-8">
+                <h3 class="text-3xl font-bold text-white text-center mb-10">自由的界線：在十誡中遇見聖潔與恩典的上帝</h3>
+                
+                <p>弟兄姊妹，平安。當我們提到「十誡」時，你的腦海中浮現的是什麼？是一系列冰冷的「不可」、是沉重的束縛，還是一個嚴厲的法官拿著戒尺準備懲罰我們？今天，我們要重新認識這段常被誤解的經文。我們要看見，十誡不是綑綁我們的枷鎖，而是上帝為了保護我們所劃定的<span class="text-gold-400 font-bold">「自由的界線」</span>。</p>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-500 mb-4">先有恩典，後有界線</h4>
+                    <p>讓我們首先來看出埃及記20:2：<span class="text-white font-bold italic">「我是耶和華─你的神，曾將你從埃及地為奴之家領出來。」</span>這是十誡的序言，也是整部律法的基礎。請注意這裡的次序：上帝不是先說守好誡命才救你，而是先施行拯救，然後才賜下律法。</p>
+                    <p class="bg-dark-accent p-6 rounded-xl border-l-4 border-gold-500 my-4 text-white font-bold">「順服不是換取救恩的條件，順服是經歷救恩後的自然回應。」</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-500 mb-4">核心的檢驗，內在的聖潔</h4>
+                    <p>第十誡<span class="text-white font-bold">「不可貪戀」</span>是一台屬靈的X光機。它直指我們的內心。「貪戀」是所有罪惡的根源。律法是一面鏡子，讓我們看見自己生病了，迫使我們轉向那位偉大的醫生——耶穌基督。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-500 mb-4">恐懼與敬畏的轉念</h4>
+                    <p>摩西說：<span class="text-white font-bold italic">「不要懼怕」</span>，卻要<span class="text-white font-bold italic">「敬畏」</span>。恐懼會讓人想要逃離神，但敬畏是因著認識神的聖潔而不敢犯罪，同時卻深深被祂的榮耀所吸引。我們無法靠自己來到神面前，我們需要耶穌基督作我們永遠的中保！</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-500 mb-4">恩典的祭壇，捨棄人的功績</h4>
+                    <p>上帝說築壇不可用鑿成的石頭。這是一個震撼的宣告：在上帝的救恩與敬拜中，<span class="text-gold-400 font-bold">容不下任何「人的功勞」</span>。真正的敬拜，是雙手空空地來到這座恩典的祭壇前，承認我們一無所有，唯獨倚靠基督。</p>
+                </div>
+
+                <div class="pt-8 border-t border-gray-800 text-center">
+                    <p class="text-2xl font-display font-bold text-white mb-2">結語與應用</p>
+                    <div class="flex justify-center gap-6 text-gold-500 font-black text-xl md:text-2xl my-6">
+                        <span>#界線</span> <span>#敬畏</span> <span>#恩典</span>
+                    </div>
+                    <p>願我們今天在聖靈的幫助下，看見這界線的美好，帶著敬畏的心，俯伏在十字架的恩典之中。阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Response -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="section-card">
+                <h4 class="text-gold-500 font-bold text-xl mb-6 flex items-center gap-2">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    應用方向
+                </h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex gap-2"><span class="text-gold-500">●</span> 檢視生命的次序：是否有事物取代了上帝的首要位置？</li>
+                    <li class="flex gap-2"><span class="text-gold-500">●</span> 對付內心的根源：求神光照內心是否有貪戀與苦毒。</li>
+                    <li class="flex gap-2"><span class="text-gold-500">●</span> 重塑敬拜的態度：是帶著消費者心態，還是帶著深深的敬畏？</li>
+                </ul>
+            </div>
+            <div class="section-card">
+                <h4 class="text-gold-500 font-bold text-xl mb-6 flex items-center gap-2">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h4>
+                <ol class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex gap-3">
+                        <span class="w-6 h-6 rounded-full bg-gold-900 text-gold-200 flex-shrink-0 flex items-center justify-center font-bold">1</span>
+                        <span><strong>背誦與默想：</strong>本週背誦十誡（出20:1-17）並以此省察心思。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="w-6 h-6 rounded-full bg-gold-900 text-gold-200 flex-shrink-0 flex items-center justify-center font-bold">2</span>
+                        <span><strong>感恩取代貪戀：</strong>找出近期容易貪戀的事物，連續七天寫下三個恩典。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="w-6 h-6 rounded-full bg-gold-900 text-gold-200 flex-shrink-0 flex items-center justify-center font-bold">3</span>
+                        <span><strong>預備敬拜的心：</strong>主日崇拜前提早十分鐘靜默，默想神的聖潔。</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-card scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-gradient">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bg-dark-accent p-6 rounded-2xl border border-gray-800 hover:border-gold-500 transition-colors">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「律法最大的功用，是使人對自己的義絕望，從而逃向基督尋求庇護。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bg-dark-accent p-6 rounded-2xl border border-gray-800 hover:border-gold-500 transition-colors">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「偶像就是任何對你來說比上帝更重要的事物，任何比上帝更能吸引你的心、你的想像力的事物。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bg-dark-accent p-6 rounded-2xl border border-gray-800 hover:border-gold-500 transition-colors">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「廉價的恩典是我們自己給自己的恩典...是沒有十字架的恩典。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bg-dark-accent p-6 rounded-2xl border border-gray-800 hover:border-gold-500 transition-colors">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「一個敬畏神的人，就不會再害怕其他任何事物。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 司布真 (Charles H. Spurgeon)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bg-dark-accent p-6 rounded-2xl border border-gray-800 hover:border-gold-500 transition-colors">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「律法指出了目標，卻沒有給予到達目標的力量；恩典則賜下了完成它的力量。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bg-dark-accent p-6 rounded-2xl border border-gray-800 hover:border-gold-500 transition-colors">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「除非我們深刻認識到自己的全然敗壞與無能，否則永遠無法真正明白基督恩典的偉大。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-12 text-center text-gray-600 text-xs tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center text-black floating-btn z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

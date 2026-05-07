@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太2:1-12 尋見真王的旅程：從星光到敬拜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf0',
+                            100: '#fef7e1',
+                            200: '#fdeabd',
+                            300: '#fbd78e',
+                            400: '#f9bb58',
+                            500: '#f79f2d',
+                            600: '#e8821a',
+                            700: '#c06317',
+                            800: '#9a4e1a',
+                            900: '#7d4118',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161e',
+                            accent: '#1e1e2d'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(22, 22, 30, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f9bb58 0%, #e8821a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f9bb58;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(249, 187, 88, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Banner -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/837abbb1-aa7a-4926-887e-8c1df13df3d7' alt='Starry Night' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-dark-base/60 to-dark-base"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl animate-float">
+            <span class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest uppercase bg-gold-600/20 text-gold-400 rounded-full border border-gold-600/30">
+                馬太福音 2:1-12
+            </span>
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
+                尋見真王的旅程：<br><span class="gradient-text">從星光到敬拜</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="font-display font-bold text-lg text-gold-400 hidden sm:block">太 2:1-12</div>
+            <div class="flex gap-6 sm:gap-8 mx-auto sm:mx-0 text-sm font-medium tracking-wide">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24 text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-600/10 border border-gold-600/30 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-400" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-4.5v-9L12 3l8 4.5v9L12 21z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 12l8-4.5M12 12l-8-4.5M12 12v9" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-bold mb-8 font-display">開路禱告</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-300 italic glass p-8 rounded-3xl border-gold-600/20">
+                主啊，祢是明亮的晨星，在黑暗的世代中為我們指明了方向。我們感謝祢，因為祢不僅是猶太人的王，更是全人類的救主。求祢賜給我們如同東方博士一般渴慕真理的心，願意放下安逸，跟隨祢的光芒。當我們面對心中的「希律」——那些不願降服的驕傲與恐懼時，求聖靈光照我們，使我們甘心讓出生命的寶座。願我們今日帶著生命中最珍貴的禮物來到祢面前，俯伏敬拜祢，並在遇見祢之後，願意走上一條更新的道路。奉主耶穌基督得勝的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#section1" class="group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-gold-500/50 transition-all">
+                    <div class="text-xs text-gold-500 font-bold mb-2">第一段</div>
+                    <div class="font-bold text-lg group-hover:text-gold-400 transition-colors">渴慕真理的追尋</div>
+                    <div class="text-xs text-gray-500 mt-2">馬太福音 2:1-2</div>
+                </a>
+                <a href="#section2" class="group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-gold-500/50 transition-all">
+                    <div class="text-xs text-gold-500 font-bold mb-2">第二段</div>
+                    <div class="font-bold text-lg group-hover:text-gold-400 transition-colors">虛假與恐懼的權勢</div>
+                    <div class="text-xs text-gray-500 mt-2">馬太福音 2:3-8</div>
+                </a>
+                <a href="#section3" class="group p-6 rounded-2xl bg-dark-card border border-white/5 hover:border-gold-500/50 transition-all">
+                    <div class="text-xs text-gold-500 font-bold mb-2">第三段</div>
+                    <div class="font-bold text-lg group-hover:text-gold-400 transition-colors">俯伏敬拜的真諦</div>
+                    <div class="text-xs text-gray-500 mt-2">馬太福音 2:9-12</div>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-28">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/3">
+                            <h3 class="text-2xl font-bold mb-4 text-gold-400">渴慕真理的追尋</h3>
+                            <div class="p-5 rounded-2xl bg-gold-600/5 border border-gold-600/10 mb-6">
+                                <p class="text-sm text-gray-300 leading-relaxed italic">
+                                    「當希律王的時候，耶穌生在猶太的伯利恆。有幾個博士從東方來到耶路撒冷，說：『那生下來作猶太人之王的在哪裡？我們在東方看見他的星，特來拜他。』」
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-xs font-bold text-gray-500 uppercase tracking-widest block mb-1">關鍵原文</span>
+                                    <p class="text-sm font-medium"><span class="text-gold-500">博士 (μάγοι / magoi)</span>: 原文指古波斯、巴比倫一帶的星象家、哲學家或祭司。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl bg-dark-card border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        問題與解析
+                                    </h4>
+                                    <p class="text-sm text-gray-300 leading-relaxed">為什麼擁有一切的外邦博士，願意放下安逸，踏上充滿未知與危險的旅程去尋找一個嬰孩？</p>
+                                    <p class="mt-4 text-sm text-gray-400">人類心靈深處有一種對永恆的飢渴，是世上的學問與物質無法填補的。當神啟示的「星」出現時，他們看見了超越這世界的真理。</p>
+                                </div>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl bg-dark-card border border-white/5">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                    例證小故事
+                                </h4>
+                                <p class="text-sm text-gray-300 italic leading-relaxed">
+                                    指南針永遠指向北方，就像人類的心靈，無論在世上經歷多少繁華或苦難，內心深處始終指向永恆的造物主。
+                                </p>
+                                <div class="mt-6 pt-6 border-t border-white/10">
+                                    <p class="text-sm font-semibold text-gold-500">「每個人心裡都有一種與生俱來的對神的感知，這是無法抹滅的。」</p>
+                                    <p class="text-xs text-gray-500 mt-1">— 約翰·加爾文</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-28">
+                    <div class="flex flex-col lg:flex-row-reverse gap-12">
+                        <div class="lg:w-1/3">
+                            <h3 class="text-2xl font-bold mb-4 text-gold-400 text-right md:text-left">虛假與恐懼的權勢</h3>
+                            <div class="p-5 rounded-2xl bg-gold-600/5 border border-gold-600/10 mb-6">
+                                <p class="text-sm text-gray-300 leading-relaxed italic">
+                                    「希律王聽見了，就心裡不安；耶路撒冷合城的人也都不安。他就召齊了祭司長和民間的文士，問他們說：『基督當生在何處？』」
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-xs font-bold text-gray-500 uppercase tracking-widest block mb-1">關鍵原文</span>
+                                    <p class="text-sm font-medium"><span class="text-gold-500">不安 (ταράσσω / tarasso)</span>: 意為攪動、震動、充滿恐懼與混亂，形容水被強烈攪動。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl bg-dark-card border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        問題與解析
+                                    </h4>
+                                    <p class="text-sm text-gray-300 leading-relaxed">當基督的王權介入我們的生命時，我們是感到威脅，還是願意讓出寶座？</p>
+                                    <p class="mt-4 text-sm text-gray-400">希律的「不安」來自於權力威脅；宗教領袖有知識卻沒行動。這反映出對神掌權的抗拒，以及知識與生命脫節的危機。</p>
+                                </div>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl bg-dark-card border border-white/5">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                    例證小故事
+                                </h4>
+                                <p class="text-sm text-gray-300 italic leading-relaxed">
+                                    副機長在暴風雨中緊抓操縱桿直到正機長大喊：「放手！讓我掌舵！」我們往往也緊抓生命主權，直到願意讓位，生命才有真平安。
+                                </p>
+                                <div class="mt-6 pt-6 border-t border-white/10">
+                                    <p class="text-sm font-semibold text-gold-500">「如果你不把耶穌當作你生命的主，你就會被其他的事物所奴役。」</p>
+                                    <p class="text-xs text-gray-500 mt-1">— 提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-28">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/3">
+                            <h3 class="text-2xl font-bold mb-4 text-gold-400">俯伏敬拜的真諦</h3>
+                            <div class="p-5 rounded-2xl bg-gold-600/5 border border-gold-600/10 mb-6">
+                                <p class="text-sm text-gray-300 leading-relaxed italic">
+                                    「進了房子，看見小孩子和他母親馬利亞，就俯伏拜那小孩子，揭開寶盒，拿黃金、乳香、沒藥為禮物獻給他。」
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-xs font-bold text-gray-500 uppercase tracking-widest block mb-1">關鍵原文</span>
+                                    <p class="text-sm font-medium"><span class="text-gold-500">俯伏拜 (προσκυνέω)</span>: 原文意為「向前親吻」，引申為俯伏在地，表達最深切的降服與完全的臣服。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl bg-dark-card border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        問題與解析
+                                    </h4>
+                                    <p class="text-sm text-gray-300 leading-relaxed">獻上黃金、乳香、沒藥代表什麼？這對今日我們的敬拜有何啟發？</p>
+                                    <p class="mt-4 text-sm text-gray-400">這象徵耶穌是王、是祭司、是救主。真正的敬拜是毫無保留地將我們生命中最珍貴的（時間、才幹、主權）獻給祂。</p>
+                                </div>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl bg-dark-card border border-white/5">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                    例證小故事
+                                </h4>
+                                <p class="text-sm text-gray-300 italic leading-relaxed">
+                                    《麥琪的禮物》中夫婦互贈最珍貴之物。敬拜的價值不在於有多餘的東西，而在於願不願意獻上我們的「最愛」。
+                                </p>
+                                <div class="mt-6 pt-6 border-t border-white/10">
+                                    <p class="text-sm font-semibold text-gold-500">「除了將我們破碎的心完全降服於祂之外，沒有任何禮物能配得上這位君王。」</p>
+                                    <p class="text-xs text-gray-500 mt-1">— 查理斯·司布真</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2v4a2 2 0 002 2h4" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">講章文稿</h2>
+            </div>
+            
+            <div class="glass p-8 md:p-12 rounded-[2rem] text-gray-300 leading-loose space-y-8">
+                <div class="border-b border-white/10 pb-6 mb-8">
+                    <h3 class="text-2xl font-bold text-white mb-2">尋見真王的旅程：從星光到敬拜</h3>
+                </div>
+                
+                <p>弟兄姊妹們，今天我們要踏上一趟兩千多年前的旅程。這是一趟從遙遠東方出發，跨越沙漠、充滿未知，最終走向一個卑微馬槽的旅程。馬太福音第二章記載了東方博士尋找新生王的故事。這個故事不僅是聖誕節的經典，更是我們每一個基督徒生命信仰的縮影。</p>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-gold-400">第一段：渴慕真理的追尋</h4>
+                    <p>讓我們看到馬太福音2:1-2：「當希律王的時候，耶穌生在猶太的伯利恆。有幾個博士從東方來到耶路撒冷，說：『那生下來作猶太人之王的在哪裡？我們在東方看見他的星，特來拜他。』」</p>
+                    <p>這些「博士」是當時最頂尖的知識份子，擁有極高的地位和財富。但他們為何願意放下舒適的生活，踏上這趟旅程？因為在他們的心中，有一種對真理、對永恆無法被世俗滿足的渴慕。這就像指南針一樣，不管遇到多大的風浪，指針永遠指向北方。</p>
+                    <p class="italic text-gray-400">我們是否擁有這份尋找真理的渴望？當神的光芒在我們生命中閃爍時，我們是選擇繼續留在安逸的「東方」，還是願意付上代價去跟隨祂？</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-gold-400">第二段：虛假與恐懼的權勢</h4>
+                    <p>然而，這趟尋求真王的旅程並非不受攔阻。我們看到希律王聽見了，就心裡不安。這裡的「不安」是內心的恐懼與混亂。為什麼？因為耶穌的出現，威脅了他的王權。</p>
+                    <p>弟兄姊妹，當基督的王權介入我們的生命時，我們的心中是否也住著一個「希律」？我們是否緊緊抓著生命的控制權，對耶穌說：「除了這個領域，其他的祢都可以管」？不願讓出寶座的結果，就是活在深深的恐懼與不安中。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-gold-400">第三段：俯伏敬拜的真諦</h4>
+                    <p>最後，博士們抵達了終點。他們看見那星，就大大的歡喜；進了房子，看見小孩子和他母親馬利亞，就「俯伏拜他」。這個動作代表著最深切的降服。</p>
+                    <p>真正的敬拜，不是我們有多好的歌聲，也不是我們聚會時的情緒有多高昂。真正的敬拜，是揭開我們生命的寶盒，將我們最看重的獻給主。願我們每一天的生活，都成為一場尋見真王、俯伏敬拜的旅程！</p>
+                </div>
+
+                <div class="pt-10 flex flex-wrap gap-4">
+                    <span class="px-4 py-2 bg-gold-600/20 text-gold-400 rounded-full text-sm font-bold border border-gold-600/30"># 尋見 Seek</span>
+                    <span class="px-4 py-2 bg-gold-600/20 text-gold-400 rounded-full text-sm font-bold border border-gold-600/30"># 降服 Surrender</span>
+                    <span class="px-4 py-2 bg-gold-600/20 text-gold-400 rounded-full text-sm font-bold border border-gold-600/30"># 獻上 Offer</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-8 font-display border-l-4 border-gold-500 pl-4">應用方向</h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500 text-dark-base flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <p class="font-bold text-white">檢視內心的寶座</p>
+                            <p class="text-sm text-gray-400 mt-1">省察生命中是否緊抓不放的權利或驕傲？是否願意讓耶穌成為真正的王？</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500 text-dark-base flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <p class="font-bold text-white">信仰知行合一</p>
+                            <p class="text-sm text-gray-400 mt-1">不要只停留在聖經知識，鼓勵將所知的真理轉化為實際跟隨的行動。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500 text-dark-base flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <p class="font-bold text-white">獻上生命的至寶</p>
+                            <p class="text-sm text-gray-400 mt-1">思考什麼是你生命中的「黃金乳香沒藥」，在時間與恩賜上拿出最好的獻給神。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-8 font-display border-l-4 border-gold-500 pl-4">回應行動</h3>
+                <div class="space-y-4">
+                    <div class="p-5 rounded-2xl bg-dark-card border border-white/10">
+                        <p class="text-gold-400 font-bold mb-1">每日的尋求</p>
+                        <p class="text-sm text-gray-400">每天設定15分鐘閱讀聖經與禱告，刻意尋求神的指引。</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-dark-card border border-white/10">
+                        <p class="text-gold-400 font-bold mb-1">主權的交託</p>
+                        <p class="text-sm text-gray-400">寫下一件最擔憂的事，具體將其主權交還給神，宣告祂是王。</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-dark-card border border-white/10">
+                        <p class="text-gold-400 font-bold mb-1">實質的奉獻</p>
+                        <p class="text-sm text-gray-400">本週內具體奉獻一項珍貴資源（時間/專業/金錢）給教會或他人。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center justify-center border border-gold-500/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">屬靈名言</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-gold-500">
+                    <p class="text-gray-300 italic mb-4">「如果你不把耶穌當作你生命的主，你就會被其他的事物所奴役。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 提摩太·凱勒，《山寨版的上帝》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-gold-500">
+                    <p class="text-gray-300 italic mb-4">「神造我們是為了祂自己；在我們裡面有一種對神的飢渴，除了神自己，沒有任何事物可以滿足。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-gold-500">
+                    <p class="text-gray-300 italic mb-4">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 潘霍華，《追隨基督》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-gold-500">
+                    <p class="text-gray-300 italic mb-4">「福音是：你比你所敢承認的更邪惡、更有罪；但同時，你在基督裡所蒙的愛和接納，比你所敢盼望的更深廣。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 提摩太·凱勒，《為上帝辯護》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-gold-500">
+                    <p class="text-gray-300 italic mb-4">「作門徒就是在同一個方向上長期的順服。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 畢德生，《恆久專一的順服》</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-gold-500">
+                    <p class="text-gray-300 italic mb-4">「除非我們看見神在十字架上為我們所成就的，否則我們的驕傲絕對不會被真正地粉碎。」</p>
+                    <p class="text-xs text-gold-600 font-bold">— 約翰·史托德，《當代基督十架》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="text-center pb-20">
+            <div class="inline-block p-4 rounded-xl bg-red-900/10 border border-red-900/20 text-red-400 text-xs tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 hover:bg-gold-400 text-dark-base rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

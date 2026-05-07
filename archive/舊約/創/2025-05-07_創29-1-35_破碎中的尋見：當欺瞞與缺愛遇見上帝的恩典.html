@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創29:1-35: 破碎中的尋見：當欺瞞與缺愛遇見上帝的恩典</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18e',
+                            300: '#fbe452',
+                            400: '#f9d226',
+                            500: '#eeb70b',
+                            600: '#ce8d07',
+                            700: '#a4620a',
+                            800: '#874d0e',
+                            900: '#733f11',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.2s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9d226 0%, #ce8d07 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link:hover {
+            color: #f9d226;
+            text-shadow: 0 0 8px rgba(249, 210, 38, 0.5);
+        }
+        .outline-btn {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(249, 210, 38, 0.3);
+        }
+        .outline-btn:hover {
+            background: rgba(249, 210, 38, 0.1);
+            border-color: #f9d226;
+            transform: translateY(-2px);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="custom-scrollbar">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="text-gold-400 font-bold tracking-widest text-sm md:text-base uppercase">創29:1-35</span>
+            </div>
+            <div class="flex items-center space-x-6 text-sm font-medium tracking-wide overflow-x-auto whitespace-nowrap pb-1 md:pb-0">
+                <a href="#prayer" class="nav-link transition-colors">禱告</a>
+                <a href="#outline" class="nav-link transition-colors">大綱</a>
+                <a href="#sermon" class="nav-link transition-colors">講章</a>
+                <a href="#quotes" class="nav-link transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Header -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/60 to-slate-950 z-10"></div>
+            <img src='https://opal.google/board/blobs/c827e2a5-7aa9-4438-b348-94e292246a38' alt='雅各與拉結遇見' class="w-full h-full object-cover scale-110 animate-pulse transition-transform duration-10000" style="animation-duration: 20s" />
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl animate-fade-in">
+            <span class="inline-block px-4 py-1 rounded-full bg-gold-500/10 text-gold-400 text-xs font-bold tracking-widest mb-6 border border-gold-500/20">創世記系列</span>
+            <h1 class="text-5xl md:text-7xl font-display font-extrabold text-white mb-6 leading-tight">
+                破碎中的 <span class="text-gradient">尋見</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light mb-8 max-w-2xl mx-auto leading-relaxed">
+                當欺瞞與缺愛遇見上帝的恩典：從雅各與利亞的生命故事，看見神聖的引導。
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <a href="#prayer" class="px-8 py-3 bg-gold-500 hover:bg-gold-400 text-slate-950 font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg shadow-gold-500/20">
+                    開始聚會
+                </a>
+                <div class="text-slate-400 text-sm italic">創世記 29:1-35</div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+            <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 1. 講道祈禱 -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6l5.25 3.15.75-1.23-4-2.37z"/></svg>
+                </div>
+                <div class="flex items-center space-x-3 mb-8">
+                    <div class="p-3 bg-gold-500/20 rounded-xl text-gold-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold">講道祈禱</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-200 font-light italic">
+                    「慈悲的阿爸天父，我們來到祢面前，承認我們常如雅各一般，帶著自己的籌算、過去的過犯與內心的恐懼在世上奔走；我們也常如利亞一樣，在人際關係中渴求被愛，卻屢遭失落。求祢的聖靈今天藉著創世記29章的經文對我們說話，讓我們看見祢隱藏的引導、祢恩典的管教，以及祢對那不被愛之人的深情眷顧。幫助我們放下屬世的偶像，將我們眼目的焦點從地上的「拉結」轉向天上賜恩的上帝，如同利亞最終學習單單讚美祢。奉主耶穌基督的聖名祈求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. 分段大綱按鈕 -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex flex-col items-center mb-12">
+                <div class="p-3 bg-gold-500/20 rounded-xl text-gold-400 mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold mb-4">信息大綱</h2>
+                <p class="text-slate-400">點選以下章節進入深度解析</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass-card p-6 outline-btn group">
+                    <span class="text-gold-500 text-sm font-bold tracking-widest mb-2 block">第一段 創29:1-14</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">曠野中的指引：看不見的神聖之手</h3>
+                </a>
+                <a href="#part2" class="glass-card p-6 outline-btn group">
+                    <span class="text-gold-500 text-sm font-bold tracking-widest mb-2 block">第二段 創29:15-30</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">欺瞞者的功課：當夢想被現實擊碎</h3>
+                </a>
+                <a href="#part3" class="glass-card p-6 outline-btn group">
+                    <span class="text-gold-500 text-sm font-bold tracking-widest mb-2 block">第三段 創29:31-35</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">失寵者的頌讚：在缺愛中遇見真愛</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. 深入解析 -->
+        <section class="space-y-24">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-32">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-1 bg-gold-500"></div>
+                    <h2 class="text-3xl font-display font-bold">第一段：曠野中的指引——看不見的神聖之手</h2>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="glass-card p-8 md:col-span-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            經文引用與內容 (創29:1-14)
+                        </h4>
+                        <p class="text-slate-300 leading-relaxed">雅各起行，到了東方人之地，看見井旁的羊群與牧人。透過詢問，他奇蹟般地精準遇見了舅舅拉班的女兒拉結。拉結跑去告訴父親，拉班熱情地迎接雅各，雅各住了下來。</p>
+                        <div class="mt-6 p-4 bg-white/5 rounded-lg border-l-4 border-gold-500">
+                            <span class="text-gold-400 font-bold text-sm block mb-1">關鍵字詞：起行 (nasa' raglayim)</span>
+                            <p class="text-sm text-slate-400">字面意思是「舉起他的腳」。在經歷了伯特利上帝的應許後，這個詞彙在原文中帶有「步伐輕快、充滿確據」的意味。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-8 bg-gold-500/5">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵問題</h4>
+                        <p class="font-bold text-lg mb-4 text-white">在充滿未知的人生旅途中，我們如何確知上帝的帶領？</p>
+                        <p class="text-slate-400 text-sm leading-relaxed italic">
+                            雅各在伯特利遇見神之後，神沒有給他一張地圖，而是給了他一個「同在」的應許。上帝的引導往往在我們日常的步伐與平凡的相遇中悄然成就。
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 md:col-span-3 flex flex-col md:flex-row gap-8">
+                        <div class="flex-1">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                                生活小故事
+                            </h4>
+                            <p class="text-slate-300 italic">著名的盲人女詩人芬尼·克羅斯比（Fanny Crosby）曾說，如果她不是瞎眼，她可能不會如此專注於聆聽上帝的聲音。看似人生的不幸，卻是上帝引導她走向獨特呼召的精準安排。</p>
+                        </div>
+                        <div class="md:w-px md:h-full bg-white/10"></div>
+                        <div class="flex-1">
+                            <h4 class="text-gold-400 font-bold mb-4">名言佳句</h4>
+                            <blockquote class="text-2xl font-display font-light text-white">
+                                「上帝在我們生命中最深的動工，往往是在我們最沒有感覺的時候進行的。」
+                                <footer class="text-sm text-gold-500 mt-4">— 提摩太·凱勒 (Timothy Keller)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-32">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-1 bg-gold-500"></div>
+                    <h2 class="text-3xl font-display font-bold">第二段：欺瞞者的功課——當夢想被現實擊碎</h2>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="glass-card p-8 bg-gold-500/5">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵問題</h4>
+                        <p class="font-bold text-lg mb-4 text-white">為什麼上帝允許已經蒙恩的信徒，經歷痛苦的欺騙與挫折？</p>
+                        <p class="text-slate-400 text-sm leading-relaxed italic">
+                            這是上帝「恩典的管教」。神愛雅各，不能讓他繼續停留在敗壞的品格中。神透過比他更狡猾的拉班，讓雅各在黑暗中抱錯了新娘，這正是他當初在黑暗中欺騙父親的翻版。
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 md:col-span-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            經文引用與內容 (創29:15-30)
+                        </h4>
+                        <p class="text-slate-300 leading-relaxed mb-4">雅各為娶拉結服事七年，深愛她如幾天。新婚之夜拉班用利亞掉包。雅各質問後再為拉結服事七年。他雖娶了兩姊妹，卻愛拉結勝過利亞。</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-3 bg-white/5 rounded-lg">
+                                <span class="text-gold-400 font-bold text-xs block mb-1">欺哄 (ramah)</span>
+                                <p class="text-xs text-slate-400">意指欺騙、背叛。這是當年形容雅各騙取祝福的同一個詞根。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8 md:col-span-3 flex flex-col md:flex-row gap-8">
+                        <div class="flex-1">
+                            <h4 class="text-gold-400 font-bold mb-4">C.S. Lewis 的洞見</h4>
+                            <p class="text-slate-300 italic">世界上很多悲劇就像是「清晨醒來，發現身邊躺著的是利亞」。我們以為金錢、名聲或完美的愛情能滿足我們，但最終到手的現實（利亞）總是令人失望。</p>
+                        </div>
+                        <div class="md:w-px md:h-full bg-white/10"></div>
+                        <div class="flex-1">
+                            <h4 class="text-gold-400 font-bold mb-4">名言佳句</h4>
+                            <blockquote class="text-2xl font-display font-light text-white">
+                                「上帝的管教不是為了報復我們的過去，而是為了拯救我們的未來。」
+                                <footer class="text-sm text-gold-500 mt-4">— 約翰·加爾文 (John Calvin)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-32">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-1 bg-gold-500"></div>
+                    <h2 class="text-3xl font-display font-bold">第三段：失寵者的頌讚——在缺愛中遇見真愛</h2>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="glass-card p-8 md:col-span-2">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            經文引用與內容 (創29:31-35)
+                        </h4>
+                        <p class="text-slate-300 leading-relaxed">耶和華見利亞失寵就使她生育。她前三個兒子都期盼丈夫因此愛她，但落空。直到第四個兒子猶大出生，她說：「這一次我要讚美耶和華」，便停止了生育。</p>
+                        <div class="mt-4 flex gap-4">
+                            <div class="flex-1 p-3 bg-white/5 rounded-lg">
+                                <span class="text-gold-400 font-bold text-xs block mb-1">失寵 (sane')</span>
+                                <p class="text-xs text-slate-400">原文是「被恨惡」。</p>
+                            </div>
+                            <div class="flex-1 p-3 bg-gold-500/10 rounded-lg border border-gold-500/20">
+                                <span class="text-gold-400 font-bold text-xs block mb-1">猶大 (Yahuwdah)</span>
+                                <p class="text-xs text-slate-400">來自於動詞「讚美」。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8 bg-gold-500/5">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵問題</h4>
+                        <p class="font-bold text-lg mb-4 text-white">當我們在人間無法獲得渴望的愛時，該如何找到出路？</p>
+                        <p class="text-slate-400 text-sm leading-relaxed italic">
+                            利亞眼光終於從「冷漠的丈夫」轉向「看顧她的上帝」。當我們把重心從人的肯定轉向神的接納，我們才能得著自由。
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 md:col-span-3 flex flex-col md:flex-row gap-8">
+                        <div class="flex-1">
+                            <h4 class="text-gold-400 font-bold mb-4">名言佳句</h4>
+                            <blockquote class="text-2xl font-display font-light text-white leading-snug">
+                                「我們最深的渴望，不是被世人需要，而是知道自己是上帝眼中的『愛子/愛女』。」
+                                <footer class="text-sm text-gold-500 mt-4">— 盧雲 (Henri Nouwen)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 應用方向 -->
+        <section class="scroll-mt-32">
+            <div class="flex items-center space-x-3 mb-12 justify-center">
+                <div class="p-3 bg-gold-500/20 rounded-xl text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">應用方向</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 hover:border-gold-500/50 transition-all">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mb-6 text-gold-400 font-bold text-xl">01</div>
+                    <h3 class="text-xl font-bold mb-4">檢視生命的偶像</h3>
+                    <p class="text-slate-400">你的「拉結」是什麼？你有沒有為了某個世俗目標付出極大代價，卻發現它最終無法滿足你？</p>
+                </div>
+                <div class="glass-card p-8 hover:border-gold-500/50 transition-all">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mb-6 text-gold-400 font-bold text-xl">02</div>
+                    <h3 class="text-xl font-bold mb-4">擁抱恩典的管教</h3>
+                    <p class="text-slate-400">面對生活中的挫折或不公，我們是否能看見這可能是神修剪我們品格、讓我們正視錯誤的過程？</p>
+                </div>
+                <div class="glass-card p-8 hover:border-gold-500/50 transition-all">
+                    <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mb-6 text-gold-400 font-bold text-xl">03</div>
+                    <h3 class="text-xl font-bold mb-4">轉移價值的源頭</h3>
+                    <p class="text-slate-400">在關係中經歷冷漠與失落時，學習利亞的轉向——從渴望「人看見我」，轉變為「我讚美神」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 結論關鍵字 -->
+        <section class="py-10 border-y border-white/5">
+            <div class="flex flex-wrap justify-center gap-12 text-center">
+                <div>
+                    <div class="text-gold-500 font-display text-4xl md:text-6xl font-extrabold mb-2">引導</div>
+                    <div class="text-slate-500 tracking-widest uppercase text-sm">Providence</div>
+                </div>
+                <div>
+                    <div class="text-gold-500 font-display text-4xl md:text-6xl font-extrabold mb-2">管教</div>
+                    <div class="text-slate-500 tracking-widest uppercase text-sm">Discipline</div>
+                </div>
+                <div>
+                    <div class="text-gold-500 font-display text-4xl md:text-6xl font-extrabold mb-2">恩典</div>
+                    <div class="text-slate-500 tracking-widest uppercase text-sm">Grace</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 講章文稿 -->
+        <section id="sermon" class="scroll-mt-32 max-w-4xl mx-auto">
+            <div class="flex flex-col items-center mb-16">
+                <div class="p-3 bg-gold-500/20 rounded-xl text-gold-400 mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-8 text-slate-300 leading-relaxed text-lg">
+                <h3 class="text-3xl text-white font-bold mb-6">創29:1-35: 破碎中的尋見</h3>
+                <p>各位弟兄姊妹，平安。今天我們要進入創世記第29章。這是一段充滿戲劇性的經文：有浪漫的愛情，有狡詐的欺騙，也有深沉的心碎。但在這一切人性的破碎中，我們要看見上帝那條隱藏卻堅定的恩典主線。</p>
+
+                <div class="py-4">
+                    <h4 class="text-gold-400 font-bold text-2xl mb-4">第一段：曠野中的指引</h4>
+                    <p>經文一開始，雅各帶著伯特利的應許，<span class="text-white font-bold">「起行，到了東方人之地」</span>。上帝沒有給雅各導航，但雅各剛好來到了一口井旁，剛好遇見了認識他舅舅的牧人，而他的表妹拉結又剛好牽著羊走過來。</p>
+                    <p class="bg-white/5 p-6 rounded-2xl border-l-4 border-gold-500 italic mt-4">
+                        「神的引導往往隱藏在我們平凡的步伐與日常的相遇中。當我們帶著對神應許的信靠勇敢邁出腳步時，神那看不見的神聖之手，早已在前方為我們預備了道路。」
+                    </p>
+                </div>
+
+                <div class="py-4">
+                    <h4 class="text-gold-400 font-bold text-2xl mb-4">第二段：欺瞞者的功課</h4>
+                    <p>雅各愛上了拉結。<span class="text-gold-300 font-bold italic">「雅各就為拉結服事了七年；他因為深愛拉結，就看這七年如同幾天。」(創29:20)</span> 這是聖經中最浪漫的金句之一。但浪漫的背後，隱藏著殘酷的現實。新婚之夜，那個曾經在黑暗中欺騙父親以撒的雅各，在黑暗中被舅舅拉班欺騙了。</p>
+                    <p class="text-white font-bold text-xl">沒有任何受造物能承載我們對無限之愛的渴望。當夢夢想被現實擊碎時，正是我們生命的偶像被拆毀、重新轉向神的契機。</p>
+                </div>
+
+                <div class="py-4">
+                    <h4 class="text-gold-400 font-bold text-2xl mb-4">第三段：失寵者的頌讚</h4>
+                    <p>這段故事最令人心碎的角色是利亞。她不被愛，淪為婚姻交易的犧牲品。但經文說：<span class="text-white font-bold">「耶和華見利亞失寵，就使她生育。」(創29:31)</span> 上帝的目光，停留在這個世界上不被愛、被邊緣化的人身上。</p>
+                    <p>直到第四個兒子出生，利亞的生命發生了驚人的翻轉。她不再看丈夫的臉色，她抬起頭看向上帝，說：<span class="text-gold-300 font-bold">「這一次我要讚美耶和華」，於是給他起名叫猶大。(創29:35)</span></p>
+                    <p class="bg-gold-500 text-slate-950 p-6 rounded-2xl font-bold mt-4 shadow-xl">
+                        唯有當我們像利亞一樣，將生命的重心從「求人愛我」轉向「讚美上帝」，我們才能得著真正的自由與恩典。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. 名言佳句 -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center space-x-3 mb-12">
+                <div class="p-3 bg-gold-500/20 rounded-xl text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">屬靈佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items (Condensed for aesthetic) -->
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「上帝的引導不僅僅是為了讓我們到達目的地，更是為了在旅途中塑造我們的品格。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「我們生命中最深的痛苦，往往源自於我們將有限的受造物，當作了無限的上帝來敬拜。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「重價的恩典是必須付上生命代價的跟從，這恩典之所以寶貴，是因為它定罪，但它使人稱義。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「除非你意識到自己是上帝的『愛子/愛女』，否則你將一生在別人的眼光中乞討愛情。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 盧雲 (Henri Nouwen)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「上帝的旨意從不將我們帶到祂的恩典無法保守我們的地方。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 葛理翰 (Billy Graham)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「我們往往在極度的黑暗與失望中，才學會放棄對人性的幻想，轉而緊緊抓住上帝的信實。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「如果我們生命的核心沒有被上帝的愛所佔據，我們的心就會成為製造各種偶像的工廠。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 馬丁·路德 (Martin Luther)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「恩典的奇妙在於，上帝常常揀選那些世人認為最不配、最邊緣的人，來成就祂最榮耀的計畫。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 約翰·史托德 (John Stott)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「我們對上帝的讚美，不應取決於我們環境的順逆，而應建立在祂不變的本性與救贖的恩典上。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</span>
+                </div>
+                <div class="glass-card p-6 border-l-2 border-gold-500/50">
+                    <p class="text-slate-200 italic mb-3">「一個認識神的人，即使在最深的痛苦中，也能在靈裡發出最真實的敬拜，因為他知道神掌管一切。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</span>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-slate-500 text-sm italic">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+        <!-- 6. 回應行動 -->
+        <section class="scroll-mt-32 pb-20">
+            <div class="glass-card p-8 md:p-12 border-t-4 border-gold-500">
+                <h2 class="text-3xl font-display font-bold mb-8 text-center text-gold-400">本週實踐行動</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-gold-500 text-slate-950 flex items-center justify-center font-bold flex-shrink-0 mt-1">1</div>
+                        <p class="text-lg text-slate-200"><strong>寫下你的「拉結」與「利亞」：</strong> 誠實面對目前生活中過度追求的事物，向神禱告，承認唯有神能真正滿足內心的空缺。</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-gold-500 text-slate-950 flex items-center justify-center font-bold flex-shrink-0 mt-1">2</div>
+                        <p class="text-lg text-slate-200"><strong>為過去的「欺瞞」認罪：</strong> 求聖靈光照，若在工作、人際或家庭中曾有如同雅各般的欺騙或操控，本週主動採取一個道歉或彌補的行動。</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-gold-500 text-slate-950 flex items-center justify-center font-bold flex-shrink-0 mt-1">3</div>
+                        <p class="text-lg text-slate-200"><strong>實踐「猶大」的讚美：</strong> 在本週感到最不被理解、最委屈的時刻，刻意停下來，不再抱怨，而是大聲唱一首詩歌或寫下一段讚美神的話語。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 hover:scale-110 transition-all z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

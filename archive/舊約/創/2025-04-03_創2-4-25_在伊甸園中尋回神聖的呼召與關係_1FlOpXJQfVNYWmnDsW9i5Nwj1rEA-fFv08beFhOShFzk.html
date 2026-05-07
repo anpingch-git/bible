@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創2:4-25: 塵土與氣息的奇蹟——在伊甸園中尋回神聖的呼召與關係</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eden-dark': '#0a0d0c',
+                        'eden-gold': '#d4af37',
+                        'eden-sage': '#4a5d4e',
+                        'eden-clay': '#a67c52',
+                        'eden-mist': '#e2e8f0',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0d0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 13, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: #d4af37;
+            transform: translateY(-5px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f9e29f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+            margin: 4rem 0;
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(10, 13, 12, 0) 0%, rgba(10, 13, 12, 1) 90%);
+        }
+        .btn-outline {
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background: #d4af37;
+            color: #0a0d0c;
+        }
+        .quote-border {
+            border-left: 4px solid #d4af37;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Toolbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-14 md:h-16 flex items-center px-4 md:px-8">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
+            <span class="text-eden-gold font-display font-bold text-sm md:text-base truncate mr-4">創 2:4-25</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm tracking-widest font-semibold">
+                <a href="#prayer" class="hover:text-eden-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-eden-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-eden-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-eden-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner / Hero -->
+    <header class="relative h-[80vh] md:h-[90vh] flex items-end overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/a19489c5-2dfc-4586-ba40-8542f7c2e82b' alt='伊甸園的榮耀' class="w-full h-full object-cover scale-105 animate-pulse-slow" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 p-6 md:p-16 max-w-5xl mx-auto w-full text-center">
+            <h2 class="text-eden-gold font-bold tracking-widest text-lg md:text-2xl mb-4">創 2:4-25</h2>
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-6 leading-tight">
+                塵土與氣息的奇蹟<br/>
+                <span class="gradient-text">在伊甸園中尋回神聖呼召</span>
+            </h1>
+            <p class="text-eden-mist/70 text-base md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+                探索生命的源頭、工作的意義與關係的圓滿，在造物主的吹氣中，看見自己的尊貴價值。
+            </p>
+        </div>
+    </header>
+
+    <!-- Prayer Section -->
+    <section id="prayer" class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-3xl mx-auto bento-card p-8 md:p-12 rounded-3xl relative">
+            <div class="flex justify-center mb-8">
+                <svg class="w-12 h-12 text-eden-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-3.652a1.44 1.44 0 01-.897-1.315V5.132c0-.66.42-1.246 1.043-1.455L11.5 1l7.625 2.677c.623.21 1.043.795 1.043 1.455v10.901c0 .61-.365 1.15-.897 1.315L12 21z"></path></svg>
+            </div>
+            <h2 class="font-display text-3xl font-bold text-center mb-8 tracking-wider">起始禱告</h2>
+            <p class="text-lg md:text-xl text-eden-mist leading-loose italic text-center font-light">
+                「主耶和華，創造天地萬物的主宰，我們滿心敬拜祢。感謝祢不是遠離我們的神，而是親手從塵土中塑造我們，並將生命之氣吹入我們鼻孔的阿爸父。求祢開啟我們屬靈的眼睛，透過創世記的這段經文，讓我們看見自己生命的尊貴價值，明白祢在伊甸園中託付給我們的神聖呼召，並學習在界線中享受真自由。也求祢醫治我們破裂的關係，幫助我們在婚姻與肢體生活中，找回那『赤身露體並不羞恥』的純潔與親密。奉主耶穌基督的聖名祈求，阿們。」
+            </p>
+        </div>
+    </section>
+
+    <!-- Outline Navigation -->
+    <section id="outline" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+            <svg class="w-8 h-8 text-eden-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+            <h2 class="font-display text-3xl font-bold tracking-wide">信息大綱</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            <a href="#section1" class="btn-outline p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs uppercase tracking-widest opacity-60 mb-2 block">Part 01</span>
+                    <h3 class="font-display text-xl font-bold leading-snug">生命的源頭：塵土與氣息的交織</h3>
+                </div>
+                <span class="mt-4 text-sm font-semibold italic">創 2:4-7</span>
+            </a>
+            <a href="#section2" class="btn-outline p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs uppercase tracking-widest opacity-60 mb-2 block">Part 02</span>
+                    <h3 class="font-display text-xl font-bold leading-snug">園中的呼召：恩典的供應與界線</h3>
+                </div>
+                <span class="mt-4 text-sm font-semibold italic">創 2:8-17</span>
+            </a>
+            <a href="#section3" class="btn-outline p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs uppercase tracking-widest opacity-60 mb-2 block">Part 03</span>
+                    <h3 class="font-display text-xl font-bold leading-snug">關係的圓滿：無瑕的親密與互補</h3>
+                </div>
+                <span class="mt-4 text-sm font-semibold italic">創 2:18-25</span>
+            </a>
+        </div>
+
+        <!-- Section 1 Detail -->
+        <div id="section1" class="space-y-12 mb-24">
+            <div class="flex items-baseline gap-4 border-b border-eden-gold/30 pb-4">
+                <span class="text-5xl font-black text-eden-gold/20">01</span>
+                <h3 class="text-2xl md:text-3xl font-display font-bold">生命的源頭：塵土與氣息的交織</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bento-card p-8 rounded-3xl">
+                    <h4 class="text-eden-gold font-bold mb-4 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> 引用經文</h4>
+                    <p class="text-eden-mist/90 leading-relaxed italic">「耶和華神用地上的塵土造人，將生氣吹在他鼻孔裡，他就成了有靈的活人，名叫亞當。」(創 2:7)</p>
+                    <div class="mt-6 space-y-3">
+                        <h4 class="text-eden-gold font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg> 關鍵原文</h4>
+                        <ul class="text-sm space-y-2">
+                            <li><strong class="text-eden-gold">塵土 ('aphar):</strong> 強調物質身體的卑微、脆弱。</li>
+                            <li><strong class="text-eden-gold">生氣 (neshamah):</strong> 代表神神聖的生命力。</li>
+                            <li><strong class="text-eden-gold">有靈的活人 (nefesh chayah):</strong> 神的靈氣與塵土結合的獨特生命。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bento-card p-8 rounded-3xl border-l-4 border-l-eden-gold">
+                        <h4 class="font-bold text-lg mb-2">關鍵問題：為何要親手「捏造」與「吹氣」？</h4>
+                        <p class="text-eden-mist/80 text-sm leading-relaxed">
+                            彰顯極其親密的關係。神創造萬物用「說話」，造人卻「親手」塑造。我們一方面卑微（塵土），一方面極其尊貴（擁有神的氣息）。
+                        </p>
+                    </div>
+                    <div class="bg-eden-clay/10 p-8 rounded-3xl border border-eden-clay/20 italic">
+                        <p class="text-sm">「人不過是一把塵土，卻因為上帝的氣息而成為不可思議的奇蹟。」——約翰·加爾文</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 Detail -->
+        <div id="section2" class="space-y-12 mb-24">
+            <div class="flex items-baseline gap-4 border-b border-eden-gold/30 pb-4">
+                <span class="text-5xl font-black text-eden-gold/20">02</span>
+                <h3 class="text-2xl md:text-3xl font-display font-bold">園中的呼召：恩典的供應與界線</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6 order-2 md:order-1">
+                    <div class="bento-card p-8 rounded-3xl border-l-4 border-l-eden-gold">
+                        <h4 class="font-bold text-lg mb-2">關鍵問題：為什麼要設立「分別善惡樹」？</h4>
+                        <p class="text-eden-mist/80 text-sm leading-relaxed">
+                            這不是陷阱，而是「愛的選擇權」。如果沒有拒絕的可能，順服就變成機械式。界線是保護人在神的安全感中享受自由。
+                        </p>
+                    </div>
+                    <div class="bg-eden-sage/20 p-8 rounded-3xl border border-eden-sage/30">
+                        <h4 class="text-eden-gold font-bold mb-2 text-sm uppercase tracking-widest">生活例證</h4>
+                        <p class="text-sm italic">懸崖邊的遊樂場，欄杆（界線）不是限制自由，而是讓孩子能安心奔跑。神的誡命就是保護我們的欄杆。</p>
+                    </div>
+                </div>
+                <div class="bento-card p-8 rounded-3xl order-1 md:order-2">
+                    <h4 class="text-eden-gold font-bold mb-4 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> 引用經文</h4>
+                    <p class="text-eden-mist/90 leading-relaxed italic">「耶和華神將那人安置在伊甸園，使他修理，看守...只是分別善惡樹上的果子，你不可吃。」(創 2:15-17)</p>
+                    <div class="mt-6 space-y-3">
+                        <h4 class="text-eden-gold font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg> 關鍵原文</h4>
+                        <ul class="text-sm space-y-2">
+                            <li><strong class="text-eden-gold">修理 ('abad):</strong> 工作、服事、敬拜。同祭司的事奉。</li>
+                            <li><strong class="text-eden-gold">分別善惡:</strong> 代表「決定」善惡標準的主權。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 Detail -->
+        <div id="section3" class="space-y-12">
+            <div class="flex items-baseline gap-4 border-b border-eden-gold/30 pb-4">
+                <span class="text-5xl font-black text-eden-gold/20">03</span>
+                <h3 class="text-2xl md:text-3xl font-display font-bold">關係的圓滿：無瑕的親密與互補</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bento-card p-8 rounded-3xl">
+                    <h4 class="text-eden-gold font-bold mb-4 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> 引用經文</h4>
+                    <p class="text-eden-mist/90 leading-relaxed italic">「這是我骨中的骨，肉中的肉...二人成為一體。當時夫妻二人赤身露體，並不羞恥。」(創 2:23-25)</p>
+                    <div class="mt-6 space-y-3">
+                        <h4 class="text-eden-gold font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg> 關鍵原文</h4>
+                        <ul class="text-sm space-y-2">
+                            <li><strong class="text-eden-gold">配偶幫助者 ('ezer kenegdo):</strong> 對等、互補、提供關鍵救援的夥伴。</li>
+                            <li><strong class="text-eden-gold">並不羞恥:</strong> 毫無隱藏、完全敞開，極度脆弱下的完全接納。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bento-card p-8 rounded-3xl border-l-4 border-l-eden-gold">
+                        <h4 class="font-bold text-lg mb-2">關鍵問題：為何強調「並不羞恥」？</h4>
+                        <p class="text-eden-mist/80 text-sm leading-relaxed">
+                            這啟示了神對關係的心意：一個能讓人脫下防備、真實呈現自己，卻依然深深被愛、被接納的避風港。
+                        </p>
+                    </div>
+                    <div class="bg-eden-gold/10 p-8 rounded-3xl border border-eden-gold/20">
+                        <p class="text-sm italic">「要被完全認識，又被完全愛著，這正是上帝對我們的愛，也是美滿婚姻的縮影。」——提摩太·凱勒</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Application Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="font-display text-4xl font-black text-center mb-16 gradient-text">應用與實踐</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-8">
+                <h3 class="text-2xl font-display font-bold flex items-center gap-3">
+                    <svg class="w-6 h-6 text-eden-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg> 應用方向
+                </h3>
+                <ul class="space-y-4 text-eden-mist/90">
+                    <li class="flex gap-4">
+                        <span class="text-eden-gold font-bold">01</span>
+                        <p><strong>自我價值的重塑：</strong>停止用外在成就衡量自己，回到起初創造，認知自己是神親手塑造的傑作。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-eden-gold font-bold">02</span>
+                        <p><strong>將工作轉化為敬拜：</strong>在職位上忠心經營神託付的領域，就是對神的敬拜 ('abad)。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-eden-gold font-bold">03</span>
+                        <p><strong>順服神的界線：</strong>檢視生命中是否有想要掌控善惡主權的區域，學習放手讓神來做神。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="text-2xl font-display font-bold flex items-center gap-3">
+                    <svg class="w-6 h-6 text-eden-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg> 回應行動
+                </h3>
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-sm font-semibold text-eden-gold mb-1">行動 1: 「深呼吸」靈修法</p>
+                        <p class="text-xs opacity-70">每天早晨默想神賜下的「生命之氣」，宣告自己是神手中的塵土。</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-sm font-semibold text-eden-gold mb-1">行動 2: 職場/家庭祭壇</p>
+                        <p class="text-xs opacity-70">為辦公桌或廚房禱告，宣告這是神託付你「修理看守」的伊甸園。</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                        <p class="text-sm font-semibold text-eden-gold mb-1">行動 3: 刻意的真實敞開</p>
+                        <p class="text-xs opacity-70">本週向配偶或屬靈夥伴分享一個軟弱，經歷無面具的接納。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Sermon Content -->
+    <section id="sermon" class="py-24 px-6 bg-[#0d1110]">
+        <div class="max-w-4xl mx-auto">
+            <header class="text-center mb-16">
+                <h2 class="text-eden-gold font-display text-4xl md:text-5xl font-black mb-8">完整講章文稿</h2>
+                <p class="text-eden-mist/60 tracking-widest uppercase text-sm">Sermon Manuscript</p>
+            </header>
+            
+            <article class="prose prose-invert prose-lg max-w-none space-y-8 leading-loose text-eden-mist/90">
+                <p class="text-2xl font-bold border-l-4 border-eden-gold pl-6 mb-12">
+                    【講道主題】塵土與氣息的奇蹟——在伊甸園中尋回神聖的呼召與關係
+                </p>
+
+                <p>弟兄姊妹們，平安。當我們翻開聖經的最開頭，創世記第二章向我們展現了一幅極其美麗、溫柔且充滿神聖榮耀的圖畫。如果創世記第一章是神站在宇宙的浩瀚中，用大能的話語呼喊出星辰與海洋；那麼創世記第二章，就是這位偉大的造物主蹲了下來，在伊甸園的泥土中，親自為我們規劃了生命的藍圖。今天，我們要從這段經文中，找回神起初創造我們時，那份神聖的呼召與關係。</p>
+
+                <h3 class="text-2xl font-display font-black text-eden-gold mt-12 mb-6">第一段：生命的源頭——塵土與氣息的交織</h3>
+                <p>讓我們先來看 <strong>創世記 2:7：「耶和華神用地上的塵土造人，將生氣吹在他鼻孔裡，他就成了有靈的活人，名叫亞當。」</strong></p>
+                <p>神創造天地萬物時，祂說有就有，命立就立。唯獨在造人的時候，神像一位充滿感情的陶匠，親自用手將<strong>「塵土」</strong>捏塑成形。塵土，代表著我們本質上的脆弱與卑微；我們不是由黃金或鑽石打造的。然而，神並沒有停在塵土。祂靠近這個泥人，將自己的<strong>「生氣」（生命的氣息）</strong>吹進他的鼻孔裡。</p>
+                <div class="quote-border bg-white/5 p-8 my-8 italic">
+                    「你的價值不建立在成就上，而是建立在我們是神親手捧在手心、吹入氣息的傑作。」
+                </div>
+                <p>今天，這個世界常常用你的存款、職位、外貌來衡量你的價值。但神對你說：你的價值在於我的指紋印在你的生命上，我的氣息在你的靈魂裡。當你感到枯竭、自卑的時候，請記住，你是神深愛的「有靈的活人」。</p>
+
+                <h3 class="text-2xl font-display font-black text-eden-gold mt-12 mb-6">第二段：園中的呼召——恩典的供應與界線</h3>
+                <p>神造了人之後，給了人一個完美的生活環境。<strong>創世記 2:15 說：「耶和華神將那人安置在伊甸園，使他修理，看守。」</strong></p>
+                <p>請注意，工作不是人類犯罪墮落後的懲罰，工作是神起初美好的賜福。「修理」在原文中有服事、敬拜的意思。也就是說，你在辦公室打報表、你在家裡照顧孩子、你在工廠操作機器，只要你是帶著忠心去做，那就像祭司在聖殿裡敬拜神一樣神聖。這就是我們在園中的<strong>呼召</strong>。</p>
+                <p>但在這個園子裡，神設立了一條界線。<strong>創世記 2:16-17：「耶和華神吩咐他說：『園中各樣樹上的果子，你可以隨意吃，只是分別善惡樹上的果子，你不可吃，因為你吃的日子必定死！』」</strong></p>
+                <p class="font-bold text-eden-gold">潘霍華說得極好：「自由不是想做什麼就做什麼，真正的自由是能夠選擇去做正確的事——也就是順服上帝的旨意。」</p>
+
+                <h3 class="text-2xl font-display font-black text-eden-gold mt-12 mb-6">第三段：關係的圓滿——無瑕的親密與互補</h3>
+                <p>亞當有了生命，有了工作，有了與神的關係，但神說了一句令人驚訝的話。<strong>創世記 2:18：「耶和華神說：『那人獨居不好，我要為他造一個配偶幫助他。』」</strong></p>
+                <p>這是神第一次說「不好」。神看重我們的關係。「配偶幫助他」在原文中絕對不是指找一個傭人或次等的助手。在舊約中，「幫助者」這個詞最常用來形容上帝自己。這意味著女人是男人對等、不可或缺的生命夥伴。</p>
+                <p>亞當醒來後唱出了人類歷史上第一首情歌：<strong>「這是我骨中的骨，肉中的肉！」（創2:23）</strong>。而在這段經文的最後，有一句非常關鍵的描述：<strong>創世記 2:25：「當時夫妻二人赤身露體，並不羞恥。」</strong></p>
+                <p class="text-xl font-bold text-eden-gold italic text-center py-8">「要被完全認識，又被完全愛著，這正是上帝對我們的愛，也是美滿婚姻的縮影。」</p>
+
+                <div class="bg-eden-gold text-eden-dark p-8 rounded-3xl mt-16">
+                    <h4 class="text-3xl font-display font-black mb-4">結語</h4>
+                    <p class="text-lg leading-relaxed font-semibold">
+                        弟兄姊妹，這段經文帶我們回到了原點。今天，讓我們深呼吸，感受神賜給我們的 <strong>氣息</strong>，找回我們尊貴的價值；讓我們回到我們的工作崗位，活出「修理看守」的神聖 <strong>呼召</strong>；讓我們在婚姻與肢體生活中，勇敢地脫下面具，重新建立那「赤身露體並不羞恥」的 <strong>親密</strong> 關係。
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Spiritual Quotes -->
+    <section id="quotes" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="flex items-center gap-4 mb-16">
+            <svg class="w-10 h-10 text-eden-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path></svg>
+            <h2 class="font-display text-4xl font-bold tracking-tight">屬靈前輩佳句名言</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl">
+                <p class="text-eden-mist mb-4">「認識神與認識我們自己是密不可分的。人若不先仰望神的面，並從對祂的沉思中轉過來看自己，就永遠無法真正認識自己。」</p>
+                <cite class="text-xs text-eden-gold block">— 約翰·加爾文，《基督教要義》</cite>
+            </div>
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl border-eden-clay">
+                <p class="text-eden-mist mb-4">「人是從泥土造的，但他卻與上帝的話語緊密相連。人的生命不是來自物質的自我發展，而是來自上帝生命之氣的直接賦予。」</p>
+                <cite class="text-xs text-eden-gold block">— 潘霍華，《創造與墮落》</cite>
+            </div>
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl">
+                <p class="text-eden-mist mb-4">「婚姻的目的是雙方共同幫助彼此，成為神當初創造他們時所預定的那個榮耀的自己。」</p>
+                <cite class="text-xs text-eden-gold block">— 提摩太·凱勒，《婚姻的意義》</cite>
+            </div>
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl border-eden-sage">
+                <p class="text-eden-mist mb-4">「所有的工作都是參與在上帝對這個世界的供應與修復之中；世俗與神聖工作之間的界線其實並不存在。」</p>
+                <cite class="text-xs text-eden-gold block">— 提摩太·凱勒，《工作的好理由》</cite>
+            </div>
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl">
+                <p class="text-eden-mist mb-4">「上帝在創造世界時，沒有將人類當作奴隸來對待，而是將他們當作君王，讓他們管理祂所創造的這一切。」</p>
+                <cite class="text-xs text-eden-gold block">— 馬丁·路德，《創世記註釋》</cite>
+            </div>
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl">
+                <p class="text-eden-mist mb-4">「上帝造人，是為了讓人與祂有交通；人被造的最高目的，就是認識神、愛神、並永遠享受神。」</p>
+                <cite class="text-xs text-eden-gold block">— 陶恕，《渴慕神》</cite>
+            </div>
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl">
+                <p class="text-eden-mist mb-4">「神用塵土造了我們，這提醒我們沒有任何可以誇口的；但神將氣息吹入我們，這告訴我們，我們的生命與永恆相連。」</p>
+                <cite class="text-xs text-eden-gold block">— 司布真，《講道集》</cite>
+            </div>
+            <div class="quote-border p-6 bg-white/5 rounded-r-2xl">
+                <p class="text-eden-mist mb-4">「工作不僅僅是為了餬口，工作是我們參與上帝創造與救贖行動的一種方式，是我們活出受造本質的途徑。」</p>
+                <cite class="text-xs text-eden-gold block">— 畢德生，《基督在萬物中》</cite>
+            </div>
+        </div>
+
+        <div class="mt-20 text-center opacity-40 text-sm">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+    </section>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-eden-gold text-eden-dark rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

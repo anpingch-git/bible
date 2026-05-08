@@ -68,57 +68,6 @@
     margin: 40px 0 60px 0; /* 增加上下間距 */
 }
 
-.page-ctrl-btn {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(206, 145, 11, 0.4);
-    color: #ce910b;
-    padding: 10px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    font-weight: 600;
-}
-
-.page-ctrl-btn:hover:not(:disabled) {
-    background: rgba(206, 145, 11, 0.2);
-    border-color: #ce910b;
-}
-
-.page-ctrl-btn:disabled {
-    opacity: 0.2;
-    cursor: not-allowed;
-    color: #666;
-}
-
-.page-select {
-    background: #0f172a;
-    border: 1px solid rgba(206, 145, 11, 0.4);
-    color: #ce910b;
-    padding: 10px 15px;
-    border-radius: 12px;
-    outline: none;
-    cursor: pointer;
-    font-weight: 600;
-    text-align: center;
-}
-
-.page-select option {
-    background: #1e293b;
-    color: #fff;
-}
-        .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; border-color: #f9d21b; }
-		
-/* --- 分頁控制項美化 --- */
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-top: 40px;
-    padding-bottom: 60px;
-}
-
 /* 上一頁、下一頁按鈕 */
 .page-ctrl-btn {
     background: rgba(255, 255, 255, 0.05);
@@ -130,19 +79,16 @@
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     font-weight: 600;
-    font-size: 14px;
 }
 
 .page-ctrl-btn:hover:not(:disabled) {
     background: rgba(206, 145, 11, 0.2);
     border-color: #ce910b;
-    box-shadow: 0 0 15px rgba(206, 145, 11, 0.2);
 }
 
 .page-ctrl-btn:disabled {
     opacity: 0.2;
     cursor: not-allowed;
-    border-color: rgba(255, 255, 255, 0.1);
     color: #666;
 }
 
@@ -156,9 +102,6 @@
     outline: none;
     cursor: pointer;
     font-weight: 600;
-    backdrop-filter: blur(10px);
-    appearance: none; /* 移除瀏覽器預設樣式 */
-    -webkit-appearance: none;
     text-align: center;
 }
 
@@ -167,7 +110,8 @@
     background: #1e293b;
     color: #fff;
 }
-
+        .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; border-color: #f9d21b; }
+		
 
         #scroll-to-top {
             position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px;

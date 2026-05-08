@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創43:1-34:放手的勇氣與恩典的饗宴</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdef8b',
+                            300: '#fbe04e',
+                            400: '#facd1c',
+                            500: '#e9b506',
+                            600: '#c98e03',
+                            700: '#a06606',
+                            800: '#83500c',
+                            900: '#704210',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(233, 181, 6, 0.3);
+            transform: translateY(-4px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fbe04e 0%, #e9b506 50%, #83500c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .btn-outline {
+            border: 1px solid rgba(233, 181, 6, 0.5);
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background: #e9b506;
+            color: #020617;
+        }
+        .sticky-top {
+            position: sticky;
+            top: 4rem;
+            z-index: 40;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500 selection:text-slate-950">
+
+    <!-- Top Toolbar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-gold-400 font-display font-bold text-sm md:text-base truncate">
+                創世記 43:1-34
+            </div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wider">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors uppercase">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_6de4cb27-097b-4e6b-86d6-ce99af2d4dff.jpg' alt='media_1' class="w-full h-full object-cover opacity-40" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/60 to-slate-950"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="mb-6 inline-block px-4 py-1 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 text-sm font-semibold tracking-widest uppercase animate-pulse">
+                Genesis 43:1-34
+            </div>
+            <h1 class="text-5xl md:text-7xl font-display font-black mb-8 leading-tight">
+                放手的勇氣與<br/><span class="gradient-text">恩典的饗宴</span>
+            </h1>
+            <div class="max-w-2xl mx-auto glass-card p-6 rounded-2xl border-gold-500/20">
+                <p class="text-xl md:text-2xl text-gold-200 font-serif italic italic leading-relaxed">
+                    「但願全能的神使你們在那人面前蒙憐憫，釋放你們的那弟兄和便雅憫回來。我若喪了兒子，就喪了吧！」
+                </p>
+                <p class="mt-4 text-gold-500 font-bold tracking-widest">— 創世記 43:14</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">禱告詞</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                    <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L9.5 8.5L3 9.5L7.5 14.5L6.5 21L12 18L17.5 21L16.5 14.5L21 9.5L14.5 8.5L12 2Z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-loose text-slate-200 font-serif">
+                    主啊，我們常像雅各一樣，緊緊抓著生命中的「便雅憫」不肯放手，直到環境的飢荒逼迫我們看見自己的無能為力。求祢賜給我們放手的勇氣，讓我們明白，當我們把最珍愛的交在「全能的神」手中時，遇見的不是剝奪，而是祢深藏不露的恩典與憐憫。求祢的聖靈今天透過這段經文對我們的心說話，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="section-padding">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+                <a href="#part1" class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-500/5 group">
+                    <span class="text-gold-500 font-bold mb-2">PART 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">當絕境逼迫我們放手</h3>
+                    <span class="text-slate-400 text-sm mt-4">創 43:1-14</span>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-500/5 group">
+                    <span class="text-gold-500 font-bold mb-2">PART 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">在恐懼中遇見未知的恩典</h3>
+                    <span class="text-slate-400 text-sm mt-4">創 43:15-25</span>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-500/5 group">
+                    <span class="text-gold-500 font-bold mb-2">PART 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">淚水交織的恩典饗宴</h3>
+                    <span class="text-slate-400 text-sm mt-4">創 43:26-34</span>
+                </a>
+            </div>
+
+            <!-- Outline Details -->
+            <div class="space-y-32">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <h3 class="text-3xl font-display font-bold text-gold-400 sticky top-24">當絕境逼迫我們放手</h3>
+                            <p class="text-slate-500 mt-2 font-mono">Genesis 43:1-14</p>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 bg-slate-900/40">
+                                <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    引用經文
+                                </h4>
+                                <p class="text-slate-300 italic leading-relaxed text-sm">
+                                    「...以色列說：『若必須如此，你們就當這樣行...也帶著你們的兄弟，起身去見那人。但願全能的神使你們在那人面前蒙憐憫...我若喪了兒子，就喪了吧！』」
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+                                    <span class="text-xs font-bold text-gold-600 tracking-widest block mb-2 uppercase">Keyword</span>
+                                    <h5 class="text-xl font-bold text-gold-400 mb-2">全能的神 (El Shaddai)</h5>
+                                    <p class="text-slate-400 text-sm leading-relaxed">強調神擁有絕對的權能，能突破人一切的限制與絕境，成就祂的應許。雅各在此刻呼求這個名字，代表他從依靠自己的籌算，轉向承認神的主權。</p>
+                                </div>
+                                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+                                    <span class="text-xs font-bold text-gold-600 tracking-widest block mb-2 uppercase">Q&A</span>
+                                    <h5 class="text-xl font-bold text-gold-400 mb-2">為何容許糧食吃盡？</h5>
+                                    <p class="text-slate-400 text-sm leading-relaxed">神容許飢荒逼迫雅各，是為了打破他的控制慾。絕境往往是神恩典的化妝，讓我們發現緊抓不放的是偶像。</p>
+                                </div>
+                            </div>
+
+                            <div class="p-8 rounded-2xl bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20">
+                                <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2 italic">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    名言佳句
+                                </h4>
+                                <p class="text-xl font-serif text-slate-200">「神所要的不是我們生命中的某一部分，而是我們生命的主權。當我們把所有的都交給祂時，我們失去的只是我們的枷鎖。」</p>
+                                <p class="mt-4 text-gold-500 font-bold text-sm text-right">— 陶恕 (A.W. Tozer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24">
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="md:w-1/3">
+                            <h3 class="text-3xl font-display font-bold text-gold-400 sticky top-24 md:text-right">在恐懼中遇見未知的恩典</h3>
+                            <p class="text-slate-500 mt-2 font-mono md:text-right">Genesis 43:15-25</p>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass-card p-6 rounded-2xl border-r-4 border-r-gold-500 bg-slate-900/40">
+                                <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    引用經文
+                                </h4>
+                                <p class="text-slate-300 italic leading-relaxed text-sm">
+                                    「家宰說：『你們可以放心，不要害怕，是你們的神和你們父親的神賜給你們財寶在你們的口袋裡；你們的銀子，我早已收了。』」
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+                                    <span class="text-xs font-bold text-gold-600 tracking-widest block mb-2 uppercase">Keyword</span>
+                                    <h5 class="text-xl font-bold text-gold-400 mb-2">平安 (Shalom)</h5>
+                                    <p class="text-slate-400 text-sm leading-relaxed">不僅是不害怕，更是指一種完整、和諧、沒有虧欠的狀態。在預期審判時，聽到的卻是宣告恩典的平安。</p>
+                                </div>
+                                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+                                    <span class="text-xs font-bold text-gold-600 tracking-widest block mb-2 uppercase">Q&A</span>
+                                    <h5 class="text-xl font-bold text-gold-400 mb-2">為何極度恐懼？</h5>
+                                    <p class="text-slate-400 text-sm leading-relaxed">罪咎感會扭曲對恩典的認知。弟兄們以「交易」思維看世界，當神白白施恩，罪咎的心往往不敢相信。</p>
+                                </div>
+                            </div>
+
+                            <div class="p-8 rounded-2xl bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20">
+                                <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2 italic">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    名言佳句
+                                </h4>
+                                <p class="text-xl font-serif text-slate-200">「恩典之所以令人難以置信，是因為我們太習慣於這個以功利和交易為基礎的世界；但神卻以毫無保留的愛，打破了我們心中所有的防線。」</p>
+                                <p class="mt-4 text-gold-500 font-bold text-sm text-right">— 盧雲 (Henri Nouwen)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <h3 class="text-3xl font-display font-bold text-gold-400 sticky top-24">淚水交織的恩典饗宴</h3>
+                            <p class="text-slate-500 mt-2 font-mono">Genesis 43:26-34</p>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 bg-slate-900/40">
+                                <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    引用經文
+                                </h4>
+                                <p class="text-slate-300 italic leading-relaxed text-sm">
+                                    「約瑟愛弟之情發動，就急忙尋找可哭之地，進入自己的屋裡，哭了一場...約瑟把他面前的食物分出來...但便雅憫的食物比別人多五倍。」
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+                                    <span class="text-xs font-bold text-gold-600 tracking-widest block mb-2 uppercase">Keyword</span>
+                                    <h5 class="text-xl font-bold text-gold-400 mb-2">愛弟之情 (Racham)</h5>
+                                    <p class="text-slate-400 text-sm leading-relaxed">原意指「母腹」或「深處的憐憫」。形容發自生命最深處、無法割捨的骨肉之愛與憐恤。</p>
+                                </div>
+                                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+                                    <span class="text-xs font-bold text-gold-600 tracking-widest block mb-2 uppercase">Q&A</span>
+                                    <h5 class="text-xl font-bold text-gold-400 mb-2">五倍食物與長幼座位？</h5>
+                                    <p class="text-slate-400 text-sm leading-relaxed">座位顯示神的全知。五倍食物是「恩典測試」，看哥哥們是否會再次嫉妒，測試生命是否被改變。</p>
+                                </div>
+                            </div>
+
+                            <div class="p-8 rounded-2xl bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20">
+                                <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2 italic">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    名言佳句
+                                </h4>
+                                <p class="text-xl font-serif text-slate-200">「福音的奇妙在於：你在神面前敗壞、有罪的程度，遠超你所敢相信的；但同時，你在基督裡蒙愛、蒙接納的程度，也遠超你所敢盼望的。」</p>
+                                <p class="mt-4 text-gold-500 font-bold text-sm text-right">— 提摩太·凱勒 (Timothy Keller)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="section-padding">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="glass-card p-10 md:p-16 rounded-[3rem] prose prose-invert prose-gold max-w-none">
+                <h3 class="text-3xl font-display font-black text-gold-400 mb-8">創43:1-34: 放手的勇氣與恩典的饗宴</h3>
+                
+                <div class="space-y-8 text-slate-200 leading-relaxed text-lg">
+                    <p>弟兄姐妹們，我們生命中總有一些東西，是我們死死抓著、絕對不肯放手的。對雅各來說，那個東西叫做便雅憫。今天我們要透過創世記43章，來看當人被逼到絕境時，如何經歷從恐懼到恩典的翻轉。</p>
+
+                    <div class="border-l-4 border-gold-500 pl-6 my-10">
+                        <h4 class="text-2xl font-bold text-gold-500 mb-4">當絕境逼迫我們放手</h4>
+                        <p>飢荒極其嚴重，雅各家帶來的糧食吃盡了。然而，當所有的出路都被堵死時，雅各終於作出了痛苦的決定：<span class="text-gold-400 font-bold underline decoration-gold-800 underline-offset-4">「但願全能的神使你們在那人面前蒙憐憫...我若喪了兒子，就喪了吧！」</span></p>
+                    </div>
+
+                    <p>這是一句多麼沉痛卻又偉大的宣告！雅各不再用自己的聰明算計，他終於轉向了「全能的神」（El Shaddai）。神要剝奪我們手中的偶像，不是為了傷害我們，而是要讓我們雙手空空，好接住祂即將傾注的豐盛。當你願意說「若喪了就喪了吧」的那一刻，真正的恩典才剛要開始。</p>
+
+                    <div class="border-l-4 border-gold-500 pl-6 my-10">
+                        <h4 class="text-2xl font-bold text-gold-500 mb-4">在恐懼中遇見未知的恩典</h4>
+                        <p>哥哥們帶著便雅憫和雙倍的銀子來到了埃及。當他們被請進約瑟的屋裡時，他們的反應不是高興，而是極度的恐懼。罪惡感總是會扭曲我們對恩典的認知。</p>
+                    </div>
+
+                    <p>但約瑟的家宰卻對他們說：<span class="text-gold-400 font-bold">「你們可以放心，不要害怕，是你們的神和你們父親的神賜給你們財寶在你們的口袋裡。」</span> 原文的「放心」就是「平安」（Shalom）。這正是福音的寫照：在我們以為神要審判我們、定我們罪的時候，神卻透過耶穌基督向我們宣告了平安。</p>
+
+                    <div class="border-l-4 border-gold-500 pl-6 my-10">
+                        <h4 class="text-2xl font-bold text-gold-500 mb-4">淚水交織的恩典饗宴</h4>
+                        <p>當約瑟看到同母的弟弟便雅憫時，聖經描述他<span class="text-gold-400 font-bold italic">「愛弟之情發動，就急忙尋找可哭之地...哭了一場。」</span> 這是何等深厚的情感！</p>
+                    </div>
+
+                    <p>為什麼要多五倍？這不僅是恩典的傾注，更是一個生命的測試。感謝神，這一次，哥哥們沒有嫉妒，他們選擇了「和約瑟一同宴樂」。這是一場恩典的饗宴，唯有經歷過放手的痛楚、面對過內心的罪咎，並坦然接受基督代替我們擔當一切的人，才能真正坐在這恩典的筵席上，享受神豐盛的預備。</p>
+
+                    <p class="text-gold-400 font-bold pt-6 border-t border-slate-800">弟兄姐妹，你今天還在緊抓著你的「便雅憫」嗎？放手吧，將它交給全能的神。你將會發現，在神那裡等候你的，不是嚴厲的審判，而是一場充滿淚水與歡笑的恩典饗宴。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications, Conclusion & Actions -->
+        <section class="section-padding grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- App Direction -->
+            <div class="glass-card p-8 rounded-3xl">
+                <h4 class="text-xl font-bold text-gold-500 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    應用方向
+                </h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li class="flex gap-2"><span>1.</span> 檢視生命中的「便雅憫」，將主權交還給全能神。</li>
+                    <li class="flex gap-2"><span>2.</span> 效法猶大的「擔當」，成為主動促成和睦的調解者。</li>
+                    <li class="flex gap-2"><span>3.</span> 拆毀罪咎的牆，坦然接受基督預備的恩典饗宴。</li>
+                </ul>
+            </div>
+            
+            <!-- Keywords Conclusion -->
+            <div class="glass-card p-8 rounded-3xl flex flex-col items-center justify-center text-center">
+                <h4 class="text-xl font-bold text-gold-500 mb-6">關鍵總結</h4>
+                <div class="space-y-4">
+                    <div class="text-3xl font-display font-black tracking-tighter text-white">放手 <span class="text-gold-600">Surrender</span></div>
+                    <div class="text-3xl font-display font-black tracking-tighter text-white">擔當 <span class="text-gold-600">Mediation</span></div>
+                    <div class="text-3xl font-display font-black tracking-tighter text-white">恩典 <span class="text-gold-600">Grace</span></div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="glass-card p-8 rounded-3xl">
+                <h4 class="text-xl font-bold text-gold-500 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h4>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li><strong class="text-gold-400">放手禱告：</strong> 本週每天為憂慮之事做一次「若喪了就喪了吧」的交託禱告。</li>
+                    <li><strong class="text-gold-400">和平之子：</strong> 主動聯繫一位有心結的親友，用具體施恩行動破冰。</li>
+                    <li><strong class="text-gold-400">感恩記念：</strong> 默想基督為你擺設的筵席，為「多五倍」的恩典獻上感恩。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-padding">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「福音的奇妙在於：你在神面前敗壞、有罪的程度，遠超你所敢相信的；但同時，你在基督裡蒙愛、蒙接納的程度，也遠超你所敢盼望的。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 提摩太·凱勒 / 《揮霍的上帝》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「神所要的不是我們生命中的某一部分，而是我們生命的主權。當我們把所有的都交給祂時，我們失去的只是我們的枷鎖。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 陶恕 / 《渴慕神》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「恩典之所以令人難以置信，是因為我們太習慣於這個以功利和交易為基礎的世界；但神卻以毫無保留的愛，打破了我們心中所有的防線。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 盧雲 / 《浪子回頭》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「廉價的恩典是我們自己給自己的恩典；重價的恩典是必須付上生命代價去跟隨的恩典。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 潘霍華 / 《追隨基督》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「信心就是一種安息的狀態。當我們明白上帝的護理掌管一切時，即使在最危險的處境中，我們的心也能夠平靜安穩。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 約翰·加爾文 / 《基督教要義》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「神從不勉強我們交出我們手中所擁有的，除非祂打算用更好的東西來填滿我們空出來的雙手。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 司布真 / 《清晨甘露》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「信心就是閉上眼睛，單單把自己交托給神的話語和應許。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 馬丁·路德 / 《加拉太書註釋》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「順服不是一次性的英雄舉動，而是在同一個方向上長期的堅持。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 畢德生 / 《長闊高深》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「真正的代替（擔當），是無辜者自願承擔有罪者的刑罰，這正是基督在十字架上為我們所成就的。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 約翰·史托德 / 《基督的十字架》</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-slate-300 leading-relaxed">「當人以為自己走到盡頭時，那正是神絕對主權彰顯的起點。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 唐崇榮 / 《神的主權與人的責任》</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-6 rounded-xl border border-red-900/30 bg-red-950/20 text-red-400 text-center text-sm">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center shadow-2xl shadow-gold-500/20 hover:scale-110 active:scale-95 transition-all z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

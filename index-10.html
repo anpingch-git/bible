@@ -8,11 +8,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
         
-        /* 基礎設定 */
+        /* 基礎設定 - 完全保留 index-9 */
         html { scroll-behavior: smooth; }
         body { background-color: #050505; color: #fff; font-family: 'Noto Sans TC', sans-serif; margin: 0; padding-top: 80px; }
 
-        /* 置頂工具列 */
+        /* 置頂工具列 - 僅調整配置以容納分頁 */
         #top-toolbar {
             position: fixed; top: 0; left: 0; width: 100%; height: 70px;
             z-index: 1000; background: rgba(10, 10, 10, 0.7);
@@ -26,21 +26,20 @@
             color: #ce910b; text-transform: uppercase;
         }
 
-        /* 🚀 置頂工具列分頁容器 */
+        /* 🚀 新增：置頂工具列專用分頁控制項樣式 */
         .toolbar-pagination {
-            display: none; /* 預設隱藏，進入書卷後才顯示 */
+            display: none; /* 預設隱藏 */
             align-items: center;
-            gap: 8px;
-            margin-left: auto; /* 推至工具列最右側 */
+            gap: 6px;
+            margin-left: auto; /* 靠右對齊 */
         }
 
-        /* 工具列分頁按鈕 (Icon 版) */
         .toolbar-page-btn {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(206, 145, 11, 0.3);
             color: #ce910b;
-            width: 36px; height: 36px;
-            border-radius: 10px;
+            width: 34px; height: 34px;
+            border-radius: 8px;
             display: flex; align-items: center; justify-content: center;
             cursor: pointer; transition: all 0.2s ease;
         }
@@ -51,22 +50,21 @@
         }
 
         .toolbar-page-btn:disabled {
-            opacity: 0.15; cursor: not-allowed;
+            opacity: 0.1; cursor: not-allowed;
         }
 
-        /* 工具列下拉選單 */
         .toolbar-page-select {
-            background: rgba(15, 23, 42, 0.8);
+            background: #0f172a;
             border: 1px solid rgba(206, 145, 11, 0.3);
             color: #ce910b;
-            height: 36px; padding: 0 10px;
-            border-radius: 10px; outline: none;
+            height: 34px; padding: 0 8px;
+            border-radius: 8px; outline: none;
             cursor: pointer; font-weight: bold;
-            text-align: center; font-size: 15px;
+            font-size: 14px; text-align: center;
             appearance: none; -webkit-appearance: none;
         }
 
-        /* 背景與卡片樣式 (完全繼承 index-9) */
+        /* 背景與卡片樣式 - 完全保留 index-9 */
         .hero-bg {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
@@ -136,7 +134,7 @@
 
     <div class="container mx-auto px-4 max-w-6xl">
         <header class="text-center mb-16 pt-10">
-            <h1 id="page-title" class="text-5xl md:text-7xl font-black mb-4 tracking-tighter italic">每日研經釋義</h1>
+            <h1 id="page-title" class="text-5xl md:text-7xl font-black mb-4 tracking-tighter italic text-white">每日研經釋義</h1>
             <p id="sub-title" class="text-xl text-gray-400 font-light tracking-[0.5em] uppercase">講章大綱</p>
         </header>
 
@@ -159,6 +157,7 @@
     </div>
 
     <script>
+        // --- 核心變數 - 完全保留 index-9 ---
         let allNotes = [];
         let filteredNotes = [];
         let currentPage = 1;
@@ -174,14 +173,14 @@
                 const data = await res.json();
                 allNotes = data.files;
                 renderMap();
-            } catch (e) {
-                console.error("載入失敗", e);
-            }
+            } catch (e) { console.error("載入失敗", e); }
         }
 
         function renderMap() {
             const ntGrid = document.getElementById('nt-grid');
             const otGrid = document.getElementById('ot-grid');
+            ntGrid.innerHTML = '';
+            otGrid.innerHTML = '';
             
             const createCard = (book) => {
                 const count = allNotes.filter(n => n.path.includes(`/${book}/`)).length;
@@ -218,6 +217,7 @@
             document.getElementById('map-view').classList.remove('hidden');
             document.getElementById('gallery-view').classList.add('hidden');
             document.getElementById('back-btn').classList.add('hidden');
+            // 回首頁時隱藏分頁
             document.getElementById('toolbar-pagination').style.display = 'none';
             
             document.getElementById('toolbar-title').innerText = "BIBLE MAP";
@@ -238,7 +238,6 @@
                 const card = document.createElement('div');
                 card.className = 'note-card';
                 
-                // 修正圖片路徑判定
                 const basePath = note.path.substring(0, note.path.lastIndexOf('/'));
                 const imgUrl = `${basePath}/image/img_${note.name.split('_')[2].replace('.html','')}.jpg`;
 
@@ -262,10 +261,11 @@
                 container.appendChild(card);
             });
 
+            // 🚀 更新置頂工具列的分頁顯示
             renderToolbarPagination(filteredNotes.length);
         }
 
-        // 🚀 修改後的分頁函式 (置頂工具列版)
+        // 🚀 修改後的分頁函式 (僅圖示按鈕與單純頁碼選單)
         function renderToolbarPagination(totalItems) {
             const totalPages = Math.ceil(totalItems / itemsPerPage);
             const container = document.getElementById('toolbar-pagination');
@@ -280,7 +280,7 @@
             
             container.style.display = 'flex';
 
-            // 1. 上一頁 Icon
+            // 1. 上一頁按鈕
             const prevBtn = document.createElement('button');
             prevBtn.className = 'toolbar-page-btn';
             prevBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"></path></svg>`;
@@ -294,7 +294,7 @@
             };
             container.appendChild(prevBtn);
 
-            // 2. 下拉選單 (僅顯示數字)
+            // 2. 下拉選單 (僅數字)
             const select = document.createElement('select');
             select.className = 'toolbar-page-select';
             for (let i = 1; i <= totalPages; i++) {
@@ -311,7 +311,7 @@
             };
             container.appendChild(select);
 
-            // 3. 下一頁 Icon
+            // 3. 下一頁按鈕
             const nextBtn = document.createElement('button');
             nextBtn.className = 'toolbar-page-btn';
             nextBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>`;
@@ -328,13 +328,10 @@
 
         window.onscroll = function() {
             const btn = document.getElementById('scroll-to-top');
-            const toolbar = document.getElementById('top-toolbar');
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 btn.classList.add('show');
-                toolbar.style.background = 'rgba(10, 10, 10, 0.9)';
             } else {
                 btn.classList.remove('show');
-                toolbar.style.background = 'rgba(10, 10, 10, 0.7)';
             }
         };
 

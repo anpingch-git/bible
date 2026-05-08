@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創40:1-23:被遺忘的守候：在暗室中活出屬天的呼召</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffbea',
+                            100: '#fff1c5',
+                            200: '#ffe285',
+                            300: '#ffca41',
+                            400: '#ffb21b',
+                            500: '#f99007',
+                            600: '#dd6f02',
+                            700: '#b74f06',
+                            800: '#943d0a',
+                            900: '#7a330d',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161a',
+                            accent: '#1e1e24'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f99007 0%, #ffe285 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(249, 144, 7, 0.4);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f99007;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(249, 144, 7, 0.4);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f99007;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass py-4 px-6 border-b border-white/10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-gold-500 font-bold font-display text-sm md:text-base tracking-wider uppercase">
+                創 40:1-23
+            </div>
+            <div class="flex gap-6 md:gap-10 text-sm font-medium">
+                <a href="#prayer" class="nav-link text-gray-300 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-dark-base/80 to-dark-base z-10"></div>
+            <img src='image/img_0e109594-dba3-49b1-9950-39e36f000584.jpg' alt='Joseph in Prison' class="w-full h-full object-cover scale-105" />
+        </div>
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <div class="inline-block px-4 py-1.5 mb-6 glass rounded-full text-gold-300 text-xs font-bold tracking-widest uppercase">
+                Genesis 40:1-23
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 font-display leading-tight">
+                被遺忘的守候：<br>
+                <span class="gradient-text">在暗室中活出屬天的呼召</span>
+            </h1>
+            <div id="prayer" class="max-w-2xl mx-auto glass p-8 rounded-2xl border border-white/5 mt-12 group transition-all duration-500 hover:bg-white/5">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-10 h-10 text-gold-500 opacity-80 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-4.5v-9L12 3l8 4.5v9L12 21z M12 12v9 M12 3v9 M12 12l8-4.5 M12 12l-8-4.5"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold mb-4 font-display">【 禱告詞 】</h2>
+                <p class="text-lg text-gray-300 leading-relaxed italic">
+                    「親愛的天父，我們承認在人生的暗室與漫長的等待中，我們常感到被遺忘與孤單。求主賜給我們約瑟般的眼光，即使深陷泥沼，依然能察覺身旁受苦的靈魂；賜給我們無畏的勇氣，忠心傳講祢的真理；更賜給我們堅定的信心，在被人遺忘的時刻，依然深信祢的時刻表完美無瑕。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Golden Verse Section -->
+        <section class="flex justify-center">
+            <div class="max-w-3xl w-full bg-gradient-to-r from-gold-900/40 to-transparent p-1 rounded-3xl">
+                <div class="bg-dark-base p-10 md:p-16 rounded-[calc(1.5rem-4px)] border border-gold-500/20 text-center">
+                    <span class="text-gold-500 text-sm font-bold tracking-widest uppercase mb-4 block">Key Verse</span>
+                    <h2 class="text-2xl md:text-4xl font-serif text-white mb-6 leading-snug">「他們對他說：『我們各人做了一夢，沒有人能解。』約瑟說：『解夢不是出於神嗎？請你們將夢告訴我。』」</h2>
+                    <p class="text-gold-400 font-bold tracking-widest">（創世記 40:8）</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Menu Section -->
+        <section id="outline" class="space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <h2 class="text-gold-500 font-bold tracking-widest uppercase mb-2">Structure</h2>
+                    <h3 class="text-4xl font-display font-bold">分段大綱與解析</h3>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#part1" class="px-5 py-3 glass rounded-xl text-sm font-bold hover:bg-gold-500 hover:text-black transition-all">第一段：暗室察覺</a>
+                    <a href="#part2" class="px-5 py-3 glass rounded-xl text-sm font-bold hover:bg-gold-500 hover:text-black transition-all">第二段：解夢勇氣</a>
+                    <a href="#part3" class="px-5 py-3 glass rounded-xl text-sm font-bold hover:bg-gold-500 hover:text-black transition-all">第三段：被遺忘現實</a>
+                </div>
+            </div>
+
+            <!-- Bento Grid Detailed Sections -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-12 h-12 bg-gold-600/20 flex items-center justify-center rounded-full border border-gold-500/30">
+                            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        </span>
+                        <h3 class="text-3xl font-bold font-display">第一段：暗室中的察覺——超越自身苦難的憐憫</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-8 space-y-6">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-500 text-sm font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 003 6.331V11a5 5 0 013.515-4.789L9 4.804z"></path></svg>
+                                    經文範圍：創世記 40:1-8
+                                </h4>
+                                <p class="text-gray-400 text-lg leading-relaxed mb-6 italic">「...約瑟進到他們那裡，見他們有愁悶的樣子。他便問法老的二臣...『你們今日為什麼面帶愁容呢？』...約瑟說：『解夢不是出於神嗎？請你們將夢告訴我。』」</p>
+                                <div class="p-6 bg-gold-900/20 rounded-2xl border-l-4 border-gold-500">
+                                    <span class="text-gold-300 font-bold block mb-2">重要 Keyword: 愁悶 (זָעַף / za'aph)</span>
+                                    <p class="text-gray-300">原文意指「生氣、悲傷、沮喪、面容憔悴」。這不僅是情緒低落，更是內心極度焦慮與無助而形之於外的枯槁。</p>
+                                </div>
+                            </div>
+                            <div class="glass p-8 rounded-3xl border-gold-500/10">
+                                <h4 class="text-gold-500 font-bold mb-4">關鍵解析與問題</h4>
+                                <p class="text-white font-medium mb-4">當我們深陷自身的困境與不公義的對待時，如何還能看見並關心他人的需要？</p>
+                                <p class="text-gray-400">約瑟當時無辜入獄，自己就是一個需要被拯救的受害者。然而，苦難沒有讓他變得自我中心。當我們將眼光從「我的苦難」轉向「神的同在」時，我們的創傷就能成為敏銳觀察他人痛楚的天線。苦難若非使人變得苦毒，就是使人變得慈悲。</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-4 space-y-6">
+                            <div class="bg-dark-accent p-8 rounded-3xl border border-white/5 flex flex-col h-full justify-between">
+                                <div>
+                                    <h4 class="text-gold-500 font-bold mb-4">例證 / 小故事</h4>
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-6">彭柯麗（Corrie ten Boom）與她的姊姊貝西，在充滿跳蚤的集中營牢房裡，偷偷帶領查經班，將微薄的維他命分給病弱的女囚。她們在最深的暗室中成為光明的使者。</p>
+                                </div>
+                                <div class="mt-4 pt-6 border-t border-white/10">
+                                    <p class="text-white italic text-sm mb-2">「我們不是藉著除掉痛苦來醫治人，而是藉著分享痛苦來醫治人。」</p>
+                                    <p class="text-gold-500 font-bold text-xs">— 盧雲 (Henri Nouwen)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-12 h-12 bg-gold-600/20 flex items-center justify-center rounded-full border border-gold-500/30">
+                            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </span>
+                        <h3 class="text-3xl font-bold font-display">第二段：解夢的勇氣——忠心傳講神的全盤心意</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-4">
+                            <div class="bg-gold-500/10 p-8 rounded-3xl border border-gold-500/20 flex flex-col h-full">
+                                <h4 class="text-gold-500 font-bold mb-4">Keyword: 解夢/講解</h4>
+                                <p class="text-xl font-serif text-white mb-4">פִּתְרוֹן / pithron</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">意指「解釋、解答」。約瑟強調這能力不屬於人，而是完全「出於神」(Elohim)。</p>
+                                <div class="mt-auto pt-8">
+                                    <p class="text-white italic text-sm mb-2">「廉價的恩典是傳揚不需悔改的赦免...和沒有親身受苦的恩典。」</p>
+                                    <p class="text-gold-500 font-bold text-xs">— 潘霍華 (Bonhoeffer)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8 space-y-6">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-500 text-sm font-bold mb-4">經文範圍：創世記 40:9-19</h4>
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div class="border-l-2 border-green-500/30 pl-4">
+                                        <p class="text-green-400 font-bold mb-2">酒政的夢：生機</p>
+                                        <p class="text-gray-400 text-sm italic">「三天之內，法老必提你出監，叫你官復原職。」</p>
+                                    </div>
+                                    <div class="border-l-2 border-red-500/30 pl-4">
+                                        <p class="text-red-400 font-bold mb-2">膳長的夢：審判</p>
+                                        <p class="text-gray-400 text-sm italic">「三天之內，法老必斬斷你的頭，把你掛在木頭上。」</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-500 font-bold mb-4">關鍵問題與實踐</h4>
+                                <p class="text-white font-medium mb-4">我們是否只喜歡聽「好消息」，而缺乏勇氣面對或傳遞神嚴厲的真理？</p>
+                                <p class="text-gray-400 leading-relaxed">約瑟沒有因為害怕得罪權貴或為了討好人而粉飾太平，他忠實地宣告了審判的結局。忠心的事奉不在於挑選人們喜歡聽的話講，而在於不打折扣地傳遞神的心意。誠實傳講才是真正的負責。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-12 h-12 bg-gold-600/20 flex items-center justify-center rounded-full border border-gold-500/30">
+                            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </span>
+                        <h3 class="text-3xl font-bold font-display">第三段：被遺忘的現實——信靠神完美的定時</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-8 space-y-6">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-500 text-sm font-bold mb-4">經文範圍：創世記 40:20-23</h4>
+                                <p class="text-gray-400 text-lg leading-relaxed mb-4 italic">「酒政卻不記念約瑟，竟忘了他。」</p>
+                                <div class="p-6 bg-red-900/10 rounded-2xl border-l-4 border-red-500/50">
+                                    <span class="text-red-400 font-bold block mb-2">重要 Keyword: 忘記 (שָׁכַח / shakach)</span>
+                                    <p class="text-gray-300">意指「忘卻、忽略、停止關心」。這是一個強烈的對比：酒政得了好處，卻將恩人徹底拋在腦後。</p>
+                                </div>
+                            </div>
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-gold-500 font-bold mb-4">關鍵解析：當等待遲遲未到</h4>
+                                <p class="text-gray-400 leading-relaxed">約瑟將得救的希望寄託在酒政身上，然而，人是軟弱且健忘的。這兩年的被遺忘，是神對約瑟生命最後的修剪，讓他學會不倚靠人的勢力，而是完全降服於神的時間表。人會忘記，但神永遠記念。</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-4">
+                            <div class="bg-dark-accent p-8 rounded-3xl border border-white/5 flex flex-col h-full">
+                                <h4 class="text-gold-500 font-bold mb-4">屬靈智慧</h4>
+                                <div class="space-y-6">
+                                    <div>
+                                        <p class="text-white italic mb-2 text-sm">「當我們看不見神的手時，我們必須學會信靠神的心。祂的延遲從來不是祂的拒絕。」</p>
+                                        <p class="text-gold-500 font-bold text-xs">— 司布真 (Spurgeon)</p>
+                                    </div>
+                                    <div class="border-t border-white/5 pt-6">
+                                        <p class="text-gray-300 text-sm">宣教士賈艾梅（Amy Carmichael）病榻上的二十年看似被事工遺忘，卻寫下震撼世界的靈糧。神的安排往往超越理解。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Applications -->
+            <div class="lg:col-span-2 glass p-10 rounded-[3rem]">
+                <h2 class="text-3xl font-bold mb-8 flex items-center gap-4">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    講道應用方向
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                        <span class="text-gold-500 font-black text-4xl opacity-20 block mb-2">01</span>
+                        <h4 class="text-xl font-bold mb-3">從自憐轉向使命</h4>
+                        <p class="text-gray-400 text-sm">停止問「為什麼是我」，主動尋找身邊面帶愁容的人，成為神施恩的導管。</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                        <span class="text-gold-500 font-black text-4xl opacity-20 block mb-2">02</span>
+                        <h4 class="text-xl font-bold mb-3">勇敢持守真理</h4>
+                        <p class="text-gray-400 text-sm">在妥協的世代中，堅持不偏左右地活出並宣告神完整的真理。</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                        <span class="text-gold-500 font-black text-4xl opacity-20 block mb-2">03</span>
+                        <h4 class="text-xl font-bold mb-3">安息於神的時間</h4>
+                        <p class="text-gray-400 text-sm">當人際關係讓你失望時，不失去盼望，深信神在背後掌管一切。</p>
+                    </div>
+                    <div class="p-6 bg-gold-500 rounded-2xl border border-white/5 flex items-center justify-center text-center p-8">
+                        <div>
+                            <h4 class="text-black font-black text-xl mb-1">結論關鍵字</h4>
+                            <p class="text-black/80 font-bold">憐憫 • 忠心 • 等候</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Actions -->
+            <div class="bg-gold-600 p-10 rounded-[3rem] text-black">
+                <h2 class="text-3xl font-black mb-8">回應與行動</h2>
+                <ul class="space-y-8">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-black text-white flex items-center justify-center font-bold">1</span>
+                        <p class="font-medium leading-snug"><b>主動關懷：</b>本週尋找一位面帶「愁容」的人，主動關心、傾聽並為他禱告。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-black text-white flex items-center justify-center font-bold">2</span>
+                        <p class="font-medium leading-snug"><b>歸榮耀給神：</b>練習說：「這不是出於我，乃是出於神」，將讚美歸給神。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-black text-white flex items-center justify-center font-bold">3</span>
+                        <p class="font-medium leading-snug"><b>交託等候：</b>寫下一個你等待已久的事項，宣告放棄掌控，順服神的主權。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="max-w-4xl mx-auto glass p-10 md:p-20 rounded-[3rem] border border-white/10 shadow-2xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-gold-500 font-bold tracking-widest uppercase mb-4">Script</h2>
+                    <h3 class="text-4xl md:text-5xl font-display font-bold mb-4">講章文稿</h3>
+                    <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+                </div>
+                
+                <article class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300 leading-relaxed">
+                    <p class="text-2xl font-bold text-white font-display mb-8">創40:1-23: 被遺忘的守候：在暗室中活出屬天的呼召</p>
+                    
+                    <p>弟兄姊妹們，今天我們要進入創世記第40章，來看約瑟生命中一段極其獨特的時期。此時的約瑟，因為主母的誣陷，無辜地被關在埃及的監獄裡。監獄，是一個剝奪人尊嚴、自由與夢想的地方。如果你是約瑟，你會怎麼度過每一天？是充滿憤怒地咒詛世界？還是成天自憐，逢人就訴說自己的委屈？</p>
+
+                    <p>但在創世記第40章，我們看見了一個截然不同的生命態度。今天講道的主題是：<span class="text-gold-400 font-bold">「被遺忘的守候：在暗室中活出屬天的呼召」</span>。讓我們透過約瑟在監獄中的經歷，學習三個重要的屬靈功課。</p>
+
+                    <div class="p-8 bg-white/5 rounded-3xl border-l-4 border-gold-500">
+                        <p class="text-white font-bold text-xl mb-4">首先，我們看見的是：暗室中的察覺——超越自身苦難的憐憫。</p>
+                        <p>約瑟自己就是一個極大的受害者，他失去父親的寵愛、被哥哥出賣、被主母誣陷。一個深陷在自己痛苦中的人，通常是盲目的，看不見別人的需要。但約瑟沒有被苦毒蒙蔽雙眼。他在自己的暗室中，依然擁有敏銳的屬靈直覺，能看見別人臉上的「愁悶」。</p>
+                    </div>
+
+                    <p>當酒政和膳長說沒有人能為他們解夢時，約瑟宣告了今天的<span class="text-white font-bold">【鑰節】</span>：「他們對他說：『我們各人做了一夢，沒有人能解。』約瑟說：『解夢不是出於神嗎？請你們將夢告訴我。』」</p>
+
+                    <div class="p-8 bg-white/5 rounded-3xl border-l-4 border-gold-500">
+                        <p class="text-white font-bold text-xl mb-4">第二個功課是：解夢的勇氣——忠心傳講神的全盤心意。</p>
+                        <p>面對一個有權勢的高官，告訴他三天後他會死，這需要極大的勇氣。約瑟大可以說幾句好聽的話來敷衍，但他沒有。約瑟知道，解夢是「出於神」，他只是一個器皿，器皿的責任就是忠心傳遞神的話語。</p>
+                    </div>
+
+                    <div class="p-8 bg-white/5 rounded-3xl border-l-4 border-gold-500">
+                        <p class="text-white font-bold text-xl mb-4">最後，我們來到經文的結尾：被遺忘的現實——信靠神完美的定時。</p>
+                        <p>聖經在第23節留下了一句令人心碎的話：<span class="text-red-400 font-bold">「酒政卻不記念約瑟，竟忘了他。」</span></p>
+                    </div>
+
+                    <p>但弟兄姊妹，人的忘記，正是神工作的開始。這兩年被遺忘的時光，是神對約瑟最後的雕琢。神要拔除約瑟心中最後一點「倚靠人」的指望，讓他知道，拯救他的不是酒政，而是耶和華上帝。</p>
+
+                    <p class="text-xl text-gold-300 font-medium italic text-center py-8">
+                        「今天，也許你正處在人生的暗室中，覺得自己被遺忘。求神幫助我們，繼續保持憐憫的心去看見他人的需要，保持忠心的態度去傳講真理，並在漫長的等候中，深信上帝完美的時間表。阿們！」
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="text-center mb-16">
+                <h2 class="text-gold-500 font-bold tracking-widest uppercase mb-4">Inspiration</h2>
+                <h3 class="text-4xl font-display font-bold">屬靈前輩佳句名言</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「當我們看不見神的手時，我們必須學會信靠神的心。祂的延遲從來不是祂的拒絕。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「廉價的恩典是傳揚不需悔改的赦免，不用受洗的宣傳，不需要認罪的聖餐...」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「一個願意承認自己受傷的人，才能成為別人的『負傷的治療者』。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「上帝對我們的愛，不是要我們免受一切苦難，而是要在苦難中與我們同在...」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「神絕對不會錯過祂的時間；雖然我們常常覺得祂來得太遲，但祂總是在最完美的時刻介入。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「信心就是閉上眼睛，單單將自己交託給上帝的話語。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「愛心若沒有真理，就過於軟弱；真理若沒有愛心，就過於嚴厲。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="bento-card glass p-8 rounded-3xl border border-white/5 hover:bg-gold-500/5">
+                    <p class="text-white text-lg font-serif italic mb-4">「基督徒的生活是『在同一個方向上長期的順服』。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 畢德生 (Eugene Peterson)</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center">
+                <div class="inline-block p-4 rounded-2xl bg-red-900/20 border border-red-900/30 text-red-400 text-xs font-medium">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Prayer Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-black rounded-full flex items-center justify-center floating-btn transition-transform hover:scale-110 active:scale-95 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <!-- Bottom Spacing -->
+    <div class="h-20"></div>
+
+</body>
+</html>

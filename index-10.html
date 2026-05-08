@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日研經釋義講章大綱</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
+        
+        /* 基礎設定 */
+        html { scroll-behavior: smooth; }
+        body { background-color: #050505; color: #fff; font-family: 'Noto Sans TC', sans-serif; margin: 0; padding-top: 80px; }
+
+        /* 置頂工具列 */
+        #top-toolbar {
+            position: fixed; top: 0; left: 0; width: 100%; height: 70px;
+            z-index: 1000; background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex; align-items: center; transition: all 0.3s ease;
+            padding: 0 20px;
+        }
+
+        #toolbar-title {
+            font-size: 1.25rem; font-weight: 900; letter-spacing: 2px;
+            color: #ce910b; text-transform: uppercase;
+        }
+
+        /* 🚀 置頂工具列分頁容器 */
+        .toolbar-pagination {
+            display: none; /* 預設隱藏，進入書卷後才顯示 */
+            align-items: center;
+            gap: 8px;
+            margin-left: auto; /* 推至工具列最右側 */
+        }
+
+        /* 工具列分頁按鈕 (Icon 版) */
+        .toolbar-page-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(206, 145, 11, 0.3);
+            color: #ce910b;
+            width: 36px; height: 36px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: all 0.2s ease;
+        }
+
+        .toolbar-page-btn:hover:not(:disabled) {
+            background: rgba(206, 145, 11, 0.2);
+            border-color: #ce910b;
+        }
+
+        .toolbar-page-btn:disabled {
+            opacity: 0.15; cursor: not-allowed;
+        }
+
+        /* 工具列下拉選單 */
+        .toolbar-page-select {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(206, 145, 11, 0.3);
+            color: #ce910b;
+            height: 36px; padding: 0 10px;
+            border-radius: 10px; outline: none;
+            cursor: pointer; font-weight: bold;
+            text-align: center; font-size: 15px;
+            appearance: none; -webkit-appearance: none;
+        }
+
+        /* 背景與卡片樣式 (完全繼承 index-9) */
+        .hero-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
+            z-index: -1;
+        }
+
+        .book-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #ce910b;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(206, 145, 11, 0.2);
+        }
+
+        .note-card {
+            background: rgba(20, 20, 20, 0.6);
+            border-radius: 20px; overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .note-card:hover {
+            border-color: rgba(206, 145, 11, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .hidden { display: none; }
+        
+        #back-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 16px; border-radius: 12px;
+            margin-right: 15px; cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        #back-btn:hover { background: rgba(206, 145, 11, 0.2); border-color: #ce910b; }
+
+        #scroll-to-top {
+            position: fixed; bottom: 30px; right: 30px;
+            width: 50px; height: 50px; background: #ce910b;
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; color: #000; cursor: pointer;
+            opacity: 0; transition: all 0.3s; z-index: 999;
+        }
+        #scroll-to-top.show { opacity: 1; }
+    </style>
+</head>
+<body>
+    <div class="hero-bg"></div>
+
+    <nav id="top-toolbar">
+        <button id="back-btn" class="hidden" onclick="showMap()">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+        </button>
+        <div id="toolbar-title">BIBLE MAP</div>
+        
+        <div id="toolbar-pagination" class="toolbar-pagination"></div>
+    </nav>
+
+    <div class="container mx-auto px-4 max-w-6xl">
+        <header class="text-center mb-16 pt-10">
+            <h1 id="page-title" class="text-5xl md:text-7xl font-black mb-4 tracking-tighter italic">每日研經釋義</h1>
+            <p id="sub-title" class="text-xl text-gray-400 font-light tracking-[0.5em] uppercase">講章大綱</p>
+        </header>
+
+        <div id="map-view">
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold mb-8 border-l-4 border-yellow-600 pl-4">新約 New Testament</h2>
+                <div id="nt-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-8 border-l-4 border-yellow-600 pl-4">舊約 Old Testament</h2>
+                <div id="ot-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4"></div>
+            </div>
+        </div>
+
+        <div id="gallery-view" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20"></div>
+    </div>
+
+    <div id="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 15l7-7 7 7"></path></svg>
+    </div>
+
+    <script>
+        let allNotes = [];
+        let filteredNotes = [];
+        let currentPage = 1;
+        const itemsPerPage = 12;
+
+        const NT_BOOKS = ["太", "馬", "路", "約", "徒", "羅", "林前", "林後", "加", "弗", "腓", "歌", "帖前", "帖後", "提前", "提後", "多", "門", "希", "雅", "彼前", "彼後", "約一", "約二", "約三", "猶", "啟"];
+        const OT_BOOKS = ["創", "出", "利", "民", "申", "書", "士", "得", "撒上", "撒下", "王上", "王下", "代上", "代下", "拉", "尼", "斯", "伯", "詩", "箴", "傳", "歌", "賽", "耶", "哀", "結", "但", "何", "阿", "摩", "俄", "拿", "彌", "鴻", "哈", "番", "該", "亞", "瑪"];
+
+        // 初始化
+        async function init() {
+            try {
+                const res = await fetch('database.json');
+                const data = await res.json();
+                allNotes = data.files;
+                renderMap();
+            } catch (e) {
+                console.error("載入失敗", e);
+            }
+        }
+
+        function renderMap() {
+            const ntGrid = document.getElementById('nt-grid');
+            const otGrid = document.getElementById('ot-grid');
+            
+            const createCard = (book) => {
+                const count = allNotes.filter(n => n.path.includes(`/${book}/`)).length;
+                const card = document.createElement('div');
+                card.className = `book-card p-6 rounded-2xl text-center ${count === 0 ? 'opacity-30 grayscale pointer-events-none' : ''}`;
+                card.onclick = () => showNotes(book);
+                card.innerHTML = `
+                    <div class="text-2xl font-black mb-1">${book}</div>
+                    <div class="text-xs text-yellow-600 font-bold">${count} NOTES</div>
+                `;
+                return card;
+            };
+
+            NT_BOOKS.forEach(book => ntGrid.appendChild(createCard(book)));
+            OT_BOOKS.forEach(book => otGrid.appendChild(createCard(book)));
+        }
+
+        function showNotes(book) {
+            filteredNotes = allNotes.filter(n => n.path.includes(`/${book}/`));
+            currentPage = 1;
+            
+            document.getElementById('map-view').classList.add('hidden');
+            document.getElementById('gallery-view').classList.remove('hidden');
+            document.getElementById('back-btn').classList.remove('hidden');
+            
+            document.getElementById('toolbar-title').innerText = book;
+            document.getElementById('page-title').innerText = book;
+            document.getElementById('sub-title').innerText = "ARCHIVE LIST";
+            
+            renderNotes();
+        }
+
+        function showMap() {
+            document.getElementById('map-view').classList.remove('hidden');
+            document.getElementById('gallery-view').classList.add('hidden');
+            document.getElementById('back-btn').classList.add('hidden');
+            document.getElementById('toolbar-pagination').style.display = 'none';
+            
+            document.getElementById('toolbar-title').innerText = "BIBLE MAP";
+            document.getElementById('page-title').innerText = "每日研經釋義";
+            document.getElementById('sub-title').innerText = "講章大綱";
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function renderNotes() {
+            const container = document.getElementById('gallery-view');
+            container.innerHTML = '';
+            
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filteredNotes.slice(start, end);
+
+            pageItems.forEach(note => {
+                const card = document.createElement('div');
+                card.className = 'note-card';
+                
+                // 修正圖片路徑判定
+                const basePath = note.path.substring(0, note.path.lastIndexOf('/'));
+                const imgUrl = `${basePath}/image/img_${note.name.split('_')[2].replace('.html','')}.jpg`;
+
+                card.innerHTML = `
+                    <div class="relative h-48 bg-gray-800 overflow-hidden">
+                        <img src="${imgUrl}" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=800'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="text-[10px] bg-yellow-600 text-black px-2 py-1 rounded font-bold uppercase">${note.date}</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2 line-clamp-1">${note.chapter}</h3>
+                        <p class="text-gray-400 text-sm mb-6 h-10 line-clamp-2">${note.title}</p>
+                        <div class="flex gap-2">
+                            <a href="${note.path}" class="flex-1 bg-white/5 hover:bg-yellow-600 hover:text-black text-center py-2 rounded-lg text-xs font-bold transition-all border border-white/10">READ ONLINE</a>
+                            ${note.docId !== 'NoDoc' ? `<a href="https://docs.google.com/document/d/${note.docId}/export?format=pdf" class="w-10 bg-white/5 hover:bg-red-900 flex items-center justify-center rounded-lg border border-white/10 transition-all"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l-4-4h3V4h2v8h3l-4 4zm9-4v7H3v-7H1v7c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-7h-2z"/></svg></a>` : ''}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            renderToolbarPagination(filteredNotes.length);
+        }
+
+        // 🚀 修改後的分頁函式 (置頂工具列版)
+        function renderToolbarPagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const container = document.getElementById('toolbar-pagination');
+            
+            if (!container) return;
+            container.innerHTML = '';
+            
+            if (totalPages <= 1) {
+                container.style.display = 'none';
+                return;
+            }
+            
+            container.style.display = 'flex';
+
+            // 1. 上一頁 Icon
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'toolbar-page-btn';
+            prevBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"></path></svg>`;
+            prevBtn.disabled = (currentPage === 1);
+            prevBtn.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderNotes();
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                }
+            };
+            container.appendChild(prevBtn);
+
+            // 2. 下拉選單 (僅顯示數字)
+            const select = document.createElement('select');
+            select.className = 'toolbar-page-select';
+            for (let i = 1; i <= totalPages; i++) {
+                const opt = document.createElement('option');
+                opt.value = i;
+                opt.innerText = i;
+                if (i === currentPage) opt.selected = true;
+                select.appendChild(opt);
+            }
+            select.onchange = (e) => {
+                currentPage = parseInt(e.target.value);
+                renderNotes();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            };
+            container.appendChild(select);
+
+            // 3. 下一頁 Icon
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'toolbar-page-btn';
+            nextBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>`;
+            nextBtn.disabled = (currentPage === totalPages);
+            nextBtn.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderNotes();
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                }
+            };
+            container.appendChild(nextBtn);
+        }
+
+        window.onscroll = function() {
+            const btn = document.getElementById('scroll-to-top');
+            const toolbar = document.getElementById('top-toolbar');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.classList.add('show');
+                toolbar.style.background = 'rgba(10, 10, 10, 0.9)';
+            } else {
+                btn.classList.remove('show');
+                toolbar.style.background = 'rgba(10, 10, 10, 0.7)';
+            }
+        };
+
+        init();
+    </script>
+</body>
+</html>

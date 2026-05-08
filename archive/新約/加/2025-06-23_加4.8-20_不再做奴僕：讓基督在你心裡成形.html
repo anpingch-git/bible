@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加4:8-20 不再做奴僕：讓基督在你心裡成形</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8be',
+                            200: '#fdf18d',
+                            300: '#fbe352',
+                            400: '#f9d324',
+                            500: '#e7bc0d',
+                            600: '#c79708',
+                            700: '#a1710a',
+                            800: '#855910',
+                            900: '#714913',
+                        },
+                        deep: {
+                            900: '#0a0a0c',
+                            800: '#121218',
+                            700: '#1a1b26'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0c; color: #e5e7eb; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gold-gradient-text {
+            background: linear-gradient(to right, #f9d324, #c79708, #fbe352);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(249, 211, 36, 0.3);
+            transform: translateY(-4px);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            background: #f9d324;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            cursor: pointer;
+            z-index: 99;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .floating-btn:hover { transform: scale(1.1); }
+        .quote-border { border-left: 4px solid #f9d324; }
+        .image-overlay {
+            background: linear-gradient(to bottom, rgba(10, 10, 12, 0.4), rgba(10, 10, 12, 1));
+        }
+        @media (max-width: 768px) {
+            .bento-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Hero Banner -->
+    <header class="relative min-h-[80vh] flex items-end overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_917cb656-c94c-48e1-8e32-c0e25ee81978.jpg' alt='media_1' class="w-full h-full object-cover" />
+            <div class="absolute inset-0 image-overlay"></div>
+        </div>
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-6 pb-20">
+            <span class="inline-block px-4 py-1 rounded-full border border-gold-400/50 text-gold-400 text-sm font-semibold mb-6 animate-pulse">加拉太書 4:8-20</span>
+            <h1 class="text-5xl md:text-7xl font-display font-black leading-tight mb-4">
+                不再做奴僕 <br/>
+                <span class="gold-gradient-text">直等基督成形</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-2xl font-light leading-relaxed">
+                從律法的枷鎖中釋放，看見神的恩典如何重塑我們的內心。
+            </p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="font-display font-bold text-gold-400 hidden sm:block">加 4:8-20</div>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base font-semibold tracking-wide">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors uppercase">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-32">
+        
+        <!-- Key Verse & Prayer -->
+        <section id="prayer" class="space-y-16">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="flex justify-center mb-6">
+                    <svg class="w-12 h-12 text-gold-500 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-semibold text-gold-400 mb-8 tracking-widest">【鑰節金句】</h2>
+                <div class="glass p-10 rounded-3xl relative">
+                    <div class="text-3xl md:text-4xl font-display leading-snug text-white">
+                        「我小子啊，我為你們再受生產之苦，直等<span class="text-gold-400 font-bold">基督成形</span>在你們心裡。」
+                    </div>
+                    <div class="mt-6 text-gray-500 font-medium">—— 加拉太書 4:19</div>
+                </div>
+            </div>
+
+            <div class="bento-card glass">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-gold-400/10 rounded-xl">
+                        <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold">啟始禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic">
+                    親愛的天父，我們感謝祢，因著祢的恩典，我們不只認識了祢，更是「被祢所認識」的。主啊，求祢保守我們的心，不叫我們走回那懦弱無用的律法主義與世俗小學裡，不讓我們再次戴上奴僕的軛。求聖靈在我們裡面深深地動工，除去我們虛假的熱心與宗教的偽裝，賜給我們屬靈的辨識力。主啊，願祢在我們生命中雕刻、塑造，即便要經歷陣痛，我們也甘心樂意，直等基督的生命真實地在我們心裡成形。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-gold-400/10 rounded-xl">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">深度解析大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold-400/50 transition-all">
+                    <span class="text-gold-400 text-xs font-bold mb-2 block uppercase tracking-widest">Part 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">從認識到迷失：為何重回奴役的枷鎖？</h3>
+                    <p class="text-sm text-gray-500 mt-2">加 4:8-11</p>
+                </a>
+                <a href="#section2" class="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold-400/50 transition-all">
+                    <span class="text-gold-400 text-xs font-bold mb-2 block uppercase tracking-widest">Part 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">失落的喜樂：當初的熱情去哪了？</h3>
+                    <p class="text-sm text-gray-500 mt-2">加 4:12-16</p>
+                </a>
+                <a href="#section3" class="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-gold-400/50 transition-all">
+                    <span class="text-gold-400 text-xs font-bold mb-2 block uppercase tracking-widest">Part 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">靈命的陣痛：直等基督在心中成形</h3>
+                    <p class="text-sm text-gray-500 mt-2">加 4:17-20</p>
+                </a>
+            </div>
+
+            <!-- Outline Content Sections -->
+            <div class="space-y-24 mt-16">
+                <!-- Section 1 -->
+                <div id="section1" class="space-y-10 scroll-mt-32">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-6xl font-black text-white/5 font-display">01</span>
+                        <h3 class="text-3xl font-display font-bold gold-gradient-text">從認識到迷失：為何重回奴役的枷鎖？</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="bento-card col-span-12 md:col-span-8 bg-deep-800">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                引用經文 (加 4:8-11)
+                            </h4>
+                            <p class="text-xl text-gray-300 leading-relaxed font-serif quote-border pl-6 py-2">
+                                「但從前你們不認識神的時候，是給那些本來不是神作奴僕的；現在你們既然認識神，更可說是叫神所認識的，怎麼還要歸回那懦弱無用的小學，情願再給他作奴僕呢？你們謹守日子、月份、節期、年份，我為你們害怕，惟恐我在你們身上是枉費了工夫。」
+                            </p>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-4">
+                            <h4 class="text-gold-400 font-bold mb-4">關鍵字解析</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-white font-bold block mb-1">認識 (ginōskō)</span>
+                                    <span class="text-sm text-gray-400">強調關係上的深刻經歷，在於神主動的揀選。</span>
+                                </div>
+                                <div>
+                                    <span class="text-white font-bold block mb-1">懦弱無用 (asthenēs kai ptōchos)</span>
+                                    <span class="text-sm text-gray-400">指宗教規條無法賜予生命或屬靈富足。</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-6 bg-gold-900/10">
+                            <h4 class="text-gold-400 font-bold mb-4">關鍵問題</h4>
+                            <p class="text-gray-200">為什麼人在經歷恩典後，依然容易退回到宗教規條中？</p>
+                            <p class="text-sm text-gray-400 mt-4 leading-relaxed">
+                                恩典要求完全放下自尊，而律法能給予虛假的安全感與成就感，讓人以為可以靠行為賺取神的愛。
+                            </p>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-6 border-l-4 border-l-gold-500">
+                            <h4 class="text-gold-400 font-bold mb-4 italic">「歸巢的鳥」</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                一隻被關在籠子裡多年的鳥，即使門開了，因為習慣了受限的安全感，最終竟飛回籠中關上門。我們常因懼怕真自由，而選擇規條的奴役。
+                            </p>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-white text-sm">「宗教是『我順服，所以我被接納。』福音是『我被接納，所以我順服。』」—— Timothy Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="space-y-10 scroll-mt-32">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-6xl font-black text-white/5 font-display">02</span>
+                        <h3 class="text-3xl font-display font-bold gold-gradient-text">失落的喜樂：當初的熱情去哪了？</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="bento-card col-span-12 md:col-span-8 bg-deep-800">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                引用經文 (加 4:12-16)
+                            </h4>
+                            <p class="text-xl text-gray-300 leading-relaxed font-serif quote-border pl-6 py-2">
+                                「你們當日所誇的福氣在哪裡呢？那時你們若能行，就是把自己的眼睛剜出來給我，也都情願。這是我可以給你們作見證的。如今我將真理告訴你們，就成了你們的仇敵嗎？」
+                            </p>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-4 flex flex-col justify-center">
+                            <h4 class="text-gold-400 font-bold mb-2">關鍵字</h4>
+                            <div class="text-4xl font-display font-black text-white">福氣</div>
+                            <div class="text-gold-500/50 font-serif italic mb-4">makarismos</div>
+                            <p class="text-sm text-gray-400">指深切的幸福感、蒙福的喜樂與滿足。</p>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-6 bg-gold-900/10">
+                            <h4 class="text-gold-400 font-bold mb-4">關鍵問題</h4>
+                            <p class="text-gray-200">為何當真理指出錯誤時，我們會將對方視為仇敵？</p>
+                            <p class="text-sm text-gray-400 mt-4 leading-relaxed">
+                                當焦點從「恩典」轉向「表現」時，信仰變得沉重。真理刺痛了宗教驕傲，防衛機制使我們將勸誡視為敵意。
+                            </p>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-6">
+                            <h4 class="text-gold-400 font-bold mb-4 italic">「蜜月後的衝突」</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                如同夫妻在蜜月期願意為對方付出一切，但在指出壞習慣時卻大發雷霆。改變的不是真理，而是被迷惑的心。
+                            </p>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-white text-sm">「真理若不刺痛我們，便無法醫治我們。」—— John Stott</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="space-y-10 scroll-mt-32">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-6xl font-black text-white/5 font-display">03</span>
+                        <h3 class="text-3xl font-display font-bold gold-gradient-text">靈命的陣痛：直等基督在心中成形</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="bento-card col-span-12 md:col-span-8 bg-deep-800">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                引用經文 (加 4:17-20)
+                            </h4>
+                            <p class="text-xl text-gray-300 leading-relaxed font-serif quote-border pl-6 py-2">
+                                「我小子啊，我為你們再受生產之苦，直等基督成形在你們心裡。我巴不得現今在你們那裡，改換口氣，因我為你們心裡作難。」
+                            </p>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-4">
+                            <h4 class="text-gold-400 font-bold mb-4">關鍵字解析</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="text-white font-bold block mb-1">熱心 (zēloō)</span>
+                                    <span class="text-sm text-gray-400">假教師用屬肉體的熱心討好，目的是為了掌控。</span>
+                                </div>
+                                <div>
+                                    <span class="text-white font-bold block mb-1">成形 (morphoō)</span>
+                                    <span class="text-sm text-gray-400">醫學指胚胎發育；屬靈指內在品格展現基督模樣。</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-6 bg-gold-900/10">
+                            <h4 class="text-gold-400 font-bold mb-4">關鍵問題</h4>
+                            <p class="text-gray-200">為何基督成形需要經歷「生產之苦」？</p>
+                            <p class="text-sm text-gray-400 mt-4 leading-relaxed">
+                                成長不是魔法，而是生命孕育。要脫去舊人、打破驕傲，這過程充滿了掙扎與代價。
+                            </p>
+                        </div>
+                        <div class="bento-card col-span-12 md:col-span-6 border-r-4 border-r-gold-500 text-right">
+                            <h4 class="text-gold-400 font-bold mb-4 italic">「米開朗基羅的雕刻」</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                「大衛本來就在大理石裡，我只是把不屬於他的部分鑿掉。」聖靈的工作是鑿去我們不屬基督的驕傲與自私，雖然痛，卻是為了顯明榮美。
+                            </p>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-white text-sm">「屬靈塑造是降服於神，讓基督生命在裡頭成熟。」—— Eugene Peterson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="space-y-16">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="p-3 bg-gold-400/10 rounded-xl">
+                        <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                    </div>
+                    <h2 class="text-4xl font-display font-bold text-white tracking-tight">講章文稿</h2>
+                </div>
+
+                <article class="prose prose-invert prose-gold max-w-none space-y-12 text-lg text-gray-300 leading-loose">
+                    <div class="text-center mb-16">
+                        <h3 class="text-3xl font-display font-bold text-gold-400">不再做奴僕：讓基督在你心裡成形</h3>
+                    </div>
+
+                    <p>親愛的弟兄姊妹，今天我們要看一段充滿著一位牧者心碎、焦急與極大愛腸的經文。保羅在寫給加拉太教會的信中，幾乎是用吶喊的語氣在呼喚著他們。加拉太人曾經領受了恩典的福音，嘗到了自由的滋味，但現在，他們卻選擇走回頭路。</p>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-white border-b border-gold-900/50 pb-2">一、從認識到迷失：為何重回奴役的枷鎖？</h4>
+                        <p>保羅在第8-9節中指出一個極具諷刺的屬靈危機：我們竟然會對「自由」感到不適應！加拉太人以為只要加上一點猶太人的律法、守一些節期，他們的信仰就會更高級、更完全。但保羅說，這不是進步，這是退化！這是回到<span class="text-gold-400 font-bold underline">「懦弱無用的小學」</span>。</p>
+                        <p>為什麼我們經歷了恩典，卻這麼容易重回律法主義？因為律法主義給我們一種「可以掌控」的錯覺。提摩太·凱勒曾說：「宗教的運作模式是：『我順服，所以我被接納。』福音的運作模式卻是：<span class="text-white font-bold italic">『我被接納，所以我順服。』</span>」當我們覺得自己最近表現很好、讀經很多，就覺得神比較愛我們；當我們軟弱時，就覺得神離棄了我們。這就是在做奴僕！</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-white border-b border-gold-900/50 pb-2">二、失落的喜樂：當初的熱情去哪了？</h4>
+                        <p>保羅回憶起起初的美好。第15節說：「你們當日所誇的福氣在哪裡呢？」當初的喜樂去哪裡了？當一個人深陷在「靠行為稱義」的泥沼中時，最先失去的就是喜樂。因為他永遠做得不夠好，永遠在跟別人比較。</p>
+                        <p>約翰·史托德說得好：<span class="text-gold-400 font-bold">「真理若不刺痛我們，便無法醫治我們。」</span>有時候，神會透過一篇講道、一位弟兄姊妹的勸誡來刺痛我們。當我們的驕傲被刺痛時，我們的反應是把對方當成仇敵，還是謙卑地悔改？</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-white border-b border-gold-900/50 pb-2">三、靈命的陣痛：直等基督在心中成形</h4>
+                        <p>保羅宣告了他事奉的終極目標。這也是我們今天的鑰節金句。保羅沒有說：「直等你們把聖經背熟」，也沒有說：「直等你們成為教會的領袖」。他說的是：<span class="text-gold-400 font-bold text-2xl italic">「直等基督成形在你們心裡。」</span></p>
+                        <p>屬靈的成長，就像孕育一個新生命，是需要經歷「陣痛」的。這個過程就像雕刻，神要一斧一鑿地敲掉我們生命中那些自私、驕傲、恐懼和虛假的宗教外衣。這會痛，會流淚，但這是為了讓那榮耀的基督，真實地在你我的思想、情感和意志中顯明出來。不要拒絕神在你生命中的雕刻，讓我們一起忍受這成形的陣痛！</p>
+                    </div>
+                </article>
+
+                <!-- Applications Bento -->
+                <div class="mt-24 space-y-12">
+                    <h3 class="text-2xl font-bold text-center gold-gradient-text">應用與實踐</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bento-card border-l-4 border-l-gold-500">
+                            <h5 class="text-white font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-400 rounded-full"></span> 檢視生命枷鎖
+                            </h5>
+                            <p class="text-sm text-gray-400">反省自己是否陷入「用服事換取愛」的焦慮，而非安息在恩典中。</p>
+                        </div>
+                        <div class="bento-card border-l-4 border-l-gold-500">
+                            <h5 class="text-white font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-400 rounded-full"></span> 尋回起初喜樂
+                            </h5>
+                            <p class="text-sm text-gray-400">當真理點出盲點時，是心生敵意，還是謙卑接受？</p>
+                        </div>
+                        <div class="bento-card border-l-4 border-l-gold-500">
+                            <h5 class="text-white font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-400 rounded-full"></span> 辨別虛假熱心
+                            </h5>
+                            <p class="text-sm text-gray-400">學會分辨建立生命的「真熱心」與企圖操控的「假熱心」。</p>
+                        </div>
+                        <div class="bento-card border-l-4 border-l-gold-500">
+                            <h5 class="text-white font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-400 rounded-full"></span> 擁抱成形陣痛
+                            </h5>
+                            <p class="text-sm text-gray-400">在苦難或瓶頸中，明白這是基督成形的必經陣痛。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Items -->
+                <div class="mt-16 bg-white/5 p-8 rounded-3xl border border-white/10">
+                    <h3 class="text-xl font-bold mb-6 text-gold-400">回應與實踐行動</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gold-400 text-black flex items-center justify-center font-bold text-xs">1</span>
+                            <p class="text-gray-300"><span class="text-white font-bold">放下宗教重擔：</span>本週列出一件讓你感到焦慮的宗教行為，宣告你是因信稱義，享受自由。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gold-400 text-black flex items-center justify-center font-bold text-xs">2</span>
+                            <p class="text-gray-300"><span class="text-white font-bold">接受真理檢驗：</span>邀請一位屬靈長輩指出你的盲點，並感恩領受。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gold-400 text-black flex items-center justify-center font-bold text-xs">3</span>
+                            <p class="text-gray-300"><span class="text-white font-bold">每日定靜禱告：</span>每天15分鐘安靜交給神，求神鑿去不屬祂的部分。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-16">
+            <div class="flex flex-col items-center gap-4 text-center">
+                <div class="p-3 bg-gold-400/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.866 19.883 22 16.017 22H14.017V21ZM1 15V9C1 6.79086 2.79086 5 5 5H8C9.10457 5 10 5.89543 10 7V8C10 9.10457 9.10457 10 8 10H5C4.44772 10 4 10.4477 4 11V15C4 15.5523 4.44772 16 5 16H8C9.10457 16 10 16.8954 10 18V21H8C4.13401 21 1 17.866 1 14V15Z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold">屬靈前輩佳句名言</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「宗教使人驕傲並與人隔離；福音使人謙卑並與人連結。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">提摩太·凱勒 (Timothy Keller)</span>
+                        <span class="text-xs text-gray-500">《山寨版的上帝》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「廉價的恩典是我們教會的死敵。它是沒有門徒訓練的恩典，是沒有十字架的恩典。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">潘霍華 (Dietrich Bonhoeffer)</span>
+                        <span class="text-xs text-gray-500">《做門徒的代價》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「屬靈生活的核心不在於我們對上帝的追求，而在於我們被上帝所認識、所擁抱。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">盧雲 (Henri Nouwen)</span>
+                        <span class="text-xs text-gray-500">《浪子回頭》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「神在我們生命中最大的目的，不是讓我們快樂或健康，而是要我們變得像祂的兒子耶穌基督。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">查爾斯·史丹利 (Charles Stanley)</span>
+                        <span class="text-xs text-gray-500">《生命的把手》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「基督徒的自由不在於我們可以做我們想做的事，而在於我們終於被釋放，能夠去做我們應該做的事。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">馬丁·路德 (Martin Luther)</span>
+                        <span class="text-xs text-gray-500">《基督徒的自由》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「沒有任何事物比虛假的宗教熱心更具毀滅性，因為它用屬靈的詞彙包裝了肉體的野心。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">約翰·加爾文 (John Calvin)</span>
+                        <span class="text-xs text-gray-500">《基督教要義》</span>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「如果基督沒有在你心裡掌權，那麼世界上任何的規條與律法都無法使你成聖。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">司布真 (Charles Spurgeon)</span>
+                        <span class="text-xs text-gray-500">《清晨甘露》</span>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「屬靈的塑造是一場漫長而順服的旅程，不是速成的果效，而是每天在平淡中讓基督掌權。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">畢德生 (Eugene Peterson)</span>
+                        <span class="text-xs text-gray-500">《長道漫漫的順服》</span>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「除非我們看見神是何等偉大，我們的心才能從世俗的偶像與虛假的依賴中得著真正的釋放。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">陶恕 (A.W. Tozer)</span>
+                        <span class="text-xs text-gray-500">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="bento-card glass flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-white">「恩典不只是赦免我們的罪，恩典更是改變我們本性的力量，使我們結出聖靈的果子。」</p>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <span class="text-gold-400 font-bold block">喬納森·愛德華茲 (Jonathan Edwards)</span>
+                        <span class="text-xs text-gray-500">《宗教情操真偽辨》</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 text-center text-gray-600 text-sm italic">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="floating-btn group">
+        <svg class="w-6 h-6 transition-transform group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Optional: Smooth scroll adjustment for sticky header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navHeight = document.querySelector('.sticky-nav').offsetHeight;
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - navHeight - 20,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

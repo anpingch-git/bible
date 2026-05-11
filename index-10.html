@@ -58,6 +58,39 @@
 
         /* 分頁按鈕 */
         .page-btn { padding: 5px 12px; margin: 0 3px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; font-size: 12px; transition: 0.2s; color: #fff; }
+		
+		/* 下拉選單樣式優化 */
+.page-select {
+    background: rgba(255, 255, 255, 0.05);
+    color: #f9d21b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+    appearance: none; /* 移除原生箭頭 */
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+.page-select:hover { border-color: #f9d21b; }
+/* 下拉選單內的選項背景（部分瀏覽器限制修改此處） */
+.page-select option { background: #1a1a1a; color: #fff; }
+
+/* 箭頭按鈕微調 */
+.nav-arrow-btn {
+    padding: 5px 10px;
+    color: #f9d21b;
+    font-size: 12px;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+.nav-arrow-btn:hover:not(:disabled) { opacity: 1; transform: scale(1.2); }
+.nav-arrow-btn:disabled { color: #555; cursor: not-allowed; }
+
+		
         .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; border-color: #f9d21b; }
 
         /* 浮動回到頂部按鈕 */
@@ -219,20 +252,46 @@
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
-        function renderToolbarPagination() {
-            const container = document.getElementById('toolbar-pagination');
-            container.innerHTML = '';
-            const totalPages = Math.ceil(filteredNotes.length / itemsPerPage);
-            if (totalPages <= 1) return;
+       function renderToolbarPagination() {
+    const container = document.getElementById('toolbar-pagination');
+    container.innerHTML = '';
+    const totalPages = Math.ceil(filteredNotes.length / itemsPerPage);
+    if (totalPages <= 1) return;
 
-            for (let i = 1; i <= totalPages; i++) {
-                const btn = document.createElement('button');
-                btn.innerText = i;
-                btn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
-                btn.onclick = () => { currentPage = i; renderNotes(); };
-                container.appendChild(btn);
-            }
-        }
+    // 1. 上一頁按鈕 (左三角形)
+    const prevBtn = document.createElement('button');
+    prevBtn.innerHTML = '&#9664;'; // ◀
+    prevBtn.className = 'nav-arrow-btn';
+    prevBtn.disabled = (currentPage === 1);
+    prevBtn.onclick = () => { if(currentPage > 1) { currentPage--; renderNotes(); } };
+
+    // 2. 下拉選單
+    const select = document.createElement('select');
+    select.className = 'page-select mx-2';
+    for (let i = 1; i <= totalPages; i++) {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.innerText = i;
+        if (i === currentPage) opt.selected = true;
+        select.appendChild(opt);
+    }
+    select.onchange = (e) => {
+        currentPage = parseInt(e.target.value);
+        renderNotes();
+    };
+
+    // 3. 下一頁按鈕 (右三角形)
+    const nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '&#9654;'; // ▶
+    nextBtn.className = 'nav-arrow-btn';
+    nextBtn.disabled = (currentPage === totalPages);
+    nextBtn.onclick = () => { if(currentPage < totalPages) { currentPage++; renderNotes(); } };
+
+    // 組合並放入容器
+    container.appendChild(prevBtn);
+    container.appendChild(select);
+    container.appendChild(nextBtn);
+}
 
         function showMap() {
             document.getElementById('map-view').classList.remove('hidden');

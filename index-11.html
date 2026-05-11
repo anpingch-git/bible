@@ -38,9 +38,10 @@
         .nav-link:hover { color: #f9d21b; }
         
         .back-home-btn {
-            background: rgba(249, 210, 27, 0.1); border: 1px solid #f9d21b; color: #f9d21b;
-            padding: 6px 16px; border-radius: 50px; font-weight: 900; font-size: 13px; transition: 0.3s;
-        }
+			background: rgba(249, 210, 27, 0.1);     border: 1px solid #f9d21b;     color: #f9d21b;    /* 修改這裡：調整內距讓它變成正方形或圓形 */
+			padding: 8px; 	  border-radius: 12px; /* 從 50px 改為 12px，更有科技感 */
+			display: flex;    align-items: center;    justify-content: center;    transition: 0.3s;
+		}
         .back-home-btn:hover { background: #f9d21b; color: #000; box-shadow: 0 0 15px rgba(249, 210, 27, 0.4); }
 
         /* 書卷按鈕 */
@@ -122,7 +123,12 @@
             </div>
 
             <div id="gallery-nav" class="hidden w-full flex justify-between items-center ml-10">
-                <button class="back-home-btn" onclick="showMap()">← 回到首頁</button>
+                <button class="back-home-btn" onclick="showMap()"title="回到首頁">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+					<polyline points="9 22 9 12 15 12 15 22"></polyline>
+					</svg>
+				</button>
                 <div id="toolbar-pagination" class="flex items-center"></div>
             </div>
         </div>

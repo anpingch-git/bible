@@ -212,7 +212,7 @@
 			//filteredNotes.sort((a, b) => (a.date > b.date ? -1 : 1));
             //currentPage = 1;
 			
-			// 進入時預設按「經文」升序排列 (1, 2, 3...)
+			// 進入時預設按「經文」降序排列 (1, 2, 3...)
 			sortOrder.chapter = 'desc';
 			filteredNotes.sort((a, b) => a.chapter.localeCompare(b.chapter, undefined, { numeric: true }));
 			currentPage = 1;

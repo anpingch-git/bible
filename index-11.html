@@ -61,38 +61,18 @@
         .page-btn { padding: 5px 12px; margin: 0 3px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; font-size: 12px; transition: 0.2s; color: #fff; }
 		
 		/* 下拉選單樣式優化 */
-.page-select {
-    background: rgba(255, 255, 255, 0.05);
-    color: #f9d21b;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    padding: 4px 8px;
-    font-size: 14px;
-    font-weight: 800;
-    cursor: pointer;
-    outline: none;
-    appearance: none; /* 移除原生箭頭 */
-    -webkit-appearance: none;
-    text-align: center;
-}
+		.page-select {background: rgba(255, 255, 255, 0.05); color: #f9d21b; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px;padding: 4px 8px;
+			font-size: 14px; font-weight: 800; cursor: pointer; outline: none;	 appearance: none; /* 移除原生箭頭 */ -webkit-appearance: none; text-align: center;}
 
-.page-select:hover { border-color: #f9d21b; }
-/* 下拉選單內的選項背景（部分瀏覽器限制修改此處） */
-.page-select option { background: #1a1a1a; color: #fff; }
+		.page-select:hover { border-color: #f9d21b; }
+		/* 下拉選單內的選項背景（部分瀏覽器限制修改此處） */
+		.page-select option { background: #1a1a1a; color: #fff; }
 
-/* 箭頭按鈕微調 */
-.nav-arrow-btn {
-    padding: 5px 10px;
-    color: #f9d21b;
-    font-size: 12px;
-    transition: 0.2s;
-    opacity: 0.8;
-}
-.nav-arrow-btn:hover:not(:disabled) { opacity: 1; transform: scale(1.2); }
-.nav-arrow-btn:disabled { color: #555; cursor: not-allowed; }
-
-		
-        .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; border-color: #f9d21b; }
+		/* 箭頭按鈕微調 */
+		.nav-arrow-btn { padding: 5px 10px; color: #f9d21b; font-size: 12px; transition: 0.2s; opacity: 0.8;}
+		.nav-arrow-btn:hover:not(:disabled) { opacity: 1; transform: scale(1.2); }
+		.nav-arrow-btn:disabled { color: #555; cursor: not-allowed; }
+	    .page-btn.active { background: #f9d21b; color: #000; font-weight: bold; border-color: #f9d21b; }
 
         /* 浮動回到頂部按鈕 */
         #scroll-to-top {
@@ -276,60 +256,60 @@
         }
 
        function renderToolbarPagination() {
-    const container = document.getElementById('toolbar-pagination');
-    container.innerHTML = '';
-    const totalPages = Math.ceil(filteredNotes.length / itemsPerPage);
-    if (totalPages <= 1 && filteredNotes.length === 0) return;
+		const container = document.getElementById('toolbar-pagination');
+		container.innerHTML = '';
+		const totalPages = Math.ceil(filteredNotes.length / itemsPerPage);
+		if (totalPages <= 1 && filteredNotes.length === 0) return;
 	
-	// --- 1. 新增排序按鈕組 ---
-    const createSortBtn = (field, iconSvg, title) => {
+		// --- 1. 新增排序按鈕組 ---
+		const createSortBtn = (field, iconSvg, title) => {
         const btn = document.createElement('button');
         btn.className = 'nav-arrow-btn mr-2'; // 延用你之前的箭頭樣式
         btn.title = `${title}排序 (${sortOrder[field] === 'asc' ? '升序' : '降序'})`;
         btn.innerHTML = iconSvg;
         btn.onclick = () => handleSort(field);
         return btn;
-    };
+		};
 
-    // 日期圖示 (日曆)
-    const dateIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>`;
-    // 經文圖示 (書卷)
-    const chapterIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>`;
+		// 日期圖示 (日曆)
+		const dateIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>`;
+		// 經文圖示 (書卷)
+		const chapterIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>`;
 
-    container.appendChild(createSortBtn('date', dateIcon, '日期'));
-    container.appendChild(createSortBtn('chapter', chapterIcon, '經文'));
+		container.appendChild(createSortBtn('date', dateIcon, '日期'));
+		container.appendChild(createSortBtn('chapter', chapterIcon, '經文'));
 
-    // 1. 上一頁按鈕 (左三角形)
-    const prevBtn = document.createElement('button');
-    prevBtn.innerHTML = '&#9664;'; // ◀
-    prevBtn.className = 'nav-arrow-btn';
-    prevBtn.disabled = (currentPage === 1);
-    prevBtn.onclick = () => { if(currentPage > 1) { currentPage--; renderNotes(); } };
+		// 1. 上一頁按鈕 (左三角形)
+		const prevBtn = document.createElement('button');
+		prevBtn.innerHTML = '&#9664;'; // ◀
+		prevBtn.className = 'nav-arrow-btn';
+		prevBtn.disabled = (currentPage === 1);
+		prevBtn.onclick = () => { if(currentPage > 1) { currentPage--; renderNotes(); } };
 
-    // 2. 下拉選單
-    const select = document.createElement('select');
-    select.className = 'page-select mx-2';
-    for (let i = 1; i <= totalPages; i++) {
+		// 2. 下拉選單
+		const select = document.createElement('select');
+		select.className = 'page-select mx-2';
+		for (let i = 1; i <= totalPages; i++) {
         const opt = document.createElement('option');
         opt.value = i;
         opt.innerText = i;
         if (i === currentPage) opt.selected = true;
         select.appendChild(opt);
-    }
-    select.onchange = (e) => {
+		}
+		select.onchange = (e) => {
         currentPage = parseInt(e.target.value); renderNotes(); };
 
-    // 3. 下一頁按鈕 (右三角形)
-    const nextBtn = document.createElement('button');
-    nextBtn.innerHTML = '&#9654;'; // ▶
-    nextBtn.className = 'nav-arrow-btn';
-    nextBtn.disabled = (currentPage === totalPages || totalPages === 0);
-    nextBtn.onclick = () => { if(currentPage < totalPages) { currentPage++; renderNotes(); } };
+		// 3. 下一頁按鈕 (右三角形)
+		const nextBtn = document.createElement('button');
+		nextBtn.innerHTML = '&#9654;'; // ▶
+		nextBtn.className = 'nav-arrow-btn';
+		nextBtn.disabled = (currentPage === totalPages || totalPages === 0);
+		nextBtn.onclick = () => { if(currentPage < totalPages) { currentPage++; renderNotes(); } };
 
-    // 組合並放入容器
-    container.appendChild(prevBtn);
-    container.appendChild(select);
-    container.appendChild(nextBtn);
+		// 組合並放入容器
+		container.appendChild(prevBtn);
+		container.appendChild(select);
+		container.appendChild(nextBtn);
 }
 
         function showMap() {
@@ -359,28 +339,28 @@
         init();
 		
 		function handleSort(field) {
-    // 1. 切換排序方向
-    sortOrder[field] = sortOrder[field] === 'asc' ? 'desc' : 'asc';
+			// 1. 切換排序方向
+			sortOrder[field] = sortOrder[field] === 'asc' ? 'desc' : 'asc';
 
-    filteredNotes.sort((a, b) => {
-        // 2. 針對「經文(chapter)」進行自然排序處理
-        if (field === 'chapter') {
+			filteredNotes.sort((a, b) => {
+			// 2. 針對「經文(chapter)」進行自然排序處理
+			if (field === 'chapter') {
             return sortOrder[field] === 'asc'
                 ? a.chapter.localeCompare(b.chapter, undefined, { numeric: true, sensitivity: 'base' })
                 : b.chapter.localeCompare(a.chapter, undefined, { numeric: true, sensitivity: 'base' });
-        }
+			}
 
-        // 3. 針對「日期」或其他欄位維持一般排序
-        let valA = a[field];
-        let valB = b[field];
-        if (valA < valB) return sortOrder[field] === 'asc' ? -1 : 1;
-        if (valA > valB) return sortOrder[field] === 'asc' ? 1 : -1;
-        return 0;
-    });
+			// 3. 針對「日期」或其他欄位維持一般排序
+			let valA = a[field];
+			let valB = b[field];
+			if (valA < valB) return sortOrder[field] === 'asc' ? -1 : 1;
+			if (valA > valB) return sortOrder[field] === 'asc' ? 1 : -1;
+			return 0;
+			});
 
-    // 4. 重置頁碼並重新渲染
-    currentPage = 1;
-    renderNotes();
+			// 4. 重置頁碼並重新渲染
+			currentPage = 1;
+			renderNotes();
 }
 
     </script>

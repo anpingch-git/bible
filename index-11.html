@@ -342,21 +342,28 @@
         init();
 		
 		function handleSort(field) {
-    // 切換該欄位的排序方向
+    // 1. 切換排序方向
     sortOrder[field] = sortOrder[field] === 'asc' ? 'desc' : 'asc';
 
     filteredNotes.sort((a, b) => {
+        // 2. 針對「經文(chapter)」進行自然排序處理
+        if (field === 'chapter') {
+            return sortOrder[field] === 'asc'
+                ? a.chapter.localeCompare(b.chapter, undefined, { numeric: true, sensitivity: 'base' })
+                : b.chapter.localeCompare(a.chapter, undefined, { numeric: true, sensitivity: 'base' });
+        }
+
+        // 3. 針對「日期」或其他欄位維持一般排序
         let valA = a[field];
         let valB = b[field];
-        
-        // 如果是經文(chapter)，可能需要簡單處理字串比較
         if (valA < valB) return sortOrder[field] === 'asc' ? -1 : 1;
         if (valA > valB) return sortOrder[field] === 'asc' ? 1 : -1;
         return 0;
     });
 
-    currentPage = 1; // 排序後回到第一頁
-    renderNotes();   // 重新渲染列表與工具列
+    // 4. 重置頁碼並重新渲染
+    currentPage = 1;
+    renderNotes();
 }
 
     </script>

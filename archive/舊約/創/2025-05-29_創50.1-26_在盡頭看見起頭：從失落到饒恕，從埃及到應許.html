@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創50:1-26: 在盡頭看見起頭：從失落到饒恕，從埃及到應許</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c4a47c', // Gold/Copper accent
+                        secondary: '#2d3748',
+                        accent: '#4fd1c5',
+                        dark: {
+                            base: '#020617',
+                            card: '#0f172a',
+                            border: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { transform: 'translateY(20px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fef3c7 0%, #c4a47c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sticky-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .verse-box::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 80px;
+            color: rgba(196, 164, 124, 0.2);
+            font-family: serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #c4a47c; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-nav fixed top-0 w-full z-50 py-3 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-primary font-display font-bold text-sm tracking-widest hidden md:block uppercase">創世記 50:1-26</div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wider text-slate-300 overflow-x-auto no-scrollbar">
+                <a href="#prayer-section" class="hover:text-primary transition-colors whitespace-nowrap">禱告</a>
+                <a href="#outline-section" class="hover:text-primary transition-colors whitespace-nowrap">大綱</a>
+                <a href="#sermon-section" class="hover:text-primary transition-colors whitespace-nowrap">講章</a>
+                <a href="#quotes-section" class="hover:text-primary transition-colors whitespace-nowrap">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_0b771e5f-3c8d-44ec-a0ca-e7df52f1b56e.jpg' alt='創世記背景' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-base/20 via-dark-base/60 to-dark-base"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-fade-in">
+            <div class="inline-block px-3 py-1 mb-6 border border-primary/40 rounded-full text-primary text-xs tracking-widest uppercase font-bold">Genesis 50:1-26</div>
+            <h1 class="text-4xl md:text-7xl font-black font-display mb-6 leading-tight">
+                在盡頭看見<span class="text-gradient">起頭</span>
+            </h1>
+            <p class="text-lg md:text-2xl font-light text-slate-300 tracking-wide">從失落到饒恕，從埃及到應許</p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 pb-24">
+
+        <!-- Golden Verse Section -->
+        <section class="py-16 animate-slide-up">
+            <div class="verse-box relative glass-card p-8 md:p-12 rounded-3xl overflow-hidden border-l-4 border-l-primary shadow-2xl">
+                <div class="relative z-10">
+                    <h3 class="text-primary font-display font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.976-2.888a1 1 0 00-1.175 0l-3.976 2.888c-.784.57-1.838-.197-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                        關鍵金句
+                    </h3>
+                    <p class="text-2xl md:text-4xl font-bold leading-relaxed text-slate-100">
+                        「從前你們的意思是要害我，但<span class="text-primary underline underline-offset-8 decoration-primary/30">神的意思原是好的</span>，要保全許多人的性命，成就今日的光景。」
+                    </p>
+                    <p class="mt-6 text-slate-400 font-display">— 創世記 50:20</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer-section" class="py-16 text-center animate-slide-up" style="animation-delay: 0.2s">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-6 animate-float">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-8">禱告詞</h2>
+            <div class="max-w-2xl mx-auto glass-card p-8 rounded-2xl italic text-slate-300 leading-loose text-lg">
+                主啊，我們感謝祢。在我們生命中最深的失落與傷痛中，祢的主權從未離開。求祢賜給我們約瑟的眼睛，能看見在人一切的惡意與環境的艱難背後，祢那雙編織美好旨意的手。幫助我們放下苦毒，選擇饒恕；教導我們在人生的「埃及」中，依然緊緊抓住祢帶領我們歸回「應許之地」的盼望。奉耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline-section" class="py-16 scroll-mt-20">
+            <h2 class="text-2xl font-display font-bold mb-10 flex items-center gap-3">
+                <span class="p-2 bg-primary/20 text-primary rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </span>
+                分段大綱導覽
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass-card p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                    <span class="text-xs font-bold text-primary mb-2 block tracking-widest">Part 01</span>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">告別與尊榮</h3>
+                    <p class="text-slate-400 text-sm mb-4">在哀慟中看見盼望</p>
+                    <span class="text-xs bg-slate-800 px-2 py-1 rounded text-slate-300">創 50:1-14</span>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                    <span class="text-xs font-bold text-primary mb-2 block tracking-widest">Part 02</span>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">恐懼與饒恕</h3>
+                    <p class="text-slate-400 text-sm mb-4">在惡意中看見神意</p>
+                    <span class="text-xs bg-slate-800 px-2 py-1 rounded text-slate-300">創 50:15-21</span>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl hover:border-primary/50 transition-all group">
+                    <span class="text-xs font-bold text-primary mb-2 block tracking-widest">Part 03</span>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">棺木與應許</h3>
+                    <p class="text-slate-400 text-sm mb-4">在停滯中看見未來</p>
+                    <span class="text-xs bg-slate-800 px-2 py-1 rounded text-slate-300">創 50:22-26</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <div class="space-y-24">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="text-4xl font-black text-slate-800">01</div>
+                    <div>
+                        <h2 class="text-3xl font-bold">告別與尊榮：在哀慟中看見盼望</h2>
+                        <p class="text-primary font-medium">創世記 50:1-14</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-8 space-y-6">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h4 class="text-lg font-bold mb-4 text-primary flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                深度解析
+                            </h4>
+                            <div class="space-y-4 text-slate-300 leading-relaxed">
+                                <p><strong class="text-slate-100">關鍵字解析 (bakah / בָּכָה)：</strong> 約瑟的哀哭（1節）展現了極深的情感。聖經並未否定悲傷，哀慟是愛的最真實表達，也是神所允許的醫治過程。</p>
+                                <p><strong class="text-slate-100">關鍵問題：</strong> 面對深切的失去，如何有盼望地告別？</p>
+                                <p class="pl-4 border-l-2 border-slate-700">約瑟遵從遺願安葬雅各於應許之地，這表明終極歸屬不是繁華的埃及。這是一次「待續」的告別。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="bg-primary/10 border border-primary/20 p-6 rounded-2xl">
+                            <h5 class="font-bold text-primary mb-3">屬靈佳句</h5>
+                            <p class="text-sm italic text-slate-200">「感恩能將痛苦的記憶轉化為平靜的喜樂。」</p>
+                            <p class="text-xs mt-2 text-primary">— 潘霍華</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="text-4xl font-black text-slate-800">02</div>
+                    <div>
+                        <h2 class="text-3xl font-bold">恐懼與饒恕：在惡意中看見神意</h2>
+                        <p class="text-primary font-medium">創世記 50:15-21</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-8 space-y-6">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h4 class="text-lg font-bold mb-4 text-primary flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                深度解析
+                            </h4>
+                            <div class="space-y-4 text-slate-300 leading-relaxed">
+                                <p><strong class="text-slate-100">關鍵字解析 (chashab / חָשַׁב)：</strong> 意為計畫或編織。哥哥們的計畫是惡意的，但神的「chashab」是將惡意的絲線編織成拯救的計畫。</p>
+                                <p><strong class="text-slate-100">關鍵問題：</strong> 被深刻傷害時，如何真正饒恕？</p>
+                                <p class="pl-4 border-l-2 border-slate-700">關鍵在於「我豈能代替神呢？」約瑟放棄了審判權，相信神能將惡轉化為至高的善。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="bg-primary/10 border border-primary/20 p-6 rounded-2xl">
+                            <h5 class="font-bold text-primary mb-3">例證故事</h5>
+                            <p class="text-sm text-slate-200">二戰時期彭柯麗在面對納粹守衛時，靠著神的恩典伸出手去饒恕。她發現，當我們順服時，神就賜下愛的能力。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="text-4xl font-black text-slate-800">03</div>
+                    <div>
+                        <h2 class="text-3xl font-bold">棺木與應許：在停滯中看見未來</h2>
+                        <p class="text-primary font-medium">創世記 50:22-26</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-8 space-y-6">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h4 class="text-lg font-bold mb-4 text-primary flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                深度解析
+                            </h4>
+                            <div class="space-y-4 text-slate-300 leading-relaxed">
+                                <p><strong class="text-slate-100">關鍵字解析 (paqad / פָּקַד)：</strong> 意為眷顧、介入。約瑟臨終堅信神必定會介入歷史，祂不會忘記祂的百姓。</p>
+                                <p><strong class="text-slate-100">關鍵問題：</strong> 在看似毫無改變的「埃及」中，如何持守信心？</p>
+                                <p class="pl-4 border-l-2 border-slate-700">約瑟的棺木成了一個記號。真信心不在於有生之年看見應許實現，而在於將未來託付給信實的神。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="bg-primary/10 border border-primary/20 p-6 rounded-2xl">
+                            <h5 class="font-bold text-primary mb-3">屬靈佳句</h5>
+                            <p class="text-sm italic text-slate-200">「信心就是相信神在黑夜中所說的話，並在白晝到來時看見它的成就。」</p>
+                            <p class="text-xs mt-2 text-primary">— 查爾斯·史丹利</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application Section -->
+        <section class="py-24">
+            <h2 class="text-3xl font-display font-bold mb-12 text-center flex justify-center items-center gap-3">
+                <span class="w-12 h-1 px-0 bg-primary"></span>
+                應用方向與行動
+                <span class="w-12 h-1 px-0 bg-primary"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-3xl border-t-4 border-t-accent">
+                    <h3 class="text-xl font-bold mb-6 text-accent flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        應用方向
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex gap-3"><span class="text-accent">●</span> 容許健康的哀悼，在悲傷中仰望應許。</li>
+                        <li class="flex gap-3"><span class="text-accent">●</span> 轉換視角，將生命中的審判權交還給神。</li>
+                        <li class="flex gap-3"><span class="text-accent">●</span> 不被世界的成功綁架，為永恆國度而活。</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border-t-4 border-t-primary">
+                    <h3 class="text-xl font-bold mb-6 text-primary flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        回應行動
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex gap-3"><span class="text-primary">●</span> 寫一封「主權與饒恕」的信給傷害你的人（不寄出）。</li>
+                        <li class="flex gap-3"><span class="text-primary">●</span> 建立「眷顧 (Paqad)」紀念碑，列出神介入的時刻。</li>
+                        <li class="flex gap-3"><span class="text-primary">●</span> 本週特別為下一代的屬靈眼光禱告。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript -->
+        <section id="sermon-section" class="py-24 scroll-mt-20">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-display font-black mb-4">講章文稿</h2>
+                    <p class="text-slate-400">完整信息錄稿</p>
+                </div>
+                
+                <div class="glass-card p-8 md:p-16 rounded-[2rem] text-slate-300 leading-relaxed space-y-8 text-lg">
+                    <p class="font-medium text-white italic">「弟兄姊妹，平安。如果要求你為一本偉大的著作寫下結局，你會怎麼寫？創世記這本結局卻停在：『約瑟死了...把他收殮在棺材裡，停在埃及。』」</p>
+                    
+                    <p>一口棺材，停在外邦的土地上。這似乎是個無言的結局，但在這看似盡頭的死亡與停滯中，卻隱藏著偉大救贖的起頭。今天我們要從創世記第50章，看見三個重要的屬靈視角。</p>
+
+                    <div class="py-4 border-l-4 border-primary pl-6">
+                        <h4 class="text-white font-bold text-xl mb-3">告別與尊榮：在哀慟中看見盼望</h4>
+                        <p>聖經從不掩飾眼淚。哀哭是我們對所愛之人最真實的尊榮。約瑟的哀哭沒有使他絕望，因為他帶著盼望做了一件事——將父親送回迦南。這是一個強烈的宣告：<span class="text-primary font-bold">埃及再好，不是我的家；神的應許，才是我的歸屬。</span></p>
+                    </div>
+
+                    <div class="py-4 border-l-4 border-primary pl-6">
+                        <h4 class="text-white font-bold text-xl mb-3">恐懼與饒恕：在惡意中看見神意</h4>
+                        <p>約瑟說出了最偉大的金句：<span class="text-white font-bold italic">「不要害怕，我豈能代替神呢？」</span> 約瑟沒有美化罪惡，但他看見了在哥哥們的手背後，還有一雙更大的手。<span class="text-primary font-bold">神將人惡意的黑線，與祂恩典的金線交織在一起，編織成拯救的宏大計畫。</span></p>
+                    </div>
+
+                    <div class="py-4 border-l-4 border-primary pl-6">
+                        <h4 class="text-white font-bold text-xl mb-3">棺木與應許：在停滯中看見未來</h4>
+                        <p>約瑟拒絕將自己永遠留在埃及的輝煌中。他把棺木留給後代當作記號。只要看到棺木，就能想起遺言：<span class="text-white font-bold italic">「神必定眷顧你們！」</span> 你的環境可能停滯，但神的主權從未停歇。</p>
+                    </div>
+
+                    <div class="mt-12 p-8 bg-slate-800/50 rounded-2xl">
+                        <h4 class="text-primary font-display font-bold mb-4">結論：三個關鍵字</h4>
+                        <div class="flex flex-wrap gap-8 justify-center text-3xl font-black text-white">
+                            <span class="tracking-tighter">主權</span>
+                            <span class="tracking-tighter">饒恕</span>
+                            <span class="tracking-tighter">應許</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes-section" class="py-24 scroll-mt-20">
+            <h2 class="text-3xl font-display font-bold mb-12 text-center">名言佳句</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-primary group hover:bg-primary/5 transition-colors">
+                    <p class="text-slate-200 mb-3 group-hover:text-white">「饒恕意味著放棄你對那傷害你之人進行報復的權利。你把這個權利交給了神。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-primary text-sm font-bold">— 提摩太·凱勒</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-tighter">《被隱藏的傷痛與饒恕》</span>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-primary group hover:bg-primary/5 transition-colors">
+                    <p class="text-slate-200 mb-3 group-hover:text-white">「當我們能將自己的傷痕轉化為醫治他人的泉源時，我們就成了『負傷的治療者』。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-primary text-sm font-bold">— 盧雲</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-tighter">《負傷的治療者》</span>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-primary group hover:bg-primary/5 transition-colors">
+                    <p class="text-slate-200 mb-3 group-hover:text-white">「神的主權與人的自由並不衝突。神甚至能使用人的惡意來成就祂永恆的善意。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-primary text-sm font-bold">— 陶恕</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-tighter">《神之屬性》</span>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-primary group hover:bg-primary/5 transition-colors">
+                    <p class="text-slate-200 mb-3 group-hover:text-white">「十字架是神處理人類惡意最極致的展現；神沒有逃避痛苦，而是進入其中。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-primary text-sm font-bold">— 約翰·史托德</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-tighter">《基督的十字架》</span>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-primary group hover:bg-primary/5 transition-colors">
+                    <p class="text-slate-200 mb-3 group-hover:text-white">「如果我們不相信神統管萬有，連一根頭髮掉落都在祂的旨意中，我們將陷入絕望。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-primary text-sm font-bold">— 約翰·加爾文</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-tighter">《基督教要義》</span>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-l-2 border-primary group hover:bg-primary/5 transition-colors">
+                    <p class="text-slate-200 mb-3 group-hover:text-white">「完全順服神的人，會發現神能用他生命中最破碎的片段，拼湊出最美麗的圖畫。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-primary text-sm font-bold">— 慕迪</span>
+                        <span class="text-[10px] text-slate-500 uppercase tracking-tighter">講章集</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="text-center pt-12 pb-8">
+            <p class="text-xs text-slate-600 bg-slate-900/50 py-2 px-4 rounded-full inline-block">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#prayer-section" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-slate-900 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

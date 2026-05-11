@@ -212,11 +212,16 @@
 			//filteredNotes.sort((a, b) => (a.date > b.date ? -1 : 1));
             //currentPage = 1;
 			
-			// 進入時預設按「經文」降序排列 (1, 2, 3...)
+			// 進入時預設按「經文」升序排列 (1, 2, 3...)
+            //sortOrder.chapter = 'asc';
+			//filteredNotes.sort((a, b) => a.chapter.localeCompare(b.chapter, undefined, { numeric: true }));
+			
+			// 進入時預設按「經文」降序排列 (10, 9, 8...)
 			sortOrder.chapter = 'desc';
-			filteredNotes.sort((a, b) => a.chapter.localeCompare(b.chapter, undefined, { numeric: true }));
+			filteredNotes.sort((a, b) => b.chapter.localeCompare(a.chapter, undefined, { numeric: true }));
 			currentPage = 1;
-                
+            
+			
             document.getElementById('map-view').classList.add('hidden');
             document.getElementById('home-nav').classList.add('hidden');
             document.getElementById('gallery-view').classList.remove('hidden');

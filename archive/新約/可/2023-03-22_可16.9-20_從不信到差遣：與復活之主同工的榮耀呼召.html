@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可16:9-20:從不信到差遣：與復活之主同工的榮耀呼召</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FDE68A',
+                            DEFAULT: '#D4AF37',
+                            dark: '#92400E',
+                        },
+                        dark: {
+                            base: '#0F172A',
+                            surface: '#1E293B',
+                            accent: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 0.9, filter: 'brightness(1)' },
+                            '50%': { opacity: 0.5, filter: 'brightness(0.3)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F172A;
+            color: #F8FAFC;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #92400E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Banner & Header -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_285507d3-cf40-4418-88ac-683f7f11f8a2.jpg' alt='Banner' class="w-full h-full object-cover animate-pulse-slow" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-dark-base/60 to-dark-base"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h2 class="text-gold font-display text-xl md:text-2xl font-light mb-2 tracking-widest uppercase">Mark 16:9-20</h2>
+            <h1 class="text-4xl md:text-6xl font-display font-black leading-tight mb-4 drop-shadow-2xl">
+                從不信到差遣：<br/><span class="gradient-text">與復活之主同工的榮耀呼召</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky top-0 z-50 bg-dark-base/80 backdrop-blur-md border-b border-white/10 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <span class="text-gold font-bold text-lg tracking-tight">可16:9-20</span>
+            <div class="flex items-center space-x-6 overflow-x-auto">
+                <a href="#prayer" class="nav-link text-sm font-semibold tracking-wide text-slate-300 hover:text-white transition whitespace-nowrap">禱告</a>
+                <a href="#outline" class="nav-link text-sm font-semibold tracking-wide text-slate-300 hover:text-white transition whitespace-nowrap">大綱</a>
+                <a href="#sermon" class="nav-link text-sm font-semibold tracking-wide text-slate-300 hover:text-white transition whitespace-nowrap">講章</a>
+                <a href="#quotes" class="nav-link text-sm font-semibold tracking-wide text-slate-300 hover:text-white transition whitespace-nowrap">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Golden Verse -->
+        <section id="verse" class="text-center">
+            <div class="inline-block p-1 rounded-full bg-gradient-to-r from-gold/20 via-gold to-gold/20 mb-6">
+                <div class="bg-dark-base rounded-full px-6 py-1">
+                    <span class="text-gold font-bold tracking-widest text-sm uppercase">【 金句 】</span>
+                </div>
+            </div>
+            <blockquote class="text-2xl md:text-4xl font-display font-light italic leading-relaxed text-slate-100 max-w-3xl mx-auto">
+                「門徒出去，到處宣傳福音。主和他們同工，用神蹟隨著，證實所傳的道。阿們！」
+                <footer class="mt-4 text-gold text-lg font-bold">（馬可福音 16:20）</footer>
+            </blockquote>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card p-8 md:p-12 border-l-4 border-gold">
+            <div class="flex items-center gap-4 mb-6">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v5l3 3"/></svg>
+                <h2 class="text-3xl font-display font-black tracking-tight">禱告詞</h2>
+            </div>
+            <p class="text-lg md:text-xl leading-relaxed text-slate-300 italic">
+                親愛的主耶穌，感謝祢為我們受死並從死裡復活，勝過了死亡與黑暗的權勢。求祢赦免我們常常如同初期的門徒一樣，心裡剛硬、充滿遲疑與不信。求聖靈開啟我們的屬靈眼睛，讓我們真看見祢復活的大能，並勇敢承接祢傳福音給萬民的大使命。願我們無論走到何處，都能經歷祢與我們同工的恩典，用祢的權能證實我們所傳的道。奉復活之主耶穌基督的名求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                <h2 class="text-3xl font-display font-black tracking-tight">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#section-1" class="group p-6 glass-card hover:bg-gold/10 transition-all duration-300 text-left">
+                    <span class="text-gold font-bold block mb-2">第一階段</span>
+                    <p class="font-bold text-lg leading-snug group-hover:text-gold transition">突破不信的迷霧：遇見復活的生命主</p>
+                    <span class="text-xs text-slate-400 mt-4 block">可16:9-14</span>
+                </a>
+                <a href="#section-2" class="group p-6 glass-card hover:bg-gold/10 transition-all duration-300 text-left">
+                    <span class="text-gold font-bold block mb-2">第二階段</span>
+                    <p class="font-bold text-lg leading-snug group-hover:text-gold transition">領受國度的使命：帶著權柄去傳揚</p>
+                    <span class="text-xs text-slate-400 mt-4 block">可16:15-18</span>
+                </a>
+                <a href="#section-3" class="group p-6 glass-card hover:bg-gold/10 transition-all duration-300 text-left">
+                    <span class="text-gold font-bold block mb-2">第三階段</span>
+                    <p class="font-bold text-lg leading-snug group-hover:text-gold transition">經歷同在的應許：與主同工的榮耀</p>
+                    <span class="text-xs text-slate-400 mt-4 block">可16:19-20</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Deep Dive 1 -->
+        <article id="section-1" class="space-y-8 scroll-mt-24">
+            <h3 class="text-4xl font-display font-black text-gold">一、突破不信的迷霧：遇見復活的生命主</h3>
+            <div class="bg-dark-surface rounded-3xl p-6 md:p-10 border border-white/5 space-y-8">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-gold/10 text-gold rounded-full text-sm font-bold mb-4">經文範圍：可16:9-14</span>
+                    <p class="text-slate-400 leading-relaxed italic border-l-2 border-slate-700 pl-6">「在七日的第一日清早，耶穌復活了，就先向抹大拉的馬利亞顯現...他們聽見耶穌活了，被馬利亞看見，卻是不信。後來，十一個門徒坐席的時候，耶穌向他們顯現，責備他們不信，心裡剛硬...」</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-xl text-white flex items-center gap-2"><span class="w-2 h-2 bg-gold rounded-full"></span> 關鍵字詞 (Keywords)</h4>
+                        <ul class="space-y-3">
+                            <li class="text-slate-300"><strong class="text-gold">不信 (apisteo)</strong>: 意為「拒絕相信」。強調門徒面對見證時的頑固拒絕。</li>
+                            <li class="text-slate-300"><strong class="text-gold">心裡剛硬 (sklerokardia)</strong>: 指「心的硬化」。表明不信並非缺乏證據，而是內心封閉。</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-xl text-white flex items-center gap-2"><span class="w-2 h-2 bg-gold rounded-full"></span> 關鍵問題 (Critical Question)</h4>
+                        <p class="text-slate-300 italic">為什麼跟隨耶穌多年的門徒依然不信？</p>
+                        <p class="text-slate-400 text-sm">解析：門徒的「不信」源於十字架帶來的劇痛，打破了既有認知。突破的方法是讓復活的主親自介入，接受主的責備與光照。</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark-base p-6 rounded-2xl border border-gold/10">
+                    <p class="text-sm text-gold font-bold mb-2 uppercase tracking-tighter">例證與故事</p>
+                    <p class="text-slate-300 leading-relaxed">心理學中「習得性無助」實驗：大象從小被栓，長大後有力卻不掙扎。門徒經歷十字架的絕望，就像被釘死在「習得性無助」中，直到耶穌親自打破鎖鏈。</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section Deep Dive 2 -->
+        <article id="section-2" class="space-y-8 scroll-mt-24">
+            <h3 class="text-4xl font-display font-black text-gold">二、領受國度的使命：帶著權柄去傳揚</h3>
+            <div class="bg-dark-surface rounded-3xl p-6 md:p-10 border border-white/5 space-y-8">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-gold/10 text-gold rounded-full text-sm font-bold mb-4">經文範圍：可16:15-18</span>
+                    <p class="text-slate-400 leading-relaxed italic border-l-2 border-slate-700 pl-6">「他又對他們說：你們往普天下去，傳福音給萬民聽。信而受洗的，必然得救...信的人必有神蹟隨著他們...」</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-xl text-white flex items-center gap-2"><span class="w-2 h-2 bg-gold rounded-full"></span> 關鍵字詞 (Keywords)</h4>
+                        <ul class="space-y-3">
+                            <li class="text-slate-300"><strong class="text-gold">傳福音 (kerusso)</strong>: 意指「作為傳令官大聲宣告」。這是君王旨意的宣告。</li>
+                            <li class="text-slate-300"><strong class="text-gold">萬民 (ktisis)</strong>: 直譯為「所有的受造物」。表明福音帶來整個受造界的更新。</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-xl text-white flex items-center gap-2"><span class="w-2 h-2 bg-gold rounded-full"></span> 關鍵問題 (Critical Question)</h4>
+                        <p class="text-slate-300 italic">「普天下」對平凡信徒有何意義？</p>
+                        <p class="text-slate-400 text-sm">解析：即我們雙腳踏之處。神蹟是記號而非目的，今天最大的神蹟是罪人被福音釋放與翻轉。</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark-base p-6 rounded-2xl border border-gold/10">
+                    <p class="text-sm text-gold font-bold mb-2 uppercase tracking-tighter">例證與故事</p>
+                    <p class="text-slate-300 leading-relaxed">國王的大使去敵國宣旨，大使本身無武力，但背後有強大的國家。我們傳福音不是靠口才，是帶著復活君王的權柄。</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section Deep Dive 3 -->
+        <article id="section-3" class="space-y-8 scroll-mt-24">
+            <h3 class="text-4xl font-display font-black text-gold">三、經歷同在的應許：與主同工的榮耀</h3>
+            <div class="bg-dark-surface rounded-3xl p-6 md:p-10 border border-white/5 space-y-8">
+                <div>
+                    <span class="inline-block px-3 py-1 bg-gold/10 text-gold rounded-full text-sm font-bold mb-4">經文範圍：可16:19-20</span>
+                    <p class="text-slate-400 leading-relaxed italic border-l-2 border-slate-700 pl-6">「主耶穌和他們說完了話，後來被接到天上，坐在神的右邊。門徒出去，到處宣傳福音。主和他們同工，用神蹟隨著，證實所傳的道。」</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-xl text-white flex items-center gap-2"><span class="w-2 h-2 bg-gold rounded-full"></span> 關鍵字詞 (Keywords)</h4>
+                        <ul class="space-y-3">
+                            <li class="text-slate-300"><strong class="text-gold">同工 (synergeo)</strong>: 意指「一起工作」。表明我們絕非孤軍奮戰。</li>
+                            <li class="text-slate-300"><strong class="text-gold">證實 (bebaioo)</strong>: 意為「確立」。主親自為福音背書。</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-xl text-white flex items-center gap-2"><span class="w-2 h-2 bg-gold rounded-full"></span> 關鍵問題 (Critical Question)</h4>
+                        <p class="text-slate-300 italic">耶穌「坐在天上」，如何「地上同工」？</p>
+                        <p class="text-slate-400 text-sm">解析：升天不是缺席而是掌權。門徒的「出去」是啟動主「同工」的關鍵。我們若不動，神就不動。</p>
+                    </div>
+                </div>
+
+                <div class="bg-dark-base p-6 rounded-2xl border border-gold/10">
+                    <p class="text-sm text-gold font-bold mb-2 uppercase tracking-tighter">例證與故事</p>
+                    <p class="text-slate-300 leading-relaxed">小男孩在沙灘堆堡，父親的大手覆蓋其小手一起塑形。這就是與主同工：當我們伸出微弱手服事，主全能手成就旨意。</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                <h2 class="text-3xl font-display font-black tracking-tight">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-10 text-lg leading-relaxed text-slate-200">
+                <p>各位弟兄姊妹，平安。今天我們要透過馬可福音的最後一段，看見一群充滿軟弱、遲疑的門徒，如何被翻轉成為震撼世界的宣教大軍。這不僅是他們的歷史，更是今天你我生命呼召的藍圖。</p>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-gold">一、突破不信的迷霧：遇見復活的生命主</h4>
+                    <p>經文一開始告訴我們一個非常真實卻又令人遺憾的畫面。抹大拉的馬利亞親眼見了復活的耶穌，興沖沖地跑去告訴門徒，但聖經說：「<span class="bg-gold/20 px-1 rounded font-bold text-white">他們聽見耶穌活了，被馬利亞看見，卻是不信。</span>」隨後兩個往鄉下去的門徒也遇見了主，回來報告，聖經再次說：「<span class="bg-gold/20 px-1 rounded font-bold text-white">其餘的門徒也是不信。</span>」最後，耶穌親自向十一個門徒顯現，第一件事不是安慰，而是「<span class="bg-gold/20 px-1 rounded font-bold text-white">責備他們不信，心裡剛硬</span>」。</p>
+                    <p>跟隨耶穌三年半的門徒，為什麼如此固執？因為十字架的創傷太深了。死亡的現實就像濃霧，蒙蔽了他們的眼睛。他們寧願相信自己的悲傷，也不願相信復活的奇蹟。弟兄姊妹，我們是否也常陷入這種<span class="text-gold font-bold underline">習得性無助</span>中？面對生病的家人、破碎的婚姻、財務的困境，我們是否也對神的應許「心裡剛硬」？提摩太·凱勒牧師說過：「<span class="italic text-slate-100">如果耶穌從死裡復活，那麼一切都改變了。</span>」<span class="text-white font-black underline decoration-gold">突破不信的唯一方法，就是讓復活的主親自向我們顯現，我們必須放下自以為是的絕望，謙卑接受主的責備與光照。</span></p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-gold">二、領受國度的使命：帶著權柄去傳揚</h4>
+                    <p>當門徒的心被打破、重新看見主之後，耶穌立刻頒布了改變人類歷史的命令：「<span class="bg-gold/20 px-1 rounded font-bold text-white">你們往普天下去，傳福音給萬民聽。</span>」耶穌甚至給出驚人的應許：「<span class="bg-gold/20 px-1 rounded font-bold text-white">信的人必有神蹟隨著他們。</span>」</p>
+                    <p>許多信徒覺得，普天下是宣教士的事，我們只要顧好自己的小家庭就好。但耶穌用的「傳福音」這個詞（kerusso），是「<span class="text-gold font-bold italic">君王傳令官的宣告</span>」！你不需要有神學學位，你只需要知道你代表的是萬王之王。這份差遣不是給少數精英的，而是給每一個遇見復活之主的人。約翰·史托德牧師提醒我們：「<span class="italic text-slate-100">主耶穌不是在徵求我們的同意，祂是在發布命令。</span>」我們在職場上、在校園裡，就是那位帶著君王聖旨的大使。當我們憑信心去宣告時，<span class="text-white font-black underline decoration-gold">神蹟會隨著我們</span>——不只是病得醫治，更是看見被罪惡、被抑鬱捆綁的生命，因著耶穌的名得到完全的釋放！</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-gold">三、經歷同在的應許：與主同工的榮耀</h4>
+                    <p>最後，馬可福音用一幅極其美麗的畫面作結。第19節說耶穌升天「<span class="bg-gold/20 px-1 rounded font-bold text-white">坐在神的右邊</span>」，看似祂離開了。但緊接著第20節這句<span class="text-gold font-bold">【金句】</span>卻宣告：「<span class="text-white font-black underline decoration-gold">門徒出去，到處宣傳福音。主和他們同工，用神蹟隨著，證實所傳的道。阿們！</span>」</p>
+                    <p>坐在天上掌權的主，同時在地上與門徒同工！「同工」這個詞意味著主從未讓我們獨自面對爭戰。但請注意這個順序：是「<span class="text-gold font-bold underline">門徒出去</span>」，然後才經歷「<span class="text-gold font-bold underline">主和他們同工</span>」。如果你永遠坐在安逸的冷氣房裡、坐在舒適的同溫層中，你永遠無法經歷神蹟隨行的震撼。就像父親的大手包覆著孩子的小手一起堆沙堡一樣，當我們願意伸出軟弱的手去為人禱告、去傳遞愛與福音時，耶穌全能的手就會覆蓋我們。</p>
+                    <p>弟兄姊妹，今天神要呼召你，從<span class="text-gold font-bold">不信</span>的軟弱中走出來，接受君王的<span class="text-gold font-bold">差遣</span>，並在每天的生活中，經歷與復活之主<span class="text-gold font-bold">同工</span>的極大榮耀。阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Action -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="glass-card p-8">
+                <h3 class="text-2xl font-display font-black text-gold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    結論關鍵字
+                </h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-6 py-2 bg-gold/20 rounded-full text-gold font-bold text-xl border border-gold/40">復活</span>
+                    <span class="px-6 py-2 bg-gold/20 rounded-full text-gold font-bold text-xl border border-gold/40">差遣</span>
+                    <span class="px-6 py-2 bg-gold/20 rounded-full text-gold font-bold text-xl border border-gold/40">同工</span>
+                </div>
+                <div class="mt-8 space-y-4">
+                     <h3 class="text-xl font-bold text-white">應用方向</h3>
+                     <ul class="space-y-2 text-slate-300">
+                         <li>• 誠實面對內心的「不信」</li>
+                         <li>• 擁抱「被差遣者」的身份</li>
+                         <li>• 大膽踏出「經歷同工」的步伐</li>
+                     </ul>
+                </div>
+            </div>
+            
+            <div class="glass-card p-8">
+                <h3 class="text-2xl font-display font-black text-gold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    回應與實踐
+                </h3>
+                <ol class="space-y-6 text-slate-300">
+                    <li class="flex gap-4">
+                        <span class="text-gold font-black text-2xl opacity-30">01</span>
+                        <div><p class="font-bold text-white">認罪與交託</p><p class="text-sm">寫下生活中讓你感到絕望的人事物，求復活的主介入。</p></div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-black text-2xl opacity-30">02</span>
+                        <div><p class="font-bold text-white">名單與宣告</p><p class="text-sm">列出三位未信主親友，每天奉名禱告，本週分享見證。</p></div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-black text-2xl opacity-30">03</span>
+                        <div><p class="font-bold text-white">每日微型差遣</p><p class="text-sm">每天出門前禱告：「主啊，我今天是被祢差遣的。」</p></div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                <h2 class="text-3xl font-display font-black tracking-tight">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「復活的信仰不是某種可以用來裝飾生活的補充品，它是支撐我們全部生命的絕對根基。」</p>
+                    <span class="text-gold text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「如果耶穌從死裡復活，那麼一切都改變了。如果耶穌沒有從死裡復活，那麼一切都無關緊要。」</p>
+                    <span class="text-gold text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</span>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「我們不可將大使命縮減為大建議。主耶穌不是在徵求我們的同意，祂是在發布命令。」</p>
+                    <span class="text-gold text-sm font-bold">— 約翰·史托德 (John Stott)</span>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「沒有聖靈的同工，我們所有的講道、所有的教導、所有的組織，都只不過是將死人排得整齊一點而已。」</p>
+                    <span class="text-gold text-sm font-bold">— 查爾斯·司布真 (Charles Spurgeon)</span>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「不是我們去為神做什麼偉大的事，而是全能的神屈尊降卑，願意透過我們這些軟弱的器皿來成就祂的旨意。」</p>
+                    <span class="text-gold text-sm font-bold">— 慕迪 (D.L. Moody)</span>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「基督徒的呼召不是要逃離這個世界，而是在這個被罪破壞的世界中，活出屬天國度的真理。」</p>
+                    <span class="text-gold text-sm font-bold">— 約翰·加爾文 (John Calvin)</span>
+                </div>
+                <!-- Quote 7 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「信心不是相信神會做我們想要的事，信心是相信神無論做什麼，祂都是良善的。」</p>
+                    <span class="text-gold text-sm font-bold">— 陶恕 (A.W. Tozer)</span>
+                </div>
+                <!-- Quote 8 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「神使用那些明白自己一無所有，唯獨倚靠神的人。當我們走到自己能力的盡頭，才是神大能運行的起點。」</p>
+                    <span class="text-gold text-sm font-bold">— 查爾斯·史丹利 (Charles Stanley)</span>
+                </div>
+                <!-- Quote 9 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「你不是一個偶然的產物，神在創世之前就揀選了你...為了完成祂那無法攔阻的福音使命。」</p>
+                    <span class="text-gold text-sm font-bold">— 葛理翰 (Billy Graham)</span>
+                </div>
+                <!-- Quote 10 -->
+                <div class="bg-dark-surface p-6 rounded-2xl border border-white/5 hover:border-gold/30 transition group">
+                    <p class="text-slate-200 leading-relaxed mb-4 italic group-hover:text-white">「屬靈的生命從來不是停滯的。你要麼在恩典中長進並向外傳揚，要麼就是在自我中心裡漸漸枯萎。」</p>
+                    <span class="text-gold text-sm font-bold">— 魏樂德 (Dallas Willard)</span>
+                </div>
+            </div>
+
+            <div class="pt-12 text-center text-slate-500 text-sm">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold hover:bg-gold-light text-dark-base rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 animate-float z-[60]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可7:1-23：從外在傳統到內在真實：一場心的革命</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fae260',
+                            400: '#f8d02e',
+                            500: '#e9b306',
+                            600: '#c98b04',
+                            700: '#a06406',
+                            800: '#834e0b',
+                            900: '#70400f',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            surface: '#16161e',
+                            elevated: '#23232e'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 30, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f8d02e 0%, #c98b04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-container {
+            height: 60vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+        .breath-effect {
+            animation: breath 8s ease-in-out infinite;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .outline-card {
+            transition: all 0.3s ease;
+        }
+        .outline-card:hover {
+            transform: translateY(-5px);
+            border-color: #f8d02e;
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #e9b306; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Top Banner -->
+    <header class="banner-container relative">
+        <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+        <img src='image/img_c77f606a-a415-45f7-bfa7-4caec99a2a43.jpg' alt='Banner' class="banner-img breath-effect" />
+        <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+            <h1 class="font-display text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">可7:1-23<br><span class="text-gradient">從外在傳統到內在真實：一場心的革命</span></h1>
+            <p class="text-gold-300 text-lg md:text-xl font-light tracking-widest max-w-2xl">「從外面進去的不能污穢人，惟有從裡面出來的乃能污穢人。」</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav glass py-4 px-6 md:px-12 flex justify-between items-center overflow-x-auto whitespace-nowrap">
+        <div class="font-display font-bold text-gold-400 mr-8">可 7:1-23</div>
+        <div class="flex space-x-6 md:space-x-12 text-sm uppercase tracking-widest font-semibold text-gray-300">
+            <a href="#prayer" class="hover:text-gold-400 transition">祈禱</a>
+            <a href="#outline" class="hover:text-gold-400 transition">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition">名言</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Golden Verses & Prayer -->
+        <section id="prayer" class="space-y-12">
+            <div class="flex flex-col items-center text-center mb-16">
+                <span class="text-6xl mb-4">✨</span>
+                <h2 class="text-3xl font-display font-bold mb-8 flex items-center justify-center">
+                    金句
+                </h2>
+                <div class="space-y-6">
+                    <p class="text-2xl md:text-3xl font-display font-bold text-white border-l-4 border-gold-500 pl-6 py-2 italic leading-relaxed">
+                        「從外面進去的不能污穢人，惟有從裡面出來的乃能污穢人。」（可7:15）
+                    </p>
+                    <p class="text-2xl md:text-3xl font-display font-bold text-white border-l-4 border-gold-500 pl-6 py-2 italic leading-relaxed">
+                        「這百姓用嘴唇尊敬我，心卻遠離我。」（可7:6b）
+                    </p>
+                </div>
+            </div>
+
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="white"><path d="M12 2L14.85 8.65L22 9.24L16.5 13.97L18.18 21L12 17.27L5.82 21L7.5 13.97L2 9.24L9.15 8.65L12 2Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-6 flex items-center text-gold-400">
+                    <span class="section-icon">🙏</span> 禱告詞
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-200 first-letter:text-4xl first-letter:text-gold-500">
+                    親愛的主上帝，我們來到祢面前，求祢光照我們的內心。我們承認，有時我們過於注重外在的儀式和傳統，卻忽略了內心對祢的真實敬畏與對人的愛。求主聖靈鑒察我們，打破我們自欺欺人的屬靈藉口，潔淨我們生命深處的污穢。賜給我們一顆新造的心，使我們的信仰不僅是嘴唇上的宣告，更是生命中真實的順服。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="space-y-8">
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center">
+                <span class="section-icon">📋</span> 講道大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="glass p-6 rounded-2xl outline-card flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2">第一段</span>
+                    <h3 class="text-white font-bold group-hover:text-gold-300 transition">虛有其表的敬虔</h3>
+                    <span class="text-xs text-gray-500 mt-2">可 7:1-8</span>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl outline-card flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2">第二段</span>
+                    <h3 class="text-white font-bold group-hover:text-gold-300 transition">走偏的信仰</h3>
+                    <span class="text-xs text-gray-500 mt-2">可 7:9-13</span>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl outline-card flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2">第三段</span>
+                    <h3 class="text-white font-bold group-hover:text-gold-300 transition">真正的污穢</h3>
+                    <span class="text-xs text-gray-500 mt-2">可 7:14-23</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis -->
+        <section class="space-y-24">
+            <!-- Part 1 -->
+            <div id="part1" class="space-y-8 border-l border-gray-800 pl-6 md:pl-12">
+                <div class="flex items-center space-x-4">
+                    <span class="bg-gold-600 text-black font-black px-4 py-1 rounded-full text-sm">01</span>
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-white">虛有其表的敬虔——當「人的傳統」取代「神的心意」</h3>
+                </div>
+                <div class="bg-dark-surface p-6 rounded-2xl text-gray-400 italic text-sm leading-relaxed border-l-2 border-gold-800">
+                    <p>有法利賽人和幾個文士從耶路撒冷來...問他說：「你的門徒為什麼不照古人的遺傳，用俗手吃飯呢？」耶穌說：「以賽亞指著你們假冒為善之人所說的預言是不錯的...你們是離棄神的誡命，拘守人的遺傳。」 (可7:1-8)</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">🔑</span> 關鍵原文</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><strong class="text-white">污穢 / 俗手 (koinos)：</strong> 原指「共同的」，引申為禮儀上的不潔。關注點在於宗教合格性而非衛生。</li>
+                            <li><strong class="text-white">遺傳 / 傳統 (paradosis)：</strong> 代代相傳的口傳律法，地位甚至被提升至超越誡命。</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">❓</span> 關鍵問題</h4>
+                        <p class="text-gray-300">我們是否常以別人沒有遵守某些「不成文的屬靈規矩」來定罪他們？</p>
+                        <p class="text-sm text-gray-400">解析：當我們將次要傳統絕對化，就失去了愛，也排拒了神憐憫的心意。</p>
+                    </div>
+                </div>
+                <div class="bg-dark-elevated p-8 rounded-3xl border border-gray-700">
+                    <h4 class="text-gold-400 font-bold mb-4 flex items-center"><span class="mr-2">💡</span> 例證：切掉頭尾的火腿</h4>
+                    <p class="text-gray-300 leading-relaxed">很多宗教習慣就像那位因為祖母家烤箱太小而切掉火腿頭尾的妻子，時空已變，我們卻盲目遵守形式，甚至以此要求他人，忘了信仰的核心。</p>
+                    <div class="mt-6 pt-6 border-t border-gray-800">
+                        <p class="text-gold-200 italic font-display">「宗教的危險在於，我們很容易滿足於外在的敬虔形式，卻在內心深處完全拒絕聖靈的管理。」—— 陶恕</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="space-y-8 border-l border-gray-800 pl-6 md:pl-12">
+                <div class="flex items-center space-x-4">
+                    <span class="bg-gold-600 text-black font-black px-4 py-1 rounded-full text-sm">02</span>
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-white">走偏的信仰——用「屬靈藉口」逃避「愛的責任」</h3>
+                </div>
+                <div class="bg-dark-surface p-6 rounded-2xl text-gray-400 italic text-sm leading-relaxed border-l-2 border-gold-800">
+                    <p>「你們倒說：『人若對父母說：我所當奉給你的，已經作了各耳板』...以後你們就不容他再奉養父母。這就是你們承接遺傳，廢了神的道。」 (可7:9-13)</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">🔑</span> 關鍵原文</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><strong class="text-white">各耳板 (korban)：</strong> 意為「獻給神的禮物」。一旦宣告，物品即不能用於世俗用途。</li>
+                            <li><strong class="text-white">廢棄 (akurountes)：</strong> 使之無效。耶穌指責他們用人為宣告剝奪神誡命的權威。</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">❓</span> 關鍵問題</h4>
+                        <p class="text-gray-300">在現代生活中，我們是否也會用「屬靈的藉口」來逃避上帝呼召我們該盡的世俗責任？</p>
+                        <p class="text-sm text-gray-400">解析：神不要我們用虛假的屬靈來掩飾對家人的無情。不負責的服事不是真服事。</p>
+                    </div>
+                </div>
+                <div class="bg-dark-elevated p-8 rounded-3xl border border-gray-700">
+                    <h4 class="text-gold-400 font-bold mb-4 flex items-center"><span class="mr-2">💡</span> 例證：忙碌的領袖</h4>
+                    <p class="text-gray-300 leading-relaxed">一位每週五天在教會開會卻忽略妻兒的領袖，正是在說現代版的「各耳板」。他用看似神聖的服事，逃避了神在家庭中設立的責任。</p>
+                    <div class="mt-6 pt-6 border-t border-gray-800">
+                        <p class="text-gold-200 italic font-display">「即使是最好的事物，若我們將其置於神之上，或是用它來取代神要求我們該有的順服，它就會成為偶像。」—— 提摩太·凱勒</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="space-y-8 border-l border-gray-800 pl-6 md:pl-12">
+                <div class="flex items-center space-x-4">
+                    <span class="bg-gold-600 text-black font-black px-4 py-1 rounded-full text-sm">03</span>
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-white">真正的污穢——直擊心靈深處的黑洞</h3>
+                </div>
+                <div class="bg-dark-surface p-6 rounded-2xl text-gray-400 italic text-sm leading-relaxed border-l-2 border-gold-800">
+                    <p>「從外面進去的不能污穢人，惟有從裡面出來的乃能污穢人...因為從裡面，就是從人心裡，發出惡念、苟合、偷盜、凶殺、姦淫...」 (可7:14-23)</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">🔑</span> 關鍵原文</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><strong class="text-white">心 (kardia)：</strong> 指人的思想、意志、動機的總樞紐，是生命的中心。</li>
+                            <li><strong class="text-white">惡念 (dialogismoi hoi kakoi)：</strong> 邪惡的思念。耶穌將其列於首位，表明行為發源於內心計謀。</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">❓</span> 關鍵問題</h4>
+                        <p class="text-gray-300">如果真正的問題在於「心」，那我們該如何面對自己內心不斷湧現的惡念？</p>
+                        <p class="text-sm text-gray-400">解析：唯有承認徹底敗壞，放棄靠行為稱義，轉向基督尋求「更換新心」才是出路。</p>
+                    </div>
+                </div>
+                <div class="bg-dark-elevated p-8 rounded-3xl border border-gray-700">
+                    <h4 class="text-gold-400 font-bold mb-4 flex items-center"><span class="mr-2">💡</span> 例證：帶泥沙的水杯</h4>
+                    <p class="text-gray-300 leading-relaxed">外在的環境、壓力或他人的得罪就像「搖晃」杯子，搖晃並未製造髒污，只是把杯底原本就有的泥沙顯露出來。我們內心的罪性才是污穢的根源。</p>
+                    <div class="mt-6 pt-6 border-t border-gray-800">
+                        <p class="text-gold-200 italic font-display">「人的心是一個製造偶像的工廠。」—— 約翰·加爾文</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-12">
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center text-gold-400">
+                <span class="section-icon">📖</span> 完整講章
+            </h2>
+            <div class="glass p-10 md:p-16 rounded-[3rem] space-y-8 text-lg leading-loose text-gray-300">
+                <h3 class="text-3xl font-display font-black text-white text-center mb-12">從外在傳統到內在真實：一場心的革命</h3>
+                
+                <p>弟兄姐妹，平安。我們今天常常陷入一種迷思：只要我們聚會不缺席、十一奉獻不漏掉、謝飯禱告有做，我們就是一個「好基督徒」。但上帝看我們，真的是這樣看的嗎？今天我們要透過馬可福音第七章，來看耶穌如何發起一場「心的革命」。</p>
+
+                <p class="font-bold text-white text-xl">第一段：虛有其表的敬虔——當「人的傳統」取代「神的心意」</p>
+                <p>在馬可福音7章1到8節裡，法利賽人和文士看到門徒沒有「洗手」就吃飯。注意，這裡的「洗手」不是因為怕有細菌，而是為了宗教儀式上的潔淨。這叫作「傳統」。</p>
+                <p>耶穌的回答非常犀利，祂引用以賽亞書說：<span class="text-gold-400 font-black">「這百姓用嘴唇尊敬我，心卻遠離我。」（可7:6b）</span> 耶穌指責他們將人的吩咐當作神的道理。當我們把次要的傳統絕對化，甚至用它來定罪別人的時候，我們就成了現代的法利賽人。<span class="text-white border-b border-gold-600">真正的信仰不是外在形式的堆砌，而是內心對神真實的敬畏。</span></p>
+
+                <p class="font-bold text-white text-xl">第二段：走偏的信仰——用「屬靈藉口」逃避「愛的責任」</p>
+                <p>接下來耶穌揭露了更嚴重的偽善。法利賽人利用「各耳板」制度（獻給神的禮物），合法地把應奉養父母的錢財私藏，藉此逃避責任。耶穌責備他們：<span class="text-gold-400 font-black">「這就是你們承接遺傳，廢了神的道。」（可7:13）</span></p>
+                <p>弟兄姐妹，這是不是很熟悉？我們有沒有可能也是這樣？「老婆，我今晚不能幫忙照顧小孩，因為我要去教會服事。」提摩太·凱勒牧師曾提醒我們，哪怕是最好的事物，只要取代了神要求我們的順服與責任，那就是偶像。<span class="text-white border-b border-gold-600">不負責任的屬靈，根本不是屬靈。</span></p>
+
+                <p class="font-bold text-white text-xl">第三段：真正的污穢——直擊心靈深處的黑洞</p>
+                <p>最後耶穌說出了震撼的宣告：<span class="text-gold-400 font-black">「從外面進去的不能污穢人，惟有從裡面出來的乃能污穢人。」（可7:15）</span></p>
+                <p>法利賽人認為沾到世俗會讓人污穢，但耶穌說：食物進到肚子，最後落到廁所，這不能弄髒你的靈魂。真正讓你污穢的，是你那顆長滿了罪惡的「心」。這就像一杯裝著泥沙的水，環境一搖晃，裡面的泥沙就翻騰起來。<span class="text-white border-b border-gold-600">我們無法靠著「洗手」或外在傳統來變乾淨。我們需要來到耶穌十字架面前，承認內心的敗壞，求主為我們造一顆清潔的心。</span></p>
+                
+                <div class="mt-12 pt-12 border-t border-gray-800 text-center">
+                    <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-2">結論關鍵字</p>
+                    <p class="text-2xl font-display font-bold text-gold-400">傳統 • 內心 • 真實</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <h2 class="text-2xl font-display font-bold flex items-center text-gold-400">
+                    <span class="section-icon">🎯</span> 應用方向
+                </h2>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="bg-dark-surface p-4 rounded-xl border-l-4 border-gold-500">檢視個人屬靈習慣的動機：是出於愛，還是為了面子？</li>
+                    <li class="bg-dark-surface p-4 rounded-xl border-l-4 border-gold-500">拆毀「各耳板」的偽裝：不再用服事當作逃避責任的藉口。</li>
+                    <li class="bg-dark-surface p-4 rounded-xl border-l-4 border-gold-500">從對付行為轉向對付內心：尋求聖靈光照隱而未現的罪。</li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-2xl font-display font-bold flex items-center text-gold-400">
+                    <span class="section-icon">🌱</span> 回應行動
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <span class="text-gold-500 text-xl mt-1">✓</span>
+                        <div>
+                            <p class="font-bold text-white">寫下一個屬靈盲點</p>
+                            <p class="text-sm text-gray-400">本週安靜十幾分鐘，求問神：「我有哪一個習慣已經變成定罪別人的傳統？」</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-gold-500 text-xl mt-1">✓</span>
+                        <div>
+                            <p class="font-bold text-white">修復一個被忽略的關係</p>
+                            <p class="text-sm text-gray-400">檢視本週是否忽略了家人，付諸具體行動，把愛落實在身邊人身上。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-gold-500 text-xl mt-1">✓</span>
+                        <div>
+                            <p class="font-bold text-white">每日「洗心」禱告</p>
+                            <p class="text-sm text-gray-400">連續七天，用詩篇139:23-24禱告，求神潔淨我們的心而不只是手。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Carousel Style -->
+        <section id="quotes" class="space-y-12">
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center text-gold-400">
+                <span class="section-icon">💭</span> 屬靈前輩佳句名言
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「人的心是一個製造偶像的工廠。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—約翰·加爾文</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「宗教的危險在於，我們很容易滿足於外在的敬虔形式，卻在內心深處完全拒絕聖靈的管理。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—陶恕</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「廉價的恩典是沒有門徒代價的恩典，是沒有十字架的恩典。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—潘霍華</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「一個人的生活，永遠是他內心的索引；外表的敬虔不過是一層易破的薄紙。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—司布真</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「傳統宗教是『我順服，所以我蒙接納』；福音是『我蒙接納，所以我順服』。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—提摩太·凱勒</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「品格，就是你在黑暗中真實的樣子。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—慕迪</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「若沒有內心的聖潔，外在的服事只不過是鳴的鑼、響的鈸。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—約翰·史托德</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「真實的信仰，在極大程度上存在於神聖的情感之中。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—喬納森·愛德華茲</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「基督徒生命中最遙遠的旅程，就是從頭腦到心靈的距離。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—盧雲</p>
+                </div>
+                <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-900/10 transition">
+                    <p class="italic text-gray-200">「上帝不需要我們用虛假的屬靈來保護祂的榮耀；祂要的是真實而誠實的心。」</p>
+                    <p class="text-right text-sm text-gold-500 mt-4">—畢德生</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="text-center pt-12">
+            <p class="text-gray-600 text-sm tracking-widest border-t border-gray-900 pt-8">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center text-black shadow-2xl hover:bg-gold-400 transition-transform active:scale-95 z-50 animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+        // Smooth Scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

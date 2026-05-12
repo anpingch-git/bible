@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可5:1-20 黑暗中的曙光：從碎裂到被差遣的生命</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0c',
+                            card: '#16161d',
+                            accent: '#6366f1',
+                            secondary: '#a855f7',
+                            highlight: '#f43f5e'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 0.85, filter: 'brightness(1.1)' },
+                            '50%': { opacity: 0.4, filter: 'brightness(0.6)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 29, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-banner {
+            height: 60vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: pulse-slow 8s infinite;
+        }
+        .outline-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <img src='image/img_6c7ba475-3695-48df-8934-28fafdb9df44.jpg' alt='Banner Image' />
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+        <div class="absolute bottom-10 left-0 right-0 px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-display font-black mb-4 tracking-tight">
+                黑暗中的曙光
+            </h1>
+            <p class="text-lg md:text-2xl font-light text-gray-300">從碎裂到被差遣的生命</p>
+            <div class="mt-4 text-sm font-medium tracking-widest text-brand-accent uppercase">可 5:1-20</div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass border-b border-white/10 px-4 py-3">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <span class="font-display font-bold text-brand-accent hidden sm:block">可 5:1-20</span>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#prayer" class="hover:text-brand-accent transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-brand-accent transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-brand-accent transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-brand-accent transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- 金句 Section -->
+        <section id="golden-verse" class="relative">
+            <div class="absolute -top-10 -left-10 text-8xl text-brand-accent opacity-10 font-serif">“</div>
+            <div class="glass p-8 md:p-12 rounded-3xl text-center border-l-4 border-brand-accent">
+                <h2 class="text-brand-accent text-sm font-bold tracking-widest uppercase mb-4">今日金句</h2>
+                <blockquote class="text-2xl md:text-3xl font-medium leading-relaxed">
+                    耶穌不許，卻對他說：「你回家去，到你的親屬那裡，將主為你所做的是何等大的事，是怎樣憐憫你，都告訴他們。」
+                </blockquote>
+                <p class="mt-4 text-brand-secondary font-display font-bold">（馬可福音 5:19）</p>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="p-3 bg-brand-accent/20 rounded-2xl">
+                    <svg class="w-8 h-8 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-black">開會禱告</h2>
+            </div>
+            <div class="text-lg leading-loose text-gray-300 italic glass p-8 rounded-3xl border-r-4 border-brand-secondary">
+                親愛的主耶穌，感謝祢總是願意主動踏入我們生命中最黑暗、最破碎的角落。當我們被世界的價值觀、被罪惡與絕望的鎖鏈捆綁，甚至自我放棄時，祢卻看我們為至寶。求祢今天透過這段經文，釋放我們內心深處的「群」，斷開一切轄制我們的鐵鍊。願祢那大能的憐憫臨到我們，不僅醫治我們，更差遣我們回到家庭與人群中，成為祢恩典的活見證。奉主耶穌基督得勝的名求，阿們。
+            </div>
+        </section>
+
+        <!-- 大綱快速導航 Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="p-3 bg-brand-highlight/20 rounded-2xl">
+                    <svg class="w-8 h-8 text-brand-highlight" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-black">訊息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="outline-card glass p-6 rounded-2xl group">
+                    <div class="text-brand-accent font-bold mb-2">01</div>
+                    <div class="font-bold text-lg group-hover:text-brand-accent transition-colors">被絕望囚禁的靈魂</div>
+                    <div class="text-sm text-gray-500 mt-1">可 5:1-5</div>
+                </a>
+                <a href="#part2" class="outline-card glass p-6 rounded-2xl group">
+                    <div class="text-brand-accent font-bold mb-2">02</div>
+                    <div class="font-bold text-lg group-hover:text-brand-accent transition-colors">震撼人心的拯救代價</div>
+                    <div class="text-sm text-gray-500 mt-1">可 5:6-13</div>
+                </a>
+                <a href="#part3" class="outline-card glass p-6 rounded-2xl group">
+                    <div class="text-brand-accent font-bold mb-2">03</div>
+                    <div class="font-bold text-lg group-hover:text-brand-accent transition-colors">從被驅逐到被差遣</div>
+                    <div class="text-sm text-gray-500 mt-1">可 5:14-20</div>
+                </a>
+            </div>
+
+            <!-- 深入解析 - 第一段 -->
+            <div id="part1" class="scroll-mt-24 mb-20 space-y-8">
+                <div class="border-l-4 border-brand-accent pl-6">
+                    <h3 class="text-2xl font-black mb-2">被絕望囚禁的靈魂</h3>
+                    <p class="text-brand-accent font-medium">可 5:1-5</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl leading-relaxed text-gray-400">
+                    「他們來到海那邊格拉森人的地方。耶穌一下船，就有一個被污鬼附著的人從墳塋裡出來迎著他。那人常住在墳塋裡，沒有人能捆住他，就是用鐵鍊也不能... 他晝夜常在墳塋裡和山中喊叫，又用石頭砍自己。」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="text-brand-accent font-bold mb-3 flex items-center">
+                            <span class="mr-2">#</span> 關鍵原文
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><strong class="text-white">墳塋 (μνῆμα)</strong>: 象徵死亡、隔絕與徹底的孤立。</li>
+                            <li><strong class="text-white">鐵鍊 (ἅλυσις)</strong>: 代表人類社會試圖用外在力量控制內在黑暗，卻徒勞無功。</li>
+                        </ul>
+                    </div>
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="text-brand-highlight font-bold mb-3 flex items-center">
+                            <span class="mr-2">?</span> 關鍵問題
+                        </h4>
+                        <p class="text-sm leading-relaxed">現代生活中，有哪些無形的「墳塋」和「鐵鍊」正在捆綁著我們？</p>
+                        <p class="text-sm text-gray-400 mt-2">解析：如情緒的墳塋（憂鬱、孤絕）或關係的墳塋。社會常用外在規範試圖控制，卻無法解決內心創傷。</p>
+                    </div>
+                </div>
+                <div class="bg-brand-accent/5 p-6 rounded-2xl border border-brand-accent/20">
+                    <h4 class="font-bold text-brand-accent mb-2">💡 例證：馬戲團的大象</h4>
+                    <p class="text-gray-300">長大後的象雖有力，但心已被「不可能掙脫」的謊言捆綁。如同許多成癮者，陷入自我傷害的循環，無力自救。</p>
+                </div>
+                <div class="text-right">
+                    <p class="italic text-gray-500 text-sm">「罪的本質就是人將自己封閉在自我之中，拒絕上帝的恩典。」—— 提摩太·凱勒</p>
+                </div>
+            </div>
+
+            <!-- 深入解析 - 第二段 -->
+            <div id="part2" class="scroll-mt-24 mb-20 space-y-8">
+                <div class="border-l-4 border-brand-secondary pl-6">
+                    <h3 class="text-2xl font-black mb-2 text-brand-secondary">震撼人心的拯救代價</h3>
+                    <p class="text-brand-secondary font-medium">可 5:6-13</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl leading-relaxed text-gray-400">
+                    「耶穌問他說：『你名叫什麼？』回答說：『我名叫「群」，因為我們多的緣故』... 那群豬闖下山崖，投在海裡，淹死了。豬的數目約有二千。」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="text-brand-secondary font-bold mb-3 flex items-center">
+                            <span class="mr-2">#</span> 關鍵原文
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><strong class="text-white">群 (Λεγιών)</strong>: 羅馬軍團編制。象徵壓迫力量是龐大、有組織且具毀滅性的。</li>
+                        </ul>
+                    </div>
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="text-brand-highlight font-bold mb-3 flex items-center">
+                            <span class="mr-2">?</span> 關鍵問題
+                        </h4>
+                        <p class="text-sm leading-relaxed text-brand-secondary">為何允許污鬼進入豬群？</p>
+                        <p class="text-sm text-gray-400 mt-2">解析：強烈對比出「一個墮落靈魂的價值」遠超「龐大的經濟利益」。社會看他是廢物，耶穌卻不惜代價拯救。</p>
+                    </div>
+                </div>
+                <div class="bg-brand-secondary/5 p-6 rounded-2xl border border-brand-secondary/20">
+                    <h4 class="font-bold text-brand-secondary mb-2">💡 例證：不計成本的救援</h4>
+                    <p class="text-gray-300">礦難救援動用數百萬美元，只為救一名礦工。對世界是預算，對愛他的人卻是「全世界」。</p>
+                </div>
+                <div class="text-right">
+                    <p class="italic text-gray-500 text-sm">「當我們極其敗壞時，祂卻看我們為無價之寶。」—— 司布真</p>
+                </div>
+            </div>
+
+            <!-- 深入解析 - 第三段 -->
+            <div id="part3" class="scroll-mt-24 mb-20 space-y-8">
+                <div class="border-l-4 border-white pl-6">
+                    <h3 class="text-2xl font-black mb-2">從被驅逐到被差遣</h3>
+                    <p class="text-gray-400 font-medium">可 5:14-20</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl leading-relaxed text-gray-400">
+                    「耶穌上船的時候，那從前被鬼附著的人懇求和耶穌同在。耶穌不許，卻對他說：『你回家去，到你的親屬那裡，將主為你所做的是何等大的事... 都告訴他們。』」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="text-white font-bold mb-3 flex items-center">
+                            <span class="mr-2">#</span> 關鍵原文
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><strong class="text-white">憐憫 (ἐλεέω)</strong>: 帶有拯救行動的愛，不只是情感，而是具體的救助。</li>
+                        </ul>
+                    </div>
+                    <div class="glass p-6 rounded-2xl">
+                        <h4 class="text-brand-highlight font-bold mb-3 flex items-center">
+                            <span class="mr-2">?</span> 關鍵問題
+                        </h4>
+                        <p class="text-sm leading-relaxed">耶穌為何「不許」他上船？</p>
+                        <p class="text-sm text-gray-400 mt-2">解析：耶穌要他成為恩典的展示品。在最熟悉他黑歷史的親屬面前活出改變，是最有說服力的見證。</p>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/20">
+                    <h4 class="font-bold text-white mb-2">💡 例證：更生人的選擇</h4>
+                    <p class="text-gray-300">想去宣教，但更重要的是回到受傷的家庭中，安分守己地照顧家人，用生命改變家人。</p>
+                </div>
+                <div class="text-right">
+                    <p class="italic text-gray-500 text-sm">「在我們被安放的平凡日常裡，用不偏離的順服，活出基督的生命。」—— 畢德生</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章文稿 Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="p-3 bg-brand-accent/20 rounded-2xl">
+                    <svg class="w-8 h-8 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-black">講章全文</h2>
+            </div>
+            
+            <article class="prose prose-invert max-w-none space-y-10 text-gray-300 leading-extra-relaxed">
+                <h3 class="text-2xl font-bold text-white border-b border-brand-accent pb-4">可5:1-20 黑暗中的曙光：從碎裂到被差遣的生命</h3>
+                
+                <p class="text-lg">弟兄姊妹，平安。當我們翻開馬可福音第五章，我們看到了一幅令人不寒而慄，卻又充滿震撼恩典的畫面。今天我們要透過這段經文，看見耶穌如何將一個徹底碎裂的生命，轉化為大能的見證。</p>
+
+                <div>
+                    <h4 class="text-xl font-bold text-brand-accent mb-4">第一，我們來看「被絕望囚禁的靈魂」。</h4>
+                    <p>在格拉森的墳塋裡，住著一個被污鬼附著的人。經文說，他晝夜喊叫，用石頭砍自己，沒有人能捆住他，連<span class="text-white font-bold underline decoration-brand-accent">鐵鍊</span>都被他掙斷。在猶太文化中，<span class="text-white font-bold">墳塋</span>代表著徹底的不潔與死亡。弟兄姊妹，今天雖然我們不住在墳墓裡，但我們周遭，甚至我們自己裡面，是否也住著被絕望囚禁的靈魂？社會試圖用各種外在的「鐵鍊」來控制那些破碎的人，但這些往往無法解決根本問題。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-brand-secondary mb-4">第二，我們看見「震撼人心的拯救代價」。</h4>
+                    <p>當耶穌面對這股自稱為<span class="text-white font-bold">「群」</span>的龐大黑暗勢力時，祂展現了絕對的權柄。兩千頭豬就這樣衝下山崖淹死了。這是一個極度強烈的對比！格拉森人因為損失了龐大的經濟財產而害怕。但在耶穌眼中，<span class="text-white font-black text-xl bg-brand-highlight/20 px-2 py-1 rounded">一個墮落、破碎靈魂的價值，遠遠超過任何龐大的經濟利益！</span>我們必須問自己：我們看待人的眼光，是計算經濟利益，還是看重靈魂的價值？</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">第三，這是一個「從被驅逐到被差遣」的生命。</h4>
+                    <p>當那個人被釋放後，他極度渴望跟隨耶穌上船。但經文記載了今天的【金句】：耶穌不許，卻要他<span class="text-brand-accent font-bold">「回家去，到你的親屬那裡」</span>。逃避過去的黑歷史是容易的，但在那些被他傷害過、最了解他過去瘋狂的親屬面前活出改變，才是最震撼的見證。</p>
+                </div>
+
+                <div class="bg-brand-accent/10 p-8 rounded-3xl border-l-4 border-brand-accent mt-8">
+                    <p class="text-lg font-medium text-white mb-0">
+                        弟兄姊妹，今天耶穌同樣要<span class="text-brand-accent font-bold">釋放</span>你脫離一切隱藏的轄制，祂看你的<span class="text-brand-secondary font-bold">價值</span>遠超全世界。當你經歷了這份恩典，祂也要差遣你回到最平凡的生活中，成為祂恩典的活<span class="text-white font-bold underline decoration-brand-accent">見證</span>。阿們！
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- 應用方向 Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl border-t-4 border-brand-accent">
+                <h4 class="font-black text-brand-accent mb-4">1. 檢視生命中的「群」</h4>
+                <p class="text-sm text-gray-400">誠實面對生命中無法靠自己得勝的隱藏捆綁，承認自己需要耶穌的介入。</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-brand-secondary">
+                <h4 class="font-black text-brand-secondary mb-4">2. 重塑價值觀</h4>
+                <p class="text-sm text-gray-400">反省我們是否把「經濟利益」看得比「靈魂得救」更重要？</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-brand-highlight">
+                <h4 class="font-black text-brand-highlight mb-4">3. 接受日常的差遣</h4>
+                <p class="text-sm text-gray-400">從自己的家庭、辦公室開始，訴說上帝的憐憫，成為日常的宣教士。</p>
+            </div>
+        </section>
+
+        <!-- 結論關鍵字 -->
+        <section class="text-center py-12">
+            <div class="flex justify-center space-x-8 text-4xl md:text-6xl font-black opacity-20 select-none">
+                <span>釋放</span>
+                <span class="text-brand-accent">價值</span>
+                <span>見證</span>
+            </div>
+        </section>
+
+        <!-- 名言佳句 Section -->
+        <section id="quotes" class="scroll-mt-24 pb-20">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="p-3 bg-brand-secondary/20 rounded-2xl">
+                    <svg class="w-8 h-8 text-brand-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-black">屬靈前輩名言</h2>
+            </div>
+            <div class="space-y-6">
+                <!-- Quote 1 -->
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors border-l-2 border-brand-accent">
+                    <p class="text-gray-300 italic mb-3">「上帝的恩典不能拯救一個不願意承認自己失喪的人；唯有當我們承認自己毫無辦法時，神的憐憫才會毫無保留地傾倒。」</p>
+                    <div class="text-sm font-bold text-brand-accent">— 陶恕 (A.W. Tozer)</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors border-l-2 border-brand-secondary">
+                    <p class="text-gray-300 italic mb-3">「廉價的恩典是我們自己給自己的恩典；重價的恩典是必須付上生命代價的恩典。」</p>
+                    <div class="text-sm font-bold text-brand-secondary">— 潘霍華 (Dietrich Bonhoeffer)</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors border-l-2 border-brand-highlight">
+                    <p class="text-gray-300 italic mb-3">「我們最深的創傷往往隱藏在我們最急於逃避的地方；然而，當我們帶著這些傷口走向耶穌時，它們就會成為醫治別人的泉源。」</p>
+                    <div class="text-sm font-bold text-brand-highlight">— 盧雲 (Henri Nouwen)</div>
+                </div>
+                <!-- Quote 4-10 (Condensed for better mobile display) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="glass p-4 rounded-xl text-sm border-l border-white/20">
+                        <p class="text-gray-400 mb-2">「在十字架上，看見罪惡有多深，看見價值有多高。」</p>
+                        <span class="text-xs font-bold">— 約翰·史托德</span>
+                    </div>
+                    <div class="glass p-4 rounded-xl text-sm border-l border-white/20">
+                        <p class="text-gray-400 mb-2">「律法顯明疾病與捆綁，福音賜下醫治的醫師。」</p>
+                        <span class="text-xs font-bold">— 馬丁·路德</span>
+                    </div>
+                    <div class="glass p-4 rounded-xl text-sm border-l border-white/20">
+                        <p class="text-gray-400 mb-2">「我們的心是偶像工廠，直到基督用憐憫佔據。」</p>
+                        <span class="text-xs font-bold">— 約翰·加爾文</span>
+                    </div>
+                    <div class="glass p-4 rounded-xl text-sm border-l border-white/20">
+                        <p class="text-gray-400 mb-2">「真切經歷神大憐憫的人，不可能保持沉默。」</p>
+                        <span class="text-xs font-bold">— 喬納森·愛德華茲</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warning -->
+            <div class="mt-20 py-8 border-t border-white/10 text-center">
+                <p class="text-xs text-gray-500 tracking-widest uppercase">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-accent rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 animate-float">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <!-- 回應與實踐行動 Sticky Overlay (Desktop only) -->
+    <div class="fixed bottom-4 left-4 z-40 hidden lg:block">
+        <div class="glass p-6 rounded-2xl w-64 shadow-2xl border-brand-accent/30">
+            <h5 class="text-xs font-black text-brand-accent uppercase mb-3">本週實踐行動</h5>
+            <ul class="text-xs space-y-2 text-gray-400">
+                <li>• 寫下一個轄制你的「鐵鍊」</li>
+                <li>• 每天早晨宣告神眼中的價值</li>
+                <li>• 分享一個神施恩的小故事</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+

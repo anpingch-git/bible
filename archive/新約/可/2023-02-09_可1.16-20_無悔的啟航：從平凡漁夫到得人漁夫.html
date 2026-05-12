@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可1:16-20:無悔的啟航：從平凡漁夫到得人漁夫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        accent: '#60a5fa',
+                        dark: '#0f172a',
+                        glass: 'rgba(30, 41, 59, 0.7)',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.6 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-morphism {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-white">
+
+    <!-- Top Banner Image -->
+    <div class="relative w-full h-[50vh] md:h-[70vh] overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src='image/img_4f896f8f-ca8f-47d0-af9c-726efe73f729.jpg' alt='Banner' class="w-full h-full object-cover animate-pulse-slow banner-mask" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center z-20 px-6 text-center">
+            <span class="px-4 py-1 rounded-full bg-primary/20 text-accent border border-primary/30 text-sm font-semibold tracking-widest mb-4 uppercase">Gospel Message</span>
+            <h1 class="text-4xl md:text-6xl font-black font-display mb-4 leading-tight drop-shadow-2xl">可1:16-20<br/><span class="gradient-text">無悔的啟航</span></h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl font-light">從平凡漁夫到得人漁夫</p>
+        </div>
+    </div>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-nav glass-morphism px-4 py-4 md:px-12 flex items-center justify-between">
+        <div class="hidden md:block font-bold text-slate-200">可1:16-20</div>
+        <div class="flex gap-4 md:gap-8 mx-auto md:mx-0 text-sm md:text-base font-medium text-slate-400">
+            <a href="#prayer" class="hover:text-white transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-white transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-white transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-white transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 md:py-24 space-y-32">
+
+        <!-- 金句 Section -->
+        <section id="verse" class="relative">
+            <div class="absolute -top-10 -left-10 text-9xl text-slate-800 opacity-20 font-display">"</div>
+            <div class="glass-morphism rounded-3xl p-8 md:p-16 text-center transform hover:scale-[1.02] transition-transform duration-500">
+                <h2 class="text-xl md:text-2xl text-accent font-semibold mb-6 flex items-center justify-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z"></path></svg>
+                    本週金句
+                </h2>
+                <p class="text-2xl md:text-4xl font-bold leading-relaxed text-slate-100">
+                    「耶穌對他們說：『來跟從我，我要叫你們得人如得魚一樣。』」
+                </p>
+                <cite class="block mt-8 text-slate-400 font-medium not-italic">— 馬可福音 1:17</cite>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-blue-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3c1.223 0 2.39.22 3.47.621m6.53 3.379L20 9.414V11c0 1.007-.074 1.996-.218 2.964m-2.562 2.733A9.74 9.74 0 0018 11c0-1.307-.256-2.553-.721-3.692M3.504 10.518A10.005 10.005 0 0112 3c1.223 0 2.39.22 3.47.621m-7 13c3.285 0 6.228-1.59 8.058-4.041"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">神聖禱告</h2>
+            </div>
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700/50 rounded-3xl p-8 md:p-12 shadow-2xl">
+                <p class="text-lg md:text-xl leading-loose text-slate-300 first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:text-accent">
+                    主耶穌，祢是那主動走進我們生命、在我們日常的平凡中發出呼召的生命之主。求祢開通我們的屬靈聽覺，讓我們在喧囂的世代中，清晰聽見祢那句「來跟從我」。賜給我們西門與安得烈的果斷，以及雅各與約翰的勇氣，使我們甘願放下手中緊緊抓著的漁網、甚至捨棄世俗的安全感，單單跟隨祢。願祢的呼召改變我們的生命軌跡，使我們不僅成為跟隨者，更成為祢得人的器皿。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- 大綱 Navigation Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-purple-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">信息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <button onclick="document.getElementById('part1').scrollIntoView({behavior: 'smooth'})" class="group text-left p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-accent transition-all duration-300">
+                    <span class="text-slate-500 text-sm font-bold block mb-2 tracking-widest">PART 01</span>
+                    <h3 class="text-xl font-bold group-hover:text-accent transition-colors">平凡中的神聖相遇</h3>
+                    <p class="text-slate-500 mt-2 text-sm">馬可福音 1:16</p>
+                </button>
+                <button onclick="document.getElementById('part2').scrollIntoView({behavior: 'smooth'})" class="group text-left p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-accent transition-all duration-300">
+                    <span class="text-slate-500 text-sm font-bold block mb-2 tracking-widest">PART 02</span>
+                    <h3 class="text-xl font-bold group-hover:text-accent transition-colors">改變命運的震撼呼召</h3>
+                    <p class="text-slate-500 mt-2 text-sm">馬可福音 1:17-18</p>
+                </button>
+                <button onclick="document.getElementById('part3').scrollIntoView({behavior: 'smooth'})" class="group text-left p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-accent transition-all duration-300">
+                    <span class="text-slate-500 text-sm font-bold block mb-2 tracking-widest">PART 03</span>
+                    <h3 class="text-xl font-bold group-hover:text-accent transition-colors">徹底割捨的跟隨之路</h3>
+                    <p class="text-slate-500 mt-2 text-sm">馬可福音 1:19-20</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- 大綱深度解析 Section -->
+        <section class="space-y-24">
+            
+            <!-- 分段一 -->
+            <div id="part1" class="scroll-mt-32 space-y-8">
+                <div class="flex items-baseline gap-4">
+                    <h2 class="text-5xl font-black font-display text-slate-800">01</h2>
+                    <h3 class="text-3xl font-bold text-white">平凡中的神聖相遇</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border-l-4 border-accent">
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+                                引用經文
+                            </h4>
+                            <p class="italic text-slate-300">耶穌順著加利利的海邊走，看見西門和西門的兄弟安得烈在海裡撒網；他們本是打魚的。(可1:16)</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3">關鍵原文</h4>
+                            <p class="text-slate-200"><span class="font-bold text-white">看見 (εἶδεν / eiden)</span>：不僅是視網膜接收到影像的「瞥見」，更帶有「注視、看透、帶著目的察看」的意涵。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3">關鍵問題</h4>
+                            <p class="font-bold text-white mb-2">耶穌為什麼選擇在平凡的漁場，而不是神聖的會堂裡呼召祂的首批門徒？</p>
+                            <p class="text-slate-400">這打破了聖俗二分的觀念。上帝的恩典與呼召往往介入我們最日常、最世俗的工作中。漁夫在當時社會地位低下，這顯示神揀選人不是看世俗的成就或宗教的地位，而是看重人的心。</p>
+                        </div>
+                        <div class="bg-indigo-900/20 border border-indigo-500/20 p-6 rounded-2xl italic">
+                            「我們不應將生活劃分為神聖與世俗兩部分。對於一個真正屬神的人來說，所有的行為都可以是神聖的。」 —— 陶恕
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分段二 -->
+            <div id="part2" class="scroll-mt-32 space-y-8">
+                <div class="flex items-baseline gap-4">
+                    <h2 class="text-5xl font-black font-display text-slate-800">02</h2>
+                    <h3 class="text-3xl font-bold text-white">改變命運的震撼呼召</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border-l-4 border-accent">
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+                                引用經文
+                            </h4>
+                            <p class="italic text-slate-300">耶穌對他們說：「來跟從我，我要叫你們得人如得魚一樣。」他們就立刻捨了網，跟從了他。(可1:17-18)</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3">關鍵原文</h4>
+                            <ul class="space-y-2 text-slate-300">
+                                <li><span class="text-white font-bold">立刻 (εὐθὺς / euthys)</span>：馬可福音的標誌性用詞，表示沒有遲疑、毫不拖延。</li>
+                                <li><span class="text-white font-bold">跟從 (δεῦτε ὀπίσω μου)</span>：字面意思是「來，到我後面」。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3">關鍵問題</h4>
+                            <p class="font-bold text-white mb-2">「得人如得魚」對當時的漁夫意味著什麼？</p>
+                            <p class="text-slate-400">過去他們打魚是為了自己餬口（將活魚變成死魚）；現在得人是為了神的國度（將死在罪惡過犯中的人引向永生）。「立刻」展現了呼召的絕對權威。</p>
+                        </div>
+                        <div class="bg-indigo-900/20 border border-indigo-500/20 p-6 rounded-2xl italic">
+                            「當基督呼召一個人時，祂是吩咐他來死。」 —— 潘霍華
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分段三 -->
+            <div id="part3" class="scroll-mt-32 space-y-8">
+                <div class="flex items-baseline gap-4">
+                    <h2 class="text-5xl font-black font-display text-slate-800">03</h2>
+                    <h3 class="text-3xl font-bold text-white">徹底割捨的跟隨之路</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border-l-4 border-accent">
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+                                引用經文
+                            </h4>
+                            <p class="italic text-slate-300">耶穌隨即呼召他們，他們就把父親西庇太和雇工人留在船上，跟從耶穌去了。(可1:19-20)</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3">關鍵原文</h4>
+                            <p class="text-slate-200"><span class="font-bold text-white">捨了/留在 (ἀφέντες / aphentes)</span>：放棄、離開、撇下。這不僅是物理上的離開，更是情感與權利上的徹底割捨。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3">關鍵問題</h4>
+                            <p class="font-bold text-white mb-2">當親情、事業與神的呼召產生衝突時，我們該如何抉擇？</p>
+                            <p class="text-slate-400">這並非要我們無情，而是要打破任何可能取代上帝成為我們生命主宰的「偶像」（包含美好的家庭與成功的事業）。</p>
+                        </div>
+                        <div class="bg-indigo-900/20 border border-indigo-500/20 p-6 rounded-2xl italic">
+                            「為得著那不會失去的，而付出那不能保有的，這人絕不是傻瓜。」 —— 吉姆·艾略特
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 應用與結論 Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h3 class="text-2xl font-bold border-b border-slate-700 pb-4 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-6 h-6 bg-accent rounded-full flex items-center justify-center text-xs font-bold text-dark">1</span>
+                        <p class="text-slate-300">在職場與日常中遇見神：上帝的呼召往往在我們最平凡的責任中臨到。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-6 h-6 bg-accent rounded-full flex items-center justify-center text-xs font-bold text-dark">2</span>
+                        <p class="text-slate-300">檢視生命中的「網」：反思有什麼事物攔阻了我們「立刻」跟隨主？</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-6 h-6 bg-accent rounded-full flex items-center justify-center text-xs font-bold text-dark">3</span>
+                        <p class="text-slate-300">重塑人生目標：從「為自己營生」轉向「為神國得人」。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-primary/5 rounded-3xl p-8 border border-primary/20">
+                <h3 class="text-2xl font-bold mb-6 text-primary">結論關鍵字</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-6 py-3 bg-primary text-white font-black rounded-xl text-xl">呼召 (Calling)</span>
+                    <span class="px-6 py-3 bg-primary/20 text-accent font-black rounded-xl text-xl border border-primary/30">捨棄 (Forsaking)</span>
+                    <span class="px-6 py-3 bg-primary/20 text-accent font-black rounded-xl text-xl border border-primary/30">跟從 (Following)</span>
+                </div>
+                <div class="mt-8 space-y-4">
+                    <h4 class="font-bold text-slate-200">實踐行動</h4>
+                    <ul class="text-slate-400 space-y-2 text-sm">
+                        <li>• 每日安靜聆聽 15 分鐘</li>
+                        <li>• 寫下並放下你心中的「網」</li>
+                        <li>• 鎖定一個傳福音的目標</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章 Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-orange-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.297A1.706 1.706 0 019.297 21l-7-1.5A1.71 1.71 0 011 17.797V4.703a1.71 1.71 0 011.297-1.703l7-1.5a1.71 1.71 0 011.703 1.297zM21 4.703l-7-1.5a1.71 1.71 0 00-1.703 1.297v13.415a1.71 1.71 0 001.297 1.703l7 1.5a1.71 1.71 0 001.703-1.297V4.703z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">完整講章文稿</h2>
+            </div>
+            
+            <div class="glass-morphism rounded-3xl p-8 md:p-16 space-y-12">
+                <header class="text-center">
+                    <h1 class="text-3xl md:text-5xl font-black mb-6">無悔的啟航：從平凡漁夫到得人漁夫</h1>
+                    <div class="w-24 h-1 bg-accent mx-auto"></div>
+                </header>
+
+                <article class="prose prose-invert prose-lg max-w-none space-y-8 text-slate-300">
+                    <p class="text-xl leading-relaxed">
+                        各位弟兄姊妹，平安！我們一生中會聽見許多聲音，有催促我們追求成功的聲音，有要求我們滿足別人期待的聲音。但今天，我們要在馬可福音1章16到20節中，聽見宇宙中最震撼、最能改變人命運的一句話。今天的信息，我們將透過三段經文，看見幾位平凡漁夫如何經歷這場無悔的啟航。
+                    </p>
+
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold text-white bg-slate-800/50 inline-block px-4 py-2 rounded-lg">一、平凡中的神聖相遇</h2>
+                        <p>
+                            耶穌走進了充滿魚腥味、汗水與粗話的加利利海邊。經文說耶穌<strong class="text-accent">「看見」</strong>他們。這個看見，不是隨意的一瞥，而是帶著神聖目的的注視。
+                        </p>
+                        <p class="border-l-4 border-slate-600 pl-6 py-2 bg-slate-800/20 italic">
+                            「我們不應將生活劃分為神聖與世俗兩部分。對於一個真正屬神的人來說，所有的行為都可以是神聖的。」— 陶恕
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold text-white bg-slate-800/50 inline-block px-4 py-2 rounded-lg">二、改變命運的震撼呼召</h2>
+                        <p>
+                            耶穌發出呼召時，祂沒有提出一套繁複的宗教教條，祂只說了五個字：<strong class="text-accent">「來跟從我！」</strong> 並且祂給了他們一個全新的人生目的：<strong class="text-accent">「得人如得魚」</strong>。
+                        </p>
+                        <p class="text-xl font-bold text-white border-y border-slate-700 py-6 text-center">
+                            「當基督呼召一個人時，祂是吩咐他來死。」— 潘霍華
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold text-white bg-slate-800/50 inline-block px-4 py-2 rounded-lg">三、徹底割捨的跟隨之路</h2>
+                        <p>
+                            跟隨耶穌，往往需要付上極大的代價。雅各和約翰不僅放下了謀生的工具，他們更把<strong class="text-accent">「父親和雇工人留在船上」</strong>。提摩太·凱勒牧師提醒我們：*「耶穌必須成為你生命中唯一的最高渴望，否則其他美好的事物都會成為毀滅你的偶像。」*
+                        </p>
+                    </div>
+
+                    <footer class="pt-8 border-t border-slate-800">
+                        <p class="text-center font-bold text-slate-200">
+                            結論：今天，耶穌依然在我們生命的海邊行走。祂的呼召從未停止。問題是，我們是否願意捨棄那些綑綁我們的網，勇敢地跟從祂？
+                        </p>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <!-- 名言 Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-pink-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1-10 loop -->
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「恩典是白白的，卻不是廉價的；它之所以白白賜予，是因為它無價。」</p>
+                    <span class="text-accent font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「你心中的偶像，就是任何你覺得沒有它就活不下去的東西。」</p>
+                    <span class="text-accent font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「如果基督徒在世上的生活沒有讓人感到驚訝，那這信仰就不具有多大的意義。」</p>
+                    <span class="text-accent font-bold text-sm">— 約翰·史托德 (John Stott)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「上帝不是為了讓我們感到舒適而存在，祂是為了讓我們成為聖潔而存在。」</p>
+                    <span class="text-accent font-bold text-sm">— 查爾斯·史丹利 (Charles Stanley)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「一顆不認識神的心，就像一個充滿焦躁的迷宮，永遠找不到出口；直到它安息在神的旨意中。」</p>
+                    <span class="text-accent font-bold text-sm">— 約翰·加爾文 (John Calvin)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「如果我們在祈禱上失敗，我們將在所有的事情上失敗。」</p>
+                    <span class="text-accent font-bold text-sm">— 司布真 (Charles Spurgeon)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「這世上只有兩種人：一種是對神說『願祢的旨意成就』的人；另一種是神對他說『任憑你的旨意行吧』的人。」</p>
+                    <span class="text-accent font-bold text-sm">— 魯益師 (C.S. Lewis)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「我們之所以無法聽見神的聲音，往往是因為我們自己製造了太多的噪音。」</p>
+                    <span class="text-accent font-bold text-sm">— 盧雲 (Henri Nouwen)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「聖經不是為了增加我們的知識而賜下的，乃是為了改變我們的生命。」</p>
+                    <span class="text-accent font-bold text-sm">— 慕迪 (D.L. Moody)</span>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:bg-slate-800/80 transition-colors">
+                    <p class="text-slate-200 mb-4">「一個被聖靈充滿的人，絕不會問這件事對我有什麼好處，他只會問：這件事能使基督得著榮耀嗎？」</p>
+                    <span class="text-accent font-bold text-sm">— 唐崇榮 (Stephen Tong)</span>
+                </div>
+            </div>
+
+            <!-- Warning Message -->
+            <div class="mt-12 text-center text-slate-600 text-sm italic">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <button onclick="document.getElementById('prayer').scrollIntoView({behavior: 'smooth'})" class="floating-btn w-14 h-14 bg-accent text-dark rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform active:scale-95 animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <script>
+        // Simple animation trigger for sections on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

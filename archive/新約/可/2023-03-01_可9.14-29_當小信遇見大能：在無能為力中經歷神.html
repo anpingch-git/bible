@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可9:14-29:當小信遇見大能：在無能為力中經歷神</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        dark: '#0a0a0c',
+                        surface: '#16161d',
+                        accent: '#f43f5e',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.85' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(22, 22, 29, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: #1e1e26;
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #6366f1;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-dark text-slate-200 font-sans leading-relaxed">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="text-sm font-display font-bold tracking-wider text-slate-100 flex items-center gap-2">
+                <span class="text-primary">✝</span> 可 9:14-29
+            </div>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#prayer" class="nav-link text-slate-400 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-slate-400 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-slate-400 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-slate-400 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[70vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-black z-0"></div>
+        <div class="absolute inset-0 z-10 animate-breath opacity-60">
+            <img src='image/img_9e07739b-d688-4931-9c15-3c21e32844bc.jpg' alt='Banner' class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent z-20"></div>
+        
+        <div class="relative z-30 text-center px-4 max-w-4xl">
+            <span class="inline-block px-4 py-1 rounded-full bg-primary/20 text-primary border border-primary/30 text-sm font-bold mb-6 tracking-widest uppercase">Sunday Sermon</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black mb-6 tracking-tight text-white">
+                當小信遇見大能：<br><span class="text-gradient">在無能為力中經歷神</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 font-light max-w-2xl mx-auto">
+                馬可福音 9:14-29 | 透過承認軟弱、轉向救主、重新連結，得著屬天的生命力。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Golden Verse Section -->
+        <section class="relative">
+            <div class="absolute -top-12 -left-12 text-9xl text-primary/10 font-display select-none">"</div>
+            <div class="bento-card bg-gradient-to-br from-indigo-900/40 to-slate-900/60 border-primary/20 py-16 text-center">
+                <h2 class="text-sm font-bold text-primary tracking-[0.3em] uppercase mb-8 flex justify-center items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    金句
+                </h2>
+                <blockquote class="text-2xl md:text-4xl font-display font-bold text-white leading-relaxed max-w-3xl mx-auto px-4 italic">
+                    「我信！但我信不足，求主幫助。」
+                </blockquote>
+                <cite class="block mt-6 text-slate-500 font-medium">— 馬可福音 9:24</cite>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/3">
+                    <div class="p-6 rounded-3xl bg-primary/10 border border-primary/20 inline-block mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h2 class="text-4xl font-display font-black text-white mb-4">禱告詞</h2>
+                    <p class="text-slate-400">在軟弱中不逃避，勇敢地向主呼求。</p>
+                </div>
+                <div class="md:w-2/3 glass p-10 rounded-[40px] relative">
+                    <p class="text-xl leading-loose text-slate-200">
+                        親愛的主耶穌，我們常常像這位絕望的父親，在生活的困境與屬靈的枯乾中感到無能為力；也常像那群門徒，企圖倚靠自己的經驗與方法，卻落入挫敗。主啊，我們承認我們的信不足。求祢賜下恩典，讓我們在軟弱中不逃避，而是勇敢地向祢呼求：「求主幫助！」求祢的聖靈今天透過這段經文對我們的心說話，讓我們看見祢的全能，並重新建立與祢在禱告中緊密連結的生命。奉耶穌基督得勝的名求，阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-display font-black text-white mb-4 flex items-center justify-center gap-3">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                    大綱導覽
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="bento-card group flex flex-col justify-between hover:bg-primary/10">
+                    <div>
+                        <span class="text-primary font-bold text-xs tracking-widest uppercase mb-2 block">Part 01</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">挫敗的現實：能力走到盡頭</h3>
+                        <p class="text-slate-500 text-sm mt-2">可 9:14-19</p>
+                    </div>
+                    <span class="mt-8 text-primary group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">深入解析 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+                </a>
+                <a href="#part2" class="bento-card group flex flex-col justify-between hover:bg-indigo-500/10">
+                    <div>
+                        <span class="text-indigo-400 font-bold text-xs tracking-widest uppercase mb-2 block">Part 02</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">誠實的呼求：在信不足中遇見主</h3>
+                        <p class="text-slate-500 text-sm mt-2">可 9:20-24</p>
+                    </div>
+                    <span class="mt-8 text-indigo-400 group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">深入解析 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+                </a>
+                <a href="#part3" class="bento-card group flex flex-col justify-between hover:bg-secondary/10">
+                    <div>
+                        <span class="text-secondary font-bold text-xs tracking-widest uppercase mb-2 block">Part 03</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-secondary transition-colors">隱藏的關鍵：禱告是能力來源</h3>
+                        <p class="text-slate-500 text-sm mt-2">可 9:25-29</p>
+                    </div>
+                    <span class="mt-8 text-secondary group-hover:translate-x-2 transition-transform inline-flex items-center gap-2">深入解析 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-4">
+                        <div class="sticky top-28">
+                            <span class="text-primary font-bold tracking-widest uppercase">01 / Session</span>
+                            <h2 class="text-3xl font-display font-black text-white mt-2 mb-6">挫敗的現實：<br>當我們的能力走到盡頭</h2>
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+                                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">關鍵原文</h4>
+                                    <p class="text-slate-200"><strong>不信 (apistos)</strong>：拒絕倚靠神。</p>
+                                    <p class="text-slate-200"><strong>不能 (ischuó)</strong>：無力勝任。</p>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-indigo-500/10 border border-indigo-500/20">
+                                    <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">屬靈佳句</h4>
+                                    <p class="italic text-indigo-100/80">「我們若依靠自己的力量，我們的力量就成為我們的網羅。」—— 陶恕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="p-8 rounded-[32px] bg-slate-900 border border-slate-800">
+                            <h3 class="text-primary font-bold mb-4 flex items-center gap-2 italic">引用經文 可 9:14-19</h3>
+                            <p class="text-lg text-slate-300 leading-relaxed italic">耶穌問他們說：「你們和他們辯論的是什麼？」眾人中間有一個人回答說：「夫子，我帶了我的兒子到你這裡來，他被啞巴鬼附著...我請過你的門徒把鬼趕出去，他們卻是不能。」耶穌說：「哎！不信的世代啊，我在你們這裡要到幾時呢？把他帶到我這裡來吧。」</p>
+                        </div>
+                        <div class="bento-card">
+                            <h3 class="text-xl font-bold text-white mb-4">關鍵問題：為什麼過去成功的門徒這次失敗了？</h3>
+                            <p class="text-slate-400 mb-6">門徒將「恩賜與經驗」當作了理所當然的能力來源，而忘記了能力是源自於持續與主連結。當我們依靠慣性而非仰望神，就會在新的爭戰中撞牆。</p>
+                            <div class="bg-dark/50 p-6 rounded-2xl border-l-4 border-primary">
+                                <h4 class="font-bold text-white mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    例證：老水手與颶風
+                                </h4>
+                                <p class="text-slate-400 italic">一位經驗豐富的水手憑經驗對抗颶風卻幾乎翻船，直到他放下舵發出求救。門徒以為趕鬼是SOP，卻忘了真正的救援來自於與天上能力的連線。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-4 lg:order-2">
+                        <div class="sticky top-28">
+                            <span class="text-indigo-400 font-bold tracking-widest uppercase">02 / Session</span>
+                            <h2 class="text-3xl font-display font-black text-white mt-2 mb-6">誠實的呼求：<br>在「信不足」中遇見主</h2>
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+                                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">關鍵原文</h4>
+                                    <p class="text-slate-200"><strong>幫助 (boétheó)</strong>：聽到呼救聲後「奔跑過去」。</p>
+                                    <p class="text-slate-200"><strong>信不足 (apistia)</strong>：坦承內心的動搖與軟弱。</p>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-indigo-500/10 border border-indigo-500/20">
+                                    <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">屬靈佳句</h4>
+                                    <p class="italic text-indigo-100/80">「拯救我們的不是我們信心的大小，而是我們所信的對象。」—— 提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 lg:order-1 space-y-8">
+                        <div class="p-8 rounded-[32px] bg-slate-900 border border-slate-800">
+                            <h3 class="text-indigo-400 font-bold mb-4 flex items-center gap-2 italic">引用經文 可 9:20-24</h3>
+                            <p class="text-lg text-slate-300 leading-relaxed italic">耶穌對他說：「你若能信，在信的人，凡事都能。」孩子的父親立時喊著說：「我信！但我信不足，求主幫助。」</p>
+                        </div>
+                        <div class="bento-card">
+                            <h3 class="text-xl font-bold text-white mb-4">關鍵問題：上帝會拒絕「信不足」的禱告嗎？</h3>
+                            <p class="text-slate-400 mb-6">耶穌沒有拒絕他，反而引導他將信心轉向神。父親最偉大的地方在於他沒有假裝剛強，而是將「不信」當作需要被醫治的疾病交給耶穌。真正的信心是帶著懷疑誠實走向神。</p>
+                            <div class="bg-dark/50 p-6 rounded-2xl border-l-4 border-indigo-400">
+                                <h4 class="font-bold text-white mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    例證：搬不動石頭的男孩
+                                </h4>
+                                <p class="text-slate-400 italic">男孩用盡全力搬不開石頭，氣餒時，父親告訴他：你還沒開口請我幫忙。信心就是承認無力，轉向那位有能力的父親。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-4">
+                        <div class="sticky top-28">
+                            <span class="text-secondary font-bold tracking-widest uppercase">03 / Session</span>
+                            <h2 class="text-3xl font-display font-black text-white mt-2 mb-6">隱藏的關鍵：<br>禱告是能力的唯一來源</h2>
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+                                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">關鍵原文</h4>
+                                    <p class="text-slate-200"><strong>禱告 (proseuché)</strong>：表達對神全然倚靠的態度與關係。</p>
+                                </div>
+                                <div class="p-4 rounded-2xl bg-indigo-500/10 border border-indigo-500/20">
+                                    <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">屬靈佳句</h4>
+                                    <p class="italic text-indigo-100/80">「無禱告的心態，正是我們驕傲的明證。」—— 約翰·加爾文</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="p-8 rounded-[32px] bg-slate-900 border border-slate-800">
+                            <h3 class="text-secondary font-bold mb-4 flex items-center gap-2 italic">引用經文 可 9:25-29</h3>
+                            <p class="text-lg text-slate-300 leading-relaxed italic">耶穌進了屋子，門徒就暗暗地問他說：「我們為什麼不能趕出他去呢？」耶穌說：「非用禱告，這一類的鬼總不能出來。」</p>
+                        </div>
+                        <div class="bento-card">
+                            <h3 class="text-xl font-bold text-white mb-4">關鍵問題：門徒忽略了什麼根本問題？</h3>
+                            <p class="text-slate-400 mb-6">門徒把服事當技術，忘記能力的主權在神。「禱告」代表倒空自己、承認貧乏。沒有禱告的事奉只是血氣活動，門徒的病灶是失去了與能力源頭的連結。</p>
+                            <div class="bg-dark/50 p-6 rounded-2xl border-l-4 border-secondary">
+                                <h4 class="font-bold text-white mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                    例證：沒插電的吸塵器
+                                </h4>
+                                <p class="text-slate-400 italic">最頂級的吸塵器若沒插上電源，連灰塵都吸不起來。禱告就是將我們軟弱的生命插上神全能的插座。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-display font-black text-white mb-4">講章文稿</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto glass p-8 md:p-16 rounded-[48px] space-y-12">
+                <header class="text-center">
+                    <h3 class="text-3xl font-bold text-primary mb-4">當小信遇見大能：在無能為力中經歷神</h3>
+                    <p class="text-slate-400">弟兄姊妹，平安。</p>
+                </header>
+                
+                <article class="space-y-8 text-lg text-slate-300 leading-loose">
+                    <p>我們的人生中，是否曾經歷過「盡力了卻依然無能為力」的時刻？當我們面對家庭的破碎、工作的瓶頸、身體的疾病，或是長期無法勝過的軟弱時，我們常會感到絕望。今天，我們要從馬可福音第9章，來看一場在絕望中展開的相遇。</p>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white flex items-center gap-3 border-l-4 border-primary pl-4">第一段：挫敗的現實：當我們的能力走到盡頭</h4>
+                        <p>故事的開頭，是一幅混亂與挫敗的畫面。一位父親帶著被鬼附、飽受折磨的兒子來求醫。但經文告訴我們，門徒們經歷了徹底的失敗。父親無奈地說：「<strong class="text-white underline decoration-primary decoration-2 underline-offset-4">我請過你的門徒把鬼趕出去，他們卻是不能。</strong>」</p>
+                        <p>各位，這群門徒不是新手，他們曾經被耶穌差遣，有過成功趕鬼的輝煌記錄。為什麼這次「不能」？耶穌一語道破了核心：「哎！不信的世代啊！」門徒的失敗，是因為他們把過去的恩賜當成了自己的能力，他們依賴經驗，卻忘記了依賴神。</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white flex items-center gap-3 border-l-4 border-primary pl-4">第二段：誠實的呼求：在「信不足」中遇見全能主</h4>
+                        <p>當孩子被帶到耶穌面前，病情發作得極其可怕。這位心碎的父親對耶穌說：「你若能做什麼，求你憐憫我們，幫助我們。」耶穌立刻挑戰他：「<strong class="text-white underline decoration-primary decoration-2 underline-offset-4">你若能信，在信的人，凡事都能。</strong>」</p>
+                        <p>這位父親接下來的反應，是整本聖經中最美麗、最真實的禱告之一。他沒有假裝自己信心滿滿，他立時流淚喊著說：<strong class="text-primary text-xl">「我信！但我信不足，求主幫助。」</strong>（可9:24）這句話成為了我們今天的金句。</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-white flex items-center gap-3 border-l-4 border-primary pl-4">第三段：隱藏的關鍵：禱告是能力的唯一來源</h4>
+                        <p>最後，耶穌醫治了孩子。門徒在私下滿臉羞愧地問耶穌：「我們為什麼不能？」耶穌留下了一句發人深省的話：「<strong class="text-white underline decoration-primary decoration-2 underline-offset-4">非用禱告，這一類的鬼總不能出來。</strong>」</p>
+                        <p>門徒以為趕鬼是靠咒語或手勢，耶穌卻告訴他們，屬靈的能力唯一來源是「與神的連結」，也就是「禱告」。沒有禱告的事奉，就像沒有插電的吸塵器，看起來裝備齊全，卻發揮不了任何作用。</p>
+                    </div>
+
+                    <div class="p-8 bg-primary/10 rounded-3xl border border-primary/20">
+                        <h4 class="text-xl font-bold text-white mb-4">結論：承認、轉向、連結</h4>
+                        <p>今天，無論你正面對什麼樣的啞巴鬼——可能是根深蒂固的癮頭、難以挽回的關係、或是心中的憂鬱與焦慮。請記住這三個詞：<strong>承認</strong>你的軟弱與信不足；<strong>轉向</strong>那位凡事都能的耶穌；透過禱告與祂深深<strong>連結</strong>。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Applications & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card bg-indigo-900/20 border-indigo-500/30">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center flex-shrink-0 text-xs mt-1">1</span>
+                        <span><strong>撕下屬靈包裝，誠實面對軟弱</strong>：把內心的懷疑、沮喪和「信不足」化為禱告。</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center flex-shrink-0 text-xs mt-1">2</span>
+                        <span><strong>檢視事奉的動力來源</strong>：反思我們是否正靠著「過去的經驗」而非仰望神。</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center flex-shrink-0 text-xs mt-1">3</span>
+                        <span><strong>建立持續倚靠的禱告生活</strong>：將禱告轉變為「每一天呼吸的氧氣筒」。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card bg-rose-900/10 border-rose-500/30">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                    回應行動
+                </h2>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center flex-shrink-0 text-xs mt-1">✓</span>
+                        <span><strong>誠實的清單</strong>：本週寫下一件感到無力的事情，具體為此呼求。</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center flex-shrink-0 text-xs mt-1">✓</span>
+                        <span><strong>停頓的練習</strong>：每天開始前，先停下3分鐘進行「插電禱告」。</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center flex-shrink-0 text-xs mt-1">✓</span>
+                        <span><strong>代求的行動</strong>：主動尋找一位陷於軟弱的肢體，為他/她的爭戰代求。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pb-20">
+            <h2 class="text-4xl font-display font-black text-white text-center mb-12 flex items-center justify-center gap-3">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card border-slate-700/50">
+                    <p class="text-lg text-slate-200 italic mb-4 leading-relaxed">「拯救我們的不是我們信心的大小，而是我們所信的對象。即使是微弱、顫抖的信心，只要是放在耶穌基督身上，就能使我們與祂的大能連結。」</p>
+                    <p class="text-primary font-bold">提摩太·凱勒 (Timothy Keller)</p>
+                    <span class="text-xs text-slate-500">《隱藏的聖誕》</span>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card border-slate-700/50">
+                    <p class="text-lg text-slate-200 italic mb-4 leading-relaxed">「真正的禱告，是承認自己的無能，並將抓住神的全能當作唯一的盼望。」</p>
+                    <p class="text-primary font-bold">司布真 (Charles Spurgeon)</p>
+                    <span class="text-xs text-slate-500">《早晚靈修大光》</span>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card border-slate-700/50">
+                    <p class="text-lg text-slate-200 italic mb-4 leading-relaxed">「我們若依靠自己的力量，我們的力量就成為我們的網羅；我們若依靠上帝，上帝的全能就成為我們的拯救。」</p>
+                    <p class="text-primary font-bold">陶恕 (A.W. Tozer)</p>
+                    <span class="text-xs text-slate-500">《渴慕神》</span>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card border-slate-700/50">
+                    <p class="text-lg text-slate-200 italic mb-4 leading-relaxed">「禱告意味著什麼都不靠自己，而將一切指望都寄託在上帝身上。」</p>
+                    <p class="text-primary font-bold">潘霍華 (Dietrich Bonhoeffer)</p>
+                    <span class="text-xs text-slate-500">《一起生活》</span>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card border-slate-700/50">
+                    <p class="text-lg text-slate-200 italic mb-4 leading-relaxed">「我今天有太多事情要做，所以我必須每天花三個小時禱告，否則我無法完成。」</p>
+                    <p class="text-primary font-bold">馬丁·路德 (Martin Luther)</p>
+                    <span class="text-xs text-slate-500">桌邊談話錄</span>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card border-slate-700/50">
+                    <p class="text-lg text-slate-200 italic mb-4 leading-relaxed">「無禱告的心態，正是我們驕傲的明證；因為它宣告我們能夠靠自己應付生活，不需要神的幫助。」</p>
+                    <p class="text-primary font-bold">約翰·加爾文 (John Calvin)</p>
+                    <span class="text-xs text-slate-500">《基督教要義》</span>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-slate-600 text-sm italic">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg shadow-primary/40 hover:scale-110 active:scale-95 transition-all z-50 animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for nav links and buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

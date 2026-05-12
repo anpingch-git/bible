@@ -32,7 +32,7 @@
                     fontFamily: {
                         sans: ['Noto Sans TC', 'sans-serif'],
                         display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
-                    },
+                    },					
                 }
             }
         }
@@ -83,6 +83,13 @@
         .animate-float {
             animation: float 3s ease-in-out infinite;
         }
+		@keyframes breathing {
+            0%, 100% { opacity: 0.2; filter: brightness(1); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="font-sans antialiased">
@@ -103,7 +110,7 @@
     <!-- Banner Header -->
     <header class="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_10893221-2edc-4909-b0ae-cfb3fb5ca62e.jpg' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <img src='image/img_10893221-2edc-4909-b0ae-cfb3fb5ca62e.jpg' alt='media_1' class="absolute inset-0 w-full h-full object-cover breathing-image  scale-105" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
         </div>
         

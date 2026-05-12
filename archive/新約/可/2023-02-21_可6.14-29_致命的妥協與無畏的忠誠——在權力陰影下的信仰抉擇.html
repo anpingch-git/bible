@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可6:14-29: 致命的妥協與無畏的忠誠——在權力陰影下的信仰抉擇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A059',
+                            dark: '#0A0A0B',
+                            card: '#161618',
+                            accent: '#E53E3E',
+                            muted: '#A0A0AB'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        english: ['Outfit', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 0.85, filter: 'brightness(1)' },
+                            '50%': { opacity: 0.4, filter: 'brightness(0.6)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #F4F4F5;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #C5A059, #F6E0B3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-2px);
+            background: rgba(197, 160, 89, 0.1);
+            border-color: #C5A059;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Hero Banner -->
+    <header class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-pulse-slow h-full w-full">
+                <img src="image/img_fda2b650-b63c-440c-b468-710587b10b22.jpg" alt="media_1" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-brand-dark/60 to-brand-dark"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <div class="inline-block px-4 py-1 mb-6 border border-brand-gold/30 rounded-full text-brand-gold text-sm font-english tracking-widest uppercase">
+                Mark 6:14-29
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black font-display mb-6 leading-tight">
+                致命的妥協與<br><span class="text-gradient">無畏的忠誠</span>
+            </h1>
+            <p class="text-brand-muted text-lg md:text-xl font-light tracking-wide italic">
+                —— 在權力陰影下的信仰抉擇 ——
+            </p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass border-b border-white/5 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <span class="font-display font-bold text-brand-gold tracking-tight">可6:14-29</span>
+            <div class="flex items-center gap-6 md:gap-10 text-sm font-medium tracking-wider overflow-x-auto no-scrollbar">
+                <a href="#prayer" class="nav-link whitespace-nowrap">禱告</a>
+                <a href="#outline" class="nav-link whitespace-nowrap">大綱</a>
+                <a href="#sermon" class="nav-link whitespace-nowrap">講章</a>
+                <a href="#quotes" class="nav-link whitespace-nowrap">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Golden Verse & Prayer Section -->
+        <section id="prayer" class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-8">
+                <div class="p-8 bg-brand-card rounded-3xl border-l-4 border-brand-gold relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="w-20 h-20 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16L9.01701 16C7.91244 16 7.01701 16.8954 7.01701 18L7.01701 21M14.017 21H17.017C18.1216 21 19.017 20.1046 19.017 19V11.1646C19.017 10.1554 18.5144 9.21985 17.6749 8.65809L13.1579 5.63756C12.4589 5.1704 11.5752 5.1704 10.8761 5.63756L6.35914 8.65809C5.51962 9.21985 5.01701 10.1554 5.01701 11.1646V19C5.01701 20.1046 5.91244 21 7.01701 21H10.017M14.017 21V18.5C14.017 17.3954 13.1216 16.5 12.017 16.5C10.9124 16.5 10.017 17.3954 10.017 18.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-brand-gold">✨</span>
+                        <h3 class="text-xl font-bold tracking-widest text-brand-gold">【金句】</h3>
+                    </div>
+                    <p class="text-2xl md:text-3xl font-display leading-relaxed">
+                        「約翰曾對希律說：『你娶你兄弟的妻子是不合理的。』」
+                    </p>
+                    <p class="mt-4 text-brand-muted font-english">— 馬可福音 6:18</p>
+                </div>
+            </div>
+
+            <div class="bg-white/[0.02] p-10 rounded-3xl border border-white/5 space-y-6">
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21l-8.228-8.228a4.772 4.772 0 010-6.748l1.325-1.325a4.772 4.772 0 016.748 0L12 5.252l.555-.555a4.772 4.772 0 016.748 0l1.325 1.325a4.772 4.772 0 010 6.748L12 21z"/></svg>
+                    <h3 class="text-xl font-bold tracking-widest">【禱告詞】</h3>
+                </div>
+                <p class="text-lg leading-loose text-brand-muted">
+                    主啊，我們來到祢面前，懇求祢賜給我們施洗約翰那般無畏的勇氣，敢於在黑暗與妥協的世代中為真理發聲。求祢光照我們的內心，不讓我們像希律一樣，被面子、私慾和對人的懼怕所轄制，以致違背了良知。願祢的真理成為我們腳前的燈、路上的光，使我們寧可失去世界的掌聲，也不願失去祢的同在。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-10">
+            <div class="text-center">
+                <h2 class="text-3xl font-display font-black mb-2 flex items-center justify-center gap-4">
+                    <svg class="w-8 h-8 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    講道分段大綱
+                </h2>
+                <div class="h-1 w-20 bg-brand-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="outline-btn p-6 border border-white/10 rounded-2xl flex flex-col items-center text-center group">
+                    <span class="text-2xl mb-3 text-brand-gold group-hover:scale-110 transition-transform">01</span>
+                    <h4 class="font-bold mb-2">揮之不去的罪咎</h4>
+                    <span class="text-xs text-brand-muted font-english">可 6:14-16</span>
+                </a>
+                <a href="#section2" class="outline-btn p-6 border border-white/10 rounded-2xl flex flex-col items-center text-center group">
+                    <span class="text-2xl mb-3 text-brand-gold group-hover:scale-110 transition-transform">02</span>
+                    <h4 class="font-bold mb-2">致命的私慾與妥協</h4>
+                    <span class="text-xs text-brand-muted font-english">可 6:17-26</span>
+                </a>
+                <a href="#section3" class="outline-btn p-6 border border-white/10 rounded-2xl flex flex-col items-center text-center group">
+                    <span class="text-2xl mb-3 text-brand-gold group-hover:scale-110 transition-transform">03</span>
+                    <h4 class="font-bold mb-2">黑暗中的殉道與榮耀</h4>
+                    <span class="text-xs text-brand-muted font-english">可 6:27-29</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-32 mt-20">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-english font-black text-white/10">01</span>
+                        <h3 class="text-3xl font-display font-bold">揮之不去的罪咎 —— 當良知被恐懼喚醒</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="p-6 bg-white/[0.03] rounded-2xl border-l-2 border-brand-gold italic text-brand-muted leading-relaxed">
+                                <span class="block text-xs font-bold text-brand-gold mb-2 uppercase tracking-tighter">經文內容 (可 6:14-16)</span>
+                                耶穌的名聲傳揚出來。希律王聽見了，就說：「施洗的約翰從死裡復活了，所以這些異能由他裡面發出來。」但別人說：「是以利亞。」又有人說：「是先知，正像古時先知中的一位。」希律聽見卻說：「是我所斬的約翰，他復活了。」
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 grid gap-6">
+                            <div class="bento-grid">
+                                <div class="bg-brand-card p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-brand-gold font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+                                        關鍵字解析
+                                    </h5>
+                                    <p class="text-sm"><strong>復活 (ἐγείρω, egeirō)</strong>: 原意「喚醒」。希律的恐懼源於未經對付的罪，良知處於持續的驚恐（被喚醒）之中。</p>
+                                </div>
+                                <div class="bg-brand-card p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-brand-accent font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+                                        深度提問
+                                    </h5>
+                                    <p class="text-sm">為何擁有一切的希律會懼怕一個木匠？因為權力能壓制外在，卻無法消滅內在與神隔絕的良知恐懼。</p>
+                                </div>
+                            </div>
+                            <div class="bg-white/[0.02] p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 0112 4a7.992 7.992 0 016 2.581V17.2a8.007 8.007 0 00-6-2.58c-1.954 0-3.74.704-5.12 1.869l-.126.106-.127-.106A7.994 7.994 0 003 14.62c-1.953 0-3.74.704-5.121 1.869V4.581A7.993 7.993 0 013 4c1.11 0 2.156.226 3.11.636L7 5.121V4.804zM3 16.126a9.972 9.972 0 012.008-.126c1.11 0 2.156.226 3.11.636l.882.44V6.136l-.882-.44A9.972 9.972 0 003 5.636V16.126zM13 14.636V17.2l.882-.44c1.954-1.165 4.385-1.165 6.338 0l.882.44V6.136a9.973 9.973 0 00-2.882-.5A9.972 9.972 0 0013 6.136z"/></svg>
+                                    例證故事
+                                </h5>
+                                <p class="text-sm italic">《洩密的心》：殺死老人後的主角因幻聽心跳聲而崩潰。希律的心裡，也有一顆無法逃避的「洩密的心」。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-english font-black text-white/10">02</span>
+                        <h3 class="text-3xl font-display font-bold">致命的私慾與妥協 —— 被「面子」綁架的權力</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="p-6 bg-white/[0.03] rounded-2xl border-l-2 border-brand-gold italic text-brand-muted leading-relaxed text-sm">
+                                <span class="block text-xs font-bold text-brand-gold mb-2 uppercase tracking-tighter">經文精華 (可 6:17-26)</span>
+                                希律為希羅底的緣故鎖了約翰。約翰說：「你娶兄弟妻是不合理的。」希律敬畏約翰，保護他且樂意聽他。在生日筵席上，希羅底女兒跳舞使眾人歡喜。希律起誓願賜國之一半。女子求約翰的頭。王甚憂愁，但因面子與誓言，不肯推辭。
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 grid gap-6">
+                            <div class="bento-grid">
+                                <div class="bg-brand-card p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-brand-gold font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+                                        關鍵字解析
+                                    </h5>
+                                    <p class="text-sm"><strong>憂愁 (περίλυπος, perilypos)</strong>: 極度悲痛。希律知道殺約翰是錯的，但他更害怕失去在同僚面前的「面子」。</p>
+                                </div>
+                                <div class="bg-brand-card p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-brand-accent font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+                                        深度提問
+                                    </h5>
+                                    <p class="text-sm">明明「敬畏約翰」，為何最終下達死刑？因為半弔子的信仰無法對付核心的罪，最終向群體壓力妥協。</p>
+                                </div>
+                            </div>
+                            <div class="bg-white/[0.02] p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 0112 4a7.992 7.992 0 016 2.581V17.2a8.007 8.007 0 00-6-2.58c-1.954 0-3.74.704-5.12 1.869l-.126.106-.127-.106A7.994 7.994 0 003 14.62c-1.953 0-3.74.704-5.121 1.869V4.581A7.993 7.993 0 013 4c1.11 0 2.156.226 3.11.636L7 5.121V4.804zM3 16.126a9.972 9.972 0 012.008-.126c1.11 0 2.156.226 3.11.636l.882.44V6.136l-.882-.44A9.972 9.972 0 003 5.636V16.126zM13 14.636V17.2l.882-.44c1.954-1.165 4.385-1.165 6.338 0l.882.44V6.136a9.973 9.973 0 00-2.882-.5A9.972 9.972 0 0013 6.136z"/></svg>
+                                    例證故事
+                                </h5>
+                                <p class="text-sm italic">「溫水煮青蛙」：希律從囚禁到處決，一步步被私慾和虛榮推向深淵。偶像（面子）一旦未被滿足，絕不饒恕人。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-english font-black text-white/10">03</span>
+                        <h3 class="text-3xl font-display font-bold">黑暗中的殉道與榮耀 —— 為主燃盡的短暫一生</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="p-6 bg-white/[0.03] rounded-2xl border-l-2 border-brand-gold italic text-brand-muted leading-relaxed">
+                                <span class="block text-xs font-bold text-brand-gold mb-2 uppercase tracking-tighter">經文內容 (可 6:27-29)</span>
+                                隨即差一個護衛兵，吩咐拿約翰的頭來。護衛兵就去，在監裡斬了約翰，把頭放在盤子裡，拿來給女子，女子就給她母親。約翰的門徒聽見了，就來把他的屍首領去，葬在墳墓裡。
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 grid gap-6">
+                            <div class="bento-grid">
+                                <div class="bg-brand-card p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-brand-gold font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+                                        關鍵字解析
+                                    </h5>
+                                    <p class="text-sm"><strong>屍首 (πτῶμα, ptōma)</strong>: 指倒下的身體。約翰看似以最無力的方式結束，卻在永恆中成就極致榮耀。</p>
+                                </div>
+                                <div class="bg-brand-card p-6 rounded-2xl border border-white/5">
+                                    <h5 class="text-brand-accent font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+                                        深度提問
+                                    </h5>
+                                    <p class="text-sm">為何上帝任憑忠僕死於荒唐？約翰打破了成功神學迷思。他的死是「祂必興旺，我必衰微」的最終實踐。</p>
+                                </div>
+                            </div>
+                            <div class="bg-white/[0.02] p-6 rounded-2xl border border-white/5">
+                                <h5 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 0112 4a7.992 7.992 0 016 2.581V17.2a8.007 8.007 0 00-6-2.58c-1.954 0-3.74.704-5.12 1.869l-.126.106-.127-.106A7.994 7.994 0 003 14.62c-1.953 0-3.74.704-5.121 1.869V4.581A7.993 7.993 0 013 4c1.11 0 2.156.226 3.11.636L7 5.121V4.804zM3 16.126a9.972 9.972 0 012.008-.126c1.11 0 2.156.226 3.11.636l.882.44V6.136l-.882-.44A9.972 9.972 0 003 5.636V16.126zM13 14.636V17.2l.882-.44c1.954-1.165 4.385-1.165 6.338 0l.882.44V6.136a9.973 9.973 0 00-2.882-.5A9.972 9.972 0 0013 6.136z"/></svg>
+                                    例證故事
+                                </h5>
+                                <p class="text-sm italic">吉姆·艾略特：28歲殉道。他在日記寫下：「為得到那不會失去的，而付出那無法保留的，這人絕不是傻瓜。」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="py-12 bg-white/[0.01] rounded-[3rem] px-8 md:px-16 border border-white/5">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="flex items-center gap-4 mb-10">
+                    <svg class="w-10 h-10 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+                    <h2 class="text-4xl font-display font-black">分段講章文稿</h2>
+                </div>
+                
+                <div class="prose prose-invert max-w-none space-y-8 text-brand-muted leading-relaxed text-lg">
+                    <p class="text-white font-medium">弟兄姊妹，平安。今天我們要看的是一段充滿戲劇張力、卻又極其沉重的經文。<strong class="text-brand-gold">可6:14-29：致命的妥協與無畏的忠誠——在權力陰影下的信仰抉擇</strong>。這段經文像是一面鏡子，照出了人類內心深處的怯懦、私慾，以及對上帝真理的絕對忠誠。</p>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-4">第一段：揮之不去的罪咎——當良知被恐懼喚醒</h4>
+                        <p>當耶穌的名聲傳到希律王的耳中時，這位大權在握的君王第一反應不是好奇，而是恐懼。他說：「<strong class="text-white underline decoration-brand-gold decoration-2">是我所斬的約翰，他復活了</strong>。」（可6:16）</p>
+                        <p>希律擁有一切兵力與財富，但他為什麼這麼怕？因為在他的心裡，有一個<strong class="text-white">揮之不去的罪咎</strong>。希律口中的「復活」，不是神學上的信仰，而是良知的噩夢。當一個人在神面前被寶血洗淨之前，任何神聖的彰顯，都會被他的良知自動解讀為對自己的審判。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-4">第二段：致命的私慾與妥協——被「面子」綁架的權力</h4>
+                        <p>希律其實<strong class="text-brand-gold">知道約翰是義人，是聖人，所以敬畏他</strong>。他甚至喜歡聽約翰講道。但希律的信仰是半弔子的。他在生日宴會上，王「<strong class="text-brand-accent italic font-black">甚憂愁</strong>」，但他因為「<strong class="text-white underline decoration-brand-accent">所起的誓，又因同席的人，就不肯推辭</strong>」（可6:26）。</p>
+                        <p>希律被「面子」綁架了！他害怕得罪賓客，卻不怕得罪上帝。今天，我們在職場中，是不是也常因為「同席的人」的眼光，而選擇對真理妥協？<strong class="text-white">妥協從來不是一瞬間的事，當你對某一個罪保留空間，你遲早會做出違背良知的致命決定。</strong></p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-4">第三段：黑暗中的殉道與榮耀——為主燃盡的短暫一生</h4>
+                        <p>畫面轉向了冰冷的監牢。<strong class="text-white">護衛兵在監裡斬了約翰，把頭放在盤子裡</strong>。從世俗的眼光來看，這是何等悲慘的失敗！一代先知死於荒唐宴會的權力遊戲中。</p>
+                        <p>但這正是<strong class="text-white font-bold">黑暗中的殉道與榮耀</strong>。約翰用他的生命完美地詮釋了「祂必興旺，我必衰微」。他失去了世上的頭顱，卻得到了天上永不衰殘的榮耀冠冕。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion & Application Grid -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"/></svg>
+                    <h3 class="text-2xl font-bold tracking-widest">應用方向</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-5 bg-white/[0.03] rounded-xl border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <span class="text-brand-gold font-bold mr-2">01.</span> 檢視對罪的容忍度
+                    </div>
+                    <div class="p-5 bg-white/[0.03] rounded-xl border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <span class="text-brand-gold font-bold mr-2">02.</span> 面對群眾壓力的抉擇
+                    </div>
+                    <div class="p-5 bg-white/[0.03] rounded-xl border border-white/5 hover:border-brand-gold/30 transition-colors">
+                        <span class="text-brand-gold font-bold mr-2">03.</span> 重新定義成功與失敗
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <h3 class="text-2xl font-bold tracking-widest">回應行動</h3>
+                </div>
+                <ul class="space-y-4 text-brand-muted">
+                    <li class="flex gap-4">
+                        <div class="mt-1.5 w-1.5 h-1.5 bg-brand-gold rounded-full flex-shrink-0"></div>
+                        <p><strong>認罪與對付</strong>：本週花時間在神面前安靜，勇敢向神認罪並尋求屬靈長輩協助切斷不潔關係。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="mt-1.5 w-1.5 h-1.5 bg-brand-gold rounded-full flex-shrink-0"></div>
+                        <p><strong>勇敢發聲</strong>：在職場或人際互動中遇違背真理之事，不為「面子」沈默，練習用愛心說誠實話。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="mt-1.5 w-1.5 h-1.5 bg-brand-gold rounded-full flex-shrink-0"></div>
+                        <p><strong>為受逼迫者代禱</strong>：每天為現今世上因堅持信仰而遭受逼迫的基督徒禱告。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Carousel -->
+        <section id="quotes" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-3xl font-display font-black mb-2 flex items-center justify-center gap-4">
+                    <svg class="w-8 h-8 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0110.908-2.845 1.208 1.208 0 01.192 1.11 8.235 8.235 0 01-5.641 5.308 1.225 1.225 0 01-1.306-.968l-.433-1.613a4.21 4.21 0 00-3.151-3.217zM15.75 18a.75.75 0 001.5 0c0-1.845-.838-3.657-2.355-4.757a.75.75 0 00-.9 1.2c1.014.734 1.755 1.903 1.755 3.557z"/></svg>
+                    屬靈前輩佳句名言
+                </h2>
+                <div class="h-1 w-20 bg-brand-gold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Quote 1 -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-xl font-display italic text-white mb-6">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <div class="text-sm">
+                        <span class="block text-brand-gold font-bold">潘霍華 (Dietrich Bonhoeffer)</span>
+                        <span class="text-brand-muted font-english">《追隨基督》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-xl font-display italic text-white mb-6">「如果你服事偶像，它永遠不會滿足；如果你未能達到偶像的要求，它絕不會饒恕你。」</p>
+                    <div class="text-sm">
+                        <span class="block text-brand-gold font-bold">提摩太·凱勒 (Timothy Keller)</span>
+                        <span class="text-brand-muted font-english">《假神》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-xl font-display italic text-white mb-6">「良知是神在人靈魂中設立的法庭，它不會容許人將自己的罪行隱藏。」</p>
+                    <div class="text-sm">
+                        <span class="block text-brand-gold font-bold">約翰·加爾文 (John Calvin)</span>
+                        <span class="text-brand-muted font-english">《基督教要義》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-xl font-display italic text-white mb-6">「寧可在真理中與少數人站在一起被定罪，也不要在謬誤中與多數人同流合污。」</p>
+                    <div class="text-sm">
+                        <span class="block text-brand-gold font-bold">查爾斯·司布真 (Charles Spurgeon)</span>
+                        <span class="text-brand-muted font-english">《清晨與夜晚》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-xl font-display italic text-white mb-6">「今天教會最大的危機，是我們試圖修改神的話語，好讓它符合人的墮落。」</p>
+                    <div class="text-sm">
+                        <span class="block text-brand-gold font-bold">陶恕 (A.W. Tozer)</span>
+                        <span class="text-brand-muted font-english">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <p class="text-xl font-display italic text-white mb-6">「我的良心受上帝之道所束縛。違背良心既不安全，也不正當。」</p>
+                    <div class="text-sm">
+                        <span class="block text-brand-gold font-bold">馬丁·路德 (Martin Luther)</span>
+                        <span class="text-brand-muted font-english">1521年沃爾姆斯議會</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 p-8 border-t border-white/5">
+                <p class="text-brand-muted text-sm italic">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-[100]">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation (extra layer of stability)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

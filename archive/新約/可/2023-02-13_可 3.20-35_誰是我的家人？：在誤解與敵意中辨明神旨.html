@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可 3:20-35 誰是我的家人？：在誤解與敵意中辨明神旨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c9a050',
+                        secondary: '#8a6d3b',
+                        dark: '#0a0a0a',
+                        card: '#161616',
+                        accent: '#ffd700',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: '1', filter: 'brightness(1)' },
+                            '50%': { opacity: '0.6', filter: 'brightness(0.4)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 22, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffd700 0%, #c9a050 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(201, 160, 80, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(201, 160, 80, 0.3);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #c9a050;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .banner-mask {
+            background: linear-gradient(to bottom, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%);
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center justify-between px-6 md:px-12">
+        <div class="text-primary font-display font-extrabold text-lg tracking-wider">可 3:20-35</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+        <div class="md:hidden flex space-x-4 text-xs">
+            <a href="#prayer">禱告</a>
+            <a href="#outline">大綱</a>
+            <a href="#sermon">講章</a>
+            <a href="#quotes">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 animate-pulse-slow">
+            <img src='image/img_7804cbb6-f026-494b-9f21-a2cbb04a1493.jpg' alt='media_1' class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 banner-mask"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h2 class="text-primary font-display font-semibold tracking-[0.3em] mb-4 text-xl md:text-2xl opacity-90">可 3:20-35</h2>
+            <h1 class="text-4xl md:text-7xl font-display font-black text-white leading-tight mb-8">誰是我的家人？<br/><span class="text-gradient">在誤解與敵意中辨明神旨</span></h1>
+            <div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+            <p class="text-lg md:text-xl text-gray-300 font-light italic">「凡遵行神旨意的人就是我的弟兄姊妹和母親了。」</p>
+        </div>
+    </header>
+
+    <main class="relative z-20 px-6 md:px-12 lg:px-24 py-20 space-y-32">
+        
+        <!-- 金句 & 禱告 Section -->
+        <section id="prayer" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="p-8 md:p-12 glass rounded-3xl bento-card">
+                <div class="flex items-center gap-4 mb-6">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z"/></svg>
+                    <h3 class="text-2xl font-bold text-white tracking-widest">【金句】</h3>
+                </div>
+                <p class="text-2xl md:text-3xl font-bold leading-relaxed text-gradient">
+                    「凡遵行神旨意的人就是我的弟兄姊妹和母親了。」（可 3:35）
+                </p>
+            </div>
+
+            <div class="p-8 md:p-12 glass rounded-3xl bento-card border-l-4 border-l-primary">
+                <div class="flex items-center gap-4 mb-6">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    <h3 class="text-2xl font-bold text-white tracking-widest">【禱告詞】</h3>
+                </div>
+                <p class="text-gray-300 leading-loose text-lg font-light">
+                    親愛的天父，感謝祢透過耶穌基督召集我們進入祢的家。當世人誤解我們、甚至親友不諒解我們的信仰追求時，求祢賜下屬靈的洞察力，使我們不致在流言蜚語中迷失。求聖靈引領我們，使我們的心全然向祢開放，不硬心抵擋聖靈的感動，叫我們的一生以遵行祢的旨意為念，在那屬天的大家庭中得著永恆的安息。奉主耶穌基督的聖名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- 大綱快速導覽 -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                <h2 class="text-4xl font-black tracking-widest text-white uppercase">大綱導覽</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="p-6 glass rounded-2xl hover:bg-white/5 transition-all text-left border border-white/10 flex flex-col justify-between group">
+                    <span class="text-primary font-bold mb-4 block text-sm tracking-widest">第一部分</span>
+                    <h4 class="text-xl font-bold group-hover:text-primary transition-colors">誤解與瘋狂：當親情成為阻礙</h4>
+                    <span class="mt-4 text-gray-500 text-xs">可 3:20-21</span>
+                </a>
+                <a href="#part2" class="p-6 glass rounded-2xl hover:bg-white/5 transition-all text-left border border-white/10 flex flex-col justify-between group">
+                    <span class="text-primary font-bold mb-4 block text-sm tracking-widest">第二部分</span>
+                    <h4 class="text-xl font-bold group-hover:text-primary transition-colors">褻瀆與真相：分辨聖靈的工作</h4>
+                    <span class="mt-4 text-gray-500 text-xs">可 3:22-30</span>
+                </a>
+                <a href="#part3" class="p-6 glass rounded-2xl hover:bg-white/5 transition-all text-left border border-white/10 flex flex-col justify-between group">
+                    <span class="text-primary font-bold mb-4 block text-sm tracking-widest">第三部分</span>
+                    <h4 class="text-xl font-bold group-hover:text-primary transition-colors">順服與屬靈生命：定義真實的家人</h4>
+                    <span class="mt-4 text-gray-500 text-xs">可 3:31-35</span>
+                </a>
+            </div>
+
+            <!-- 深度解析 - Part 1 -->
+            <div id="part1" class="pt-24 space-y-8">
+                <div class="inline-block px-4 py-1 rounded-full border border-primary text-primary text-sm font-bold mb-4">PART 01</div>
+                <h3 class="text-3xl md:text-4xl font-black text-white">誤解與瘋狂：當親情成為阻礙</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4 glass p-8 rounded-3xl">
+                        <h5 class="text-primary font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                            引用經文
+                        </h5>
+                        <p class="text-gray-400 italic leading-relaxed">「耶穌進了一個屋子，眾人又聚集，甚至他連飯也顧不得吃。耶穌的親屬聽見，就出來要拉住他，因為他們說：『他癲狂了。』」</p>
+                    </div>
+                    <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass p-8 rounded-3xl">
+                            <h5 class="text-primary font-bold mb-4 flex items-center gap-2">關鍵字</h5>
+                            <p class="text-white font-bold text-lg">「癲狂」 (ἐξέστη, existēmi)</p>
+                            <p class="text-gray-400 text-sm mt-2">原意是「出竅」或「失去理智」。指耶穌的熱情完全超出了當時社會對「正常人」的認知規範。</p>
+                        </div>
+                        <div class="glass p-8 rounded-3xl">
+                            <h5 class="text-primary font-bold mb-4 flex items-center gap-2">關鍵問題</h5>
+                            <p class="text-gray-200">為什麼連最親近的家人也會誤解耶穌？</p>
+                            <p class="text-gray-400 text-sm mt-2 italic">解析：家人的動機往往出於「保護」與「恐懼」。有時最大的阻礙並非來自敵人，而是出於愛我們、卻不理解神旨意的親友。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 深度解析 - Part 2 -->
+            <div id="part2" class="pt-24 space-y-8">
+                <div class="inline-block px-4 py-1 rounded-full border border-primary text-primary text-sm font-bold mb-4">PART 02</div>
+                <h3 class="text-3xl md:text-4xl font-black text-white">褻瀆與真相：分辨聖靈的工作</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="glass p-8 rounded-3xl">
+                        <h5 class="text-primary font-bold mb-4">關鍵字庫</h5>
+                        <ul class="space-y-4">
+                            <li>
+                                <span class="text-white font-bold block">別西卜 (Beelzebul)</span>
+                                <span class="text-gray-500 text-xs text-sm">「蒼蠅之王」或「糞堆之王」，邪靈首領的蔑稱。</span>
+                            </li>
+                            <li>
+                                <span class="text-white font-bold block">褻瀆聖靈 (Blasphemia)</span>
+                                <span class="text-gray-500 text-xs text-sm">指心靈極度剛硬，明明看見神的工作，卻刻意將其歸給魔鬼。</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glass p-8 rounded-3xl lg:col-span-2">
+                        <h5 class="text-primary font-bold mb-4">問題與回答</h5>
+                        <p class="text-lg text-white font-bold mb-2">什麼是「永不得赦免的罪」？基督徒會不小心犯下嗎？</p>
+                        <p class="text-gray-400 leading-relaxed">
+                            這不是指一時的軟弱或口誤，而是指一種持續、清醒且頑固地拒絕真理的態度。當一個人徹底關閉接受聖靈感動的門，他便失去了悔改的機會。憂慮自己犯了此罪的人，通常反而證明其良心尚未喪盡。
+                        </p>
+                        <div class="mt-6 pt-6 border-t border-white/5">
+                            <span class="text-primary text-xs uppercase font-bold tracking-tighter">名言</span>
+                            <p class="text-gray-300 italic mt-2">「人若蒙蔽雙眼，不看神明明彰顯的光輝，就是對神權威的公然反叛。」—— 約翰·加爾文</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 深度解析 - Part 3 -->
+            <div id="part3" class="pt-24 space-y-8">
+                <div class="inline-block px-4 py-1 rounded-full border border-primary text-primary text-sm font-bold mb-4">PART 03</div>
+                <h3 class="text-3xl md:text-4xl font-black text-white">順服與屬靈生命：定義真實的家人</h3>
+                <div class="bento-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass p-8 rounded-3xl md:col-span-2">
+                        <h5 class="text-primary font-bold mb-4">關鍵字：遵行 (ποιήσῃ)</h5>
+                        <p class="text-gray-300 leading-relaxed">
+                            強調信仰不是神學上的同意，而是意志上的服從。最深層的連結不再是DNA，而是共同流淌在靈魂裡的基督寶血。
+                        </p>
+                    </div>
+                    <div class="glass p-8 rounded-3xl bg-primary/10 border-primary/20">
+                        <h5 class="text-primary font-bold mb-4">屬靈名言</h5>
+                        <p class="text-white italic">「顺服是信仰唯一的道路，除此之外別無他法。」</p>
+                        <p class="text-primary text-sm mt-4">— 畢德生</p>
+                    </div>
+                    <div class="glass p-8 rounded-3xl">
+                        <h5 class="text-primary font-bold mb-4">核心真理</h5>
+                        <p class="text-gray-400 text-sm italic">耶穌在此建立了一個超越血緣的新群體。屬天的關係是建立在共同對上帝的效忠上。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 應用 & 結論 -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <h2 class="text-3xl font-black text-white uppercase tracking-wider">應用方向</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="glass p-6 rounded-2xl flex gap-4 items-start">
+                        <span class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold shrink-0">1</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">處理家庭張力：</span> 學習在家人不理解信仰時，依然保持溫柔但堅定的立場。</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl flex gap-4 items-start">
+                        <span class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold shrink-0">2</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">敏銳聖靈感動：</span> 每日操練察覺神的工作，不以成見判斷他人。</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl flex gap-4 items-start">
+                        <span class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold shrink-0">3</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">參與屬靈群體：</span> 視教會肢體為真實的家人，在共同遵行神旨意中建立深層連結。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <h2 class="text-3xl font-black text-white uppercase tracking-wider">結論關鍵字</h2>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-8 rounded-3xl bg-gradient-to-br from-primary to-secondary text-dark flex justify-between items-center group">
+                        <span class="text-2xl font-black uppercase tracking-tighter">01. 辨識 Discernment</span>
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                    <div class="p-8 rounded-3xl glass border-primary/30 text-white flex justify-between items-center group">
+                        <span class="text-2xl font-black uppercase tracking-tighter">02. 順服 Obedience</span>
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                    <div class="p-8 rounded-3xl glass border-primary/30 text-white flex justify-between items-center group">
+                        <span class="text-2xl font-black uppercase tracking-tighter">03. 連結 Connection</span>
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章文稿 -->
+        <section id="sermon" class="max-w-4xl mx-auto space-y-12">
+            <div class="text-center">
+                <div class="inline-block p-4 rounded-full bg-primary/10 mb-6">
+                    <svg class="w-8 h-8 text-primary mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4">講章文稿</h2>
+                <h3 class="text-2xl text-primary font-bold">誰是我的家人？</h3>
+            </div>
+            
+            <article class="glass p-8 md:p-16 rounded-[3rem] text-lg leading-loose text-gray-300 space-y-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-5">
+                    <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11M14.017 21H7.01701V11L11.017 3H14.017L11.017 11H14.017V21ZM5.01701 21V18C5.01701 16.8954 5.91239 16 7.01701 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01701C5.46473 8 5.01701 8.44772 5.01701 9V11M5.01701 21H0.017013V11L4.01701 3H7.01701L4.01701 11H5.01701V21Z"/></svg>
+                </div>
+                
+                <p>各位弟兄姊妹，今天我們要探訪的是馬可福音第三章。這段經文充滿了張力：一方面是群眾的擁擠，一方面是家人的誤解，另一方面則是宗教領袖的惡毒攻擊。</p>
+                
+                <p><span class="text-white font-bold border-b-2 border-primary/50">「耶穌的親屬聽見，就出來要拉住他，因為他們說：『他癲狂了。』」</span> 當我們全然委身於神時，世人甚至最親的人可能會覺得我們過於極端。但正如潘霍華所言，跟隨基督本就是一場生命的冒險。親情不應成為我們順服神的絆腳石。</p>
+                
+                <p>接著，我們看到文士們的敵對。他們無法否認耶穌的能力，卻將聖靈的工作歸給鬼王。這是何等的盲目！<span class="text-white font-bold bg-primary/20 px-1">「凡褻瀆聖靈的，卻永不得赦免。」</span> 這提醒我們，心靈的剛硬才是最危險的處境。我們必須保守我們的心，對真理保持開放。</p>
+                
+                <p>最後，耶穌重新定義了「家」。當祂的母親和弟兄在外面呼喊祂時，耶穌向我們揭示了一個驚人的真理：<span class="text-primary font-black text-2xl block my-6">「凡遵行神旨意的人就是我的弟兄姊妹和母親了。」</span> 這不是拒絕親情，而是提升了我們的身份。在上帝的國度裡，我們的連結不建基於血緣，而是建基於對父神旨意的回應。</p>
+                
+                <p class="font-bold text-white">願我們都能成為那坐在耶穌周圍、渴慕神話語、並勇於實踐的人。</p>
+            </article>
+        </section>
+
+        <!-- 回應與行動 -->
+        <section class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                <h2 class="text-3xl font-black text-white uppercase tracking-wider">回應與實踐行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 glass rounded-3xl border-t-4 border-primary">
+                    <h4 class="text-primary font-bold mb-4">反思行動</h4>
+                    <p class="text-gray-400">本週寫下一個你在信仰上常受家人或周遭質疑的點，並為此禱告求主賜勇氣。</p>
+                </div>
+                <div class="p-8 glass rounded-3xl border-t-4 border-primary">
+                    <h4 class="text-primary font-bold mb-4">辨識行動</h4>
+                    <p class="text-gray-400">每天睡前檢視今天發生的一件事，試著從中看見聖靈的引導，而非出於巧合。</p>
+                </div>
+                <div class="p-8 glass rounded-3xl border-t-4 border-primary">
+                    <h4 class="text-primary font-bold mb-4">關懷行動</h4>
+                    <p class="text-gray-400">主動關心一位教會中的肢體，視他為你的「弟兄姊妹」，並分享彼此遵行神旨意的經歷。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 十句名言 -->
+        <section id="quotes" class="space-y-12 pb-20">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                <h2 class="text-3xl font-black text-white uppercase tracking-wider">屬靈前輩名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「我不求成功的事業，只求能完成上帝在我身上的旨意。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 葛理翰 (Billy Graham)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「上帝最偉大的應許，是與那些順服祂的人同在。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 查爾斯·史丹利 (Charles Stanley)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「信心就是即便不明白上帝在做什麼，仍然選擇信靠祂的良善。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card border-l-4 border-primary/50">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「如果你不打算順服，你就不會真正明白真理。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「基督徒的偉大不在於他做了什麼，而是在於他願意讓神在他身上做什麼。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「如果你太忙而沒時間禱告，你就是真的太忙了。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 慕迪 (D.L. Moody)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card border-l-4 border-primary/50">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「聖靈的工作不是要給我們奇特的感覺，而是要使我們更像基督。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「我們是藉著信稱義，但使我們稱義的信絕不是孤立的，它必然帶出順服。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「一個人的生命若不以神為中心，無論他多麼成功，他的人生依然是破碎的。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 唐崇榮 (Stephen Tong)</p>
+                </div>
+                <div class="glass p-8 rounded-3xl break-inside-avoid bento-card border-l-4 border-primary/50">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「所有對上帝的認識，都源於對祂旨意的降服。」</p>
+                    <p class="text-primary text-sm font-bold text-right">— 魏樂德 (Dallas Willard)</p>
+                </div>
+            </div>
+
+            <!-- Warning -->
+            <div class="mt-20 text-center">
+                <div class="inline-block px-8 py-3 rounded-full bg-white/5 border border-white/10 text-gray-500 text-sm italic">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-primary rounded-full flex items-center justify-center text-dark shadow-2xl hover:scale-110 transition-transform animate-float z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+</body>
+</html>
+

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可15:21-28:各各他的榮耀：當意外的十字架成為恩典的記號</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crimson: {
+                            50: '#fef2f2',
+                            500: '#ef4444',
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                            950: '#450a0a',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #f59e0b, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #ef4444;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px -5px rgba(239, 68, 68, 0.3);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ef4444;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-crimson-800 selection:text-white">
+
+    <!-- Header Banner -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
+            <div class="animate-breath w-full h-full">
+                <img src='image/img_f52a11ae-030c-4734-addb-2347c23297e3.jpg' alt='各各他的榮耀' class="w-full h-full object-cover" />
+            </div>
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <span class="inline-block px-4 py-1 mb-6 border border-crimson-500 text-crimson-500 rounded-full text-sm font-semibold tracking-widest uppercase">Mark 15:21-28</span>
+            <h1 class="font-display text-5xl md:text-7xl font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                各各他的榮耀：<br/>
+                <span class="text-gradient">當意外的十字架成為恩典的記號</span>
+            </h1>
+            <div class="flex flex-wrap justify-center gap-4 animate-bounce mt-12">
+                <svg class="w-8 h-8 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <span class="font-display font-bold text-lg tracking-wider text-white hidden md:block">可 15:21-28</span>
+            <div class="flex items-center gap-6 md:gap-10 overflow-x-auto no-scrollbar py-2">
+                <a href="#prayer" class="nav-link text-sm font-medium text-gray-300 hover:text-white whitespace-nowrap">禱告</a>
+                <a href="#outline" class="nav-link text-sm font-medium text-gray-300 hover:text-white whitespace-nowrap">大綱</a>
+                <a href="#sermon" class="nav-link text-sm font-medium text-gray-300 hover:text-white whitespace-nowrap">講章</a>
+                <a href="#quotes" class="nav-link text-sm font-medium text-gray-300 hover:text-white whitespace-nowrap">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 金句 Section -->
+        <section id="verse" class="relative">
+            <div class="absolute -top-10 -left-10 opacity-10">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M14 17h3v2h-3v3h-2v-3H9v-2h3v-3h2v3M13 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4v-2H5V4h8v5h5v2h2V9l-6-6M11 15v2h-2v-2h2m0-8H9V5h2v2m0 4H9V9h2v2m0 4H9v-2h2v2z"/></svg>
+            </div>
+            <div class="glass-card p-8 md:p-16 text-center space-y-6">
+                <h2 class="text-crimson-500 font-bold tracking-widest text-xl mb-4">GOLDEN VERSE</h2>
+                <p class="font-display text-3xl md:text-4xl font-bold leading-relaxed text-white italic">
+                    「（有古卷在此有：這就應了經上的話說：他被列在罪犯之中。）」
+                </p>
+                <p class="text-gray-400 font-medium">— 馬可福音 15:28 —</p>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-crimson-900/30 rounded-2xl text-crimson-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="font-display text-3xl font-black text-white">心靈禱告</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 border-l-4 border-l-crimson-500 leading-loose text-lg md:text-xl text-gray-300 italic">
+                「親愛的主耶穌，我們滿心敬畏地來到祢的十字架前。祢原是榮耀的君王，卻甘願為了我們的悖逆，被列在罪犯之中，飲盡那苦杯。求祢開啟我們屬靈的眼睛，看見那看似羞辱的十字架，正是祢愛與救贖的極致彰顯；也賜給我們背起自己十字架的勇氣，在人生意外的重擔中，看見祢恩典的呼召。奉主耶穌基督得勝的名求，阿們。」
+            </div>
+        </section>
+
+        <!-- 大綱 Navigation & Content -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-crimson-900/30 rounded-2xl text-crimson-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="font-display text-3xl font-black text-white">大綱解析</h2>
+            </div>
+
+            <!-- Outline Quick Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="outline-btn glass-card p-6 border-l-4 border-l-gold-500 hover:bg-white/5">
+                    <span class="text-xs font-bold text-gold-500 mb-2 block tracking-tighter">PART 01</span>
+                    <h3 class="text-lg font-bold text-white mb-2">意外的重擔<br/>永恆的揀選</h3>
+                    <p class="text-xs text-gray-500">可 15:21-22</p>
+                </a>
+                <a href="#part2" class="outline-btn glass-card p-6 border-l-4 border-l-crimson-500 hover:bg-white/5">
+                    <span class="text-xs font-bold text-crimson-500 mb-2 block tracking-tighter">PART 02</span>
+                    <h3 class="text-lg font-bold text-white mb-2">拒絕麻醉的清醒<br/>直面苦杯的君王</h3>
+                    <p class="text-xs text-gray-500">可 15:23-25</p>
+                </a>
+                <a href="#part3" class="outline-btn glass-card p-6 border-l-4 border-l-blue-500 hover:bg-white/5">
+                    <span class="text-xs font-bold text-blue-500 mb-2 block tracking-tighter">PART 03</span>
+                    <h3 class="text-lg font-bold text-white mb-2">荒謬的罪狀<br/>極致的代贖</h3>
+                    <p class="text-xs text-gray-500">可 15:26-28</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 Detail -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="font-display text-4xl font-bold text-gold-500 mb-4">第一段</h3>
+                            <p class="text-xl font-bold text-white mb-6">意外的重擔，永恆的揀選</p>
+                            <div class="p-4 bg-white/5 rounded-xl text-sm border border-white/10 text-gray-400">
+                                <strong>引用經文：</strong>可 15:21-22
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass-card p-8">
+                                <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-4.742c.167-.667.167-.667.073-.939-.114-.367-.481-.593-.863-.593-.57 0-1.069.314-1.424.81l-.314.444-.733-.509.349-.472c.88-1.233 1.944-1.745 3.328-1.745 1.058 0 1.833.652 1.093 3.524l-1.214 4.742c-.167.667-.167.667-.073.939.114.367.481.593.863.593.57 0 1.069-.314 1.424-.81l.314-.444.733.509-.349.472c-.88 1.233-1.944 1.745-3.328 1.745z"></path></svg>
+                                    關鍵原文：勉強 (angareuousin)
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed">原指羅馬軍隊有權強制平民提供勞役。西門並非自願，而是被公權力「強迫、徵用」。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2">為什麼上帝允許一個路人來背十字架？</h4>
+                                <p class="text-gray-400">這顯明了耶穌真實的人性虛弱，更是恩典的伏筆。西門一家後來成為初代教會的重要支柱，這意外成了全家的救恩。</p>
+                            </div>
+                            <div class="border-l-2 border-gold-600 pl-6 py-2">
+                                <p class="text-gold-500 font-bold text-sm mb-2 italic">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                                <p class="text-gray-500 text-xs">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Detail -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row-reverse gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="font-display text-4xl font-bold text-crimson-500 mb-4">第二段</h3>
+                            <p class="text-xl font-bold text-white mb-6">拒絕麻醉的清醒<br/>直面苦杯的君王</p>
+                            <div class="p-4 bg-white/5 rounded-xl text-sm border border-white/10 text-gray-400">
+                                <strong>引用經文：</strong>可 15:23-25
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass-card p-8">
+                                <h4 class="text-crimson-500 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-4.742c.167-.667.167-.667.073-.939-.114-.367-.481-.593-.863-.593-.57 0-1.069.314-1.424.81l-.314.444-.733-.509.349-.472c.88-1.233 1.944-1.745 3.328-1.745 1.058 0 1.833.652 1.093 3.524l-1.214 4.742c-.167.667-.167.667-.073.939.114.367.481.593.863.593.57 0 1.069-.314 1.424-.81l.314-.444.733.509-.349.472c-.88 1.233-1.944 1.745-3.328 1.745z"></path></svg>
+                                    關鍵原文：沒藥調和的酒 (esmyrnismenon oinon)
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed">當時的人道麻醉飲料。耶穌卻不受，因為祂要以完全清醒的意志承擔罪的全部刑罰。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2">為何耶穌要拒絕減輕折磨？</h4>
+                                <p class="text-gray-400">祂上十字架是要喝盡父神忿怒的杯，絕不尋求任何妥協或逃避的捷徑。彰顯了對父神完全的順服與對人毫無保留的愛。</p>
+                            </div>
+                            <div class="border-l-2 border-crimson-600 pl-6 py-2">
+                                <p class="text-crimson-500 font-bold text-sm mb-2 italic">「神從不要求我們去明白祂所有的作為，但祂要求我們在不明白時依然信靠祂。」</p>
+                                <p class="text-gray-500 text-xs">— 查爾斯·史丹利 (Charles Stanley)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Detail -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="font-display text-4xl font-bold text-blue-500 mb-4">第三段</h3>
+                            <p class="text-xl font-bold text-white mb-6">荒謬的罪狀，極致的代贖</p>
+                            <div class="p-4 bg-white/5 rounded-xl text-sm border border-white/10 text-gray-400">
+                                <strong>引用經文：</strong>可 15:26-28
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass-card p-8">
+                                <h4 class="text-blue-500 font-bold mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-4.742c.167-.667.167-.667.073-.939-.114-.367-.481-.593-.863-.593-.57 0-1.069.314-1.424.81l-.314.444-.733-.509.349-.472c.88-1.233 1.944-1.745 3.328-1.745 1.058 0 1.833.652 1.093 3.524l-1.214 4.742c-.167.667-.167.667-.073.939.114.367.481.593.863.593.57 0 1.069-.314 1.424-.81l.314-.444.733.509-.349.472c-.88 1.233-1.944 1.745-3.328 1.745z"></path></svg>
+                                    關鍵原文：列在罪犯之中 (elogisthē)
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed">意為被歸類為。耶穌本無罪，卻在法理上被「算為」罪犯，這是「替代性救贖」的核心。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2">牌子上的嘲諷為何是真理？</h4>
+                                <p class="text-gray-400">世俗的王要百姓為王而死；真正的君王，親自為背叛祂的百姓而死。十字架就是祂的寶座。</p>
+                            </div>
+                            <div class="border-l-2 border-blue-600 pl-6 py-2">
+                                <p class="text-blue-500 font-bold text-sm mb-2 italic">「耶穌是唯一一位這樣的君王：如果你接受祂，祂會完全滿足你；如果你辜負祂，祂會永遠饒恕你。」</p>
+                                <p class="text-gray-500 text-xs">— 提摩太·凱勒 (Timothy Keller)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章文稿 Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-crimson-900/30 rounded-2xl text-crimson-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                </div>
+                <h2 class="font-display text-3xl font-black text-white">講章文稿</h2>
+            </div>
+            
+            <div class="glass-card p-8 md:p-16 space-y-10 text-gray-300 leading-relaxed text-lg max-w-4xl mx-auto">
+                <h3 class="text-3xl font-display font-black text-white mb-10 text-center">各各他的榮耀：當意外的十字架成為恩典的記號</h3>
+                
+                <p>弟兄姊妹，平安。今天我們將一起走向各各他，走向那個看似充滿羞辱與失敗，實際上卻是宇宙間最榮耀的地方——耶穌基督的十字架。我們今天所讀的馬可福音15章21到28節，記錄了耶穌受難過程中最核心、也最令人震撼的幾個片段。</p>
+
+                <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-gold-500">
+                    <h4 class="text-white font-bold text-xl mb-4">第一段：意外的重擔，永恆的揀選</h4>
+                    <p>經文說：<span class="text-gold-400 font-bold">「有一個古利奈人西門，就是亞力山大和魯孚的父親，從鄉下來，經過那地方，他們就勉強他同去，好背著耶穌的十字架。」</span>我們常以為，事奉神都是出於自願的。但西門不是。西門只是個從鄉下來過節的朝聖者，他站在路邊看熱鬧，羅馬兵丁卻突然把他抓出來，「勉強」他背起這血淋淋的刑具。</p>
+                    <p class="mt-4">但這個意外的十字架，最後卻成了恩典的記號。馬可特別記錄他是「亞力山大和魯孚的父親」，因為後來的教會認識這對兄弟。這個被迫走到各各他的父親，親眼目睹了上帝兒子的死，這份「倒楣」，最終帶來了他全家的得救。如同潘霍華所說：<span class="text-white font-bold">「當基督呼召一個人時，祂是吩咐他來死。」</span>有時候，神會允許一些我們沒有預期的重擔、疾病或困難「勉強」我們背上，但這往往是神永恆揀選的開端，要帶領我們經歷祂奇妙的救恩。</p>
+                </div>
+
+                <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-crimson-500">
+                    <h4 class="text-white font-bold text-xl mb-4">第二段：拒絕麻醉的清醒，直面苦杯的君王</h4>
+                    <p>經文第23節：<span class="text-crimson-500 font-bold">「拿沒藥調和的酒給耶穌，他卻不受。」</span>「沒藥調和的酒」在當時是一種輕微的麻醉劑，能讓受刑者減輕一點撕心裂肺的痛楚。面對十字架這種人類歷史上最殘酷的刑罰，耶穌為什麼拒絕？</p>
+                    <p class="mt-4">因為祂知道，祂上十字架不是為了逞英雄，而是要替全人類喝下那杯神對罪惡的忿怒之杯。祂不要任何的麻醉，祂選擇以最清醒的意志、最敏銳的神經，去承受我們該受的刑罰。今天，我們在痛苦中常尋找「沒藥調和的酒」——可能是酒精、逃避、沉迷網路。但耶穌向我們展現了另一種生命：不逃避苦難，而是順服神的旨意。</p>
+                </div>
+
+                <div class="bg-white/5 p-6 rounded-2xl border-l-4 border-blue-500">
+                    <h4 class="text-white font-bold text-xl mb-4">第三段：荒謬的罪狀，極致的代贖</h4>
+                    <p>第26到28節說：<span class="text-blue-400 font-bold">「在上面有他的罪狀，寫著：『猶太人的王。』他們又把兩個強盜和他同釘十字架……這就應了經上的話說：『他被列在罪犯之中。』」</span>這是何等荒謬的畫面！罪狀牌上寫著祂是王，但祂卻赤身露體被釘在兩個強盜中間。但這正是福音最深邃的奧秘。</p>
+                    <p class="mt-4"><span class="text-white font-bold">「他被列在罪犯之中」</span>，這就是代替。祂本無罪，卻願意站在你我這罪犯的位置上。提摩太·凱勒曾說：「耶穌是唯一一位這樣的君王：如果你接受祂，祂會完全滿足你；如果你辜負祂，祂會永遠饒恕你。」</p>
+                </div>
+
+                <p class="text-center font-display text-xl text-white pt-10">弟兄姊妹，十字架從來不是一個裝飾品。它是意外的呼召，是清醒的順服，是君王極致的代罪。願我們今天都能被這份愛折服，甘心樂意地背起我們的十字架，跟隨這位為我們而死的榮耀君王！</p>
+            </div>
+        </section>
+
+        <!-- 應用方向與行動 -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-10">
+                <h3 class="text-gold-500 font-bold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01</span>
+                        擁抱生命中「被勉強」的十字架
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02</span>
+                        拒絕世俗的麻醉劑，清醒度日
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03</span>
+                        深思代贖之恩，重新降服於真王
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 bg-crimson-900/10 border-crimson-500/30">
+                <h3 class="text-crimson-500 font-bold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-4">
+                        <span class="text-crimson-500 font-bold">01</span>
+                        <span><strong>禱告化解抱怨：</strong>本週為一件「被迫」承擔的事禱告，尋找背後的祝福。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-crimson-500 font-bold">02</span>
+                        <span><strong>禁食麻醉劑：</strong>暫停一項逃避壓力的習慣，默想耶穌受苦的愛。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-crimson-500 font-bold">03</span>
+                        <span><strong>宣告主權：</strong>每日宣告：「耶穌基督是我生命的王。」</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 名言佳句 Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-crimson-900/30 rounded-2xl text-crimson-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="font-display text-3xl font-black text-white">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「若非有十字架，我絕不可能相信上帝。在一個充滿痛苦的世界中，我們怎能敬拜一位對痛苦免疫的神？」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 約翰·史托德 (John Stott)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「耶穌的死，不是因為祂缺乏權力，而是因為祂要用這權力來拯救我們。祂是唯一一位為仇敵而死的王。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 提摩太·凱勒 (Timothy Keller)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「道德或許能讓你免於坐牢，但只有耶穌基督的寶血才能讓你免於下地獄。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 查爾斯·司布真 (Charles Spurgeon)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「十字架是死亡的象徵。要站在十字架的腳下並得救，你必須先對自己死。神從不修補舊生命，祂只賜下新生命。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 陶恕 (A. W. Tozer)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「基督的十字架，是打開天國之門的唯一鑰匙。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 約翰·加爾文 (John Calvin)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「十字架本身就是我們的神學。神只在受苦與十字架中被人認識。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 馬丁·路德 (Martin Luther)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「除了十字架的道路之外，沒有其他方式可以活出基督徒的生命。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 畢德生 (Eugene Peterson)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「十字架不是一個我們要逃避的悲劇，而是神向我們展現祂那無條件之愛的地方。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 盧雲 (Henri Nouwen)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「恩典是白白的，但絕不是廉價的。它之所以重價，是因為它使人付上生命的代價。」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 潘霍華 (Dietrich Bonhoeffer)</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「上帝在十字架上證明了祂的愛。當基督被掛在那裡流血、死去時，上帝等於在對世界說：『我愛你們。』」</p>
+                    <div class="text-sm font-bold text-crimson-500">— 葛理翰 (Billy Graham)</div>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center p-8 border-t border-white/10 text-gray-500 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-crimson-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-crimson-500 transition-all duration-300 animate-float z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

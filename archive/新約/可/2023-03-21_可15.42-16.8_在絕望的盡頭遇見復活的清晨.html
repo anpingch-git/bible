@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可15:42-16:8: 在絕望的盡頭遇見復活的清晨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#feef8a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        deep: {
+                            900: '#0a0a0c',
+                            800: '#121217',
+                            700: '#1c1c24'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(28, 28, 36, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #facc15, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #facc15;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(250, 204, 21, 0.2);
+        }
+        .bento-item {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(250, 204, 21, 0.5);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #facc15;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Banner -->
+    <div class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-black z-0">
+            <img src='image/img_e117e78a-bf25-4f58-a637-e66c1f3db619.jpg' alt='Banner Image' class="w-full h-full object-cover animate-breath opacity-70" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-deep-900 via-transparent to-black/40 z-10"></div>
+        <div class="relative z-20 text-center px-6 max-w-5xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 leading-tight tracking-tight">
+                在絕望的盡頭遇見<br/><span class="text-gradient">復活的清晨</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-gray-300 tracking-widest uppercase">可 15:42 - 16:8</p>
+        </div>
+    </div>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-nav px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-gold-400 font-bold tracking-tighter text-lg">可 15:42-16:8</div>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base font-medium">
+                <a href="#prayer" class="nav-link text-gray-400 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-gray-400 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-400 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-gray-400 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-32">
+
+        <!-- Golden Verse Section -->
+        <section id="verse" class="relative">
+            <div class="absolute -left-10 top-0 text-9xl text-gold-400/10 font-serif pointer-events-none italic">“</div>
+            <div class="glass-card p-8 md:p-16 border-l-4 border-l-gold-500 relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-6 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z"/></svg>
+                    <span class="text-xl font-bold tracking-widest">金句</span>
+                </div>
+                <h2 class="text-2xl md:text-4xl font-display font-bold leading-relaxed mb-6">
+                    「不要驚恐！你們尋找那釘十字架的拿撒勒人耶穌，他已經復活了，不在這裡。請看安放他的地方。」
+                </h2>
+                <p class="text-gold-500 font-semibold">— 馬可福音 16:6</p>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-flex items-center justify-center p-4 bg-gold-500/10 rounded-full mb-8 animate-float">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h3 class="text-3xl font-display font-bold mb-10 tracking-widest">禱告詞</h3>
+                <div class="text-xl md:text-2xl leading-loose text-gray-300 font-light italic">
+                    親愛的天父，我們感謝祢，因為在十字架的苦難與墳墓的幽暗之後，祢為我們預備了復活的清晨。主啊，當我們面對生命中的巨石與絕望時，求祢賜下亞利馬太的約瑟那般的勇氣，以及婦女們那份不放棄尋找祢的愛。願復活的宣告今日再次震動我們的心，驅散我們一切的驚恐，使我們能放膽見證祢是那勝過死亡的君王。奉耶穌基督得勝的名求，阿們。
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-3 mb-12">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                <h3 class="text-3xl font-display font-bold tracking-widest">大綱導覽</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="glass-card p-6 flex flex-col justify-between hover:bg-gold-500/10 transition-all border-l-4 border-l-blue-500 group">
+                    <span class="text-gray-500 text-sm font-bold mb-4">第一分段</span>
+                    <h4 class="text-xl font-bold group-hover:text-gold-400 transition-colors">暗夜中的勇敢：當信仰面臨極限考驗</h4>
+                    <span class="mt-4 text-sm text-gray-400 italic">可 15:42-47</span>
+                </a>
+                <a href="#section-2" class="glass-card p-6 flex flex-col justify-between hover:bg-gold-500/10 transition-all border-l-4 border-l-purple-500 group">
+                    <span class="text-gray-500 text-sm font-bold mb-4">第二分段</span>
+                    <h4 class="text-xl font-bold group-hover:text-gold-400 transition-colors">黎明前的尋找：誰能輥開生命中的巨石？</h4>
+                    <span class="mt-4 text-sm text-gray-400 italic">可 16:1-4</span>
+                </a>
+                <a href="#section-3" class="glass-card p-6 flex flex-col justify-between hover:bg-gold-500/10 transition-all border-l-4 border-l-pink-500 group">
+                    <span class="text-gray-500 text-sm font-bold mb-4">第三分段</span>
+                    <h4 class="text-xl font-bold group-hover:text-gold-400 transition-colors">墓門後的驚喜：從恐懼走向復活的宣告</h4>
+                    <span class="mt-4 text-sm text-gray-400 italic">可 16:5-8</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1 Detailed Analysis -->
+        <section id="section-1" class="scroll-mt-32">
+            <div class="flex items-baseline gap-4 mb-8">
+                <span class="text-5xl font-black text-gold-500/20">01</span>
+                <h3 class="text-4xl font-display font-bold text-gradient">暗夜中的勇敢</h3>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <div class="lg:col-span-4 glass-card p-8 border-t-2 border-t-gold-500/30">
+                    <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        引用經文
+                    </h5>
+                    <p class="text-gray-300 leading-relaxed italic text-sm">
+                        到了晚上，因為這是預備日... 有亞利馬太的約瑟前來，他是尊貴的議士，也是等候神國的。他放膽進去見彼拉多，求耶穌的身體... 又滾過一塊石頭來擋住墓門。
+                    </p>
+                </div>
+                <div class="lg:col-span-8 space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-deep-800/50 p-6 rounded-2xl border border-white/5">
+                            <h6 class="text-blue-400 font-bold mb-3">關鍵原文 Keyword</h6>
+                            <ul class="space-y-3 text-sm">
+                                <li><strong class="text-white">「放膽」</strong> (tolmaō): 意指敢於、鼓起勇氣、甘冒風險。</li>
+                                <li><strong class="text-white">「等候」</strong> (prosdechomai): 意指期盼、持續地仰望。</li>
+                            </ul>
+                        </div>
+                        <div class="bg-deep-800/50 p-6 rounded-2xl border border-white/5">
+                            <h6 class="text-purple-400 font-bold mb-3">名言佳句 Quotes</h6>
+                            <p class="italic text-gray-300 leading-relaxed">「當基督呼召一個人時，祂是呼召他來死。」——潘霍華</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8">
+                        <h6 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h6>
+                        <p class="text-lg font-medium text-white mb-4">為什麼在門徒四散逃跑、耶穌看似徹底失敗的時刻，一個原本隱藏的門徒卻願意站出來？</p>
+                        <p class="text-gray-400 leading-loose">
+                            十字架有一種揭露人心的力量。當虛假的盼望破滅時，真正的信仰才開始發光。約瑟的「放膽」不是因為看見了復活，而是因為他被基督在十字架上的受苦與死所震懾。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 Detailed Analysis -->
+        <section id="section-2" class="scroll-mt-32">
+            <div class="flex items-baseline gap-4 mb-8 justify-end text-right">
+                <h3 class="text-4xl font-display font-bold text-gradient">黎明前的尋找</h3>
+                <span class="text-5xl font-black text-gold-500/20">02</span>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <div class="lg:col-span-8 order-2 lg:order-1 space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-deep-800/50 p-6 rounded-2xl border border-white/5">
+                            <h6 class="text-blue-400 font-bold mb-3">關鍵原文 Keyword</h6>
+                            <ul class="space-y-3 text-sm">
+                                <li><strong class="text-white">「輥開」</strong> (apokyliō): 移除巨大的障礙。</li>
+                                <li><strong class="text-white">「很大」</strong> (megas sphodra): 超乎尋常的大。</li>
+                            </ul>
+                        </div>
+                        <div class="bg-deep-800/50 p-6 rounded-2xl border border-white/5">
+                            <h6 class="text-purple-400 font-bold mb-3">名言佳句 Quotes</h6>
+                            <p class="italic text-gray-300 leading-relaxed">「真正的信心是即使看不見出路，依然順服地走向祂。」——提摩太·凱勒</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8 border-r-4 border-r-gold-500/30">
+                        <h6 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h6>
+                        <p class="text-lg font-medium text-white mb-4">婦女們明知道石頭極大，為何還要帶著香膏前往墳墓？</p>
+                        <p class="text-gray-400 leading-loose">
+                            這展現了「愛」超越了「理智的計算」。很多時候我們在信仰路上也會看見擋在面前的「巨石」，但神往往要求我們先踏出尋找的步伐。當我們走向神時，會發現神已經為我們移開了那無法克服的障礙。
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 order-1 lg:order-2 glass-card p-8 border-t-2 border-t-gold-500/30">
+                    <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        引用經文
+                    </h5>
+                    <p class="text-gray-300 leading-relaxed italic text-sm">
+                        七日的第一日清早，出太陽的時候，她們來到墳墓那裡，彼此說：「誰給我們把石頭從墓門滾開呢？」那石頭原來很大，她們抬頭一看，卻見石頭已經滾開了。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Detailed Analysis -->
+        <section id="section-3" class="scroll-mt-32">
+            <div class="flex items-baseline gap-4 mb-8">
+                <span class="text-5xl font-black text-gold-500/20">03</span>
+                <h3 class="text-4xl font-display font-bold text-gradient">墓門後的驚喜</h3>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <div class="lg:col-span-4 glass-card p-8 border-t-2 border-t-gold-500/30">
+                    <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        引用經文
+                    </h5>
+                    <p class="text-gray-300 leading-relaxed italic text-sm">
+                        那少年人對她們說：「不要驚恐！你們尋找那釘十字架的拿撒勒人耶穌，他已經復活了，不在這裡... 他在你們以先往加利利去...」她們就出來，從墳墓那裡逃跑，又發抖又驚奇...
+                    </p>
+                </div>
+                <div class="lg:col-span-8 space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-deep-800/50 p-6 rounded-2xl border border-white/5">
+                            <h6 class="text-blue-400 font-bold mb-3">關鍵原文 Keyword</h6>
+                            <ul class="space-y-3 text-sm">
+                                <li><strong class="text-white">「驚恐」</strong> (ekthambeō): 面對神聖事件時的敬畏與震撼。</li>
+                                <li><strong class="text-white">「復活」</strong> (egeirō): 被喚醒、被舉起。父神大能的作為。</li>
+                            </ul>
+                        </div>
+                        <div class="bg-deep-800/50 p-6 rounded-2xl border border-white/5">
+                            <h6 class="text-purple-400 font-bold mb-3">名言佳句 Quotes</h6>
+                            <p class="italic text-gray-300 leading-relaxed">「基督教的精髓在於祂沒有留在墳墓裡。」——約翰·史托德</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-8">
+                        <h6 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h6>
+                        <p class="text-lg font-medium text-white mb-4">為什麼得知復活的好消息後，婦女們的反應卻是「發抖、驚奇、逃跑」？</p>
+                        <p class="text-gray-400 leading-loose">
+                            復活的信息打破了人類對生命與死亡的既定認知。死人一直都是死的，這是世界的鐵律；但空墳墓宣告這個鐵律被打破了。這種神聖的介入帶來了本能的恐懼與震撼，是對讀者發出的信仰挑戰。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Manuscript -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-3 mb-12">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM15 4v4h4"/></svg>
+                <h3 class="text-3xl font-display font-bold tracking-widest">講章文稿</h3>
+            </div>
+            <div class="glass-card p-8 md:p-16 prose prose-invert prose-gold max-w-none">
+                <h2 class="text-3xl md:text-5xl font-display font-black text-center mb-16 text-white">可15:42-16:8：在絕望的盡頭遇見復活的清晨</h2>
+                
+                <div class="space-y-8 text-lg md:text-xl text-gray-300 leading-relaxed font-light">
+                    <p>弟兄姊妹們，平安。當我們走到人生的盡頭，當所有的盼望似乎都隨著死亡被埋葬在墳墓裡時，我們該如何面對？今天，我們要透過馬可福音15章42節到16章8節的經文，一起回到那個歷史上最黑暗，卻也最榮耀的週末。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-500/30 pb-2">一、暗夜中的勇敢：當信仰面臨極限的考驗</h4>
+                    <p>耶穌死在了十字架上。對於門徒來說，這是天崩地裂的時刻。但在這個最黑暗的時刻，經文卻記載了一個令人意想不到的轉折：<strong class="text-white">「有亞利馬太的約瑟前來... 他放膽進去見彼拉多，求耶穌的身體。」</strong></p>
+                    <p>約瑟曾是暗暗作門徒的。但是，當耶穌被釘死、看似徹底失敗時，他卻「放膽」挺身而出。為什麼？因為十字架有一種揭露人心的力量。潘霍華曾說：<span class="text-gold-200 italic">「當基督呼召一個人時，祂是呼召他來死。」</span></p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-500/30 pb-2">二、黎明前的尋找：誰能輥開生命中的巨石？</h4>
+                    <p>婦女們一路上憂心忡忡，彼此問：<strong class="text-white">「誰給我們把石頭從墓門滾開呢？」</strong></p>
+                    <p>她們明知道石頭極大，為何還要出發？因為愛超越了理智的計算。她們選擇先踏出尋求的步伐。結果呢？「她們抬頭一看，卻見石頭已經滾開了。」當我們帶著微小但真實的信心，走向那塊巨石時，上帝的大能已經在那裡動工！</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-500/30 pb-2">三、墓門後的驚喜：從恐懼走向復活的宣告</h4>
+                    <p class="text-2xl font-bold text-white bg-gold-500/10 p-6 rounded-xl border-l-4 border-gold-500 my-8">
+                        「不要驚恐！你們尋找那釘十字架的拿撒勒人耶穌，他已經復活了，不在這裡。請看安放他的地方。」（可 16:6）
+                    </p>
+                    <p>死人復活了！這個消息徹底打破了世界的鐵律。復活的真理就像宇宙中最具威力的「拆彈宣告」——死亡的引信已經被拔除。起初我們可能會像婦女一樣震驚，但最終這份震驚必須轉化為宣告的喜樂。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-500/30 pb-2">結論：活出復活的生命</h4>
+                    <p>在絕望的盡頭，神已經為你預備了復活的清晨。願我們都能夠走出墳墓的陰霾，宣告耶穌基督已經復活了！阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Actions Bento Grid -->
+        <section id="actions" class="scroll-mt-32">
+            <div class="flex items-center gap-3 mb-12">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <h3 class="text-3xl font-display font-bold tracking-widest">回應與實踐行動</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-8 bento-item border-b-4 border-b-blue-500">
+                    <h5 class="text-xl font-bold mb-4">公開表明信仰</h5>
+                    <p class="text-gray-400">在本週的工作或生活場合中，透過具體的行動（如謝飯禱告、分享見證），勇敢表明自己基督徒的身份。</p>
+                </div>
+                <div class="glass-card p-8 bento-item border-b-4 border-b-purple-500">
+                    <h5 class="text-xl font-bold mb-4">交託生命巨石</h5>
+                    <p class="text-gray-400">寫下一件你目前覺得「無力推開的巨石」（困境/焦慮），在禱告中交給神，即使看不見結果，仍持續尋求祂。</p>
+                </div>
+                <div class="glass-card p-8 bento-item border-b-4 border-b-pink-500 md:col-span-2 lg:col-span-1">
+                    <h5 class="text-xl font-bold mb-4">傳遞復活盼望</h5>
+                    <p class="text-gray-400">主動聯繫一位曾經在信仰上跌倒或正在經歷低谷的弟兄姊妹，分享神愛與挽回的信息。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32 pb-20">
+            <div class="flex items-center gap-3 mb-12">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                <h3 class="text-3xl font-display font-bold tracking-widest">屬靈前輩佳句</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-gold-500">
+                        <p class="text-lg italic mb-2">「當基督呼召一個人時，祂是呼召他來死。」</p>
+                        <p class="text-sm text-gold-500">— 潘霍華，《追隨基督》</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-blue-500">
+                        <p class="text-lg italic mb-2">「真正的信心不僅僅是相信上帝能做什麼，而是即使看不見出路，依然順服地走向祂。」</p>
+                        <p class="text-sm text-blue-500">— 提摩太·凱勒</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-purple-500">
+                        <p class="text-lg italic mb-2">「基督教的精髓不在於耶穌死在十字架上，而在於祂沒有留在墳墓裡。」</p>
+                        <p class="text-sm text-purple-500">— 約翰·史托德</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-pink-500">
+                        <p class="text-lg italic mb-2">「上帝的同在是我們在黑暗中最穩固的錨。」</p>
+                        <p class="text-sm text-pink-500">— 陶恕</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-green-500">
+                        <p class="text-lg italic mb-2">「信心就是抓住基督，以致我們與祂合而為一。」</p>
+                        <p class="text-sm text-green-500">— 馬丁·路德</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-yellow-500">
+                        <p class="text-lg italic mb-2">「盼望不是相信一切都會好轉，而是相信上帝會成就祂的應許。」</p>
+                        <p class="text-sm text-yellow-500">— 盧雲</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-red-500">
+                        <p class="text-lg italic mb-2">「憑信心走進黑暗，你會發現上帝已經在那裡鋪好了路。」</p>
+                        <p class="text-sm text-red-500">— 司布真</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-cyan-500">
+                        <p class="text-lg italic mb-2">「我們的心除非安息在上帝裡面，否則永遠找不到真正的平靜。」</p>
+                        <p class="text-sm text-cyan-500">— 約翰·加爾文</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-indigo-500">
+                        <p class="text-lg italic mb-2">「真實的屬靈情感，必然會產生出對上帝真實的順服與行動。」</p>
+                        <p class="text-sm text-indigo-500">— 喬納森·愛德華茲</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/5 border-l-4 border-orange-500">
+                        <p class="text-lg italic mb-2">「恐懼會敲門，但當信心去開門時，門外什麼也沒有。」</p>
+                        <p class="text-sm text-orange-500">— 葛理翰</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center py-10 border-t border-white/10">
+            <p class="text-gray-500 text-sm tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button (Targeting Prayer) -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 group">
+        <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add a simple scroll effect to nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>

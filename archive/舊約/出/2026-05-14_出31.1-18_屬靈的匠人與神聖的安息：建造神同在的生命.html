@@ -88,6 +88,13 @@
         .hero-overlay {
             background: linear-gradient(0deg, #0f172a 0%, rgba(15, 23, 42, 0.4) 100%);
         }
+		@keyframes breathing {
+            0%, 100% { opacity: 0.2; filter: brightness(1); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="font-sans">
@@ -110,7 +117,7 @@
     <!-- Banner / Hero Section -->
     <header class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_3f733e5f-3b70-4359-8bd6-507f9258c0c9.jpg' alt='Celestial Craftsmanship' class="w-full h-full object-cover" />
+            <img src='image/img_3f733e5f-3b70-4359-8bd6-507f9258c0c9.jpg' alt='Celestial Craftsmanship' class="w-full h-full object-cover  breathing-image " />
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
         <div class="relative z-10 text-center px-6 max-w-4xl animate-fade-in-up">

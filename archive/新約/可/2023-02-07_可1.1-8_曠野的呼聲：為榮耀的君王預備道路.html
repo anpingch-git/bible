@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可1:1-8：曠野的呼聲：為榮耀的君王預備道路</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        dark: {
+                            bg: '#050505',
+                            card: '#121212',
+                            accent: '#1e1e1e'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: #121212;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: #ca8a04;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(202, 138, 4, 0.2);
+        }
+        .hero-banner img {
+            filter: brightness(0.7) contrast(1.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #facc15, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .outline-btn {
+            background: linear-gradient(135deg, #1e1e1e 0%, #0a0a0a 100%);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .outline-btn:hover {
+            background: #ca8a04;
+            color: #000;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Top Navigation -->
+    <nav class="sticky-top glass-nav h-16 flex items-center justify-between px-6 md:px-12">
+        <div class="font-display font-black text-gold-500 text-lg md:text-xl tracking-tighter">
+            可1:1-8
+        </div>
+        <div class="flex gap-4 md:gap-8 text-sm font-medium tracking-widest text-gray-400">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 hero-banner animate-breath">
+            <img src='image/img_c71ee0d0-6188-47ae-8416-cfbe5ee2740d.jpg' alt='曠野呼聲' class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent"></div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="font-accent text-gold-400 text-sm md:text-base font-bold tracking-[0.3em] uppercase mb-4 animate-float">Mark 1:1-8</h2>
+            <h1 class="font-display text-4xl md:text-7xl font-black text-white leading-tight">
+                曠野的呼聲<br><span class="text-gold-500">為榮耀的君王預備道路</span>
+            </h1>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Golden Verse & Prayer Section -->
+        <section id="prayer" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div class="bento-card p-10 rounded-3xl border-l-4 border-l-gold-500">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-6 h-6 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/></svg>
+                    <span class="text-xs font-bold tracking-widest text-gold-500 uppercase">Golden Verse</span>
+                </div>
+                <p class="font-display text-2xl md:text-4xl font-bold leading-relaxed text-white">
+                    「預備主的道，修直他的路。」
+                    <span class="block text-lg text-gray-500 mt-4 font-normal">（馬可福音 1:3）</span>
+                </p>
+            </div>
+
+            <div class="p-10 rounded-3xl bg-white/5 border border-white/10">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    <h3 class="text-xl font-bold tracking-widest text-white">禱告詞</h3>
+                </div>
+                <p class="text-lg leading-loose text-gray-300 italic">
+                    主啊，感謝祢差遣使者在曠野呼喊，喚醒沉睡的人心。求祢賜給我們一顆悔改的心，挪去我們生命中一切的阻礙、驕傲與悖逆，讓我們的生命成為一條修直的道路，迎接榮耀的君王耶穌基督在我們的心中掌權。奉耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-12">
+            <div class="text-center">
+                <div class="inline-block p-2 px-4 rounded-full bg-gold-600/10 border border-gold-600/30 text-gold-500 text-xs font-bold mb-4">STRUCTURE</div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white">信息大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="outline-btn p-8 rounded-2xl flex flex-col justify-between group transition-all duration-500">
+                    <div>
+                        <span class="font-accent text-gray-600 group-hover:text-black/50 text-3xl font-black mb-4 block">01</span>
+                        <h4 class="text-xl font-bold mb-2">永恆的起點：福音的破曉</h4>
+                        <p class="text-sm text-gray-500 group-hover:text-black/70">可 1:1-3</p>
+                    </div>
+                    <div class="mt-8 text-gold-500 group-hover:text-black">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </div>
+                </a>
+                <a href="#section-2" class="outline-btn p-8 rounded-2xl flex flex-col justify-between group transition-all duration-500">
+                    <div>
+                        <span class="font-accent text-gray-600 group-hover:text-black/50 text-3xl font-black mb-4 block">02</span>
+                        <h4 class="text-xl font-bold mb-2">曠野的呼喚：真實的悔改</h4>
+                        <p class="text-sm text-gray-500 group-hover:text-black/70">可 1:4-6</p>
+                    </div>
+                    <div class="mt-8 text-gold-500 group-hover:text-black">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </div>
+                </a>
+                <a href="#section-3" class="outline-btn p-8 rounded-2xl flex flex-col justify-between group transition-all duration-500">
+                    <div>
+                        <span class="font-accent text-gray-600 group-hover:text-black/50 text-3xl font-black mb-4 block">03</span>
+                        <h4 class="text-xl font-bold mb-2">謙卑的指引：仰望那將要來臨的</h4>
+                        <p class="text-sm text-gray-500 group-hover:text-black/70">可 1:7-8</p>
+                    </div>
+                    <div class="mt-8 text-gold-500 group-hover:text-black">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Content Section -->
+        <div id="sermon" class="space-y-32">
+            
+            <!-- Section 1 Detail -->
+            <section id="section-1" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-full bg-gold-600 flex items-center justify-center text-black font-black font-accent">01</div>
+                    <h3 class="font-display text-3xl md:text-4xl font-bold">永恆的起點：福音的破曉</h3>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-8">
+                        <div class="bento-card p-8 rounded-2xl bg-gradient-to-br from-dark-accent to-dark-bg">
+                            <p class="text-gold-300 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                經文範圍：可 1:1-3
+                            </p>
+                            <p class="text-xl leading-relaxed text-gray-200">「神的兒子，耶穌基督福音的起頭。正如先知以賽亞書上記念的話說：看哪，我要差遣我的使者在你前面，預備道路。在曠野有人聲喊著說：預備主的道，修直他的路。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 rounded-2xl border border-white/5 bg-white/5">
+                                <h5 class="text-gold-500 font-bold mb-3 uppercase tracking-widest text-xs">關鍵原文解析</h5>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">福音 (εὐαγγέλιον)</strong>：宣告君王誕生或戰爭得勝的好消息。耶穌才是真正的君王。</li>
+                                    <li><strong class="text-white">預備 (κατασκευάζω)</strong>：君王出巡前修補道路的浩大工程。</li>
+                                </ul>
+                            </div>
+                            <div class="p-6 rounded-2xl border border-white/5 bg-white/5">
+                                <h5 class="text-gold-500 font-bold mb-3 uppercase tracking-widest text-xs">關鍵問題</h5>
+                                <p class="text-gray-300">為什麼馬可福音一開始不寫耶穌的降生，而是直接跳到曠野的呼聲？</p>
+                                <p class="text-sm mt-3 text-gold-300">解析：強調耶穌是行動的君王。福音需要人心先清空，清除驕傲，才能迎王。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h5 class="text-blue-400 font-bold mb-3 flex items-center gap-2 italic">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 0112 4a8 8 0 018 8c0 4.418-3.582 8-8 8a8.001 8.001 0 01-4.5-1.44c-1.472 1.242-3.415 1.94-5.5 1.94a10.954 10.954 0 01-1.32-.08A11.967 11.967 0 005.19 16c.394-.48.823-.93 1.284-1.347A7.99 7.99 0 014 12c0-3.978 2.903-7.278 6.75-7.746z"/></svg>
+                                生活小故事
+                            </h5>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                古代沒有柏油路，國王出巡前村民需花數週填平坑洞。我們心靈若是充滿驕傲的高山、自私的坑洞，恩典就無法進入。
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-gold-600/10 border-l-2 border-gold-600 italic">
+                            <p class="text-gray-300 text-sm">「福音不是我們為主做什麼，而是主為我們做了什麼。然而，接受這福音需要我們放下自己建造的堡壘。」</p>
+                            <p class="text-gold-500 text-xs mt-3 text-right">— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 Detail -->
+            <section id="section-2" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-full bg-gold-600 flex items-center justify-center text-black font-black font-accent">02</div>
+                    <h3 class="font-display text-3xl md:text-4xl font-bold">曠野的呼喚：真實的悔改</h3>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-8">
+                        <div class="bento-card p-8 rounded-2xl bg-gradient-to-br from-dark-accent to-dark-bg">
+                            <p class="text-gold-300 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                經文範圍：可 1:4-6
+                            </p>
+                            <p class="text-xl leading-relaxed text-gray-200">「約翰來了，在曠野施洗，傳悔改的洗禮，使罪得赦。猶太全地和耶路撒冷的人都出去到約翰那裡，承認他們的罪，在約旦河裡受他的洗。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 rounded-2xl border border-white/5 bg-white/5">
+                                <h5 class="text-gold-500 font-bold mb-3 uppercase tracking-widest text-xs">關鍵原文解析</h5>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">悔改 (μετάνοια)</strong>：心思的改變，意志與行動上的徹底「轉向」。</li>
+                                    <li><strong class="text-white">承認 (ἐξομολογέω)</strong>：公開、徹底地宣告，沒有隱藏。</li>
+                                </ul>
+                            </div>
+                            <div class="p-6 rounded-2xl border border-white/5 bg-white/5">
+                                <h5 class="text-gold-500 font-bold mb-3 uppercase tracking-widest text-xs">關鍵問題</h5>
+                                <p class="text-gray-300">什麼是真正的悔改？為什麼要在「曠野」傳道？</p>
+                                <p class="text-sm mt-3 text-gold-300">解析：悔改是人生方向的 U-turn。曠野剝奪了偽裝，讓人能坦然面對上帝。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h5 class="text-blue-400 font-bold mb-3 flex items-center gap-2 italic">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 0112 4a8 8 0 018 8c0 4.418-3.582 8-8 8a8.001 8.001 0 01-4.5-1.44c-1.472 1.242-3.415 1.94-5.5 1.94a10.954 10.954 0 01-1.32-.08A11.967 11.967 0 005.19 16c.394-.48.823-.93 1.284-1.347A7.99 7.99 0 014 12c0-3.978 2.903-7.278 6.75-7.746z"/></svg>
+                                喻道故事
+                            </h5>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                就像汽車 GPS，開錯路時系統會提示：「請在前方合法處迴轉」。悔改不是停在原地哭泣，而是果斷聽從神的導航掉頭。
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-gold-600/10 border-l-2 border-gold-600 italic">
+                            <p class="text-gray-300 text-sm">「當我們的主耶穌基督說『你們應當悔改』時，祂的旨意是信徒的一生應當是持續不斷悔改的一生。」</p>
+                            <p class="text-gold-500 text-xs mt-3 text-right">— 馬丁·路德</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 Detail -->
+            <section id="section-3" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-full bg-gold-600 flex items-center justify-center text-black font-black font-accent">03</div>
+                    <h3 class="font-display text-3xl md:text-4xl font-bold">謙卑的指引：仰望那將要來臨的</h3>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-8">
+                        <div class="bento-card p-8 rounded-2xl bg-gradient-to-br from-dark-accent to-dark-bg">
+                            <p class="text-gold-300 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                經文範圍：可 1:7-8
+                            </p>
+                            <p class="text-xl leading-relaxed text-gray-200">「他傳道說：『有一位在我以後來的，能力比我更大，我就是彎腰給他解鞋帶也是不配的。我是用水給你們施洗，他卻要用聖靈給你們施洗。』」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 rounded-2xl border border-white/5 bg-white/5">
+                                <h5 class="text-gold-500 font-bold mb-3 uppercase tracking-widest text-xs">關鍵原文解析</h5>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">不配 (ἱκανός)</strong>：約翰加上否定詞，表示自己完全沒有資格擔任奴隸的工作。</li>
+                                    <li><strong class="text-white">聖靈 (Πνεῦμα Ἅγιον)</strong>：預言耶穌將帶來的內在生命徹底更新。</li>
+                                </ul>
+                            </div>
+                            <div class="p-6 rounded-2xl border border-white/5 bg-white/5">
+                                <h5 class="text-gold-500 font-bold mb-3 uppercase tracking-widest text-xs">關鍵問題</h5>
+                                <p class="text-gray-300">水洗與聖靈的洗有何不同？</p>
+                                <p class="text-sm mt-3 text-gold-300">解析：水洗是外在的悔改宣告；聖靈之洗是內在生命的重生，賜下勝過罪的能力。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h5 class="text-blue-400 font-bold mb-3 flex items-center gap-2 italic">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 0112 4a8 8 0 018 8c0 4.418-3.582 8-8 8a8.001 8.001 0 01-4.5-1.44c-1.472 1.242-3.415 1.94-5.5 1.94a10.954 10.954 0 01-1.32-.08A11.967 11.967 0 005.19 16c.394-.48.823-.93 1.284-1.347A7.99 7.99 0 014 12c0-3.978 2.903-7.278 6.75-7.746z"/></svg>
+                                喻道故事
+                            </h5>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                約翰就像月亮，它的光芒僅是反射太陽。當清晨太陽（耶穌）升起時，月亮就毫不眷戀地隱去。
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-gold-600/10 border-l-2 border-gold-600 italic">
+                            <p class="text-gray-300 text-sm">「如果基督沒有在你心中成為一切，祂就對你什麼都不是。」</p>
+                            <p class="text-gold-500 text-xs mt-3 text-right">— 司布真</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section class="space-y-12 bg-white/5 p-8 md:p-16 rounded-[3rem]">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                <h2 class="font-display text-4xl font-bold">講道文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-10 text-lg leading-relaxed text-gray-300">
+                <p><span class="font-bold text-white text-2xl block mb-4 border-l-4 border-gold-500 pl-4">(開場)</span>
+                弟兄姊妹們，平安！今天我們要看的是馬可福音的開頭。當一位尊貴的君王要來到你的城市時，你會怎麼做？你一定會打掃街道、準備迎接。馬可福音一開始，就向我們發出了這樣一個震撼的宣告：真正的君王耶穌基督來了！但我們準備好了嗎？這引出了我們今天的主題：<strong class="text-gold-400">曠野的呼聲：為榮耀的君王預備道路</strong>。我們將透過三段經文來思想，如何為這榮耀的王預備我們的心。</p>
+
+                <p><span class="font-bold text-white text-2xl block mb-4 border-l-4 border-gold-500 pl-4">(第一段)</span>
+                首先，我們來到<strong class="text-white">永恆的起點：福音的破曉</strong>。
+                經文在馬可福音1章1到3節告訴我們，這是「神的兒子，耶穌基督福音的起頭」。這裡有一個極其重要的呼喊：<strong class="text-gold-400 text-2xl block my-4 italic">「預備主的道，修直他的路。」</strong>
+                這是我們今天的金句。古代君王出巡前，總有使者開路。提摩太·凱勒曾說：「福音不是我們為主做什麼，而是主為我們做了什麼。」但要讓這恩典臨到，我們必須先挪去生命中驕傲的巨石。</p>
+
+                <p><span class="font-bold text-white text-2xl block mb-4 border-l-4 border-gold-500 pl-4">(第二段)</span>
+                接著，我們來看這條道路要如何預備。<strong class="text-white">曠野的呼喚：真實的悔改</strong>。
+                施洗約翰在曠野傳講悔改。為什麼在曠野？因為曠野沒有舒適圈。悔改（Metanoia）不僅是懊悔，更是「U-turn」。馬丁·路德說：「信徒的一生應當是持續不斷悔改的一生。」真正的悔改，是走到心靈貧乏的「曠野」，勇敢承認自己的罪。</p>
+
+                <p><span class="font-bold text-white text-2xl block mb-4 border-l-4 border-gold-500 pl-4">(第三段)</span>
+                最後，悔改是為了指向那位真正的主。<strong class="text-white">謙卑的指引：仰望那將要來臨的</strong>。
+                施洗約翰說：「有一位在我以後來的，能力比我更大，我就是彎腰給他解鞋帶也是不配的。」約翰用水施洗，但耶穌要用聖靈施洗。正如司布真所言：「如果基督沒有在你心中成為一切，祂就對你什麼都不是。」我們在各樣環境中，是否也願意縮小自己，放大基督？</p>
+
+                <p><span class="font-bold text-white text-2xl block mb-4 border-l-4 border-gold-500 pl-4">(結論與呼召)</span>
+                弟兄姊妹，今天曠野的呼聲依然迴盪。這段經文給我們三個關鍵字：<strong class="text-gold-500">預備 (Prepare)、悔改 (Repent)、降服 (Surrender)</strong>。
+                讓我們在本週採取行動：勇敢認罪、每天進入心靈曠野、成為福音開路者。讓榮耀的君王，真實地走進你我生命的深處！</p>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-10 rounded-3xl">
+                <div class="flex items-center gap-3 mb-8">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    <h3 class="text-2xl font-bold">應用方向</h3>
+                </div>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black">01</span>
+                        <p class="text-gray-300"><strong class="text-white">檢視心中的道路</strong>：省察是否有驕傲或未對付的罪，阻礙神的工作。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black">02</span>
+                        <p class="text-gray-300"><strong class="text-white">活出真實的悔改</strong>：將悔改化為實際行動，改變錯誤的人際關係。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black">03</span>
+                        <p class="text-gray-300"><strong class="text-white">定位自己的角色</strong>：學習施洗約翰的謙卑，單單把人引向耶穌。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card p-10 rounded-3xl bg-gold-600/5">
+                <div class="flex items-center gap-3 mb-8">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <h3 class="text-2xl font-bold">實踐行動</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-dark-bg/50 border border-white/5 hover:border-gold-500 transition-colors cursor-pointer group">
+                        <p class="text-sm font-bold text-gold-500 mb-1">本週執行</p>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">具體的認罪：寫下一個需要神赦免的具體罪狀，在禱告中宣告放棄它。</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-dark-bg/50 border border-white/5 hover:border-gold-500 transition-colors cursor-pointer group">
+                        <p class="text-sm font-bold text-gold-500 mb-1">每日操練</p>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">進入心靈曠野：每天早晨刻意花十分鐘安靜，單單聆聽神的話。</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-dark-bg/50 border border-white/5 hover:border-gold-500 transition-colors cursor-pointer group">
+                        <p class="text-sm font-bold text-gold-500 mb-1">福音使命</p>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">作福音開路者：本月向一位朋友分享耶穌的愛。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="space-y-12">
+            <div class="text-center">
+                <h2 class="font-display text-4xl font-bold mb-4">名言佳句</h2>
+                <div class="h-1 w-20 bg-gold-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Quote Items -->
+                <div class="bento-card p-8 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-white/5 font-black text-6xl italic">"</span>
+                    <p class="text-gray-300 leading-relaxed relative z-10">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 潘霍華</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-white/5 font-black text-6xl italic">"</span>
+                    <p class="text-gray-300 leading-relaxed relative z-10">「當我們想到上帝時，我們腦海中浮現的意念，是我們身上最重要的事情。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 陶恕</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-white/5 font-black text-6xl italic">"</span>
+                    <p class="text-gray-300 leading-relaxed relative z-10">「恩典的對立面是『賺取』，而不是『努力』。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 魏樂德</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-white/5 font-black text-6xl italic">"</span>
+                    <p class="text-gray-300 leading-relaxed relative z-10">「作門徒，就是朝著同一個方向，長久地順服。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 畢德生</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-white/5 font-black text-6xl italic">"</span>
+                    <p class="text-gray-300 leading-relaxed relative z-10">「屬靈生活並不會將我們從世界抽離，反而會帶領我們更深地進入世界。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 盧雲</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-white/5 font-black text-6xl italic">"</span>
+                    <p class="text-gray-300 leading-relaxed relative z-10">「十字架是熊熊燃燒的烈火，我們愛火的火種必須在此點燃。」</p>
+                    <p class="mt-4 text-gold-500 text-sm font-bold">— 約翰·史托德</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-10">
+                <p class="text-gray-600 text-xs tracking-widest italic">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 rounded-full flex items-center justify-center text-black shadow-2xl hover:bg-gold-500 transition-all active:scale-95 z-50 animate-bounce-slow">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <style>
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 4s infinite ease-in-out;
+        }
+        ::selection {
+            background-color: #ca8a04;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>
+

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可13:1-37：在末世風暴中警醒等候</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18e',
+                            300: '#fce354',
+                            400: '#fbd42b',
+                            500: '#f5bd0d',
+                            600: '#d99706',
+                            700: '#b46f08',
+                            800: '#92570e',
+                            900: '#78470f',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(30, 30, 36, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-glow {
+            box-shadow: 0 0 50px rgba(245, 189, 13, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fbd42b 0%, #f5bd0d 50%, #b46f08 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245, 189, 13, 0.5);
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #f5bd0d;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-arrow {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+    </style>
+</head>
+<body class="font-body leading-relaxed">
+
+    <!-- Header Banner -->
+    <header class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_10fd2107-26f1-4014-bed8-9202e873ba76.jpg' alt='media_1' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-extrabold font-display mb-4 tracking-tight">
+                可13:1-37：<span class="gradient-text">在末世風暴中警醒等候</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 font-light italic">「你們要謹慎，警醒祈禱，因為你們不曉得那日期幾時來到。」</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass border-b border-white/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <span class="text-gold-500 font-bold hidden sm:inline">馬可福音 13:1-37</span>
+            <div class="flex space-x-6 text-sm md:text-base font-semibold tracking-wider">
+                <a href="#prayer" class="nav-link text-gray-300 hover:text-white transition uppercase">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300 hover:text-white transition uppercase">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300 hover:text-white transition uppercase">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300 hover:text-white transition uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- 金句 & 禱告 -->
+        <section id="prayer" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div class="md:col-span-4 glass p-8 rounded-3xl border-gold-500/20 banner-glow">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <h2 class="text-2xl font-bold text-gold-500">金句</h2>
+                </div>
+                <blockquote class="text-xl font-bold leading-relaxed text-white">
+                    「你們要謹慎，警醒祈禱，因為你們不曉得那日期幾時來到。」
+                    <span class="block text-sm text-gray-500 mt-2">（馬可福音13:33）</span>
+                </blockquote>
+            </div>
+            
+            <div class="md:col-span-8 glass p-10 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg class="w-24 h-24 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L9 9l-9 3 9 3 3 9 3-9 9-3-9-3-3-9z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    <h2 class="text-2xl font-bold text-gold-500">禱告詞</h2>
+                </div>
+                <p class="text-lg md:text-xl text-gray-200 italic leading-loose">
+                    永生的主，當我們面對這世界各樣的動盪、迷惑與苦難時，懇求聖靈開啟我們的屬靈眼光，使我們不被暫時的風暴所驚嚇，也不被虛假的平安所蒙蔽。求祢將祢永不廢去的話語深深扎根在我們心中，賜我們堅忍的信心與警醒的靈，幫助我們在日常生活中忠心事奉，時刻預備迎接主耶穌基督榮耀的再來。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- 分段大綱按鈕 -->
+        <section id="outline" class="space-y-12">
+            <div class="text-center space-y-4">
+                <div class="inline-flex items-center gap-3 bg-gold-500/10 px-6 py-2 rounded-full text-gold-500 font-bold mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                    大綱解析
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black text-white">深入經文核心</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="#part1" class="glass p-6 rounded-2xl hover:bg-gold-500/10 transition-all border border-white/5 flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2 block">第一段 13:1-13</span>
+                    <h3 class="text-white font-bold group-hover:text-gold-400">不被迷惑：在動盪中堅守</h3>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl hover:bg-gold-500/10 transition-all border border-white/5 flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2 block">第二段 13:14-23</span>
+                    <h3 class="text-white font-bold group-hover:text-gold-400">看透患難：上帝的保守</h3>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl hover:bg-gold-500/10 transition-all border border-white/5 flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2 block">第三段 13:24-31</span>
+                    <h3 class="text-white font-bold group-hover:text-gold-400">仰望榮耀：確信主必再來</h3>
+                </a>
+                <a href="#part4" class="glass p-6 rounded-2xl hover:bg-gold-500/10 transition-all border border-white/5 flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2 block">第四段 13:32-37</span>
+                    <h3 class="text-white font-bold group-hover:text-gold-400">警醒等候：活出永恆期盼</h3>
+                </a>
+            </div>
+
+            <!-- 分段詳解 -->
+            <div class="space-y-32 mt-20">
+                <!-- PART 1 -->
+                <div id="part1" class="scroll-mt-24">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-gold-500 text-dark-900 font-black px-4 py-1 rounded text-xl">01</span>
+                        <h3 class="text-3xl font-bold text-white">不被迷惑——在動盪中堅守信仰的錨</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-dark-800/50 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.993 7.993 0 007 7.196V4.804z"></path></svg> 引用經文 (13:1-13)
+                            </h4>
+                            <div class="text-gray-400 text-sm leading-relaxed max-h-64 overflow-y-auto pr-4">
+                                耶穌從殿裡出來的時候，有一個門徒對他說：「夫子，請看，這是何等的石頭！何等的殿宇！」耶穌對他說：「你看見這大殿宇嗎？將來在這裡沒有一塊石頭留在石頭上，不被拆毀了。」... 耶穌說：「你們要謹慎，免得有人迷惑你們... 惟有忍耐到底的，必然得救。」
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵原文</h5>
+                                <p class="text-white"><strong>迷惑 (πλανάω / planaō)</strong>：意指「使之遊蕩、偏離正道、欺騙」。耶穌警告的是信仰上的偏離。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵問題</h5>
+                                <p class="text-gray-300">為什麼第一個警告是「不被迷惑」而非「逃避災難」？</p>
+                                <p class="text-white mt-2 text-sm italic">解析：外在災難毀肉體，虛假教義毀靈魂。信徒挑戰在於動盪中持守真理。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 glass p-8 rounded-3xl border-t-2 border-gold-500/30 italic text-gray-300">
+                        「我們這個時代最大的敵人不是那些公然反對基督教的人，而是那些以基督教的詞彙來推銷世俗價值觀的人。」—— 提摩太·凱勒
+                    </div>
+                </div>
+
+                <!-- PART 2 -->
+                <div id="part2" class="scroll-mt-24">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-gold-500 text-dark-900 font-black px-4 py-1 rounded text-xl">02</span>
+                        <h3 class="text-3xl font-bold text-white">看透患難——在絕境中認出上帝的保守</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-dark-800/50 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.993 7.993 0 007 7.196V4.804z"></path></svg> 引用經文 (13:14-23)
+                            </h4>
+                            <div class="text-gray-400 text-sm leading-relaxed max-h-64 overflow-y-auto pr-4">
+                                「你們看見那行毀壞可憎的，站在不當站的地方... 那時，在猶太的，應當逃到山上... 若不是主減少那日子，凡有血氣的，總沒有一個得救的；只是為主的選民，他將那日子減少了。」
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵原文</h5>
+                                <p class="text-white"><strong>選民 (ἐκλεκτός / eklektos)</strong>：意指「被挑選出來的」。強調信徒是神所寶貝且保守的對象。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵問題</h5>
+                                <p class="text-gray-300">在空前絕後的災難中，神如何展現主權？</p>
+                                <p class="text-white mt-2 text-sm italic">解析：神為了選民「減少那日子」。苦難雖大，卻全在上帝的主權限制之下。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 glass p-8 rounded-3xl border-t-2 border-gold-500/30 italic text-gray-300">
+                        「我們若明白神的主權，便知道一切臨到我們身上的苦難，都已經過神恩典的過濾。」—— 查爾斯·史丹利
+                    </div>
+                </div>
+
+                <!-- PART 3 -->
+                <div id="part3" class="scroll-mt-24">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-gold-500 text-dark-900 font-black px-4 py-1 rounded text-xl">03</span>
+                        <h3 class="text-3xl font-bold text-white">仰望榮耀——在黑暗中確信主必再來</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-dark-800/50 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.993 7.993 0 007 7.196V4.804z"></path></svg> 引用經文 (13:24-31)
+                            </h4>
+                            <div class="text-gray-400 text-sm leading-relaxed max-h-64 overflow-y-auto pr-4">
+                                「在那那些日子，那災難以後，日頭要變黑了... 那時，他們要看見人子有大能力、大榮耀，駕雲降臨... 天地要廢去，我的話卻不能廢去。」
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵原文</h5>
+                                <p class="text-white"><strong>廢去 (παρέρχομαι / parerchomai)</strong>：意指「消失、滅亡」。對比暫時的受造界與永恆的神話語。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵問題</h5>
+                                <p class="text-gray-300">當世界體系崩潰時，基督徒的安全感應建立在哪？</p>
+                                <p class="text-white mt-2 text-sm italic">解析：安全感不應來自「必廢去的天地」，而應建基於「不能廢去的神的話語」。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 glass p-8 rounded-3xl border-t-2 border-gold-500/30 italic text-gray-300">
+                        「一個將心靈寄託於這個將要消滅的世界的人，註定要與這個世界一同滅亡；但一個將自己交託給永恆神話語的人，將與神一同永遠活著。」—— 陶恕
+                    </div>
+                </div>
+
+                <!-- PART 4 -->
+                <div id="part4" class="scroll-mt-24">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="bg-gold-500 text-dark-900 font-black px-4 py-1 rounded text-xl">04</span>
+                        <h3 class="text-3xl font-bold text-white">警醒等候——在日常中活出永恆的期盼</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-dark-800/50 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.993 7.993 0 007 7.196V4.804z"></path></svg> 引用經文 (13:32-37)
+                            </h4>
+                            <div class="text-gray-400 text-sm leading-relaxed max-h-64 overflow-y-auto pr-4">
+                                「但那日子，那時辰，沒有人知道... 你們要謹慎，警醒祈禱... 正如一個人離開本家... 分派各人當做的工... 我對你們所說的話，也是對眾人說：要警醒！」
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵原文</h5>
+                                <p class="text-white"><strong>警醒 (γρηγορέω / grēgoreō)</strong>：意指「保持清醒、警戒」。是一種積極預備的生活態度。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h5 class="text-gold-500 font-bold text-sm uppercase mb-2">關鍵問題</h5>
+                                <p class="text-gray-300">如何避免落入焦慮猜測或屬靈沉睡？</p>
+                                <p class="text-white mt-2 text-sm italic">解析：不猜測時間，而是「盡本分」。真正的警醒是在平凡日子裡忠心於所託。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 glass p-8 rounded-3xl border-t-2 border-gold-500/30 italic text-gray-300">
+                        「我們應當這樣生活：彷彿基督昨天才被釘死，今天剛剛復活，明天就要再來。」—— 馬丁·路德
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講章文稿 -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM15 8V4m-4 12h4m-4-4h4m-4-4h4"/></svg>
+                <h2 class="text-4xl font-black text-white">講章文稿</h2>
+            </div>
+            
+            <article class="glass p-8 md:p-16 rounded-[2rem] prose prose-invert max-w-none prose-gold leading-loose text-lg">
+                <h3 class="text-3xl font-bold text-gold-500 mb-8 border-b border-gold-500/20 pb-4 text-center">可13:1-37：在末世風暴中警醒等候</h3>
+                
+                <p class="text-gray-300">親愛的弟兄姊妹，今天我們要一起進入馬可福音第13章。這段經文被稱為「橄欖山寶訓」，是耶穌在面對即將到來的十字架之前，對門徒所發表關於末世的最重要教導。當我們打開新聞，看見戰爭的風聲、氣候的異常、道德的滑落時，許多人心中充滿了恐懼與焦慮。然而，耶穌基督藉著這段經文，不是要給我們一張末日的時間表，而是要賜給我們在風暴中的生存指南。</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-4">一、 不被迷惑——在動盪中堅守信仰的錨</h4>
+                <p class="text-gray-300">當門徒讚嘆聖殿的宏偉時，耶穌卻宣告這一切都會被拆毀。耶穌的回答出人意料，祂沒有馬上給時間，而是給了一個嚴厲的警告：「<strong class="text-gold-400 text-xl underline decoration-gold-500/50">你們要謹慎，免得有人迷惑你們。</strong>」在這個末世，最可怕的不是肉體的苦難，而是靈魂的欺騙。面對世俗的迷惑，我們唯一的解藥，就是緊緊抓住神不變的真理。</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-4">二、 看透患難——在絕境中認出上帝的保守</h4>
+                <p class="text-gray-300">耶穌預言了空前絕後的大災難。但在這令人窒息的預言中，隱藏著上帝極大的憐憫：「<strong class="text-gold-400 text-xl underline decoration-gold-500/50">若不是主減少那日子，凡有血氣的，總沒有一個得救的；只是為主的選民，他將那日子減少了。</strong>」這是一句充滿恩典的宣告！我們的神是掌管歷史的主宰。苦難雖大，卻不能越過神所劃定的界線。</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-4">三、 仰望榮耀——在黑暗中確信主必再來</h4>
+                <p class="text-gray-300">在最黑暗的時刻，「他們要看見人子有大能力、大榮耀，駕雲降臨。」弟兄姊妹，這就是我們信仰的終極盼望！耶穌宣告了一句震撼宇宙的話：「<strong class="text-gold-400 text-xl underline decoration-gold-500/50">天地要廢去，我的話卻不能廢去。</strong>」我們把人生的根基建在哪裡呢？是建在會廢去的天地，還是不廢去的神的話語上？</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-4">四、 警醒等候——在日常中活出永恆的期盼</h4>
+                <p class="text-gray-300 italic mb-6">「你們要謹慎，警醒祈禱，因為你們不曉得那日期幾時來到。」</p>
+                <p class="text-gray-300">這正是我們今天的【金句】。耶穌用了一個家主的比喻，真正的警醒，是「做各人當做的工」。在職場上作個好員工、在家庭中作個好父母、在教會中作忠心的服事者。不要讓主忽然來到時，看見我們在靈性上睡著了，被世界的宴樂或憂慮給麻痺了。</p>
+
+                <div class="mt-12 p-8 bg-gold-500/5 rounded-2xl border border-gold-500/20">
+                    <h4 class="text-xl font-bold text-gold-500 mb-4">結論關鍵字</h4>
+                    <div class="flex gap-4">
+                        <span class="px-4 py-2 bg-dark-900 border border-gold-500/40 rounded-full font-bold">#警醒</span>
+                        <span class="px-4 py-2 bg-dark-900 border border-gold-500/40 rounded-full font-bold">#盼望</span>
+                        <span class="px-4 py-2 bg-dark-900 border border-gold-500/40 rounded-full font-bold">#堅忍</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- 應用方向 & 回應行動 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-10 rounded-3xl border-t-4 border-gold-600">
+                <h2 class="text-2xl font-black text-gold-500 mb-8 flex items-center gap-3">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A2 2 0 013 15.485V5.118a2 2 0 011.106-1.789l5.447-2.724a2 2 0 011.894 0l5.447 2.724A2 2 0 0118 5.118v10.367a2 2 0 01-1.106 1.789L11.447 20a2 2 0 01-1.894 0z"/></svg>
+                    講道應用方向
+                </h2>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">01</span> 重塑苦難觀：確信「主已預先告訴我們」。</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">02</span> 檢視信仰根基：安全感轉移到不廢去的神話語。</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">03</span> 忠心於日常託付：做好神分派「當做的工」。</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">04</span> 恢復對主再來的熱切期盼。</li>
+                </ul>
+            </div>
+            <div class="glass p-10 rounded-3xl border-t-4 border-green-600">
+                <h2 class="text-2xl font-black text-green-500 mb-8 flex items-center gap-3">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    回應或實踐行動
+                </h2>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4"><span class="text-green-500 font-bold">●</span> 建立真理防線：每日安排15分鐘閱讀聖經。</li>
+                    <li class="flex gap-4"><span class="text-green-500 font-bold">●</span> 感恩與信靠：列出三件看見上帝保守的事。</li>
+                    <li class="flex gap-4"><span class="text-green-500 font-bold">●</span> 實踐管家職分：找出一件疏忽的工並完成它。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 名言佳句 -->
+        <section id="quotes" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-3xl font-black text-white inline-block border-b-4 border-gold-500 pb-2">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-6 rounded-2xl relative">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold-500/20 font-serif">"</span>
+                    <p class="text-white italic mb-4">我們應當這樣生活：彷彿基督昨天才被釘死，今天剛剛復活，明天就要再來。</p>
+                    <p class="text-gold-500 text-sm font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-6 rounded-2xl relative">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold-500/20 font-serif">"</span>
+                    <p class="text-white italic mb-4">一個將心靈寄託於這個將要消滅的世界的人，註定要與這個世界一同滅亡。</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-6 rounded-2xl relative">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold-500/20 font-serif">"</span>
+                    <p class="text-white italic mb-4">上帝不是要我們逃避這個苦難的世界，而是要在苦難中彰顯出不屬於這個世界的平安。</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-6 rounded-2xl relative">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold-500/20 font-serif">"</span>
+                    <p class="text-white italic mb-4">基督徒的盼望不是因為看見世界在變好，而是因為確信基督已經得勝，並且祂即將再來。</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center text-gray-600 text-sm py-8 border-t border-white/5">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center floating-arrow z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth Scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可9:30-50：顛覆世界的偉大：從十字架到服事的呼召</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fdf7d6',
+                            200: '#faed9f',
+                            300: '#f6dc61',
+                            400: '#f1c82f',
+                            500: '#d4a017',
+                            600: '#b87f12',
+                            700: '#915e11',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 1, filter: 'brightness(1)' },
+                            '50%': { opacity: 0.6, filter: 'brightness(0.4)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(30, 30, 36, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(212, 160, 23, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f6dc61 0%, #d4a017 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .outline-btn {
+            border: 1px solid rgba(212, 160, 23, 0.4);
+            background: rgba(212, 160, 23, 0.05);
+            transition: all 0.2s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(212, 160, 23, 0.15);
+            border-color: #d4a017;
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(212, 160, 23, 0.3), transparent);
+        }
+    </style>
+</head>
+<body class="font-body leading-relaxed">
+
+    <!-- Header / Banner -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-dark-900/40 to-dark-900 z-10"></div>
+            <img src='image/img_13eac011-99b4-4373-b0fa-76a5a8fff212.jpg' alt='Banner' class="w-full h-full object-cover animate-pulse-slow" />
+        </div>
+        <div class="relative z-20 px-6 max-w-5xl">
+            <span class="inline-block px-4 py-1 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/20 text-sm font-semibold tracking-widest mb-6 uppercase">Mark 9:30-50</span>
+            <h1 class="text-5xl md:text-7xl font-black font-display text-white mb-6 drop-shadow-2xl">顛覆世界的偉大</h1>
+            <p class="text-xl md:text-2xl text-gray-300 font-light tracking-wide max-w-3xl mx-auto leading-relaxed">
+                從十字架的犧牲到謙卑服事的呼召
+            </p>
+            <div class="mt-12 animate-float">
+                <svg class="w-10 h-10 mx-auto text-gold-500/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Nav -->
+    <nav class="glass-nav sticky top-0 z-50 py-4 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <div class="text-gold-400 font-display font-bold text-lg tracking-tight">可 9:30-50</div>
+            <div class="flex items-center gap-6 text-sm font-medium tracking-wide uppercase">
+                <a href="#prayer" class="text-gray-400 hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="text-gray-400 hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="text-gray-400 hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="text-gray-400 hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Golden Verse & Prayer Section -->
+        <section id="prayer" class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+            <div class="lg:col-span-2 bento-card p-10 bg-gradient-to-br from-gold-900/20 to-transparent border-gold-500/20">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="p-2 bg-gold-500/20 rounded-lg">
+                        <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </span>
+                    <h2 class="text-2xl font-bold font-display tracking-tight uppercase">金句</h2>
+                </div>
+                <blockquote class="text-2xl md:text-3xl font-serif font-bold text-white leading-snug">
+                    「耶穌坐下，叫十二個門徒來，說：『若有人願意作首先的，他必作眾人末後的，作眾人的用人。』」
+                    <footer class="mt-4 text-gold-500 text-lg font-display">（可 9:35）</footer>
+                </blockquote>
+            </div>
+
+            <div class="lg:col-span-3 bento-card p-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="p-2 bg-blue-500/20 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21l-1.41-1.41C5.42 14.47 2 11.24 2 7.5 2 4.42 4.42 2 7.5 2c1.74 0 3.41.81 4.5 2.09C13.09 2.81 14.76 2 16.5 2 19.58 2 22 4.42 22 7.5c0 3.74-3.42 6.97-8.59 12.09L12 21z"></path></svg>
+                    </span>
+                    <h2 class="text-2xl font-bold font-display tracking-tight">禱告詞</h2>
+                </div>
+                <p class="text-xl text-gray-300 leading-loose italic">
+                    親愛的主耶穌，祢以十字架上的犧牲，向我們展現了何為真正的偉大。求祢赦免我們常在世俗的價值中爭競比較、渴望高位，卻忽略了祢那「向下移動」的呼召。求聖靈開啟我們的眼睛，賜我們寬廣的心胸接納同路人，並賜我們壯士斷腕的決心去對付生命中的罪。願我們都能成為世上的鹽，活出聖潔與和平的生命，作眾人的用人。奉耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline / Navigation Hub -->
+        <section id="outline" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold font-display inline-block border-b-2 border-gold-500 pb-2">大綱導覽</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="outline-btn p-8 rounded-2xl flex flex-col items-start gap-4 group">
+                    <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500 text-dark-900 font-bold">I</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors leading-tight">顛覆價值的偉大：放下身段作眾人的用人</h3>
+                    <p class="text-gold-500/70 text-sm">可 9:30-37</p>
+                </a>
+                <a href="#section-2" class="outline-btn p-8 rounded-2xl flex flex-col items-start gap-4 group">
+                    <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500 text-dark-900 font-bold">II</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors leading-tight">打破藩籬的國度：以寬廣的心接納同路人</h3>
+                    <p class="text-gold-500/70 text-sm">可 9:38-41</p>
+                </a>
+                <a href="#section-3" class="outline-btn p-8 rounded-2xl flex flex-col items-start gap-4 group">
+                    <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500 text-dark-900 font-bold">III</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors leading-tight">聖潔無瑕的呼召：治死罪惡與活出調和的鹽</h3>
+                    <p class="text-gold-500/70 text-sm">可 9:42-50</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="space-y-40">
+            <!-- Section 1 -->
+            <section id="section-1" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h2 class="text-3xl md:text-4xl font-black text-white mb-4 flex items-center gap-4">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        一、 顛覆價值的偉大：放下身段作眾人的用人
+                    </h2>
+                    <div class="inline-block px-4 py-1 bg-dark-700 text-gold-400 rounded-md font-mono text-sm">可 9:30-37</div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 md:p-10 col-span-1 md:col-span-2 bg-dark-800">
+                        <h4 class="text-gold-500 uppercase tracking-widest text-xs font-bold mb-4">引用經文</h4>
+                        <p class="text-xl text-gray-200 leading-relaxed font-serif">他們離開那地方，經過加利利；耶穌不願意人知道。於是教訓門徒，說：「人子將要被交在人手裡，他們要殺害他；被殺以後，過三天他要復活。」門徒卻不明白這話，又不敢問他。他們來到迦百農。耶穌在屋裡問門徒說：「你們在路上議論的是甚麼？」門徒不作聲，因為他們在路上彼此爭論誰為大。耶穌坐下，叫十二個門徒來，說：「若有人願意作首先的，他必作眾人末後的，作眾人的用人。」於是領過一個小孩子來，叫他站在門徒中間，又抱起他來，對他們說：「凡為我名接待一個像這小孩子的，就是接待我；凡接待我的，不是接待我，乃是接待那差我來的。」</p>
+                    </div>
+                    <div class="bento-card p-8">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg> 關鍵原文
+                        </h4>
+                        <ul class="space-y-4">
+                            <li><span class="text-white font-bold">「用人」</span> (希臘文：*diakonos*)：指的是餐桌旁的侍者或奴僕，社會地位極低。</li>
+                            <li><span class="text-white font-bold">「小孩子」</span> (希臘文：*paidion*)：代表微小、無權力、無貢獻能力的人。</li>
+                        </ul>
+                    </div>
+                    <div class="bento-card p-8 border-l-4 border-l-gold-500">
+                        <h4 class="text-gold-500 font-bold mb-4">關鍵問題</h4>
+                        <p class="text-white font-semibold mb-2">為什麼門徒在聽見耶穌第二次預言受難後，反而爭論誰為大？</p>
+                        <p class="text-gray-400">解析：這顯露出人性的本能：我們喜歡「榮耀的王」，卻拒絕「受苦的僕人」。門徒以為跟隨耶穌是通往權力的階梯，忽略了十字架的代價。</p>
+                    </div>
+                    <div class="bento-card p-8 col-span-1 md:col-span-2">
+                        <h4 class="text-gold-500 font-bold mb-4">故事 & 名言</h4>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <p class="text-gray-300 italic">喬治·華盛頓在軍營中默默與士兵一起扛木樑，而自大的下士卻在一旁指手畫腳。真正的偉大，永遠是彎下腰來服事。</p>
+                            <div class="bg-dark-900/50 p-6 rounded-xl border border-white/5">
+                                <p class="text-xl text-white font-serif italic">「耶穌的道路是向下的移動，那是通往十字架的道路。」</p>
+                                <footer class="text-gold-500 mt-2">— 盧雲 (Henri Nouwen)</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h2 class="text-3xl md:text-4xl font-black text-white mb-4 flex items-center gap-4">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        二、 打破藩籬的國度：以寬廣的心接納同路人
+                    </h2>
+                    <div class="inline-block px-4 py-1 bg-dark-700 text-gold-400 rounded-md font-mono text-sm">可 9:38-41</div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 md:p-10 col-span-1 md:col-span-2 bg-dark-800">
+                        <h4 class="text-gold-500 font-bold mb-4 uppercase tracking-widest text-xs">引用經文</h4>
+                        <p class="text-xl text-gray-200 leading-relaxed font-serif">約翰對耶穌說：「夫子，我們看見一個人奉你的名趕鬼，我們就禁止他，因為他不跟從我們。」耶穌說：「不要禁止他；因為沒有人奉我名行異能，反倒輕易毀謗我。不敵擋我們的，就是幫助我們的。凡因你們是屬基督，給你們一杯水喝的，我實在告訴你們，他不能不得賞賜。」</p>
+                    </div>
+                    <div class="bento-card p-8">
+                        <h4 class="text-gold-500 font-bold mb-4">關鍵詞解析</h4>
+                        <ul class="space-y-4">
+                            <li><span class="text-white font-bold">「不跟從」</span> (希臘文：*akolouthei*)：不和我們走在同一條路上。</li>
+                            <li><span class="text-white font-bold">「敵擋」</span> (希臘文：*kata*)：反對或與之對抗。</li>
+                        </ul>
+                    </div>
+                    <div class="bento-card p-8 border-l-4 border-l-blue-500">
+                        <h4 class="text-gold-500 font-bold mb-4">關鍵問題</h4>
+                        <p class="text-white font-semibold mb-2">我們是否常像約翰一樣，因為別人「不跟從我們」的傳統就排斥他們？</p>
+                        <p class="text-gray-400">解析：約翰把「我們這個小圈圈」等同於「基督的國度」。耶穌打破了宗派與山頭主義。合一建立在基督共同的信仰上，容許作法和形式的多元。</p>
+                    </div>
+                    <div class="bento-card p-8 col-span-1 md:col-span-2 bg-gradient-to-r from-blue-900/10 to-transparent">
+                        <h4 class="text-gold-500 font-bold mb-4">故事 & 名言</h4>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <p class="text-gray-300 italic">水災中的兩間教會放下神學爭議合作救災，驚覺在苦難面前，基督的愛遠大過他們的不同點。</p>
+                            <div class="bg-dark-900/50 p-6 rounded-xl border border-white/5">
+                                <p class="text-xl text-white font-serif italic">「如果你的身分認同建立在你與某個群體的差異上，你就會需要不斷貶低別人來建立自己的價值。」</p>
+                                <footer class="text-gold-500 mt-2">— 提摩太·凱勒 (Timothy Keller)</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h2 class="text-3xl md:text-4xl font-black text-white mb-4 flex items-center gap-4">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        三、 聖潔無瑕的呼召：治死罪惡與活出調和的鹽
+                    </h2>
+                    <div class="inline-block px-4 py-1 bg-dark-700 text-gold-400 rounded-md font-mono text-sm">可 9:42-50</div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 md:p-10 col-span-1 md:col-span-2 bg-dark-800">
+                        <h4 class="text-gold-500 font-bold mb-4 uppercase tracking-widest text-xs">引用經文</h4>
+                        <p class="text-xl text-gray-200 leading-relaxed font-serif">凡使這信我的來到一個小子跌倒的，不如把大磨石拴在這人的頸項上，扔在海裡。倘若你一隻手叫你跌倒，就把它砍下來；你缺了肢體進入永生，強如有兩隻手落到地獄，入那不滅的火裡去。倘若你一隻腳叫你跌倒，就把它砍下來... 倘若你一隻眼叫你跌倒，就去掉它... 因為必用火當鹽醃各人。鹽本是好的，若失了味，可用甚麼叫它再鹹呢？你們裡頭應當有鹽，彼此和睦。</p>
+                    </div>
+                    <div class="bento-card p-8">
+                        <h4 class="text-gold-500 font-bold mb-4">關鍵原文</h4>
+                        <ul class="space-y-4">
+                            <li><span class="text-white font-bold">「跌倒」</span> (希臘文：*skandalizō*)：原意是捕捉動物的陷阱機關，引申為使人陷入罪中。</li>
+                            <li><span class="text-white font-bold">「地獄」</span> (希臘文：*Geenna*)：焚燒垃圾與死屍的地方，象徵最終的刑罰。</li>
+                        </ul>
+                    </div>
+                    <div class="bento-card p-8 border-l-4 border-l-red-500">
+                        <h4 class="text-gold-500 font-bold mb-4">關鍵問題</h4>
+                        <p class="text-white font-semibold mb-2">耶穌為何用「砍手斷足」這樣激烈的言辭？</p>
+                        <p class="text-gray-400">解析：耶穌使用誇飾法強調罪的危險性。罪如同屬靈的壞疽，如果不採取壯士斷腕的極端手段去對付，最終會吞噬整個生命。</p>
+                    </div>
+                    <div class="bento-card p-8 col-span-1 md:col-span-2 bg-gradient-to-r from-red-900/10 to-transparent">
+                        <h4 class="text-gold-500 font-bold mb-4">故事 & 名言</h4>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <p class="text-gray-300 italic">面對癌症腫瘤，沒有人會談判。為了保全生命，截肢是痛苦但必須的決定。面對罪，我們同樣不能有絲毫妥協。</p>
+                            <div class="bg-dark-900/50 p-6 rounded-xl border border-white/5">
+                                <p class="text-xl text-white font-serif italic">「不要把罪當作寵物，牠長大後會成為吞噬你的野獸。」</p>
+                                <footer class="text-gold-500 mt-2">— 司布真 (Charles Spurgeon)</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application Section -->
+        <section class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold font-display inline-block border-b-2 border-gold-500 pb-2">應用方向</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bento-card p-8 text-center">
+                    <div class="w-16 h-16 bg-gold-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">檢視服事的動機</h3>
+                    <p class="text-gray-400">是為了掌聲與地位，還是單單因為愛神而願意作「眾人的用人」？</p>
+                </div>
+                <div class="bento-card p-8 text-center">
+                    <div class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">擁抱寬廣國度觀</h3>
+                    <p class="text-gray-400">放下成見，學習為別人的福音果效感恩，不因形式不同而輕易批評。</p>
+                </div>
+                <div class="bento-card p-8 text-center">
+                    <div class="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">激烈行動對付罪</h3>
+                    <p class="text-gray-400">誠實面對妥協，用斬斷退路的決心持守聖潔，如刪除特定App或拒絕應酬。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="bento-card p-8 md:p-16 bg-dark-800 relative">
+            <div class="absolute top-0 right-0 p-8 opacity-10">
+                <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V4C14.017 3.44772 14.4647 3 15.017 3H21.017C21.5693 3 22.017 3.44772 22.017 4V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.017 21L2.017 18C2.017 16.8954 2.91243 16 4.017 16H7.017C7.56928 16 8.017 15.5523 8.017 15V9C8.017 8.44772 7.56928 8 7.017 8H4.017C2.91243 8 2.017 7.10457 2.017 6V4C2.017 3.44772 2.46472 3 3.017 3H9.017C9.56928 3 10.017 3.44772 10.017 4V15C10.017 18.3137 7.33072 21 4.017 21H2.017Z"></path></svg>
+            </div>
+            <div class="relative z-10 space-y-12">
+                <div class="text-center">
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-6">講章文稿</h2>
+                    <p class="text-gold-500 font-bold text-xl tracking-wide">顛覆世界的偉大：從十字架到服事的呼召</p>
+                </div>
+                
+                <div class="prose prose-invert prose-gold max-w-none space-y-8 text-lg leading-relaxed text-gray-300">
+                    <p>弟兄姊妹，我們生活在一個不斷教導我們要「往上爬」的世界。這世界告訴我們，成功就是擁有更多的權力、更大的影響力，並且讓別人來服事你。然而，今天我們所讀的馬可福音第9章，耶穌卻向我們展現了一種完全顛覆世界價值觀的偉大。</p>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4 border-l-4 border-gold-500 pl-4">一、 顛覆價值的偉大：放下身段作眾人的用人</h3>
+                        <p>在經文的前半段（可 9:30-37），耶穌第二次向門徒預言祂將要受難、被殺害，然後復活。可是門徒的反應是什麼呢？他們在路上竟然彼此爭論「誰為大」。耶穌即將走向十字架，門徒卻在爭奪王座。</p>
+                        <p>這反映了我們人性的真實盲點：我們渴望冠冕，卻拒絕十字架。針對門徒的爭論，耶穌坐下來，說出了信仰的核心金句：<span class="text-white font-black underline decoration-gold-500">「若有人願意作首先的，他必作眾人末後的，作眾人的用人。」（可 9:35）</span></p>
+                        <p>「用人」在原文中是最低下的僕役。耶穌甚至抱起一個在當時毫無社會地位的小孩子，告訴門徒，接待這樣微小的人，就是接待神。正如盧雲所說：「耶穌的道路是向下的移動，那是通往十字架的道路。」真正的偉大，不是看你轄管了多少人，而是看你彎下腰來服事了多少人。</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4 border-l-4 border-gold-500 pl-4">二、 打破藩籬的國度：以寬廣的心接納同路人</h3>
+                        <p>當耶穌剛剛教導完謙卑，門徒約翰立刻又暴露了另一個問題（可 9:38-41）。約翰看到有人奉耶穌的名趕鬼，就禁止他，理由是：「他不跟從我們」。</p>
+                        <p>請注意，約翰在乎的不是對方有沒有奉耶穌的名，他在乎的是「他不屬於我們這個小圈圈」。耶穌立刻糾正他：<span class="text-white font-bold italic">「不敵擋我們的，就是幫助我們的。」</span></p>
+                        <p>今天，我們是不是也常常陷入這種「結黨」的驕傲中？因為別的教會敬拜方式不同、因為別的宗派傳統不一樣，我們就輕看他們。提摩太·凱勒提醒我們：「如果你的身分認同建立在你與某個群體的差異上，你就會需要不斷貶低別人來建立自己的價值。」基督的國度比我們的堂會大得多。只要是在真理的基礎上高舉基督，我們就應該有寬廣的心胸去接納同路人，甚至為一杯水而感恩。</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4 border-l-4 border-gold-500 pl-4">三、 聖潔無瑕的呼召：治死罪惡與活出調和的鹽</h3>
+                        <p>最後，耶穌的語氣變得極其嚴厲（可 9:42-50）。祂警告門徒，絕對不要成為使人跌倒的絆腳石。耶穌說，如果是手、腳、眼睛叫你跌倒，就當把它「砍下來」、「去掉」。</p>
+                        <p>這聽起來非常血腥、極端，但耶穌為什麼這麼說？因為對付罪，不能有絲毫的妥協！我們如果得了癌症，絕對不會和醫生說「留一點腫瘤在身上」。為了保全生命，我們願意動手術切除病灶。那麼，面對會把我們的靈魂拖入地獄的罪，我們又怎能輕輕放過？</p>
+                        <p>司布真說過：「不要把罪當作寵物，牠長大後會成為吞噬你的野獸。」我們必須帶著壯士斷腕的決心，去對付生命中那些貪婪、驕傲、情慾的罪。<span class="text-gold-400 font-bold text-xl">「你們裡頭應當有鹽，彼此和睦。」</span> 這鹽，就是那能防腐、殺菌的聖潔生命。</p>
+                    </div>
+
+                    <div class="pt-8 border-t border-white/10 text-center">
+                        <p class="text-2xl text-white font-display font-bold">結論關鍵字：十字架、服事、聖潔</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold font-display inline-block border-b-2 border-gold-500 pb-2">回應行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-dark-800 rounded-3xl border border-white/5 flex flex-col items-center text-center">
+                    <div class="text-4xl mb-4">🤫</div>
+                    <h4 class="text-xl font-bold text-white mb-2">隱藏的服事</h4>
+                    <p class="text-gray-400">本週內尋找一件沒人注意、吃力不討好的服事，並默默地完成它。</p>
+                </div>
+                <div class="p-8 bg-dark-800 rounded-3xl border border-white/5 flex flex-col items-center text-center">
+                    <div class="text-4xl mb-4">🙏</div>
+                    <h4 class="text-xl font-bold text-white mb-2">跨越的代禱</h4>
+                    <p class="text-gray-400">為一間風格不同或不熟悉的機構禱告，求神賜福他們的福音事工。</p>
+                </div>
+                <div class="p-8 bg-dark-800 rounded-3xl border border-white/5 flex flex-col items-center text-center">
+                    <div class="text-4xl mb-4">⚔️</div>
+                    <h4 class="text-xl font-bold text-white mb-2">聖潔的切割</h4>
+                    <p class="text-gray-400">找出一個經常使你跌倒的媒介（App、關係、習慣），設立防線，立刻砍斷。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold font-display inline-block border-b-2 border-gold-500 pb-2">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">01</span>
+                    <div>
+                        <p class="text-white italic">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 潘霍華《追隨基督》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">02</span>
+                    <div>
+                        <p class="text-white italic">「神聖的領導是向下的移動，那是通往十字架的道路。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 盧雲《奉耶穌的名》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">03</span>
+                    <div>
+                        <p class="text-white italic">「福音的奇妙在於：我們比自己所敢承認的更敗壞，卻比自己所敢期盼的更被愛。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 提摩太·凱勒《揮霍的上帝》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">04</span>
+                    <div>
+                        <p class="text-white italic">「你要治死罪，否則罪就會治死你。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 約翰·歐文《治死信徒身上的罪》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">05</span>
+                    <div>
+                        <p class="text-white italic">「一盎司的聖潔，勝過一噸的聰明。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 司布真《司布真講道集》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">06</span>
+                    <div>
+                        <p class="text-white italic">「神在尋找那些願意把一切交給祂的人，好讓祂能把一切交給他們。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 陶恕《渴慕神》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">07</span>
+                    <div>
+                        <p class="text-white italic">「恩典不代表不用付代價。恩典是反對賺取，而不是反對努力。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 魏樂德《上帝的偉大奇妙計畫》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">08</span>
+                    <div>
+                        <p class="text-white italic">「基督徒的生命不是一時的激情，而是向著同一個方向長期的順服。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 畢德生《長道漫漫》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">09</span>
+                    <div>
+                        <p class="text-white italic">「我們不能阻止鳥兒從我們頭上飛過，但可以阻止牠們在我們頭髮裡築巢。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 馬丁·路德《桌邊談話》</p>
+                    </div>
+                </div>
+                <div class="bento-card p-6 flex gap-4 items-start">
+                    <span class="text-gold-500 font-bold">10</span>
+                    <div>
+                        <p class="text-white italic">「人的心是一個永不休止製造偶像的工廠。」</p>
+                        <p class="text-gray-500 text-sm mt-1">— 約翰·加爾文《基督教要義》</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <section class="text-center py-20 opacity-50">
+            <p class="text-xs tracking-widest text-gray-400">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 z-[60]">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 100; // Nav height offset
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

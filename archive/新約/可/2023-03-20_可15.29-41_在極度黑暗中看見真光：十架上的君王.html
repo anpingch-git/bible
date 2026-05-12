@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可15:29-41:在極度黑暗中看見真光：十架上的君王</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fdfdf2',
+                            100: '#fbfbe1',
+                            200: '#f5f3b7',
+                            300: '#ece581',
+                            400: '#e0d14d',
+                            500: '#c9b127',
+                            600: '#af8f1c',
+                            700: '#8c6b1a',
+                            800: '#75581c',
+                            900: '#654b1e',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 1, filter: 'brightness(1)' },
+                            '50%': { opacity: 0.6, filter: 'brightness(0.4)' },
+                        },
+                        'fadeInUp': {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f5f3b7 0%, #c9b127 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: rgba(201, 177, 39, 0.1);
+            border-color: #c9b127;
+            transform: translateY(-2px);
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header Banner -->
+    <div class="relative h-[80vh] w-full overflow-hidden bg-black">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_5e8348cc-5e48-4f8a-a110-c792483dc592.jpg' alt='Golgotha' class="w-full h-full object-cover animate-pulse-slow scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-black/40"></div>
+        </div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
+            <h2 class="text-gold-400 font-medium tracking-widest mb-4 animate-fade-in-up">馬可福音 15:29-41</h2>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-black text-white leading-tight animate-fade-in-up" style="animation-delay: 0.2s;">
+                在極度黑暗中<br/><span class="gradient-text">看見真光</span>
+            </h1>
+            <p class="mt-6 text-xl md:text-2xl text-gray-300 font-light max-w-2xl animate-fade-in-up" style="animation-delay: 0.4s;">
+                十架上的君王
+            </p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="hidden md:flex font-serif font-bold text-gold-500 whitespace-nowrap mr-8">
+                    可15:29-41
+                </div>
+                <div class="flex space-x-6 md:space-x-12 overflow-x-auto no-scrollbar py-2">
+                    <a href="#prayer" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors uppercase tracking-widest whitespace-nowrap">禱告</a>
+                    <a href="#outline" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors uppercase tracking-widest whitespace-nowrap">大綱</a>
+                    <a href="#sermon" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors uppercase tracking-widest whitespace-nowrap">講章</a>
+                    <a href="#quotes" class="text-sm font-medium text-gray-300 hover:text-gold-400 transition-colors uppercase tracking-widest whitespace-nowrap">名言</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 lg:px-8">
+
+        <!-- Golden Verse -->
+        <section class="section-padding text-center">
+            <div class="inline-block mb-6">
+                <svg class="w-10 h-10 text-gold-500 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.34315 15.3601 2 17.017 2H19.017C20.6739 2 22.017 3.34315 22.017 5V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V5C3.017 3.34315 4.36014 2 6.017 2H8.017C9.67386 2 11.017 3.34315 11.017 5V15C11.017 18.3137 8.33071 21 5.017 21H3.017Z"/></svg>
+            </div>
+            <h2 class="text-2xl font-serif text-gold-200 mb-8 tracking-wide">【關鍵金句】</h2>
+            <p class="text-2xl md:text-3xl font-serif leading-relaxed italic text-white max-w-3xl mx-auto">
+                「對面站著的百夫長看見耶穌這樣喊叫斷氣，就說：『這人真是神的兒子！』」
+                <span class="block text-lg mt-4 text-gold-500 font-sans not-italic">（馬可福音 15:39）</span>
+            </p>
+        </section>
+
+        <!-- Prayer -->
+        <section id="prayer" class="section-padding">
+            <div class="glass-card p-8 md:p-12">
+                <div class="flex items-center mb-8">
+                    <span class="bg-gold-600/20 p-3 rounded-2xl mr-4">
+                        <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.204a.5.5 0 01.09-.741l1.644-1.127a.5.5 0 01.636.037L12 16.126l5.858-6.16a.5.5 0 01.636-.037l1.644 1.127a.5.5 0 01.09.741L12 21z M12 3v12M8 7l4-4 4 4"/></svg>
+                    </span>
+                    <h2 class="text-3xl font-serif font-bold text-white">禱告詞</h2>
+                </div>
+                <div class="text-xl leading-loose text-gray-300 font-light space-y-4">
+                    <p>主啊，當我們仰望十字架，我們看見了世上最深的黑暗，也看見了宇宙中最榮耀的真光。感謝祢，為了拯救我們，祢拒絕拯救自己；為了使我們被神接納，祢甘願被天父離棄。</p>
+                    <p>求聖靈開啟我們的眼睛，讓我們像那位百夫長一樣，在祢的受苦與受死中，認出祢是榮耀的君王、是神的兒子。願十字架的愛震撼我們的心，使我們不再為自己活，而是為那替我們死而復活的主活。奉耶穌基督得勝的名求，阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="section-padding">
+            <div class="flex items-center mb-10">
+                <span class="bg-blue-600/20 p-3 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </span>
+                <h2 class="text-3xl font-serif font-bold text-white">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="glass-card p-6 flex flex-col justify-between outline-btn border-l-4 border-l-gold-500">
+                    <div>
+                        <span class="text-gold-500 text-sm font-bold tracking-widest">PART 01</span>
+                        <h3 class="text-lg font-bold text-white mt-2 mb-4">嘲諷與試探</h3>
+                        <p class="text-gray-400 text-xs">可 15:29-32</p>
+                    </div>
+                </a>
+                <a href="#part2" class="glass-card p-6 flex flex-col justify-between outline-btn border-l-4 border-l-red-500">
+                    <div>
+                        <span class="text-red-500 text-sm font-bold tracking-widest">PART 02</span>
+                        <h3 class="text-lg font-bold text-white mt-2 mb-4">幽暗與撇棄</h3>
+                        <p class="text-gray-400 text-xs">可 15:33-36</p>
+                    </div>
+                </a>
+                <a href="#part3" class="glass-card p-6 flex flex-col justify-between outline-btn border-l-4 border-l-purple-500">
+                    <div>
+                        <span class="text-purple-500 text-sm font-bold tracking-widest">PART 03</span>
+                        <h3 class="text-lg font-bold text-white mt-2 mb-4">裂開的幔子</h3>
+                        <p class="text-gray-400 text-xs">可 15:37-41</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Part 1 -->
+            <div id="part1" class="mb-24 scroll-mt-24">
+                <div class="flex items-center mb-6">
+                    <h3 class="text-2xl font-serif font-bold text-white">第一段：嘲諷與試探——拒絕「自我拯救」的神聖大愛</h3>
+                </div>
+                <div class="space-y-8">
+                    <div class="bg-white/5 border-l-4 border-gold-500 p-6 italic text-gray-300">
+                        「從那裡經過的人辱罵他，搖著頭說：『咳！你這拆毀聖殿、三日又建起來的，可以救自己，從十字架上下來吧！』祭司長和文士也是這樣戲弄他，彼此說：『他救了別人，不能救自己...』」 (可 15:29-32)
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center">
+                                <span class="mr-2">●</span> 關鍵原文解析
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white">「救」（σώζω / sōzō）</strong>：在十字架下，群眾將「拯救」定義為逃避苦難。但耶穌的「拯救」是犧牲自己以換取他人的生命。</p>
+                            
+                            <h4 class="text-gold-400 font-bold flex items-center">
+                                <span class="mr-2">●</span> 關鍵問題：為什麼耶穌不下來證明自己？
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed">耶穌如果從十字架上下來，祂能證明大能，但無法完成救贖。祂沒有下來，不是因為「不能」，而是因為「愛」。祂的無能為力，正是最深愛的展現。</p>
+                        </div>
+                        <div class="glass-card p-6 space-y-4">
+                            <div class="text-sm uppercase tracking-widest text-gray-500 mb-2 font-bold">例證與名言</div>
+                            <p class="text-gray-300 italic">「消防員衝入火海救人，若他保全自己，孩子就會死。他選擇用身體護住孩子。」</p>
+                            <p class="text-gold-200 font-serif font-bold border-t border-white/10 pt-4">
+                                「耶穌沒有用祂的大能逃離十字架，而是用大能留在十字架上。」<br/>
+                                <span class="text-sm font-sans text-gray-400 font-normal">——提摩太·凱勒 (Timothy Keller)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Part 2 -->
+            <div id="part2" class="mb-24 scroll-mt-24">
+                <h3 class="text-2xl font-serif font-bold text-white mb-6">第二段：幽暗與撇棄——承擔世人罪孽的震天呼求</h3>
+                <div class="space-y-8">
+                    <div class="bg-white/5 border-l-4 border-red-500 p-6 italic text-gray-300">
+                        「從午正到申初，遍地都黑暗了。申初的時候，耶穌大聲呼叫說：『以羅伊！以羅伊！拉馬撒巴各大尼？』（翻出來就是：我的神！我的神！為什麼離棄我？）...」 (可 15:33-36)
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-red-400 font-bold flex items-center">
+                                <span class="mr-2">●</span> 關鍵原文解析
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white">「離棄」（ἐγκαταλείπω / enkataleipō）</strong>：意指完全的遺棄。耶穌經歷了三位一體神在永恆中前所未有的「斷裂」。這是真實的代罰。</p>
+                            
+                            <h4 class="text-red-400 font-bold flex items-center">
+                                <span class="mr-2">●</span> 關鍵問題：天父真的離棄了耶穌嗎？
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed">是的。在十字架上，耶穌承擔了全人類罪的刑罰。因為祂在十字架上被天父離棄，我們這些信靠祂的人，就永遠不再被神離棄。祂喝盡了忿怒的杯。</p>
+                        </div>
+                        <div class="glass-card p-6 space-y-4">
+                            <div class="text-sm uppercase tracking-widest text-gray-500 mb-2 font-bold">例證與名言</div>
+                            <p class="text-gray-300 italic">「避雷針吸引毀滅性的雷擊擊中自己，將電流導入地下。耶穌成了全人類的避雷針。」</p>
+                            <p class="text-red-200 font-serif font-bold border-t border-white/10 pt-4">
+                                「罪的本質是人以自己代替神；救恩的本質是神以自己代替人。」<br/>
+                                <span class="text-sm font-sans text-gray-400 font-normal">——約翰·史托德 (John Stott)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Part 3 -->
+            <div id="part3" class="mb-24 scroll-mt-24">
+                <h3 class="text-2xl font-serif font-bold text-white mb-6">第三段：裂開的幔子與百夫長的宣告——通往神恩典的新開道路</h3>
+                <div class="space-y-8">
+                    <div class="bg-white/5 border-l-4 border-purple-500 p-6 italic text-gray-300">
+                        「耶穌大聲喊叫，氣就斷了。殿裡的幔子從上到下裂為兩半。對面站著的百夫長看見耶穌這樣喊叫斷氣，就說：『這人真是神的兒子！』...」 (可 15:37-41)
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-purple-400 font-bold flex items-center">
+                                <span class="mr-2">●</span> 關鍵原文解析
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white">「裂為兩半」（σχίζω / schizō）</strong>：被動語態，表明是神的作為。且是「從上到下」，象徵神人隔閡被徹底破除了。</p>
+                            
+                            <h4 class="text-purple-400 font-bold flex items-center">
+                                <span class="mr-2">●</span> 關鍵問題：為什麼特別記錄百夫長的認信？
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed">百夫長代表外邦人與敵對勢力。他看過無數人死，但唯有看見耶穌受死，得出驚天動地的結論。救恩門戶已向全世界敞開。</p>
+                        </div>
+                        <div class="glass-card p-6 space-y-4">
+                            <div class="text-sm uppercase tracking-widest text-gray-500 mb-2 font-bold">例證與名言</div>
+                            <p class="text-gray-300 italic">「柏林圍牆一夕之間被推翻。耶穌斷氣那刻，宇宙中最堅固的罪惡之牆被神親手撕裂。」</p>
+                            <p class="text-purple-200 font-serif font-bold border-t border-white/10 pt-4">
+                                「幔子裂開了，你可以進去。神走向你，你也可以走向神。」<br/>
+                                <span class="text-sm font-sans text-gray-400 font-normal">——司布真 (Charles Spurgeon)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Direction -->
+        <section class="section-padding">
+            <h2 class="text-3xl font-serif font-bold text-white mb-10 flex items-center">
+                <span class="bg-emerald-600/20 p-3 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </span>
+                講道應用方向
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8">
+                    <div class="text-emerald-500 font-bold mb-4">01</div>
+                    <h4 class="text-white font-bold mb-3">面對嘲諷的態度</h4>
+                    <p class="text-gray-400 leading-relaxed">效法耶穌放棄自我辯護的權利，將主權交給神，相信真正的得勝在於順服，而非迎合世人。</p>
+                </div>
+                <div class="glass-card p-8">
+                    <div class="text-emerald-500 font-bold mb-4">02</div>
+                    <h4 class="text-white font-bold mb-3">屬靈幽暗中的確據</h4>
+                    <p class="text-gray-400 leading-relaxed">當感到孤單時仰望十架。因為耶穌已經經歷了真正的「被離棄」，神在你的苦難中絕對與你同在。</p>
+                </div>
+                <div class="glass-card p-8">
+                    <div class="text-emerald-500 font-bold mb-4">03</div>
+                    <h4 class="text-white font-bold mb-3">坦然無懼地來到神前</h4>
+                    <p class="text-gray-400 leading-relaxed">不再靠個人功勞，而是緊緊抓住「幔子已經裂開」的恩典，每天藉著禱告來到施恩寶座前。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Keywords -->
+        <section class="py-12 flex flex-wrap justify-center gap-4">
+            <span class="px-8 py-3 bg-white/10 rounded-full border border-white/20 text-white font-serif text-xl"># 代替 (Substitution)</span>
+            <span class="px-8 py-3 bg-white/10 rounded-full border border-white/20 text-white font-serif text-xl"># 捨己 (Self-sacrifice)</span>
+            <span class="px-8 py-3 bg-white/10 rounded-full border border-white/20 text-white font-serif text-xl"># 開路 (Making a way)</span>
+        </section>
+
+        <!-- Action Steps -->
+        <section class="section-padding">
+            <div class="glass-card p-10 border-t-4 border-t-emerald-500">
+                <h2 class="text-3xl font-serif font-bold text-white mb-8">回應與實踐行動</h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <div class="bg-emerald-500 h-2 w-2 rounded-full mt-3 mr-4 shrink-0"></div>
+                        <p class="text-gray-300 text-lg"><strong class="text-white">拒絕自我中心：</strong> 本週在可能引發爭執的場合中，刻意放下自我辯護的衝動，效法基督的靜默。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-emerald-500 h-2 w-2 rounded-full mt-3 mr-4 shrink-0"></div>
+                        <p class="text-gray-300 text-lg"><strong class="text-white">感恩的禱告：</strong> 每天早晨花三分鐘，為「裂開的幔子」獻上感恩，感謝你能直接稱神為「阿爸，父」。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-emerald-500 h-2 w-2 rounded-full mt-3 mr-4 shrink-0"></div>
+                        <p class="text-gray-300 text-lg"><strong class="text-white">勇敢的認信：</strong> 向一位不認識神的朋友，分享你為何相信「耶穌是神的兒子」，如同百夫長的見證。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-padding">
+            <div class="flex items-center mb-10">
+                <span class="bg-orange-600/20 p-3 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                </span>
+                <h2 class="text-3xl font-serif font-bold text-white">講章文稿</h2>
+            </div>
+            <div class="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed font-light">
+                <p>弟兄姊妹們，今天我們要一起進入人類歷史上最黑暗、卻也最榮耀的時刻。講道主題是：<span class="text-gold-400 font-bold">「在極度黑暗中看見真光：十架上的君王」</span>。</p>
+
+                <p>首先，我們來看第一段：<span class="text-white font-bold">嘲諷與試探——拒絕「自我拯救」的神聖大愛</span>。 當耶穌被掛在木頭上時，眾人都在嘲笑祂。他們說：「<span class="text-gold-100 italic">他救了別人，不能救自己。以色列的王基督，現在可以從十字架上下來，叫我們看見，就信了。</span>」這是一個極大的試探。耶穌真的不能救自己嗎？祂當然能！但如果祂保全自己，祂就無法拯救你和我。提摩太·凱勒牧師說得極好：<span class="text-white font-bold">「耶穌沒有用祂的大能逃離十字架，而是用大能留在十字架上。」</span></p>
+
+                <p>進入第二段：<span class="text-white font-bold">幽暗與撇棄——承擔世人罪孽的震天呼求</span>。 經文告訴我們，從正午到下午三點，遍地都黑暗了。耶穌發出了撕裂心肺的呼喊：「<span class="text-red-400 font-bold italic">我的神！我的神！為什麼離棄我？</span>」這不是耶穌的錯覺，而是祂正在替你我承受與神隔絕的代價。約翰·史托德牧師提醒我們：<span class="text-white font-bold">「罪的本質是人以自己代替神；救恩的本質是神以自己代替人。」</span> 因為祂被離棄，我們永遠不再被神離棄！</p>
+
+                <p>最後，我們來到第三段：<span class="text-white font-bold">裂開的幔子與百夫長的宣告——通往神恩典的新開道路</span>。 當耶穌斷氣的那一刻，發生了兩件震撼人心的事情。第一，<span class="text-purple-400 font-bold">「殿裡的幔子從上到下裂為兩半」</span>。司布真曾宣告：<span class="text-white font-bold">「幔子裂開了，你可以進去。神走向你，你也可以走向神。」</span> 罪的阻隔被徹底清除了！第二件事，一位外邦的羅馬百夫長宣告：<span class="text-gold-400 font-bold">「這人真是神的兒子！」</span></p>
+
+                <p class="pt-8 text-xl font-serif text-white">弟兄姊妹，這就是十字架的福音。代替、捨己、開路。今天，幔子已經裂開，恩典的門已經敞開。讓我們真實地認信並宣告：耶穌，祢真是神的兒子，是我生命的主宰！</p>
+            </div>
+        </section>
+
+        <!-- Quotes Gallery -->
+        <section id="quotes" class="section-padding">
+            <div class="flex items-center mb-10">
+                <span class="bg-amber-600/20 p-3 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </span>
+                <h2 class="text-3xl font-serif font-bold text-white">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「耶穌沒有用祂的大能逃離十字架，而是用大能留在十字架上。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 提摩太·凱勒</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「罪的本質是人以自己代替神；救恩的本質是神以自己代替人。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 約翰·史托德</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「幔子裂開了，你可以進去。神走向你，你也可以走向神。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 查爾斯·司布真</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 潘霍華</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「十字架是神在歷史中插下的一把劍，將世界劈為兩半。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 葛理翰</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「十字架是神的公義與慈愛完美相遇的地方。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 唐崇榮</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「我們仰望十字架，不是看見一位無助的受害者，而是看見一位主動捨命的君王。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 約翰·加爾文</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「若不是基督擋在那裡，我們早被燒成灰燼。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 喬納森·愛德華茲</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「十架不僅除去了我們的罪，也治死了我們想靠自己得救的驕傲。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 馬丁·路德</cite>
+                </div>
+                <div class="glass-card p-6">
+                    <p class="text-gray-300 mb-4">「這個傷口深得足以容下全人類的苦楚，也大得足以傾倒出全宇宙的醫治。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 盧雲</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="py-12 border-t border-white/10 text-center">
+            <p class="text-gray-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 rounded-full flex items-center justify-center text-white floating-btn z-[60] hover:bg-gold-500 transition-all hover:scale-110 active:scale-95">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7 7 7M12 3v18"/></svg>
+    </a>
+
+</body>
+</html>

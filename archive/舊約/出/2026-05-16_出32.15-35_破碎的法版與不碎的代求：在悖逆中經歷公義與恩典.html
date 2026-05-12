@@ -72,6 +72,13 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #D4AF37;
         }
+		@keyframes breathing {
+            0%, 100% { opacity: 0.6; filter: brightness(0.8); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="custom-scrollbar">
@@ -92,8 +99,8 @@
     <!-- Banner -->
     <header class="relative h-screen flex items-center justify-center overflow-hidden pt-16">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_aa23fd12-02f9-43d2-908a-95912b6a53bd.jpg' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-darkBg/60"></div>
+            <img src='image/img_aa23fd12-02f9-43d2-908a-95912b6a53bd.jpg' alt='media_1' class="w-full h-full object-cover opacity-80 breathing-image banner-mask scale-105" />
+			<div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-darkBg/20"></div>
         </div>
         <div class="relative z-10 text-center px-4 max-w-5xl">
             <h2 class="text-gold tracking-[0.3em] font-light mb-4 text-lg animate-fade-in">EXODUS 32:15-35</h2>

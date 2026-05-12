@@ -95,6 +95,13 @@
         .hero-mask {
             mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
         }
+		@keyframes breathing {
+            0%, 100% { opacity: 0.2; filter: brightness(1); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="font-sans">
@@ -115,7 +122,7 @@
     <!-- Banner / Hero Section -->
     <header class="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden pt-16">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_94c47111-eae2-484d-9faa-ee5dbdf75af3.jpg' alt='media_1' class="w-full h-full object-cover opacity-60 scale-105" />
+            <img src='image/img_94c47111-eae2-484d-9faa-ee5dbdf75af3.jpg' alt='media_1' class="absolute inset-0 w-full h-full object-cover breathing-image scale-105" />
             <div class="absolute inset-0 bg-gradient-to-t from-dark-base via-dark-base/60 to-transparent"></div>
         </div>
         

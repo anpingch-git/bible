@@ -77,6 +77,13 @@
             border-left: 4px solid #ca8a04;
             background: rgba(202, 138, 4, 0.05);
         }
+		@keyframes breathing {
+            0%, 100% { opacity: 0.2; filter: brightness(1); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="font-sans antialiased">
@@ -99,7 +106,7 @@
     <!-- Banner / Hero Section -->
     <header class="relative h-[60vh] md:h-[80vh] flex items-end overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_8ebae48b-8f2d-415e-8c3d-883eccdd3614.jpg' alt='media_1' class="w-full h-full object-cover scale-105" />
+            <img src='image/img_8ebae48b-8f2d-415e-8c3d-883eccdd3614.jpg' alt='media_1' class="absolute inset-0 w-full h-full object-cover breathing-image  scale-105" />
             <div class="absolute inset-0 hero-mask"></div>
         </div>
         <div class="relative z-10 w-full max-w-5xl mx-auto px-6 pb-12 md:pb-24">

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可14:12-31：晚餐桌上的張力：從背叛到立約的恩典</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        accent: '#8B5CF6',
+                        darkBg: '#0F172A',
+                        cardBg: 'rgba(30, 41, 59, 0.7)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 0.85 },
+                            '50%': { opacity: 0.4 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F172A;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: transform 0.2s;
+        }
+        .outline-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -10px rgba(139, 92, 246, 0.5);
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center px-6 justify-between">
+        <div class="font-display font-extrabold text-xl tracking-tight hidden md:block">
+            <span class="text-gold">可 14:12-31</span>
+        </div>
+        <div class="flex gap-6 text-sm font-medium tracking-widest uppercase">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="animate-pulse-slow w-full h-full">
+                 <img src='image/img_435add74-b37c-4d3f-a0f1-a933c4fbe584.jpg' alt='晚餐桌上的張力' class="w-full h-full object-cover" />
+            </div>
+        </div>
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <p class="font-display text-gold tracking-[0.3em] mb-4 text-lg font-semibold uppercase">Gospel of Mark</p>
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight">晚餐桌上的張力：<br><span class="text-gradient">從背叛到立約的恩典</span></h1>
+            <div class="h-1 w-24 bg-gold mx-auto mb-8"></div>
+            <div id="gold-sentence" class="glass p-6 rounded-2xl inline-block max-w-2xl border-l-4 border-gold">
+                <p class="text-xl md:text-2xl font-medium leading-relaxed italic">
+                    「這是我立約的血，為多人流出來的。」
+                </p>
+                <p class="text-sm mt-3 opacity-70 tracking-widest">— 馬可福音 14:24</p>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-20 max-w-5xl">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="mb-32 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold/10 rounded-full">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">禱告詞</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl text-lg md:text-xl leading-loose italic font-light">
+                主耶穌，我們來到祢的晚餐桌前。在這段充滿張力的經文中，我們看見了人的背叛與軟弱，卻更深地看見了祢毫無保留的愛與立約的恩典。求聖靈光照我們，讓我們不倚靠自己的剛強，而是謙卑領受祢為我們破碎的身體與流出的寶血。當我們面對生活中的抉擇與試探時，求祢的恩典托住我們，使我們在跌倒後仍有回轉歸向祢的勇氣。奉主耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="mb-32 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-accent/10 rounded-full">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <a href="#part1" class="outline-btn glass p-6 rounded-2xl hover:bg-white/5 block">
+                    <p class="text-gold text-xs font-bold tracking-widest mb-2">可14:12-16</p>
+                    <h3 class="font-bold text-lg">順服的步履——隱藏在平凡中的神聖主權</h3>
+                </a>
+                <a href="#part2" class="outline-btn glass p-6 rounded-2xl hover:bg-white/5 block">
+                    <p class="text-gold text-xs font-bold tracking-widest mb-2">可14:17-21</p>
+                    <h3 class="font-bold text-lg">揭露的恩典——直面內心的背叛與黑暗</h3>
+                </a>
+                <a href="#part3" class="outline-btn glass p-6 rounded-2xl hover:bg-white/5 block">
+                    <p class="text-gold text-xs font-bold tracking-widest mb-2">可14:22-25</p>
+                    <h3 class="font-bold text-lg">立約的筵席——破碎自己以成就的救贖</h3>
+                </a>
+                <a href="#part4" class="outline-btn glass p-6 rounded-2xl hover:bg-white/5 block">
+                    <p class="text-gold text-xs font-bold tracking-widest mb-2">可14:26-31</p>
+                    <h3 class="font-bold text-lg">碎裂的自信——在失敗預言中看見挽回</h3>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-gold font-display font-black text-4xl opacity-40">01</span>
+                        <h3 class="text-2xl font-bold border-b-2 border-gold pb-2">順服的步履——隱藏在平凡中的神聖主權</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-5">
+                            <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-accent mb-6">
+                                <h4 class="text-accent font-bold text-sm mb-3 tracking-widest">引用經文</h4>
+                                <p class="text-sm leading-relaxed opacity-80">除酵節的第一天，就是宰逾越羊羔的那一天，門徒對耶穌說：「你吃逾越節的筵席要我們往哪裡去預備呢？」耶穌就打發兩個門徒，對他們說：「你們進城去，必有人拿著一瓶水迎面而來，你們就跟著他。他進哪家去，你們就對那家的主人說：『夫子說：客房在哪裡？我與門徒好在那裡吃逾越節的筵席。』他必指給你們擺設整齊的一間大樓，你們就在那裡為我們預備。」門徒出去，進了城，所遇見的正如耶穌所說的。他們就預備了逾越節的筵席。</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-6">
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵詞：預備 (hetoimazō)</h4>
+                                <p class="text-slate-300 text-sm">帶有「安排妥當、使之就緒」之意。表明這不僅是門徒的預備，更是上帝早已在萬有中「預備」好的救贖計畫。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-slate-300 text-sm italic mb-2">問：當上帝的指引看起來不合常理，我們如何回應？</p>
+                                <p class="text-slate-300 text-sm">上帝的主權往往隱藏在最平凡的日常細節中。順服不是因為我們看清了全貌，而是因為我們信任發出命令的那位主。</p>
+                            </div>
+                            <div class="bg-blue-900/20 p-4 rounded-xl border border-blue-500/30">
+                                <p class="text-xs text-blue-400 font-bold uppercase mb-2">名言佳句</p>
+                                <p class="text-sm italic">「順服就是在同一個方向上長期的專注與努力。這不是出於一時的狂熱，而是在平凡生活中對上帝持續的信靠。」— 畢德生</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-gold font-display font-black text-4xl opacity-40">02</span>
+                        <h3 class="text-2xl font-bold border-b-2 border-gold pb-2">揭露的恩典——直面內心的背叛與黑暗</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-5">
+                            <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-accent mb-6">
+                                <h4 class="text-accent font-bold text-sm mb-3 tracking-widest">引用經文</h4>
+                                <p class="text-sm leading-relaxed opacity-80">到了晚上，耶穌和十二個門徒都來了。他們坐席正吃的時候，耶穌說：「我實在告訴你們，你們中間有一個與我同吃的人要賣我了。」他們就憂愁起來，一個一個地問他說：「是我嗎？」耶穌對他們說：「是十二個門徒中同我蘸手在一個盤子裡的那個人。人子必要去世，正如經上指著他所寫的；但賣人子的人有禍了！那人不生在世上倒好。」</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-6">
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵詞：賣 (paradidōmi)</h4>
+                                <p class="text-slate-300 text-sm">原意是「交出、移交」。諷刺的是，這個字後來也用來描述上帝將祂的獨生子「交出」為我們釘十字架。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-slate-300 text-sm italic mb-2">問：為什麼耶穌明知道猶大會出賣祂，卻仍允許他同席？</p>
+                                <p class="text-slate-300 text-sm">展現了恩典的極致。耶穌的宣告不是出於仇恨，而是一種痛苦的呼喚。門徒們問「是我嗎？」顯示每個人都意識到自己內心潛在的背叛可能。</p>
+                            </div>
+                            <div class="bg-blue-900/20 p-4 rounded-xl border border-blue-500/30">
+                                <p class="text-xs text-blue-400 font-bold uppercase mb-2">名言佳句</p>
+                                <p class="text-sm italic">「我們真實的光景比我們所敢承認的更為敗壞和有罪；但同時，我們在基督裡所蒙的愛和接納，比我們所敢期望的更為浩大。」— 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-gold font-display font-black text-4xl opacity-40">03</span>
+                        <h3 class="text-2xl font-bold border-b-2 border-gold pb-2">立約的筵席——破碎自己以成就的救贖</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-5">
+                            <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-accent mb-6">
+                                <h4 class="text-accent font-bold text-sm mb-3 tracking-widest">引用經文</h4>
+                                <p class="text-sm leading-relaxed opacity-80">他們吃的時候，耶穌拿起餅來，祝了福，就擘開，遞給他們，說：「你們拿著吃，這是我身體。」又拿起杯來，祝謝了，遞給他們；他們都喝了。耶穌說：「這是我立約的血，為多人流出來的。我實在告訴你們，我不再喝這葡萄汁，直到我在神國裡喝新的那日子。」</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-6">
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵詞：立約的血 (haima tēs diathēkēs)</h4>
+                                <p class="text-slate-300 text-sm">呼應出埃及記24:8。耶穌在此宣告，舊約的動物獻祭即將終結，祂將以自己的生命開啟赦罪的新約。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-slate-300 text-sm italic mb-2">問：「這是我身體，為你們擘開」對今日的教會有何意義？</p>
+                                <p class="text-slate-300 text-sm">耶穌的愛是透過「破碎」傳遞的。教會作為基督的身體，唯有願意被擘開、被倒出，才能將生命的糧與恩典的杯分享給這飢渴的世界。</p>
+                            </div>
+                            <div class="bg-blue-900/20 p-4 rounded-xl border border-blue-500/30">
+                                <p class="text-xs text-blue-400 font-bold uppercase mb-2">名言佳句</p>
+                                <p class="text-sm italic">「只有當我們願意被擘開時，我們才能成為別人的糧食。」— 盧雲</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 4 -->
+                <div id="part4" class="scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-gold font-display font-black text-4xl opacity-40">04</span>
+                        <h3 class="text-2xl font-bold border-b-2 border-gold pb-2">碎裂的自信——在失敗預言中看見挽回</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-5">
+                            <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-accent mb-6">
+                                <h4 class="text-accent font-bold text-sm mb-3 tracking-widest">引用經文</h4>
+                                <p class="text-sm leading-relaxed opacity-80">他們唱了詩，就出來，往橄欖山去。耶穌對他們說：「你們都要跌倒了，因為經上記著說：我要擊打牧人，羊就分散了。但我復活以後，要在你們以先往加利利去。」彼得說：「眾人雖然跌倒，我總不能。」耶穌對他說：「我實在告訴你，就在今天夜裡，雞叫兩遍以先，你要三次不認我。」彼得卻極力地說：「我就是必須和你同死，也總不能不認你。」</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-6">
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵詞：跌倒 (skandalizō)</h4>
+                                <p class="text-slate-300 text-sm">意為「被絆倒、離棄信仰」。凸顯了人在壓力下信仰崩塌的脆弱。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-slate-300 text-sm italic mb-2">問：彼得的過度自信給我們什麼警惕？耶穌的預言又帶來什麼安慰？</p>
+                                <p class="text-slate-300 text-sm">彼得過度相信自己的肉體意志。然而，耶穌在預言失敗的同時，立刻給予了復興的應許：「但我復活以後，要在你們以先往加利利去。」</p>
+                            </div>
+                            <div class="bg-blue-900/20 p-4 rounded-xl border border-blue-500/30">
+                                <p class="text-xs text-blue-400 font-bold uppercase mb-2">名言佳句</p>
+                                <p class="text-sm italic">「恩典之所以是昂貴的，是因為它宣告我們是徹頭徹尾的罪人；恩典之所以是恩典，是因為它賜給我們完全的赦免。」— 潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="mb-32 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-indigo-500/10 rounded-full">
+                    <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.167a2.4 2.4 0 00-2.433-1.558H2V4h2.417a2.4 2.4 0 012.433 1.558L8.83 11.592a1.76 1.76 0 003.417-.592V5.882a1.2 1.2 0 011.2-1.2h4.5a1.2 1.2 0 011.2 1.2v12.238a1.2 1.2 0 01-1.2 1.2h-4.5a1.2 1.2 0 01-1.2-1.2V5.882z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            <div class="glass p-10 md:p-16 rounded-[2.5rem] leading-[2.2] text-slate-200">
+                <h3 class="text-2xl md:text-3xl font-black mb-10 text-center text-gradient">晚餐桌上的張力：從背叛到立約的恩典</h3>
+                
+                <p class="mb-8">弟兄姊妹們，平安。當我們看著達文西的名畫《最後的晚餐》時，我們常常被畫面中人物的動態與情緒所吸引。今天，我們就要走進馬可福音第14章的這個真實場景。這不是一場平靜祥和的晚餐，這是一張充滿極大張力的餐桌。在這裡，有上帝的神聖主權，有人心的黑暗背叛，有自我膨脹的自信，更有超越一切的立約恩典。</p>
+
+                <h4 class="text-xl font-bold text-gold mb-4 mt-12 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-gold rounded-full"></span> 順服的步履——隱藏在平凡中的神聖主權
+                </h4>
+                <p class="mb-8">在晚餐開始前，門徒問耶穌要去哪裡預備逾越節的筵席。耶穌給了一個聽起來幾乎像特務接頭般的指示：「你們進城去，必有人拿著一瓶水迎面而來，你們就跟著他。」這裡我們看見了<span class="text-white font-bold underline decoration-gold underline-offset-4">隱藏在平凡中的神聖主權</span>。上帝的計畫往往超乎我們的邏輯。門徒沒有質疑，他們只是順服地進城，結果「所遇見的正如耶穌所說的」。當上帝的帶領看起來不合常理時，我們是否願意順服？</p>
+
+                <h4 class="text-xl font-bold text-gold mb-4 mt-12 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-gold rounded-full"></span> 揭露的恩典——直面內心的背叛與黑暗
+                </h4>
+                <p class="mb-8">當他們坐席時，耶穌平靜卻沉重地宣告：「你們中間有一個與我同吃的人要賣我了。」門徒們陷入了極大的憂愁，他們沒有指責彼此，反而一個一個地問：「是我嗎？」這個「是我嗎？」的探問極其寶貴。它揭示了我們每個人心中都潛藏著背叛主的可能。提摩太·凱勒牧師說得好：<span class="text-white font-bold italic">「我們真實的光景比我們所敢承認的更為敗壞和有罪；但同時，我們在基督裡所蒙的愛和接納，比我們所敢期望的更為浩大。」</span>這揭露的恩典逼著我們直面內心的黑暗，不再自以為義。</p>
+
+                <h4 class="text-xl font-bold text-gold mb-4 mt-12 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-gold rounded-full"></span> 立約的筵席——破碎自己以成就的救贖
+                </h4>
+                <p class="mb-8 font-medium border-l-4 border-accent pl-6 py-2 bg-accent/5">
+                    <span class="text-accent font-bold">耶穌說：「這是我立約的血，為多人流出來的。」（馬可福音 14:24）</span>
+                </p>
+                <p class="mb-8">耶穌拿起餅來，祝謝了，擘開。這「擘開」的動作，是整個人類歷史的轉捩點。這是一場立約的筵席。耶穌不僅為我們被破碎，祂也呼召我們這群屬祂的身體，在世界上活出一個「被擘開」的生命。我們不再緊抓著自己的權益，而是願意為主、為他人傾倒。</p>
+
+                <h4 class="text-xl font-bold text-gold mb-4 mt-12 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-gold rounded-full"></span> 碎裂的自信——在失敗預言中看見挽回
+                </h4>
+                <p class="mb-12">晚餐後，彼得誇口願意與耶穌同死。彼得的愛是真實的，但他對自己的認識卻是盲目的。然而，請注意耶穌在預言他們跌倒時，夾帶的一句恩典宣告：「但我復活以後，要在你們以先往加利利去。」這就是福音！耶穌沒有等我們完美了才愛我們。在我們看見自己的碎裂自信之前，祂已經預備好了挽回的恩典。讓我們放下彼得般的自信，正視猶大般的軟弱，並全心擁抱那為我們擘開身體的耶穌基督。阿們！</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10 border-t border-white/10">
+                    <div class="text-center">
+                        <p class="text-gold font-display font-black text-3xl mb-2">主權</p>
+                        <p class="text-xs tracking-widest opacity-50 uppercase">Sovereignty</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold font-display font-black text-3xl mb-2">破碎</p>
+                        <p class="text-xs tracking-widest opacity-50 uppercase">Brokenness</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gold font-display font-black text-3xl mb-2">恩典</p>
+                        <p class="text-xs tracking-widest opacity-50 uppercase">Grace</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-emerald-500/10 rounded-full">
+                    <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">回應與實踐</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl border-t-4 border-emerald-500">
+                    <h4 class="font-bold text-lg mb-4 text-emerald-400">聖餐前的省察</h4>
+                    <p class="text-sm opacity-80 leading-relaxed">本週花 15 分鐘安靜獨處，求聖靈光照內心是否有隱而未現的罪，並寫下認罪禱告。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-emerald-500">
+                    <h4 class="font-bold text-lg mb-4 text-emerald-400">實踐「被擘開」</h4>
+                    <p class="text-sm opacity-80 leading-relaxed">主動關心一位不可愛的人，分享你的時間、資源或一段鼓勵的經文。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-emerald-500">
+                    <h4 class="font-bold text-lg mb-4 text-emerald-400">放下自我依賴</h4>
+                    <p class="text-sm opacity-80 leading-relaxed">每天早晨宣告：「主啊，我今天不倚靠自己的聰明與剛強，求祢的恩典覆庇我。」</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="mb-32 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-amber-500/10 rounded-full">
+                    <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「我們真實的光景比我們所敢承認的更為敗壞和有罪；但同時，我們在基督裡所蒙的愛和接納，比我們所敢期望的更為浩大。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 提摩太·凱勒《婚姻解密》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「廉價的恩典是我們自己給自己的恩典...昂貴的恩典是必須尋找的寶藏。這恩典之所以昂貴，是因為它使人付上生命。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 潘霍華《追隨基督》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「我們和耶穌一樣，被揀選、被祝福、被擘開，為的是被給予。只有當我們願意被擘開時，我們才能成為別人的糧食。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 盧雲《生命中的耶穌》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「順服就是在同一個方向上長期的專注與努力。這不是出於一時的狂熱，而是在平凡生活中對上帝持續的信靠。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 畢德生《恆久專一的順服》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「除非我們首先認識上帝，否則我們無法真正認識自己；同樣，除非我們首先認識自己，否則我們也無法真正認識上帝。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 約翰·加爾文《基督教要義》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「上帝對我們的愛，並非因為我們有多好，而是因為祂就是愛。這恩典在我們極其軟弱時，顯得最為完全。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 陶恕《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「不要因為你的跌倒而絕望，因為上帝的恩典比你的罪更深。我們越是感覺到自己的空虛，就越有空間容納基督的豐盛。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 司布真《清晨甘露》</span>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「恩典存在於我們心中，就像一小滴水在浩瀚的火海中依然不被毀滅，這完全是因為上帝大能的保守。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 喬納森·愛德華茲《宗教情操真偽辨》</span>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「我們必須每一天都回到福音裡，因為我們每一天都會忘記它。我們不是靠著自己的力量站立，而是靠著基督為我們所成就的工作。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 馬丁·路德《加拉太書註釋》</span>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「順服神，把所有的結果交給祂。當我們願意在微小的事情上順服時，我們就能經歷祂在大事上的信實。」</p>
+                    <div class="text-right">
+                        <span class="text-gold text-xs font-bold">— 查爾斯·史丹利《生命的真諦》</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center py-10 opacity-30 text-xs tracking-widest border-t border-white/5">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6 text-darkBg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

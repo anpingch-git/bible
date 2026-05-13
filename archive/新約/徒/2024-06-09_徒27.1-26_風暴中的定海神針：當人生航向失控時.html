@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒27:1-26: 風暴中的定海神針：當人生航向失控時</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        navy: {
+                            900: '#020617',
+                            800: '#1e293b',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-shake': 'gentle-shake 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: 0.9, filter: 'brightness(1.2)' },
+                            '50%': { opacity: 0.2, filter: 'brightness(0.6)'  },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-shake': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '25%': { transform: 'translateY(-2px)' },
+                            '75%': { transform: 'translateY(2px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            border: 1px solid rgba(251, 191, 36, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: rgba(251, 191, 36, 0.1);
+            transform: translateY(-2px);
+            border-color: #fbbf24;
+        }
+        .scroll-top-btn {
+            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-navy-900/80 backdrop-blur-md border-b border-white/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-gold-400 font-display font-bold text-lg hidden sm:block">徒27:1-26</div>
+            <div class="flex gap-4 sm:gap-8 text-sm font-medium tracking-wider">
+                <a href="#prayer" class="nav-link text-slate-300 hover:text-gold-400">禱告</a>
+                <a href="#outline" class="nav-link text-slate-300 hover:text-gold-400">大綱</a>
+                <a href="#sermon" class="nav-link text-slate-300 hover:text-gold-400">講章</a>
+                <a href="#quotes" class="nav-link text-slate-300 hover:text-gold-400">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse Section -->
+    <header class="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src="image/img_cdbdbe76-30af-4ee5-af11-acc676856477.jpg" alt="Stormy Sea" class="w-full h-full object-cover animate-breathe">
+            <div class="absolute inset-0 bg-gradient-to-b from-navy-900/60 via-navy-900/40 to-navy-900"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl px-6 text-center">
+            <div class="mb-6 inline-block px-4 py-1 rounded-full border border-gold-400/30 bg-gold-400/10 text-gold-400 text-sm font-bold tracking-widest uppercase animate-pulse">
+                使徒行傳 27:1-26
+            </div>
+            <h1 class="text-4xl md:text-6xl font-display font-extrabold mb-8 leading-tight">
+                風暴中的定海神針：<br>
+                <span class="gradient-text">當人生航向失控時</span>
+            </h1>
+            
+            <div class="animate-gentle-shake py-10">
+                <p class="text-xl md:text-3xl font-medium text-white italic leading-relaxed">
+                    「所以眾位可以放心，我信神他怎樣對我說，事情也要怎樣成就。」
+                </p>
+                <p class="text-gold-400 mt-4 font-bold tracking-wide">使徒行傳 27:25</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-20">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold-400/5 rounded-full blur-3xl group-hover:bg-gold-400/10 transition-all duration-700"></div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gold-500/20 text-gold-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold">開路禱告</h2>
+                </div>
+                <p class="text-lg md:text-xl text-slate-300 leading-relaxed font-light italic">
+                    「親愛的天父，當我們人生的船隻航行在未知的大海，面對突如其來的狂風巨浪，我們的心常常充滿恐懼與絕望。主啊，求祢赦免我們常倚靠自己的經驗與世人的意見，卻忽略了祢微小的聲音。當一切外在的倚靠都被剝奪時，求祢讓我們靈裡的眼睛被打開，看見祢的使者與我們同在。賜給我們如保羅般的信心，在最黑暗的風暴中，仍能宣告『我信神怎樣對我說，事情也要怎樣成就』。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="py-12">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gold-500/20 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">信息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-400 text-sm font-bold mb-2">PART 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">忽視警告：人的經驗 vs 屬靈洞察</h3>
+                    <p class="text-slate-500 text-sm mt-4 italic">徒 27:1-12</p>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-400 text-sm font-bold mb-2">PART 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">狂風呼嘯：當人生的掌控權被剝奪</h3>
+                    <p class="text-slate-500 text-sm mt-4 italic">徒 27:13-20</p>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-400 text-sm font-bold mb-2">PART 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">黑暗曙光：在絕境中聽見神的「放心」</h3>
+                    <p class="text-slate-500 text-sm mt-4 italic">徒 27:21-26</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Section -->
+            <div class="space-y-16">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24 border-l-2 border-gold-400/30 pl-8 space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">忽視警告：當人的經驗蓋過屬靈的洞察</h3>
+                    <div class="bg-navy-800/40 p-6 rounded-xl text-slate-400 text-sm leading-relaxed italic border border-white/5">
+                        徒 27:1-12 | 非斯都既然定規了... 眾位，我看這次行船，不但貨物和船要受傷損... 但百夫長信從掌船的和船主，不信從保羅所說的。
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-gold-300 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵字：信從 (Peitho)</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">百夫長選擇被說服聽從技術專家與多數人，而非神微小的警告。</p>
+                            <h4 class="font-bold text-gold-300 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵問題</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">在抉擇時，你是倚靠多數人的意見，還是尋求神所賜的平安？</p>
+                        </div>
+                        <div class="bg-gold-400/5 p-6 rounded-2xl border border-gold-400/10">
+                            <h4 class="font-bold text-gold-400 mb-2 italic">「上帝總是在對那些願意安靜下來聆聽的人說話，但世俗的喧囂往往淹沒了祂的微小聲音。」</h4>
+                            <p class="text-slate-500 text-xs">— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24 border-l-2 border-gold-400/30 pl-8 space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">狂風呼嘯：當人生的掌控權被剝奪殆盡</h3>
+                    <div class="bg-navy-800/40 p-6 rounded-xl text-slate-400 text-sm leading-relaxed italic border border-white/5">
+                        徒 27:13-20 | 這時微微起了南風，他們以為得意... 那風名叫「友拉革羅」... 太陽和星辰多日不顯露，我們得救的指望就都絕了。
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-gold-300 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵字：指望就都絕了 (Periaireo)</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">原文意為徹底移除。風暴無情地移除了水手們所有的自恃。</p>
+                            <h4 class="font-bold text-gold-300 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵問題</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">當外在倚靠被剝奪時，你生命的底層還剩下什麼？</p>
+                        </div>
+                        <div class="bg-gold-400/5 p-6 rounded-2xl border border-gold-400/10">
+                            <h4 class="font-bold text-gold-400 mb-2 italic">「苦難雖然痛苦，卻是上帝用來摧毀我們生命中假神的工具。」</h4>
+                            <p class="text-slate-500 text-xs">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24 border-l-2 border-gold-400/30 pl-8 space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">黑暗中的曙光：在絕境中聽見上帝的「放心」</h3>
+                    <div class="bg-navy-800/40 p-6 rounded-xl text-slate-400 text-sm leading-relaxed italic border border-white/5">
+                        徒 27:21-26 | 保羅說：眾位，現在我還勸你們放心... 我信神他怎樣對我說，事情也要怎樣成就。
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-gold-300 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵字：放心 (Euthymeo)</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">意為振作起來。保羅的信，建立在神必成就的確據上。</p>
+                            <h4 class="font-bold text-gold-300 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵問題</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">在環境沒有改變下，能否因為神的一句應許，先經歷平靜安穩？</p>
+                        </div>
+                        <div class="bg-gold-400/5 p-6 rounded-2xl border border-gold-400/10">
+                            <h4 class="font-bold text-gold-400 mb-2 italic">「信心在白晝看起來可能不起眼，但在黑夜中卻如星星般閃耀。」</h4>
+                            <p class="text-slate-500 text-xs">— 司布真 (Charles Spurgeon)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Manuscript -->
+        <section id="sermon" class="py-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gold-500/20 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-lg max-w-none space-y-8 text-slate-300">
+                <h3 class="text-2xl font-bold text-white mb-6">風暴中的定海神針：當人生航向失控時</h3>
+                <p>各位弟兄姊妹，我們人生常常就像一艘航行在海上的船。有時風平浪靜，有時卻會遇見突如其來的狂風巨浪。今天我們要從使徒行傳27章，來看保羅在押解羅馬的途中，遭遇極大海難的故事。這段經文不只是一篇航海日誌，它更是我們每個人面對人生風暴時的屬靈指南。</p>
+                
+                <p>首先，我們來看第一段：<strong class="text-gold-400">忽視警告：當人的經驗蓋過屬靈的洞察</strong>。經文告訴我們，當船來到佳澳時，保羅憑著屬靈的洞察力警告眾人，繼續航行將會有性命之憂。但第11節說：「百夫長信從掌船的和船主，不信從保羅所說的。」這是不是很像我們的寫照？在做重大決定時，我們往往更願意相信「專家」的經驗、老闆的意見，或是多數人的想法。特別是到了第13節，<span class="text-white font-bold bg-gold-600/20 px-1">「微微起了南風，他們以為得意」</span>，環境看起來一片大好，人就更容易將神微小的警告拋諸腦後。</p>
+
+                <p>接著，危機爆發了。進入第二段：<strong class="text-gold-400">狂風呼嘯：當人生的掌控權被剝奪殆盡</strong>。南風很快變成了名叫「友拉革羅」的致命颶風。在狂風中，水手們的驕傲全被擊碎了。到了第20節，經文描繪了最深的絕望：<span class="text-white font-bold bg-gold-600/20 px-1">「太陽和星辰多日不顯露，又有狂風大浪催逼，我們得救的指望就都絕了。」</span>弟兄姊妹，有時候上帝允許風暴臨到，是為了讓我們看清自己平時緊緊抓住的依靠有多麼脆弱。</p>
+
+                <p>最後，我們看見：<strong class="text-gold-400">黑暗中的曙光：在絕境中聽見上帝的「放心」</strong>。在全船陷入死寂的絕境中，保羅宣告了今天的金句：<span class="text-white font-bold bg-gold-600/20 px-1">「所以眾位可以放心，我信神他怎樣對我說，事情也要怎樣成就。」</span>這就是真實的信心！信心不是看見環境改變了才相信，信心是在黑夜中聽見神的一句話，就如同看見曙光一樣篤定。</p>
+
+                <p>弟兄姊妹，你現在正在經歷什麼樣的「友拉革羅」？環境或許逼迫你絕望，但今天神也要對你說：「放心，不要害怕！」讓我們如同保羅一樣，緊緊抓住神的應許，勇敢拋下屬世的重擔。</p>
+            </article>
+
+            <div class="mt-12 bg-gold-400/10 rounded-2xl p-8 border border-gold-400/20">
+                <h3 class="text-xl font-bold text-gold-400 mb-6">應用與行動</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-white font-bold mb-2">1. 檢視決策依據</h4>
+                        <p class="text-sm text-slate-400">不盲從世界的「專家與多數」，尋求聖靈在心中的警示。</p>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-2">2. 拋棄生命重擔</h4>
+                        <p class="text-sm text-slate-400">學會把攔阻我們依靠神的事物（驕傲、過度慾望）「拋在海裡」。</p>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-2">3. 宣告應許</h4>
+                        <p class="text-sm text-slate-400">當世界恐慌時，基督徒應站出來說「你們可以放心」。</p>
+                    </div>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                    <span class="px-4 py-1 bg-navy-900 rounded-full text-gold-400 text-sm font-bold border border-gold-400/30"># 聆聽</span>
+                    <span class="px-4 py-1 bg-navy-900 rounded-full text-gold-400 text-sm font-bold border border-gold-400/30"># 捨棄</span>
+                    <span class="px-4 py-1 bg-navy-900 rounded-full text-gold-400 text-sm font-bold border border-gold-400/30"># 確信</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24 border-t border-white/10">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-gold-500/20 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-gold-400/40 transition-all">
+                    <p class="text-slate-300 italic mb-4">「如果你的神從未與你意見相左，那麼你所敬拜的，很可能只是你自己理想化的翻版。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-gold-400/40 transition-all">
+                    <p class="text-slate-300 italic mb-4">「神若讓我們在黑暗中前行，祂必定會給我們足以照亮這黑暗的信心之光。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-gold-400/40 transition-all">
+                    <p class="text-slate-300 italic mb-4">「我們唯有完全向神降服，才能在人生最猛烈的風暴中，找到那無法撼動的安息。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-gold-400/40 transition-all">
+                    <p class="text-slate-300 italic mb-4">「只有相信的人才能順服，也只有順服的人才會相信。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-gold-400/40 transition-all">
+                    <p class="text-slate-300 italic mb-4">「上帝並沒有應許我們一條沒有痛苦的道路，但祂應許在所有的痛苦中與我們同在。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-gold-400/40 transition-all">
+                    <p class="text-slate-300 italic mb-4">「我們不知道明天將會發生什麼事，但我們確實知道是誰掌管著明天。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 葛理翰 (Billy Graham)</p>
+                </div>
+            </div>
+
+            <div class="mt-20 p-6 bg-red-900/10 border border-red-500/20 rounded-xl text-center">
+                <p class="text-red-400/80 text-sm flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-navy-900 rounded-full flex items-center justify-center scroll-top-btn hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

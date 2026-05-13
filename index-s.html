@@ -396,21 +396,38 @@ function handleSearch() {
         document.getElementById('page-title').innerText = `${year}年${month}月`;
     } 
     else if (scriptureMatch) {
-        const book = scriptureMatch[1];
+        const bookInput = scriptureMatch[1];
         const startChap = parseInt(scriptureMatch[2]);
         const endChap = scriptureMatch[3] ? parseInt(scriptureMatch[3]) : startChap;
         
+        // 1. 自動轉換全名為縮寫 (例如：輸入"出埃及記"會轉為"出")
+        let bookAbbr = bookInput;
+        for (let abbr in bookFullName) {
+            if (bookFullName[abbr] === bookInput) {
+                bookAbbr = abbr;
+                break;
+            }
+        }
+
         searchResult = fullDatabase.filter(item => {
-            if (!item.chapter.startsWith(book)) return false;
-            // 提取章節數字部分 (例如 "創1:1" 提取出 1)
-            const chapterNum = parseInt(item.chapter.replace(/[^\d]/g, ''));
+            // 2. 檢查書卷縮寫是否匹配
+            if (!item.chapter.startsWith(bookAbbr)) return false;
+            
+            // 3. 改進：只提取書卷縮寫之後、冒號之前的數字 (章數)
+            // 範例：從 "出1:1-22" 中提取 "1"
+            const chapterPart = item.chapter.substring(bookAbbr.length); 
+            const m = chapterPart.match(/^(\d+)/); 
+            if (!m) return false;
+            
+            const chapterNum = parseInt(m[1]);
             return chapterNum >= startChap && chapterNum <= endChap;
         });
         
-        const fullName = bookFullName[book] || book;
+        const fullName = bookFullName[bookAbbr] || bookAbbr;
         document.getElementById('page-title').innerText = startChap === endChap ? 
             `${fullName} 第${startChap}章` : `${fullName} ${startChap}~${endChap}章`;
-    } else {
+        } 
+		else {
         // 一般關鍵字搜尋 (標題或經文)
         searchResult = fullDatabase.filter(item => 
             item.title.includes(query) || item.chapter.includes(query)

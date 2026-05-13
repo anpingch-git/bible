@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒23:1-11: 夜盡天明：在風暴中經歷上帝的同在與引導</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#8B0000',
+                        deepNavy: '#0A0E14',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                        accent: '#6366f1',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-subtle': 'bounceSubtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        bounceSubtle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0E14;
+            color: #E2E8F0;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .banner-overlay {
+            background: linear-gradient(to bottom, rgba(10, 14, 20, 0.2), rgba(10, 14, 20, 1));
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .breath-anim {
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.9; filter: brightness(0.9); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-deepNavy/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-display font-bold text-lg text-gold tracking-tight">徒 23:1-11</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#prayer" class="nav-link text-white/70 hover:text-white uppercase">禱告</a>
+                <a href="#outline" class="nav-link text-white/70 hover:text-white uppercase">大綱</a>
+                <a href="#sermon" class="nav-link text-white/70 hover:text-white uppercase">講章</a>
+                <a href="#quotes" class="nav-link text-white/70 hover:text-white uppercase">名言</a>
+            </div>
+            <!-- Mobile Menu Placeholder -->
+            <div class="md:hidden flex space-x-4 text-xs font-bold">
+                <a href="#prayer" class="text-gold">禱告</a>
+                <a href="#outline" class="text-gold">大綱</a>
+                <a href="#sermon" class="text-gold">講章</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0 breath-anim">
+            <img src='image/img_fb3dfac7-5dc3-4c05-bebb-8d71282ef485.jpg' alt='Epic Biblical Scene' class="w-full h-full object-cover scale-110" />
+        </div>
+        <div class="absolute inset-0 banner-overlay z-10"></div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-5xl md:text-7xl font-black mb-8 leading-tight gold-text-gradient">
+                夜盡天明<br>
+                <span class="text-3xl md:text-5xl text-white/90">在風暴中經歷上帝的同在</span>
+            </h1>
+            
+            <div class="inline-block animate-bounce-subtle mt-12 bg-white/5 backdrop-blur-lg px-8 py-6 rounded-3xl border border-white/20 shadow-2xl">
+                <p class="text-gold font-bold text-lg md:text-xl mb-2 tracking-widest">【關鍵金句】</p>
+                <p class="text-xl md:text-2xl font-medium leading-relaxed italic">
+                    「當夜，主站在保羅旁邊，說：『放心吧！你怎樣在耶路撒冷為我作見證，也必怎樣在羅馬為我作見證。』」
+                    <span class="block text-sm mt-2 opacity-60">—— 使徒行傳 23:11</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-20 -mt-20 px-6 pb-24 max-w-6xl mx-auto">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card p-8 md:p-16 mb-24 shadow-2xl transform hover:scale-[1.01] transition-transform">
+            <div class="flex items-center mb-8">
+                <div class="p-3 bg-gold/20 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 10.5L12 3m7.5 7.5L12 3v18m0-18l-7.5 7.5M12 3l7.5 7.5"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight uppercase">禱告詞</h2>
+            </div>
+            <p class="text-xl md:text-2xl leading-relaxed text-white/90 font-light italic">
+                「親愛的天父，當我們面對生活中的不公、衝突與絕境時，求祢賜給我們如同保羅般無虧的良心與屬靈的智慧。在最黑暗、最孤獨的長夜裡，願祢親自站在我們旁邊，對我們說『放心吧』。幫助我們確信，祢的旨意不能被攔阻，我們的生命在祢手中。奉主耶穌基督的名求，阿們。」
+            </p>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="mb-24">
+            <div class="flex items-center mb-10">
+                <div class="p-3 bg-accent/20 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight uppercase">分段大綱與解析</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="glass-card p-6 text-center hover:bg-white/10 transition-all border-l-4 border-l-gold">
+                    <span class="block text-xs uppercase opacity-50 mb-1">第一階段</span>
+                    <span class="font-bold text-gold">衝突中的底氣</span>
+                    <span class="block text-xs mt-2 opacity-70">徒 23:1-5</span>
+                </a>
+                <a href="#part2" class="glass-card p-6 text-center hover:bg-white/10 transition-all border-l-4 border-l-accent">
+                    <span class="block text-xs uppercase opacity-50 mb-1">第二階段</span>
+                    <span class="font-bold text-accent">絕境中的智慧</span>
+                    <span class="block text-xs mt-2 opacity-70">徒 23:6-10</span>
+                </a>
+                <a href="#part3" class="glass-card p-6 text-center hover:bg-white/10 transition-all border-l-4 border-l-white">
+                    <span class="block text-xs uppercase opacity-50 mb-1">第三階段</span>
+                    <span class="font-bold text-white">孤夜中的榮光</span>
+                    <span class="block text-xs mt-2 opacity-70">徒 23:11</span>
+                </a>
+            </div>
+
+            <!-- Part 1 Content -->
+            <div id="part1" class="mb-20 scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-gold mb-6 flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-sm mr-3">1</span>
+                            持守無虧的良心
+                        </h3>
+                        <div class="bg-white/5 p-6 rounded-2xl mb-6">
+                            <p class="text-sm uppercase text-gold/60 mb-2 font-bold tracking-widest">經文內容</p>
+                            <p class="text-white/80 leading-relaxed italic">
+                                保羅定睛看著公會的人，說：「弟兄們，我在神面前行事為人都是憑著良心，直到今日。」...
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gold/5 p-4 rounded-xl">
+                                <span class="block text-xs font-bold text-gold mb-1">關鍵原文：良心</span>
+                                <span class="text-sm opacity-80">suneidēsis (道德意識)</span>
+                            </div>
+                            <div class="bg-gold/5 p-4 rounded-xl">
+                                <span class="block text-xs font-bold text-gold mb-1">關鍵原文：行事</span>
+                                <span class="text-sm opacity-80">politeuomai (公民生活)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 glass-card p-8">
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold mb-2 flex items-center text-white">
+                                <svg class="w-5 h-5 mr-2 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="text-white/90">當我們在世上遭受不公義的對待時，什麼能支撐我們不屈服？</p>
+                            <p class="text-white/60 mt-4 text-sm leading-relaxed">解析：是「在神面前無虧的良心」。保羅的底氣來自已被基督寶血洗淨，且凡事順服聖靈的引導。</p>
+                        </div>
+                        <div class="border-t border-white/10 pt-6">
+                            <p class="italic text-white/70 text-sm">「良心是靈魂的聲音；只有當我們與上帝和好時，良心才能得著真正的安息。」——約翰·加爾文</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 Content -->
+            <div id="part2" class="mb-20 scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-accent mb-6 flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-sm mr-3">2</span>
+                            看透屬世的虛無與破口
+                        </h3>
+                        <div class="bg-white/5 p-6 rounded-2xl mb-6">
+                            <p class="text-sm uppercase text-accent/60 mb-2 font-bold tracking-widest">經文內容</p>
+                            <p class="text-white/80 leading-relaxed italic">
+                                保羅看出大眾一半是撒都該人，一半是法利賽人...我現在受審問，是為盼望死人復活。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-accent/5 p-4 rounded-xl">
+                                <span class="block text-xs font-bold text-accent mb-1">關鍵原文：盼望</span>
+                                <span class="text-sm opacity-80">elpis (確信的展望)</span>
+                            </div>
+                            <div class="bg-accent/5 p-4 rounded-xl">
+                                <span class="block text-xs font-bold text-accent mb-1">關鍵原文：復活</span>
+                                <span class="text-sm opacity-80">anastasis (核心基石)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 glass-card p-8 border-accent/20">
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold mb-2 flex items-center text-white">
+                                <svg class="w-5 h-5 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="text-white/90">保羅的宣告只是權宜之計，還是有更深的意義？</p>
+                            <p class="text-white/60 mt-4 text-sm leading-relaxed">解析：保羅精準點出了基督教信仰的核心——「死人復活的盼望」。教導我們在危機中具備屬靈洞察力。</p>
+                        </div>
+                        <div class="border-t border-white/10 pt-6">
+                            <p class="italic text-white/70 text-sm">「福音不是讓我們免於風暴，而是賜給我們在風暴中站立得穩的智慧與盼望。」——提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 Content -->
+            <div id="part3" class="mb-20 scroll-mt-24">
+                <div class="glass-card p-8 md:p-12 bg-white/5 border-white/20">
+                    <div class="text-center mb-10">
+                        <h3 class="text-3xl font-black text-white mb-4">孤夜中的榮光：主親自的保證</h3>
+                        <p class="text-gold font-display text-lg">徒 23:11</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-6">
+                            <div class="p-6 bg-white/5 rounded-2xl border-l-4 border-gold">
+                                <h5 class="font-bold text-gold mb-2">上帝的「站在旁邊」 (ephistēmi)</h5>
+                                <p class="text-sm text-white/70">代表上帝強烈而真實的臨到。在我們最孤獨的營樓中，祂從未缺席。</p>
+                            </div>
+                            <div class="p-6 bg-white/5 rounded-2xl border-l-4 border-gold">
+                                <h5 class="font-bold text-gold mb-2">「放心吧」 (tharseō)</h5>
+                                <p class="text-sm text-white/70">是耶穌對恐懼者常用的安慰，包含了醫治、力量與重新的振作。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-xl font-bold flex items-center">
+                                <svg class="w-6 h-6 mr-2 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                屬靈見證：戴德生
+                            </h4>
+                            <p class="text-white/80 leading-relaxed">
+                                在內地會最黑暗的财务與同工病痛危機中，神的一句話「你是我的僕人，我必負責」成為他深夜的力量，使他在風暴中重新得力。
+                            </p>
+                            <p class="italic text-gold/80 pt-4 border-t border-white/10">「在苦難的黑夜中，上帝有時似乎沉默，但祂從未缺席。」——司布真</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="mb-24">
+            <div class="flex items-center mb-10">
+                <div class="p-3 bg-red-900/20 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight uppercase">完整講章</h2>
+            </div>
+
+            <div class="glass-card p-8 md:p-16 prose prose-invert max-w-none prose-headings:text-gold">
+                <h3 class="text-3xl font-black text-center mb-12 gold-text-gradient">徒23:1-11：夜盡天明</h3>
+                
+                <div class="space-y-8 text-lg leading-relaxed text-white/80">
+                    <p>弟兄姊妹們，我們一生中總會遇到那些「山雨欲來風滿樓」的時刻。有時候，我們明明沒有做錯事，卻遭遇極大的誤解、攻擊，甚至陷入孤立無援的絕境。在這樣的時刻，我們該如何站立得穩？</p>
+
+                    <h4 class="text-2xl font-bold text-gold border-b border-gold/20 pb-2">第一、衝突中的底氣——持守無虧的良心</h4>
+                    <p>面對這樣的不公義，保羅的底氣從何而來？他的底氣，來自於他裡面那<span class="text-white font-bold underline decoration-gold underline-offset-4">「無虧的良心」</span>。良心，是我們靈魂的聲音。一個在神面前毫無隱藏的人，在人面前就毫無畏懼！我們在職場、家庭中，是否也保有這樣無虧的良心呢？</p>
+
+                    <h4 class="text-2xl font-bold text-gold border-b border-gold/20 pb-2">第二、絕境中的智慧——看透屬世的虛無與破口</h4>
+                    <p>保羅並非玩弄政治，他是一語道破了這群宗教領袖的虛偽。他立刻把焦點轉移到了福音的基石——<span class="text-white font-bold underline decoration-gold underline-offset-4">復活的盼望</span>。這教導我們，面對世界的逼迫，我們不需要單憑血氣去硬碰硬。我們需要聖靈賜下智慧，並巧妙地把每一次的危機，都轉化成見證福音的契機！</p>
+
+                    <h4 class="text-2xl font-bold text-gold border-b border-gold/20 pb-2">第三、孤夜中的榮光——主親自的同在與保證</h4>
+                    <p>白天英勇無比，夜晚卻是孤獨恐懼。但就在這個時候，主耶穌親自來了！祂<span class="text-white font-bold underline decoration-gold underline-offset-4">親自站在保羅旁邊</span>。祂對你說：「放心吧！」只要上帝給你的使命還沒有完成，世界上沒有任何力量能夠奪走你的生命！</p>
+                    
+                    <div class="bg-gold/10 p-8 rounded-3xl border border-gold/30 mt-12 text-center italic text-xl">
+                        環境的風暴不能決定我們的終局，唯有上帝的旨意帶領我們度過黑夜，迎向黎明。讓我們帶著無虧的良心、屬天的智慧，安息在主真實的同在裡！
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action & Apps -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+            <div class="glass-card p-10 border-gold/30">
+                <h3 class="text-2xl font-black mb-6 text-gold flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    回應與實踐行動
+                </h3>
+                <ul class="space-y-4 text-white/80">
+                    <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-gold mt-2 mr-3 shrink-0"></span>每日睡前進行「良心省察」。</li>
+                    <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-gold mt-2 mr-3 shrink-0"></span>面臨衝突時先默禱尋求智慧。</li>
+                    <li class="flex items-start"><span class="w-2 h-2 rounded-full bg-gold mt-2 mr-3 shrink-0"></span>在床頭貼上「徒23:11」大聲宣告。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 border-accent/30">
+                <h3 class="text-2xl font-black mb-6 text-accent flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用結論
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded-full bg-accent/20 border border-accent/30 text-accent font-bold">良心 (Conscience)</span>
+                    <span class="px-4 py-2 rounded-full bg-accent/20 border border-accent/30 text-accent font-bold">智慧 (Wisdom)</span>
+                    <span class="px-4 py-2 rounded-full bg-accent/20 border border-accent/30 text-accent font-bold">同在 (Presence)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="mb-24">
+            <div class="flex items-center mb-10">
+                <div class="p-3 bg-white/10 rounded-2xl mr-4">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black font-display tracking-tight uppercase">名言佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass-card p-8 break-inside-avoid border-l-4 border-l-gold">
+                    <p class="text-lg italic leading-relaxed mb-4">「上帝在我們的歡愉中對我們微語，透過我們的良知向我們說話，但卻在我們的苦難中大聲疾呼。」</p>
+                    <p class="text-sm font-bold text-gold text-right">—— 魯益師 (C.S. Lewis)</p>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid border-l-4 border-l-accent">
+                    <p class="text-lg italic leading-relaxed mb-4">「勇敢不是沒有恐懼，而是意識到有比恐懼更重要的事情。」</p>
+                    <p class="text-sm font-bold text-accent text-right">—— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid border-l-4 border-l-white">
+                    <p class="text-lg italic leading-relaxed mb-4">「這就是我的立場，我別無選擇。願上帝幫助我。阿們。」</p>
+                    <p class="text-sm font-bold text-white text-right">—— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid border-l-4 border-l-red-500">
+                    <p class="text-lg italic leading-relaxed mb-4">「恩典是白白的，但卻不是廉價的。」</p>
+                    <p class="text-sm font-bold text-red-500 text-right">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid border-l-4 border-l-gold">
+                    <p class="text-lg italic leading-relaxed mb-4">「在黑夜的獨處中，我們才能最深刻地經歷上帝的同在。」</p>
+                    <p class="text-sm font-bold text-gold text-right">—— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid border-l-4 border-l-accent">
+                    <p class="text-lg italic leading-relaxed mb-4">「無論我們在哪裡，上帝都在那裡。」</p>
+                    <p class="text-sm font-bold text-accent text-right">—— 陶恕 (A.W. Tozer)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center py-12 border-t border-white/10 opacity-40 text-xs tracking-widest">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-10 right-10 w-16 h-16 bg-gold rounded-full flex items-center justify-center text-black shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 group">
+        <svg class="w-8 h-8 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7 7 7M12 3v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

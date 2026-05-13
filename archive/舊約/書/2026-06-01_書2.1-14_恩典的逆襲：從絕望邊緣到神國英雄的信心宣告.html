@@ -80,6 +80,13 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #f9c20d;
         }
+		@keyframes breathing {
+            0%, 100% { opacity: 0.2; filter: brightness(1); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="font-sans antialiased">
@@ -100,7 +107,7 @@
     <!-- Hero Banner -->
     <header class="relative h-[80vh] w-full flex items-end overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_70b12ec2-bd07-47d7-bc48-5efe8e04c651.jpg' alt='Rahab and spies' class="w-full h-full object-cover scale-105" />
+            <img src='image/img_70b12ec2-bd07-47d7-bc48-5efe8e04c651.jpg' alt='Rahab and spies' class="absolute inset-0 w-full h-full object-cover breathing-image scale-95" />
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
         </div>
         <div class="relative z-10 max-w-6xl mx-auto px-6 pb-20 w-full">

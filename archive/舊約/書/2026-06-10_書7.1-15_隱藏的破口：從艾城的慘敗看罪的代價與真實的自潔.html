@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書7:1-15：隱藏的破口：從艾城的慘敗看罪的代價與真實的自潔</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(234, 179, 8, 0.4);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="sticky-nav px-4 py-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <span class="font-display font-bold text-gold-500 text-sm tracking-widest uppercase">書 7:1-15</span>
+            <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-medium text-slate-400">
+                <a href="#prayer" class="hover:text-gold-500 transition-colors uppercase">禱告</a>
+                <a href="#outline" class="hover:text-gold-500 transition-colors uppercase">大綱</a>
+                <a href="#sermon" class="hover:text-gold-500 transition-colors uppercase">講章</a>
+                <a href="#quotes" class="hover:text-gold-500 transition-colors uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] sm:h-[70vh] w-full overflow-hidden flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_cba5e1cd-3b65-46ea-bba1-83add8097dcd.jpg' alt='Banner' class="w-full h-full object-cover animate-breathe" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="font-display text-4xl sm:text-6xl font-black mb-6 leading-tight">
+                隱藏的破口：<br/>
+                <span class="text-gradient">從艾城的慘敗看罪的代價</span>
+            </h1>
+            <div id="gold-verse" class="animate-bounce-subtle glass-card p-6 rounded-2xl border-gold-500/30">
+                <p class="text-gold-100 text-lg sm:text-xl font-medium leading-relaxed italic">
+                    「你起來，叫百姓自潔... 因為耶和華－以色列的神這樣說：以色列啊，你們中間有當滅的物，你們若不除掉，在仇敵面前必站立不住。」
+                </p>
+                <span class="block mt-3 text-gold-500 font-bold tracking-widest">書 7:13</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">禱告詞</h2>
+            </div>
+            <div class="glass-card p-8 sm:p-12 rounded-3xl text-xl leading-loose text-slate-200">
+                主啊，我們來到祢的聖潔光中。當我們在生活中經歷如同艾城般的挫折與失敗時，求祢光照我們，不讓我們急於抱怨環境或懷疑祢的信實，而是先謙卑省察自己的內心。求聖靈顯明我們生命中任何隱藏的「當滅之物」，賜給我們徹底對付罪惡的勇氣。願祢的寶血洗淨我們，使我們重新自潔，好讓我們在仇敵面前能夠重新站立，恢復與祢同在的得勝生命。奉主耶穌基督的聖名祈求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section-1" class="outline-btn glass-card p-6 rounded-2xl border-l-4 border-l-gold-500">
+                    <span class="text-xs font-bold text-gold-500 block mb-2 uppercase tracking-tighter">第一段 | 書 7:1-5</span>
+                    <h3 class="font-bold text-lg leading-snug">輕敵與慘敗——當得勝的餘威掩蓋了隱藏的破口</h3>
+                </a>
+                <a href="#section-2" class="outline-btn glass-card p-6 rounded-2xl border-l-4 border-l-gold-500">
+                    <span class="text-xs font-bold text-gold-500 block mb-2 uppercase tracking-tighter">第二段 | 書 7:6-9</span>
+                    <h3 class="font-bold text-lg leading-snug">撕裂與困惑——面對失敗時的本能反應與迷失</h3>
+                </a>
+                <a href="#section-3" class="outline-btn glass-card p-6 rounded-2xl border-l-4 border-l-gold-500">
+                    <span class="text-xs font-bold text-gold-500 block mb-2 uppercase tracking-tighter">第三段 | 書 7:10-15</span>
+                    <h3 class="font-bold text-lg leading-snug">揭露與自潔——神聖潔的光照與對付罪惡的決心</h3>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Sections -->
+            <div class="space-y-32">
+                <!-- Section 1 -->
+                <article id="section-1" class="scroll-mt-24">
+                    <div class="border-b border-slate-800 pb-4 mb-8">
+                        <h3 class="text-2xl font-black text-gold-500 mb-2">第一段：輕敵與慘敗——當得勝的餘威掩蓋了隱藏的破口</h3>
+                        <p class="text-slate-400 font-medium">經文範圍：書 7:1-5</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-2xl mb-8 border border-slate-800">
+                        <p class="text-slate-300 leading-relaxed italic">1 以色列人在當滅的物上犯了罪；因為猶大支派中，謝拉的曾孫，撒底的孫子，迦米的兒子亞干取了當滅的物；耶和華的怒氣就向以色列人發作... 5 艾城的人擊殺了他們三十六人... 眾民的心就消化如水。</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="glass-card p-8 rounded-3xl">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵原文解析
+                            </h4>
+                            <p class="text-lg leading-relaxed"><strong class="text-gold-100">「當滅的物」（Cherem）：</strong> 指在神面前被定為完全毀滅或完全奉獻給神的物品。凡屬 Cherem 的東西，人絕不可私自佔有。這代表了神絕對的主權與聖潔。</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl border-t-4 border-t-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵問題與解析
+                            </h4>
+                            <p class="font-bold text-xl mb-4 text-white">為什麼亞干一個人的隱藏之罪，竟導致全體以色列人的慘敗？</p>
+                            <p class="text-slate-300 leading-loose">在神的立約群體中，沒有所謂「純粹個人的罪」。以色列是一個與神立約的整體。亞干破壞了約，就如同在船底鑿了一個小洞，雖然動作隱密，卻會讓整艘船沉沒。</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-indigo-900/20 p-8 rounded-3xl border border-indigo-500/20">
+                                <h4 class="text-indigo-400 font-bold mb-3">生活例證</h4>
+                                <p class="text-slate-300 italic">白蟻蛀蝕木屋的故事。一棟外觀宏偉的木屋，經歷了狂風暴雨依然屹立不搖。然而，內部隱藏的白蟻已經將樑柱蛀空。亞干的罪就像白蟻，隱藏在帳篷底下，卻瓦解了整個群體。</p>
+                            </div>
+                            <div class="bg-amber-900/20 p-8 rounded-3xl border border-amber-500/20">
+                                <h4 class="text-amber-400 font-bold mb-3">名言佳句</h4>
+                                <p class="text-slate-300 font-medium">「罪不僅是破壞了規則，更是破壞了關係；它不僅使我們與神隔絕，也使群體走向瓦解。」<br/><span class="text-amber-500 block mt-2">— 提摩太·凱勒</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="section-2" class="scroll-mt-24">
+                    <div class="border-b border-slate-800 pb-4 mb-8">
+                        <h3 class="text-2xl font-black text-gold-500 mb-2">第二段：撕裂與困惑——面對失敗時的本能反應與迷失</h3>
+                        <p class="text-slate-400 font-medium">經文範圍：書 7:6-9</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-2xl mb-8 border border-slate-800">
+                        <p class="text-slate-300 leading-relaxed italic">6 約書亞便撕裂衣服... 在耶和華的約櫃前俯伏在地，直到晚上。 7 約書亞說：「哀哉！主耶和華啊，你為甚麼竟領這百姓過約旦河... 我們不如住在約旦河那邊倒好。」</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="glass-card p-8 rounded-3xl">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵原文解析
+                            </h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <p class="text-lg"><strong class="text-gold-100">「撕裂」（Qara'）：</strong> 極度悲痛、絕望或悔改的強烈肢體表達。</p>
+                                <p class="text-lg"><strong class="text-gold-100">「俯伏」（Naphal）：</strong> 倒下、仆倒。表達出約書亞面對失敗時極度的無力感。</p>
+                            </div>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl border-t-4 border-t-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵問題與解析
+                            </h4>
+                            <p class="font-bold text-xl mb-4 text-white">約書亞的禱告出了什麼問題？我們是否也常落入相同的盲點？</p>
+                            <p class="text-slate-300 leading-loose">約書亞的禱告充滿了抱怨。人在面對失敗時，本能反應往往是怪罪環境或怪罪神，卻忽略了向內省察生命中是否有破口。</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-indigo-900/20 p-8 rounded-3xl border border-indigo-500/20">
+                                <h4 class="text-indigo-400 font-bold mb-3">生活例證</h4>
+                                <p class="text-slate-300 italic">一位學生期末考不及格，抱怨題目難、教學差，卻唯獨沒提自己考前通宵遊戲。我們面對神的態度有時就像這個學生。</p>
+                            </div>
+                            <div class="bg-amber-900/20 p-8 rounded-3xl border border-amber-500/20">
+                                <h4 class="text-amber-400 font-bold mb-3">名言佳句</h4>
+                                <p class="text-slate-300 font-medium">「神在我們生命中首要的旨意，不是讓我們感覺良好，而是讓我們成為聖潔。」<br/><span class="text-amber-500 block mt-2">— 陶恕</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="section-3" class="scroll-mt-24">
+                    <div class="border-b border-slate-800 pb-4 mb-8">
+                        <h3 class="text-2xl font-black text-gold-500 mb-2">第三段：揭露與自潔——神聖潔的光照與對付罪惡的決心</h3>
+                        <p class="text-slate-400 font-medium">經文範圍：書 7:10-15</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-2xl mb-8 border border-slate-800">
+                        <p class="text-slate-300 leading-relaxed italic">10 耶和華吩咐約書亞說：「起來！你為何這樣俯伏在地呢？ 11 以色列人犯了罪... 13 你起來，叫百姓自潔... 因為你們中間有當滅的物。」</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="glass-card p-8 rounded-3xl">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵原文解析
+                            </h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <p class="text-lg"><strong class="text-gold-100">「自潔」（Qadash）：</strong> 使之成聖、分別為聖。不僅是儀式，更是內心對罪的割裂與重新委身。</p>
+                                <p class="text-lg"><strong class="text-gold-100">「站立不住」（Qum）：</strong> 原文帶有起來、立定的意思。罪使人失去屬靈的站立能力。</p>
+                            </div>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl border-t-4 border-t-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵問題與解析
+                            </h4>
+                            <p class="font-bold text-xl mb-4 text-white">神為何命令約書亞「起來」，並要求百姓必須先「自潔」？</p>
+                            <p class="text-slate-300 leading-loose">當生命中有未對付的罪時，哭泣和哀求是無效的。神不能與罪惡妥協。真正的悔改必須「起來」採取行動，將罪的根源徹底除掉。</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-indigo-900/20 p-8 rounded-3xl border border-indigo-500/20">
+                                <h4 class="text-indigo-400 font-bold mb-3">生活例證</h4>
+                                <p class="text-slate-300 italic">外科醫生進入手術室前，必須經過嚴格的消毒程序。如果手上帶著細菌，即使醫術再高明，也會給病人帶來致命的感染。</p>
+                            </div>
+                            <div class="bg-amber-900/20 p-8 rounded-3xl border border-amber-500/20">
+                                <h4 class="text-amber-400 font-bold mb-3">名言佳句</h4>
+                                <p class="text-slate-300 font-medium">「你若不殺死罪，罪就會殺死你。」<br/><span class="text-amber-500 block mt-2">— 司布真</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="space-y-12">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">講道應用與回應</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 rounded-3xl border-b-4 border-b-gold-500">
+                    <h4 class="text-xl font-black mb-4 text-white">應用方向</h4>
+                    <ul class="space-y-4 text-slate-300">
+                        <li>• 檢視屬靈的「當滅之物」</li>
+                        <li>• 看重群體的聖潔連帶性</li>
+                        <li>• 改變面對失敗的禱告模式</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 rounded-3xl bg-gold-500/5">
+                    <h4 class="text-xl font-black mb-4 text-white">關鍵字</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-slate-800 rounded-full text-gold-500 font-bold">#隱藏</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-full text-gold-500 font-bold">#聖潔</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-full text-gold-500 font-bold">#自潔</span>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border-b-4 border-b-gold-500">
+                    <h4 class="text-xl font-black mb-4 text-white">實踐行動</h4>
+                    <ul class="space-y-4 text-slate-300">
+                        <li>1. 設立15分鐘省察時刻</li>
+                        <li>2. 清理實際的「當滅之物」</li>
+                        <li>3. 尋求屬靈守望夥伴</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon -->
+        <section id="sermon" class="scroll-mt-24 space-y-8">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">講章文稿</h2>
+            </div>
+            <div class="glass-card p-8 sm:p-16 rounded-[2.5rem] leading-[2.2] text-slate-200 text-lg space-y-8">
+                <h3 class="text-3xl font-black text-center text-gradient mb-12">書7:1-15：隱藏的破口</h3>
+                
+                <p>各位弟兄姊妹，平安。當我們剛剛經歷人生中一場極大的得勝時，往往是我們最容易跌倒的時候。以色列人剛剛經歷了耶利哥城神蹟般的倒塌，那是何等的榮耀！然而，緊接而來的艾城之戰，卻成了一場令人心碎的慘敗。今天我們要透過約書亞記第七章，來看一個關於罪、失敗與恢復的重要信息。</p>
+
+                <p><span class="text-gold-500 font-black text-2xl block mt-8 mb-4">第一，輕敵與慘敗——當得勝的餘威掩蓋了隱藏的破口。</span>
+                以色列人在耶利哥大獲全勝後，面對比耶利哥小得多的艾城，探子回報說：「只要二三千人上去就能攻取艾城」。他們充滿了自信，卻不知道軍隊中已經有了致命的破口——亞干偷取了神明令禁止的「當滅之物」。這導致三千人在艾城人面前潰敗，三十六人陣亡，眾民的心「消化如水」。</p>
+
+                <p>這提醒我們一個嚴肅的真理：在屬靈的戰場上，<strong class="text-white border-b-2 border-gold-500">破壞力最強的往往不是外在強大的仇敵，而是內部隱藏的罪惡</strong>。亞干以為神不知鬼不覺，但如同提摩太·凱勒所說：「罪不僅是破壞了規則，更是破壞了關係；它不僅使我們與神隔絕，也使群體走向瓦解。」一個人的隱密罪惡，牽連了整個群體的得勝。</p>
+
+                <p><span class="text-gold-500 font-black text-2xl block mt-8 mb-4">第二，撕裂與困惑——面對失敗時的本能反應與迷失。</span>
+                約書亞極度悲痛，撕裂衣服，俯伏在約櫃前。聽聽他的禱告：「主耶和華啊，你為甚麼竟領這百姓過約旦河...」約書亞在極度的挫折中，竟然開始質疑神的動機。弟兄姊妹，這是不是也很像我們？當生活遭遇重擊，我們的第一反應往往是：「神啊，祢為什麼這樣對我？」我們把責任推給環境、推給上帝，卻鮮少有人在第一時間問：「主啊，是不是我得罪了祢？」</p>
+
+                <p><span class="text-gold-500 font-black text-2xl block mt-8 mb-4">第三，揭露與自潔——神聖潔的光照與對付罪惡的決心。</span>
+                神對約書亞說：「起來！你為何這樣俯伏在地呢？」神不要約書亞繼續在那裡自憐和哭泣。當生命中有罪未對付時，流淚的禱告不能取代真實的悔改。神給出了解決方案，這也是我們今天的<strong class="text-gold-500">【關鍵金句】：「你起來，叫百姓自潔...你們中間有當滅的物，你們若不除掉，在仇敵面前必站立不住。」（書 7:13）</strong></p>
+
+                <p>神宣告，若不把當滅之物除掉，祂就不再與他們同在。這是何等嚴厲卻充滿愛的警告。司布真曾直言：「你若不殺死罪，罪就會殺死你。」真正的悔改，是起來採取行動，將那些不討神喜悅的習慣、關係、財務問題徹底對付清楚。只有當我們恢復了內在的聖潔，神同在的得勝才會再次臨到我們。</p>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black tracking-tight">屬靈前輩名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1-10 mapped to cards -->
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「人心是一座製造偶像的工廠，總是不斷地鑄造出新的偶像來取代神。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 約翰·加爾文</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「罪在我們眼中看為微小，是因為我們沒有站在神聖潔的亮光中來看它。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 司布真</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「廉價的恩典是我們自己給自己的恩典；是沒有悔改的赦免。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 潘霍華</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「如果我們不願在內心向神徹底降服，我們在外的任何屬靈爭戰都注定失敗。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 陶恕</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「偶像就是任何對你來說，比上帝更重要的事情。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 提摩太·凱勒</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「聖潔不是得救的條件，但卻是得救後必然結出的果子。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 約翰·史托德</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「我們不能阻止鳥兒從我們頭上飛過，但我們可以阻止牠們築巢。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 馬丁·路德</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「迫切需要的，不是聰明的人，也不是大有恩賜的人，而是有深度的人。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 傅士德</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「悔改不是讓我們覺得糟糕的事；悔改是讓我們能從錯誤的方向轉身。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 畢德生</cite>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:bg-gold-500/5 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「唯有不再緊抓著虛假安全感時，才能領受神真正的恩典。」</p>
+                    <cite class="text-gold-500 font-bold not-italic">— 盧雲</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <section class="text-center py-12 border-t border-slate-800">
+            <p class="text-slate-500 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-slate-950 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-500 transition-all transform hover:scale-110 z-[60]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

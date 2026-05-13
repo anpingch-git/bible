@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒26:1-23：順服天上異象：從逼迫者到恩典使者的翻轉</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8be',
+                            200: '#fdf190',
+                            300: '#fbe55b',
+                            400: '#f9d831',
+                            500: '#f2c10d',
+                            600: '#d19a08',
+                            700: '#a67209',
+                            800: '#88590f',
+                            900: '#744a13',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161e',
+                            accent: '#1e1e2a'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-pulse': 'gentle-pulse 2s ease-in-out infinite',
+                        'jump': 'jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.85' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'gentle-pulse': {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.7' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(242, 193, 13, 0.4);
+        }
+        .section-card {
+            background: linear-gradient(145deg, #16161e, #0f0f14);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(242, 193, 13, 0.3);
+            transform: translateY(-2px);
+        }
+        .outline-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: #f2c10d;
+            color: #000;
+            border-color: #f2c10d;
+            box-shadow: 0 10px 20px -10px rgba(242, 193, 13, 0.5);
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, transparent 0%, #0a0a0c 100%);
+        }
+        .breathe-effect {
+            animation: breathe 6s ease-in-out infinite;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2.5s ease-in-out infinite;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2d2d39;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f2c10d;
+        }
+		@keyframes breathing {
+            0%, 100% { opacity: 0.6; filter: brightness(1); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav h-16 flex items-center justify-between px-6 md:px-12">
+        <div class="font-display font-bold text-gold-500 text-lg md:text-xl truncate max-w-[40%]">
+            徒26:1-23
+        </div>
+        <div class="flex gap-4 md:gap-8 text-sm font-semibold tracking-wider text-gray-300">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen w-full overflow-hidden flex flex-col justify-end items-center text-center pb-20 px-6">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_b39d00f1-b3dd-454a-9aa3-a5a42c7edf19.jpg' alt='Celestial Vision' class="absolute inset-0 w-full h-full object-cover breathing-image" />
+            <div class="absolute inset-0 banner-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black text-white mb-6 leading-tight">
+                順服天上異象：<br/>
+                <span class="text-gold-500">從逼迫者到恩典使者</span>
+            </h1>
+            <div id="golden-verse" class="mt-8 text-xl md:text-3xl font-bold text-white/90 italic jump-text">
+                「亞基帕王啊，我故此沒有違背那從天上來的異象。」
+                <span class="block text-sm md:text-lg mt-2 font-normal not-italic opacity-70">（使徒行傳 26:19）</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="section-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent"></div>
+                <div class="flex justify-center mb-6">
+                    <svg class="w-12 h-12 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-4.5v-9L12 3l8 4.5v9L12 21z M12 12v9"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 12L4 7.5 M12 12l8-4.5"></path></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold text-gold-400 mb-8 tracking-widest">開路禱告</h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 font-medium">
+                    主啊，我們感謝祢！如同祢在大馬士革的路上用大光照耀保羅，翻轉了他的生命，求祢今日也用真理的光照亮我們內心的幽暗。賜給我們屬靈的視力，看見祢從天上來的呼召與異象；更賜給我們剛強壯膽的心，使我們面對世俗的挑戰與環境的艱難時，能勇敢地宣告：「我沒有違背那從天上來的異象。」願我們的生命成為祢恩典的見證，引導更多人從黑暗轉向光明。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                <h2 class="font-display text-3xl font-bold text-white tracking-wide">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-xs text-gold-500 font-bold mb-2">Part 01</span>
+                    <span class="text-lg font-bold leading-tight">真誠的面對過去：宗教熱心與屬靈盲目</span>
+                    <span class="text-sm opacity-60 mt-4">徒 26:1-11</span>
+                </a>
+                <a href="#section2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-xs text-gold-500 font-bold mb-2">Part 02</span>
+                    <span class="text-lg font-bold leading-tight">顛覆生命的相遇：天上大光與主發聲</span>
+                    <span class="text-sm opacity-60 mt-4">徒 26:12-18</span>
+                </a>
+                <a href="#section3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-xs text-gold-500 font-bold mb-2">Part 03</span>
+                    <span class="text-lg font-bold leading-tight">至死不渝的順服：宣告悔改與見證基督</span>
+                    <span class="text-sm opacity-60 mt-4">徒 26:19-23</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-32">
+                <!-- Section 1 -->
+                <article id="section1" class="scroll-mt-32">
+                    <div class="border-l-4 border-gold-600 pl-6 mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">第一段：真誠的面對過去</h3>
+                        <p class="text-gold-500 font-medium">徒 26:1-11 宗教熱心與屬靈盲目</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="bg-dark-accent/50 p-6 rounded-2xl">
+                                <h4 class="text-sm font-bold text-gold-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 引用經文
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed italic">
+                                    「亞基帕對保羅說：『准你為自己辯明。』於是保羅伸手辯明... 我從起初在本國的民中，並在耶路撒冷，自幼為人如何，猶太人都知道... 我從起初是按著我們教中最嚴緊的教門作了法利賽人... 神叫死人復活，你們為什麼看作不可信的呢？從前我自己以為應當多方攻擊拿撒勒人耶穌的名...」
+                                </p>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="p-3 bg-gold-500/10 rounded-lg text-gold-500 font-bold">原文</div>
+                                <div>
+                                    <p class="text-lg font-bold text-white mb-1">指望 (Hope) - <span class="font-display">Elpis (ἐλπίς)</span></p>
+                                    <p class="text-gray-400">不僅是期待，而是基於上帝確切應許而有的「絕對把握」。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="font-bold text-gold-400 mb-2">關鍵問題與解析</h4>
+                                <p class="text-sm text-white font-bold mb-2">為什麼極度的「宗教熱心」反而可能導致「屬靈盲目」？</p>
+                                <p class="text-sm text-gray-400">當信仰只剩下教條堅持與自義驕傲，而失去對神心意的尋求時，熱心會成為暴力。真正的信仰是降服於神成就的救恩。</p>
+                            </div>
+                            <div class="section-card p-6 rounded-2xl border-l-gold-500 border-l-2">
+                                <p class="text-sm italic text-gray-300">「宗教是人努力去尋找神；福音則是神主動來尋找人。」—— 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="section2" class="scroll-mt-32">
+                    <div class="border-l-4 border-gold-600 pl-6 mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">第二段：顛覆生命的相遇</h3>
+                        <p class="text-gold-500 font-medium">徒 26:12-18 天上大光與主發聲</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="bg-dark-accent/50 p-6 rounded-2xl">
+                                <h4 class="text-sm font-bold text-gold-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 引用經文
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed italic">
+                                    「...晌午的時候，看見從天發光，比日頭還亮... 我就聽見有聲音用希伯來話向我說：『掃羅！掃羅！為什麼逼迫我？你用腳踢刺是難的！』我說：『主啊，你是誰？』主說：『我就是你所逼迫的耶穌。你起來站著... 我差你到他們那裡去，要叫他們的眼睛得開...』」
+                                </p>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="p-3 bg-gold-500/10 rounded-lg text-gold-500 font-bold">原文</div>
+                                <div>
+                                    <p class="text-lg font-bold text-white mb-1">歸向/轉向 (Turn) - <span class="font-display">Epistrephō (ἐπιστρέφω)</span></p>
+                                    <p class="text-gray-400">指狀態完全轉移。涉及意志、心思與行動的徹底悔改。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="font-bold text-gold-400 mb-2">關鍵問題與解析</h4>
+                                <p class="text-sm text-white font-bold mb-2">「你用腳踢刺是難的」是什麼意思？</p>
+                                <p class="text-sm text-gray-400">牛向後踢農夫的尖刺只會讓自己受傷。保羅一直在抗拒聖靈的感動，越是用狂熱壓抑神旨意，靈魂就越痛苦。</p>
+                            </div>
+                            <div class="section-card p-6 rounded-2xl border-l-gold-500 border-l-2">
+                                <p class="text-sm italic text-gray-300">「當基督呼召一個人的時候，祂是叫他來死。」—— 潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="section3" class="scroll-mt-32">
+                    <div class="border-l-4 border-gold-600 pl-6 mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">第三段：至死不渝的順服</h3>
+                        <p class="text-gold-500 font-medium">徒 26:19-23 宣告悔改與見證基督</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="bg-dark-accent/50 p-6 rounded-2xl">
+                                <h4 class="text-sm font-bold text-gold-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 引用經文
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed italic">
+                                    「亞基帕王啊，我故此沒有違背那從天上來的異象；先在大馬士革，後在耶路撒冷... 勸勉他們應當悔改歸向神... 蒙神的幫助，直到今日還站得住，對著尊貴、卑賤、老幼作見證... 就是基督必須受害，並且因從死裡復活...」
+                                </p>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div class="p-3 bg-gold-500/10 rounded-lg text-gold-500 font-bold">原文</div>
+                                <div>
+                                    <p class="text-lg font-bold text-white mb-1">違背 (Disobedient) - <span class="font-display">Apeithēs (ἀπειθής)</span></p>
+                                    <p class="text-gray-400">沒有拒絕信從，也沒有在行動上背叛。異象是用來順服的，不是用來欣賞的。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="font-bold text-gold-400 mb-2">關鍵問題與解析</h4>
+                                <p class="text-sm text-white font-bold mb-2">如何能在逼迫中依然保持順服？</p>
+                                <p class="text-sm text-gray-400">基於兩點：深知這異象來自「天上」的權威，以及經歷「蒙神幫助」而能站得住的信實。</p>
+                            </div>
+                            <div class="section-card p-6 rounded-2xl border-l-gold-500 border-l-2">
+                                <p class="text-sm italic text-gray-300">「我們對上帝最大的敬拜，是我們在日常生活中對祂絕對的順服。」—— 陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="section-card rounded-3xl p-8 md:p-16 border-t-4 border-gold-500 shadow-2xl">
+                <div class="flex justify-center mb-8">
+                    <span class="px-6 py-2 bg-gold-500/10 border border-gold-500/20 rounded-full text-gold-500 text-sm font-bold tracking-[0.2em]">SERMON TEXT</span>
+                </div>
+                <h2 class="font-display text-4xl font-black text-center text-white mb-12">講道文稿</h2>
+                
+                <div class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300 leading-relaxed">
+                    <p>弟兄姊妹們，平安。在我們一生的信仰旅程中，最大的危機往往不是我們不夠熱心，而是我們跑得很快，卻跑錯了方向。今天我們要透過使徒行傳第26章，來看保羅站在亞基帕王面前的這段深刻見證。這不僅是一篇法庭上的辯護詞，更是一個人生命被上帝徹底翻轉的榮耀宣告。</p>
+                    
+                    <h3 class="text-gold-400 text-2xl font-bold pt-6">第一段：真誠的面對過去：宗教熱心與屬靈盲目</h3>
+                    <p>保羅一開始，非常真誠地向亞基帕王訴說自己的過去。他說自己曾經是最嚴謹的法利賽人。他對信仰有極大的熱忱，但這份熱忱卻沒有引導他認識真理，反而使他成為逼迫基督徒的兇手。保羅以為自己在替天行道，他把聖徒下在監裡，甚至強逼他們說褻瀆的話。</p>
+                    <p class="bg-dark-accent p-4 rounded-xl border-l-4 border-gold-500 font-bold text-white italic">「宗教說：『我順服，所以我蒙悅納。』福音說：『我蒙悅納，所以我順服。』」</p>
+                    <p>弟兄姊妹，這給了我們一個極大的警惕：<span class="text-gold-500 font-bold underline">極度的「宗教熱心」反而可能導致極大的「屬靈盲目」。</span> 我們必須檢視自己的內心：我們對神的服事，是出於想要證明自己，還是被恩典觸摸後的自然流露？</p>
+
+                    <h3 class="text-gold-400 text-2xl font-bold pt-6">第二段：顛覆生命的相遇：天上大光與主發聲</h3>
+                    <p>然而，神的恩典介入了保羅的生命。在往大馬士革的路上，一道比日頭還亮的天上大光照耀了他。保羅仆倒在地，聽見耶穌對他說：「掃羅！掃羅！為什麼逼迫我？你用腳踢刺是難的！」</p>
+                    <p>「用腳踢刺」是一句生動的諺語。牛越是用腳去踢農夫趕牛的尖刺，自己受的傷就越深。耶穌是在告訴保羅：你一直在抗拒聖靈的感動，你越是用宗教狂熱來掩飾內心的不安，你就越痛苦。當保羅問「主啊，你是誰？」的時候，他過去所有的驕傲、自義和神學框架，都在那一刻徹底崩潰。</p>
+                    <p class="text-white font-bold text-xl text-center py-6">「我差你到他們那裡去，要叫他們的眼睛得開，從黑暗中歸向光明，從撒但權下歸向神。」</p>
+
+                    <h3 class="text-gold-400 text-2xl font-bold pt-6">第三段：至死不渝的順服：宣告悔改與見證基督</h3>
+                    <p>面對這樣的呼召，保羅的反應是什麼？保羅對著亞基帕王，說出了這段經文中最震撼人心的一句話，也是我們今天的金句：<span class="text-gold-500 font-black text-2xl">「亞基帕王啊，我故此沒有違背那從天上來的異象。」</span></p>
+                    <p>保羅沒有把這個異象當作一場神奇的經歷寫在日記裡就算了；他用了一生的時間，甚至面對猶太人的追殺、下監、無數的逼迫，他依然堅持傳講這個悔改的道。他勸勉人要「悔改歸向神，行事與悔改的心相稱。」</p>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-gray-800">
+                    <h4 class="font-display text-2xl font-bold text-white mb-6">結論與應用</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h5 class="text-gold-500 font-bold uppercase tracking-tighter">應用方向</h5>
+                            <ul class="space-y-2 text-gray-400 list-disc pl-5">
+                                <li>檢視屬靈的動機</li>
+                                <li>停止「用腳踢刺」</li>
+                                <li>重拾屬天的異象</li>
+                                <li>結出悔改的果子</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h5 class="text-gold-500 font-bold uppercase tracking-tighter">關鍵字</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gold-500 text-black px-4 py-1 rounded-full font-bold">異象 Vision</span>
+                                <span class="bg-gold-500 text-black px-4 py-1 rounded-full font-bold">轉向 Turn</span>
+                                <span class="bg-gold-500 text-black px-4 py-1 rounded-full font-bold">順服 Obedience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-gold-500/5 rounded-2xl p-6">
+                    <h5 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"></path></svg>
+                        回應與實踐行動
+                    </h5>
+                    <ol class="space-y-3 text-sm text-gray-300 list-decimal pl-5">
+                        <li><strong>寫下個人見證</strong>：本週整理自己信主得救的見證，預備心隨時分享。</li>
+                        <li><strong>認罪與降服</strong>：在禱告中具體向神承認一個正在「抗拒神旨意」的事。</li>
+                        <li><strong>為未信者代求</strong>：列出三位身邊親友，每天祈求神的光照耀他們。</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                <h2 class="font-display text-3xl font-bold text-white tracking-wide">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「宗教是人努力去尋找神；福音則是神主動來尋找人。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)，《山寨版的上帝》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)，《追隨基督》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「真正的基督教信仰不是一種加添在我們生活上的裝飾品，而是我們生命的根基與全貌。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— C.S. 路易斯 (C.S. Lewis)，《返璞歸真》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「我們對上帝最大的敬拜，不是我們唱了多麼好聽的詩歌，而是我們在日常生活中對祂絕對的順服。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 陶恕 (A.W. Tozer)，《渴慕神》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「神不是要我們為祂做大事，而是要我們順服祂，讓祂藉著我們做大事。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 慕迪 (D.L. Moody)，《慕迪講道集》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「信心與順服是緊密相連的；你不可能擁有其中一個而缺乏另一個。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 司布真 (Charles Spurgeon)，《司布真講道集》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「悔改不僅僅是為罪感到難過，更是方向的完全改變，是轉身背向罪惡，面向耶穌基督。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 葛理翰 (Billy Graham)，《如何重生》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「我們蒙拯救，不是因為我們做了什麼好行為，而是因為基督為我們成就的一切...必定會結出行善的果子。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)，《基督教要義》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「基督徒的使命就是作光；光不需要發表長篇大論，它只需要照亮黑暗。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 查爾斯·史丹利 (Charles Stanley)，《生命的把手》</cite>
+                </div>
+                <div class="section-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「屬靈生命的成熟，不在於我們知道多少聖經知識，而在於我們多麼願意順服我們所知道的。」</p>
+                    <cite class="text-xs text-gold-500 font-bold">— 魏樂德 (Dallas Willard)，《品格的革命》</cite>
+                </div>
+            </div>
+        </section>
+
+        <div class="pt-12 pb-24 text-center border-t border-white/5">
+            <p class="text-xs text-gray-600 tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Start of Prayer Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

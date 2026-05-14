@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太 23:23-39: 褪去偽善的面具，回轉歸向救主懷抱</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf2',
+                            100: '#fff9e6',
+                            200: '#ffefbf',
+                            300: '#ffe18c',
+                            400: '#ffd059',
+                            500: '#f9b52a',
+                            600: '#e19519',
+                            700: '#bc7416',
+                            800: '#985a18',
+                            900: '#7d4a18',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1f1f27',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(31, 31, 39, 0.5);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(249, 181, 42, 0.3);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9b52a 0%, #ffd059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .outline-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #f9b52a;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(249, 181, 42, 0.4);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f9b52a;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-6">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
+            <span class="font-bold text-sm md:text-base tracking-widest text-gold-400 font-serif">太 23:23-39</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wide">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/837f7c88-6437-4706-bbfb-d15eec5253f2' alt='Jerusalem Sunset' class="w-full h-full object-cover scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20 animate-fade-in-up">
+            <span class="inline-block px-4 py-1 border border-gold-500/50 text-gold-400 text-xs tracking-[0.3em] uppercase mb-6 rounded-full bg-gold-900/10">馬太福音 23:23-39</span>
+            <h1 class="text-4xl md:text-7xl font-black font-display text-white leading-tight mb-8">
+                褪去<span class="text-gradient">偽善</span>的面具<br>
+                回轉歸向救主懷抱
+            </h1>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding flex flex-col items-center">
+            <div class="glass-card p-8 md:p-16 rounded-3xl max-w-4xl w-full relative overflow-hidden">
+                <div class="absolute top-0 right-0 opacity-10 pointer-events-none p-4">
+                    <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v4H7v2h4v4h2v-4h4v-2h-4V7z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-3.04l.539-4.531a6.722 6.722 0 00.273-1.411 6.722 6.722 0 00.273-1.411L7 5c0-1.554 1.126-2.813 2.516-2.813h4.968c1.39 0 2.516 1.259 2.516 2.813l-.539 6.046c-.076.853-.131 1.71-.165 2.57M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold font-display">禱告</h2>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed text-slate-300 font-serif italic border-l-4 border-gold-500 pl-6 py-2">
+                    「主啊，我們來到祢面前，承認我們時常如同法利賽人一般，在外面披上宗教的熱心，內心卻充滿了自我、驕傲與冷漠。求聖靈今天光照我們的隱密處，打破我們粉飾的太平。求祢賜給我們一顆誠實悔改的心，讓我們不再專注於律法上外在的儀文，而是活出公義、憐憫與信實。主啊，當祢為耶路撒冷哀哭時，也求祢的愛再次招聚我們，如同母雞把小雞聚集在翅膀底下。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="section-padding">
+            <div class="flex items-center gap-4 mb-12 justify-center">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#section1" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-gold-500/5">
+                    <span class="text-gold-500 text-xs font-bold mb-4 tracking-widest">Part I</span>
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-gold-400 transition-colors">盲目的本末倒置</h3>
+                    <p class="text-slate-500 text-sm italic">太 23:23-24</p>
+                </a>
+                <a href="#section2" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-gold-500/5">
+                    <span class="text-gold-500 text-xs font-bold mb-4 tracking-widest">Part II</span>
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-gold-400 transition-colors">虛表的潔淨</h3>
+                    <p class="text-slate-500 text-sm italic">太 23:25-28</p>
+                </a>
+                <a href="#section3" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center group hover:bg-gold-500/5">
+                    <span class="text-gold-500 text-xs font-bold mb-4 tracking-widest">Part III</span>
+                    <h3 class="text-lg font-bold mb-2 group-hover:text-gold-400 transition-colors">拒絕恩典的悲劇</h3>
+                    <p class="text-slate-500 text-sm italic">太 23:29-39</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-32">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-24">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-4xl font-black font-display mb-6 sticky top-24">
+                                <span class="text-gold-500 block text-xl mb-2 tracking-tighter">01</span>
+                                盲目的<br>本末倒置
+                            </h3>
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-12">
+                            <div class="bg-dark-800 p-8 rounded-3xl border-l-4 border-gold-500">
+                                <p class="text-xl font-serif text-white leading-relaxed mb-4">「你們這假冒為善的文士和法利賽人有禍了！因為你們將薄荷、茴香、芹菜獻上十分之一，那律法上更重的事，就是公義、憐憫、信實，反倒不行了...」</p>
+                                <span class="text-gold-400 font-bold">—— 太 23:23-24</span>
+                            </div>
+                            
+                            <div class="bento-grid">
+                                <div class="col-span-12 md:col-span-7 glass-card p-8 rounded-3xl">
+                                    <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                        關鍵字解析
+                                    </h4>
+                                    <ul class="space-y-4">
+                                        <li>
+                                            <span class="text-white font-bold block mb-1">更重的事 (βαρύτερα)</span>
+                                            <p class="text-slate-400 text-sm">意指「更有分量的、更核心的」。耶穌強調信仰的核心在於上帝的屬性（公義、憐憫、信實）。</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-white font-bold block mb-1">蠓蟲 與 駱駝</span>
+                                            <p class="text-slate-400 text-sm">強烈的誇飾法，諷刺人對微小的規條極度吹毛求疵，卻對明顯的罪惡視而不見。</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-12 md:col-span-5 glass-card p-8 rounded-3xl border-t-4 border-white/10">
+                                    <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                        關鍵問題
+                                    </h4>
+                                    <p class="text-white text-sm italic mb-2">為什麼我們常常專注於微小的宗教規條，卻忽略了愛與公義？</p>
+                                    <p class="text-slate-400 text-xs">解析：人的罪性喜歡「可量化的宗教成就」，因為能迅速滿足自義感。</p>
+                                </div>
+                                <div class="col-span-12 glass-card p-8 rounded-3xl bg-gradient-to-br from-gold-500/10 to-transparent">
+                                    <div class="flex flex-col md:flex-row gap-8">
+                                        <div class="flex-1">
+                                            <h4 class="text-gold-400 font-bold mb-4">屬靈名言</h4>
+                                            <p class="text-xl font-serif text-white mb-2">「如果你的信仰只會讓你對別人的罪感到憤怒，卻沒有讓你對別人的苦難產生憐憫，那麼你所信的只是道德主義。」</p>
+                                            <cite class="text-slate-500 text-sm">— 提摩太·凱勒 (Timothy Keller)</cite>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-24">
+                    <div class="flex flex-col md:flex-row-reverse gap-12">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-4xl font-black font-display mb-6 sticky top-24 text-right">
+                                <span class="text-gold-500 block text-xl mb-2 tracking-tighter">02</span>
+                                虛表的<br>潔淨
+                            </h3>
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-12">
+                            <div class="bg-dark-800 p-8 rounded-3xl border-r-4 border-gold-500 text-right">
+                                <p class="text-xl font-serif text-white leading-relaxed mb-4">「你們好像粉飾的墳墓，外面好看，裡面卻裝滿了死人的骨頭和一切的污穢...裡面卻裝滿了假善和不法的事。」</p>
+                                <span class="text-gold-400 font-bold">—— 太 23:25-28</span>
+                            </div>
+                            
+                            <div class="bento-grid">
+                                <div class="col-span-12 md:col-span-5 glass-card p-8 rounded-3xl">
+                                    <h4 class="text-gold-400 font-bold mb-4">名言佳句</h4>
+                                    <p class="text-lg font-serif italic">「死屍穿上再華麗的衣服，依然是死屍。」</p>
+                                    <p class="text-slate-500 text-xs mt-2">— 司布真 (Charles Spurgeon)</p>
+                                </div>
+                                <div class="col-span-12 md:col-span-7 glass-card p-8 rounded-3xl">
+                                    <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                        關鍵字解析
+                                    </h4>
+                                    <div class="space-y-4">
+                                        <p><span class="text-white font-bold">假冒為善 (hypokritēs)：</span>原指希臘戲劇中戴著面具演戲的「演員」。</p>
+                                        <p><span class="text-white font-bold">粉飾的墳墓 (kekoniamenois mnēmeiois)：</span>外表潔白耀眼，本質卻是用來掩蓋腐敗與死亡。</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 glass-card p-8 rounded-3xl border-b-4 border-gold-500/20">
+                                    <h4 class="text-gold-400 font-bold mb-4">生活例證</h4>
+                                    <p class="text-slate-300 leading-relaxed">就像一顆放在超市架上的蘋果，外表被打了一層蠟，紅潤光澤，看起來完美無瑕。但當你咬下去時，才發現裡面早已被蟲蛀空。神要的不是我們生命外表的亮光蠟，而是裡面果肉的健康。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-24">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="w-full md:w-1/3">
+                            <h3 class="text-4xl font-black font-display mb-6 sticky top-24">
+                                <span class="text-gold-500 block text-xl mb-2 tracking-tighter">03</span>
+                                拒絕恩典的<br>悲劇
+                            </h3>
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-12">
+                            <div class="bg-dark-800 p-8 rounded-3xl border-l-4 border-red-500/50">
+                                <p class="text-xl font-serif text-white leading-relaxed mb-4">「我多次願意聚集你的兒女，好像母雞把小雞聚集在翅膀底下，只是你們不願意。」</p>
+                                <span class="text-gold-400 font-bold">—— 太 23:29-39</span>
+                            </div>
+                            
+                            <div class="bento-grid">
+                                <div class="col-span-12 glass-card p-8 rounded-3xl bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')]">
+                                    <div class="flex items-start gap-6">
+                                        <div class="text-5xl opacity-30 select-none">🕊️</div>
+                                        <div>
+                                            <h4 class="text-gold-400 font-bold mb-2">母雞的隱喻</h4>
+                                            <p class="text-slate-300">這是十架犧牲之愛的預表。母雞在危險來臨時，寧可自己承受災難，也要保護小雞。神不拯救的關鍵不在於祂，而在於人頑固地拒絕。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 md:col-span-6 glass-card p-8 rounded-3xl">
+                                    <h4 class="text-red-400 font-bold mb-2">最悲哀的詞</h4>
+                                    <p class="text-2xl font-black text-white mb-2">不願意 <span class="text-sm font-normal text-slate-500">(ouk ēthelēsate)</span></p>
+                                    <p class="text-slate-400 text-sm">拒絕恩典的本質是屬靈的驕傲。人需要承認自己的無能為力，才能進入羽翼之下。</p>
+                                </div>
+                                <div class="col-span-12 md:col-span-6 glass-card p-8 rounded-3xl flex items-center justify-center text-center">
+                                    <div>
+                                        <h4 class="text-gold-400 font-bold mb-4">約翰·史托德 名言</h4>
+                                        <p class="text-lg italic font-serif">「上帝的眼淚是我們驕傲最嚴厲的審判。」</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM7 8h5m-5 4h5m-5 4h5"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold font-display">講章文稿</h2>
+                </div>
+                
+                <div class="glass-card p-8 md:p-16 rounded-[3rem] prose prose-invert prose-gold max-w-none">
+                    <h3 class="text-3xl font-black text-white mb-8 border-b border-white/10 pb-4">褪去偽善的面具，回轉歸向救主懷抱</h3>
+                    <p class="text-slate-300 leading-loose text-lg">弟兄姊妹，平安。今天我們要進入馬太福音第23章，這是耶穌在世上最嚴厲、也是最心碎的一段講論。我們常常喜歡聽耶穌說「有福了」，但今天耶穌連續宣告了多次的「有禍了」。祂的責備不是針對罪犯，而是針對當時最熱心、最受人尊敬的宗教領袖。讓我們一起透過這段經文，來省察我們的生命。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">一、盲目的本末倒置：被忽略的公義與憐憫</h4>
+                    <p class="text-slate-300 leading-loose text-lg">耶穌用了一個極其生動的畫面。法利賽人在喝水時，深怕喝到不潔淨的「蠓蟲」，所以用布仔細過濾；但他們卻把一整隻巨大的「駱駝」給吞了下去！</p>
+                    <p class="bg-gold-500/10 p-6 rounded-2xl border-l-4 border-gold-500 my-8 text-white font-serif italic text-xl">「真正的信仰，不是在安全的宗教規條裡打轉，而是在複雜的人際關係中活出基督的憐憫。」</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">二、虛表的潔淨：粉飾的墳墓與內在的污穢</h4>
+                    <p class="text-slate-300 leading-loose text-lg">耶穌揭開了宗教最醜陋的面具——假冒為善（Hypocrite）。這個字本來是指戴著面具的演員。耶穌說，你們就像「粉飾的墳墓」，外面刷得潔白發亮，裡面卻是腐爛的死人骨頭。</p>
+                    <p class="bg-gold-500/10 p-6 rounded-2xl border-l-4 border-gold-500 my-8 text-white font-serif italic text-xl">「神不看我們外表塗了多厚的白灰，祂看重的是我們是否願意把裡面發臭的骨頭交給祂。」</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">三、拒絕恩典的悲劇與救主的哀哭</h4>
+                    <p class="text-slate-300 leading-loose text-lg">祂將自己比喻為一隻「母雞」，當野獸與災火來臨時，母雞會張開翅膀，用自己的生命擋住危險，把小雞護在懷中。這正是十字架的愛！不要再靠自己的力量建造粉飾的墳墓了，卸下你偽善的面具，回轉歸向救主的懷抱。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications & Conclusion -->
+        <section class="section-padding">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- App Directions -->
+                <div class="glass-card p-10 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                        <span class="p-2 bg-blue-500/20 text-blue-400 rounded-lg">📍</span>
+                        應用方向
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-black">01</span>
+                            <p class="text-slate-300 font-bold">檢視屬靈清單：是否只剩打卡，卻失去了恩慈與憐憫？</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-black">02</span>
+                            <p class="text-slate-300 font-bold">拆除粉飾的牆：向神坦白一個你一直隱藏的軟弱。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-gold-500 font-black">03</span>
+                            <p class="text-slate-300 font-bold">回應恩典的呼喚：安息在耶穌十字架的保護中。</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Conclusion Keywords -->
+                <div class="glass-card p-10 rounded-3xl flex flex-col justify-center items-center text-center">
+                    <h3 class="text-2xl font-bold mb-8">關鍵字結論</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-gold-400 font-black text-xl">真實 Authenticity</span>
+                        <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-gold-400 font-black text-xl">憐憫 Mercy</span>
+                        <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-gold-400 font-black text-xl">回轉 Return</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="section-padding">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-display">回應行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-8 rounded-3xl border border-white/10 hover:border-gold-500/50 transition-all text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-gold-500/10 rounded-full flex items-center justify-center text-2xl">🤝</div>
+                    <h4 class="font-bold text-white mb-2">愛的實際行動</h4>
+                    <p class="text-slate-400 text-sm">向一位你忽略的人展現不求回報的憐憫行動。</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-white/10 hover:border-gold-500/50 transition-all text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-gold-500/10 rounded-full flex items-center justify-center text-2xl">🙏</div>
+                    <h4 class="font-bold text-white mb-2">真實的認罪</h4>
+                    <p class="text-slate-400 text-sm">與屬靈夥伴分享你生命中「杯盤裡面」的一個掙扎。</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-white/10 hover:border-gold-500/50 transition-all text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-gold-500/10 rounded-full flex items-center justify-center text-2xl">🕊️</div>
+                    <h4 class="font-bold text-white mb-2">安息的默想</h4>
+                    <p class="text-slate-400 text-sm">每天10分鐘，想像自己躲在耶穌的翅膀下，停止表演。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-padding">
+            <div class="flex items-center gap-4 mb-12 justify-center">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500/20 flex items-center justify-center text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-center">名言佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Quotes Loop -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="font-serif italic text-slate-200 mb-4">「廉價的恩典是掩飾我們不願悔改的代名詞，這恩典沒有十字架，也沒有活生生、道成肉身的耶穌基督。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid border-l-4 border-gold-500">
+                    <p class="font-serif italic text-slate-200 mb-4">「假冒為善的悲劇在於，我們花費了大量的精力去維持一個我們根本沒有擁有的屬靈形象。」</p>
+                    <p class="text-gold-400 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="font-serif italic text-slate-200 mb-4">「人若不先對自己的義感到絕望，就無法預備好領受基督的義。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="font-serif italic text-slate-200 mb-4">「在這個充滿表演的世界裡，基督徒的呼召是活出真誠。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="font-serif italic text-slate-200 mb-4">「如果你認為自己是因為好行為而被神接納，你的內心只會產生驕傲與恐懼。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid border-r-4 border-gold-500/30">
+                    <p class="font-serif italic text-slate-200 mb-4">「上帝的眼淚是我們驕傲最嚴厲的審判。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="font-serif italic text-slate-200 mb-4">「人除非首先深刻認識自己內心的敗壞與貧乏，否則永遠無法真正認識上帝的偉大與榮耀。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="font-serif italic text-slate-200 mb-4">「真正的信仰並非在於頭腦中的冰冷教條，而在於心中對上帝那神聖、活潑且充滿愛的感情。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="font-serif italic text-slate-200 mb-4">「宗教讓人靠著遵行律法來逃避神，福音卻讓人藉著恩典降服於神。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="py-12 border-t border-white/5">
+            <div class="flex items-center justify-center gap-3 text-slate-500 text-sm italic">
+                <svg class="w-5 h-5 text-red-500/50" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center floating-btn animate-float z-50 transition-transform active:scale-95 shadow-2xl">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

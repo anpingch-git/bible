@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太1:18-25 打破計畫的恩典：迎接「以馬內利」的降臨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fbe361',
+                            400: '#f9d233',
+                            500: '#f4b810',
+                            600: '#d8910a',
+                            700: '#b46b0b',
+                            800: '#925310',
+                            900: '#784411',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            surface: '#16161a',
+                            elevated: '#1f1f24'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.2s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f4b810 0%, #fef9cd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f4b810;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .outline-card:hover {
+            border-left-color: #f4b810;
+            background: rgba(244, 184, 16, 0.05);
+            transform: translateX(8px);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/7f32a859-0fe2-4784-9bbd-4e25c4c9ebbe' alt='Banner' class="w-full h-full object-cover opacity-40" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-base via-dark-base/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 animate-slide-up">
+            <span class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-gold-400 border border-gold-400/30 rounded-full uppercase">Matthew 1:18-25</span>
+            <h1 class="text-4xl md:text-6xl font-display font-bold mb-4 tracking-tight leading-tight">打破計畫的恩典<br/><span class="gradient-text">迎接「以馬內利」的降臨</span></h1>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-nav glass-panel border-b border-white/5 py-3 px-6 overflow-x-auto whitespace-nowrap scrollbar-hide">
+        <div class="max-w-6xl mx-auto flex items-center justify-between gap-8">
+            <span class="text-gold-400 font-bold font-display tracking-wide">太 1:18-25</span>
+            <div class="flex items-center gap-6">
+                <a href="#prayer" class="nav-link text-sm font-medium opacity-80 hover:opacity-100">禱告</a>
+                <a href="#outline" class="nav-link text-sm font-medium opacity-80 hover:opacity-100">大綱</a>
+                <a href="#sermon" class="nav-link text-sm font-medium opacity-80 hover:opacity-100">講章</a>
+                <a href="#quotes" class="nav-link text-sm font-medium opacity-80 hover:opacity-100">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24 text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-500/10 mb-6 border border-gold-500/20">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-8">啟動禱告</h2>
+            <div class="glass-panel p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-2 h-full bg-gold-500"></div>
+                <p class="text-lg md:text-xl leading-relaxed text-slate-300 italic">
+                    「主阿，我們來到祢面前，承認我們常常緊抓著自己對人生的計畫與期待。當祢的作為介入、甚至打亂我們的預期時，我們常感到恐懼與不安。求祢賜給我們如同約瑟般的柔和與順服，讓我們看見在看似破碎的計畫中，藏著『以馬內利——神與我們同在』的奇妙恩典。幫助我們放下自己的掌控，勇敢迎接祢的呼召，因祢的名字是耶穌，祢必將我們從罪惡與絕望中拯救出來。奉耶穌基督的名禱告，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 flex items-center justify-center bg-gold-500 text-dark-base rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講道大綱</h2>
+            </div>
+
+            <div class="grid gap-4">
+                <a href="#section-1" class="outline-card glass-panel p-6 rounded-2xl flex items-center justify-between group">
+                    <div>
+                        <span class="text-xs text-gold-500 font-bold tracking-widest uppercase mb-1 block">Part 01</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">突如其來的風暴——當人生計畫被打亂</h3>
+                        <p class="text-slate-500 text-sm">馬太福音 1:18-19</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-600 group-hover:text-gold-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#section-2" class="outline-card glass-panel p-6 rounded-2xl flex items-center justify-between group">
+                    <div>
+                        <span class="text-xs text-gold-500 font-bold tracking-widest uppercase mb-1 block">Part 02</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">天堂的啟示與應許——超越困境的拯救與同在</h3>
+                        <p class="text-slate-500 text-sm">馬太福音 1:20-23</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-600 group-hover:text-gold-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#section-3" class="outline-card glass-panel p-6 rounded-2xl flex items-center justify-between group">
+                    <div>
+                        <span class="text-xs text-gold-500 font-bold tracking-widest uppercase mb-1 block">Part 03</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">順服的行動與成就——付上代價的信心跟隨</h3>
+                        <p class="text-slate-500 text-sm">馬太福音 1:24-25</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-600 group-hover:text-gold-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1 Detailed -->
+        <section id="section-1" class="scroll-mt-24 space-y-8">
+            <div class="inline-block px-4 py-1 bg-gold-500/10 text-gold-500 rounded-full text-sm font-bold border border-gold-500/20 mb-2">第一分段</div>
+            <h2 class="text-3xl md:text-4xl font-bold">突如其來的風暴<br/><span class="text-slate-500 text-2xl font-normal">——當人生計畫被打亂 (太1:18-19)</span></h2>
+            
+            <div class="glass-panel p-6 rounded-2xl border-l-4 border-gold-500 bg-gold-500/5 italic text-slate-300">
+                「耶穌基督降生的事記在下面：他母親馬利亞已經許配了約瑟，還沒有迎娶，馬利亞就從聖靈懷了孕。她丈夫約瑟是個義人，不願意明明的羞辱她，想要暗暗的把她休了。」
+            </div>
+
+            <div class="bento-grid">
+                <!-- Keyword -->
+                <div class="col-span-12 md:col-span-5 glass-panel p-6 rounded-3xl">
+                    <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                        關鍵原文
+                    </h4>
+                    <p class="text-2xl font-bold mb-1">義人 <span class="text-slate-500 text-lg font-normal font-display">δίκαιος (dikaios)</span></p>
+                    <p class="text-slate-400 text-sm">指遵守神律法、正直、公平。此處約瑟的「義」更包含了敬畏神與對人的憐憫恩典。</p>
+                </div>
+                <!-- Question -->
+                <div class="col-span-12 md:col-span-7 glass-panel p-6 rounded-3xl bg-white/5">
+                    <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
+                        關鍵解析
+                    </h4>
+                    <p class="font-bold mb-2">當我們自認「行義」卻遭遇背叛感時，該如何反應？</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">約瑟選擇「暗暗地休了她」。真正的「義」不是得理不饒人的報復，而是在痛苦中選擇以恩典來對待他人。神在我們最委屈的時刻，考驗我們是否願意讓恩典超越律法。</p>
+                </div>
+                <!-- Illustration -->
+                <div class="col-span-12 glass-panel p-8 rounded-3xl">
+                    <div class="flex items-start gap-4">
+                        <div class="hidden md:block text-4xl opacity-20">“</div>
+                        <div>
+                            <h4 class="text-slate-500 font-bold text-xs tracking-widest uppercase mb-4">Life Illustration / 生命見證</h4>
+                            <p class="text-slate-300 leading-relaxed italic">一位年輕創業者在摯友挪用公款後，選擇私下對質而非提告，保全了對方的家庭。這如同約瑟的「義」，在被背叛的劇痛中，依然留下了恩典的空間，而這個空間，往往是神介入的起點。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote -->
+                <div class="col-span-12 bg-gold-500 p-8 rounded-3xl text-dark-base flex items-center gap-6">
+                    <div class="text-3xl">📖</div>
+                    <div>
+                        <p class="font-bold text-xl mb-1">「恩典之所以令人驚訝，正是因為它總是臨到那些不配得的人身上；而真正的公義，永遠不會與憐憫脫節。」</p>
+                        <p class="text-sm opacity-80">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 Detailed -->
+        <section id="section-2" class="scroll-mt-24 space-y-8">
+            <div class="inline-block px-4 py-1 bg-gold-500/10 text-gold-500 rounded-full text-sm font-bold border border-gold-500/20 mb-2">第二分段</div>
+            <h2 class="text-3xl md:text-4xl font-bold">天堂的啟示與應許<br/><span class="text-slate-500 text-2xl font-normal">——超越困境的拯救與同在 (太1:20-23)</span></h2>
+            
+            <div class="glass-panel p-6 rounded-2xl border-l-4 border-gold-500 bg-gold-500/5 italic text-slate-300 leading-relaxed">
+                「...不要怕！只管娶過你的妻子馬利亞來...你要給他起名叫耶穌...人要稱他的名為以馬內利。（以馬內利翻出來就是『神與我們同在』。）」
+            </div>
+
+            <div class="bento-grid">
+                <div class="col-span-12 md:col-span-6 glass-panel p-6 rounded-3xl">
+                    <h4 class="text-gold-500 font-bold mb-3">關鍵原文</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-xl font-bold">耶穌 <span class="text-slate-500 text-sm font-display">Ἰησοῦς (Yeshua)</span></p>
+                            <p class="text-slate-400 text-sm italic">「耶和華拯救」</p>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">以馬內利 <span class="text-slate-500 text-sm font-display">Ἐμμανουήλ</span></p>
+                            <p class="text-slate-400 text-sm italic">「神與我們同在」</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 glass-panel p-6 rounded-3xl bg-white/5">
+                    <h4 class="text-gold-500 font-bold mb-3">關鍵解析</h4>
+                    <p class="font-bold mb-2">這兩個名字對現今困境有何意義？</p>
+                    <p class="text-slate-400 text-sm">神首要的是把我們從「罪惡」中救出來，並在苦難中與我們「同在」。我們常求神把我們從環境中救出，但祂選擇以同在帶領我們走過。</p>
+                </div>
+                <div class="col-span-12 glass-panel p-8 rounded-3xl border-dashed border-gold-500/30">
+                    <div class="flex items-start gap-4">
+                        <div class="text-3xl opacity-50">🌩️</div>
+                        <p class="text-slate-300 italic">小男孩在雷雨中被父親緊抱，雨沒停、黑暗沒散，但因為「父親同在」而安然入睡。神有時不立刻平息風暴，而是以「以馬內利」的身分步入風暴中。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Detailed -->
+        <section id="section-3" class="scroll-mt-24 space-y-8">
+            <div class="inline-block px-4 py-1 bg-gold-500/10 text-gold-500 rounded-full text-sm font-bold border border-gold-500/20 mb-2">第三分段</div>
+            <h2 class="text-3xl md:text-4xl font-bold">順服的行動與成就<br/><span class="text-slate-500 text-2xl font-normal">——付上代價的信心跟隨 (太1:24-25)</span></h2>
+            
+            <div class="glass-panel p-6 rounded-2xl border-l-4 border-gold-500 bg-gold-500/5 italic text-slate-300">
+                「約瑟醒了，起來，就遵著主使者的吩咐把妻子娶過來...等她生了兒子，就給他起名叫耶穌。」
+            </div>
+
+            <div class="bento-grid">
+                <div class="col-span-12 md:col-span-4 glass-panel p-6 rounded-3xl">
+                    <h4 class="text-gold-500 font-bold mb-3">關鍵原文</h4>
+                    <p class="text-xl font-bold">遵著 / 起來</p>
+                    <p class="text-slate-500 text-xs font-display mb-2">egeirō / poieō</p>
+                    <p class="text-slate-400 text-sm">表示立即的喚醒與實際的行動。這不只是心裡的認同，而是付諸實踐的順服。</p>
+                </div>
+                <div class="col-span-12 md:col-span-8 glass-panel p-6 rounded-3xl bg-white/5">
+                    <h4 class="text-gold-500 font-bold mb-3">關鍵解析</h4>
+                    <p class="font-bold mb-2">順服神是否意味著一帆風順？</p>
+                    <p class="text-slate-400 text-sm">約瑟必須承擔閒言閒語、社會污名。順服神往往需要付上極大代價，但正是這份堅定讓救恩歷史得以成就。信心，是在不完全明白時，依然邁出腳步。</p>
+                </div>
+                <div class="col-span-12 glass-panel p-8 rounded-3xl">
+                    <h4 class="text-slate-500 font-bold text-xs tracking-widest uppercase mb-4">Missionary Example / 宣教足跡</h4>
+                    <p class="text-slate-300 leading-relaxed italic">宣教士艾略特（Jim Elliot）寫下：「為得到那不會失去的，而付出那不能保有的，這人絕不是傻瓜。」約瑟放棄了自己的名譽，迎來了世界的救主。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications -->
+        <section class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 flex items-center justify-center bg-gold-500 text-dark-base rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">應用方向</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-panel p-8 rounded-3xl hover:bg-white/5 transition-all">
+                    <span class="text-gold-500 font-bold text-4xl opacity-20 block mb-2">01</span>
+                    <h4 class="text-xl font-bold mb-2">交出控制權</h4>
+                    <p class="text-slate-400">當人生計畫被無預警打亂時，檢視自己是否願意相信神有更高的旨意。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl hover:bg-white/5 transition-all">
+                    <span class="text-gold-500 font-bold text-4xl opacity-20 block mb-2">02</span>
+                    <h4 class="text-xl font-bold mb-2">在受傷中選擇恩典</h4>
+                    <p class="text-slate-400">不以報復為念，而是像約瑟一樣，給予他人恩典與保護的空間。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl hover:bg-white/5 transition-all">
+                    <span class="text-gold-500 font-bold text-4xl opacity-20 block mb-2">03</span>
+                    <h4 class="text-xl font-bold mb-2">認識真正的拯救</h4>
+                    <p class="text-slate-400">不只求神改變環境，而是懇求神解決罪，經歷「以馬內利」的同行。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl hover:bg-white/5 transition-all">
+                    <span class="text-gold-500 font-bold text-4xl opacity-20 block mb-2">04</span>
+                    <h4 class="text-xl font-bold mb-2">立即且付代價的順服</h4>
+                    <p class="text-slate-400">聽見微小聲音時，不拖延，像約瑟一樣「醒了，就遵著吩咐去作」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 flex items-center justify-center bg-gold-500 text-dark-base rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">完整講章</h2>
+            </div>
+            <div class="glass-panel p-8 md:p-12 rounded-[2rem] space-y-8 text-slate-300 leading-loose text-lg">
+                <p>弟兄姊妹，我們每個人都是人生的「計畫者」。但是，當上帝的計畫與你的計畫發生衝突時，你會怎麼辦？</p>
+                <div class="space-y-4 border-l-2 border-gold-500/30 pl-6">
+                    <p class="font-bold text-white">真正的義，不是把別人逼到絕境的定罪，而是在自己受傷最深的時候，依然為對方保留恩典的空間。</p>
+                    <p>當你的人生計畫被打亂時，你是急著報復、急著討回公道，還是像約瑟一樣，選擇了一條滿有憐憫的道路？</p>
+                </div>
+                <p>神沒有消除村裡人的閒言閒語，但祂承諾：「我會與你同在。」面對未知的黑夜，我們不需要手電筒來照亮前方的每一哩路，我們只需要那位牽著我們手的父親。神與我們同在，這就是我們面對一切風暴最大的底氣！</p>
+                <p>約瑟沒有說一句話，他完全是用行動來表達他的信心。順服從來不是沒有代價的。沒有付上代價的順服，往往只是口頭上的認同。</p>
+                <div class="bg-gold-500/10 p-6 rounded-2xl text-center">
+                    <p class="font-bold text-gold-500 mb-2">結論關鍵字</p>
+                    <p class="text-2xl font-display font-bold tracking-widest">恩典 · 同在 · 順服</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 flex items-center justify-center bg-gold-500 text-dark-base rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">回應行動</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center gap-6 glass-panel p-6 rounded-2xl">
+                    <div class="bg-gold-500/20 text-gold-500 w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full font-bold">1</div>
+                    <p><span class="font-bold text-white">寫下「放棄控制清單」：</span>將焦慮的事寫下並禱告交給神。</p>
+                </div>
+                <div class="flex items-center gap-6 glass-panel p-6 rounded-2xl">
+                    <div class="bg-gold-500/20 text-gold-500 w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full font-bold">2</div>
+                    <p><span class="font-bold text-white">實踐「不配得的恩典」：</span>本週對一個得罪你的人釋放具體善意。</p>
+                </div>
+                <div class="flex items-center gap-6 glass-panel p-6 rounded-2xl">
+                    <div class="bg-gold-500/20 text-gold-500 w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full font-bold">3</div>
+                    <p><span class="font-bold text-white">「以馬內利」微型靜默：</span>每日三分鐘單單思想神與我同在。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-10 h-10 flex items-center justify-center bg-gold-500 text-dark-base rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">01</div>
+                    <p class="text-xl font-bold mb-4 italic">「只有相信的人才會順服，也只有順服的人才會相信。」</p>
+                    <p class="text-gold-500 text-sm">— 潘霍華 (Dietrich Bonhoeffer)《追隨基督》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">02</div>
+                    <p class="text-xl font-bold mb-4 italic">「上帝永遠是主動的。在我們尋找祂之前，祂已經在尋找我們；在我們順服之前，祂早已預備了恩典。」</p>
+                    <p class="text-gold-500 text-sm">— 陶恕 (A.W. Tozer)《渴慕神》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">03</div>
+                    <p class="text-xl font-bold mb-4 italic">「信心是對上帝恩典一種活潑而大膽的信靠，信徒甘願為此赴死一千次。」</p>
+                    <p class="text-gold-500 text-sm">— 馬丁·路德 (Martin Luther)《羅馬書註釋序言》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">04</div>
+                    <p class="text-xl font-bold mb-4 italic">「順服不是一時的激情，而是在同一個方向上長期的堅持。」</p>
+                    <p class="text-gold-500 text-sm">— 畢德生 (Eugene Peterson)《長存的順服》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">05</div>
+                    <p class="text-xl font-bold mb-4 italic">「『以馬內利』——這是福音中最高的音符。如果神與我們同在，我們還懼怕什麼黑夜？」</p>
+                    <p class="text-gold-500 text-sm">— 司布真 (Charles Spurgeon)《早晚靈修》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">06</div>
+                    <p class="text-xl font-bold mb-4 italic">「真正的神必定會干預你的計畫，因為祂的愛太深，不願你走向毀滅。」</p>
+                    <p class="text-gold-500 text-sm">— 提摩太·凱勒 (Timothy Keller)《隱藏的聖誕節》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">07</div>
+                    <p class="text-xl font-bold mb-4 italic">「耶穌名字的意義在於祂是替代者。祂介入我們的絕境，不僅陪伴我們，更是代替我們承受了罪的刑罰。」</p>
+                    <p class="text-gold-500 text-sm">— 約翰·史托德 (John Stott)《當代基督十架》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">08</div>
+                    <p class="text-xl font-bold mb-4 italic">「當我們看不見上帝恩典的作為時，我們必須學會在黑暗中信靠祂的護理。」</p>
+                    <p class="text-gold-500 text-sm">— 約翰·加爾文 (John Calvin)《基督教要義》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">09</div>
+                    <p class="text-xl font-bold mb-4 italic">「真正的屬靈情感，必然會產生實際的基督徒行為。沒有行為的順服，只不過是屬靈的幻覺。」</p>
+                    <p class="text-gold-500 text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)《宗教情操真偽辨》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute right-4 bottom-4 text-8xl text-white/5 font-display font-bold italic group-hover:text-gold-500/10 transition-colors">10</div>
+                    <p class="text-xl font-bold mb-4 italic">「恩典的奇妙在於，它並非因為你道德完美而臨到你，而是在你徹底崩潰、計畫破滅時。」</p>
+                    <p class="text-gold-500 text-sm">— 提摩太·凱勒 (Timothy Keller)《被釘十字架的王》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="text-center py-12 border-t border-white/5">
+            <p class="text-slate-600 text-sm tracking-widest">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-base rounded-full shadow-2xl shadow-gold-500/20 flex items-center justify-center transition-transform hover:scale-110 active:scale-95 z-50 animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 10,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

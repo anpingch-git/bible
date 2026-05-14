@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽66:15-24:終極的榮耀與抉擇：迎向新天新地的敬拜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8be',
+                            200: '#fef18d',
+                            300: '#fde550',
+                            400: '#fbd41d',
+                            500: '#eeb80c',
+                            600: '#ce9107',
+                            700: '#a46809',
+                            800: '#86510e',
+                            900: '#724211',
+                        },
+                        abyss: '#050505',
+                        crimson: '#8b0000',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(238, 184, 12, 0.4);
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(238, 184, 12, 0.5), transparent);
+        }
+        .breath-img {
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { filter: brightness(0.4) contrast(1.1); }
+            50% { filter: brightness(0.8) contrast(1.2); }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2s ease-in-out infinite;
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #eeb80c;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div class="text-gold-500 font-accent font-bold tracking-tighter text-lg md:text-xl">
+            賽 66:15-24
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-400">
+            <a href="#prayer" class="nav-link relative hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="nav-link relative hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="nav-link relative hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="nav-link relative hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="top" class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_f9c4405d-4d6e-4464-8a21-22525d2108a7.jpg' alt='Celestial Glory' class="w-full h-full object-cover breath-img" />
+            <div class="absolute inset-0 bg-gradient-to-t from-abyss via-abyss/40 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black text-white mb-8 leading-tight tracking-tight drop-shadow-2xl">
+                終極的榮耀與抉擇：<br/>
+                <span class="text-gold-500 text-glow">迎向新天新地的敬拜</span>
+            </h1>
+            <div class="jump-text text-lg md:text-2xl font-display italic text-gold-200/90 max-w-3xl mx-auto leading-relaxed">
+                「耶和華說：我所要造的新天新地，怎樣在我面前長存；你們的後裔和你們的名字也必照樣長存。」
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-16 border-l-4 border-gold-600 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg class="w-24 h-24 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9.05-3.9-9.64-8.83L1.03 12 1.36 10.83C1.95 5.9 5.93 2 11 2m2 0c5.07 0 9.05 3.9 9.64 8.83L22.97 12l-.33 1.17c-.59 4.93-4.57 8.83-9.64 8.83V2z"/></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold text-gold-500 mb-8 flex items-center gap-3">
+                    <span class="p-2 bg-gold-500/10 rounded-lg">🙏</span> 禱告詞
+                </h2>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic">
+                    「永在的父上帝，我們帶著敬畏與感恩的心來到祢面前。祢是施行公義審判的烈火，也是招聚萬民、賜下新天新地盼望的恩典之主。求祢的聖靈今天光照我們，除去我們生命中隱藏的偶像與污穢，使我們看見祢榮耀的呼召。幫助我們在這短暫的今生，做出永恆正確的抉擇，獻上祢所喜悅的敬拜，並將祢的榮耀宣揚到地極。奉主耶穌基督的聖名祈求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="font-display text-3xl font-bold text-gold-500 mb-12 flex items-center gap-3">
+                <span class="p-2 bg-gold-500/10 rounded-lg">📜</span> 信息大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="group glass-card p-8 hover:bg-gold-500/10 transition-all duration-500 hover:-translate-y-2 border-t-2 border-transparent hover:border-gold-500">
+                    <span class="text-gold-500 font-accent font-bold text-lg mb-2 block">PART 01</span>
+                    <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">烈火中的公義：不容妥協的聖潔</h3>
+                    <p class="text-gray-400 text-sm">賽 66:15-17</p>
+                </a>
+                <a href="#part2" class="group glass-card p-8 hover:bg-gold-500/10 transition-all duration-500 hover:-translate-y-2 border-t-2 border-transparent hover:border-gold-500">
+                    <span class="text-gold-500 font-accent font-bold text-lg mb-2 block">PART 02</span>
+                    <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">萬邦的招聚：看見榮耀的呼召</h3>
+                    <p class="text-gray-400 text-sm">賽 66:18-21</p>
+                </a>
+                <a href="#part3" class="group glass-card p-8 hover:bg-gold-500/10 transition-all duration-500 hover:-translate-y-2 border-t-2 border-transparent hover:border-gold-500">
+                    <span class="text-gold-500 font-accent font-bold text-lg mb-2 block">PART 03</span>
+                    <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">永恆的敬拜：新天新地的兩極結局</h3>
+                    <p class="text-gray-400 text-sm">賽 66:22-24</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Analysis Section -->
+        <div class="space-y-40">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12 items-start">
+                    <div class="md:w-1/3 sticky top-32">
+                        <h2 class="font-display text-4xl font-black text-white leading-tight mb-6">
+                            烈火中的公義：<br/>
+                            <span class="text-gold-500">不容妥協的聖潔</span>
+                        </h2>
+                        <div class="text-gold-400/80 font-accent tracking-widest mb-4">ISAIAH 66:15-17</div>
+                        <div class="w-16 h-1 bg-gold-600"></div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 md:p-12 space-y-10">
+                        <div class="bg-white/5 rounded-2xl p-6 italic text-gray-300 leading-relaxed border-l-2 border-white/20">
+                            「看哪，耶和華必在火中降臨；他的車輦像旋風，以烈怒施行報應...那些分別為聖、潔淨自己的，進入園內跟在其中一個人的後頭，吃豬肉和倉鼠並可憎之物，他們必一同滅絕...」
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 原文解析
+                            </h4>
+                            <p class="text-gray-300"><strong class="text-white">審判 (Shaphat / שָׁפַט)</strong>：原文意為判斷、治理、懲罰或伸冤。這裡指上帝以最高法官的身份，對全人類進行不可逃避的裁決。</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 關鍵問題
+                            </h4>
+                            <p class="text-white font-medium mb-2">慈愛的上帝為何必須以「烈火與刀」施行如此嚴厲的審判？</p>
+                            <p class="text-gray-400">上帝的慈愛與公義不可分割。上帝若不審判罪惡，就不可能帶來真正的新天新地；烈火的審判是為了徹底清除宇宙中的毒瘤，恢復受造界的純潔。</p>
+                        </div>
+
+                        <div class="bg-gold-900/20 p-6 rounded-2xl border border-gold-900/50">
+                            <h4 class="text-gold-400 font-bold mb-3">📖 屬靈洞見</h4>
+                            <p class="text-gray-300 italic mb-4">「外科醫生面對惡性腫瘤，愛病患的唯一方式，就是毫不留情地切除。上帝對罪的烈火審判，正是祂對這世界的終極醫治。」</p>
+                            <footer class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-start">
+                    <div class="md:w-1/3 sticky top-32">
+                        <h2 class="font-display text-4xl font-black text-white leading-tight mb-6">
+                            萬邦的招聚：<br/>
+                            <span class="text-gold-500">看見榮耀的呼召</span>
+                        </h2>
+                        <div class="text-gold-400/80 font-accent tracking-widest mb-4">ISAIAH 66:18-21</div>
+                        <div class="w-16 h-1 bg-gold-600"></div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 md:p-12 space-y-10">
+                        <div class="bg-white/5 rounded-2xl p-6 italic text-gray-300 leading-relaxed border-l-2 border-white/20">
+                            「時候將到，我必將萬民萬族聚來，看見我的榮耀...他們必將我的榮耀傳揚在列國中...我也必從他們中間取人為祭司，為利未人。」
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 原文解析
+                            </h4>
+                            <p class="text-gray-300"><strong class="text-white">榮耀 (Kabod / כָּבוֹド)</strong>：原文根源於「重量」，引申為尊貴、威嚴。在此指上帝全然彰顯祂無與倫比的威嚴與救恩計畫。</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 關鍵問題
+                            </h4>
+                            <p class="text-white font-medium mb-2">上帝如何在一群悖逆的人中，完成祂普世宣教的計畫？</p>
+                            <p class="text-gray-400">上帝在審判中保留了餘民，並將他們轉化為宣教士。更震撼的是，上帝打破了血統限制，預表了新約時代教會作為「君尊的祭司」的使命。</p>
+                        </div>
+
+                        <div class="bg-gold-900/20 p-6 rounded-2xl border border-gold-900/50">
+                            <h4 class="text-gold-400 font-bold mb-3">🌍 宣教視野</h4>
+                            <p class="text-gray-300 italic mb-4">「宣教存在，是因為敬拜不存在。當這時代結束，萬民俯伏在寶座前時，宣教就不再需要了。」</p>
+                            <footer class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12 items-start">
+                    <div class="md:w-1/3 sticky top-32">
+                        <h2 class="font-display text-4xl font-black text-white leading-tight mb-6">
+                            永恆的敬拜：<br/>
+                            <span class="text-gold-500">新天新地的兩極結局</span>
+                        </h2>
+                        <div class="text-gold-400/80 font-accent tracking-widest mb-4">ISAIAH 66:22-24</div>
+                        <div class="w-16 h-1 bg-gold-600"></div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 md:p-12 space-y-10">
+                        <div class="bg-white/5 rounded-2xl p-6 italic text-gray-300 leading-relaxed border-l-2 border-white/20">
+                            「我所要造的新天新地...你們的後裔和你們的名字也必照樣長存...他們必出去觀看那些違背我人的屍首；因為他們的蟲是不死的，他們的火是不滅的。」
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 原文解析
+                            </h4>
+                            <p class="text-gray-300"><strong class="text-white">長存/立定 (Amad / עָמַד)</strong>：原文意為站立、持續。上帝應許新天新地與子民的身份將獲得永恆保障，永不動搖。</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 關鍵問題
+                            </h4>
+                            <p class="text-white font-medium mb-2">經文最後為何將「永恆的敬拜」與「不滅的蟲與火」並列？</p>
+                            <p class="text-gray-400">這提醒我們，宇宙的結局不是含糊不清的，而是涇渭分明的兩極。這給予信徒極大安慰，同時也是嚴厲警惕。</p>
+                        </div>
+
+                        <div class="bg-gold-900/20 p-6 rounded-2xl border border-gold-900/50">
+                            <h4 class="text-gold-400 font-bold mb-3">⚖️ 終極抉擇</h4>
+                            <p class="text-gray-300 italic mb-4">「永恆的結局只有兩個：不是完全與上帝的榮耀聯合，就是被祂的公義永遠隔絕。」</p>
+                            <footer class="text-gold-500 text-sm font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24 space-y-16">
+            <h2 class="font-display text-4xl font-bold text-white text-center flex items-center justify-center gap-4">
+                <span class="text-gold-500">📖</span> 講章文稿
+            </h2>
+            
+            <div class="glass-card p-10 md:p-20 space-y-12 text-lg md:text-xl leading-relaxed text-gray-300 font-light">
+                <div class="text-center mb-12">
+                    <h3 class="font-display text-3xl font-bold text-gold-400 mb-2">賽66:15-24：終極的榮耀與抉擇</h3>
+                    <p class="text-gray-500 uppercase tracking-widest text-sm">迎向新天新地的敬拜</p>
+                </div>
+
+                <p>各位弟兄姊妹，平安。今天我們來到《以賽亞書》的最後一章、最後一段經文。這是一段充滿震撼力、甚至讓人感到戰兢的經文。它向我們揭示了人類歷史的終局，沒有灰色地帶，只有極致的榮耀與嚴厲的審判。</p>
+
+                <div class="border-l-4 border-gold-600 pl-8 my-12">
+                    <h4 class="font-display text-2xl font-bold text-white mb-6">【一、烈火中的公義：不容妥協的聖潔】</h4>
+                    <p>上帝不是一位只會溺愛、對罪惡視而不見的祖父；祂是宇宙的最高法官。經文描繪了荒謬的光景：表面上做足了宗教儀式，但背地裡卻「吃豬肉和倉鼠」，效法異教。陶恕曾說：<strong class="text-gold-500">「一位沒有聖潔烈怒的上帝，祂的愛也必然是廉價的軟弱。」</strong>這提醒我們檢視自己生命中，是否也有那些隱藏的污穢？</p>
+                </div>
+
+                <div class="border-l-4 border-gold-600 pl-8 my-12">
+                    <h4 class="font-display text-2xl font-bold text-white mb-6">【二、萬邦的招聚：看見榮耀的呼召】</h4>
+                    <p>上帝要在審判中留下餘民，將這些「逃脫的」差遣到遙遠的列國。在外邦人中興起祭司，這徹底打破了血統框架！這意味著你我這些原本與以色列諸約無關的外邦人，如今藉著耶穌基督，不僅蒙了拯救，更被賦予了<span class="text-white font-bold">「君尊的祭司」</span>的榮耀身分。</p>
+                </div>
+
+                <div class="border-l-4 border-gold-600 pl-8 my-12">
+                    <h4 class="font-display text-2xl font-bold text-white mb-6">【三、永恆的敬拜：新天新地的兩極結局】</h4>
+                    <p>這段經文的最高潮，也是整卷以賽亞書的結語。一方面，我們看見永恆的應許：<strong class="text-gold-500">「你們的後裔和你們的名字也必照樣長存。」</strong>但在另一方面，第24節卻留下了一幅令人不寒而慄的畫面。因為永恆的結局只有兩個：不是在新天新地中敬拜，就是在不滅的火中沉淪。這是一個<span class="text-white font-black underline decoration-gold-500">不容逃避的抉擇</span>。</p>
+                </div>
+
+                <p class="text-center pt-10 text-gold-200">讓我們離棄生命中的偶像，帶著敬畏的心回應上帝的聖潔；讓我們承接宣教的使命，將福音帶給這世代！</p>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 border-b-4 border-gold-600">
+                <h2 class="font-display text-2xl font-bold text-gold-500 mb-8 flex items-center gap-3">
+                    💡 應用方向
+                </h2>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">01</span> 檢視生命的隱藏偶像，求主光照並煉淨。</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">02</span> 擁抱跨文化宣教使命，支持並參與福音工作。</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">03</span> 建立永恆價值觀，投資在必長存的事物上。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 border-b-4 border-white/20">
+                <h2 class="font-display text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    🎯 回應行動
+                </h2>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4 italic">「認罪與除偶：本週安靜在神面前，宣告棄絕偶像。」</li>
+                    <li class="flex gap-4 italic">「宣教代禱：認領福音未及群體，每天禱告五分鐘。」</li>
+                    <li class="flex gap-4 italic">「委身敬拜：將主日視為預演新天新地的敬拜。」</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pb-20">
+            <h2 class="font-display text-3xl font-bold text-gold-500 mb-12 flex items-center gap-3">
+                <span class="p-2 bg-gold-500/10 rounded-lg">✨</span> 屬靈前輩佳句
+            </h2>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <!-- Quote 1 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是昂貴的恩典。昂貴的恩典是那埋藏在地下的寶貝……它是呼召我們來跟從耶穌基督的王權。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">潘霍華 (Dietrich Bonhoeffer)</span>
+                        <span class="text-gray-500 italic">《做門徒的代價》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「上帝的聖潔不是祂眾多屬性中的一個，而是祂一切屬性的總和與完美。當我們失去對上帝聖潔的敬畏時，我們的敬拜就只剩下娛樂。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">陶恕 (A.W. Tozer)</span>
+                        <span class="text-gray-500 italic">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「偶像崇拜不僅僅是向一尊雕像跪拜，更是把任何事物看得比上帝更重要。當好東西變成了終極的東西，它就成了毀滅我們的偶像。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">提摩太·凱勒 (Timothy Keller)</span>
+                        <span class="text-gray-500 italic">《假神眾生相》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「在十字架上，上帝的公義與慈愛不僅被展現出來，更被完美地滿足了。若沒有烈火般的公義審判，十字架的赦免就毫無意義。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">約翰·史托德 (John Stott)</span>
+                        <span class="text-gray-500 italic">《當代基督十架》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「整個世界都是上帝榮耀的劇場。我們被創造的唯一目的，就是要成為這榮耀的見證人與傳揚者。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">約翰·加爾文 (John Calvin)</span>
+                        <span class="text-gray-500 italic">《基督教要義》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「沒有任何事物比永恆更真實。世人對地獄的輕忽，並不能熄滅那裡的一絲火焰；我們唯有緊緊抓住基督，才能逃避那將來的忿怒。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">喬納森·愛德華茲 (Jonathan Edwards)</span>
+                        <span class="text-gray-500 italic">《落在忿怒之神手中的罪人》</span>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「信心是一座活生生、大膽信靠上帝恩典的堡壘；因著這確據，信徒願意為上帝的名，將生命投入萬邦的宣教與事奉中。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">馬丁·路德 (Martin Luther)</span>
+                        <span class="text-gray-500 italic">《羅馬書註釋序言》</span>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「如果罪人必須下地獄，至少讓他們是從我們的屍體上跨過去的。如果他們要滅亡，讓他們在我們抱住他們膝蓋的懇求聲中滅亡。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">司布真 (Charles Spurgeon)</span>
+                        <span class="text-gray-500 italic">《得人漁夫》</span>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「我們現在所過的生活，就是我們在永恆中將要過的生活的彩排。新天新地的敬拜，是從我們今天順服上帝的每一個微小決定開始的。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">魏樂德 (Dallas Willard)</span>
+                        <span class="text-gray-500 italic">《靈性操練真諦》</span>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="break-inside-avoid glass-card p-8 group">
+                    <p class="text-gray-200 text-lg mb-4 group-hover:text-gold-200 transition-colors">「天堂不是一個模糊的夢境，地獄也不是一個古老的傳說。當人類歷史走到盡頭時，除了這兩個永恆的歸宿，再也沒有其他的選項。」</p>
+                    <div class="flex justify-between items-center text-sm font-accent">
+                        <span class="text-gold-500 font-bold">葛理翰 (Billy Graham)</span>
+                        <span class="text-gray-500 italic">《與神和好》</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center py-12 border-t border-white/5">
+            <p class="text-gray-600 text-sm tracking-widest">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-black flex items-center justify-center rounded-full shadow-2xl hover:bg-gold-500 transition-all duration-300 hover:scale-110 z-50 group">
+        <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+
+</body>
+</html>

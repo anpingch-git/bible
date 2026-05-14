@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太 26:14-30:恩典的筵席，背叛的暗影——在逾越節看見基督的立約之愛</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        blood: {
+                            800: '#7f1d1d',
+                            900: '#450a0a',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(20, 20, 24, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fef9c3 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(234, 179, 8, 0.3);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #ca8a04;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="font-display font-bold text-gold-500 text-lg hidden md:block">太 26:14-30</div>
+            <div class="flex space-x-6 md:space-x-10 text-sm md:text-base font-medium overflow-x-auto whitespace-nowrap scrollbar-hide">
+                <a href="#prayer" class="nav-link hover:text-gold-500">禱告</a>
+                <a href="#outline" class="nav-link hover:text-gold-500">大綱</a>
+                <a href="#sermon" class="nav-link hover:text-gold-500">講章</a>
+                <a href="#quotes" class="nav-link hover:text-gold-500">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/9c44b22f-9770-4e56-ad99-7dadfe5564b7' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-900/40 via-dark-900/80 to-dark-900"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <span class="inline-block py-1 px-3 mb-6 border border-gold-600/50 rounded-full text-gold-500 text-xs md:text-sm tracking-widest uppercase font-display bg-gold-900/20 backdrop-blur-sm">Sermon Topic</span>
+            <h1 class="text-4xl md:text-7xl font-serif font-black mb-6 leading-tight gradient-text text-glow">
+                恩典的筵席，背叛的暗影<br>
+                <span class="text-2xl md:text-4xl block mt-4 text-white/90">在逾越節看見基督的立約之愛</span>
+            </h1>
+            <p class="text-lg md:text-2xl font-light text-white/60 font-serif italic">馬太福音 26:14-30</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-20">
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="bg-gold-600/20 p-3 rounded-xl">
+                        <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-serif font-bold tracking-wider">開場禱告</h2>
+                </div>
+                <p class="text-xl leading-relaxed text-white/80 font-serif italic">
+                    「主耶穌，我們來到祢的施恩座前。當我們重讀祢被賣的那一夜，我們看見人心的黑暗與背叛，卻更看見祢無法測度的愛與恩典。求聖靈光照我們的內心，讓我們不只是看見猶大的失敗，更看見我們自己裡面那可能出賣祢的私慾。感謝祢為我們擘開身體、流出寶血，設立了新約。求祢今天藉著祢的話語對我們的心說話，讓我們在祢的恩筵中被更新、被赦免、被尋回。奉耶穌基督的聖名祈求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-3 mb-2">
+                <div class="bg-gold-600/20 p-3 rounded-xl">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold tracking-wider">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass p-6 rounded-2xl section-card hover:bg-gold-900/10 group">
+                    <span class="text-gold-600 font-display font-bold text-sm block mb-2 uppercase">Part 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-500 transition-colors">暗盤與預備——價值三十塊錢的信仰</h3>
+                    <p class="text-xs text-white/40 mt-2 italic">(太 26:14-19)</p>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl section-card hover:bg-gold-900/10 group">
+                    <span class="text-gold-600 font-display font-bold text-sm block mb-2 uppercase">Part 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-500 transition-colors">同席與拆穿——「主，是我嗎？」的省察</h3>
+                    <p class="text-xs text-white/40 mt-2 italic">(太 26:20-25)</p>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl section-card hover:bg-gold-900/10 group">
+                    <span class="text-gold-600 font-display font-bold text-sm block mb-2 uppercase">Part 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-500 transition-colors">破裂與立約——為多人流出的立約之血</h3>
+                    <p class="text-xs text-white/40 mt-2 italic">(太 26:26-30)</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Sections -->
+            <div class="space-y-20 pt-10">
+                <!-- Part 1 Detail -->
+                <div id="part1" class="scroll-mt-24 bg-dark-800/50 rounded-3xl p-8 md:p-12 border-l-4 border-gold-600">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-4">
+                        <span class="text-gold-600 font-display">I.</span> 暗盤與預備——價值三十塊錢的信仰
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-dark-900/60 p-6 rounded-xl border border-white/5">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 0112 4a8 8 0 018 8v5.172a2 2 0 01-.586 1.414l-4.243 4.243a2 2 0 01-1.414.586H5a2 2 0 01-2-2V9a2 2 0 012-2h2a2 2 0 012 2v2.804A7.993 7.993 0 019 12a8 8 0 01-8-8V4a8 8 0 018-8v.804z"/></svg> 引用經文
+                            </h4>
+                            <p class="text-white/80 leading-relaxed font-serif">(太 26:14-19) 當下，十二門徒裡有一個稱為加略人猶大的，去見祭司長，說：「我把他交給你們，你們願意給我多少錢？」他們就給了他三十塊錢... 耶穌說：「你們進城去，到某人那裡... 夫子說：我的時候快到了，我與門徒要在你家裡守逾越節。」門徒遵著耶穌所吩咐的去行，就預備了逾越節的筵席。</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2">關鍵字: <span class="text-white font-display">paradidomi</span></h4>
+                                <p class="text-sm text-white/70">「交給」- 這個字在神學層面上，也描述父神將祂的獨生子「交出」為我們受死，人的背叛最終成就了神的救贖。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2">關鍵問題</h4>
+                                <p class="text-sm text-white/70">猶大為什麼為了區區三十塊錢就出賣耶穌？我們今天的信仰是否也被標上了價格？</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-6">
+                            <blockquote class="text-gold-100 font-serif italic text-lg relative pl-8">
+                                <span class="absolute left-0 top-0 text-4xl text-gold-600 opacity-50">"</span>
+                                「廉價的恩典是我們教會的死敵。我們今天所爭辯的，是重價的恩典。」
+                                <footer class="text-sm text-white/50 mt-2">— 潘霍華 (Dietrich Bonhoeffer)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Detail -->
+                <div id="part2" class="scroll-mt-24 bg-dark-800/50 rounded-3xl p-8 md:p-12 border-l-4 border-gold-600">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-4">
+                        <span class="text-gold-600 font-display">II.</span> 同席與拆穿——「主，是我嗎？」的省察
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-dark-900/60 p-6 rounded-xl border border-white/5">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">引用經文</h4>
+                            <p class="text-white/80 leading-relaxed font-serif">(太 26:20-25) 到了晚上，耶穌和十二個門徒坐席... 耶穌說：「我實在告訴你們，你們中間有一個人要賣我了。」他們就甚憂愁，一個一個的問他說：「主，是我嗎？」</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2">關鍵字: <span class="text-white font-display">lupeo / Meti ego eimi</span></h4>
+                                <p class="text-sm text-white/70">「憂愁」與「是我嗎？」反映了門徒意識到自己內心也有背叛的潛力，這種問法帶有強烈的恐懼與不確定。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2">解析與應用</h4>
+                                <p class="text-sm text-white/70">真正的悔改不是拿著放大鏡看別人的罪，而是拿著X光片看自己的心。門徒稱呼「主」，而猶大稱呼「拉比」。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-6">
+                            <blockquote class="text-gold-100 font-serif italic text-lg relative pl-8">
+                                <span class="absolute left-0 top-0 text-4xl text-gold-600 opacity-50">"</span>
+                                「人心是一個製造偶像的工廠。我們太容易在自欺中，把自己的私慾包裝成神聖的呼召。」
+                                <footer class="text-sm text-white/50 mt-2">— 約翰·加爾文 (John Calvin)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Detail -->
+                <div id="part3" class="scroll-mt-24 bg-dark-800/50 rounded-3xl p-8 md:p-12 border-l-4 border-gold-600">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-4">
+                        <span class="text-gold-600 font-display">III.</span> 破裂與立約——為多人流出的立約之血
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-dark-900/60 p-6 rounded-xl border border-white/5">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">引用經文</h4>
+                            <p class="text-white/80 leading-relaxed font-serif">(太 26:26-30) 耶穌拿起餅來... 說：「你們拿著吃，這是我的身體」；又拿起杯來... 說：「這是我立約的血，為多人流出來，使罪得赦。」</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2">關鍵字: <span class="text-white font-display">diatheke / aphesis</span></h4>
+                                <p class="text-sm text-white/70">「約」與「赦免」。耶穌宣告了新約，這份約不是建立在我們的忠誠，而是建立在基督的血。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2">例證解析</h4>
+                                <p class="text-sm text-white/70">如同集中營裡自願代死的科爾貝神父，聖餐桌上的餅與杯是耶穌對我們說：「我代替了你」。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-6">
+                            <blockquote class="text-gold-100 font-serif italic text-lg relative pl-8">
+                                <span class="absolute left-0 top-0 text-4xl text-gold-600 opacity-50">"</span>
+                                「除了在十字架上，我們無法在任何地方真正明白罪的邪惡，也無法在任何地方真正明白神愛的浩大。」
+                                <footer class="text-sm text-white/50 mt-2">— 約翰·史托德 (John Stott)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="pt-20">
+            <div class="flex items-center gap-3 mb-12">
+                <div class="bg-gold-600/20 p-3 rounded-xl">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold tracking-wider">講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-gold max-w-none space-y-12 font-serif text-lg md:text-xl text-white/80 leading-relaxed">
+                <h3 class="text-3xl text-gold-500 font-bold text-center mb-16">恩典的筵席，背叛的暗影——在逾越節看見基督的立約之愛</h3>
+                
+                <p>弟兄姊妹，平安。想像一個場景：你正與最親密的朋友共進晚餐。桌上擺滿了豐盛的食物，但空氣中卻瀰漫著一股令人窒息的張力。因為你知道，坐在你身邊的其中一個人，剛剛已經把你出賣給了想要殺你的人。</p>
+                
+                <p>這不是電影情節，這是耶穌在世上最後一個晚上的真實寫照。今天我們來到馬太福音26章，我們將看見一幅強烈對比的畫面：<span class="text-gold-500 font-bold underline decoration-gold-600 decoration-2 underline-offset-4">人類最黑暗的背叛，與上帝最榮耀的恩典，竟然在同一張餐桌上相遇了。</span></p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl text-gold-100 font-bold">第一段：暗盤與預備——價值三十塊錢的信仰</h4>
+                    <p>馬太福音26章14到16節這樣記載：<span class="text-white font-bold">「當下，十二門徒裡有一個稱為加略人猶大的，去見祭司長，說：『我把他交給你們，你們願意給我多少錢？』他們就給了他三十塊錢。」</span></p>
+                    <p>三十塊錢，在當時剛好是一個奴隸被牛撞死時的賠償金。猶大為什麼要這麼做？因為耶穌讓他失望了。猶大要的是一個能推翻羅馬政權的政治領袖，但耶穌卻說祂要去上十字架。當耶穌不符合猶大的期待時，猶大決定停損，把耶穌「賤賣」了。</p>
+                    <div class="bg-blood-900/30 border border-blood-800 p-6 rounded-xl italic">
+                        這讓我們不得不問一個刺心的問題：我們今天的信仰，是否也被標上了價格？
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl text-gold-100 font-bold">第二段：同席與拆穿——「主，是我嗎？」的省察</h4>
+                    <p>時間來到了晚上，逾越節的筵席開始了。耶穌拋出了一顆震撼彈。第21節：<span class="text-white font-bold">「正吃的時候，耶穌說：『我實在告訴你們，你們中間有一個人要賣我了。』」</span></p>
+                    <p>請注意門徒的反應：<span class="text-white font-bold">「一個一個的問他說：『主，是我嗎？』」</span> 真正的復興，永遠是從「主，是我出了問題」的自我省察開始的。加爾文曾說：人心是一個製造偶像的工廠。當主的話語如兩刃的劍刺入時，他們展現了真正的屬靈覺醒——看見自己的不堪。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl text-gold-100 font-bold">第三段：破裂與立約——為多人流出的立約之血</h4>
+                    <p>就在這個充滿懷疑、背叛與恐懼的夜晚，耶穌做了一件徹底改變人類歷史的事：<span class="text-white font-bold text-glow">「這是我立約的血，為多人流出來，使罪得赦。」</span></p>
+                    <p>這就是恩典！在人類罪惡達到最頂峰、人心最黑暗的時刻，耶穌沒有收回祂的愛，反而設立了新約。這杯「立約的血」，宣告了我們的罪債被徹底赦免。這不是建立在我們有多完美，而是建立在基督的犧牲有多完全。</p>
+                    <p class="text-center text-gold-500 font-black text-2xl py-8">
+                        背叛的暗影雖然存在，但十字架的光芒更加耀眼。
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Practical Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-20">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6 text-gold-500 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 回應行動
+                </h3>
+                <ul class="space-y-4 text-white/70">
+                    <li class="flex gap-4 items-start"><span class="bg-gold-600 text-dark-900 px-2 py-0.5 rounded text-xs font-bold">01</span> 找出心中的「三十塊錢」：求神光照你心中是否有任何事物比耶穌更重要。</li>
+                    <li class="flex gap-4 items-start"><span class="bg-gold-600 text-dark-900 px-2 py-0.5 rounded text-xs font-bold">02</span> 實踐誠實的認罪：坦白一項你一直隱藏的軟弱，經歷赦免的自由。</li>
+                    <li class="flex gap-4 items-start"><span class="bg-gold-600 text-dark-900 px-2 py-0.5 rounded text-xs font-bold">03</span> 帶著敬畏感恩：默想耶穌為你擘開身體的代價，回應祂的立約之愛。</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6 text-gold-500 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 結論關鍵字
+                </h3>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <span class="px-6 py-3 bg-blood-900/40 border border-blood-800 rounded-full text-xl font-bold text-white">省察 (Self-Examination)</span>
+                    <span class="px-6 py-3 bg-blood-900/40 border border-blood-800 rounded-full text-xl font-bold text-white">寶血 (Precious Blood)</span>
+                    <span class="px-6 py-3 bg-blood-900/40 border border-blood-800 rounded-full text-xl font-bold text-white">立約 (Covenant)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-20 space-y-12">
+            <div class="flex items-center gap-3">
+                <div class="bg-gold-600/20 p-3 rounded-xl">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold tracking-wider">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass p-6 rounded-2xl border-l-2 border-gold-600">
+                    <p class="text-white/90 font-serif leading-relaxed mb-4">「廉價的恩典是我們教會的死敵。我們今天所爭辯的，是重價的恩典。重價的恩典是隱藏的寶貝，為了它，人會變賣一切所有的。」</p>
+                    <footer class="text-xs text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)，《追隨基督》</footer>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-2 border-gold-600">
+                    <p class="text-white/90 font-serif leading-relaxed mb-4">「除了在十字架上，我們無法在任何地方真正明白罪的邪惡，也無法在任何地方真正明白神愛的浩大。」</p>
+                    <footer class="text-xs text-gold-500 font-bold">— 約翰·史托德 (John Stott)，《當代基督十架》</footer>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-2 border-gold-600">
+                    <p class="text-white/90 font-serif leading-relaxed mb-4">「人心是一個製造偶像的工廠，每個時刻都在打造新的偶像。」</p>
+                    <footer class="text-xs text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)，《基督教要義》</footer>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-2 border-gold-600">
+                    <p class="text-white/90 font-serif leading-relaxed mb-4">「福音的本質是：我們比自己所敢承認的更敗壞；但同時，我們在耶穌基督裡所蒙的愛和接納，比我們所敢奢望的更深廣。」</p>
+                    <footer class="text-xs text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</footer>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-2 border-gold-600">
+                    <p class="text-white/90 font-serif leading-relaxed mb-4">「我們之所以不能在神面前經歷深刻的喜樂，是因為我們從未深刻地為自己的罪憂傷。」</p>
+                    <footer class="text-xs text-gold-500 font-bold">— 陶恕 (A.W. Tozer)，《渴慕神》</footer>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-2 border-gold-600">
+                    <p class="text-white/90 font-serif leading-relaxed mb-4">「律法說：『做這個』，它從未被完成；恩典說：『相信這個』，一切就都成就了。」</p>
+                    <footer class="text-xs text-gold-500 font-bold">— 馬丁·路德 (Martin Luther)</footer>
+                </div>
+            </div>
+            
+            <!-- Warning -->
+            <div class="pt-12 text-center text-white/30 text-xs tracking-widest border-t border-white/5">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Top Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-dark-900 rounded-full flex items-center justify-center floating-btn hover:bg-gold-500 transition-transform hover:scale-110 active:scale-90 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

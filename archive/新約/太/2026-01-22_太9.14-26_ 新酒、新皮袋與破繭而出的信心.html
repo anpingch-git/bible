@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太 9:14-26 新酒、新皮袋與破繭而出的信心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9d1',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#121212',
+                            700: '#1e1e1e',
+                            600: '#2d2d2d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #facc15 0%, #eab308 50%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #eab308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(234, 179, 8, 0.2);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: #eab308;
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(234, 179, 8, 0.4);
+            cursor: pointer;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav h-14 md:h-16 flex items-center px-4 md:px-8">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
+            <span class="text-xs md:text-sm font-bold text-gray-400">太 9:14-26</span>
+            <div class="flex space-x-4 md:space-x-8 text-sm font-medium">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
+        <img src='https://opal.google/board/blobs/0e4ed4e9-a865-4783-97a4-81913b2d9caf' alt='馬太福音 9:14-26 信心觸摸' class="w-full h-full object-cover opacity-60" />
+        <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+        <div class="absolute bottom-12 left-0 right-0 px-6 text-center max-w-4xl mx-auto">
+            <p class="text-gold-400 font-bold tracking-widest mb-4 uppercase text-sm md:text-base">Matthew 9:14-26</p>
+            <h1 class="text-4xl md:text-6xl font-serif font-black mb-4 leading-tight gradient-text">新酒、新皮袋與破繭而出的信心</h1>
+            <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- 1. Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-12 border-l-4 border-gold-500">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="section-icon">🙏</span> 禱告
+                </h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 italic">
+                    「主耶穌，我們感謝祢！祢是帶來喜樂與生命更新的新郎。求祢賜給我們一個『新皮袋』的心，使我們不再僵化於宗教的儀文與傳統，而是能承載祢那充滿活力與恩典的『新酒』。主啊，當我們生命中遭遇如血漏婦人般的長久絕望，或是如管會堂者面對至親死亡的盡頭時，求祢賜給我們破除萬難、單單觸摸祢的信心。願祢復活的大能今天再次進入我們生命的死胡同裡，成就奇妙的醫治與拯救。奉耶穌基督得勝的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="text-2xl font-bold mb-10 flex items-center">
+                <span class="section-icon">📜</span> 講道大綱
+            </h2>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="#part1" class="bento-item glass-card p-6 flex justify-between items-center group hover:bg-gold-500/10 transition-colors">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold block mb-1">第一段</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">新酒與新皮袋——突破僵化的宗教框架</h3>
+                    </div>
+                    <span class="text-gray-500 font-mono text-sm">太 9:14-17</span>
+                </a>
+                <a href="#part2" class="bento-item glass-card p-6 flex justify-between items-center group hover:bg-gold-500/10 transition-colors">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold block mb-1">第二段</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">血漏婦人的觸摸——突破絕望的真實信心</h3>
+                    </div>
+                    <span class="text-gray-500 font-mono text-sm">太 9:18-22</span>
+                </a>
+                <a href="#part3" class="bento-item glass-card p-6 flex justify-between items-center group hover:bg-gold-500/10 transition-colors">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold block mb-1">第三段</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">管會堂者的祈求——突破死亡的復活大能</h3>
+                    </div>
+                    <span class="text-gray-500 font-mono text-sm">太 9:23-26</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Detailed Analysis -->
+        <section class="space-y-20">
+            <!-- Part 1 -->
+            <article id="part1" class="scroll-mt-24 space-y-8">
+                <div class="flex items-center space-x-4">
+                    <span class="text-5xl font-black text-gold-500/20">01</span>
+                    <h2 class="text-3xl font-bold">新酒與新皮袋——突破僵化的宗教框架</h2>
+                </div>
+                
+                <div class="glass-card p-6 md:p-8 space-y-6">
+                    <div class="bg-dark-900/50 p-6 rounded-xl border-l-2 border-gold-600">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center">📖 經文範圍</h4>
+                        <p class="text-gray-300 leading-relaxed">那時，約翰的門徒來見耶穌，說：「我們和法利賽人常常禁食，你的門徒倒不禁食，這是為什麼呢？」耶穌對他們說：「新郎和陪伴之人同在的時候，陪伴之人豈能哀慟呢？但日子將到，新郎要離開他們，那時候他們就要禁食。沒有人把新布補在舊衣服上；因為所補上的反帶壞了那衣服，破的就更大了。也沒有人把新酒裝在舊皮袋裡；若是這樣，皮袋就裂開，酒漏出來，連皮袋也壞了。惟獨把新酒裝在新皮袋裡，兩樣就都保全了。」</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center">🔑 關鍵原文</h4>
+                            <p class="text-gray-300"><span class="font-bold text-white">新皮袋 (New wineskins)</span>：希臘原文為 *askos* (皮袋) 與 *kainos* (品質上的新)。舊皮袋失去彈性；新皮袋則能承受新酒 (*neos*) 發酵的膨脹壓力。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center">❓ 關鍵問題</h4>
+                            <p class="text-gray-300 font-medium">為什麼耶穌不要求門徒遵守傳統的禁食？</p>
+                            <p class="text-gray-400 text-sm">解析：耶穌強調「關係優先於儀式」。祂是「新郎」，核心是與基督相交的喜樂（新酒），而非死守規條（舊皮袋）。</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-white/5">
+                        <h4 class="text-gold-500 font-bold mb-3">💡 生活例證</h4>
+                        <p class="text-gray-300 italic">就像在十年前的老舊電腦上，硬要安裝最新的人工智慧軟體。硬體跑不動，甚至會導致系統崩潰。生命若不被更新，用律法主義過恩典生活，最終只會枯乾。</p>
+                    </div>
+                    
+                    <div class="bg-gold-500/5 p-4 rounded-lg text-center italic">
+                        <p class="text-gold-400">「宗教的運作模式是『我順服，所以我蒙接納』；福音的運作模式卻是『我蒙接納，所以我順服』。」——提摩太·凱勒</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 2 -->
+            <article id="part2" class="scroll-mt-24 space-y-8">
+                <div class="flex items-center space-x-4">
+                    <span class="text-5xl font-black text-gold-500/20">02</span>
+                    <h2 class="text-3xl font-bold">血漏婦人的觸摸——突破絕望的真實信心</h2>
+                </div>
+                
+                <div class="glass-card p-6 md:p-8 space-y-6">
+                    <div class="bg-dark-900/50 p-6 rounded-xl border-l-2 border-gold-600">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center">📖 經文範圍</h4>
+                        <p class="text-gray-300 leading-relaxed">有一个女人，患了十二年的血漏，來到耶穌背後，摸他的衣裳繸子；因為她心裡說：「我只摸他的衣裳，就必痊癒。」耶穌轉過來，看見她，就說：「女兒，放心！你的信救了你。」從那時候，女人就痊癒了。</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center">🔑 關鍵原文</h4>
+                            <p class="text-gray-300"><span class="font-bold text-white">痊癒/救了 (Healed/Saved)</span>：希臘原文 *sōzō*。不僅代表身體的「痊癒」，更廣泛指靈魂的「拯救」。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center">❓ 關鍵問題</h4>
+                            <p class="text-gray-300 font-medium">群眾擁擠耶穌，為什麼只有她的「觸摸」帶來醫治？</p>
+                            <p class="text-gray-400 text-sm">解析：這不是好奇的碰撞，而是「絕望中的專注信心」。醫治關鍵不在於動作完美，而在於觸摸的對象是生命的主。</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-white/5">
+                        <h4 class="text-gold-500 font-bold mb-3">💡 生活例證</h4>
+                        <p class="text-gray-300 italic">溺水的人只要死死抓住救生圈就能得救。拯救他的不是他抓握的力氣，而是救生圈連接著岸上強有力的救援者。</p>
+                    </div>
+
+                    <div class="bg-gold-500/5 p-4 rounded-lg text-center italic">
+                        <p class="text-gold-400">「微小的信心能將你的靈魂帶到天堂，但巨大的信心能將天堂帶進你的靈魂。」——司布真</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 3 -->
+            <article id="part3" class="scroll-mt-24 space-y-8">
+                <div class="flex items-center space-x-4">
+                    <span class="text-5xl font-black text-gold-500/20">03</span>
+                    <h2 class="text-3xl font-bold">管會堂者的祈求——突破死亡的復活大能</h2>
+                </div>
+                
+                <div class="glass-card p-6 md:p-8 space-y-6">
+                    <div class="bg-dark-900/50 p-6 rounded-xl border-l-2 border-gold-600">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center">📖 經文範圍</h4>
+                        <p class="text-gray-300 leading-relaxed">耶穌進去，拉著閨女的手，閨女便起來了。於是這風聲傳遍了那地方。</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center">🔑 關鍵原文</h4>
+                            <p class="text-gray-300"><span class="font-bold text-white">睡著了 (Sleeping)</span>：原文 *katheudō*。在人眼中是死亡，但在耶穌眼中，信徒的死亡如同睡眠，因為主擁有喚醒的絕對權柄。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center">❓ 關鍵問題</h4>
+                            <p class="text-gray-300 font-medium">耶穌為什麼要將嗤笑的群眾「攆出」？</p>
+                            <p class="text-gray-400 text-sm">解析：神的大能不需迎合不信的喧嘩。耶穌將絕望聲音排除，為父親建立信心的空間，彰顯祂是掌管生命的主。</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-white/5">
+                        <h4 class="text-gold-500 font-bold mb-3">💡 生活例證</h4>
+                        <p class="text-gray-300 italic">當最權威的主治醫師走出病房平靜地說「手術成功」時，所有的喧嘩都失去了意義。耶穌就是那位走進死胡同的至高醫治者。</p>
+                    </div>
+
+                    <div class="bg-gold-500/5 p-4 rounded-lg text-center italic">
+                        <p class="text-gold-400">「對於信徒而言，死亡不是結束，而是真正生命的開始；因為基督已經為我們勝過了死亡的權勢。」——潘霍華</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- 4. Application -->
+        <section class="space-y-12">
+            <h2 class="text-3xl font-bold flex items-center">
+                <span class="section-icon">🎯</span> 應用方向
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bento-item glass-card p-6 border-t-2 border-gold-500">
+                    <h3 class="text-lg font-bold mb-3 text-gold-400">檢視生命皮袋</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">是否落入宗教慣性？只在乎聚會形式與服事規矩，卻失去了與主親密的喜樂？</p>
+                </div>
+                <div class="bento-item glass-card p-6 border-t-2 border-gold-500">
+                    <h3 class="text-lg font-bold mb-3 text-gold-400">化絕望為行動</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">面對長久無法解決的「血漏」（病痛、癮頭、破裂關係），勇敢伸出信心的手觸摸耶穌。</p>
+                </div>
+                <div class="bento-item glass-card p-6 border-t-2 border-gold-500">
+                    <h3 class="text-lg font-bold mb-3 text-gold-400">隔絕不信聲音</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">當理智告訴你「完了」時，學習將這些聲音「攆出」，單單邀請耶穌進入你的死局。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5 & 6. Conclusion & Action -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="section-icon">🏁</span> 結論
+                </h2>
+                <div class="flex flex-wrap gap-4">
+                    <span class="bg-gold-500 text-black px-4 py-2 rounded-full font-bold">更新 Renewal</span>
+                    <span class="bg-gold-500 text-black px-4 py-2 rounded-full font-bold">信心 Faith</span>
+                    <span class="bg-gold-500 text-black px-4 py-2 rounded-full font-bold">復活 Resurrection</span>
+                </div>
+            </div>
+            <div class="glass-card p-8">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="section-icon">⚡</span> 回應行動
+                </h2>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">●</span> 改變一項枯燥的宗教習慣，以「與好友聊天」的心態與耶穌建立關係。</li>
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">●</span> 為一件絕望的事每天禱告，宣告「主，我只要觸摸祢，這事就必經歷恩典」。</li>
+                    <li class="flex items-start"><span class="text-gold-500 mr-2">●</span> 遇負面聲音時安靜三分鐘，默唸「主啊，生命在祢」，將負面趕出意念。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 7. Sermon Manuscript -->
+        <section id="sermon" class="scroll-mt-24 space-y-8">
+            <h2 class="text-3xl font-bold flex items-center">
+                <span class="section-icon">✍️</span> 講章文稿
+            </h2>
+            <div class="glass-card p-8 md:p-12 text-gray-300 leading-loose space-y-6 text-lg">
+                <p class="font-bold text-white text-2xl mb-8">【新酒、新皮袋與破繭而出的信心】</p>
+                <p>親愛的弟兄姊妹，今天我們要透過《馬太福音》第九章，來看耶穌如何挑戰當時的框架，並為我們展現突破絕望的生命大能。我們生命中常常被許多舊有的習慣、長期的痛苦，甚至看似無解的死局給困住。但耶穌今天走向我們，要給我們全新的眼光。</p>
+                
+                <h3 class="text-xl font-bold text-gold-500 mt-10">第一段：新酒與新皮袋——突破僵化的宗教框架</h3>
+                <p>耶穌宣告了一個震撼的信息：<span class="text-white font-bold">信仰的核心不是死守宗教的儀式，而是與「新郎」耶穌基督建立充滿喜樂與活力的關係！</span> 如果我們不求聖靈更新我們的心（成為新皮袋），恩典的新酒是無法注入我們生命的。</p>
+
+                <h3 class="text-xl font-bold text-gold-500 mt-10">第二段：血漏婦人的觸摸——突破絕望的真實信心</h3>
+                <p>群眾都在「擁擠」耶穌，但只有這個女人是帶著極大的需要去「觸摸」耶穌。不需要完美的禱告詞，不需要等自己變好了才來找神，帶著你現在的殘破，從背後伸出信心的手去觸摸祂，耶穌的恩典夠你用！</p>
+
+                <h3 class="text-xl font-bold text-gold-500 mt-10">第三段：管會堂者的祈求——突破死亡的復活大能</h3>
+                <p>在人的眼中是絕對的死局，在神的眼中卻不過是「睡著了」。當我們面對生命中看似已經「死亡」的婚姻、事業或夢想時，耶穌要你把這些不信的聲音「攆出」你的心房。唯有當我們關上不信的噪音，讓耶穌親自走進我們生命的死胡同，拉起我們的手，復活的神蹟就要發生！</p>
+
+                <p class="pt-8 border-t border-white/10 italic">願我們都成為承載恩典的新皮袋，勇敢觸摸主，經歷祂使死人復活的大能！</p>
+            </div>
+        </section>
+
+        <!-- 8. Famous Quotes -->
+        <section id="quotes" class="scroll-mt-24 space-y-12">
+            <h2 class="text-3xl font-bold flex items-center">
+                <span class="section-icon">💎</span> 名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-300 italic mb-4">「如果聖靈今天從我們的教會中被收回，我們所做的百分之九十五的事情會繼續下去，我們也不會察覺到有什麼不同。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-300 italic mb-4">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-300 italic mb-4">「信心是活潑的、放膽的對神恩典的信靠，如此確定，以至於信徒甘願為此死一千次。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-300 italic mb-4">「如果你有一個神，祂永遠不與你起衝突，那麼你崇拜的可能只是你自己理想化的鏡像。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- More quotes shortened for design flow but data complete -->
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-300 italic mb-4">「有時候，神讓我們陷入絕望的深淵，是為了讓我們發現祂是我們唯一的磐石。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-gray-300 italic mb-4">「我們的心是一座持續製造偶像的工廠。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-gray-500 mt-12 pb-24">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top / Start -->
+    <a href="#prayer" class="floating-btn" title="回到起點">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for all anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

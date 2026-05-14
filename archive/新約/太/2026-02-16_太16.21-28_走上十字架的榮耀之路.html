@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太 16:21-28 捨與得的悖論：走上十字架的榮耀之路</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        dark: {
+                            base: '#0a0a0a',
+                            card: '#161616',
+                            accent: '#1f1f1f'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #a16207 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #161616 0%, #0a0a0a 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .bento-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(234, 179, 8, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #eab308;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-50 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="font-serif font-bold text-gold-500 tracking-tighter">太 16:21-28</div>
+            <div class="flex gap-6 text-sm font-medium tracking-widest text-gray-400">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/6cdf9988-16a2-4f6e-ae6e-af24cd97b0da' alt='馬太福音 16:21-28 史詩電影風格' class="w-full h-full object-cover opacity-60 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-base via-transparent to-dark-base/40"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl animate-fade-in">
+            <span class="inline-block px-4 py-1 mb-6 border border-gold-500/50 rounded-full text-gold-400 text-sm tracking-[0.2em] uppercase">Matthew 16:21-28</span>
+            <h1 class="font-serif text-5xl md:text-7xl font-black mb-8 leading-tight text-gradient">
+                捨與得的悖論<br>
+                <span class="text-4xl md:text-5xl font-light">走上十字架的榮耀之路</span>
+            </h1>
+            <div class="w-24 h-1 bg-gold-600 mx-auto rounded-full"></div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-24 space-y-32">
+
+        <!-- Section: Prayer -->
+        <section id="prayer" class="relative group">
+            <div class="absolute -left-4 top-0 w-1 h-full bg-gold-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="flex items-center gap-4 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">會前禱告</h2>
+            </div>
+            <div class="card-gradient p-8 md:p-12 rounded-3xl text-xl leading-relaxed italic text-gray-300 font-light border-l-4 border-gold-500">
+                「主啊，我們來到祢面前，承認我們的本性時常如同彼得一樣，貪愛世上的安逸，逃避受苦的道路。求祢的聖靈光照我們，讓我們看見十字架不僅是祢拯救我們的代價，更是我們跟從祢的唯一道路。賜我們勇氣去捨己，放下自己對生命的掌控權，背起屬於我們的十字架。讓我們有一雙具有永恆視角的眼睛，看透世界的虛謊，不叫我們賺得全世界卻賠上自己的生命。奉主耶穌基督得勝的名求，阿們。」
+            </div>
+        </section>
+
+        <!-- Section: Outline Grid -->
+        <section id="outline">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">信息大綱</h2>
+            </div>
+            
+            <!-- Quick Navigation Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="flex flex-col p-6 rounded-2xl bg-dark-accent hover:bg-gold-900/20 border border-white/5 transition-all group">
+                    <span class="text-xs text-gold-500 font-bold mb-2 opacity-60 tracking-widest">第一部分</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400">神旨意與人意念的衝突</span>
+                    <span class="text-sm text-gray-500 mt-2">太 16:21-23</span>
+                </a>
+                <a href="#part2" class="flex flex-col p-6 rounded-2xl bg-dark-accent hover:bg-gold-900/20 border border-white/5 transition-all group">
+                    <span class="text-xs text-gold-500 font-bold mb-2 opacity-60 tracking-widest">第二部分</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400">捨己與背十架的呼召</span>
+                    <span class="text-sm text-gray-500 mt-2">太 16:24-25</span>
+                </a>
+                <a href="#part3" class="flex flex-col p-6 rounded-2xl bg-dark-accent hover:bg-gold-900/20 border border-white/5 transition-all group">
+                    <span class="text-xs text-gold-500 font-bold mb-2 opacity-60 tracking-widest">第三部分</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400">永恆生命與屬世價值的衡量</span>
+                    <span class="text-sm text-gray-500 mt-2">太 16:26-28</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis: Bento Style -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32">
+                    <h3 class="font-serif text-2xl font-bold text-gold-500 mb-8 border-b border-white/10 pb-4">第一段：神旨意與人意念的衝突</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-12 card-gradient p-8 rounded-3xl">
+                            <div class="text-gold-200/80 mb-4 font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                引用經文
+                            </div>
+                            <div class="space-y-4 text-gray-300 leading-relaxed">
+                                <p>(太 16:21) 從此，耶穌才指示門徒，他必須上耶路撒冷去，受長老、祭司長、文士許多的苦，並且被殺，第三日復活。</p>
+                                <p>(太 16:22) 彼得就拉著他，勸他說：「主啊，萬不可如此！這事必不臨到你身上。」</p>
+                                <p>(太 16:23) 耶穌轉過來，對彼得說：「撒但，退我後邊去吧！你是絆我腳的；因為你不體貼神的意思，只體貼人的意思。」</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-4 card-gradient p-6 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter italic">Keyword</span>
+                            <h4 class="text-xl font-bold mb-2">體貼 (φρονεῖς)</h4>
+                            <p class="text-gray-400 text-sm">原意是「思想」、「定意」。耶穌指出彼得的問題不在於不愛主，而在於心思受限於避苦求安的本能。</p>
+                        </div>
+                        <div class="md:col-span-8 card-gradient p-6 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter">Question & Analysis</span>
+                            <p class="font-bold mb-3 text-gold-100">為什麼彼得出於愛與保護的好意，卻被耶穌斥責為「撒但」？</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">在屬靈真實裡，任何阻擋基督走向十字架的源頭都是撒但的工作。人的好意若未順服神旨，往往成為絆腳石。世俗的愛逃避苦難，神的愛勝過苦難。</p>
+                        </div>
+                        <div class="md:col-span-7 card-gradient p-8 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter italic">Illustration</span>
+                            <p class="text-gray-300 leading-relaxed">破繭而出的蝴蝶若被「好意」剪開繭，雖免除掙扎痛苦，翅膀卻會萎縮。彼得的「好意」正是那把想剪開繭的剪刀，企圖略過十字架卻險些破壞復活的榮耀。</p>
+                        </div>
+                        <div class="md:col-span-5 bg-gold-900/10 border border-gold-500/20 p-8 rounded-3xl flex flex-col justify-center italic bento-item">
+                            <span class="text-4xl text-gold-500/30 font-serif mb-2 block">“</span>
+                            <p class="text-lg text-gold-100 mb-4">當基督呼召一個人的時候，他是叫他來死。</p>
+                            <span class="text-sm font-bold text-gold-500">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32">
+                    <h3 class="font-serif text-2xl font-bold text-gold-500 mb-8 border-b border-white/10 pb-4">第二段：捨己與背十架的呼召</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-12 card-gradient p-8 rounded-3xl">
+                            <div class="text-gold-200/80 mb-4 font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                引用經文
+                            </div>
+                            <div class="space-y-4 text-gray-300 leading-relaxed text-lg">
+                                <p>(太 16:24) 於是耶穌對門徒說：「若有人要跟從我，就當捨己，背起他的十字架來跟從我。</p>
+                                <p>(太 16:25) 因為，凡要救自己生命（生命：或譯靈魂；下同）的，必喪掉生命；凡為我喪掉生命的，必得著生命。</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-5 card-gradient p-6 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter italic">Keywords</span>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-lg font-bold">捨己 (ἀπαρνησάσθω)</h4>
+                                    <p class="text-gray-400 text-sm">「完全拒絕」、「放棄對自己的所有權」。非指放棄喜好，而是放棄自我中心。</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">生命 (ψυχὴν)</h4>
+                                    <p class="text-gray-400 text-sm">緊抓自我掌控權的，終將失去生命；願意為主放下的，反而找到真我。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-7 card-gradient p-6 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter">Question & Analysis</span>
+                            <p class="font-bold mb-3 text-gold-100">「背起自己的十字架」具體意味著什麼？</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">十架非指生病或生活刁難，而是「為了順服神旨而自願選擇的受苦」。意味著在職場誠信、饒恕仇敵等選擇中，寧願受損也要遵行基督。</p>
+                        </div>
+                        <div class="md:col-span-6 card-gradient p-8 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter italic">Illustration</span>
+                            <p class="text-gray-300 leading-relaxed">宣教士吉姆·艾略特（Jim Elliot）寫下：「為得著那不會失去的，而付出那不能保全的，這人一點也不傻。」這正是「喪掉生命以得著生命」的最佳註解。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-gold-900/10 border border-gold-500/20 p-8 rounded-3xl flex flex-col justify-center italic bento-item">
+                            <span class="text-4xl text-gold-500/30 font-serif mb-2 block">“</span>
+                            <p class="text-lg text-gold-100 mb-4">自由不是沒有限制，而是找到正確的限制。當你將自己完全降服於神，你才獲得了真正的自由。</p>
+                            <span class="text-sm font-bold text-gold-500">— 提摩太·凱勒 (Timothy Keller)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32">
+                    <h3 class="font-serif text-2xl font-bold text-gold-500 mb-8 border-b border-white/10 pb-4">第三段：永恆生命與屬世價值的衡量</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                        <div class="md:col-span-12 card-gradient p-8 rounded-3xl">
+                            <div class="text-gold-200/80 mb-4 font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                引用經文
+                            </div>
+                            <div class="space-y-4 text-gray-300 leading-relaxed">
+                                <p>(太 16:26) 人若賺得全世界，賠上自己的生命，有什麼益處呢？人還能拿什麼換生命呢？</p>
+                                <p>(太 16:27) 人子要在祂父的榮耀裡，同著眾使者降臨；那時候，祂要照各人的行為報應各人。</p>
+                                <p>(太 16:28) 我實在告訴你們，站在這裡的，有人在沒嘗死味以前必看見人子降臨在祂的國裡。」</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-4 card-gradient p-6 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter italic">Keywords</span>
+                            <div class="space-y-4 text-sm text-gray-400">
+                                <div><b class="text-white">賠上 (ζημιωθῇ)：</b>商業用語，意指「遭受虧損」、「被罰沒收」。</div>
+                                <div><b class="text-white">換 (ἀντάλλαγμα)：</b>意為「交換的代價」。整個物質世界總和，比不上一顆靈魂價值。</div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8 card-gradient p-6 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter">Question & Analysis</span>
+                            <p class="font-bold mb-3 text-gold-100">如何避免「賺得全世界卻賠上生命」的悲劇？</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">必須將人生的終點（基督審判）作為今天決定的起點。若所有努力僅投資於會朽壞的今生，在永恆中將一無所有。唯有投資在神國度的，才能在基督台前得獎賞。</p>
+                        </div>
+                        <div class="md:col-span-6 card-gradient p-8 rounded-3xl bento-item">
+                            <span class="text-gold-500 text-sm font-bold block mb-4 uppercase tracking-tighter italic">Illustration</span>
+                            <p class="text-gray-300 leading-relaxed">大富翁遊戲結束時，所有鈔票、房子都要收回紙盒裡。死亡就是那個收納盒。若我們價值僅建立在「遊戲籌碼」上，當遊戲結束，我們將兩手空空。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-gold-900/10 border border-gold-500/20 p-8 rounded-3xl flex flex-col justify-center italic bento-item">
+                            <span class="text-4xl text-gold-500/30 font-serif mb-2 block">“</span>
+                            <p class="text-lg text-gold-100 mb-4">這世界對於基督徒來說，不是一個遊樂場，而是一個戰場。我們對時間的使用，將決定我們在永恆中的光景。</p>
+                            <span class="text-sm font-bold text-gold-500">— 陶恕 (A.W. Tozer)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Direction -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h2 class="font-serif text-3xl font-bold tracking-tight">應用方向</h2>
+                </div>
+                <ul class="space-y-6">
+                    <li class="flex gap-4 items-start">
+                        <span class="w-8 h-8 rounded-full bg-gold-600/20 text-gold-500 flex items-center justify-center shrink-0 mt-1 font-bold">1</span>
+                        <p class="text-gray-300 leading-relaxed"><b class="text-white">價值觀的重塑：</b> 檢視自己目前的精力、金錢與時間分配，是投資在「全世界」，還是投資在「永恆的生命」？</p>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="w-8 h-8 rounded-full bg-gold-600/20 text-gold-500 flex items-center justify-center shrink-0 mt-1 font-bold">2</span>
+                        <p class="text-gray-300 leading-relaxed"><b class="text-white">辨識絆腳石：</b> 反思生活中有哪些看似合理的「好意」或「人的意思」，實際上正攔阻你順服神的呼召。</p>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="w-8 h-8 rounded-full bg-gold-600/20 text-gold-500 flex items-center justify-center shrink-0 mt-1 font-bold">3</span>
+                        <p class="text-gray-300 leading-relaxed"><b class="text-white">具體實踐捨己：</b> 在家庭或職場中，找出一件你長期堅持己見的事，學習本週為了基督的緣故放下掌控權，選擇順服與成全。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-gradient p-12 rounded-3xl flex flex-col items-center justify-center text-center">
+                <h3 class="font-serif text-2xl font-bold text-gold-500 mb-8">結論：三個關鍵字</h3>
+                <div class="space-y-8 w-full">
+                    <div class="group">
+                        <div class="text-4xl font-serif font-black tracking-widest text-white group-hover:text-gold-400 transition-colors">捨己</div>
+                        <div class="text-sm tracking-[0.5em] text-gray-500 mt-2">DENIAL</div>
+                    </div>
+                    <div class="h-px bg-white/10"></div>
+                    <div class="group">
+                        <div class="text-4xl font-serif font-black tracking-widest text-white group-hover:text-gold-400 transition-colors">十架</div>
+                        <div class="text-sm tracking-[0.5em] text-gray-500 mt-2">CROSS</div>
+                    </div>
+                    <div class="h-px bg-white/10"></div>
+                    <div class="group">
+                        <div class="text-4xl font-serif font-black tracking-widest text-white group-hover:text-gold-400 transition-colors">永恆</div>
+                        <div class="text-sm tracking-[0.5em] text-gray-500 mt-2">ETERNITY</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="card-gradient p-8 md:p-16 rounded-[3rem] relative">
+            <div class="absolute top-0 right-0 -mr-4 -mt-4 w-32 h-32 bg-gold-600/10 blur-3xl rounded-full"></div>
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"></path></svg>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            <div class="prose prose-invert prose-gold max-w-none space-y-10 text-gray-300 leading-[2.2]">
+                <p class="text-2xl font-serif text-gold-100 italic mb-12">各位弟兄姊妹，平安。今天我們要進入一段充滿挑戰，甚至有些刺耳的經文。這段經文顛覆了我們對成功的定義，也挑戰了我們信仰的底線。</p>
+                
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span>
+                        一、神旨意與人意念的衝突
+                    </h4>
+                    <p>在馬太福音16章21節，耶穌第一次向門徒預言祂的受苦與死亡。彼得剛剛才在聖靈的感動下認出耶穌是基督，下一秒，他就拉著耶穌說：「主啊，萬不可如此！」耶穌的回應極其嚴厲：<span class="text-gold-400 font-bold">「撒但，退我後邊去吧！你是絆我腳的；因為你不體貼神的意思，只體貼人的意思。」</span>（太16:23）為什麼彼得的好意會換來耶穌如此嚴厲的斥責？因為彼得的愛，是世俗的愛；彼得的邏輯，是逃避苦難的邏輯。人的意念總是教導我們趨吉避凶，但神的旨意卻往往要我們迎向十字架。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span>
+                        二、捨己與背十架的呼召
+                    </h4>
+                    <p>接著，耶穌對所有門徒發出了信仰的核心呼召：<span class="text-gold-400 font-bold">「若有人要跟從我，就當捨己，背起他的十字架來跟從我。因為，凡要救自己生命的，必喪掉生命；凡為我喪掉生命的，必得著生命。」</span>（太16:24-25）這裡的「捨己」，原文是「放棄對自己的所有權」。這是一個極大的悖論：你越是死死抓住生命的主權、安全感、財富不放，你最終越會失去它；但當你願意為主鬆開手，為祂喪掉生命，你反而會得著那豐盛、自由、充滿榮耀的真生命。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span>
+                        三、永恆生命與屬世價值的衡量
+                    </h4>
+                    <p>最後，耶穌給了我們一個屬靈的資產負債表：<span class="text-gold-400 font-bold">「人若賺得全世界，賠上自己的生命，有什麼益處呢？人還能拿什麼換生命呢？」</span>（太16:26）這個世界的邏輯是「賺得越多越好」，但耶穌說，就算你把全世界的財富、名聲、權力都放上天平的一端，也無法與你那不朽的靈魂等價交換。死亡就是那個收納盒。如果你一生的投資都在會朽壞的事物上，你在永恆裡將一貧如洗。</p>
+                </div>
+
+                <div class="pt-8 border-t border-white/5">
+                    <p class="text-xl font-serif text-gold-200">親愛的弟兄姊妹，這條十字架的道路不好走，它要求我們捨己，要求我們背起十架，要求我們定睛永恆。但這是一條通往真正榮耀與生命的唯一道路。今天，你願意放下世界的籌碼，換取神國度的冠冕嗎？願聖靈感動我們，勇敢邁向這條十字架的榮耀之路。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="bg-gold-600/5 rounded-[2rem] p-8 md:p-12 border border-gold-600/20">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">回應與實踐行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-gradient p-6 rounded-2xl border-t-2 border-gold-500">
+                    <h5 class="font-bold mb-3 text-gold-400">每日降服禱告</h5>
+                    <p class="text-sm text-gray-400">每天早晨起床的第一個禱告：「主啊，今天我願意放棄對自己生命的掌控，求祢引導，我願意順服。」</p>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl border-t-2 border-gold-500">
+                    <h5 class="font-bold mb-3 text-gold-400">檢視時間與金錢</h5>
+                    <p class="text-sm text-gray-400">查閱本週帳單，標記出永恆的投資，並計劃將至少 10% 資源轉向神國度或關懷弱勢。</p>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl border-t-2 border-gold-500">
+                    <h5 class="font-bold mb-3 text-gold-400">擁抱不舒服的呼召</h5>
+                    <p class="text-sm text-gray-400">主動去做一件你逃避已久的屬靈責任（如：主動和好、家庭祭壇、或向同事見證）。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path></svg>
+                <h2 class="font-serif text-3xl font-bold tracking-tight">屬靈前輩佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute -right-2 -top-2 opacity-5 text-gold-500 transform rotate-12 group-hover:rotate-0 transition-transform">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V5C14.017 4.44772 14.4647 4 15.017 4H19.017C21.2261 4 23.017 5.79086 23.017 8V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1.017 21L1.017 18C1.017 16.8954 1.91243 16 3.017 16H6.017C6.56928 16 7.017 15.5523 7.017 15V9C7.017 8.44772 6.56928 8 6.017 8H2.017C1.46472 8 1.017 7.55228 1.017 7V5C1.017 4.44772 1.46472 4 2.017 4H6.017C8.22614 4 10.017 5.79086 10.017 8V15C10.017 18.3137 7.33071 21 4.017 21H1.017Z"/></svg>
+                    </div>
+                    <p class="text-lg mb-4 text-white leading-relaxed">「廉價的恩典是我們教會的致命傷。今天我們所爭取的，是重價的恩典。...重價的恩典是隱藏在地下的寶藏，為了這寶藏，人變賣他所有的一切。」</p>
+                    <div class="text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</div>
+                    <div class="text-xs text-gray-500 mt-1">《追隨基督》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「神從來不曾使用一個未曾經過深度破碎的人，來成就祂偉大的工作。」</p>
+                    <div class="text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</div>
+                    <div class="text-xs text-gray-500 mt-1">《為神而活》</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「十架神學家說出事物的真相，而榮耀神學家卻稱惡為善，稱善為惡。」</p>
+                    <div class="text-gold-500 font-bold">— 馬丁·路德 (Martin Luther)</div>
+                    <div class="text-xs text-gray-500 mt-1">《海德堡辯論》</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「跟隨耶穌不是一場百米衝刺，而是朝著同一個方向長期的順服。」</p>
+                    <div class="text-gold-500 font-bold">— 畢德生 (Eugene Peterson)</div>
+                    <div class="text-xs text-gray-500 mt-1">《長久順服向同一個方向》</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「不要為你所背負的十字架抱怨；要知道，那正是基督為你量身打造的，為要磨練你成為祂的樣式。」</p>
+                    <div class="text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</div>
+                    <div class="text-xs text-gray-500 mt-1">《早晚靈修》</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「耶穌的死不是為了讓我們可以過一個沒有痛苦的生活，而是為了讓我們的痛苦有永恆的意義。」</p>
+                    <div class="text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</div>
+                    <div class="text-xs text-gray-500 mt-1">《與神同行在苦難中》</div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「基督的十字架是神對這個受苦世界的唯一解答，也是我們一切服事與愛的力量泉源。」</p>
+                    <div class="text-gold-500 font-bold">— 約翰·史托德 (John Stott)</div>
+                    <div class="text-xs text-gray-500 mt-1">《基督的十字架》</div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「我們不是自己的，所以不要讓我們的理智或意志，來決定我們的計畫與行為；我們乃是神的，所以讓我們為祂而活，並為祂而死。」</p>
+                    <div class="text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</div>
+                    <div class="text-xs text-gray-500 mt-1">《基督教要義》</div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「決志：除了那能使我在永恆中得益處的事之外，我絕不去做任何事。」</p>
+                    <div class="text-gold-500 font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</div>
+                    <div class="text-xs text-gray-500 mt-1">《立志集》</div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="card-gradient p-8 rounded-3xl relative overflow-hidden group">
+                    <p class="text-lg mb-4 text-white leading-relaxed">「十字架不是生命結束時可怕的悲劇，而是跟隨基督之生命的開始。」</p>
+                    <div class="text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</div>
+                    <div class="text-xs text-gray-500 mt-1">《追隨基督》</div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="text-center pt-12">
+                <p class="text-gray-600 text-sm tracking-widest italic">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-10 right-10 w-14 h-14 bg-gold-600 hover:bg-gold-500 text-black rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 active:scale-95 z-40">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

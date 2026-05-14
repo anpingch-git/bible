@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路4:14-30:突破框架的恩典：宣告禧年與跨越邊界的愛</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fdf8d6',
+                            200: '#f9eea2',
+                            300: '#f4df63',
+                            400: '#edcb31',
+                            500: '#d9b31d',
+                            600: '#b88d16',
+                            700: '#936614',
+                            800: '#795117',
+                            900: '#674319',
+                        },
+                        darkBg: '#0a0a0c',
+                        cardBg: 'rgba(255, 255, 255, 0.03)',
+                        glassBorder: 'rgba(255, 255, 255, 0.08)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s infinite ease-in-out',
+                        'bounce-subtle': 'bounce-subtle 3s infinite',
+                        'float': 'float 6s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #d9b31d 0%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-item {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d9b31d;
+            transition: width 0.3s ease;
+        }
+        .nav-item:hover::after {
+            width: 100%;
+        }
+        .content-section {
+            scroll-margin-top: 100px;
+        }
+        .img-container {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+        .overlay-gradient {
+            background: linear-gradient(to bottom, transparent 0%, #0a0a0c 100%);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500/30">
+
+    <!-- Sticky Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-6 py-4 flex justify-between items-center">
+        <span class="text-gold-400 font-accent font-semibold tracking-wider text-sm md:text-base">路4:14-30</span>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-item">禱告</a>
+            <a href="#outline" class="nav-item">大綱</a>
+            <a href="#sermon" class="nav-item">講章</a>
+            <a href="#quotes" class="nav-item">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative pt-12" id="top">
+        <div class="img-container">
+            <img src='image/img_5eb9189c-f749-45c9-9488-a3a53c49766f.jpg' alt='禧年主題' class="animate-breath" />
+            <div class="overlay-gradient"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                <h1 class="text-4xl md:text-7xl font-display font-black mb-6 tracking-tight leading-tight">
+                    <span class="gradient-text">路4:14-30</span><br>
+                    <span class="text-white">突破框架的恩典</span>
+                </h1>
+                <p class="text-gold-300 font-accent tracking-[0.2em] text-sm md:text-xl uppercase mb-12">宣告禧年與跨越邊界的愛</p>
+                
+                <!-- Floating Verse -->
+                <div class="max-w-2xl animate-bounce-subtle">
+                    <p class="text-xl md:text-2xl font-display italic text-gray-100 leading-relaxed drop-shadow-lg">
+                        「主的靈在我身上，因為他用膏膏我，叫我傳福音給貧窮的人；差遣我報告：被擄的得釋放，瞎眼的得看見，叫那受壓制的得自由，報告神悅納人的禧年。」
+                    </p>
+                    <span class="block mt-4 text-gold-400 font-accent">— 路加福音 4:18-19</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="content-section pt-12">
+            <div class="glass rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 text-gold-500 opacity-10">
+                    <svg class="w-48 h-48" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-8 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    禱告與尋求
+                </h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 font-light italic">
+                    親愛的主耶穌，祢是宣告禧年、帶來釋放的主。當祢的恩典臨到我們生命時，求祢開我們的瞎眼，使我們看見自己的屬靈貧窮與需要；求祢打破我們心中對祢的刻板印象與框架，讓我們不以狹隘的眼光限制祢的作為。願祢那跨越藩籬的愛，深觸我們的心，使我們不再抗拒祢的主權，而是歡喜領受並分享祢那無可限量的恩典。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="content-section">
+            <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-10 text-gold-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                分段大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section1" class="glass p-6 rounded-2xl hover:border-gold-500 transition-all group">
+                    <span class="text-gold-500 text-xs font-accent mb-2 block tracking-widest uppercase">Section 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">宣告禧年：恩典降臨在破碎之處</h3>
+                    <p class="text-gray-500 text-sm mt-2">路加福音 4:14-19</p>
+                </a>
+                <a href="#section2" class="glass p-6 rounded-2xl hover:border-gold-500 transition-all group">
+                    <span class="text-gold-500 text-xs font-accent mb-2 block tracking-widest uppercase">Section 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">熟悉的盲點：被「已知」框住的彌賽亞</h3>
+                    <p class="text-gray-500 text-sm mt-2">路加福音 4:20-24</p>
+                </a>
+                <a href="#section3" class="glass p-6 rounded-2xl hover:border-gold-500 transition-all group">
+                    <span class="text-gold-500 text-xs font-accent mb-2 block tracking-widest uppercase">Section 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">激怒人的恩典：上帝的主權超越邊界</h3>
+                    <p class="text-gray-500 text-sm mt-2">路加福音 4:25-30</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-margin-top pt-8">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h4 class="text-4xl font-display font-bold text-white mb-4">01</h4>
+                            <h5 class="text-2xl font-bold text-gold-400 mb-6">宣告禧年——恩典降臨在破碎之處</h5>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-sm leading-relaxed text-gray-400">
+                                耶穌滿有聖靈的能力，回到加利利...報告神悅納人的禧年。
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="bento-grid">
+                                <div class="glass p-6 rounded-2xl">
+                                    <span class="text-gold-500 font-bold block mb-2">關鍵原文</span>
+                                    <p class="text-gray-300"><strong class="text-white">貧窮的人（πτωχός / ptochos）</strong>：指完全無助、必須乞討、毫無依靠的狀態。福音是為認知到自己屬靈破產的人預備的。</p>
+                                </div>
+                                <div class="glass p-6 rounded-2xl">
+                                    <span class="text-gold-500 font-bold block mb-2">關鍵問題</span>
+                                    <p class="text-gray-300 italic">為什麼耶穌的福音首先宣告給「貧窮」的人？</p>
+                                    <p class="text-sm mt-2 text-gray-400">唯有承認自己病了的人，才會尋求醫治；承認屬靈貧窮，才能承接禧年。</p>
+                                </div>
+                            </div>
+                            <div class="glass p-8 rounded-2xl bg-gradient-to-br from-gold-900/20 to-transparent">
+                                <span class="text-gold-500 font-bold block mb-3">牧者佳句</span>
+                                <p class="text-xl font-display leading-relaxed">「福音的本質是：我們比自己所敢相信的還要敗壞和充滿缺陷，但同時，我們在耶穌基督裡，比自己所敢希望的還要更被愛、更被接納。」</p>
+                                <span class="block mt-4 text-sm text-gray-400">— 提摩太·凱勒 (Timothy Keller)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-margin-top pt-8">
+                    <div class="flex flex-col md:flex-row-reverse gap-12">
+                        <div class="md:w-1/3 text-right md:text-left">
+                            <h4 class="text-4xl font-display font-bold text-white mb-4">02</h4>
+                            <h5 class="text-2xl font-bold text-gold-400 mb-6">熟悉的盲點——被「已知」框住的彌賽亞</h5>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-sm leading-relaxed text-gray-400">
+                                眾人都稱讚他，又說：「這不是約瑟的兒子嗎？」耶穌說：「沒有先知在自己家鄉被人悅納的。」
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="bento-grid">
+                                <div class="glass p-6 rounded-2xl">
+                                    <span class="text-gold-500 font-bold block mb-2">關鍵原文</span>
+                                    <p class="text-gray-300"><strong class="text-white">應驗（πληρόω / pleroo）</strong>：意為充滿、完成、實現。耶穌宣告預言「現在」就完成了。</p>
+                                </div>
+                                <div class="glass p-6 rounded-2xl">
+                                    <span class="text-gold-500 font-bold block mb-2">關鍵問題</span>
+                                    <p class="text-gray-300 italic">拿撒勒人為何上一秒稱讚，下一秒質疑？</p>
+                                    <p class="text-sm mt-2 text-gray-400">「熟悉感」成為盲點。當我們用理智限制上帝時，就會錯過祂真實的作為。</p>
+                                </div>
+                            </div>
+                            <div class="glass p-8 rounded-2xl">
+                                <span class="text-gold-500 font-bold block mb-3">牧者佳句</span>
+                                <p class="text-xl font-display leading-relaxed">「我們所敬拜的，往往不是神自己，而是我們頭腦中所塑造出來的那個關於神的觀念。」</p>
+                                <span class="block mt-4 text-sm text-gray-400">— 陶恕 (A. W. Tozer)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-margin-top pt-8">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h4 class="text-4xl font-display font-bold text-white mb-4">03</h4>
+                            <h5 class="text-2xl font-bold text-gold-400 mb-6">激怒人的恩典——上帝的主權超越邊界</h5>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-sm leading-relaxed text-gray-400">
+                                會堂裏的人聽見這話，都怒氣滿胸...他卻從他們中間直行，過去了。
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="bento-grid">
+                                <div class="glass p-6 rounded-2xl">
+                                    <span class="text-gold-500 font-bold block mb-2">關鍵原文</span>
+                                    <p class="text-gray-300"><strong class="text-white">直行，過去了（διέρχομαι / dierchomai）</strong>：穿透、經過。彰顯神聖的威嚴與主權。</p>
+                                </div>
+                                <div class="glass p-6 rounded-2xl">
+                                    <span class="text-gold-500 font-bold block mb-2">關鍵問題</span>
+                                    <p class="text-gray-300 italic">為什麼耶穌舉外邦人為例會激怒聽眾？</p>
+                                    <p class="text-sm mt-2 text-gray-400">耶穌打破了屬靈優越感，表明恩典不受血統或期待限制。恩典給了「不配」的人。</p>
+                                </div>
+                            </div>
+                            <div class="glass p-8 rounded-2xl bg-gradient-to-br from-gold-900/20 to-transparent">
+                                <span class="text-gold-500 font-bold block mb-3">牧者佳句</span>
+                                <p class="text-xl font-display leading-relaxed">「恩典之所以是恩典，正因為它不看人的價值，而是賜給那些完全不配得的人。」</p>
+                                <span class="block mt-4 text-sm text-gray-400">— 約翰·加爾文 (John Calvin)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="content-section pt-12">
+            <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-10 text-gold-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                講章文稿
+            </h2>
+            <div class="prose prose-invert prose-lg max-w-none space-y-10 text-gray-300 leading-loose">
+                <h3 class="text-3xl font-display font-black text-white border-l-4 border-gold-500 pl-6 py-2">
+                    突破框架的恩典：宣告禧年與跨越邊界的愛
+                </h3>
+                
+                <p>各位弟兄姐妹，平安。今天我們要看一段令人震撼的聖經記載。耶穌在受試探後，滿帶著聖靈的能力回到了祂長大的家鄉——拿撒勒。這本該是一場榮耀的返鄉之旅，一開始確實也是如此，但短短幾分鐘內，群眾的反應卻從「稱讚」變成了「怒氣滿胸」，甚至要把祂推下山崖。到底發生了什麼事？讓我們一起進入今天的講題：<strong class="text-gold-400">突破框架的恩典</strong>。</p>
+
+                <div class="glass p-8 rounded-xl border-l-4 border-gold-500 my-12">
+                    <p class="text-2xl font-display font-bold text-white mb-4 italic">「主的靈在我身上，因為他用膏膏我，叫我傳福音給貧窮的人；差遣我報告：被擄的得釋放，瞎眼的得看見，叫那受壓制的得自由，報告神悅納人的禧年。」</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center gap-2"><span class="w-8 h-[2px] bg-gold-500"></span> 第一段：宣告禧年</h4>
+                    <p>當耶穌走進會堂，打開以賽亞書，祂大聲宣告了這段著名的經文。祂宣告了<strong class="text-gold-400 text-xl">「禧年」</strong>的降臨。在舊約中，禧年是每五十年一次的大赦之年，奴隸得自由，債務被免除，失去的產業得以歸還。耶穌在此宣告，祂就是那終極的禧年！</p>
+                    <p>但請注意，這個恩典是給誰的？是給<strong class="text-white font-bold underline decoration-gold-500 underline-offset-4">「貧窮的人」</strong>。原文的「貧窮」不僅是沒錢，更是指那種完全無助、必須乞討的絕對匱乏。耶穌在告訴我們，福音的恩典只降臨在那些承認自己破碎的地方。人若覺得自己富足，就不會需要救主。我們必須先認知自己的屬靈貧窮，才能領受禧年的豐盛。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center gap-2"><span class="w-8 h-[2px] bg-gold-500"></span> 第二段：熟悉的盲點</h4>
+                    <p>當耶穌講完這段恩言，宣告「今天這經應驗在你們耳中了」，拿撒勒人最初是稱讚祂的。但下一秒，他們的話鋒一轉：<strong class="text-white font-bold italic">「這不是約瑟的兒子嗎？」</strong></p>
+                    <p>這句話暴露出了一個極大的危機。這種廉價的熟悉感，成了他們最大的盲點。他們期待的彌賽亞，不應該是這個平凡的鄰居。想像一下，如果世界頂級的音樂家穿著破舊的衣服在地鐵站拉奏千萬名琴，大多數人只會匆匆走過。我們是否也把上帝框在我們的神學、我們的經驗、甚至我們對教會的刻板印象裡？<strong class="text-gold-400">當我們用自己的期待去限制上帝，我們就會錯過祂。</strong></p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center gap-2"><span class="w-8 h-[2px] bg-gold-500"></span> 第三段：激怒人的恩典</h4>
+                    <p>面對同鄉的質疑，耶穌講了兩段舊約歷史：西頓寡婦與乃縵元帥。這番話就像是在會堂裡丟下一顆炸彈。會堂裡的人瞬間「怒氣滿胸」，要把祂推下山崖！為什麼？因為西頓和敘利亞都是外邦地。耶穌是在告訴他們：上帝的恩典將會越過你們，去到你們最看不起的外邦人那裡！</p>
+                    <p>這就是<strong class="text-gold-400 text-xl font-display">恩典的越界</strong>。當恩典賜給那些「不配」的人時，自以為義的人總會被激怒。但耶穌卻展現出絕對的神聖主權，祂在暴徒中「直行，過去了」。弟兄姐妹，我們今天面對這位宣告禧年的主，我們是用拿撒勒人的傲慢與偏見來框住祂？還是以屬靈貧窮的姿態，敞開心門迎接祂那突破框架、跨越邊界的浩大恩典？</p>
+                </div>
+            </div>
+
+            <!-- Conclusion Keywords -->
+            <div class="mt-16 flex flex-wrap gap-4">
+                <span class="px-6 py-2 rounded-full border border-gold-500 text-gold-500 font-accent text-sm"># 禧年 Jubilee</span>
+                <span class="px-6 py-2 rounded-full border border-gold-500 text-gold-500 font-accent text-sm"># 盲點 Blind spot</span>
+                <span class="px-6 py-2 rounded-full border border-gold-500 text-gold-500 font-accent text-sm"># 恩典 Grace</span>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="content-section">
+            <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-10 text-gold-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                回應與行動
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500">
+                    <span class="text-4xl mb-4 block">🔍</span>
+                    <h4 class="text-xl font-bold mb-4">個人省察</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">本週花一小時安靜在神面前，列出自己生命中仍「被擄」或「受壓制」（如癮癖、苦毒、驕傲）的部分，向神呼求釋放。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500">
+                    <span class="text-4xl mb-4 block">🤝</span>
+                    <h4 class="text-xl font-bold mb-4">打破偏見</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">主動去接觸或關懷一位在教會或生活中，背景與你截然不同、或你曾經帶有偏見的人，為他禱告並給予實際幫助。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-2 border-gold-500">
+                    <span class="text-4xl mb-4 block">📖</span>
+                    <h4 class="text-xl font-bold mb-4">重讀主言</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">本週以歸零的心態重新閱讀一本福音書，禱告求聖靈挪去我們對經文「太過熟悉」的盲點，求神給予全新的亮光。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="content-section">
+            <h2 class="text-3xl font-display font-bold flex items-center gap-3 mb-10 text-gold-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是昂貴的恩典。」</p>
+                    <span class="text-gold-500 text-sm">— 潘霍華（Dietrich Bonhoeffer）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「我們所敬拜的，往往不是神自己，而是我們頭腦中所塑造出來的那個關於神的觀念。」</p>
+                    <span class="text-gold-500 text-sm">— 陶恕（A. W. Tozer）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「福音的本質是：我們比自己所敢相信的還要敗壞和充滿缺陷，但同時，我們在耶穌基督裡，更被接納。」</p>
+                    <span class="text-gold-500 text-sm">— 提摩太·凱勒（Timothy Keller）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「神的恩典不是尋找那些配得的人，而是尋找那些需要的人。」</p>
+                    <span class="text-gold-500 text-sm">— 司布真（Charles Spurgeon）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「恩典之所以是恩典，正因為它不看人的價值，而是賜給那些完全不配得的人。」</p>
+                    <span class="text-gold-500 text-sm">— 約翰·加爾文（John Calvin）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「十字架是上帝對我們這個世界一切自以為是的智慧與驕傲所發出的最深拒絕與接納。」</p>
+                    <span class="text-gold-500 text-sm">— 約翰·史托德（John Stott）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「我們最大的危險不是對神的愛不夠，而是我們根本沒有意識到我們有多麼需要祂的愛。」</p>
+                    <span class="text-gold-500 text-sm">— 盧雲（Henri Nouwen）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「真正的信仰情感，總是伴隨著對自身屬靈貧乏的深刻認識。」</p>
+                    <span class="text-gold-500 text-sm">— 喬納森·愛德華茲（Jonathan Edwards）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「當你明白你不能靠自己的善行贏得上帝的接納時，恩典之門就為你敞開了。」</p>
+                    <span class="text-gold-500 text-sm">— 葛理翰（Billy Graham）</span>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-4">「上帝的恩典不僅赦免我們的罪，它更賜給我們能力去過一個超越我們天然本性的生活。」</p>
+                    <span class="text-gold-500 text-sm">— 查爾斯·史丹利（Charles Stanley）</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="pt-12 text-center">
+            <p class="text-gray-600 text-xs tracking-widest uppercase">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-darkBg rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

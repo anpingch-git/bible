@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書24:1-15:抉擇的十字路口：今日選擇事奉誰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        cursive: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffcf2',
+                            100: '#fff9e6',
+                            200: '#ffefb3',
+                            300: '#ffe480',
+                            400: '#ffd94d',
+                            500: '#f9c80e',
+                            600: '#d9a60b',
+                            700: '#b38408',
+                            800: '#8c6306',
+                            900: '#664204',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#121212',
+                            700: '#1e1e1e',
+                        }
+                    },
+                    animation: {
+                        'breath': 'breath 4s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-bounce': 'gentle-bounce 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)', 'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)' },
+                            '50%': { transform: 'translateY(-5px)', 'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f9c80e 0%, #ff8c00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-anchor {
+            scroll-margin-top: 80px;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f9c80e;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card py-4 px-6 border-b border-white/10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="font-display font-bold text-gold-500 text-lg hidden md:block">書 24:1-15</div>
+            <div class="flex gap-6 text-sm font-medium tracking-widest uppercase">
+                <a href="#prayer" class="nav-link hover:text-gold-400">禱告</a>
+                <a href="#outline" class="nav-link hover:text-gold-400">大綱</a>
+                <a href="#sermon" class="nav-link hover:text-gold-400">講章</a>
+                <a href="#quotes" class="nav-link hover:text-gold-400">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="top" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_8200963c-4218-4b30-9675-1e430ed30bfc.jpg' alt='media_1' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-dark-900"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="font-display font-black text-5xl md:text-7xl mb-6 tracking-tight">
+                <span class="block text-white mb-2">抉擇的十字路口</span>
+                <span class="gradient-text">今日選擇事奉誰</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-gray-300 mb-12 font-display italic">約書亞記 24:1-15</p>
+            
+            <div class="animate-gentle-bounce">
+                <p class="text-lg md:text-2xl text-gold-200 font-serif leading-relaxed px-6 max-w-3xl mx-auto drop-shadow-2xl">
+                    「若是你們以事奉耶和華為不好，今日就可以選擇所要事奉的...至於我和我家，我們必定事奉耶和華。」
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor">
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform duration-500">
+                    <svg class="w-24 h-24 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold mb-8 flex items-center gap-4 text-gold-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                    開路禱告
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-200 font-serif first-letter:text-5xl first-letter:font-bold first-letter:text-gold-500 first-letter:mr-3 first-letter:float-left">
+                    主啊，我們感謝祢，因祢是那位在我們還作罪人、還在迷失中就主動尋找我們的神。回首過往，我們的生命充滿了祢信實的帶領與豐盛的恩典。求祢的聖靈今天對我們的心說話，光照我們生命中隱藏的偶像。賜給我們約書亞般的勇氣與堅定，讓我們不單單在順境中跟隨祢，更在每天的日常生活中，真實地做出「至於我和我家，我們必定事奉耶和華」的抉擇。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="section-anchor">
+            <h2 class="text-3xl font-bold mb-10 flex items-center gap-4 text-gold-500">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                講道大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass-card p-6 rounded-2xl hover:bg-gold-500/10 transition-all duration-300 border-l-4 border-l-gold-500 group">
+                    <span class="text-gold-500 font-bold mb-2 block">第一段</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400">恩典的溯源</h3>
+                    <p class="text-sm text-gray-400 mt-2">書 24:1-4</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl hover:bg-gold-500/10 transition-all duration-300 border-l-4 border-l-gold-500 group">
+                    <span class="text-gold-500 font-bold mb-2 block">第二段</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400">信實的印記</h3>
+                    <p class="text-sm text-gray-400 mt-2">書 24:5-13</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl hover:bg-gold-500/10 transition-all duration-300 border-l-4 border-l-gold-500 group">
+                    <span class="text-gold-500 font-bold mb-2 block">第三段</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400">堅定的立志</h3>
+                    <p class="text-sm text-gray-400 mt-2">書 24:14-15</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sermon Detailed Content -->
+        <div id="sermon" class="space-y-24 section-anchor">
+            
+            <!-- Part 1 -->
+            <section id="part1" class="section-anchor">
+                <div class="border-b border-white/10 pb-4 mb-12">
+                    <h2 class="text-4xl font-black text-white">第一段：恩典的溯源</h2>
+                    <p class="text-gold-500 font-display mt-2">不是我們尋找神，是神主動揀選 (書 24:1-4)</p>
+                </div>
+                
+                <div class="grid md:grid-cols-5 gap-12">
+                    <div class="md:col-span-3 space-y-8">
+                        <div class="glass-card p-6 rounded-xl italic font-serif border-l-2 border-gold-400 bg-white/5">
+                            約書亞將以色列的眾支派聚集在示劍...約書亞對眾民說：「耶和華以色列的神如此說：『古時你們的列祖...住在大河那邊事奉別神，我將你們的祖宗亞伯拉罕從大河那邊帶來...』」
+                        </div>
+                        <div class="prose prose-invert max-w-none">
+                            <p class="text-lg leading-relaxed">
+                                約書亞即將離世，他將以色列眾人聚集在示劍。他沒有一開始就發號施令，而是先講述歷史。他說：「古時你們的列祖……住在大河那邊事奉別神，我將你們的祖宗亞伯拉罕從大河那邊帶來」。
+                            </p>
+                            <p class="text-lg leading-relaxed mt-4">
+                                我們常常以為，是我們自己尋找神、發現神，但這段經文給了我們當頭棒喝。神提醒以色列人：你們的祖先原本是拜偶像的！在原文中，「帶來」這個詞意思是神將亞伯拉罕從偶像崇拜的泥沼中「抓」出來的。這就是恩典的本質！
+                            </p>
+                            <div class="mt-8 p-6 bg-gold-900/20 rounded-xl border border-gold-800">
+                                <h4 class="font-bold text-gold-400 mb-2">💡 深入解析：</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">關鍵原文：</strong> 「帶來 / 領」(laqach)：顯示亞伯拉罕並不是自己發起尋找神的行動，而是神主動介入。</li>
+                                    <li><strong class="text-white">關鍵問題：</strong> 為何要提祖先「事奉別神」？為了擊碎人的屬靈驕傲，提醒恩典完全出於上帝的揀選。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="bg-dark-700 p-6 rounded-2xl shadow-xl">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                生動小故事
+                            </h4>
+                            <p class="text-sm italic text-gray-300">就像一個不會游泳的人在深海中即將溺斃，被救生員硬生生從水裡拉上船。獲救後，這個人不能誇口說自己當時游得多好，只能感激救生員的拯救。</p>
+                        </div>
+                        <div class="bg-gold-600/10 p-6 rounded-2xl border border-gold-500/20">
+                            <h4 class="text-gold-500 font-bold mb-4">📜 名言佳句</h4>
+                            <p class="font-serif text-lg">「恩典之所以為恩典，正是因為我們毫無條件、毫無資格，而神卻主動賜下。」</p>
+                            <p class="text-right text-sm mt-2 text-gray-400">— 約翰·加爾文 (John Calvin)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="section-anchor">
+                <div class="border-b border-white/10 pb-4 mb-12">
+                    <h2 class="text-4xl font-black text-white">第二段：信實的印記</h2>
+                    <p class="text-gold-500 font-display mt-2">回顧神拯救與賜福的奇妙作為 (書 24:5-13)</p>
+                </div>
+                
+                <div class="grid md:grid-cols-5 gap-12">
+                    <div class="md:col-span-3 space-y-8">
+                        <div class="glass-card p-6 rounded-xl italic font-serif border-l-2 border-gold-400 bg-white/5">
+                            「『我差遣摩西、亞倫...把你們領出來...我賜給你們地土，非你們所修造的；我賜給你們城邑，非你們所建造的。』」
+                        </div>
+                        <div class="prose prose-invert max-w-none">
+                            <p class="text-lg leading-relaxed">
+                                接著，約書亞如數家珍地回顧了神的工作。神如何差遣摩西，如何分開紅海，如何在曠野引導，又如何將迦南地賜給他們。
+                            </p>
+                            <p class="text-lg leading-relaxed mt-4">
+                                弟兄姊妹，為什麼我們需要不斷回顧過去？因為我們極容易患上「屬靈失憶症」！當我們面對財務危機、健康紅燈、家庭風暴時，我們立刻就慌了。神的履歷是無瑕疵的，回顧神的作為，就是翻閱屬靈的相簿。
+                            </p>
+                            <div class="mt-8 p-6 bg-gold-900/20 rounded-xl border border-gold-800">
+                                <h4 class="font-bold text-gold-400 mb-2">💡 深入解析：</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">關鍵原文：</strong> 「賜給」(nathan)：意思是給予、安放。反覆出現強調了救恩與得勝的白白賞賜性質。</li>
+                                    <li><strong class="text-white">關鍵問題：</strong> 記憶對信仰有什麼作用？記憶是信仰的燃料，為未來挑戰提供確據。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="bg-dark-700 p-6 rounded-2xl shadow-xl">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                生活例證
+                            </h4>
+                            <p class="text-sm italic text-gray-300">一對金婚老夫妻面對疾病，妻子拿出年輕時的相簿，細數如何度過艱辛。看著看著，恐懼消失了，因為過去的風雨都走過了，這次也一定能。</p>
+                        </div>
+                        <div class="bg-gold-600/10 p-6 rounded-2xl border border-gold-500/20">
+                            <h4 class="text-gold-500 font-bold mb-4">📜 名言佳句</h4>
+                            <p class="font-serif text-lg">「如果我們忘記了神在我們生命中過去的作為，我們就會在未來的挑戰中失去信心。」</p>
+                            <p class="text-right text-sm mt-2 text-gray-400">— 大衛·鮑森 (David Pawson)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="section-anchor">
+                <div class="border-b border-white/10 pb-4 mb-12">
+                    <h2 class="text-4xl font-black text-white">第三段：堅定的立志</h2>
+                    <p class="text-gold-500 font-display mt-2">毫無妥協的絕對呼召與抉擇 (書 24:14-15)</p>
+                </div>
+                
+                <div class="grid md:grid-cols-5 gap-12">
+                    <div class="md:col-span-3 space-y-8">
+                        <div class="glass-card p-6 rounded-xl italic font-serif border-l-2 border-gold-400 bg-white/5">
+                            「今日就可以選擇所要事奉的...至於我和我家，我們必定事奉耶和華。」
+                        </div>
+                        <div class="prose prose-invert max-w-none">
+                            <p class="text-lg leading-relaxed font-bold text-white border-l-4 border-gold-500 pl-4 bg-gold-900/10 py-4">
+                                約書亞沒有給他們「中立」的選項。你不選擇事奉耶和華，你就是在事奉偶像——也許是金錢、是成就、是安逸、是別人的眼光。信仰不是遺產，信仰是「今日」的決定！
+                            </p>
+                            <p class="text-lg leading-relaxed mt-4">
+                                弟兄姊妹，今天神也在問你：你到底要事奉誰？盼望我們都能像約書亞一樣，勇敢地除掉生命中隱藏的偶像，帶著全家，真誠地回應神：「主啊，我們必定事奉祢！」
+                            </p>
+                            <div class="mt-8 p-6 bg-gold-900/20 rounded-xl border border-gold-800">
+                                <h4 class="font-bold text-gold-400 mb-2">💡 深入解析：</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">關鍵原文：</strong> 「事奉」('abad)：工作、服事、敬拜。「誠心實意」：完全無瑕疵的真實。</li>
+                                    <li><strong class="text-white">關鍵問題：</strong> 信仰能中立嗎？不能，不選擇神本質上就是選擇了偶像。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="bg-dark-700 p-6 rounded-2xl shadow-xl">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                生活例證
+                            </h4>
+                            <p class="text-sm italic text-gray-300">結婚典禮上的誓言是一次性的，但「愛與忠誠」卻是每天早晨醒來時都必須重新做出的選擇。信仰也是如此。</p>
+                        </div>
+                        <div class="bg-gold-600/10 p-6 rounded-2xl border border-gold-500/20">
+                            <h4 class="text-gold-500 font-bold mb-4">📜 名言佳句</h4>
+                            <p class="font-serif text-lg">「基督的十字架要求我們做出絕對的決定。我們不能在基督和這個世界之間保持中立。」</p>
+                            <p class="text-right text-sm mt-2 text-gray-400">— 約翰·史托德 (John Stott)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application & Conclusion Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 rounded-3xl border-t-4 border-t-gold-500">
+                <h3 class="text-2xl font-bold mb-6 text-gold-500 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01.</span>
+                        <p><span class="font-bold text-white">清點恩典軌跡：</span> 寫下個人生命中「出埃及」與「進迦南」的經歷。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02.</span>
+                        <p><span class="font-bold text-white">根除隱藏偶像：</span> 檢視生活中是否有金錢、成就或安逸等「假神」。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03.</span>
+                        <p><span class="font-bold text-white">建立家庭祭壇：</span> 推動家庭敬拜，讓信仰成為家庭核心文化。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-3xl border-t-4 border-t-gold-500">
+                <h3 class="text-2xl font-bold mb-6 text-gold-500 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    回應與行動
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">✓</span>
+                        <p><span class="font-bold text-white">感恩行動：</span> 本週寫下三件上帝奇妙作為並分享。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">✓</span>
+                        <p><span class="font-bold text-white">除掉偶像：</span> 具體減少佔據生命最多的娛樂或依賴。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">✓</span>
+                        <p><span class="font-bold text-white">宣告立志：</span> 將書24:15貼在顯眼處，帶領家人宣告。</p>
+                    </li>
+                </ul>
+                <div class="mt-8 pt-6 border-t border-white/10 flex gap-4">
+                    <span class="bg-gold-500 text-black px-3 py-1 rounded text-xs font-bold">結論關鍵字</span>
+                    <span class="text-sm tracking-widest uppercase">恩典 • 紀念 • 抉擇</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor">
+            <h2 class="text-3xl font-bold mb-10 text-center text-gold-500">靈命經典名言</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「便宜的恩典是我們教會的死敵。恩典是重價的，因為它呼召我們來跟從。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「在人心中有一個寶座，如果神不在其上，自我就會坐在其上。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 陶恕 (A. W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「任何事物，如果它在你心中的地位超過了神，它就是一個偶像。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「昨日的恩典無法應付今日的試煉；但神每日都有新鮮的恩典。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 司布真 (Charles H. Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「基督的十字架要求我們做出絕對的決定。我們不能保持中立。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「信心是一把活潑的、大膽的對神恩典的確信，信徒願意為它死上一千次。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「恩典與行為並不對立；恩典是對立於『賺取』。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「每一個選擇，都在決定我們是走向神的家，還是遠離神的家。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「跟隨耶穌意味著一種『在同一個方向上的長期順服』。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="font-serif leading-relaxed mb-4">「你不能一隻腳踏在世界裡，另一隻腳踏在天國裡。」</p>
+                    <p class="text-sm text-gold-600 font-bold">— 葛理翰 (Billy Graham)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Message -->
+        <div class="text-center py-10 opacity-40 hover:opacity-100 transition-opacity duration-500">
+            <p class="text-xs tracking-widest">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+</body>
+</html>

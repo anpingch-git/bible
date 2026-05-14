@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書22:10-34:在衝突的邊緣看見恩典：從誤解到合一的見證壇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fbe361',
+                            400: '#f9d231',
+                            500: '#f4b810',
+                            600: '#d9910a',
+                            700: '#b56d0b',
+                            800: '#945411',
+                            900: '#7a4513',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(244, 184, 16, 0.3);
+            background: rgba(30, 41, 59, 0.6);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f4b810 0%, #f9d231 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .outline-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #f4b810;
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        .outline-btn:hover::after {
+            transform: scaleX(1);
+        }
+        .icon-container {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(244, 184, 16, 0.2) 0%, rgba(244, 184, 16, 0) 100%);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-body leading-relaxed overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-4 md:px-8 justify-between">
+        <div class="font-accent font-bold text-lg md:text-xl tracking-wider text-gold-400">書 22:10-34</div>
+        <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header class="relative w-full h-[85vh] flex flex-col items-center justify-center text-center px-6 pt-16 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full animate-pulse-slow banner-mask">
+                <img src='image/img_5cf4274e-410b-4808-a4c0-8295579d8f61.jpg' alt='Banner' class="w-full h-full object-cover opacity-60" />
+            </div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 id="top" class="font-display text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
+                在衝突的邊緣看見恩典：<br/>
+                <span class="text-gradient">從誤解到合一的見證壇</span>
+            </h1>
+            
+            <div class="mt-12 animate-bounce-subtle">
+                <p class="text-xl md:text-3xl font-serif text-white/90 italic tracking-wide">
+                    「迦得人、流便人給壇起名叫證壇，意思說：這壇在我們中間證明耶和華是神。」
+                </p>
+                <p class="mt-4 font-accent text-gold-400 font-bold text-lg">(約書亞記 22:34)</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 space-y-32 pb-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-12 scroll-mt-24">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3c1.268 0 2.39.606 3.132 1.547M6.658 19.032c.18.313.354.632.522.956m7.744-8.859L15.812 8m1.103 4.945L17 18" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                <span class="text-gold-500">◆</span> 禱告詞
+            </h2>
+            <div class="glass-card p-8 md:p-12 rounded-3xl text-lg md:text-xl leading-loose font-serif border-l-4 border-l-gold-500">
+                主啊，我們感謝祢賜下寶貴的話語。在我們的生活與人際互動中，常因眼見的表象與先入為主的預設，引發不必要的誤解與裂痕。求祢賜下屬天的智慧、寬廣的心胸與聆聽的耐心，使我們在熱心捍衛真理時，不失恩典與愛心。願我們也能在彼此的關係中建立「證壇」，見證祢是使我們在真理中合一的神。奉耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-8">分段大綱與解析</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="glass-card p-6 rounded-2xl group">
+                    <span class="text-gold-400 font-accent font-bold block mb-2">PART 01</span>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-gold-300 transition-colors">出於熱心的防衛</h3>
+                    <p class="text-sm text-white/60">書 22:10-20</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl group">
+                    <span class="text-gold-400 font-accent font-bold block mb-2">PART 02</span>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-gold-300 transition-colors">為著世代的牽掛</h3>
+                    <p class="text-sm text-white/60">書 22:21-29</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl group">
+                    <span class="text-gold-400 font-accent font-bold block mb-2">PART 03</span>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-gold-300 transition-colors">看見神在我們中間</h3>
+                    <p class="text-sm text-white/60">書 22:30-34</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Part 1 -->
+            <div id="part1" class="space-y-12 scroll-mt-24 mb-24">
+                <div class="border-t border-white/10 pt-12">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-gold-400 mb-6">第一段：出於熱心的防衛——當眼見的表象引發合一危機</h3>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5 mb-8">
+                        <p class="text-gold-300 font-bold mb-2 font-accent">書 22:10-20</p>
+                        <p class="text-white/80 italic leading-relaxed">
+                            (22:10) 流便人、迦得人，和瑪拿西半支派的人到了迦南地靠近約旦河的一帶築了一座壇；那壇看著高大...(22:11-12) 全會眾一聽見，就聚集在示羅，要上去攻打他們...(22:15-20) 他們到了...對他們說：「耶和華全會眾這樣說，你們今日轉去不跟從耶和華，干犯以色列的神，為自己築壇，悖逆了耶和華，這犯的是什麼罪呢？」
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-gold-400 mb-2 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-white/90"><strong>悖逆 (Hebrew: מֶרֶד mered)</strong>：意指反叛、背叛。西方支派使用了強烈的字眼，因為在律法中，私自築壇等同於背棄獨一真神。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gold-400 mb-2 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-white/90 italic mb-2">為什麼西方支派僅僅「聽說」就準備發動內戰？</p>
+                                <p class="text-white/70">解析：出於對聖潔的熱心與歷史創傷（毘珥事件與亞干犯罪）。他們明白「群體性連帶責任」，動機是愛神，但危險在於僅憑表象就定下「悖逆」結論。</p>
+                            </div>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                            <h4 class="font-bold text-gold-400 mb-4 font-accent">Illustration / Example</h4>
+                            <p class="text-sm leading-relaxed text-white/80">
+                                獵人看見狗滿嘴鮮血、搖籃翻覆，暴怒擊斃忠犬。後來才發現嬰兒無恙，角落躺著被狗咬死的野狼。西方支派差點因表象毀了兄弟，所幸他們在開戰前，選擇先派代表溝通。
+                            </p>
+                            <div class="mt-6 border-t border-white/10 pt-4">
+                                <p class="text-gold-300 italic font-serif">「我們若不先去理解別人的動機，我們對真理的熱心就很容易變成一種殘酷的論斷。」</p>
+                                <p class="text-xs text-white/40 text-right mt-2">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Part 2 -->
+            <div id="part2" class="space-y-12 scroll-mt-24 mb-24">
+                <div class="border-t border-white/10 pt-12">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-gold-400 mb-6">第二段：為著世代的牽掛——超越恐懼與防衛的真誠對話</h3>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5 mb-8">
+                        <p class="text-gold-300 font-bold mb-2 font-accent">書 22:21-29</p>
+                        <p class="text-white/80 italic leading-relaxed">
+                            (22:21-23) 流便人...回答說：「大能者神耶和華！大能者神耶和華！他是知道的！...(22:24-25) 我們行這事並非無故，是特意做的，說：恐怕日後你們的子孫對我們的子孫說：『你們與耶和華─以色列的神有何相干呢？』...這樣，你們的子孫就使我們的子孫不再敬畏耶和華了。」
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-gold-400 mb-2 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-white/90"><strong>證據 / 見證 (Hebrew: עֵד 'ed)</strong>：意為證人、見證物。這座壇不是為了獻祭，而是一個「歷史的紀念碑」，證明他們敬拜同一位神。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gold-400 mb-2 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-white/90 italic mb-2">東方支派築壇的真正動機是什麼？</p>
+                                <p class="text-white/70">解析：出於「對下一代信仰流失的極度焦慮」。他們害怕地理界線演變成屬靈隔離。築壇是為了「信仰傳承」，這段真誠剖白翻轉了誤解。</p>
+                            </div>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                            <h4 class="font-bold text-gold-400 mb-4 font-accent">Illustration / Example</h4>
+                            <p class="text-sm leading-relaxed text-white/80">
+                                早期海外華人基督徒在客廳掛「基督是我家之主」，是為了一個「證據」。擔心子孫在異文化中忘記屬靈根源。東方支派的「證壇」正是這份對傳承的深切牽掛。
+                            </p>
+                            <div class="mt-6 border-t border-white/10 pt-4">
+                                <p class="text-gold-300 italic font-serif">「如果我們不刻意將信仰的見證傳遞給下一代，教會只需要一代人的時間就會走向滅亡。」</p>
+                                <p class="text-xs text-white/40 text-right mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Part 3 -->
+            <div id="part3" class="space-y-12 scroll-mt-24 mb-24">
+                <div class="border-t border-white/10 pt-12">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-gold-400 mb-6">第三段：看見神在我們中間——從兵戎相見到和平稱頌</h3>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5 mb-8">
+                        <p class="text-gold-300 font-bold mb-2 font-accent">書 22:30-34</p>
+                        <p class="text-white/80 italic leading-relaxed">
+                            (22:30-31) 祭司非尼哈與首領聽見所說的話，就都以為美...說：「今日我們知道耶和華在我們中間，因為你們沒有向他犯了這罪。現在你們救以色列人脫離耶和華的手了。」...(22:34) 迦得人、流便人給壇起名叫證壇。
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-gold-400 mb-2 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-white/90"><strong>以為美 (Hebrew: יָטַב בְּעֵינֵי yatav b'eyney)</strong>：字面意思是「在他們眼中看為好」。從叛逆與戰爭，轉化為看到美善、真誠與合一。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gold-400 mb-2 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-white/90 italic mb-2">這場一觸即發的衝突，為何能和平收場？</p>
+                                <p class="text-white/70">解析：雙方展現成熟的屬靈品格。西方支派「先查證，後審判」；東方支派沒有「惱羞成怒」，而是耐心剖白。危機成為了見證神合一的轉機。</p>
+                            </div>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                            <h4 class="font-bold text-gold-400 mb-4 font-accent">Illustration / Example</h4>
+                            <p class="text-sm leading-relaxed text-white/80">
+                                古巴飛彈危機中，美蘇雙方在最後關頭透過坦誠對話，了解彼此的恐懼而非僅看軍事佈署。溝通帶來理解，成功化解毀滅性危機。
+                            </p>
+                            <div class="mt-6 border-t border-white/10 pt-4">
+                                <p class="text-gold-300 italic font-serif">「締造和平的人，不是迴避衝突，而是帶著基督的恩典進入衝突的中心。」</p>
+                                <p class="text-xs text-white/40 text-right mt-2">— 約翰·史托德 (John Stott)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Direction -->
+        <section class="space-y-12">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-8">講道應用方向</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="text-gold-400 text-4xl font-accent font-black mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-4">先聆聽，後論斷</h3>
+                    <p class="text-white/70 leading-relaxed">當看見看似「錯誤」的行為時，不要立刻套上最壞動機。在拔刀之前，先坐下來詢問：「你為什麼這麼做？」</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border-t-2 border-t-gold-500">
+                    <div class="text-gold-400 text-4xl font-accent font-black mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-4">建立屬靈「證壇」</h3>
+                    <p class="text-white/70 leading-relaxed">在家庭和教會中留下清楚的屬靈見證與記號，讓下一代知道他們與神有份，確保信仰在世代間傳承。</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="text-gold-400 text-4xl font-accent font-black mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-4">用溫和化解怒氣</h3>
+                    <p class="text-white/70 leading-relaxed">被誤解或指責時，學習以溫和、透明的態度解釋初衷。柔和的回答能平息怒氣，促成群體真正的合一。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-12">講章文稿</h2>
+            <div class="max-w-3xl mx-auto space-y-12 text-lg md:text-xl leading-loose font-serif text-white/90">
+                <p class="italic text-white/60 mb-12 text-center text-2xl">「在我們的生活中，有多少次因為一句話沒聽清楚、一個動作被放大，就引發了嚴重的關係破裂？」</p>
+                
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-gold-400">一、 出於熱心的防衛</h3>
+                    <p>在約書亞記22章，幫助西方打完勝仗的東方兩個半支派，終於可以回家了。但在渡過約旦河前，他們築了一座極其高大的壇。西方支派一聽見，立刻在示羅聚集，準備大動干戈。他們指責東方支派：「你們今日竟悖逆耶和華嗎？」</p>
+                    <p>西方支派的反應看似過激，但這是因為他們有過慘痛的歷史教訓。他們害怕亞干犯罪連累全會眾的慘劇重演。他們的動機是愛神、是保護群體，但危險在於，他們憑著「眼見的表象」就定下了「叛逆」的死罪。<span class="bg-gold-500/20 px-2 font-bold text-gold-200">我們對真理的熱心，若失去了查證的耐心，往往會成為傷害弟兄姊妹的利刃。</span></p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-gold-400">二、 為著世代的牽掛</h3>
+                    <p>面對十萬火急的指控，東方支派沒有拔刀相向，也沒有惱羞成怒。他們連續呼求兩次：「大能者神耶和華！他是知道的！」他們攤開內心最深處的恐懼——他們不是要悖逆，而是害怕約旦河這道地理界線，未來會成為屬靈的界線。他們害怕未來的子孫會被西方支派排擠，說：「你們與耶和華有何相干呢？」</p>
+                    <p>他們築這座壇，根本不是為了獻祭，而是為了建立一個「證據」，一個歷史的紀念碑，為了告訴下一代：「我們是屬神的。」<span class="bg-gold-500/20 px-2 font-bold text-gold-200">我們是否也像東方支派一樣，渴望為我們的子孫留下一個信仰的「證壇」，確保他們不會在世界中迷失？</span></p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-gold-400">三、 看見神在我們中間</h3>
+                    <p>當祭司非尼哈聽見這番剖白，他眼中的憤怒轉化為喜悅。經文說他「以為美」。他說了一句極其感動的話：「今日我們知道耶和華在我們中間。」</p>
+                    <p>這場內戰之所以能和平落幕，是因為雙方都展現了極高的屬靈成熟度。西方支派願意「先派人溝通，再決定行動」；東方支派願意「放下防衛，真誠且溫和地解釋」。當誤解被解開，他們不再堅持誰對誰錯，而是共同將榮耀歸給神。</p>
+                </div>
+
+                <div class="pt-12 text-center">
+                    <p class="text-gold-400 font-bold text-2xl font-display tracking-[0.2em] mb-6">結論關鍵字</p>
+                    <div class="flex justify-center gap-8 font-accent text-xl">
+                        <span class="px-6 py-2 border border-gold-500/30 rounded-full">聆聽</span>
+                        <span class="px-6 py-2 border border-gold-500/30 rounded-full">見證</span>
+                        <span class="px-6 py-2 border border-gold-500/30 rounded-full">合一</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="space-y-8">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold">回應或實踐行動</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-2xl flex gap-4">
+                    <div class="text-2xl font-accent font-bold text-gold-500">A</div>
+                    <div>
+                        <h4 class="font-bold mb-1">化解一個誤會</h4>
+                        <p class="text-white/60 text-sm">主動聯絡一位曾發生誤會的對象，放下預設立場，先去聆聽對方的想法。</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex gap-4">
+                    <div class="text-2xl font-accent font-bold text-gold-500">B</div>
+                    <div>
+                        <h4 class="font-bold mb-1">設立家庭的見證壇</h4>
+                        <p class="text-white/60 text-sm">建立具體的信仰習慣，或擺設屬靈記念物，向下一代述說神在家庭中的恩典。</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex gap-4 md:col-span-2">
+                    <div class="text-2xl font-accent font-bold text-gold-500">C</div>
+                    <div>
+                        <h4 class="font-bold mb-1">拒絕傳播流言</h4>
+                        <p class="text-white/60 text-sm">聽見負面消息時不參與猜測與傳播，先為當事人禱告，並以愛心尋求查證。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-12">名言佳句</h2>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic mb-4">「神喜悅祂的子民合一，這合一不是建立在忽視真理的妥協上，而是建立在彼此相愛與互相理解的恩典中。」</p>
+                    <p class="text-sm text-white/40 text-right">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid border-l-4 border-l-gold-500/50">
+                    <p class="text-gold-200 italic mb-4">「教會的見證不是來自於我們從不犯錯，而是當我們發生衝突與誤會時，我們願意用福音的恩典去修復與和好。」</p>
+                    <p class="text-sm text-white/40 text-right">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic mb-4">「真實的基督徒相交，不是理想主義的浪漫，而是每天學習在恩典中包容對方的不完美，並耐心地聆聽對方的靈魂。」</p>
+                    <p class="text-sm text-white/40 text-right">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic mb-4">「一顆不願傾聽的心，是驕傲最明顯的標誌。因為它宣告自己的判斷永遠比別人的解釋更準確。」</p>
+                    <p class="text-sm text-white/40 text-right">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid border-l-4 border-l-gold-500/50">
+                    <p class="text-gold-200 italic mb-4">「使人和睦的人不僅僅是停止爭吵，他們是主動走向裂痕，用基督的愛作為橋梁，將隔絕的雙方重新連結。」</p>
+                    <p class="text-sm text-white/40 text-right">— 葛理翰 (Billy Graham)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic mb-4">「在噪音與互相指責的世界裡，願意安靜下聆聽弟兄的恐懼與擔憂，本身就是一種極大的醫治與服事。」</p>
+                    <p class="text-sm text-white/40 text-right">— 盧雲 (Henri Nouwen)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Message -->
+        <div class="text-center py-12 text-white/30 text-sm border-t border-white/5">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-400 transition-all hover:scale-110 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽64:1-12:裂天而降的呼求：在破碎中遇見窯匠上帝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C5A059',
+                        clay: '#8D6E63',
+                        deep: '#0F172A',
+                        accent: '#334155',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        english: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounceSubtle 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.85' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        bounceSubtle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+        .bento-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: rgba(197, 160, 89, 0.4);
+            transform: translateY(-4px);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(197, 160, 89, 0.5);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFF 0%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-deep text-slate-200 font-body selection:bg-gold selection:text-deep">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-screen-xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-display font-bold text-gold tracking-tight truncate mr-4">賽 64:1-12</span>
+            <div class="flex gap-4 md:gap-8 text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center pt-16" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_69fa99b1-238f-4341-b900-df49ccb0f78d.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-deep/20 via-deep/60 to-deep"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight gradient-text">
+                裂天而降的呼求：<br><span class="text-3xl md:text-5xl">在破碎中遇見窯匠上帝</span>
+            </h1>
+            
+            <!-- Floating Verse -->
+            <div class="animate-bounce-subtle mt-12">
+                <p class="text-lg md:text-2xl font-display leading-relaxed max-w-2xl mx-auto text-slate-100">
+                    「耶和華啊，現在你仍是我們的父！我們是泥，你是窯匠；我們都是你手的工作。」
+                </p>
+                <p class="mt-4 text-gold font-english font-semibold tracking-widest">— 以賽亞書 64:8 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto px-6 pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-20 flex flex-col items-center">
+            <div class="w-full max-w-3xl bento-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 opacity-10 p-4">
+                    <svg class="w-24 h-24 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12.83 2.1c-.42-.47-1.24-.47-1.66 0C8.36 5.03 2 12.3 2 15.5 2 19.09 4.91 22 8.5 22c2.15 0 4.05-1.05 5.25-2.65 1.2 1.6 3.1 2.65 5.25 2.65 3.59 0 6.5-2.91 6.5-6.5 0-3.2-6.36-10.47-9.17-13.4z"/></svg>
+                </div>
+                <h2 class="flex items-center gap-3 text-2xl font-display font-bold text-gold mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                    虔心禱告
+                </h2>
+                <p class="text-lg leading-relaxed text-slate-300 italic">
+                    主啊，當我們深陷絕望與軟弱時，求祢裂天而降，彰顯祢的威榮。我們承認自己的義如同污穢的衣服，生命如枯葉般被罪孽吹去；但我們更宣告祢是我們的父，是塑造我們的窯匠。求祢不要大發震怒，垂顧我們這些祢手所做的工作，在我們的破碎中再次施恩重塑。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="py-12">
+            <h2 class="flex items-center gap-3 text-2xl font-display font-bold text-gold mb-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                講道大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <button onclick="document.getElementById('section-1').scrollIntoView()" class="bento-card p-6 rounded-2xl text-left group">
+                    <span class="text-gold font-english text-sm font-semibold mb-2 block opacity-60">Part 01 | 賽 64:1-4</span>
+                    <h3 class="font-display font-bold text-xl group-hover:text-gold transition-colors">渴望神臨：裂天而降的震撼與期待</h3>
+                </button>
+                <button onclick="document.getElementById('section-2').scrollIntoView()" class="bento-card p-6 rounded-2xl text-left group">
+                    <span class="text-gold font-english text-sm font-semibold mb-2 block opacity-60">Part 02 | 賽 64:5-7</span>
+                    <h3 class="font-display font-bold text-xl group-hover:text-gold transition-colors">直面敗壞：枯葉般的生命與隱藏的神</h3>
+                </button>
+                <button onclick="document.getElementById('section-3').scrollIntoView()" class="bento-card p-6 rounded-2xl text-left group">
+                    <span class="text-gold font-english text-sm font-semibold mb-2 block opacity-60">Part 03 | 賽 64:8-12</span>
+                    <h3 class="font-display font-bold text-xl group-hover:text-gold transition-colors">恩典重塑：泥土的降服與窯匠的慈心</h3>
+                </button>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Sections -->
+        <div class="space-y-24 mt-24">
+            <!-- Section 1 -->
+            <section id="section-1" class="scroll-mt-24">
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/3">
+                        <h3 class="font-display text-3xl font-bold mb-6 text-gold">渴望神臨</h3>
+                        <div class="bg-accent/30 p-6 rounded-2xl border-l-4 border-gold">
+                            <p class="text-sm font-english text-gold/80 mb-2">SCRIPTURE</p>
+                            <p class="leading-relaxed">願你裂天而降；願山在你面前震動─好像火燒乾柴，又像火將水燒開，使你敵人知道你的名，使列國在你面前發顫！你曾行我們不能逆料可畏的事。那時你降臨，山嶺在你面前震動...</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文
+                            </h4>
+                            <p class="text-sm"><span class="text-white font-bold">「裂天」(קָרַע / qara`)</span>：意為「撕裂」、「扯開」。帶有一種強烈、猛烈且不可逆轉的力量。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="text-sm italic">當生活陷入僵局，我們是倚靠自己的辦法，還是真正呼求神「裂天而降」？</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl md:col-span-2">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                屬靈例證
+                            </h4>
+                            <p class="text-sm">1904年威爾斯大復興，伊凡·羅伯斯呼求：「主啊，折服我們！」引發全國覺醒。</p>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-xs text-gold font-english italic">"教會最缺乏的是神同在的彰顯。" — 陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" class="scroll-mt-24">
+                <div class="flex flex-col lg:flex-row-reverse gap-12">
+                    <div class="lg:w-1/3 text-right">
+                        <h3 class="font-display text-3xl font-bold mb-6 text-gold">直面敗壞</h3>
+                        <div class="bg-accent/30 p-6 rounded-2xl border-r-4 border-gold text-left">
+                            <p class="text-sm font-english text-gold/80 mb-2">SCRIPTURE</p>
+                            <p class="leading-relaxed">我們都像不潔淨的人；所有的義都像污穢的衣服。我們都像葉子漸漸枯乾；我們的罪孽好像風把我們吹去...</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文
+                            </h4>
+                            <p class="text-sm"><span class="text-white font-bold">「污穢的衣服」(בֶּגֶד עִדִּים)</span>：指染血的破布。形容人自以為是的「善行」在聖潔神面前毫無價值。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="text-sm italic">我們是否試圖用「宗教行為」掩飾內心的枯乾，卻忽略罪孽正在吞噬生命？</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl md:col-span-2">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                屬靈例證
+                            </h4>
+                            <p class="text-sm">外表潔白但地基被白蟻蛀空的房子。無論如何裝飾外牆，都無法阻止倒塌。唯有拆除重建。</p>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-xs text-gold font-english italic">"我們比自己敢於相信的還要罪孽深重...但在基督裡卻更被接納。" — 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="scroll-mt-24">
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/3">
+                        <h3 class="font-display text-3xl font-bold mb-6 text-gold">恩典重塑</h3>
+                        <div class="bg-accent/30 p-6 rounded-2xl border-l-4 border-gold">
+                            <p class="text-sm font-english text-gold/80 mb-2">SCRIPTURE</p>
+                            <p class="leading-relaxed">耶和華啊，現在你仍是我們的父！我們是泥，你是窯匠；我們都是你手的工作...</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文
+                            </h4>
+                            <p class="text-sm"><span class="text-white font-bold">「窯匠」(יֹצֵר / yatsar)</span>：意為「塑造者」，強調神擁有主權且對泥土傾注了最深的情感。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="text-sm italic">經歷破碎時，我們是抱怨神的嚴厲，還是甘心成為柔軟的泥土任憑重新塑造？</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl md:col-span-2">
+                            <h4 class="font-bold text-gold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                屬靈例證
+                            </h4>
+                            <p class="text-sm">日本「金繼」技術：用金粉修復碎瓷。神也不丟棄破碎的我們，而是用恩典使我們比原本更獨特。</p>
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-xs text-gold font-english italic">"當我們無法看清祂的手，必須信靠祂的心。" — 司布真</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="py-24 border-y border-white/5 mt-24">
+            <h2 class="flex items-center gap-3 text-2xl font-display font-bold text-gold mb-12 justify-center">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                講章文稿
+            </h2>
+            <article class="max-w-3xl mx-auto space-y-8 text-lg leading-loose text-slate-300">
+                <p>弟兄姊妹們，當你環顧四周，看見社會的動盪、教會的軟弱，或者看見你自己生命中那些久久無法突破的困境、破碎的關係，你的內心在想什麼？我們會不會常常覺得神似乎沉默了？神似乎離我們很遠？</p>
+                <p>在以賽亞書64章，先知以賽亞代表著一群深陷絕望、經歷國家毀滅與被擄之苦的百姓，向神發出了一篇撕心裂肺的禱告。這不僅是古代以色列人的呼求，更是今天我們每一個渴望生命復興之人的心聲。</p>
+                
+                <h3 class="text-2xl font-display font-bold text-white mt-12 mb-6 border-l-4 border-gold pl-6">一、渴望神臨：裂天而降的震撼與期待</h3>
+                <p>先知一開始就發出了極其強烈的呼喊。以賽亞書64:1-4說：「願你<span class="text-gold font-bold">裂天而降</span>；願山在你面前震動...」</p>
+                <p>先知沒有求神「稍微幫個忙」，他求神「<span class="underline decoration-gold underline-offset-8">裂天而降</span>」。原文中「裂天」意味著猛烈地撕裂、扯開。這是一種極度迫切的渴望，渴望神打破天上與人間的界線。如同陶恕所說：<span class="text-white italic">「我們這個時代的教會，最缺乏的不是更好的策略，而是神同在的彰顯。」</span></p>
+
+                <h3 class="text-2xl font-display font-bold text-white mt-12 mb-6 border-l-4 border-gold pl-6">二、直面敗壞：枯葉般的生命與隱藏的神</h3>
+                <p>為什麼神沒有降臨？先知帶領百姓誠實地轉向內部問題。以賽亞書64:6揭露真相：<span class="text-gold font-bold">「我們都像不潔淨的人；所有的義都像污穢的衣服。」</span></p>
+                <p>我們常以為自己還不錯，但在聖潔的神面前，先知說我們引以為傲的「義」，不過是「污穢的衣服」。當我們用宗教行為來掩飾內心的枯乾時，我們的生命就像失去水分的枯葉，風一吹，就隨風飄散了。</p>
+
+                <h3 class="text-2xl font-display font-bold text-white mt-12 mb-6 border-l-4 border-gold pl-6">三、恩典重塑：泥土的降服與窯匠的慈心</h3>
+                <div class="bg-gold/10 p-8 rounded-3xl border border-gold/30 my-10">
+                    <p class="text-xl md:text-2xl font-display text-white text-center">
+                        「耶和華啊，現在你仍是我們的父！我們是泥，你是窯匠；我們都是你手的工作。」
+                    </p>
+                </div>
+                <p>先知不再拿自己的好行為來跟神談判，他降服了。他抓住兩個身分：神是「<span class="text-gold">父親</span>」，神是「<span class="text-gold">窯匠</span>」。當我們經歷破碎時，我們是抱怨神，還是甘心作柔軟的泥土？泥土本身沒有價值，但一塊泥土若完全交在窯匠手中，就能成為無價的藝術品。</p>
+                <p>弟兄姊妹，今天無論你的生命正面臨何種荒涼，請記住你的身分：你是泥，祂是窯匠。讓我們放棄自以為是的驕傲，向神發出<span class="text-white font-bold">呼求</span>，承認我們的<span class="text-white font-bold">污穢</span>，並將自己完全交託給大窯匠，進行奇妙的<span class="text-white font-bold">塑造</span>！</p>
+            </article>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="py-24 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="flex items-center gap-3 text-2xl font-display font-bold text-gold mb-8">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 p-4 bento-card rounded-xl">
+                        <span class="text-gold font-english font-bold">01</span>
+                        <span>放棄自我拯救，承認屬靈貧窮。</span>
+                    </li>
+                    <li class="flex gap-4 p-4 bento-card rounded-xl">
+                        <span class="text-gold font-english font-bold">02</span>
+                        <span>恢復迫切禱告，奮力抓住神。</span>
+                    </li>
+                    <li class="flex gap-4 p-4 bento-card rounded-xl">
+                        <span class="text-gold font-english font-bold">03</span>
+                        <span>在苦難與管教中降服主權。</span>
+                    </li>
+                    <li class="flex gap-4 p-4 bento-card rounded-xl">
+                        <span class="text-gold font-english font-bold">04</span>
+                        <span>抓住與神的立約關係。</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="flex items-center gap-3 text-2xl font-display font-bold text-gold mb-8">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    回應行動
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 p-4 bento-card rounded-xl border-l-4 border-gold">
+                        <span>寫下一篇認罪與降服的禱告文</span>
+                    </li>
+                    <li class="flex gap-4 p-4 bento-card rounded-xl border-l-4 border-gold">
+                        <span>設立每天「等候神」的專屬時間</span>
+                    </li>
+                    <li class="flex gap-4 p-4 bento-card rounded-xl border-l-4 border-gold">
+                        <span>交託一個目前生命中的「荒場」</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24">
+            <h2 class="flex items-center gap-3 text-2xl font-display font-bold text-gold mb-12">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg mb-4 italic">「如果我們相信的上帝永遠不會與我們意見相左，那麼我們相信的可能不是上帝，而是我們自己。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold font-bold">提摩太·凱勒 (Tim Keller)</span>
+                        <span class="text-xs opacity-40">《揮霍的上帝》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg mb-4 italic">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，乃是昂貴的恩典。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold font-bold">潘霍華 (Dietrich Bonhoeffer)</span>
+                        <span class="text-xs opacity-40">《追隨基督》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg mb-4 italic">「如果上帝沒有親自擔當我們的痛苦與刑罰，我永遠無法相信上帝。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold font-bold">約翰·史托德 (John Stott)</span>
+                        <span class="text-xs opacity-40">《基督的十字架》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg mb-4 italic">「我們真正的身分是神所愛的兒女，這是我們存在的最深邃之處。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold font-bold">盧雲 (Henri Nouwen)</span>
+                        <span class="text-xs opacity-40">《你是我的愛子》</span>
+                    </div>
+                </div>
+                <!-- Additional quotes in small cards -->
+                <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-accent/20 rounded-xl text-sm">
+                        <p class="mb-2 italic">「恩典的反面不是努力，而是賺取。」</p>
+                        <p class="text-gold text-xs font-bold">— 魏樂德</p>
+                    </div>
+                    <div class="p-4 bg-accent/20 rounded-xl text-sm">
+                        <p class="mb-2 italic">「膚淺是我們這個時代的咒詛。」</p>
+                        <p class="text-gold text-xs font-bold">— 傅士德</p>
+                    </div>
+                    <div class="p-4 bg-accent/20 rounded-xl text-sm">
+                        <p class="mb-2 italic">「聖經的目的是將我們帶向聖靈。」</p>
+                        <p class="text-gold text-xs font-bold">— 大衛·鮑森</p>
+                    </div>
+                    <div class="p-4 bg-accent/20 rounded-xl text-sm">
+                        <p class="mb-2 italic">「認識神與認識我們自己是緊密相連的。」</p>
+                        <p class="text-gold text-xs font-bold">— 約翰·加爾文</p>
+                    </div>
+                    <div class="p-4 bg-accent/20 rounded-xl text-sm">
+                        <p class="mb-2 italic">「聖經被賜下，是為了改變我們的生命。」</p>
+                        <p class="text-gold text-xs font-bold">— 慕迪</p>
+                    </div>
+                    <div class="p-4 bg-accent/20 rounded-xl text-sm">
+                        <p class="mb-2 italic">「信心是活潑的、對上帝恩典的信靠。」</p>
+                        <p class="text-gold text-xs font-bold">— 馬丁·路德</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="mt-12 text-center text-slate-500 text-sm">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold text-deep rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

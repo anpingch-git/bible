@@ -376,79 +376,94 @@
 			currentPage = 1;
 			renderNotes();
 		}
+		
 		// 搜尋處理函數
 function handleSearch() {
-    const query = document.getElementById('search-input').value.trim();
-    if (!query) return;
+    const input = document.getElementById('search-input').value.trim();
+    if (!input) return;
 
     let searchResult = [];
+    let titleText = `搜尋：${input}`;
 
-    // 1. 偵測是否為日期格式 (例如: 2026/5 或 2026-05)
-    const dateMatch = query.match(/^(\d{4})[/-](\d{1,2})$/);
-    
-    // 2. 偵測是否為經文範圍 (例如: 出 1~3 或 創 1)
-    const scriptureMatch = query.match(/^(\S+)\s+(\d+)(?:~(\d+))?$/);
+    // --- 1. 強大日期解析 (支援 YYYY/M, YYYY/M/D, YYYY/M/D~D, 支援橫線或斜線) ---
+    // 正則說明：年 [/-] 月 ([/-] 日 ([~-] 日終)?)?，且中間允許任意空白
+    const dateMatch = input.match(/^(\d{4})[/-](\d{1,2})(?:\s*[/-]\s*(\d{1,2})(?:\s*[~-]\s*(\d{1,2}))?)?$/);
 
     if (dateMatch) {
         const year = dateMatch[1];
         const month = dateMatch[2].padStart(2, '0');
-        const targetDate = `${year}-${month}`;
-        searchResult = fullDatabase.filter(item => item.date.startsWith(targetDate));
-        document.getElementById('page-title').innerText = `${year}年${month}月`;
-    } 
-    else if (scriptureMatch) {
-        const bookInput = scriptureMatch[1];
-        const startChap = parseInt(scriptureMatch[2]);
-        const endChap = scriptureMatch[3] ? parseInt(scriptureMatch[3]) : startChap;
-        
-        // 1. 自動轉換全名為縮寫 (例如：輸入"出埃及記"會轉為"出")
-        let bookAbbr = bookInput;
-        for (let abbr in bookFullName) {
-            if (bookFullName[abbr] === bookInput) {
-                bookAbbr = abbr;
-                break;
-            }
-        }
+        const dayStart = dateMatch[3] ? dateMatch[3].padStart(2, '0') : null;
+        const dayEnd = dateMatch[4] ? dateMatch[4].padStart(2, '0') : dayStart;
 
-        searchResult = fullDatabase.filter(item => {
-            // 2. 檢查書卷縮寫是否匹配
-            if (!item.chapter.startsWith(bookAbbr)) return false;
-            
-            // 3. 改進：只提取書卷縮寫之後、冒號之前的數字 (章數)
-            // 範例：從 "出1:1-22" 中提取 "1"
-            const chapterPart = item.chapter.substring(bookAbbr.length); 
-            const m = chapterPart.match(/^(\d+)/); 
-            if (!m) return false;
-            
-            const chapterNum = parseInt(m[1]);
-            return chapterNum >= startChap && chapterNum <= endChap;
-        });
+        if (!dayStart) {
+            // 只有年月：2026/5 或 2026-05
+            const prefix = `${year}-${month}`;
+            searchResult = fullDatabase.filter(item => item.date.startsWith(prefix));
+            titleText = `${year}年${month}月`;
+        } else {
+            // 有具體日期或範圍：2026/5/1 或 2026/5/1~3
+            searchResult = fullDatabase.filter(item => {
+                const itemDay = item.date.split('-')[2];
+                return item.date.startsWith(`${year}-${month}`) && 
+                       parseInt(itemDay) >= parseInt(dayStart) && 
+                       parseInt(itemDay) <= parseInt(dayEnd);
+            });
+            titleText = dayStart === dayEnd ? `${year}/${month}/${dayStart}` : `${year}/${month}/${dayStart}~${dayEnd}`;
+        }
+    } 
+    // --- 2. 經文範圍解析 (支援 創39, 出 1~3, 出1-3, 出 1 ~ 3 等各種空白與符號組合) ---
+    else {
+        // 正則說明：書卷名 + 選擇性空白 + 起始章節 + 選擇性(符號+結束章節)
+        const scriptureMatch = input.match(/^([^\d\s]+)\s*(\d+)(?:\s*[~-]\s*(\d+))?$/);
         
-        const fullName = bookFullName[bookAbbr] || bookAbbr;
-        document.getElementById('page-title').innerText = startChap === endChap ? 
-            `${fullName} 第${startChap}章` : `${fullName} ${startChap}~${endChap}章`;
-        } 
-		else {
-        // 一般關鍵字搜尋 (標題或經文)
-        searchResult = fullDatabase.filter(item => 
-            item.title.includes(query) || item.chapter.includes(query)
-        );
-        document.getElementById('page-title').innerText = `搜尋：${query}`;
+        if (scriptureMatch) {
+            const bookInput = scriptureMatch[1];
+            const startChap = parseInt(scriptureMatch[2]);
+            const endChap = scriptureMatch[3] ? parseInt(scriptureMatch[3]) : startChap;
+
+            // 書卷名轉換邏輯
+            let bookAbbr = bookInput;
+            for (let abbr in bookFullName) {
+                if (bookFullName[abbr] === bookInput) {
+                    bookAbbr = abbr;
+                    break;
+                }
+            }
+
+            searchResult = fullDatabase.filter(item => {
+                if (!item.chapter.startsWith(bookAbbr)) return false;
+                // 只提取章數
+                const chapterPart = item.chapter.substring(bookAbbr.length);
+                const m = chapterPart.match(/^(\d+)/);
+                if (!m) return false;
+                const chapterNum = parseInt(m[1]);
+                return chapterNum >= startChap && chapterNum <= endChap;
+            });
+
+            const fullName = bookFullName[bookAbbr] || bookAbbr;
+            titleText = startChap === endChap ? `${fullName} 第${startChap}章` : `${fullName} ${startChap}~${endChap}章`;
+        } else {
+            // --- 3. 一般關鍵字搜尋 (標題或全文) ---
+            searchResult = fullDatabase.filter(item => 
+                item.title.includes(input) || item.chapter.includes(input)
+            );
+            titleText = `搜尋：${input}`;
+        }
     }
 
-    // 更新狀態並渲染
+    // 更新渲染狀態
     filteredNotes = searchResult;
     currentPage = 1;
+    document.getElementById('page-title').innerText = titleText;
     
-    // 切換視圖顯示
+    // 切換視圖 (維持原有邏輯)
     document.getElementById('map-view').classList.add('hidden');
     document.getElementById('home-nav').classList.add('hidden');
     document.getElementById('gallery-view').classList.remove('hidden');
     document.getElementById('gallery-nav').classList.remove('hidden');
     document.getElementById('toolbar-title').innerText = "SEARCH";
-    
     renderNotes();
-	}
+}
 
     </script>
 </body>

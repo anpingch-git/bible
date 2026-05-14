@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽62:1-12：永不靜默的愛：從被撇棄到被尋回的恩典</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            50: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        brand: {
+                            deep: '#0a0a0c',
+                            surface: '#16161e',
+                            accent: '#c4a47c'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'jump': 'jump 2.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-card {
+            background: rgba(22, 22, 30, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(196, 164, 124, 0.3);
+            transform: translateY(-2px);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fef3c7 0%, #c4a47c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c4a47c;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-display font-bold text-lg text-brand-accent tracking-wider">
+                賽62:1-12
+            </div>
+            <div class="flex space-x-6 text-sm font-medium text-gray-400">
+                <a href="#prayer" class="hover:text-brand-accent transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-brand-accent transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-brand-accent transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-brand-accent transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full animate-breath banner-mask overflow-hidden">
+                <img src='image/img_e0e28d80-1c86-4d3d-93d5-48f127c0be4e.jpg' alt='media_1' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-deep/50 to-brand-deep"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                永不靜默的愛<br/>
+                <span class="text-gradient text-3xl md:text-5xl">從被撇棄到被尋回的恩典</span>
+            </h1>
+            
+            <!-- Verse (Floating) -->
+            <div class="animate-jump inline-block">
+                <p class="text-xl md:text-2xl font-light italic text-gold-100 max-w-3xl leading-relaxed drop-shadow-lg">
+                    「你必不再稱為『撇棄的』，你的地也不再稱為『荒涼的』。你卻要稱為『我所喜悅的』，你的地也必稱為『有夫之婦』。因為耶和華喜悅你，你的地也必歸他。」
+                </p>
+                <p class="mt-4 font-display font-bold tracking-widest text-brand-accent">— 以賽亞書 62:4 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-brand-accent/10 rounded-full blur-3xl group-hover:bg-brand-accent/20 transition-all"></div>
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="flex-shrink-0 bg-brand-accent/20 p-4 rounded-2xl">
+                        <svg class="w-10 h-10 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-display font-bold mb-6 text-white flex items-center">
+                            禱告詞
+                        </h2>
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-300">
+                            親愛的天父，我們感謝祢永不靜默的愛！在我們深感被撇棄、生命荒涼的時刻，祢用不可思議的恩典為我們換上新名，稱我們為祢所喜悅的。主啊，求祢喚醒我們沉睡的心，使我們成為城牆上的守望者，日夜不息地緊抓住祢的應許；也求祢賜給我們行動的勇氣，在生活中為祢預備道路，修平大道，撿去攔阻人認識祢的石頭。願祢的榮耀在我們身上彰顯，成為世界的光。奉主耶穌基督的聖名禱告，阿們。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display font-bold text-white mb-4">深入解析大綱</h2>
+                <p class="text-gray-400">點擊下方分段標題，快速跳轉至深度解析</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="glass-card p-6 rounded-2xl hover:scale-105 transform transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-2 block">Part 01</span>
+                        <h3 class="text-xl font-bold text-white mb-2">永不靜默的宣告</h3>
+                        <p class="text-sm text-gray-500">賽62:1-5</p>
+                    </div>
+                    <div class="mt-4 text-brand-accent flex items-center text-sm font-bold">
+                        解析內容 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+                <a href="#section-2" class="glass-card p-6 rounded-2xl hover:scale-105 transform transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-2 block">Part 02</span>
+                        <h3 class="text-xl font-bold text-white mb-2">城牆上的守望者</h3>
+                        <p class="text-sm text-gray-500">賽62:6-9</p>
+                    </div>
+                    <div class="mt-4 text-brand-accent flex items-center text-sm font-bold">
+                        解析內容 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+                <a href="#section-3" class="glass-card p-6 rounded-2xl hover:scale-105 transform transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-2 block">Part 03</span>
+                        <h3 class="text-xl font-bold text-white mb-2">預備榮耀的道路</h3>
+                        <p class="text-sm text-gray-500">賽62:10-12</p>
+                    </div>
+                    <div class="mt-4 text-brand-accent flex items-center text-sm font-bold">
+                        解析內容 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <div class="space-y-24">
+            <!-- Section 1 -->
+            <section id="section-1" class="scroll-mt-24 bg-brand-surface/40 p-8 md:p-16 rounded-[3rem] border border-white/5">
+                <div class="mb-12">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="bg-brand-accent text-brand-deep px-4 py-1 rounded-full text-sm font-black tracking-tighter">SECTION 01</span>
+                        <div class="h-[1px] flex-grow bg-white/10"></div>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">永不靜默的宣告：<br/><span class="text-brand-accent italic font-normal">從「被撇棄」到「被喜悅」</span></h2>
+                    <p class="mt-4 text-xl text-gray-400 font-display">經文範圍：以賽亞書 62:1-5</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="space-y-12">
+                        <div class="glass-card p-8 rounded-3xl border-l-4 border-l-brand-accent">
+                            <h4 class="text-brand-accent font-bold mb-4 uppercase tracking-widest flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                經文內容
+                            </h4>
+                            <p class="text-lg leading-relaxed text-gray-200">
+                                我因錫安必不靜默，為耶路撒冷必不息聲，直到他的公義如光輝發出，他的救恩如明燈發亮。列國必見你的公義；列王必見你的榮耀。你必得新名，是耶和華親口所起的...你必不再稱為「撇棄的」，你的地也不再稱為「荒涼的」。你卻要稱為「我所喜悅的」（協西巴），你的地也必稱為「有夫之婦」（撇烏拉）。
+                            </p>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-white font-bold text-2xl flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h.01M7 15h.01M13 7h.01M13 11h.01M13 15h.01M17 7h.01M17 11h.01M17 15h.01"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                    <strong class="text-brand-accent text-lg block mb-1">靜默 (chashah)</strong>
+                                    <span class="text-gray-400 text-sm">意指「沉默、不作為」。神宣告祂絕不停止行動，直到拯救完成。</span>
+                                </li>
+                                <li class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                    <strong class="text-brand-accent text-lg block mb-1">協西巴 (Hephzibah) / 撇烏拉 (Beulah)</strong>
+                                    <span class="text-gray-400 text-sm">「協西巴」意為「我的喜悅在她身上」；「撇烏拉」意指「被迎娶的」。代表身分的翻轉。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-12">
+                        <div class="space-y-6">
+                            <h4 class="text-white font-bold text-2xl flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵提問與解答
+                            </h4>
+                            <div class="bg-brand-deep/50 p-6 rounded-2xl border border-white/10 italic text-gray-300">
+                                "當我們感到人生被神或世界「撇棄」時，如何真實領受神在我們生命中預備的「新名」？"
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">
+                                我們常以過去的失敗或他人的評價來定義自己。領受新名的關鍵，在於將自我認同的基礎，從世俗的成就轉移到神如新郎般的喜悅上。當我們相信神已在基督裡迎娶了我們，我們就不再是荒涼的，而是極具價值的華冠。
+                            </p>
+                        </div>
+                        <div class="bg-gold-900/10 p-8 rounded-3xl border border-gold-900/30">
+                            <h4 class="text-gold-200 font-bold mb-4 flex items-center uppercase tracking-wider text-sm">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                生動小故事
+                            </h4>
+                            <p class="text-gray-300 italic leading-relaxed">
+                                一把流落街頭、破舊不堪的提琴，在拍賣官手中僅值幾塊錢。但當老音樂家拂去灰塵拉奏出優美旋律後，價值瞬間飆升。提琴的價值不在於它的外表，而在於「它在誰的手中」。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" class="scroll-mt-24 bg-brand-deep p-8 md:p-16 rounded-[3rem] border border-brand-accent/20">
+                <div class="mb-12 text-center">
+                    <div class="inline-flex items-center gap-4 mb-4">
+                        <div class="h-[1px] w-12 bg-brand-accent"></div>
+                        <span class="text-brand-accent font-black">SECTION 02</span>
+                        <div class="h-[1px] w-12 bg-brand-accent"></div>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">城牆上的守望者：<br/><span class="text-gradient font-normal italic">不息聲的禱告與不落空的應許</span></h2>
+                    <p class="mt-4 text-xl text-gray-400 font-display">經文範圍：以賽亞書 62:6-9</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card p-10 rounded-3xl">
+                         <h4 class="text-brand-accent font-bold mb-6 flex items-center">
+                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                            關鍵字彙與背景
+                        </h4>
+                        <div class="space-y-6">
+                            <div>
+                                <h5 class="text-white font-bold mb-2">守望的 (shamar)</h5>
+                                <p class="text-gray-400">在此指屬靈的代禱者，負責警醒並看顧神百姓的屬靈光景。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold mb-2">呼籲 (zakar)</h5>
+                                <p class="text-gray-400">原文有「提醒、記念」之意。指代禱者不斷「提醒」神祂所立的約。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card p-10 rounded-3xl">
+                        <h4 class="text-brand-accent font-bold mb-6 flex items-center">
+                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.336-7.364l-.707-.707M6.336 19.364l.707-.707M18 19.364l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"></path></svg>
+                            禱告的本質
+                        </h4>
+                        <p class="text-gray-300 leading-relaxed italic">
+                            「神不需要被提醒，因為祂不會忘記。神要求我們『不要使祂休息』，是為了讓我們的心與祂的旨意對齊。這種迫切的禱告不是在改變神的心意，而是神賜給我們與祂同工的特權。」
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="scroll-mt-24 bg-brand-accent/5 p-8 md:p-16 rounded-[3rem] border border-white/5">
+                <div class="mb-12">
+                    <span class="text-brand-accent font-black tracking-widest block mb-2">SECTION 03</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">預備榮耀的道路：<br/><span class="text-gray-400 font-normal italic">迎接「被尋回」的得勝生命</span></h2>
+                    <p class="mt-4 text-xl text-gray-400 font-display">經文範圍：以賽亞書 62:10-12</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="col-span-12 md:col-span-8 glass-card p-8 rounded-3xl">
+                        <h4 class="text-brand-accent font-bold mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                            如何「修築大道，撿去石頭」？
+                        </h4>
+                        <p class="text-gray-300 leading-relaxed">
+                            這不僅是先知對當時以色列人的呼籲，也是對今日教會的大使命。生活中的「石頭」可能是我們個人的軟弱、虛偽、驕傲，或者是教會中不合神心意的傳統。撿去石頭，意味著活出真實、悔改與聖潔的生命，並主動走入人群。
+                        </p>
+                    </div>
+                    <div class="col-span-12 md:col-span-4 bg-brand-accent p-8 rounded-3xl text-brand-deep">
+                        <h4 class="font-black mb-4 uppercase tracking-tighter">關鍵原文</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="font-bold text-xl">大道 (mesillah)</div>
+                                <div class="text-sm opacity-80">填平坑谷、移除障礙，以利君王車隊通行。</div>
+                            </div>
+                            <div class="pt-4 border-t border-brand-deep/20">
+                                <div class="font-bold text-xl">眷顧 (darash)</div>
+                                <div class="text-sm opacity-80">主動尋找、極力挽回百姓。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24 max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black text-white mb-6">講章全文</h2>
+                <div class="w-24 h-1 bg-brand-accent mx-auto"></div>
+            </div>
+            
+            <div class="prose prose-invert prose-lg max-w-none space-y-12 text-gray-300">
+                <div class="glass-card p-10 rounded-[2.5rem]">
+                    <h3 class="text-3xl font-bold text-white mb-8 border-l-4 border-brand-accent pl-6">引言</h3>
+                    <p class="leading-loose">
+                        弟兄姊妹們，平安！今天我們要來看一段充滿烈火般熱情的經文。你是否曾經覺得自己被環境、被人、甚至被神「撇棄」了？當我們的生活充滿挫折，心靈彷彿變成一片荒涼的旱地時，神要對我們說什麼？以賽亞書第62章向我們揭示了一位<strong class="text-brand-accent">永不靜默、為愛燃燒的上帝</strong>。
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-white flex items-center">
+                        <span class="bg-white/10 w-8 h-8 rounded-full inline-flex items-center justify-center mr-4 text-sm">01</span>
+                        永不靜默的宣告：從「被撇棄」到「被喜悅」
+                    </h3>
+                    <p class="leading-loose">
+                        在經文一開始，上帝發出了一個極其震撼的宣告：<strong class="text-white text-xl">「我因錫安必不靜默，為耶路撒冷必不息聲...」</strong>這不是一位高高在上、冷眼旁觀的神，而是一位為了祂的百姓奮不顧身的神。
+                    </p>
+                    <div class="bg-brand-accent/10 border border-brand-accent/20 p-6 rounded-2xl italic">
+                        「你必不再稱為『撇棄的』...你卻要稱為『我所喜悅的』（協西巴），你的地也必稱為『有夫之婦』（撇烏拉）。」
+                    </div>
+                    <p class="leading-loose">
+                        弟兄姊妹，這就是神親口為你起的新名！不管你過去經歷了多少失敗，今天，神要像新郎喜悅新婦一樣地喜悅你。你不再是路邊無人問津的破銅爛鐵，<strong class="text-brand-accent">「你在耶和華的手中要作為華冠，在你神的掌上必作為冕旒。」</strong>這是神為你預備的榮耀身分！
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-white flex items-center">
+                        <span class="bg-white/10 w-8 h-8 rounded-full inline-flex items-center justify-center mr-4 text-sm">02</span>
+                        城牆上的守望者：不息聲的禱告與不落空的應許
+                    </h3>
+                    <p class="leading-loose">
+                        既然神如此愛我們，我們該如何回應？神呼召我們成為代禱的勇士！<strong class="text-white">「呼籲耶和華的，你們不要休息，也不要使他休息，直等他建立耶路撒冷...」</strong>
+                    </p>
+                    <p class="leading-loose">
+                        上帝邀請我們進入祂的計畫中。當我們「不使祂休息」地禱告時，我們是在緊緊抓住祂的應許。神甚至指著自己的右手和大能的膀臂起誓，保證祂的拯救必然成就。教會啊！我們不能在祭壇前沉睡，我們必須在破口中站立！
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-white flex items-center">
+                        <span class="bg-white/10 w-8 h-8 rounded-full inline-flex items-center justify-center mr-4 text-sm">03</span>
+                        預備榮耀的道路：迎接「被尋回」的得勝生命
+                    </h3>
+                    <p class="leading-loose">
+                        最後一步，就是要採取行動。<strong class="text-white">「你們當從門經過經過，預備百姓的路；修築修築大道，撿去石頭，為萬民豎立大旗。」</strong>
+                    </p>
+                    <p class="leading-loose">
+                        君王即將來到，道路必須預備好！我們生命中有沒有哪些「石頭」正在阻擋別人認識這位愛他們的主？我們必須彎下腰，撿去這些絆腳的石頭，活出真實的信仰，並在萬民中高舉耶穌基督十架的「大旗」。
+                    </p>
+                </div>
+
+                <div class="border-t border-white/10 pt-12">
+                    <h3 class="text-3xl font-black text-brand-accent mb-6">結語</h3>
+                    <p class="text-xl leading-relaxed text-gray-200">
+                        親愛的弟兄姊妹，神對你的愛永不靜默。祂已經為你換上了<strong class="text-white underline decoration-brand-accent">新名</strong>，祂呼召你成為禱告的<strong class="text-white underline decoration-brand-accent">守望</strong>者，祂差遣你去為萬民<strong class="text-white underline decoration-brand-accent">預備</strong>道路。讓我們帶著「被神喜悅」的確據，成為世人的明燈！阿們！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 rounded-[2.5rem]">
+                <h3 class="text-2xl font-bold text-white mb-8 flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-brand-accent font-bold">01</span>
+                        <p class="text-gray-300"><strong>重塑自我認同</strong>：拒絕世界負面標籤，天天宣告自己是「神所喜悅的」。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-brand-accent font-bold">02</span>
+                        <p class="text-gray-300"><strong>委身代禱服事</strong>：承擔守望者角色，操練「不使神休息」的迫切禱告。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-brand-accent font-bold">03</span>
+                        <p class="text-gray-300"><strong>移除福音絆腳石</strong>：找出生命中可能絆倒人的行為，靠聖靈移除。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-[2.5rem]">
+                <h3 class="text-2xl font-bold text-white mb-8 flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4 items-center bg-white/5 p-4 rounded-xl">
+                        <div class="w-2 h-2 bg-brand-accent rounded-full"></div>
+                        <p class="text-gray-300"><strong>「新名」宣告</strong>：將賽62:4貼在鏡前，每日宣告。</p>
+                    </li>
+                    <li class="flex gap-4 items-center bg-white/5 p-4 rounded-xl">
+                        <div class="w-2 h-2 bg-brand-accent rounded-full"></div>
+                        <p class="text-gray-300"><strong>設立「守望時間」</strong>：每週固定15分鐘為復興代求。</p>
+                    </li>
+                    <li class="flex gap-4 items-center bg-white/5 p-4 rounded-xl">
+                        <div class="w-2 h-2 bg-brand-accent rounded-full"></div>
+                        <p class="text-gray-300"><strong>「撿去石頭」計畫</strong>：本週寫下一項需對付的壞習慣。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-white mb-2">名言佳句</h2>
+                <p class="text-brand-accent font-display tracking-widest">Spiritual Wisdom</p>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <!-- Quote 1 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <svg class="absolute top-4 right-4 w-12 h-12 text-white/5" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.866 19.883 22 16.017 22H14.017V21ZM1 15V7C1 4.79086 2.79086 3 5 3H8C9.10457 3 10 3.89543 10 5V6C10 7.10457 9.10457 8 8 8H5C4.44772 8 4 8.44772 4 9V15C4 15.5523 4.44772 16 5 16H8C9.10457 16 10 16.8954 10 18V21H8C4.13401 22 1 18.866 1 15Z"/></svg>
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「我們唯一真正的身分，就是『被神所愛的人』。當你深知自己是被愛的，那些世俗貼在你身上的負面標籤就會失去能力。」</p>
+                    <p class="text-brand-accent font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「禱告不是克服上帝的不情願，而是抓住上帝的最高意願。」</p>
+                    <p class="text-brand-accent font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「廉價的恩典是我們自己給自己的恩典；重價的恩典是呼召我們跟從耶穌基督的恩典。」</p>
+                    <p class="text-brand-accent font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「福音的真理是：我們真實的光景比我們所敢承認的更加罪惡；但同時，我們在基督裡所蒙的愛和接納，卻比我們所敢盼望的更深、更廣。」</p>
+                    <p class="text-brand-accent font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「神應許的支票需要用禱告去兌現；當我們用信心將神的應許帶到祂面前時，祂絕不會拒絕自己的字跡。」</p>
+                    <p class="text-brand-accent font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「如果神是我們生命中追求的唯一目標，那我們就不必去尋找其他的事物來使我們得著滿足，因為在祂裡面已經包含了一切。」</p>
+                    <p class="text-brand-accent font-bold">— 陶恕 (A. W. Tozer)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「禱告是信心的首要操練，也是我們每日領受神恩典的主要管道。」</p>
+                    <p class="text-brand-accent font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「十字架是上帝絕不放棄我們、永不靜默之愛的最高彰顯。在那裡，祂親自承擔了我們的荒涼，好使我們能被稱為祂的喜悅。」</p>
+                    <p class="text-brand-accent font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「門徒的道路，就是在同一個方向上長期的順服；這包括了日復一日地撿去攔阻我們走向神的那些看似不起眼的石頭。」</p>
+                    <p class="text-brand-accent font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="break-inside-avoid glass-card p-8 rounded-3xl relative">
+                    <p class="text-lg text-gray-200 mb-4 leading-relaxed italic">「上帝的愛從未在我們最黑暗的時刻缺席。當你覺得自己完全被撇棄時，那正是祂預備要將你尋回，並賜給你新名的時刻。」</p>
+                    <p class="text-brand-accent font-bold">— 葛理翰 (Billy Graham)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="pt-12 text-center text-gray-500 text-sm border-t border-white/5">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-accent text-brand-deep rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽66:1-14 當應許遇見現實：從戰兢敬畏到終極安慰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#feef8a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        spiritual: {
+                            dark: '#0a0a0f',
+                            card: '#16161e',
+                            accent: '#6366f1',
+                            glow: 'rgba(99, 102, 241, 0.15)'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        english: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'bounce-slow': 'bounce-slow 3s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        'bounce-slow': {
+                            '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'none', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0f;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(22, 22, 30, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #6366f1, transparent);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-indigo-500/30 selection:text-indigo-200">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="font-display font-bold text-sm md:text-base text-indigo-400">賽 66:1-14</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wider">
+                <a href="#prayer" class="hover:text-indigo-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-indigo-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-indigo-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-indigo-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_8e430c65-dddb-4f77-bdce-649293d9b126.jpg' alt='media_1' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-spiritual-dark/40 via-spiritual-dark/60 to-spiritual-dark"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl px-6 pt-20 text-center">
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight">
+                當應許遇見現實：<br/>
+                <span class="text-indigo-400">從戰兢敬畏到終極安慰</span>
+            </h1>
+            
+            <!-- Golden Verse -->
+            <div class="mt-12 mb-8 animate-bounce-slow">
+                <p class="text-xl md:text-2xl lg:text-3xl font-display font-medium text-gold-200 leading-relaxed drop-shadow-2xl">
+                    「但我所看顧的，就是虛心痛悔、<br class="md:hidden"/>因我話而戰兢的人。」
+                </p>
+                <p class="text-sm md:text-base text-gold-400/80 mt-4 font-english uppercase tracking-widest">— Isaiah 66:2b —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24 relative">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-20">
+            <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 text-indigo-500/10 opacity-20 group-hover:opacity-40 transition-opacity">
+                    <svg class="w-40 h-40" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2L6 7l1 1 2-2v12h2V6l2 2 1-1-5-5zM19 21H5v-2h14v2z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </span>
+                    <h2 class="text-2xl md:text-3xl font-display font-bold text-gradient">虔誠禱告</h2>
+                </div>
+                <p class="text-lg md:text-xl text-slate-300 leading-loose italic font-light">
+                    親愛的天父，創造天地萬有的主宰，祢的寶座在天，腳凳在地，這世上沒有任何殿宇能限制祢的榮耀。求祢赦免我們時常流於表面的宗教儀式，卻失去了對祢話語的敬畏。懇求聖靈賜給我們一顆虛心痛悔的心，使我們因祢的話語而戰兢。在我們面對世人的嘲笑與逼迫時，求祢讓我們看見祢即將成就的榮耀；在我們疲憊軟弱時，求祢如母親般將我們抱在懷中，賜下如江河湧流的安慰。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation (Buttons) -->
+        <section id="outline" class="py-12">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold text-gradient">深度解析大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-4 mb-20">
+                <a href="#part1" class="group flex items-center justify-between p-6 bg-indigo-900/10 border border-indigo-500/20 rounded-2xl hover:bg-indigo-500/20 transition-all duration-300">
+                    <div class="flex flex-col">
+                        <span class="text-xs font-english text-indigo-400 uppercase tracking-widest mb-1">Part I • 賽 66:1-4</span>
+                        <span class="text-lg md:text-xl font-display font-bold text-slate-200">拒絕虛偽的獻祭：神所尋找的「戰兢之心」</span>
+                    </div>
+                    <svg class="w-6 h-6 text-indigo-400 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#part2" class="group flex items-center justify-between p-6 bg-indigo-900/10 border border-indigo-500/20 rounded-2xl hover:bg-indigo-500/20 transition-all duration-300">
+                    <div class="flex flex-col">
+                        <span class="text-xs font-english text-indigo-400 uppercase tracking-widest mb-1">Part II • 賽 66:5-9</span>
+                        <span class="text-lg md:text-xl font-display font-bold text-slate-200">突如其來的神蹟：在迫害中誕生的「榮耀之城」</span>
+                    </div>
+                    <svg class="w-6 h-6 text-indigo-400 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#part3" class="group flex items-center justify-between p-6 bg-indigo-900/10 border border-indigo-500/20 rounded-2xl hover:bg-indigo-500/20 transition-all duration-300">
+                    <div class="flex flex-col">
+                        <span class="text-xs font-english text-indigo-400 uppercase tracking-widest mb-1">Part III • 賽 66:10-14</span>
+                        <span class="text-lg md:text-xl font-display font-bold text-slate-200">如母親般的擁抱：在應許中湧流的「終極安慰」</span>
+                    </div>
+                    <svg class="w-6 h-6 text-indigo-400 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Content -->
+            <div class="space-y-32">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24">
+                    <h3 class="text-2xl font-display font-bold text-indigo-300 mb-6 flex items-center gap-3">
+                        <span class="text-base font-english border border-indigo-500/50 px-2 py-0.5 rounded">01</span>
+                        拒絕虛偽的獻祭：神所尋找的「戰兢之心」
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border-l-4 border-indigo-500">
+                            <p class="text-slate-400 text-sm mb-4">引用經文 賽 66:1-4</p>
+                            <p class="text-slate-300 leading-relaxed italic">「耶和華如此說：天是我的座位；地是我的腳凳。你們要為我造何等的殿宇？哪裡是我安息的地方呢？...但我所看顧的，就是虛心（原文是貧窮）痛悔、因我話而戰兢的人。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-indigo-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+                                    重要 Keyword
+                                </h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-gold-400">戰兢 (חרד)</strong>：敬畏、發抖。對神的話抱持極度敬畏、深怕違背。</li>
+                                    <li><strong class="text-gold-400">虛心 (עני)</strong>：貧窮、謙卑。承認靈性上的全然無助。</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-indigo-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵解析
+                                </h4>
+                                <p class="text-sm text-slate-400 leading-relaxed">
+                                    神譴責「有外表卻無內在」的虛偽。當心遠離神，儀式就成了褻瀆。神看重的是對話語的降服。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-500/5 p-6 rounded-2xl border border-indigo-500/20 italic text-slate-300">
+                            「如果我們的敬拜沒有改變我們，那它就不是敬拜。」—— 陶恕 (A.W. Tozer)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24">
+                    <h3 class="text-2xl font-display font-bold text-indigo-300 mb-6 flex items-center gap-3">
+                        <span class="text-base font-english border border-indigo-500/50 px-2 py-0.5 rounded">02</span>
+                        突如其來的神蹟：在迫害中誕生的「榮耀之城」
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border-l-4 border-indigo-500">
+                            <p class="text-slate-400 text-sm mb-4">引用經文 賽 66:5-9</p>
+                            <p class="text-slate-300 leading-relaxed italic">「錫安未曾劬勞就生產，未覺疼痛就生出男孩...我既使她臨產，豈不使她生產呢？」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-indigo-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+                                    重要 Keyword
+                                </h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-gold-400">生產 (ילד)</strong>：比喻神超自然地、迅速地復興祂的百姓。</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-indigo-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵解析
+                                </h4>
+                                <p class="text-sm text-slate-400 leading-relaxed">
+                                    強調神作為的「超自然性」。神的拯救將如奇蹟般突然降臨，神絕不會半途而廢。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-500/5 p-6 rounded-2xl border border-indigo-500/20 italic text-slate-300">
+                            「恩典總是出人意料的。神常常在我們認為已經絕望的時刻，帶來祂的拯救與生命。」—— 提摩太·凱勒 (Timothy Keller)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24">
+                    <h3 class="text-2xl font-display font-bold text-indigo-300 mb-6 flex items-center gap-3">
+                        <span class="text-base font-english border border-indigo-500/50 px-2 py-0.5 rounded">03</span>
+                        如母親般的擁抱：在應許中湧流的「終極安慰」
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-slate-900/50 p-6 rounded-2xl border-l-4 border-indigo-500">
+                            <p class="text-slate-400 text-sm mb-4">引用經文 賽 66:10-14</p>
+                            <p class="text-slate-300 leading-relaxed italic">「母親怎樣安慰兒子，我就照樣安慰你們；你們也必因耶路撒冷得安慰。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-indigo-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+                                    重要 Keyword
+                                </h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-gold-400">安慰 (נחם)</strong>：安慰、同情、舒緩。</li>
+                                    <li><strong class="text-gold-400">平安 (שלום)</strong>：全方位的完整、豐盛。</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h4 class="text-indigo-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵解析
+                                </h4>
+                                <p class="text-sm text-slate-400 leading-relaxed">
+                                    特意使用「母親」的形象，表達神對受苦子民細膩、溫柔、親密且滋養的疼愛。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-500/5 p-6 rounded-2xl border border-indigo-500/20 italic text-slate-300">
+                            「當祂用那雙創造天地的大手，輕輕擦去我們眼角的淚水時，世上還有什麼苦難是無法承受的呢？」—— 司布真 (Charles Spurgeon)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="py-24 border-t border-slate-800">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                </span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold text-gradient">講章文稿</h2>
+            </div>
+
+            <article class="prose prose-invert prose-indigo max-w-none space-y-10 text-slate-300">
+                <h3 class="text-3xl font-display font-black text-indigo-400 border-b border-indigo-500/30 pb-4">
+                    當應許遇見現實：從戰兢敬畏到終極安慰
+                </h3>
+                
+                <p class="text-lg leading-loose">
+                    弟兄姊妹，平安。今天我們要來看以賽亞書的最後一章。當我們走到這卷偉大先知書的結尾時，神給了我們一個極其震撼的對比：一邊是虛有其表的宗教徒，另一邊則是飽受欺壓卻敬畏神的餘民。今天，神的話語要挑戰我們，也要深深地安慰我們。
+                </p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-display font-bold text-slate-100 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-indigo-500 rounded-full"></span>
+                        一、 拒絕虛偽的獻祭：神所尋找的「戰兢之心」
+                    </h4>
+                    <p class="leading-loose">
+                        在經文的第1到第4節，神宣告了一個令人震驚的信息。**「耶和華如此說：天是我的座位；地是我的腳凳。你們要為我造何等的殿宇？...但我所看顧的，就是虛心痛悔、因我話而戰兢的人。」** 當時的以色列人非常驕傲於他們宏偉的聖殿和繁瑣的獻祭儀式。但神說：這些是我造的！你們以為可以把創造天地的主塞進一棟建築物裡嗎？
+                    </p>
+                    <p class="leading-loose">
+                        神接著在第3節講了非常重的話：<strong class="text-gold-200">「假冒為善的宰牛，好像殺人，獻羊羔，好像打折狗項...」</strong> 為什麼神把律法規規定的獻祭，等同於殺人或拜偶像？因為他們的「心」不對了。陶恕曾說：「如果我們的敬拜沒有改變我們，那它就不是敬拜。」神在尋找的，不是最華麗的殿宇，而是一顆<strong class="text-indigo-400">「虛心痛悔、因我話而戰兢」</strong>的心。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-display font-bold text-slate-100 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-indigo-500 rounded-full"></span>
+                        二、 突如其來的神蹟：在迫害中誕生的「榮耀之城」
+                    </h4>
+                    <p class="leading-loose">
+                        如果你是那個因神的話而戰兢的人，你可能會在現實中吃虧。第5節說：**「你們的弟兄，就是恨惡你們，因我名趕出你們的...」** 真正的敬虔，有時會招來屬肉體之人的嘲笑與排擠。但神要對這些受苦的百姓說：不要怕，神蹟即將發生！
+                    </p>
+                    <p class="leading-loose">
+                        第7到9節描述了一個不可思議的畫面：<strong class="text-gold-200">「錫安未曾劬勞就生產...國豈能一日而生？」</strong> 當你覺得自己正處在最黑暗的隧道，彷彿看不見光時，請記住第9節神的宣告：<strong class="text-indigo-400">「我既使她臨產，豈不使她生產呢？」</strong> 神開始的善工，祂必親自完成！不要在黎明前放棄。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-display font-bold text-slate-100 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-indigo-500 rounded-full"></span>
+                        三、 如母親般的擁抱：在應許中湧流的「終極安慰」
+                    </h4>
+                    <p class="leading-loose">
+                        最後，當這座榮耀之城誕生，神要如何對待祂這些歷經滄桑的兒女？第12到13節給了我們整本聖經中最溫柔的畫面之一：<strong class="text-gold-200">「你們要從中吃奶，你們必蒙抱在肋旁，搖弄在膝上。母親怎樣安慰兒子，我就照樣安慰你們。」</strong>
+                    </p>
+                    <p class="leading-loose">
+                        這位坐在天上寶座、腳踏地極的偉大上帝，此刻化身為一位充滿母愛的母親。司布真曾說：「當神親自用那雙創造天地的大手，輕輕擦去我們眼角的淚水時，世上還有什麼苦難是無法承受的呢？」
+                    </p>
+                </div>
+
+                <div class="bg-indigo-950/30 p-10 rounded-3xl border border-indigo-500/20 text-center">
+                    <p class="text-xl font-display font-bold text-indigo-300 mb-4 italic">「弟兄姊妹，今天你帶著什麼樣的心情來到神面前？」</p>
+                    <p class="text-slate-400 italic">如果你過去只剩下宗教的空殼，求主今天賜給你一顆痛悔的心；如果你正在面對打擊與逼迫，求主讓你緊緊抓住祂的應許；如果你現在身心俱疲，請你投入主的懷抱，領受祂那如江河般湧流的安慰。阿們！</p>
+                </div>
+            </article>
+
+            <!-- Conclusion Keywords -->
+            <div class="grid grid-cols-3 gap-4 mt-16 text-center">
+                <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800">
+                    <p class="text-indigo-400 font-english font-bold text-sm mb-1 uppercase tracking-widest">Keyword 01</p>
+                    <p class="text-xl md:text-2xl font-display font-bold">痛悔</p>
+                </div>
+                <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800">
+                    <p class="text-indigo-400 font-english font-bold text-sm mb-1 uppercase tracking-widest">Keyword 02</p>
+                    <p class="text-xl md:text-2xl font-display font-bold">應許</p>
+                </div>
+                <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800">
+                    <p class="text-indigo-400 font-english font-bold text-sm mb-1 uppercase tracking-widest">Keyword 03</p>
+                    <p class="text-xl md:text-2xl font-display font-bold">安慰</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="py-20 bg-indigo-500/5 rounded-3xl p-8 md:p-12">
+            <h2 class="text-2xl md:text-3xl font-display font-bold text-gradient mb-10 flex items-center gap-4">
+                <span class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </span>
+                回應與實踐行動
+            </h2>
+            <div class="grid gap-6">
+                <div class="flex gap-6 p-6 glass-card rounded-2xl hover:translate-x-2 transition-transform">
+                    <span class="text-4xl font-english font-black text-indigo-500/30">01</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">每日話語省察</h4>
+                        <p class="text-slate-400">本週每天撥出10分鐘閱讀聖經，不為完成進度，帶著「戰兢敬畏」的心問自己：「主啊，這段話我要如何確實遵行？」</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-6 glass-card rounded-2xl hover:translate-x-2 transition-transform">
+                    <span class="text-4xl font-english font-black text-indigo-500/30">02</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">為受苦者代求</h4>
+                        <p class="text-slate-400">尋找一位目前因堅持信仰或正直原則而正在受委屈的弟兄姊妹，為他代禱，並傳一則鼓勵的訊息給對方。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-6 glass-card rounded-2xl hover:translate-x-2 transition-transform">
+                    <span class="text-4xl font-english font-black text-indigo-500/30">03</span>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">成為安慰的導管</h4>
+                        <p class="text-slate-400">默想神如何像母親一樣安慰了你，本週主動關心一位正在經歷生活風暴的人，分享神江河般的平安。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </span>
+                <h2 class="text-2xl md:text-3xl font-display font-bold text-gradient">屬靈名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-slate-300 mb-6 italic">「恩典是白白的，但卻不是廉價的；它之所以白白賜予，是因為其代價無限。」</p>
+                    <p class="text-indigo-400 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-slate-300 mb-6 italic">「人心的本質就是一個無休止製造偶像的工廠。」</p>
+                    <p class="text-indigo-400 font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-slate-300 mb-6 italic">「神在我們的歡樂中對我們輕語，在我們的良知中對我們說話，但卻在我們的痛苦中大聲呼喊。」</p>
+                    <p class="text-indigo-400 font-bold text-sm">— C.S. 路易斯 (C.S. Lewis)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-slate-300 mb-6 italic">「沒有對神至高主權的敬畏，就沒有真正深刻的敬拜。」</p>
+                    <p class="text-indigo-400 font-bold text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-slate-300 mb-6 italic">「我們最大的問題不是缺乏教義的知識，而是缺乏對上帝榮耀的真實情感與體驗。」</p>
+                    <p class="text-indigo-400 font-bold text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-slate-300 mb-6 italic">「除非我們看見十字架上那無比的代價，否則我們無法真正體會上帝對我們的愛有多麼溫柔與深切。」</p>
+                    <p class="text-indigo-400 font-bold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- More quotes rendered as a list for space -->
+                <div class="md:col-span-2 glass-card p-8 rounded-3xl">
+                    <ul class="space-y-6">
+                        <li class="border-b border-slate-800 pb-4">
+                            <p class="text-slate-300 text-sm italic mb-2">「如果我們在生活中沒有操練獨處與靜默，我們就無法聽見上帝那微小的聲音。」</p>
+                            <p class="text-xs text-indigo-500">— 盧雲 (Henri Nouwen)</p>
+                        </li>
+                        <li class="border-b border-slate-800 pb-4">
+                            <p class="text-slate-300 text-sm italic mb-2">「神話語的真正目的不是增加我們的知識，而是改變我們的生命。」</p>
+                            <p class="text-xs text-indigo-500">— 慕迪 (D.L. Moody)</p>
+                        </li>
+                        <li class="border-b border-slate-800 pb-4">
+                            <p class="text-slate-300 text-sm italic mb-2">「信心就是安息在神的話語上，即使眼前的環境似乎與神的應許完全相反。」</p>
+                            <p class="text-xs text-indigo-500">— 馬丁·路德 (Martin Luther)</p>
+                        </li>
+                        <li>
+                            <p class="text-slate-300 text-sm italic mb-2">「靈命塑造的目標，就是將我們的內心世界重新排列，使其能與神的心意和安慰完全契合。」</p>
+                            <p class="text-xs text-indigo-500">— 魏樂德 (Dallas Willard)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="mt-12 p-6 rounded-2xl bg-red-950/20 border border-red-500/20 text-center">
+            <p class="text-red-400/80 text-sm font-medium">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 active:scale-95 z-50 animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

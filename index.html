@@ -98,6 +98,7 @@
             </div>
             
             <div id="home-nav" class="flex gap-8 items-center">
+				<a href="#search-input" class="nav-link">搜尋</a>
                 <a href="#ot-section" class="nav-link">舊約聖經</a>
                 <a href="#nt-section" class="nav-link">新約聖經</a>
             </div>
@@ -117,8 +118,19 @@
     <div class="max-w-7xl mx-auto px-6">
         <header class="text-center mt-12 mb-16">
             <h1 id="page-title" class="text-5xl md:text-8xl font-black tracking-tighter gold-gradient-text mb-4 uppercase">每日研經釋義</h1>
-            <p id="sub-title" class="text-gray-400 tracking-[0.4em] text-3xl font-light uppercase">講章大綱</p>
+            <p id="sub-title" class="text-gray-400 tracking-[0.4em] text-4xl font-light uppercase">講章大綱</p>
+			<p></p>
+			
+			<div id="search-container" class="mt-8 max-w-md mx-auto relative group">
+				<input type="text" id="search-input" placeholder="搜尋：出 1~3 或 2026/5..." 
+					class="w-full bg-gray-900/80 border-2 border-yellow-500/30 rounded-full px-6 py-3 text-white text-center 
+							focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20 
+							transition-all placeholder:text-gray-300 font-medium">		
+					<p id="search" class="text-2xl font-bold mb-8 tracking-[0.4em] text-yellow-500/60 uppercase border-b border-white/5 pb-4">搜尋：輸入日期或經文章節</p>
+			</div>
+			
         </header>
+
 
         <div id="map-view" class="space-y-24">
             <section id="ot-section">
@@ -165,6 +177,13 @@
                 fullDatabase = data.files || data; 
                 document.getElementById('loading-status').classList.add('hidden');
                 renderMap();
+				
+				// 新增：監聽搜尋框 Enter 鍵
+				document.getElementById('search-input').addEventListener('keypress', function (e) {
+					if (e.key === 'Enter') {
+						handleSearch();
+					}
+				});
             } catch (e) {
                 document.getElementById('loading-status').innerText = "DATABASE ERROR.";
             }
@@ -361,6 +380,94 @@
 			// 4. 重置頁碼並重新渲染
 			currentPage = 1;
 			renderNotes();
+		}
+		
+		// 搜尋處理函數
+function handleSearch() {
+    const input = document.getElementById('search-input').value.trim();
+    if (!input) return;
+
+    let searchResult = [];
+    let titleText = `搜尋：${input}`;
+
+    // --- 1. 強大日期解析 (支援 YYYY/M, YYYY/M/D, YYYY/M/D~D, 支援橫線或斜線) ---
+    // 正則說明：年 [/-] 月 ([/-] 日 ([~-] 日終)?)?，且中間允許任意空白
+    const dateMatch = input.match(/^(\d{4})[/-](\d{1,2})(?:\s*[/-]\s*(\d{1,2})(?:\s*[~-]\s*(\d{1,2}))?)?$/);
+
+    if (dateMatch) {
+        const year = dateMatch[1];
+        const month = dateMatch[2].padStart(2, '0');
+        const dayStart = dateMatch[3] ? dateMatch[3].padStart(2, '0') : null;
+        const dayEnd = dateMatch[4] ? dateMatch[4].padStart(2, '0') : dayStart;
+
+        if (!dayStart) {
+            // 只有年月：2026/5 或 2026-05
+            const prefix = `${year}-${month}`;
+            searchResult = fullDatabase.filter(item => item.date.startsWith(prefix));
+            titleText = `${year}年${month}月`;
+        } else {
+            // 有具體日期或範圍：2026/5/1 或 2026/5/1~3
+            searchResult = fullDatabase.filter(item => {
+                const itemDay = item.date.split('-')[2];
+                return item.date.startsWith(`${year}-${month}`) && 
+                       parseInt(itemDay) >= parseInt(dayStart) && 
+                       parseInt(itemDay) <= parseInt(dayEnd);
+            });
+            titleText = dayStart === dayEnd ? `${year}/${month}/${dayStart}` : `${year}/${month}/${dayStart}~${dayEnd}`;
+        }
+    } 
+    // --- 2. 經文範圍解析 (支援 創39, 出 1~3, 出1-3, 出 1 ~ 3 等各種空白與符號組合) ---
+    else {
+        // 正則說明：書卷名 + 選擇性空白 + 起始章節 + 選擇性(符號+結束章節)
+        const scriptureMatch = input.match(/^([^\d\s]+)\s*(\d+)(?:\s*[~-]\s*(\d+))?$/);
+        
+        if (scriptureMatch) {
+            const bookInput = scriptureMatch[1];
+            const startChap = parseInt(scriptureMatch[2]);
+            const endChap = scriptureMatch[3] ? parseInt(scriptureMatch[3]) : startChap;
+
+            // 書卷名轉換邏輯
+            let bookAbbr = bookInput;
+            for (let abbr in bookFullName) {
+                if (bookFullName[abbr] === bookInput) {
+                    bookAbbr = abbr;
+                    break;
+                }
+            }
+
+            searchResult = fullDatabase.filter(item => {
+                if (!item.chapter.startsWith(bookAbbr)) return false;
+                // 只提取章數
+                const chapterPart = item.chapter.substring(bookAbbr.length);
+                const m = chapterPart.match(/^(\d+)/);
+                if (!m) return false;
+                const chapterNum = parseInt(m[1]);
+                return chapterNum >= startChap && chapterNum <= endChap;
+            });
+
+            const fullName = bookFullName[bookAbbr] || bookAbbr;
+            titleText = startChap === endChap ? `${fullName} 第${startChap}章` : `${fullName} ${startChap}~${endChap}章`;
+        } else {
+            // --- 3. 一般關鍵字搜尋 (標題或全文) ---
+            searchResult = fullDatabase.filter(item => 
+                item.title.includes(input) || item.chapter.includes(input)
+            );
+            titleText = `搜尋：${input}`;
+        }
+    }
+
+    // 更新渲染狀態
+    filteredNotes = searchResult;
+    currentPage = 1;
+    document.getElementById('page-title').innerText = titleText;
+    
+    // 切換視圖 (維持原有邏輯)
+    document.getElementById('map-view').classList.add('hidden');
+    document.getElementById('home-nav').classList.add('hidden');
+    document.getElementById('gallery-view').classList.remove('hidden');
+    document.getElementById('gallery-nav').classList.remove('hidden');
+    document.getElementById('toolbar-title').innerText = "SEARCH";
+    renderNotes();
 }
 
     </script>

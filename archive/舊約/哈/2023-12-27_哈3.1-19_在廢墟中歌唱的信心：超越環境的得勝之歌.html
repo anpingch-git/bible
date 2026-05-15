@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈3:1-19:在廢墟中歌唱的信心：超越環境的得勝之歌</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18e',
+                            300: '#fbe452',
+                            400: '#f9d423',
+                            500: '#e5bb0d',
+                            600: '#c69308',
+                            700: '#a36d0a',
+                            800: '#865610',
+                            900: '#724613',
+                        },
+                        dark: {
+                            base: '#0a0a0a',
+                            card: '#161616',
+                            accent: '#1e1e1e'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 22, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #f9d423, #ff9d00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .breath-img {
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.6; transform: scale(1.05); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+        .outline-btn {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(249, 212, 35, 0.3);
+        }
+        .outline-btn:hover {
+            background: rgba(249, 212, 35, 0.1);
+            border-color: #f9d423;
+            transform: translateY(-2px);
+        }
+        .scroll-top-btn {
+            box-shadow: 0 0 20px rgba(249, 212, 35, 0.4);
+        }
+        section { scroll-margin-top: 80px; }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-400 selection:text-black">
+
+    <!-- Sticky Header -->
+    <nav class="fixed top-0 w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <div class="text-gold-400 font-bold text-sm tracking-widest hidden md:block">哈巴谷書 3:1-19</div>
+        <div class="flex gap-6 text-xs md:text-sm font-medium uppercase tracking-tighter md:tracking-widest overflow-x-auto whitespace-nowrap">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="header" class="relative h-[80vh] w-full overflow-hidden flex flex-col items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_c171f71c-9cc0-42eb-ba47-a36d270f1414.jpg' alt='media_1' class="w-full h-full object-cover breath-img banner-mask" />
+        </div>
+        
+        <div class="relative z-10 space-y-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-extrabold tracking-tight text-white drop-shadow-2xl">
+                <span class="block text-xl md:text-2xl text-gold-400 mb-2 font-normal">哈3:1-19</span>
+                在廢墟中歌唱的信心：<br/><span class="text-gradient">超越環境的得勝之歌</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto pt-8 animate-bounce-subtle">
+                <p class="text-lg md:text-2xl italic font-light leading-relaxed text-white drop-shadow-lg">
+                    「雖然無花果樹不發旺...然而，我要因耶和華歡欣，因救我的神喜樂。」
+                </p>
+                <p class="text-sm mt-4 text-gray-300 font-medium">（哈巴谷書 3:17-18）</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="absolute -left-12 top-0 opacity-10 pointer-events-none">
+                <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10,0,0,0,2,12a10,10,0,0,0,10,10,10,10,0,0,0,10-10A10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM11,7h2v5h3v2H11Z"/></svg>
+            </div>
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-white uppercase tracking-wider">開場禱告詞</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden border-l-4 border-gold-400">
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic">
+                    主啊，當我們面對人生的風暴、環境的荒涼時，求祢賜給我們哈巴谷般的信心。幫助我們不再只定睛於眼前的缺乏，而是看見祢在歷史與我們生命中的掌權。願祢的聖靈更新我們，使我們在「雖然」的困境中，仍能唱出「然而」的讚美，因祢就是我們的拯救和力量。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section (Bento Style) -->
+        <section id="outline">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-white uppercase tracking-wider">講道大綱解析</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-400 text-sm font-bold block mb-4 italic">PART 01</span>
+                    <h3 class="text-xl font-bold text-white">困境中的回轉：<br/>記念神的作為</h3>
+                    <span class="text-xs text-gray-500 mt-4 underline">哈 3:1-2</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-400 text-sm font-bold block mb-4 italic">PART 02</span>
+                    <h3 class="text-xl font-bold text-white">風暴中的看見：<br/>敬畏神的威榮</h3>
+                    <span class="text-xs text-gray-500 mt-4 underline">哈 3:3-15</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-400 text-sm font-bold block mb-4 italic">PART 03</span>
+                    <h3 class="text-xl font-bold text-white">廢墟中的讚美：<br/>超越環境的喜樂</h3>
+                    <span class="text-xs text-gray-500 mt-4 underline">哈 3:16-19</span>
+                </a>
+            </div>
+
+            <div class="space-y-24">
+                <!-- Part 1 Content -->
+                <div id="part1" class="space-y-8 border-t border-gray-800 pt-12">
+                    <div class="flex items-center gap-4">
+                        <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-400 text-black font-bold">1</span>
+                        <h4 class="text-2xl font-bold text-white">困境中的回轉：記念神的作為</h4>
+                    </div>
+                    <div class="bg-dark-card p-6 rounded-2xl border border-gray-800">
+                        <h5 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">經文內容 3:1-2</h5>
+                        <p class="text-gray-300 leading-relaxed italic text-lg">
+                            先知哈巴谷的禱告，調用流離歌。耶和華啊，我聽見你的名聲就懼怕。耶和華啊，求你在這些年間復興你的作為，在這些年間顯明出來；在發怒的時候以憐憫為念。
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h5 class="flex items-center gap-2 text-white font-bold"><svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg> 關鍵原文解析</h5>
+                            <ul class="space-y-4 text-gray-400 text-sm leading-relaxed">
+                                <li><strong class="text-gold-400 text-lg block">復興 (חָיָה, chayah)</strong> 指「使之恢復生命」。這裡求神在黑暗時代使旨意與生命力再次彰顯。</li>
+                                <li><strong class="text-gold-400 text-lg block">憐憫 (רַחַם, racham)</strong> 源自「子宮」，形容母親對胎兒那種無法割捨的深切愛。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h5 class="flex items-center gap-2 text-white font-bold"><svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg> 關鍵問題與例證</h5>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <strong>問：面對災難該如何禱告？</strong><br/>
+                                答：在管教中尋求神的同在與憐憫，而非僅求環境順遂。正如二戰時期彭柯麗在跳蚤滿佈的牢房中看見神的憐憫與隱藏的保護。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Content -->
+                <div id="part2" class="space-y-8 border-t border-gray-800 pt-12">
+                    <div class="flex items-center gap-4">
+                        <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-400 text-black font-bold">2</span>
+                        <h4 class="text-2xl font-bold text-white">風暴中的看見：敬畏神的威榮</h4>
+                    </div>
+                    <div class="bg-dark-card p-6 rounded-2xl border border-gray-800">
+                        <h5 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">經文範圍 3:3-15</h5>
+                        <p class="text-gray-300 leading-relaxed italic text-base">
+                            神從提幔而來...他的榮光遮蔽諸天；頌讚充滿大地...他出來要拯救你的百姓，拯救你的受膏者...你乘馬踐踏紅海，就是踐踏洶湧的大水。
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h5 class="flex items-center gap-2 text-white font-bold"><svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg> 關鍵原文解析</h5>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                <strong class="text-gold-400 text-lg block">拯救 (יֵשַׁע, yesha)</strong> 意指「拯救、解救、安全」。威嚴的展現是為了最終的拯救。
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h5 class="flex items-center gap-2 text-white font-bold"><svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg> 關鍵問題與例證</h5>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <strong>問：為何要回顧歷史？</strong><br/>
+                                答：記憶是信心的燃料。如同在黑暗隧道中回想陽光。回顧神過去的作為，能使我們確信祂現在依然掌權。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Content -->
+                <div id="part3" class="space-y-8 border-t border-gray-800 pt-12">
+                    <div class="flex items-center gap-4">
+                        <span class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-400 text-black font-bold">3</span>
+                        <h4 class="text-2xl font-bold text-white">廢墟中的讚美：超越環境的喜樂</h4>
+                    </div>
+                    <div class="bg-dark-card p-6 rounded-2xl border border-gray-800 shadow-[0_0_40px_rgba(249,212,35,0.05)]">
+                        <h5 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">經文範圍 3:16-19</h5>
+                        <p class="text-gray-200 leading-relaxed italic text-lg font-bold">
+                            雖然無花果樹不發旺，葡萄樹不結果...然而，我要因耶和華歡欣，因救我的神喜樂。主耶和華是我的力量；他使我的腳快如母鹿的蹄，又使我穩行在高處。
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h5 class="flex items-center gap-2 text-white font-bold"><svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg> 關鍵原文解析</h5>
+                            <ul class="space-y-4 text-gray-400 text-sm leading-relaxed">
+                                <li><strong class="text-gold-400 text-lg block">歡欣 (עָלַז, alaz)</strong> 指在極度困境中爆發出的強烈、得勝的狂喜。</li>
+                                <li><strong class="text-gold-400 text-lg block">穩行在高處 (בָּמָה, bamah)</strong> 神賜的力量使信徒能在最艱難環境中不致跌倒，居高臨下。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h5 class="flex items-center gap-2 text-white font-bold"><svg class="w-5 h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg> 關鍵問題與例證</h5>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <strong>問：真正的喜樂建立在何處？</strong><br/>
+                                答：建立在「神是誰」而非「神給了什麼」。正如《我心靈得安寧》作者施彼福在失去一切時，仍能宣告上帝是他終極的安寧。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 4v4h4"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-white uppercase tracking-wider">講章完整文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-lg max-w-none space-y-12 leading-loose text-gray-300">
+                <div class="bg-dark-accent p-10 rounded-[2rem] border-l-8 border-gold-500">
+                    <p class="text-xl md:text-2xl text-white font-medium mb-6">
+                        弟兄姊妹們，平安。當我們環顧周遭，有時會感到彷彿走在一片廢墟之中。今天我們要學習一個極重要的屬靈功課：在廢墟中歌唱的信心。
+                    </p>
+                    
+                    <h3 class="text-gold-400 font-bold text-2xl mt-12 mb-6">一、困境中的回轉：記念神的作為</h3>
+                    <p>
+                        哈巴谷書的背景，是巴比倫大軍即將摧毀猶大國。先知的反應是懼怕，但他選擇轉向神，求神「在發怒的時候以憐憫為念」。<br/>
+                        這裡的「復興」，不是指一切恢復太平，而是求神在黑暗中再次彰顯生命力。正如葛理翰牧師所言：<span class="text-gold-300 font-bold">「神並未應許我們免受人生的風暴，但祂應許在風暴中與我們同在。」</span>
+                    </p>
+
+                    <h3 class="text-gold-400 font-bold text-2xl mt-12 mb-6">二、風暴中的看見：敬畏神的威榮</h3>
+                    <p>
+                        哈巴谷花費大量篇幅回顧歷史，因為<span class="text-white font-bold underline decoration-gold-500">記憶是信心的燃料</span>。如果我們盯著眼前的難處，我們會崩潰；但若盯著分開紅海的上帝，信心就會點燃。
+                    </p>
+
+                    <h3 class="text-gold-400 font-bold text-2xl mt-12 mb-6">三、廢墟中的讚美：超越環境的喜樂</h3>
+                    <p>
+                        哈巴谷唱出了舊約最震撼的歌。六個「沒有」代表失去了一切生活依靠。<br/>
+                        <span class="text-white bg-gold-900/40 px-2 rounded font-bold">「然而，我要因耶和華歡欣，因救我的神喜樂。」</span><br/>
+                        真正的喜樂是建立在「神是誰」。當你失去一切卻發現神還在那裡時，你就知道神已經足夠。求主使我們的腳快如母鹿的蹄，穩行在屬靈的高處！
+                    </p>
+                </div>
+            </article>
+
+            <!-- Application Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
+                <div class="glass p-6 rounded-2xl">
+                    <div class="w-10 h-10 bg-gold-400/20 text-gold-400 flex items-center justify-center rounded-lg mb-4 font-bold">1</div>
+                    <h4 class="text-white font-bold mb-2">誠實面對恐懼</h4>
+                    <p class="text-gray-400 text-sm">把「戰兢」帶到神面前，祈求神在發怒時以憐憫為念。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <div class="w-10 h-10 bg-gold-400/20 text-gold-400 flex items-center justify-center rounded-lg mb-4 font-bold">2</div>
+                    <h4 class="text-white font-bold mb-2">建立數算主恩</h4>
+                    <p class="text-gray-400 text-sm">記錄上帝在生命中施行過的「拯救」，對抗焦慮。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <div class="w-10 h-10 bg-gold-400/20 text-gold-400 flex items-center justify-center rounded-lg mb-4 font-bold">3</div>
+                    <h4 class="text-white font-bold mb-2">操練「然而」信心</h4>
+                    <p class="text-gray-400 text-sm">學習在匱乏時，依然選擇發出因神而有的讚美。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-white uppercase tracking-wider">屬靈前輩佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group bg-dark-card p-6 rounded-2xl border border-gray-800 hover:border-gold-400 transition-all duration-500">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「喜樂不是因為環境順利，而是因為我們深知上帝的主權與恩典。」</p>
+                    <cite class="text-gold-400 font-bold block text-right">— 提摩太·凱勒</cite>
+                </div>
+                <div class="group bg-dark-card p-6 rounded-2xl border border-gray-800 hover:border-gold-400 transition-all duration-500">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「如果我們忘記神過去的恩典，我們在面對未來的挑戰時就會失去勇氣。」</p>
+                    <cite class="text-gold-400 font-bold block text-right">— 司布真</cite>
+                </div>
+                <div class="group bg-dark-card p-6 rounded-2xl border border-gray-800 hover:border-gold-400 transition-all duration-500">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「神並未應許我們免受人生的風暴，但祂應許在風暴中與我們同在。」</p>
+                    <cite class="text-gold-400 font-bold block text-right">— 葛理翰</cite>
+                </div>
+                <div class="group bg-dark-card p-6 rounded-2xl border border-gray-800 hover:border-gold-400 transition-all duration-500">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「只有當我們意識到自己已經一無所有時，我們才會發現上帝是我們唯一的需要。」</p>
+                    <cite class="text-gold-400 font-bold block text-right">— 約翰·加爾文</cite>
+                </div>
+                <div class="group bg-dark-card p-6 rounded-2xl border border-gray-800 hover:border-gold-400 transition-all duration-500">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「苦難是上帝用來喚醒這個耳聾世界的麥克風。」</p>
+                    <cite class="text-gold-400 font-bold block text-right">— 魯益師</cite>
+                </div>
+                <div class="group bg-dark-card p-6 rounded-2xl border border-gray-800 hover:border-gold-400 transition-all duration-500">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「一個真正認識神威嚴的人，不會被世上的任何威脅所擊垮。」</p>
+                    <cite class="text-gold-400 font-bold block text-right">— 陶恕</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action Section -->
+        <section class="bg-gradient-to-br from-gold-900/20 to-black p-8 md:p-16 rounded-[3rem] border border-gold-900/30">
+            <h2 class="text-3xl font-display font-bold text-white mb-10 text-center">回應與實踐行動</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto bg-gold-400 text-black rounded-full flex items-center justify-center text-2xl font-bold">寫</div>
+                    <h5 class="text-white font-bold">寫下宣告</h5>
+                    <p class="text-gray-400 text-sm">寫下一件目前讓你感到恐懼的事，宣告你選擇因神而喜樂。</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto bg-gold-400 text-black rounded-full flex items-center justify-center text-2xl font-bold">分</div>
+                    <h5 class="text-white font-bold">分享見證</h5>
+                    <p class="text-gray-400 text-sm">分享上帝曾在你生命中施行的「紅海奇蹟」，彼此堅固。</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto bg-gold-400 text-black rounded-full flex items-center justify-center text-2xl font-bold">感</div>
+                    <h5 class="text-white font-bold">感恩操練</h5>
+                    <p class="text-gray-400 text-sm">每日早晨為一項「非物質」的事物感恩，焦點轉向天上。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center pt-10 pb-20">
+            <p class="text-gray-600 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-400 text-black rounded-full flex items-center justify-center scroll-top-btn transition-transform hover:scale-110 active:scale-95 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

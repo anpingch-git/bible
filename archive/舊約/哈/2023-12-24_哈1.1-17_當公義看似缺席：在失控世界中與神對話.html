@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈1:1-17 當公義看似缺席：在失控世界中與神對話</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c9a050',
+                        secondary: '#1e293b',
+                        accent: '#fbbf24',
+                        dark: '#0a0a0c',
+                        surface: '#16161a',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'Outfit', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-jump': 'subtle-jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-jump': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fcd34d, #c9a050);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #c9a050;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            border: 1px solid #c9a050;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: #c9a050;
+            color: #0a0a0c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(201, 160, 80, 0.3);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-white/5 py-3 px-4 md:px-8 flex justify-between items-center">
+        <div class="text-sm md:text-base font-bold text-primary flex items-center">
+            <span class="mr-2">哈1:1-17</span>
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-link text-slate-300 hover:text-white">禱告</a>
+            <a href="#outline" class="nav-link text-slate-300 hover:text-white">大綱</a>
+            <a href="#sermon" class="nav-link text-slate-300 hover:text-white">講章</a>
+            <a href="#quotes" class="nav-link text-slate-300 hover:text-white">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="top" class="relative w-full h-[70vh] md:h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_3187b53d-07fd-47fd-8b23-2bca2c5b2159.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight text-white drop-shadow-2xl">
+                當公義看似缺席<br>
+                <span class="text-primary">在失控世界中與神對話</span>
+            </h1>
+            
+            <!-- Golden Verse (Bouncing Text, No Background) -->
+            <div class="mt-12 max-w-2xl mx-auto animate-subtle-jump">
+                <p class="text-xl md:text-2xl font-medium text-accent leading-relaxed italic drop-shadow-lg">
+                    「耶和華說：你們要向列國中觀看，大大驚奇；因為在你們的時候，我行一件事，雖有人告訴你們，你們總是不信。」
+                </p>
+                <p class="mt-4 text-slate-400 font-display uppercase tracking-widest text-sm">—— 哈巴谷書 1:5</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 md:px-8 -mt-20 relative z-20 space-y-24 pb-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card rounded-3xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-2xl">
+                <div class="mb-6 inline-flex p-4 rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-.778.099-1.533.284-2.253" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold mb-8 flex items-center justify-center gap-3">
+                    心靈禱告
+                </h2>
+                <p class="text-lg md:text-xl text-slate-300 leading-loose italic">
+                    「主啊，當我們面對這充滿強暴、不公與苦難的世界時，我們的心常常像哈巴谷一樣充滿困惑與無力。求祢賜給我們勇氣，敢於將我們真實的掙扎與吶喊帶到祢面前；也求祢賜給我們屬靈的眼光與堅定的信心，即使在看不懂祢作為的時候，依然深信祢是那掌管歷史的主宰、是我們永不動搖的磐石。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-2 bg-primary/20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="outline-btn p-8 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-xs font-display text-primary/80 mb-2 uppercase tracking-tighter">PART 01</span>
+                    <span class="text-xl font-bold mb-3">絕望的呼求</span>
+                    <span class="text-sm opacity-80">(哈 1:1-4)</span>
+                </a>
+                <a href="#part2" class="outline-btn p-8 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-xs font-display text-primary/80 mb-2 uppercase tracking-tighter">PART 02</span>
+                    <span class="text-xl font-bold mb-3">震驚的答覆</span>
+                    <span class="text-sm opacity-80">(哈 1:5-11)</span>
+                </a>
+                <a href="#part3" class="outline-btn p-8 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-xs font-display text-primary/80 mb-2 uppercase tracking-tighter">PART 03</span>
+                    <span class="text-xl font-bold mb-3">信仰的掙扎</span>
+                    <span class="text-sm opacity-80">(哈 1:12-17)</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-16">
+                <!-- Part 1 Detail -->
+                <div id="part1" class="scroll-mt-32 glass-card rounded-3xl overflow-hidden shadow-xl border-l-4 border-l-primary">
+                    <div class="p-8 md:p-12">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-primary">一、 絕望的呼求：當神看似靜默不語 (哈 1:1-4)</h3>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <div>
+                                <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-4">引用經文</h4>
+                                <div class="bg-dark/50 p-6 rounded-xl text-slate-300 text-sm leading-relaxed border border-white/5">
+                                    1 先知哈巴谷所得的默示。 2 他說：耶和華啊！我呼求你，你不應允，要到幾時呢？我因強暴哀求你，你還不拯救。 3 你為何使我看見罪孽？你為何看著奸惡而不理呢？毀滅與強暴在我面前，又起了爭端和相鬥的事。 4 因此律法放鬆，公理也不顯明；惡人圍困義人，所以公理顯然顛顛。
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">關鍵字原文</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">呼求 (shava) - 痛苦尋求</span>
+                                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">強暴 (chamas) - 不公壓迫</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">問題與回答</h4>
+                                    <p class="text-slate-300 text-sm italic border-l-2 border-primary/30 pl-4">
+                                        當迫切禱告卻看不見神介入時？<br>
+                                        <span class="text-white not-italic mt-2 block">哈巴谷將困惑向神傾吐。這告訴我們，「哀歌與質問」並非不信，而是信仰真實的掙扎，神允許我們帶著情緒。</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">名言佳句</h4>
+                                    <p class="text-sm text-slate-400 italic">「沒有經歷過懷疑的信仰，就像沒有經過免疫系統抵抗的身體，是脆弱的。」—— 提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Detail -->
+                <div id="part2" class="scroll-mt-32 glass-card rounded-3xl overflow-hidden shadow-xl border-l-4 border-l-accent">
+                    <div class="p-8 md:p-12">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-accent">二、 震驚的答覆：神出人意料的作為 (哈 1:5-11)</h3>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <div>
+                                <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-4">引用經文</h4>
+                                <div class="bg-dark/50 p-6 rounded-xl text-slate-300 text-sm leading-relaxed border border-white/5">
+                                    5 耶和華說：你們要向列國中觀看，大大驚奇...我興起迦勒底人...那殘忍暴躁之民... 11 他以自己的勢力為神，像風猛然掃過，顯為有罪。
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">關鍵字原文</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">驚奇 (tamah) - 震驚目瞪</span>
+                                        <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">迦勒底人 - 巴比倫帝國</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">問題與回答</h4>
+                                    <p class="text-slate-300 text-sm italic border-l-2 border-accent/30 pl-4">
+                                        如果神的方法比問題更糟？<br>
+                                        <span class="text-white not-italic mt-2 block">神的主權不受邏輯限制。有時神使用我們眼中「負面」的環境來成就祂深不可測的救贖計畫。</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">名言佳句</h4>
+                                    <p class="text-sm text-slate-400 italic">「上帝的主權就像一個巨大的拼圖，我們現在只能看到背面那些混亂的顏色和形狀...」—— 司布真</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Detail -->
+                <div id="part3" class="scroll-mt-32 glass-card rounded-3xl overflow-hidden shadow-xl border-l-4 border-l-amber-600">
+                    <div class="p-8 md:p-12">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-amber-600">三、 信仰的掙扎：當神的旨意難以理解 (哈 1:12-17)</h3>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <div>
+                                <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-4">引用經文</h4>
+                                <div class="bg-dark/50 p-6 rounded-xl text-slate-300 text-sm leading-relaxed border border-white/5">
+                                    12 耶和華─我的神，我的聖者啊，你不是從亙古而有嗎？...磐石啊，你設立他為要懲治人。 13 你眼目清潔...惡人吞滅比自己公義的，你為何靜默不語呢？
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">關鍵字原文</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-amber-600/10 text-amber-600 rounded-full text-sm">磐石 (Tsuwr) - 堅不可摧</span>
+                                        <span class="px-3 py-1 bg-amber-600/10 text-amber-600 rounded-full text-sm">靜默 (charash) - 保持安靜</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">問題與回答</h4>
+                                    <p class="text-slate-300 text-sm italic border-l-2 border-amber-600/30 pl-4">
+                                        當現實與神的聖潔衝突時？<br>
+                                        <span class="text-white not-italic mt-2 block">當看不懂神在「做什麼」時，必須回到神「是誰」。將錨拋在神永不改變的屬性（聖潔、永恆、磐石）深處。</span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">名言佳句</h4>
+                                    <p class="text-sm text-slate-400 italic">「當我們無法看見上帝的手時，我們必須學會信靠上帝的心。」—— 司布真</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-2 bg-primary/20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold">講章文稿</h2>
+            </div>
+
+            <div class="glass-card rounded-[2.5rem] p-8 md:p-16 text-slate-200 text-lg leading-relaxed space-y-10 shadow-2xl">
+                <header class="text-center border-b border-white/10 pb-8">
+                    <h3 class="text-3xl md:text-4xl font-serif font-black text-white mb-4">哈1:1-17：當公義看似缺席</h3>
+                    <p class="text-primary text-xl font-medium">在失控世界中與神對話</p>
+                </header>
+
+                <div class="prose prose-invert prose-p:leading-loose max-w-none">
+                    <p>弟兄姊妹們，平安。今天我們要進入卷極具震撼力的先知書——哈巴谷書。我們常常以為，偉大的先知總是信心堅定，從來不懷疑神。但今天我們要看到一位先知，他對著天空大喊：「神啊，祢為什麼不理我？祢為什麼讓壞人得勝？」</p>
+                    
+                    <p>在這個充滿戰爭、不公義、疾病與突發苦難的失控世界裡，哈巴谷的聲音，其實就是我們內心深處的聲音。今天我們要透過哈巴谷書第一章，來探討一個主題：當公義看似缺席時，我們如何在這失控的世界中與神對話。</p>
+
+                    <h4 class="text-2xl font-bold text-primary mt-12 mb-6 flex items-center">
+                        <span class="w-1.5 h-8 bg-primary mr-4 inline-block"></span>
+                        一、 絕望的呼求：當神看似靜默不語
+                    </h4>
+                    <p>經文說：<strong class="text-white text-xl">「耶和華啊！我呼求你，你不應允，要到幾時呢？我因強暴哀求你，你還不拯救。」(哈1:2)</strong></p>
+                    <p>哈巴谷所處的時代，猶大國充滿了敗壞、強暴與不公義。作為一個愛神、愛國的先知，他日以繼夜地禱告，求神復興、求神彰顯公義。但是，天彷彿是銅鑄的，神毫無回應。這種迫切「呼求」卻換來神靜默不語的經歷，你是否也曾有過？</p>
+                    <p>很多人在這種時候會選擇離開教會，放棄信仰。但哈巴谷沒有。他把他的憤怒、失望和不解，直接帶到神的面前。<strong class="text-accent underline decoration-accent/30 underline-offset-4">神允許我們發出真實的哀歌</strong>。提摩太·凱勒牧師曾說：「沒有經歷過懷疑的信仰，就像沒有經過免疫系統抵抗的身體，是脆弱的。」</p>
+
+                    <h4 class="text-2xl font-bold text-primary mt-12 mb-6 flex items-center">
+                        <span class="w-1.5 h-8 bg-primary mr-4 inline-block"></span>
+                        二、 震驚的答覆：神出人意料的作為
+                    </h4>
+                    <p>當哈巴谷痛苦呼求後，神終於說話了。但神的回答，卻讓哈巴谷驚駭莫名。神說了今天的金句：<strong class="text-white text-xl">「耶和華說：你們要向列國中觀看，大大驚奇；因為在你們的時候，我行一件事，雖有人告訴你們，你們總是不信。」(哈 1:5)</strong></p>
+                    <p>神行了什麼事？神說：「我要興起殘暴的巴比倫人來懲罰猶大。」這對哈巴谷來說簡直是晴天霹靂！他求神解決猶大的問題，神卻找來了一個比猶大更邪惡、更殘忍的國家來毀滅他們。神解決問題的方法，竟然比原來的問題看起來更糟！</p>
+                    <p>我們生活中有時也是如此。我們求神解決一個困境，結果神卻允許一場更大的風暴捲入我們的生命。<strong class="text-accent">這挑戰了我們對「神的主權」的認知</strong>。就像彭柯麗在集中營裡為「跳蚤」感恩一樣，那些我們眼中極度負面、甚至殘酷的人事物，在神深不可測的智慧中，常常是祂用來煉淨我們、成就祂旨意的工具。</p>
+
+                    <h4 class="text-2xl font-bold text-primary mt-12 mb-6 flex items-center">
+                        <span class="w-1.5 h-8 bg-primary mr-4 inline-block"></span>
+                        三、 信仰的掙扎：當神的旨意難以理解
+                    </h4>
+                    <p>聽到神要用邪惡的巴比倫，哈巴谷陷入了更深的信仰掙扎。他問神：<strong class="text-white text-xl">「你眼目清潔，不看邪僻...惡人吞滅比自己公義的，你為何靜默不語呢？」(哈1:13)</strong></p>
+                    <p>這是一個極其深刻的神學問題：聖潔的神，怎麼能使用邪惡的工具？當我們完全看不懂神的作為時，我們該怎麼辦？請注意哈巴谷在第12節說：<strong class="text-white">「耶和華─我的神，我的聖者啊，你不是從亙古而有嗎？...磐石啊，你設立他為要懲治人。」</strong></p>
+                    <p>這就是信仰的秘訣！在狂風暴雨中，當我們看不懂神在「做什麼」的時候，我們必須回到神「是誰」。<strong class="text-accent">不要把你的信心建立在你對環境的解讀上，要把信心錨定在神的屬性上</strong>。神是良善的，神是聖潔的，神是全能的磐石，這一點永不改變！願我們都能在失控的世界裡，向神傾吐哀求，降服祂的主權，並深深信靠這位永不搖動的磐石。阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Action -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Application -->
+            <div class="glass-card rounded-3xl p-10 border-t-4 border-primary">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="p-2 bg-primary/20 rounded text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </span>
+                    應用與方向
+                </h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-primary font-bold">01</span>
+                        <p class="text-slate-300">誠實面對神，學習「哀歌」的禱告。將你的痛苦化為禱告，質問神勝過遠離神。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-primary font-bold">02</span>
+                        <p class="text-slate-300">擴展屬靈視野，降服於神的主權。相信祂正在進行我們目前看不懂的煉淨與塑造。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-primary font-bold">03</span>
+                        <p class="text-slate-300">錨定神的屬性，在未知中安息。讓「神是誰」成為我們生命風暴中的定海神針。</p>
+                    </li>
+                </ul>
+                <div class="mt-8 flex gap-4">
+                    <span class="px-4 py-2 bg-dark border border-white/10 rounded-lg text-sm font-bold text-accent">#哀求 Lament</span>
+                    <span class="px-4 py-2 bg-dark border border-white/10 rounded-lg text-sm font-bold text-accent">#主權 Sovereignty</span>
+                    <span class="px-4 py-2 bg-dark border border-white/10 rounded-lg text-sm font-bold text-accent">#信靠 Trust</span>
+                </div>
+            </div>
+
+            <!-- Action Steps -->
+            <div class="glass-card rounded-3xl p-10 border-t-4 border-accent">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="p-2 bg-accent/20 rounded text-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </span>
+                    回應與實踐
+                </h2>
+                <div class="space-y-6">
+                    <div class="bg-white/5 p-5 rounded-2xl border border-white/5 hover:border-accent/30 transition-all">
+                        <h4 class="font-bold text-accent mb-2">1. 寫下個人的哀歌</h4>
+                        <p class="text-sm text-slate-400">本週內將不解的困境寫下，並在最後宣告「主，儘管如此，祢仍是我的磐石」。</p>
+                    </div>
+                    <div class="bg-white/5 p-5 rounded-2xl border border-white/5 hover:border-accent/30 transition-all">
+                        <h4 class="font-bold text-accent mb-2">2. 為社會不公義代求</h4>
+                        <p class="text-sm text-slate-400">針對社會中的不公現象，持續一週每天為此事禱告，求神彰顯祂的公義。</p>
+                    </div>
+                    <div class="bg-white/5 p-5 rounded-2xl border border-white/5 hover:border-accent/30 transition-all">
+                        <h4 class="font-bold text-accent mb-2">3. 每天宣告神的屬性</h4>
+                        <p class="text-sm text-slate-400">早晨起床時宣告：「神是聖潔的，神是全能的，神是我的磐石」。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-2 bg-primary/20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「上帝的主權就像一個巨大的拼圖，我們現在只能看到背面那些混亂的顏色和形狀，但總有一天，祂會把它翻過來，我們會看見那是一幅完美的傑作。」</p>
+                    <p class="text-sm font-bold text-primary">—— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「當我們無法看見上帝的手時，我們必須學會信靠上帝的心。」</p>
+                    <p class="text-sm font-bold text-primary">—— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「沒有經歷過懷疑的信仰，就像沒有經過免疫系統抵抗的身體，是脆弱的。真實的信仰總是在與上帝的摔角中被煉淨的。」</p>
+                    <p class="text-sm font-bold text-primary">—— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「神的美善是我們在一切黑暗中得以安息的唯一確據。」</p>
+                    <p class="text-sm font-bold text-primary">—— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「信心不是相信上帝會做我們想做的事，而是相信上帝會做對的事。」</p>
+                    <p class="text-sm font-bold text-primary">—— 葛理翰 (Billy Graham)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「我們不該單單為了免於受苦而禱告，而是求神在苦難中賜下祂的同在，這才是信仰真正的力量。」</p>
+                    <p class="text-sm font-bold text-primary">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「在逆境中，上帝不是離我們最遠，反而是離我們最近。祂在我們的苦難中與我們一同受苦。」</p>
+                    <p class="text-sm font-bold text-primary">—— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「不要為未知的明天擔憂，因為我們認識那位掌管明天的神。」</p>
+                    <p class="text-sm font-bold text-primary">—— 查爾斯·史丹利 (Charles Stanley)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「我們靈魂最深的痛苦，往往是為了騰出空間，好讓上帝豐盛的恩典得以進入。」</p>
+                    <p class="text-sm font-bold text-primary">—— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-2 border-primary/40 hover:bg-white/5 transition-colors">
+                    <p class="text-slate-200 italic mb-4 leading-relaxed">「如果上帝所做的一切都完全符合我們的理性與期待，那祂就不配作我們的上帝了。」</p>
+                    <p class="text-sm font-bold text-primary">—— 唐崇榮 (Stephen Tong)</p>
+                </div>
+            </div>
+            
+            <p class="mt-12 text-center text-xs text-slate-600 tracking-wider">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-dark rounded-full flex items-center justify-center shadow-2xl hover:bg-accent transition-all hover:scale-110 z-[60] animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

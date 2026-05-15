@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+	<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-8JJVSHYMW5');
+		</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>每日研經釋義講章大綱</title>
@@ -247,6 +256,19 @@
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const pageItems = filteredNotes.slice(start, end);
+			
+			const card = document.createElement('div');
+				card.onclick = () => {
+				// 🚀 新增追蹤：發送事件到 Google Analytics
+				gtag('event', 'view_chapter', {
+				'chapter_name': note.chapter, // 經文標題，例如：出1:1
+				'book_abbr': note.chapter.substring(0, 1), // 書卷縮寫，例如：出
+				'note_title': note.title // 標題
+				});
+				
+				// 原有的跳轉或開啟視窗邏輯
+				window.open(note.link, '_blank');
+				};
 
             pageItems.forEach(file => {
                 let downloadSection = "";

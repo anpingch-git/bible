@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>該2:1-9:在微小中看見無限：超越眼見的榮耀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf0',
+                            100: '#fdf3d1',
+                            200: '#fbe4a3',
+                            300: '#f7d06a',
+                            400: '#f3b83d',
+                            500: '#e59a1a',
+                            600: '#ca7a13',
+                            700: '#a85a13',
+                            800: '#894816',
+                            900: '#713c16',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141417',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(-3%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                            '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass-morphism {
+            background: rgba(30, 30, 36, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, rgba(10, 10, 12, 0) 0%, rgba(10, 10, 12, 1) 95%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(229, 154, 26, 0.5);
+        }
+        .section-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .section-card:hover {
+            border-color: rgba(229, 154, 26, 0.4);
+            transform: translateY(-4px);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #e59a1a; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-morphism py-3 px-6 flex justify-between items-center">
+        <div class="text-gold-400 font-accent font-bold tracking-wider text-sm md:text-base">
+            哈該書 2:1-9
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wide uppercase">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header id="top" class="relative  h-[50vh] md:h-[80vh]   h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full animate-pulse-slow">
+                <img src='image/img_3b947493-8d1e-412b-ae09-9dddb47d1785.jpg' alt='Celestial Temple' class="w-full h-full object-cover opacity-80" />
+            </div>
+            <div class="absolute inset-0 banner-gradient"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 tracking-tight leading-tight">
+                在微小中看見無限：<br/>
+                <span class="text-gold-400 text-glow">超越眼見的榮耀</span>
+            </h1>
+            
+            <!-- Floating Verse Text -->
+            <div class="animate-bounce-subtle mt-12">
+                <p class="font-display italic text-lg md:text-2xl text-gold-200 max-w-3xl mx-auto leading-relaxed opacity-90">
+                    「這殿後來的榮耀必大過先前的榮耀；在這地方我必賜平安。這是萬軍之耶和華說的。」
+                </p>
+                <p class="font-accent mt-4 text-gold-500 font-semibold tracking-widest">— 哈該書 2:9 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex flex-col items-center">
+                <div class="mb-8 p-4 rounded-full bg-gold-900/20 border border-gold-500/30">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 10.5L12 3m7.5 7.5L12 3v18"></path></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold mb-8 text-white flex items-center gap-4">
+                    禱告
+                </h2>
+                <div class="glass-morphism p-8 md:p-12 rounded-3xl text-lg md:text-xl leading-relaxed text-gray-300 font-light italic">
+                    親愛的天父，我們常常如同昔日的以色列百姓，被眼前的困境與過去的輝煌所蒙蔽，以致心中充滿失落與灰心。求祢開我們屬靈的眼睛，讓我們看見祢的靈依然住在我們中間。主啊，賜給我們剛強壯膽的心，讓我們不以眼見為憑，而是緊緊抓住祢同在的應許。求祢親自震動我們生命中的沉睡與軟弱，讓我們深信祢未來所要彰顯的榮耀，必大過我們先前所見的。奉主耶穌基督得勝的名求，阿們。
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <div class="inline-block mb-4 p-3 rounded-xl bg-gold-900/20 border border-gold-500/30">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold text-white mb-4">信息大綱</h2>
+                <p class="text-gray-400 font-accent uppercase tracking-widest text-sm">Message Roadmap</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="section-card glass-morphism p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-500 font-accent font-bold text-lg mb-4">01</span>
+                    <h3 class="font-display text-xl text-white group-hover:text-gold-300 transition-colors">誠實面對眼前的失落</h3>
+                    <p class="mt-2 text-sm text-gray-500">哈該書 2:1-3</p>
+                </a>
+                <a href="#section2" class="section-card glass-morphism p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-500 font-accent font-bold text-lg mb-4">02</span>
+                    <h3 class="font-display text-xl text-white group-hover:text-gold-300 transition-colors">剛強作工的真實倚靠</h3>
+                    <p class="mt-2 text-sm text-gray-500">哈該書 2:4-5</p>
+                </a>
+                <a href="#section3" class="section-card glass-morphism p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-500 font-accent font-bold text-lg mb-4">03</span>
+                    <h3 class="font-display text-xl text-white group-hover:text-gold-300 transition-colors">擁抱未來的極大榮耀</h3>
+                    <p class="mt-2 text-sm text-gray-500">哈該書 2:6-9</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown Sections -->
+        <div class="space-y-40">
+            <!-- Section 1 -->
+            <section id="section1" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="bg-gold-500 text-dark-900 font-accent font-black px-3 py-1 rounded">I</span>
+                    <h2 class="text-2xl md:text-4xl font-display font-bold text-white">誠實面對眼前的失落</h2>
+                </div>
+                
+                <div class="space-y-10">
+                    <div class="border-l-4 border-gold-500 pl-6 py-2 bg-white/5 rounded-r-xl">
+                        <p class="text-gray-400 text-sm mb-2 font-accent uppercase tracking-tighter">Scripture Range: 2:1-3</p>
+                        <p class="text-lg md:text-xl text-gray-200 leading-relaxed font-display">「七月二十一日，耶和華的話臨到先知哈該說：『你要宣告猶大省長撒拉鐵的兒子所羅巴伯和約撒答的兒子大祭司約書亞，並剩下的百姓，說：你們中間存留的，有誰見過這殿從前的榮耀呢？現在你們看著如何？豈不在眼中看如無有嗎？』」</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-dark-800/50 p-8 rounded-2xl border border-white/5">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2 italic">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12.395 2.553a1 1 0 00-1.45 0l-7 7a1 1 0 000 1.414l7 7a1 1 0 001.45-1.414L6.414 11H15a1 1 0 100-2H6.414l5.981-5.981a1 1 0 000-1.414z"></path></svg>
+                                關鍵原文 (Keywords)
+                            </h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold block underline decoration-gold-600 underline-offset-4 mb-1">榮耀 (כָּבוֹド - Kavod)</span>
+                                    <span class="text-gray-400 text-sm">原意為「重量、極具價值、尊貴」。在此指昔日的金碧輝煌。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold block underline decoration-gold-600 underline-offset-4 mb-1">無有 (אַיִן - Ayin)</span>
+                                    <span class="text-gray-400 text-sm">意指「不存在、虛無」。百姓看著重建的根基，覺得一文不值。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-dark-800/50 p-8 rounded-2xl border border-white/5">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                                深度解析
+                            </h4>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                                當我們現在的服事、生活或教會景況遠不如過去輝煌時，該如何面對心中的失落與無力感？
+                            </p>
+                            <p class="text-gray-400 text-xs italic border-t border-white/10 pt-4">
+                                答：神主動點出「看如無有」，承認失落是醫治的第一步。我們必須從「緬懷過去」轉向「定睛於神現在的作為」。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V12C14.017 12.5523 13.5693 13 13.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 6.23858 12.2556 4 15.017 4H19.017C21.7784 4 24.017 6.23858 24.017 9V15C24.017 17.7614 21.7784 20 19.017 20H16.017C15.4647 20 15.017 19.5523 15.017 19V21H14.017ZM2.01695 21L2.01695 18C2.01695 16.8954 2.91238 16 4.01695 16H7.01695C7.56923 16 8.01695 15.5523 8.01695 15V9C8.01695 8.44772 7.56923 8 7.01695 8H3.01695C2.46467 8 2.01695 8.44772 2.01695 9V12C2.01695 12.5523 1.56923 13 1.01695 13H-0.983051C-1.53534 13 -1.98305 12.5523 -1.98305 12V9C-1.98305 6.23858 0.255519 4 3.01695 4H7.01695C9.77838 4 12.017 6.23858 12.017 9V15C12.017 17.7614 9.77838 20 7.01695 20H4.01695C3.46467 20 3.01695 19.5523 3.01695 19V21H2.01695Z"></path></svg>
+                        </div>
+                        <p class="text-white font-display text-lg mb-4 leading-relaxed relative z-10">「如果我們把過去的恩典當作偶像來敬拜，我們就會對神現在的恩典視而不見。」</p>
+                        <cite class="text-gold-500 font-accent font-semibold block text-right">— 提摩太·凱勒 (Timothy Keller)</cite>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="bg-gold-500 text-dark-900 font-accent font-black px-3 py-1 rounded">II</span>
+                    <h2 class="text-2xl md:text-4xl font-display font-bold text-white">剛強作工的真實倚靠</h2>
+                </div>
+                
+                <div class="space-y-10">
+                    <div class="border-l-4 border-gold-500 pl-6 py-2 bg-white/5 rounded-r-xl">
+                        <p class="text-gray-400 text-sm mb-2 font-accent uppercase tracking-tighter">Scripture Range: 2:4-5</p>
+                        <p class="text-lg md:text-xl text-gray-200 leading-relaxed font-display">耶和華說：「所羅巴伯啊，雖然如此，你當剛強！約撒答的兒子大祭司約書亞啊，你也當剛強！這地的百姓，你們都當剛強做工，因為我與你們同在... 我的靈住在你們中間，你們不要懼怕。」</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-dark-800/50 p-8 rounded-2xl border border-white/5">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2 italic">關鍵原文 (Keywords)</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold block underline decoration-gold-600 mb-1">剛強 (חָזַק - Chazaq)</span>
+                                    <span class="text-gray-400 text-sm">意為「堅固、抓緊、充滿力量」。要求意志上的降服與行動。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold block underline decoration-gold-600 mb-1">同在 (אֵת - Eth / עִם - Im)</span>
+                                    <span class="text-gray-400 text-sm">神親自參與並負全責，是聖經中神給人最大的保證。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-dark-800/50 p-8 rounded-2xl border border-white/5">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">深度解析</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                                當環境令人沮喪，我們覺得自己一無所有時，繼續「剛強做工」的力量來源是什麼？
+                            </p>
+                            <p class="text-gray-400 text-xs italic border-t border-white/10 pt-4">
+                                答：力量來源是「神的同在」。祂的靈此刻依然在他們中間。環境改變了，但神的同在與能力絲毫沒有打折扣。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl relative group">
+                        <p class="text-white font-display text-lg mb-4 leading-relaxed">「有了神的同在，即使在最微小的工作上，你也擁有全宇宙最大的後盾。」</p>
+                        <cite class="text-gold-500 font-accent font-semibold block text-right">— 司布真 (Charles Spurgeon)</cite>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="bg-gold-500 text-dark-900 font-accent font-black px-3 py-1 rounded">III</span>
+                    <h2 class="text-2xl md:text-4xl font-display font-bold text-white">擁抱未來的極大榮耀</h2>
+                </div>
+                
+                <div class="space-y-10">
+                    <div class="border-l-4 border-gold-500 pl-6 py-2 bg-white/5 rounded-r-xl">
+                        <p class="text-gray-400 text-sm mb-2 font-accent uppercase tracking-tighter">Scripture Range: 2:6-9</p>
+                        <p class="text-lg md:text-xl text-gray-200 leading-relaxed font-display">「我必震動萬國；萬國的珍寶必都運來，我就使這殿滿了榮耀... 這殿後來的榮耀必大過先前的榮耀；在這地方我必賜平安。」</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-dark-800/50 p-8 rounded-2xl border border-white/5">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2 italic">關鍵原文 (Keywords)</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold block underline decoration-gold-600 mb-1">震動 (רָעַשׁ - Ra'ash)</span>
+                                    <span class="text-gray-400 text-sm">指大地震動，常伴隨神末世的審判與大能的顯現。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold block underline decoration-gold-600 mb-1">平安 (שָׁלוֹם - Shalom)</span>
+                                    <span class="text-gray-400 text-sm">不只是沒有戰爭，代表「整全、完美、繁榮與終極救恩」。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-dark-800/50 p-8 rounded-2xl border border-white/5">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">深度解析</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                                神應許「後來的榮耀必大過先前」，這對現今在平凡、瑣碎甚至艱難中努力服事的我們有何意義？
+                            </p>
+                            <p class="text-gray-400 text-xs italic border-t border-white/10 pt-4">
+                                答：意味著微小的工作連結於永恆。這預言指向耶穌基督，以及未來新天新地的終極榮耀。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl relative group">
+                        <p class="text-white font-display text-lg mb-4 leading-relaxed">「我們若真知道神無限的榮耀與祂最終的目的，我們就不會輕看眼前任何一項微小的順服。」</p>
+                        <cite class="text-gold-500 font-accent font-semibold block text-right">— 陶恕 (A.W. Tozer)</cite>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex flex-col items-center mb-12">
+                <div class="mb-4 p-4 rounded-full bg-gold-900/20 border border-gold-500/30">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                </div>
+                <h2 class="font-display text-4xl font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <div class="space-y-12 text-gray-300 text-lg leading-relaxed font-sans">
+                <p>各位弟兄姊妹，平安。今天我們要透過哈該書 2:1-9 來看一個關於失落與盼望的信息。當時的以色列人剛從巴比倫被擄歸回，他們在廢墟中重新建造聖殿。但對於那些曾經見過所羅門聖殿榮華的老一代來說，眼前這個新建的根基簡直微不足道，他們甚至為此放聲大哭。今天，我們的人生是否也面臨類似的光景？讓我們一起進入今天的主題：<strong class="text-gold-400">該2:1-9：在微小中看見無限：超越眼見的榮耀</strong>。</p>
+
+                <div class="p-8 bg-gold-900/10 border-l-4 border-gold-600 rounded-r-2xl">
+                    <h3 class="text-gold-300 font-bold text-xl mb-4">一、誠實面對眼前的失落：跨越「看如無有」的比較陷阱</h3>
+                    <p>在第3節，神問百姓：「<strong class="text-white underline decoration-gold-600/50 underline-offset-4">你們中間存留的，有誰見過這殿從前的榮耀呢？現在你們看著如何？豈不在眼中看如無有嗎？</strong>」神非常了解我們的感受。當你發現現在的事業不如從前、健康大不如前，或是教會復興的榮景似乎消退時，那種「看如無有」的痛是真實的。過去的恩典很美，但如果我們只定睛於過去，就會瞎了眼，看不見神現在的作為。</p>
+                </div>
+
+                <div class="p-8 bg-gold-900/10 border-l-4 border-gold-600 rounded-r-2xl">
+                    <h3 class="text-gold-300 font-bold text-xl mb-4">二、剛強作工的真實倚靠：抓住「我與你同在」的不變應許</h3>
+                    <p>神在第4節連續三次呼喊：「<strong class="text-white underline decoration-gold-600/50 underline-offset-4">所羅巴伯啊，雖然如此，你當剛強！約書亞啊，你也當剛強！這地的百姓，你們都當剛強做工，因為我與你們同在。</strong>」神沒有立刻變出金銀財寶，神給的保證只有一句話：「我與你們同在。」弟兄姊妹，這就夠了！外在的環境會變，但第5節說，那帶領他們出埃及的靈，至今依然住在他們中間。有了祂，我們就能挽起袖子，繼續剛強做工。</p>
+                </div>
+
+                <div class="p-8 bg-gold-900/10 border-l-4 border-gold-600 rounded-r-2xl">
+                    <h3 class="text-gold-300 font-bold text-xl mb-4">三、擁抱未來的極大榮耀：期盼「大過先前」的終極平安</h3>
+                    <p>我們來看今天的金句：<strong class="text-gold-400 font-display text-2xl block my-4">「這殿後來的榮耀必大過先前的榮耀；在這地方我必賜平安。這是萬軍之耶和華說的。」</strong>神說，萬國的珍寶、世上的金銀都是祂的，祂隨時可以震動天地賜下這些。但神看重的不是物質的華麗，而是真正「大過先前」的榮耀。這榮耀最終指向耶穌基督（萬國所羨慕的）道成肉身來到聖殿。讓我們不再看眼前的微小，而是憑著信心，抓住神的同在，剛強為主作工！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 rounded-lg bg-gold-900/20 border border-gold-500/30">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5L6 9H2v6h4l5 4V5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「信心不只是相信神能做什麼，而是相信神正在做什麼，即使我們什麼都看不見。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「一個被神同在充滿的人，不會去計算工作的卑微或偉大，因為神自己就是那工作的全部榮耀。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「福音的本質是：我們比自己所敢承認的更軟弱，但同時在基督裡卻比自己所敢期盼的更被愛。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「只有當我們放棄了對教會的理想主義幻夢，我們才能真正開始經歷神同在的恩典。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「無論我們處在多麼低谷的景況，只要我們定睛於上帝的榮耀，就沒有任何環境能剝奪心中的平安。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「我們的軟弱與破碎，往往是上帝彰顯祂那超乎想像之榮耀的最佳器皿。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「信心是一把抓住基督的活潑力量，使我們不僅在順境中讚美神，更在廢墟與荒涼中勇敢作工。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「不要把眼光侷限在你現在能做多少事，而是要意識到，你正行在上帝那浩大且不被震動的國度之中。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「簡單的生活讓我們不再被外在的輝煌與數字綁架，而是安息在神那純粹的同在之中。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 傅士德 (Richard J. Foster)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「十字架告訴我們，上帝最大的榮耀往往隱藏在世人看為最羞辱、最軟弱的時刻。」</p>
+                    <p class="text-gold-500 font-accent text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Practical Actions -->
+        <section class="border-t border-white/10 pt-24">
+            <div class="bg-gradient-to-br from-gold-900/20 to-transparent p-12 rounded-[3rem] border border-gold-500/20">
+                <h2 class="text-3xl font-display font-bold text-white mb-8">回應行動</h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gold-600 text-dark-900 flex items-center justify-center font-bold text-xs">1</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">寫下一件令你感到「看如無有」的事</span>，在禱告中交給神，並宣告神的主權與同在。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gold-600 text-dark-900 flex items-center justify-center font-bold text-xs">2</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">採取一個具體的服事行動</span>（例如關懷軟弱肢體），不再等資源充足，帶著「剛強作工」的心立刻去行。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gold-600 text-dark-900 flex items-center justify-center font-bold text-xs">3</span>
+                        <p class="text-gray-300"><span class="text-white font-bold">背誦哈該書 2:9</span>，每天早晨宣告一次，提醒自己神應許的平安與榮耀。</p>
+                    </li>
+                </ul>
+                
+                <div class="mt-16 pt-8 border-t border-white/10 text-center">
+                    <p class="text-gray-500 text-xs italic">
+                        網路資料可能出錯，請小心查證、謹慎使用。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center text-dark-900 shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth reveal of elements on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄1:1-21：隱藏在岩穴中的驕傲與錫安山的榮耀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8be',
+                            200: '#fdf090',
+                            300: '#fbe254',
+                            400: '#f9d22a',
+                            500: '#eeb80f',
+                            600: '#cd8f0a',
+                            700: '#a3660a',
+                            800: '#86500f',
+                            900: '#724213',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#121212',
+                            700: '#1e1e1e',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.6 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(30, 30, 30, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(238, 184, 15, 0.4);
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, transparent 60%, #0a0a0a 100%);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2s ease-in-out infinite;
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .nav-item::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #eeb80f;
+            transition: width .3s;
+        }
+        .nav-item:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .outline-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(238, 184, 15, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-panel py-4 px-6 flex justify-between items-center">
+        <div class="text-gold-500 font-bold text-sm md:text-lg font-serif">俄1:1-21</div>
+        <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium tracking-widest">
+            <a href="#prayer" class="nav-item">禱告</a>
+            <a href="#outline" class="nav-item">大綱</a>
+            <a href="#sermon" class="nav-item">講章</a>
+            <a href="#quotes" class="nav-item">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="header" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_8d6d5bbc-0e86-40ac-bdb9-f900dd66a7d6.jpg' alt='media_1' class="w-full h-full object-cover animate-pulse-slow" />
+            <div class="absolute inset-0 banner-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-serif font-black text-white mb-6 leading-tight text-glow">
+                隱藏在岩穴中的驕傲<br>與錫安山的榮耀
+            </h1>
+            <div class="space-y-4">
+                <p class="text-gold-300 text-lg md:text-2xl font-serif font-bold jump-text tracking-wider">
+                    「耶和華降罰的日子臨近萬國。你怎樣行，他也必照樣向你行，你的報應必歸在自己頭上。」
+                </p>
+                <p class="text-white/80 text-sm md:text-lg font-light jump-text" style="animation-delay: 0.5s">
+                    「必有拯救者上到錫安山，審判以掃山；國度就歸耶和華了。」
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-4.5v-9L12 3m0 18l8-4.5v-9L12 3m0 18V3"></path></svg>
+                </span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">禱告</h2>
+            </div>
+            <div class="glass-panel p-8 md:p-12 rounded-3xl border-l-4 border-l-gold-500 leading-relaxed text-lg md:text-xl text-gray-300 italic">
+                「主耶和華，掌管歷史與萬國的主宰。我們來到您的面前，求您的聖靈光照我們的心，如同您看透以東隱藏在岩穴中的驕傲一般。主啊，赦免我們有時過於倚靠自己的成就與安穩，而忘記了您才是真正的磐石；赦免我們在弟兄姊妹受苦時，有時選擇了冷眼旁觀而非伸出援手。求您賜給我們謙卑的心，愛人如己的靈，並讓我們看見您的公義終將彰顯，您的國度必然降臨。奉主耶穌基督的聖名祈求，阿們。」
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <span class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">大綱與解析</h2>
+            </div>
+            
+            <!-- Quick Link Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="outline-btn glass-panel p-6 rounded-2xl border-t-2 border-gold-500/50">
+                    <span class="text-gold-500 text-xs font-bold block mb-2">第一段 (1:1-9)</span>
+                    <h3 class="text-white font-bold">虛假的倚靠：當驕傲蒙蔽了雙眼</h3>
+                </a>
+                <a href="#part2" class="outline-btn glass-panel p-6 rounded-2xl border-t-2 border-blue-500/50">
+                    <span class="text-blue-400 text-xs font-bold block mb-2">第二段 (1:10-14)</span>
+                    <h3 class="text-white font-bold">袖手旁觀的罪：當冷漠取代了弟兄之愛</h3>
+                </a>
+                <a href="#part3" class="outline-btn glass-panel p-6 rounded-2xl border-t-2 border-red-500/50">
+                    <span class="text-red-400 text-xs font-bold block mb-2">第三段 (1:15-21)</span>
+                    <h3 class="text-white font-bold">逆轉的結局：當上帝的公義與國度降臨</h3>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-28 bg-white/5 p-8 md:p-12 rounded-3xl border border-white/10">
+                    <h3 class="text-2xl font-serif font-bold text-gold-400 mb-6 flex items-center">
+                        <span class="mr-3">01</span> 第一段：虛假的倚靠：當驕傲蒙蔽了雙眼
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-dark-900 p-6 rounded-xl border border-white/5">
+                                <h4 class="text-gold-600 font-bold mb-3 text-sm tracking-widest uppercase">經文範圍：1:1-9</h4>
+                                <p class="text-sm text-gray-400 leading-relaxed h-48 overflow-y-auto pr-4 scrollbar-thin">
+                                    住在山穴中、平高的，心裏說：誰能將我拉下地去呢？你因狂傲自欺。你雖如大鷹高飛，在星宿之間搭窩，我必從那裏拉下你來... 提幔哪，你的勇士必驚惶，甚至以掃山的人都被殺戮剪除。
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center"><svg class="w-5 h-5 mr-2 text-gold-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>關鍵原文</h4>
+                                <p class="text-gray-400"><strong>狂傲 (זָדוֹן - zadon)：</strong> 意指傲慢、僭越。以東因地理優勢產生的「絕對安全」假象。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gold-500/10 p-6 rounded-xl border border-gold-500/20">
+                                <h4 class="text-gold-500 font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-gray-300">我們生命中的「山穴」是什麼？當我們擁有優越環境時，容易將其視為終極保障，卻忘記了真正的安全感只能建立在上帝身上。</p>
+                            </div>
+                            <div class="italic text-gray-400 border-l-2 border-white/20 pl-4">
+                                <p class="text-sm">「驕傲的本質就是拒絕依賴上帝。驕傲的人不承認自己是受造物，他們試圖自己作神。」—— 陶恕 (A.W. Tozer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-28 bg-white/5 p-8 md:p-12 rounded-3xl border border-white/10">
+                    <h3 class="text-2xl font-serif font-bold text-blue-400 mb-6 flex items-center">
+                        <span class="mr-3">02</span> 第二段：袖手旁觀的罪：當冷漠取代了弟兄之愛
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-dark-900 p-6 rounded-xl border border-white/5">
+                                <h4 class="text-blue-500 font-bold mb-3 text-sm tracking-widest uppercase">經文範圍：1:10-14</h4>
+                                <p class="text-sm text-gray-400 leading-relaxed h-48 overflow-y-auto pr-4">
+                                    因你向兄弟雅各行強暴，羞愧必遮蓋你... 你竟站著觀望，如同與他們同夥。你兄弟遭難的日子，你不當瞪眼看著；猶大人被滅的日子，你不當因此歡樂...
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center"><svg class="w-5 h-5 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>關鍵原文</h4>
+                                <p class="text-gray-400"><strong>站著觀望 (עָמַד מִנֶּגֶד)：</strong> 帶著冷漠甚至是幸災樂禍的旁觀。在神眼中，冷漠等同於共犯。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-blue-500/10 p-6 rounded-xl border border-blue-500/20">
+                                <h4 class="text-blue-400 font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-gray-300">面對肢體受難，我是選擇同情還是冷眼？經文八次使用「不當」，強烈譴責這種沒有憐憫的心。冷漠本身就是對上帝心意的背叛。</p>
+                            </div>
+                            <div class="italic text-gray-400 border-l-2 border-white/20 pl-4">
+                                <p class="text-sm">「不說話，就是說話；不作為，就是作為。」—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-28 bg-white/5 p-8 md:p-12 rounded-3xl border border-white/10">
+                    <h3 class="text-2xl font-serif font-bold text-red-400 mb-6 flex items-center">
+                        <span class="mr-3">03</span> 第三段：逆轉的結局：當上帝的公義與國度降臨
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-dark-900 p-6 rounded-xl border border-white/5">
+                                <h4 class="text-red-500 font-bold mb-3 text-sm tracking-widest uppercase">經文範圍：1:15-21</h4>
+                                <p class="text-sm text-gray-400 leading-relaxed h-48 overflow-y-auto pr-4">
+                                    耶和華降罰的日子臨近萬國。你怎樣行，他也必照樣向你行... 在錫安山必有逃脫的人，那山也必成聖... 國度就歸耶和華了。
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2 flex items-center"><svg class="w-5 h-5 mr-2 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>關鍵原文</h4>
+                                <p class="text-gray-400"><strong>耶和華降罰的日子 (יוֹם יְהוָה)：</strong> 上帝親自介入歷史，對罪惡施行審判，對子民施行拯救的核心時刻。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-red-500/10 p-6 rounded-xl border border-red-500/20">
+                                <h4 class="text-red-400 font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-gray-300">「神聖報應原則」：你怎樣行，他也必照樣向你行。這給受苦信徒極大安慰：世上的不義是暫時的，歷史的終局是「國度就歸耶和華了」。</p>
+                            </div>
+                            <div class="italic text-gray-400 border-l-2 border-white/20 pl-4">
+                                <p class="text-sm">「上帝的審判是我們能夠選擇饒恕的基石。」—— 提摩太·凱勒 (Timothy Keller)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content Section -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center space-x-4 mb-10">
+                <span class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-10 text-gray-300 text-lg leading-loose font-light">
+                <h3 class="text-3xl font-serif font-bold text-gold-500 mb-8 border-b border-gold-500/30 pb-4">
+                    隱藏在岩穴中的驕傲與錫安山的榮耀
+                </h3>
+                
+                <p>弟兄姊妹們，今天我們要進入舊約中最短的一卷書——俄巴底亞書。這卷書只有短短的21節，卻傳遞了一個極其震撼、與我們生命息息相關的信號。這卷書的背景，是以色列的兄弟之邦「以東」，在耶路撒冷遭受巴比倫毀滅時，不但沒有伸出援手，反而落井下石、趁火打劫。上帝透過先知俄巴底亞，宣告了對以東的審判，以及對神子民最終的復興。</p>
+
+                <div class="bg-white/5 p-8 rounded-2xl">
+                    <p class="font-serif font-bold text-white text-xl mb-4">第一、虛假的倚靠：當驕傲蒙蔽了雙眼</p>
+                    <p>經文在第3節說：<span class="text-gold-400 font-bold">「住在山穴中、平高的，心裏說：誰能將我拉下地去呢？你因狂傲自欺。」</span>以東人居住在死海東南方的山區，著名的古城佩特拉就是在岩石中開鑿出來的。這種得天獨厚、易守難攻的地理環境，成為了以東人極大的驕傲。他們覺得自己無比安全，心裡說：「誰能將我拉下地去呢？」</p>
+                    <p class="mt-4">這就是驕傲的可怕之處，經文說他們「因狂傲自欺」。驕傲會製造一種我們不需要上帝的錯覺。我們生命中的「山穴」是什麼？是我們銀行戶頭裡的存款嗎？是我們優越的學歷嗎？是我們穩定的工作嗎？當我們把這些事物當作終極保障時，神說：<span class="text-white font-bold">「你雖如大鷹高飛，在星宿之間搭窩，我必從那裏拉下你來。」</span> 真正的磐石只有一位，那就是耶穌基督，除此之外的倚靠，終將崩塌。</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl">
+                    <p class="font-serif font-bold text-white text-xl mb-4">第二、袖手旁觀的罪：當冷漠取代了弟兄之愛</p>
+                    <p>當巴比倫大軍攻陷耶路撒冷時，以東人做了什麼？第11節指出：<span class="text-blue-400 font-bold">「你竟站著觀望，如同與他們同夥。」</span> 以掃和雅各本是雙胞胎兄弟，但在兄弟遭難的日子，以東選擇了冷眼旁觀，甚至歡樂、說狂傲的話，最後還伸手搶財物、剪除逃脫的人。</p>
+                    <p class="mt-4">弟兄姊妹，這段經文狠狠地敲擊著我們的心。在上帝眼中，「冷漠」從來不是中立的。當你看見別人在受苦，特別是你的弟兄姊妹在軟弱、遭難時，你若選擇袖手旁觀，上帝說這「如同與他們同夥」。我們是否在別人的苦難上，犯了「站著觀望」的罪？求神將憐憫與行動的勇氣賜給我們。</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl">
+                    <p class="font-serif font-bold text-white text-xl mb-4">第三、逆轉的結局：當上帝的公義與國度降臨</p>
+                    <p>在嚴厲的責備之後，經文將視野拉到了終末的盼望。核心金句在第15節：<span class="text-red-400 font-bold">「耶和華降罰的日子臨近萬國。你怎樣行，他也必照樣向你行，你的報應必歸在自己頭上。」</span> 這不僅是警告，對那些正在受苦、被欺壓的屬神子民來說，這更是極大的安慰。</p>
+                    <p class="mt-4 font-serif font-black text-white text-2xl text-center py-8">
+                        「必有拯救者上到錫安山，審判以掃山；國度就歸耶和華了。」(俄1:21)
+                    </p>
+                    <p>弟兄姊妹，無論現今的世界多麼動盪，無論你現在正遭遇什麼樣的不公義與挫折，請記住這個結局：<span class="text-gold-500 font-bold underline decoration-gold-500/50">國度就歸耶和華了</span>。讓我們存著謙卑的心，以憐憫彼此相待，並堅定地信靠那位在歷史與你我生命中，擁有絕對主權的上帝！阿們！</p>
+                </div>
+            </div>
+
+            <!-- Conclusion Tags -->
+            <div class="flex flex-wrap justify-center gap-4 py-12">
+                <span class="px-6 py-2 bg-gold-600/30 border border-gold-500/50 rounded-full text-gold-400 font-bold tracking-widest">謙卑 Humility</span>
+                <span class="px-6 py-2 bg-blue-600/30 border border-blue-500/50 rounded-full text-blue-400 font-bold tracking-widest">憐憫 Compassion</span>
+                <span class="px-6 py-2 bg-red-600/30 border border-red-500/50 rounded-full text-red-400 font-bold tracking-widest">掌權 Sovereignty</span>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-20">
+            <div class="glass-panel p-8 rounded-3xl text-center space-y-4">
+                <div class="w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center mx-auto text-dark-900 font-bold">1</div>
+                <h4 class="text-white font-bold">認罪與省察</h4>
+                <p class="text-sm text-gray-400">本週安靜在神面前，省察是否有「驕傲自欺」或對他人苦難「冷漠」的罪。</p>
+            </div>
+            <div class="glass-panel p-8 rounded-3xl text-center space-y-4">
+                <div class="w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center mx-auto text-dark-900 font-bold">2</div>
+                <h4 class="text-white font-bold">愛心行動</h4>
+                <p class="text-sm text-gray-400">主動聯絡一位正面臨困難的肢體，透過探訪、電話或物資表達實質關心。</p>
+            </div>
+            <div class="glass-panel p-8 rounded-3xl text-center space-y-4">
+                <div class="w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center mx-auto text-dark-900 font-bold">3</div>
+                <h4 class="text-white font-bold">宣告主權</h4>
+                <p class="text-sm text-gray-400">每天早晨用俄1:21禱告，在職場或家庭中宣告「國度就歸耶和華了」。</p>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <span class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「我們若不認識神，就無法真正認識自己；我們若不認識自己的悲慘，也無法真正認識神。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「偶像崇拜不僅是把壞東西當作神，更是把好東西當作終極的神來敬拜，這正是驕傲的根源。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒，《假神眾多》</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「神的主權是信徒在患難中最堅固的避難所。當我們無法看見祂的手時，我們可以信靠祂的心。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真，《講道集》</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「憐憫意味著與受苦者同受苦。它不是一種居高臨下的同情，而是願意走進他人的痛苦深處。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 盧雲，《憐憫：耶穌的教導》</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「驕傲是靈魂中最深、最隱秘的罪，也是所有罪惡中最難以察覺和根除的毒根。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 喬納森·愛德華茲，《宗教情操真偽辨》</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「面對邪惡不發聲，本身就是邪惡：上帝不會因此算我們為無罪。不說話，就是說話。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華，《做門徒的代價》</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「信心是一個活潑的、大膽的對上帝恩典的信靠，這種信靠是如此確定，以至於一個人願意為它死一千次。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 馬丁·路德</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「跟隨耶穌不是一場百米衝刺，而是在同一個方向上長期的順服。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 畢德生，《長道上的順服》</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「把你的後果交給上帝。我們的工作是順服，結果是上帝的事。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 查爾斯·史丹利，《成功的原則》</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-panel p-6 rounded-2xl hover:bg-white/10 transition-colors">
+                    <p class="text-gray-200 mb-4 font-serif italic">「我讀過了聖經的最後一頁，結局是：我們贏了！上帝的國度必將永遠立定。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 葛理翰</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-6 rounded-xl border border-white/10 text-center text-xs text-gray-500">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all transform hover:scale-110 active:scale-95 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

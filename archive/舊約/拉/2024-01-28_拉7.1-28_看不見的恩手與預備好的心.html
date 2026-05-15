@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拉7:1-28: 看不見的恩手與預備好的心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        accent: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: rgba(234, 179, 8, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        .jumping-text span {
+            display: inline-block;
+            animation: bounce-subtle 2s infinite;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #eab308; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-body leading-relaxed overflow-x-hidden" id="top">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div class="text-gold-400 font-display font-bold text-lg hidden md:block">以斯拉記 7:1-28</div>
+        <div class="flex gap-6 text-sm font-semibold tracking-wider">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_d89ac97f-40ee-41fd-9bfa-e0d09bff0f69.jpg' alt='media_1' class="w-full h-full object-cover animate-breath scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/60 to-slate-950"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="text-5xl md:text-7xl font-display font-black mb-6 tracking-tight animate-float">
+                看不見的恩手與<br><span class="text-gradient">預備好的心</span>
+            </h1>
+            <p class="text-gold-200/80 text-xl font-light mb-12 tracking-[0.2em]">拉 7:1-28</p>
+            
+            <div class="max-w-3xl mx-auto">
+                <p class="jumping-text text-2xl md:text-3xl font-display text-white/90 leading-relaxed italic">
+                    「以斯拉<span>定</span><span>志</span><span>考</span><span>究</span>遵行耶和華的律法，又將律例典章教訓以色列人。」
+                </p>
+                <p class="mt-4 text-gold-500 font-bold">（以斯拉記 7:10）</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="max-w-4xl mx-auto glass p-10 md:p-16 rounded-[2rem] border-gold-500/20 relative">
+                <div class="absolute -top-8 left-12 bg-gold-500 p-4 rounded-2xl shadow-lg shadow-gold-500/30">
+                    <svg class="w-8 h-8 text-slate-950" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-8 text-gold-400 flex items-center gap-3">
+                    虔誠禱告
+                </h2>
+                <p class="text-xl md:text-2xl leading-loose font-light text-slate-200 italic">
+                    親愛的天父，我們為祢那看不見卻時刻施恩的手獻上感恩。在動盪與充滿挑戰的世代中，求祢賜給我們如同以斯拉一般「定志」的心，願意深深考究祢的話語，並在生活中切實遵行。當我們面對世俗的權柄與看似不可能的環境時，求祢開我們的屬靈眼睛，看見祢是掌管歷史與君王之心的萬軍之耶和華。求祢堅固我們，使我們因祢恩手的幫助而剛強壯膽，勇敢承擔祢所託付的使命。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-black mb-4">信息大綱</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="bento-card p-8 rounded-3xl group">
+                    <div class="text-gold-500 text-sm font-bold mb-2 tracking-widest opacity-60">PART 01</div>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">隱藏的傳承與定志的追尋</h3>
+                    <p class="text-slate-400 text-sm mt-4 italic">拉 7:1-10</p>
+                </a>
+                <a href="#part2" class="bento-card p-8 rounded-3xl group border-gold-500/10">
+                    <div class="text-gold-500 text-sm font-bold mb-2 tracking-widest opacity-60">PART 02</div>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">突破王權的恩典與供應</h3>
+                    <p class="text-slate-400 text-sm mt-4 italic">拉 7:11-26</p>
+                </a>
+                <a href="#part3" class="bento-card p-8 rounded-3xl group">
+                    <div class="text-gold-500 text-sm font-bold mb-2 tracking-widest opacity-60">PART 03</div>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">頌讚恩手與剛強起行</h3>
+                    <p class="text-slate-400 text-sm mt-4 italic">拉 7:27-28</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown -->
+        <div class="space-y-40">
+            
+            <!-- Section 1 -->
+            <section id="part1" class="scroll-mt-32">
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-32">
+                            <span class="text-accent text-6xl text-gold-500/20 absolute -top-10 -left-6">01</span>
+                            <h2 class="text-4xl font-display font-black leading-tight mb-6">隱藏的傳承與<br>定志的追尋</h2>
+                            <div class="space-y-4">
+                                <div class="bg-slate-900/50 p-4 rounded-xl border-l-4 border-gold-500">
+                                    <p class="text-gold-400 font-bold text-sm uppercase tracking-tighter">關鍵原文 Keyword</p>
+                                    <p class="text-2xl font-display">定志 (כּוּן, kun)</p>
+                                    <p class="text-slate-400 text-sm">意為「預備、使之堅定、立定方向」。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 space-y-12">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed text-lg">
+                                這以斯拉從巴比倫上來，他是敏捷的文士，通達耶和華─以色列神所賜摩西的律法書。王允准他一切所求的，是因耶和華─他神的手幫助他... 以斯拉定志考究遵行耶和華的律法，又將律例典章教訓以色列人。
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <h4 class="text-gold-400 font-bold flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.443 1.103m-2.228 2.25h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <div class="space-y-4">
+                                    <p class="text-white font-bold italic">在一個充滿外邦文化與世俗誘惑的巴比倫帝國中，以斯拉如何能保持對神話語的熱忱？</p>
+                                    <p class="text-slate-400">以斯拉身處異邦，卻沒有被巴比倫的文化同化。他的秘訣在於「定志」（預備自己的心）做三件事：考究、遵行、教訓。神施恩的手之所以幫助他，正是因為他先預備好了一個願意被神神聖話語塑造的器皿。</p>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <h4 class="text-gold-400 font-bold flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                                    名言佳句
+                                </h4>
+                                <p class="text-xl font-display text-white italic border-l-2 border-gold-500 pl-4">
+                                    「我們若要真正認識神，必須將我們的心思意念從世界的喧囂中分別出來，專注於祂的話語。」
+                                </p>
+                                <p class="text-right text-gold-500">— 陶恕 (A.W. Tozer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="part2" class="scroll-mt-32">
+                <div class="flex flex-col lg:flex-row-reverse gap-12">
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-32">
+                            <span class="text-accent text-6xl text-gold-500/20 absolute -top-10 -right-6">02</span>
+                            <h2 class="text-4xl font-display font-black leading-tight mb-6 text-right">突破王權的<br>恩典與供應</h2>
+                            <div class="space-y-4">
+                                <div class="bg-slate-900/50 p-4 rounded-xl border-r-4 border-gold-500 text-right">
+                                    <p class="text-gold-400 font-bold text-sm uppercase tracking-tighter">關鍵原文 Keyword</p>
+                                    <p class="text-2xl font-display">通達 (מָהִיר, mahir)</p>
+                                    <p class="text-slate-400 text-sm">意指「敏捷、熟練、預備好」。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 space-y-12">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed text-lg">
+                                亞達薛西王賜給他們諭旨...「住在我國中的以色列人、祭司、利未人，凡甘心上耶路撒冷去的，我降旨准他們與你同去... 又帶金銀，就是王和謀士甘心獻給住耶路撒冷、以色列神的...」
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <h4 class="text-gold-400 font-bold flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.443 1.103m-2.228 2.25h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <div class="space-y-4">
+                                    <p class="text-white font-bold italic">神如何使用不信主的君王（亞達薛西王）來成就祂的計畫？</p>
+                                    <p class="text-slate-400">神是全地的主，君王的心在耶和華手中如同隴溝的水隨意流轉。只要我們在神的律法上「通達」並忠心，神能調度萬有，甚至使用職場上的非基督徒主管或世俗資源來成就祂的旨意。</p>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <h4 class="text-gold-400 font-bold flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                                    名言佳句
+                                </h4>
+                                <p class="text-xl font-display text-white italic border-l-2 border-gold-500 pl-4">
+                                    「即使是最強大的君王和統治者，也只是神手中的器皿；神藉著他們來執行祂隱秘的旨意。」
+                                </p>
+                                <p class="text-right text-gold-500">— 約翰·加爾文 (John Calvin)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="part3" class="scroll-mt-32">
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-32">
+                            <span class="text-accent text-6xl text-gold-500/20 absolute -top-10 -left-6">03</span>
+                            <h2 class="text-4xl font-display font-black leading-tight mb-6">頌讚恩手與<br>剛強起行</h2>
+                            <div class="space-y-4">
+                                <div class="bg-slate-900/50 p-4 rounded-xl border-l-4 border-gold-500">
+                                    <p class="text-gold-400 font-bold text-sm uppercase tracking-tighter">關鍵原文 Keyword</p>
+                                    <p class="text-2xl font-display">堅強 (חָזַק, chazaq)</p>
+                                    <p class="text-slate-400 text-sm">意為「抓住、使之堅固、獲得力量」。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 space-y-12">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed text-lg">
+                                以斯拉說：「耶和華─我們列祖的神是應當稱頌的！因他使王起這心意修飾耶路撒冷耶和華的殿... 因耶和華─我神的手幫助我，我就堅強，從以色列中招聚首領，與我一同上來。」
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <h4 class="text-gold-400 font-bold flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.443 1.103m-2.228 2.25h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <div class="space-y-4">
+                                    <p class="text-white font-bold italic">以斯拉看見王頒布如此優厚的詔書，他第一時間的反應是什麼？這對我們有何啟發？</p>
+                                    <p class="text-slate-400">以斯拉立刻頌讚神，認定是神「使王起這心意」。當他確認「神的手幫助我」時，他不僅感恩，更化為行動的勇氣（「我就堅強」），招聚領袖一同踏上艱險的歸回之路。</p>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <h4 class="text-gold-400 font-bold flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                                    名言佳句
+                                </h4>
+                                <p class="text-xl font-display text-white italic border-l-2 border-gold-500 pl-4">
+                                    「神的護理是基督徒的柔軟枕頭；知道神掌管一切，我們就能在最猛烈的風暴中安然入睡。」
+                                </p>
+                                <p class="text-right text-gold-500">— 司布真 (Charles Spurgeon)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32 max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-black mb-4">講章全文</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-12">
+                <p class="text-2xl font-display text-gold-100 font-bold border-b border-gold-500/30 pb-4">講道主題：看不見的恩手與預備好的心</p>
+                
+                <p class="text-lg leading-relaxed text-slate-300">
+                    弟兄姊妹們，今天我們要從以斯拉記第七章來思想一個重要的主題。在人類歷史的洪流中，我們常常覺得是強權、政治或經濟在主導局勢；然而，聖經卻為我們揭開了歷史背後的真實面貌——有一雙看不見的恩手，正在掌管這一切。
+                </p>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gold-400">第一段：隱藏的傳承與定志的追尋</h3>
+                    <p class="text-lg leading-relaxed text-slate-300">
+                        在以斯拉記7章1到10節中，我們看到了一長串的家譜。這不只是枯燥的名字，它證明了以斯拉擁有祭司亞倫的純正血統。然而，血統不能保證一個人的屬靈光景。以斯拉身處巴比倫，一個充滿異教文化、遠離耶路撒冷聖殿的帝國，但他沒有隨波逐流。
+                    </p>
+                    <p class="text-xl font-display font-bold text-white bg-gold-600/10 p-6 rounded-2xl border border-gold-500/20">
+                        「以斯拉定志考究遵行耶和華的律法，又將律例典章教訓以色列人。」
+                    </p>
+                    <p class="text-lg leading-relaxed text-slate-300">
+                        以斯拉在行動之前，先有一個「定志」的內心。他刻意、堅定地將心力投注於神的話語。他不僅考究（研讀），更要求自己遵行，最後才去教導別人。神那施恩的手為什麼幫助以斯拉？因為神看見了一個預備好的器皿。
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gold-400">第二段：突破王權的恩典與供應</h3>
+                    <p class="text-lg leading-relaxed text-slate-300">
+                        亞達薛西王竟然下旨全力支持以斯拉！這告訴我們，神的恩典與供應能突破任何世俗的體制與王權。無論你在職場上遇到多麼不講理的主管，或面臨看似枯竭的資源，請記住，君王的心在耶和華手中。只要我們行在神的旨意中，神能使用任何渠道來供應祂的工作。
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gold-400">第三段：頌讚恩手與剛強起行</h3>
+                    <p class="text-lg leading-relaxed text-slate-300">
+                        看見神的恩手並沒有讓以斯拉變得安逸。當我們真知道神的手在托住我們時，我們不該退縮，而是要「剛強」起來。從巴比倫回到耶路撒冷是一條漫長且充滿危險的道路，但因為有神的恩手幫助，以斯拉有了無比的勇氣。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications & Action -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bento-card p-10 rounded-[3rem]">
+                <h3 class="text-2xl font-display font-black mb-8 text-gold-400 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <p class="text-slate-300"><strong class="text-white">個人屬靈生命的扎根</strong>：不要只做主日的信徒，要效法以斯拉「定志」研讀並實踐聖經。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <p class="text-slate-300"><strong class="text-white">職場與社會中的信靠</strong>：不要害怕外在權勢，要相信神的手能影響決策者。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <p class="text-slate-300"><strong class="text-white">從看見恩手到勇敢承擔</strong>：經歷神的幫助後，要「剛強」起來招聚他人。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gold-600 p-10 rounded-[3rem] text-slate-950 shadow-2xl shadow-gold-500/20">
+                <h3 class="text-2xl font-display font-black mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    實踐行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="bg-white/20 p-4 rounded-2xl">
+                        <p class="font-bold mb-1">每日定志</p>
+                        <p class="text-sm opacity-90">每天安排15分鐘專心「考究」聖經，並寫下一個「遵行」行動。</p>
+                    </div>
+                    <div class="bg-white/20 p-4 rounded-2xl">
+                        <p class="font-bold mb-1">為上位者禱告</p>
+                        <p class="text-sm opacity-90">為未信主主管、國家領袖禱告，求神的手引導他們的心意。</p>
+                    </div>
+                    <div class="bg-white/20 p-4 rounded-2xl">
+                        <p class="font-bold mb-1">分享與教導</p>
+                        <p class="text-sm opacity-90">用這週讀到的一句經文去鼓勵遇到困難的弟兄姊妹。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-black mb-4">屬靈名言</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 rounded-3xl relative overflow-hidden group">
+                    <span class="absolute -right-4 -top-4 text-9xl text-white/5 font-serif italic">"</span>
+                    <p class="text-lg italic mb-4 relative z-10 text-slate-200">「神總是不斷地尋找那些心靈向祂完全敞開的人，好將祂的能力顯明在他們身上。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-8 rounded-3xl relative overflow-hidden group">
+                    <span class="absolute -right-4 -top-4 text-9xl text-white/5 font-serif italic">"</span>
+                    <p class="text-lg italic mb-4 relative z-10 text-slate-200">「不要根據你所遭遇的困難來衡量神的旨意，而要藉著神在基督裡的應許來認識祂的手。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 rounded-3xl relative overflow-hidden group">
+                    <span class="absolute -right-4 -top-4 text-9xl text-white/5 font-serif italic">"</span>
+                    <p class="text-lg italic mb-4 relative z-10 text-slate-200">「基督徒的順服不是出於對刑罰的恐懼，而是被神那測不透的恩典與主權所折服的喜樂。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-8 rounded-3xl relative overflow-hidden group">
+                    <span class="absolute -right-4 -top-4 text-9xl text-white/5 font-serif italic">"</span>
+                    <p class="text-lg italic mb-4 relative z-10 text-slate-200">「回家，意味著信任神那雙慈愛的雙手，並知道祂一直在那裡等待著我們。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-8 rounded-3xl relative overflow-hidden group">
+                    <span class="absolute -right-4 -top-4 text-9xl text-white/5 font-serif italic">"</span>
+                    <p class="text-lg italic mb-4 relative z-10 text-slate-200">「信徒最大的安慰，就是知道宇宙中沒有一滴雨、沒有一陣風是偶然的，全都在我們慈愛天父的掌管之下。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card p-8 rounded-3xl relative overflow-hidden group">
+                    <span class="absolute -right-4 -top-4 text-9xl text-white/5 font-serif italic">"</span>
+                    <p class="text-lg italic mb-4 relative z-10 text-slate-200">「全世界都在看，一個完全將自己奉獻給神的人，神能藉著他成就什麼。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 慕迪 (D.L. Moody)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <section class="border-t border-white/10 pt-20 pb-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs tracking-widest uppercase">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                謹慎查證
+            </div>
+            <p class="mt-4 text-slate-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center shadow-2xl shadow-gold-500/50 hover:scale-110 active:scale-95 transition-transform z-50">
+        <svg class="w-6 h-6 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

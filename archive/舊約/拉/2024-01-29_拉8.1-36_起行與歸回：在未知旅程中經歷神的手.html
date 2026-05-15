@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拉8:1-36:起行與歸回：在未知旅程中經歷神的手</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c0a080',
+                        secondary: '#8a745d',
+                        accent: '#e5d5c5',
+                        darkBg: '#0a0a0c',
+                        cardBg: 'rgba(25, 25, 28, 0.7)',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5d5c5;
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(192, 160, 128, 0.2);
+        }
+        .banner-container {
+            height: 50vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+        .breathe-effect {
+            animation: breathe 6s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { filter: brightness(0.4); }
+            50% { filter: brightness(0.8); }
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5f5 0%, #c0a080 50%, #8a745d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .outline-btn {
+            border: 1px solid rgba(192, 160, 128, 0.4);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(192, 160, 128, 0.1);
+            border-color: #c0a080;
+            transform: translateY(-2px);
+        }
+        .section-card {
+            background: rgba(25, 25, 28, 0.5);
+            border: 1px solid rgba(192, 160, 128, 0.1);
+            border-radius: 24px;
+            backdrop-filter: blur(8px);
+        }
+        .bouncing-text {
+            display: inline-block;
+            animation: bounce-subtle 2s infinite;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c0a080;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-primary font-bold tracking-wider text-sm md:text-base">拉 8:1-36</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest text-accent/80">
+                <a href="#prayer" class="hover:text-primary transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-primary transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-primary transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-primary transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner -->
+    <header class="relative banner-container h-[50vh] md:h-[90vh]  w-full  flex items-center justify-center pt-16">
+        <img src='image/img_61916f9c-5902-4f17-b77d-377eba0172d3.jpg' alt='Banner' class="banner-img breathe-effect absolute inset-0" />
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 id="top" class="text-3xl md:text-6xl font-black mb-8 gold-gradient-text font-display leading-tight">
+                起行與歸回：<br>在未知旅程中經歷神的手
+            </h1>
+            <div class="bouncing-text">
+                <p class="text-lg md:text-2xl text-white font-medium italic drop-shadow-2xl px-4 py-2 rounded-lg bg-black/10 backdrop-blur-sm">
+                    「我們神施恩的手必幫助一切尋求他的；但他的能力和忿怒必攻擊一切離棄他的。」
+                    <span class="block text-sm mt-2 opacity-80">（以斯拉記 8:22）</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A4.833 4.833 0 0118 9a4.833 4.833 0 01-1.5 1.332V21m-9 0V10.332A4.833 4.833 0 006 9a4.833 4.833 0 00-1.5 1.332V21M9 21h6" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-accent">禱告</h2>
+            </div>
+            <div class="section-card p-8 md:p-12 leading-relaxed text-lg text-accent/90 italic border-l-4 border-primary shadow-2xl">
+                親愛的天父，我們感謝祢，因祢是那位在曠野開道路、在沙漠開江河的上帝。當我們面對人生的未知與前方的挑戰時，求祢賜給我們如同以斯拉般的信心，不倚靠屬血肉的膀臂，而是單單仰望祢施恩的手。求祢幫助我們在缺乏中懂得尋求，在安逸中懂得刻苦己心，在託付上忠心為聖。願祢親自護衛我們人生的旅程，救我們脫離一切仇敵的網羅，直到我們平安抵達祢所應許的終點。奉主耶穌基督的聖名禱告，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-accent">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col items-start gap-3">
+                    <span class="text-xs font-bold text-primary tracking-widest uppercase">第一階段</span>
+                    <h3 class="text-lg font-bold">察覺破口，主動呼召：建造屬靈的團隊</h3>
+                    <span class="text-sm opacity-60 italic">拉 8:1-20</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col items-start gap-3">
+                    <span class="text-xs font-bold text-primary tracking-widest uppercase">第二階段</span>
+                    <h3 class="text-lg font-bold">刻苦己心，仰望神恩：宣告信心的禁食</h3>
+                    <span class="text-sm opacity-60 italic">拉 8:21-23</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col items-start gap-3">
+                    <span class="text-xs font-bold text-primary tracking-widest uppercase">第三階段</span>
+                    <h3 class="text-lg font-bold">忠心管家，分別為聖：承載貴重的託付</h3>
+                    <span class="text-sm opacity-60 italic">拉 8:24-30</span>
+                </a>
+                <a href="#part4" class="outline-btn p-6 rounded-2xl flex flex-col items-start gap-3">
+                    <span class="text-xs font-bold text-primary tracking-widest uppercase">第四階段</span>
+                    <h3 class="text-lg font-bold">蒙神護佑，平安抵達：見證應許的成就</h3>
+                    <span class="text-sm opacity-60 italic">拉 8:31-36</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32 border-t border-white/5 pt-16">
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+                        <span class="w-8 h-px bg-primary/40"></span>
+                        察覺破口，主動呼召：建造屬靈的團隊
+                    </h3>
+                    <div class="bg-white/5 p-6 rounded-xl mb-8 border border-white/5">
+                        <p class="text-sm text-accent/70 leading-relaxed mb-4">「...我查看百姓和祭司，見沒有利未人在那裡... 蒙我們神施恩的手幫助我們，他們在以色列的曾孫、利未的孫子、抹利的後裔中帶一個通達人來...」 (拉 8:15, 18)</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">關鍵原文</h4>
+                            <p class="text-lg font-semibold text-accent">查看 (בִּין / biyn)</p>
+                            <p class="text-sm opacity-70">原文意為「分辨、理解、留意觀察」。以斯拉不只是用眼睛看，而是帶著屬靈的洞察力發現了「沒有利未人」的嚴重破口。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">問題解析</h4>
+                            <p class="text-accent/90">當我們在服事中發現缺乏時，我們的第一反應是什麼？以斯拉立刻差派領袖去補足破口，提醒領袖必須具備洞察力與行動力。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/10 italic text-sm">
+                        「教會不是一個讓你可以舒舒服服坐著觀看的劇院，而是一個所有人都被呼召去參與事奉的軍隊。」—— 提摩太·凱勒
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32 border-t border-white/5 pt-16">
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+                        <span class="w-8 h-px bg-primary/40"></span>
+                        刻苦己心，仰望神恩：宣告信心的禁食
+                    </h3>
+                    <div class="bg-white/5 p-6 rounded-xl mb-8 border border-white/5">
+                        <p class="text-sm text-accent/70 leading-relaxed">「我在亞哈瓦河邊宣告禁食，為要在我們神面前刻苦己心，求他使我們和婦人孩子，並一切所有的，都得平坦的道路。」 (拉 8:21)</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">關鍵原文</h4>
+                            <p class="text-lg font-semibold text-accent">刻苦己心 (עָנָה / anah)</p>
+                            <p class="text-sm opacity-70">意為「使自己降卑」。特指透過禁食，放下肉體的慾望與倚靠，展現極度的謙卑與迫切。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">信心與安全</h4>
+                            <p class="text-accent/90">以斯拉選擇了「信心的冒險」，用禁食禱告來取代對世俗權力的倚靠，將安全感完全建立在神的應許上。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/10 italic text-sm">
+                        「禱告不是克服上帝的勉強，而是緊緊抓住上帝的願意。」—— 馬丁·路德
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32 border-t border-white/5 pt-16">
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+                        <span class="w-8 h-px bg-primary/40"></span>
+                        忠心管家，分別為聖：承載貴重的託付
+                    </h3>
+                    <div class="bg-white/5 p-6 rounded-xl mb-8 border border-white/5">
+                        <p class="text-sm text-accent/70 leading-relaxed">「我對他們說：『你們歸耶和華為聖，器皿也為聖... 你們當警醒看守，直到你們在耶路撒冷... 過了秤。』」 (拉 8:28-29)</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">關鍵原文</h4>
+                            <p class="text-lg font-semibold text-accent">聖 (קֹדֶשׁ / qodesh)</p>
+                            <p class="text-sm opacity-70">意為「專屬於神的」。以斯拉不僅指器皿是聖的，更強調扛抬器皿的「人」必須是聖潔的。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">財務與透明</h4>
+                            <p class="text-accent/90">以斯拉透過公開過秤展現了管理智慧。屬靈託付不僅需要信心，也需要嚴謹的管理與無可指責的操守。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/10 italic text-sm">
+                        「恩典雖然是免費的，卻不是廉價的；它要求我們將生命完全交出。」—— 潘霍華
+                    </div>
+                </div>
+
+                <!-- Part 4 -->
+                <div id="part4" class="scroll-mt-32 border-t border-white/5 pt-16">
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+                        <span class="w-8 h-px bg-primary/40"></span>
+                        蒙神護佑，平安抵達：見證應許的成就
+                    </h3>
+                    <div class="bg-white/5 p-6 rounded-xl mb-8 border border-white/5">
+                        <p class="text-sm text-accent/70 leading-relaxed">「我們神的手保佑我們，救我們脫離仇敵和路上埋伏之人的手。我們到了耶路撒冷...」 (拉 8:31-32)</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">關鍵原文</h4>
+                            <p class="text-lg font-semibold text-accent">救 (נָצַל / natsal)</p>
+                            <p class="text-sm opacity-70">意為「奪回、保護脫離危險」。強調神的主動介入，在未知危機中成為真實的盾牌。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-sm font-bold text-primary/80 uppercase tracking-widest">感恩的祭</h4>
+                            <p class="text-accent/90">抵達後第一件事是獻祭，透過獻祭承認神的護佑並解決罪的問題。每一次成功都是感恩與重新奉獻的時刻。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/10 italic text-sm">
+                        「如果上帝是我們旅程的嚮導，我們就不必擔憂沿途的風浪。」—— 約翰·加爾文
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-accent">分段講章</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-gold max-w-none space-y-12 text-accent/80 leading-loose">
+                <div class="section-card p-10">
+                    <h4 class="text-2xl font-bold text-white mb-6">起行與歸回：在未知旅程中經歷神的手</h4>
+                    <p class="mb-6">各位弟兄姊妹，平安。人生就像一場漫長的旅程，充滿了未知與挑戰。有時我們站在人生的十字路口，前方的道路看似危機四伏，我們該如何起行？今天我們要透過以斯拉記第八章，來看以斯拉如何帶領以色列人，在充滿未知的歸鄉旅程中，經歷神施恩的手。</p>
+                    
+                    <div class="p-4 bg-primary/10 border-l-4 border-primary my-8">
+                        <strong class="text-primary block mb-2">今日金句</strong>
+                        「我們告訴王說：『我們神施恩的手必幫助一切尋求他的；但他的能力和忿怒必攻擊一切離棄他的。』」（以斯拉記 8:22）
+                    </div>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h5 class="text-xl font-bold text-primary mb-4">一、 察覺破口，主動呼召：建造屬靈的團隊</h5>
+                            <p>以斯拉帶著國王的詔書和資源，招聚了各族長準備回歸。當大家在亞哈瓦河邊安營時，以斯拉仔細「查看」了百姓。他發現了一個致命的破口：隊伍裡<strong>沒有利未人</strong>！建造聖殿、恢復敬拜，怎麼能沒有利未人呢？以斯拉立刻停下腳步，差派領袖去招募。看見破口不是為了批評，而是神呼召我們去堵住破口、主動招聚同工的時刻。</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xl font-bold text-primary mb-4">二、 刻苦己心，仰望神恩：宣告信心的禁食</h5>
+                            <p>面對漫長且危險的路途，以斯拉做了一個驚人的決定：他宣告禁食，刻苦己心。他覺得向國王要軍隊保護是可恥的，因為他已經向王作過見證：「<strong>我們神施恩的手必幫助一切尋求他的</strong>」。這是一個極大的信心考驗。我們遇到危機時，是立刻向世俗權勢低頭，還是願意先在神面前刻苦己心，尋求祂施恩的手？</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xl font-bold text-primary mb-4">三、 忠心管家，分別為聖：承載貴重的託付</h5>
+                            <p>有信心不代表做事可以草率。以斯拉將價值連城的金銀器皿過秤，交給祭司長，並強調「<strong>你們歸耶和華為聖，器皿也為聖</strong>」。神今天也將時間、才幹、金錢託付給我們。我們在職場上、在財務的管理上，是否清清白白，經得起未來在神面前的「過秤」？</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xl font-bold text-primary mb-4">四、 蒙神護佑，平安抵達：見證應許的成就</h5>
+                            <p>正月十二日，他們起行了。經文作了最美的總結：「<strong>我們神的手保佑我們，救我們脫離仇敵和路上埋伏之人的手。</strong>」他們平安抵達了耶路撒冷！他們沒有吹噓自己的勇敢，而是將財物點交入庫，並且立刻向神獻上燔祭。他們深知，能平安抵達是因為神護佑的手。</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-white/10">
+                        <h5 class="text-xl font-bold text-white mb-4">結論關鍵字</h5>
+                        <div class="flex gap-4">
+                            <span class="px-4 py-2 bg-primary/20 rounded-full text-primary font-bold">1. 尋求</span>
+                            <span class="px-4 py-2 bg-primary/20 rounded-full text-primary font-bold">2. 聖潔</span>
+                            <span class="px-4 py-2 bg-primary/20 rounded-full text-primary font-bold">3. 護佑</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Application Direction -->
+            <div class="mt-16 space-y-8">
+                <h3 class="text-2xl font-bold text-accent flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    應用方向
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="section-card p-6 border-t-2 border-primary">
+                        <h4 class="font-bold mb-3">檢視事奉破口</h4>
+                        <p class="text-sm opacity-80 leading-relaxed">主動禱告並尋找、招聚那些「通達人」加入事奉，不要只是等待。</p>
+                    </div>
+                    <div class="section-card p-6 border-t-2 border-primary">
+                        <h4 class="font-bold mb-3">面對危機的兵器</h4>
+                        <p class="text-sm opacity-80 leading-relaxed">重大決策時（如轉職、疾病），學習以斯拉透過禁食禱告尋求神施恩的手。</p>
+                    </div>
+                    <div class="section-card p-6 border-t-2 border-primary">
+                        <h4 class="font-bold mb-3">嚴謹的管家生活</h4>
+                        <p class="text-sm opacity-80 leading-relaxed">檢視財務與時間是否分別為聖？金錢管理是否透明誠實？</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Steps -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-accent mb-8">回應或實踐行動</h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 items-start p-4 bg-white/5 rounded-xl">
+                        <span class="w-6 h-6 rounded-full bg-primary text-darkBg flex items-center justify-center flex-shrink-0 font-bold text-xs">1</span>
+                        <p class="text-accent/90"><strong>一餐禁食禱告</strong>：本週選擇一餐禁食，特別為面臨的一個困難或未知的前景禱告。</p>
+                    </li>
+                    <li class="flex gap-4 items-start p-4 bg-white/5 rounded-xl">
+                        <span class="w-6 h-6 rounded-full bg-primary text-darkBg flex items-center justify-center flex-shrink-0 font-bold text-xs">2</span>
+                        <p class="text-accent/90"><strong>主動招聚</strong>：本週觀察小組需要，主動邀請一位弟兄姊妹參與服事或加入團契。</p>
+                    </li>
+                    <li class="flex gap-4 items-start p-4 bg-white/5 rounded-xl">
+                        <span class="w-6 h-6 rounded-full bg-primary text-darkBg flex items-center justify-center flex-shrink-0 font-bold text-xs">3</span>
+                        <p class="text-accent/90"><strong>資源盤點與奉獻</strong>：將月開銷或時間分配的一部分刻意「分別為聖」獻給神。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pb-20">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-accent">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「上帝的同在是我們旅程中唯一的保障；當我們尋求祂的面，而非單單尋求祂的手時，我們將經歷真正的平安。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 陶恕 (A.W. Tozer)</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「真實的信心不是相信上帝會按我的心意成就一切，而是相信無論遭遇何事，上帝的旨意總是最好。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 查爾斯·史丹利</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「我們若不將自己的一切所有分別為聖交給主，我們就不配稱為祂的門徒。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 魏樂德 (Dallas Willard)</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「禁食禱告不是為了改變上帝的旨意，而是為了預備我們的心去領受祂已經為我們準備好的恩典。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 慕迪 (D.L. Moody)</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「十字架的道路是一條捨己的道路；在未知的旅程中，我們唯一的倚靠就是那位為我們死而復活的主。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 約翰·史托德</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「真理與恩典必須並行；當我們在教會中建立群體時，我們需要看見彼此的破口，並用恩典去彌補。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 提摩太·凱勒</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「信心就是相信上帝的護理(Providence)在一切環境中掌權，即使在我們看不見的時候，祂的手仍在動工。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 約翰·加爾文</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「一個真正被神觸摸的人，會將自己和所擁有的一切歸耶和華為聖。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 喬納森·愛德華茲</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「我們不知道明天會如何，但我們知道誰掌管明天；這就是我們在人生旅途中最大的安慰。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 葛理翰 (Billy Graham)</span>
+                </div>
+                <div class="section-card p-8 group hover:bg-primary/10 transition-all duration-500">
+                    <p class="text-accent mb-4 italic leading-relaxed">「屬靈的生命是一趟從恐懼走向愛的旅程；當我們願意放下自己的掌控，交托給神時，我們就找到了真正的安息。」</p>
+                    <span class="text-primary text-xs font-bold uppercase tracking-widest">— 盧雲 (Henri Nouwen)</span>
+                </div>
+            </div>
+
+            <div class="mt-20 p-8 border-t border-white/5 text-center space-y-4">
+                <p class="text-primary font-bold text-lg">⚠️ 警語</p>
+                <p class="text-accent/60 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-darkBg rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll for nav links and buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

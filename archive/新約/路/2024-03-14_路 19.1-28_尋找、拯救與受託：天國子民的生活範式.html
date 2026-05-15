@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路 19:1-28: 尋找、拯救與受託：天國子民的生活範式</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        deepNavy: '#0A0F1E',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                        accent: '#6366f1',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0F1E;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .outline-btn:hover {
+            transform: scale(1.05);
+            background: rgba(99, 102, 241, 0.2);
+        }
+        @keyframes breathing {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-deepNavy/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-gold font-display font-bold tracking-wider text-sm md:text-lg">路 19:1-28</div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest text-gray-300">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header Section -->
+    <header id="top" class="relative h-screen flex flex-col items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0 overflow-hidden banner-mask">
+            <img src='image/img_c387bdbc-2aa3-478e-9795-cec028d26e2a.jpg' alt='media_1' class="w-full h-full object-cover breathing-image" />
+            <div class="absolute inset-0 bg-gradient-to-t from-deepNavy via-transparent to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl mb-8 leading-tight text-white drop-shadow-2xl px-2">
+                尋找、拯救與受託：<br>
+                <span class="text-gradient">天國子民的生活範式</span>
+            </h1>
+            
+            <div class="inline-block animate-bounce-subtle">
+                <p class="text-lg md:text-2xl font-light tracking-widest text-gold italic">
+                    「人子來，為要尋找、拯救失喪的人。」
+                </p>
+                <p class="text-sm md:text-base text-gray-400 mt-2">（路加福音 19:10）</p>
+            </div>
+        </div>
+
+        <a href="#prayer" class="absolute bottom-12 animate-bounce cursor-pointer">
+            <svg class="w-8 h-8 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </a>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card p-8 md:p-16 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                <svg class="w-32 h-32 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9-4.33-9-10s3.93-10 9-10zm2 0c5.07 0 9 4.33 9 10s-3.93 10-9 10V2z"/></svg>
+            </div>
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-gold/20 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">開路禱告</h2>
+            </div>
+            <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light italic">
+                親愛的主耶穌，感謝祢是不斷尋找我們的神。當我們像撒該一樣躲在人群或自我的高處時，祢看見了我們，並呼喚我們的名字。求祢的救恩今日也臨到我們的家，不僅赦免我們的罪，更轉化我們對金錢與權力的價值觀。幫助我們在等待祢國度全然降臨的過程中，能忠心運用祢所賜的「銀子」，不叫我們因恐懼而埋藏恩賜，而是勇敢地為祢作工。奉主耶穌基督聖潔的名求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="space-y-16">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-accent/20 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">大綱與深入解析</h2>
+            </div>
+
+            <!-- Quick Navigation Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="outline-btn glass-card p-6 border-l-4 border-l-gold hover:border-l-indigo-500 block">
+                    <span class="block text-xs text-gold font-bold mb-2 tracking-tighter">PART 01 (路 19:1-6)</span>
+                    <span class="text-lg font-bold text-white">越過阻隔的尋求</span>
+                </a>
+                <a href="#part2" class="outline-btn glass-card p-6 border-l-4 border-l-gold hover:border-l-indigo-500 block">
+                    <span class="block text-xs text-gold font-bold mb-2 tracking-tighter">PART 02 (路 19:7-10)</span>
+                    <span class="text-lg font-bold text-white">從自私到慷慨的明證</span>
+                </a>
+                <a href="#part3" class="outline-btn glass-card p-6 border-l-4 border-l-gold hover:border-l-indigo-500 block">
+                    <span class="block text-xs text-gold font-bold mb-2 tracking-tighter">PART 03 (路 19:11-28)</span>
+                    <span class="text-lg font-bold text-white">等待中的責任與交帳</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Cards -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32 space-y-8">
+                    <h3 class="text-2xl font-serif font-bold text-gold border-b border-gold/30 pb-4">1. 遇見恩典：越過阻隔的尋求 (路 19:1-6)</h3>
+                    <div class="grid md:grid-cols-5 gap-8">
+                        <div class="md:col-span-3 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 italic text-gray-300">
+                                「耶穌進了耶利哥...有一個人名叫撒該，作稅吏長，是個財主。他要看看耶穌是怎樣的人...爬上桑樹...耶穌抬頭一看，對他說：『撒該，快下來！今天我必住在你家。』」
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">關鍵字解析</h4>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li><strong class="text-white">尋找 (zēteō)：</strong> 渴望、打聽。但主動權在於耶穌。</li>
+                                    <li><strong class="text-white">住在 (meinai)：</strong> 親密的團契，不只是路過。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="glass-card p-6 bg-indigo-500/5">
+                                <h4 class="text-sm font-bold text-indigo-400 uppercase tracking-widest mb-3">關鍵問題</h4>
+                                <p class="text-gray-300">撒該擁有財富與權力，為何要不顧尊嚴爬樹？</p>
+                                <p class="mt-3 text-sm text-gray-400">解析：物質的豐足無法填補靈魂的空虛。爬樹象徵承認自己的「不足」並採取突破行動。</p>
+                            </div>
+                            <div class="text-sm border-l-2 border-gold/40 pl-4 py-2 text-gray-400 italic">
+                                「神創造人心時，留下了一個真空，除了神以外，沒有任何東西能填滿它。」—— 布萊茲·帕斯卡
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32 space-y-8">
+                    <h3 class="text-2xl font-serif font-bold text-gold border-b border-gold/30 pb-4">2. 救恩轉化：從自私到慷慨的明證 (路 19:7-10)</h3>
+                    <div class="grid md:grid-cols-5 gap-8">
+                        <div class="md:col-span-3 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 italic text-gray-300">
+                                「撒該站著對主說：『主啊，我把所有的一半給窮人；我若訛詐了誰，就還他四倍。』耶穌說：『今天救恩到了這家...人子來，為要尋找、拯救失喪的人。』」
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">關鍵字解析</h4>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li><strong class="text-white">救恩 (sōtēria)：</strong> 拯救、醫治、釋放。標記是財務態度的徹底轉變。</li>
+                                    <li><strong class="text-white">失喪 (apolōlos)：</strong> 迷路的人。在主眼中，他是「迷失」而非單純的「壞」。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="glass-card p-6 bg-indigo-500/5">
+                                <h4 class="text-sm font-bold text-indigo-400 uppercase tracking-widest mb-3">關鍵問題</h4>
+                                <p class="text-gray-300">為什麼耶穌在撒該還沒做出賠償承諾前就宣告要住他家？</p>
+                                <p class="mt-3 text-sm text-gray-400">解析：這是「恩典在前，行為在後」。耶穌的接納產生了改變的力量。慷慨是被愛觸摸後的自然回應。</p>
+                            </div>
+                            <div class="text-sm border-l-2 border-gold/40 pl-4 py-2 text-gray-400 italic">
+                                「廉價的恩典就是不需要悔改的赦免……昂貴的恩典是基督的呼召。」—— 潘霍華
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32 space-y-8">
+                    <h3 class="text-2xl font-serif font-bold text-gold border-b border-gold/30 pb-4">3. 忠心管家：在等待中的責任與交帳 (路 19:11-28)</h3>
+                    <div class="grid md:grid-cols-5 gap-8">
+                        <div class="md:col-span-3 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 italic text-gray-300">
+                                「一個貴胄往遠方去...交給十個僕人十錠銀子，說：『你們去作生意，直等我回來。』...頭一個賺了十錠...主人說：『好！良善的僕人...可以有權柄管十座城。』」
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">關鍵字解析</h4>
+                                <ul class="space-y-2 text-gray-400">
+                                    <li><strong class="text-white">作生意 (pragmateuomai)：</strong> 管理、貿易。指信徒積極運用主賜資源。</li>
+                                    <li><strong class="text-white">怕 (phobeomai)：</strong> 第三個僕人因對主人性格的歪曲認知，陷入怠惰。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="glass-card p-6 bg-indigo-500/5">
+                                <h4 class="text-sm font-bold text-indigo-400 uppercase tracking-widest mb-3">關鍵問題</h4>
+                                <p class="text-gray-300">為什麼主人對那「原樣歸還」銀子的僕人如此嚴厲？</p>
+                                <p class="mt-3 text-sm text-gray-400">解析：天國邏輯中，「不作為」就是「惡」。懶惰的僕人將保守誤認為忠心，其實是因為他不愛主人。</p>
+                            </div>
+                            <div class="text-sm border-l-2 border-gold/40 pl-4 py-2 text-gray-400 italic">
+                                「我們不是這世界的主人，我們只是管家。一切都要向主人交帳。」—— 約翰·加爾文
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 border-t-4 border-t-gold">
+                <h2 class="text-2xl font-serif font-bold text-white mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">01.</span>
+                        <p><strong class="text-white">突破障礙的尋求：</strong>學習撒該，採取具體行動（如讀經、退修）來親近主。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">02.</span>
+                        <p><strong class="text-white">財務觀的重整：</strong>思考如何運用資源來補償虧欠或救助弱勢。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">03.</span>
+                        <p><strong class="text-white">發掘並運用恩賜：</strong>不要將恩典包在「恐懼的手巾」裡，主動找出一種服務方式。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-10 border-t-4 border-t-accent">
+                <h2 class="text-2xl font-serif font-bold text-white mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    回應與實踐
+                </h2>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">●</span>
+                        <p><strong class="text-white">列出名單：</strong>本週列出三位「失喪的」朋友，效法耶穌主動尋找他們。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">●</span>
+                        <p><strong class="text-white">具體奉獻：</strong>針對虧欠道歉補償，或撥出奉獻支持慈善。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">●</span>
+                        <p><strong class="text-white">恩賜清單：</strong>寫下主給你的「一錠銀子」，本月內參與一次相關服事。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-white/10 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">講章文稿</h2>
+            </div>
+            <div class="prose prose-invert max-w-none text-xl leading-relaxed text-gray-300 space-y-8 font-light">
+                <p>各位弟兄姊妹，今天我們要透過路加福音第19章，看見一個關於「尋找」與「回應」的故事。</p>
+                
+                <p class="border-l-4 border-gold pl-6 py-2 bg-gold/5">
+                    這段經文的起點是一個渴望。<strong class="text-white font-bold">撒該，這個被社會唾棄的稅吏長，他爬上了桑樹，卻沒想到那一刻是主耶穌一直在尋找他。</strong> <strong class="text-gold font-bold">金句告訴我們：「人子來，為要尋找、拯救失喪的人。」</strong> 當耶穌喊出「撒該，快下來」時，救恩就已經開始了。
+                </p>
+
+                <p>然而，<strong class="text-white font-bold">真正的救恩必然帶來生命的轉化。</strong> 撒該遇見主後，他的錢包悔改了。他不再是財富的奴隸，而是財富的主人。弟兄姊妹，我們是否也讓救恩落實在我們的生活細節中？</p>
+
+                <p class="bg-white/5 p-8 rounded-2xl">
+                    緊接著，耶穌講了「交托銀子」的比喻。祂要告訴門徒：<strong class="text-white font-bold">恩典不只是用來享受的，更是要用來「經營」的。</strong> 耶穌即將走向耶路撒冷，走向十字架，祂不在的日子，我們就是祂的管家。
+                </p>
+
+                <p><strong class="text-gold font-bold text-2xl block mb-4">今天，主也在問我們：你拿這「一錠銀子」做了什麼？</strong> 我們是歡歡喜喜地為國度投資，還是因為害怕失敗、害怕犧牲而原地踏步？願我們都能成為那「良善忠心的僕人」，在主回來的那天，能坦然交帳，進入主的快樂中。</p>
+            </div>
+            
+            <div class="flex justify-center pt-8">
+                <div class="px-8 py-4 glass-card text-center">
+                    <p class="text-xs tracking-[0.3em] uppercase text-gold mb-2">結論關鍵字</p>
+                    <p class="text-3xl font-serif font-black tracking-widest text-white">尋找 · 轉化 · 忠心</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-16">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold/20 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">屬靈名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 flex flex-col justify-between hover:bg-white/5 transition-colors">
+                    <p class="text-lg text-gray-200 italic mb-6">「如果你不能在你的工作、家庭和金錢上尊榮基督，你其實並沒有真正地尊榮祂。」</p>
+                    <p class="text-sm text-gold font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 flex flex-col justify-between hover:bg-white/5 transition-colors">
+                    <p class="text-lg text-gray-200 italic mb-6">「耶穌尋找我們，不是因為我們有價值，而是因為祂尋找我們，使我們變得有價值。」</p>
+                    <p class="text-sm text-gold font-bold">— 聖奧古斯丁</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 flex flex-col justify-between hover:bg-white/5 transition-colors">
+                    <p class="text-lg text-gray-200 italic mb-6">「一個不關心靈魂失喪的人，很難說他自己已經得救了。」</p>
+                    <p class="text-sm text-gold font-bold">— 查爾斯·司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 flex flex-col justify-between hover:bg-white/5 transition-colors">
+                    <p class="text-lg text-gray-200 italic mb-6">「天國不是一種遙遠的理想，而是現在就該在我們的人際關係和金錢觀中實現的現實。」</p>
+                    <p class="text-sm text-gold font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-8 flex flex-col justify-between hover:bg-white/5 transition-colors">
+                    <p class="text-lg text-gray-200 italic mb-6">「在小事上忠心是件大事。」</p>
+                    <p class="text-sm text-gold font-bold">— 慕迪 (D.L. Moody)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-8 flex flex-col justify-between hover:bg-white/5 transition-colors">
+                    <p class="text-lg text-gray-200 italic mb-6">「基督徒的生活不是要變得更像自己，而是要變得更像基督。」</p>
+                    <p class="text-sm text-gold font-bold">— 唐崇榮</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-12">
+                <p class="text-gray-500 text-sm italic">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6 text-deepNavy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth horizontal jumping text for the golden verse
+        const jumpText = document.querySelector('.animate-bounce-subtle p');
+        // Simple subtle interaction for buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

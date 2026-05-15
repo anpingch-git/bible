@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多1:1-9：在混亂世代中建造屬靈基石：真理與生命的傳承</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18c',
+                            300: '#fbe44f',
+                            400: '#f9d61f',
+                            500: '#e1b912',
+                            600: '#c2920e',
+                            700: '#9b6c0d',
+                            800: '#7e5510',
+                            900: '#6b4612',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 0.4 },
+                            '50%': { opacity: 1 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'none', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde68a, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-item {
+            transition: transform 0.3s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500 selection:text-slate-950">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 glass-card px-4 py-3 md:px-8 flex justify-between items-center">
+        <span class="text-gold-400 font-bold text-sm md:text-base truncate max-w-[40%]">多 1:1-9</span>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wider">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <div id="top" class="relative w-full h-[50vh] md:h-[80vh] overflow-hidden">
+        <div class="absolute inset-0 z-0 animate-pulse-slow">
+            <img src='image/img_266de946-1c33-4b3a-9f5a-4ecf083ca71b.jpg' alt='Banner' class="w-full h-full object-cover banner-mask" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-1"></div>
+        
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10 pt-20">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black font-display text-white mb-6 leading-tight drop-shadow-2xl">
+                在混亂世代中建造<br><span class="text-gradient">屬靈基石</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl">真理與生命的傳承</p>
+            
+            <!-- Verse Overlay -->
+            <div class="mt-16 animate-bounce-subtle">
+                <p class="text-gold-300 text-lg md:text-2xl italic font-light tracking-wide max-w-3xl leading-relaxed">
+                    「堅守所教真實的道理，就能將純正的教訓勸化人，又能把爭辯的人駁倒了。」
+                </p>
+                <p class="text-gold-500 mt-4 font-bold tracking-widest text-sm">— 提多書 1:9 —</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-10 relative z-20 space-y-16 pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-chat-heart" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.191 2.327-5.804 5.25-6.155 3.235-.387 6.25 1.743 6.25 5.155 0 1.468-.618 2.83-1.678 3.894a1 1 0 0 0-.287.801 11 11 0 0 1 .332 3.12 1 1 0 0 1-1.034 1.034 11 11 0 0 1-3.12-.332 1 1 0 0 0-.801.287l-1.885 1.885a.75.75 0 0 1-1.153-.055l-.395-.44a.75.75 0 0 1-.166-.746l.79-2.392zM6.25 1a7.25 7.25 0 0 0-3.321 13.722l-.79 2.392a1.5 1.5 0 0 0 2.305 1.708L6.33 16.94a12.5 12.5 0 0 0 3.338.452 2.5 2.5 0 0 0 2.587-2.587 12.5 12.5 0 0 0-.452-3.338l1.886-1.886a1.5 1.5 0 0 0-1.708-2.305l-2.392.79A7.25 7.25 0 0 0 6.25 1"/>
+                </svg>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+                <span class="p-3 bg-gold-500/20 rounded-xl text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 8-6 4-6-4V6l6 4 6-4v2Z"/><path d="M20 22v-2a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2"/><circle cx="12" cy="18" r="3"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display tracking-tight">禱告</h2>
+            </div>
+            <p class="text-xl text-slate-300 leading-relaxed font-light italic">
+                親愛的天父，我們感謝祢賜下無謊言的應許與永生的盼望。在這個充滿混亂與各樣聲音的世代裡，求祢賜給我們智慧與勇氣，使我們的信仰不只停留在頭腦的知識，而是能轉化為真實敬虔的生命。主啊，幫助我們在家中、在職場、在教會裡，都成為無可指責的見證人，堅守真道，作祢忠心的好管家。奉主耶穌基督的聖名祈求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-blue-500/20 rounded-xl text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display tracking-tight">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#section-1" class="glass-card hover:bg-gold-500/10 p-6 rounded-2xl transition-all border-l-4 border-l-gold-500 flex flex-col justify-between group">
+                    <span class="text-xs text-gold-500 font-bold tracking-tighter mb-2">多 1:1-4</span>
+                    <h3 class="text-lg font-bold text-slate-100 group-hover:text-gold-400">錨定於永恆：超越時間的真理呼召</h3>
+                    <div class="mt-4 flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle text-gold-500/50 group-hover:text-gold-500" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#section-2" class="glass-card hover:bg-gold-500/10 p-6 rounded-2xl transition-all border-l-4 border-l-blue-500 flex flex-col justify-between group">
+                    <span class="text-xs text-blue-500 font-bold tracking-tighter mb-2">多 1:5-6</span>
+                    <h3 class="text-lg font-bold text-slate-100 group-hover:text-blue-400">從家開始的敬虔：生命品格的真實考驗</h3>
+                    <div class="mt-4 flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle text-blue-500/50 group-hover:text-blue-400" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#section-3" class="glass-card hover:bg-gold-500/10 p-6 rounded-2xl transition-all border-l-4 border-l-purple-500 flex flex-col justify-between group">
+                    <span class="text-xs text-purple-500 font-bold tracking-tighter mb-2">多 1:7-9</span>
+                    <h3 class="text-lg font-bold text-slate-100 group-hover:text-purple-400">真理的守望者：在亂世中作忠心的好管家</h3>
+                    <div class="mt-4 flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle text-purple-500/50 group-hover:text-purple-400" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline & Parsing -->
+        <div class="space-y-24">
+            <!-- Part 1 -->
+            <section id="section-1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3 space-y-6">
+                        <div class="inline-block px-4 py-1 rounded-full bg-gold-500/20 text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">Part 01</div>
+                        <h2 class="text-4xl font-black leading-tight text-white">錨定於永恆：<br>超越時間的真理呼召</h2>
+                        <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800">
+                            <h4 class="text-gold-500 text-sm font-bold uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M5 5h6v1H5zm0 2h6v1H5zm0 2h6v1H5zm0 2h6v1H5z"/></svg>
+                                經文內容
+                            </h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                神的僕人，耶穌基督的使徒保羅，憑著神選民的信心與敬虔真理的知識，盼望那無謊言的神在萬古之先所應許的永生，到了日期，藉著傳揚的工夫把他的道顯明了；這傳揚的責任是按著神我們救主的命令交託了我...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="glass-card p-8 rounded-3xl bento-item">
+                            <h5 class="text-gold-500 font-bold mb-4">重要關鍵字</h5>
+                            <p class="text-xl font-bold mb-2">敬虔 (eusebeia)</p>
+                            <p class="text-slate-400 text-sm">原意為「對神的敬畏與虔誠」。這不是外在的宗教儀式，而是一種因為正確認識神而產生討神喜悅的生活方式。</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl bento-item border-t-4 border-t-gold-500">
+                            <h5 class="text-gold-500 font-bold mb-4">關鍵解析</h5>
+                            <p class="text-slate-300 text-sm leading-relaxed">真正的信仰知識必定會帶來生命的改變。當我們認識那位「無謊言的神」，我們在現今世上的生活方式就有了永恆的錨點。</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl bento-item sm:col-span-2 bg-gradient-to-br from-slate-900 to-slate-950">
+                            <div class="flex gap-6 items-start">
+                                <div class="hidden sm:block text-slate-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"><path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5.5 4h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1m0 2h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1m0 2h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1m0 2h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-gold-500 font-bold mb-3">生命例證</h5>
+                                    <p class="text-slate-300 italic">「想像一艘航行在狂風暴雨中的船隻。水手若只是『知道』船上有錨，船依然會觸礁；唯有把錨深深拋入海底的磐石中，船才能安穩。」</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2 text-right">
+                            <p class="text-gold-400 font-medium italic">「福音不僅是引領我們得救的門，更是基督徒行走一生的道路。」</p>
+                            <span class="text-slate-500 text-xs">— 提摩太·凱勒 (Timothy Keller)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="section-2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3 space-y-6">
+                        <div class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs font-bold tracking-widest uppercase mb-2">Part 02</div>
+                        <h2 class="text-4xl font-black leading-tight text-white">從家開始的敬虔：<br>生命品格的真實考驗</h2>
+                        <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800">
+                            <h4 class="text-blue-500 text-sm font-bold uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M5 5h6v1H5zm0 2h6v1H5zm0 2h6v1H5zm0 2h6v1H5z"/></svg>
+                                經文內容
+                            </h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                若有無可指責的人，只作一個婦人的丈夫，兒女也是信主的，沒有人告他們是放蕩不服約束的，就可以設立。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="glass-card p-8 rounded-3xl bento-item">
+                            <h5 class="text-blue-500 font-bold mb-4">重要關鍵字</h5>
+                            <p class="text-xl font-bold mb-2">無可指責 (anenklētos)</p>
+                            <p class="text-slate-400 text-sm">指品格沒有明顯的道德瑕疵，以至於不會給人留下合理控告的理由。</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl bento-item border-t-4 border-t-blue-500">
+                            <h5 class="text-blue-500 font-bold mb-4">關鍵解析</h5>
+                            <p class="text-slate-300 text-sm leading-relaxed">上帝看重一個人的「品格」過於他的「能力」。家庭是一個人最真實、最無法偽裝的地方。</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl bento-item sm:col-span-2 bg-gradient-to-br from-slate-900 to-slate-950">
+                            <div class="flex gap-6 items-start">
+                                <div class="hidden sm:block text-slate-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"><path d="M8.416.223a.5.5 0 0 0-.832 0l-7 11A.5.5 0 0 0 .5 12h15a.5.5 0 0 0 .416-.777l-7-11zM8 3c.137 0 .268.051.37.143L13.93 11H2.07l5.56-8.857A.535.535 0 0 1 8 3z"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-blue-500 font-bold mb-3">生命例證</h5>
+                                    <p class="text-slate-300 italic">「一棵大樹的樹冠無論多麼茂盛，如果地底下的根系已經腐爛，只要一陣強風吹來，大樹必然倒塌。」</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2 text-right">
+                            <p class="text-blue-400 font-medium italic">「一個人在家裡是什麼樣，他真實的樣子就是什麼樣。」</p>
+                            <span class="text-slate-500 text-xs">— 司布真 (Charles Spurgeon)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="section-3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3 space-y-6">
+                        <div class="inline-block px-4 py-1 rounded-full bg-purple-500/20 text-purple-400 text-xs font-bold tracking-widest uppercase mb-2">Part 03</div>
+                        <h2 class="text-4xl font-black leading-tight text-white">真理的守望者：<br>在亂世中作忠心的好管家</h2>
+                        <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800">
+                            <h4 class="text-purple-500 text-sm font-bold uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M5 5h6v1H5zm0 2h6v1H5zm0 2h6v1H5zm0 2h6v1H5z"/></svg>
+                                經文內容
+                            </h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                監督既是神的管家，必須無可指責...堅守所教真實的道理，就能將純正的教訓勸化人，又能把爭辯的人駁倒了。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="glass-card p-8 rounded-3xl bento-item">
+                            <h5 class="text-purple-500 font-bold mb-4">重要關鍵字</h5>
+                            <p class="text-xl font-bold mb-2">管家 (oikonomos)</p>
+                            <p class="text-slate-400 text-sm">指受託管理主人家務與財產的人。管家不擁有真理，但有責任保護並分配真理。</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl bento-item border-t-4 border-t-purple-500">
+                            <h5 class="text-purple-500 font-bold mb-4">關鍵解析</h5>
+                            <p class="text-slate-300 text-sm leading-relaxed">對內，用純正的教訓來牧養羊群（勸化）；對外，用真理的邏輯來抵擋錯誤的教導（駁倒）。</p>
+                        </div>
+                        <div class="glass-card p-8 rounded-3xl bento-item sm:col-span-2 bg-gradient-to-br from-slate-900 to-slate-950">
+                            <div class="flex gap-6 items-start">
+                                <div class="hidden sm:block text-slate-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"><path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0L8.5 2H4v12h8V4.5z"/></svg>
+                                </div>
+                                <div>
+                                    <h5 class="text-purple-500 font-bold mb-3">生命例證</h5>
+                                    <p class="text-slate-300 italic">「聯邦銀行的行員每天不斷地觸摸、辨識『真鈔』。當他們對真鈔熟悉到成為直覺時，任何一張假鈔立刻就能察覺。」</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2 text-right">
+                            <p class="text-purple-400 font-medium italic">「牧師需要有兩把聲音：一把用來聚集羊群，另一把用來驅趕豺狼。」</p>
+                            <span class="text-slate-500 text-xs">— 約翰·加爾文 (John Calvin)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="glass-card rounded-[3rem] p-8 md:p-16 space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-slate-500/20 rounded-xl text-slate-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display tracking-tight">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-loose text-lg font-light">
+                <p>各位弟兄姊妹，平安。</p>
+                <p>今天我們要來看一段保羅寫給他屬靈真兒子提多的書信。提多當時面臨一個極大的挑戰：他被留在克里特島建立教會。克里特島在當時是一個充滿謊言、道德敗壞、混亂不堪的地方。這聽起來，是不是和我們現今所處的世代非常相似？在這樣一個價值觀混淆的時代，我們如何為自己的生命、家庭和教會，建造不可動搖的屬靈基石？今天我們的講道主題是：<strong class="text-gold-400 font-bold">在混亂世代中建造屬靈基石：真理與生命的傳承</strong>。</p>
+                
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 border-l-4 border-gold-500 pl-4">錨定於永恆：超越時間的真理呼召</h3>
+                <p>保羅在提多書1:1-3中清楚地宣告了他的身分與使命。他說，這一切是「憑著神選民的信心與敬虔真理的知識，盼望那無謊言的神在萬古之先所應許的永生」。保羅將「真理的知識」與「敬虔」緊密地扣在一起。弟兄姊妹，<strong class="text-white bg-gold-900/40 px-1">沒有真理的敬虔是盲目的狂熱，而沒有敬虔的真理只是冰冷的神學</strong>。提摩太·凱勒牧師曾說：<strong class="italic text-gold-300">「福音不僅是引領我們得救的門，更是基督徒行走一生的道路。」</strong> 我們不能只知道船上有錨，我們必須把錨拋入深海的磐石中。當我們把生命錨定在那位「無謊言的神」和祂「永生的應許」上時，我們在現今這個混亂的世上，就有了超越時間的真理呼召。</p>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 border-l-4 border-blue-500 pl-4">從家開始的敬虔：生命品格的真實考驗</h3>
+                <p>保羅吩咐提多要在各城設立長老，但在第6節，保羅列出的首要條件不是這個人多會講道，不是他事業多成功，而是：<strong class="text-blue-400">「若有無可指責的人，只作一個婦人的丈夫，兒女也是信主的...就可以設立。」</strong> 為什麼是家庭？因為<strong class="text-white">家庭是一個人生命品格的真實考驗，是無法偽裝的祭壇。</strong> 上帝看重我們的「所是」遠勝於我們的「所做」。一棵樹的樹冠再漂亮，如果地下的根系腐爛了，風一吹就會倒塌。司布真曾一針見血地指出：<strong class="italic text-blue-300">「一個人在家裡是什麼樣，他真實的樣子就是什麼樣。」</strong> 弟兄姊妹，我們在外的服事與工作，絕不能成為忽略家庭見證的藉口。真正的敬虔，是從家開始的。</p>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-6 border-l-4 border-purple-500 pl-4">真理的守望者：在亂世中作忠心的好管家</h3>
+                <p>從第7節到第9節，保羅描繪了領袖的品格後，在第9節給出了今天的【金句】：<strong class="text-white border-b border-purple-500 pb-1">「堅守所教真實的道理，就能將純正的教訓勸化人，又能把爭辯的人駁倒了。」</strong> 我們都是神百般恩賜的好管家。管家不擁有財產，但有責任忠心管理。在面對異端與錯誤價值觀的衝擊時，約翰·加爾文提醒我們：<strong class="italic text-purple-300">「牧師需要有兩把聲音：一把用來聚集羊群，另一把用來驅趕豺狼。」</strong> 我們如何能驅趕豺狼？不是靠血氣爭吵，而是靠「堅守真實的道理」。就像銀行行員天天觸摸真鈔，當假鈔一出現，他們立刻就能辨識。當我們深刻認識並緊緊抓住神的話語時，我們就能用純正的教訓安慰受傷的靈魂，同時也能剛強地駁倒世界的謬誤。</p>
+
+                <div class="mt-16 p-8 rounded-2xl bg-gradient-to-r from-gold-900/20 to-transparent border border-gold-500/20">
+                    <h4 class="text-gold-500 font-bold mb-4 uppercase tracking-widest">結論</h4>
+                    <p class="text-xl font-medium text-slate-100 mb-2">關鍵字：<span class="text-gold-400">敬虔、品格、真道</span></p>
+                    <p>在這個世代，願我們都能成為真理的管家，從自己的家庭開始，活出無可指責的品格，將永生的盼望與純正的信仰，忠心地傳承下去。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 rounded-[2rem] border-t-4 border-t-green-500">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><path d="M12 2v20"/><path d="m17 7-5-5-5 5"/><path d="m17 17-5 5-5-5"/></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-green-500 font-bold">01</span>
+                        <p class="text-slate-300"><strong class="text-white">檢視信仰根基</strong>：反省自己的信仰是否只停留在知識，還是已經轉化為「敬虔」？</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-green-500 font-bold">02</span>
+                        <p class="text-slate-300"><strong class="text-white">看重家庭見證</strong>：在配偶與兒女面前的見證，是我們最真實的屬靈履歷。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-green-500 font-bold">03</span>
+                        <p class="text-slate-300"><strong class="text-white">扎根聖經真理</strong>：在相對主義盛行的社會中，必須深刻認識並「堅守」聖經真理。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-[2rem] border-t-4 border-t-orange-500">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-orange-500 font-bold">A</span>
+                        <p class="text-slate-300"><strong class="text-white">每日真理定錨</strong>：每天花15分鐘閱讀聖經並寫下反省，將知識轉化為行動。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-orange-500 font-bold">B</span>
+                        <p class="text-slate-300"><strong class="text-white">家庭關係體檢</strong>：詢問家人：「我在家中的行為是否活出了福音？」虛心接受回饋。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-orange-500 font-bold">C</span>
+                        <p class="text-slate-300"><strong class="text-white">背誦信仰裝備</strong>：背誦提多書1:9，本週向人分享一個純正的聖經真理。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-10">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-red-500/20 rounded-xl text-red-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display tracking-tight">佳句名言</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「牧師需要有兩把聲音：一把用來聚集羊群，另一把用來驅趕豺狼與盜賊。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 約翰·加爾文</span><br>
+                        <span class="text-slate-500 text-xs">《加爾文提多書註釋》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「我們對上帝的想法，是關於我們最重要的一件事。我們心中對上帝的觀念，決定了我們的品格與屬靈的未來。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 陶恕</span><br>
+                        <span class="text-slate-500 text-xs">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「一個人在家裡是什麼樣，他真實的樣子就是什麼樣；如果他在家裡不是一個真正的基督徒，那麼他在任何地方都不是。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 司布真</span><br>
+                        <span class="text-slate-500 text-xs">《司布真講道集》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是重價的恩典。重價的恩典是必須付上生命代價的呼召。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 潘霍華</span><br>
+                        <span class="text-slate-500 text-xs">《追隨基督》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item border-l-4 border-l-gold-500">
+                    <p class="text-gold-100 italic mb-4 font-bold">「福音不僅是引領我們得救的門，更是基督徒行走一生的道路。福音不是基督教的ABC，而是從A到Z。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 提摩太·凱勒</span><br>
+                        <span class="text-slate-500 text-xs">《中心教會》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「講道是在兩個世界之間搭橋：我們必須深深扎根於聖經的古代世界，同時深深扎根於我們所處的現代世界。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 約翰·史托德</span><br>
+                        <span class="text-slate-500 text-xs">《當代講道藝術》</span>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「如果你大聲傳揚福音的每一部分，卻唯獨避開了當代世界正在攻擊的那個真理，你就沒有真正在傳講福音。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 馬丁·路德</span><br>
+                        <span class="text-slate-500 text-xs">《路德文集》</span>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「聖經的給予不是為了增加我們的知識，而是為了改變我們的生命。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 慕迪</span><br>
+                        <span class="text-slate-500 text-xs">《慕迪的名言》</span>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「真正的信仰主要在於神聖的感情；知識若不能改變人心，就毫無價值。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 喬納森·愛德華茲</span><br>
+                        <span class="text-slate-500 text-xs">《宗教情操真偽辨》</span>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid bento-item">
+                    <p class="text-slate-200 italic mb-4">「唯有當我們願意正視自己的創傷，並將其轉化為醫治他人的泉源時，我們才能成為真正的『負傷的醫治者』。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 盧雲</span><br>
+                        <span class="text-slate-500 text-xs">《負傷的治療者》</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center pt-12 pb-8 border-t border-slate-800">
+            <p class="text-slate-500 text-xs tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 hover:bg-gold-400 text-slate-950 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 active:scale-95 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+        </svg>
+    </a>
+
+    <script>
+        // Optional: Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

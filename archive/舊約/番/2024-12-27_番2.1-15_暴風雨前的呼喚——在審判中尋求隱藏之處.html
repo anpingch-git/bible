@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番2:1-15: 暴風雨前的呼喚——在審判中尋求隱藏之處</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8cb',
+                            200: '#fdf199',
+                            300: '#fbe45f',
+                            400: '#f9d62d',
+                            500: '#f3c010',
+                            600: '#d79b08',
+                            700: '#b1740a',
+                            800: '#905b10',
+                            900: '#774a12',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161e',
+                            accent: '#1f1f29'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.2, 0, 0.8, 1) infinite',
+                        'jump': 'jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(22, 22, 30, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #f3c010, #fdf199, #d79b08);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .header-active {
+            color: #f3c010;
+            border-bottom: 2px solid #f3c010;
+        }
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .verse-highlight {
+            border-left: 4px solid #f3c010;
+            padding-left: 1.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card border-b border-white/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-accent font-extrabold text-gold-500 tracking-wider">番 2:1-15</span>
+            <div class="flex gap-4 sm:gap-8 text-sm sm:text-base font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Hero Section -->
+    <header id="top" class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_65074e93-7b08-4bae-944c-1dda847f6585.jpg' alt='media_1' class="w-full h-full object-cover animate-breathe filter brightness-100 contrast-125" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-base/30 via-dark-base/60 to-dark-base"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">
+                <span class="block text-white opacity-90 mb-2 text-2xl md:text-3xl font-light">西番雅書 2:1-15</span>
+                <span class="text-gradient">暴風雨前的呼喚</span>
+                <span class="block text-white mt-4 text-3xl md:text-5xl">— 在審判中尋求隱藏之處 —</span>
+            </h1>
+            
+            <div class="inline-block mt-12 animate-jump">
+                <div class="text-xl md:text-3xl text-gold-100 font-display leading-relaxed italic max-w-3xl mx-auto drop-shadow-lg">
+                    「世上遵守耶和華典章的謙卑人哪，你們都當尋求耶和華！當尋求公義謙卑，或者在耶和華發怒的日子可以隱藏起來。」
+                    <span class="block text-sm md:text-lg mt-4 font-accent not-italic opacity-80">（西番雅書 2:3）</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card rounded-3xl p-8 md:p-16 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-gold-500/20 rounded-xl">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold">禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic">
+                    「主耶和華，祢是公義且威嚴的上帝，祢的審判真實且必然臨到。但在祢發怒的日子來到以前，祢仍向我們發出慈愛的呼喚。求主光照我們，褪去我們內心的驕傲與屬世的倚靠，賜給我們一顆柔軟謙卑的心，使我們不僅聽見祢的話，更能真實地尋求祢的公義與謙卑。願祢成為我們生命的避難所，在動盪的世代中將我們隱藏在祢的翅膀蔭下。奉主耶穌基督的聖名禱告，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-blue-500/20 rounded-xl">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="glass-card p-6 rounded-2xl hover:bg-gold-500/10 transition-all group border-l-4 border-l-gold-500">
+                    <span class="text-gold-500 font-accent text-sm block mb-2">番 2:1-3</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400">趁早醒悟的恩典</h3>
+                    <p class="text-sm text-gray-400 mt-2">在烈怒臨到前尋求神</p>
+                </a>
+                <a href="#section-2" class="glass-card p-6 rounded-2xl hover:bg-red-500/10 transition-all group border-l-4 border-l-red-500">
+                    <span class="text-red-500 font-accent text-sm block mb-2">番 2:4-11</span>
+                    <h3 class="text-xl font-bold group-hover:text-red-400">驕傲的虛無</h3>
+                    <p class="text-sm text-gray-400 mt-2">從列國的傾覆看屬世倚靠</p>
+                </a>
+                <a href="#section-3" class="glass-card p-6 rounded-2xl hover:bg-emerald-500/10 transition-all group border-l-4 border-l-emerald-500">
+                    <span class="text-emerald-500 font-accent text-sm block mb-2">番 2:12-15</span>
+                    <h3 class="text-xl font-bold group-hover:text-emerald-400">歷史的鑒戒</h3>
+                    <p class="text-sm text-gray-400 mt-2">唯獨神是萬有的主宰</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Content -->
+        <div class="space-y-40">
+            <!-- Section 1 Details -->
+            <section id="section-1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <h3 class="text-4xl font-display font-black text-gold-500 mb-6">第一段：<br/>趁早醒悟的恩典</h3>
+                        <div class="p-6 bg-dark-accent rounded-2xl border border-white/5 mb-6">
+                            <h4 class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">關鍵原文 Keyword</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="block text-gold-400 font-bold">尋求 (baqash / בָּקַשׁ)</span>
+                                    <span class="text-sm text-gray-400">帶有迫切感、全心全意的渴求。</span>
+                                </div>
+                                <div>
+                                    <span class="block text-gold-400 font-bold">隱藏 (sathar / סָתַר)</span>
+                                    <span class="text-sm text-gray-400">掩蓋、藏護。神親自成為避難所。</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="verse-highlight bg-white/5 p-8 rounded-r-2xl">
+                            <span class="block text-sm font-accent text-gold-500 mb-2 italic">經文範圍：西番雅書 2:1-3</span>
+                            不知羞恥的國民哪，你們應當聚集！趁命令還沒有發出，日子過去如交過的糠秕，耶和華的烈怒還沒有臨到你們，他發怒的日子沒有來到以先，你們應當聚集前來。世上遵守耶和華典章的謙卑人哪，你們都當尋求耶和華！當尋求公義謙卑，或者在耶和華發怒的日子可以隱藏起來。
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h5 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h5>
+                                <p class="text-gray-300">真正的「謙卑尋求」是什麼模樣？為何神說「或者」可以隱藏？</p>
+                                <div class="mt-4 pt-4 border-t border-white/10 text-sm leading-relaxed">
+                                    <strong class="text-white">解析：</strong>真正的謙卑是承認自己在神面前一無所有。「或者」表明神的恩典絕不是我們可以操縱的權利，而需帶著極度敬畏的心。
+                                </div>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl border-t-2 border-t-blue-500">
+                                <h5 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    生存例證
+                                </h5>
+                                <p class="text-sm text-gray-300 italic">南亞海嘯前，懂得觀察海水退去預兆的人能往高處逃命。神的警告就如退去的海水，給了我們「趁命令還沒有發出」的恩典。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 Details -->
+            <section id="section-2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3">
+                        <h3 class="text-4xl font-display font-black text-red-500 mb-6">第二段：<br/>驕傲的虛無</h3>
+                        <div class="p-6 bg-dark-accent rounded-2xl border border-white/5 mb-6">
+                            <h4 class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">關鍵原文 Keyword</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="block text-red-400 font-bold">驕傲 (ga'own / גָּאוֹן)</span>
+                                    <span class="text-sm text-gray-400">指高舉自己、狂妄自大。</span>
+                                </div>
+                                <div>
+                                    <span class="block text-red-400 font-bold">瘦弱 (razah / רָזָה)</span>
+                                    <span class="text-sm text-gray-400">使飢餓、衰弱。神使假神失去力量。</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="verse-highlight bg-white/5 p-8 rounded-r-2xl border-l-red-500">
+                            <span class="block text-sm font-accent text-red-500 mb-2 italic">經文範圍：西番雅書 2:4-11</span>
+                            迦薩必被見棄；亞實基倫必然荒涼。萬軍之耶和華─以色列的神說：我指著我的永生起誓：摩押必像所多瑪，亞捫人必像蛾摩拉，都成為刺草、鹽坑、永遠荒涼之地...這事臨到他們是因他們驕傲，自誇自大。
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h5 class="text-red-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h5>
+                                <p class="text-gray-300">當我們看見惡人得勢或世界嘲笑信仰時，該如何自處？</p>
+                                <div class="mt-4 pt-4 border-t border-white/10 text-sm leading-relaxed">
+                                    <strong class="text-white">解析：</strong>摩押和亞捫看似佔上風，但神宣告他們終將荒涼。我們不應羨慕世俗強盛，而要定睛於神的終極公義。
+                                </div>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl border-t-2 border-t-red-500">
+                                <h5 class="text-red-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    歷史例證
+                                </h5>
+                                <p class="text-sm text-gray-300 italic">「永不沉沒」的鐵達尼號代表人類工業的驕傲，卻在冰山面前不堪一擊。世界的權力若無神同在，亦是如此脆弱。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 Details -->
+            <section id="section-3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <h3 class="text-4xl font-display font-black text-emerald-500 mb-6">第三段：<br/>歷史的鑒戒</h3>
+                        <div class="p-6 bg-dark-accent rounded-2xl border border-white/5 mb-6">
+                            <h4 class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">關鍵原文 Keyword</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <span class="block text-emerald-400 font-bold">荒涼 (shemamah / שְׁמָמָה)</span>
+                                    <span class="text-sm text-gray-400">徹底的廢墟、荒無人煙。</span>
+                                </div>
+                                <div>
+                                    <span class="block text-emerald-400 font-bold">除我以外再沒別的 (aphec / אֶפֶס)</span>
+                                    <span class="text-sm text-gray-400">僭越了唯獨神才配得的宣告。</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="verse-highlight bg-white/5 p-8 rounded-r-2xl border-l-emerald-500">
+                            <span class="block text-sm font-accent text-emerald-500 mb-2 italic">經文範圍：西番雅書 2:12-15</span>
+                            耶和華必伸手攻擊北方，毀滅亞述，使尼尼微荒涼...這是素來歡樂安居的城，心裡說：唯有我，除我以外再沒有別的；現在何竟荒涼成為野獸躺臥之處！
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass-card p-6 rounded-2xl">
+                                <h5 class="text-emerald-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h5>
+                                <p class="text-gray-300">我們生命中有沒有什麼事物，讓我們心裡說出「唯有我，除我以外再沒有別的」？</p>
+                                <div class="mt-4 pt-4 border-t border-white/10 text-sm leading-relaxed">
+                                    <strong class="text-white">解析：</strong>尼尼微將自己神格化。今天我們可能將事業或財富當作「絕對依靠」，警告我們任何偶像終將崩塌。
+                                </div>
+                            </div>
+                            <div class="glass-card p-6 rounded-2xl border-t-2 border-t-emerald-500">
+                                <h5 class="text-emerald-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    現代例證
+                                </h5>
+                                <p class="text-sm text-gray-300 italic">曾稱霸全球的「柯達」因為驕傲與忽視時代轉型而破產。當我們被成就蒙蔽，忽視神的主權時，「尼尼微」也隨時會倒塌。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Full Content -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-purple-500/20 rounded-xl">
+                    <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            <div class="glass-card rounded-3xl p-8 md:p-16 space-y-10 leading-loose text-lg text-gray-200">
+                <h3 class="text-3xl md:text-4xl font-display font-black text-center mb-12 text-gold-400">暴風雨前的呼喚——在審判中尋求隱藏之處</h3>
+                
+                <p>各位弟兄姊妹，平安。今天我們要透過西番雅書第二章，來思想一個非常嚴肅卻又充滿恩典的信息。先知西番雅傳遞的信息，彷彿是風暴來臨前的防空警報。</p>
+
+                <div class="bg-gold-500/10 p-8 rounded-2xl border-l-4 border-gold-500 my-10">
+                    <p class="font-bold text-gold-200 mb-2">重要金句：</p>
+                    <p class="text-2xl font-display italic">「世上遵守耶和華典章的謙卑人哪，你們都當尋求耶和華！當尋求公義謙卑，或者在耶和華發怒的日子可以隱藏起來。」（番 2:3）</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold-400">一、 趁早醒悟的恩典——在烈怒臨到前尋求神</h4>
+                    <p>經文一開始，先知呼籲不知羞恥的國民：「趁命令還沒有發出，日子過去如交過的糠秕...你們應當聚集前來。」（番2:1-2）。神是一位公義的神，祂的審判必然臨到。但在審判之前，祂總是先發出警告。這就是<strong class="text-white">趁早醒悟的恩典</strong>。神在烈怒臨到前，給了我們悔改的機會。</p>
+                    <p>神呼召我們做什麼？<strong class="text-white">「尋求耶和華！當尋求公義謙卑」</strong>。這裡的「尋求」不是隨便找找，而是在沙漠中找水那樣的迫切。我們必須承認自己的軟弱，緊緊抓住神。唯有神能成為我們真正的避難所。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-red-400">二、 驕傲的虛無——從列國的傾覆看屬世倚靠的倒塌</h4>
+                    <p>先知的眼光轉向了以色列周圍的列國：非利士、摩押、亞捫。這些國家曾極度驕傲，自誇自大。我們常常看到惡人似乎得勢，世界嘲笑我們的信仰。但神宣告，這些驕傲的國家必像所多瑪、蛾摩拉一樣成為永遠的荒涼。</p>
+                    <p>這告訴我們<strong class="text-white">驕傲的虛無</strong>。就像當年號稱永不沉沒的鐵達尼號。我們不能羨慕世界的強盛，也不必因為堅持信仰被嘲笑而灰心，因為神是萬軍之耶和華，祂的公義最終必會彰顯。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-emerald-400">三、 歷史的鑒戒——唯獨神是萬有的主宰</h4>
+                    <p>最後，神宣告了亞述帝國和其首都尼尼微的毀滅。尼尼微曾心裡驕傲地說：<strong class="text-white">「唯有我，除我以外再沒有別的。」</strong> 這句話本來只有神配得說！當一個國家或一個人把成就神格化時，這地必成為荒涼。</p>
+                    <p>這是一個極大的<strong class="text-white">歷史鑒戒</strong>。弟兄姊妹，你的生命中有沒有什麼事物，讓你覺得「只要有這個就夠了」？任何試圖取代上帝地位的偶像，最終都會帶來荒涼。<strong class="text-white">唯獨神是萬有的主宰</strong>，我們必須把生命的主權完全交還給祂。</p>
+                </div>
+
+                <div class="pt-10 border-t border-white/10 text-center">
+                    <p class="text-2xl font-display font-bold">結語</p>
+                    <p class="mt-4">面對神公義的審判，我們唯有抓住三個關鍵字：<strong class="text-gold-400">尋求</strong>、<strong class="text-gold-400">謙卑</strong>、<strong class="text-gold-400">隱藏</strong>。願我們都能趁著恩典的門還敞開時，天天尋求神的面，安然隱藏在祂的翅膀蔭下。阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                    <div class="p-2 bg-gold-500 rounded-lg"></div> 應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-accent font-black text-2xl">01</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">檢視屬靈的安全感</p>
+                            <p class="text-gray-400">審視是否倚靠財富、地位而非神。認清這一切在審判之日都無法成為避難所。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-accent font-black text-2xl">02</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">操練真實的謙卑</p>
+                            <p class="text-gray-400">在神面前承認無有，在與人相處時放下自誇，學習順服神的典章。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-accent font-black text-2xl">03</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">把握恩典的時機</p>
+                            <p class="text-gray-400">在命令發出前，為家人、國家迫切代求，帶著緊迫感傳揚福音。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                    <div class="p-2 bg-emerald-500 rounded-lg"></div> 回應行動
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-dark-card p-6 rounded-2xl border border-white/5 hover:border-emerald-500/50 transition-colors">
+                        <p class="font-bold mb-2">每日的省察</p>
+                        <p class="text-sm text-gray-400">每天花五分鐘禱告，求聖靈光照是否有驕傲的心思，並立刻悔改。</p>
+                    </div>
+                    <div class="bg-dark-card p-6 rounded-2xl border border-white/5 hover:border-emerald-500/50 transition-colors">
+                        <p class="font-bold mb-2">定期的代求</p>
+                        <p class="text-sm text-gray-400">每週固定時間為城市禱告，求神的憐憫臨到，免受驕奪敗壞。</p>
+                    </div>
+                    <div class="bg-dark-card p-6 rounded-2xl border border-white/5 hover:border-emerald-500/50 transition-colors">
+                        <p class="font-bold mb-2">謙卑的順服</p>
+                        <p class="text-sm text-gray-400">遇誤解時不憑血氣爭辯，選擇安靜交託，相信神是最終審判者。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-500/20 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">屬靈佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「上帝的愛永遠不會與祂的公義妥協；祂的審判正是祂愛與聖潔的必然展現。」</p>
+                    <cite class="text-gold-500 font-bold block">— 大衛·鮑森 (David Pawson)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「福音是這樣的：你比你所敢相信的還要罪孽深重；但同時，你在基督裡所蒙的愛，也遠超你所敢期盼的。」</p>
+                    <cite class="text-gold-500 font-bold block">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是昂貴的恩典。」</p>
+                    <cite class="text-gold-500 font-bold block">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「在神能大大使用一個人之前，祂必須先深深地破碎他。驕傲是神恩典的最大阻礙。」</p>
+                    <cite class="text-gold-500 font-bold block">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「十字架是神公義與慈愛最完美的交匯處；在那裡，罪的刑罰被完全承擔。」</p>
+                    <cite class="text-gold-500 font-bold block">— 約翰·史托德 (John Stott)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「上帝的警告如同掛在懸崖邊的燈塔，不是為了限制我們的自由，而是為了拯救我們。」</p>
+                    <cite class="text-gold-500 font-bold block">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「謙卑不是看輕自己，而是少想到自己。謙卑是承認一切的所有都是出於神。」</p>
+                    <cite class="text-gold-500 font-bold block">— 傅士德 (Richard Foster)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「人的心靈就像是一個製造偶像的工廠，我們總是試圖尋找受造物來取代造物主。」</p>
+                    <cite class="text-gold-500 font-bold block">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「真正的屬靈謙卑，在於人深刻認識到自己在神純潔面前的全然不配與微小。」</p>
+                    <cite class="text-gold-500 font-bold block">— 喬納森·愛德華茲 (Jonathan Edwards)</cite>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="italic text-lg mb-4">「真正的信仰不是求神來滿足我的計畫，而是降服於神。」</p>
+                    <cite class="text-gold-500 font-bold block">— 唐崇榮 (Stephen Tong)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Warning -->
+        <footer class="pt-20 text-center text-gray-500 text-sm">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5">
+                <svg class="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </footer>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 hover:bg-gold-400 text-dark-base rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

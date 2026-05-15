@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>該2:10-23: 從污穢到蒙福，從動盪到得勝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8d3',
+                            200: '#fdf0a6',
+                            300: '#fae26c',
+                            400: '#f7d03a',
+                            500: '#eeb415',
+                            600: '#ce8c0d',
+                            700: '#a3620e',
+                            800: '#864e12',
+                            900: '#714014',
+                        },
+                        dark: '#0a0a0c',
+                        accent: '#e2bc7d',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.4 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f7d03a 0%, #eeb415 50%, #ce8c0d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #eeb415;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            border: 1px solid rgba(238, 180, 21, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: rgba(238, 180, 21, 0.1);
+            border-color: #eeb415;
+            transform: translateY(-2px);
+        }
+        .bento-item {
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .bento-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 px-4 py-4 md:px-8">
+        <div class="max-w-6xl mx-auto flex items-center justify-between glass-card px-6 py-3">
+            <div class="text-gold-400 font-bold tracking-wider text-sm md:text-base">哈該書 2:10-23</div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+                <a href="#prayer" class="nav-link uppercase tracking-widest">禱告</a>
+                <a href="#outline" class="nav-link uppercase tracking-widest">大綱</a>
+                <a href="#sermon" class="nav-link uppercase tracking-widest">講章</a>
+                <a href="#quotes" class="nav-link uppercase tracking-widest">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header id="header" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_9484b918-e516-45cf-abeb-aeb33d28562f.jpg' alt='Banner' class="w-full h-full object-cover animate-pulse-slow" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight drop-shadow-2xl font-serif">
+                <span class="block text-white mb-2">從污穢到蒙福</span>
+                <span class="text-gradient">從動盪到得勝</span>
+            </h1>
+            
+            <div class="animate-bounce-subtle">
+                <p class="text-xl md:text-3xl font-light text-gold-100/90 leading-relaxed italic">
+                    「從今日起，我必賜福與你們。」
+                </p>
+                <p class="mt-4 text-gold-400/80 font-medium tracking-widest">— 哈該書 2:19 —</p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+            <span class="text-[10px] tracking-[0.5em] uppercase">Scroll to Explore</span>
+            <div class="w-px h-12 bg-gradient-to-b from-gold-400 to-transparent"></div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 md:px-8 space-y-32 pb-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-24">
+            <div class="glass-card p-8 md:p-16 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-32 h-32 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <div class="relative z-10">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 rounded-full bg-gold-400/20 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        </div>
+                        <h2 class="text-3xl font-bold font-serif tracking-widest text-gold-400">禱告</h2>
+                    </div>
+                    <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light indent-8">
+                        親愛的天父，我們來到祢面前，承認我們常常帶著不潔的心思來服事祢，以為外在的熱心可以掩蓋內在的荒涼。求祢的聖靈光照我們，用基督的寶血洗淨我們的污穢。主啊，感謝祢那「從今日起，我必賜福」的恩典應許，當我們願意真實悔改、再次順服時，祢的豐盛就要臨到。在這個震動的世代中，求祢將我們如同印記般安放在祢的手心，讓我們在基督裡找到那永不震動的安全感。奉主耶穌基督的聖名禱告，阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gold-400/20 flex items-center justify-center text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-serif tracking-widest">講道大綱</h2>
+            </div>
+
+            <!-- Bento Navigation Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="glass-card p-8 outline-btn flex flex-col justify-between h-48">
+                    <span class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-4">第一段 / 該 2:10-14</span>
+                    <h3 class="text-xl font-bold">傳染的污穢與真實的聖潔</h3>
+                    <div class="mt-4 flex items-center text-gold-500 text-sm font-semibold">
+                        深入解析 <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+                <a href="#section2" class="glass-card p-8 outline-btn flex flex-col justify-between h-48">
+                    <span class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-4">第二段 / 該 2:15-19</span>
+                    <h3 class="text-xl font-bold">轉眼仰望：從今日起我必賜福</h3>
+                    <div class="mt-4 flex items-center text-gold-500 text-sm font-semibold">
+                        深入解析 <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+                <a href="#section3" class="glass-card p-8 outline-btn flex flex-col justify-between h-48">
+                    <span class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-4">第三段 / 該 2:20-23</span>
+                    <h3 class="text-xl font-bold">終極的保證：動盪中的神聖印記</h3>
+                    <div class="mt-4 flex items-center text-gold-500 text-sm font-semibold">
+                        深入解析 <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-24">
+                    <div class="border-l-4 border-gold-500 pl-8 mb-12">
+                        <h3 class="text-2xl md:text-4xl font-bold mb-4 font-serif">第一段：傳染的污穢與真實的聖潔</h3>
+                        <p class="text-gold-400 font-mono">Haggai 2:10-14</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="glass-card p-8 bento-item">
+                            <h4 class="text-gold-400 font-bold mb-4 uppercase tracking-tighter text-sm flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-gold-400"></span> 引用經文
+                            </h4>
+                            <p class="text-lg leading-relaxed text-gray-300 italic">
+                                大流士王第二年九月二十四日，耶和華的話臨到先知哈該說：「萬軍之耶和華如此說：你要向祭司問律法，說：若有人用衣襟兜聖肉，這衣襟挨著餅，或湯，或酒，或油，或別的食物，便算為聖嗎？」祭司說：「不算為聖。」哈該又說：「若有人因摸死屍染了污穢，然後挨著這些物的哪一樣，這物算污穢嗎？」祭司說：「必算污穢。」於是哈該說：「耶和華說：這民這國，在我面前也是如此；他們手下的各樣工作都是如此；他們在壇上所獻的也是如此。」
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 gap-6">
+                            <div class="glass-card p-6 bento-item">
+                                <h4 class="text-gold-400 font-bold mb-3 uppercase tracking-tighter text-sm flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵原文
+                                </h4>
+                                <div class="space-y-2">
+                                    <p><strong class="text-white">聖 (Qodesh)</strong>: 分別為聖、神聖。</p>
+                                    <p><strong class="text-white">污穢 (Tame)</strong>: 不潔淨、受玷污。污穢具強大傳染性。</p>
+                                </div>
+                            </div>
+                            <div class="glass-card p-6 bento-item bg-gold-900/10">
+                                <h4 class="text-gold-400 font-bold mb-3 uppercase tracking-tighter text-sm">關鍵問題與解答</h4>
+                                <p class="font-semibold text-white mb-2">為什麼參與事奉仍可能被視為污穢？</p>
+                                <p class="text-gray-400 text-sm">以色列人以為外在建殿可「聖化」生活。神提醒，若心不對，工作與祭物不但不能使其聖潔，反而會被內在污穢玷污。唯有真實悔改才有蒙悅納的事奉。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-24">
+                    <div class="border-l-4 border-gold-500 pl-8 mb-12">
+                        <h3 class="text-2xl md:text-4xl font-bold mb-4 font-serif">第二段：轉眼仰望：從今日起我必賜福</h3>
+                        <p class="text-gold-400 font-mono">Haggai 2:15-19</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="glass-card p-8 bento-item order-2 lg:order-1">
+                            <h4 class="text-gold-400 font-bold mb-4 uppercase tracking-tighter text-sm flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-gold-400"></span> 關鍵原文
+                            </h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-white font-bold text-xl">追想 (Suwm Leb)</p>
+                                    <p class="text-gray-400">「把心放在其上」，用心思考、回顧並察覺。</p>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-xl">賜福 (Barak)</p>
+                                    <p class="text-gray-400">賜予豐盛、昌盛。神屈尊降卑賜恩。</p>
+                                </div>
+                                <div class="mt-8 p-4 bg-white/5 rounded-xl border border-white/10 italic text-gray-300">
+                                    「順服的起點，就是蒙福的開端。」
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card p-8 bento-item order-1 lg:order-2">
+                            <h4 class="text-gold-400 font-bold mb-4 uppercase tracking-tighter text-sm flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-gold-400"></span> 引用經文
+                            </h4>
+                            <p class="text-lg leading-relaxed text-gray-300 italic">
+                                「你們要追想此日以前，就是從這九月二十四日起，從立耶和華殿根基的日子起，你們要追想。倉裡有穀種嗎？葡萄樹、無花果樹、石榴樹、橄欖樹都沒有結果子。從今日起，我必賜福與你們。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-24">
+                    <div class="border-l-4 border-gold-500 pl-8 mb-12">
+                        <h3 class="text-2xl md:text-4xl font-bold mb-4 font-serif">第三段：終極的保證：動盪中的神聖印記</h3>
+                        <p class="text-gold-400 font-mono">Haggai 2:20-23</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 glass-card p-8 bento-item">
+                            <h4 class="text-gold-400 font-bold mb-4 uppercase tracking-tighter text-sm flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-gold-400"></span> 經文與深度解析
+                            </h4>
+                            <p class="text-gray-300 mb-6 italic border-b border-white/10 pb-6">「到那日，我必以你為印，因我揀選了你。這是萬軍之耶和華說的。」</p>
+                            <p class="leading-relaxed">
+                                神預言列國勢力將被震動和傾覆。但在這大動盪中，神對所羅巴伯（預表基督）說「我必以你為印」。我們若在基督裡，我們就是神手中的印記，具有無可取代的價值與終極的保護。我們的安全感建立在震動天地卻將我們視為珍寶的神身上。
+                            </p>
+                        </div>
+                        <div class="glass-card p-8 flex flex-col items-center justify-center text-center bg-gold-500/10">
+                            <div class="w-20 h-20 rounded-full border-2 border-gold-500 flex items-center justify-center mb-4">
+                                <svg class="w-10 h-10 text-gold-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <h4 class="text-gold-400 font-bold mb-2">印 (Chotham)</h4>
+                            <p class="text-xs text-gray-400 px-2">代表國王絕對的權柄、保障與極高的價值。絕不離身。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="pt-24 space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gold-400/20 flex items-center justify-center text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18 18.247 18.477 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-serif tracking-widest">講章文稿</h2>
+            </div>
+
+            <div class="glass-card p-8 md:p-16 space-y-12 leading-loose text-lg md:text-xl font-light text-gray-200">
+                <div class="text-center space-y-4 mb-16">
+                    <h3 class="text-3xl md:text-5xl font-black text-gradient">從污穢到蒙福，從動盪到得勝</h3>
+                    <p class="text-gold-400 font-bold tracking-widest text-sm">經文範圍：該2:10-23</p>
+                </div>
+
+                <div class="space-y-8">
+                    <p class="indent-10">弟兄姐妹，今天我們要透過哈該書第二章10到23節，來看上帝如何帶領祂的百姓經歷生命的翻轉。神要帶領我們從一個充滿破口與污穢的狀態，進入真實的蒙福；並在世界劇烈動盪的時刻，經歷終極的得勝。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-400/20 pb-2">第一段：傳染的污穢與真實的聖潔</h4>
+                    <p class="indent-10">我們首先來看第10到14節。神要哈該去問祭司兩個關於律法的問題。第一個：聖潔會傳染嗎？祭司說不會。第二個：污穢會傳染嗎？祭司說會。神藉此指責當時的以色列人：<strong class="text-white font-bold">「這民這國，在我面前也是如此；他們手下的各樣工作都是如此；他們在壇上所獻的也是如此。」</strong></p>
+                    <p class="indent-10">以色列人以為，只要他們把聖殿蓋起來，只要他們參與在宗教的儀式和服事中，他們的生活就自然被「聖化」了。但神提醒他們一個屬靈的定律：<span class="text-gold-300 font-bold">污穢的傳染力遠大於聖潔的感染力</span>。就像外科醫生，戴著無菌手套去摸骯髒的門把，門把不會變乾淨，手套卻髒了。真實的聖潔，是從內心向神的悔改與降服開始的。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-400/20 pb-2">第二段：轉眼仰望：從今日起我必賜福</h4>
+                    <p class="indent-10">當百姓的心被光照，願意悔改並繼續建殿的工程時，神給了他們極大安慰的應許。在15到19節中，神要百姓「追想」。過去因為他們不順服，收成大減，天災不斷。但現在，神宣告了一句大有能力的話。</p>
+                    <div class="py-8 text-center bg-gold-400/5 rounded-2xl border-x-2 border-gold-400/30 my-8">
+                        <p class="text-2xl md:text-3xl font-bold text-white mb-2">「從今日起，我必賜福與你們。」</p>
+                        <p class="text-gold-400">（哈該書 2:19）</p>
+                    </div>
+                    <p class="indent-10">神的賜福不是等我們達到完美才臨到，也不是等環境變順利了才證明。神的賜福，是從我們決定「轉向祂、順服祂」的那一刻就啟動了！<strong class="text-white">不論你過去經歷多少挫敗，只要你今天願意順服神，今天就是你蒙福的起點。</strong></p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-400/20 pb-2">第三段：終極的保證：動盪中的神聖印記</h4>
+                    <p class="indent-10">最後，神把眼光從當下的建殿，拉到了國度的未來。在20到23節，神宣告祂必震動天地，傾覆列國的寶座。這是一個動盪的預言。然而，在震動中，神對所羅巴伯說：<strong class="text-white font-bold text-2xl block my-4">「到那日，我必以你為印，因我揀選了你。」</strong></p> 
+                    <p class="indent-10">「印」是古代君王的圖章戒指，代表王權、保護和極高的價值。國王可能會失去金銀，但絕不會弄丟手上的印戒。世界會有經濟危機、戰爭、瘟疫，一切受造之物都會被震動；但在這一切動盪中，你是神手中的印記！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12">
+            <!-- Application -->
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gold-400/20 flex items-center justify-center text-gold-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold font-serif tracking-widest">應用方向</h2>
+                </div>
+                <div class="glass-card p-8 space-y-6">
+                    <div class="flex gap-4">
+                        <span class="text-gold-400 font-bold">01</span>
+                        <p>檢視服事的動機與內在生命：不要企圖用忙碌的服事來掩飾生命中的破口。先求潔淨，再求服事。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-gold-400 font-bold">02</span>
+                        <p>憑信心支取「從今日起」的應許：今天就做出一個順服神的決定，相信神的賜福從這一刻起已經啟動。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-gold-400 font-bold">03</span>
+                        <p>在動盪中看見自己的身分：面對變動時，提醒自己是神手中的「印記」，擁有神賜予的平安與保障。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Actions -->
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gold-400/20 flex items-center justify-center text-gold-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h2 class="text-2xl font-bold font-serif tracking-widest">回應行動</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="glass-card p-6 border-l-2 border-gold-500">
+                        <h5 class="font-bold mb-2">1. 認罪與潔淨</h5>
+                        <p class="text-sm text-gray-400">在參與本週服事之前，花15分鐘獨處，求神光照並承認隱藏的罪，求主寶血潔淨。</p>
+                    </div>
+                    <div class="glass-card p-6 border-l-2 border-gold-500">
+                        <h5 class="font-bold mb-2">2. 設立信心紀念碑</h5>
+                        <p class="text-sm text-gray-400">記錄今天的日期與目前的缺乏，宣告哈該書2:19，作為領受祝福的起點。</p>
+                    </div>
+                    <div class="glass-card p-6 border-l-2 border-gold-500">
+                        <h5 class="font-bold mb-2">3. 宣告身分</h5>
+                        <p class="text-sm text-gray-400">每天看新聞或感到焦慮時，朗讀哈該書2:23，宣告自己在基督裡是神珍貴的「印記」。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-24 space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gold-400/20 flex items-center justify-center text-gold-400">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1.017 21L1.017 18C1.017 16.8954 1.91243 16 3.017 16H6.017C6.56928 16 7.017 15.5523 7.017 15V9C7.017 8.44772 6.56928 8 6.017 8H3.017C1.91243 8 1.017 7.10457 1.017 6V5C1.017 3.89543 1.91243 3 3.017 3H6.017C8.22614 3 10.017 4.79086 10.017 7V15C10.017 18.3137 7.33072 21 4.017 21H1.017Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-serif tracking-widest">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「除非我們的心被潔淨，否則我們的善工在神面前都算為污穢。」</p>
+                    <div class="text-gold-400 font-bold">— 約翰·加爾文 (John Calvin)</div>
+                    <div class="text-xs text-gray-500 mt-1">《基督教要義》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「不要看你現在的缺乏，要看神信實的應許；當你開始順服時，天上福分的閘門就打開了。」</p>
+                    <div class="text-gold-400 font-bold">— 查爾斯·司布真 (Charles Spurgeon)</div>
+                    <div class="text-xs text-gray-500 mt-1">《清晨與甘露》</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「如果你把安全感建立在任何會被震動的事物上，你終將失去它；只有建立在基督裡，你才擁有永不震動的國度。」</p>
+                    <div class="text-gold-400 font-bold">— 提摩太·凱勒 (Timothy Keller)</div>
+                    <div class="text-xs text-gray-500 mt-1">《偽神》</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「神不是遵守某種聖潔的標準，祂自己就是那個標準。當我們靠近祂，我們唯一的反應只能是悔改。」</p>
+                    <div class="text-gold-400 font-bold">— 陶恕 (A.W. Tozer)</div>
+                    <div class="text-xs text-gray-500 mt-1">《渴慕神》</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「廉價的恩典是我們自己給自己的恩典；重價的恩典是必須付上生命代價去順服的呼召。」</p>
+                    <div class="text-gold-400 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</div>
+                    <div class="text-xs text-gray-500 mt-1">《追隨基督》</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「你真正的身分不在於你做了什麼、擁有什麼，或是別人對你說什麼，而在於你是神所愛的孩子。」</p>
+                    <div class="text-gold-400 font-bold">— 盧雲 (Henri Nouwen)</div>
+                    <div class="text-xs text-gray-500 mt-1">《浪子回頭》</div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「信心是一座活的、勇敢的信靠神的橋樑，因著這信靠，信徒願意在任何動盪中將生命交托給神。」</p>
+                    <div class="text-gold-400 font-bold">— 馬丁·路德 (Martin Luther)</div>
+                    <div class="text-xs text-gray-500 mt-1">《羅馬書註釋》</div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-8 hover:bg-gold-500/5 transition-colors border-t-2 border-gold-500/30">
+                    <p class="text-lg italic mb-4 leading-relaxed">「十字架不僅顯明了我們罪的深重，更宣告了我們在神眼中無與倫比的價值。」</p>
+                    <div class="text-gold-400 font-bold">— 約翰·史托德 (John Stott)</div>
+                    <div class="text-xs text-gray-500 mt-1">《基督的十字架》</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Disclaimer -->
+        <section class="pt-24 border-t border-white/5 text-center">
+            <div class="glass-card py-12 px-8 inline-block max-w-lg">
+                <div class="text-gold-500/80 mb-4">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+                <p class="text-gray-500 text-sm tracking-widest leading-relaxed">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-[100] active:scale-95 group">
+        <svg class="w-6 h-6 transition-transform group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

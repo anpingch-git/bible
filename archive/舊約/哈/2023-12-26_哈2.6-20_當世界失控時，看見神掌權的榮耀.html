@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈2:6-20：當世界失控時，看見神掌權的榮耀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            400: '#eab308',
+                            500: '#d4af37',
+                            600: '#b8860b',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#121212',
+                            700: '#1e1e1e',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.8, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: 0.6 },
+                            '50%': { opacity: 1 },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(30, 30, 30, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #d4af37, #fef08a, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #d4af37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        /* Custom Jump animation for Verse */
+        @keyframes subtleJump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtleJump 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center justify-between px-6 md:px-12 border-b border-white/5">
+        <span class="font-display font-bold text-sm md:text-base tracking-widest text-gold-500">哈 2:6-20</span>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium uppercase tracking-tighter md:tracking-widest">
+            <a href="#prayer" class="nav-link text-gray-300 hover:text-gold-400">禱告</a>
+            <a href="#outline" class="nav-link text-gray-300 hover:text-gold-400">大綱</a>
+            <a href="#sermon" class="nav-link text-gray-300 hover:text-gold-400">講章</a>
+            <a href="#quotes" class="nav-link text-gray-300 hover:text-gold-400">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="relative  h-[50vh] md:h-[80vh] h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_8e6128ec-1118-475e-979a-9080d21940e7.jpg' alt='media_1' class="w-full h-full object-cover animate-breath " />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-900/40 via-dark-900/60 to-dark-900"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <p class="text-gold-400 font-semibold tracking-widest mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">HABAKKUK 2:6-20</p>
+            <h1 class="text-4xl md:text-7xl font-display font-black text-white leading-tight mb-8 drop-shadow-2xl opacity-0 animate-[fadeIn_1s_ease-out_0.5s_forwards]">
+                當世界失控時，<br/><span class="text-gradient">看見神掌權的榮耀</span>
+            </h1>
+            
+            <!-- Verse Section (Animated but no border) -->
+            <div class="max-w-2xl mx-auto mt-12 jump-text">
+                <p class="text-xl md:text-2xl font-display leading-relaxed italic text-gray-200">
+                    「惟耶和華在他的聖殿中；全地的人都當在他面前肅敬靜默。」
+                </p>
+                <p class="mt-4 text-gold-500 font-bold tracking-widest">哈巴谷書 2:20</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass p-8 md:p-16 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 -m-8 w-64 h-64 bg-gold-600/10 rounded-full blur-3xl group-hover:bg-gold-600/20 transition-all duration-700"></div>
+                <div class="flex items-center gap-4 mb-8">
+                    <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    <h2 class="text-3xl font-display font-bold">禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-loose font-serif text-gray-300 first-letter:text-5xl first-letter:text-gold-500 first-letter:font-black first-letter:mr-3">
+                    全能的父神，當我們環顧這個充滿強暴、貪婪與不公義的世界時，我們的心常常像哈巴谷一樣充滿困惑與不安。主啊，求祢開啟我們屬靈的眼睛，讓我們不被這世上的喧囂與短暫的榮華所欺騙。幫助我們看見祢仍然坐在聖殿的寶座上掌權，並且認識祢榮耀的知識終必充滿遍地。賜我們信心與力量，在這混亂的世代中，學會在祢面前肅敬靜默，耐心等候祢的公義彰顯。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                <h2 class="text-3xl font-display font-bold">分段解析大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass p-6 rounded-2xl bento-card border-l-4 border-l-gold-500 group">
+                    <span class="text-gold-500 font-bold mb-2 block">第一階段 2:6-11</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">貪婪的網羅——虛假安全感的破滅</h3>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl bento-card border-l-4 border-l-gold-500 group">
+                    <span class="text-gold-500 font-bold mb-2 block">第二階段 2:12-17</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">強暴的終局——人意帝國與神國榮耀</h3>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl bento-card border-l-4 border-l-gold-500 group">
+                    <span class="text-gold-500 font-bold mb-2 block">第三階段 2:18-20</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">偶像的虛無與全地之主的靜默</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Content Parts -->
+        <div class="space-y-40">
+            <!-- Part 1 -->
+            <article id="part1" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h3 class="text-3xl font-display font-black mb-4">第一段：貪婪的網羅——虛假安全感的破滅</h3>
+                    <div class="bg-dark-800 border-l-2 border-gold-500 p-6 rounded-r-xl italic text-gray-400 mb-8">
+                        <p class="mb-2 font-bold text-gray-200">經文內容 (哈 2:6-11)：</p>
+                        這些國的民豈不都要提起詩歌並俗語譏刺他說：禍哉！迦勒底人，你增添不屬自己的財物，多多取人的當頭，要到幾時為止呢？咬傷你的豈不忽然起來，擾害你的豈不興起，你就作他們的擄物嗎？因你搶奪許多的國，殺人流血，向國內的城並城中一切居民施行強暴，所以各國剩下的民都必搶奪你。為本家積蓄不義之財、在高處搭窩、指望免災的有禍了！你圖謀剪除多國的民，呼叫你的房屋滿了羞辱；你得罪自己。牆裡的石頭必呼叫；棟梁的木頭必應聲。
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                關鍵原文
+                            </h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">當頭 (avtit / עַבְטִיט)：</strong> 意為「抵押品」或「沉重的債務」。巴比倫無止盡地掠奪，以為在累積財富，實際上是在給自己累積沉重的審判之債。</li>
+                                <li><strong class="text-white">不義之財 (betsa / בֶּצַע)：</strong> 指透過暴力、剝削或不公正手段取得的利益。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-2xl border-t-2 border-t-gold-500/30">
+                            <h4 class="text-gold-500 font-bold mb-3">關鍵問題與解析</h4>
+                            <p class="font-bold mb-2 text-white italic">為什麼我們總覺得「擁有更多」就能帶來安全感？</p>
+                            <p class="text-gray-400">解析：人類墮落後，失去了對神的倚靠，轉而試圖用物質（「在高處搭窩」）來抵禦對未來的不安全感。然而，經文指出，建立在剝削與貪婪上的安全感是虛假的，那些被壓榨的「石頭和木頭」終將呼叫作證，神必親自拆毀這沙土上的城堡。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-dark-700 p-8 rounded-3xl border border-white/5 h-full flex flex-col justify-between">
+                            <div>
+                                <h4 class="text-gold-500 font-bold mb-4">例證：華爾街龐氏騙局</h4>
+                                <p class="text-gray-300 leading-relaxed mb-6">
+                                    美國華爾街曾發生震驚全球的「馬多夫（Bernie Madoff）龐氏騙局」。他詐騙了數百億美元，住豪宅、享盡奢華，試圖為自己「在高處搭窩」。然而，當金融危機爆發，他所堆砌的虛假財富瞬間崩塌。那些他以為能保護他的不義之財，成了定他罪的網羅。
+                                </p>
+                            </div>
+                            <blockquote class="border-l-4 border-gold-500 pl-6 italic text-lg text-white font-serif">
+                                「如果我們的心不以上帝為最大的滿足，我們就會把某種受造之物當作上帝。」
+                                <cite class="block mt-2 text-sm text-gold-400 not-italic">— 提摩太·凱勒</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 2 -->
+            <article id="part2" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h3 class="text-3xl font-display font-black mb-4">第二段：強暴的終局——人意帝國與神國榮耀的對比</h3>
+                    <div class="bg-dark-800 border-l-2 border-gold-500 p-6 rounded-r-xl italic text-gray-400 mb-8">
+                        <p class="mb-2 font-bold text-gray-200">經文內容 (哈 2:12-17)：</p>
+                        以人血建城、以罪孽立邑的有禍了！眾民所辛苦勞碌得來的，被火焚燒，列國由勞乏而得的，歸於虛空，不都是出於萬軍之耶和華嗎？認識耶和華榮耀的知識要充滿遍地，好像水充滿洋海一般。給人酒喝、又加上毒物、使他喝醉、好看見他下體的有禍了！你滿受羞辱，不得榮耀；你也喝吧，顯出是未受割禮的！耶和華右手的杯必傳到你那裡；你的榮耀就變為大大地羞辱。你向黎巴嫩行強暴與殘害野獸的事，必叫你驚嚇。你殺人流血，向國內的城並城中一切居民施行強暴。
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                關鍵原文
+                            </h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">榮耀 (kavod / כָּבוֹ德)：</strong> 原意為「沉重」、「有份量」。人的強權與榮耀如同輕煙，而神的榮耀才是宇宙中唯一真實、永恆、具備絕對份量的存在。</li>
+                                <li><strong class="text-white">羞辱 (qalon / קָלוֹן)：</strong> 與榮耀相對，意為「輕賤」、「蒙羞」。巴比倫試圖羞辱列國，最終神要將「憤怒的杯」遞給他們，使他們的榮耀變為極大的羞辱。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-2xl border-t-2 border-t-gold-500/30">
+                            <h4 class="text-gold-500 font-bold mb-3">關鍵問題與解析</h4>
+                            <p class="font-bold mb-2 text-white italic">面對社會上的強權與不公，神真的在乎嗎？</p>
+                            <p class="text-gray-400">解析：世人常以為權力與暴力能掌控歷史，但神宣告這一切勞碌最終將「歸於虛空」。第14節是整個預言的轉折與盼望——世上強權會更迭，但唯有「認識耶和華榮耀的知識」會永存，並且充滿全地。神不僅在乎，祂更掌管歷史的終局。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-dark-700 p-8 rounded-3xl border border-white/5 h-full flex flex-col justify-between">
+                            <div>
+                                <h4 class="text-gold-500 font-bold mb-4">例證：希特勒的「第三帝國」</h4>
+                                <p class="text-gray-300 leading-relaxed mb-6">
+                                    希特勒宣稱他建立的「第三帝國」將統治世界一千年。為此他發動戰爭、屠殺無辜，實踐了「以人血建城」。然而，這個帝國僅存活了十二年就灰飛煙滅。歷史不斷證明：沒有任何建立在殘暴與驕傲上的國度能長存，唯有基督的國度存到永遠。
+                                </p>
+                            </div>
+                            <blockquote class="border-l-4 border-gold-500 pl-6 italic text-lg text-white font-serif">
+                                「當世上的君王自以為是時，他們不過是上帝手中的棋子。」
+                                <cite class="block mt-2 text-sm text-gold-400 not-italic">— 陶恕 (A.W. Tozer)</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 3 -->
+            <article id="part3" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h3 class="text-3xl font-display font-black mb-4">第三段：偶像的虛無與全地之主的靜默</h3>
+                    <div class="bg-dark-800 border-l-2 border-gold-500 p-6 rounded-r-xl italic text-gray-400 mb-8">
+                        <p class="mb-2 font-bold text-gray-200">經文內容 (哈 2:18-20)：</p>
+                        雕刻的偶像，人將它刻出來，有什麼益處呢？鑄造的偶像就是虛謊的師傅。製造者倚靠這啞巴偶像有什麼益處呢？對木頭說：醒起！對啞巴石頭說：起來！那人有禍了！這個還能教訓人嗎？看哪，是包裹金銀的，其中毫無氣息。惟耶和華在他的聖殿中；全地的人都當在他面前肅敬靜默。
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                關鍵原文
+                            </h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">虛謊 (sheqer / שֶׁקֶר)：</strong> 謊言、欺騙。偶像被稱為「虛謊的師傅」，因為它們承諾給予庇護和繁榮，卻完全無法兌現。</li>
+                                <li><strong class="text-white">肅敬靜默 (has / הַס)：</strong> 發出「噓」的聲音，要求立刻安靜。面對絕對的威嚴與神聖，人類一切的喧鬧、狂妄、抗議與驕傲都必須平息。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-2xl border-t-2 border-t-gold-500/30">
+                            <h4 class="text-gold-500 font-bold mb-3">關鍵問題與解析</h4>
+                            <p class="font-bold mb-2 text-white italic">在喧囂混亂的世代，我們如何操練「在神面前靜默」？</p>
+                            <p class="text-gray-400">解析：當我們看見惡人得勢，我們的心常會充滿憤懣與焦慮。但這段經文引導我們看見，偶像毫無氣息，而真神卻在祂的聖殿中。真正的靜默不是無奈的絕望，而是一種充滿信心的降服——知道神在掌權，所以我們大可安心閉口。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-dark-700 p-8 rounded-3xl border border-white/5 h-full flex flex-col justify-between">
+                            <div>
+                                <h4 class="text-gold-500 font-bold mb-4">例證：颱風眼的寧靜</h4>
+                                <p class="text-gray-300 leading-relaxed mb-6">
+                                    在風暴的最中心——「颱風眼」，卻是出奇地寧靜。當我們的世界充滿不公與動盪，我們若把目光放在周圍，就會被狂風捲走；但若我們進入上帝聖殿的同在裡，就能在風暴的中心找到屬天的靜默與安息。
+                                </p>
+                            </div>
+                            <blockquote class="border-l-4 border-gold-500 pl-6 italic text-lg text-white font-serif">
+                                「靜默是靈命成長的熔爐。在靜默中，我們放下了為自己辯護的衝動。」
+                                <cite class="block mt-2 text-sm text-gold-400 not-italic">— 盧雲 (Henri Nouwen)</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sermon Draft -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="glass p-8 md:p-16 rounded-[3rem] text-lg md:text-xl leading-relaxed text-gray-300 font-serif">
+                <div class="mb-12 text-center">
+                    <h3 class="text-2xl md:text-4xl font-bold text-white mb-2">當世界失控時，看見神掌權的榮耀</h3>
+                    <p class="text-gold-500 font-bold">經文範圍：哈 2:6-20</p>
+                </div>
+
+                <div class="space-y-12">
+                    <p>弟兄姐妹們，平安。當我們打開新聞，看見戰爭、通膨、詐騙、強權壓迫，我們的心中是否經常浮現一個疑問：「上帝啊，這個世界是不是失控了？祢在哪裡？」這不是我們獨有的疑問，幾千年前的先知哈巴谷，也向神發出了同樣的呐喊。</p>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white border-b border-gold-500/30 pb-2 mb-6">一、 貪婪的網羅——虛假安全感的破滅</h4>
+                        <p>在經文第6到11節中，神指責巴比倫人「增添不屬自己的財物」、「在高處搭窩、指望免災」。這不正是現代人的寫照嗎？我們總以為銀行存款多幾個零、擁有更高的職位，就能「在高處搭窩」。神說，這些其實是「沉重的當頭（債務）」。有一天，那些<span class="text-gold-400 font-black">「牆裡的石頭必呼叫；棟梁的木頭必應聲」</span>。真正的保障，從來不在於我們為自己搭建的堡壘有多高，而在於我們是否藏身在全能神的庇護之下。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white border-b border-gold-500/30 pb-2 mb-6">二、 強暴的終局——人意帝國與神國榮耀的對比</h4>
+                        <p>上帝宣告：<span class="text-gold-400 font-black">「眾民所辛苦勞碌得來的，被火焚燒...不都是出於萬軍之耶和華嗎？」</span> 弟兄姐妹，歷史上所有的獨裁者、偉大的帝國如今在哪裡？都成了歷史的灰燼。而在這段審判中，神安插了一句無比榮耀的應許：<span class="text-white font-black underline decoration-gold-500 decoration-2 underline-offset-8">「認識耶和華榮耀的知識要充滿遍地，好像水充滿洋海一般。」（哈 2:14）</span>當我們對現實感到絕望時，請記住，歷史的終局不是強權說了算，而是耶和華的榮耀說了算！</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-2xl font-bold text-white border-b border-gold-500/30 pb-2 mb-6">三、 偶像的虛無與全地之主的靜默</h4>
+                        <p>相對於啞巴偶像的無能，先知在第20節寫下了整卷書的關鍵：<span class="text-3xl font-black text-gradient block my-6 text-center">「惟耶和華在他的聖殿中；全地的人都當在他面前肅敬靜默。」</span></p>
+                        <p>這是一個極具震撼力的對比！地上的君王在喧囂，世界在動盪，但耶和華沒有驚慌失措，祂安穩地坐在聖殿的寶座上。面對這位擁有絕對主權的上帝，我們都當「肅敬靜默」。這份靜默，不是絕望的無奈，而是信心的降服。願我們在生活喧囂中，重新看見那位依然掌權的上帝。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section (Bento Style) -->
+        <section class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <h2 class="text-3xl font-display font-bold">應用與行動</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl border-t-4 border-t-gold-500">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="bg-gold-500 text-dark-900 w-8 h-8 rounded-full flex items-center justify-center text-sm">01</span>
+                        應用方向
+                    </h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-3"><span class="text-gold-500">◆</span> 檢視生命中的「安全感來源」</li>
+                        <li class="flex gap-3"><span class="text-gold-500">◆</span> 面對不公義時的「屬天眼光」</li>
+                        <li class="flex gap-3"><span class="text-gold-500">◆</span> 在喧囂中操練「神聖的靜默」</li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-t-gold-500">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="bg-gold-500 text-dark-900 w-8 h-8 rounded-full flex items-center justify-center text-sm">02</span>
+                        實踐行動
+                    </h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-3"><span class="text-gold-500">◆</span> 財務大掃除與奉獻（宣告主權）</li>
+                        <li class="flex gap-3"><span class="text-gold-500">◆</span> 為世界的不公義代求（五分鐘代禱）</li>
+                        <li class="flex gap-3"><span class="text-gold-500">◆</span> 每天十分鐘靜默操練（心靈降服）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-display font-bold">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-8 rounded-3xl bento-card border border-white/10 flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-200">「如果我們的心不以上帝為最大的滿足，我們就會把某種受造之物當作上帝，試圖從中得到唯有上帝才能給予的意義、希望和安全感。這就是偶像崇拜。」</p>
+                    <div class="mt-6">
+                        <p class="font-bold text-gold-500">— 提摩太·凱勒 (Timothy Keller)</p>
+                        <p class="text-xs text-gray-500">《假神眾生相》(Counterfeit Gods)</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-8 rounded-3xl bento-card border border-white/10 flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-200">「歷史不是一連串無意義的事件，而是上帝掌權的舞台。當世上的君王自以為是時，他們不過是上帝手中的棋子。」</p>
+                    <div class="mt-6">
+                        <p class="font-bold text-gold-500">— 陶恕 (A.W. Tozer)</p>
+                        <p class="text-xs text-gray-500">《神之所是》(The Knowledge of the Holy)</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-8 rounded-3xl bento-card border border-white/10 flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-200">「靜默是靈命成長的熔爐。在靜默中，我們放下了為自己辯護的衝動，讓上帝成為我們的保護者。」</p>
+                    <div class="mt-6">
+                        <p class="font-bold text-gold-500">— 盧雲 (Henri Nouwen)</p>
+                        <p class="text-xs text-gray-500">《喧囂中的寧靜》(The Way of the Heart)</p>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass p-8 rounded-3xl bento-card border border-white/10 flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-200">「上帝的國度並非未來才要降臨的烏托邦，而是現在就可以透過順服基督而經歷的生命實況。」</p>
+                    <div class="mt-6">
+                        <p class="font-bold text-gold-500">— 魏樂德 (Dallas Willard)</p>
+                        <p class="text-xs text-gray-500">《神聖的渴望》(The Divine Conspiracy)</p>
+                    </div>
+                </div>
+                <!-- All other quotes simplified for mobile scrolling efficiency -->
+                <div class="md:col-span-2 space-y-4">
+                    <details class="glass rounded-2xl p-4 cursor-pointer group">
+                        <summary class="font-bold text-gray-300 group-hover:text-gold-400">點擊查看更多名言 (10句完整收錄)</summary>
+                        <div class="mt-4 space-y-6 text-sm text-gray-400 border-t border-white/10 pt-4">
+                            <p>2. 「人心就是一個不斷製造偶像的工廠，每個人都傾向於用自己的想像來塑造上帝。」 —— 約翰·加爾文</p>
+                            <p>3. 「一個敬畏上帝的人，除了上帝之外，什麼都不怕；而一個不敬畏上帝的人，除了上帝之外，什麼都怕。」 —— 司布真</p>
+                            <p>6. 「廉價的恩典是我們自己給自己的恩典；昂貴的恩典是必須付上生命代價的恩典。」 —— 潘霍華</p>
+                            <p>7. 「我們生活在一個被噪音淹沒的世界，唯有透過獨處與靜默，我們才能聽見上帝那微小的聲音。」 —— 傅士德</p>
+                            <p>8. 「真正的宗教情操不僅僅是理智上的認同，更是心靈深處對上帝榮耀的看見與熱愛。」 —— 喬納森·愛德華茲</p>
+                            <p>9. 「我們不能將生命分為屬靈與世俗兩部分。如果耶穌基督不是萬有的主，祂就根本不是主。」 —— 約翰·史托德</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="pb-10">
+            <div class="text-center text-gray-500 text-sm italic">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

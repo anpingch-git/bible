@@ -79,20 +79,6 @@
         .breathing-image {
             animation: breathing 8s ease-in-out infinite;
         }
-		animation: {
-                        'pulse-slow': 'pulse-custom 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        'pulse-custom': {
-                            '0%, 100%': { opacity: 0.95, filter: 'brightness(1)' },
-                            '50%': { opacity: 0.2, filter: 'brightness(0.9)' },
-                        },
-                        'float': {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
     </style>
 </head>
 <body class="custom-scrollbar">
@@ -111,9 +97,9 @@
     </nav>
 
     <!-- Banner -->
-    <header class="relative h-[150px] md:h-[550px] h-screen flex items-center justify-center overflow-hidden pt-16">
-        <div class="absolute inset-0 z-0 ">
-            <img src='image/img_aa23fd12-02f9-43d2-908a-95912b6a53bd.jpg' alt='media_1' class="w-full  h-full object-cover animate-pulse-slow  scale-105" />
+    <header class="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_aa23fd12-02f9-43d2-908a-95912b6a53bd.jpg' alt='media_1' class="w-full h-full object-cover opacity-80 breathing-image banner-mask scale-105" />
 			<div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-darkBg/20"></div>
         </div>
         <div class="relative z-10 text-center px-4 max-w-5xl">

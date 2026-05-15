@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路23:26-43:苦難中的憐憫：從受難之路看見救贖的曙光</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --glass-bg: rgba(20, 20, 25, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --accent-gold: #d4af37;
+            --accent-crimson: #991b1b;
+        }
+
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            font-family: 'Outfit', 'Noto Serif TC', serif;
+            scroll-behavior: smooth;
+        }
+
+        .premium-text {
+            background: linear-gradient(135deg, #fefce8 0%, #d4af37 50%, #92400e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Banner Breathing Animation */
+        @keyframes breathe {
+            0%, 100% { opacity: 0.6; transform: scale(1.05); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        .banner-container {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .banner-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            animation: breathe 8s ease-in-out infinite;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+            z-index: -1;
+        }
+
+        /* Verse Jumping Animation */
+        @keyframes subtleJump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .jumping-verse {
+            display: inline-block;
+            animation: subtleJump 3s ease-in-out infinite;
+            text-shadow: 0 0 20px rgba(255,255,255,0.4);
+        }
+
+        /* Glassmorphism Navigation */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        /* Section Styling */
+        .content-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .content-card:hover {
+            border-color: var(--accent-gold);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
+
+        .outline-btn {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        /* Floating Button */
+        #scrollTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-gold);
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #scrollTop.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Banner -->
+    <section id="top" class="banner-container">
+        <img src="image/img_433d7688-10d2-4a8e-942e-7f82330264de.jpg" alt="Cross background" class="banner-image">
+        <div class="banner-overlay"></div>
+        <div class="px-6 max-w-5xl mx-auto">
+            <h1 class="text-4xl md:text-7xl font-black mb-8 premium-text leading-tight drop-shadow-2xl">
+                路23:26-43<br>苦難中的憐憫：從受難之路看見救贖的曙光
+            </h1>
+            <div class="jumping-verse">
+                <p class="text-xl md:text-3xl font-serif text-white/90 italic tracking-wide max-w-3xl mx-auto leading-relaxed">
+                    「耶穌對他說：『我實在告訴你，今日你要同我在樂園裡了。』」
+                    <span class="block text-lg mt-4 text-gold-400 opacity-80">（路加福音 23:43）</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-center md:justify-between items-center gap-4">
+            <div class="text-sm md:text-base font-bold text-gray-400 tracking-widest uppercase">
+                路加福音 23:26-43
+            </div>
+            <div class="flex gap-6 md:gap-8 text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors text-white/70">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors text-white/70">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors text-white/70">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors text-white/70">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="content-card p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+            </div>
+            <div class="flex items-center gap-4 mb-8">
+                <span class="p-3 bg-red-900/30 rounded-full text-red-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white tracking-wider">開路之禱</h2>
+            </div>
+            <p class="text-xl leading-relaxed text-gray-300 font-serif">
+                親愛的主耶穌，我們來到祢的十字架下，看見祢在極度的痛苦與羞辱中，依然展現出那超越世人理解的慈愛與寬恕。主啊，我們常像那西門被迫背十字架，或像那群眾在旁觀望，甚至有時像那傲慢的犯人拒絕祢。求祢赦免我們的罪，開我們的心眼，讓我們像那位悔改的犯人一樣，看見祢是榮耀的王。願祢那「今日同在樂園」的應許，成為我們生命中最大的盼望與安慰。奉主耶穌基督聖名求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Buttons Section -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-blue-900/30 rounded-full text-blue-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white tracking-wider">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl block">
+                    <span class="block text-xs text-gold-500/70 mb-2 uppercase tracking-widest">第一段</span>
+                    <h3 class="text-lg font-bold text-white mb-2 leading-snug">蒙召背架與審判的哀鳴</h3>
+                    <p class="text-sm text-gray-400">路23:26-31</p>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl block">
+                    <span class="block text-xs text-gold-500/70 mb-2 uppercase tracking-widest">第二段</span>
+                    <h3 class="text-lg font-bold text-white mb-2 leading-snug">十架上的代求與世人的譏誚</h3>
+                    <p class="text-sm text-gray-400">路23:32-38</p>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl block">
+                    <span class="block text-xs text-gold-500/70 mb-2 uppercase tracking-widest">第三段</span>
+                    <h3 class="text-lg font-bold text-white mb-2 leading-snug">臨終的悔改與樂園的應許</h3>
+                    <p class="text-sm text-gray-400">路23:39-43</p>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Sections -->
+            <div class="space-y-16 mt-16">
+                <!-- Part 1 -->
+                <div id="part1" class="border-l-2 border-gold-500/30 pl-8 space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">蒙召背架與審判的哀鳴 (路23:26-31)</h3>
+                    <div class="bg-gray-900/50 p-6 rounded-xl italic text-gray-300 leading-relaxed font-serif">
+                        「帶走耶穌的時候，有一個古利奈人西門，從鄉下來；他們就抓住他，把十字架擱在他身上，叫他背著跟隨耶穌...」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 text-sm">
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-blue-300 uppercase tracking-widest">關鍵字解析</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><strong class="text-white">抓住 (epilambanomai)：</strong> 強行扣留。西門被迫進入救贖歷史。</li>
+                                <li><strong class="text-white">有汁水的樹：</strong> 喻指無罪生命力的耶穌。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-blue-300 uppercase tracking-widest">核心問題</h4>
+                            <p class="text-gray-400 italic">為什麼耶穌要婦女「為自己哭」？</p>
+                            <p class="text-gray-400">感傷若不轉化為對罪的悔改，就毫無益處。</p>
+                        </div>
+                    </div>
+                    <div class="bg-gold-900/10 p-4 border border-gold-900/30 rounded-lg">
+                        <p class="text-gold-200 text-sm italic">「十字架並非我們隨機挑選的負擔，而是神為了讓我們更像基督而量身打造的功課。」—— 司布真</p>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="border-l-2 border-red-500/30 pl-8 space-y-6">
+                    <h3 class="text-2xl font-bold text-red-400">十架上的代求與世人的譏誚 (路23:32-38)</h3>
+                    <div class="bg-gray-900/50 p-6 rounded-xl italic text-gray-300 leading-relaxed font-serif">
+                        「當下耶穌說：『父啊！赦免他們；因為他們所做的，他們不曉得。』...官府也嗤笑他，說：『他救了別人；他若是基督，神所揀選的，可以救自己吧！』」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 text-sm">
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-red-300 uppercase tracking-widest">關鍵字解析</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><strong class="text-white">赦免 (aphiēmi)：</strong> 釋放債務。耶穌在受刑時主動赦免。</li>
+                                <li><strong class="text-white">嗤笑 (ekmyktērizō)：</strong> 極度藐視的嗤之以鼻。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-red-300 uppercase tracking-widest">核心問題</h4>
+                            <p class="text-gray-400 italic">耶穌「救自己」與「救別人」的張力？</p>
+                            <p class="text-gray-400">祂若救了自己，就不能救我們。祂選擇了承擔罪債。</p>
+                        </div>
+                    </div>
+                    <div class="bg-red-900/10 p-4 border border-red-900/30 rounded-lg">
+                        <p class="text-red-200 text-sm italic">「廉價的恩典是我們不需要悔改的赦免；而重價的恩典是神以祂兒子的生命為代價換來的。」—— 潘霍華</p>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="border-l-2 border-emerald-500/30 pl-8 space-y-6">
+                    <h3 class="text-2xl font-bold text-emerald-400">臨終的悔改與樂園的應許 (路23:39-43)</h3>
+                    <div class="bg-gray-900/50 p-6 rounded-xl italic text-gray-300 leading-relaxed font-serif">
+                        「耶穌啊，你得國降臨的時候，求你紀念我！耶穌對他說：『我實在告訴你，今日你要同我在樂園裡了。』」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 text-sm">
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-emerald-300 uppercase tracking-widest">關鍵字解析</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><strong class="text-white">樂園 (paradeisos)：</strong> 王室花園，象徵極致親密與安息。</li>
+                                <li><strong class="text-white">紀念 (mnēsthēti)：</strong> 採取行動的關注與眷顧。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold text-emerald-300 uppercase tracking-widest">核心問題</h4>
+                            <p class="text-gray-400 italic">為何「好犯人」能看見耶穌是王？</p>
+                            <p class="text-gray-400">聖靈的工作，使他在受刑者身上看見了永恆的權柄。</p>
+                        </div>
+                    </div>
+                    <div class="bg-emerald-900/10 p-4 border border-emerald-900/30 rounded-lg">
+                        <p class="text-emerald-200 text-sm italic">「神赦免了一個犯人，讓沒有人需要絕望；但祂只赦免了一個，讓沒有人敢於放肆延遲悔改。」—— 奧古斯丁</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Manuscript Section -->
+        <section id="sermon" class="space-y-12 py-10 border-t border-white/10">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-purple-900/30 rounded-full text-purple-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white tracking-wider">講章文稿：苦難中的憐憫</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-lg max-w-none space-y-12 font-serif text-gray-300">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/5 pb-2">【引言：走在髑髏地的路上】</h3>
+                    <p>在人類歷史上最黑暗的一天，上帝的兒子正走向祂的刑場。這條路被稱為「苦路」。在這條路上，我們看見了人性的殘酷，但也看見了神性的極致溫柔。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/5 pb-2">【第一段：背起不屬於自己的十字架】</h3>
+                    <p>當耶穌體力不支時，古利奈人西門被強迫介入。<span class="text-gold-400 font-bold">「他們就抓住他，把十字架擱在他身上。」</span> 有時候，生命中的苦難是強加在我們身上的，我們不明白為什麼是我。但弟兄姊妹，請記得，當西門背起那木頭時，他正與主同行。<span class="text-white font-bold">耶穌提醒我們，不要只為眼前的苦難流淚，更要為生命的結局警醒。</span> 祂對婦女說：「為自己哭吧！」這是一份深沉的愛——即便在走向死亡，祂仍在乎我們的靈魂是否準備好面對審判。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/5 pb-2">【第二段：在痛苦中心繫仇敵的赦免】</h3>
+                    <p>當釘子穿透手掌，耶穌的第一句話不是咒詛，而是：<span class="text-red-400 font-bold">「父啊！赦免他們；因為他們所做的，他們不曉得。」</span> 這是何等震撼的力量！世人嗤笑祂：「救自己吧！」但主耶穌知道，如果祂救了自己，人類就徹底絕望了。<span class="text-white font-bold">祂忍受了譏誚，是為了成就那永恆的牌子——「這是猶太人的王」。</span> 祂的國度不是靠武力奪取，而是靠自我犧牲的愛來建立。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-white/5 pb-2">【第三段：翻轉命運的最後一刻】</h3>
+                    <p>十字架旁有兩個犯人。一個選擇譏諷，一個選擇敬畏。那位悔改的犯人說：<span class="text-emerald-400 font-bold">「耶穌啊，你得國降臨的時候，求你紀念我！」</span> 他沒有漂亮的履歷，只有一顆破碎的心。而耶穌給了他全本聖經最溫暖的保證：<span class="text-white font-bold underline decoration-emerald-500 underline-offset-8">「今日你要同我在樂園裡了。」</span> 這句話告訴我們，恩典從來不是賺取的，而是領受的。只要你願意回頭，樂園的門永遠為你敞開。</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <h3 class="text-xl font-bold text-white mb-4">【結語】</h3>
+                    <p>今日，你正站在十字架的哪一邊？是觀望的群眾？譏誚的兵丁？還是那求主紀念的犯人？願我們都能在十字架的亮光中，看見那位愛我們、為我們代求，並應許給我們樂園的救主。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="content-card p-8">
+                <h3 class="text-xl font-bold text-gold-400 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-gold-500">1.</span> 檢視對苦難的反應，是否在被迫背架時經歷神。</li>
+                    <li class="flex gap-3"><span class="text-gold-500">2.</span> 學習基督的饒恕，為「不曉得所做之事」的人代求。</li>
+                    <li class="flex gap-3"><span class="text-gold-500">3.</span> 把握當下的悔改，救恩的關鍵字是「今日」。</li>
+                </ul>
+            </div>
+            <div class="content-card p-8 border-gold-500/30">
+                <h3 class="text-xl font-bold text-blue-400 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    實踐行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-blue-500">●</span> 每天5分鐘靜默默想十字架。</li>
+                    <li class="flex gap-3"><span class="text-blue-500">●</span> 寫下傷害你的人，實踐饒恕禱告。</li>
+                    <li class="flex gap-3"><span class="text-blue-500">●</span> 向低谷的朋友分享「樂園的應許」。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-amber-900/30 rounded-full text-amber-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white tracking-wider">十句屬靈名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-6">
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「基督並非死在祭壇上，而是死在刑場上，為要叫我們在世俗的每個角落都能見證祂。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 約翰·史托德 (John Stott)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「如果你在耶穌的十字架裡看不見神的愛，你在其他地方也找不著。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 查爾斯·史丹利 (Charles Stanley)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「神在十字架上所做的，是祂為我們做了我們絕無法為自己做的事。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「十字架是上帝對罪最嚴厲的審判，也是對罪人最深情的擁抱。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 唐崇榮</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「只有在十字架前，我們才能誠實地面對自己的全然敗壞，同時看見自己的極其寶貴。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 畢德生 (Eugene Peterson)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「耶穌在十字架上沈默不語，是為了讓祂的血能為我們說出更有力的恩言。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「十字架的痛苦是短暫的，但它帶來的榮耀是永恆的。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 葛理翰 (Billy Graham)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「我們不能只想要十字架帶來的利益，卻拒絕十字架要求的捨己。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「基督的受難不是一個悲劇，而是一個勝利；這不是魔鬼的得勝，而是神愛的凱旋。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 大衛·鮑森 (David Pawson)</cite>
+                </div>
+                <div class="content-card p-6 border-l-4 border-l-amber-500 group">
+                    <p class="text-lg text-gray-200 mb-2 group-hover:text-white transition-colors italic">「在十字架下，我們沒有人可以自誇，只有滿心的感恩。」</p>
+                    <cite class="text-amber-500 font-bold not-italic">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="mt-20 py-8 px-4 border-t border-white/5 text-center text-gray-500 text-sm">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+    </main>
+
+    <!-- Scroll Top Button -->
+    <div id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </div>
+
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Smooth reveal logic for sections
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

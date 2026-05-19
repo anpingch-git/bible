@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>來5:1-14: 從軟弱到完全：仰望大祭司與生命的成長</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            400: '#fbbf24',
+                            500: '#d4af37',
+                            600: '#b8860b',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#121212',
+                            700: '#1a1a1a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #d4af37 50%, #b8860b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .outline-btn {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: #d4af37;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500 selection:text-black">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card px-4 py-3 md:px-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="text-gold-400 font-bold text-sm md:text-base tracking-wider">
+                來5:1-14
+            </div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest uppercase">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner & Title Section -->
+    <header id="top" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-breath w-full h-full">
+                <img src='image/img_14f34751-f796-4edb-8b69-445f5b9f9198.jpg' alt='Celestial Banner' class="w-full h-full object-cover filter brightness-75 grayscale-[20%]" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-dark-900"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display font-black text-4xl md:text-6xl lg:text-7xl mb-8 leading-tight tracking-tighter drop-shadow-2xl">
+                <span class="block text-white mb-2">從軟弱到完全</span>
+                <span class="text-gradient">仰望大祭司與生命的成長</span>
+            </h1>
+            
+            <div class="inline-block animate-bounce-subtle mt-12 md:mt-24">
+                <p class="font-display text-lg md:text-2xl text-white font-medium max-w-2xl mx-auto leading-relaxed px-4 italic">
+                    「他雖然為兒子，還是因所受的苦難學了順從。他既得以完全，就為凡順從他的人，成了永遠得救的根源。」
+                </p>
+                <p class="text-gold-400 mt-4 text-sm md:text-lg font-bold tracking-widest">— 希伯來書 5:8-9 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor" class="text-white">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.09,8.58L17.5,10L11,16.5Z" />
+                    </svg>
+                </div>
+                <h2 class="font-display font-bold text-3xl mb-8 flex items-center text-white">
+                    <span class="section-icon">🙏</span> 禱告
+                </h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 font-light">
+                    親愛的天父，我們感謝祢，因祢賜下祢的獨生愛子耶穌基督，成為我們慈悲忠信的大祭司。主耶穌，祢凡事受過試探，與我們一樣，只是祢沒有犯罪，因此祢能深深體恤我們的軟弱。求聖靈開啟我們屬靈的耳朵，脫離聽覺遲鈍的狀態，幫助我們在苦難中學習順從，從吃奶的嬰孩成長為能吃乾糧、熟練仁義道理的成熟門徒。奉耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="font-display font-bold text-3xl mb-12 flex items-center text-white">
+                <span class="section-icon">📜</span> 講道大綱
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-20">
+                <a href="#section-1" class="outline-btn glass-card p-6 rounded-2xl block">
+                    <span class="text-gold-500 font-bold block mb-2 text-sm uppercase tracking-wider">分段一 (來 5:1-4)</span>
+                    <span class="text-white text-lg font-bold leading-snug">體恤的恩典：與我們同受軟弱的大祭司</span>
+                </a>
+                <a href="#section-2" class="outline-btn glass-card p-6 rounded-2xl block">
+                    <span class="text-gold-500 font-bold block mb-2 text-sm uppercase tracking-wider">分段二 (來 5:5-10)</span>
+                    <span class="text-white text-lg font-bold leading-snug">順從的代價：苦難中淬鍊的永遠救恩</span>
+                </a>
+                <a href="#section-3" class="outline-btn glass-card p-6 rounded-2xl block">
+                    <span class="text-gold-500 font-bold block mb-2 text-sm uppercase tracking-wider">分段三 (來 5:11-14)</span>
+                    <span class="text-white text-lg font-bold leading-snug">成長的呼召：從吃奶到吃乾糧的屬靈覺醒</span>
+                </a>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Deep Dive 1 -->
+                <article id="section-1" class="scroll-mt-32">
+                    <div class="border-l-4 border-gold-500 pl-6 md:pl-10 space-y-8">
+                        <h3 class="text-2xl md:text-3xl font-black text-white">體恤的恩典：與我們同受軟弱的大祭司</h3>
+                        <div class="text-gray-400 italic text-lg bg-white/5 p-6 rounded-lg leading-relaxed">
+                            「凡從人間挑選的大祭司，是奉派替人辦理屬神的事...他能體諒那愚蒙的和失迷的人，因為他自己也是被軟弱所困...這大祭司的尊榮，沒有人自取。惟要蒙神所召，像亞倫一樣。」（來 5:1-4）
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-400 font-bold tracking-widest uppercase text-sm">關鍵詞解析</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">體諒 (metriopathein)：</strong> 意指「適度地感受」、「溫和對待」。這不是冷漠無情，也不是情緒失控的同情，而是一種能感同身受卻又保持清晰判斷的溫和憐憫。</li>
+                                    <li><strong class="text-white">被軟弱所困 (perikeitai astheneian)：</strong> 字面意思是「被軟弱穿在身上」或「被軟弱四面環繞」。指出人間祭司本身也被罪性和人性的限制所包圍。</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card p-6 rounded-xl">
+                                <h4 class="text-gold-400 font-bold tracking-widest uppercase text-sm mb-3">關鍵問題</h4>
+                                <p class="text-white font-bold mb-3 italic">為什麼神要設立一位「被軟弱所困」的人當祭司？這對我們有何意義？</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">祭司的職責是成為神與人之間的橋梁。如果祭司完全不懂人的掙扎，他的代求就會淪為冰冷的法庭程序；人間的祭司因為經歷過試探與失敗，所以能對「愚蒙和失迷」的人產生真實的憐憫。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-600/10 border border-gold-600/20 p-8 rounded-2xl italic text-gray-200">
+                             「因為我們的大祭司不是高高在上、免於痛苦的神明；祂是一位『負傷的醫治者』，藉著祂的鞭傷，我們得了醫治。」 —— 盧雲 (Henri Nouwen)
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Deep Dive 2 -->
+                <article id="section-2" class="scroll-mt-32">
+                    <div class="border-l-4 border-gold-500 pl-6 md:pl-10 space-y-8">
+                        <h3 class="text-2xl md:text-3xl font-black text-white">順從的代價：苦難中淬鍊的永遠救恩</h3>
+                        <div class="text-gray-400 italic text-lg bg-white/5 p-6 rounded-lg leading-relaxed">
+                            「他雖然為兒子，還是因所受的苦難學了順從。他既得以完全，就為凡順從他的人，成了永遠得救的根源...」（來 5:5-10）
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-400 font-bold tracking-widest uppercase text-sm">關鍵詞解析</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">學了 (emathen)：</strong> 源自 manthanō，指通過經驗、實踐來獲取知識或習慣。</li>
+                                    <li><strong class="text-white">順從 (hypakoē)：</strong> 在這指在極大的困難中，仍然選擇服從上帝的旨意。</li>
+                                    <li><strong class="text-white">完全 (teleiōtheis)：</strong> 指「達到最終的目的或資格」。耶穌透過苦難完成了救贖的條件，成為完美的救主。</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card p-6 rounded-xl">
+                                <h4 class="text-gold-400 font-bold tracking-widest uppercase text-sm mb-3">關鍵問題</h4>
+                                <p class="text-white font-bold mb-3 italic">耶穌本是完全的神的兒子，為什麼還需要「學」順從？</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">耶穌在人性的體驗中，需要經歷一個過程。就如同一個天賦異稟的士兵，只有真正上過戰場，才能證明他的忠誠與勇氣。耶穌在人間透過客西馬尼園的哀哭流淚、十字架的極度痛苦，將祂內在的順從化為實際的行動。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-600/10 border border-gold-600/20 p-8 rounded-2xl italic text-gray-200">
+                             「恩典是白白的，但絕不是廉價的。它之所以代價高昂，是因為它呼召我們跟從耶穌基督。」 —— 潘霍華 (Dietrich Bonhoeffer)
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Deep Dive 3 -->
+                <article id="section-3" class="scroll-mt-32">
+                    <div class="border-l-4 border-gold-500 pl-6 md:pl-10 space-y-8">
+                        <h3 class="text-2xl md:text-3xl font-black text-white">成長的呼召：從吃奶到吃乾糧的屬靈覺醒</h3>
+                        <div class="text-gray-400 italic text-lg bg-white/5 p-6 rounded-lg leading-relaxed">
+                            「凡只能吃奶的都不熟練仁義的道理，因為他是個嬰孩；惟獨長大成人的才能吃乾糧；他們的心竅習練得通達，就能分辨好歹了。」（來 5:11-14）
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-400 font-bold tracking-widest uppercase text-sm">關鍵詞解析</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">聽不進去 (nōthroi tais akoais)：</strong> 意思是遲鈍、懶惰。形容屬靈上的怠惰，不願用心思考。</li>
+                                    <li><strong class="text-white">習練 (gegymnasmena)：</strong> 指經過反覆、嚴格的訓練，與「體操」字根相同。</li>
+                                    <li><strong class="text-white">分辨 (diakrisin)：</strong> 洞察力，能夠區分真假、善惡的能力。</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card p-6 rounded-xl">
+                                <h4 class="text-gold-400 font-bold tracking-widest uppercase text-sm mb-3">關鍵問題</h4>
+                                <p class="text-white font-bold mb-3 italic">什麼是屬靈的「吃奶」與「吃乾糧」？</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">「吃奶」代表只能接受最基本、最舒服、不需咀嚼的道理；「吃乾糧」則代表願意面對具挑戰性的真理（如受苦、順服、十字架的代價），並在生活中實踐。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-600/10 border border-gold-600/20 p-8 rounded-2xl italic text-gray-200">
+                             「現代基督徒最大的危機，就是我們渴望得著神的安慰，卻拒絕接受神的管教。」 —— 陶恕 (A.W. Tozer)
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Main Sermon Content -->
+        <section id="sermon" class="scroll-mt-24">
+            <h2 class="font-display font-bold text-3xl mb-12 flex items-center text-white">
+                <span class="section-icon">📖</span> 講章文稿
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-12 text-lg leading-[2.1] text-gray-200 font-light">
+                <p>親愛的弟兄姊妹，今天我們要透過《希伯來書》第五章，來思想一個關乎我們屬靈生命至關重要的主題：<strong class="text-gold-400">「從軟弱到完全：仰望大祭司與生命的成長」</strong>。</p>
+                
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white border-b border-gold-500/30 pb-2">一、 體恤的恩典：與我們同受軟弱的大祭司</h3>
+                    <p>舊約中的大祭司是從人間挑選的，神為什麼不用天使來當祭司？因為天使沒有肉體，不懂得什麼是飢餓、什麼是試探。神用「被軟弱所困」的人當祭司，因為這樣他才能<strong class="text-white">「體諒」</strong>百姓。這是一種溫和的憐憫。</p>
+                    <p>我們的主耶穌基督更是如此！正如盧雲所說，耶穌是一位<strong class="text-white">「負傷的醫治者」</strong>。當你在深夜裡因為生活壓力、疾病或關係的破裂而哭泣時，不要覺得神離你很遠。我們的大祭司耶穌，完全懂你的痛。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white border-b border-gold-500/30 pb-2">二、 順從的代價：苦難中淬鍊的永遠救恩</h3>
+                    <p class="bg-gold-600/10 p-6 rounded-lg border-l-4 border-gold-500 italic">「他雖然為兒子，還是因所受的苦難學了順從。他既得以完全，就為凡順從他的人，成了永遠得救的根源。」（來 5:8-9）</p>
+                    <p>這節金句充滿張力。耶穌本是神的兒子，為什麼還需要「學」順從？這裡的「學」，是指在真實的經歷中去實踐。就像一塊純度極高的好鐵，必須經過烈火的焚燒和鐵匠的搥打，才能成為一把「完全」的寶劍。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white border-b border-gold-500/30 pb-2">三、 成長的呼召：從吃奶到吃乾糧的屬靈覺醒</h3>
+                    <p>作者嘆息，許多基督徒信主多年，本該作教導人的「師傅」，卻因為<strong class="text-white">「聽不進去」</strong>（聽覺遲鈍、屬靈懶惰），退化成了只能<strong class="text-white">「吃奶」</strong>的嬰孩。吃奶的信仰，是只要神賜福、只要聽好聽的安慰話，遇到挑戰就跌倒。</p>
+                    <p>但神呼召我們吃<strong class="text-white">「乾糧」</strong>！這意味著我們要去面對聖經中那些要求我們付代價、捨己、順服的真理。只有透過「習練」，我們的心竅才能通達，才能在這個複雜的時代中「分辨好歹」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 rounded-3xl">
+                <h3 class="font-display font-bold text-2xl mb-8 flex items-center text-white">
+                    <span class="section-icon">🎯</span> 應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <span><strong class="text-white block">坦然面對軟弱</strong>不需在神面前假裝剛強，把真實的掙扎、恐懼帶到禱告中。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <span><strong class="text-white block">重新定義苦難</strong>遭遇逆境時，問「主啊，祢要我在這困境中學到什麼樣的順從？」</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <span><strong class="text-white block">拒絕屬靈懶惰</strong>檢視信仰生活，開始研讀扎實的聖經真理，成為能教導人的「師傅」。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-3xl">
+                <h3 class="font-display font-bold text-2xl mb-8 flex items-center text-white">
+                    <span class="section-icon">⚡</span> 回應行動
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="w-2 h-2 bg-gold-500 rounded-full mt-2"></span>
+                        <span><strong class="text-white block">真實的禱告祭壇</strong>本週寫下一項自己長期深陷的「軟弱」或「恐懼」，將這件事完全交託給大祭司。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="w-2 h-2 bg-gold-500 rounded-full mt-2"></span>
+                        <span><strong class="text-white block">咀嚼乾糧的挑戰</strong>選擇卷覺得困難的聖經書卷（如羅馬書或希伯來書），每天閱讀一章。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="w-2 h-2 bg-gold-500 rounded-full mt-2"></span>
+                        <span><strong class="text-white block">刻意的順服練習</strong>在「自己的意思」與「神的意思」衝突時，刻意選擇順服神。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <h2 class="font-display font-bold text-3xl mb-12 flex items-center text-white">
+                <span class="section-icon">✨</span> 名言佳句
+            </h2>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gray-200 leading-relaxed italic mb-4">「恩典是白白的，但絕不是廉價的。它之所以代價高昂，是因為它呼召我們跟從耶穌基督。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gray-200 leading-relaxed italic mb-4">「現代基督徒最大的危機，就是我們渴望得著神的安慰，卻拒絕接受神的管教。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gray-200 leading-relaxed italic mb-4">「上帝在我們的歡愉中對我們微語，但在我們的痛苦中大聲疾呼。痛苦是上帝用來喚醒這個耳聾世界的麥克風。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— C.S. Lewis</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gray-200 leading-relaxed italic mb-4">「十字架是神恩典的極致展現；在十字架上，神親自擔當了我們不順服的代價。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gray-200 leading-relaxed italic mb-4">「屬靈的成長不會自動發生，它是一場『在同一方向上長期的順服』。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl break-inside-avoid">
+                    <p class="text-gray-200 leading-relaxed italic mb-4">「如果你的信仰從未要求你做出犧牲，那可能只是一個符合你心意的偶像。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="text-center pt-10 pb-20">
+            <div class="inline-block px-6 py-3 border border-red-500/30 rounded-full bg-red-500/5 text-red-400 text-sm">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </a>
+
+</body>
+</html>

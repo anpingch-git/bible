@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯1:1-12: 在風暴來臨前：看不見的屬靈爭戰與真實的信仰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        slate: {
+                            850: '#141c2e',
+                            950: '#0a0f1a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-bounce': 'gentle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0f1a;
+            color: #e2e8f0;
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #facc15;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: rgba(250, 204, 21, 0.1);
+            border-color: #facc15;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-lg border-b border-white/10 px-4 py-3 sm:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-gold-400 font-accent font-bold tracking-wider text-sm sm:text-base">
+                伯 1:1-12
+            </div>
+            <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-medium tracking-wide">
+                <a href="#prayer" class="nav-link text-white/70 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-white/70 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-white/70 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-white/70 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header Section -->
+    <header id="header" class="relative h-screen flex flex-col items-center justify-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-breathe w-full h-full">
+                <img src='image/img_cd1bdb69-3688-4ea0-80ea-7f2dbb971ba3.jpg' alt='media_1' class="w-full h-full object-cover banner-mask" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+            <p class="font-accent text-gold-400 tracking-[0.3em] uppercase text-sm mb-4 animate-pulse">Divine Revelation</p>
+            <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">
+                在風暴來臨前：<br>
+                <span class="text-gradient">看不見的屬靈爭戰</span><br>
+                與真實的信仰
+            </h1>
+            
+            <!-- Verse Section (Bouncing Text) -->
+            <div class="mt-12 animate-gentle-bounce">
+                <p class="text-white/90 text-lg sm:text-2xl font-display italic leading-relaxed max-w-2xl mx-auto">
+                    「耶和華問撒但說：『你曾用心察看我的僕人約伯沒有？地上再沒有人像他完全正直，敬畏神，遠離惡事。』」
+                </p>
+                <p class="text-gold-400 font-accent mt-4 font-bold tracking-widest">— 伯 1:8 —</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main class="relative z-10 px-6 sm:px-12 max-w-5xl mx-auto pb-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-24">
+            <div class="glass-panel p-8 sm:p-12 text-center relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col items-center gap-4 mb-8">
+                    <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                    <h2 class="font-display text-3xl font-bold text-white tracking-widest">禱告詞</h2>
+                </div>
+                <p class="text-xl sm:text-2xl text-slate-300 leading-loose italic max-w-3xl mx-auto">
+                    全能的主上帝，我們承認祢是掌管天地萬有的主宰，即使在我們看不見的屬靈世界裡，祢依然坐在寶座上。求祢鑒察我們的心，讓我們對祢的敬畏不是建立在物質的賜福或平順的環境上，而是單單因為祢是配得敬拜的神。當生命面對未知與試煉時，賜給我們約伯般的信心，堅固我們的腳步，使我們在順境中警醒，在逆境中信靠。奉主耶穌基督的名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="py-12 border-t border-white/5">
+            <div class="flex flex-col items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                <h2 class="font-display text-3xl font-bold text-white tracking-widest">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="glass-panel p-6 outline-btn flex flex-col gap-4 text-center">
+                    <span class="text-gold-500 font-accent font-bold">SECTION 01</span>
+                    <h3 class="text-xl font-bold text-white leading-snug">蒙福的表象與敬虔的內在</h3>
+                    <p class="text-white/40 text-sm">伯1:1-5</p>
+                </a>
+                <a href="#section-2" class="glass-panel p-6 outline-btn flex flex-col gap-4 text-center">
+                    <span class="text-gold-500 font-accent font-bold">SECTION 02</span>
+                    <h3 class="text-xl font-bold text-white leading-snug">天上的法庭與莫名的控告</h3>
+                    <p class="text-white/40 text-sm">伯1:6-9</p>
+                </a>
+                <a href="#section-3" class="glass-panel p-6 outline-btn flex flex-col gap-4 text-center">
+                    <span class="text-gold-500 font-accent font-bold">SECTION 03</span>
+                    <h3 class="text-xl font-bold text-white leading-snug">絕對的主權與恩典的界線</h3>
+                    <p class="text-white/40 text-sm">伯1:10-12</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1 Deep Dive -->
+        <section id="section-1" class="py-24">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="font-accent text-6xl font-black text-white/5 select-none">01</span>
+                <h3 class="font-display text-3xl sm:text-4xl font-bold text-gold-400">蒙福的表象與敬虔的內在</h3>
+            </div>
+            
+            <div class="grid gap-12">
+                <div class="border-l-4 border-gold-600 pl-8 py-2 bg-white/5 rounded-r-2xl p-6">
+                    <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        引用經文 (伯1:1-5)
+                    </h4>
+                    <p class="text-slate-300 leading-relaxed text-lg italic">
+                        烏斯地有一個人名叫約伯；那人完全正直，敬畏神，遠離惡事。他生了七個兒子，三個女兒。他的家產有七千羊，三千駱駝，五百對牛，五百母驢，並有許多僕婢。這人在東方人中就為至大。他的兒子按著日子，各在自己家裡設擺筵宴，就打發人去，請了他們的三個姊妹來，與他們一同吃喝。筵宴的日子過了，約伯打發人去叫他們自潔。他清早起來，按著他們眾人的數目獻燔祭；因為他說：「恐怕我兒子犯了罪，心中棄掉神。」約伯常常這樣行。
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵原文</h4>
+                        <p class="mb-4 text-xl font-bold">完全 (Tam / תָּם)</p>
+                        <p class="text-slate-400">指道德上的純潔、無可指責、誠實或完整。這不是指絕對的無罪，而是指一個人全心全意向著神，內外一致，品格正直。</p>
+                    </div>
+                    <div class="glass-panel p-8">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                        <p class="text-white font-bold italic mb-4">我們對神的敬虔，是否能經得起「極度富足」的考驗？</p>
+                        <p class="text-slate-400">人在患難中常常會呼求神，但在極度富足與順境中，卻極易忘記神。約伯不僅在財富上是「東方至大」，他的靈性更是時刻警醒。他不把安逸視為理所當然。</p>
+                    </div>
+                </div>
+
+                <div class="bg-gold-500/10 border border-gold-500/20 p-8 rounded-3xl">
+                    <div class="flex gap-6 items-start">
+                        <span class="text-4xl">💡</span>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-4">例證：富足的考驗</h4>
+                            <p class="text-slate-300">一位事業成功的企業家每天清晨五點跪在書房禱告。他對合夥人說：「我不是為了求更多財富而禱告，我禱告是求神保守我不被這一切財富奪走我對祂的愛。富足，往往比貧窮更考驗靈魂。」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 Deep Dive -->
+        <section id="section-2" class="py-24 border-t border-white/5">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="font-accent text-6xl font-black text-white/5 select-none">02</span>
+                <h3 class="font-display text-3xl sm:text-4xl font-bold text-gold-400">天上的法庭與莫名的控告</h3>
+            </div>
+            
+            <div class="grid gap-12">
+                <div class="border-l-4 border-gold-600 pl-8 py-2 bg-white/5 rounded-r-2xl p-6">
+                    <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        引用經文 (伯1:6-9)
+                    </h4>
+                    <p class="text-slate-300 leading-relaxed text-lg italic">
+                        有一天，神的眾子來侍立在耶和華面前，撒但也來在其中。耶和華問撒但說：「你從哪裡來？」撒但回答說：「我從地上走來走去，往返而來。」耶和華問撒但說：「你曾用心察看我的僕人約伯沒有？地上再沒有人像他完全正直，敬畏神，遠離惡事。」撒但回答耶和華說：「約伯敬畏神，豈是無故呢？
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵原文</h4>
+                        <p class="mb-4 text-xl font-bold">無故 (Chinnam / חִנָּם)</p>
+                        <p class="text-slate-400">徒然地、沒有原因地、出於白白地。撒但以此詞挑戰上帝：約伯不是白白愛祢的，他愛祢是因為有利可圖。</p>
+                    </div>
+                    <div class="glass-panel p-8">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                        <p class="text-white font-bold italic mb-4">你敬畏神，豈是「無故」呢？我們愛神，是因為神本身，還是因為神給的好處？</p>
+                        <p class="text-slate-400">撒但的控告直指人類信仰的核心動機。如果神不再賜福，甚至拿走一切，我們還會敬拜祂嗎？如果信仰只建立在交換條件上，那神就只是工具。</p>
+                    </div>
+                </div>
+
+                <div class="bg-gold-500/10 border border-gold-500/20 p-8 rounded-3xl">
+                    <div class="flex gap-6 items-start">
+                        <span class="text-4xl">🧸</span>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-4">例證：父親的禮物</h4>
+                            <p class="text-slate-300">孩子抱住父親說「我愛你」，眼睛卻盯著最新款玩具。當父親把玩具收起來，孩子立刻變臉。我們對天父的愛，是否也常常只是看著祂手中的「玩具」，而非祂的榮面？</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Deep Dive -->
+        <section id="section-3" class="py-24 border-t border-white/5">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="font-accent text-6xl font-black text-white/5 select-none">03</span>
+                <h3 class="font-display text-3xl sm:text-4xl font-bold text-gold-400">絕對的主權與恩典的界線</h3>
+            </div>
+            
+            <div class="grid gap-12">
+                <div class="border-l-4 border-gold-600 pl-8 py-2 bg-white/5 rounded-r-2xl p-6">
+                    <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        引用經文 (伯1:10-12)
+                    </h4>
+                    <p class="text-slate-300 leading-relaxed text-lg italic">
+                        你豈不是四面圈上籬笆圍護他和他的家，並他一切所有的嗎？他手所做的都蒙你賜福；他的家產也在地上增多。你且伸手毀他一切所有的；他必當面棄掉你。」耶和華對撒但說：「凡他所有的都在你手中；只是不可伸手加害於他。」於是撒但從耶和華面前退去。
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵原文</h4>
+                        <p class="mb-4 text-xl font-bold">籬笆 (Suwk / שׂוּך)</p>
+                        <p class="text-slate-400">指用柵欄或刺籬圍繞起來，引申為保護、遮蓋。撒但承認上帝的保護是絕對的，除非上帝允許撤除，否則仇敵無法觸碰。</p>
+                    </div>
+                    <div class="glass-panel p-8">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                        <p class="text-white font-bold italic mb-4">當神撤去我們生命外圍的「籬笆」時，我們還能信靠祂的良善嗎？</p>
+                        <p class="text-slate-400">苦難並不代表神失去了控制。上帝設定了明確的界線（「只是不可伸手加害於他」）。神允許苦難發生，是為了證明並熬煉那不妥協的真信心。</p>
+                    </div>
+                </div>
+
+                <div class="bg-gold-500/10 border border-gold-500/20 p-8 rounded-3xl">
+                    <div class="flex gap-6 items-start">
+                        <span class="text-4xl">🌳</span>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-4">例證：溫室與風雨</h4>
+                            <p class="text-slate-300">溫室裡的樹苗遇到微風就折斷。園丁必須將它移到戶外，任憑風吹雨打，迫使根深深扎進土壤。神有時撤去籬笆，是為了讓我們的根扎進基督的磐石裡。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="py-24 border-t border-white/5">
+            <div class="flex flex-col items-center gap-4 mb-16">
+                <svg class="w-12 h-12 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                </svg>
+                <h2 class="font-display text-4xl font-bold text-white tracking-widest text-center">講章文稿</h2>
+                <div class="w-24 h-1 bg-gold-500"></div>
+            </div>
+
+            <div class="prose prose-invert prose-gold max-w-none space-y-12">
+                <div class="glass-panel p-10 sm:p-16 leading-relaxed text-slate-300 text-lg">
+                    <h3 class="font-display text-3xl font-black text-white mb-8 border-b border-white/10 pb-4">
+                        經文範圍：伯1:1-12：在風暴來臨前：看不見的屬靈爭戰與真實的信仰
+                    </h3>
+                    
+                    <p class="mb-8">弟兄姊妹，平安。今天我們要進入一段充滿奧秘，也極具挑戰的經文。當我們談到約伯記，我們腦海中浮現的通常是極大的苦難、失去與痛苦。但在風暴真正席捲約伯的生命之前，聖經先向我們揭開了天上法庭的布幕。讓我們一起來看**約伯記1:1-12**的經文。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">第一、蒙福的表象與敬虔的內在</h4>
+                    <p class="mb-6">聖經一開始，給了約伯極高的評價：<span class="text-white font-bold">「那人完全正直，敬畏神，遠離惡事。」（伯1:1）</span></p>
+                    <p class="mb-6">約伯是一位極其富有的人，他是「東方至大」。我們往往覺得，人在苦難中特別需要神，但在極度順境與富足中，人最容易忘記神。然而約伯不是這樣，當他的兒女們在享受豐盛的筵席時，約伯做了一件事。</p>
+                    <p class="mb-8 font-bold text-white bg-white/5 p-4 rounded-xl border-l-4 border-gold-500 italic">「他清早起來，按著他們眾人的數目獻燔祭；因為他說：『恐怕我兒子犯了罪，心中棄掉神。』約伯常常這樣行。」（伯1:5）</p>
+                    <p class="mb-6">約伯擔心的不是兒女沒有錢花，而是擔心他們「心中棄掉神」。陶恕（A.W. Tozer）曾說：<span class="text-gold-400 italic">「聖潔不是做出來的，而是從我們與神深處的關係中湧流出來的。」</span> 約伯的敬畏不是表面功夫，而是深植在內心對神的看重。</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">第二、天上的法庭與莫名的控告</h4>
+                    <p class="mb-6">就在約伯享受在地上蒙福平靜的日子時，鏡頭轉到了天上。<span class="text-white font-bold">「耶和華問撒但說：『你曾用心察看我的僕人約伯沒有？地上再沒有人像他完全正直，敬畏神，遠離惡事。』」（伯1:8）</span></p>
+                    <p class="mb-6">這是全宇宙最高的稱讚！神甚至以約伯為榮。但這時，撒但提出了一個極其尖銳，甚至刺透所有基督徒心靈的控告：<span class="text-gold-400 font-black text-2xl tracking-tighter">「約伯敬畏神，豈是無故呢？」（伯1:9）</span></p>
+                    <p class="mb-6">提摩太·凱勒牧師說過：<span class="text-gold-300 italic">「如果你為了得到別的東西而尋求神，你就不會得到神。」</span> 我們到底是因為神是神而敬拜祂，還是因為祂能給我們好處而敬拜祂？如果今天神把我們手上的好處都拿走，我們還愛祂嗎？</p>
+
+                    <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-6">第三、絕對的主權與恩典的界線</h4>
+                    <p class="mb-6">撒但承認，上帝有絕對的保護，像「籬笆」一樣。但為了證明約伯的信心是真實的，上帝做了一個讓我們驚訝的決定。<span class="text-white font-bold">「耶和華對撒但說：『凡他所有的都在你手中；只是不可伸手加害於他。』」（伯1:12）</span></p>
+                    <p class="mb-8 font-bold text-gold-200">正如司布真（Charles Spurgeon）所言：「當你看不見神的手時，請相信神的心。」</p>
+                    
+                    <p class="mb-6">弟兄姊妹，我們可能不會經歷像約伯那樣戲劇性的災難，但我們每天都在面對「動機的考驗」。在風暴來臨前，求主堅固我們的根基。讓我們的信仰不是建立在「籬笆」和「恩典的禮物」上，而是建立在「賜恩典的主」自己身上。阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="py-24 grid md:grid-cols-2 gap-12 border-t border-white/5">
+            <div>
+                <h3 class="font-display text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-gold-600 rounded-full flex items-center justify-center text-sm italic">Dir</span>
+                    講道應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="glass-panel p-6 border-l-4 border-gold-500">
+                        <strong class="text-white block mb-2">1. 檢視信仰動機</strong>
+                        <p class="text-slate-400">誠實面對自己內心，問自己：「如果明天失去了一切，我還會來教會嗎？」</p>
+                    </li>
+                    <li class="glass-panel p-6 border-l-4 border-gold-500">
+                        <strong class="text-white block mb-2">2. 建立屬靈的警醒</strong>
+                        <p class="text-slate-400">不要在平順中放鬆。學習約伯，為自己和家人的屬靈光景常做預防性代禱。</p>
+                    </li>
+                    <li class="glass-panel p-6 border-l-4 border-gold-500">
+                        <strong class="text-white block mb-2">3. 認識苦難背後的主權</strong>
+                        <p class="text-slate-400">改變視角。明白神允許試煉來顯明信心，並且祂永遠畫定界線。</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-display text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-sm italic">Act</span>
+                    回應實踐行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-gold-400 font-bold">1</div>
+                        <p class="text-slate-300 pt-2"><span class="text-white font-bold">動機健檢：</span>本週在個人的禱告中，向神宣告：「主啊，即便這些都沒有成就，祢依然是我的神。」</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-gold-400 font-bold">2</div>
+                        <p class="text-slate-300 pt-2"><span class="text-white font-bold">築起代禱祭壇：</span>本週為你的家人或小組成員的靈性警醒具體代禱。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center text-gold-400 font-bold">3</div>
+                        <p class="text-slate-300 pt-2"><span class="text-white font-bold">降伏主權：</span>練習不發怨言，大聲宣告上帝的主權，相信祂的美意與界線。</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 p-8 glass-panel bg-gold-600/5">
+                    <h4 class="text-gold-400 font-bold mb-4 uppercase tracking-widest text-sm">結論關鍵字</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white/10 rounded-full text-white font-medium">敬虔 (Godliness)</span>
+                        <span class="px-4 py-2 bg-white/10 rounded-full text-white font-medium">動機 (Motivation)</span>
+                        <span class="px-4 py-2 bg-white/10 rounded-full text-white font-medium">主權 (Sovereignty)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24 border-t border-white/5">
+            <div class="flex flex-col items-center gap-4 mb-16 text-center">
+                <svg class="w-12 h-12 text-gold-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H13.017V9C13.017 7.34315 14.3601 6 16.017 6H19.017C20.6739 6 22.017 7.34315 22.017 9V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C4.46472 8 4.017 8.44772 4.017 9V12C4.017 12.5523 3.56928 13 3.017 13H2.017V9C2.017 7.34315 3.36014 6 5.017 6H8.017C9.67386 6 11.017 7.34315 11.017 9V15C11.017 18.3137 8.33071 21 5.017 21H3.017Z" />
+                </svg>
+                <h2 class="font-display text-3xl font-bold text-white tracking-widest">屬靈前輩佳句名言</h2>
+            </div>
+
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <!-- Quote Items -->
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「當你看不見神的手時，請相信神的心。」</p>
+                    <p class="text-gold-500 font-bold">— 查爾斯·司布真</p>
+                    <p class="text-xs text-white/30">《Morning and Evening》(早晚靈修靈糧)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「如果你為了得到別的東西而尋求神，你就不會得到神...但如果你單單尋求神，你不但會得到神，也會得到一切。」</p>
+                    <p class="text-gold-500 font-bold">— 提摩太·凱勒</p>
+                    <p class="text-xs text-white/30">《The Reason for God》(我為什麼相信)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「神給我們的一切禮物，若取代了神自己的位置，這些禮物就變成了偶像。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·加爾文</p>
+                    <p class="text-xs text-white/30">《Institutes of the Christian Religion》(基督教要義)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「廉價的恩典是我們教會的死敵。我們今天正在為昂貴的恩典爭戰。」</p>
+                    <p class="text-gold-500 font-bold">— 潘霍華</p>
+                    <p class="text-xs text-white/30">《The Cost of Discipleship》(作門徒的代價)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「苦難不是神缺席的證據，而是神在我們生命中動工的記號。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·史托德</p>
+                    <p class="text-xs text-white/30">《The Cross of Christ》(基督的十字架)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「聖潔不是做出來的，而是從我們與神深處的關係中湧流出來的。」</p>
+                    <p class="text-gold-500 font-bold">— 陶恕</p>
+                    <p class="text-xs text-white/30">《The Knowledge of the Holy》(渴慕神)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「神常常在我們不覺得祂同在的時候，成就祂最偉大的工作。」</p>
+                    <p class="text-gold-500 font-bold">— 盧雲</p>
+                    <p class="text-xs text-white/30">《The Return of the Prodigal Son》(浪子回頭)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「真正的順服，是在漫長的日子裡，日復一日地向著同一個方向前進。」</p>
+                    <p class="text-gold-500 font-bold">— 畢德生</p>
+                    <p class="text-xs text-white/30">《A Long Obedience in the Same Direction》</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「天國就在我們能將自己完全交託給上帝主權的地方。」</p>
+                    <p class="text-gold-500 font-bold">— 魏樂德</p>
+                    <p class="text-xs text-white/30">《The Divine Conspiracy》(上帝的悄悄話)</p>
+                </div>
+                <div class="glass-panel p-8 break-inside-avoid hover:border-gold-500/50 transition-colors">
+                    <p class="text-xl text-white font-serif mb-4 leading-relaxed">「信心不是沒有懷疑，而是在懷疑中依然選擇順服神的真理。」</p>
+                    <p class="text-gold-500 font-bold">— 唐崇榮</p>
+                    <p class="text-xs text-white/30">《信仰、試煉與得勝》</p>
+                </div>
+            </div>
+
+            <!-- Caution Message -->
+            <div class="mt-24 text-center">
+                <p class="text-white/20 text-xs tracking-widest uppercase">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 hover:bg-gold-500 text-slate-950 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 active:scale-95 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

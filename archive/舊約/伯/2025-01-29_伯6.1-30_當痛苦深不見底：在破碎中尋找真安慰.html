@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯6:1-30：當痛苦深不見底：在破碎中尋找真安慰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0c',
+                        surface: '#16161a',
+                        accent: '#c4b5fd',
+                        muted: '#94a3b8',
+                        gold: '#fbbf24'
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-jump': 'gentleJump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        gentleJump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(22, 22, 26, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(196, 181, 253, 0.3);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ddd6fe, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .shimmer {
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-accent/30">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-display font-bold text-sm md:text-base text-accent tracking-tighter">伯 6:1-30</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-widest uppercase">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Hero Section -->
+    <header id="top" class="relative w-full h-[85vh] overflow-hidden flex items-center justify-center pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_5d40467d-cd16-4d11-a0ed-14750f822296.jpg' alt='Banner' class="w-full h-full object-cover animate-breathe grayscale-[40%]" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/40 via-dark/20 to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-6 leading-[1.1] tracking-tight drop-shadow-2xl">
+                當痛苦深不見底：<br/><span class="text-gradient">在破碎中尋找真安慰</span>
+            </h1>
+            <div class="animate-gentle-jump mt-12 inline-block">
+                <p class="text-xl md:text-2xl font-display font-light text-white/90 max-w-2xl mx-auto italic">
+                    「那將要灰心、不敬畏全能者的人，他的朋友當以慈愛待他。」
+                </p>
+                <p class="mt-2 text-gold font-semibold tracking-widest">— 約伯記 6:14</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-20 flex flex-col items-center text-center">
+            <div class="mb-8 p-4 bg-accent/10 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-4.69a2 2 0 01-1.097-1.78l-.135-9.7a2 2 0 011.025-1.792L11 2.03a2 2 0 012 0l8.435 4.798a2 2 0 011.025 1.792l-.135 9.7a2 2 0 01-1.097 1.78L12 21z" />
+                </svg>
+            </div>
+            <h2 class="font-display text-3xl font-bold mb-8 tracking-widest text-white">禱告詞</h2>
+            <div class="max-w-2xl text-lg md:text-xl text-muted leading-relaxed font-light italic">
+                親愛的天父，當我們面對深不見底的痛苦，甚至言語急躁、幾乎失去盼望時，求祢以無限的憐憫托住我們。主啊，赦免我們時常帶著優越感與大道理去「糾正」受苦者，卻忘了他們最需要的是同在與慈愛。求聖靈賜給我們一雙能聆聽痛楚的耳朵，以及一顆願意陪伴在灰燼中的心，讓我們能成為別人生命中流淌活水的溪流，而非令人失望的乾地。奉主耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigator -->
+        <section id="outline" class="py-20 border-t border-white/5">
+            <div class="flex items-center gap-4 mb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <h2 class="font-display text-3xl font-bold tracking-widest uppercase">大綱導覽</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="#section1" class="group p-8 bento-card relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="text-6xl font-black">01</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">無法承受的重擔</h3>
+                    <p class="text-muted text-sm mb-4">伯6:1-7 — 當痛苦超越了言語</p>
+                    <div class="w-12 h-1 bg-accent rounded-full"></div>
+                </a>
+                <a href="#section2" class="group p-8 bento-card relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="text-6xl font-black">02</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">絕望中的呼求</h3>
+                    <p class="text-muted text-sm mb-4">伯6:8-13 — 當死亡成為最後的盼望</p>
+                    <div class="w-12 h-1 bg-accent rounded-full"></div>
+                </a>
+                <a href="#section3" class="group p-8 bento-card relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="text-6xl font-black">03</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">乾涸的溪水</h3>
+                    <p class="text-muted text-sm mb-4">伯6:14-23 — 當屬靈友誼帶來二度傷害</p>
+                    <div class="w-12 h-1 bg-accent rounded-full"></div>
+                </a>
+                <a href="#section4" class="group p-8 bento-card relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <span class="text-6xl font-black">04</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-accent transition-colors">渴望真實的聆聽</h3>
+                    <p class="text-muted text-sm mb-4">伯6:24-30 — 在指責中尋求公允</p>
+                    <div class="w-12 h-1 bg-accent rounded-full"></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline Sections -->
+        <div class="space-y-32 py-20">
+            <!-- Section 1 -->
+            <section id="section1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <span class="text-gold font-bold text-5xl mb-4 block opacity-50">01.</span>
+                        <h2 class="text-3xl font-black mb-6 leading-tight">無法承受的重擔<br/><span class="text-accent text-xl">當痛苦超越了言語</span></h2>
+                        <div class="p-6 bg-white/5 rounded-2xl border-l-4 border-accent">
+                            <p class="text-sm italic text-muted">「惟願我的煩惱稱一稱，我一切的災害放在天平裡；現今都比海沙更重...」</p>
+                            <p class="text-xs mt-2 text-right">— 伯6:1-7</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵原文 (Keyword)
+                            </h4>
+                            <p class="text-lg"><strong class="text-white">煩惱 (כַּעַס / ka'as)</strong>：原文意指「極度的悲痛、哀怨、激憤」。這不僅是普通的煩憂，而是因外在極大壓力或不公對待所引發的深層情緒反彈。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵問題與解析
+                            </h4>
+                            <div class="space-y-4">
+                                <p class="text-gold font-semibold">Q: 為什麼約伯承認自己的「言語急躁」？我們該如何看待受苦者急躁的話語？</p>
+                                <p class="text-muted leading-relaxed">人在極端痛苦中，大腦的理性往往被痛楚淹沒。約伯用「比海沙更重」來具象化他的痛，他急躁的言語是痛苦的警報聲，而不是神學論文。我們不應對受苦者在劇痛中發出的吶喊進行字面上的神學審查。</p>
+                            </div>
+                        </div>
+                        <div class="p-8 bento-card shimmer border border-white/10">
+                            <h4 class="text-gold font-bold mb-3 italic">「受苦者的呼喊不是對神學的挑戰，而是對愛的渴求。」</h4>
+                            <p class="text-sm text-muted">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3">
+                        <span class="text-gold font-bold text-5xl mb-4 block opacity-50 text-right">02.</span>
+                        <h2 class="text-3xl font-black mb-6 leading-tight text-right">絕望中的呼求<br/><span class="text-accent text-xl">當死亡成為最後的盼望</span></h2>
+                        <div class="p-6 bg-white/5 rounded-2xl border-r-4 border-accent text-right">
+                            <p class="text-sm italic text-muted">「就是願神肯把它壓碎，伸手將我剪除。我因沒有違棄那聖者的言語，就仍以此為安慰...」</p>
+                            <p class="text-xs mt-2">— 伯6:8-13</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵原文 (Keyword)
+                            </h4>
+                            <p class="text-lg"><strong class="text-white">盼望/切望 (תִּקְוָה / tiqvah)</strong>：原意為「期待、盼望、等待的繩索」。約伯在這裡的「盼望」竟然是死亡，顯示他維持生命的那條希望之繩已經斷裂。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵問題與解析
+                            </h4>
+                            <div class="space-y-4">
+                                <p class="text-gold font-semibold">Q: 基督徒求死，難道不是得罪神嗎？約伯的心態是軟弱還是誠實？</p>
+                                <p class="text-muted leading-relaxed">約伯求死並非出於對神的悖逆，而是出於對自身極限的誠實認知。神完全能承受我們在絕望中的崩潰；誠實的哀歌，往往是信徒在最黑暗時刻緊緊抓住神的另一種方式。</p>
+                            </div>
+                        </div>
+                        <div class="p-8 bento-card shimmer border border-white/10">
+                            <h4 class="text-gold font-bold mb-3 italic">「我們很容易在陽光普照時高唱信心之歌，但在黑夜中仍能轉向神傾吐絕望，那才是真實的信仰。」</h4>
+                            <p class="text-sm text-muted">— 司布真 (Charles Spurgeon)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <span class="text-gold font-bold text-5xl mb-4 block opacity-50">03.</span>
+                        <h2 class="text-3xl font-black mb-6 leading-tight">乾涸的溪水<br/><span class="text-accent text-xl">當屬靈友誼帶來二度傷害</span></h2>
+                        <div class="p-6 bg-white/5 rounded-2xl border-l-4 border-accent">
+                            <p class="text-sm italic text-muted">「我的弟兄詭詐，好像溪水...炎熱趕到便從原處乾涸...現在你們正是這樣。」</p>
+                            <p class="text-xs mt-2 text-right">— 伯6:14-23</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵原文 (Keyword)
+                            </h4>
+                            <p class="text-lg"><strong class="text-white">慈愛 (חֶסֶד / chesed)</strong>：意指「忠貞的愛、立約的慈愛、恩慈」。代表著即使對方不可愛或陷入軟弱，依然堅定不移的陪伴。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵問題與解析
+                            </h4>
+                            <div class="space-y-4">
+                                <p class="text-gold font-semibold">Q: 為什麼約伯將朋友比喻為「詭詐的溪水」？</p>
+                                <p class="text-muted leading-relaxed">在沙漠中，旅人看見河道會充滿期待，走近卻發現是乾涸的，這種打擊最致命。朋友們帶著神學正確而來，卻缺乏「慈愛 (chesed)」，急於糾正，反而成了令人心寒的乾涸溪水。</p>
+                            </div>
+                        </div>
+                        <div class="p-8 bento-card shimmer border border-white/10">
+                            <h4 class="text-gold font-bold mb-3 italic">「我們欠別人的第一份服事，就是聆聽他們。那些不能傾聽弟兄的人，很快就會連神的話也聽不進去。」</h4>
+                            <p class="text-sm text-muted">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="section4" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3">
+                        <span class="text-gold font-bold text-5xl mb-4 block opacity-50 text-right">04.</span>
+                        <h2 class="text-3xl font-black mb-6 leading-tight text-right">渴望真實的聆聽<br/><span class="text-accent text-xl">在指責中尋求公允</span></h2>
+                        <div class="p-6 bg-white/5 rounded-2xl border-r-4 border-accent text-right">
+                            <p class="text-sm italic text-muted">「絕望人的言語既然如風，你們還想要駁倒嗎？你們想為孤兒拈鬮，以朋友當貨物。」</p>
+                            <p class="text-xs mt-2">— 伯6:24-30</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵原文 (Keyword)
+                            </h4>
+                            <p class="text-lg"><strong class="text-white">明白/教導 (בִּין / bin)</strong>：意指「分辨、理解、洞察」。約伯要求的不是敷衍的安慰，而是深度的理解與分辨。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-accent rounded-full"></span> 關鍵問題與解析
+                            </h4>
+                            <div class="space-y-4">
+                                <p class="text-gold font-semibold">Q: 約伯說「絕望人的言語既然如風，你們還想要駁倒嗎？」這對我們的輔導有何啟發？</p>
+                                <p class="text-muted leading-relaxed">絕望中的人往往會說出極端、不合邏輯的話。這些話「如風」，是情緒的宣洩。我們必須學會分辨：什麼時候該為真理辯護，什麼時候該接納那只是情緒的出口。</p>
+                            </div>
+                        </div>
+                        <div class="p-8 bento-card shimmer border border-white/10">
+                            <h4 class="text-gold font-bold mb-3 italic">「牧養的核心，不是提供解答，而是成為一個與人同在的空間，讓人在這空間裡遇見神。」</h4>
+                            <p class="text-sm text-muted">— 盧雲 (Henri Nouwen)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="py-24 border-y border-white/5 bg-surface/30 rounded-[3rem] px-8 md:px-16">
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-12 flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    <h2 class="font-display text-4xl font-black tracking-tight">講道文稿</h2>
+                </div>
+
+                <article class="prose prose-invert prose-lg max-w-none space-y-8 text-white/80 leading-relaxed">
+                    <p class="text-2xl font-bold text-white mb-8 border-b border-accent/20 pb-4">伯6:1-30：當痛苦深不見底：在破碎中尋找真安慰</p>
+                    
+                    <p>弟兄姊妹們，當我們翻開約伯記第六章，我們聽到的是一個靈魂被撕裂的聲音。約伯剛剛經歷了喪失兒女、破產、全身長滿毒瘡的極大災難，而他的朋友以利法給他的第一個回應，卻是暗指約伯受苦是因為犯罪。約伯在第六章的爆發，是面對極大痛苦與朋友誤解時的真實吶喊。</p>
+
+                    <h3 class="text-accent text-2xl font-black mt-12 mb-4">第一、無法承受的重擔：當痛苦超越了言語</h3>
+                    <p>約伯一開口就說：「<strong class="text-gold">惟願我的煩惱稱一稱，我一切的災害放在天平裡；現今都比海沙更重，所以我的言語急躁。</strong>」。請注意，約伯承認自己的言語「急躁」。為什麼？因為「全能者的箭射入我身」。</p>
+                    <p>當一個人處在極端的痛苦中，他的理性往往會短路，他的話語不再是四平八穩的神學宣告，而是帶著血與淚的哀鳴。我們常犯的錯誤是，拿著放大鏡去檢視受苦者急躁的言語，卻對壓在他身上那「比海沙更重」的痛楚視而不見。</p>
+
+                    <h3 class="text-accent text-2xl font-black mt-12 mb-4">第二、絕望中的呼求：當死亡成為最後的盼望</h3>
+                    <p>約伯的痛來到了一個極點，他發出了令人震驚的祈求：「<strong class="text-gold">就是願神肯把它壓碎，伸手將我剪除。</strong>」。他渴望死亡。我們常常害怕面對這種絕望，以為信徒求死就是大逆不道。但約伯極其誠實：<strong class="text-gold">「我的氣力豈是石頭的氣力？我的肉體豈是銅的呢？」</strong>。</p>
+                    <p>神從來不要求我們假裝堅強。在神面前承認「我撐不下去了」，往往是經歷神恩典的起點。哪怕是求死，他也知道主權在神手中。神能接住我們崩潰時的每一滴眼淚。</p>
+
+                    <h3 class="text-accent text-2xl font-black mt-12 mb-4">第三、乾涸的溪水：當屬靈友誼帶來二度傷害</h3>
+                    <p>在這裡，我們讀到了整段經文中最核心的<strong class="text-accent underline underline-offset-8">關鍵金句：「那將要灰心、不敬畏全能者的人，他的朋友當以慈愛待他。」</strong>。</p>
+                    <p>約伯把朋友們比喻為「<strong class="text-gold">詭詐，好像溪水</strong>」。沙漠裡的旅人又渴又累，遠遠看到溪谷，充滿盼望地跑過去，卻發現因為天氣炎熱，溪水早就乾涸了。這就是約伯的感受。他期待朋友們帶來立約的「慈愛 (Chesed)」，帶來一杯涼水，結果朋友們帶來的卻是冷冰冰的定罪與大道理。</p>
+
+                    <h3 class="text-accent text-2xl font-black mt-12 mb-4">第四、渴望真實的聆聽：在指責中尋求公允</h3>
+                    <p>約伯的朋友們犯了一個大錯：他們把約伯情緒崩潰時說的話，當成了異端邪說來進行神學辯論。約伯說：這只是如風的言語啊！你們為什麼要抓著我的隻字片語不放呢？「<strong class="text-gold">現在請你們看看我，我決不當面撒謊。</strong>」。約伯渴求的，是一雙願意看進他靈魂深處的眼睛。</p>
+
+                    <div class="mt-16 p-10 bg-accent/5 rounded-3xl border border-accent/20">
+                        <h4 class="text-2xl font-bold text-accent mb-6">結論與應用</h4>
+                        <ul class="space-y-4 text-muted">
+                            <li class="flex gap-4"><span class="text-gold">●</span> 放棄「糾正」，學習「聆聽」。</li>
+                            <li class="flex gap-4"><span class="text-gold">●</span> 擁抱哀歌，向神誠實。</li>
+                            <li class="flex gap-4"><span class="text-gold">●</span> 活出立約的慈愛 (Chesed)。</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+                <h2 class="font-display text-3xl font-bold tracking-widest uppercase">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote Cards -->
+                <div class="p-8 bento-card border-l-4 border-accent">
+                    <p class="text-lg font-medium mb-4 italic">「受苦者的呼喊不是對神學的挑戰，而是對愛的渴求。」</p>
+                    <p class="text-sm text-gold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-gold">
+                    <p class="text-lg font-medium mb-4 italic">「我們很容易在陽光普照時高唱信心之歌，但在黑夜中仍能轉向神傾吐絕望，那才是真實的信仰。」</p>
+                    <p class="text-sm text-gold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-accent">
+                    <p class="text-lg font-medium mb-4 italic">「我們欠別人的第一份服事，就是聆聽他們。那些不能傾聽弟兄的人，很快就會連神的話也聽不進去。」</p>
+                    <p class="text-sm text-gold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-gold">
+                    <p class="text-lg font-medium mb-4 italic">「牧養的核心，不是提供解答，而是成為一個與人同在的空間，讓人在這空間裡遇見神。」</p>
+                    <p class="text-sm text-gold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-accent">
+                    <p class="text-lg font-medium mb-4 italic">「神並非不知道我們的痛苦，祂容許我們在祂面前發出最真實的哀鳴...」</p>
+                    <p class="text-sm text-gold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-gold">
+                    <p class="text-lg font-medium mb-4 italic">「真正的安慰者不會急於堵住受苦者的嘴，而是願意陪著他們一起坐在灰燼中。」</p>
+                    <p class="text-sm text-gold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-accent">
+                    <p class="text-lg font-medium mb-4 italic">「在試煉中最艱難的，不是外在的失去，而是感覺被神遺棄；但正是在這種感覺中，神與我們最為親近。」</p>
+                    <p class="text-sm text-gold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-gold">
+                    <p class="text-lg font-medium mb-4 italic">「屬靈的陪伴需要極大的謙卑；我們必須承認自己沒有答案，只有愛與同在。」</p>
+                    <p class="text-sm text-gold">— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-accent">
+                    <p class="text-lg font-medium mb-4 italic">「當苦難臨到，世界會說放棄吧，但基督的愛呼喚我們...」</p>
+                    <p class="text-sm text-gold">— 葛理翰 (Billy Graham)</p>
+                </div>
+                <div class="p-8 bento-card border-l-4 border-gold">
+                    <p class="text-lg font-medium mb-4 italic">「不要試圖用廉價的安慰來包裹深沉的傷口；唯有神的同在，透過我們沉默的陪伴，才能帶來真正的醫治。」</p>
+                    <p class="text-sm text-gold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Section -->
+        <section class="py-24 border-t border-white/5">
+            <h2 class="font-display text-3xl font-bold tracking-widest text-center mb-12">回應與實踐行動</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bento-card bg-accent/10 border-accent/20">
+                    <h5 class="font-bold text-accent mb-4">1. 寫下誠實哀歌</h5>
+                    <p class="text-muted text-sm">本週花15分鐘，不加修飾地寫下你目前生命中的壓力，當作禱告獻給神。</p>
+                </div>
+                <div class="p-8 bento-card bg-gold/10 border-gold/20">
+                    <h5 class="font-bold text-gold mb-4">2. 靜默陪伴練習</h5>
+                    <p class="text-muted text-sm">探望一位正在經歷低谷的朋友，挑戰自己「只傾聽，不給建議，不說大道理」。</p>
+                </div>
+                <div class="p-8 bento-card bg-white/5 border-white/10">
+                    <h5 class="font-bold text-white mb-4">3. 為「乾涸」禱告</h5>
+                    <p class="text-muted text-sm">求聖靈光照我們，是否曾用僵化的神學傷害受苦的人？為此認罪並祈求憐憫的心。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="mt-20 py-10 text-center border-t border-white/5">
+            <p class="text-muted text-xs tracking-widest uppercase opacity-40">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-accent hover:bg-gold text-dark rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 z-50 animate-float group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:scale-125 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯24:1-25: 當公義遲到時：在不完美的世界中尋求隱藏的上帝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            surface: '#121216',
+                            accent: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-subtle': 'bounceSubtle 3s ease-in-out infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        bounceSubtle: {
+                            '0%, 100%': { transform: 'translateY(-2px)' },
+                            '50%': { transform: 'translateY(2px)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(18, 18, 22, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .banner-mask {
+            background: linear-gradient(to bottom, transparent 0%, #0a0a0c 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-anchor {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-gold-400 font-display font-bold text-sm md:text-base">約伯記 24:1-25</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header id="top" class="relative h-[60vh] md:h-[85vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0 animate-pulse-slow">
+            <img src='image/img_c6eebcb7-6abc-4963-a559-a26ed4e7aaad.jpg' alt='media_1' class="w-full h-full object-cover opacity-60 scale-105" />
+        </div>
+        <div class="absolute inset-0 banner-mask z-10"></div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 leading-tight tracking-tight text-white drop-shadow-2xl">
+                當公義遲到時<br>
+                <span class="text-2xl md:text-4xl font-light text-gray-300 block mt-4">在不完美的世界中尋求隱藏的上帝</span>
+            </h1>
+            
+            <!-- Animated Golden Verse -->
+            <div class="mt-12 animate-bounce-subtle">
+                <p class="text-lg md:text-2xl text-gold-300 font-display italic tracking-wider max-w-2xl mx-auto leading-relaxed">
+                    「全能者既定期罰惡，為何不使認識他的人看見那日子呢？」
+                </p>
+                <p class="text-sm md:text-base text-gold-500 mt-2 font-outfit uppercase tracking-widest">— 約伯記 24:1</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor">
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                    <span class="bg-gold-600/20 p-2 rounded-lg">🙏</span>
+                    <span class="gradient-text">禱告詞</span>
+                </h2>
+                <div class="text-lg md:text-xl leading-relaxed text-gray-300 italic font-serif space-y-4">
+                    <p>主啊，在我們所處的這個充滿不公與苦難的世界裡，我們有時就像約伯一樣，因看不見祢的作為而感到迷惘與痛苦。</p>
+                    <p>當我們看見惡人亨通、無辜者受苦，我們的心不禁發出呼求：「祢在哪裡？」</p>
+                    <p>求祢賜我們屬靈的眼光，使我們在黑暗中仍能堅信祢是那位掌權的上帝。教導我們在祢看似隱藏的日子裡，依然信靠祢的信實；在公義似乎遲延的時候，依然懷抱盼望。奉主耶穌基督的名求，阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="section-anchor">
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                <span class="bg-blue-600/20 p-2 rounded-lg">📜</span>
+                <span class="gradient-text">分段大綱與深入解析</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="glass-card hover:border-gold-500/50 transition-all p-5 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-outfit text-gold-500 tracking-widest uppercase mb-2 block">Part I</span>
+                        <h3 class="font-bold text-gray-100 group-hover:text-gold-400 transition-colors">視而不見的苦難</h3>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4 italic">伯 24:1-12</span>
+                </a>
+                <a href="#part2" class="glass-card hover:border-gold-500/50 transition-all p-5 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-outfit text-gold-500 tracking-widest uppercase mb-2 block">Part II</span>
+                        <h3 class="font-bold text-gray-100 group-hover:text-gold-400 transition-colors">掩耳盜鈴的罪惡</h3>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4 italic">伯 24:13-17</span>
+                </a>
+                <a href="#part3" class="glass-card hover:border-gold-500/50 transition-all p-5 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-outfit text-gold-500 tracking-widest uppercase mb-2 block">Part III</span>
+                        <h3 class="font-bold text-gray-100 group-hover:text-gold-400 transition-colors">終極的審判</h3>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4 italic">伯 24:18-25</span>
+                </a>
+            </div>
+
+            <!-- Part 1 Deep Dive -->
+            <div id="part1" class="space-y-12 mb-20 section-anchor">
+                <div class="border-l-4 border-gold-600 pl-6">
+                    <h3 class="text-2xl font-bold text-white mb-4 font-display">第一段：視而不見的苦難：無聲的哀求與隱藏的公義</h3>
+                    <p class="text-gold-500 font-medium mb-6">經文範圍：伯 24:1-12</p>
+                </div>
+                
+                <div class="bg-dark-surface p-6 rounded-2xl border border-gray-800 text-gray-400 italic text-sm leading-relaxed mb-8">
+                    1 全能者既定期罰惡，為何不使認識他的人看見那日子呢？ 2 有人挪移地界，搶奪群畜而牧養... 12 在多民的城內有人不斷地唉哼，受傷的人哀號；神卻不理會那惡人的愚妄。
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">🔤</span> 關鍵原文
+                        </h4>
+                        <p class="text-gray-300">「定期」（Hebrew: עֵת / 'eth'）：指特定的時間。約伯質疑：如果上帝真有審判的時間表，為何信徒卻總是看不見它兌現？</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">❓</span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300">為何上帝似乎對弱勢群體的呼求充耳不聞？上帝的「隱藏」並非「缺席」，是在挑戰我們是否只能在看見報應時才相信祂。</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500">
+                        <h4 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">📖</span> 例證小故事
+                        </h4>
+                        <p class="text-gray-300">二戰集中營牆上的刻字：「我相信上帝，即使祂沉默不語。」這是在苦難中對上帝隱藏之時最深沉的信靠。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-purple-500">
+                        <h4 class="text-purple-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">✨</span> 佳句引用
+                        </h4>
+                        <p class="text-gray-300 italic">「如果我們的心智容量小到無法理解上帝為何允許苦難發生，我們又憑什麼認為，我們的心智能夠判斷上帝對這些苦難『沒有』完美的理由呢？」— 提摩太·凱勒</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 Deep Dive -->
+            <div id="part2" class="space-y-12 mb-20 section-anchor">
+                <div class="border-l-4 border-gold-600 pl-6">
+                    <h3 class="text-2xl font-bold text-white mb-4 font-display">第二段：掩耳盜鈴的罪惡：抗拒真光與黑暗中的狂歡</h3>
+                    <p class="text-gold-500 font-medium mb-6">經文範圍：伯 24:13-17</p>
+                </div>
+                
+                <div class="bg-dark-surface p-6 rounded-2xl border border-gray-800 text-gray-400 italic text-sm leading-relaxed mb-8">
+                    13 又有人悖逆光明，不認識光明的道... 15 姦夫等候黃昏，說：必無眼能見我... 17 他們看早晨如幽暗，因為他們曉得幽暗的驚駭。
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">🔤</span> 關鍵原文
+                        </h4>
+                        <p class="text-gray-300">「悖逆」（Hebrew: מָרַד / marad）：背叛。「光明」（Hebrew: אוֹר / 'owr）：光。惡人不僅是做壞事，本質上是主動「反叛光」。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">❓</span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300">為何惡人總是以為能在黑暗中躲避神的眼目？罪的本質就是自欺欺人，以為逃過人的眼目就等於逃過了神的審判。</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500">
+                        <h4 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">📖</span> 例證小故事
+                        </h4>
+                        <p class="text-gray-300">鴕鳥心態。現代人在網路匿名背後犯罪，以為螢幕就是他們的「黑夜」。但在全知的上帝面前，所有的黑夜都如白晝般明朗。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-purple-500">
+                        <h4 class="text-purple-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">✨</span> 佳句引用
+                        </h4>
+                        <p class="text-gray-300 italic">「罪惡總是披著自欺的外衣，但在上帝那穿透一切的真光面前，沒有任何黑暗可以隱藏。」— 約翰·加爾文</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 Deep Dive -->
+            <div id="part3" class="space-y-12 mb-20 section-anchor">
+                <div class="border-l-4 border-gold-600 pl-6">
+                    <h3 class="text-2xl font-bold text-white mb-4 font-display">第三段：終極的審判：短暫的安穩與上帝的掌權</h3>
+                    <p class="text-gold-500 font-medium mb-6">經文範圍：伯 24:18-25</p>
+                </div>
+                
+                <div class="bg-dark-surface p-6 rounded-2xl border border-gray-800 text-gray-400 italic text-sm leading-relaxed mb-8">
+                    18 這些惡人如同浮萍被水沖沒... 22 然而神用能力保全有勢力的人... 24 他們被高舉，不過片時，就沒有了；他們降為卑，被除滅...
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">🔤</span> 關鍵原文
+                        </h4>
+                        <p class="text-gray-300">「片時」（Hebrew: מְעַט / me'at）：短時間。惡人的興旺在永恆的座標系裡，不過是轉瞬即逝的火花。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">❓</span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300">看見惡人安穩時，該如何調整視角？我們需要將眼光從「當下」轉向「終極」。上帝的公義在於最終萬物的復興與審判。</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500">
+                        <h4 class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">📖</span> 例證小故事
+                        </h4>
+                        <p class="text-gray-300">懸疑電影中的反派往往在前半段佔優。若在中間離場，會以為邪惡得勝。唯有看完全片，才知導演的精心安排。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-purple-500">
+                        <h4 class="text-purple-400 font-bold mb-3 flex items-center gap-2">
+                            <span class="text-xl">✨</span> 佳句引用
+                        </h4>
+                        <p class="text-gray-300 italic">「不要因惡人暫時的繁榮而動搖；上帝的磨坊轉得很慢，但磨得極細。」— 查爾斯·司布真</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-anchor">
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                <span class="bg-emerald-600/20 p-2 rounded-lg">🎤</span>
+                <span class="gradient-text">講章文稿</span>
+            </h2>
+            <div class="glass-card p-8 md:p-16 rounded-[2rem] leading-relaxed text-gray-300 space-y-10">
+                <h3 class="text-3xl md:text-4xl font-display font-bold text-white text-center mb-12">
+                    當公義遲到時：<br class="md:hidden">在不完美的世界中尋求隱藏的上帝
+                </h3>
+
+                <p class="text-lg">弟兄姊妹們，平安。今天我們要來探討一個每個人在信仰歷程中都會遇到，卻往往難以解答的問題。如果你打開新聞，看見詐騙集團住著豪宅，而誠實工作的窮人卻流離失所；看見殘酷的戰爭奪去無辜孩童的生命，而發動戰爭的人卻安享晚年。你的心裡會不會浮現一個巨大的問號？</p>
+
+                <p class="text-lg">今天我們所讀的約伯記第24章，正是約伯在極度痛苦與困惑中，向上帝發出的呼喊。這段經文的<span class="text-gold-400 font-bold underline decoration-gold-600 decoration-2 underline-offset-4">關鍵金句</span>落在第1節：<span class="text-white font-bold block mt-4 p-4 border-l-4 border-gold-500 bg-gold-900/10">「全能者既定期罰惡，為何不使認識他的人看見那日子呢？」</span></p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold-400 font-display">第一、視而不見的苦難：無聲的哀求與隱藏的公義</h4>
+                    <p class="text-lg">約伯像是一位社會記者，無情地揭露了世間的慘況：<span class="text-white font-bold italic">「他們拉去孤兒的驢，強取寡婦的牛為當頭。」</span> 窮人在曠野挨餓受凍，被壓榨勞力，城裡充滿了受傷之人的哀號。而最令約伯痛苦的是：<span class="text-gold-300 font-bold">「神卻不理會那惡人的愚妄。」</span></p>
+                    <p class="text-lg">弟兄姊妹，上帝的公義絕非微波爐，按下去立刻就有。提摩太·凱勒牧師說：<span class="italic">「如果我們的心智容量小到無法理解上帝為何允許苦難發生，我們又憑什麼認為，我們的心智能夠判斷上帝對這些苦難『沒有』完美的理由呢？」</span></p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold-400 font-display">第二、掩耳盜鈴的罪惡：抗拒真光與黑暗中的狂歡</h4>
+                    <p class="text-lg">罪的本質就是自欺欺人。殺人犯、姦夫、盜賊說：<span class="text-white font-bold italic">「必無眼能見我」</span>。約翰·加爾文提醒我們：<span class="text-gold-300 font-bold">「罪惡總是披著自欺的外衣，但在上帝那穿透一切的真光面前，沒有任何黑暗可以隱藏。」</span> 我們也必須檢視自己，在無人知曉的思想裡，是否也在享受黑暗？</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold-400 font-display">第三、終極的審判：短暫的安穩與上帝的掌權</h4>
+                    <p class="text-lg">約伯很誠實，他承認神有時會保全有勢力的人。但結論是：<span class="text-white font-bold">「他們被高舉，不過片時，就沒有了。」</span> 我們正處在歷史電影的中間，必須耐心等待導演的結局。上帝的磨坊轉得很慢，但磨得極細。</p>
+                </div>
+
+                <div class="pt-10 border-t border-gray-800">
+                    <h4 class="text-2xl font-bold text-white font-display mb-6">總結與應用</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-dark-accent p-6 rounded-xl">
+                            <h5 class="text-gold-500 font-bold mb-4">3 個關鍵字</h5>
+                            <ul class="space-y-2 text-lg">
+                                <li>1. 苦難 (Suffering)</li>
+                                <li>2. 掌權 (Sovereignty)</li>
+                                <li>3. 信靠 (Trust)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-dark-accent p-6 rounded-xl">
+                            <h5 class="text-gold-500 font-bold mb-4">實踐行動</h5>
+                            <ul class="space-y-2 text-sm">
+                                <li>• 撰寫一篇哀歌禱告，誠實面對困惑。</li>
+                                <li>• 本週為一位弱勢者做一件憐憫之舉。</li>
+                                <li>• 連續三天閱讀並默想詩篇 73 篇。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor">
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                <span class="bg-rose-600/20 p-2 rounded-lg">🕯️</span>
+                <span class="gradient-text">名言佳句</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Cards -->
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「上帝在我們的歡樂中對我們耳語，在我們的良知中對我們說話，卻在我們的痛苦中對我們大聲疾呼：痛苦是上帝用來喚醒這個充耳不聞的世界的麥克風。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 魯益師 (C.S. Lewis)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「信心就是：在黑暗中相信上帝在光明中告訴我們的話。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「不要因惡人暫時的繁榮而動搖；上帝的磨坊轉得很慢，但磨得極細。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 查爾斯·司布真</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「我們若不承認上帝在萬事上的護理之工，就如同將宇宙交給了瞎眼的機遇。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 約翰·加爾文</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「十字架是上帝對人類罪惡的最深審判，同時也是對人類苦難的最深參與。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「隱藏的上帝依然是那位掌權的上帝；當我們看不見祂的手時，我們可以信靠祂的心。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 查爾斯·史丹利</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「只有當我們意識到上帝是唯一能夠施行終極審判的那一位時，我們才能從報復的慾望中得著釋放。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「恩典並不意味著上帝會把我們從苦難中拉出來，而是祂會走進苦難中與我們同在。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 提摩太·凱勒</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「罪的本質是背叛光，因為光會暴露我們想要隱藏的一切；但唯有在光中，我們才能找到真實的醫治。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="text-gray-300 italic mb-4">「如果我們將眼光只停留在今生，這世界就只是一個殘酷的屠宰場；但如果我們看見永恆，所有的苦難都在上帝榮耀的計畫中有其位置。」</p>
+                    <p class="text-gold-500 text-sm text-right">— 喬納森·愛德華茲</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="mt-20 py-10 border-t border-gray-900">
+            <div class="flex items-center justify-center gap-2 text-gray-600 text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 hover:bg-gold-500 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 active:scale-95 z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Simple scroll behavior for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

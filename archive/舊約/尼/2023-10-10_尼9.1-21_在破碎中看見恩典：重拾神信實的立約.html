@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尼9:1-21:在破碎中看見恩典：重拾神信實的立約</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf2',
+                            100: '#fff9e6',
+                            200: '#ffefbf',
+                            300: '#ffe18c',
+                            400: '#ffd05c',
+                            500: '#ffba2a',
+                            600: '#f09a0f',
+                            700: '#c7720d',
+                            800: '#a15a13',
+                            900: '#854a15',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#15151a',
+                            700: '#1f1f27',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(21, 21, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffd05c 0%, #f09a0f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .outline-button {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(240, 154, 15, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-white/5 py-3 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="font-display font-bold text-gold-400 tracking-wider">尼9:1-21</span>
+            <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Header -->
+    <header class="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_7ffd5edd-542b-400a-8d43-a4f27dd275b7.jpg' alt='media_1' class="w-full h-full object-cover animate-breathe banner-mask" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl pt-20" id="top">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight font-display tracking-tight">
+                在破碎中<span class="text-gradient">看見恩典</span><br/>
+                <span class="text-2xl md:text-4xl font-light opacity-90">重拾神信實的立約</span>
+            </h1>
+            <div class="w-24 h-1 bg-gold-500 mx-auto mb-8 rounded-full"></div>
+            <div class="animate-bounce-subtle">
+                <p class="text-lg md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed text-white/90 italic">
+                    「你是樂意饒恕人，有恩典，有憐憫，不輕易發怒，有豐盛慈愛的上帝，並沒有丟棄他們。」
+                </p>
+                <p class="mt-4 text-gold-400 font-display font-semibold tracking-widest">— 尼希米記 9:17 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3c1.223 0 2.391.22 3.472.62m3.44 2.04A10.003 10.003 0 0121 13c0 1.141-.19 2.239-.54 3.264M12 21a9.013 9.013 0 01-6.715-3.048m13.43 0A9.013 9.013 0 0112 21M9 9a3 3 0 006 0 3 3 0 00-6 0z"></path></svg>
+                <h2 class="text-3xl font-bold font-display text-white">啟始禱告</h2>
+            </div>
+            <div class="glass-panel p-8 md:p-12 rounded-3xl border-l-4 border-l-gold-500 relative overflow-hidden">
+                <div class="absolute top-0 right-0 -m-4 opacity-10">
+                    <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </div>
+                <p class="text-xl leading-relaxed text-gray-200">
+                    親愛的天父，我們來到祢施恩的寶座前，承認我們時常如同昔日的以色列人，在蒙恩之後又硬著頸項偏行己路。主啊，撕裂我們內心的驕傲，讓我們看見自己的破碎與悖逆；更求祢開我們的眼，讓我們深切看見祢是一位樂意饒恕、有豐盛慈愛且永不丟棄我們的神。願祢的真理今日光照我們，引導我們真實悔改，重新站立在祢信實的恩典之約中。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                <h2 class="text-3xl font-bold font-display text-white">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="outline-button glass-panel p-6 rounded-2xl border-t-2 border-gold-500/50 group">
+                    <span class="text-gold-500 font-display font-bold text-lg mb-2 block">第一階段</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400">脫下華服的時刻：真實悔改的姿態</h3>
+                    <p class="text-sm text-gray-400 mt-2">尼希米記 9:1-5</p>
+                </a>
+                <a href="#part2" class="outline-button glass-panel p-6 rounded-2xl border-t-2 border-gold-500/50 group">
+                    <span class="text-gold-500 font-display font-bold text-lg mb-2 block">第二階段</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400">回溯恩典的源頭：創造與立約的上帝</h3>
+                    <p class="text-sm text-gray-400 mt-2">尼希米記 9:6-15</p>
+                </a>
+                <a href="#part3" class="outline-button glass-panel p-6 rounded-2xl border-t-2 border-gold-500/50 group">
+                    <span class="text-gold-500 font-display font-bold text-lg mb-2 block">第三階段</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400">悖逆與憐憫的交響曲：永不放手的愛</h3>
+                    <p class="text-sm text-gray-400 mt-2">尼希米記 9:16-21</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1: Detailed Analysis -->
+        <article id="part1" class="scroll-mt-24">
+            <div class="mb-12">
+                <h3 class="text-3xl font-black text-gold-400 mb-6 font-display">第一段：脫下華服的時刻：真實悔改的姿態</h3>
+                <div class="bg-dark-800 rounded-2xl p-6 mb-8 border border-white/5">
+                    <h4 class="text-gold-600 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 003 6.338V15a3 3 0 013-3h4a3 3 0 013 3v3.338A7.998 7.998 0 0018 12a7.993 7.993 0 00-7-7.196V15a1 1 0 01-2 0V4.804z"/></svg>
+                        經文內容 (尼希米記 9:1-5)
+                    </h4>
+                    <p class="text-gray-300 leading-relaxed italic">
+                        這月二十四日，以色列人聚集禁食，身穿麻衣，頭蒙灰塵。以色列人就與一切外邦人離絕，站著承認自己的罪惡和列祖的罪孽。那日的四分之一站在自己的地方念耶和華－他們上帝的律法書，又四分之一認罪，敬拜耶和華－他們的上帝...
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500">
+                            <h5 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <span class="bg-gold-500/10 p-1 rounded">Keywords</span> 關鍵原文解析
+                            </h5>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold">認罪 (יָדָה / Yadah)：</span>
+                                    <span class="text-gray-400 text-sm">原意「投擲、拋出」，引申為「承認、公開宣告」。不僅是承認失敗，更是同時公開承認上帝的聖潔。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold">敬拜 (שָׁחָה / Shachah)：</span>
+                                    <span class="text-gray-400 text-sm">原意「俯伏、下拜」，代表完全的降服與尊崇。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500">
+                            <h5 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h5>
+                            <p class="text-white font-medium mb-2 italic">真正的悔改與普通的「後悔」有何不同？</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                普通的後悔常是因為害怕懲罰（以自我為中心）；真實的悔改是被神的話語光照後，看見自己得罪了聖潔的神。悔改不是停留在自責，而是透過「敬拜」將眼光轉向神的偉大。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gold-900/10 p-8 rounded-3xl border border-gold-900/30">
+                            <h5 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                                生活例證
+                            </h5>
+                            <p class="text-gray-200 leading-relaxed">
+                                日本有一種傳統技術稱為「金繕」（Kintsugi）。當瓷器破碎時，工匠用混有金粉的漆來修補。修復後的瓷器不僅恢復功能，金色的裂痕反而成為它最獨特的印記。真實的悔改就像我們將破碎的生命交給神，當祂用恩典修補我們時，裂痕就彰顯出祂榮耀的金光。
+                            </p>
+                        </div>
+                        <div class="px-6 border-l-4 border-gold-700">
+                            <p class="text-lg text-white font-medium italic">「廉價的恩典是沒有悔改的赦免... 重價的恩典是必須尋找的寶藏。」</p>
+                            <p class="text-gold-600 mt-2 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 2: Detailed Analysis -->
+        <article id="part2" class="scroll-mt-24">
+            <div class="mb-12">
+                <h3 class="text-3xl font-black text-gold-400 mb-6 font-display">第二段：回溯恩典的源頭：創造與立約的上帝</h3>
+                <div class="bg-dark-800 rounded-2xl p-6 mb-8 border border-white/5">
+                    <h4 class="text-gold-600 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM5.5 13.5a1 1 0 100-2 1 1 0 000 2zm3-4a1 1 0 100-2 1 1 0 000 2zm5.5 4a1 1 0 11-2 0 1 1 0 012 0zm-3-4a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
+                        經文內容 (尼希米記 9:6-15)
+                    </h4>
+                    <p class="text-gray-300 leading-relaxed italic">
+                        你，惟獨你是耶和華！你造了天和天上的天，並天上的萬象... 你是耶和華上帝，曾揀選亞伯蘭... 與他立約... 你見他在你面前心裡誠實... 且應驗了你的話，因為你是公義的...
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500">
+                            <h5 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵原文解析</h5>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold">立約 (כָּרַת בְּרִית / Karath berith)：</span>
+                                    <span class="text-gray-400 text-sm">直譯「切割一個約」。象徵「若背約，願受此動物之切肉下場」。上帝主動立約，代表祂以自己的屬性為擔保。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold">公義 (צַ安ִּיק / Tzaddiq)：</span>
+                                    <span class="text-gray-400 text-sm">此處強調神在關係中「信守承諾、可靠」的特質。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500">
+                            <h5 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h5>
+                            <p class="text-white font-medium mb-2 italic">為什麼禱告要從「創造天地」開始回顧？</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                回溯創造，是宣告神擁有絕對主權；回溯立約與出埃及，是確認神的愛具有歷史客觀性。當我們回顧神過去的信實，就能為現在的危機提供最強大的屬靈錨點。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gold-900/10 p-8 rounded-3xl border border-gold-900/30">
+                            <h5 class="text-gold-400 font-bold mb-4">生活例證</h5>
+                            <p class="text-gray-200 leading-relaxed">
+                                二戰期間，彭柯麗（Corrie ten Boom）被關在納粹集中營。在黑暗中，她們每天閱讀聖經。她後來回憶，在那些時刻，神過去的作為就像指南針。無論環境多麼像濃霧令人迷失，神的信實就是那個永遠指向「真北」的指針。
+                            </p>
+                        </div>
+                        <div class="px-6 border-l-4 border-gold-700">
+                            <p class="text-lg text-white font-medium italic">「福音的本質是：你被接納的程度，遠超過你所敢夢想的；同時，你真實破碎的程度，也遠超過你所願意承認的。」</p>
+                            <p class="text-gold-600 mt-2 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 3: Detailed Analysis -->
+        <article id="part3" class="scroll-mt-24">
+            <div class="mb-12">
+                <h3 class="text-3xl font-black text-gold-400 mb-6 font-display">第三段：悖逆與憐憫的交響曲：永不放手的愛</h3>
+                <div class="bg-dark-800 rounded-2xl p-6 mb-8 border border-white/5">
+                    <h4 class="text-gold-600 font-bold mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                        經文內容 (尼希米記 9:16-21)
+                    </h4>
+                    <p class="text-gray-300 leading-relaxed italic">
+                        但我們的列祖行事狂傲，硬著頸項不聽從你的誡命... 鑄了一隻牛犢，說：『這是領你出埃及的上帝』... 但你是樂意饒恕人，有恩典，有憐憫... 並沒有丟棄他們。
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500">
+                            <h5 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵原文解析</h5>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold">樂意饒恕 (סַלָּח / Sallach)：</span>
+                                    <span class="text-gray-400 text-sm">舊約中專門形容上帝的專屬詞，表達神有一種「隨時準備好赦免、傾向於寬恕」的神聖本性。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold">憐憫 (רַחֲמִים / Rachamim)：</span>
+                                    <span class="text-gray-400 text-sm">字根與「母腹」有關，形容如母親對待胎兒般，深切、本能且無法割捨的愛。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass-panel p-6 rounded-2xl border-l-2 border-gold-500">
+                            <h5 class="text-gold-400 font-bold mb-3">關鍵問題與解析</h5>
+                            <p class="text-white font-medium mb-2 italic">上帝為什麼沒有丟棄鑄造金牛犢的百姓？</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                不是因為背叛不嚴重，而是因為神的「本性」大過人的「軟弱」。這提醒我們，不要在失敗時自我放逐，也不要輕易放棄那些得罪我們的人。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gold-900/10 p-8 rounded-3xl border border-gold-900/30">
+                            <h5 class="text-gold-400 font-bold mb-4">生活例證</h5>
+                            <p class="text-gray-200 leading-relaxed">
+                                一位叛逆青年離家出走，最終淪落街頭。某聖誕夜他回到老家，發現大門沒鎖。父親流著淚抱住他回答：「自從你離開的那天起，這扇門就從來沒有上鎖過，因為我每天都在等你回家。」上帝對我們的愛，正是一扇永遠不上鎖的恩典之門。
+                            </p>
+                        </div>
+                        <div class="px-6 border-l-4 border-gold-700">
+                            <p class="text-lg text-white font-medium italic">「上帝的良善與憐憫，意味著祂對待我們的方式，永遠比我們所配得的更好。」</p>
+                            <p class="text-gold-600 mt-2 font-bold">— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Application Directions -->
+        <section id="applications" class="space-y-8">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <h2 class="text-3xl font-bold font-display text-white">應用方向</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-panel p-8 rounded-3xl">
+                    <div class="text-gold-500 font-black text-4xl mb-4">01</div>
+                    <h4 class="text-xl font-bold mb-4">實踐具體的認罪生活</h4>
+                    <p class="text-gray-400 leading-relaxed">具體寫下自己的軟弱，並立刻在禱告中轉向對神的敬拜，經歷釋放。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl">
+                    <div class="text-gold-500 font-black text-4xl mb-4">02</div>
+                    <h4 class="text-xl font-bold mb-4">建立專屬「恩典記念碑」</h4>
+                    <p class="text-gray-400 leading-relaxed">列出生命中過去經歷神的「出埃及」時刻，作為抵禦眼前恐懼的兵器。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl">
+                    <div class="text-gold-500 font-black text-4xl mb-4">03</div>
+                    <h4 class="text-xl font-bold mb-4">以恩慈待人傳遞愛</h4>
+                    <p class="text-gray-400 leading-relaxed">思想是否有人得罪你而被你「丟棄」？求神賜下「樂意饒恕」的靈主動和好。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                <h2 class="text-3xl font-bold font-display text-white">講章文稿</h2>
+            </div>
+            <div class="glass-panel p-8 md:p-16 rounded-[3rem] text-lg leading-[2.2] text-gray-300 space-y-8">
+                <p>各位弟兄姊妹，今天我們要一起進入尼希米記第9章的歷史長廊。這是一段極其美麗卻又無比真實的經文。當時的以色列人，經歷了被擄、歸回、重建城牆。城牆修好了，但他們發現，真正需要重建的，是他們與神之間破裂的關係。今天我們講道的主題是：<strong class="text-gold-400 text-2xl px-2">「在破碎中看見恩典：重拾神信實的立約」</strong>。</p>
+                
+                <p>我們來看第一部分：<strong class="text-white border-b-2 border-gold-500">脫下華服的時刻：真實悔改的姿態</strong>。在尼希米記9:1-5中記載，以色列人聚集禁食，身穿麻衣。弟兄姊妹，真實的悔改是什麼？這裡有一個關鍵字：<strong class="text-gold-500 font-bold">「認罪（Yadah）」</strong>。這個詞不僅是承認失敗，更是公開宣告上帝的聖潔。悔改不是讓我們停留在自卑中，而是將我們的眼光轉移到「偉大的上帝」。當我們願意在神面前脫下偽裝，坦承破碎，神的恩典就會像修補瓷器的金粉一樣，讓我們的生命透出祂的榮耀。</p>
+
+                <p>接著，帶領他們禱告的利未人，開始了一段漫長的回顧。這帶出我們的第二部分：<strong class="text-white border-b-2 border-gold-500">回溯恩典的源頭：創造與立約的上帝</strong>。當以色列人站在廢墟般的耶路撒冷，他們沒有先看環境，而是把眼光拉回到了創世記與出埃及記。這裡提到了<strong class="text-gold-500 font-bold">「立約（Karath berith）」</strong>，神親自用祂的信實為我們擔保。提摩太·凱勒牧師說：<em class="text-gold-300">「福音的本質是：你被接納的程度，遠超過你所敢夢想的。」</em>神的約，是我們在黑暗中永不失靈的指南針。</p>
+
+                <p>最後，我們來到最震撼人心的第三部分：<strong class="text-white border-b-2 border-gold-500">悖逆與憐憫的交響曲：永不放手的愛</strong>。請聽這段驚心動魄的經文：<strong class="text-gold-400 text-xl">「他們不肯順從... 居心悖逆... 但你是樂意饒恕人，有恩典，有憐憫... 並沒有丟棄他們。」</strong>以色列人鑄造了金牛犢，按理說合約早該被撕毀。但經文用了一個特別的詞：<strong class="text-gold-500 font-bold">「樂意饒恕（Sallach）」</strong>。這是上帝的本性；祂的<strong class="text-gold-500 font-bold">「憐憫（Rachamim）」</strong>就像母親對待胎兒般無法割捨。</p>
+
+                <p>總結來說，今天我們看到了三個關鍵：<strong class="text-gold-400">破碎、立約、憐憫</strong>。本週，讓我們付諸行動：撥出時間禁食禱告，寫下屬於你的「恩典歷史」，並且靠著神這份沒有丟棄我們的愛，去饒恕身邊那曾經傷害你的人。願神賜福大家。</p>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-bold font-display text-white">屬靈前輩佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-panel p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-gray-300 italic mb-4">「廉價的恩典是我們自己給自己的恩典；那是沒有十字架的恩典，是沒有耶穌基督的恩典。」</p>
+                    <cite class="text-gold-600 font-bold text-sm block">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-gray-300 italic mb-4">「福音的本質是：我們比自己所敢相信的還要罪惡深重；但同時，我們在基督裡所蒙的愛，卻比我們所敢夢想的還要豐盛。」</p>
+                    <cite class="text-gold-600 font-bold text-sm block">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-gray-300 italic mb-4">「神不是勉強地施恩，祂的本性就是樂意傾注恩典。」</p>
+                    <cite class="text-gold-600 font-bold text-sm block">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl border-t-2 border-gold-500/30">
+                    <p class="text-gray-300 italic mb-4">「無論你的罪有多深，基督的寶血總能覆蓋得更深。」</p>
+                    <cite class="text-gold-600 font-bold text-sm block">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 text-sm mt-12 bg-dark-800 py-4 rounded-full border border-white/5">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all z-50 transform hover:scale-110 active:scale-95 group">
+        <svg class="w-8 h-8 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Simple scroll spy or active link styling could be added here if needed
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

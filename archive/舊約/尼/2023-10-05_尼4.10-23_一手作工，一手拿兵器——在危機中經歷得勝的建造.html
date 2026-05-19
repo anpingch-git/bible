@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尼4:10-23:一手作工，一手拿兵器——在危機中經歷得勝的建造</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c9a15b', // Muted Gold
+                        secondary: '#4a5568',
+                        accent: '#e53e3e',
+                        dark: '#0a0a0c',
+                        surface: '#1a1b1e',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-bounce': 'gentle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(201, 161, 91, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #c9a15b, #f6e05e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #1a1b1e 0%, #0d0d0f 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .outline-button {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(201, 161, 91, 0.5);
+        }
+        .outline-button:hover {
+            background: rgba(201, 161, 91, 0.1);
+            transform: translateY(-2px);
+            border-color: #c9a15b;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #c9a15b; border-radius: 10px; }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav px-4 py-3 flex justify-between items-center">
+        <div class="text-primary font-bold text-sm md:text-lg font-display">尼4:10-23</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold uppercase tracking-wider">
+            <a href="#prayer" class="hover:text-primary transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-primary transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-primary transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-primary transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="top" class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_1dc2b574-e655-444a-80bd-769635fbdcef.jpg' alt='media_1' class="absolute inset-0 w-full h-full object-cover animate-breath opacity-70" />
+            <img src='image/img_1884d6ae-ce69-40c0-b639-f828a9ab50d3.jpg' alt='media_2' class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/50"></div>
+        </div>
+
+        <div class="relative z-10 px-6 max-w-5xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                一手作工，<br><span class="text-gradient">一手拿兵器</span>
+            </h1>
+            
+            <!-- Animated Golden Verse (Floating & Bouncing) -->
+            <div class="animate-gentle-bounce">
+                <p class="text-lg md:text-2xl text-primary font-display font-medium max-w-3xl mx-auto leading-relaxed italic drop-shadow-lg">
+                    「我察看了，就起來對貴冑、官長，和其餘的人說：『不要怕他們！當記念主是大而可畏的。你們要為弟兄、兒女、妻子、家產爭戰。』」
+                    <span class="block mt-2 text-sm not-italic opacity-80">— 尼希米記 4:14</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-primary/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2A10,10,0,0,0,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10S17.52,2,12,2ZM11,16.5H9v-2h2Zm0-4H9V7h2Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">開路禱告</h2>
+            </div>
+            <div class="card-gradient p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-display italic">
+                    「親愛的天父，我們讚美祢，因為祢是大而可畏的神。當我們在生活與服事中感到『灰土甚多、力氣衰敗』，當仇敵的攻擊和四面的艱難使我們心生恐懼時，求祢開我們的屬靈眼睛，看見祢始終與我們同在。賜給我們尼希米的智慧與勇氣，讓我們懂得一手作工建造、一手拿兵器守望。求祢堅固我們的雙手，復興我們的心靈，因為我們深知，我們的神必為我們爭戰。奉主耶穌基督得勝的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation & Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-primary/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">分段解析</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section1" class="outline-button p-6 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-primary text-xs font-bold mb-2">4:10-12</span>
+                    <span class="font-display font-bold">正視內外的破口</span>
+                </a>
+                <a href="#section2" class="outline-button p-6 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-primary text-xs font-bold mb-2">4:13-15</span>
+                    <span class="font-display font-bold">轉移焦點的爭戰</span>
+                </a>
+                <a href="#section3" class="outline-button p-6 rounded-2xl flex flex-col items-center text-center">
+                    <span class="text-primary text-xs font-bold mb-2">4:16-23</span>
+                    <span class="font-display font-bold">一手抹刀一手兵器</span>
+                </a>
+            </div>
+
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-32 card-gradient p-10 rounded-3xl">
+                    <h3 class="text-2xl font-display font-bold text-primary mb-6">第一段：當灰心與威脅夾擊：正視內外的破口</h3>
+                    <div class="space-y-8">
+                        <div class="bg-dark/50 p-6 rounded-xl border-l-4 border-primary">
+                            <h4 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">引用經文 (尼 4:10-12)</h4>
+                            <p class="text-gray-300 leading-loose">猶大人說：「灰土尚多，扛抬的人力氣已經衰敗，所以我們不能建造城牆。」我們的敵人且說：「趁他們不知不見，我們進入他們中間，殺他們，使工作止住。」那靠近敵人居住的猶大人十次從各處來見我們，說：「你們必要回到我們那裡。」</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-primary font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
+                                    關鍵字：衰敗 (kashal)
+                                </h4>
+                                <p class="text-gray-400 text-sm">原意是「蹣跚、絆跌」。描繪工人在心理和屬靈上已到崩潰邊緣，因失去異象而步伐不穩。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-primary font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-gray-400 text-sm">如何面對內在枯竭與外在攻擊？危機突破點在於誠實將「灰土」帶到神面前，預備重新調度。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/5 pt-6">
+                            <p class="text-sm italic text-gray-500 mb-4">「魔鬼最厲害的武器，不是讓我們犯罪，而是讓我們灰心。」—— 慕迪 (D.L. Moody)</p>
+                            <p class="text-gray-300 bg-black/30 p-4 rounded-lg text-sm">就像馬拉松的「撞牆期」，此時需要的是調整呼吸與補給，而非盲目硬撐。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-32 card-gradient p-10 rounded-3xl">
+                    <h3 class="text-2xl font-display font-bold text-primary mb-6">第二段：定睛偉大奇妙神：轉移焦點的屬靈爭戰</h3>
+                    <div class="space-y-8">
+                        <div class="bg-dark/50 p-6 rounded-xl border-l-4 border-primary">
+                            <h4 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">引用經文 (尼 4:13-15)</h4>
+                            <p class="text-gray-300 leading-loose">所以我使百姓各按宗族拿刀、拿槍、拿弓站在城牆後邊低窪的空處。我察看了，就起來對貴冑、官長，和其餘的人說：「不要怕他們！當記念主是大而可畏的。你們要為弟兄、兒女、妻子、家產爭戰。」...</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-primary font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    關鍵字：記念 (zakar)
+                                </h4>
+                                <p class="text-gray-400 text-sm">不只是回想，而是「宣告並以此為行動根據」。將神的屬性應用在當下處境中。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-primary font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-gray-400 text-sm">如何「記念」主的大而可畏而不被嚇倒？真正的屬靈爭戰是「焦點的爭奪戰」。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/5 pt-6">
+                            <p class="text-sm italic text-gray-500 mb-4">「我們若看重神的偉大，就會看輕人的威脅。」—— 查爾斯·史丹利 (Charles Stanley)</p>
+                            <p class="text-gray-300 bg-black/30 p-4 rounded-lg text-sm">像小孩在黑暗森林中牽住父親的手，雖然環境沒變，但恐懼因同在而消散。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-32 card-gradient p-10 rounded-3xl">
+                    <h3 class="text-2xl font-display font-bold text-primary mb-6">第三段：建造與守望並行：一手拿抹刀，一手拿兵器</h3>
+                    <div class="space-y-8">
+                        <div class="bg-dark/50 p-6 rounded-xl border-l-4 border-primary">
+                            <h4 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-2">引用經文 (尼 4:16-23)</h4>
+                            <p class="text-gray-300 leading-loose">...修造城牆的，扛抬材料的，都一手做工，一手拿兵器。修造的人都腰間佩刀修造，吹角的人在我旁邊...我們的神必為我們爭戰。</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-primary font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                                    關鍵字：兵器 (shelach)
+                                </h4>
+                                <p class="text-gray-400 text-sm">代表防禦與攻擊的武器。作工（建造）與拿兵器（爭戰）是不可分割的使命。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-primary font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-gray-400 text-sm">日常中什麼是「作工」與「兵器」？作工是責任，兵器是真理裝備，兩者需極致平衡。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/5 pt-6">
+                            <p class="text-sm italic text-gray-500 mb-4">「我們的工作並非只是世俗的勞動...本身就是最強武器。」—— 提摩太·凱勒 (Timothy Keller)</p>
+                            <p class="text-gray-300 bg-black/30 p-4 rounded-lg text-sm">司布真創辦《劍與抹刀》雜誌，強調同時建造教會與抵擋異端的重要性。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="bg-primary/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M21,3H3A2,2,0,0,0,1,5V19a2,2,0,0,0,2,2H21a2,2,0,0,0,2-2V5A2,2,0,0,0,21,3ZM21,19H3V5H21V19ZM5,17h6V15H5Zm8,0h6V15H13Zm-8-4h6V11H5Zm8,0h6V11H13ZM5,9h6V7H5Zm8,0h6V7H13Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-gold max-w-none space-y-8 text-gray-200 leading-relaxed text-lg">
+                <p>親愛的弟兄姊妹，平安。今天我們要透過尼希米記第4章來思想一個主題：<strong class="text-primary text-xl">「一手作工，一手拿兵器——在危機中經歷得勝的建造」</strong>。</p>
+                
+                <p>在我們今天所讀的經文中，有一節非常重要的金句，請我們一起來大聲宣告：<br>
+                <span class="text-primary font-bold font-display block py-4 text-xl">「我察看了，就起來對貴冑、官長，和其餘的人說：『不要怕他們！當記念主是大而可畏的。你們要為弟兄、兒女、妻子、家產爭戰。』」</span></p>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-white border-b border-primary/30 pb-2">當灰心與威脅夾擊：正視內外的破口</h3>
+                    <p>尼希米記4:10描述了一個極度沮喪的場景：「猶大人說：『灰土尚多，扛抬的人力氣已經衰敗，所以我們不能建造城牆。』」這裡的「衰敗」，原文是蹣跚、絆跌的意思。工人們不僅身體疲憊，心裡更是到了崩潰邊緣。同時，外面的敵人還放話說要趁機殺入他們中間。這就是典型的「內外夾擊」。</p>
+                    <p>當我們在服事或生活中感到「灰土甚多、十架沉重」時，我們如何面對內在的枯竭與外在的攻擊？慕迪曾說：「魔鬼最厲害的武器，不是讓我們犯罪，而是讓我們灰心。」我們不需要假裝剛強，尼希米允許這些疲憊的聲音被聽見。危機的突破點，永遠是從誠實地面對破口開始。如果你的生命現在正處於馬拉松的「撞牆期」，請來到神面前，承認你的力氣已經衰敗，因為神的力量要在我們的軟弱上顯得完全。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-white border-b border-primary/30 pb-2">定睛偉大奇妙神：轉移焦點的屬靈爭戰</h3>
+                    <p>面對百姓的恐懼，尼希米作了一個極其智慧的決定。他把百姓重新編組，然後對他們說出今天的金句：<strong class="text-primary">「不要怕他們！當記念主是大而可畏的。」</strong></p>
+                    <p>在恐懼中，我們如何真正「記念」主是大而可畏的？「記念」不只是腦海裡的回想，而是緊緊抓住神的屬性，並以此作為行動的根據。尼希米在做一件事：打一場轉移焦點的屬靈爭戰！查爾斯·史丹利牧師說得好：「我們若看重神的偉大，就會看輕人的威脅；我們若看重人的威脅，就意味著我們看輕了神的偉大。」</p>
+                    <p>當恐懼如黑夜的森林將我們包圍時，我們不要一直盯著黑暗看，我們要伸出手，牽住那位大而可畏的天父的手。當我們轉眼仰望神，經文告訴我們：「見神也破壞他們的計謀」，仇敵就不戰而退了！</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-white border-b border-primary/30 pb-2">建造與守望並行：一手拿抹刀，一手拿兵器</h3>
+                    <p>從第16節開始，尼希米發展出一種全新的工作模式：「修造城牆的，扛抬材料的，都一手做工，一手拿兵器。」</p>
+                    <p>這給我們今天極大的屬靈提醒。在日常的信仰生活中，「作工」代表我們在家庭、職場、教會的責任；「兵器」代表我們屬靈的裝備和警醒禱告。司布真牧師曾創辦一本雜誌叫《劍與抹刀》，正是取自這裡。我們不能只顧著工作賺錢、推動事工，卻放下屬靈的兵器，任由仇敵攻擊我們的家庭與心思；我們也不能只談屬靈爭戰，卻不負責任地逃避世上的工作。</p>
+                    <p>弟兄姊妹，今天神也要呼召我們。不論你的「城牆」是你的家庭、你的事業，還是教會的服事。不要被滿地的灰土嚇倒，我們要<strong class="text-primary italic">記念主是大而可畏的</strong>。讓我們聽見聖靈的角聲，彼此聚集，彼此守望。今天起，讓我們一手拿著抹刀忠心作工，一手拿著屬靈的兵器警醒禱告，因為，<strong class="text-primary font-display">我們的神必為我們爭戰！</strong></p>
+                </div>
+            </article>
+
+            <!-- Application Cards -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card-gradient p-6 rounded-2xl border-t-2 border-primary">
+                    <h4 class="font-bold mb-2">察覺疲乏</h4>
+                    <p class="text-sm text-gray-400">承認「力氣衰敗」，在群體中尋求幫助，不單打獨鬥。</p>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl border-t-2 border-primary">
+                    <h4 class="font-bold mb-2">建立守望網</h4>
+                    <p class="text-sm text-gray-400">設立禱告大軍，用禱告托住前線的所有服事。</p>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl border-t-2 border-primary">
+                    <h4 class="font-bold mb-2">帶著兵器</h4>
+                    <p class="text-sm text-gray-400">每日出門前穿戴屬靈軍裝，敏銳於聖靈提醒。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="bg-primary/5 p-8 rounded-3xl border border-primary/20">
+            <h3 class="text-2xl font-display font-bold mb-6 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-full bg-primary text-dark flex items-center justify-center text-sm">✓</span>
+                回應與實踐行動
+            </h3>
+            <ul class="space-y-4 text-gray-300">
+                <li class="flex gap-4"><span class="text-primary font-bold">01.</span> 交託禱告：寫下一件感到灰心的事，今晚睡前宣告「神必為我爭戰」。</li>
+                <li class="flex gap-4"><span class="text-primary font-bold">02.</span> 尋找守望者：本週約定一位屬靈同伴，成為彼此每週代禱的「護衛」。</li>
+                <li class="flex gap-4"><span class="text-primary font-bold">03.</span> 帶著兵器：每天出門前讀一段聖經作為屬靈兵器。</li>
+            </ul>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-primary/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H12.017V5C12.017 3.89543 12.9124 3 14.017 3H21.017C22.1216 3 23.017 3.89543 23.017 5V15C23.017 18.866 19.883 22 16.017 22H14.017V21ZM2.017 21L2.017 18C2.017 16.8954 2.91243 16 4.017 16H7.017C7.56928 16 8.017 15.5523 8.017 15V9C8.017 8.44772 7.56928 8 7.017 8H4.017C3.46472 8 3.017 8.44772 3.017 9V12C3.017 12.5523 2.56928 13 2.017 13H0.017V5C0.017 3.89543 0.91243 3 2.017 3H9.017C10.1216 3 11.017 3.89543 11.017 5V15C11.017 18.866 7.883 22 4.017 22H2.017V21Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-gradient p-6 rounded-2xl hover:border-primary/50 transition-all duration-300">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「魔鬼最厲害的武器，不是讓我們犯罪，而是讓我們灰心。」</p>
+                    <span class="text-primary text-sm font-bold">—— 慕迪 (D.L. Moody)</span>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl hover:border-primary/50 transition-all duration-300">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「我們若看重神的偉大，就會看輕人的威脅。」</p>
+                    <span class="text-primary text-sm font-bold">—— 查爾斯·史丹利 (Charles Stanley)</span>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl hover:border-primary/50 transition-all duration-300">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「每一位基督徒都必須成為一名戰士；我們必須一手拿著建造教會的抹刀，另一手緊握聖靈的寶劍。」</p>
+                    <span class="text-primary text-sm font-bold">—— 司布真 (Charles Spurgeon)</span>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl hover:border-primary/50 transition-all duration-300">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「屬靈生命的成長不在於我們能做多少事，而在於我們多麼願意在軟弱中讓神為我們爭戰。」</p>
+                    <span class="text-primary text-sm font-bold">—— 盧雲 (Henri Nouwen)</span>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl hover:border-primary/50 transition-all duration-300">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「神與我們同在，這事實本身就是我們面對人生一切駭人風暴時最大的避難所。」</p>
+                    <span class="text-primary text-sm font-bold">—— 陶恕 (A.W. Tozer)</span>
+                </div>
+                <div class="card-gradient p-6 rounded-2xl hover:border-primary/50 transition-all duration-300">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「當福音轉化了我們的心，我們每一天的服事與建造，本身就是對抗黑暗權勢的最強武器。」</p>
+                    <span class="text-primary text-sm font-bold">—— 提摩太·凱勒 (Timothy Keller)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning / Disclaimer -->
+        <div class="text-center pt-10 pb-20 opacity-50 text-sm">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-dark rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

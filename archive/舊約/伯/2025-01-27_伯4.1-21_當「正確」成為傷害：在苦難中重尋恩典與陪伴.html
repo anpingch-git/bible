@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯4:1-21:當「正確」成為傷害：在苦難中重尋恩典與陪伴</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9d1',
+                            200: '#fdf1a3',
+                            300: '#fbe469',
+                            400: '#f9d33d',
+                            500: '#f5b813',
+                            600: '#d9920b',
+                            700: '#b56d0d',
+                            800: '#945511',
+                            900: '#7a4513',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 0.85 },
+                            '50%': { opacity: 0.3 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(30, 30, 36, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(245, 184, 19, 0.3);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f5b813 0%, #f9d33d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: bounce-subtle 3s ease-in-out infinite;
+        }
+        .banner-overlay {
+            background: linear-gradient(to bottom, rgba(10, 10, 12, 0.4) 0%, rgba(10, 10, 12, 1) 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-4 md:px-8 justify-between">
+        <div class="text-gold-500 font-display font-bold text-lg md:text-xl truncate mr-4">
+            約伯記 4:1-21
+        </div>
+        <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium text-gray-300">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Top Banner & Title -->
+    <header id="top" class="relative min-h-[85vh] flex items-center justify-center pt-16 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 animate-pulse-slow">
+                <img src='image/img_9b2d7d7f-e5cc-4500-9fb3-66e34361d242.jpg' alt='media_1' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 banner-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black mb-8 leading-tight tracking-tight">
+                當「<span class="text-gradient">正確</span>」成為傷害<br>
+                <span class="text-2xl md:text-4xl font-light opacity-90 mt-4 block">在苦難中重尋恩典與陪伴</span>
+            </h1>
+            
+            <div class="jump-text mt-8 max-w-3xl mx-auto">
+                <p class="text-xl md:text-2xl italic font-medium text-gold-100/90 leading-relaxed">
+                    「請你追想：無辜的人有誰滅亡？正直的人在何處剪除？」<br>
+                    <span class="text-sm font-normal opacity-70 not-italic">— 約伯記 4:7 —</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="bento-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 opacity-10">
+                    <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor"><path d="M12.83,2.45L12,2L11.17,2.45C10.15,3 8.35,4.13 7.82,4.8C7.17,5.6 7,6.5 7,7.5C7,9.43 8.57,11 10.5,11C10.74,11 10.97,10.97 11.2,10.92C11.35,11.59 11.66,12.22 12.11,12.75C12.44,13.14 12.84,13.46 13.29,13.7C13.1,14.1 13,14.54 13,15C13,16.66 14.34,18 16,18C16.31,18 16.61,17.95 16.89,17.86C17.2,18.55 17.72,19.12 18.39,19.46C18.25,19.8 18.17,20.18 18.17,20.57C18.17,21.91 19.26,23 20.6,23C21.94,23 23.03,21.91 23.03,20.57C23.03,19.23 21.94,18.14 20.6,18.14C20.4,18.14 20.21,18.16 20.03,18.21C19.8,17.57 19.33,17.06 18.73,16.78C18.9,16.25 19,15.69 19,15.11C19,12.84 17.16,11 14.89,11C14.47,11 14.07,11.06 13.69,11.18C13.26,10.5 13,9.7 13,8.83C13,7.9 13.3,7.04 13.82,6.34C13.56,6.1 13.23,5.92 12.87,5.84C12.96,5.5 13,5.16 13,4.8C13,3.92 12.94,3.15 12.83,2.45Z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-3xl text-gold-500">🙏</span>
+                    <h2 class="text-3xl font-display font-bold">禱告詞</h2>
+                </div>
+                <p class="text-xl leading-relaxed text-gray-300">
+                    主阿，當我們面對生命中無法解釋的苦難，或是看見身邊的人陷入深淵時，求祢賜給我們一顆憐憫與謙卑的心。赦免我們常常用冰冷的神學與自以為是的道理來代替真實的陪伴與恩典。求聖靈開啟我們的眼睛，讓我們看見在苦難的奧祕中，祢與我們同在。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl text-gold-500">📖</span>
+                <h2 class="text-3xl font-display font-bold">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-display text-gold-500 tracking-widest uppercase mb-2 block">Section 01</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">曾經的助人者，如今的軟弱者</h3>
+                    </div>
+                    <span class="text-sm opacity-60 mt-4">伯 4:1-6</span>
+                </a>
+                <a href="#section2" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-display text-gold-500 tracking-widest uppercase mb-2 block">Section 02</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">因果報應的迷思：傷人的神學</h3>
+                    </div>
+                    <span class="text-sm opacity-60 mt-4">伯 4:7-11</span>
+                </a>
+                <a href="#section3" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-display text-gold-500 tracking-widest uppercase mb-2 block">Section 03</span>
+                        <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">恐懼中的啟示：絕對的超越性</h3>
+                    </div>
+                    <span class="text-sm opacity-60 mt-4">伯 4:12-21</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <section id="section1" class="scroll-mt-24 space-y-12">
+                <div class="border-l-4 border-gold-500 pl-6">
+                    <h3 class="text-3xl font-bold mb-4">曾經的助人者，如今的軟弱者：當經驗無法解釋苦難</h3>
+                    <p class="text-gold-400 font-display">伯 4:1-6</p>
+                </div>
+                
+                <div class="bg-dark-800 p-8 rounded-2xl border border-white/5 italic text-gray-400 leading-relaxed">
+                    提幔人以利法回答說：「人若想與你說話，你就厭煩嗎？但誰能忍住不說呢？你素來教導許多的人，又堅固軟弱的手。你的言語曾扶助那將跌倒的人；你又使軟弱的膝穩固。但現在禍患臨到你，你就昏迷，挨近你，你便驚惶。你的倚靠不是在你敬畏神嗎？你的盼望不是在你行事純正嗎？」
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                            <span class="text-sm">◆</span> 關鍵原文
+                        </h4>
+                        <p class="text-gray-300">「敬畏」（יִרְאָה / yir'ah）：意指對上帝的敬畏、尊崇與害怕。以利法在這裡暗示，約伯過去的信仰（敬畏）和道德（純正），應該要是他在苦難中的依靠；若他現在崩潰了，是否代表他的「敬畏」出了問題？</p>
+                    </div>
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                            <span class="text-sm">◆</span> 關鍵問題與解析
+                        </h4>
+                        <p class="font-bold text-white mb-2">為什麼我們過去豐富的屬靈經驗或助人的善行，在自己面對極大苦難時往往顯得蒼白無力？</p>
+                        <p class="text-gray-300 text-sm">解析：人很容易將信仰化約為一種「成功方程式」。當苦難的量級超過人類理性的承受範圍時，過去的經驗與公式會瞬間瓦解。這不是因為信仰不真實，而是因為上帝的作為遠比我們的「經驗」更複雜。</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-8 items-center bg-gold-900/10 p-8 rounded-2xl border border-gold-900/20">
+                    <div class="flex-1">
+                        <h4 class="text-gold-400 font-bold mb-4">故事與見證</h4>
+                        <p class="text-gray-300 italic">一位資深的輔導牧師，一生陪伴過無數失去親人的人。然而當他妻子突發車禍過世時，他陷入了極度的崩潰。信徒用他過去的道來安慰他，卻讓他更痛苦。在那一刻，他需要的不是「道理的重播」，而是一雙願意與他一起流淚的眼睛。</p>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-dark-900 p-6 rounded-xl border border-white/5">
+                        <p class="text-gold-300 text-lg leading-relaxed font-medium">「沒有人能藉著提供答案來醫治別人；我們只能藉著分享彼此的破碎來互相醫治。」</p>
+                        <p class="text-right mt-4 text-sm opacity-60">— 盧雲 (Henri Nouwen)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="section2" class="scroll-mt-24 space-y-12">
+                <div class="border-l-4 border-gold-500 pl-6">
+                    <h3 class="text-3xl font-bold mb-4">因果報應的迷思：看似正確卻傷人的神學</h3>
+                    <p class="text-gold-400 font-display">伯 4:7-11</p>
+                </div>
+                
+                <div class="bg-dark-800 p-8 rounded-2xl border border-white/5 italic text-gray-400 leading-relaxed">
+                    「請你追想：無辜的人有誰滅亡？正直的人在何處剪除？按我所見，耕罪孽、種毒害的人都照樣收割。神一出氣，他們就滅亡；神一發怒，他們就消沒...」
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                            <span class="text-sm">◆</span> 關鍵原文
+                        </h4>
+                        <p class="text-gray-300">「滅亡」（אָבַ / abad）：意為消滅、失喪、被毀滅。以利法將世界的運行法則簡化為絕對的因果律：無辜者絕不滅亡，滅亡者必不無辜。</p>
+                    </div>
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                            <span class="text-sm">◆</span> 關鍵問題與解析
+                        </h4>
+                        <p class="font-bold text-white mb-2">「善有善報，惡有惡報」的神學觀念哪裡出了問題？</p>
+                        <p class="text-gray-300 text-sm">解析：以利法將箴言中的一般性原則絕對化，變成一種定罪的工具。這忽略了世界的墮落以及上帝主權的奧祕。這剝奪了受苦者哀哭的權利，並將上帝描繪成冷酷的「業力執行者」。</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-gold-900/10 p-8 rounded-2xl border border-gold-900/20">
+                    <div class="flex-1">
+                        <h4 class="text-gold-400 font-bold mb-4">福音視角</h4>
+                        <p class="text-gray-300 italic">耶穌看見一個生來瞎眼的人時，門徒問：「是誰犯了罪？」耶穌打破了這個框架，指出這苦難是為了「在他身上顯出神的作為來」。當我們執著於追究責任時，往往錯失了彰顯上帝恩典的機會。</p>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-dark-900 p-6 rounded-xl border border-white/5">
+                        <p class="text-gold-300 text-lg leading-relaxed font-medium">「苦難不是上帝對你過去罪惡的懲罰，因為所有的懲罰都已經落在十字架上的耶穌基督身上了。」</p>
+                        <p class="text-right mt-4 text-sm opacity-60">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="section3" class="scroll-mt-24 space-y-12">
+                <div class="border-l-4 border-gold-500 pl-6">
+                    <h3 class="text-3xl font-bold mb-4">恐懼中的啟示：令人窒息的絕對超越性</h3>
+                    <p class="text-gold-400 font-display">伯 4:12-21</p>
+                </div>
+                
+                <div class="bg-dark-800 p-8 rounded-2xl border border-white/5 italic text-gray-400 leading-relaxed">
+                    「我暗暗地得了默示；我耳朵也聽其細微的聲音。在思念夜中、深度睡眠的時候，恐懼、戰兢臨到我身，使我百骨打戰。有靈從我面前經過，我身上的毫毛直立...」
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                            <span class="text-sm">◆</span> 關鍵原文
+                        </h4>
+                        <p class="text-gray-300">「公義」（צָדַק / tsadaq）：意為公正、無辜、稱義。以利法強調人在創造主面前絕對不可能公義或潔淨。</p>
+                    </div>
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                            <span class="text-sm">◆</span> 關鍵問題與解析
+                        </h4>
+                        <p class="font-bold text-white mb-2">過度強調上帝的絕對超越與人的卑微，為何會成為屬靈虐待？</p>
+                        <p class="text-gray-300 text-sm">解析：這段話在字面上看似正確，但卻缺乏了上帝的愛、憐憫與立約的關係。當信仰變成了純粹的恐懼，就無法帶給受苦者任何安慰，只會讓其感到更加絕望。</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-8 items-center bg-gold-900/10 p-8 rounded-2xl border border-gold-900/20">
+                    <div class="flex-1">
+                        <h4 class="text-gold-400 font-bold mb-4">實踐省思</h4>
+                        <p class="text-gray-300 italic">以利法就像是在講述一個屬靈的「鬼故事」。但耶穌啟示的上帝，不是在黑夜中讓人戰慄的幽靈，而是看見浪子回家就動了慈心、奔跑擁抱的阿爸父。沒有恩典的「啟示」，往往只是我們內心恐懼的投射。</p>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-dark-900 p-6 rounded-xl border border-white/5">
+                        <p class="text-gold-300 text-lg leading-relaxed font-medium">「唯有在那位與我們同受苦難的上帝面前，我們才能在苦難中找到安息。」</p>
+                        <p class="text-right mt-4 text-sm opacity-60">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl text-gold-500">🎙️</span>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            <div class="bento-card p-10 md:p-16 rounded-[3rem] prose prose-invert max-w-none space-y-8">
+                <p class="text-lg leading-loose text-gray-300">
+                    弟兄姊妹們，當我們面對生命中無法解釋的苦難時，我們往往會急於尋找答案。今天我們要來看約伯記第四章，約伯的三個朋友之一，以利法，開始了他的第一篇演說。這是一篇充滿了「正確神學」的講道，但卻完全缺乏了恩典。這提醒我們一個嚴肅的問題：<span class="text-gold-400 font-bold">當「正確」成為傷害：我們如何在苦難中重尋恩典與陪伴？</span>
+                </p>
+
+                <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">第一段：曾經的助人者，如今的軟弱者</h4>
+                <p class="text-lg leading-loose text-gray-300">
+                    以利法一開始對約伯說的話，看似溫和，實則帶著刺。他說：「<span class="text-gold-300 font-medium">你的言語曾扶助那將跌倒的人；你又使軟弱的膝穩固。</span>」這是多麼美好的過去啊！約伯曾經是眾人的輔導、是堅固別人的牧者。但以利法接著話鋒一轉：但現在禍患臨到你，你就昏迷...你的倚靠不是在你敬畏神嗎？
+                </p>
+                <p class="text-lg leading-loose text-gray-300">
+                    以利法的意思是：約伯，你以前這麼會教導別人，怎麼現在輪到你自己，你就崩潰了呢？這點出了我們常有的迷思：我們以為過去的屬靈經驗能成為抵禦苦難的防護罩。<span class="text-white font-bold italic">在極大的苦難面前，經驗無法解釋一切，唯有破碎的心靈需要被溫柔地接納。</span>
+                </p>
+
+                <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">第二段：因果報應的迷思</h4>
+                <p class="text-lg leading-loose text-gray-300">
+                    接著，以利法拋出了他神學的核心，也就是我們今天的<span class="text-gold-400 font-bold">關鍵金句</span>：「<span class="text-gold-300 font-medium">請你追想：無辜的人有誰滅亡？正直的人在何處剪除？</span>」
+                </p>
+                <p class="text-lg leading-loose text-gray-300">
+                    以利法認為，上帝的法則是絕對的因果律：你現在受了這麼大的苦，約伯啊，你一定是犯了什麼隱藏的大罪。但這種看似正確的神學，卻是極度傷人的。我們不能用冷冰冰的因果律，來取代上帝那深不可測的護理與恩典。基督徒的苦難不是上帝的懲罰，因為一切的懲罰已經由十字架上的耶穌承擔了。
+                </p>
+
+                <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">第三段：恐懼中的啟示</h4>
+                <p class="text-lg leading-loose text-gray-300">
+                    最後，以利法搬出了他個人的「屬靈經歷」。他說他在夜間看見異象，使他「<span class="text-gold-300 font-medium">百骨打戰、毫毛直立</span>」。那靈對他說：「必死的人豈能比神公義嗎？」
+                </p>
+                <p class="text-lg leading-loose text-gray-300">
+                    以利法給了約伯正確的教義片段，卻給錯了上帝的屬性。沒有恩典的神學，只會讓人窒息。在苦難中，我們需要的不是一個在黑夜裡讓我們嚇得發抖的聲音，而是一位願意與我們一同流淚、經歷十字架苦難的救主。
+                </p>
+                
+                <p class="text-xl font-bold text-gold-400 text-center py-8">
+                    弟兄姊妹，願我們都不做以利法。讓我們放下那些自以為是的標準答案，用恩典去包容，用安靜去陪伴，並在上帝主權的奧祕前謙卑俯伏。
+                </p>
+            </div>
+        </section>
+
+        <!-- Keywords & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-display font-bold mb-8 flex items-center gap-3">
+                    <span class="text-gold-500">🎯</span> 應用方向與結論
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <span class="w-12 h-12 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-500 font-bold shrink-0">1</span>
+                        <p class="text-gray-300"><strong class="text-white">重新檢視「安慰學」</strong>：陪伴時檢視自己是否急於給答案，忽略了受苦者的情感需求。同理勝過神學說教。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="w-12 h-12 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-500 font-bold shrink-0">2</span>
+                        <p class="text-gray-300"><strong class="text-white">打破因果框架</strong>：承認生命中有無法解釋的奧祕。學習與哀哭的人同哭。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="w-12 h-12 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-500 font-bold shrink-0">3</span>
+                        <p class="text-gray-300"><strong class="text-white">恩典與真理平衡</strong>：如果信仰只帶來恐懼，那便不是完整的福音。仰望十字架，見證公義與愛相遇。</p>
+                    </div>
+                </div>
+                <div class="mt-12 flex flex-wrap gap-4">
+                    <span class="px-6 py-2 bg-gold-500 text-black font-bold rounded-full"># 恩典 Grace</span>
+                    <span class="px-6 py-2 bg-gold-500 text-black font-bold rounded-full"># 陪伴 Companionship</span>
+                    <span class="px-6 py-2 bg-gold-500 text-black font-bold rounded-full"># 奧祕 Mystery</span>
+                </div>
+            </div>
+
+            <div class="bento-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-display font-bold mb-8 flex items-center gap-3">
+                    <span class="text-gold-500">✨</span> 回應行動
+                </h3>
+                <ul class="space-y-8">
+                    <li class="relative pl-8 border-l border-white/10">
+                        <div class="absolute top-0 left-[-4px] w-2 h-2 bg-gold-500 rounded-full"></div>
+                        <h4 class="font-bold text-white mb-2">安靜的陪伴</h4>
+                        <p class="text-gray-400 text-sm">本週遇到困難的朋友，挑戰自己只傾聽、遞水，不給任何建議或分析。</p>
+                    </li>
+                    <li class="relative pl-8 border-l border-white/10">
+                        <div class="absolute top-0 left-[-4px] w-2 h-2 bg-gold-500 rounded-full"></div>
+                        <h4 class="font-bold text-white mb-2">省察定罪的心</h4>
+                        <p class="text-gray-400 text-sm">在禱告中省察自己是否對遭遇不幸的人進行「因果論」的定罪，並為此悔改。</p>
+                    </li>
+                    <li class="relative pl-8 border-l border-white/10">
+                        <div class="absolute top-0 left-[-4px] w-2 h-2 bg-gold-500 rounded-full"></div>
+                        <h4 class="font-bold text-white mb-2">為受苦者代求</h4>
+                        <p class="text-gray-400 text-sm">為一位受苦的朋友代禱，不設定「復原」時間表，只求他經歷上帝同在的平安。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl text-gold-500">📜</span>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「上帝在我們的歡愉中對我們微語，在我們的良知中對我們說話，但卻在我們的痛苦中大聲呼喊：苦難是上帝用來喚醒這個耳聾世界的麥克風。」</p>
+                    <p class="text-xs text-gray-500">— C.S. Lewis / 《痛苦的奧祕》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid border-l-4 border-gold-600">
+                    <p class="text-gold-200 italic font-medium mb-4">「苦難不是上帝對你過去罪惡的懲罰，因為所有的懲罰都已經落在十字架上的耶穌基督身上了。」</p>
+                    <p class="text-xs text-gray-500">— 提摩太·凱勒 / 《與上帝一起走過苦難》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「唯有受苦的上帝才能拯救。」</p>
+                    <p class="text-xs text-gray-500">— 潘霍華 / 《獄中書簡》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「我們不能藉著提供解答來醫治人；我們只能藉著分享彼此的破碎來互相醫治。」</p>
+                    <p class="text-xs text-gray-500">— 盧雲 / 《負傷的治療者》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「如果上帝不是在十字架上經歷了極度的痛苦，我無法相信這位上帝。」</p>
+                    <p class="text-xs text-gray-500">— 約翰·史托德 / 《基督的十字架》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid border-l-4 border-gold-600">
+                    <p class="text-gold-200 italic font-medium mb-4">「上帝帶領祂的兒女經過深水，不是要淹死他們，而是要洗淨他們。」</p>
+                    <p class="text-xs text-gray-500">— 司布真 / 《清晨甘露》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「在苦難中，我們不是尋求解釋，我們是尋求上帝的同在。約伯記最終沒有給出苦難的答案，它給出的是上帝自己。」</p>
+                    <p class="text-xs text-gray-500">— 畢德生 / 《信息本聖經》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「十字架的神學稱事物為其本來面目...人必須在苦難和十字架中才能認識隱藏的上帝。」</p>
+                    <p class="text-xs text-gray-500">— 馬丁·路德 / 《海德堡辯論》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「我們對上帝最真實的認識，往往是在我們最深的試煉中形成的。」</p>
+                    <p class="text-xs text-gray-500">— 查爾斯·史丹利 / 《信心的考驗》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-gold-200 italic font-medium mb-4">「信心不是相信上帝會照我們所求的去作，信心是相信無論上帝作什麼，都是絕對的善和絕對的愛。」</p>
+                    <p class="text-xs text-gray-500">— 唐崇榮 / 《信仰、試煉與得勝》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center py-12 border-t border-white/5 opacity-40 hover:opacity-100 transition-opacity">
+            <p class="text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-black rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all z-[60]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

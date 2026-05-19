@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯11:1-20：當神學成為傷人的武器：在奧秘中謙卑與回轉</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        slate: {
+                            850: '#111827',
+                            950: '#030712',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'jump': 'jump 2s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: 0.4, transform: 'scale(1)' },
+                            '50%': { opacity: 0.8, transform: 'scale(1.05)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #fde047;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #eab308;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-gold-500/30 overflow-x-hidden">
+
+    <!-- Header / Banner -->
+    <header id="top" class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-black">
+            <img src='image/img_9fd13164-6e6e-4582-a3ac-e3804414ec68.jpg' alt='Banner Image' class="w-full h-full object-cover animate-breathe opacity-60" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/40 to-slate-950"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <p class="font-accent text-gold-400 tracking-widest text-lg md:text-xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">JOB 11:1-20</p>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight opacity-0 animate-[fadeInUp_1s_ease-out_0.3s_forwards]">
+                當神學成為傷人的武器：<br/>
+                <span class="text-gradient">在奧秘中謙卑與回轉</span>
+            </h1>
+            <div class="mt-12 opacity-0 animate-jump animate-[fadeIn_1s_ease-out_1s_forwards]">
+                <p class="text-xl md:text-2xl font-light italic text-slate-300 tracking-wide max-w-3xl mx-auto">
+                    「你考察就能測透神嗎？你豈能盡情測透全能者嗎？」
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass-card border-x-0 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <div class="text-gold-400 font-bold tracking-tighter text-lg">
+                約伯記 11:1-20
+            </div>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base font-medium overflow-x-auto no-scrollbar whitespace-nowrap">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 text-gold-500/10 transition-transform duration-700 group-hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-48 h-48" fill="currentColor" viewBox="0 0 24 24"><path d="M11 11.233V20h2v-8.767l4.5 4.5 1.414-1.414L12 7.414l-6.914 6.905L6.5 15.733l4.5-4.5zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-3xl text-gold-400">🙏</span>
+                    <h2 class="text-2xl font-bold tracking-tight">禱告詞</h2>
+                </div>
+                <p class="text-lg md:text-xl text-slate-300 leading-relaxed italic">
+                    主啊，當我們面對生命中無法理解的苦難，或看見他人身處深淵時，求祢保守我們的心與我們的口。不叫我們用僵化的教條去定罪他人，也不叫我們在祢深不可測的智慧面前狂妄自大。求祢賜下憐憫與謙卑，讓我們在奧秘中單單仰望祢的恩典，並以基督的愛去陪伴受傷的靈魂。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-3xl text-gold-400">📜</span>
+                <h2 class="text-3xl font-bold font-serif">分段大綱</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="glass-card hover:bg-gold-500/10 p-6 rounded-2xl transition-all duration-300 group text-left border-l-4 border-l-gold-500">
+                    <span class="text-xs text-gold-500 font-accent font-bold block mb-2">SECTION 01</span>
+                    <h3 class="font-bold text-lg leading-snug group-hover:text-gold-400 transition-colors">缺乏恩典的真理：當言語成為定罪的刀劍</h3>
+                    <p class="text-sm text-slate-500 mt-2">伯 11:1-6</p>
+                </a>
+                <a href="#section2" class="glass-card hover:bg-gold-500/10 p-6 rounded-2xl transition-all duration-300 group text-left border-l-4 border-l-gold-500">
+                    <span class="text-xs text-gold-500 font-accent font-bold block mb-2">SECTION 02</span>
+                    <h3 class="font-bold text-lg leading-snug group-hover:text-gold-400 transition-colors">測不透的奧秘：在全能者面前的謙卑</h3>
+                    <p class="text-sm text-slate-500 mt-2">伯 11:7-12</p>
+                </a>
+                <a href="#section3" class="glass-card hover:bg-gold-500/10 p-6 rounded-2xl transition-all duration-300 group text-left border-l-4 border-l-gold-500">
+                    <span class="text-xs text-gold-500 font-accent font-bold block mb-2">SECTION 03</span>
+                    <h3 class="font-bold text-lg leading-snug group-hover:text-gold-400 transition-colors">轉向神的呼召：在破碎中尋求真正的安穩</h3>
+                    <p class="text-sm text-slate-500 mt-2">伯 11:13-20</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24 mt-20">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-24 border-t border-slate-800 pt-16">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-serif font-bold text-gold-400 mb-4">缺乏恩典的真理：當言語成為定罪的刀劍</h3>
+                            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-sm text-slate-400 italic">
+                                伯 11:1-6
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-300 font-bold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-500"></span> 關鍵字：罪孽 (Iniquity)</h4>
+                                <p class="text-slate-300 leading-relaxed">希伯來文 <strong>עָוֹן (avon)</strong>。瑣法斷言約伯的受苦是因為他犯了極大的隱惡，甚至認為神已經「手下留情」。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold-300 font-bold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-500"></span> 關鍵問題</h4>
+                                <p class="text-slate-100 font-medium">為何正確的神學觀點（如神是公義的）有時反而會對受苦者造成二度傷害？</p>
+                                <p class="text-slate-400 text-sm border-l-2 border-slate-700 pl-4 py-1">沒有愛心與同理心的真理，往往會變成傷人的武器。當我們急於用理性去解釋苦難時，往往忽略了受苦者最需要的是陪伴與傾聽。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border-dashed border border-white/10">
+                                <p class="text-gold-200 italic">「沒有愛的真理是殘酷的，它給了我們資訊，卻讓我們無法真正聽進去。」——提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-24 border-t border-slate-800 pt-16">
+                    <div class="flex flex-col md:flex-row-reverse gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-serif font-bold text-gold-400 mb-4">測不透的奧秘：在全能者面前的謙卑</h3>
+                            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-sm text-slate-400 italic">
+                                伯 11:7-12
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-300 font-bold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-500"></span> 關鍵字：測透 (Fathom)</h4>
+                                <p class="text-slate-300 leading-relaxed">希伯來文 <strong>חֵקֶר (cheqer)</strong>，意為探索。指人類無法憑藉有限的理性去完全窮盡神的本性與作為。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold-300 font-bold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-500"></span> 關鍵問題</h4>
+                                <p class="text-slate-100 font-medium">當我們無法理解神的作為時，該如何面對生命中的「未解之謎」？</p>
+                                <p class="text-slate-400 text-sm border-l-2 border-slate-700 pl-4 py-1">既然神是不可測透的，我們就不該妄下定論。面對苦難，必須承認自己的有限，將「為什麼」轉化為對全能者的敬畏。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border-dashed border border-white/10">
+                                <p class="text-gold-200 italic">「認識到神無限地超越我們的認知，是我們邁向真正認識祂的第一步。」——陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-24 border-t border-slate-800 pt-16">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-serif font-bold text-gold-400 mb-4">轉向神的呼召：在破碎中尋求真正的安穩</h3>
+                            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-sm text-slate-400 italic">
+                                伯 11:13-20
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold-300 font-bold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-500"></span> 關鍵字：仰起臉來</h4>
+                                <p class="text-slate-300 leading-relaxed">希伯來文 <strong>פָּནִים (panim)</strong>。抬起臉代表關係的恢復、無虧的良心以及在神面前坦然無懼的狀態。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold-300 font-bold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-500"></span> 關鍵問題</h4>
+                                <p class="text-slate-100 font-medium">瑣法的悔改公式（除掉罪惡=得著平安）有何盲點？</p>
+                                <p class="text-slate-400 text-sm border-l-2 border-slate-700 pl-4 py-1">真實的信仰並非自動販賣機。我們轉向神，不是為了換取環境的順遂，而是為了得著神自己。真正的指望在於神與我們同在。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border-dashed border border-white/10">
+                                <p class="text-gold-200 italic">「我已經學會親吻那將我拋向萬古磐石的巨浪。」——司布真</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-12">
+                <span class="text-3xl text-gold-400">🎙️</span>
+                <h2 class="text-3xl font-bold font-serif">講章文稿</h2>
+            </div>
+            
+            <div class="glass-card rounded-[3rem] p-10 md:p-16 space-y-10 text-slate-200 text-lg leading-relaxed shadow-2xl">
+                <p>各位弟兄姐妹，平安。當我們遭遇生命中的暴風雨時，身邊總會出現許多聲音。有些聲音帶來安慰，有些聲音卻像利刃一般刺透人心。今天我們來到約伯記第十一章，來看約伯的三友之一——瑣法的第一次發言。這段經文給了我們一個極大的警惕：<strong class="text-gold-300">伯11:1-20：當神學成為傷人的武器：在奧秘中謙卑與回轉</strong>。</p>
+                
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-white">一、缺乏恩典的真理：當言語成為定罪的刀劍</h3>
+                    <p>在經文的開頭，瑣法對約伯發出了嚴厲的指控。他聽不下去約伯的哀哭與抗議，他說：*「多嘴多舌的人豈可稱為義嗎？」*瑣法擁有絕對的「正統神學」——他深信神是公義的，因此受苦必是因為犯罪。他甚至殘酷地對約伯說：<strong class="text-gold-300">「你當知道神追討你比你罪孽該得的還少。」</strong></p>
+                    <p>這句話對一個失去所有兒女、財產的人來說，是何等殘忍！弟兄姐妹，為何正確的神學觀點，有時反而會對受苦者造成二度傷害？因為沒有恩典與愛心的真理，就只是定罪的刀劍。正如提摩太·凱勒所說的：<span class="border-b border-gold-500">「沒有愛的真理是殘酷的。」</span>當我們面對受苦的弟兄姐妹時，我們不能像瑣法一樣，急著將一套僵硬的神學公式套在他們身上。我們需要的是陪伴的眼淚，而不是冷酷的分析。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-white">二、測不透的奧秘：在全能者面前的謙卑</h3>
+                    <p>接著，瑣法話鋒一轉，講出了一段極其優美的讚美詩。這正是我們今天的<strong class="text-gold-300">關鍵金句：「你考察就能測透神嗎？你豈能盡情測透全能者嗎？」</strong>瑣法描繪了神的智慧高及天、深於陰間、比地長、比海寬。</p>
+                    <p>這段話本身是絕對的真理。但瑣法用錯了地方，他用神的偉大來壓垮約伯。然而，對今天的我們而言，這段經文呼召我們在全能者面前謙卑。陶恕曾說：<span class="border-b border-gold-500">「認識到神無限地超越我們的認知，是我們邁向真正認識祂的第一步。」</span>我們不需要假裝明白一切的為什麼，我們只需要知道，那位深不可測的神，是愛我們的神。我們要在奧秘中安息。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold text-white">三、轉向神的呼召：在破碎中尋求真正的安穩</h3>
+                    <p>最後，瑣法給出了他的解決方案。他呼籲約伯：*「你若將心安正，又向主舉手...那時，你必仰起臉來，毫無斑點。」*瑣法提出了一個保證：只要你悔改除掉罪惡，神就會讓你忘記苦楚，你的日子會比正午更明。</p>
+                    <p>但這是一種「交易式」的信仰。真正的信仰不是這樣的。我們轉向神，不是因為神能給我們無災無難的生活，而是因為我們需要神自己。司布真曾感嘆：<span class="border-b border-gold-500">「我已經學會親吻那將我拋向萬古磐石的巨浪。」</span>如果在破碎中，苦難能將我們推向神，讓我們不依靠環境，而是因為擁有神而<strong class="text-gold-300">「因有指望就必穩固」</strong>，那麼這才是真正的安穩。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-3xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl text-gold-400">💡</span>
+                    <h3 class="text-xl font-bold">應用方向</h3>
+                </div>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex gap-3"><span class="text-gold-500">•</span> 檢視我們安慰人的方式</li>
+                    <li class="flex gap-3"><span class="text-gold-500">•</span> 擁抱奧秘，承認有限</li>
+                    <li class="flex gap-3"><span class="text-gold-500">•</span> 拒絕交易式的信仰</li>
+                </ul>
+                <div class="mt-8 pt-6 border-t border-white/10">
+                    <p class="text-sm font-bold text-gold-400 mb-2">結論關鍵字</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-gold-500/10 text-gold-500 rounded-full text-xs">同理 Empathy</span>
+                        <span class="px-3 py-1 bg-gold-500/10 text-gold-500 rounded-full text-xs">奧秘 Mystery</span>
+                        <span class="px-3 py-1 bg-gold-500/10 text-gold-500 rounded-full text-xs">仰望 Looking up</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl text-gold-400">👣</span>
+                    <h3 class="text-xl font-bold">回應行動</h3>
+                </div>
+                <div class="space-y-6">
+                    <div class="group">
+                        <p class="text-slate-300 text-sm font-bold group-hover:text-gold-400 transition-colors">1. 操練「靜默的陪伴」</p>
+                        <p class="text-slate-500 text-xs mt-1">克制給建議的衝動，單單以聆聽表達愛。</p>
+                    </div>
+                    <div class="group">
+                        <p class="text-slate-300 text-sm font-bold group-hover:text-gold-400 transition-colors">2. 交託「未解的為什麼」</p>
+                        <p class="text-slate-500 text-xs mt-1">在禱告中宣告神是測不透的全能者，交還主權。</p>
+                    </div>
+                    <div class="group">
+                        <p class="text-slate-300 text-sm font-bold group-hover:text-gold-400 transition-colors">3. 檢驗悔改的動機</p>
+                        <p class="text-slate-500 text-xs mt-1">省察是否把神當作工具，恢復對祂單純的渴慕。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-12">
+                <span class="text-3xl text-gold-400">✨</span>
+                <h2 class="text-3xl font-bold font-serif">名言佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「認識到神無限地超越我們的認知，是我們邁向真正認識祂的第一步。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「沒有愛的真理是殘酷的，它給了我們資訊，卻讓我們無法真正聽進去；但沒有真理的愛是軟弱的。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「神對我們的愛，其中一個最重要的展現，就是讓我們學會傾聽弟兄姊妹的聲音。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「我已經學會親吻那將我拋向萬古磐石的巨浪。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「唯有當我們願意直面自己生命中的傷口，我們才能成為別人生命中的『負傷的醫治者』。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「牧養的本質，不是在問題出現時急著提供解答，而是在奧秘的苦難中與人一同站立。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「我永遠無法相信一位沒有受過苦的上帝...在一個充滿痛苦的世界裡，我們怎麼能敬拜一個對痛苦免疫的上帝呢？」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「神最偉大的作為，往往不是改變我們的環境，而是改變在該環境中的我們。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「我們對上帝的認識，若不是為了引導我們敬畏祂並信靠祂的眷顧，那種知識就是空洞且徒然的。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl break-inside-avoid hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4">「十字架上的神學家承認事情的真相，而榮耀的神學家則稱惡為善，稱善為惡。」</p>
+                    <p class="text-gold-500 text-sm font-bold">—— 馬丁·路德 (Martin Luther)</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center text-slate-600 text-sm">
+                <p>⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center shadow-xl hover:bg-gold-400 transition-all hover:scale-110 active:scale-95 z-[60]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Simple scroll spy or active link management can be added here if needed.
+        // For now, smooth scroll is handled by CSS.
+    </script>
+</body>
+</html>
+

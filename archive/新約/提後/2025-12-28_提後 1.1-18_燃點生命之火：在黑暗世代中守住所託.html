@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提後 1:1-18: 燃點生命之火：在黑暗世代中守住所託</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b', // Amber-500
+                        secondary: '#ef4444', // Red-500
+                        accent: '#8b5cf6', // Violet-500
+                        bgDark: '#0a0a0a',
+                        cardDark: '#141414',
+                        glass: 'rgba(20, 20, 20, 0.7)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: 0.4 },
+                            '50%': { opacity: 0.8 },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-morphism {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: #141414;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: float 2.5s ease-in-out infinite;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Sticky Nav -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-morphism py-4 px-6 flex justify-between items-center">
+        <div class="text-primary font-bold tracking-wider text-sm md:text-base">提後 1:1-18</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-widest text-gray-400">
+            <a href="#prayer" class="hover:text-primary transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-primary transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-primary transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-primary transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="header" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_e964b79f-e86b-4a5f-a50e-e328ef90802d.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-t from-bgDark via-bgDark/40 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h1 class="text-4xl md:text-7xl font-black mb-8 font-display tracking-tight leading-tight">
+                燃點<span class="text-gradient">生命之火</span><br/>
+                <span class="text-2xl md:text-4xl font-normal text-gray-300 block mt-4">在黑暗世代中守住所託</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl font-medium leading-relaxed italic text-gray-100 jump-text">
+                    「因為神賜給我們，不是膽怯的心，乃是剛強、仁愛、謹守的心。」
+                </p>
+                <p class="mt-4 text-primary font-bold tracking-widest text-lg">（提後 1:7）</p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- Prayer Section -->
+    <section id="prayer" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="glass-morphism rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display tracking-widest">禱告</h2>
+            </div>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-300 first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left">
+                親愛的天父，感謝祢透過保羅的書信再次激勵我們。在這個動盪且容易令人膽怯的時代，求祢按著祢豐富的榮耀，藉著聖靈將那剛強、仁愛、謹守的心再次吹入我們的靈魂。讓我們不以福音為恥，也不以受苦為辱，而是能像提摩太一樣，在那純正話語的規模中，靠著聖靈守住那美好的託付。願我們的信心不是虛飾的，而是像火一樣被挑旺起來，一生為祢發光。禱告奉主耶穌基督的名，阿們。
+            </p>
+        </div>
+    </section>
+
+    <!-- Outline Navigation -->
+    <section id="outline" class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="flex items-center gap-4 mb-10 justify-center">
+            <div class="w-10 h-1 bg-primary"></div>
+            <h2 class="text-3xl font-bold font-display tracking-widest">大綱導覽</h2>
+            <div class="w-10 h-1 bg-primary"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="#section1" class="bento-card p-8 rounded-2xl group">
+                <span class="text-primary text-sm font-bold block mb-2 tracking-tighter">01. 傳承</span>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors">挑旺那純真的信仰之火</h3>
+                <p class="text-gray-500 text-sm">提後 1:1-7</p>
+            </a>
+            <a href="#section2" class="bento-card p-8 rounded-2xl group">
+                <span class="text-accent text-sm font-bold block mb-2 tracking-tighter">02. 勇氣</span>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-accent transition-colors">在受苦中見證福音大能</h3>
+                <p class="text-gray-500 text-sm">提後 1:8-12</p>
+            </a>
+            <a href="#section3" class="bento-card p-8 rounded-2xl group">
+                <span class="text-secondary text-sm font-bold block mb-2 tracking-tighter">03. 忠信</span>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-secondary transition-colors">持守真理與忠誠榜樣</h3>
+                <p class="text-gray-500 text-sm">提後 1:13-18</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Detailed Content -->
+    <main class="py-12 px-6 max-w-6xl mx-auto space-y-32">
+        
+        <!-- Section 1 -->
+        <article id="section1" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-28">
+                        <h2 class="text-4xl font-black font-display text-primary mb-6">挑旺那純真<br/>的信仰之火</h2>
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-xl bg-primary/5 border border-primary/20">
+                                <p class="text-primary font-bold text-sm mb-2 italic">重要原文解析</p>
+                                <p class="text-sm leading-relaxed text-gray-400"><strong>無偽之信 (anypokritos)：</strong> 不戴面具的真實信仰。</p>
+                                <p class="text-sm leading-relaxed text-gray-400 mt-2"><strong>挑旺 (anazōpyreō)：</strong> 重新點燃快熄滅的火種。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-8">
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span> 引用經文</h4>
+                        <p class="text-gray-300 leading-relaxed italic border-l-4 border-primary pl-6 py-2">
+                            「...為此我提醒你，使你將神藉我按手給你的恩賜再如火挑旺起來。因為神賜給我們，不是膽怯的心，乃是剛強、仁愛、謹守的心。」
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-lg mb-3">關鍵問題</h4>
+                            <p class="text-gray-400 text-sm">為什麼提摩太需要被提醒「挑旺」恩賜？</p>
+                            <p class="mt-2 text-gray-300 text-sm leading-relaxed">面對外在迫害與天性內向，恩賜需透過意志維護，而非坐等感覺。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent">
+                            <h4 class="font-bold text-lg mb-3">例證</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed italic">奧運聖火需不斷補充燃料。信仰傳承如同火炬，每一代都必須主動撥旺，否則只需一代疏忽，就會熄滅。</p>
+                        </div>
+                    </div>
+                    <div class="text-center py-6 border-y border-white/5">
+                        <p class="text-lg italic font-medium">「信徒的信心若是沒有被試驗過，他就不知道自己的信心有多少。」</p>
+                        <p class="text-primary mt-2">—— 慕迪 (D.L. Moody)</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 2 -->
+        <article id="section2" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row-reverse gap-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-28">
+                        <h2 class="text-4xl font-black font-display text-accent mb-6 text-right">在受苦中見證<br/>福音的大能</h2>
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-xl bg-accent/5 border border-accent/20">
+                                <p class="text-accent font-bold text-sm mb-2 italic">重要原文解析</p>
+                                <p class="text-sm leading-relaxed text-gray-400"><strong>廢去 (katargeō)：</strong> 使死亡對信徒的威嚇力完全失效。</p>
+                                <p class="text-sm leading-relaxed text-gray-400 mt-2"><strong>保全 (phylassō)：</strong> 軍事用語，守衛與保衛。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-8">
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full"></span> 引用經文</h4>
+                        <p class="text-gray-300 leading-relaxed italic border-r-4 border-accent pr-6 py-2 text-right">
+                            「...我不以為恥；因為知道我所信的是誰，也深信他能保全我所交付他的，直到那日。」
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-lg mb-3">關鍵問題</h4>
+                            <p class="text-gray-400 text-sm">保羅為何能在獄中說出「我不以為恥」？</p>
+                            <p class="mt-2 text-gray-300 text-sm leading-relaxed">他的價值觀建立在基督的「顯現」上，而非社會評價。對他而言，苦難是福音的一部分。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gradient-to-br from-accent/10 to-transparent">
+                            <h4 class="font-bold text-lg mb-3">殉道者的勇氣</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed italic">坡旅甲在烈火前宣告：「我事奉祂八十六年，祂從未虧待我。」這就是認知的力量。</p>
+                        </div>
+                    </div>
+                    <div class="text-center py-6 border-y border-white/5">
+                        <p class="text-lg italic font-medium">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                        <p class="text-accent mt-2">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 3 -->
+        <article id="section3" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-28">
+                        <h2 class="text-4xl font-black font-display text-secondary mb-6">持守真理與<br/>忠誠的榜樣</h2>
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-xl bg-secondary/5 border border-secondary/20">
+                                <p class="text-secondary font-bold text-sm mb-2 italic">重要原文解析</p>
+                                <p class="text-sm leading-relaxed text-gray-400"><strong>規模 (hypotypōsis)：</strong> 神學的草圖、藍圖或範本。</p>
+                                <p class="text-sm leading-relaxed text-gray-400 mt-2"><strong>暢快 (anapsychō)：</strong> 窒息環境中的深呼吸或涼風。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-8">
+                    <div class="bento-card p-8 rounded-2xl">
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> 引用經文</h4>
+                        <p class="text-gray-300 leading-relaxed italic border-l-4 border-secondary pl-6 py-2">
+                            「從前所交託你的善道，你要靠著那住在我們裡面的聖靈牢牢的守著。凡在亞西亞的人都離棄我...願主憐憫阿尼色弗一家的人。」
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="font-bold text-lg mb-3">關鍵問題</h4>
+                            <p class="text-gray-400 text-sm">為何提到「離棄他的人」與「阿尼色弗」？</p>
+                            <p class="mt-2 text-gray-300 text-sm leading-relaxed">對比出「忠心」的價值。持守真理不僅是認知，更是患難中的義氣與陪伴。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gradient-to-br from-secondary/10 to-transparent">
+                            <h4 class="font-bold text-lg mb-3">黑暗中的人</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed italic">阿尼色弗就像二戰期間隱藏猶太人的家庭，守住了良知與誡命，即便周圍的人都妥協。</p>
+                        </div>
+                    </div>
+                    <div class="text-center py-6 border-y border-white/5">
+                        <p class="text-lg italic font-medium">「真理的定義不僅是我們所持守的，更是持守我們的。」</p>
+                        <p class="text-secondary mt-2">—— 約翰·史托德 (John Stott)</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Sermons Full Text -->
+    <section id="sermon" class="py-24 bg-[#0d0d0d]">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-16 justify-center">
+                <div class="w-16 h-[1px] bg-gray-700"></div>
+                <h2 class="text-4xl font-black font-display tracking-[0.2em]">分段講章文稿</h2>
+                <div class="w-16 h-[1px] bg-gray-700"></div>
+            </div>
+
+            <div class="space-y-24">
+                <div class="relative pl-12 border-l border-primary/20">
+                    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-black font-bold">1</div>
+                    <h3 class="text-2xl font-bold mb-6 text-primary">挑旺那純真的信仰之火</h3>
+                    <div class="prose prose-invert max-w-none text-gray-300 text-lg leading-relaxed">
+                        <p>弟兄姊妹，保羅在寫這封信時，正處於地牢最陰暗的角落。但他想到的不是自己的寒冷，而是提摩太心中的那團火。<span class="text-white font-bold bg-primary/20 px-1">「因為神賜給我們，不是膽怯的心，乃是剛強、仁愛、謹守的心。」</span> 提摩太的信仰有著優良的傳承，從外祖母到母親，這是一份「無偽之信」。然而，保羅提醒我們：信仰的火種雖然是神給的，但「挑旺」卻是人的責任。你是否正處於靈性的枯乾或膽怯中？請記住，聖靈的火不需要重新尋找，只需要你靠著意志，再次撥動那被灰燼覆蓋的火星。</p>
+                    </div>
+                </div>
+
+                <div class="relative pl-12 border-l border-accent/20">
+                    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center text-white font-bold">2</div>
+                    <h3 class="text-2xl font-bold mb-6 text-accent">在受苦中見證福音的大能</h3>
+                    <div class="prose prose-invert max-w-none text-gray-300 text-lg leading-relaxed">
+                        <p>面對社會的排擠或不解，你是否曾以身為基督徒為恥？保羅對提摩太說：<span class="text-white font-bold bg-accent/20 px-1">「我不以為恥；因為知道我所信的是誰，也深信他能保全我所交付他的，直到那日。」</span> 保羅的勇氣不是來自於強悍的性格，而是來自於「認知的準確」。他知道死亡已經被廢去，永恆的生命已經彰顯。當我們看清了耶穌基督的榮美與權柄，世上的鎖鍊就再也無法羞辱我們。</p>
+                    </div>
+                </div>
+
+                <div class="relative pl-12 border-l border-secondary/20">
+                    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-white font-bold">3</div>
+                    <h3 class="text-2xl font-bold mb-6 text-secondary">守住所託的真理與忠誠</h3>
+                    <div class="prose prose-invert max-w-none text-gray-300 text-lg leading-relaxed">
+                        <p>最後，保羅提到兩種人：離棄他的人，以及使他暢快的阿尼色弗。<span class="text-white font-bold bg-secondary/20 px-1">「從前所交託你的善道，你要靠著那住在我們裡面的聖靈牢牢的守著。」</span> 守住真理不只是背誦教義，更是在眾人轉身離去時，依然願意站在基督那邊。阿尼色弗在羅馬殷勤地尋找保羅，他守住的不僅是教義，更是基督徒的信義。願我們在黑暗的世代中，都能成為那個讓人「暢快」的人，守住那美好的託付。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keywords & Action Section -->
+    <section class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    結論關鍵字
+                </h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-6 py-3 bg-primary/10 text-primary border border-primary/20 rounded-full font-bold text-xl"># 挑旺</span>
+                    <span class="px-6 py-3 bg-accent/10 text-accent border border-accent/20 rounded-full font-bold text-xl"># 不恥</span>
+                    <span class="px-6 py-3 bg-secondary/10 text-secondary border border-secondary/20 rounded-full font-bold text-xl"># 守住</span>
+                </div>
+
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold mb-6">講道應用方向</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 items-start">
+                            <span class="w-6 h-6 bg-primary/20 rounded text-primary flex items-center justify-center shrink-0 mt-1 italic font-bold">1</span>
+                            <p class="text-gray-300"><strong class="text-white">個人靈命：</strong> 定期檢查內心的「火」。</p>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="w-6 h-6 bg-primary/20 rounded text-primary flex items-center justify-center shrink-0 mt-1 italic font-bold">2</span>
+                            <p class="text-gray-300"><strong class="text-white">面對恐懼：</strong> 當感到膽怯時，宣告「剛強、仁愛、謹守」的心。</p>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="w-6 h-6 bg-primary/20 rounded text-primary flex items-center justify-center shrink-0 mt-1 italic font-bold">3</span>
+                            <p class="text-gray-300"><strong class="text-white">群體責任：</strong> 在世俗化洪流中，成為能給予肢體「暢快」支持的人。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-morphism rounded-3xl p-8 border-primary/20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    回應與實踐行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="p-5 bg-white/5 rounded-2xl border border-white/10">
+                        <p class="text-primary font-bold mb-2">具體行動</p>
+                        <p class="text-gray-400 text-sm">尋找一位在信仰路上對你有影響的屬靈長輩，本週向他表達感謝。</p>
+                    </div>
+                    <div class="p-5 bg-white/5 rounded-2xl border border-white/10">
+                        <p class="text-primary font-bold mb-2">屬靈操練</p>
+                        <p class="text-gray-400 text-sm">每天早晨宣告提後 1:7，求聖靈將三種特質注入挑戰中。</p>
+                    </div>
+                    <div class="p-5 bg-white/5 rounded-2xl border border-white/10">
+                        <p class="text-primary font-bold mb-2">真理護衛</p>
+                        <p class="text-gray-400 text-sm">每日研讀聖經，確保對福音的「規模」有精準的認識。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spiritual Quotes Section -->
+    <section id="quotes" class="py-24 bg-black px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold font-display text-center mb-16 tracking-widest flex items-center justify-center gap-4">
+                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H12.017C11.4647 13 11.017 12.5523 11.017 12V9C11.017 6.23858 13.2556 4 16.017 4H19.017C21.7784 4 24.017 6.23858 24.017 9V15C24.017 18.3137 21.3307 21 18.017 21H14.017ZM0 21L0 18C0 16.8954 0.89543 16 2 16H5C5.55228 16 6 15.5523 6 15V9C6 8.44772 5.55228 8 5 8H2C1.44772 8 1 8.44772 1 9V12C1 12.5523 0.552285 13 0 13H0C-0.552285 13 -1 12.5523 -1 12V9C-1 6.23858 1.23858 4 4 4H7C9.76142 4 12 6.23858 12 9V15C12 18.3137 9.31371 21 6 21H0Z"/></svg>
+                屬靈前輩佳句名言
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「神不尋找有大能的人，祂尋找願意被祂的大能所充滿的人。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">慕迪 (D.L. Moody)</p>
+                        <p class="text-xs text-gray-500 italic">《力量的秘訣》</p>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「我不怕受苦，我只怕我的苦難與基督的榮耀無關。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">馬丁·路德 (Martin Luther)</p>
+                        <p class="text-xs text-gray-500 italic">《桌邊談話》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between border-accent/20">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「一個不為真理受苦的人，絕不會知道真理的力量。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">潘霍華 (Dietrich Bonhoeffer)</p>
+                        <p class="text-xs text-gray-500 italic">《追隨基督》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「恐懼敲了敲門，信心去開門，門外空無一人。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">葛理翰 (Billy Graham)</p>
+                        <p class="text-xs text-gray-500 italic">《面對死亡與未來的希望》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「上帝不在乎你的成就，祂在乎的是你是否對祂交給你的事盡忠。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">查爾斯·史丹利 (Charles Stanley)</p>
+                        <p class="text-xs text-gray-500 italic">《成功的生存原則》</p>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「如果你對上帝的認識只停留在頭腦，你的生活就不會有剛強的心。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">唐崇榮</p>
+                        <p class="text-xs text-gray-500 italic">《聖靈的引導》</p>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「我們不應求神讓我們的擔子輕省，而應求神給我們強壯的肩膀。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">司布真 (C.H. Spurgeon)</p>
+                        <p class="text-xs text-gray-500 italic">《晨更與晚更》</p>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between border-secondary/20">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「福音並不是將我們從苦難中救出來，而是讓我們在苦難中有能力榮耀神。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">提摩太·凱勒 (Timothy Keller)</p>
+                        <p class="text-xs text-gray-500 italic">《苦難的意義》</p>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「我們若不守住那純正話語的規模，很快就會失去信仰的靈魂。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">約翰·加爾文 (John Calvin)</p>
+                        <p class="text-xs text-gray-500 italic">《基督教要義》</p>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between bg-primary/10">
+                    <p class="text-lg italic leading-relaxed text-gray-300">「屬靈生命最大的障礙不是我們的軟弱，而是我們以為自己很強壯。」</p>
+                    <div class="mt-6 pt-6 border-t border-white/5">
+                        <p class="text-primary font-bold">盧雲 (Henri Nouwen)</p>
+                        <p class="text-xs text-gray-500 italic">《浪子回頭》</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 p-8 rounded-2xl border border-red-900/30 bg-red-950/10 text-center max-w-2xl mx-auto">
+                <p class="text-red-500 text-sm flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Button -->
+    <a href="#header" class="fixed bottom-10 right-10 w-14 h-14 bg-primary rounded-full shadow-2xl flex items-center justify-center text-black hover:scale-110 transition-transform z-[100] group">
+        <svg class="w-8 h-8 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

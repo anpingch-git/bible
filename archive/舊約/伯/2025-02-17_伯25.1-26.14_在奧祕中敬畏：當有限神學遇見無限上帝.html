@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯25:1-26:14：在奧祕中敬畏：當有限神學遇見無限上帝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                        display: ['"Ma Shan+Zheng"', 'cursive'],
+                    },
+                    colors: {
+                        divine: {
+                            50: '#f5f7fa',
+                            100: '#e4e9f2',
+                            200: '#bccadc',
+                            300: '#94aac6',
+                            400: '#6c8bb0',
+                            500: '#4a6d9a',
+                            600: '#3a567a',
+                            700: '#2a3e59',
+                            800: '#1a2739',
+                            900: '#0a1019',
+                        },
+                        gold: '#D4AF37',
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a1019;
+            color: #e4e9f2;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(10, 16, 25, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #F9D976);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: rgba(26, 39, 57, 0.4);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(212, 175, 55, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <div class="text-gold font-bold text-sm md:text-base">伯 25:1-26:14</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-widest">
+            <a href="#prayer" class="nav-link hover:text-gold uppercase">禱告</a>
+            <a href="#outline" class="nav-link hover:text-gold uppercase">大綱</a>
+            <a href="#sermon" class="nav-link hover:text-gold uppercase">講章</a>
+            <a href="#quotes" class="nav-link hover:text-gold uppercase">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src="image/img_8bac5bab-458f-4735-b5a5-5b9b8c450504.jpg" alt="Banner" class="w-full h-full object-cover animate-breath">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-[#0a1019]"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-3xl md:text-6xl font-serif font-black mb-8 leading-tight tracking-tight drop-shadow-2xl">
+                在奧祕中敬畏：<br>
+                <span class="text-gradient">當有限神學遇見無限上帝</span>
+            </h1>
+            
+            <!-- Verse (Floating) -->
+            <div class="animate-bounce-subtle py-6">
+                <p class="text-xl md:text-2xl font-serif text-white/90 leading-relaxed italic">
+                    「看哪，這不過是神做事的些微；我們從他那裡所聽見的，是何等細微的聲音！他大能的雷聲誰能明透呢？」
+                </p>
+                <p class="text-gold mt-4 font-bold tracking-widest">（伯 26:14）</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="max-w-6xl mx-auto px-6 space-y-32 pb-32">
+
+        <!-- Prayer -->
+        <section id="prayer" class="pt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8m0 0l-4 4m4-4l4 4m-4-12a4 4 0 110-8 4 4 0 010 8z"></path></svg>
+                <h2 class="text-4xl font-serif font-bold text-gold">祈禱詞</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-loose font-serif text-gray-200">
+                    主啊，祢是創造宇宙萬物、統管穹蒼的偉大真神。在祢無限的榮耀與奧祕面前，我們的知識何等有限，我們的神學何等貧乏。求祢赦免我們常常自以為能完全參透祢的作為，甚至用冰冷的話語去論斷受苦的靈魂。求祢賜給我們敬畏的心，使我們能在受苦者面前學習謙卑靜默；也賜給我們屬靈的眼光，使我們在黑暗與苦難中，依然能看見祢掌權的邊緣，聽見祢細微卻大有能力的聲音。<br>
+                    <span class="block mt-6 font-bold text-gold italic">奉主耶穌基督的名求，阿們。</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="pt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                <h2 class="text-4xl font-serif font-bold text-gold">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold/50 text-sm font-bold mb-4">第一段 (25:1-6)</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold transition-colors">冰冷的神學：當正確的教義失去憐憫</h3>
+                    <div class="mt-4 flex justify-end">
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+                <a href="#part2" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold/50 text-sm font-bold mb-4">第二段 (26:1-4)</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold transition-colors">無效的安慰：在苦難中拒絕廉價的同情</h3>
+                    <div class="mt-4 flex justify-end">
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+                <a href="#part3" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold/50 text-sm font-bold mb-4">第三段 (26:5-14)</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold transition-colors">奧祕的邊緣：在敬畏中擁抱無限的上帝</h3>
+                    <div class="mt-4 flex justify-end">
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 Detail -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-gold text-black px-4 py-1 rounded-full font-bold text-sm">Part 01</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">冰冷的神學——當正確的教義失去憐憫</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 glass p-6 rounded-2xl border-l-4 border-gold">
+                            <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                引用經文 (伯 25:1-6)
+                            </h4>
+                            <p class="text-sm leading-relaxed text-gray-400 italic font-serif">
+                                書亞人比勒達回答說：神有治理之權，有威嚴可畏；他在高處施行和平。他的諸軍豈能數算？他的光亮一發，誰不蒙照呢？這樣，在神面前人怎能稱義？婦人所生的怎能潔淨？在神眼前，月亮也無光亮，星宿也不清潔。何況如蟲的人，如蛆的世人呢！
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="font-bold text-gold mb-2">關鍵原文：蟲 / 蛆 (tole'ah / rimmah)</h4>
+                                <p class="text-gray-300">形容極度卑微、腐敗、不潔的狀態。比勒達藉此強調人在神面前的絕對不配。</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bento-card p-6 rounded-2xl">
+                                    <h4 class="font-bold text-gold mb-2">關鍵問題</h4>
+                                    <p class="text-sm">正確的神學教義若未經愛的轉化，是否會成為傷害人的武器？</p>
+                                </div>
+                                <div class="bento-card p-6 rounded-2xl border-white/10">
+                                    <h4 class="font-bold text-white mb-2">名言佳句</h4>
+                                    <p class="italic text-sm">「沒有憐憫的真理，只是另一種形式的殘忍。」—— 提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Detail -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-gold text-black px-4 py-1 rounded-full font-bold text-sm">Part 02</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">無效的安慰——在苦難中拒絕廉價的同情</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 glass p-6 rounded-2xl border-l-4 border-gold">
+                            <h4 class="text-gold font-bold mb-4 flex items-center gap-2">引用經文 (伯 26:1-4)</h4>
+                            <p class="text-sm leading-relaxed text-gray-400 italic font-serif">
+                                約伯回答說：無能的人，蒙你何等的幫助！膀臂無力的人，蒙你何等的拯救！無智慧的人，蒙你何等的指教！你向他多顯大知識！你向誰發出言語來？誰的靈從你而出？
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="font-bold text-gold mb-2">關鍵原文：指教 / 知識 (tushiyyah)</h4>
+                                <p class="text-gray-300">指實用的智慧或成功的見解。約伯諷刺地質問：這些知識對深淵中的人有何幫助？</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bento-card p-6 rounded-2xl">
+                                    <h4 class="font-bold text-gold mb-2">關鍵問題</h4>
+                                    <p class="text-sm">我們在幫助受苦者時，是在發揚自己的屬靈驕傲，還是真的帶出神的安慰？</p>
+                                </div>
+                                <div class="bento-card p-6 rounded-2xl border-white/10">
+                                    <h4 class="font-bold text-white mb-2">名言佳句</h4>
+                                    <p class="italic text-sm">「有時，最偉大的屬靈操練，就是閉上我們的嘴，打開我們的心。」—— 盧雲</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Detail -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="bg-gold text-black px-4 py-1 rounded-full font-bold text-sm">Part 03</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">奧祕的邊緣——在敬畏中擁抱無限的上帝</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 glass p-6 rounded-2xl border-l-4 border-gold">
+                            <h4 class="text-gold font-bold mb-4 flex items-center gap-2">引用經文 (伯 26:5-14)</h4>
+                            <p class="text-sm leading-relaxed text-gray-400 italic font-serif">
+                                ...神將北極鋪在空中，將大地懸在虛空...看哪，這不過是神做事的些微；我們從他那裡所聽見的，是何等細微的聲音！他大能的雷聲誰能明透呢？
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="font-bold text-gold mb-2">關鍵原文：些微 (qatsah) / 細微的聲音 (shemets)</h4>
+                                <p class="text-gray-300">「些微」意指邊緣、極少部分。約伯指出壯麗宇宙也不過是上帝外衣的邊緣。</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bento-card p-6 rounded-2xl">
+                                    <h4 class="font-bold text-gold mb-2">關鍵問題</h4>
+                                    <p class="text-sm">當我們承認對神的認識只不過是「些微」時，這會如何改變我們面對苦難的態度？</p>
+                                </div>
+                                <div class="bento-card p-6 rounded-2xl border-white/10">
+                                    <h4 class="font-bold text-white mb-2">名言佳句</h4>
+                                    <p class="italic text-sm">「神若是可以被我們完全理解的神，祂就不配得我們的敬拜。」—— 陶恕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Transcript -->
+        <section id="sermon" class="pt-24 max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-4xl font-serif font-bold text-gold">講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-xl max-w-none space-y-12 font-serif text-gray-300 leading-relaxed">
+                <header class="mb-16">
+                    <h3 class="text-white text-3xl font-bold border-b border-gold/30 pb-4">在奧祕中敬畏：當有限神學遇見無限上帝</h3>
+                    <p class="text-gold font-bold mt-4">經文：約伯記 25:1-26:14</p>
+                </header>
+
+                <p>弟兄姊妹，當我們遭遇人生極大的風暴時，我們最不需要的，就是一套冷冰冰的理論。約伯記第25與26章，正是向我們展示了「正確的神學」與「真實的受苦」之間，可能產生多麼巨大的撕裂。今天，我們要透過這段經文，從三個層面來思想：當有限神學遇見無限上帝時，我們該如何自處？</p>
+
+                <div class="my-12">
+                    <h4 class="text-2xl font-bold text-white mb-6">第一段：冰冷的神學——當正確的教義失去憐憫</h4>
+                    <p>比勒達說：「<span class="text-white font-bold">神有治理之權，有威嚴可畏...在神面前人怎能稱義？何況如蟲的人，如蛆的世人呢！</span>」</p>
+                    <p>比勒達的教義是對的，但他的時機與動機錯了。比勒達把上帝的威嚴當作大鎚，把約伯敲得粉碎。這提醒我們一個深刻的警訊：<span class="text-gold font-bold underline decoration-gold/30 underline-offset-8">沒有憐憫的真理，只是另一種形式的殘忍</span>。當我們面對哀傷的人，若只會背誦教義，我們其實就像比勒達一樣，用冰冷的神學定罪了受苦的靈魂。</p>
+                </div>
+
+                <div class="my-12">
+                    <h4 class="text-2xl font-bold text-white mb-6">第二段：無效的安慰——在苦難中拒絕廉價的同情</h4>
+                    <p>約伯用極其諷刺的口吻反擊：「<span class="text-white font-bold italic">無能的人，蒙你何等的幫助！膀臂無力的人，蒙你何等的拯救！...誰的靈從你而出？</span>」</p>
+                    <p>我們在幫助受苦者時，往往急於給出答案，其實是為了解決自己面對別人苦難時的不安。盧雲神父曾提醒我們：「<span class="text-gold font-bold">有時，最偉大的屬靈操練，就是閉上我們的嘴，打開我們的心。</span>」真正的安慰，往往不是提出一個完美的解答，而是在無言中與哀哭的人同哭。</p>
+                </div>
+
+                <div class="my-12">
+                    <h4 class="text-2xl font-bold text-white mb-6">第三段：奧祕的邊緣——在敬畏中擁抱無限的上帝</h4>
+                    <p>約伯頌讚上帝將大地懸在虛空，天的柱子因祂震動。然而最震撼人心的是：「<span class="text-white font-bold text-2xl bg-gold/10 px-2 py-1">看哪，這不過是神做事的些微；我們從他那裡所聽見的，是何等細微的聲音！</span>」</p>
+                    <p>約伯宣告，即便我們看透了深海、仰望了星空，我們所認識的上帝，依然只是祂外衣的邊緣！既然我們對上帝的認識只不過是「些微的聲音」，我們怎麼敢用狹隘的因果報應論，去框定上帝的作為？正如陶恕所說：「<span class="text-white font-bold italic">神若是可以被我們完全理解的神，祂就不配得我們的敬拜。</span>」</p>
+                </div>
+
+                <div class="bg-divine-800 p-8 rounded-3xl border-2 border-gold/20 mt-16">
+                    <h4 class="text-gold font-bold text-xl mb-4">結論與應用</h4>
+                    <p class="text-lg">約伯在苦難中沒有得到解答，但他觸摸到了奧祕。當我們承認自己無法「明透」神大能的雷聲時，我們的心就得著了釋放。我們不需要在苦難中強求所有的答案，我們只需要在敬畏中，擁抱那位無限的上帝。讓我們的神學謙卑下來，讓我們的愛心湧流出來，在奧祕的邊緣，看見神恩典的同在。</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Action & Direction -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12">
+            <div class="glass p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold text-gold mb-8 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="bg-gold/20 text-gold rounded-full w-8 h-8 flex items-center justify-center shrink-0">1</span>
+                        <p><span class="font-bold text-white">操練靜默</span>：安排30分鐘，不祈求、不分析，單單默想上帝創造的浩大。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="bg-gold/20 text-gold rounded-full w-8 h-8 flex items-center justify-center shrink-0">2</span>
+                        <p><span class="font-bold text-white">勒住舌頭</span>：遇到受苦者時，克制自己給予「屬靈建議」的衝動，單純陪伴。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="bg-gold/20 text-gold rounded-full w-8 h-8 flex items-center justify-center shrink-0">3</span>
+                        <p><span class="font-bold text-white">讚美奧祕</span>：朗讀約伯記26:5-14，將焦點轉移到讚美神深不可測的大能。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold text-white mb-8">講道應用方向</h3>
+                <div class="space-y-6 text-gray-300">
+                    <p class="border-l-2 border-gold pl-4">1. 檢視我們的安慰方式：學習以「同在」取代「說教」。</p>
+                    <p class="border-l-2 border-gold pl-4">2. 擁抱信仰的奧祕：在無法理解的環境中，轉而信靠那位絕對掌權的神。</p>
+                    <p class="border-l-2 border-gold pl-4">3. 重建對神的敬畏：重新仰望祂懸大地於虛空、統管萬有的威嚴。</p>
+                </div>
+                <div class="mt-8 flex gap-2">
+                    <span class="bg-white/10 px-3 py-1 rounded text-xs">敬畏 Awe</span>
+                    <span class="bg-white/10 px-3 py-1 rounded text-xs">同理 Compassion</span>
+                    <span class="bg-white/10 px-3 py-1 rounded text-xs">奧祕 Mystery</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes -->
+        <section id="quotes" class="pt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-4xl font-serif font-bold text-gold">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「神若是可以被我們完全理解的神，祂就不配得我們的敬拜。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 陶恕 (A.W. Tozer)</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「沒有憐憫的真理，只是另一種形式的殘忍。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 提摩太·凱勒 (Timothy Keller)</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「上帝未曾應許我們免受苦難，但祂應許在苦難中與我們同在，這遠比免受苦難更為寶貴。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 司布真 (C.H. Spurgeon)</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「有時，最偉大的屬靈操練，就是閉上我們的嘴，打開我們的心。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 盧雲 (Henri Nouwen)</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「當我們無法測度上帝的旨意時，最安全的做法是敬拜祂的奧祕，而不是妄自猜測。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 約翰·加爾文 (John Calvin)</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「在敬拜中，我們不是來弄懂上帝，而是來站在奧祕面前，任由自己被敬畏感所淹沒。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 畢德生 (Eugene Peterson)</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「十字架的神學不是要我們去解釋苦難的奧祕，而是呼召我們在隱藏的上帝中尋找恩典。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 馬丁·路德 (Martin Luther)</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg italic font-serif leading-relaxed">「上帝最深切的渴望，不是我們完全理解祂的每一個決定，而是我們在無法理解時依然信靠祂的品格。」</p>
+                    <span class="text-gold text-sm mt-4 font-bold">— 魏樂德 (Dallas Willard)</span>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-gray-500 text-sm italic">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

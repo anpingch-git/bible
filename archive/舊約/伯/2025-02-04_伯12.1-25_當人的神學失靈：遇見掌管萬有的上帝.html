@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯12:1-25:當人的神學失靈：遇見掌管萬有的上帝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        deepNavy: '#0A0E14',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                        accent: '#6366f1',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'Outfit', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'bounce-subtle': 'bounceSubtle 2s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        bounceSubtle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0E14;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #6366f1;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-deepNavy/80 backdrop-blur-xl border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="text-sm md:text-base font-bold text-slate-400">約伯記 12:1-25</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest">
+                <a href="#prayer" class="nav-link uppercase">禱告</a>
+                <a href="#outline" class="nav-link uppercase">大綱</a>
+                <a href="#sermon" class="nav-link uppercase">講章</a>
+                <a href="#quotes" class="nav-link uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header id="top" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_5ebaea07-868b-4b11-8e68-b89538b497e1.jpg' alt='Banner' class="w-full h-full object-cover animate-breathe" />
+            <div class="absolute inset-0 bg-gradient-to-b from-deepNavy/40 via-deepNavy/60 to-deepNavy"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-black font-serif mb-6 leading-tight tracking-tight text-gradient">
+                當人的神學失靈：<br>
+                <span class="text-indigo-400">遇見掌管萬有的上帝</span>
+            </h1>
+            
+            <div class="mt-12 animate-bounce-subtle">
+                <p class="text-xl md:text-3xl font-medium text-white/90 italic">
+                    「在神有智慧和能力；他有謀略和知識。」
+                </p>
+                <p class="text-sm md:text-base text-slate-400 mt-4 tracking-widest">— 約伯記 12:13 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-600/20 rounded-full blur-3xl group-hover:bg-indigo-600/30 transition-all"></div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-indigo-600/20 rounded-xl">
+                        <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight">會前禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-300 font-light">
+                    主啊，當我們陷入苦難的深淵，被世人的言語和有限的認知困住時，求祢開我們的眼睛。讓我們看見，真正的智慧與能力都不在乎人，乃在乎祢。教導我們放下自以為是的驕傲，謙卑俯伏在祢絕對的主權之下，即使在無法理解的環境中，依然信靠祢那超越一切的謀略與知識。奉耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-purple-600/20 rounded-xl">
+                    <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="#section-1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-xs text-slate-500 mb-2 font-mono">01 / 伯 12:1-6</span>
+                    <span class="text-xl font-bold group-hover:text-indigo-400">刺耳的安慰：當自以為是的智慧成為傷害</span>
+                </a>
+                <a href="#section-2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-xs text-slate-500 mb-2 font-mono">02 / 伯 12:7-12</span>
+                    <span class="text-xl font-bold group-hover:text-indigo-400">萬物的啟示：受造之物訴說的絕對主權</span>
+                </a>
+                <a href="#section-3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-xs text-slate-500 mb-2 font-mono">03 / 伯 12:13-16</span>
+                    <span class="text-xl font-bold group-hover:text-indigo-400">無可置疑的真理：真智慧與能力的源頭</span>
+                </a>
+                <a href="#section-4" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-xs text-slate-500 mb-2 font-mono">04 / 伯 12:17-25</span>
+                    <span class="text-xl font-bold group-hover:text-indigo-400">顛覆世界的權能：在掌管歷史的神面前謙卑</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <section class="space-y-32">
+            <!-- Section 1 -->
+            <div id="section-1" class="scroll-mt-32">
+                <div class="mb-12">
+                    <span class="text-indigo-500 font-bold tracking-widest text-sm block mb-2">PART 01</span>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6">刺耳的安慰：當自以為是的智慧成為傷害</h3>
+                    <div class="bg-indigo-900/20 border-l-4 border-indigo-500 p-6 my-8 rounded-r-xl italic text-slate-300">
+                        「你們真是子民哪，你們死亡，智慧也就滅沒了... 我這呼求神、蒙他應允的人竟成朋友所譏笑的。」
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-12">
+                        <div class="glass-card p-8">
+                            <h4 class="text-indigo-400 font-bold mb-4 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span> 深度解析
+                            </h4>
+                            <p class="text-slate-300 mb-6">約伯在此強調自己是「剛正完全人」，卻遭到朋友基於因果報應神學的譏笑。當我們將神學變成了一種冷酷的數學公式，忽略了神的主權與奧祕，我們的「智慧」就成了刺人的刀，而非醫治的藥。</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">關鍵原文</span>
+                                    <span class="text-lg font-bold text-white">תָּמִים (Tamim)</span>
+                                    <span class="block text-sm text-slate-400 italic">完全、無可指責</span>
+                                </div>
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">核心問答</span>
+                                    <span class="text-sm font-medium">為何正確認知會造成二次傷害？</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pl-6 border-l border-slate-700">
+                            <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4">生活實例</h4>
+                            <p class="text-lg leading-relaxed text-slate-400">一位失去孩子的母親在葬禮上，不斷聽到熱心的基督徒對她說：「萬事都互相效力。」這些話雖出自聖經，但那一刻卻像利刃刺傷了她。她需要的不是神學解釋，而是同哭的陪伴。</p>
+                        </div>
+                    </div>
+                    <div class="bg-indigo-600/10 p-8 rounded-[2rem] flex flex-col justify-center border border-indigo-500/20">
+                        <svg class="w-8 h-8 text-indigo-400 mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="text-xl font-serif text-slate-200 leading-relaxed italic mb-4">「我們必須學會，不要從人們所做或所忽略的事來看待他們，而是更多從他們所受的苦難來看待他們。」</p>
+                        <cite class="text-sm font-bold text-indigo-400 not-italic">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div id="section-2" class="scroll-mt-32">
+                <div class="mb-12">
+                    <span class="text-emerald-500 font-bold tracking-widest text-sm block mb-2">PART 02</span>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6 text-gradient">萬物的啟示：受造之物訴說的絕對主權</h3>
+                    <div class="bg-emerald-900/20 border-l-4 border-emerald-500 p-6 my-8 rounded-r-xl italic text-slate-300">
+                        「你且問走獸，走獸必指教你；又問空中的飛鳥... 誰不知道是耶和華的手做成的呢？」
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-12">
+                        <div class="glass-card p-8">
+                            <h4 class="text-emerald-400 font-bold mb-4 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> 深度解析
+                            </h4>
+                            <p class="text-slate-300 mb-6">當人類的邏輯無法解釋苦難時，大自然的運作卻無聲地證明了造物主的主權。每一口呼吸、每一個生命的存活，都是神在掌權的絕對證據。神連萬物都托住，何況是你的生命？</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">關鍵原文</span>
+                                    <span class="text-lg font-bold text-white">נֶפֶשׁ (Nephesh)</span>
+                                    <span class="block text-sm text-slate-400 italic">生命、靈魂、氣息</span>
+                                </div>
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">核心問答</span>
+                                    <span class="text-sm font-medium">如何在混亂中看見神的痕跡？</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pl-6 border-l border-slate-700">
+                            <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4">生活實例</h4>
+                            <p class="text-lg leading-relaxed text-slate-400">在嚴冬暴風雪過後，一位憂鬱的信徒看見微小的麻雀仍能找到種子。那一刻他醒悟：如果神連這隻小鳥都托住，祂豈會讓我的生命失控墜落？</p>
+                        </div>
+                    </div>
+                    <div class="bg-emerald-600/10 p-8 rounded-[2rem] flex flex-col justify-center border border-emerald-500/20">
+                        <svg class="w-8 h-8 text-emerald-400 mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="text-xl font-serif text-slate-200 leading-relaxed italic mb-4">「對於神的兒女來說，沒有任何一個上帝的屬性，能比『神絕對的主權』帶來更大的安慰。」</p>
+                        <cite class="text-sm font-bold text-emerald-400 not-italic">— 司布真 (Charles Spurgeon)</cite>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div id="section-3" class="scroll-mt-32">
+                <div class="mb-12">
+                    <span class="text-amber-500 font-bold tracking-widest text-sm block mb-2">PART 03</span>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6">無可置疑的真理：真智慧與能力的源頭</h3>
+                    <div class="bg-amber-900/20 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl italic text-slate-300">
+                        「在神有智慧和能力；他有謀略和知識。他拆毀的，就不能再建造；他捆住人，便不得開釋。」
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-12">
+                        <div class="glass-card p-8">
+                            <h4 class="text-amber-400 font-bold mb-4 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span> 深度解析
+                            </h4>
+                            <p class="text-slate-300 mb-6">神的智慧遠超我們的視野。祂的「拆毀」在人看來是災難，但在永恆計畫中卻有其目的。我們必須承認人類理智的極限，接受神不需要向人交代祂的每一個作為，因為祂本身就是源頭。</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">關鍵原文</span>
+                                    <span class="text-lg font-bold text-white">תְּבוּנָה (Tevunah)</span>
+                                    <span class="block text-sm text-slate-400 italic">聰明、悟性、理解力</span>
+                                </div>
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">核心問答</span>
+                                    <span class="text-sm font-medium">為何神允許無解的破壞發生？</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pl-6 border-l border-slate-700">
+                            <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4">視覺化例證</h4>
+                            <p class="text-lg leading-relaxed text-slate-400">看一幅巨大的波斯地毯，從背面看只是凌亂交錯的線頭；但走到正面，卻是宏偉美麗的圖畫。我們在世上的經歷往往只是看見地毯的背面。</p>
+                        </div>
+                    </div>
+                    <div class="bg-amber-600/10 p-8 rounded-[2rem] flex flex-col justify-center border border-amber-500/20">
+                        <svg class="w-8 h-8 text-amber-400 mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="text-xl font-serif text-slate-200 leading-relaxed italic mb-4">「如果你相信的神大到能讓你發怒；你也必須承認祂同樣大到擁有你無法理解的好理由來允許這事。」</p>
+                        <cite class="text-sm font-bold text-amber-400 not-italic">— 提摩太·凱勒 (Timothy Keller)</cite>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div id="section-4" class="scroll-mt-32">
+                <div class="mb-12">
+                    <span class="text-red-500 font-bold tracking-widest text-sm block mb-2">PART 04</span>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6">顛覆世界的權能：在掌管歷史的神面前謙卑</h3>
+                    <div class="bg-red-900/20 border-l-4 border-red-500 p-6 my-8 rounded-r-xl italic text-slate-300">
+                        「他剝去謀士的聰明... 使邦國興旺而又毀滅... 他們無光，在黑暗中摸索。」
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 space-y-12">
+                        <div class="glass-card p-8">
+                            <h4 class="text-red-400 font-bold mb-4 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-red-400 rounded-full"></span> 深度解析
+                            </h4>
+                            <p class="text-slate-300 mb-6">約伯描繪了一幅顛覆性的畫面：世人所倚靠的謀士、君王、祭司在神面前都不堪一擊。神隨時可以興起或毀滅邦國。不要將安全感建立在任何地上的權勢上，唯有掌管歷史的主是唯一的磐石。</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">關鍵原文</span>
+                                    <span class="text-lg font-bold text-white">חֹשֶׁךְ (Choshek)</span>
+                                    <span class="block text-sm text-slate-400 italic">黑暗、幽暗</span>
+                                </div>
+                                <div class="bg-white/5 p-4 rounded-xl">
+                                    <span class="block text-xs text-slate-500 mb-1">核心問答</span>
+                                    <span class="text-sm font-medium">當制度崩潰時，盼望在哪裡？</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pl-6 border-l border-slate-700">
+                            <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4">歷史例證</h4>
+                            <p class="text-lg leading-relaxed text-slate-400">巴比倫王尼布甲尼撒曾在皇宮頂上宣告自己的偉大，但神瞬間奪去他的聰明，使他如同野獸。地上的權勢在神面前只不過是過眼雲煙。</p>
+                        </div>
+                    </div>
+                    <div class="bg-red-600/10 p-8 rounded-[2rem] flex flex-col justify-center border border-red-500/20">
+                        <svg class="w-8 h-8 text-red-400 mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <p class="text-xl font-serif text-slate-200 leading-relaxed italic mb-4">「當一切看起來似乎失控的時候，在幕後有一位上帝，祂從未放棄過祂的權柄。」</p>
+                        <cite class="text-sm font-bold text-red-400 not-italic">— 陶恕 (A.W. Tozer)</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-blue-600/20 rounded-xl">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-lg max-w-none space-y-8 text-slate-300 leading-relaxed">
+                <p class="text-2xl font-bold text-white mb-10">伯12:1-25：當人的神學失靈：遇見掌管萬有的上帝</p>
+                <p>弟兄姊妹們，我們常常以為自己很了解上帝。我們有一套完美的神學邏輯：好人得好報，壞人遭災禍；只要我們禱告、讀經、奉獻，神就會保守我們一帆風順。但是，當生命遭到突如其來的打擊，當苦難毫無道理地降臨時，我們的人造神學就失靈了。</p>
+                <p class="bg-white/5 p-8 rounded-2xl border border-white/10">今天我們要從約伯記第12章來看，當人的智慧走到盡頭時，我們如何遇見那位真正掌管萬有的上帝。</p>
+                
+                <h3 class="text-2xl font-bold text-indigo-400">一、 刺耳的安慰：當自以為是的智慧成為傷害</h3>
+                <p>在約伯記12章一開始，約伯面對他朋友們的指責，說出了一段極具諷刺的話：<strong class="text-white">「你們真是子民哪，你們死亡，智慧也就滅沒了。」</strong> 約伯的朋友們帶著正統神學來「安慰」約伯，但缺乏了恩典，變成了一把定罪的刀。</p>
+                
+                <h3 class="text-2xl font-bold text-emerald-400">二、 萬物的啟示：受造之物訴說的絕對主權</h3>
+                <p>當人的智慧無法解答時，約伯要我們轉向大自然。<strong class="text-white">「你且問走獸，走獸必指教你；又問空中的飛鳥... 凡活物的生命和人類的氣息都在他手中。」</strong> 每一口呼吸、每一次心跳，都是神在掌權的絕對證據。</p>
+
+                <h3 class="text-2xl font-bold text-amber-400">三、 無可置疑的真理：真智慧與能力的源頭</h3>
+                <p>約伯宣告了關鍵金句：<strong class="text-white">「在神有智慧和能力；他有謀略和知識。」</strong> 雖然我們現在只看見地毯背面的亂線，但神在正面正編織永恆的傑作。</p>
+
+                <h3 class="text-2xl font-bold text-red-400">四、 顛覆世界的權能：在掌管歷史的神面前謙卑</h3>
+                <p>最後，地上的權勢在神面前不堪一擊。不要把你的安全感建立在銀行的存款或世俗的地位上。<strong class="text-white">當世界看似失控時，記住，在幕後有一位上帝，祂從未放棄過祂的權柄。</strong></p>
+                
+                <p class="text-xl font-bold text-white mt-12 border-t border-white/10 pt-8">弟兄姊妹，當人的神學失靈時，正是我們真實遇見上帝的時刻。讓我們放下驕傲，承認祂的主權。阿們！</p>
+            </article>
+        </section>
+
+        <!-- Response Action -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 border-t-4 border-t-indigo-500">
+                <h3 class="text-xl font-bold mb-4">陪伴而不說教</h3>
+                <p class="text-slate-400">尋找一位經歷低潮的朋友，陪伴他，刻意克制自己給予建議或神學分析的衝動。</p>
+            </div>
+            <div class="glass-card p-8 border-t-4 border-t-emerald-500">
+                <h3 class="text-xl font-bold mb-4">大自然的靜修</h3>
+                <p class="text-slate-400">撥出20分鐘觀察植物或動物，默想「凡活物的生命都在祂手中」，並寫下感恩。</p>
+            </div>
+            <div class="glass-card p-8 border-t-4 border-t-amber-500">
+                <h3 class="text-xl font-bold mb-4">主權的交託</h3>
+                <p class="text-slate-400">列出一件你覺得「完全失控」的事情，向神承認你的有限，宣告並降服於祂的主權。</p>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-pink-600/20 rounded-xl">
+                    <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">屬靈前輩佳句</h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">01</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「當一切看起來似乎失控的時候，在幕後有一位上帝，祂從未放棄過祂的權柄。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 陶恕 (A.W. Tozer)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">02</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「如果你相信的神大到能讓你發怒；那你也必須承認祂同樣大到擁有你目前無法理解的好理由。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 提摩太·凱勒 (Timothy Keller)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">03</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「我們必須學會，不要從人們所做或所忽略的事來看待他們，而是更多從他們所受的苦難來看待他們。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">04</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「所有的歷史都掌握在上帝的手中，而不是在人類統治者的手中。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 畢德生 (Eugene Peterson)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">05</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「對於神的兒女來說，沒有任何一個上帝的屬性，能比『神絕對的主權』帶來更大的安慰。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 司布真 (Charles Spurgeon)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">06</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「沒有人能治癒他沒有經歷過的痛楚；正是我們自己的傷痕，使我們能夠成為別人的醫治者。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 盧雲 (Henri Nouwen)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">07</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「我們不該將神的護理視為一種盲目的命運，而應當看作是祂智慧的安排，祂精確地治理萬有。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 約翰·加爾文 (John Calvin)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">08</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「真正的信仰主要不在於頭腦的知識，乃在於心中的聖潔情感。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 喬納森·愛德華茲 (Jonathan Edwards)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">09</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「神國度降臨的意義在於：神在天上所定意的，如今也在地上成就。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 魏樂德 (Dallas Willard)</cite>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-6 items-start hover:bg-white/5 transition-all">
+                    <span class="text-pink-500 font-mono font-bold">10</span>
+                    <div>
+                        <p class="text-lg text-slate-200 mb-2">「如果沒有十字架，我們根本無法相信上帝。十字架證明了上帝沒有對我們的苦難袖手旁觀。」</p>
+                        <cite class="text-sm text-slate-500 not-italic">— 約翰·史托德 (John Stott)</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <section class="text-center pt-20 border-t border-white/5">
+            <p class="text-slate-600 text-sm tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

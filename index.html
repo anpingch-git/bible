@@ -256,7 +256,7 @@
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const pageItems = filteredNotes.slice(start, end);
-			
+
             pageItems.forEach(file => {
                 let downloadSection = "";
                 if (file.docId && file.docId !== "NoDoc" && file.docId.length > 10) {
@@ -266,27 +266,24 @@
                             <a href="https://docs.google.com/document/d/${file.docId}/export?format=pdf" class="btn-download bg-red-600/20 text-red-300">PDF</a>
                         </div>`;
                 }
-				
-				// 將需要發送給 GA4 的資料轉換為安全的 JSON 字串，避免引號衝突
+
+                // 將需要發送給 GA4 的資料轉換為安全的 JSON 字串，避免引號衝突
                 const trackingData = JSON.stringify({
                     chapter: file.chapter,
                     title: file.title
                 }).replace(/"/g, '&quot;');
-				
 
                 grid.innerHTML += `
                     <div class="glass-card rounded-3xl p-8 flex flex-col justify-between h-72">
-                        <a href="${file.path}" class="block group">
-								//GA4 後台
-								onclick="
-									const data = JSON.parse('${trackingData}');
-									gtag('event', 'view_chapter', {
-										'chapter_name': data.chapter,
-										'book_abbr': data.chapter.substring(0, 1),
-										'note_title': data.title
-									});
-								">
-								//GA4 後台
+                        <a href="${file.path}" target="_blank" class="block group" 
+                           onclick="
+                               const data = JSON.parse('${trackingData}');
+                               gtag('event', 'view_chapter', {
+                                   'chapter_name': data.chapter,
+                                   'book_abbr': data.chapter.substring(0, 1),
+                                   'note_title': data.title
+                               });
+                           ">
                             <div class="flex justify-between items-center mb-6">
                                 <span class="bg-yellow-500/20 text-[#f9d21b] text-sm px-4 py-1 rounded-full font-bold border border-yellow-500/30">${file.chapter}</span>
                                 <span class="text-gray-400 text-sm font-mono">${file.date}</span>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>來11:1-16:跨越眼見的信仰：在未知中抓住永恆的錨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18d',
+                            300: '#fbe44f',
+                            400: '#f9d51f',
+                            500: '#e1b70d',
+                            600: '#c29008',
+                            700: '#9b680a',
+                            800: '#7f530f',
+                            900: '#6d4414',
+                        },
+                        dark: '#0a0a0c',
+                        card: 'rgba(255, 255, 255, 0.03)',
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(20, 20, 25, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9d51f 0%, #c29008 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f9d51f;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+        }
+        .bento-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(249, 213, 31, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 3s ease-in-out infinite;
+        }
+        @keyframes jump {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-8px); }
+            60% { transform: translateY(-4px); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-gold-400 font-display font-bold text-lg hidden md:block">來 11:1-16</div>
+            <div class="flex items-center space-x-6 text-sm font-medium tracking-wider">
+                <span class="text-gray-400 md:hidden">來 11:1-16</span>
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[85vh] flex items-center justify-center overflow-hidden pt-16" id="top">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="w-full h-full animate-breathe">
+                <img src='image/img_a73ce9dc-31b3-4fa2-837d-803145fb2707.jpg' alt='Celestial Anchor' class="w-full h-full object-cover" />
+            </div>
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+                <span class="block text-white opacity-90 mb-2 font-display">跨越眼見的信仰</span>
+                <span class="text-gradient">在未知中抓住永恆的錨</span>
+            </h1>
+            
+            <!-- Golden Verse (Jumping effect) -->
+            <div class="mt-12">
+                <p class="text-xl md:text-2xl text-gold-200 font-medium jump-text leading-relaxed">
+                    「信就是所望之事的實底，是未見之事的確據。」
+                    <br>
+                    <span class="text-sm md:text-lg opacity-80">— 希伯來書 11:1 —</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass p-8 md:p-16 rounded-[2rem] relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 text-[10rem] text-white opacity-[0.03] font-display pointer-events-none italic">Prayer</div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-gold-400/20 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl text-gray-300 leading-relaxed indent-8">
+                    主啊，求祢開啟我們屬靈的雙眼，讓我們在這充滿未知與動盪的世代中，不再單憑眼見，而是憑著信心前行。賜給我們如古聖先賢般的勇氣，將生命的錨拋在永恆的應許裡，即使在未見之處，依然能堅定順服、討祢喜悅，並一生切慕那更美的家鄉。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-400/20 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="bento-card glass p-6 rounded-2xl border border-white/5 hover:border-gold-500/50 group">
+                    <div class="text-gold-500 font-display text-sm mb-2">PART 01</div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 mb-4">信心的透視鏡</h3>
+                    <p class="text-gray-400 text-sm mb-4">在未見之中看見真實</p>
+                    <div class="text-xs text-gold-400/60 uppercase tracking-widest">來 11:1-3</div>
+                </a>
+                <a href="#section-2" class="bento-card glass p-6 rounded-2xl border border-white/5 hover:border-gold-500/50 group">
+                    <div class="text-gold-500 font-display text-sm mb-2">PART 02</div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 mb-4">信心的尋寶圖</h3>
+                    <p class="text-gray-400 text-sm mb-4">在平凡之中討神喜悅</p>
+                    <div class="text-xs text-gold-400/60 uppercase tracking-widest">來 11:4-7</div>
+                </a>
+                <a href="#section-3" class="bento-card glass p-6 rounded-2xl border border-white/5 hover:border-gold-500/50 group">
+                    <div class="text-gold-500 font-display text-sm mb-2">PART 03</div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 mb-4">信心的異鄉人</h3>
+                    <p class="text-gray-400 text-sm mb-4">在短暫之中錨定永恆</p>
+                    <div class="text-xs text-gold-400/60 uppercase tracking-widest">來 11:8-16</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="space-y-40">
+            <!-- Section 1 -->
+            <section id="section-1" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-4">
+                        <div class="sticky top-24">
+                            <span class="text-gold-500 font-display font-black text-6xl opacity-20 block mb-4">01</span>
+                            <h2 class="text-4xl font-black text-white mb-6">信心的透視鏡<br><span class="text-gold-400 text-2xl font-bold">在未見之中看見真實</span></h2>
+                            <div class="bg-white/5 rounded-2xl p-6 border-l-4 border-gold-500">
+                                <p class="text-gray-300 italic text-sm leading-relaxed">
+                                    "信就是所望之事的實底，是未見之事的確據。古人在這信上得了美好的證據。我們因著信，就知道諸世界是藉神話造成的；這樣，所看見的，並不是從顯然之物造出來的。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-12">
+                        <div class="bento-card glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-gold-400 rounded-full"></span> 關鍵原文 (Keywords)
+                            </h4>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="text-white font-bold text-lg mb-1">實底 (Hypostasis)</p>
+                                    <p class="text-gray-400 text-sm">希臘文 ὑπόστασις。原意為「在下面支撐的基礎」、「實質」或「所有權的契據」。信心不是虛無縹緲的幻想，而是上帝應許的合法所有權狀。</p>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-lg mb-1">確據 (Elenchos)</p>
+                                    <p class="text-gray-400 text-sm">希臘文 ἔλεγχος。意為「證據」、「證明」或「內在的確信」。指一種無可辯駁的內在證明，讓人對看不見的事物產生絕對的把握。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="glass p-8 rounded-3xl border-t border-white/10">
+                                <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                                <p class="text-white font-semibold mb-3">當現實環境與上帝的應許完全相反時，我們如何保持信心？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">信心不是忽略現實，而是透過「上帝的話語（The Word）」這副透視鏡。第3節提到世界是藉神話語造成的，意味著「看不見的話語」比「看得見的物質」更具決定性。我們能保持信心，是因為我們信仰的基礎不在於外在環境的順逆，而在於那位發出應許之神的信實屬性。</p>
+                            </div>
+                            <div class="glass p-8 rounded-3xl border-t border-white/10">
+                                <h4 class="text-gold-400 font-bold mb-4">例證：漆黑地下室</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    孩子在漆黑的地下室裡，聽見父親喊：「跳上來，我接住你！」孩子雖看不見父親，但憑著對父親聲音的信任縱身一躍。信心就是在看不見的黑暗中，憑著對父親聲音的信任前行。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-white italic text-lg px-8 py-4 glass inline-block rounded-full border border-gold-500/20">
+                                「信心並非相信上帝會照著我們所要的去做，而是相信無論上帝做什麼，都是對的。」 —— 陶恕
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-8 order-2 lg:order-1 space-y-12">
+                        <div class="bento-card glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-gold-400 rounded-full"></span> 關鍵原文 (Keywords)
+                            </h4>
+                            <div>
+                                <p class="text-white font-bold text-lg mb-1">喜悅 (Euaresteo)</p>
+                                <p class="text-gray-400 text-sm">希臘文 εὐαρεστέω，意思是「使之完全滿意」、「完全合乎心意」。這不僅是行為上的達標，更是一種關係上的親密與認同。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="glass p-8 rounded-3xl border-t border-white/10">
+                                <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                                <p class="text-white font-semibold mb-3">在日復一日的平凡生活中，什麼樣的行動最能討上帝喜悅？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">核心在於兩點：一是相信神的真實存在（信祂是），二是相信神會賞賜尋求祂的人。討神喜悅的行動，就是即使在未見果效（如挪亞造方舟一百年未見下雨）時，依然堅持順服。</p>
+                            </div>
+                            <div class="glass p-8 rounded-3xl border-t border-white/10">
+                                <h4 class="text-gold-400 font-bold mb-4">例證：挪亞的方舟</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    挪亞在旱地上建造方舟長達幾十年，每天重複枯燥的工作，面對鄰居嘲笑。他把上帝的一句話，當作比全人類的嘲笑更真實的存在。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-white italic text-lg px-8 py-4 glass inline-block rounded-full border border-gold-500/20">
+                                「信心就是毫無保留地將自己交託給上帝，這必然帶來無條件的順服。」 —— 潘霍華
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 order-1 lg:order-2">
+                        <div class="sticky top-24 lg:text-right">
+                            <span class="text-gold-500 font-display font-black text-6xl opacity-20 block mb-4">02</span>
+                            <h2 class="text-4xl font-black text-white mb-6">信心的尋寶圖<br><span class="text-gold-400 text-2xl font-bold">在平凡之中討神喜悅</span></h2>
+                            <div class="bg-white/5 rounded-2xl p-6 border-r-4 border-gold-500 text-left">
+                                <p class="text-gray-300 italic text-sm leading-relaxed">
+                                    "人非有信，就不能得神的喜悅；因為到神面前來的人必須信有神，且信他賞賜那尋求他的人。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-4">
+                        <div class="sticky top-24">
+                            <span class="text-gold-500 font-display font-black text-6xl opacity-20 block mb-4">03</span>
+                            <h2 class="text-4xl font-black text-white mb-6">信心的異鄉人<br><span class="text-gold-400 text-2xl font-bold">在短暫之中錨定永恆</span></h2>
+                            <div class="bg-white/5 rounded-2xl p-6 border-l-4 border-gold-500">
+                                <p class="text-gray-300 italic text-sm leading-relaxed">
+                                    "這些人都是存著信心死的... 承認自己在世上是客旅，是寄居的... 他們卻羨慕一個更美的家鄉，就是在天上的。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-12">
+                        <div class="bento-card glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-gold-400 rounded-full"></span> 關鍵原文 (Keywords)
+                            </h4>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="text-white font-bold text-lg mb-1">客旅 / 寄居的 (Parepidēmoi)</p>
+                                    <p class="text-gray-400 text-sm">指「暫時居留者」。表明信徒在世上的身分是不屬於這個世界的，只是過客。</p>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-lg mb-1">羨慕 (Oregomai)</p>
+                                    <p class="text-gray-400 text-sm">意為「伸出手去抓」、「熱切渴望」。這是一種主動的、充滿熱情的追求。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="glass p-8 rounded-3xl border-t border-white/10">
+                                <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                                <p class="text-white font-semibold mb-3">承認自己是「客旅」，如何改變我們對財富與苦難的看法？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">如果知道只是住在旅館，就不會花光積蓄去裝潢。當眼光放在天上，世上的成功不會讓我們驕傲，苦難也不會讓我們絕望，因為這一切都是短暫旅程。</p>
+                            </div>
+                            <div class="glass p-8 rounded-3xl border-t border-white/10">
+                                <h4 class="text-gold-400 font-bold mb-4">例證：你還沒到家呢</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    老宣教士回國時無人迎接，而同船總統卻有樂隊簇擁。上帝安慰他說：「孩子，你還沒有到家呢！」
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-white italic text-lg px-8 py-4 glass inline-block rounded-full border border-gold-500/20">
+                                「基督徒真正的本分和目標，就是行走在通往天堂的旅途上。」 —— 喬納森·愛德華茲
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-400/20 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-widest font-display">講章文稿</h2>
+            </div>
+
+            <article class="glass p-8 md:p-16 rounded-[2.5rem] prose prose-invert max-w-none prose-gold leading-loose space-y-12">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-5xl font-black text-white mb-4">跨越眼見的信仰</h3>
+                    <p class="text-gold-400 text-xl">在未知中抓住永恆的錨</p>
+                </div>
+
+                <div class="space-y-10 text-gray-300 text-lg md:text-xl">
+                    <p class="indent-8 font-light">
+                        弟兄姊妹們，我們常常聽到一句話：「眼見為憑」。在這個講求科學證據、數據分析的時代，我們已經習慣了要先看見結果，才願意投入。然而，今天我們要看的希伯來書第11章，卻向這個世界的價值觀發出了極大的挑戰。聖經告訴我們，有一種力量，能夠讓我們在完全看不見前方的黑暗中，依然邁出堅定的步伐。這就是「信仰」的核心。
+                    </p>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl md:text-3xl font-bold text-white border-l-4 border-gold-500 pl-4">一、信心的透視鏡——在未見之中看見真實</h4>
+                        <p class="indent-8">
+                            希伯來書的作者一開始就為我們下了一個震撼的定義：<span class="text-gold-400 font-bold underline decoration-gold-500/30">「信就是所望之事的實底，是未見之事的確據。」（來 11:1）</span> 這裡的「實底」，在原文中指的是「所有權狀」。就像你買了一棟預售屋，雖然房子還沒蓋好，你還沒看見實體，但你手中握有權狀，你就確信那棟房子是你的。信心，就是我們對上帝應許的所有權狀。
+                        </p>
+                        <p class="indent-8">
+                            當現實環境與上帝的應許完全相反時，我們該怎麼辦？信心不是叫我們自我催眠、忽略現實；信心是戴上「上帝的話語」這副透視鏡。我們信仰的基礎，永遠在於那位發出應許之神的信實。
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl md:text-3xl font-bold text-white border-l-4 border-gold-500 pl-4">二、信心的尋寶圖——在平凡之中討神喜悅</h4>
+                        <p class="indent-8">
+                            接著，作者帶我們看見幾位古人的腳印。亞伯獻祭、以諾與神同行、挪亞造方舟。這當中最核心的經文是：<span class="text-gold-400 font-bold underline decoration-gold-500/30">「人非有信，就不能得神的喜悅；因為到神面前來的人必須信有神，且信他賞賜那尋求他的人。」（來 11:6）</span>
+                        </p>
+                        <p class="indent-8">
+                            在日復一日的平凡生活中，什麼樣的行動最能討上帝喜悅？那就是在沒有看見果效時，依然選擇順服。討神喜悅，往往發生在我們願意為神做那些世人覺得「愚蠢」的決定之時。
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl md:text-3xl font-bold text-white border-l-4 border-gold-500 pl-4">三、信心的異鄉人——在短暫之中錨定永恆</h4>
+                        <p class="indent-8">
+                            最後，我們看見信心之父亞伯拉罕與撒拉的榜樣。他們承認自己在世上是「客旅和寄居的」。這會徹底改變我們的生活方式。
+                        </p>
+                        <p class="indent-8">
+                            弟兄姊妹，我們是否花太多時間在「裝潢地上的旅館」，卻忘了我們真正的家鄉在天上？基督徒真正的本分，就是行走在通往天堂的旅途上，並將世上的一切事物都完全隸屬於這個目標之下。
+                        </p>
+                    </div>
+
+                    <div class="bg-gold-500/10 p-8 rounded-3xl border border-gold-500/20 text-center mt-12">
+                        <h4 class="text-2xl font-bold text-white mb-4">結語</h4>
+                        <p class="mb-6">
+                            這段經文給了我們三個重要的屬靈路標：<strong class="text-gold-400">確據、順服、盼望</strong>。不管你現在面對怎樣的未知、疾病、財務危機或關係破裂，求神幫助我們，不要只看眼前這短暫的風浪。讓我們抓住上帝話語的確據，在每天的生活中順服討祂喜悅，並將我們靈魂的錨，深深拋入那永恆家鄉的盼望之中！
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">1.</span>
+                        <p class="text-gray-300">在做決策時運用「信心的透視鏡」：不再單憑外在利益，而是問上帝的話語是什麼。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">2.</span>
+                        <p class="text-gray-300">在平凡中建立「討神喜悅」的習慣：檢視自己的敬拜、同行與順服。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">3.</span>
+                        <p class="text-gray-300">重新調整投資組合：不再過度投資地上的旅館，學習積攢財寶在天上。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    實踐行動
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">1.</span>
+                        <p class="text-gray-300">寫下一個「未見的應許」，每天宣告並應對目前的困難。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">2.</span>
+                        <p class="text-gray-300">採取一個「反文化」的順服行動，做一件討神喜悅而非討好人的事。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">3.</span>
+                        <p class="text-gray-300">進行一次「客旅」斷捨離，奉獻或清理不需要的負擔。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32 pb-20">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-400/20 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-widest font-display">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「信心並非相信上帝會照著我們所要的去做，而是相信無論上帝做什麼，都是對的。」</p>
+                    <cite class="text-sm text-gray-500">— 陶恕 (A.W. Tozer)，《渴慕神》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「信心就是毫無保留地將自己交託給上帝，這必然帶來無條件的順服。」</p>
+                    <cite class="text-sm text-gray-500">— 潘霍華 (Dietrich Bonhoeffer)，《追隨基督》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「基督徒真正的本分和目標，就是行走在這條通往天堂的旅途上，並將世上的一切事物都完全隸屬於這個目標之下。」</p>
+                    <cite class="text-sm text-gray-500">— 喬納森·愛德華茲 (Jonathan Edwards)，《基督徒的朝聖之旅》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「信心不是一種感覺，也不是一種情緒，而是對上帝話語的絕對信靠，即使環境在訴說完全相反的故事。」</p>
+                    <cite class="text-sm text-gray-500">— 提摩太·凱勒 (Timothy Keller)，《揮霍的上帝》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「信心是活潑的、對神恩典的勇敢信靠；這信靠如此確定，以至於信徒甘願為此死上一千次。」</p>
+                    <cite class="text-sm text-gray-500">— 馬丁·路德 (Martin Luther)，《羅馬書註釋序言》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「真正的信心永遠與上帝的話語相連，就像陽光不能與太陽分開一樣。」</p>
+                    <cite class="text-sm text-gray-500">— 約翰·加爾文 (John Calvin)，《基督教要義》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「一點點的信心就能帶你的靈魂進入天堂，但極大的信心會把天堂帶入你的靈魂。」</p>
+                    <cite class="text-sm text-gray-500">— 司布真 (Charles Spurgeon)，《司布真講道集》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「信心的本質不是在我們明白一切時才去順服，而是在我們完全不明白時，依然選擇信靠那位掌權的神。」</p>
+                    <cite class="text-sm text-gray-500">— 查爾斯·史丹利 (Charles Stanley)，《信靠神》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「我們得救是本乎恩，也因著信。信心是我們向上帝伸出的空手，為要接受祂白白的恩典。」</p>
+                    <cite class="text-sm text-gray-500">— 約翰·史托德 (John Stott)，《基督十架》</cite>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-all">
+                    <p class="text-gold-200 italic mb-4 leading-relaxed">「信靠上帝不代表我們不會感到害怕，而是意味著即使在恐懼中，我們仍然知道自己被上帝安全的雙手所擁抱。」</p>
+                    <cite class="text-sm text-gray-500">— 盧雲 (Henri Nouwen)，《心靈愛語》</cite>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-20 text-center opacity-40 text-sm">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark rounded-full flex items-center justify-center floating-btn hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation already active via CSS scroll-smooth
+        // But for fine control of scroll-mt:
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

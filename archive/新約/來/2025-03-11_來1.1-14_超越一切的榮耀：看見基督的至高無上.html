@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>來1:1-14:超越一切的榮耀：看見基督的至高無上</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        navy: '#020617',
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-subtle': 'pulse-subtle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'pulse-subtle': {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.8' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(234, 179, 8, 0.4);
+            transform: translateY(-4px);
+            background: rgba(30, 41, 59, 0.8);
+        }
+        .jump-text span {
+            display: inline-block;
+            animation: jump 2s infinite ease-in-out;
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        /* Delay individual characters for jumping effect */
+        .jump-text span:nth-child(2n) { animation-delay: 0.1s; }
+        .jump-text span:nth-child(3n) { animation-delay: 0.2s; }
+        
+        .nav-item {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #eab308;
+            transition: width 0.3s ease;
+        }
+        .nav-item:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans selection:bg-gold-500/30 selection:text-gold-200">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center justify-between px-6 md:px-12 border-b border-white/10">
+        <div class="text-gold-400 font-bold text-sm md:text-lg tracking-wider">來1:1-14</div>
+        <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-item uppercase tracking-widest text-slate-300 hover:text-gold-400">禱告</a>
+            <a href="#outline" class="nav-item uppercase tracking-widest text-slate-300 hover:text-gold-400">大綱</a>
+            <a href="#sermon" class="nav-item uppercase tracking-widest text-slate-300 hover:text-gold-400">講章</a>
+            <a href="#quotes" class="nav-item uppercase tracking-widest text-slate-300 hover:text-gold-400">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="top" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="image/img_e9bfc235-ca8d-44c4-a7bf-9f7b9d1248a9.jpg" alt="Banner" class="w-full h-full object-cover animate-breath scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/40 to-navy"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h1 class="text-4xl md:text-7xl font-black font-serif mb-6 leading-tight drop-shadow-2xl">
+                超越一切的<span class="gradient-text">榮耀</span><br/>
+                <span class="text-2xl md:text-4xl font-sans font-light tracking-[0.2em] text-slate-300 block mt-4">看見基督的至高無上</span>
+            </h1>
+            
+            <!-- Jumping Golden Verse -->
+            <div class="mt-12 max-w-2xl mx-auto">
+                <p class="jump-text text-xl md:text-2xl font-medium leading-relaxed text-gold-100/90 drop-shadow-lg">
+                    <span>「</span><span>他</span><span>是</span><span>神</span><span>榮</span><span>耀</span><span>所</span><span>發</span><span>的</span><span>光</span><span>輝</span><span>，</span><span>是</span><span>神</span><span>本</span><span>體</span><span>的</span><span>真</span><span>像</span><span>，</span><span>常</span><span>用</span><span>他</span><span>權</span><span>能</span><span>的</span><span>命</span><span>令</span><span>托</span><span>住</span><span>萬</span><span>有</span><span>。</span><span>他</span><span>洗</span><span>淨</span><span>了</span><span>人</span><span>的</span><span>罪</span><span>，</span><span>就</span><span>坐</span><span>在</span><span>高</span><span>天</span><span>至</span><span>大</span><span>者</span><span>的</span><span>右</span><span>邊</span><span>。</span><span>」</span>
+                </p>
+                <p class="mt-4 text-gold-500 font-bold tracking-widest">（希伯來書 1:3）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 px-6 md:px-12 max-w-6xl mx-auto pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-2xl bg-gold-500/10 border border-gold-500/20">
+                    <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">禱告詞</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gold-500/10 rounded-full blur-3xl"></div>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-200 font-light italic">
+                    親愛的天父，我們滿心敬畏地來到祢面前。感謝祢在古時藉著眾先知向我們說話，如今更藉著祢的愛子耶穌基督向我們啟示祢自己。主啊，求祢開啟我們屬靈的眼睛，讓我們真看見基督超越一切的榮耀與至高無上。在我們面對世俗的誘惑、生命的風暴與信仰的挑戰時，求祢幫助我們不看環境，單單仰望那為我們信心創始成終的耶穌。願祢的聖靈今天在我們心中動工，用祢權能的命令托住我們的生命。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="py-12">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">大綱導覽</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="bento-card p-6 rounded-3xl group">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest uppercase mb-2 block">Part 01</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">最終的啟示：神在兒子裡發出最美的聲音</h3>
+                    <p class="mt-2 text-slate-400 text-sm">希伯來書 1:1-3</p>
+                </a>
+                <a href="#part2" class="bento-card p-6 rounded-3xl group">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest uppercase mb-2 block">Part 02</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">超越天使的尊名：放下次好的，擁抱最好的</h3>
+                    <p class="mt-2 text-slate-400 text-sm">希伯來書 1:4-9</p>
+                </a>
+                <a href="#part3" class="bento-card p-6 rounded-3xl group">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest uppercase mb-2 block">Part 03</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">永恆不變的得勝者：在動盪時代中的唯一磐石</h3>
+                    <p class="mt-2 text-slate-400 text-sm">希伯來書 1:10-14</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Sections -->
+        <section class="space-y-32 py-24">
+            <!-- Part 1 -->
+            <article id="part1" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-black mb-4">第一段：最終的啟示——神在兒子裡發出最美的聲音</h2>
+                    <div class="inline-block px-4 py-1 rounded-full bg-gold-500/20 text-gold-400 border border-gold-500/30 font-medium">希伯來書 1:1-3</div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12 glass p-8 rounded-[2rem] border-l-4 border-l-gold-500">
+                        <p class="text-xl leading-relaxed text-slate-200">神既在古時藉著眾先知多次多方的曉諭列祖，就在這末世藉著他兒子曉諭我們；又早已立他為承受萬有的，也曾藉著他創造諸世界。他是神榮耀所發的光輝，是神本體的真像，常用他權能的命令托住萬有。他洗淨了人的罪，就坐在高天至大者的右邊。</p>
+                    </div>
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="bento-card p-8 rounded-[2rem]">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-200 font-bold">光輝 (ἀπαύγασμα / apaugasma)：</span>
+                                    <span class="text-slate-300">意指「光芒的放射」。耶穌不是反射神的榮耀，祂本身就是那榮耀的發出者。</span>
+                                </li>
+                                <li>
+                                    <span class="text-gold-200 font-bold">真像 (χαρακτήρ / charaktēr)：</span>
+                                    <span class="text-slate-300">原意是用印章蓋印後留下的「精確印記」。表示耶穌與父神在神性上完全一致。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bento-card p-8 rounded-[2rem] bg-amber-900/10">
+                            <h4 class="text-amber-400 font-bold mb-4">關鍵問題：為什麼我們常覺得聽不到神的聲音？</h4>
+                            <p class="text-slate-300">解答：我們常渴望神透過神蹟或超自然聲音說話，卻忽略了祂已賜下「最終、最完美的啟示」——耶穌基督。當我們不認識基督，我們就是在拒絕神已發出的最美聲音。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="bg-navy p-8 rounded-[2rem] border border-white/5">
+                            <h4 class="text-indigo-400 font-bold mb-4">生活例證</h4>
+                            <p class="text-slate-400 italic">一個人極度渴望見到國王，卻在宮殿外忙著研究國王的畫像與法律，忽略了親自站在他面前對話的國王。我們也常四處尋找引導，卻忽略了站在面前的耶穌。</p>
+                        </div>
+                        <div class="p-8 rounded-[2rem] border border-gold-500/20 bg-gold-500/5">
+                            <p class="text-lg font-serif text-gold-100">「如果你想知道神長什麼樣子，請看耶穌；如果你想知道神的聲音聽起來如何，請聽耶穌。」</p>
+                            <p class="mt-4 text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 2 -->
+            <article id="part2" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-black mb-4">第二段：超越天使的尊名——放下次好的，擁抱最好的</h2>
+                    <div class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30 font-medium">希伯來書 1:4-9</div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12 glass p-8 rounded-[2rem] border-l-4 border-l-blue-500">
+                        <p class="text-xl leading-relaxed text-slate-200">他所承受的名，既比天使的名更尊貴，就遠超過天使。所有的天使，神從來對哪一個說：「你是我的兒子，我今日生你」？又指著哪一個說：「我要作他的父，他要作我的子」？</p>
+                    </div>
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="bento-card p-8 rounded-[2rem]">
+                            <h4 class="text-blue-400 font-bold mb-4">重要 Keyword</h4>
+                            <p class="text-slate-300"><span class="text-blue-200 font-bold">更尊貴 (κρείττων / kreittōn)：</span> 意指「更好、更優越、超越」。強調基督超越舊約一切體制與受造物。</p>
+                        </div>
+                        <div class="p-8 rounded-[2rem] border border-blue-500/20 bg-blue-500/5">
+                            <p class="text-lg font-serif text-blue-100">「人心是一個製造偶像的工廠，我們總是傾向把好的東西變成絕對的東西，那就是偶像的誕生。」</p>
+                            <p class="mt-4 text-blue-500 text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="bento-card p-8 rounded-[2rem] bg-red-900/10">
+                            <h4 class="text-red-400 font-bold mb-4">深度省思：受造物 vs 造物主</h4>
+                            <p class="text-slate-300">我們是否常把「受造物」（如成就、金錢、甚至服事）的地位，放得比「造物主」還高？我們極易將神所賜的「祝福」當作敬拜對象，而忽略了賜恩的主。</p>
+                        </div>
+                        <div class="bg-navy p-8 rounded-[2rem] border border-white/5">
+                            <h4 class="text-blue-400 font-bold mb-4">寓意故事</h4>
+                            <p class="text-slate-400 italic">女兒愛上父親送的精美音樂盒，甚至為了怕音樂盒弄壞而拒絕父親的擁抱。我們也常愛上神的使者或禮物，卻將基督拒之門外。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 3 -->
+            <article id="part3" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-black mb-4">第三段：永恆不變的得勝者——在動盪時代中的唯一磐石</h2>
+                    <div class="inline-block px-4 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-medium">希伯來書 1:10-14</div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12 glass p-8 rounded-[2rem] border-l-4 border-l-emerald-500">
+                        <p class="text-xl leading-relaxed text-slate-200">天地都要滅沒，你卻要長存。天地都要像衣服漸漸舊了；你要將天地捲起來，像一件外衣，天地就都改變了。惟有你永不改變；你的年數沒有窮盡。</p>
+                    </div>
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="bento-card p-8 rounded-[2rem]">
+                            <h4 class="text-emerald-400 font-bold mb-4">永恆的定義</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-emerald-200 font-bold">長存 / 永不改變 (διαμένω)：</span>
+                                    <span class="text-slate-300">永久存留、堅固不變。即使天地如衣服般朽壞，基督的掌權卻恆久不變。</span>
+                                </li>
+                                <li>
+                                    <span class="text-emerald-200 font-bold">服役的 (λειτουργικός)：</span>
+                                    <span class="text-slate-300">指為公眾利益服務的僕役。天使是為承受救恩的人效力的。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bento-card p-8 rounded-[2rem] bg-emerald-900/10">
+                            <h4 class="text-emerald-400 font-bold mb-4">唯一的安全感</h4>
+                            <p class="text-slate-300">在這個充滿變數的世界，唯有基督是永不改變的。連最宏偉的「天地」都會變舊，將生命建造在祂這位磐石身上，才有真正的安全感。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="bg-navy p-8 rounded-[2rem] border border-white/5">
+                            <h4 class="text-emerald-400 font-bold mb-4">磐石的比喻</h4>
+                            <p class="text-slate-400 italic">海嘯席捲過後，沙灘上的豪宅消失了，但深埋岩床的地基依然屹立。世界就是那變幻的海岸線，耶穌是靈魂唯一的磐石。</p>
+                        </div>
+                        <div class="p-8 rounded-[2rem] border border-emerald-500/20 bg-emerald-500/5">
+                            <p class="text-lg font-serif text-emerald-100">「萬物都在變化，唯有基督是不變的磐石。當你站在這磐石上，所有的風暴都只不過是顯明祂的堅固而已。」</p>
+                            <p class="mt-4 text-emerald-500 text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="py-24 border-t border-white/10">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 rounded-2xl bg-indigo-500/10 border border-indigo-500/20">
+                    <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-bold tracking-tight">講章文稿</h2>
+            </div>
+            
+            <div class="glass p-8 md:p-16 rounded-[3rem] space-y-12 text-slate-300 leading-loose text-lg">
+                <h3 class="text-3xl font-bold text-gold-400 text-center mb-12">超越一切的榮耀：看見基督的至高無上</h3>
+                
+                <p>各位弟兄姊妹，平安。今天我們要進入《希伯來書》第一章。這卷書寫給一群正面臨逼迫、信仰動搖，甚至想要退回到舊有宗教儀式裡的基督徒。作者沒有用溫柔的安撫開場，而是直接向他們展示了一幅壯麗無比的圖畫——<span class="text-gold-300 font-bold underline decoration-gold-500/50 underline-offset-8">基督超越一切的榮耀</span>。當我們覺得灰心、迷茫，或是世界充滿動盪時，我們最需要的不是幾句心靈雞湯，而是看見那位真實掌權的萬有之主。</p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-gold-500 pl-4">第一段：最終的啟示——神在兒子裡發出最美的聲音</h4>
+                    <p>我們來看第一段的經文。希伯來書 1:1-3 說：「神既在古時藉著眾先知多次多方的曉諭列祖，就在這末世藉著他兒子曉諭我們...」</p>
+                    <p>我們常常在生活中會問一個問題：為什麼我覺得聽不到神的聲音？我們尋找超自然的經歷，尋找奇妙的際遇。但這裡告訴我們，神在古時透過先知說話，那是零碎的、局部的；但在這末世，祂發出了最完美、最完整的聲音——就是祂的兒子耶穌基督。</p>
+                    <p class="text-gold-200 font-bold bg-gold-500/5 p-6 rounded-2xl border border-gold-500/20">「他是神榮耀所發的光輝，是神本體的真像，常用他權能的命令托住萬有。他洗淨了人的罪，就坐在高天至大者的右邊。」</p>
+                    <p>基督不是月亮，祂不是反射神的光；祂是太陽，祂本身就是神榮耀所發的光輝。祂是神本體的真像，就像印章蓋在蠟上完美的印記。提摩太·凱勒曾說：「如果你想知道神長什麼樣子，請看耶穌；如果你想知道神的聲音聽起來如何，請聽耶穌。」弟兄姊妹，不要在別處尋找神的啟示了，回到聖經，回到基督裡，祂就是神最終的啟示。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-blue-500 pl-4">第二段：超越天使的尊名——放下次好的，擁抱最好的</h4>
+                    <p>接著，作者在希伯來書 1:4-9 帶我們看見基督的另一個身分。第4節說：「他所承受的名，既比天使的名更尊貴，就遠超過天使。」</p>
+                    <p>當時的猶太人極度尊崇天使，認為他們是律法的傳遞者。但作者連續引用舊約經文證明：天使只是「僕役」，而耶穌是「神受膏的兒子」。我們現在可能不拜天使了，但我們是否常把「受造物」的地位，放得比「造物主」還高？</p>
+                    <p>我們多麼容易愛上神所賜的禮物——我們的事業、我們的健康、甚至我們在教會裡的服事，卻忽略了賜給我們這一切的主！就像一個小女孩緊緊抱著父親送的音樂盒，卻拒絕父親的擁抱。約翰·加爾文警告我們：<span class="text-white font-bold">「人心是一個製造偶像的工廠。」</span>當我們把美好的事物當作絕對的追求時，我們就失去了那「更尊貴」的基督。唯有基督配得我們全心的敬拜。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-emerald-500 pl-4">第三段：永恆不變的得勝者——在動盪時代中的唯一磐石</h4>
+                    <p>最後，我們來到希伯來書 1:10-14。經文描繪了一幅宇宙級的對比：<span class="text-white font-bold">「天地都要滅沒，你卻要長存... 惟有你永不改變；你的年數沒有窮盡。」</span></p>
+                    <p>在這個物價飛漲、疫情頻發、國際局勢動盪的世界中，什麼是你真正的安全感來源？連我們看似最堅固的「天地」，有一天都會像舊衣服一樣被神捲起來。如果我們把盼望建立在會朽壞的事物上，我們的心就會隨之崩潰。</p>
+                    <p>但讚美神！經文告訴我們，唯有基督是永不改變的！祂已經洗淨了我們的罪，得勝地坐在高天至大者的右邊。天使只是奉差遣為我們這些承受救恩之人效力的僕役。司布真曾說：「萬物都在變化，唯有基督是不變的磐石。當你站在這磐石上，所有的風暴都只不過是顯明祂的堅固而已。」</p>
+                    <p>弟兄姊妹，不管你今天面對什麼樣的軟弱或風暴，請抬起你的頭！看見那位超越先知、超越天使、超越天地萬有的耶穌基督。祂愛你，祂為你捨命，祂如今掌權，且<span class="text-gold-400 font-black">常用祂權能的命令托住萬有</span>，祂也必托住你的人生！阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Keywords Bento -->
+        <section class="py-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Application -->
+            <div class="bento-card p-10 rounded-[3rem]">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="p-2 bg-gold-500/20 rounded-lg"><svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></span>
+                    講道應用方向
+                </h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <p class="text-slate-300">不再四處尋求奇特的神祕經歷，而是專注於透過聖經認識耶穌基督的本體與真像。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <p class="text-slate-300">察驗自己是否過度依賴或崇拜神所賜的恩典、恩賜或屬靈領袖，而忽略基督本身。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <p class="text-slate-300">將安全感錨定在「永不改變、坐在至高者右邊」的基督身上，面對社會與個人的變遷。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Keywords & Actions -->
+            <div class="space-y-8">
+                <div class="bento-card p-10 rounded-[3rem]">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">關鍵字結論</h2>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-6 py-2 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/20 font-bold tracking-widest">啟示 REVELATION</span>
+                        <span class="px-6 py-2 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 font-bold tracking-widest">超越 SUPERIORITY</span>
+                        <span class="px-6 py-2 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold tracking-widest">不變 UNCHANGING</span>
+                    </div>
+                </div>
+                <div class="bento-card p-10 rounded-[3rem] bg-indigo-900/10">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">回應與實踐</h2>
+                    <ul class="space-y-4 text-slate-300 text-sm md:text-base">
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2 flex-shrink-0"></span> 本週每天花10分鐘閱讀四福音書，寫下「我從耶穌看見神怎樣的屬性？」</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2 flex-shrink-0"></span> 在禱告中求聖靈光照「沒有它就會失去安全感」的事物，將主權交還基督。</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2 flex-shrink-0"></span> 將希伯來書 1:3 貼在明顯處，當遇焦慮時大聲宣告基督托住萬有與我的生命。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 rounded-2xl bg-amber-500/10 border border-amber-500/20">
+                    <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-bold tracking-tight">靈命糧草：牧者佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 rounded-3xl relative">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「人心是一個製造偶像的工廠，我們總是不斷地將受造之物高舉，取代了造物主的位置。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 約翰·加爾文 (John Calvin)</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「萬物都在變化，唯有基督是不變的磐石。當你站在這磐石上，所有的風暴都只不過是顯明祂的堅固而已。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 司布真 (Charles Spurgeon)</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「如果你想知道神長什麼樣子，請看耶穌；如果你想知道神的聲音聽起來如何，請聽耶穌，因為祂是神最終的道。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 提摩太·凱勒 (Timothy Keller)</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「我們對神真正的認識，不是透過哲學的推論，而是透過凝視那位道成肉身的耶穌基督。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 馬丁·路德 (Martin Luther)</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「十字架是基督榮耀的最高彰顯，在那裡祂不僅洗淨了人的罪，更宣告了對黑暗權勢的徹底得勝。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 約翰·史托德 (John Stott)</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「神所要的，不是我們對宗教儀式的熱衷，而是我們靈魂深處對神本體真像——耶穌基督的深切渴慕。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 陶恕 (A.W. Tozer)</div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「恩典是白白的，但絕不是廉價的。因為這恩典是神榮耀的光輝親自降卑，用祂的血為我們買贖回來的。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 潘霍華 (Dietrich Bonhoeffer)</div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「看見神的榮耀，不僅僅是頭腦裡明白教義，而是心靈深處被基督的美麗所吸引與折服。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 喬納森·愛德華茲 (Jonathan Edwards)</div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「基督不是許多道路中的一條，也不是許多真理中的一個；祂是唯一的道路、真理與生命。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 唐崇榮 (Stephen Tong)</div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-slate-200 text-lg mb-6 leading-relaxed">「當世界搖搖欲墜，當天地像衣服漸漸變舊時，耶穌基督是我們唯一的答案，也是我們永恆的盼望。」</p>
+                    <div class="text-gold-500 text-sm font-bold">—— 葛理翰 (Billy Graham)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="mt-12 py-8 border-t border-white/5 text-center">
+            <p class="text-slate-500 text-sm flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 z-50 w-14 h-14 bg-gold-500 text-navy rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 hover:scale-110 transition-all active:scale-95 animate-float group">
+        <svg class="w-6 h-6 transition-transform group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

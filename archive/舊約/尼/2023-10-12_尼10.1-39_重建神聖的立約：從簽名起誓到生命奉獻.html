@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尼10:1-39:重建神聖的立約：從簽名起誓到生命奉獻</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        script: ['Ma Shan+Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(234, 179, 8, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .jump-text span {
+            display: inline-block;
+            animation: jump 2s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-display font-bold text-gold-400 truncate mr-4">尼10:1-39</div>
+            <div class="flex gap-4 md:gap-8 text-sm font-medium tracking-wider">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Banner Section -->
+    <header id="header" class="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 z-0 animate-breath banner-mask">
+            <img src='image/img_c2bac85a-c15b-42c0-b082-96550c1401b7.jpg' alt='media_1' class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/60 to-slate-950"></div>
+        </div>
+        
+        <div class="relative z-10 px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight">
+                重建神聖的立約<br/>
+                <span class="text-gradient font-display">從簽名起誓到生命奉獻</span>
+            </h1>
+            
+            <div class="text-xl md:text-3xl font-medium text-gold-200 mb-4 jump-text italic" id="gold-sentence">
+                <!-- Javascript will populate characters for jumping effect -->
+            </div>
+            <p class="text-slate-400 text-sm md:text-base">尼希米記 10:39下</p>
+        </div>
+
+        <div class="absolute bottom-10 animate-bounce">
+            <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.83 2.1a1 1 0 0 0-1.66 0L1.44 18.2a1 1 0 0 0 .83 1.55h19.46a1 1 0 0 0 .83-1.55zM12 18a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm1-4h-2V7h2z"/></svg>
+                </div>
+                <h2 class="flex items-center text-3xl font-bold mb-8 text-gold-400">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    禱告
+                </h2>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-200 font-light">
+                    主啊，我們感謝祢，因祢是守約施慈愛的神。在祢面前，我們承認我們常像昔日的以色列人一樣，容易在安逸與世俗中忘記祢的律法與恩典。求祢的聖靈今天再次光照我們，賜我們決心與勇氣，不單單在口頭上稱呼祢為主，更在婚姻、家庭、時間、金錢與事業上，真實地與祢重新立約。願我們獻上初熟的果子，將生命的主權完全交還給祢，決不離棄祢的殿。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="flex items-center text-3xl font-bold mb-12 text-gold-400">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 002-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                大綱
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="glass-card p-6 rounded-2xl hover:scale-105 transform transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-gold-500 uppercase tracking-widest mb-2 block">Part 01</span>
+                        <h3 class="text-lg font-bold mb-2">刻骨銘心的簽署</h3>
+                        <p class="text-slate-400 text-sm">降服於神的主權</p>
+                    </div>
+                    <span class="text-gold-400 text-xs mt-4">尼 10:1-29 →</span>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl hover:scale-105 transform transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-gold-500 uppercase tracking-widest mb-2 block">Part 02</span>
+                        <h3 class="text-lg font-bold mb-2">劃定界線的勇氣</h3>
+                        <p class="text-slate-400 text-sm">在世俗中活出聖潔</p>
+                    </div>
+                    <span class="text-gold-400 text-xs mt-4">尼 10:30-31 →</span>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl hover:scale-105 transform transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-gold-500 uppercase tracking-widest mb-2 block">Part 03</span>
+                        <h3 class="text-lg font-bold mb-2">永不離棄的承諾</h3>
+                        <p class="text-slate-400 text-sm">用真實的代價愛神</p>
+                    </div>
+                    <span class="text-gold-400 text-xs mt-4">尼 10:32-39 →</span>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Parts -->
+            <div class="space-y-24">
+                <!-- Part 1 Deep -->
+                <div id="part1" class="scroll-mt-24 space-y-8">
+                    <div class="border-l-4 border-gold-500 pl-6 py-2">
+                        <h3 class="text-2xl font-bold text-gold-200">一、 刻骨銘心的簽署：降服於神的主權</h3>
+                        <p class="text-slate-400 mt-2 font-display">Nehemiah 10:1-29</p>
+                    </div>
+                    
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            引用經文
+                        </h4>
+                        <p class="text-slate-300 leading-loose italic">「簽名的乃是：哈迦利亞的兒子省長尼希米，和西底家……（中略）……這都是民長。其餘的民、祭司、利未人、守門的、歌唱的、尼提寧，和一切離絕鄰邦居民歸服神律法的，並他們的妻子、兒女，凡有知識能明白的，都隨從他們尊貴的弟兄，發咒起誓，必遵行神藉他僕人摩西所傳的律法，謹守遵行耶和華─我們主的一切誡命、典章、律例。」</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2">重要原文解析</h5>
+                                <p class="text-slate-300">「發咒起誓」：由 <span class="text-gold-300">alah</span> (咒詛) 與 <span class="text-gold-300">shebuah</span> (誓言) 組成。代表甘願置身於律法約束之下，若違背便承擔後果。這是一種毫無保留的降服。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2">關鍵問題與解答</h5>
+                                <p class="text-slate-300 font-medium italic mb-2">為什麼神知道我們的心，還需要公開立約？</p>
+                                <p class="text-slate-400">人的本性健忘。公開簽名是將「感動」轉化為「責任」，在軟弱時仍提醒自己順服主權。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-900/10 border border-gold-900/50 p-6 rounded-2xl">
+                            <h5 class="text-gold-400 font-bold mb-4">名言佳句</h5>
+                            <blockquote class="text-lg font-medium leading-relaxed mb-4">
+                                「廉價的恩典是我們自己給自己的恩典……昂貴的恩典是必須尋求的呼召，它昂貴，因為它要人付上生命。」
+                            </blockquote>
+                            <cite class="text-sm text-gold-600 block">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Deep -->
+                <div id="part2" class="scroll-mt-24 space-y-8">
+                    <div class="border-l-4 border-gold-500 pl-6 py-2">
+                        <h3 class="text-2xl font-bold text-gold-200">二、 劃定界線的勇氣：在世俗中活出聖潔</h3>
+                        <p class="text-slate-400 mt-2 font-display">Nehemiah 10:30-31</p>
+                    </div>
+                    
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            引用經文
+                        </h4>
+                        <p class="text-slate-300 leading-loose italic">「並不將我們的女兒給這地的居民為妻，也不為我們的兒子娶他們的女兒。這地的居民若在安息日，或什麼聖日，帶了貨物或糧食來賣給我們，我們必不買。每逢第七年必不耕種，凡欠我們債的必不追討。」</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2">重要原文解析</h5>
+                                <p class="text-slate-300">「安息日」：希伯來文 <span class="text-gold-300">Shabbat</span>，意為「停止」。這是一種「信心的抗爭」，代表神比金錢和經濟利益更重要。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2">關鍵問題與解答</h5>
+                                <p class="text-slate-300 font-medium italic mb-2">如何在感情與生存需求中持守界線？</p>
+                                <p class="text-slate-400">當我們願意在時間與關係上對世俗說「不」，我們才能真實地對神說「是」。神的話語擁有最高決定權。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-900/10 border border-gold-900/50 p-6 rounded-2xl">
+                            <h5 class="text-gold-400 font-bold mb-4">名言佳句</h5>
+                            <blockquote class="text-lg font-medium leading-relaxed mb-4">
+                                「如果我們不能在時間和金錢上安息，我們就等於在宣告這兩者才是我們真正的神。」
+                            </blockquote>
+                            <cite class="text-sm text-gold-600 block">— 提摩太·凱勒 (Timothy Keller)</cite>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Deep -->
+                <div id="part3" class="scroll-mt-24 space-y-8">
+                    <div class="border-l-4 border-gold-500 pl-6 py-2">
+                        <h3 class="text-2xl font-bold text-gold-200">三、 永不離棄的承諾：用真實的代價愛神</h3>
+                        <p class="text-slate-400 mt-2 font-display">Nehemiah 10:32-39</p>
+                    </div>
+                    
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="text-gold-400 font-bold mb-4 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            引用經文
+                        </h4>
+                        <p class="text-slate-300 leading-loose italic">「我們又為自己定例：每年各人交納第三伊加崙銀子……又定下每年將我們地上初熟的土產和各樣樹上初熟的果子，都奉到耶和華的殿裡。……我們決不離棄我們神的殿。」</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2">重要原文解析</h5>
+                                <p class="text-slate-300">「初熟的」：希伯來文 <span class="text-gold-300">bikkurim</span>。在未見後續收成前先獻上最好的，代表神居首位。「離棄」(azab) 則有撇棄之意，「決不離棄」是極強烈的委身。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2">關鍵問題與解答</h5>
+                                <p class="text-slate-300 font-medium italic mb-2">奉獻如何反映「決不離棄」的承諾？</p>
+                                <p class="text-slate-400">信仰必然觸及錢包與行事曆。奉獻不是神缺乏，而是我們需要打破對物質的崇拜，證明神才是供應者。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-900/10 border border-gold-900/50 p-6 rounded-2xl">
+                            <h5 class="text-gold-400 font-bold mb-4">名言佳句</h5>
+                            <blockquote class="text-lg font-medium leading-relaxed mb-4">
+                                「人的歸主有三個層次：首先是心的歸信，其次是思想的歸信，最後是錢包的歸信。」
+                            </blockquote>
+                            <cite class="text-sm text-gold-600 block">— 馬丁·路德 (Martin Luther)</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <h2 class="flex items-center text-3xl font-bold mb-12 text-gold-400">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                講章全文
+            </h2>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-10 text-slate-300 text-lg md:text-xl leading-relaxed">
+                <p>各位弟兄姊妹，平安。今天我們要透過尼希米記第10章，思想一個重要的主題：<strong class="text-gold-300 text-2xl block mt-2">重建神聖的立約：從簽名起誓到生命奉獻</strong></p>
+                
+                <p>當以色列人聽見神的話語，他們不僅是流淚悔改，他們更採取了極具震撼力的行動。今天我們要從三個層面，來看他們如何與神重新建立這份神聖的盟約。</p>
+
+                <div class="space-y-6">
+                    <h3 class="text-gold-400 text-2xl font-bold">一、 刻骨銘心的簽署：降服於神的主權</h3>
+                    <p>經文在尼希米記10章提到：「<span class="text-slate-100 font-medium">這都是民長。其餘的民……凡有知識能明白的，都隨從他們尊貴的弟兄，發咒起誓，必遵行神藉他僕人摩西所傳的律法……</span>」</p>
+                    <p>弟兄姊妹，我們常覺得信仰是「心裡相信」就好，為何以色列人需要白紙黑字、甚至「發咒起誓」呢？因為人的心太容易軟弱。公開的簽名，是為了斬斷自己退後的道路。這就像婚禮上的誓言，代表著一種毫無保留的降服。潘霍華曾說：「<strong class="text-gold-200">廉價的恩典是我們自己給自己的恩典……昂貴的恩典是必須尋求的呼召。</strong>」今天，我們是否願意降服於神的主權，不再給自己留退路，勇敢地向神簽下我們生命的空白支票？</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-gold-400 text-2xl font-bold">二、 劃定界線的勇氣：在世俗中活出聖潔</h3>
+                    <p>立約不能只停留在口號，必須落實在生活中。以色列人做出了兩個極為艱難的決定：「<span class="text-slate-100 font-medium">並不將我們的女兒給這地的居民為妻……這地的居民若在安息日……帶了貨物或糧食來賣給我們，我們必不買。</span>」</p>
+                    <p>婚姻與安息日，代表了我們的「關係」與「金錢」。以色列人身處異邦文化，拒絕聯姻、拒絕在安息日做生意，意味著他們願意承受人際關係的邊緣化與經濟上的損失。提摩太·凱勒提醒我們：「<strong class="text-gold-200">如果我們不能在時間和金錢上安息，我們就等於在宣告這兩者才是我們真正的神。</strong>」我們是否擁有劃定界線的勇氣？在老闆要求你在主日作假帳時，在社會鼓吹婚姻可以隨便時，你是否敢為了神的聖潔說「不」？</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-gold-400 text-2xl font-bold">三、 永不離棄的承諾：用真實的代價愛神</h3>
+                    <p>最後，真實的立約必然會觸及我們的錢包。經文說：「<span class="text-slate-100 font-medium">定下每年將我們地上初熟的土產和各樣樹上初熟的果子，都奉到耶和華的殿裡……這樣，我們決不離棄我們神的殿。</span>」</p>
+                    <p>請注意「<strong class="text-gold-400">初熟的</strong>」這個詞。這不是把月底剩下的零錢投入奉獻箱，而是在收成的第一時間，把最好、最先的獻給神。馬丁·路德曾一針見血地說：「<strong class="text-gold-200">人的歸主有三個層次：心的歸信、思想的歸信，最後是錢包的歸信。</strong>」你把一天當中最好的精力給了誰？你的金錢運用是否證明了神居首位？</p>
+                </div>
+
+                <div class="bg-gold-500/10 p-8 rounded-3xl border border-gold-500/20 text-center mt-12">
+                    <p class="text-2xl font-bold text-gold-300 mb-4">結論與呼召</p>
+                    <p class="mb-6">親愛的弟兄姊妹，今天的 <strong class="text-gold-100">【金句】</strong> 提醒我們：「<strong class="text-gold-400">這樣，我們決不離棄我們神的殿。</strong>」這是一句震撼人心的宣告。</p>
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <span class="bg-gold-600/20 px-4 py-2 rounded-full border border-gold-600/30 text-gold-400 font-bold"># 立約 Covenant</span>
+                        <span class="bg-gold-600/20 px-4 py-2 rounded-full border border-gold-600/30 text-gold-400 font-bold"># 界線 Boundary</span>
+                        <span class="bg-gold-600/20 px-4 py-2 rounded-full border border-gold-600/30 text-gold-400 font-bold"># 初熟 Firstfruits</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-2xl font-bold mb-8 text-gold-400">應用方向</h2>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start"><span class="w-2 h-2 bg-gold-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>檢視屬靈誓言：回顧受洗或蒙召時的承諾。</li>
+                    <li class="flex items-start"><span class="w-2 h-2 bg-gold-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>建立保護界線：在世俗價值觀中設立不妥協底線。</li>
+                    <li class="flex items-start"><span class="w-2 h-2 bg-gold-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>檢驗初熟法則：審視時間管理與財務規劃的優先序。</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-8 text-gold-400">實踐行動</h2>
+                <div class="space-y-4">
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                        <div class="bg-gold-600 text-slate-950 w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+                        <p class="text-sm">寫下個人立約書，簽名夾在聖經中。</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                        <div class="bg-gold-600 text-slate-950 w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+                        <p class="text-sm">找回真實安息日，放下工作與不必要消費。</p>
+                    </div>
+                    <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                        <div class="bg-gold-600 text-slate-950 w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
+                        <p class="text-sm">調整優先順序：第一筆收入奉獻，晨間首段時間獻給神。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <h2 class="flex items-center text-3xl font-bold mb-12 text-gold-400">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                名言佳句
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「恩典是白白得來的，但它卻要付上你一切的代價。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 潘霍華 (Dietrich Bonhoeffer)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「人心的本質，就是一個不斷製造偶像的工廠。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 約翰·加爾文 (John Calvin)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「如果你所信的神，從來不會與你的想法產生衝突，那麼你所信的可能只是你自己。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 提摩太·凱勒 (Timothy Keller)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「我們對神真實的態度，最準確的測量器，就是我們獨處時的思想。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 陶恕 (A.W. Tozer)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「基督的十字架是神對人類罪惡最嚴厲的審判，也是神對人類最深沉的愛的表現。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 約翰·史托德 (John Stott)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「真宗教的本質主要在於神聖的情感。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「恩典的對立面不是努力，而是賺取。努力是行動，賺取是態度。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 魏樂德 (Dallas Willard)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「在這個崇尚速成的世代，基督徒的生命是一場『同一個方向的長久順服』。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 畢德生 (Eugene Peterson)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「如果我們沒有安靜獨處的時間，我們的生命就會被這個世界的喧囂所吞噬。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 盧雲 (Henri Nouwen)</span></div>
+                <div class="glass-card p-6 rounded-2xl italic text-slate-300">「當一本聖經被翻得破舊不堪時，它的主人通常擁有一個健全不破的靈魂。」<br><span class="text-gold-500 font-bold not-italic block mt-2 text-sm">— 司布真 (Charles Spurgeon)</span></div>
+            </div>
+            
+            <div class="mt-20 text-center text-slate-600 text-xs tracking-widest border-t border-slate-800 pt-8">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#header" class="fixed bottom-8 right-8 bg-gold-600 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Jump Text Animation for Golden Verse
+        const goldSentence = "「……這樣，我們決不離棄我們神的殿。」";
+        const container = document.getElementById('gold-sentence');
+        goldSentence.split('').forEach((char, i) => {
+            const span = document.createElement('span');
+            span.textContent = char;
+            span.style.setProperty('--i', i);
+            container.appendChild(span);
+        });
+
+        // Smooth scrolling for links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

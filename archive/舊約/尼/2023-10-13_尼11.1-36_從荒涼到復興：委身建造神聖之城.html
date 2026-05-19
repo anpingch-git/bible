@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尼11:1-36 從荒涼到復興：委身建造神聖之城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffcf0',
+                            100: '#fef7e1',
+                            200: '#fbe9b3',
+                            300: '#f7d57c',
+                            400: '#f1bb43',
+                            500: '#e5a52d',
+                            600: '#c78021',
+                            700: '#a15e1e',
+                            800: '#834b1e',
+                            900: '#6d3e1d',
+                        },
+                        stone: {
+                            950: '#0c0a09',
+                        }
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { filter: 'brightness(0.4)' },
+                            '50%': { filter: 'brightness(0.9)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0c0a09;
+            color: #e7e5e4;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(28, 25, 23, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(214, 188, 116, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to bottom right, #f7d57c, #e5a52d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #e5a52d;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-btn {
+            box-shadow: 0 0 20px rgba(229, 165, 45, 0.3);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: bounce-subtle 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Top Banner -->
+    <div id="top" class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center px-6">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_d8cef817-adf5-4a47-af05-d55482804fe9.jpg' alt='聖城耶路撒冷' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-stone-950"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black text-white mb-8 tracking-tight leading-tight">
+                尼11:1-36<br/>
+                <span class="text-gradient">從荒涼到復興：委身建造神聖之城</span>
+            </h1>
+            
+            <div class="jump-text text-xl md:text-2xl lg:text-3xl font-display text-gold-300 italic max-w-3xl mx-auto leading-relaxed opacity-90 drop-shadow-lg">
+                「凡甘心樂意住耶路撒冷的，百姓都為他們祝福。」<br/>
+                <span class="text-sm md:text-base font-sans not-italic block mt-4 tracking-[0.2em] opacity-70">尼希米記 11:2</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass-card border-b border-white/5 py-4 px-6 md:px-12 flex justify-between items-center overflow-x-auto whitespace-nowrap">
+        <span class="text-gold-400 font-bold tracking-widest hidden md:block">尼希米記 11:1-36</span>
+        <div class="flex space-x-6 md:space-x-12 text-sm md:text-base font-semibold text-stone-300 mx-auto md:mr-0">
+            <a href="#prayer" class="nav-link hover:text-gold-400">禱告</a>
+            <a href="#outline" class="nav-link hover:text-gold-400">大綱</a>
+            <a href="#sermon" class="nav-link hover:text-gold-400">講章</a>
+            <a href="#quotes" class="nav-link hover:text-gold-400">名言</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="max-w-3xl mx-auto text-center space-y-8 glass-card p-10 md:p-16 rounded-[2rem]">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-3.652a1 1 0 01-.54-.928V4.3a1 1 0 011.36-.93l7.408 3.292a1 1 0 00.74 0l7.408-3.292A1 1 0 0121 4.3v12.12a1 1 0 01-.54.927L12 21z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-gold-400">【 禱告詞 】</h2>
+                <p class="text-lg md:text-xl leading-relaxed text-stone-300 font-serif">
+                    主啊，我們感謝祢，因祢是那呼召我們進入祢榮耀計畫的上帝。昔日祢如何感動尼希米與以色列百姓，甘心樂意放下安逸，進入荒廢的耶路撒冷重建聖城；今日求祢也同樣賜給我們一顆甘心樂意的心。願我們的生命不僅是領受恩典的器皿，更是建造祢神聖國度的活石。無論我們被安放在哪一個位置，無論是顯明還是隱藏，求主使我們都能忠心服事，成為這世代的鹽與光。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center space-x-4 mb-12">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                <h2 class="text-4xl font-display font-black text-white">大綱索引</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="group p-8 glass-card rounded-2xl hover:bg-gold-500/10 transition-all duration-500 border-l-4 border-l-gold-600">
+                    <span class="text-xs text-gold-500 font-bold tracking-tighter uppercase mb-2 block">Part 01</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-300 mb-2">放下安逸</h3>
+                    <p class="text-sm text-stone-400">甘心樂意的神聖呼召<br/>尼 11:1-2</p>
+                </a>
+                <a href="#part2" class="group p-8 glass-card rounded-2xl hover:bg-gold-500/10 transition-all duration-500 border-l-4 border-l-gold-600">
+                    <span class="text-xs text-gold-500 font-bold tracking-tighter uppercase mb-2 block">Part 02</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-300 mb-2">各盡其職</h3>
+                    <p class="text-sm text-stone-400">隱藏在名單背後的忠心<br/>尼 11:3-24</p>
+                </a>
+                <a href="#part3" class="group p-8 glass-card rounded-2xl hover:bg-gold-500/10 transition-all duration-500 border-l-4 border-l-gold-600">
+                    <span class="text-xs text-gold-500 font-bold tracking-tighter uppercase mb-2 block">Part 03</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-300 mb-2">遍地開花</h3>
+                    <p class="text-sm text-stone-400">在每一個所在見證神<br/>尼 11:25-36</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-24">
+                <!-- Part 1 Deep Dive -->
+                <article id="part1" class="scroll-mt-32">
+                    <div class="border-t border-white/10 pt-16">
+                        <div class="flex flex-col lg:flex-row gap-12">
+                            <div class="lg:w-1/3">
+                                <h3 class="text-3xl font-display font-bold text-gold-500 mb-6">第一段：放下安逸</h3>
+                                <p class="text-gold-300 font-bold mb-4 italic">尼希米記 11:1-2</p>
+                                <div class="bg-stone-900/50 p-6 rounded-xl border border-white/5 text-stone-300 text-sm italic leading-relaxed">
+                                    1 百姓的首領住在耶路撒冷。其餘的百姓掣籤，每十人中使一人來住在聖城耶路撒冷，那九人住在別的城邑。
+                                    2 凡甘心樂意住耶路撒冷的，百姓都為他們祝福。
+                                </div>
+                            </div>
+                            <div class="lg:w-2/3 space-y-10">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                        <span class="w-1.5 h-6 bg-gold-600 mr-3"></span>關鍵原文與解釋
+                                    </h4>
+                                    <ul class="space-y-4">
+                                        <li class="glass-card p-5 rounded-lg">
+                                            <strong class="text-gold-400">甘心樂意 (Hebrew: nadab)</strong><br/>
+                                            意指「自願、獻出、甘心奉獻」。這不僅是一種勉強的順服，而是一種出於內心深處的渴望，主動放棄個人的權利或舒適，為要成就神更高的旨意。
+                                        </li>
+                                        <li class="glass-card p-5 rounded-lg">
+                                            <strong class="text-gold-400">聖城 (Hebrew: qodesh 'iyr)</strong><br/>
+                                            這是聖經中首次在尼希米記稱耶路撒冷為「聖城」。它強調這座城市的存在不是為了經濟繁榮或政治擴張，而是為了彰顯神的同在與聖潔。
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                        <span class="w-1.5 h-6 bg-gold-600 mr-3"></span>關鍵問題與解析
+                                    </h4>
+                                    <div class="space-y-6 text-stone-300">
+                                        <p class="font-bold text-gold-200">問題：為什麼住進耶路撒冷需要「甘心樂意」？我們生命中有哪些需要放棄安逸來回應神的呼召？</p>
+                                        <p class="pl-6 border-l-2 border-stone-700">當時的耶路撒冷剛建好城牆，百廢待舉，充滿瓦礫，缺乏經濟基礎，且容易成為敵人首要攻擊的目標。住在周邊城邑有自己的田產與安逸的生活，搬進聖城意味著拓荒、危險與犧牲。今日，神同樣呼召我們離開屬靈的「舒適區」，去承擔教會中無人願做的服事，或進入冷漠的職場與社區作見證。這需要我們放下個人的利益算計，看重「神國的需要」大過「個人的安逸」。</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gold-950/20 p-8 rounded-2xl border border-gold-900/30">
+                                    <p class="text-stone-400 italic mb-4">名言佳句</p>
+                                    <p class="text-xl font-serif text-gold-200 leading-relaxed">「當基督呼召一個人時，祂是呼召他來死。」</p>
+                                    <p class="text-right text-stone-500 mt-2">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 2 Deep Dive -->
+                <article id="part2" class="scroll-mt-32">
+                    <div class="border-t border-white/10 pt-16">
+                        <div class="flex flex-col lg:flex-row-reverse gap-12">
+                            <div class="lg:w-1/3">
+                                <h3 class="text-3xl font-display font-bold text-gold-500 mb-6">第二段：各盡其職</h3>
+                                <p class="text-gold-300 font-bold mb-4 italic">尼希米記 11:3-24</p>
+                                <div class="bg-stone-900/50 p-6 rounded-xl border border-white/5 text-stone-300 text-sm italic leading-relaxed">
+                                    此段詳列了猶太人、祭司、利未人、守門者名單。即使是管理神殿外事的與守門的，都被記錄在神的神聖名冊中。
+                                </div>
+                            </div>
+                            <div class="lg:w-2/3 space-y-10">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                        <span class="w-1.5 h-6 bg-gold-600 mr-3"></span>關鍵原文與解釋
+                                    </h4>
+                                    <ul class="space-y-4">
+                                        <li class="glass-card p-5 rounded-lg">
+                                            <strong class="text-gold-400">勇士 (Hebrew: chayil)</strong><br/>
+                                            意指「力量、能力、財富或軍隊」。在第6節和14節中，這個詞不僅形容軍人，更是用來形容那些在聖殿中供職的、甚至守門的。在神眼中，忠心完成行政與內務工作的人，同樣是「大能的勇士」。
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                        <span class="w-1.5 h-6 bg-gold-600 mr-3"></span>關鍵問題與解析
+                                    </h4>
+                                    <div class="space-y-6 text-stone-300">
+                                        <p class="font-bold text-gold-200">問題：在教會或神國的服事中，我們是否常覺得自己的角色微不足道？這份冗長的名單對神有何意義？</p>
+                                        <p class="pl-6 border-l-2 border-stone-700">現代人喜歡看見光鮮亮麗的舞台服事，卻常忽略了默默無聞的付出。這份名單裡有各樣職分，神將他們的名字一一記錄，表明在神國度裡沒有「微不足道」的服事。只要是為建構聖城而做，神都看為尊貴。</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gold-950/20 p-8 rounded-2xl border border-gold-900/30">
+                                    <p class="text-stone-400 italic mb-4">名言佳句</p>
+                                    <p class="text-xl font-serif text-gold-200 leading-relaxed">「決定一個人的工作是神聖還是世俗的，不在於他做什麼，而在於他為什麼而做。」</p>
+                                    <p class="text-right text-stone-500 mt-2">— 陶恕 (A.W. Tozer)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 3 Deep Dive -->
+                <article id="part3" class="scroll-mt-32">
+                    <div class="border-t border-white/10 pt-16">
+                        <div class="flex flex-col lg:flex-row gap-12">
+                            <div class="lg:w-1/3">
+                                <h3 class="text-3xl font-display font-bold text-gold-500 mb-6">第三段：遍地開花</h3>
+                                <p class="text-gold-300 font-bold mb-4 italic">尼希米記 11:25-36</p>
+                                <div class="bg-stone-900/50 p-6 rounded-xl border border-white/5 text-stone-300 text-sm italic leading-relaxed">
+                                    記錄了那 90% 住在鄉村、田地、與各個村落的百姓。他們從別是巴直到欣嫩谷，在全地見證神的治理。
+                                </div>
+                            </div>
+                            <div class="lg:w-2/3 space-y-10">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                        <span class="w-1.5 h-6 bg-gold-600 mr-3"></span>關鍵原文與解釋
+                                    </h4>
+                                    <ul class="space-y-4">
+                                        <li class="glass-card p-5 rounded-lg">
+                                            <strong class="text-gold-400">住 / 派居 (Hebrew: yashav / chalaq)</strong><br/>
+                                            「居住」指「定居、設立家室、生養眾多」。「派居」則帶有被分配、被神安放在特定位置的意涵。他們散佈在各個村莊，象徵著神國的子民在全地宣告神的應許與主權。
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                        <span class="w-1.5 h-6 bg-gold-600 mr-3"></span>關鍵問題與解析
+                                    </h4>
+                                    <div class="space-y-6 text-stone-300">
+                                        <p class="font-bold text-gold-200">問題：除了教會，我們如何將神聖的呼召帶入我們日常居住的社區與職場？</p>
+                                        <p class="pl-6 border-l-2 border-stone-700">神不僅關心聖城的復興，祂也關心每一塊土地。不住在聖城的人，同樣肩負著在自己的田地活出屬神樣式的使命。信徒分散回到生活現場，不是使命的暫停，而是使命的擴散。</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gold-950/20 p-8 rounded-2xl border border-gold-900/30">
+                                    <p class="text-stone-400 italic mb-4">名言佳句</p>
+                                    <p class="text-xl font-serif text-gold-200 leading-relaxed">「基督徒蒙召是要在世界中作鹽作光；鹽要發揮防腐的作用就必須揉進肉裡。」</p>
+                                    <p class="text-right text-stone-500 mt-2">— 約翰·史托德 (John Stott)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center space-x-4 mb-12">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    <h2 class="text-4xl font-display font-black text-white">講道文稿</h2>
+                </div>
+                <div class="glass-card p-8 md:p-16 rounded-3xl space-y-12 text-stone-300 leading-relaxed font-serif text-lg">
+                    <p>各位弟兄姊妹，平安。當我們看著宏偉的建築落成，往往會感到無比的興奮。但在尼希米記第十一章，城牆建好了，城門安上了，卻面臨一個極大的危機——耶路撒冷是一座「空城」。房屋沒有重建，街道滿是瓦礫，周圍還有仇敵的虎視眈眈。誰願意搬進去？誰願意離開舒適的郊區，來到這個充滿挑戰的廢墟中重新開始？</p>
+
+                    <p class="text-2xl font-bold text-gold-400 border-l-4 border-gold-600 pl-6 my-10">
+                        今天，我们要透過尼希米記第十一章，來看一個偉大的講道主題：從荒涼到復興：委身建造神聖之城。
+                    </p>
+
+                    <h4 class="text-2xl font-bold text-white font-sans">第一段：放下安逸——甘心樂意的神聖呼召</h4>
+                    <p>尼希米記 11:2 告訴我們今天的 <strong class="text-gold-200">【關鍵金句】：「凡甘心樂意住耶路撒冷的，百姓都為他們祝福。」</strong></p>
+                    <p>當時，首領們已經帶頭住進去了。接下來，百姓用掣籤的方式抽籤。但經文特別提到了一群人，他們是「甘心樂意」住進去的。他們沒有等掣籤，他們看見了聖城的需要，就主動放棄了在其他城邑已經開墾好的田地、安逸的家園，自願搬進這個危機四伏的「聖城」。</p>
+
+                    <h4 class="text-2xl font-bold text-white font-sans">第二段：各盡其職——隱藏在名單背後的忠心</h4>
+                    <p>在這份名單中，我們看見了各樣的角色。有祭司、有行政庶務的利未族長、還有守門的。最令人感動的是，聖經稱呼這些做內外勤工作的人為 <strong class="text-gold-200">「大能的勇士」</strong>。</p>
+                    <p>當你甘心樂意為神國度服事時，哪怕你只是在教會排椅子、掃廁所、做財務報表，神都看你為建造聖城的大能勇士。你的忠心，神都記念。</p>
+
+                    <h4 class="text-2xl font-bold text-white font-sans">第三段：遍地開花——在每一個所在見證神</h4>
+                    <p>神的心意不是只讓耶路撒冷發光，神要這群屬祂的子民在全地「遍地開花」。當主日崇拜結束，你回到你的社區、進入你的辦公室，那就是神「派居」你去的地方。你是那個職場的祭司。</p>
+
+                    <div class="bg-stone-950 p-10 rounded-2xl text-center space-y-6">
+                        <h5 class="text-gold-400 font-bold text-xl uppercase tracking-widest">結論三個關鍵字</h5>
+                        <div class="flex flex-wrap justify-center gap-8 text-3xl font-display font-black text-white">
+                            <span class="hover:text-gold-500 transition-colors">呼召 (Calling)</span>
+                            <span class="hover:text-gold-500 transition-colors">委身 (Commitment)</span>
+                            <span class="hover:text-gold-500 transition-colors">見證 (Witness)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="max-w-4xl mx-auto">
+            <div class="flex items-center space-x-4 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <h2 class="text-3xl font-display font-black text-white">回應與實踐行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 glass-card rounded-2xl border-t-2 border-gold-600">
+                    <h5 class="font-bold text-gold-400 mb-4">一個禱告的突破</h5>
+                    <p class="text-stone-300 text-sm">本週具體向神求問：「主啊，教會中還有哪個荒涼、無人承接的破口，是祢要我『甘心樂意』去站立的？」</p>
+                </div>
+                <div class="p-8 glass-card rounded-2xl border-t-2 border-gold-600">
+                    <h5 class="font-bold text-gold-400 mb-4">一次幕後的服事</h5>
+                    <p class="text-stone-300 text-sm">在一個月內，參與一項不為人知、沒有掌聲的服事，如場地復原、代禱，並在其中敬拜神。</p>
+                </div>
+                <div class="p-8 glass-card rounded-2xl border-t-2 border-gold-600">
+                    <h5 class="font-bold text-gold-400 mb-4">一個社區的祝福</h5>
+                    <p class="text-stone-300 text-sm">認識一位鄰居或同事，主動為他們的需要代禱，並採取實際的關懷行動（如送點心、寫卡片）。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center space-x-4 mb-12">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-4xl font-display font-black text-white">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「當基督呼召一個人時，祂是呼召他來死。」</p>
+                    <p class="text-sm text-gold-500">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「基督徒不應該在『從世界中撤退』與『被世界同化』這兩者之間作選擇，我們蒙召是要進入世界並更新它。」</p>
+                    <p class="text-sm text-gold-500">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「決定一個人的工作是神聖還是世俗的，不在於他做什麼，而在於他為什麼而做。」</p>
+                    <p class="text-sm text-gold-500">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「鹽要發揮防腐的作用就必須揉進肉裡，光要驅散黑暗就必須照耀在黑暗中。」</p>
+                    <p class="text-sm text-gold-500">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「基督教的領導不是建立在權力上，而是建立在甘心樂意的無能和十字架的軟弱上。」</p>
+                    <p class="text-sm text-gold-500">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「神並不需要我們的能力，祂需要的是我們的可用性與甘心樂意。」</p>
+                    <p class="text-sm text-gold-500">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「門徒的道路沒有捷徑，它是在同一個方向上長期的順服。」</p>
+                    <p class="text-sm text-gold-500">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「神國度的偉大，往往隱藏在我們日常生活的平凡細節中。」</p>
+                    <p class="text-sm text-gold-500">— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「無論是擠牛奶的農婦，還是講台上的牧師，只要他們是為了神的榮耀而做，他們的工作同樣神聖。」</p>
+                    <p class="text-sm text-gold-500">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-8 rounded-xl border-l-2 border-gold-500/50">
+                    <p class="text-lg font-serif italic text-stone-200 mb-4">「我們的心哪裡也不去，唯獨作為祭物，甘心樂意且毫不遲疑地獻給神。」</p>
+                    <p class="text-sm text-gold-500">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center pt-20 border-t border-white/5">
+            <p class="text-stone-500 text-sm tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-10 right-10 w-14 h-14 bg-gold-600 rounded-full flex items-center justify-center text-stone-950 floating-btn hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+</body>
+</html>

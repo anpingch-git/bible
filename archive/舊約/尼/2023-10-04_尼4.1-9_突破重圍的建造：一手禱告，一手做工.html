@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尼4:1-9: 突破重圍的建造：一手禱告，一手做工</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#121212',
+                            700: '#1f1f1f',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(251, 191, 36, 0.1);
+            border-color: #fbbf24;
+            transform: translateY(-2px);
+        }
+        .jumping-text span {
+            display: inline-block;
+            animation: bounce-subtle 2s infinite ease-in-out;
+        }
+        /* Sticky utility bar */
+        #top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Top Banner with Media -->
+    <header id="header" class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_1376f4b1-eef5-4bb1-b0b5-ff77c6802ea4.jpg' alt='media_1' class="w-full h-full object-cover animate-breathe" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-dark-900"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="mb-4 inline-block px-4 py-1 rounded-full bg-gold-500/20 border border-gold-500/30 text-gold-400 text-sm font-semibold tracking-widest uppercase">
+                Nehemiah 4:1-9
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black text-white mb-8 leading-tight">
+                突破重圍的建造：<br/><span class="text-gradient">一手禱告，一手做工</span>
+            </h1>
+            
+            <div class="mt-12 text-xl md:text-2xl text-white font-medium jumping-text px-4 py-6">
+                <p>「然而，我們禱告我們的神，又因他們的緣故，就派人看守，晝夜防備。」</p>
+                <p class="text-sm mt-2 opacity-80">(尼希米記 4:9)</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="top-bar" class="py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-gold-400 font-bold hidden md:block">尼希米記 4:1-9</div>
+        <div class="flex gap-6 md:gap-10 text-sm font-medium tracking-wide">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline-section" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M11 23l-4.115-4.63-4.115 4.63-1.77-1.574 4.115-4.63-4.115-4.63 1.77-1.574 4.115 4.63 4.115-4.63 1.77 1.574-4.115 4.63 4.115 4.63-1.77 1.574zM12 1a4 4 0 0 1 4 4c0 1.226-.551 2.325-1.423 3.062L20 13v2h-8v-2l5.423-4.938A3.983 3.983 0 0 1 16 5a4 4 0 0 1 4 4 4 4 0 0 1-4 4H8a4 4 0 0 1-4-4 4 4 0 0 1 4-4 3.983 3.983 0 0 1 1.423 3.062L4 13v2H0v-2l5.423-4.938A3.983 3.983 0 0 1 4 5a4 4 0 0 1 4-4 4 4 0 0 1 4 4z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500/20 text-gold-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-3.611A9.99 9.99 0 015 12V6.653c0-.624.43-1.156 1.035-1.31L10.553 4M12 11V4m0 0l3.553 1.34c.606.154 1.035.686 1.035 1.31V12c0 1.721-.43 3.342-1.191 4.757M12 11c.437 1.137 1.053 2.197 1.821 3.164m3.44 3.611A9.99 9.99 0 0019 12V6.653c0-.624-.43-1.156-1.035-1.31L14.447 4M12 4L12 11M12 21a9.003 9.003 0 008.313-5.547M12 21c-4.97 0-9-4.03-9-9 0-1.65.445-3.197 1.221-4.529M12 21c1.235 0 2.405-.248 3.473-.698"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold">禱告詞</h2>
+                </div>
+                <p class="text-xl leading-relaxed text-gray-300 italic">
+                    「親愛的天父，當我們在生活中為祢建造、努力前行時，常常會面臨來自四面八方的嘲笑、阻撓與攻擊。求祢賜給我們尼希米般的屬靈眼光與堅韌，教導我們在聽見仇敵的冷嘲熱諷時，第一時間將委屈化為向祢的呼求；在面對實質的威脅時，既懂得全然倚靠祢的保護，又懂得擔起責任，設立防備。求祢堅固我們的手，使我們專心做工，不受仇敵的干擾，完成祢託付給我們的使命。奉主耶穌基督的聖名禱告，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline-section" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500/20 text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">大綱導覽</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#p1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full">
+                    <span class="text-gold-400 font-bold mb-2">尼 4:1-3</span>
+                    <span class="text-lg font-bold text-white">面對冷嘲熱諷的毒箭——看穿仇敵的心理戰</span>
+                </a>
+                <a href="#p2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full">
+                    <span class="text-gold-400 font-bold mb-2">尼 4:4-6</span>
+                    <span class="text-lg font-bold text-white">屈膝呼求與專心做工——不辯護的專注力</span>
+                </a>
+                <a href="#p3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full">
+                    <span class="text-gold-400 font-bold mb-2">尼 4:7-9</span>
+                    <span class="text-lg font-bold text-white">禱告與警醒的雙重盾牌——信心與行動的完美結合</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline Analysis -->
+        <section class="space-y-24">
+            <!-- Part 1 -->
+            <div id="p1" class="scroll-mt-24 space-y-8">
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-24">
+                            <h3 class="text-gold-400 font-bold text-sm uppercase tracking-tighter mb-2">Part 01</h3>
+                            <h2 class="text-4xl font-display font-black leading-tight text-white">面對冷嘲熱諷的毒箭</h2>
+                            <p class="text-gray-500 mt-4">尼希米記 4:1-3</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 md:p-10 space-y-10">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-4 border-gold-500 italic text-gray-300">
+                            「參巴拉聽見我們修造城牆就發怒...亞捫人多比雅站在旁邊，說：『他們所修造的石牆，就是狐狸上去也必跣塌。』」
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="bg-black/40 p-4 rounded-lg">
+                                    <span class="block text-gold-200 font-bold">嗤笑 (la'ag)</span>
+                                    <span class="text-sm text-gray-400">意指以輕蔑態度企圖摧毀自我價值。</span>
+                                </div>
+                                <div class="bg-black/40 p-4 rounded-lg">
+                                    <span class="block text-gold-200 font-bold">發怒 (charah)</span>
+                                    <span class="text-sm text-gray-400">因嫉妒或恐懼而產生的強烈怒火。</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                問題解析
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed">仇敵最擅長的第一波攻擊是心理戰。我們必須看穿這背後的屬靈爭戰：仇敵的目的是為了讓我們自我懷疑、轉移焦點並最終放棄。</p>
+                        </div>
+                        <div class="border-t border-white/10 pt-8 italic text-gold-100/80">
+                            「如果我們被人的讚美所抬高，我們就會被人的嘲笑所擊垮。」—— 司布真
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="p2" class="scroll-mt-24 space-y-8">
+                <div class="flex flex-col md:flex-row-reverse gap-6 items-start">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-24 md:text-right">
+                            <h3 class="text-gold-400 font-bold text-sm uppercase tracking-tighter mb-2">Part 02</h3>
+                            <h2 class="text-4xl font-display font-black leading-tight text-white">屈膝呼求與專心做工</h2>
+                            <p class="text-gray-500 mt-4">尼希米記 4:4-6</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 md:p-10 space-y-10">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-4 border-gold-500 italic text-gray-300">
+                            「我們的神啊，求你垂聽，因為我們被藐視...這樣，我們修造城牆，城牆就都連絡，高至一半，因為百姓專心做工。」
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <div class="bg-black/40 p-4 rounded-lg inline-block">
+                                <span class="block text-gold-200 font-bold">專心做工 (leb)</span>
+                                <span class="text-sm text-gray-400">指心思與意志，代表將所有的情感投注在事工上，而非仇敵言語。</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                問題解析
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed">尼希米深知，一旦他停下手邊的工作去與參巴拉爭辯，仇敵的目的就達到了。他將心中的憤怒與委屈完全傾倒在禱告中，把審判的主權交還給神。</p>
+                        </div>
+                        <div class="border-t border-white/10 pt-8 italic text-gold-100/80">
+                            「當你明白你在基督裡的身分時，別人的批評就不能摧毀你。」—— 提摩太·凱勒
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="p3" class="scroll-mt-24 space-y-8">
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-24">
+                            <h3 class="text-gold-400 font-bold text-sm uppercase tracking-tighter mb-2">Part 03</h3>
+                            <h2 class="text-4xl font-display font-black leading-tight text-white">禱告與警醒的雙重盾牌</h2>
+                            <p class="text-gray-500 mt-4">尼希米記 4:7-9</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 md:p-10 space-y-10">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-4 border-gold-500 italic text-gray-300">
+                            「大家同謀要來攻擊耶路撒冷，使城內擾亂。然而，我們禱告我們的神，又因他們的緣故，就派人看守，晝夜防備。」
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <div class="bg-black/40 p-4 rounded-lg inline-block">
+                                <span class="block text-gold-200 font-bold">防備 (mishmar)</span>
+                                <span class="text-sm text-gray-400">高度的警覺與具體的防衛行動。</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                問題解析
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed">真正的信心從不排除人類應盡的責任。尼希米沒有落入屬靈的宿命論。「我們禱告我們的神」是信心的根基，「派人看守」是信心的實踐。</p>
+                        </div>
+                        <div class="border-t border-white/10 pt-8 italic text-gold-100/80">
+                            「唯有相信的人才順服，也唯有順服的人才相信。」—— 潘霍華
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Full Text -->
+        <section id="sermon" class="scroll-mt-24 glass-card p-8 md:p-16 border-t-8 border-gold-500">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500/20 text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-black text-white">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none space-y-12 text-gray-300 text-lg leading-loose">
+                <div class="text-center mb-16">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gold-400">突破重圍的建造：一手禱告，一手做工</h3>
+                </div>
+                
+                <p>弟兄姊妹，平安。當我們立志要跟隨神、為神的國度或我們自己的生命建造城牆時，我們往往以為這會是一條充滿掌聲的康莊大道。然而，現實常常截然相反——當你越熱心，遭遇的阻力就越大。</p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">一、面對冷嘲熱諷的毒箭</h4>
+                    <p>當尼希米帶領百姓開始修造城牆時，第一波攻擊不是刀劍，而是言語。尼希米記4:1-3記載，參巴拉和多比雅在一旁嗤笑。這些言語就像毒箭，直接射向百姓的自信心。仇敵非常清楚，<strong class="text-gold-400 text-xl underline underline-offset-8">要摧毀一項工程，最快的方法就是摧毀工人的心智。</strong></p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">二、屈膝呼求與專心做工</h4>
+                    <p>面對極大的羞辱，尼希米的做法令人震驚。他沒有在城牆上拉起布條抗議，也沒有在城門口舉辦辯論大會。這是一個極其寶貴的屬靈原則：<strong class="text-gold-400 text-xl underline underline-offset-8">將審判的權利交給神，將專注的精力留給使命。</strong> 我們花了太多時間證明自己，卻忘了神呼召我們是來「建造」的，不是來「吵架」的。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">三、禱告與警醒的雙重盾牌</h4>
+                    <p>當仇敵升級威脅時，尼希米做了一個神聖的決定，這也是我們今天的金句：<span class="text-gold-400 font-bold block my-4 text-2xl text-center italic">「然而，我們禱告我們的神，又因他們的緣故，就派人看守，晝夜防備。」</span> 這節經文完美地詮釋了屬靈生活的平衡。尼希米是「一手禱告，一手做工」。禱告，表明我們知道最終的保護來自耶和華；派人看守，表明我們願意承擔神所賜的責任。</p>
+                </div>
+
+                <div class="bg-gold-500/10 p-8 rounded-2xl border border-gold-500/30 mt-12">
+                    <h4 class="text-xl font-bold text-gold-400 mb-4">結論與行動</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-base">
+                        <div>
+                            <h5 class="font-bold text-white mb-2">講道應用方向：</h5>
+                            <ul class="list-disc list-inside space-y-2 opacity-80">
+                                <li>辨識生活中的「參巴拉與多比雅」</li>
+                                <li>建立「不辯護，只禱告」的反射動作</li>
+                                <li>盤點生命破口，設立「晝夜防備」</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white mb-2">實踐行動：</h5>
+                            <ul class="list-disc list-inside space-y-2 opacity-80">
+                                <li>停止一場無謂的爭辯</li>
+                                <li>重拾一項被擱置的建造</li>
+                                <li>建立一個具體的防線</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-500/20 text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 border-l-4 border-gold-500 hover:scale-[1.02] transition-transform">
+                    <p class="text-gray-300 mb-4 italic">「神總是將祂的豐富傾倒在我們倒空的器皿裡。當我們覺得自己一無所有時，正是神要開始工作的時候。」</p>
+                    <cite class="text-gold-400 font-bold not-italic block">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 border-l-4 border-gold-500 hover:scale-[1.02] transition-transform">
+                    <p class="text-gray-300 mb-4 italic">「恩典並不是反對努力，恩典是反對賺取。努力是行動，賺取是態度。」</p>
+                    <cite class="text-gold-400 font-bold not-italic block">— 魏樂德 (Dallas Willard)</cite>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 border-l-4 border-gold-500 hover:scale-[1.02] transition-transform">
+                    <p class="text-gray-300 mb-4 italic">「憂慮，是我們為那些尚未發生的事情，向上帝支付的利息。」</p>
+                    <cite class="text-gold-400 font-bold not-italic block">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 border-l-4 border-gold-500 hover:scale-[1.02] transition-transform">
+                    <p class="text-gray-300 mb-4 italic">「福音是這樣的：你比你所敢相信的還要敗壞和有罪；但同時，你也比你所敢盼望的更被愛和被接納。」</p>
+                    <cite class="text-gold-400 font-bold not-italic block">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 border-l-4 border-gold-500 hover:scale-[1.02] transition-transform">
+                    <p class="text-gray-300 mb-4 italic">「基督教的信仰不是為了解決問題，而是為了在問題中遇見神。」</p>
+                    <cite class="text-gold-400 font-bold not-italic block">— 畢德生 (Eugene Peterson)</cite>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 border-l-4 border-gold-500 hover:scale-[1.02] transition-transform">
+                    <p class="text-gray-300 mb-4 italic">「信心不是相信神會按照我的意思去做，信心是相信神無論怎麼做，祂的旨意都是最完美的。」</p>
+                    <cite class="text-gold-400 font-bold not-italic block">— 唐崇榮 (Stephen Tong)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="py-12 border-t border-white/5">
+            <p class="text-center text-gray-600 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all hover:-translate-y-2 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation already handled by CSS scroll-behavior: smooth;
+        
+        // Add subtle jumping effect to the gold verse text
+        const verse = document.querySelector('.jumping-text p:first-child');
+        if (verse) {
+            const text = verse.innerText;
+            verse.innerHTML = text.split('').map(char => `<span>${char}</span>`).join('');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羅3:1-8:當人的虛謊遇見神的信實：恩典的真實考驗</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        accent: '#ff4d4d',
+                        deep: '#0a0a0a',
+                        card: 'rgba(255, 255, 255, 0.03)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                        cursive: ['Ma Shan+Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.2' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(250, 204, 21, 0.3);
+            transform: translateY(-4px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fef9c3 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-jump {
+            display: inline-block;
+            animation: subtle-bounce 2s ease-in-out infinite;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ca8a04;
+        }
+    </style>
+</head>
+<body class="bg-deep text-gray-200 font-sans selection:bg-gold-600 selection:text-white overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-gold-500 font-bold tracking-widest text-sm md:text-base uppercase">羅馬書 3:1-8</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wide">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header id="header" class="relative h-screen flex flex-col justify-center items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_ab75a1c7-e18f-4c0b-9f2e-994a3c4da18d.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-deep/40 via-deep/60 to-deep"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h2 class="text-gold-400 font-semibold tracking-[0.3em] mb-4 text-sm md:text-lg">ROMANS 3:1-8</h2>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black text-white leading-tight mb-8 drop-shadow-2xl">
+                當人的虛謊遇見<br/><span class="gradient-text">神的信實</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 font-light tracking-wide max-w-2xl mx-auto mb-12">
+                恩典的真實考驗：在人的背信中看見上帝永不動搖的應許。
+            </p>
+            
+            <!-- Verse (Golden Text Animation) -->
+            <div class="py-6 px-4 md:px-8 max-w-3xl mx-auto">
+                <p class="text-lg md:text-2xl leading-relaxed font-display text-gold-100 italic text-jump">
+                    「斷乎不能！不如說，神是真實的，人都是虛謊的。如經上所記：你責備人的時候，顯為公義；被人議論的時候，可以得勝。」
+                </p>
+                <p class="mt-4 text-gold-500 font-bold tracking-widest">— 羅馬書 3:4</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 rounded-full bg-gold-600/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9.05-3.9-9.18-8.72l-.01-.32c0-5.1 4.14-9.28 9.19-9.28zm2 0c5.11 0 9.19 4.12 9.19 9.28v.32c-.13 4.82-4.11 8.72-9.19 8.72v-20z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-widest">開會禱告</h2>
+            </div>
+            <div class="bento-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute -right-10 -top-10 text-gold-500/5 group-hover:scale-110 transition-transform duration-700">
+                    <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-loose font-display text-gray-200 italic relative z-10">
+                    「親愛的天父，我們來到祢面前，承認我們的心常有虛謊與軟弱。感謝祢，因為祢的信實不因我們的背信而廢棄，祢的公義在我們的軟弱中更顯完全。求聖靈光照我們，使我們不把祢的恩典當作放縱私慾的藉口，而是深刻領受祢託付的真道，活出與恩典相稱的生命。奉主耶穌基督的聖名祈求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-gold-600/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-widest">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2">01 恩典的託付</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold-400 transition-colors">特權抑或責任？ (羅 3:1-2)</h3>
+                </a>
+                <a href="#part2" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2">02 永不失信的盟約</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold-400 transition-colors">人的軟弱與神的真實 (羅 3:3-4)</h3>
+                </a>
+                <a href="#part3" class="bento-card p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold-500 font-bold mb-2">03 拒絕廉價恩典</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold-400 transition-colors">不可將罪惡合理化 (羅 3:5-8)</h3>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-12">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32 bento-card p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-display font-bold text-gold-400 mb-4">1. 恩典的託付</h3>
+                            <div class="bg-deep/50 p-4 rounded-xl border border-white/5">
+                                <p class="text-sm text-gold-500 font-bold mb-2">引用經文</p>
+                                <p class="text-sm italic">「猶太人有甚麼長處？割禮有甚麼益處呢？凡事大有好處：第一是神的聖言交託他們。」</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-6">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-gold-600/20 text-gold-500 rounded-full text-xs font-bold mb-3">關鍵原文</span>
+                                <ul class="space-y-2">
+                                    <li><strong class="text-white">聖言 (λόγια / logia)</strong>: 指神所說的話，特別是舊約中上帝的啟示與應許。</li>
+                                    <li><strong class="text-white">交託 (ἐπιστεύθησαν)</strong>: 表示猶太人被上帝信任，成為神話語的保管者。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-bold mb-3">問題與解析</span>
+                                <p class="text-white font-semibold mb-2">擁有屬靈資源是否等同於擁有真理的生命？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">「交託」意味著管家的責任。許多基督徒將屬靈遺產當作驕傲資本，而非順服動力。特權必須伴隨著責任。</p>
+                            </div>
+                            <div class="border-l-4 border-gold-600 pl-6 italic text-gray-400">
+                                「聖經的賜予不是為了增加我們的知識，而是為了改變我們的生命。」—— 慕迪
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32 bento-card p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-display font-bold text-gold-400 mb-4">2. 永不失信的盟約</h3>
+                            <div class="bg-deep/50 p-4 rounded-xl border border-white/5">
+                                <p class="text-sm text-gold-500 font-bold mb-2">引用經文</p>
+                                <p class="text-sm italic">「難道他們的不信就廢掉神的信嗎？斷乎不能！不如說，神是真實的，人都是虛謊的。」</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-6">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-gold-600/20 text-gold-500 rounded-full text-xs font-bold mb-3">關鍵原文</span>
+                                <ul class="space-y-2">
+                                    <li><strong class="text-white">真實的 (ἀληθής / alēthēs)</strong>: 可靠的、無偽的、言出必行的。</li>
+                                    <li><strong class="text-white">虛謊的 (ψεύστης / pseustēs)</strong>: 不守信的人，強烈對比上帝的絕對可靠。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-bold mb-3">問題與解析</span>
+                                <p class="text-white font-semibold mb-2">當我們跌倒失敗時，上帝的應許會失效嗎？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">神的信實不依賴人的表現。大衛的懺悔證明，人的背叛反而襯托出神守約的信實，這是極大的安慰。</p>
+                            </div>
+                            <div class="border-l-4 border-gold-600 pl-6 italic text-gray-400">
+                                「即使我們失信，祂仍是可信的，因為祂不能背乎自己。」—— 加爾文
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32 bento-card p-8 rounded-3xl">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-display font-bold text-gold-400 mb-4">3. 拒絕廉價恩典</h3>
+                            <div class="bg-deep/50 p-4 rounded-xl border border-white/5">
+                                <p class="text-sm text-gold-500 font-bold mb-2">引用經文</p>
+                                <p class="text-sm italic">「若神的真實，因我的虛謊越發顯出他的榮耀，為甚麼我還受審判，好像罪人呢？」</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-6">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-gold-600/20 text-gold-500 rounded-full text-xs font-bold mb-3">關鍵原文</span>
+                                <ul class="space-y-2">
+                                    <li><strong class="text-white">顯出 (συνίστημι / synistēmi)</strong>: 證明、彰顯、襯托出。</li>
+                                    <li><strong class="text-white">定罪 (κρίμα / krima)</strong>: 神公義的裁決與判決。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-accent/20 text-accent rounded-full text-xs font-bold mb-3">問題與解析</span>
+                                <p class="text-white font-semibold mb-2">我們是否利用上帝的恩典作為不願悔改的藉口？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">保羅嚴厲駁斥「作惡以成全善」的荒謬邏輯。真正的恩典帶來對罪的厭惡。利用慈愛包裝罪惡是對神最大的褻瀆。</p>
+                            </div>
+                            <div class="border-l-4 border-gold-600 pl-6 italic text-gray-400">
+                                「廉價的恩典是沒有悔改的赦免......是沒有十字架的恩典。」—— 潘霍華
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24 max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-gold-600/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-widest">講章文稿</h2>
+            </div>
+
+            <article class="space-y-10 text-lg leading-[2] text-gray-300 font-light">
+                <p class="text-2xl font-display font-bold text-white mb-8 border-b border-gold-600/30 pb-4">
+                    當人的虛謊遇見神的信實：恩典的真實考驗
+                </p>
+
+                <p>弟兄姊妹們，平安！今天我們要來探討一個非常核心，甚至有些尖銳的信仰問題。在保羅寫下羅馬書的時代，許多人因為擁有上帝的律法而自傲，也有人誤解了上帝的恩典。我們今天的主題是：「當人的虛謊遇見神的信實：恩典的真實考驗」。</p>
+
+                <div class="bg-white/5 p-8 rounded-2xl border-l-4 border-gold-500">
+                    <h4 class="text-gold-400 font-bold text-xl mb-4">恩典的託付：特權抑或責任？</h4>
+                    <p>保羅在羅馬書3:1-2提到：「這樣說來，猶太人有甚麼長處？......第一是神的聖言交託他們。」上帝把祂的「聖言」交給了猶太人，這是極大的特權。但弟兄姊妹，這份「交託」意味著什麼？它不是讓我們拿來驕傲的徽章，而是要求我們去忠心管理的產業！我們今天許多人擁有好幾本聖經、隨時可以聽道，但我們是否只是像拿著頂級菜單卻不點菜的人？<span class="text-gold-400 font-bold underline decoration-gold-600 underline-offset-4 italic">「聖經的賜予不是為了增加我們的知識，而是為了改變我們的生命。」</span>如果我們擁有聖經卻不活出真理，這份恩典的託付就會成為將來審判我們的依據。</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl border-l-4 border-accent">
+                    <h4 class="text-accent font-bold text-xl mb-4">永不失信的盟約：當人的軟弱遇見神的真實</h4>
+                    <p>我們常常軟弱、失信，甚至得罪神。我們的心裡會恐懼：上帝會不會因此放棄我們？請聽保羅在羅馬書3:3-4發出的強烈宣告：<span class="text-white font-bold bg-gold-600/30 px-2 uppercase tracking-wider">「難道他們的不信就廢掉神的信嗎？斷乎不能！不如說，神是真實的，人都是虛謊的。」</span>這是何等震撼的宣告！我們的失信，不能廢掉上帝的信實。就像狂風巨浪中的船錨，船錨的穩固不取決於水手發抖的雙手，而是取決於海底的磐石。上帝的信實就是那塊磐石！當我們失敗時，不要逃避神，因為祂的真實與信實，正是我們悔改得救的唯一盼望。</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl border-l-4 border-gray-400">
+                    <h4 class="text-gray-200 font-bold text-xl mb-4">拒絕廉價恩典：不可將罪惡合理化</h4>
+                    <p>在羅馬書3:5-8，保羅提到一種荒謬的邏輯：既然我的不義能顯出上帝的公義，既然我的罪越多，上帝赦免的恩典就越顯出榮耀，那我豈不是可以「作惡以成全善」嗎？保羅嚴厲地回應：<span class="text-accent font-black text-2xl tracking-tighter">「這等人定罪是該當的！」</span></p>
+                    <p class="mt-4">弟兄姊妹，我們必須誠實問自己：我們有沒有在潛意識裡把上帝的恩典當作不願悔改的藉口？「反正神充滿慈愛，我犯這個罪祂一定會原諒我。」這種心態是對十架極大的褻瀆！正如潘霍華嚴厲的警告：<span class="text-gold-400 italic">「廉價的恩典是沒有悔改的赦免。」</span>上帝的信實與恩典，是為了引導我們悔改，絕不是給我們繼續犯罪的許可證。</p>
+                </div>
+
+                <p class="text-xl font-display text-white italic pt-8">
+                    親愛的弟兄姊妹，願我們帶著<span class="text-gold-500 font-bold">敬畏</span>的心，領受神<span class="text-gold-500 font-bold">託付</span>的聖言，並在我們一切的軟弱中，緊緊抓住上帝不變的<span class="text-gold-500 font-bold">信實</span>。拒絕廉價的恩典，活出與蒙召之恩相稱的生命！
+                </p>
+            </article>
+        </section>
+
+        <!-- Application & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bento-card p-10 rounded-[2rem] border-t-4 border-gold-500">
+                <h3 class="text-2xl font-bold text-white mb-6">應用方向</h3>
+                <ul class="space-y-6 text-gray-400">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black text-xl">01</span>
+                        <p><strong class="text-gray-200 block">端正對神話語的態度</strong> 檢視自己是否只將聖經當作客觀知識，恢復對「聖言」的敬畏。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black text-xl">02</span>
+                        <p><strong class="text-gray-200 block">在軟弱中仰望神的信實</strong> 將眼光從「自己的失敗」轉向「神永不改變的信實」，勇敢認罪。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-black text-xl">03</span>
+                        <p><strong class="text-gray-200 block">防備「恩典的濫用」</strong> 挑戰會眾檢視內心是否有「反正神會原諒我」的毒酵。</p>
+                    </li>
+                </ul>
+                <div class="mt-10 pt-8 border-t border-white/10 flex gap-4">
+                    <span class="px-4 py-1 bg-white/5 rounded-lg text-gold-500 font-bold text-sm">#託付</span>
+                    <span class="px-4 py-1 bg-white/5 rounded-lg text-gold-500 font-bold text-sm">#信實</span>
+                    <span class="px-4 py-1 bg-white/5 rounded-lg text-gold-500 font-bold text-sm">#敬畏</span>
+                </div>
+            </div>
+
+            <div class="bento-card p-10 rounded-[2rem] border-t-4 border-accent">
+                <h3 class="text-2xl font-bold text-white mb-6">實踐行動</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 p-1 bg-accent/20 rounded">
+                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <p class="text-gray-200"><span class="font-bold text-accent">改變讀經習慣：</span>本週讀經前先禱告：「主，這是祢交託給我的聖言，請指示我今天當順服哪一項真理。」</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 p-1 bg-accent/20 rounded">
+                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <p class="text-gray-200"><span class="font-bold text-accent">真誠的認罪：</span>寫下自己試圖合理化、找藉口的罪，運用羅3:4宣告神的公義，徹底向神悔改。</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="mt-1 p-1 bg-accent/20 rounded">
+                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <p class="text-gray-200"><span class="font-bold text-accent">背誦金句：</span>將羅馬書3:4設為手機桌布，提醒自己「神是真實的」，在一切環境中選擇相信神。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-gold-600/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1.017 21L1.017 18C1.017 16.8954 1.91243 16 3.017 16H6.017C6.56928 16 7.017 15.5523 7.017 15V9C7.017 8.44772 6.56928 8 6.017 8H3.017C1.91243 8 1.017 7.10457 1.017 6V5C1.017 3.89543 1.91243 3 3.017 3H6.017C8.22614 3 10.017 4.79086 10.017 7V15C10.017 18.3137 7.33071 21 4.017 21H1.017Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-widest">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 rounded-3xl group">
+                    <p class="text-lg text-gray-200 leading-relaxed mb-6 italic">「廉價的恩典是我們教會的死敵。我們今天所爭取的，是重價的恩典......廉價的恩典是沒有悔改的赦免，是沒有教會紀律的洗禮，是沒有十字架的恩典。」</p>
+                    <p class="text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    <p class="text-xs text-gray-500">《追隨基督》 (The Cost of Discipleship)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-8 rounded-3xl group">
+                    <p class="text-lg text-gray-200 leading-relaxed mb-6 italic">「上帝的信實意味著祂對自己的本性始終如一；祂所說的，祂必成就。我們在變幻莫測的世界中，唯有在祂不變的信實裡能找到安息。」</p>
+                    <p class="text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</p>
+                    <p class="text-xs text-gray-500">《渴慕神》 (The Pursuit of God)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 rounded-3xl group">
+                    <p class="text-lg text-gray-200 leading-relaxed mb-6 italic">「福音不是我們靠著順服來得救；福音是我們藉著基督的恩典得救，從而產生出真正的順服。」</p>
+                    <p class="text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    <p class="text-xs text-gray-500">《揮霍的上帝》 (The Prodigal God)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-8 rounded-3xl group">
+                    <p class="text-lg text-gray-200 leading-relaxed mb-6 italic">「十字架是上帝公義與慈愛的完美交會點。在那裡，罪被嚴厲地審判，而罪人卻被白白地赦免。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·史托德 (John Stott)</p>
+                    <p class="text-xs text-gray-500">《基督的十字架》 (The Cross of Christ)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-8 rounded-3xl group">
+                    <p class="text-lg text-gray-200 leading-relaxed mb-6 italic">「我們若不認識自己的悲慘與敗壞，就無法真正認識上帝的恩典與信實。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</p>
+                    <p class="text-xs text-gray-500">《基督教要義》 (Institutes of the Christian Religion)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card p-8 rounded-3xl group">
+                    <p class="text-lg text-gray-200 leading-relaxed mb-6 italic">「上帝的應許從不落空；即便在最黑暗的夜晚，祂信實的星光依然閃耀，引導信靠祂的人。」</p>
+                    <p class="text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</p>
+                    <p class="text-xs text-gray-500">《清晨甘露》 (Morning and Evening)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Label -->
+        <section class="text-center py-20">
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-accent/5 border border-accent/20 text-accent/60 text-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-deep rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 hover:scale-110 transition-all z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

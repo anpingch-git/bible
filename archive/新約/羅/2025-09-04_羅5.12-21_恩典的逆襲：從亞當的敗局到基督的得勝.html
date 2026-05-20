@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羅5:12-21：恩典的逆襲：從亞當的敗局到基督的得勝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            crimson: '#9B1B30',
+                            deepBlue: '#0A1128',
+                            glass: 'rgba(255, 255, 255, 0.05)',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: 0.4, transform: 'scale(1.02)' },
+                            '50%': { opacity: 0.8, transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #05080f;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #FFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: #D4AF37;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        @keyframes micro-jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: micro-jump 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-brand-gold selection:text-black">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card rounded-none border-t-0 border-x-0 bg-opacity-70 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-display font-extrabold text-brand-gold hidden md:block">羅 5:12-21</span>
+            <div class="flex space-x-6 md:space-x-12 text-sm md:text-base font-semibold tracking-wide">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="header" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <img src='image/img_6f65a118-c2cc-4b72-b700-403d0e7e341f.jpg' alt='media_1' class="w-full h-full object-cover animate-breath opacity-40 scale-105" />
+        </div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 leading-tight">
+                <span class="block text-brand-gold text-2xl md:text-3xl mb-4 tracking-widest opacity-80 uppercase">Romans 5:12-21</span>
+                <span class="gradient-text">恩典的逆襲</span><br/>
+                <span class="text-2xl md:text-4xl font-normal opacity-90 mt-4 block">從亞當的敗局到基督的得勝</span>
+            </h1>
+            
+            <div class="mt-12 text-xl md:text-2xl leading-relaxed font-light jump-text">
+                「律法本是外添的，叫過犯顯多；只是罪在哪裡顯多，恩典就更顯多了。」
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-16 relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 text-white opacity-5">
+                    <svg class="w-48 h-48" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2L6 7l1 1 4-4v14h2V4l4 4 1-1-5-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-brand-gold mb-8 flex items-center gap-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    禱告詞
+                </h2>
+                <p class="text-xl md:text-2xl leading-loose italic opacity-90 text-slate-200">
+                    創造與救贖的主，我們滿心感謝祢。在亞當裡，我們看見了罪與死亡帶來的絕望與敗壞；但在基督裡，我們經歷了超越一切定罪的豐盛恩典與永生盼望。求聖靈今日開啟我們的心眼，讓我們真知道這浩大無比的恩典，不叫我們繼續在罪中沉淪，而是讓恩典在我們的生命中真正作王，活出耶穌基督所賜的義。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="text-3xl font-display font-bold text-brand-gold mb-10 flex items-center gap-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                分段大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <button onclick="document.getElementById('section-1').scrollIntoView({behavior: 'smooth'})" class="glass-card p-6 text-left hover:bg-brand-gold/10 transition-all group">
+                    <div class="text-brand-gold text-sm font-bold mb-2">Section 01</div>
+                    <h3 class="text-lg font-bold group-hover:text-brand-gold transition-colors">死亡的病毒</h3>
+                    <p class="text-xs opacity-60 mt-2">羅馬書 5:12-14</p>
+                </button>
+                <button onclick="document.getElementById('section-2').scrollIntoView({behavior: 'smooth'})" class="glass-card p-6 text-left hover:bg-brand-gold/10 transition-all group">
+                    <div class="text-brand-gold text-sm font-bold mb-2">Section 02</div>
+                    <h3 class="text-lg font-bold group-hover:text-brand-gold transition-colors">恩典的疫苗</h3>
+                    <p class="text-xs opacity-60 mt-2">羅馬書 5:15-17</p>
+                </button>
+                <button onclick="document.getElementById('section-3').scrollIntoView({behavior: 'smooth'})" class="glass-card p-6 text-left hover:bg-brand-gold/10 transition-all group">
+                    <div class="text-brand-gold text-sm font-bold mb-2">Section 03</div>
+                    <h3 class="text-lg font-bold group-hover:text-brand-gold transition-colors">榮耀的翻轉</h3>
+                    <p class="text-xs opacity-60 mt-2">羅馬書 5:18-21</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <section class="space-y-24">
+            <!-- Section 1 -->
+            <article id="section-1" class="scroll-mt-24 space-y-12">
+                <div class="border-l-4 border-brand-gold pl-8">
+                    <h3 class="text-4xl font-display font-black text-brand-gold mb-4">死亡的病毒——一個人的選擇，全人類的困境</h3>
+                    <p class="text-xl opacity-70">經文範圍：羅馬書 5:12-14</p>
+                </div>
+                
+                <div class="glass-card p-8 bg-brand-crimson/5 border-brand-crimson/20">
+                    <p class="text-lg leading-relaxed italic text-slate-300">
+                        「這就如罪是從一人入了世界，死又是從罪來的，於是死就臨到眾人，因為眾人都犯了罪。沒有律法之先，罪已經在世上；但沒有律法，罪也不算罪。然而從亞當到摩西，死就作了王，連那些不與亞當犯一樣罪過的，也在他的權下。亞當乃是那以後要來之人的預像。」
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-item glass-card p-8">
+                        <h4 class="text-brand-gold font-bold mb-4 flex items-center gap-2 uppercase tracking-tighter">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4"></path></svg>
+                            重要 Keyword
+                        </h4>
+                        <ul class="space-y-4">
+                            <li><span class="text-brand-gold font-bold">罪 (Hamartia)</span>：原意為「未中標的」。不僅是錯誤行為，更是掌控人類的敵對勢力。</li>
+                            <li><span class="text-brand-gold font-bold">死 (Thanatos)</span>：不僅指肉體死亡，更指靈性上與生命源頭的隔絕。</li>
+                        </ul>
+                    </div>
+                    <div class="bento-item glass-card p-8">
+                        <h4 class="text-brand-gold font-bold mb-4 uppercase tracking-tighter">關鍵問題</h4>
+                        <p class="font-bold mb-2">為什麼亞當一個人犯罪，卻要全人類承擔後果？這公平嗎？</p>
+                        <p class="text-sm opacity-80 leading-relaxed">亞當是全人類的「聯邦元首」。他的選擇代表了全人類。我們不只是無辜的受害者，我們在實際生活中也認同了亞當的悖逆。</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 border-dashed border-slate-700">
+                    <p class="text-brand-gold font-bold mb-4">故事例證</p>
+                    <p class="text-slate-300">就像一滴致命病毒滴入水庫，整個城市的供水系統都被污染了。沒有人能說「我沒有去投毒，所以我喝這水不會生病」，只要喝了這水，無一倖免。</p>
+                </div>
+            </article>
+
+            <!-- Section 2 -->
+            <article id="section-2" class="scroll-mt-24 space-y-12">
+                <div class="border-l-4 border-brand-gold pl-8">
+                    <h3 class="text-4xl font-display font-black text-brand-gold mb-4">恩典的疫苗——超越定罪的白白恩賜</h3>
+                    <p class="text-xl opacity-70">經文範圍：羅馬書 5:15-17</p>
+                </div>
+                
+                <div class="glass-card p-8 bg-brand-gold/5 border-brand-gold/20">
+                    <p class="text-lg leading-relaxed italic text-slate-300">
+                        「只是過犯不如恩賜，若因一人的過犯，眾人都死了，何況上帝的恩典，與那因耶穌基督一人恩典中的賞賜，豈不更加倍地臨到眾人嗎？...」
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-item glass-card p-8">
+                        <h4 class="text-brand-gold font-bold mb-4 uppercase tracking-tighter">重要 Keyword</h4>
+                        <ul class="space-y-4">
+                            <li><span class="text-brand-gold font-bold">恩賜 (Charisma)</span>：白白的禮物。強調完全出於賜予者的慷慨，接受者毫無功勞。</li>
+                            <li><span class="text-brand-gold font-bold">稱義 (Dikaiōma)</span>：法庭用語，指宣告無罪、被算為義的狀態。</li>
+                        </ul>
+                    </div>
+                    <div class="bento-item glass-card p-8">
+                        <h4 class="text-brand-gold font-bold mb-4 uppercase tracking-tighter">關鍵問題</h4>
+                        <p class="font-bold mb-2">恩典和罪的影響力是對等的嗎？恩典如何超越罪的破壞？</p>
+                        <p class="text-sm opacity-80 leading-relaxed">保羅強調「何況...更加倍」。罪帶來定罪，但恩典在「許多過犯」累積如山後，依然能夠帶來稱義。這是一種絕對不對稱的勝利。</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card p-8 border-dashed border-slate-700">
+                    <p class="text-brand-gold font-bold mb-4">故事例證</p>
+                    <p class="text-slate-300">想像一個欠下百億巨債破產的人，突然有一位富豪不僅替他還清了所有債務，還把自己的千億資產完全過戶給他。這不只是「歸零」，而是極大的富足。</p>
+                </div>
+            </article>
+
+            <!-- Section 3 -->
+            <article id="section-3" class="scroll-mt-24 space-y-12">
+                <div class="border-l-4 border-brand-gold pl-8">
+                    <h3 class="text-4xl font-display font-black text-brand-gold mb-4">榮耀的翻轉——當恩典掌權作王</h3>
+                    <p class="text-xl opacity-70">經文範圍：羅馬書 5:18-21</p>
+                </div>
+                
+                <div class="glass-card p-8 bg-blue-500/5 border-blue-500/20">
+                    <p class="text-lg leading-relaxed italic text-slate-300">
+                        「...律法本是外添的，叫過犯顯多；只是罪在哪裡顯多，恩典就更顯多了。就如罪作王叫人死；照樣，恩典也藉著義作王，叫人因我們的主耶穌基督得永生。」
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bento-item glass-card p-8">
+                        <h4 class="text-brand-gold font-bold mb-4 uppercase tracking-tighter">重要 Keyword</h4>
+                        <ul class="space-y-4">
+                            <li><span class="text-brand-gold font-bold">順從 (Hupakoē)</span>：指耶穌基督完全順服天父的旨意，甚至死在十字架上。</li>
+                            <li><span class="text-brand-gold font-bold">作王 (Basileuō)</span>：描述兩個國度王權的轉移。恩典現在是我們生命的新主人。</li>
+                        </ul>
+                    </div>
+                    <div class="bento-item glass-card p-8">
+                        <h4 class="text-brand-gold font-bold mb-4 uppercase tracking-tighter">關鍵問題</h4>
+                        <p class="font-bold mb-2">為什麼說「罪在哪裡顯多，恩典就更顯多」？可以多犯罪換恩典嗎？</p>
+                        <p class="text-sm opacity-80 leading-relaxed">絕對不是。律法的作用像顯微鏡，讓我們看清墮落的深度。恩典作王，意味著生命的新主人不再容許我們沉溺於罪中。</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <h2 class="text-3xl font-display font-bold text-brand-gold mb-12 flex items-center gap-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                講章文稿
+            </h2>
+            <div class="glass-card p-8 md:p-16 space-y-8 text-lg md:text-xl leading-relaxed text-slate-200">
+                <p>弟兄姊妹，平安。我們生命中常常感受到一種無力感：我們想做好事，卻總是搞砸；我們渴望完美，卻總是面對破裂的關係與內心的自私。今天我們要透過羅馬書5章12到21節，來看一場人類歷史上最偉大的逆襲——<strong class="text-brand-gold">恩典的逆襲：從亞當的敗局到基督的得勝</strong>。</p>
+                
+                <h4 class="text-2xl font-bold text-brand-gold mt-12">死亡的病毒——一個人的選擇，全人類的困境</h4>
+                <p>保羅在羅馬書5章12節告訴我們：「<strong class="text-white">這就如罪是從一人入了世界，死又是從罪來的，於是死就臨到眾人，因為眾人都犯了罪。</strong>」亞當在伊甸園的悖逆，不僅是他個人的失敗，更像釋放了一種致命的病毒。我們被罪轄制，死在我們生命中作了王。沒有人能靠自己研發出解藥。</p>
+
+                <h4 class="text-2xl font-bold text-brand-gold mt-12">恩典的疫苗——超越定罪的白白恩賜</h4>
+                <p>但是，感謝上帝，故事沒有停在亞當的敗局。保羅在15節宣告了一個震撼的轉折：「<strong class="text-white">只是過犯不如恩賜...上帝的恩典，與那因耶穌基督一人恩典中的賞賜，豈不更加倍地臨到眾人嗎？</strong>」弟兄姊妹，請注意「<strong class="text-brand-gold">更加倍</strong>」這個詞。基督帶來的不是剛好抵銷毀滅的補償，而是超級加倍的豐盛！這就是「<strong class="text-brand-gold">恩賜乃是由許多過犯而稱義</strong>」。</p>
+
+                <h4 class="text-2xl font-bold text-brand-gold mt-12">榮耀的翻轉——當恩典掌權作王</h4>
+                <p>最終，這場逆襲達到最高潮。保羅寫下了這段偉大的<strong class="text-brand-gold">金句</strong>：「<strong class="text-white">律法本是外添的，叫過犯顯多；只是罪在哪裡顯多，恩典就更顯多了。就如罪作王叫人死；照樣，恩典也藉著義作王，叫人因我們的主耶穌基督得永生。</strong>」</p>
+                
+                <p>這絕不是鼓勵我們多犯罪，而是告訴我們：無論你的過去有多黑暗，恩典永遠大過你的罪！現在，生命的主權已經轉換。「<strong class="text-brand-gold">恩典也藉著義作王</strong>」，意味著你生命的新主人叫做「恩典」。你不再是罪的奴僕，你擁有在生命中作王、勝過罪惡的權柄！今天，讓我們停止靠自己掙扎，完全安息在基督的代求中。宣告你的新身分，讓恩典在你的每一天真正作王！</p>
+            </div>
+        </section>
+
+        <!-- Response and Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 border-brand-gold/30">
+                <h2 class="text-2xl font-bold text-brand-gold mb-6">應用方向</h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <span class="w-2 h-2 bg-brand-gold rounded-full mt-2 shrink-0"></span>
+                        <div>
+                            <p class="font-bold text-white">安息在恩典中</p>
+                            <p class="text-sm opacity-70">停止靠個人行為換取上帝的接納，安息在基督一次的義行裡。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="w-2 h-2 bg-brand-gold rounded-full mt-2 shrink-0"></span>
+                        <div>
+                            <p class="font-bold text-white">對付定罪感</p>
+                            <p class="text-sm opacity-70">學會宣告「恩典已經作王」，在基督裡不再被定罪，拒絕仇敵的控告。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 border-brand-gold/30">
+                <h2 class="text-2xl font-bold text-brand-gold mb-6">回應行動</h2>
+                <div class="space-y-4">
+                    <div class="bg-white/5 p-4 rounded-xl">
+                        <p class="text-brand-gold font-bold">恩典日記</p>
+                        <p class="text-sm opacity-70">本週每天寫下一件自己原本不配得、卻經歷上帝恩典的事情。</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl">
+                        <p class="text-brand-gold font-bold">身分宣告</p>
+                        <p class="text-sm opacity-70">每天對著鏡子宣告：「我在基督裡是新造的人，恩典已經作王！」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <h2 class="text-3xl font-display font-bold text-brand-gold mb-12 flex items-center gap-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 bento-item">
+                    <p class="text-lg mb-4">「恩典的福音是：我們比自己敢於相信的還要罪惡深重；但同時，我們在基督裡，比自己敢於盼望的還要更蒙愛。」</p>
+                    <div class="text-brand-gold font-bold">提摩太·凱勒 (Timothy Keller)</div>
+                    <div class="text-xs opacity-50">《揮霍的上帝》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 bento-item">
+                    <p class="text-lg mb-4">「廉價的恩典是傳揚不需悔改的赦免... 昂貴的恩典是重價的珍珠，為了它，人願意變賣一切所有的。」</p>
+                    <div class="text-brand-gold font-bold">潘霍華 (Dietrich Bonhoeffer)</div>
+                    <div class="text-xs opacity-50">《追隨基督》</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 bento-item">
+                    <p class="text-lg mb-4">「十字架是上帝恩典與上帝公義的完美匯合之處。在十字架上，上帝的公義得到了滿足。」</p>
+                    <div class="text-brand-gold font-bold">約翰·史托德 (John Stott)</div>
+                    <div class="text-xs opacity-50">《基督的十字架》</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 bento-item">
+                    <p class="text-lg mb-4">「罪與恩典無法在同一個心靈裡和平共處；當恩典作王時，罪必定要被釘死在十字架上。」</p>
+                    <div class="text-brand-gold font-bold">司布真 (Charles Spurgeon)</div>
+                    <div class="text-xs opacity-50">《恩典作王》</div>
+                </div>
+                <!-- More quotes simplified for design... -->
+                <div class="glass-card p-8 bento-item">
+                    <p class="text-lg mb-4">「恩典不僅是免死金牌，更是上帝親自行動，讓我們能在地上活出天國生命的力量。」</p>
+                    <div class="text-brand-gold font-bold">魏樂德 (Dallas Willard)</div>
+                    <div class="text-xs opacity-50">《神聖的同在》</div>
+                </div>
+                <div class="glass-card p-8 bento-item border-brand-gold/40">
+                    <p class="text-lg mb-4">「你最大的屬靈爭戰，就是拒絕那將你定罪的聲音，並聲明你是上帝蒙愛兒女的身分。」</p>
+                    <div class="text-brand-gold font-bold">盧雲 (Henri Nouwen)</div>
+                    <div class="text-xs opacity-50">《愛勝過恐懼》</div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center text-sm opacity-40">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-12 h-12 bg-brand-gold text-brand-deepBlue rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結15:1-8：被火焚燒的葡萄樹—尋回生命受造的價值</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Ma Shan Zheng', 'serif'],
+                    },
+                    colors: {
+                        amber: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        fire: '#FF4D00',
+                        ash: '#2D2D2D',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-jump': 'subtle-jump 2.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-jump': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+        }
+        .banner-container {
+            height: 60vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            animation: breath 6s ease-in-out infinite;
+        }
+        @keyframes breath {
+            0%, 100% { filter: brightness(0.4); transform: scale(1.0); }
+            50% { filter: brightness(0.8); transform: scale(1.05); }
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: linear-gradient(135deg, #f59e0b 0%, #ff4d00 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(245, 158, 11, 0.4);
+        }
+        .sidebar-dot::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            background: #f59e0b;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <span class="font-bold text-amber-500 text-sm tracking-widest uppercase">結15:1-8</span>
+            <div class="flex items-center gap-6 text-xs md:text-sm font-medium tracking-wide">
+                <a href="#prayer" class="hover:text-amber-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-amber-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-amber-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-amber-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse -->
+    <header class="relative banner-container">
+        <img src='image/img_a68d149d-b1aa-43f2-8064-616b599c8df0.jpg' alt='media_1' class="banner-image" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+            <h1 id="title" class="text-3xl md:text-6xl font-black mb-8 text-white drop-shadow-2xl leading-tight font-serif">
+                被火焚燒的葡萄樹<br>
+                <span class="text-amber-500">尋回生命受造的價值</span>
+            </h1>
+            <div class="max-w-3xl animate-subtle-jump">
+                <p class="text-lg md:text-2xl font-serif text-white italic leading-relaxed drop-shadow-lg">
+                    「人子啊，葡萄樹比別樣樹有什麼強處？葡萄枝比眾樹枝有什麼好處？」<br>
+                    <span class="text-sm md:text-lg not-italic mt-2 block opacity-80">（結15:2）</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-amber-500/20 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3c1.268 0 2.49.234 3.62.661m-1.483 3.933a3 3 0 11-1.483 3.933z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white font-serif">禱告詞</h2>
+            </div>
+            <div class="p-8 rounded-3xl glass border-amber-500/20 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                    <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-200 font-serif">
+                    主耶和華，我們來到祢的面前，承認我們常如同那無用的葡萄樹枝，忘記了自己受造的目的是為了結出屬靈的果子。求祢聖靈的火不是來焚燒我們，而是來潔淨我們，使我們從靈性的荒涼中甦醒。求祢的話語今天光照我們，讓我們不將祢的恩典視為理所當然，而是緊緊連結於主耶穌這棵真葡萄樹上，結出常存的果子，榮耀祢的聖名。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-amber-500/20 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white font-serif">信息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl glass flex flex-col items-start gap-2 group">
+                    <span class="text-amber-500 text-xs font-bold tracking-tighter uppercase group-hover:text-white">PART 01 | 結15:1-3</span>
+                    <span class="text-xl font-bold text-white group-hover:text-white">毫無用處的木頭：失去果效的本質</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl glass flex flex-col items-start gap-2 group">
+                    <span class="text-amber-500 text-xs font-bold tracking-tighter uppercase group-hover:text-white">PART 02 | 結15:4-5</span>
+                    <span class="text-xl font-bold text-white group-hover:text-white">兩頭燒毀的殘枝：經歷管教的警告</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl glass flex flex-col items-start gap-2 group">
+                    <span class="text-amber-500 text-xs font-bold tracking-tighter uppercase group-hover:text-white">PART 03 | 結15:6-8</span>
+                    <span class="text-xl font-bold text-white group-hover:text-white">荒涼地土的審判：背約干犯的結局</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24 space-y-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl md:text-4xl font-black text-amber-500 font-serif">第一段：毫無用處的木頭：失去果效的本質</h3>
+                    <div class="p-6 bg-ash/50 rounded-xl border-l-4 border-amber-500">
+                        <p class="text-lg text-gray-300 italic">「耶和華的話臨到我說：人子啊，葡萄樹比別樣樹有什麼強處？葡萄枝比眾樹枝有什麼好處？其上可以取木料做什麼工用，可以取來做釘子掛什麼器皿嗎？」</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="text-amber-500">#</span> 關鍵原文
+                        </h4>
+                        <div class="p-5 glass rounded-2xl">
+                            <p class="text-amber-300 font-bold text-lg mb-1">葡萄樹 (גֶּפֶן - gephen)</p>
+                            <p class="text-sm text-gray-400">象徵以色列。葡萄樹木質鬆軟，唯一的價值與受造目的就是「結果子」。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="text-amber-500">?</span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300">如果我們的生命不結果子，還剩下什麼價值？</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-white">深入解析</h4>
+                    <p class="text-gray-300 leading-relaxed">這段經文打破了以色列人的屬靈驕傲。他們自認為是神所揀選的族類，擁有優越的地位。但神透過以西結提醒他們：葡萄樹若不結果子，就比森林裡任何野樹都還不如。基督徒的生命也是如此，我們的價值不在於我們的身分標籤，而在於我們是否活出與蒙召之恩相稱的生命。</p>
+                </div>
+
+                <div class="p-8 glass border-dashed border-2 border-amber-900/50 rounded-3xl italic text-amber-100">
+                    <p class="mb-4">「不是因為我們有什麼好處神才揀選我們，葡萄樹的木材一無是處，只有結果子才是它的使命。」</p>
+                    <footer class="text-right text-sm text-amber-500">— 司布真 (Charles Spurgeon)</footer>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24 space-y-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl md:text-4xl font-black text-amber-500 font-serif">第二段：兩頭燒毀的殘枝：經歷管教的警告</h3>
+                    <div class="p-6 bg-ash/50 rounded-xl border-l-4 border-amber-500">
+                        <p class="text-lg text-gray-300 italic">「看哪，已經拋在火中當柴烤，火既燒了兩頭，中間也被燒了，還有益於工用嗎？完全的時候尚且不合乎什麼工用，何況被火燒壞，還能合乎什麼工用嗎？」</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="text-amber-500">#</span> 關鍵原文
+                        </h4>
+                        <div class="p-5 glass rounded-2xl">
+                            <p class="text-amber-300 font-bold text-lg mb-1">火 (אֵשׁ - 'esh)</p>
+                            <p class="text-sm text-gray-400">象徵神的審判與淨化。暗示北國已亡，猶大其他城鎮也被攻陷，只剩耶路撒冷。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="text-amber-500">?</span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300">當我們在苦難或管教中「被火焚燒」時，我們是選擇甦醒，還是繼續頑梗？</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-white">深入解析</h4>
+                    <p class="text-gray-300 leading-relaxed">完好的葡萄枝都已經毫無用處了，更何況是燒焦的殘枝？神在這裡指出耶路撒冷當時的屬靈光景：他們已經在歷史中經歷了多次管教與亡國的危機，卻仍自以為安全。當神允許苦難（火）臨到我們生命的「兩頭」時，那是祂的警鐘。</p>
+                </div>
+
+                <div class="p-8 glass border-dashed border-2 border-amber-900/50 rounded-3xl italic text-amber-100">
+                    <p class="mb-4">「在神能夠大大使用一個人之前，祂必須先深深地擊打他。」</p>
+                    <footer class="text-right text-sm text-amber-500">— 陶恕 (A.W. Tozer)</footer>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24 space-y-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl md:text-4xl font-black text-amber-500 font-serif">第三段：荒涼地土的審判：背約干犯的結局</h3>
+                    <div class="p-6 bg-ash/50 rounded-xl border-l-4 border-amber-500">
+                        <p class="text-lg text-gray-300 italic">「我必向他們變臉；他們雖從火中出來，火卻要燒滅他們。我必使地土荒涼，因為他們行事干犯我。這是主耶和華說的。」</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="text-amber-500">#</span> 關鍵原文
+                        </h4>
+                        <div class="p-5 glass rounded-2xl">
+                            <p class="text-amber-300 font-bold text-lg mb-1">干犯 (מָעַל - ma'al)</p>
+                            <p class="text-sm text-gray-400">指在立約關係中的不忠實與背叛，如同婚姻中的背叛。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="text-amber-500">?</span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300">我們是否將神的恩典視為理所當然，甚至在生活中暗暗地「干犯」了祂？</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl font-bold text-white">深入解析</h4>
+                    <p class="text-gray-300 leading-relaxed">神「變臉」的根本原因不是因為祂缺乏耐心，而是因為百姓「行事干犯」。恩典是有目的的，當選民踐踏聖約，不願活出聖潔，恩典的保護就會撤去。這提醒我們，神是輕慢不得的。</p>
+                </div>
+
+                <div class="p-8 glass border-dashed border-2 border-amber-900/50 rounded-3xl italic text-amber-100">
+                    <p class="mb-4">「廉價的恩典是我們教會的死敵... 廉價的恩典是沒有受苦的恩典，是沒有道成肉身的恩典。」</p>
+                    <footer class="text-right text-sm text-amber-500">— 潘霍華 (Dietrich Bonhoeffer)</footer>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-amber-500/20 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20l-7-7-7 7V5a2 2 0 012-2h10a2 2 0 012 2v15z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white font-serif">講章文稿</h2>
+            </div>
+
+            <div class="space-y-12 text-lg text-gray-300 leading-loose">
+                <p>弟兄姊妹們，平安！今天我們要看的是一段非常發人深省的經文，記載在以西結書第15章。我們今天講道的主題是：<span class="text-white font-bold text-glow underline decoration-amber-500 decoration-2 underline-offset-4">「被火焚燒的葡萄樹：尋回生命受造的價值」</span>。</p>
+
+                <p>很多時候，我們對自己「基督徒」的身分感到自豪，就像當年的以色列人對自己是「神的葡萄樹」感到無比驕傲一樣。但今天，神要透過先知以西結問我們一個非常尖銳的問題。</p>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-amber-400 font-serif">第一段：毫無用處的木頭：失去果效的本質</h4>
+                    <p>神對以西結說：<span class="text-white font-bold">「人子啊，葡萄樹比別樣樹有什麼強處？葡萄枝比眾樹枝有什麼好處？」</span>（結15:2）葡萄樹被造的唯一價值，就是「結果子」。如果一棵葡萄樹不結果子，它就毫無價值，甚至比森林裡的野樹還不如！這對我們的生命發出了一個嚴肅的挑戰：<span class="text-amber-200">如果我們的生命不結果子，還剩下什麼價值？</span></p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-amber-400 font-serif">第二段：兩頭燒毀的殘枝：經歷管教的警告</h4>
+                    <p>經文在第4節說：<span class="text-white font-bold">「看哪，已經拋在火中當柴烤，火既燒了兩頭，中間也被燒了，還有益於工用嗎？」</span>神允許管教的火臨到，不是要毀滅，而是要喚醒。但如果我們在管教中依然拒絕結出悔改的果子，我們就如同那根兩頭燒焦的木頭，再也沒有任何用處。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-amber-400 font-serif">第三段：荒涼地土的審判：背約干犯的結局</h4>
+                    <p>神在第8節宣告了一個令人敬畏的結局：<span class="text-white font-bold">「我必使地土荒涼，因為他們行事干犯我。這是主耶和華說的。」</span>神不會無底線地縱容我們對祂的干犯。當我們將神的恩典視為理所當然，暗暗地在生活中背叛祂時，我們的心田就會走向荒涼。</p>
+                </div>
+
+                <div class="p-8 glass border-l-8 border-fire rounded-r-3xl">
+                    <p class="text-xl md:text-2xl text-white font-serif text-center">
+                        讓我們不再做一根無用、被火焚燒的葡萄枝，而是緊緊連結於耶穌基督這棵真葡萄樹，結出聖靈的果子，尋回我們生命受造的真正價值！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <span class="bg-amber-500 w-2 h-8 block"></span> 應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-amber-500 font-bold">01</span> 檢視生命的果子：重新評估自己服事與生活的動機。</li>
+                    <li class="flex gap-3"><span class="text-amber-500 font-bold">02</span> 正視環境的警鐘：將艱難或管教視為神喚醒悔改的信號。</li>
+                    <li class="flex gap-3"><span class="text-amber-500 font-bold">03</span> 拒絕廉價的恩典：檢驗隱而未現的罪，持守與神所立的新約。</li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <span class="bg-fire w-2 h-8 block"></span> 回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-fire font-bold">01</span> 自我省察：本週花30分鐘求聖靈光照生命中枯乾的領域。</li>
+                    <li class="flex gap-3"><span class="text-fire font-bold">02</span> 認罪回轉：具體寫下並向神及相關的人真實認罪。</li>
+                    <li class="flex gap-3"><span class="text-fire font-bold">03</span> 行動結果子：刻意去愛一個不可愛的人或投入沒人看見的服事。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-amber-500/20 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white font-serif">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="p-6 glass rounded-2xl hover:border-amber-500/50 transition-colors">
+                    <p class="text-amber-100 font-serif mb-3">「廉價的恩典是我們教會的死敵；我們今天所爭戰的，是昂貴的恩典。」</p>
+                    <p class="text-xs text-amber-600">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="p-6 glass rounded-2xl hover:border-amber-500/50 transition-colors">
+                    <p class="text-amber-100 font-serif mb-3">「福音是這樣的：我們本身比自己所敢相信的還要罪惡；然而同時，在基督裡我們卻更被愛。」</p>
+                    <p class="text-xs text-amber-600">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="p-6 glass rounded-2xl hover:border-amber-500/50 transition-colors">
+                    <p class="text-amber-100 font-serif mb-3">「在神能夠大大使用一個人之前，祂必須先深深地擊打他。」</p>
+                    <p class="text-xs text-amber-600">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="p-6 glass rounded-2xl hover:border-amber-500/50 transition-colors">
+                    <p class="text-amber-100 font-serif mb-3">「恩典並非與努力對立，恩典是與『賺取』對立。」</p>
+                    <p class="text-xs text-amber-600">— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="p-6 glass rounded-2xl hover:border-amber-500/50 transition-colors">
+                    <p class="text-amber-100 font-serif mb-3">「我們幾乎全部的智慧，包含了兩部分：認識神，以及認識我們自己。」</p>
+                    <p class="text-xs text-amber-600">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="p-6 glass rounded-2xl hover:border-amber-500/50 transition-colors md:col-span-2">
+                    <p class="text-amber-100 font-serif mb-3">「我學會了去親吻那將我狠狠摔向『萬古磐石』的巨浪。」</p>
+                    <p class="text-xs text-amber-600 text-right">— 司布真 (Charles Spurgeon)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center pt-12">
+            <p class="text-ash bg-white/5 py-3 px-6 rounded-full inline-block text-xs md:text-sm tracking-widest opacity-40">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#title" class="fixed bottom-8 right-8 w-14 h-14 glass rounded-full flex items-center justify-center text-amber-500 hover:text-white hover:bg-amber-500 transition-all shadow-2xl z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Simple scroll spy to highlight nav items if needed (optional enhancement)
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-amber-400');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-amber-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

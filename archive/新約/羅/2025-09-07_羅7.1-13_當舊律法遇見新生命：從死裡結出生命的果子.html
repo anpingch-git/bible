@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羅7:1-13 當舊律法遇見新生命：從死裡結出生命的果子</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c084fc', // Vibrant Purple
+                        secondary: '#38bdf8', // Sky Blue
+                        accent: '#fbbf24', // Amber
+                        darkBg: '#0a0a0c',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'subtle-float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-5px) scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-container {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        .floating-text {
+            animation: float 3s ease-in-out infinite;
+            text-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #c084fc 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(192, 132, 252, 0.3);
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #c084fc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px -5px rgba(192, 132, 252, 0.4);
+            z-index: 100;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .back-to-top:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-50 py-4 px-6 flex justify-between items-center">
+        <div class="text-sm md:text-base font-bold text-gray-300">羅馬書 7:1-13</div>
+        <div class="flex space-x-6 text-sm font-medium tracking-wide">
+            <a href="#prayer" class="hover:text-primary transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-primary transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-primary transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-primary transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header id="top" class="banner-container flex flex-col justify-center items-center text-center px-4 pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_fed2292c-8589-41da-86bd-b7e917d51ae0.jpg' alt='media_1' class="banner-img" />
+            <div class="absolute inset-0 bg-gradient-to-b from-darkBg/60 via-darkBg/20 to-darkBg"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-black mb-8 leading-tight font-display tracking-tight text-white drop-shadow-2xl">
+                當舊律法遇見新生命：<br><span class="gradient-text">從死裡結出生命的果子</span>
+            </h1>
+            <div class="floating-text px-6 py-4 rounded-full inline-block">
+                <p class="text-lg md:text-xl font-light italic text-primary-200">
+                    「但我們既然在捆我們的律法上死了，現今就脫離了律法，叫我們服事主，要按著心靈的新樣，不按著儀文的舊樣。」（羅 7:6）
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24 flex flex-col items-center">
+            <div class="inline-flex items-center space-x-3 mb-6">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"></path></svg>
+                <h2 class="text-3xl font-bold font-display uppercase tracking-widest text-primary">禱告詞</h2>
+            </div>
+            <div class="bg-cardBg border border-white/5 p-8 md:p-12 rounded-3xl text-center max-w-3xl shadow-2xl backdrop-blur-sm">
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic">
+                    「親愛的天父，我們感謝祢。因著耶穌基督的十字架，我們不僅罪得赦免，更從律法的定罪與轄制中完全被釋放。求祢更新我們的心，叫我們今天能按著心靈的新樣來服事祢，不再依靠定罪的儀文，而是活出充滿愛與自由的生命。奉耶穌基督得勝的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="inline-flex items-center space-x-3 mb-10">
+                <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path></svg>
+                <h2 class="text-3xl font-bold font-display uppercase tracking-widest text-secondary">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section1" class="group bg-cardBg p-6 rounded-2xl border border-white/5 hover:border-secondary/50 transition-all text-center">
+                    <span class="block text-secondary text-xs font-bold mb-2 uppercase tracking-tighter">Section 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-secondary transition-colors">脫離舊婚姻的轄制 (7:1-4)</h3>
+                </a>
+                <a href="#section2" class="group bg-cardBg p-6 rounded-2xl border border-white/5 hover:border-secondary/50 transition-all text-center">
+                    <span class="block text-secondary text-xs font-bold mb-2 uppercase tracking-tighter">Section 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-secondary transition-colors">從定罪到自由的服事 (7:5-6)</h3>
+                </a>
+                <a href="#section3" class="group bg-cardBg p-6 rounded-2xl border border-white/5 hover:border-secondary/50 transition-all text-center">
+                    <span class="block text-secondary text-xs font-bold mb-2 uppercase tracking-tighter">Section 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-secondary transition-colors">照出本相的屬靈明鏡 (7:7-13)</h3>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Sections -->
+            <div class="space-y-32">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-24 bg-cardBg/30 p-8 rounded-[2rem] border border-white/5">
+                    <h3 class="text-2xl font-bold mb-6 text-secondary border-l-4 border-secondary pl-4">一、 死亡與新生：脫離舊婚姻的轄制</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-darkBg/50 p-6 rounded-xl border border-white/5">
+                                <h4 class="text-accent font-bold mb-2 flex items-center"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"></path></svg> 引用經文</h4>
+                                <p class="text-gray-400 text-sm italic">羅馬書 7:1-4 ...這樣說來，你們藉著基督的身體，在律法上也是死了，叫你們歸於別人，就是歸於那從死裡復活的，叫我們結果子給神。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">關鍵原文 Keyword</h4>
+                                <ul class="space-y-2">
+                                    <li><span class="text-secondary font-bold">管轄 (kurieuō):</span> 意指「作主」、「統治」、「擁有絕對的控制權」。</li>
+                                    <li><span class="text-secondary font-bold">治死 / 死了 (thanatoō):</span> 被動語態，強調藉著基督經歷了合法的死亡。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-secondary/10 p-6 rounded-xl border border-secondary/20">
+                                <h4 class="text-secondary font-bold mb-2">Q: 為什麼我們必須「向律法死」才能歸給基督？</h4>
+                                <p class="text-gray-300">婚姻的解除只有透過死亡。我們死了，舊的婚姻就失效了；我們與基督同復活，便得以合法地與充滿恩典的新丈夫結合。</p>
+                            </div>
+                            <div class="italic text-gray-400 border-l-2 border-gray-700 pl-4">
+                                「律法發現我們滿身是罪，就宣判我們死刑；但福音卻宣告我們因信已經與基督同死...」 —— 馬丁·路德
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-24 bg-cardBg/30 p-8 rounded-[2rem] border border-white/5">
+                    <h3 class="text-2xl font-bold mb-6 text-secondary border-l-4 border-secondary pl-4">二、 儀文與心靈：從定罪到自由的服事</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-darkBg/50 p-6 rounded-xl border border-white/5">
+                                <h4 class="text-accent font-bold mb-2 flex items-center"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"></path></svg> 引用經文</h4>
+                                <p class="text-gray-400 text-sm italic">羅馬書 7:5-6 ...叫我們服事主，要按著心靈的新樣，不按著儀文的舊樣。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">關鍵原文 Keyword</h4>
+                                <ul class="space-y-2">
+                                    <li><span class="text-secondary font-bold">肉體 (sarx):</span> 墮落後、沒有聖靈內住的天然本性。</li>
+                                    <li><span class="text-secondary font-bold">心靈的新樣 (kainotēs pneumatos):</span> 基於聖靈在我們心裡的活潑引導。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-secondary/10 p-6 rounded-xl border border-secondary/20">
+                                <h4 class="text-secondary font-bold mb-2">Q: 按著「心靈的新樣」和「儀文的舊樣」有何本質不同？</h4>
+                                <p class="text-gray-300">「儀文的舊樣」出於恐懼，靠己力守規條換取神喜悅；「心靈的新樣」則出於感恩與愛，在聖靈大能中活出生命。前者是宗教，後者是福音。</p>
+                            </div>
+                            <div class="italic text-gray-400 border-l-2 border-gray-700 pl-4">
+                                「宗教的模式是：我順服，所以我被接納；福音的模式是：我被接納，所以我順服。」 —— 提摩太·凱勒
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-24 bg-cardBg/30 p-8 rounded-[2rem] border border-white/5">
+                    <h3 class="text-2xl font-bold mb-6 text-secondary border-l-4 border-secondary pl-4">三、 律法與罪惡：照出本相的屬靈明鏡</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-darkBg/50 p-6 rounded-xl border border-white/5">
+                                <h4 class="text-accent font-bold mb-2 flex items-center"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"></path></svg> 引用經文</h4>
+                                <p class="text-gray-400 text-sm italic">羅馬書 7:7-13 ...律法是聖潔的，誡命也是聖潔、公義、良善的。既然如此，那良善的是叫我死嗎？斷乎不是！叫我死的乃是罪。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold">關鍵原文 Keyword</h4>
+                                <ul class="space-y-2">
+                                    <li><span class="text-secondary font-bold">機會 (aphormē):</span> 「橋頭堡」，罪利用了律法作為攻擊的基地。</li>
+                                    <li><span class="text-secondary font-bold">貪心 (epithumia):</span> 強烈的慾望，指出內在貪慾是律法一照就現形的。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-secondary/10 p-6 rounded-xl border border-secondary/20">
+                                <h4 class="text-secondary font-bold mb-2">Q: 如果律法是聖潔良善的，為什麼它反而「叫人死」？</h4>
+                                <p class="text-gray-300">律法是X光機，它照出腫瘤（罪）但無法醫治。殺死人的不是律法，是潛伏在人裡面、利用律法來發動攻擊的「罪」。</p>
+                            </div>
+                            <div class="italic text-gray-400 border-l-2 border-gray-700 pl-4">
+                                「律法就好像一面鏡子，向我們顯明我們的污穢，但它卻沒有水能把我們洗淨。」 —— 約翰·加爾文
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="inline-flex items-center space-x-3 mb-4">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"></path></svg>
+                <h2 class="text-3xl font-bold font-display uppercase tracking-widest text-primary">講道文稿</h2>
+            </div>
+
+            <div class="prose prose-invert prose-lg max-w-none space-y-12">
+                <p class="text-xl leading-relaxed text-gray-300">
+                    弟兄姊妹，平安！今天我們要來探討一個基督徒生命中極為關鍵的轉換。我們常說信耶穌得自由，但在現實中，許多基督徒卻活得非常疲憊。我們依然在規定、條文、做與不做之間痛苦掙扎。為什麼我們擁有了新生命，卻依然感覺被舊有的習慣與律法轄制？今天我們透過羅馬書 7:1-13，要來看一個極大的奧祕：<strong class="text-primary">當舊律法遇見新生命：從死裡結出生命的果子</strong>。
+                </p>
+
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-white mb-6">一、 死亡與新生：脫離舊婚姻的轄制</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        保羅一開始就用了一個我們都懂的比喻——婚姻。<strong class="text-accent text-xl">「就如女人有了丈夫，丈夫還活著，就被律法約束；丈夫若死了，就脫離了丈夫的律法。」</strong> 弟兄姊妹，在我們信主之前，我們在屬靈上是結過婚的，我們的丈夫叫做「律法」。這位丈夫非常完美、聖潔、公義，但他極度嚴苛。
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        當基督在十字架上死去時，我們也與祂同死了。那一刻，我們與「律法」這個嚴苛丈夫的婚姻合約徹底撕毀了！我們復活後，嫁給了誰？嫁給了那位充滿恩典、憐憫，為我們捨命的耶穌基督！這不是為了讓我們放縱，而是<strong class="text-primary">「叫我們結果子給神」</strong>。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-white mb-6">二、 儀文與心靈：從定罪到自由的服事</h3>
+                    <div class="bg-primary/5 border-l-4 border-primary p-8 my-8">
+                        <p class="text-2xl font-bold text-white mb-2">核心金句：</p>
+                        <p class="text-3xl font-black text-primary leading-tight">「但我們既然在捆我們的律法上死了，現今就脫離了律法，叫我們服事主，要按著心靈的新樣，不按著儀文的舊樣。」（羅馬書 7:6）</p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed text-xl">
+                        什麼是「儀文的舊樣」？那就是靠肉體、靠自己去死守規條。宗教的本質就是告訴你：「你要表現得夠好，神才會愛你。」但福音卻說：「神已經在基督裡完全愛了你，現在，藉著聖靈的大能，去活出你的新身分吧！」這就是<strong class="text-secondary underline decoration-secondary/30 decoration-4">「心靈的新樣」</strong>。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-white mb-6">三、 律法與罪惡：照出本相的屬靈明鏡</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        律法就像是一面高解析度的屬靈明鏡，更像是一台X光機。當我們照X光發現肺部有陰影時，我們不會怪X光機讓我們生病。X光機是無辜的，是良善的，它只是顯明了我們的病況。
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        弟兄姊妹，當律法照出我們的不堪時，不要去縫補無花果樹的葉子，不要再試圖靠自己去達到標準。律法逼著我們看清自己病入膏肓，正是為了讓我們轉過身來，撲向那位唯一能醫治我們的偉大醫生——<strong class="text-accent">耶穌基督</strong>。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conclusion & Action -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-24">
+                <div class="bg-cardBg p-8 rounded-3xl border border-white/5">
+                    <h4 class="text-2xl font-bold text-primary mb-6 flex items-center"><svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg> 應用與行動</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start"><span class="text-primary mr-2">●</span> <strong>檢視動機：</strong> 誠實省察服事是出於懼怕還是感恩。</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">●</span> <strong>背誦宣告：</strong> 每天早晨宣告自己已脫離律法轄制，屬乎基督。</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">●</span> <strong>放下掙扎：</strong> 停止靠肉體立志，將軟弱帶到神面前求聖靈加力。</li>
+                    </ul>
+                </div>
+                <div class="bg-cardBg p-8 rounded-3xl border border-white/5">
+                    <h4 class="text-2xl font-bold text-secondary mb-6 flex items-center"><svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 結論關鍵字</h4>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-6 py-2 bg-secondary/10 rounded-full text-secondary font-bold border border-secondary/20">死亡 Death</span>
+                        <span class="px-6 py-2 bg-secondary/10 rounded-full text-secondary font-bold border border-secondary/20">釋放 Release</span>
+                        <span class="px-6 py-2 bg-secondary/10 rounded-full text-secondary font-bold border border-secondary/20">新生 New Life</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="inline-flex items-center space-x-3 mb-10">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path></svg>
+                <h2 class="text-3xl font-bold font-display uppercase tracking-widest text-accent">屬靈名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 card-hover">
+                    <p class="text-lg italic text-gray-200 mb-4">「宗教的模式是：我順服，所以我被接納；福音的模式是：我被接納，所以我順服。」</p>
+                    <cite class="text-sm text-accent font-bold">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 card-hover">
+                    <p class="text-lg italic text-gray-200 mb-4">「律法就好像一面鏡子，向我們顯明我們的污穢，但它卻沒有水能把我們洗淨。」</p>
+                    <cite class="text-sm text-accent font-bold">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 card-hover">
+                    <p class="text-lg italic text-gray-200 mb-4">「律法發現我們滿身是罪，就宣判我們死刑；但福音卻宣告我們因信已經與基督同死...」</p>
+                    <cite class="text-sm text-accent font-bold">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/5 card-hover flex items-center justify-center text-gray-500 italic">
+                    持續從十字架獲取能力，在恩典中事奉。
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <footer class="mt-32 pb-24 border-t border-white/10 pt-12 text-center">
+            <div class="inline-flex items-center space-x-2 text-red-400/60 text-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="back-to-top">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth transitions for back to top
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羅5:1-11: 從因信稱義到以神為樂：恩典中的神聖蛻變</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        divine: '#C5A059',
+                        crimson: '#962D2D',
+                        deep: '#0A0A0B',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'float 3s ease-in-out infinite',
+                        'micro-bounce': 'micro-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'micro-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(197, 160, 89, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            background: linear-gradient(to bottom, transparent 0%, #0A0A0B 95%);
+        }
+        .outline-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #C5A059;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-6 lg:px-12 justify-between">
+        <div class="text-sm lg:text-base font-display font-semibold tracking-wider text-divine">
+            羅馬書 5:1-11
+        </div>
+        <div class="flex gap-4 lg:gap-8 text-xs lg:text-sm font-medium tracking-widest uppercase">
+            <a href="#prayer" class="hover:text-divine transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-divine transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-divine transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-divine transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[80vh] md:h-screen w-full flex items-end justify-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-breath w-full h-full">
+                <img src='image/img_458297c9-0685-423c-ba36-adc69623aa77.jpg' alt='media_1' class="w-full h-full object-cover filter brightness-75" />
+            </div>
+            <div class="absolute inset-0 banner-mask"></div>
+        </div>
+        
+        <div class="relative z-10 w-full max-w-5xl px-6 pb-20 text-center">
+            <h1 class="text-4xl md:text-7xl font-serif font-black mb-8 leading-tight tracking-tight">
+                <span class="text-gradient block mb-2">從因信稱義到以神為樂</span>
+                <span class="text-2xl md:text-4xl block text-gray-400 font-sans font-light tracking-[0.2em]">恩典中的神聖蛻變</span>
+            </h1>
+            
+            <div class="animate-micro-bounce inline-block max-w-2xl mx-auto">
+                <p class="text-xl md:text-3xl font-serif italic text-gold-200 leading-relaxed drop-shadow-2xl">
+                    「惟有基督在我們還作罪人的時候為我們死，神的愛就在此向我們顯明了。」
+                </p>
+                <span class="block mt-4 text-sm tracking-[0.3em] uppercase text-gold-500 font-display">羅馬書 5:8</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-divine/10 text-divine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a3 3 0 0 0-3-3H5a2 2 0 0 0-2 2v14c0 .6.4 1 1 1h12a2 2 0 0 0 2-2V8Z"/><path d="M10 2a2 2 0 0 0-2 2"/><path d="M10 8V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/><path d="M18 8h1a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1h-1"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">禱告詞</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-divine/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-700"></div>
+                <p class="text-lg md:text-xl leading-loose text-gray-300 font-light indent-8">
+                    親愛的天父，我們滿心感謝祢。當我們仍是軟弱、悖逆、甚至與祢為敵的時候，祢的愛便藉著基督的十字架毫無保留地向我們傾倒。主啊，求祢開啟我們屬靈的眼睛，讓我們不單單停留在得救的確據中，更能看透患難背後的榮耀化妝，使我們的生命在火煉中生出老練與盼望。願聖靈將祢的愛厚厚地澆灌在我們心裡，教導我們每一天都以神為樂。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline / Navigation Cards -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 rounded-full bg-divine/10 text-divine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">大綱導覽</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="glass-card p-6 rounded-2xl flex flex-col justify-between group hover:-translate-y-2">
+                    <div>
+                        <span class="text-xs font-display text-divine tracking-widest uppercase block mb-2">PART 01</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-divine transition-colors">穩站恩典</h3>
+                        <p class="text-sm text-gray-400">與神和好的永恆確據 (羅5:1-2)</p>
+                    </div>
+                    <div class="mt-8 text-divine flex items-center gap-2 text-sm font-semibold">
+                        深入解析 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl flex flex-col justify-between group hover:-translate-y-2">
+                    <div>
+                        <span class="text-xs font-display text-divine tracking-widest uppercase block mb-2">PART 02</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-divine transition-colors">苦難煉金</h3>
+                        <p class="text-sm text-gray-400">從患難到盼望的生命昇華 (羅5:3-5)</p>
+                    </div>
+                    <div class="mt-8 text-divine flex items-center gap-2 text-sm font-semibold">
+                        深入解析 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl flex flex-col justify-between group hover:-translate-y-2">
+                    <div>
+                        <span class="text-xs font-display text-divine tracking-widest uppercase block mb-2">PART 03</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-divine transition-colors">終極神蹟</h3>
+                        <p class="text-sm text-gray-400">在基督裡以神為樂 (羅5:6-11)</p>
+                    </div>
+                    <div class="mt-8 text-divine flex items-center gap-2 text-sm font-semibold">
+                        深入解析 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32 border-l-2 border-divine/30 pl-8 md:pl-12">
+                    <span class="text-divine font-display tracking-widest mb-2 block">01 / 穩站恩典</span>
+                    <h3 class="text-3xl font-bold mb-6">與神和好的永恆確據</h3>
+                    <div class="bg-white/5 p-6 rounded-xl mb-8 italic text-gold-100 border-l-4 border-gold-600">
+                        「我們既因信稱義，就藉著我們的主耶穌基督得與神相和。我們又藉著他，因信得進入現在所站的這恩典中，並且歡歡喜喜盼望神的榮耀。」 (羅5:1-2)
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2 uppercase tracking-tighter"><span class="w-2 h-2 bg-divine rounded-full"></span> Keyword</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li><strong class="text-white">稱義 (dikaioō)：</strong> 法庭用語，宣告無罪並賦予正確法律地位。</li>
+                                    <li><strong class="text-white">相和 (eirēnē)：</strong> Shalom，不只是停止戰爭，更是恢復完全和諧。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2 uppercase tracking-tighter"><span class="w-2 h-2 bg-divine rounded-full"></span> 關鍵問題</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    為什麼「與神相和」是絕對基礎？<br>
+                                    因信稱義帶來地位翻轉，我們不再是仇敵，而是兒女。唯有確信這份平安，才能真正「站穩」。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass-card p-5 rounded-xl border-dashed">
+                                <h4 class="text-divine font-bold mb-2 text-xs uppercase tracking-widest">生命例證</h4>
+                                <p class="text-sm text-gray-300">
+                                    想像叛國犯得到特赦，更被國王收養為王子，可自由進出皇宮同席吃飯。他現在的身分是蒙愛的繼承人。
+                                </p>
+                            </div>
+                            <blockquote class="border-t border-divine/20 pt-4">
+                                <p class="text-sm italic text-gray-400">「福音是這樣的：我們真實的本相，比我們相信的還要敗壞；但我們在基督裡蒙愛的程度，卻比我們盼望的還要深廣。」</p>
+                                <footer class="text-xs text-divine mt-2">— 提摩太·凱勒</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32 border-l-2 border-divine/30 pl-8 md:pl-12">
+                    <span class="text-divine font-display tracking-widest mb-2 block">02 / 苦難煉金</span>
+                    <h3 class="text-3xl font-bold mb-6">從患難到盼望的生命昇華</h3>
+                    <div class="bg-white/5 p-6 rounded-xl mb-8 italic text-gold-100 border-l-4 border-gold-600">
+                        「不但如此，就是在患難中也是歡歡喜喜的；因為知道患難生忍耐，忍耐生老練，老練生盼望...聖靈將神的愛澆灌在我們心裡。」 (羅5:3-5)
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2 uppercase tracking-tighter"><span class="w-2 h-2 bg-divine rounded-full"></span> Keyword</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li><strong class="text-white">患難 (thlipsis)：</strong> 「重壓」，如同將橄欖壓榨出油。</li>
+                                    <li><strong class="text-white">老練 (dokimē)：</strong> 金屬火煉後去除雜質的「純粹狀態」。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2 uppercase tracking-tighter"><span class="w-2 h-2 bg-divine rounded-full"></span> 關鍵問題</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    如何在患難中「歡歡喜喜」？<br>
+                                    這不是受虐狂，而是建立了對苦難「目的」的認知。我們歡喜是因為看見重壓背後的產物：聖靈的愛與老練的品格。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass-card p-5 rounded-xl border-dashed">
+                                <h4 class="text-divine font-bold mb-2 text-xs uppercase tracking-widest">生命例證</h4>
+                                <p class="text-sm text-gray-300">
+                                    煤炭與鑽石成分相同，差別在於極端的「重壓」。神正在我們身上進行「鑽石級」的加工。
+                                </p>
+                            </div>
+                            <blockquote class="border-t border-divine/20 pt-4">
+                                <p class="text-sm italic text-gray-400">「神若要大大地使用一個人，往往會先深深地破碎他。」</p>
+                                <footer class="text-xs text-divine mt-2">— 陶恕</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32 border-l-2 border-divine/30 pl-8 md:pl-12">
+                    <span class="text-divine font-display tracking-widest mb-2 block">03 / 終極神蹟</span>
+                    <h3 class="text-3xl font-bold mb-6">在基督裡以神為樂</h3>
+                    <div class="bg-white/5 p-6 rounded-xl mb-8 italic text-gold-100 border-l-4 border-gold-600">
+                        「惟有基督在我們還作罪人的時候為我們死，神的愛就在此向我們顯明了。...也就藉著他以神為樂。」 (羅5:6-11)
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2 uppercase tracking-tighter"><span class="w-2 h-2 bg-divine rounded-full"></span> Keyword</h4>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li><strong class="text-white">和好 (katallassō)：</strong> 交換、和解，將敵對轉為友誼。</li>
+                                    <li><strong class="text-white">以神為樂 (kauchaomai)：</strong> 極度自豪、誇耀並找到最大喜樂。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2 uppercase tracking-tighter"><span class="w-2 h-2 bg-divine rounded-full"></span> 關鍵問題</h4>
+                                <p class="text-gray-400 text-sm leading-relaxed">
+                                    「以神為樂」與「以恩典為樂」的不同？<br>
+                                    「以神為樂」是神自己成了獎賞。即使失去一切，擁有這位捨命的神，心就得著最深的滿足。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass-card p-5 rounded-xl border-dashed">
+                                <h4 class="text-divine font-bold mb-2 text-xs uppercase tracking-widest">生命例證</h4>
+                                <p class="text-sm text-gray-300">
+                                    浪子回家起初是為了「吃飽」，但當父親擁抱他時，他才發現真正甦醒靈魂的是父親無條件的愛。
+                                </p>
+                            </div>
+                            <blockquote class="border-t border-divine/20 pt-4">
+                                <p class="text-sm italic text-gray-400">「除非我們的心完全安息在神的愛中，否則我們永遠找不到真正的平靜。」</p>
+                                <footer class="text-xs text-divine mt-2">— 約翰·加爾文</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-divine/10 text-divine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">講道文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-lg max-w-none glass-card p-8 md:p-16 rounded-[2.5rem] leading-relaxed text-gray-300">
+                <p class="mb-8">各位弟兄姊妹，平安。今天我們要從羅馬書第五章來看一個基督徒生命中最壯麗的旅程。這段經文向我們展示了信仰的完整藍圖——從我們相信主的那一刻起，直到我們在永恆中完全得贖。今天的信息主題是：<strong class="text-divine text-2xl font-serif block mt-2">「從因信稱義到以神為樂：恩典中的神聖蛻變」</strong>。</p>
+
+                <h3 class="text-white font-bold text-xl mt-12 mb-4 border-b border-divine/20 pb-2 flex items-center gap-2">
+                    <span class="w-1.5 h-6 bg-divine"></span> 一、 穩站恩典：與神和好的確據
+                </h3>
+                <p>保羅在羅馬書 5:1-2 宣告：<span class="text-gold-200 bg-gold-900/20 px-1 font-bold">「我們既因信稱義，就藉著我們的主耶穌基督得與神相和。我們又藉著他，因信得進入現在所站的這恩典中，並且歡歡喜喜盼望神的榮耀。」</span></p>
+                <p>弟兄姊妹，「稱義」是法庭上的無罪釋放，而「相和」則是關係上的完全修復。你是否常常覺得神在天上拿著放大鏡，隨時準備揪出你的錯誤？福音告訴我們，藉著耶穌，我們不再是罪犯，我們是蒙愛的兒女。提摩太·凱勒牧師說得好：「我們在耶穌基督裡蒙愛與被接納的程度，比我們膽敢盼望的還要深廣。」當我們真正明白這點，我們就能毫無懼怕地<strong>穩站在恩典的領地中</strong>，不再靠行為賺取愛，而是安息在神的接納裡。</p>
+
+                <h3 class="text-white font-bold text-xl mt-12 mb-4 border-b border-divine/20 pb-2 flex items-center gap-2">
+                    <span class="w-1.5 h-6 bg-divine"></span> 二、 苦難煉金：從患難到盼望的升華
+                </h3>
+                <p>保羅在第3到5節寫下了一段違反人類直覺的話：<span class="text-gold-200 bg-gold-900/20 px-1 font-bold">「就是在患難中也是歡歡喜喜的；因為知道患難生忍耐，忍耐生老練，老練生盼望...」</span></p>
+                <p>這裡的「患難」原文是重壓，就像把葡萄壓榨成汁。神為什麼容許重壓臨到我們？因為鑽石唯有在高溫高壓下才能成型。神在我們身上看重的，是那經過火煉的「老練」品格。陶恕曾說：「神若要大大地使用一個人，往往會先深深地破碎他。」我們能在苦難中歡喜，不是因為我們喜歡痛苦，而是我們「知道」神正在施工，且有聖靈將神的愛源源不絕地澆灌在我們心裡。這份真切的愛，讓我們的盼望永不落空。</p>
+
+                <h3 class="text-white font-bold text-xl mt-12 mb-4 border-b border-divine/20 pb-2 flex items-center gap-2">
+                    <span class="w-1.5 h-6 bg-divine"></span> 三、 終極神蹟：在基督裡以神為樂
+                </h3>
+                <p>請聽今天的金句：<span class="text-divine font-black text-xl italic drop-shadow">「惟有基督在我們還作罪人的時候為我們死，神的愛就在此向我們顯明了。」（羅馬書 5:8）</span></p>
+                <p>保羅在第11節推向了高潮：<span class="text-gold-200 bg-gold-900/20 px-1 font-bold">「我們既藉著我主耶穌基督得與神和好，也就藉著他以神為樂。」</span></p>
+                <p>世人因為得到財富、健康而喜樂；但基督徒的終極喜樂，是神自己。當我們還作仇敵、最不可愛的時候，基督就為我們死了。這份愛是如此震撼，以至於我們明白，我們不僅僅是為了上天堂或求好處而信耶穌；我們是為了「神自己」而活。神就是我們的獎賞，神就是我們的滿足。當我們學會「以神為樂」，這世上就再也沒有任何事物能奪走我們的喜樂。</p>
+
+                <p class="mt-12 text-center text-xl text-white font-medium border-t border-divine/10 pt-12">願聖靈今天就把這份愛深深澆灌在我們心中！</p>
+            </article>
+        </section>
+
+        <!-- Application Section (Responsive Layout) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-divine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-divine font-bold">01</span> 檢視信仰根基：是否活在行為導向的恐懼中？</li>
+                    <li class="flex gap-3"><span class="text-divine font-bold">02</span> 重塑苦難神學：求神賜下聖靈，而非單求挪去苦難。</li>
+                    <li class="flex gap-3"><span class="text-divine font-bold">03</span> 提升敬拜層次：操練為「神是誰」而誇口。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                    <span class="text-divine"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></span>
+                    實踐行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-divine font-bold">●</span> <strong>恩典宣告：</strong> 晨起宣告羅5:1，驅逐定罪感。</li>
+                    <li class="flex gap-3"><span class="text-divine font-bold">●</span> <strong>感恩日記：</strong> 寫下困難中隱藏的「老練」祝福。</li>
+                    <li class="flex gap-3"><span class="text-divine font-bold">●</span> <strong>專屬時刻：</strong> 本週安排15分鐘單單讚美神救恩。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-divine/10 text-divine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1Z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">屬靈前輩佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-6 space-y-6">
+                <!-- Quote 1 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「信心是一份對神恩典活潑、勇敢的信靠，如此確信，以至於信徒甘願為此死上一千次。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">馬丁·路德</span>
+                            <span class="text-xs text-gray-500 italic">《羅馬書註釋序言》</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「福音是這樣的：我們真實的本相，比我們膽敢相信的還要敗壞與有罪；但同時，我們在耶穌基督裡蒙愛與被接納的程度，卻比我們膽敢盼望的還要深廣。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">提摩太·凱勒</span>
+                            <span class="text-xs text-gray-500 italic">《為何是祂》</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「神若要大大地使用一個人，往往會先深深地破碎他。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">陶恕</span>
+                            <span class="text-xs text-gray-500 italic">《紮根於神》</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「我已經學會親吻那把我拋向神萬古磐石的波浪。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">司布真</span>
+                            <span class="text-xs text-gray-500 italic">《清晨甘露》</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">潘霍華</span>
+                            <span class="text-xs text-gray-500 italic">《追隨基督》</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「十字架是神愛與公義相遇的閃耀之處；在十字架上，神親自擔當了我們的罪，好讓我們能得著祂的義。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">約翰·史托德</span>
+                            <span class="text-xs text-gray-500 italic">《當代基督十架》</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「除非我們的心完全安息在神的愛中，否則我們永遠找不到真正的平靜。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">約翰·加爾文</span>
+                            <span class="text-xs text-gray-500 italic">《基督教要義》</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="break-inside-avoid glass-card p-6 rounded-2xl border-l-2 border-divine">
+                    <p class="text-lg mb-4 text-gray-200">「基督徒的生命，是在同一個方向上長期的順服。」</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-divine/50"></div>
+                        <div class="text-sm">
+                            <span class="block text-white font-bold">畢德生</span>
+                            <span class="text-xs text-gray-500 italic">《恆久專一的順服》</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="pt-20 pb-10 text-center">
+            <p class="text-xs text-gray-600 tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-divine text-deep rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

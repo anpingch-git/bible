@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羅10:9-21:拯救的迴聲：從心裡的相信到步向地極</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#991B1B',
+                        darkBg: '#0F172A',
+                        cardBg: 'rgba(30, 41, 59, 0.7)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-5px) scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F172A;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-container {
+            height: 60vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: breathe 10s infinite alternate ease-in-out;
+        }
+        @keyframes breathe {
+            0% { opacity: 0.4; transform: scale(1); }
+            100% { opacity: 0.9; transform: scale(1.05); }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: float 2.5s ease-in-out infinite;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .bento-grid { grid-template-columns: repeat(2, 1fr); }
+            .span-2 { grid-column: span 2; }
+        }
+        .quote-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            font-size: 4rem;
+            color: rgba(212, 175, 55, 0.2);
+            font-family: serif;
+        }
+    </style>
+</head>
+<body class="font-sans selection:bg-gold selection:text-darkBg">
+
+    <!-- Sticky Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3 flex justify-between items-center shadow-2xl">
+        <div class="text-gold font-bold text-sm md:text-base font-display">羅 10:9-21</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wider">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header class="relative banner-container flex items-center justify-center pt-16">
+        <img src='image/img_029c2ed7-f9b0-49b2-90e3-0720c334689a.jpg' alt='media_1' class="banner-img absolute inset-0" />
+        <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-black font-display mb-6 leading-tight text-white drop-shadow-2xl">
+                拯救的迴聲：<br><span class="text-gold">從心裡的相信到步向地極</span>
+            </h1>
+            <div class="text-lg md:text-2xl font-light tracking-wide jump-text">
+                「因為人心裡相信，就可以稱義；口裡承認，就可以得救。」
+                <span class="block text-sm mt-2 opacity-80 text-gold">— 羅馬書 10:10</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9-3.79-9-9 0-4.67 3.4-8.48 7.86-8.97l1.14 17.97M21 11c0 5.21-3.93 9-9 9v-2c3.57 0 7-2.61 7-7 0-4.13-3.04-6.68-6.14-6.97l1.14-17.97c4.21.56 7 4.14 7 8.97z"/></svg>
+                </div>
+                <h2 class="flex items-center text-3xl font-bold mb-8 text-gold font-display">
+                    <span class="mr-3">🙏</span> 禱告
+                </h2>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-200 font-light italic">
+                    「主阿，我們感謝祢，因為祢的救恩是如此奇妙卻又如此簡單，只要我們心裡相信、口裡承認，就能得著生命的改變。求祢開我們的眼，看見祢恩典的浩大；也求祢差遣我們的腳步，成為那報佳音、傳喜信的使者。當我們面對人心剛硬或福音被拒絕時，求祢賜我們不放棄的愛，因為祢也曾整天向我們伸手。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="flex items-center text-3xl font-bold mb-10 text-gold font-display">
+                <span class="mr-3">📋</span> 講道大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="glass p-6 rounded-2xl hover:bg-gold/10 hover:border-gold transition-all text-center group">
+                    <div class="text-gold mb-2 text-sm">第一段</div>
+                    <div class="font-bold">從心到口的奇蹟</div>
+                    <div class="text-xs opacity-60 mt-1">羅 10:9-13</div>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl hover:bg-gold/10 hover:border-gold transition-all text-center">
+                    <div class="text-gold mb-2 text-sm">第二段</div>
+                    <div class="font-bold">無可替代的使命</div>
+                    <div class="text-xs opacity-60 mt-1">羅 10:14-15</div>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl hover:bg-gold/10 hover:border-gold transition-all text-center">
+                    <div class="text-gold mb-2 text-sm">第三段</div>
+                    <div class="font-bold">神聖呼喚與固執心</div>
+                    <div class="text-xs opacity-60 mt-1">羅 10:16-21</div>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-20">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-gold text-darkBg font-bold px-3 py-1 rounded">01</span>
+                        <h3 class="text-2xl font-bold text-white">從心到口的奇蹟：得救的唯一路徑</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="glass p-6 rounded-2xl span-2 border-l-4 border-gold">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-3">經文內容</h4>
+                            <p class="text-lg leading-relaxed text-slate-300">
+                                9 你若口裡認耶穌為主，心裡信神叫他從死裡復活，就必得救。 10 因為人心裡相信，就可以稱義；口裡承認，就可以得救。... 13 因為「凡求告主名的，就必得救。」
+                            </p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-4">關鍵原文</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold block">認 (Homologeo)</span>
+                                    <span class="text-sm opacity-70 italic">公開同意、說同樣的話。宣示耶穌主權。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold block">信 (Pisteuo)</span>
+                                    <span class="text-sm opacity-70 italic">全人的信靠與意志的降服。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-4">關鍵問題</h4>
+                            <p class="text-sm text-white font-bold mb-2">為什麼默默相信不夠？</p>
+                            <p class="text-sm opacity-80">口裡的承認是信心的果子。正如結婚誓言，將內在的愛轉化為公開的盟約，切斷退路。</p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl span-2">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-2">名言佳句</h4>
+                            <p class="text-xl font-light italic">「信心是一股活潑、勇敢的對上帝恩典的信靠。這種信靠是如此確切，以至於信徒甘願為此死上一千次。」</p>
+                            <span class="block text-right mt-2 text-gold">— 馬丁·路德</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-gold text-darkBg font-bold px-3 py-1 rounded">02</span>
+                        <h3 class="text-2xl font-bold text-white">無可替代的使命：傳福音的黃金鏈條</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="glass p-6 rounded-2xl span-2 border-l-4 border-gold">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-3">經文內容</h4>
+                            <p class="text-lg leading-relaxed text-slate-300">
+                                14 然而，人未曾信他，怎能求他呢？未曾聽見他，怎能信他呢？沒有傳道的，怎能聽見呢？ 15 ...「報福音、傳喜信的人，他們的腳蹤何等佳美！」
+                            </p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-4">關鍵原文</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold block">傳道 (Kerusso)</span>
+                                    <span class="text-sm opacity-70 italic">像傳令官一樣大聲宣告君王的權柄。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold block">佳美 (Oraios)</span>
+                                    <span class="text-sm opacity-70 italic">正逢其時的、美麗的。在絕望中帶來轉機。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-4">核心解析</h4>
+                            <p class="text-sm text-white font-bold mb-2">傳福音的鏈條：</p>
+                            <p class="text-sm opacity-80">求告 → 相信 → 聽見 → 傳道 → 差遣。神定意將救恩計畫與人的參與綁定。我們是傳遞解藥的運送員。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-gold text-darkBg font-bold px-3 py-1 rounded">03</span>
+                        <h3 class="text-2xl font-bold text-white">神聖的呼喚與固執的心：恩典門外的徘徊</h3>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="glass p-6 rounded-2xl span-2 border-l-4 border-gold">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-3">經文內容</h4>
+                            <p class="text-lg leading-relaxed text-slate-300">
+                                17 可見信道是從聽道來的，聽道是從基督的話來的。... 21 至於以色列人，他說：「我整天伸手招呼那悖逆頂嘴的百姓。」
+                            </p>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-4">關鍵原文</h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-white font-bold block">聽從 (Hupakouo)</span>
+                                    <span class="text-sm opacity-70 italic">傾聽並順服。福音不僅是資訊，更是命令。</span>
+                                </li>
+                                <li>
+                                    <span class="text-white font-bold block">悖逆頂嘴 (Antilego)</span>
+                                    <span class="text-sm opacity-70 italic">拒絕被說服、固執、反駁、抗拒。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-gold text-sm uppercase tracking-widest mb-4">關鍵解析</h4>
+                            <p class="text-sm text-white font-bold mb-2">神失敗了嗎？</p>
+                            <p class="text-sm opacity-80">拒絕源於人的驕傲。神的恩典反而在人的拒絕中顯出恆忍——祂「整天伸手」，像慈父等待浪子。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <h2 class="flex items-center text-3xl font-bold text-gold font-display">
+                <span class="mr-3">🎙️</span> 講章文稿
+            </h2>
+            <div class="prose prose-invert prose-gold max-w-none space-y-8 text-slate-200 leading-loose">
+                <p class="text-2xl font-bold text-white border-b border-gold/30 pb-4">
+                    拯救的迴聲：從心裡的相信到步向地極
+                </p>
+                <p>各位弟兄姊妹，平安！今天我們要來思想一段關乎我們生命最核心的經文。這段經文不僅告訴我們如何得救，更挑戰我們得救之後該如何行動。</p>
+                
+                <h4 class="text-gold text-xl font-bold mt-12">從心到口的奇蹟：得救的唯一路徑</h4>
+                <p>
+                    保羅在羅馬書中清楚地宣告了這個偉大的真理：<span class="text-white font-bold bg-gold/20 px-1">「你若口裡認耶穌為主，心裡信神叫他從死裡復活，就必得救。」</span> 救恩的門檻是如此之低，低到任何人只要「求告主名」就能跨入；但這門檻同時也是極高的，因為它要求我們交出生命的主權。
+                </p>
+                <p>
+                    為什麼保羅要強調「口裡承認」？這就像是屬靈的結婚誓言，是我們對世界宣告：從今以後，耶穌是我的主！當我們心裡有了活潑的信心，我們的口自然無法閉鎖。
+                </p>
+
+                <h4 class="text-gold text-xl font-bold mt-12">無可替代的使命：傳福音的黃金鏈條</h4>
+                <p>
+                    神定意將這個無比榮耀的任務交給了你和我。保羅說：<span class="text-white font-bold bg-gold/20 px-1">「報福音、傳喜信的人，他們的腳蹤何等佳美！」</span> 弟兄姊妹，你的腳蹤佳美嗎？我們不能獨佔恩典，我們必須成為恩典的流通管子。
+                </p>
+
+                <h4 class="text-gold text-xl font-bold mt-12">神聖的呼喚與固執的心：恩典門外的徘徊</h4>
+                <p>
+                    人的拒絕，代表福音失敗了嗎？絕對不是！人的拒絕反而襯托出上帝那令人震驚的愛。神說：<span class="text-white font-bold bg-gold/20 px-1">「我整天伸手招呼那悖逆頂嘴的百姓。」</span> 這是一幅多麼震撼的畫面！創造宇宙的萬軍之耶和華，竟然像一位慈愛卻心碎的父親，站在門口，整天伸出雙手，等候那悖逆的浪子回家。
+                </p>
+            </div>
+
+            <!-- Application & Action -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                <div class="bg-crimson/10 border border-crimson/30 p-8 rounded-3xl">
+                    <h3 class="text-crimson font-bold text-xl mb-4 flex items-center">
+                        <span class="mr-2">🎯</span> 應用方向
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li>• <span class="text-white font-medium">檢視信心的真實性</span>：反省是否結出順服的果子。</li>
+                        <li>• <span class="text-white font-medium">擁抱傳福音的急迫性</span>：認知信徒是福音鏈條的一環。</li>
+                        <li>• <span class="text-white font-medium">效法神恆忍的愛</span>：為長期拒絕的人持續禱告。</li>
+                    </ul>
+                </div>
+                <div class="bg-gold/10 border border-gold/30 p-8 rounded-3xl">
+                    <h3 class="text-gold font-bold text-xl mb-4 flex items-center">
+                        <span class="mr-2">🔥</span> 回應行動
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li>• <span class="text-white font-medium">具名代禱</span>：本週為三位親友每天提名禱告。</li>
+                        <li>• <span class="text-white font-medium">公開見證</span>：尋找機會分享生命中的恩典。</li>
+                        <li>• <span class="text-white font-medium">支持宣教</span>：實際奉獻或信件鼓勵前線同工。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <h2 class="flex items-center text-3xl font-bold mb-10 text-gold font-display">
+                <span class="mr-3">✨</span> 名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl quote-card relative">
+                    <p class="text-slate-200 italic mb-3">「每一個基督徒，若不是一個宣教士，就是一個騙子。」</p>
+                    <span class="text-gold text-sm font-bold">— 司布真</span>
+                </div>
+                <div class="glass p-6 rounded-2xl quote-card relative">
+                    <p class="text-slate-200 italic mb-3">「福音是：我們比想像中更罪惡，但在基督裡受到的愛遠超盼望。」</p>
+                    <span class="text-gold text-sm font-bold">— 提摩太·凱勒</span>
+                </div>
+                <div class="glass p-6 rounded-2xl quote-card relative">
+                    <p class="text-slate-200 italic mb-3">「我們以為自己在尋找上帝，但事實上是上帝的獵犬在背後窮追不捨。」</p>
+                    <span class="text-gold text-sm font-bold">— 約翰·史托德</span>
+                </div>
+                <div class="glass p-6 rounded-2xl quote-card relative">
+                    <p class="text-slate-200 italic mb-3">「福音不是口頭上的教條，而是生命的教義。」</p>
+                    <span class="text-gold text-sm font-bold">— 約翰·加爾文</span>
+                </div>
+                <div class="glass p-6 rounded-2xl quote-card relative">
+                    <p class="text-slate-200 italic mb-3">「神在十字架上證明了祂的愛。當基督流血時，神在說：『我愛你』。」</p>
+                    <span class="text-gold text-sm font-bold">— 葛理翰</span>
+                </div>
+                <div class="glass p-6 rounded-2xl quote-card relative">
+                    <p class="text-slate-200 italic mb-3">「用福音去改變這個時代，而不是改變福音去迎合時代。」</p>
+                    <span class="text-gold text-sm font-bold">— 唐崇榮</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <footer class="pt-12 pb-24 text-center border-t border-slate-800">
+            <div class="text-xs text-slate-500 uppercase tracking-widest mb-2">Notice</div>
+            <p class="text-sm text-slate-400">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-gold text-darkBg rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

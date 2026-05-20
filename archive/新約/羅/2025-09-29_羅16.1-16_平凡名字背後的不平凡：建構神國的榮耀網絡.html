@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羅16:1-16：平凡名字背後的不平凡：建構神國的榮耀網絡</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f59e0b; /* Amber 500 */
+            --accent: #ec4899;  /* Pink 500 */
+            --bg-dark: #0f172a; /* Slate 900 */
+            --card-bg: rgba(30, 41, 59, 0.7); /* Glass effect */
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--bg-dark);
+            color: #f1f5f9;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .font-outfit { font-family: 'Outfit', sans-serif; }
+
+        /* Banner Breathing Animation */
+        @keyframes breathe {
+            0%, 100% { opacity: 0.6; filter: brightness(0.8); }
+            50% { opacity: 1; filter: brightness(1.1); }
+        }
+        .banner-animate {
+            animation: breathe 8s ease-in-out infinite;
+        }
+
+        /* Micro-vibration for Golden Verse */
+        @keyframes micro-shake {
+            0%, 100% { transform: translateY(0); }
+            25% { transform: translateY(-1px); }
+            75% { transform: translateY(1px); }
+        }
+        .vibrate-text {
+            display: inline-block;
+            animation: micro-shake 3s ease-in-out infinite;
+        }
+
+        /* Glassmorphism */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
+
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(245, 158, 11, 0.3);
+            border-color: var(--primary);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after { width: 100%; }
+
+        .float-btn {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+        }
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#f59e0b',
+                            rose: '#ec4899',
+                            dark: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="selection:bg-brand-rose selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card rounded-none border-t-0 border-x-0 bg-slate-900/80 px-4 py-3 sm:px-8 flex items-center justify-between">
+        <span class="text-sm sm:text-base font-bold font-outfit text-brand-gold tracking-tight">羅16:1-16</span>
+        <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-medium">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="relative h-[70vh] sm:h-[80vh] w-full flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_3ed4f4fc-9dcd-4cbd-9802-f2974e9164c9.jpg' alt='Banner' class="w-full h-full object-cover banner-animate" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-900/60 to-slate-900"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black mb-8 leading-tight drop-shadow-2xl">
+                羅16:1-16：<br/>
+                <span class="gradient-text">平凡名字背後的不平凡</span><br/>
+                <span class="text-xl sm:text-2xl font-light tracking-[0.2em] text-slate-300 mt-4 block">建構神國的榮耀網絡</span>
+            </h1>
+            
+            <div class="vibrate-text max-w-2xl mx-auto">
+                <p class="text-lg sm:text-xl font-medium text-amber-100 leading-relaxed italic drop-shadow">
+                    「問百基拉和亞居拉安。他們在基督耶穌裡與我同工，也為我的命將自己的頸項置之度外。不但我感謝他們，就是外邦的眾教會也感謝他們。」
+                    <span class="block mt-2 text-sm not-italic opacity-80">— 羅馬書 16:3-4</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-16">
+            <div class="glass-card p-8 sm:p-12 relative overflow-hidden group">
+                <div class="absolute -right-8 -top-8 text-brand-gold opacity-10 group-hover:scale-110 transition-transform duration-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="text-brand-gold" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                    <h2 class="text-2xl font-bold text-brand-gold">禱告詞</h2>
+                </div>
+                <p class="text-lg leading-loose text-slate-200">
+                    親愛的天父，感謝祢在基督裡呼召了我們，使我們這群背景各異的人，成為祢家中血脈相連的弟兄姊妹。求祢開我們的眼睛，看見羅馬書這份長長名單背後，那充滿愛、犧牲與勞苦的福音網絡。賜給我們非比的忠心、亞居拉和百基拉的勇敢，以及那些無名英雄般默默服事的靈。願我們的教會也能成為彼此切實相愛、在基督裡同工的榮耀群體。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="pt-16">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="text-brand-rose" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <h2 class="text-2xl font-bold text-brand-rose tracking-wider">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <a href="#sec1" class="outline-btn glass-card p-5 border-l-4 border-l-brand-gold hover:bg-brand-gold/10">
+                    <span class="text-xs text-brand-gold font-bold mb-1 block">第一部分</span>
+                    <h3 class="font-bold text-slate-100">接待的藝術：成為教會的保羅與非比</h3>
+                    <p class="text-xs text-slate-400 mt-2">羅馬書 16:1-2</p>
+                </a>
+                <a href="#sec2" class="outline-btn glass-card p-5 border-l-4 border-l-brand-rose hover:bg-brand-rose/10">
+                    <span class="text-xs text-brand-rose font-bold mb-1 block">第二部分</span>
+                    <h3 class="font-bold text-slate-100">生死與共的同工：為福音將頸項置之度外</h3>
+                    <p class="text-xs text-slate-400 mt-2">羅馬書 16:3-5a</p>
+                </a>
+                <a href="#sec3" class="outline-btn glass-card p-5 border-l-4 border-l-blue-400 hover:bg-blue-400/10">
+                    <span class="text-xs text-blue-400 font-bold mb-1 block">第三部分</span>
+                    <h3 class="font-bold text-slate-100">榮耀的點名：在主裡勞苦的無名英雄</h3>
+                    <p class="text-xs text-slate-400 mt-2">羅馬書 16:5b-16</p>
+                </a>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Section 1 -->
+                <div id="sec1" class="scroll-mt-24">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="w-10 h-10 rounded-full bg-brand-gold flex items-center justify-center font-bold text-slate-900">1</span>
+                        <h3 class="text-2xl font-bold text-brand-gold">接待的藝術：成為教會的保羅與非比</h3>
+                    </div>
+                    <div class="space-y-8 pl-4 border-l-2 border-slate-700 ml-5">
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-brand-gold/70 font-bold mb-3">引用經文</h4>
+                            <p class="text-slate-300 italic bg-slate-800/40 p-4 rounded-lg">我對你們舉薦我們的姊妹非比，她是堅革哩教會中的女執事。請你們為主接待她，合乎聖徒的體統。她在何事上要你們幫助，你們就幫助她，因她素來幫助許多人，也幫助了我。</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass-card p-5">
+                                <h5 class="font-bold text-brand-gold mb-2 flex items-center gap-2">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+                                    關鍵問題
+                                </h5>
+                                <p class="text-sm text-slate-300 leading-relaxed">為什麼保羅要在這卷充滿深奧神學的書信結尾，花費篇幅特別舉薦一位沒有講道記錄的女性？</p>
+                                <div class="mt-3 pt-3 border-t border-slate-700/50 text-brand-gold/90 text-sm">
+                                    <span class="font-bold">回答：</span>神學如果不落實於真實的肢體關係，就只是冰冷的理論。保羅提醒教會，福音的傳遞極度仰賴像非比這樣在後勤默默付出的「贊助者」。
+                                </div>
+                            </div>
+                            <div class="glass-card p-5 border-t-2 border-t-brand-gold">
+                                <h5 class="font-bold text-brand-gold mb-2">關鍵原文</h5>
+                                <ul class="text-sm space-y-2 text-slate-300">
+                                    <li><strong class="text-brand-gold">執事 (Diakonos)</strong>：僕人、服事者或使者。</li>
+                                    <li><strong class="text-brand-gold">幫助 (Prostatis)</strong>：贊助人、保護者、資助者。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-brand-gold/5 p-6 rounded-2xl border border-brand-gold/20">
+                            <p class="text-slate-200 italic mb-4">「基督徒的群體不是一個理想，而是一個神聖的現實。我們不是根據自己的喜好來選擇弟兄姊妹，而是神把我們放在一起。」</p>
+                            <span class="text-brand-gold font-bold">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="sec2" class="scroll-mt-24">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="w-10 h-10 rounded-full bg-brand-rose flex items-center justify-center font-bold text-slate-900">2</span>
+                        <h3 class="text-2xl font-bold text-brand-rose">生死與共的同工：為福音將頸項置之度外</h3>
+                    </div>
+                    <div class="space-y-8 pl-4 border-l-2 border-slate-700 ml-5">
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-brand-rose/70 font-bold mb-3">引用經文</h4>
+                            <p class="text-slate-300 italic bg-slate-800/40 p-4 rounded-lg">問百基拉和亞居拉安。他們在基督耶穌裡與我同工，也為我的命將自己的頸項置之度外。不但我感謝他們，就是外邦的眾教會也感謝他們。又問在他們家中的教會安。</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass-card p-5 border-t-2 border-t-brand-rose">
+                                <h5 class="font-bold text-brand-rose mb-2">關鍵原文</h5>
+                                <ul class="text-sm space-y-2 text-slate-300">
+                                    <li><strong class="text-brand-rose">同工 (Synergos)</strong>：一起工作的人、夥伴。</li>
+                                    <li><strong class="text-brand-rose">置之度外 (Hypotithemi)</strong>：放在刀斧之下，甘願冒生命危險。</li>
+                                </ul>
+                            </div>
+                            <div class="glass-card p-5">
+                                <h5 class="font-bold text-brand-rose mb-2 flex items-center gap-2">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+                                    關鍵問題
+                                </h5>
+                                <p class="text-sm text-slate-300 leading-relaxed">現代信徒在沒有迫害的環境下，如何體現「將頸項置之度外」的同工精神？</p>
+                                <div class="mt-3 pt-3 border-t border-slate-700/50 text-brand-rose/90 text-sm">
+                                    <span class="font-bold">回答：</span>現代的「置之度外」是流汗與流淚，是放下個人的舒適圈與權益，與弟兄姊妹深度連結並承擔彼此的重擔。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-brand-rose/5 p-6 rounded-2xl border border-brand-rose/20">
+                            <p class="text-slate-200 italic mb-4">「福音創造了一個新的群體。在這個群體中，我們不再是基於階級、種族或財富而結合，而是基於我們在基督裡共同的恩典與使命。」</p>
+                            <span class="text-brand-rose font-bold">— 提摩太·凱勒 (Timothy Keller)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="sec3" class="scroll-mt-24">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center font-bold text-slate-900">3</span>
+                        <h3 class="text-2xl font-bold text-blue-400">榮耀的點名：在主裡勞苦的無名英雄</h3>
+                    </div>
+                    <div class="space-y-8 pl-4 border-l-2 border-slate-700 ml-5">
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-blue-400/70 font-bold mb-3">引用經文</h4>
+                            <p class="text-slate-300 italic bg-slate-800/40 p-4 rounded-lg">（節錄）問我所親愛的以拜尼土安...問為主多受勞苦的馬利亞安。問與我一同坐監的親屬安多尼古和猶尼亞安...問為主勞苦的土非拿氏和土富撒氏安。問可親愛為主多受勞苦的彼息氏安...</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass-card p-5">
+                                <h5 class="font-bold text-blue-400 mb-2 flex items-center gap-2">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+                                    關鍵問題
+                                </h5>
+                                <p class="text-sm text-slate-300 leading-relaxed">神為何要在聖經中記錄這20多個對我們來說十分陌生的名字？</p>
+                                <div class="mt-3 pt-3 border-t border-slate-700/50 text-blue-400/90 text-sm">
+                                    <span class="font-bold">回答：</span>這份名單展現了教會的多元性。神記錄這些名字，是要向歷代信徒宣告：神記念每一個在暗處為主勞苦的人。
+                                </div>
+                            </div>
+                            <div class="glass-card p-5 border-t-2 border-t-blue-400">
+                                <h5 class="font-bold text-blue-400 mb-2">關鍵原文</h5>
+                                <ul class="text-sm space-y-2 text-slate-300">
+                                    <li><strong class="text-blue-400">勞苦 (Kopiao)</strong>：勞動直到疲憊不堪、筋疲力盡。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-blue-400/5 p-6 rounded-2xl border border-blue-400/20">
+                            <p class="text-slate-200 italic mb-4">「教會最真實的生命，往往隱藏在那些不為人知的平凡信徒忠心的服事與禱告之中。」</p>
+                            <span class="text-blue-400 font-bold">— 約翰·史托德 (John Stott)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="pt-16">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="text-emerald-400" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <h2 class="text-2xl font-bold text-emerald-400 tracking-wider">講章文稿</h2>
+            </div>
+            <div class="glass-card p-8 sm:p-12 space-y-8 text-lg leading-relaxed text-slate-200">
+                <p>弟兄姊妹，平安！今天我們要看的是羅馬書的最後一章。當我們讀到羅馬書第16章時，很多人會覺得這只是保羅的私人問候名單，充滿了發音困難的陌生名字，於是很快就跳過去了。但今天，我們的主題是：<strong class="text-brand-gold text-xl block my-4 underline decoration-brand-rose underline-offset-8">「平凡名字背後的不平凡：建構神國的榮耀網絡」</strong>。我們將發現，這份名單不僅不是多餘的，它更是羅馬書偉大哲理與神學的具體實踐。</p>
+
+                <p>我們來看第一個重點：<strong class="text-brand-gold">一、 接待的藝術：成為教會的保羅與非比</strong>。</p>
+                <p>在第1-2節，保羅說：「我對你們舉薦我們的姊妹非比...請你們為主接待她...因她素來幫助許多人，也幫助了我。」非比是一位女執事，更是帶著保羅這封羅馬書前往羅馬的信使。保羅稱她為「幫助者」，原文的意思是「贊助人」。保羅是在告訴我們，沒有非比在後勤與生活上的支持，就沒有這卷改變歷史的羅馬書。在教會中，我們常看重講台上的保羅，卻忽略了遞送書信、預備飯食的非比。潘霍華曾說：<strong class="text-slate-100 italic">「基督徒的群體不是一個理想，而是一個神聖的現實。」</strong> 當我們願意用愛心彼此接待，我們就是在實踐最偉大的神學。</p>
+
+                <p>接著我們來看第二段：<strong class="text-brand-rose">二、 生死與共的同工：為福音將頸項置之度外</strong>。</p>
+                <p>保羅在第3-4節留下了今天的<strong class="text-brand-rose">金句：「問百基拉和亞居拉安。他們在基督耶穌裡與我同工，也為我的命將自己的頸項置之度外...」</strong>。這對夫妻是保羅織帳棚的同行，更是他生死與共的同工。他們為了保護保羅，甘願把自己的脖子放在刀斧之下，甚至把自己的家開放成為教會。提摩太·凱勒提醒我們：<strong class="text-slate-100 italic">「福音創造了一個新的群體...是基於我們在基督裡共同的恩典與使命。」</strong> 今天，神呼召我們，不只是來教會「聚會」，而是要尋找屬靈的夥伴，願意放下自己的舒適與隱私，為彼此的生命與福音的廣傳「置之度外」。</p>
+
+                <p>最後，讓我們看：<strong class="text-blue-400">三、 榮耀的點名：在主裡勞苦的無名英雄</strong>。</p>
+                <p>從第5節到第16節，保羅一口氣列出了20多個名字。有奴隸、有貴族、有猶太人、有外邦人。保羅不斷重複一個詞：「<strong class="text-blue-400">勞苦</strong>」。他特別提到為主多受勞苦的馬利亞、土非拿氏、土富撒氏。這字的意思是「服事到筋疲力盡」。世人的歷史只記載大人物，但神的生命冊卻詳細記錄了每一個在暗處為主流汗流淚的平凡名字。就像帶領偉大佈道家司布真信主的，只是一個連名字都沒留下來的平信徒鞋匠。約翰·史托德說得好：<strong class="text-slate-100 italic">「教會最真實的生命，往往隱藏在那些不為人知的平凡信徒忠心的服事與禱告之中。」</strong></p>
+
+                <p class="pt-6 border-t border-slate-700 font-medium">弟兄姊妹，羅馬書16章是一幅美麗的圖畫。這告訴我們，神國的榮耀網絡，是由無數個願意彼此相愛、願意為主勞苦的同工所交織而成的。今天，你願意成為這份榮耀名單上的一員嗎？讓我們從真實的接待、彼此的代禱、和在暗處的忠心服事開始！</p>
+            </div>
+        </section>
+
+        <!-- Application, Keywords, Action -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 border-t-4 border-t-amber-500">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-slate-300 text-sm sm:text-base">
+                    <li><strong class="text-amber-500 block">重新評估服事的價值：</strong> 明白教會中沒有「卑微」的服事。</li>
+                    <li><strong class="text-amber-500 block">打破同溫層：</strong> 跨越隔閡，在基督裡用真實的愛彼此相交。</li>
+                    <li><strong class="text-amber-500 block">學習真誠的感恩：</strong> 具體點名並肯定別人在主裡的勞苦。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 border-t-4 border-t-rose-500">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    結論關鍵字
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-rose-500/20 rounded-full text-rose-300 font-bold border border-rose-500/30">同工 Synergos</span>
+                    <span class="px-4 py-2 bg-rose-500/20 rounded-full text-rose-300 font-bold border border-rose-500/30">勞苦 Kopiao</span>
+                    <span class="px-4 py-2 bg-rose-500/20 rounded-full text-rose-300 font-bold border border-rose-500/30">彼此相愛</span>
+                </div>
+            </div>
+            <div class="glass-card p-8 border-t-4 border-t-blue-500">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v10l4.5 4.5"/><circle cx="12" cy="12" r="10"/></svg>
+                    回應實踐
+                </h3>
+                <ul class="space-y-4 text-slate-300 text-sm sm:text-base">
+                    <li><span class="text-blue-400 font-black mr-2">01</span> 寫一張感謝卡或傳訊息具體感謝一位同工。</li>
+                    <li><span class="text-blue-400 font-black mr-2">02</span> 邀請一位平時較少互動的肢體共進晚餐或咖啡。</li>
+                    <li><span class="text-blue-400 font-black mr-2">03</span> 每天為教會通訊錄中的5位肢體提名禱告。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-16 pb-24">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="text-amber-400" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.5 4 6m9 0c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.5 4 6"/></svg>
+                <h2 class="text-2xl font-bold text-amber-400 tracking-wider">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- 10 Quotes -->
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「基督徒的群體不是一個理想，而是一個神聖的現實。我們不是根據自己的喜好來選擇弟兄姊妹，而是神把我們放在一起。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「福音創造了一個新的群體。在這個群體中，我們不再是基於階級、種族或財富而結合，而是基於我們在基督裡共同的恩典與使命。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「教會最真實的生命，往往隱藏在那些不為人知的平凡信徒忠心的服事與禱告之中。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 約翰·史托德 (John Stott)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「我們若不把弟兄姊妹當作基督的肢體來愛與服事，我們對神的愛就只是一句空話。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「在神的國度裡，沒有所謂微不足道的服事。每一個出於愛心為神所做的小事，在永恆中都會發出光芒。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「真正的屬靈生命，不是在孤立中尋求神，而是在平凡的日常和與人的相處中，活出基督的樣式。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 陶恕 (A.W. Tozer)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「牧養與服事，就是在同一個方向上的長久順服。沒有速成，只有在關係中持續地給予。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 畢德生 (Eugene Peterson)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「我們最大的醫治力量，不是我們的專業知識，而是我們願意進入別人的痛苦中，與他們同在。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 盧雲 (Henri Nouwen)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「真正的屬靈情感，必然會結出實踐的果子，那就是在基督的身體中切實相愛。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</span>
+                </div>
+                <div class="glass-card p-6 border-l-4 border-amber-500/50 flex flex-col justify-between">
+                    <p class="text-slate-300 leading-relaxed mb-4">「每個人都是上帝賜給鄰舍的禮物；我們不僅是為了自己而活，而是要在愛的服事中成為別人的基督。」</p>
+                    <span class="text-amber-500 font-bold text-sm">— 馬丁·路德 (Luther)</span>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-16 text-center text-slate-500 text-xs tracking-widest border-t border-slate-800 pt-8">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold text-slate-900 rounded-full flex items-center justify-center float-btn z-[60]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+        // Smooth Scrolling Logic
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

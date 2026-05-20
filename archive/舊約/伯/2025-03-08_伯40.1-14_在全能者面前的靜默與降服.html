@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伯40:1-14:在全能者面前的靜默與降服</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #facc15 0%, #fb923c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.6) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .section-card:hover {
+            border-color: rgba(250, 204, 21, 0.3);
+            transform: translateY(-4px);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #facc15;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bouncing-text {
+            display: inline-block;
+            animation: bounce-subtle 2s infinite;
+        }
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans selection:bg-gold-500 selection:text-slate-950">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-gold-400 font-bold tracking-wider hidden md:block">約伯記 40:1-14</span>
+            <div class="flex space-x-6 text-sm font-medium uppercase tracking-widest overflow-x-auto no-scrollbar whitespace-nowrap">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950 z-10"></div>
+            <img src='image/img_b1f3dcdd-272a-4f36-8b4e-8fb40ebf23af.jpg' alt='media_1' class="w-full h-full object-cover animate-breathe" />
+        </div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl">
+            <h1 id="top" class="text-4xl md:text-6xl font-black mb-8 leading-tight">
+                <span class="block text-slate-300 text-xl md:text-2xl font-light mb-4 tracking-[0.2em]">約伯記 40:1-14</span>
+                <span class="text-gradient">在全能者面前的靜默與降服</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl font-medium text-white italic leading-relaxed">
+                    「<span class="bouncing-text">我是卑賤的！我用什麼回答你呢？只好用手摀口。</span>」
+                </p>
+                <p class="mt-4 text-gold-400/80 tracking-widest text-sm">— 約伯記 40:4</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="p-3 rounded-full bg-gold-500/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">會前禱告</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-5">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="white"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <p class="text-lg md:text-xl text-slate-300 leading-relaxed italic">
+                    主啊，在祢浩大無邊的智慧與主權面前，我們承認自己的渺小與無知。當我們在生命風暴中試圖與祢爭論，甚至為了證明自己的無辜而懷疑祢的公義時，求祢赦免我們。求祢的聖靈光照我們，讓我們學會「用手摀口」，放下自義的驕傲，看見自己沒有拯救自己的能力，唯有完全降服於祢的恩典與大能。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline & Analysis Section -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center space-x-4 mb-4">
+                <div class="p-3 rounded-full bg-gold-500/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">分段大綱與深入解析</h2>
+            </div>
+
+            <!-- Outline Nav Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="flex flex-col p-6 rounded-2xl glass hover:bg-gold-500/10 transition-colors group">
+                    <span class="text-xs text-gold-500 font-bold tracking-widest mb-2 uppercase">第一階段</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400 transition-colors">停止強辯</span>
+                    <span class="text-sm text-slate-500 mt-1">約伯記 40:1-5</span>
+                </a>
+                <a href="#part2" class="flex flex-col p-6 rounded-2xl glass hover:bg-gold-500/10 transition-colors group">
+                    <span class="text-xs text-gold-500 font-bold tracking-widest mb-2 uppercase">第二階段</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400 transition-colors">挺腰面對</span>
+                    <span class="text-sm text-slate-500 mt-1">約伯記 40:6-9</span>
+                </a>
+                <a href="#part3" class="flex flex-col p-6 rounded-2xl glass hover:bg-gold-500/10 transition-colors group">
+                    <span class="text-xs text-gold-500 font-bold tracking-widest mb-2 uppercase">第三階段</span>
+                    <span class="text-lg font-bold group-hover:text-gold-400 transition-colors">認清極限</span>
+                    <span class="text-sm text-slate-500 mt-1">約伯記 40:10-14</span>
+                </a>
+            </div>
+
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-5xl font-black text-slate-800">01</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">停止強辯：當人的理智遇見神的浩大</h3>
+                    </div>
+                    <div class="grid md:grid-cols-5 gap-8">
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold text-sm tracking-widest mb-3 uppercase">引用經文</h4>
+                                <p class="text-slate-300 leading-relaxed text-sm">耶和華又對約伯說：「强辯的豈可與全能者爭論嗎？與神辯駁的可以回答這些吧！」於是，約伯回答耶和華說：「我是卑賤的！我用什麼回答你呢？只好用手摀口。我說了一次，再不回答；說了兩次，就不再說。」</p>
+                            </div>
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold text-sm tracking-widest mb-3 uppercase">關鍵字：רִיב (riyb)</h4>
+                                <p class="text-slate-300 text-sm">意為「爭論、強辯、訴訟」。約伯先前彷彿是在法庭上對神提出訴訟，要求神給個說法。神在此直指約伯的行為是試圖與全能者抗衡。</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-3 space-y-8">
+                            <div>
+                                <h4 class="text-white font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
+                                    關鍵問題：為什麼我們在受苦時總想與神爭論？
+                                </h4>
+                                <p class="text-slate-400 leading-relaxed">我們習慣用有限的理智去框限無限的神。當苦難發生，我們的安全感被剝奪，便試圖透過「要一個答案」來奪回掌控權。與神爭論的背後，其實是我們不願意承認自己的有限，誤以為自己有資格審查造物主的作為。</p>
+                            </div>
+                            <div class="bg-slate-900/50 border-l-4 border-gold-500 p-6 italic text-slate-300">
+                                <span class="block text-xs font-bold text-gold-500 mb-2 uppercase tracking-widest">生活例證</span>
+                                就像一個三歲小孩因為生病需要打針，他在診間裡對著醫生和父母大哭大鬧，認為他們是殘忍的壞人。小孩有限的心智無法理解這短暫的痛楚是為了醫治他。
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gold-400 font-medium">「如果你的神從來不與你意見相左，那麼你敬拜的只不過是一個放大版的自己。」</p>
+                                <p class="text-slate-500 text-sm mt-1">— 提摩太·凱勒 (Timothy Keller)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-5xl font-black text-slate-800">02</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">挺腰面對：放下自義，直面全能者的詰問</h3>
+                    </div>
+                    <div class="grid md:grid-cols-5 gap-8">
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold text-sm tracking-widest mb-3 uppercase">引用經文</h4>
+                                <p class="text-slate-300 leading-relaxed text-sm">於是，耶和華從旋風中回答約伯說：「你要如勇士挺腰；我問你，你可以指示我。你豈可廢棄我所擬定的？豈可定我有罪，好顯自己為義嗎？你有神那樣的膀臂嗎？你能像他發雷聲嗎？」</p>
+                            </div>
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold text-sm tracking-widest mb-3 uppercase">關鍵字：צָדַק (tsadaq)</h4>
+                                <p class="text-slate-300 text-sm">意為「使之為義、宣告無罪」。神指出約伯為了解釋自己的受苦，不惜「定神有罪，好顯自己為義」。</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-3 space-y-8">
+                            <div>
+                                <h4 class="text-white font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
+                                    關鍵問題：為了證明自己的無辜，我們是否在潛意識中定罪了上帝？
+                                </h4>
+                                <p class="text-slate-400 leading-relaxed">在苦難中，我們常說「我沒有做錯什麼，為什麼這事臨到我？」這種心態若無限放大，最終會推導出「既然我是對的，那錯的一定是神」。這是人類最深層的傲慢，為了維護自己的義，竟然企圖廢棄神的主權與公義。</p>
+                            </div>
+                            <div class="bg-slate-900/50 border-l-4 border-gold-500 p-6 italic text-slate-300">
+                                <span class="block text-xs font-bold text-gold-500 mb-2 uppercase tracking-widest">生活例證</span>
+                                一艘船在海上遇到暴風雨即將沉沒，乘客衝進駕駛艙指責船長，甚至想把船長推開自己來掌舵，卻忘了自己連海圖都看不懂。我們在生命的風暴中，也常以為自己比上帝更懂如何掌管人生。
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gold-400 font-medium">「人若不先認識神，就決不能認識自己；一旦來到神的威嚴面前，就必看見自己的敗壞與無知。」</p>
+                                <p class="text-slate-500 text-sm mt-1">— 約翰·加爾文 (John Calvin)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="text-5xl font-black text-slate-800">03</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">認清極限：放手交託，承認唯有神能拯救</h3>
+                    </div>
+                    <div class="grid md:grid-cols-5 gap-8">
+                        <div class="md:col-span-2 space-y-6">
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold text-sm tracking-widest mb-3 uppercase">引用經文</h4>
+                                <p class="text-slate-300 leading-relaxed text-sm">你可以打扮自己，以榮耀莊嚴為妝飾...我便認你右手能以救自己。</p>
+                            </div>
+                            <div class="section-card p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold text-sm tracking-widest mb-3 uppercase">關鍵字：יָשַׁע (yasha)</h4>
+                                <p class="text-slate-300 text-sm">意為「拯救、解救」。神對約伯發出終極挑戰：如果你能像神一樣制伏邪惡，那神就承認你能「救自己」。</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-3 space-y-8">
+                            <div>
+                                <h4 class="text-white font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
+                                    關鍵問題：若我們擁有神的能力，真能完美治理這個世界嗎？
+                                </h4>
+                                <p class="text-slate-400 leading-relaxed">神讓約伯看清：人類連制伏自己的傲慢都做不到。這逼使我們面對人類絕對的無能，唯有當我們承認自己無法拯救自己時，才能真正看見並倚靠神的拯救。</p>
+                            </div>
+                            <div class="bg-slate-900/50 border-l-4 border-gold-500 p-6 italic text-slate-300">
+                                <span class="block text-xs font-bold text-gold-500 mb-2 uppercase tracking-widest">生活例證</span>
+                                有位成功的企業家，直到他的孩子染上毒癮，他用盡所有人脈和金錢都無法改變孩子。在那一刻，他終於跪在地上承認：「我救不了他，也救不了自己。」
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gold-400 font-medium">「上帝擁有絕對的主權，對不願順服的人是件可怕的事，但對已降服的人，卻是最大的安慰。」</p>
+                                <p class="text-slate-500 text-sm mt-1">— 陶恕 (A.W. Tozer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Keywords -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.477.859h4z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-3 text-slate-300">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <span>在苦難中停止理智的僭越：轉向認識「主，祢是誰」。</span>
+                    </li>
+                    <li class="flex gap-3 text-slate-300">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <span>警醒心中的自義：檢視是否在潛意識中指責神的不公。</span>
+                    </li>
+                    <li class="flex gap-3 text-slate-300">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <span>承認無能並全然交託：將生命主權完全交還給神。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7a1 1 0 011.414-1.414L10 14.586l6.293-6.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    關鍵回應行動
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                        <span class="font-medium">操練用手摀口</span>
+                        <span class="text-xs px-2 py-1 bg-gold-500/20 text-gold-400 rounded">本週實踐</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                        <span class="font-medium">設立靜默時刻</span>
+                        <span class="text-xs px-2 py-1 bg-gold-500/20 text-gold-400 rounded">每日10分</span>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                        <span class="font-medium">寫下交託清單</span>
+                        <span class="text-xs px-2 py-1 bg-gold-500/20 text-gold-400 rounded">具體宣告</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="relative py-20">
+            <div class="absolute inset-0 bg-gold-500/5 rounded-[4rem] -rotate-1"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-8">
+                <div class="flex items-center justify-center space-x-4 mb-16">
+                    <div class="h-px w-12 bg-gold-500/50"></div>
+                    <h2 class="text-4xl font-black text-center text-white tracking-widest uppercase">講章文稿</h2>
+                    <div class="h-px w-12 bg-gold-500/50"></div>
+                </div>
+                
+                <div class="prose prose-invert prose-lg max-w-none space-y-12 text-slate-300 leading-relaxed">
+                    <p class="text-2xl font-light text-slate-200">弟兄姊妹們，當我們遭遇苦難或不平時，我們最本能的反應是什麼？是爭辯、是討公道、是要上帝給我們一個合理的解釋。</p>
+                    
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 text-xl font-bold">第一段：停止強辯——當人的理智遇見神的浩大</h4>
+                        <p>在約伯記的前三十九章裡，約伯就是如此。他受盡折磨，不斷呼喊，想要在法庭上與神對質。但當上帝真正從旋風中顯現時，祂沒有給約伯一張寫滿原因的清單，而是給了他一連串的問題。耶和華問約伯：「強辯的豈可與全能者爭論嗎？」神在這裡直指約伯的核心問題：你以為你在跟誰說話？我們常常像診間裡那個因為害怕打針而對著醫生大吵大鬧的三歲小孩。我們有限的理智，根本無法測透神永恆的計畫。</p>
+                        <blockquote class="border-l-4 border-gold-500 pl-6 py-2 bg-gold-500/5 text-gold-100 font-medium">
+                            「我是卑賤的！我用什麼回答你呢？只好用手摀口。」
+                        </blockquote>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 text-xl font-bold">第二段：挺腰面對——放下自義，直面全能者的詰問</h4>
+                        <p>接著我們來看，神要約伯如勇士挺腰，並問他：「你豈可廢棄我所擬定的？豈可定我有罪，好顯自己為義嗎？」這句話刺中了全人類的軟肋。為了證明自己無辜，我們潛意識裡經常定罪上帝。我們像是在暴風雨中指責船長的乘客，甚至想搶奪方向盤，卻忘了自己根本看不懂海圖。我們必須放下那可笑的自義，承認在絕對聖潔公義的神面前，我們沒有資格定神有罪。</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 text-xl font-bold">第三段：認清極限——放手交託，承認唯有神能拯救</h4>
+                        <p>最後，神挑戰約伯：如果你能用自己的威嚴制伏世上所有的驕傲與邪惡，「我就認你右手能以救自己。」神在告訴我們：你連治理這個世界的驕傲都做不到，你憑什麼以為你能拯救你自己？正如一位擁有一切的企業家，在面對孩子染毒時只能跪地崩潰一樣，我們終究要來到一個承認自己完全無能的時刻。</p>
+                    </div>
+
+                    <p class="text-xl text-white font-bold border-t border-slate-800 pt-8">弟兄姊妹，今天上帝也要對我們說同樣的話。放下你的強辯，收起你的自義。讓我們學習約伯，用手摀口，承認我們無法拯救自己。當我們徹底降服於神的主權時，那無法測度的全能者，就成了我們生命中最穩固的拯救。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-20">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="p-3 rounded-full bg-gold-500/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight">屬靈前輩佳句名言</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg text-slate-200 italic mb-6">「如果你的神從來不與你意見相左，那麼你敬拜的只不過是一個放大版的自己。」</p>
+                    <div class="text-right">
+                        <p class="text-gold-400 font-bold">— 提摩太·凱勒</p>
+                        <p class="text-slate-500 text-xs">《走過苦難》</p>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg text-slate-200 italic mb-6">「上帝擁有絕對的主權，這對那些不願順服的人是件可怕的事，但對那些已經降服於祂的人，卻是最大的安慰。」</p>
+                    <div class="text-right">
+                        <p class="text-gold-400 font-bold">— 陶恕</p>
+                        <p class="text-slate-500 text-xs">《認識至聖者》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg text-slate-200 italic mb-6">「人若不先認識神，就決不能認識自己；不論人如何自以為義，一旦來到神的威嚴面前，就必看見自己的敗壞與無知。」</p>
+                    <div class="text-right">
+                        <p class="text-gold-400 font-bold">— 約翰·加爾文</p>
+                        <p class="text-slate-500 text-xs">《基督教要義》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg text-slate-200 italic mb-6">「當你看不見神的手在做什麼時，你可以信靠神的心。」</p>
+                    <div class="text-right">
+                        <p class="text-gold-400 font-bold">— 司布真</p>
+                        <p class="text-slate-500 text-xs">《司布真講道集》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg text-slate-200 italic mb-6">「神並不是填補我們知識空白的塞子，神乃是在我們認識的極限之外被認識的。」</p>
+                    <div class="text-right">
+                        <p class="text-gold-400 font-bold">— 潘霍華</p>
+                        <p class="text-slate-500 text-xs">《獄中書簡》</p>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg text-slate-200 italic mb-6">「屬靈生命的起點，在於我們願意放下對自己生命的掌控權，交給那位深愛我們的神。」</p>
+                    <div class="text-right">
+                        <p class="text-gold-400 font-bold">— 盧雲</p>
+                        <p class="text-slate-500 text-xs">《向下的移動》</p>
+                    </div>
+                </div>
+                <!-- More quotes... (Simplified for layout) -->
+                 <div class="glass p-8 rounded-3xl md:col-span-2">
+                    <p class="text-sm text-slate-400 mb-4">更多名言：馬丁路德、畢德生、慕迪、約翰史托德均強調了「信心降服」與「神的主權」是理解苦難與得著拯救的唯一途徑。</p>
+                    <a href="image/img_f39ec25e-9be0-45f7-9432-edf0a18fffc4.jpg" target="_blank" class="text-gold-400 text-sm hover:underline">查看完整資料來源 &rarr;</a>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Warning & Disclaimer -->
+        <section class="text-center py-12 border-t border-slate-900">
+            <p class="text-slate-600 text-sm tracking-widest flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Subtle interaction for the "hands over mouth" metaphor
+        document.querySelectorAll('.bouncing-text').forEach(el => {
+            el.addEventListener('mouseover', () => {
+                el.style.animationPlayState = 'paused';
+            });
+            el.addEventListener('mouseout', () => {
+                el.style.animationPlayState = 'running';
+            });
+        });
+    </script>
+</body>
+</html>

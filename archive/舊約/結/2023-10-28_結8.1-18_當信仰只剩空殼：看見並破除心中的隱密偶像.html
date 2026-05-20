@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結8:1-18: 當信仰只剩空殼：看見並破除心中的隱密偶像</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FFD700',
+                            DEFAULT: '#D4AF37',
+                            dark: '#996515',
+                        },
+                        deep: '#0a0a0c',
+                        surface: '#16161a',
+                        accent: '#c084fc',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-subtle': 'pulse-subtle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'pulse-subtle': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #FFD700, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: #16161a;
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .bento-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .floating-btn {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        .jumping-text {
+            display: inline-block;
+            animation: float 2.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans overflow-x-hidden">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-gold font-display font-bold text-sm md:text-base tracking-wider uppercase">結 8:1-18</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-link text-gray-300 hover:text-gold">禱告</a>
+            <a href="#outline" class="nav-link text-gray-300 hover:text-gold">大綱</a>
+            <a href="#sermon" class="nav-link text-gray-300 hover:text-gold">講章</a>
+            <a href="#quotes" class="nav-link text-gray-300 hover:text-gold">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_2e53029b-0fe9-4539-a971-d360b04df751.jpg' alt='Celestial vision' class="w-full h-full object-cover animate-breath opacity-60" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-deep"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h1 class="text-4xl md:text-7xl font-display font-extrabold mb-6 leading-tight">
+                當信仰只剩<span class="text-gradient">空殼</span><br>
+                <span class="text-3xl md:text-5xl font-light text-gray-300">看見並破除心中的隱密偶像</span>
+            </h1>
+            
+            <div class="mt-12 max-w-2xl mx-auto">
+                <p class="text-xl md:text-3xl font-medium text-white/90 leading-relaxed jumping-text">
+                    「人子啊，以色列家的長老暗中在各人畫像屋裡所行的，你看見了沒有？」
+                </p>
+                <p class="mt-4 text-gold/80 font-display tracking-widest">— 以西結書 8:12</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 md:px-12 py-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="bento-card bg-gradient-to-br from-surface to-black/40 border-l-4 border-l-gold">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-gold/10 rounded-2xl">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.96a5 5 0 117.75-6.666L12 13.142l.478-.392a5 5 0 117.75 6.666L12 21z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold font-display">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 italic">
+                    主耶和華，祢是無所不知、鑒察人心的神。求祢的光照進我們生命中最幽暗的角落，顯明我們心中那些隱而未現的偶像，以及我們自以為能瞞過祢的虛偽。赦免我們時常在信仰上背對祢，將情感與時間獻給了世界的虛無。求聖靈賜下真實悔改的勇氣，打破我們心中的「畫像屋」，讓我們再次將生命的主權與敬拜，單單歸給祢。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-accent/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">大綱與解析</h2>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="bento-card hover:border-gold group">
+                    <span class="text-gold text-sm font-bold block mb-2">第一階段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">門口的惹忌之像</h3>
+                    <p class="text-gray-500 text-sm mt-2">結 8:1-6</p>
+                </a>
+                <a href="#part2" class="bento-card hover:border-gold group">
+                    <span class="text-gold text-sm font-bold block mb-2">第二階段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">畫像屋裡的暗昧</h3>
+                    <p class="text-gray-500 text-sm mt-2">結 8:7-13</p>
+                </a>
+                <a href="#part3" class="bento-card hover:border-gold group">
+                    <span class="text-gold text-sm font-bold block mb-2">第三階段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">背對聖所的敬拜</h3>
+                    <p class="text-gray-500 text-sm mt-2">結 8:14-18</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-24">
+                <!-- Part 1 Content -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-5">
+                            <h3 class="text-2xl font-bold mb-6 text-gold">第一段：門口的惹忌之像——當神聖空間被世俗佔據</h3>
+                            <div class="bg-surface p-6 rounded-3xl border border-white/5 space-y-4">
+                                <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500">引用經文 (結 8:1-6)</h4>
+                                <p class="text-gray-400 text-sm leading-loose">第六年六月初五日，我坐在家中...靈就將我舉到天地中間...帶我到耶路撒冷朝北的內院門口，在那裡有觸動主怒惹忌邪的偶像坐位...你看見了嗎？你還要看見另有大可憎的事。</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-8">
+                            <div class="bento-card bg-white/5">
+                                <p class="text-accent font-bold mb-2">關鍵原文：惹忌邪的 (qin'ah)</p>
+                                <p class="text-gray-300">意為「熱心、嫉妒、強烈的情感」。指神對子民專一愛的要求。偶像被置於聖殿門口，是對神主權最公然的挑釁。</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-4">
+                                    <h4 class="text-gold font-bold">關鍵問題與解析</h4>
+                                    <p class="text-gray-400 text-sm">什麼是我們生命中那尊「惹忌邪的偶像」，悄悄取代了神在我們心中的首位？</p>
+                                    <p class="text-gray-300 text-sm italic">解析：偶像不一定是實體，任何事物若佔據神的位置（如事業、感情）就是在「聖殿門口」立起了偶像，使神榮耀遠離。</p>
+                                </div>
+                                <div class="space-y-4 border-l border-white/10 pl-6">
+                                    <h4 class="text-gold font-bold">名言佳句</h4>
+                                    <p class="text-xl font-display font-medium text-white/90">「人的心腸，正如人所說，是一座日夜不斷製造偶像的工廠。」</p>
+                                    <p class="text-xs text-gray-500">— 約翰·加爾文</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Content -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-5">
+                            <h3 class="text-2xl font-bold mb-6 text-gold">第二段：畫像屋裡的暗昧——被揭開的偽善與屬靈盲點</h3>
+                            <div class="bg-surface p-6 rounded-3xl border border-white/5 space-y-4">
+                                <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500">引用經文 (結 8:7-13)</h4>
+                                <p class="text-gray-400 text-sm leading-loose">他領我到院門口...我一挖牆，見有一門...在四面牆上畫著各樣爬物和可憎的走獸...長老暗中在各人畫像屋裡所行的，你看見了沒有？他們常說：『耶和華看不見我們』。</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-8">
+                            <div class="bento-card bg-white/5">
+                                <p class="text-accent font-bold mb-2">關鍵原文：暗中 (choshek)</p>
+                                <p class="text-gray-300">意為黑暗、隱密處。代表刻意隱藏、不願被光照的領域。長老們的「功能性無神論」以為在暗中神就看不見。</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-4">
+                                    <h4 class="text-gold font-bold">關鍵問題與解析</h4>
+                                    <p class="text-gray-400 text-sm">我們是否也患上了「功能性無神論」，在無人看見的暗處放縱私慾？</p>
+                                    <p class="text-gray-300 text-sm italic">解析：真正的信仰體現在無人知曉的獨處時光。獨處時的網絡紀錄、財務花費、心思意念，就是現代的「畫像屋」。</p>
+                                </div>
+                                <div class="space-y-4 border-l border-white/10 pl-6">
+                                    <h4 class="text-gold font-bold">名言佳句</h4>
+                                    <p class="text-xl font-display font-medium text-white/90">「我們能向人隱藏自己，卻無法向神隱藏。我們最大的欺騙，是自以為神和世人一樣盲目。」</p>
+                                    <p class="text-xs text-gray-500">— 陶恕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Content -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-5">
+                            <h3 class="text-2xl font-bold mb-6 text-gold">第三段：背對聖所的敬拜——從情感的迷失到真理的背叛</h3>
+                            <div class="bg-surface p-6 rounded-3xl border border-white/5 space-y-4">
+                                <h4 class="text-xs font-bold uppercase tracking-widest text-gray-500">引用經文 (結 8:14-18)</h4>
+                                <p class="text-gray-400 text-sm leading-loose">在那裡有婦女坐著，為搭模斯哭泣...又領我到耶和華殿的內院...約有二十五個人背向耶和華的殿，面向東方拜日頭...我也要以忿怒行事，我眼必不顧惜。</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 space-y-8">
+                            <div class="flex gap-4">
+                                <div class="bento-card bg-white/5 flex-1">
+                                    <p class="text-accent font-bold mb-2">關鍵：搭模斯 (Tammuz)</p>
+                                    <p class="text-gray-300 text-sm">巴比倫之神。代表對世俗利益（豐收、安穩）的狂熱追求與情感投射。</p>
+                                </div>
+                                <div class="bento-card bg-white/5 flex-1">
+                                    <p class="text-accent font-bold mb-2">關鍵：背向 (achoreyhem)</p>
+                                    <p class="text-gray-300 text-sm">把後背給予某人。在聖殿中背對神，是最極端的拒絕與藐視。</p>
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-4">
+                                    <h4 class="text-gold font-bold">關鍵問題與解析</h4>
+                                    <p class="text-gray-400 text-sm">我們的哀哭和追求，是為了世俗的得失，還是為了神國的榮耀？</p>
+                                    <p class="text-gray-300 text-sm italic">解析：當我們為股票下跌痛哭，卻對靈魂失喪無動於衷，我們的情感就拜了搭模斯；迎合世界潮流而妥協真理，就是背對神。</p>
+                                </div>
+                                <div class="space-y-4 border-l border-white/10 pl-6">
+                                    <h4 class="text-gold font-bold">名言佳句</h4>
+                                    <p class="text-xl font-display font-medium text-white/90">「偶像崇拜不只是把壞東西當作神，更是把『好東西』當作了『終極的東西』。」</p>
+                                    <p class="text-xs text-gray-500">— 提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">講章文稿</h2>
+            </div>
+
+            <div class="bento-card border-none bg-white/5 md:p-16 p-8">
+                <div class="max-w-3xl mx-auto space-y-12">
+                    <header class="text-center">
+                        <h2 class="text-3xl md:text-4xl font-black mb-4">當信仰只剩空殼：<br><span class="text-gold">看見並破除心中的隱密偶像</span></h2>
+                        <p class="text-gray-500 uppercase tracking-widest text-sm">以西結書 8:1-18</p>
+                    </header>
+
+                    <div class="space-y-8 text-lg md:text-xl text-gray-300 leading-relaxed font-light">
+                        <p>各位弟兄姊妹，平安。如果今天神賜下一個異象，帶我們來到我們自己內心的深處，我們會看見什麼？在以西結書第八章，神用極其震撼的方式，揭開了當時猶大國信仰的遮羞布。外表上，聖殿還在，長老們還在，祭祀似乎也在進行，但神卻帶領以西結看穿了這一切的虛空。</p>
+                        
+                        <div class="border-l-2 border-gold/40 pl-6 py-2 space-y-4">
+                            <h3 class="text-2xl font-bold text-white">門口的惹忌之像：當神聖空間被世俗佔據</h3>
+                            <p>在聖殿的北門口，竟然立著一個觸動主怒惹忌邪的偶像。神是一位忌邪的神，祂對我們的愛是專一的。什麼是我們生命中那尊「惹忌邪的偶像」？當我們把事業、財富、甚至家庭看得比神還重要，任由它們佔據我們生命的「聖殿門口」時，我們就激動了神的忌邪之怒。</p>
+                        </div>
+
+                        <div class="bg-gold/10 p-8 rounded-3xl border border-gold/20 my-12 animate-pulse-subtle">
+                            <p class="text-gold font-bold mb-4">今日金句</p>
+                            <p class="text-2xl md:text-3xl font-bold text-white">「祂對我說：『人子啊，以色列家的長老暗中在各人畫像屋裡所行的，你看見了沒有？他們常說：【耶和華看不見我們；耶和華已經離棄這地。】』」</p>
+                            <p class="text-right mt-4 text-gold">— 結 8:12</p>
+                        </div>
+
+                        <div class="border-l-2 border-accent/40 pl-6 py-2 space-y-4">
+                            <h3 class="text-2xl font-bold text-white">畫像屋裡的暗昧：被揭開的偽善與屬靈盲點</h3>
+                            <p>神讓以西結挖開牆，看到七十個以色列長老，竟然在暗中敬拜牆上各樣爬物和走獸。長老們患上了<span class="text-accent font-bold">「功能性無神論」</span>，以為關起門來，神就看不見。陶恕提醒我們：「我們能向人隱藏自己，卻無法向神隱藏。」你在沒人看見時的財務操作是什麼？你心思意念裡嫉妒和貪婪的畫像屋，是否正在向神吐露你的虛偽？</p>
+                        </div>
+
+                        <div class="border-l-2 border-white/40 pl-6 py-2 space-y-4">
+                            <h3 class="text-2xl font-bold text-white">背對聖所的敬拜：情感的迷失與真理的背叛</h3>
+                            <p>神最後揭露了最心碎的景象：婦女為巴比倫神明哭泣，領袖在內院<span class="text-gold font-bold underline underline-offset-8 decoration-1">背向耶和華的殿</span>，面向東方拜日頭。當我們為了世俗的成功、追求世界的潮流，而背對真理時，我們就是在自取滅亡。</p>
+                        </div>
+
+                        <div class="pt-12 text-center space-y-6">
+                            <div class="flex justify-center gap-8">
+                                <div class="text-center"><div class="text-gold font-black text-2xl">鑒察</div><div class="text-xs text-gray-500">EXAMINE</div></div>
+                                <div class="text-center"><div class="text-gold font-black text-2xl">悔改</div><div class="text-xs text-gray-500">REPENT</div></div>
+                                <div class="text-center"><div class="text-gold font-black text-2xl">專一</div><div class="text-xs text-gray-500">FOCUS</div></div>
+                            </div>
+                            <p class="text-2xl font-bold text-white italic">「讓我們走出畫像屋，打破門口的偶像，轉過身來，重新面向那位深愛我們的神！」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card bg-gradient-to-br from-gold/10 to-transparent">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-gold text-deep flex items-center justify-center text-sm">01</span>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3">
+                        <span class="text-gold mt-1">✦</span>
+                        <span><b>檢視屬靈的心臟：</b>引導會眾省察自己心中是否有悄悄立起的「惹忌邪的偶像」。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gold mt-1">✦</span>
+                        <span><b>重整隱密處的生命：</b>挑戰在無人知曉的「畫像屋」中保持聖潔，強調「表裡如一」。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-gold mt-1">✦</span>
+                        <span><b>校準情感與敬拜：</b>評估我們的情緒為誰波動、為誰哭泣。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card bg-gradient-to-br from-accent/10 to-transparent">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-accent text-deep flex items-center justify-center text-sm">02</span>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3">
+                        <span class="text-accent mt-1">✓</span>
+                        <span><b>行事曆與財務健檢：</b>檢視過去一個月的流向，揪出生命中霸佔首位的「隱形偶像」。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-accent mt-1">✓</span>
+                        <span><b>尋求守望並認罪：</b>找一位可信賴的夥伴坦白一項長期隱藏的軟弱。</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-accent mt-1">✓</span>
+                        <span><b>設立「面向神時刻」：</b>每天撥出15分鐘，將手機干擾置外，單單安靜。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Carousel/List -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-white/5 rounded-2xl">
+                    <svg class="w-8 h-8 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display text-white">屬靈佳句名言</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card border-none bg-white/5 p-8 flex flex-col justify-between">
+                    <p class="text-xl font-medium text-gray-200 italic mb-4">「廉價的恩典是我們自己給自己的恩典……是沒有悔改的赦免，是沒有教會管教的洗禮，是沒有認罪的聖餐。」</p>
+                    <div class="text-gold font-bold text-sm">— 潘霍華，《追隨基督》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card border-none bg-white/5 p-8 flex flex-col justify-between">
+                    <p class="text-xl font-medium text-gray-200 italic mb-4">「神學的墮落總是從敬拜的墮落開始的；當我們不在靈與真理中敬拜神，我們就開始敬拜自己。」</p>
+                    <div class="text-gold font-bold text-sm">— 唐崇榮，《信仰、試煉與得勝》</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card border-none bg-white/5 p-8 flex flex-col justify-between">
+                    <p class="text-xl font-medium text-gray-200 italic mb-4">「你心所執著、所信靠的，實際上就是你的神。」</p>
+                    <div class="text-gold font-bold text-sm">— 馬丁·路德，《大問答》</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card border-none bg-white/5 p-8 flex flex-col justify-between">
+                    <p class="text-xl font-medium text-gray-200 italic mb-4">「罪的本質就是將自己置於神的位置，拒絕讓神作神。」</p>
+                    <div class="text-gold font-bold text-sm">— 約翰·史托德，《基督的十字架》</div>
+                </div>
+            </div>
+
+            <!-- Warning Text -->
+            <div class="mt-24 p-8 rounded-3xl border border-red-900/30 bg-red-900/5 text-center">
+                <p class="text-red-400 text-sm tracking-widest">
+                    <span class="inline-block px-2 py-1 bg-red-900/40 rounded mr-2">警語</span> 
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center text-deep floating-btn hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

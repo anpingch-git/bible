@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羅6:12-23:誰是你生命的主人？從罪的奴僕到義的器皿</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        accent: '#F59E0B',
+                        deep: '#0F172A',
+                        card: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 4s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 1.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+                            '50%': { opacity: '0.9', transform: 'scale(1.02)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-gradient {
+            background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 1) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+        .shimmer::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 6s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; top: -100%; }
+            100% { left: 100%; top: 100%; }
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.4);
+        }
+        .jumping-text {
+            display: inline-block;
+            animation: bounce-subtle 1.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="text-slate-200 font-sans leading-relaxed">
+
+    <!-- Header / Banner Area -->
+    <header id="top" class="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_6f8b0a7c-447b-47f8-8755-ddddaffc2417.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-deep/40 to-deep"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 pt-20">
+            <h1 class="text-3xl md:text-6xl font-black font-display text-white mb-6 tracking-tight drop-shadow-2xl">
+                羅6:12-23：<br/>
+                <span class="text-gradient">誰是你生命的主人？</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 font-light max-w-2xl mx-auto drop-shadow-lg">
+                從罪的奴僕到義的器皿
+            </p>
+            
+            <!-- Floating Scripture (Jumping Text) -->
+            <div class="mt-12 max-w-4xl mx-auto px-4">
+                <p class="text-xl md:text-3xl font-medium leading-relaxed jumping-text text-amber-50 drop-shadow-md">
+                    「因為罪的工價乃是死；惟有神的恩賜，在我們的主基督耶穌裡，乃是永生。」
+                </p>
+                <p class="text-amber-400 mt-2 font-display text-sm md:text-lg">（羅馬書 6:23）</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 py-3 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center overflow-x-auto whitespace-nowrap gap-6 no-scrollbar">
+            <span class="font-display font-bold text-amber-500 text-lg">羅 6:12-23</span>
+            <div class="flex gap-6 text-sm font-medium tracking-widest text-slate-300">
+                <a href="#prayer" class="hover:text-amber-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-amber-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-amber-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-amber-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-amber-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-3.657a2 2 0 01-1.017-2.514l2.5-7.5a2 2 0 012.383-1.3l6.362 2.12a2 2 0 011.3 2.383l-2.5 7.5a2 2 0 01-2.514 1.017L12 21z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13v-3a3 3 0 00-3-3m0 0a3 3 0 00-3 3v3m3-3V7m0 10v-4m-2 4h4"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white tracking-wide">禱告詞</h2>
+            </div>
+            <div class="card-gradient p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden group">
+                <div class="absolute -right-10 -top-10 opacity-5 group-hover:scale-110 transition-transform duration-700">
+                    <svg class="w-64 h-64 text-amber-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21l-8.228-3.657a2 2 0 01-1.017-2.514l2.5-7.5a2 2 0 012.383-1.3l6.362 2.12a2 2 0 011.3 2.383l-2.5 7.5a2 2 0 01-2.514 1.017L12 21z"/></svg>
+                </div>
+                <p class="text-lg md:text-xl text-slate-300 leading-relaxed italic relative z-10">
+                    「慈愛的天父，我們感謝祢，因著主耶穌基督在十字架上的救贖，我們不再是罪的奴僕，而是祢重價買贖回來的兒女。主啊，求祢開啟我們的屬靈眼光，看見罪的欺騙與可怕，也看明恩典的寶貴。求聖靈天天更新我們的心意，賜我們力量拒絕私慾的引誘，甘心樂意將自己的身體獻上，作義的器皿，一生順服祢的引導。奉主耶穌基督的聖名禱告，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-amber-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white tracking-wide">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section1" class="p-6 card-gradient rounded-3xl hover:border-amber-500/50 transition-all duration-300 group">
+                    <span class="text-amber-500 font-bold mb-2 block">一、拒絕罪的王權</span>
+                    <span class="text-slate-400 text-sm">羅馬書 6:12-14</span>
+                    <p class="mt-2 text-white font-medium group-hover:text-amber-400 transition-colors">獻上身體為義的器皿</p>
+                </a>
+                <a href="#section2" class="p-6 card-gradient rounded-3xl hover:border-amber-500/50 transition-all duration-300 group">
+                    <span class="text-amber-500 font-bold mb-2 block">二、轉換主人的抉擇</span>
+                    <span class="text-slate-400 text-sm">羅馬書 6:15-19</span>
+                    <p class="mt-2 text-white font-medium group-hover:text-amber-400 transition-colors">順從誰就作誰的奴僕</p>
+                </a>
+                <a href="#section3" class="p-6 card-gradient rounded-3xl hover:border-amber-500/50 transition-all duration-300 group">
+                    <span class="text-amber-500 font-bold mb-2 block">三、兩種結局的對比</span>
+                    <span class="text-slate-400 text-sm">羅馬書 6:20-23</span>
+                    <p class="mt-2 text-white font-medium group-hover:text-amber-400 transition-colors">罪的工價與神的恩賜</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Sections -->
+            <div class="space-y-16">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-24 space-y-6">
+                    <div class="inline-flex items-center px-4 py-1 rounded-full bg-amber-500/20 text-amber-500 text-sm font-bold border border-amber-500/30">SECTION 01</div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug">拒絕罪的王權：獻上身體為義的器皿</h3>
+                    <div class="card-gradient rounded-[2rem] overflow-hidden">
+                        <div class="p-8 bg-white/5 border-b border-white/5">
+                            <h4 class="text-amber-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                經文引用
+                            </h4>
+                            <p class="text-slate-300 italic leading-relaxed">「所以，不要容罪在你們必死的身上作王，使你們順從身子的私慾。也不要將你們的肢體獻給罪作不義的器具；倒要像從死裡復活的人，將自己獻給神，並將肢體作義的器具獻給神。罪必不能作你們的主，因你們不在律法之下，乃在恩典之下。」</p>
+                        </div>
+                        <div class="p-8 grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-amber-400 font-bold mb-4">關鍵原文 Keyword</h4>
+                                <ul class="space-y-4">
+                                    <li><span class="text-white font-bold block">作王 (basileuō)</span> <span class="text-sm text-slate-400">指行使統治權。保羅視罪為企圖奪權的暴君。</span></li>
+                                    <li><span class="text-white font-bold block">獻給 (paristēmi)</span> <span class="text-sm text-slate-400">主動將自己置於某人的處置之下。</span></li>
+                                    <li><span class="text-white font-bold block">器具 (hopla)</span> <span class="text-sm text-slate-400">原文有「武器」之意。</span></li>
+                                </ul>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-deep/50 p-6 rounded-2xl border border-white/5">
+                                    <h4 class="text-white font-bold mb-2">關鍵問題與回答</h4>
+                                    <p class="text-slate-400 text-sm">為何信主後仍常在罪中掙扎？</p>
+                                    <p class="text-slate-300 text-sm mt-2">罪雖失去合法權，但仍像廢黜的暴君在邊境游擊。掙扎代表新生命的抗爭，必須每日主動獻給神。</p>
+                                </div>
+                                <div class="bg-amber-500/5 p-6 rounded-2xl border border-amber-500/10">
+                                    <h4 class="text-amber-500 font-bold mb-2">司布真名言</h4>
+                                    <p class="text-slate-300 italic">「恩典不代表我們不需要爭戰；恩典是賜給我們在爭戰中得勝的兵器。」</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-24 space-y-6">
+                    <div class="inline-flex items-center px-4 py-1 rounded-full bg-amber-500/20 text-amber-500 text-sm font-bold border border-amber-500/30">SECTION 02</div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug">轉換主人的抉擇：順從誰就作誰的奴僕</h3>
+                    <div class="card-gradient rounded-[2rem] overflow-hidden">
+                        <div class="p-8 bg-white/5 border-b border-white/5">
+                            <h4 class="text-amber-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                經文引用
+                            </h4>
+                            <p class="text-slate-300 italic leading-relaxed">「...豈不曉得你們獻上自己作奴僕，順從誰，就作誰的奴僕嗎？或作罪的奴僕，以至於死；或作順命的奴僕，以至成義... 你們既從罪裡得了釋放，就作了義的奴僕。」</p>
+                        </div>
+                        <div class="p-8 grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-amber-400 font-bold mb-4">關鍵原文 Keyword</h4>
+                                <ul class="space-y-4">
+                                    <li><span class="text-white font-bold block">奴僕 (doulos)</span> <span class="text-sm text-slate-400">指完全屬於主人、沒有主權的奴隸。</span></li>
+                                    <li><span class="text-white font-bold block">順服 (hypakouō)</span> <span class="text-sm text-slate-400">「在下面」和「聽」組成，指留心聽從。</span></li>
+                                </ul>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-deep/50 p-6 rounded-2xl border border-white/5">
+                                    <h4 class="text-white font-bold mb-2">關鍵問題與回答</h4>
+                                    <p class="text-slate-400 text-sm">恩典是犯罪的許可證嗎？自由是什麼？</p>
+                                    <p class="text-slate-300 text-sm mt-2">斷乎不可！人沒有絕對獨立，不作罪的奴僕，就作義的奴僕。真正的自由是「擁有不犯罪的能力」。</p>
+                                </div>
+                                <div class="bg-amber-500/5 p-6 rounded-2xl border border-amber-500/10">
+                                    <h4 class="text-amber-500 font-bold mb-2">提摩太·凱勒名言</h4>
+                                    <p class="text-slate-300 italic">「自由不是選擇做你喜歡做的事，而是擁有能力去做你應該做的事。」</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-24 space-y-6">
+                    <div class="inline-flex items-center px-4 py-1 rounded-full bg-amber-500/20 text-amber-500 text-sm font-bold border border-amber-500/30">SECTION 03</div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug">兩種結局的對比：罪的工價與神的恩賜</h3>
+                    <div class="card-gradient rounded-[2rem] overflow-hidden">
+                        <div class="p-8 bg-white/5 border-b border-white/5">
+                            <h4 class="text-amber-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                經文引用
+                            </h4>
+                            <p class="text-slate-300 italic leading-relaxed">「因為罪的工價乃是死；惟有神的恩賜，在我們的主基督耶穌裡，乃是永生。」</p>
+                        </div>
+                        <div class="p-8 grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-amber-400 font-bold mb-4">關鍵原文 Keyword</h4>
+                                <ul class="space-y-4">
+                                    <li><span class="text-white font-bold block">工價 (opsōnion)</span> <span class="text-sm text-slate-400">原指士兵的口糧；按勞取酬應得的代價。</span></li>
+                                    <li><span class="text-white font-bold block">恩賜 (charisma)</span> <span class="text-sm text-slate-400">白白的禮物，基於施予者的恩典。</span></li>
+                                    <li><span class="text-white font-bold block">結局 (telos)</span> <span class="text-sm text-slate-400">終點、目標、最終結果。</span></li>
+                                </ul>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-deep/50 p-6 rounded-2xl border border-white/5">
+                                    <h4 class="text-white font-bold mb-2">關鍵問題與回答</h4>
+                                    <p class="text-slate-400 text-sm">為何人對罪的後果麻木？</p>
+                                    <p class="text-slate-300 text-sm mt-2">罪初期帶來短暫快感。但它是會按時發薪水的，薪水就是死。必須看穿糖衣，謙卑領受白白的永生。</p>
+                                </div>
+                                <div class="bg-amber-500/5 p-6 rounded-2xl border border-amber-500/10">
+                                    <h4 class="text-amber-500 font-bold mb-2">葛理翰名言</h4>
+                                    <p class="text-slate-300 italic">「罪會帶你走到你不想去的地步，留你待得比你原本想待的更久，並讓你付出你根本付不起的代價。」</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-amber-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white tracking-wide">講章全文</h2>
+            </div>
+            <div class="card-gradient p-10 md:p-16 rounded-[3rem] space-y-10 text-slate-300 text-lg leading-loose">
+                <p>各位弟兄姊妹，平安！今天我們要來探討一個關乎生命本質的深刻問題：<strong class="text-amber-400 underline decoration-2 underline-offset-4">誰是你生命的主人？</strong></p>
+                
+                <p>當我們信主的那一刻，我們的身分發生了翻天覆地的變化。我們常以為，基督徒的生活就是「努力做個好人」，但保羅在羅馬書第6章告訴我們，這其實是一場<strong class="text-white text-xl">「主權」的爭奪戰</strong>。</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-6 border-l-4 border-amber-500 pl-6">一、拒絕罪的王權：獻上身體為義的器皿</h4>
+                <p>保羅在羅馬書6:12-13節強烈地呼籲：<strong class="text-white italic bg-amber-500/10 px-2 py-1 rounded">「所以，不要容罪在你們必死的身上作王，使你們順從身子的私慾...倒要像從死裡復活的人，將自己獻給神。」</strong> 弟兄姊妹，你的身體是一個「器具」，原文的意思就是「武器」。當你把眼睛、嘴巴、雙手交給嫉妒、憤怒或情慾時，你就是把武器遞給了敵人來攻擊自己。我們必須每天早晨宣告：「我已經換了主人，我要將自己當作義的武器，獻給上帝！」</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-6 border-l-4 border-amber-500 pl-6">二、轉換主人的抉擇：順從誰就作誰的奴僕</h4>
+                <p>世人常說的「自由」，是我愛做什麼就做什麼。但聖經告訴我們，人類受造的本質，不是作「罪的奴僕」，就是作「神的奴僕」。當火車脫離了鐵軌，它不是重獲自由，而是深陷泥沼。提摩太·凱勒牧師說得好：<strong class="text-amber-400 italic">「自由不是選擇做你喜歡做的事，而是擁有能力去做你應該做的事。」</strong> 順從神，才是真正釋放的開始。</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-6 border-l-4 border-amber-500 pl-6">三、兩種結局的對比：罪的工價與神的恩賜</h4>
+                <p>保羅給出了基督教信仰中最著名的金句：<strong class="text-white text-xl">「因為罪的工價乃是死；惟有神的恩賜，在我們的主基督耶穌裡，乃是永生。」</strong> 這裡有兩個強烈的對比：「工價」對比「恩賜」，「死」對比「永生」。罪是一位刻薄的老闆，薪水包裡裝的是永遠的滅亡。相反地，神給的是白白賜下的禮物。耶穌基督在十字架上已經為我們付清了所有的債務。</p>
+
+                <div class="mt-16 bg-deep p-8 rounded-3xl border border-white/10">
+                    <h4 class="text-amber-500 font-bold text-xl mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        應用與實踐
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-white font-bold mb-2">3個關鍵字結論</p>
+                            <ul class="space-y-2 text-slate-400">
+                                <li>1. 主權 (Lordship)</li>
+                                <li>2. 順從 (Obedience)</li>
+                                <li>3. 恩賜 (Gift)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold mb-2">3個回應行動</p>
+                            <ul class="space-y-2 text-slate-400 text-sm">
+                                <li>• 每日早晨的「獻上」禱告</li>
+                                <li>• 設立「界線」以阻絕舊主人</li>
+                                <li>• 本週向人分享一個「恩賜」故事</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-amber-500/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold text-white tracking-wide">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="p-8 card-gradient rounded-3xl border-l-4 border-amber-500 hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「自由不是選擇做你喜歡做的事，而是擁有能力去做你應該做的事。」</p>
+                    <cite class="text-amber-500 font-bold block not-italic">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <!-- Quote 2 -->
+                <div class="p-8 card-gradient rounded-3xl border-l-4 border-slate-500 hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「罪會帶你走到你不想去的地步，留你待得比你原本想待的更久。」</p>
+                    <cite class="text-amber-500 font-bold block not-italic">— 葛理翰 (Billy Graham)</cite>
+                </div>
+                <!-- Quote 3 -->
+                <div class="p-8 card-gradient rounded-3xl border-l-4 border-slate-500 hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「恩典不代表我們不需要爭戰；恩典是賜給我們得勝的兵器。」</p>
+                    <cite class="text-amber-500 font-bold block not-italic">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <!-- Quote 4 -->
+                <div class="p-8 card-gradient rounded-3xl border-l-4 border-slate-500 hover:translate-y-[-5px] transition-transform">
+                    <p class="text-slate-300 italic mb-4 leading-relaxed">「廉價的恩典是傳遞饒恕卻不需要悔改的恩典... 昂貴的恩典是必須付上生命跟隨基督。」</p>
+                    <cite class="text-amber-500 font-bold block not-italic">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <!-- Extra Quotes List (Compact) -->
+                <div class="md:col-span-2 p-8 card-gradient rounded-3xl">
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li>• <strong class="text-slate-200">馬丁·路德：</strong>「基督徒是全然自由的萬人之主，也是全然順服的萬人之僕。」</li>
+                        <li>• <strong class="text-slate-200">約翰·史托德：</strong>「如果我們認為罪只不過是弱點，我們就會以為恩典只不過是補貼。」</li>
+                        <li>• <strong class="text-slate-200">陶恕：</strong>「真正的順服，是看見上帝的美善，而產生心甘情願的降服。」</li>
+                        <li>• <strong class="text-slate-200">約翰·加爾文：</strong>「成聖就是意念和行為，每一天都越來越與上帝的心意一致。」</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center py-10 opacity-40 hover:opacity-100 transition-opacity">
+            <p class="text-xs tracking-widest uppercase">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-amber-500 text-deep rounded-full flex items-center justify-center floating-btn hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

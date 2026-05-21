@@ -94,7 +94,24 @@
         ::-webkit-scrollbar-thumb { background: #404040; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '書6:1-14',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '書',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在安靜與順服中經歷神蹟：傾覆生命中的耶利哥' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans antialiased">
 
     <!-- Top Navigation Bar -->

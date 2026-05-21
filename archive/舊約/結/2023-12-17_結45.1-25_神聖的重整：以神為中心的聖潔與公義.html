@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結45:1-25：神聖的重整：以神為中心的聖潔與公義</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        priest: '#1a1a2e',
+                        sanctuary: '#16213e',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-2px) scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #e5e7eb;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(to right, #f59e0b, #fbbf24, #fcd34d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #fbbf24;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-gold-400 font-bold hidden md:block text-lg">結45:1-25</span>
+            <div class="flex space-x-6 md:space-x-10 text-sm md:text-base font-medium overflow-x-auto no-scrollbar whitespace-nowrap">
+                <a href="#prayer" class="nav-link hover:text-gold-400">禱告</a>
+                <a href="#outline" class="nav-link hover:text-gold-400">大綱</a>
+                <a href="#sermon" class="nav-link hover:text-gold-400">講章</a>
+                <a href="#quotes" class="nav-link hover:text-gold-400">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner Section -->
+    <header id="top" class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-breath w-full h-full banner-mask">
+                <img src='image/img_72d3f855-7019-4f1c-9f17-27e088f9e3b0.jpg' alt='media_1' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/90"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight font-display tracking-tight text-white drop-shadow-2xl">
+                神聖的重整：<br/>
+                <span class="text-gradient-gold">以神為中心的聖潔與公義</span>
+            </h1>
+            
+            <div class="animate-subtle-pulse mt-12 px-6 py-4 max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl font-light italic text-gold-100 leading-relaxed drop-shadow-lg">
+                    「主耶和華如此說：以色列的王啊，你們應當知足，要除掉強暴和搶奪的事，施行公平和公義，不再勒索我的百姓。這是主耶和華說的。」
+                </p>
+                <p class="mt-4 text-gold-500 font-bold tracking-widest">— 以西結書 45:9 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9.39-3.79-10.16-8.66l4.67-2.33C5.18 10.33 5 9.68 5 9c0-3.31 2.69-6 6-6V2m2 0v1c3.31 0 6 2.69 6 6 0 .68-.18 1.33-.51 2.01l4.67 2.33C22.39 8.21 18.07 4.42 13 4.42V2m0 16.58c5.07 0 9.39-3.79 10.16-8.66l-4.67 2.33c.33.68.51 1.33.51 2.01 0 3.31-2.69 6-6 6v1z"/></svg>
+                </div>
+                <div class="flex items-center space-x-4 mb-8">
+                    <span class="p-3 bg-gold-500/20 rounded-xl">
+                        <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21l-8-4.5v-9L12 3l8 4.5v9L12 21z"></path></svg>
+                    </span>
+                    <h2 class="text-3xl font-bold font-display text-white">禱告詞</h2>
+                </div>
+                <div class="text-lg md:text-xl leading-loose text-gray-300 space-y-4">
+                    <p>主耶和華，萬有的主宰，我們將生命的主權交還給祢。求祢在我們心中劃定那不可侵犯的「聖供地」，讓祢居於我們生命的首位。</p>
+                    <p>求聖靈光照我們，除掉我們生活中一切的不公與貪婪，賜給我們誠實的天平與公義的法碼。也懇求祢透過耶穌基督那完美的贖罪祭，遮蓋我們的過犯，引導我們進入真實的敬拜與聖潔的節奏中。奉主耶穌基督的聖名祈求，阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <span class="p-3 bg-blue-500/20 rounded-xl">
+                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display text-white">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="group p-6 glass-card rounded-2xl hover:bg-gold-500/10 transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-l-gold-500">
+                    <span class="text-xs font-bold text-gold-500 tracking-widest uppercase mb-2 block">Part 01</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold-400 transition-colors">劃定聖供地</h3>
+                    <p class="text-sm text-gray-500 mt-2">結 45:1-8</p>
+                </a>
+                <a href="#part2" class="group p-6 glass-card rounded-2xl hover:bg-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-l-blue-500">
+                    <span class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-2 block">Part 02</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">準確的天平</h3>
+                    <p class="text-sm text-gray-500 mt-2">結 45:9-12</p>
+                </a>
+                <a href="#part3" class="group p-6 glass-card rounded-2xl hover:bg-emerald-500/10 transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-l-emerald-500">
+                    <span class="text-xs font-bold text-emerald-500 tracking-widest uppercase mb-2 block">Part 03</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">贖罪與節期</h3>
+                    <p class="text-sm text-gray-500 mt-2">結 45:13-25</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline -->
+            <div class="space-y-16">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-28 bg-gradient-to-br from-white/[0.02] to-transparent rounded-3xl p-8 border border-white/5">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gold-400 mb-6 flex items-baseline">
+                        <span class="text-4xl mr-4 opacity-30 font-display">01</span>
+                        劃定聖供地 —— 讓神居首位的空間設計
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div class="bg-black/40 p-6 rounded-2xl border border-gold-500/20">
+                                <h4 class="text-gold-500 font-bold mb-3 flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 003 6.331V11a5 5 0 0110 0v7.33A7.998 7.998 0 0018 12a7.993 7.993 0 00-7-7.196V4a1 1 0 00-2 0v.804z"></path></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-gray-300 italic">「聖供地」 (תְּרוּמָה / Terumah)：意指「舉祭」、「奉獻物」或「特留分」。這是一個神聖的區塊，是從整體中「分別為聖」特別獻給神的部份。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-gray-400 text-sm mb-2">問題：為什麼在重新分配應許之地時，第一步不是分給各支派，而是先劃出「聖供地」？</p>
+                                <p class="text-gray-300 leading-relaxed">解析：這代表「次序」的重整。在經歷亡國與被擄的混亂後，神啟示復興的第一步是「尊主為大」。如果神沒有在土地（資源）和生活的中心佔據專屬的、神聖的位置，所有的建設都將失去根基。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gold-600/5 p-6 rounded-2xl border border-white/5">
+                                <h4 class="text-gold-400 font-bold mb-3">大石頭理論</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">如果我們先把沙子（瑣事）和小石頭（日常工作）放進瓶子裡，大石頭（與神的關係）就放不進去了。但如果我們先放入大石頭，沙子和水自然能填滿縫隙。劃定聖供地，就是先在生命中放進那塊「大石頭」。</p>
+                            </div>
+                            <blockquote class="border-l-4 border-gold-500 pl-6 py-2">
+                                <p class="text-xl font-medium text-white italic">「神必須是我們生命中的絕對中心，否則祂就什麼都不是。」</p>
+                                <footer class="text-gold-500 mt-2 font-bold">— 陶恕 (A.W. Tozer)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-28 bg-gradient-to-br from-white/[0.02] to-transparent rounded-3xl p-8 border border-white/5">
+                    <h3 class="text-2xl md:text-3xl font-bold text-blue-400 mb-6 flex items-baseline">
+                        <span class="text-4xl mr-4 opacity-30 font-display">02</span>
+                        準確的天平 —— 日常經濟中的神聖公義
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div class="bg-black/40 p-6 rounded-2xl border border-blue-500/20">
+                                <h4 class="text-blue-500 font-bold mb-3 flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 003 6.331V11a5 5 0 0110 0v7.33A7.998 7.998 0 0018 12a7.993 7.993 0 00-7-7.196V4a1 1 0 00-2 0v.804z"></path></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-gray-300 italic">「公平和公義」 (מִשְׁפָּט וּצְ傳ָקָה / Mishpat u'Tzedaqah)：Mishpat 指的是法律上的公正；Tzedaqah 則是道德上的公義。兩者結合代表在交易中完全符合神的標準。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-gray-400 text-sm mb-2">問題：為什麼在莊嚴的聖殿異象中，神突然插入了度量衡的規定？</p>
+                                <p class="text-gray-300 leading-relaxed">解析：真正的聖潔不能脫離日常的公義。神在乎的不是只有祭壇上的獻祭，祂同樣在乎市場上的交易。宗教儀式若沒有在職場操守與財務誠實上彰顯出來，就是虛假的。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-blue-600/5 p-6 rounded-2xl border border-white/5">
+                                <h4 class="text-blue-400 font-bold mb-3">誠信的企業家</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">一位企業家堅持使用「公道天平」，不願偷工減料，雖然初期吃盡苦頭，但最終誠信為他贏得了信任。信仰的真實性，往往在財務的報表上顯露無遺。</p>
+                            </div>
+                            <blockquote class="border-l-4 border-blue-500 pl-6 py-2">
+                                <p class="text-xl font-medium text-white italic">「我們不可將上帝所結合的稱義與公義分開。」</p>
+                                <footer class="text-blue-500 mt-2 font-bold">— 約翰·史托德 (John Stott)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-28 bg-gradient-to-br from-white/[0.02] to-transparent rounded-3xl p-8 border border-white/5">
+                    <h3 class="text-2xl md:text-3xl font-bold text-emerald-400 mb-6 flex items-baseline">
+                        <span class="text-4xl mr-4 opacity-30 font-display">03</span>
+                        贖罪與節期 —— 君王的責任與敬拜的節奏
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div class="bg-black/40 p-6 rounded-2xl border border-emerald-500/20">
+                                <h4 class="text-emerald-500 font-bold mb-3 flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 003 6.331V11a5 5 0 0110 0v7.33A7.998 7.998 0 0018 12a7.993 7.993 0 00-7-7.196V4a1 1 0 00-2 0v.804z"></path></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-gray-300 italic">「贖罪」 (כָּפַר / Kaphar)：原意是「遮蓋」、「平息怒氣」或「塗抹」。在舊約中指透過祭物的血來遮蓋罪惡，使人能重新與聖潔的神和好。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-2">關鍵問題與解析</h4>
+                                <p class="text-gray-400 text-sm mb-2">問題：在這裡，君王的主要職責是什麼？</p>
+                                <p class="text-gray-300 leading-relaxed">解析：地上的王忙於擴張，但神所設立的王，其核心責任是「為百姓預備祭物，為以色列家贖罪」。這預表了終極的君王——耶穌基督。祂不僅預備了祭物，祂自己就是那贖罪祭。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-emerald-600/5 p-6 rounded-2xl border border-white/5">
+                                <h4 class="text-emerald-400 font-bold mb-3">捨己的掩護</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">就像軍官犧牲自己掩護同袍，君王的最高榮耀不是坐在寶座上，而是捨己為人付上代價。耶穌基督正是那位為我們流血、遮蓋我們罪孽的萬王之王。</p>
+                            </div>
+                            <blockquote class="border-l-4 border-emerald-500 pl-6 py-2">
+                                <p class="text-xl font-medium text-white italic">「除了十字架上的寶血，沒有任何東西能遮蓋我們在神面前的罪。」</p>
+                                <footer class="text-emerald-500 mt-2 font-bold">— 司布真 (Charles Spurgeon)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <span class="p-3 bg-purple-500/20 rounded-xl">
+                    <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display text-white">分段講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-lg max-w-none space-y-12 text-gray-300">
+                <div class="bg-white/5 p-8 md:p-12 rounded-3xl border border-white/10">
+                    <p class="text-xl font-medium leading-relaxed">
+                        弟兄姊妹平安，今天我們要透過以西結書第45章來思想一個主題：<span class="text-gold-400 font-bold">「神聖的重整：以神為中心的聖潔與公義」</span>。當我們談到生命復興時，我們必須知道，復興不是從混亂中隨便抓取東西，而是從「次序的重建」開始。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white border-b border-gold-500/30 pb-4">第一段：劃定聖供地——讓神居首位的空間設計</h3>
+                    <p>在以西結書 45:1-8 中，神在異象裡重新分配那片復興的應許之地。但神的第一個命令不是把地分給十二支派，而是：<span class="text-white font-bold underline decoration-gold-500">「要獻上一分給耶和華為聖供地」</span>。弟兄姊妹，這是一個極其重要的屬靈原則！這塊地在希伯來文中叫做「Terumah」，意思是特意留下來、分別為聖獻給神的。</p>
+                    <p>神為什麼要這樣做？因為<span class="text-gold-400 font-bold">神的主權必須在我們生活的最核心得到確立。這不只是土地的劃分，更是屬靈優先次序的重整。</span> 如果我們在時間管理上，總是先把瑣碎的沙子裝進瓶子，那麼代表神同在的「大石頭」就永遠放不進去。陶恕曾說：<span class="text-white italic">「神必須是我們生命中的絕對中心，否則祂就什麼都不是。」</span> 請問，在你的事業、家庭、財務計畫中，神只是個點綴的郊區，還是那塊位於中心的「聖供地」？讓我們把生命的首位交還給神！</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white border-b border-blue-500/30 pb-4">第二段：準確的天平——日常經濟中的神聖公義</h3>
+                    <p>接下來，經文的畫風突然一轉。在最神聖的聖殿藍圖中，神竟然在 45:9-12 提到了市場上的度量衡！<span class="text-blue-400 font-bold">「主耶和華如此說：以色列的王啊，你們應當知足，要除掉強暴和搶奪的事，施行公平和公義，不再勒索我的百姓。這是主耶和華說的。」</span></p>
+                    <p>神要求他們使用<span class="text-white font-bold">「公道天平、公道伊法、公道罷特」</span>。為什麼神這麼在乎度量衡？因為<span class="text-blue-300 font-bold">真實的聖潔不能脫離日常的公義</span>。神在乎的不僅是我們在禮拜天唱詩歌的聲音有多大，祂同樣在乎你在禮拜一到禮拜五，做生意的天平是否誠實！如果我們在教會裡敬虔，在職場上卻剝削他人、逃漏稅、偷工減料，這樣的信仰是虛假的。正如約翰·史托德所言：<span class="text-white italic">「我們不可將上帝所結合的稱義與公義分開。」</span> 真實的信仰，必定會在你的財務報表和工作態度上顯明出來。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white border-b border-emerald-500/30 pb-4">第三段：贖罪與節期——君王的責任與敬拜的節奏</h3>
+                    <p>最後，在 45:13-25，神規定了領袖（王）的責任。世俗的領袖忙著為自己累積財富，但神所設立的君王，其核心職責是<span class="text-emerald-400 font-bold">「預備贖罪祭、素祭、燔祭，和平安祭，為以色列家贖罪」</span>。王要確保百姓能夠按著節期，規律地來到神面前尋求遮蓋（Kaphar）。</p>
+                    <p>這是一個極美的預表。我們地上的君王與領袖都不完美，但這段經文指向了那一位終極的君王——<span class="text-white font-bold">耶穌基督</span>。祂來，不是要受人的服事，乃是要服事人，並且捨命作多人的贖價。祂不僅為我們預備了祭物，祂自己就是那無殘疾的羔羊。司布真曾宣告：<span class="text-white italic">「除了十字架上的寶血，沒有任何東西能遮蓋我們的罪。」</span> 弟兄姊妹，我們能有規律地來到神面前敬拜，全是因為耶穌基督為我們成就了永恆的贖罪祭。讓我們建立起敬拜的節奏，一生倚靠這無價的恩典！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="glass-card rounded-3xl p-8 border-t-4 border-t-gold-500">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用與行動
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="h-6 w-6 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center text-xs font-bold mr-3 mt-1">1</span>
+                        <p class="text-gray-300">每日早晨獻上「時間的聖供地」：先劃出15分鐘單獨親近神。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="h-6 w-6 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center text-xs font-bold mr-3 mt-1">2</span>
+                        <p class="text-gray-300">進行「公道天平」自我審查：檢視個人財務紀錄與工作操守。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="h-6 w-6 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center text-xs font-bold mr-3 mt-1">3</span>
+                        <p class="text-gray-300">主日敬拜的預備：前一晚就預備好自己，帶著感恩的心。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card rounded-3xl p-8 border-t-4 border-t-blue-500">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    結論關鍵字
+                </h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-xl font-bold text-gold-400">奉獻 Dedication</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-xl font-bold text-blue-400">公義 Justice</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-xl font-bold text-emerald-400">贖罪 Atonement</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <span class="p-3 bg-red-500/20 rounded-xl">
+                    <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold font-display text-white">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「神必須是我們生命中的絕對中心，否則祂就什麼都不是。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「如果你把任何事物看得比神更重要，你最終必將失去它。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是昂貴的恩典。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「一個真正在神面前稱義的人，必然在世人面前活出公義。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 約翰·史托德 (John Stott)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「真實的門徒訓練，就是將我們日常的每一件小事，都置於上帝國度的治理之下。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 魏樂德 (Dallas Willard)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「敬拜不是我們對神的偶發性拜訪，而是將生命節奏調整為與神的恩典同步。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 畢德生 (Eugene Peterson)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「基督教領袖的特徵，不是去掌控權力，而是願意走向十字架。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 盧雲 (Henri Nouwen)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「除了十字架上的寶血，沒有任何東西能遮蓋我們在神面前的罪。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「我們是屬神的，所以讓我們為祂而活，為祂而死。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="p-6 glass-card rounded-2xl hover:border-gold-500/50 transition-colors">
+                    <p class="text-gray-200 italic mb-4 leading-relaxed">「真宗教的核心在於聖潔的情感；心境與行為必定會展現出對神公義的熱愛。」</p>
+                    <cite class="text-gold-500 font-bold block text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="py-12 border-t border-white/10 text-center">
+            <p class="text-gray-500 text-sm tracking-widest flex items-center justify-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 z-50 p-4 bg-gold-500 text-black rounded-full shadow-2xl hover:bg-gold-400 hover:scale-110 transition-all duration-300 animate-float focus:outline-none" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

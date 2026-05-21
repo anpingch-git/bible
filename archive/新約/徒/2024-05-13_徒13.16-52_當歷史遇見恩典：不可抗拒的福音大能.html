@@ -100,7 +100,24 @@
             transform: scale(1.1);
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '徒13:16-52',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '徒',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當歷史遇見恩典：不可抗拒的福音大能' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-body">
 
     <!-- Sticky Nav -->
@@ -119,7 +136,7 @@
     <!-- Banner -->
     <header class="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_28a80607-2a4a-4377-992a-52daedc8313b.jpg' alt='Grace in History' class="w-full h-full object-cover opacity-40 scale-105" />
+            <img src='https://anpingch-git.github.io/bible/archive/%E6%96%B0%E7%B4%84/%E5%BE%92/img_28a80607-2a4a-4377-992a-52daedc8313b.jpg' alt='Grace in History' class="w-full h-full object-cover opacity-40 scale-105" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/60 to-transparent"></div>
         </div>
         <div class="relative z-10 text-center px-6 max-w-4xl">

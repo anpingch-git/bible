@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結3:16-27:守望者的呼召與代價：在沉默與發聲之間</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        stone: {
+                            950: '#0c0a09',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-3px) scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0c0a09;
+            color: #e7e5e4;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(12, 10, 9, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(250, 204, 21, 0.1);
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, transparent 0%, #0c0a09 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+        }
+        .card-glass {
+            background: rgba(28, 25, 23, 0.6);
+            border: 1px solid rgba(250, 204, 21, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card-glass:hover {
+            border-color: rgba(250, 204, 21, 0.4);
+            background: rgba(41, 37, 36, 0.8);
+            transform: translateY(-4px);
+        }
+        .bento-item {
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0c0a09;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #eab308;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-gold-500 selection:text-black">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-gold-500 font-display font-bold tracking-wider text-sm md:text-base">以西結書 3:16-27</div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-widest text-stone-400">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-pulse-slow w-full h-full">
+                <img src='image/img_516e0a3b-24ce-46b3-960c-98b06d57c75f.jpg' alt='Ezekiel Watchman Banner' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 banner-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl pt-20">
+            <h1 id="top" class="font-display text-4xl md:text-7xl font-black mb-8 text-white leading-tight drop-shadow-2xl">
+                守望者的呼召與代價：<br/>
+                <span class="text-gold-500">在沉默與發聲之間</span>
+            </h1>
+            
+            <div class="animate-subtle-bounce inline-block">
+                <p class="text-xl md:text-3xl font-display italic text-white leading-relaxed text-glow">
+                    「人子啊，我立你作以色列家守望的人，所以你要聽我口中的話，替我警戒他們。」
+                </p>
+                <span class="block mt-4 text-gold-400 font-bold tracking-widest text-lg">（以西結書 3:17）</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="card-glass p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute -top-10 -left-10 text-gold-500/10 text-9xl group-hover:text-gold-500/20 transition-all duration-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 2a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m-1 3v6h5v-2h-3V7z"/></svg>
+                </div>
+                <div class="relative z-10 text-center max-w-3xl mx-auto">
+                    <div class="flex justify-center mb-6">
+                        <svg class="w-12 h-12 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+                    </div>
+                    <h2 class="font-display text-3xl font-bold mb-6 text-gold-400 tracking-widest">禱告詞</h2>
+                    <p class="text-xl md:text-2xl leading-loose text-stone-200 font-light italic">
+                        「主耶和華，祢是審判全地的主，也是滿有恩典與憐憫的上帝。懇求祢將守望者的心腸賜給我們，使我們對失喪的靈魂有急迫的負擔，對冷淡退後的弟兄姊妹有挽回的愛心。求祢開我們的耳朵，先聽見祢口中的話語；求祢掌管我們的口，使我們在該發聲時勇敢警戒，在該靜默時全然順服。願祢的靈更新我們，使我們成為祢忠心的器皿。奉主耶穌基督的名求，阿們。」
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="font-display text-3xl font-bold mb-10 flex items-center gap-4">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                分段大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="card-glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm block mb-2 tracking-widest">結 3:16-19</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">守望者的神聖使命：生死攸關的警戒</h3>
+                    </div>
+                    <div class="mt-4 flex items-center text-stone-500 text-sm group-hover:text-gold-500 transition-colors">
+                        深度解析 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+                <a href="#part2" class="card-glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm block mb-2 tracking-widest">結 3:20-21</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">義人的絆腳石：挽回與堅固的責任</h3>
+                    </div>
+                    <div class="mt-4 flex items-center text-stone-500 text-sm group-hover:text-gold-500 transition-colors">
+                        深度解析 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+                <a href="#part3" class="card-glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm block mb-2 tracking-widest">結 3:22-27</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">順服的代價：被綑綁與封口的先知</h3>
+                    </div>
+                    <div class="mt-4 flex items-center text-stone-500 text-sm group-hover:text-gold-500 transition-colors">
+                        深度解析 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline & Analysis -->
+        <div class="space-y-40">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28 space-y-6">
+                            <h2 class="text-gold-500 font-display text-4xl font-black">第一段</h2>
+                            <h3 class="text-2xl font-bold leading-tight">守望者的神聖使命：<br/>生死攸關的警戒</h3>
+                            <div class="p-4 bg-stone-900 border-l-4 border-gold-500 text-stone-400 text-sm leading-relaxed italic">
+                                「人子啊，我立你作以色列家守望的人，所以你要聽我口中的話，替我警戒他們...」
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-12">
+                        <!-- Bento Grid for Details -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="card-glass bento-item md:col-span-1">
+                                <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16"></path></svg>
+                                    重要 Keyword
+                                </h4>
+                                <p class="text-white font-bold text-lg mb-1">守望的人 (צָפָה, tsaphah)</p>
+                                <p class="text-stone-400 text-sm leading-relaxed">原意為「傾身向前看」、「密切注視」。在古代，守望者站在城牆高處，負責在危險逼近時吹角發出警告，關乎全城生死。</p>
+                            </div>
+                            <div class="card-glass bento-item md:col-span-1">
+                                <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2h8M8 22h8M4 10h16M4 14h16"></path></svg>
+                                    名言佳句
+                                </h4>
+                                <p class="text-xl font-display text-white leading-tight">「不僅是對所做的事，我們也要對沒有做的事負責。」</p>
+                                <p class="text-gold-500 text-xs mt-2">— 約翰·加爾文 (John Calvin)</p>
+                            </div>
+                            <div class="card-glass bento-item md:col-span-2">
+                                <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    解析與問題
+                                </h4>
+                                <p class="text-gold-400 font-bold mb-2 italic">我們是否需要為別人的滅亡負責？</p>
+                                <p class="text-stone-300 leading-relaxed">神指出，我們不為別人是否「悔改」負責，而是為自己是否「傳達警告」負責。傳福音與警戒罪惡不是選項，而是基督徒的生死委託。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-8 rounded-3xl border border-gold-500/10">
+                            <h4 class="text-gold-500 font-bold mb-4 uppercase tracking-tighter">屬靈例證</h4>
+                            <p class="text-stone-200 text-lg leading-relaxed italic">
+                                「想像一位燈塔看守員。他的工作不是跳下海去強行轉動船隻的方向盤，而是確保燈塔的燈光在暴風雨中最黑暗的時刻明亮地閃耀。如果他睡著了，燈熄滅了，船隻觸礁沉沒，他難辭其咎。但如果燈光長明，船長卻執意駛向暗礁，看守員便沒有失職。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28 space-y-6 text-right md:text-left">
+                            <h2 class="text-gold-500 font-display text-4xl font-black">第二段</h2>
+                            <h3 class="text-2xl font-bold leading-tight">義人的絆腳石：<br/>挽回與堅固的責任</h3>
+                            <div class="p-4 bg-stone-900 border-r-4 border-gold-500 text-stone-400 text-sm leading-relaxed italic text-right">
+                                「義人何時離義而犯罪，我將絆腳石放在他面前，他就必死；因你沒有警戒他...」
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="card-glass bento-item">
+                                <h4 class="text-gold-500 font-bold mb-3">重要 Keyword</h4>
+                                <p class="text-white font-bold text-lg mb-1">絆腳石 (מִכְשׁוֹל, mikshol)</p>
+                                <p class="text-stone-400 text-sm leading-relaxed">指障礙物、使人跌倒的事物，或神對人罪惡的審判與試驗。神容許考驗臨到，以顯明內心的真實光景。</p>
+                            </div>
+                            <div class="card-glass bento-item">
+                                <h4 class="text-gold-500 font-bold mb-3">名言佳句</h4>
+                                <p class="text-xl font-display text-white leading-tight">「罪惡在隱密中滋長，卻在群體的認罪與彼此守望中凋零。」</p>
+                                <p class="text-gold-500 text-xs mt-2">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                            </div>
+                            <div class="card-glass bento-item md:col-span-2">
+                                <h4 class="text-gold-500 font-bold mb-3">解析與問題</h4>
+                                <p class="text-gold-400 font-bold mb-2 italic">為什麼上帝要將「絆腳石」放在義人面前？</p>
+                                <p class="text-stone-300 leading-relaxed">過去的義行不是犯罪的免死金牌。守望者同樣需要向「教內義人」發出警戒。教會群體中需要有彼此守望、用愛心說誠實話的機制。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-8 rounded-3xl border border-gold-500/10">
+                            <h4 class="text-gold-500 font-bold mb-4 uppercase tracking-tighter">屬靈例證</h4>
+                            <p class="text-stone-200 text-lg leading-relaxed italic">
+                                「一群登山客走在危險的稜線上，走在前面的人發現一塊鬆動的岩石（絆腳石），他有絕對的責任轉身告訴後面的人：『小心，踩這裡會滑落！』如果他為了怕囉嗦而保持沉默，導致同伴墜崖，這是極大的悲劇。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28 space-y-6">
+                            <h2 class="text-gold-500 font-display text-4xl font-black">第三段</h2>
+                            <h3 class="text-2xl font-bold leading-tight">順服的代價：<br/>被綑綁與封口的先知</h3>
+                            <div class="p-4 bg-stone-900 border-l-4 border-gold-500 text-stone-400 text-sm leading-relaxed italic">
+                                「我必使你的舌頭貼住上齶，以致你啞口...但我對你說話的時候，必使你開口...」
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="card-glass bento-item">
+                                <h4 class="text-gold-500 font-bold mb-3">重要 Keyword</h4>
+                                <p class="text-white font-bold text-lg mb-1">啞口 (אָלַם, alam)</p>
+                                <p class="text-stone-400 text-sm leading-relaxed">被綁住舌頭、無法說話、被迫沉默。這代表先知喪失了自主發言的權利，完全受制於神。</p>
+                            </div>
+                            <div class="card-glass bento-item">
+                                <h4 class="text-gold-500 font-bold mb-3">名言佳句</h4>
+                                <p class="text-xl font-display text-white leading-tight">「上帝在我們生命中動工時，往往會先拿走我們最倚賴的東西。」</p>
+                                <p class="text-gold-500 text-xs mt-2">— 陶恕 (A.W. Tozer)</p>
+                            </div>
+                            <div class="card-glass bento-item md:col-span-2">
+                                <h4 class="text-gold-500 font-bold mb-3">解析與問題</h4>
+                                <p class="text-gold-400 font-bold mb-2 italic">為何神呼召守望者卻又讓他「啞口」？</p>
+                                <p class="text-stone-300 leading-relaxed">先知的「啞口」是「不能憑自己的意思說話」。真正的服事不是靠肉體的熱心，而是經過十字架對己生命的剝奪。神的主權決定了信息傳講的時間與方式。</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-8 rounded-3xl border border-gold-500/10">
+                            <h4 class="text-gold-500 font-bold mb-4 uppercase tracking-tighter">屬靈例證</h4>
+                            <p class="text-stone-200 text-lg leading-relaxed italic">
+                                「交響樂團中，即使一位樂手非常有才華、樂器再昂貴，在指揮家舉起指揮棒給出提示之前，他必須保持絕對的安靜。如果他憑己意提前吹奏，那就是噪音；只有跟隨指揮的節奏發聲，才是音樂。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24 py-20 border-t border-stone-800">
+            <h2 class="font-display text-4xl font-bold mb-16 text-center flex items-center justify-center gap-4">
+                <svg class="w-10 h-10 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                講章文稿
+            </h2>
+            
+            <article class="max-w-4xl mx-auto space-y-10 text-stone-300 text-lg md:text-xl leading-relaxed">
+                <p>各位弟兄姊妹，平安。如果今天有人告訴你，你鄰居的房子起火了，而你是唯一擁有鑰匙和警報器的人，你會怎麼做？如果你選擇繼續睡覺，你會不會對鄰居的傷亡感到內疚？</p>
+                
+                <p>今天我們要看的經文，正是探討這種屬靈的生死責任。請大家看大螢幕，我們今天的金句是：<br/>
+                <span class="text-gold-500 font-bold block mt-4 border-l-4 border-gold-500 pl-6">「人子啊，我立你作以色列家守望的人，所以你要聽我口中的話，替我警戒他們。」（以西結書 3:17）</span></p>
+
+                <h3 class="text-2xl font-bold text-white mt-16 mb-6">第一段：守望者的神聖使命：生死攸關的警戒</h3>
+                <p>在原文中，「守望的人」(tsaphah) 意思是「傾身向前看」、「密切注視」。上帝在這裡提出一個關鍵問題：我們需要為別人的滅亡負責嗎？答案既是肯定也是否定的。我們無法為他們「是否悔改」負責，但我們必須為「是否發出警告」負責。</p>
+                <p>宗教改革家約翰·加爾文曾說：<strong class="text-gold-400">「不僅是對所做的事，我們也要對沒有做的事負責。」</strong> 弟兄姊妹，我們身邊有多少人正走向滅亡，而我們卻選擇了沉默？</p>
+
+                <h3 class="text-2xl font-bold text-white mt-16 mb-6">第二段：義人的絆腳石：挽回與堅固的責任</h3>
+                <p>這裡的「絆腳石」(mikshol) 指的是神容許的考驗，以顯明人的真實光景。過去的熱心不能成為現在犯罪的藉口。這段經文打破了我們只向「外人」傳福音的迷思；我們同樣需要向「教內」的弟兄姊妹發出警戒。</p>
+                <p>潘霍華提醒我們：<strong class="text-gold-400">「罪惡在隱密中滋長，卻在群體的認罪與彼此守望中凋零。」</strong> 教會不能只有表面的和諧，更需要有挽回與堅固彼此的生命守望。</p>
+
+                <h3 class="text-2xl font-bold text-white mt-16 mb-6">第三段：順服的代價：被綑綁與封口的先知</h3>
+                <p>神使先知「啞口」(alam)，被綁住舌頭。神既然呼召他作守望者，為何又讓他被封口？因為神要徹底剝奪先知憑己意發言的權利。先知的口必須完全服從神的主權。真正的服事，不是靠我們肉體的熱心和喋喋不休。</p>
+                <p>陶恕說得好：<strong class="text-gold-400">「上帝在我們生命中動工時，往往會先拿走我們最倚賴的東西，好讓我們完全倚靠祂的發聲。」</strong> 我們必須先關上房門，聽見神的聲音，然後才能在世界中開口。</p>
+
+                <div class="bg-stone-900/80 p-10 rounded-3xl border border-stone-800 mt-20">
+                    <h4 class="text-gold-500 font-display text-2xl font-bold mb-8">結論：守望、責任與順服</h4>
+                    <p>弟兄姊妹，守望者是一個沉重卻榮耀的呼召。求主將這樣的生命賞賜給我們，讓我們在聆聽中順服，在警戒中帶著愛，忠心地作這個世代的守望者。</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Insights & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h3 class="font-display text-3xl font-bold flex items-center gap-4">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.674a1 1 0 00.922-.606l7-15A1 1 0 0021 0H3a1 1 0 00-.922 1.394l7 15a1 1 0 00.922.606z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 17v4m0 0l-2-2m2 2l2-2"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 p-4 card-glass rounded-xl">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <p class="text-stone-300">重拾對靈魂的負擔：檢視自己是否對身邊未信主或正在犯罪中的人失去感覺。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 card-glass rounded-xl">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <p class="text-stone-300">建立彼此守望的關係：在教會小組建立能夠「用愛心說誠實話」的關係。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 card-glass rounded-xl">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <p class="text-stone-300">操練聆聽與順服的發聲：在開口責備前，先回到神面前「閉門」安靜。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="font-display text-3xl font-bold flex items-center gap-4">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 p-4 card-glass rounded-xl border-l-4 border-gold-500">
+                        <span class="text-gold-500 font-bold">A</span>
+                        <p class="text-stone-300">名單代禱與行動：寫下一個正走在錯誤道路上的名字，本週為他禱告並尋求關心時機。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 card-glass rounded-xl border-l-4 border-gold-500">
+                        <span class="text-gold-500 font-bold">B</span>
+                        <p class="text-stone-300">建立守望夥伴：尋找一位屬靈夥伴，允許對方對你的盲點提出警告。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 card-glass rounded-xl border-l-4 border-gold-500">
+                        <span class="text-gold-500 font-bold">C</span>
+                        <p class="text-stone-300">操練神聖靜默：每天撥出15分鐘獨處聆聽，學習在開口前先被神掌管。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pt-20 border-t border-stone-800">
+            <h2 class="font-display text-4xl font-bold mb-16 text-center text-gold-400">名言佳句</h2>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <!-- Quote 1 -->
+                <div class="break-inside-avoid p-8 card-glass rounded-3xl">
+                    <p class="text-xl font-display text-white mb-4">「神從未呼召我們去迎合這個世界，祂呼召我們去警告這個世界。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">大衛·鮑森 (David Pawson)</span>
+                        <span class="text-stone-500 text-xs">《解開聖經的密碼：先知書》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="break-inside-avoid p-8 card-glass rounded-3xl">
+                    <p class="text-xl font-display text-white mb-4">「如果你愛一個人，你就會告訴他真相；如果你不告訴他真相，那就是因為你更愛自己。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">提摩太·凱勒 (Timothy Keller)</span>
+                        <span class="text-stone-500 text-xs">《揮霍的上帝》講道系列</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="break-inside-avoid p-8 card-glass rounded-3xl">
+                    <p class="text-xl font-display text-white mb-4">「牧者的主要工作不是去滿足會眾的期待，而是引導他們去面對那位經常與他們期待不符的上帝。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">畢德生 (Eugene Peterson)</span>
+                        <span class="text-stone-500 text-xs">《牧者的職分》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="break-inside-avoid p-8 card-glass rounded-3xl">
+                    <p class="text-xl font-display text-white mb-4">「妥協的時代最需要不妥協的聲音。先知之所以孤獨，是因為他們站在神那邊。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">唐崇榮 (Stephen Tong)</span>
+                        <span class="text-stone-500 text-xs">《先知、祭司、君王》神學講座</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="break-inside-avoid p-8 card-glass rounded-3xl">
+                    <p class="text-xl font-display text-white mb-4">「對罪的警告不是出於仇恨，而是出於最深切的愛；正如告訴一個瞎子他正走向懸崖，是愛的最高表現。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">喬納森·愛德華茲</span>
+                        <span class="text-stone-500 text-xs">《落在憤怒之神手中的罪人》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="break-inside-avoid p-8 card-glass rounded-3xl">
+                    <p class="text-xl font-display text-white mb-4">「講道不是要表明講員有多麼聰明，而是要表明上帝的話語是何等有權威。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">約翰·史托德 (John Stott)</span>
+                        <span class="text-stone-500 text-xs">《講道的藝術》</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center pt-10 pb-20">
+            <p class="text-stone-600 text-sm tracking-widest flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-stone-950 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all duration-300 group z-50">
+        <svg class="w-8 h-8 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

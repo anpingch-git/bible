@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書8:30-35: 在得勝的高處築壇：重尋聖約的得勝力</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'jump': 'jump 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '1' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #facc15, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #facc15;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px -5px rgba(234, 179, 8, 0.3);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '書8:30-35',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '書',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在得勝的高處築壇：重尋聖約的得勝力' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="text-xs sm:text-sm font-bold text-gold-400 tracking-wider">書8:30-35</span>
+            <div class="flex space-x-4 sm:space-x-8 text-xs sm:text-sm font-medium tracking-widest">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="relative h-[60vh] sm:h-[80vh] w-full overflow-hidden">
+        <div class="absolute inset-0 banner-mask animate-breath">
+            <img src='image/img_570ea9fd-0dbc-451e-bf3c-ea44133768d9.jpg' alt='Banner' class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 pt-20">
+            <h1 class="text-3xl sm:text-6xl font-black mb-4 font-display tracking-tight leading-tight">
+                在得勝的高處築壇：<br>
+                <span class="text-gradient">重尋聖約的得勝力</span>
+            </h1>
+            <p class="text-gold-200/80 text-sm sm:text-lg tracking-[0.2em] mb-12">書 8:30-35</p>
+            
+            <!-- Key Verse - Jumping Animation -->
+            <div id="gold-verse" class="max-w-2xl animate-jump">
+                <p class="text-xl sm:text-2xl font-bold leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+                    「隨後，約書亞將律法上祝福、咒詛的話，照着律法書上一切所寫的，都宣讀了一遍。」
+                </p>
+                <p class="mt-2 text-gold-400 font-semibold tracking-widest">（約書亞記 8:34）</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24 relative z-10">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-gold-500/10 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 11-6-6-6 6"/><path d="M12 5v14"/></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white">禱告詞</h2>
+            </div>
+            <div class="glass p-8 sm:p-12 rounded-3xl relative overflow-hidden border-l-4 border-l-gold-500">
+                <p class="text-lg sm:text-xl leading-loose text-slate-200 italic">
+                    主耶和華，我們感謝祢，因祢是賜下得勝與恩典的上帝。在我們經歷生活中的爭戰與得勝之後，求祢提醒我們不要忘記回到祢的面前築壇敬拜。求祢將祢的話語深深銘刻在我們心靈的磐石上，使我們無論面對祝福或挑戰，都能堅守祢的聖約。願祢的真理在我們全會眾、我們的家庭與下一代中被大聲宣讀，成為我們生命唯一的引導。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-blue-500/10 text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="#part1" class="outline-btn glass p-6 rounded-2xl flex justify-between items-center group">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold tracking-widest block mb-1">第一段</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">築起敬拜之壇——以神為首的重新校準</h3>
+                        <p class="text-slate-400 text-sm mt-1">書 8:30-31</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-slate-600 group-hover:text-gold-400 transition-colors" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#part2" class="outline-btn glass p-6 rounded-2xl flex justify-between items-center group">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold tracking-widest block mb-1">第二段</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">銘刻真理之石——讓神的話語成為印記</h3>
+                        <p class="text-slate-400 text-sm mt-1">書 8:32</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-slate-600 group-hover:text-gold-400 transition-colors" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#part3" class="outline-btn glass p-6 rounded-2xl flex justify-between items-center group">
+                    <div>
+                        <span class="text-gold-500 text-xs font-bold tracking-widest block mb-1">第三段</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">宣讀聖約之聲——全體參與的蒙福宣告</h3>
+                        <p class="text-slate-400 text-sm mt-1">書 8:33-35</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-slate-600 group-hover:text-gold-400 transition-colors" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="space-y-8">
+                    <div class="border-b border-slate-800 pb-4">
+                        <h3 class="text-2xl font-black text-gold-400">築起敬拜之壇——以神為首的重新校準</h3>
+                        <p class="text-slate-400 mt-2">書 8:30-31</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 italic text-slate-300">
+                        「那時，約書亞在以巴路山上為耶和華－以色列的神築了一座壇，是用沒有動過鐵器的整石頭築的...」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-lg flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> 關鍵原文</h4>
+                            <p class="text-slate-300 leading-relaxed"><strong class="text-white">築壇 (Hebrew: בָּנָה מִזְבֵּחַ)</strong>：Mizbeach 意為「獻祭之處」，代表將生命主權交還。不經人手雕琢的整石，象徵純粹的敬拜。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-lg flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> 關鍵問題</h4>
+                            <p class="text-slate-300">為何在得勝後卻停下進攻腳步前往築壇？</p>
+                            <p class="text-slate-400 text-sm">解析：這是一種「以神為首的重新校準」，防止將榮耀歸給自己的武力。</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700">
+                        <p class="text-gold-300 font-semibold mb-2">名言佳句</p>
+                        <p class="text-xl font-bold italic">「敬拜是現代福音派教會中遺失的珍寶。」—— 陶恕（A.W. Tozer）</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="space-y-8">
+                    <div class="border-b border-slate-800 pb-4">
+                        <h3 class="text-2xl font-black text-gold-400">銘刻真理之石——讓神的話語成為印記</h3>
+                        <p class="text-slate-400 mt-2">書 8:32</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 italic text-slate-300">
+                        「約書亞在那裏，當着以色列人面前，將摩西所寫的律法抄寫在石頭上。」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-lg flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> 關鍵原文</h4>
+                            <p class="text-slate-300 leading-relaxed"><strong class="text-white">抄寫 (Hebrew: כָּתַב, kathab)</strong>：意為銘刻。將律法寫在石頭上，代表神話語的永恆性與客觀性。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-lg flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> 關鍵問題</h4>
+                            <p class="text-slate-300">為何獻祭後必須立刻抄寫律法？</p>
+                            <p class="text-slate-400 text-sm">解析：沒有真理根基的敬拜易淪為情緒宣洩。祭壇是我們對神的回應，律法是神對我們的心意。</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700">
+                        <p class="text-gold-300 font-semibold mb-2">名言佳句</p>
+                        <p class="text-xl font-bold italic">「聖經是活的，它對我說話；它有腳，它跟著我；它有手，它抓住我。」—— 馬丁·路德</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="space-y-8">
+                    <div class="border-b border-slate-800 pb-4">
+                        <h3 class="text-2xl font-black text-gold-400">宣讀聖約之聲——全體參與的蒙福宣告</h3>
+                        <p class="text-slate-400 mt-2">書 8:33-35</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-800 italic text-slate-300">
+                        「...隨後，約書亞將律法上祝福、咒詛的話，照着律法書上一切所寫的，都宣讀了一遍。」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-lg flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> 關鍵原文</h4>
+                            <p class="text-slate-300 leading-relaxed"><strong class="text-white">宣讀 (Hebrew: קָרָא, qara)</strong>：宣告、朗讀。<strong class="text-white">寄居的 (Hebrew: גֵּ認, ger)</strong>：強調聖約群體的包容性。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-lg flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span> 關鍵問題</h4>
+                            <p class="text-slate-300">為何強調「沒有一句不宣讀」？</p>
+                            <p class="text-slate-400 text-sm">解析：神的話語是全方位的，包含祝福與咒詛。沒有人應被排除在聖約之外。</p>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700">
+                        <p class="text-gold-300 font-semibold mb-2">名言佳句</p>
+                        <p class="text-xl font-bold italic">「我們必須讓神的話語來與我們對質，打破我們的安全感...」—— 約翰·史托德</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application Section -->
+        <section class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="p-3 rounded-full bg-emerald-500/10 text-emerald-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white">應用與回應</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-8 rounded-3xl">
+                    <h3 class="text-xl font-bold text-gold-400 mb-6">應用方向</h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex gap-3"><span class="text-gold-500 font-bold">1.</span> 在成就與勝利中建立祭壇：歸榮耀給神而非自我慶祝。</li>
+                        <li class="flex gap-3"><span class="text-gold-500 font-bold">2.</span> 擁抱全備的真理：不挑選愛聽的，接受整本聖經教導。</li>
+                        <li class="flex gap-3"><span class="text-gold-500 font-bold">3.</span> 信仰傳承與包容：讓邊緣人群也感受到聖約的參與。</li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-emerald-400 mb-6">回應行動</h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex gap-3"><span class="text-emerald-500 font-bold">●</span> 設立感恩祭壇：本週每天撥出15分鐘單單感謝。</li>
+                        <li class="flex gap-3"><span class="text-emerald-500 font-bold">●</span> 銘刻一句經文：寫在卡片貼在明顯處深深思想。</li>
+                        <li class="flex gap-3"><span class="text-emerald-500 font-bold">●</span> 家庭/小組宣讀：與他人大聲朗讀聖經並分享。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conclusion Keywords -->
+            <div class="flex flex-wrap justify-center gap-8 py-12">
+                <div class="text-center">
+                    <p class="text-4xl font-black font-display text-white">築壇</p>
+                    <p class="text-gold-500 tracking-[0.3em] uppercase text-xs mt-2">Altar</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-black font-display text-white">銘刻</p>
+                    <p class="text-gold-500 tracking-[0.3em] uppercase text-xs mt-2">Engrave</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-black font-display text-white">宣讀</p>
+                    <p class="text-gold-500 tracking-[0.3em] uppercase text-xs mt-2">Proclaim</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-purple-500/10 text-purple-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white">講章文稿</h2>
+            </div>
+            <div class="glass p-8 sm:p-16 rounded-[3rem] text-slate-200 leading-relaxed text-lg space-y-8">
+                <h3 class="text-2xl sm:text-3xl font-black text-white text-center mb-12">在得勝的高處築壇：重尋聖約的得勝力</h3>
+                
+                <p>弟兄姊妹們，當我們在生活中經歷了一場艱難的戰役，並且終於取得勝利時，我們通常會做什麼？是開一場慶功宴？是立刻乘勝追擊，擴大戰果？</p>
+                
+                <p>在約書亞記第八章，以色列人剛剛經歷了艾城的大勝。從軍事戰略來看，這正是拿下的最好時機。然而，約書亞卻下令全軍停下腳步，跋涉將近五十公里，前往以巴路山。今天我們就要從這段經文，看見屬靈生命中三個極其關鍵的行動。</p>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-400 mb-4">第一，築起敬拜之壇——以神為首的重新校準</h4>
+                    <p class="mb-4">約書亞為什麼要這麼做？因為他深知，<span class="text-white font-black underline decoration-gold-500 underline-offset-4">真正的得勝不在於掠奪多少地土，而在於尊崇賜下得勝的上帝。</span>他在勝利的巔峰停下來敬拜，是為了防止以色列人將榮耀歸給自己的刀劍。</p>
+                    <p class="text-slate-400 italic border-l-2 border-slate-700 pl-4">誠如陶恕所言：「敬拜是現代福音派教會中遺失的珍寶。」我們太急著去打下一場仗，卻忘了在得勝的高處，將生命的主權重新交還給神。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-400 mb-4">第二，銘刻真理之石——讓神的話語成為印記</h4>
+                    <p class="mb-4">敬拜如果沒有真理作為根基，很容易就淪為一時的情緒激動。約書亞把律法刻在石頭上，因為石頭代表著永恆與不可更改。今天，許多人的信仰是寫在沙灘上的，海浪一來，世俗的潮流一沖，神的話就不見了。</p>
+                    <p class="text-slate-400 italic border-l-2 border-slate-700 pl-4">馬丁·路德曾說：「聖經是活的，它對我說話；它有腳，它跟著我；它有手，它抓住我。」你的生命中，有沒有哪幾句神的話，是像刻在石頭上一樣，任何風暴都無法抹滅的？</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-400 mb-4">第三，宣讀聖約之聲——全體參與的蒙福宣告</h4>
+                    <p class="mb-4">請注意兩個細節：第一，「沒有一句不宣讀」。我們今天的信仰不能像吃自助餐，只挑恩典，不講悔改。第二，聽眾包含了「婦女、孩子和寄居的外人」。在古代社會，這些人是沒有地位的。但上帝的國度充滿了恩典的包容性！</p>
+                    <p class="text-white font-black text-xl bg-gold-500/10 p-4 rounded-xl border border-gold-500/20 text-center">
+                        讓我們在生活的每一個得勝之處築壇，讓祂的真理銘刻在我們心中，並大聲宣讀祂全備的旨意！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 rounded-full bg-red-500/10 text-red-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.5 1.5 5.5l.5 1"/><path d="M13 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.5 1.5 5.5l.5 1"/></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white">屬靈前輩名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「人心是一個製造偶像的工廠。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 約翰·加爾文</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「唯有順服的人才相信，唯有相信的人才順服。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 潘霍華</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「神隨時都在我們身邊，但我們必須透過專注與順服，才能經歷祂的同在。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 陶恕</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「聖經不是要讓我們增加知識，而是要改變我們的生命。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 慕迪</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「當你把神當作你唯一的滿足時，你才是真正地在敬拜祂。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 提摩太·凱勒</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「為神的話語而戰，就是在為我們的靈魂而戰。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 司布真</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「基督徒的生命是一場朝同一個方向的漫長順服。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 畢德生</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「我們必須讓神的話語來與我們對質，打破我們的安全感...」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 約翰·史托德</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「真正的宗教，主要在於神聖的情感。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 喬納森·愛德華茲</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-3">「神的道是活的，是不改變的，世界一切都會過去，唯有神的道永遠長存。」</p>
+                    <p class="text-xs font-bold text-gold-500 uppercase tracking-widest">—— 唐崇榮</p>
+                </div>
+            </div>
+
+            <!-- Caution Disclaimer -->
+            <div class="mt-16 text-center text-slate-500 text-sm">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top (to Prayer) Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-slate-950 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 hover:scale-110 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navHeight = document.querySelector('nav').offsetHeight;
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - navHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

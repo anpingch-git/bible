@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書3:9-17: 當應許遇見洪患：踏出信心的第一步</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        river: {
+                            900: '#0c0f1d',
+                            800: '#161b33',
+                            700: '#1e2749',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0c0f1d;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 27, 51, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef9c3 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #eab308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(234, 179, 8, 0.2);
+        }
+        @keyframes breathing {
+            0%, 100% { opacity: 0.6; filter: brightness(0.8); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .breathing-image {
+            animation: breathing 8s ease-in-out infinite;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '書3:9-17',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '書',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當應許遇見洪患：踏出信心的第一步' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Banner -->
+    <div class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
+        <img src='image/img_5267e3cf-f50a-4b42-a0b0-c22d0fd2b155.jpg' alt='media_1' class="absolute inset-0 w-full h-full object-cover breathing-image banner-mask" />
+        <div class="absolute inset-0 bg-gradient-to-t from-river-900 via-transparent to-black/20"></div>
+        <div class="absolute bottom-20 left-0 w-full px-6 text-center">
+            <h2 class="text-gold-400 font-display text-xl md:text-3xl font-medium mb-2 tracking-widest">約書亞記 3:9-17</h2>
+            <h1 class="text-4xl md:text-7xl font-display font-black text-white drop-shadow-2xl mb-4">當應許遇見洪患：<br/><span class="gold-gradient-text">踏出信心的第一步</span></h1>
+        </div>
+    </div>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky top-0 z-50 glass py-4 px-6 md:px-12 flex justify-between items-center border-b border-white/10">
+        <div class="hidden md:block font-display font-bold text-gold-500 tracking-tighter text-xl">書3:9-17</div>
+        <div class="flex gap-6 md:gap-12 mx-auto md:mx-0 text-sm md:text-base font-medium tracking-wide">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Golden Verse -->
+        <section id="verse" class="relative">
+            <div class="absolute -top-10 -left-10 text-9xl text-white/5 font-display font-black select-none">VERSE</div>
+            <div class="glass p-8 md:p-12 rounded-3xl border-l-8 border-gold-500 relative overflow-hidden">
+                <div class="flex items-center gap-4 mb-6">
+                    <svg class="w-8 h-8 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z"/></svg>
+                    <h3 class="text-2xl font-display font-bold text-gold-500">金句</h3>
+                </div>
+                <p class="text-2xl md:text-3xl leading-relaxed font-medium text-white italic">
+                    「等到抬普天下主耶和華約櫃的祭司把腳踏在約旦河水裡，約旦河的水，就是從上往下流的水，必然斷絕，立起成壘。」
+                </p>
+                <p class="mt-4 text-right text-gold-600 font-bold tracking-widest">— 約書亞記 3:13</p>
+            </div>
+        </section>
+
+        <!-- Prayer -->
+        <section id="prayer" class="relative scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h3 class="text-4xl font-display font-black tracking-tight text-white">禱告</h3>
+            </div>
+            <div class="bg-river-800/50 p-8 md:p-12 rounded-[2rem] border border-white/5 leading-loose text-lg md:text-xl text-slate-300 shadow-inner">
+                親愛的主，當我們站在人生的約旦河畔，面對洶湧的河水與未知的挑戰時，求祢賜給我們聆聽祢話語的平靜。主啊！我們知道祢是那為我們開路的永生神。求祢賜給我們勇敢踏出第一步的信心，不看環境的險惡，只看見祢同在的約櫃已經走在前頭。願我們在乾地上經歷祢的神蹟，並在信心的考驗中站立得穩。奉主耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                <h3 class="text-4xl font-display font-black tracking-tight text-white">分段大綱</h3>
+            </div>
+            
+            <!-- Outline Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section-1" class="glass card-hover p-6 rounded-2xl border-l-4 border-gold-500 group">
+                    <p class="text-gold-500 font-bold text-sm mb-2">第 1 段</p>
+                    <h4 class="text-white font-bold group-hover:text-gold-400 transition-colors">聆聽神言：定睛於同在前行的約櫃</h4>
+                    <p class="text-slate-400 text-xs mt-2 italic">書3:9-11</p>
+                </a>
+                <a href="#section-2" class="glass card-hover p-6 rounded-2xl border-l-4 border-gold-500 group">
+                    <p class="text-gold-500 font-bold text-sm mb-2">第 2 段</p>
+                    <h4 class="text-white font-bold group-hover:text-gold-400 transition-colors">信心跨越：腳踏洪水的勇敢順服</h4>
+                    <p class="text-slate-400 text-xs mt-2 italic">書3:12-13</p>
+                </a>
+                <a href="#section-3" class="glass card-hover p-6 rounded-2xl border-l-4 border-gold-500 group">
+                    <p class="text-gold-500 font-bold text-sm mb-2">第 3 段</p>
+                    <h4 class="text-white font-bold group-hover:text-gold-400 transition-colors">經歷神蹟：在乾地上與神一同站立</h4>
+                    <p class="text-slate-400 text-xs mt-2 italic">書3:14-17</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-32">
+                <!-- Section 1 -->
+                <div id="section-1" class="scroll-mt-32">
+                    <h4 class="text-3xl font-display font-bold text-white mb-8 flex items-center gap-3">
+                        <span class="bg-gold-500 text-river-900 w-10 h-10 flex items-center justify-center rounded-full text-xl font-black">1</span>
+                        聆聽神言：定睛於同在前行的約櫃
+                    </h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block mb-2">引用經文</span>
+                                <p class="text-slate-300 border-l-2 border-gold-500/30 pl-4 italic">「約書亞對以色列人說：『你們近前來，聽耶和華─你們神的話。』約書亞說：『看哪，普天下主的約櫃必在你們前頭過去...』」</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-4.742c.16-.51.151-.714 0-.714-.243 0-1.248.638-1.74 1.107l-.371-.413c.832-.886 2.053-1.884 3.316-1.884 1.059 0 1.298.616.926 2.112l-1.291 5.05c-.174.673-.012.974.312.974.273 0 1.155-.422 1.661-.927l.36.415c-.832.887-2.184 1.942-3.54 1.942z"/></svg> 關鍵原文</h5>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="bg-river-700/50 p-4 rounded-xl">
+                                        <p class="text-white font-bold">約櫃 (Arown)</p>
+                                        <p class="text-xs text-slate-400 mt-1">代表神與百姓立約的記號，以及神真實的同在。</p>
+                                    </div>
+                                    <div class="bg-river-700/50 p-4 rounded-xl">
+                                        <p class="text-white font-bold">永生神 (El chay)</p>
+                                        <p class="text-xs text-slate-400 mt-1">活著的上帝，強調主動介入歷史的生命力。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="bg-gold-500/10 p-6 rounded-2xl border border-gold-500/20">
+                                <h5 class="text-gold-500 font-bold mb-2">關鍵問題與解答</h5>
+                                <p class="text-sm text-slate-200">為何過河前首要指令是「聽神的話」？</p>
+                                <p class="text-sm text-slate-400 mt-2">這不是屬血氣的戰役，而是屬靈的跨越。校正屬靈焦距，讓「神的應許」大過「眼前的困難」。</p>
+                            </div>
+                            <div class="italic text-slate-300 border-l-2 border-white/20 pl-4 py-2">
+                                <p class="text-sm">「信心主要不是取決於你的感覺如何，信心是取決於你正在看什麼。」</p>
+                                <p class="text-xs text-gold-600 mt-1">— 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section-2" class="scroll-mt-32">
+                    <h4 class="text-3xl font-display font-bold text-white mb-8 flex items-center gap-3">
+                        <span class="bg-gold-500 text-river-900 w-10 h-10 flex items-center justify-center rounded-full text-xl font-black">2</span>
+                        信心跨越：腳踏洪水的勇敢順服
+                    </h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block mb-2">引用經文</span>
+                                <p class="text-slate-300 border-l-2 border-gold-500/30 pl-4 italic">「等到抬普天下主耶和華約櫃的祭司把腳踏在約旦河水裡，約旦河的水...必然斷絕，立起成壘。」</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-4.742c.16-.51.151-.714 0-.714-.243 0-1.248.638-1.74 1.107l-.371-.413c.832-.886 2.053-1.884 3.316-1.884 1.059 0 1.298.616.926 2.112l-1.291 5.05c-.174.673-.012.974.312.974.273 0 1.155-.422 1.661-.927l.36.415c-.832.887-2.184 1.942-3.54 1.942z"/></svg> 關鍵原文</h5>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="bg-river-700/50 p-4 rounded-xl">
+                                        <p class="text-white font-bold">腳踏 (Nuwach)</p>
+                                        <p class="text-xs text-slate-400 mt-1">意指「安置、停歇」，這是一個具風險的順服行動。</p>
+                                    </div>
+                                    <div class="bg-river-700/50 p-4 rounded-xl">
+                                        <p class="text-white font-bold">斷絕 (Karath)</p>
+                                        <p class="text-xs text-slate-400 mt-1">意為「切斷、剪除」，神的大能切斷物理規律。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="bg-gold-500/10 p-6 rounded-2xl border border-gold-500/20">
+                                <h5 class="text-gold-500 font-bold mb-2">關鍵問題與解答</h5>
+                                <p class="text-sm text-slate-200">為何這次要「先踏水」才「水分開」？</p>
+                                <p class="text-sm text-slate-400 mt-2">成熟的信心要求我們在看見結果前，先以行動證明相信。神在等待我們「踏出那一步」。</p>
+                            </div>
+                            <div class="italic text-slate-300 border-l-2 border-white/20 pl-4 py-2">
+                                <p class="text-sm">「信心是對上帝的恩典一種活潑而大膽的信靠，這種信靠如此確切，以至於一個人為了它願意死上一千次。」</p>
+                                <p class="text-xs text-gold-600 mt-1">— 馬丁·路德</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section-3" class="scroll-mt-32">
+                    <h4 class="text-3xl font-display font-bold text-white mb-8 flex items-center gap-3">
+                        <span class="bg-gold-500 text-river-900 w-10 h-10 flex items-center justify-center rounded-full text-xl font-black">3</span>
+                        經歷神蹟：在乾地上與神一同站立得穩
+                    </h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block mb-2">引用經文</span>
+                                <p class="text-slate-300 border-l-2 border-gold-500/30 pl-4 italic">「抬耶和華約櫃的祭司在約旦河中的乾地上站定，以色列眾人都從乾地上過去...」</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-4.742c.16-.51.151-.714 0-.714-.243 0-1.248.638-1.74 1.107l-.371-.413c.832-.886 2.053-1.884 3.316-1.884 1.059 0 1.298.616.926 2.112l-1.291 5.05c-.174.673-.012.974.312.974.273 0 1.155-.422 1.661-.927l.36.415c-.832.887-2.184 1.942-3.54 1.942z"/></svg> 關鍵原文</h5>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="bg-river-700/50 p-4 rounded-xl">
+                                        <p class="text-white font-bold">乾地 (Charabah)</p>
+                                        <p class="text-xs text-slate-400 mt-1">徹底的神蹟，神不僅止水，更挪去泥濘。</p>
+                                    </div>
+                                    <div class="bg-river-700/50 p-4 rounded-xl">
+                                        <p class="text-white font-bold">站定 (Kuwn)</p>
+                                        <p class="text-xs text-slate-400 mt-1">「堅固、毫不動搖」。祭司在危險中心穩定軍心。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="bg-gold-500/10 p-6 rounded-2xl border border-gold-500/20">
+                                <h5 class="text-gold-500 font-bold mb-2">關鍵問題與解答</h5>
+                                <p class="text-sm text-slate-200">祭司為何在河中央「站定」？</p>
+                                <p class="text-sm text-slate-400 mt-2">象徵神親自守護通道，直到最後一個百姓都安全抵達。成熟者應為他人承擔風險，成為堅固後盾。</p>
+                            </div>
+                            <div class="italic text-slate-300 border-l-2 border-white/20 pl-4 py-2">
+                                <p class="text-sm">「只有相信的人才會順服，也只有順服的人才會相信。」</p>
+                                <p class="text-xs text-gold-600 mt-1">— 潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                <h3 class="text-4xl font-display font-black tracking-tight text-white">講章文稿</h3>
+            </div>
+            
+            <div class="glass p-8 md:p-16 rounded-[3rem] text-slate-200 leading-[2.2] text-lg space-y-12">
+                <div class="text-center space-y-4">
+                    <h2 class="text-3xl md:text-5xl font-display font-black text-white">書3:9-17：當應許遇見洪患</h2>
+                    <p class="text-gold-500 font-bold text-xl">— 踏出信心的第一步 —</p>
+                </div>
+
+                <p>各位弟兄姊妹，平安！我們的人生中，總會遇到一些看似無法跨越的障礙。有時候是突如其來的健康危機，有時候是經濟的重擔，或者是陷入僵局的家庭關係。這些困難就像是一條氾濫的河流，橫在我們與上帝的應許之間。今天，我們要從約書亞記第三章，來看看以色列人如何面對他們眼前的滔天巨浪，並從中學習如何踏出信心的第一步。</p>
+
+                <div class="bg-gold-500/10 border-l-4 border-gold-500 p-6 my-8">
+                    <p class="font-bold text-gold-500 text-xl tracking-wide">約書亞記 3:13：「等到抬普天下主耶和華約櫃的祭司把腳踏在約旦河水裡，約旦河的水，就是從上往下流的水，必然斷絕，立起成壘。」</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">第一段：聆聽神言：定睛於同在前行的約櫃</h4>
+                    <p>當以色列人來到約旦河邊時，正是收割的日子，河水漲過兩岸，水勢洶湧。面對這樣的絕境，約書亞的第一個命令不是去砍樹造船，也不是去測量水深，而是說：<span class="text-gold-400 font-bold">「你們近前來，聽耶和華─你們神的話。」</span>並且他要百姓注視那代表神同在的「約櫃」。</p>
+                    <p>為什麼在危機面前，第一件事是「聽」和「看」？因為我們面對的挑戰，往往會放大我們的恐懼，使我們看不見神的偉大。提摩太·凱勒曾說：<span class="text-white font-bold italic">「信心主要不是取決於你的感覺如何，信心是取決於你正在看什麼。」</span> 如果你只盯著狂暴的河水，你一定會絕望；但如果你定睛於「永生神」的約櫃，你會知道，為你爭戰的上帝是活著的！祂不只活在過去的歷史中，祂現在就要走在你的前頭。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">第二段：信心跨越：腳踏洪水的勇敢順服</h4>
+                    <p>接下來，神給了以色列人一個極具挑戰的命令。神應許水會斷絕，但條件是：<span class="text-gold-400 font-bold underline decoration-gold-500/50">祭司必須先把腳踏入洶湧的河水中</span>。</p>
+                    <p>當年過紅海時，神是先用大風把海水分開，以色列人才走下去；因為那時他們是剛出埃及的屬靈嬰孩。但現在不同了，經過四十年的曠野訓練，神要求他們展現成熟的信心。成熟的信心是什麼？就是<span class="text-white font-bold">在看見神蹟之前，先用行動來證明你相信神的應許。</span></p>
+                    <p>馬丁·路德說得好：<span class="text-white font-bold italic">「信心是對上帝的恩典一種活潑而大膽的信靠。」</span> 神在等待祭司們的腳底觸碰到水面的那一刻。就在他們不顧一切、勇敢順服「腳踏」入水的那一瞬間，從上游下來的水奇蹟般地「斷絕」了。上帝今天挑戰你，勇敢地把你的腳弄濕吧！當你願意踏出順服的第一步，上帝斬斷洪患的大能就會彰顯。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white border-b border-white/10 pb-2">第三段：經歷神蹟：在乾地上邁向應許</h4>
+                    <p>當祭司踏入水中，河水停住後，發生了一幅極其美麗且震撼的畫面：<span class="text-gold-400 font-bold">「抬耶和華約櫃的祭司在約旦河中的乾地上站定，以色列眾人都從乾地上過去。」</span></p>
+                    <p>神不僅讓水停住，還讓河床變成了「乾地」，讓百姓走得安穩。更令人感動的是那些抬約櫃的祭司，他們站在河床的正中央「站立得穩」。這提醒我們，在教會中、在家庭裡，我們也需要有人願意扛起神同在的約櫃，在困難的中央站立得穩。當你經歷了神的恩典，不要急著自己跑到對岸享受，你要成為那個在洪流中為別人「站定」的人，用禱告和陪伴，護送那些軟弱的肢體平安度過他們的約旦河。</p>
+                </div>
+
+                <div class="pt-8 border-t border-white/5">
+                    <p class="text-white font-bold text-xl text-center italic">聆聽神的聲音，帶著祂的同在，勇敢地順服並踏出第一步吧！神必定為你開一條乾地之路！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h4 class="text-2xl font-display font-bold text-gold-500 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h4>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-gold-500 font-black">1.</span> 辨識並面對你的「約旦河」</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-black">2.</span> 讓「約櫃」走在前面</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-black">3.</span> 勇敢弄濕你的雙腳</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-black">4.</span> 為他人站立得穩</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h4 class="text-2xl font-display font-bold text-gold-500 mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    結論關鍵字
+                </h4>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-white font-bold">聆聽 Listen</span>
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-white font-bold">順服 Obey</span>
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-white font-bold">同在 Presence</span>
+                </div>
+                <div class="mt-8">
+                    <h5 class="text-gold-500 font-bold mb-3">實踐行動</h5>
+                    <p class="text-sm text-slate-400">本週練習每日聆聽、踏出信心一步、並為他人代禱。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h3 class="text-4xl font-display font-black tracking-tight text-white">名言佳句</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「信心主要不是取決於你的感覺如何，信心是取決於你正在看什麼。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 提摩太·凱勒 《在痛苦與苦難中與神同行》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「信心是對上帝的恩典一種活潑而大膽的信靠，這種信靠如此確切，以至於一個人為了它願意死上一千次。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 馬丁·路德 《羅馬書註釋序言》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「只有相信的人才會順服，也只有順服的人才會相信。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 潘霍華 《追隨基督》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「神一直在說話。我們之所以聽不見，不是因為祂不說話，而是我們沒有預備好去聆聽。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 陶恕 《渴慕神》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「蝸牛憑著毅力也爬進了方舟。你若覺得自己走得慢，只要方向正確，持之以恆，神必帶領你到達應許之地。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 司布真 《清晨甘露》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「信心不是基於我們對事物本質的了解，而是基於神的話語那不可動搖的確據。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 約翰·加爾文 《基督教要義》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「信靠神，意味著相信儘管我們看不見前面的道路，祂卻早已在那裡等候我們。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 盧雲 《尋找回家路》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「門徒的道路是『在同一個方向上長期的順服』。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 畢德生 《天路客的行囊》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「真實的恩典必定會產生真實的行動。沒有行動的信仰，不過是空洞的幻想。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 喬納森·愛德華茲 《宗教情操真偽辨》</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-2 border-gold-500/30">
+                    <p class="text-slate-200 italic mb-4">「信心不是黑暗中盲目的跳躍，而是在光明中對神清楚啟示的理性且信靠的回應。」</p>
+                    <p class="text-gold-600 text-sm font-bold">— 約翰·史托德 《真理的尋索》</p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-16 text-center text-slate-500 text-sm border-t border-white/5 pt-8">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-river-900 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all animate-float z-[100]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+</body>
+</html>

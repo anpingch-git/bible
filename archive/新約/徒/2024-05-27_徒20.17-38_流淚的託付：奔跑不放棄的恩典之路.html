@@ -82,7 +82,24 @@
             box-shadow: 0 10px 25px -5px rgba(255, 185, 45, 0.4);
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '徒20:17-38',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '徒',         // 動態注入書卷縮寫，例如：出
+              'note_title': '流淚的託付：奔跑不放棄的恩典之路' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans antialiased">
 
     <!-- Navigation Bar -->

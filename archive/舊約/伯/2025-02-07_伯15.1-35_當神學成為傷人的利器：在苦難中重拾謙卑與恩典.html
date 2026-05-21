@@ -85,7 +85,24 @@
             scroll-margin-top: 80px;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '伯15:1-35',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '伯',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當神學成為傷人的利器：在苦難中重拾謙卑與恩典' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans">
 
     <!-- Sticky Navigation -->

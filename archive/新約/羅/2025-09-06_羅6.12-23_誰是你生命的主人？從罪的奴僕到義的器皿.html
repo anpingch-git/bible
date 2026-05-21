@@ -99,7 +99,24 @@
             animation: bounce-subtle 1.5s ease-in-out infinite;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '羅6:12-23',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '羅',         // 動態注入書卷縮寫，例如：出
+              'note_title': '誰是你生命的主人？從罪的奴僕到義的器皿' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="text-slate-200 font-sans leading-relaxed">
 
     <!-- Header / Banner Area -->

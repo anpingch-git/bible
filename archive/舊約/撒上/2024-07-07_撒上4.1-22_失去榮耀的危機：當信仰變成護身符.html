@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒上4:1-22:失去榮耀的危機：當信仰變成護身符</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            50: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        dark: {
+                            base: '#0a0a0a',
+                            surface: '#121212',
+                            accent: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(-2%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'none', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, transparent, #0a0a0a);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #facc15;
+            text-shadow: 0 0 8px rgba(250, 204, 21, 0.6);
+        }
+        /* Breathing animation for banner */
+        @keyframes breath {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        .breath-layer {
+            animation: breath 8s ease-in-out infinite;
+        }
+        /* Subtle jump for golden verse */
+        @keyframes micro-jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .micro-jump-text {
+            display: inline-block;
+            animation: micro-jump 4s ease-in-out infinite;
+        }
+        .bento-card {
+            background: #121212;
+            border: 1px solid #222;
+            border-radius: 1.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            border-color: #ca8a04;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-gold-400 font-display font-bold text-lg hidden md:block">撒上4:1-22</div>
+            <div class="flex space-x-6 md:space-x-10 text-sm font-medium tracking-widest overflow-x-auto whitespace-nowrap">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_c308ab71-a04d-4c25-aae7-bd08528069b9.jpg' alt='media_1' class="w-full h-full object-cover breath-layer" />
+            <div class="absolute inset-0 banner-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 id="top" class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight tracking-tight text-white drop-shadow-2xl">
+                撒上4:1-22：<br/>
+                <span class="text-gold-400 text-glow">失去榮耀的危機</span><br/>
+                <span class="text-2xl md:text-4xl font-normal opacity-90 mt-4 block">當信仰變成護身符</span>
+            </h1>
+            
+            <!-- Golden Verse -->
+            <div class="mt-12 md:mt-16">
+                <p class="micro-jump-text text-lg md:text-2xl italic font-display text-gold-100 max-w-2xl leading-relaxed">
+                    「她給孩子起名叫以迦博，說：『榮耀離開以色列了！』這是因神的約櫃被擄去，又因她公公和丈夫都死了。」
+                </p>
+                <p class="text-sm md:text-md text-gold-400 mt-4 opacity-80">— 撒母耳記上 4:21-22</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>
+                </div>
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="bg-gold-600 p-3 rounded-2xl">
+                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-white">心靈禱告</h2>
+                </div>
+                <p class="text-xl leading-loose text-gray-300 first-letter:text-5xl first-letter:font-bold first-letter:text-gold-400 first-letter:mr-3 first-letter:float-left">
+                    主啊，我們來到祢面前深深地痛悔。很多時候我們像當年的以色列人一樣，把祢當作解決問題的工具，把信仰當作追求成功與平安的護身符，卻忽略了祢是擁有絕對主權的聖潔上帝。求祢赦免我們有口無心的敬拜，光有宗教儀式卻失去對祢的敬畏。求祢的聖靈再次光照我們，不要讓「以迦博」的悲劇發生在我們的生命與教會中。懇求祢的榮耀重新充滿我們，讓我們單單敬拜祢自己，而不是敬拜祢的恩典。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="bg-blue-600 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#sec-1" class="bento-card p-6 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-bold text-gold-500 tracking-widest uppercase mb-2 block">Part 01</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">迷信的悲劇</h3>
+                        <p class="text-sm text-gray-400">撒上 4:1-4</p>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                        <div class="p-2 rounded-full border border-gray-700 group-hover:bg-gold-600 group-hover:text-black transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#sec-2" class="bento-card p-6 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-bold text-gold-500 tracking-widest uppercase mb-2 block">Part 02</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">虛假的狂歡</h3>
+                        <p class="text-sm text-gray-400">撒上 4:5-11</p>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                        <div class="p-2 rounded-full border border-gray-700 group-hover:bg-gold-600 group-hover:text-black transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#sec-3" class="bento-card p-6 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-xs font-bold text-gold-500 tracking-widest uppercase mb-2 block">Part 03</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">榮耀的離開</h3>
+                        <p class="text-sm text-gray-400">撒上 4:12-22</p>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                        <div class="p-2 rounded-full border border-gray-700 group-hover:bg-gold-600 group-hover:text-black transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="sec-1" class="scroll-mt-28">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-gold-400 mb-8 border-l-4 border-gold-600 pl-6">第一段：迷信的悲劇——把上帝當作「阿拉丁神燈」</h3>
+                    <div class="bg-dark-surface rounded-3xl p-8 space-y-8">
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 flex items-center"><span class="w-2 h-2 bg-gold-600 rounded-full mr-2"></span> 引用經文 (撒上 4:1-4)</h4>
+                            <p class="text-gray-300 leading-relaxed bg-dark-base p-6 rounded-xl italic">
+                                以色列人出去與非利士人打仗...以色列的長老說：「耶和華今日為何使我們敗在非利士人面前呢？我們不如將耶和華的約櫃從示羅擡到我們這裡來，好在我們中間救我們脫離敵人的手。」...
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-white mb-3">關鍵字解析</h4>
+                                <ul class="space-y-3 text-gray-400">
+                                    <li><strong class="text-gold-200">約櫃 (Aron)</strong>: 象徵神的同在，而非神本身。</li>
+                                    <li><strong class="text-gold-200">救 (Yasha)</strong>: 長老們寄望於「物」的拯救。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-3">關鍵問題</h4>
+                                <p class="text-gray-400 italic">長老們面對失敗時，為何選擇「屬靈捷徑」而非「真心悔改」？</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-900/10 border-l-2 border-gold-600 p-6 rounded-r-xl">
+                            <p class="text-gold-200"><span class="font-bold">名言：</span>「偶像崇拜不僅僅是跪拜一個雕像；當你利用上帝來達到你的目的，而不是將自己獻給上帝來成就祂的目的時，這就是偶像崇拜。」 — 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="sec-2" class="scroll-mt-28">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-gold-400 mb-8 border-l-4 border-gold-600 pl-6">第二段：虛假的狂歡——失去敬畏的信仰只剩空殼</h3>
+                    <div class="bg-dark-surface rounded-3xl p-8 space-y-8">
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 flex items-center"><span class="w-2 h-2 bg-gold-600 rounded-full mr-2"></span> 引用經文 (撒上 4:5-11)</h4>
+                            <p class="text-gray-300 leading-relaxed bg-dark-base p-6 rounded-xl italic">
+                                耶和華的約櫃到了營中，以色列眾人就大聲歡呼，地便震動...非利士人就懼怕起來...以色列的步兵仆倒了三萬。神的約櫃被擄去...
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-white mb-3">關鍵字解析</h4>
+                                <ul class="space-y-3 text-gray-400">
+                                    <li><strong class="text-gold-200">歡呼 (Ruah)</strong>: 震耳欲聾的吶喊，卻建立在虛假的安全感上。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-3">關鍵問題</h4>
+                                <p class="text-gray-400 italic">為何狂熱的宗教儀式（歡呼）無法震動陰間的權勢？</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-900/10 border-l-2 border-gold-600 p-6 rounded-r-xl">
+                            <p class="text-gold-200"><span class="font-bold">名言：</span>「我們如果只是擁有一套正確的教義，卻沒有神的同在，那我們的信仰就如同在冰塊上雕刻出來的火焰。」 — 陶恕</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="sec-3" class="scroll-mt-28">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold text-gold-400 mb-8 border-l-4 border-gold-600 pl-6">第三段：榮耀的離開——以迦博的哀歌與神權的彰顯</h3>
+                    <div class="bg-dark-surface rounded-3xl p-8 space-y-8">
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 flex items-center"><span class="w-2 h-2 bg-gold-600 rounded-full mr-2"></span> 引用經文 (撒上 4:12-22)</h4>
+                            <p class="text-gray-300 leading-relaxed bg-dark-base p-6 rounded-xl italic">
+                                她給孩子起名叫以迦博，說：「榮耀離開以色列了！」這是因神的約櫃被擄去...
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-white mb-3">關鍵字解析</h4>
+                                <ul class="space-y-3 text-gray-400">
+                                    <li><strong class="text-gold-200">以迦博 (Ichabod)</strong>: 意為「沒有榮耀」。</li>
+                                    <li><strong class="text-gold-200">榮耀 (Kabod)</strong>: 原意為「重量」，象徵神有威嚴的同在。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-3">關鍵問題</h4>
+                                <p class="text-gray-400 italic">約櫃被擄是上帝被打敗了嗎？神為何主動撤回保護？</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-900/10 border-l-2 border-gold-600 p-6 rounded-r-xl">
+                            <p class="text-gold-200"><span class="font-bold">名言：</span>「我們的心是一個不斷製造偶像的工廠。當我們失去了對神榮耀的敏銳度，我們就會抓住那些無用的替代品。」 — 約翰·加爾文</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="bg-emerald-600 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">完整講章</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-lg max-w-none space-y-12 text-gray-300">
+                <p class="text-2xl font-display text-white text-center mb-12">撒上4:1-22：失去榮耀的危機：當信仰變成護身符</p>
+                
+                <p>各位弟兄姊妹，平安。今天我們要看一段舊約歷史中最令人心碎、也最發人深省的故事。</p>
+
+                <div class="space-y-6">
+                    <h3 class="text-gold-400 font-bold text-2xl">第一段：迷信的悲劇——把上帝當作「阿拉丁神燈」</h3>
+                    <p>
+                        以色列人在戰場上吃敗仗，死了四千人。面對失敗，長老們問了一個很好的問題：「耶和華今日為何使我們敗？」但他們沒有在神面前尋求答案、沒有悔改，反而想出一個致命的餿主意——把神的約櫃抬出來。他們以為只要有約櫃在陣中，就能<span class="text-white font-bold underline decoration-gold-600 decoration-2">「救我們脫離敵人的手」</span>。
+                    </p>
+                    <p>
+                        他們把「約櫃」當作了「上帝」，把「信仰」降級為「迷信」。就像今天有些基督徒，平常不讀經、不禱告，遇到難處了，就想透過禁食、多奉獻一點錢，或者找名牧師禱告，來「逼」上帝成就自己的心意。提摩太·凱勒牧師曾一針見血地指出：「偶像崇拜不僅僅是跪拜一個雕像；當你利用上帝來達到你的目的，而不是將自己獻給上帝來成就祂的目的時，這就是偶像崇拜。」我們必須問自己：我們是在敬拜神，還是企圖利用神？
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-gold-400 font-bold text-2xl">第二段：虛假的狂歡——失去敬畏的信仰只剩空殼</h3>
+                    <p>
+                        當約櫃進入營中，以色列人<span class="text-white font-bold">大聲歡呼，地便震動</span>。這場面多麼壯觀！連敵人都嚇得發抖。以色列人以為勝利在望，但結果呢？他們慘敗，死了三萬人，連約櫃都被擄走。
+                    </p>
+                    <p>
+                        為什麼外表狂熱的歡呼，卻帶來最大的慘敗？因為他們只有宗教的狂熱，卻沒有生命的聖潔；祭司何弗尼、非尼哈滿身罪惡，卻還敢抬著至聖的約櫃。陶恕說得好：「我們如果只是擁有一套正確的教義，卻沒有神的同在，那我們的信仰就如同在冰塊上雕刻出來的火焰，空有其表卻沒有絲毫熱度。」弟兄姊妹，沒有真實敬畏的聚會，聲音再大，也只是虛假的狂歡。神不會被我們熱鬧的宗教儀式所綁架。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-gold-400 font-bold text-2xl">第三段：榮耀的離開——以迦博的哀歌與神權的彰顯</h3>
+                    <p>
+                        消息傳回示羅，九十八歲的以利跌斷頸骨而死。他的媳婦在臨死前生下一個孩子，<span class="text-gold-400 font-bold italic">「她給孩子起名叫以迦博，說：『榮耀離開以色列了！』這是因神的約櫃被擄去，又因她公公和丈夫都死了。」</span> 這是我們今天的<span class="text-white font-bold">金句</span>。
+                    </p>
+                    <p>
+                        「以迦博」的意思就是榮耀離開了。約櫃被擄，不是上帝被打敗了，而是上帝主動撤回了祂的同在。神寧願讓象徵自己同在的約櫃被外邦人擄去，也不願與以色列人的罪惡妥協。神的主權何等威嚴！約翰·加爾文提醒我們：「我們的心是一個不斷製造偶像的工廠。當我們失去了對神榮耀的敏銳度，我們就會抓住那些無用的替代品，卻不知神的榮耀早已離開。」
+                    </p>
+                </div>
+
+                <div class="bg-dark-surface p-8 rounded-3xl border border-gold-900/30">
+                    <h3 class="text-white font-bold text-2xl mb-4">結論</h3>
+                    <p>
+                        弟兄姊妹，讓這個歷史悲劇成為我們的警鐘。不要讓「以迦博」寫在我們個人的生命與教會的門楣上。讓我們放下想要操控神的念頭，以真正的<span class="text-gold-400 font-bold">敬畏</span>，尋求祂的<span class="text-gold-400 font-bold">同在</span>，並完全順服祂的<span class="text-gold-400 font-bold">主權</span>。阿們。
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass p-10 rounded-[2rem]">
+                <h3 class="text-2xl font-display font-bold text-gold-400 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-start"><span class="text-gold-600 mr-2">01.</span> 檢視信仰動機：是把上帝當主，還是當提款機？</li>
+                    <li class="flex items-start"><span class="text-gold-600 mr-2">02.</span> 打破形式主義：反省敬拜是否只剩熱鬧而無聖潔？</li>
+                    <li class="flex items-start"><span class="text-gold-600 mr-2">03.</span> 恢復對神的敬畏：建立真實而非利用的關係。</li>
+                </ul>
+            </div>
+            <div class="glass p-10 rounded-[2rem]">
+                <h3 class="text-2xl font-display font-bold text-gold-400 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-start"><span class="text-gold-600 mr-2">●</span> 花十分鐘安靜認罪，寫下企圖利用神的時刻。</li>
+                    <li class="flex items-start"><span class="text-gold-600 mr-2">●</span> 本週操練「讚美與聆聽」，而非單方面祈求。</li>
+                    <li class="flex items-start"><span class="text-gold-600 mr-2">●</span> 團隊省察：事工是靠傳統經驗還是聖靈引導？</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="bg-purple-600 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「神從來不曾答應要賜福我們所做的計畫；祂只要求我們順服祂的計畫，因為祂的計畫已經蒙了賜福。」</p>
+                    <p class="text-sm text-gold-500">— 大衛·鮑森，《大衛鮑森舊約縱覽》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「廉價的恩典是我們教會的死敵。廉價的恩典是沒有主耶穌基督的恩典。」</p>
+                    <p class="text-sm text-gold-500">— 潘霍華，《做門徒的代價》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「今天教會最大的悲劇，就是信徒以為只要擁有宗教的儀式，就等於擁有了神的同在。」</p>
+                    <p class="text-sm text-gold-500">— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「如果你把任何事物看得比上帝還重要，期望它給你帶來意義、盼望或快樂，那麼這個事物就是你的偶像。」</p>
+                    <p class="text-sm text-gold-500">— 提摩太·凱勒，《假神》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「真正的上帝是一位烈火般的上帝，祂要求我們全然的降服。」</p>
+                    <p class="text-sm text-gold-500">— 約翰·史托德，《當代基督十架》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「沒有聖靈同在的教會，就像一具穿著華麗衣服的屍體。」</p>
+                    <p class="text-sm text-gold-500">— 司布真，《講道與傳道人員》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「真正的屬靈情感，是出於對上帝本身之榮耀與聖潔的愛。」</p>
+                    <p class="text-sm text-gold-500">— 喬納森·愛德華茲，《宗教情操真偽辨》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「人墮落的本性總是傾向於將可見的標誌等同於屬靈的實體。」</p>
+                    <p class="text-sm text-gold-500">— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「如果你的心沒有真實地降服於基督，這些宗教活動連一盎司的救恩都不能帶給你。」</p>
+                    <p class="text-sm text-gold-500">— 葛理翰，《與神和好》</p>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="text-lg italic text-gray-200 mb-4">「當人把上帝當作物來利用的時候，這就叫作迷信；當人把神當作主來順服的時候，這才叫作信仰。」</p>
+                    <p class="text-sm text-gold-500">— 唐崇榮，《信仰與迷信》</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-6 border border-red-900/30 bg-red-950/10 rounded-2xl text-center text-gray-500 text-sm">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-black rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 hover:scale-110 transition-all z-[60] animate-bounce-subtle">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

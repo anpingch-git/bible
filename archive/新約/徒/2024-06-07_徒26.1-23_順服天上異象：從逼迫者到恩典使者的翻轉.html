@@ -128,7 +128,24 @@
             animation: breathing 8s ease-in-out infinite;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '徒26:1-23',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '徒',         // 動態注入書卷縮寫，例如：出
+              'note_title': '順服天上異象：從逼迫者到恩典使者的翻轉' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-body">
 
     <!-- Navigation -->

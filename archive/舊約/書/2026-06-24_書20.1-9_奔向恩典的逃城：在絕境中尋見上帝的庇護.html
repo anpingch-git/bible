@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書20:1-9：奔向恩典的逃城：在絕境中尋見上帝的庇護</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#991B1B',
+                        darkBg: '#0A0A0A',
+                        cardBg: '#1A1A1A',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-subtle': 'bounce-subtle 3s infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(-2%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'none', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0A;
+            color: #E5E7EB;
+            scroll-behavior: smooth;
+        }
+        .banner-container {
+            position: relative;
+            height: 60vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.4);
+            animation: breathe 8s infinite ease-in-out;
+        }
+        @keyframes breathe {
+            0%, 100% { filter: brightness(0.3); transform: scale(1); }
+            50% { filter: brightness(0.6); transform: scale(1.05); }
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FDE68A, #D4AF37, #FDE68A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .bento-card {
+            background: #161616;
+            border: 1px solid #262626;
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: #D4AF37;
+            background: #1A1A1A;
+            transform: translateY(-5px);
+        }
+        .outline-btn {
+            border: 1px solid #D4AF37;
+            padding: 0.75rem 1.5rem;
+            border-radius: 99px;
+            color: #D4AF37;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        .outline-btn:hover {
+            background: #D4AF37;
+            color: #000;
+        }
+        .floating-arrow {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #D4AF37;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            z-index: 100;
+            transition: transform 0.3s;
+        }
+        .floating-arrow:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '書20:1-9',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '書',         // 動態注入書卷縮寫，例如：出
+              'note_title': '奔向恩典的逃城：在絕境中尋見上帝的庇護' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav fixed top-0 left-0 w-full z-50 py-4 px-6 flex justify-between items-center">
+        <div class="text-gold font-display font-bold text-lg tracking-tight">書20:1-9</div>
+        <div class="flex gap-6 text-sm font-medium tracking-widest text-gray-400">
+            <a href="#prayer" class="hover:text-gold transition">禱告</a>
+            <a href="#outline" class="hover:text-gold transition">大綱</a>
+            <a href="#sermon" class="hover:text-gold transition">講章</a>
+            <a href="#quotes" class="hover:text-gold transition">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="top" class="banner-container relative flex items-center justify-center text-center">
+        <img src='image/img_86debc73-4de7-4ad5-913a-5915cc18e5ae.jpg' alt='media_1' class="banner-img" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-6">
+            <h1 class="text-4xl md:text-6xl font-serif font-black text-white leading-tight mb-8 drop-shadow-2xl animate-fade-in-up">
+                奔向恩典的逃城<br>
+                <span class="text-gold mt-4 block">在絕境中尋見上帝的庇護</span>
+            </h1>
+            <div class="max-w-3xl animate-bounce-subtle">
+                <p class="text-xl md:text-2xl text-white font-light italic leading-relaxed">
+                    「使那無心而誤殺人的，可以逃到那裡。這些城可以作你們逃避報血仇之人的地方。」
+                </p>
+                <p class="text-gold font-bold mt-4 tracking-widest">— 約書亞記 20:3</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="animate-fade-in-up">
+            <div class="flex items-center gap-4 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.917c-.49-.59-.772-1.353-.772-2.14 0-1.63 1.32-2.943 2.943-2.943a2.95 2.95 0 012.316 1.144L12 11.41l3.741-4.266a2.95 2.95 0 012.316-1.144c1.623 0 2.943 1.314 2.943 2.943 0 .787-.282 1.55-.772 2.14L12 21z"></path></svg>
+                <h2 class="text-3xl font-serif font-bold text-white tracking-wider">開路者的禱告</h2>
+            </div>
+            <div class="glass p-10 rounded-[40px] border border-white/10 bg-gradient-to-br from-white/5 to-transparent">
+                <p class="text-xl leading-relaxed text-gray-300 font-light indent-8">
+                    慈悲的阿爸天父，我們滿心感謝祢。在我們軟弱、過犯與無心之失中，祢沒有任憑我們被罪惡與仇恨吞噬，反而為我們設立了耶穌基督作為我們靈魂的逃城。主啊，懇求祢的聖靈今天光照我們的心，讓我們看見自己是何等需要這份恩典的庇護。求祢給我們奔向祢的勇氣，在基督的寶血裡得著真正的赦免與安息，並使我們的生命也能成為別人遇見恩典的出口。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                <h2 class="text-3xl font-serif font-bold text-white tracking-wider">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="outline-btn text-center text-sm">一、恩典的設立：為無心之過開一扇窗</a>
+                <a href="#part2" class="outline-btn text-center text-sm">二、庇護的代價：大祭司之死帶來真自由</a>
+                <a href="#part3" class="outline-btn text-center text-sm">三、敞開的大門：超越血緣的無盡接納</a>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Part 1 -->
+                <div id="part1" class="bento-card">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-display font-bold text-4xl opacity-50">01</span>
+                        <div class="text-right">
+                            <span class="bg-gold/10 text-gold px-3 py-1 rounded text-xs font-bold">書 20:1-3</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-6">恩典的設立：為無心之過開一扇窗</h3>
+                    <div class="space-y-6 text-gray-400">
+                        <div class="bg-black/30 p-4 border-l-4 border-gold italic text-gray-300">
+                            「耶和華曉諭約書亞說：你們要照著我藉摩西所曉諭你們的，為自己設立逃城...使那無心而誤殺人的，可以逃到那裡。」
+                        </div>
+                        <p><strong class="text-white">關鍵原文：</strong> 「逃城」（希伯來文：מִקְלָט，miqlat）：意為避難所、庇護所。上帝為因應人類軟弱而設立的恩典之窗。</p>
+                        <p><strong class="text-white">核心問答：</strong> 為何設立逃城？上帝在嚴厲的律法中開了恩典之窗，逃城正是耶穌基督的預表。</p>
+                        <p><strong class="text-white">佳句：</strong> 「福音就是：我們遠比自己所敢相信的更加敗壞，但同時在基督裡更被接納。」 — 提摩太·凱勒</p>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="bento-card">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-display font-bold text-4xl opacity-50">02</span>
+                        <div class="text-right">
+                            <span class="bg-gold/10 text-gold px-3 py-1 rounded text-xs font-bold">書 20:4-6</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-6">庇護的代價：大祭司之死帶來真自由</h3>
+                    <div class="space-y-6 text-gray-400">
+                        <div class="bg-black/30 p-4 border-l-4 border-gold italic text-gray-300">
+                            「等到那時的大祭司死了，殺人的才可以回到本城本家。」
+                        </div>
+                        <p><strong class="text-white">關鍵原文：</strong> 「大祭司死了」（the death of the high priest）：象徵舊時代結束與罪債了結的贖罪記號。</p>
+                        <p><strong class="text-white">核心問答：</strong> 為何等大祭司死？死是代贖，基督的受死使我們重獲自由與榮耀。</p>
+                        <p><strong class="text-white">例證：</strong> 奧斯威辛集中營的科爾貝神父，以命換命，使囚犯成為「被重價贖回的自由人」。</p>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="bento-card">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-display font-bold text-4xl opacity-50">03</span>
+                        <div class="text-right">
+                            <span class="bg-gold/10 text-gold px-3 py-1 rounded text-xs font-bold">書 20:7-9</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-6">敞開的大門：超越血緣的無盡接納</h3>
+                    <div class="space-y-6 text-gray-400">
+                        <div class="bg-black/30 p-4 border-l-4 border-gold italic text-gray-300">
+                            「這都是為以色列眾人和在他們中間寄居的外人所分派的城邑。」
+                        </div>
+                        <p><strong class="text-white">關鍵原文：</strong> 「寄居的外人」（希伯來文：גֵּר，ger）：指無產權、無地位的外族人，神救恩的普世性。</p>
+                        <p><strong class="text-white">核心問答：</strong> 逃城向誰敞開？不分血緣地位，只要願意奔向基督，都能得到拯救。</p>
+                        <p><strong class="text-white">佳句：</strong> 「當律法的審判追趕我們時，避難所的主，已經親自降臨到我們身旁。」 — 司布真</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-16">
+            <div class="flex items-center gap-4 mb-4">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-3xl font-serif font-bold text-white tracking-wider">講章文稿</h2>
+            </div>
+
+            <article class="prose prose-invert prose-lg max-w-none space-y-12">
+                <div class="sermon-section">
+                    <h3 class="text-gold text-2xl font-bold mb-6">前言：當追討臨到時，我們逃往何處？</h3>
+                    <p class="leading-relaxed text-gray-300">
+                        各位弟兄姊妹，平安。我們人生中難免會有無心之過，有時一個錯誤的決定、一句無心的話語，可能會帶來難以挽回的後果，讓我們陷入深深的自責與外界的控告之中。當律法的追討與良心的報應追趕我們時，我們該往哪裡逃？今天，我們要從約書亞記第20章，看見上帝如何在嚴厲的律法中，為絕望的人預備了**恩典的逃城**。
+                    </p>
+                </div>
+
+                <div class="sermon-section border-t border-white/5 pt-12">
+                    <h4 class="text-white text-xl font-bold mb-6">一、恩典的設立：為無心之過開一扇窗</h4>
+                    <p class="leading-relaxed text-gray-300">
+                        在我們今天的經文約書亞記20:1-3中：「耶和華曉諭約書亞說：『你吩咐以色列人說：你們要照著我藉摩西所曉諭你們的，為自己設立逃城，<span class="text-gold font-bold">使那無心而誤殺人的，可以逃到那裡。這些城可以作你們逃避報血仇之人的地方。</span>』」
+                    </p>
+                    <p class="leading-relaxed text-gray-300">
+                        上帝是公義的，罪惡必須被付上代價。但上帝深知人的軟弱，因此祂親自吩咐設立「逃城」（miqlat）。這不是為了包庇蓄意犯罪，而是為了保護絕境中的無心者。上帝在公義的城牆上，親自鑿開了恩典的窗口。
+                    </p>
+                </div>
+
+                <div class="sermon-section border-t border-white/5 pt-12">
+                    <h4 class="text-white text-xl font-bold mb-6">二、庇護的代價：大祭司之死帶來真自由</h4>
+                    <p class="leading-relaxed text-gray-300 italic">
+                        「等到那時的大祭司死了，殺人的才可以回到本城本家。」
+                    </p>
+                    <p class="leading-relaxed text-gray-300">
+                        這是一個極其奇妙的規定。逃亡者重獲自由的關鍵不是刑滿，而是<span class="text-gold font-bold">「大祭司死了」</span>。大祭司的死象徵著代贖，清償了血債。
+                    </p>
+                    <p class="leading-relaxed text-gray-300">
+                        我們今天能得著自由，是因為我們的大祭司——耶穌基督，為我們死在了十字架上！<span class="text-gold">「恩典是白白的，但絕不是廉價的。它之所以付上極大的代價，是因為它使神付出了祂兒子的生命。」</span> 基督的死，滿足了律法，徹底釋放了我們。
+                    </p>
+                </div>
+
+                <div class="sermon-section border-t border-white/5 pt-12">
+                    <h4 class="text-white text-xl font-bold mb-6">三、敞開的大門：超越血緣的無盡接納</h4>
+                    <p class="leading-relaxed text-gray-300">
+                        上帝將六座城均勻地分布，確保任何人半天之內都能抵達。更重要的是，這逃城不僅向以色列人敞開，也向<span class="text-gold">「寄居的外人」</span>敞開！這表明上帝的救恩不分階級、不分背景。
+                    </p>
+                    <p class="leading-relaxed text-gray-300">
+                        弟兄姊妹，今天你是否正在被過去的錯誤、內疚或是仇敵的控告追趕？不要留在曠野等死，奔向你的逃城吧！耶穌基督就是你的避難所，祂的大門為你敞開，祂的寶血為你流出。阿們。
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-serif font-bold text-white tracking-wider">屬靈佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 border-l-2 border-gold/30 hover:border-gold transition">
+                    <p class="text-gray-300 mb-2">「福音的核心是：耶穌基督代替我們活了我們本該活出的完美生命，並代替我們承受了我們本該承受的罪的刑罰。」</p>
+                    <span class="text-gold text-sm font-bold">— 提摩太·凱勒 《被釘十字架的王》</span>
+                </div>
+                <div class="p-6 border-l-2 border-gold/30 hover:border-gold transition">
+                    <p class="text-gray-300 mb-2">「除非你看到自己正身處地獄的邊緣，否則你永遠無法看清基督作為逃城的寶貴。」</p>
+                    <span class="text-gold text-sm font-bold">— 司布真 《每日清晨靈修》</span>
+                </div>
+                <div class="p-6 border-l-2 border-gold/30 hover:border-gold transition">
+                    <p class="text-gray-300 mb-2">「十字架是上帝公義與慈愛完美相交的點；在這裡，罪被嚴厲地刑罰，而罪人卻被溫柔地赦免。」</p>
+                    <span class="text-gold text-sm font-bold">— 約翰·史托德 《當代基督十架》</span>
+                </div>
+                <div class="p-6 border-l-2 border-gold/30 hover:border-gold transition">
+                    <p class="text-gray-300 mb-2">「上帝不會拒絕任何一個帶著破碎心靈來到祂面前的人。祂的十字架就是我們唯一的避風港。」</p>
+                    <span class="text-gold text-sm font-bold">— 葛理翰 《漫漫歸鄉路》</span>
+                </div>
+                <div class="p-6 border-l-2 border-gold/30 hover:border-gold transition">
+                    <p class="text-gray-300 mb-2">「上帝的恩典是無可限量的，當我們走到自己能力的盡頭時，正是上帝恩典開始的地方。」</p>
+                    <span class="text-gold text-sm font-bold">— 陶恕 《渴慕神》</span>
+                </div>
+                <div class="p-6 border-l-2 border-gold/30 hover:border-gold transition">
+                    <p class="text-gray-300 mb-2">「我們若不在基督裡尋找避難所，我們的良心將永無寧日，永遠在定罪的恐懼中戰慄。」</p>
+                    <span class="text-gold text-sm font-bold">— 約翰·加爾文 《基督教要義》</span>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-8 border border-white/5 bg-white/5 rounded-2xl text-center">
+                <p class="text-gray-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="floating-arrow">
+        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

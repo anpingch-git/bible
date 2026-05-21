@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書14:1-15:將山地賜給我：專心跟從的信仰傳奇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkBg: '#0A0A0B',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                        accent: '#E5C100',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            background: linear-gradient(to bottom, transparent 0%, #0A0A0B 100%);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+        .content-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        .content-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-4px);
+        }
+        .bouncing {
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '書14:1-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '書',         // 動態注入書卷縮寫，例如：出
+              'note_title': '將山地賜給我：專心跟從的信仰傳奇' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-gold selection:text-black">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-4 md:px-8">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center overflow-x-auto scrollbar-hide">
+            <span class="text-gold font-bold text-sm md:text-base whitespace-nowrap mr-6">書 14:1-15</span>
+            <div class="flex space-x-6 md:space-x-10 text-xs md:text-sm font-medium tracking-widest text-gray-300 uppercase">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="header" class="relative h-[80vh] w-full overflow-hidden">
+        <div class="absolute inset-0 animate-breath">
+            <img src='image/img_d6e46a51-8731-4540-b80d-94d357a90391.jpg' alt='Epic Biblical Landscape' class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 banner-mask"></div>
+        <div class="absolute inset-0 flex flex-col justify-end items-center px-6 pb-20 text-center">
+            <h1 class="text-4xl md:text-7xl font-black font-display glow-text mb-6 tracking-tighter text-white">
+                將山地賜給我<br><span class="text-gold">專心跟從的信仰傳奇</span>
+            </h1>
+            
+            <!-- Floating Verse - No Border -->
+            <div class="max-w-3xl mt-8">
+                <p class="text-xl md:text-2xl font-bold text-white bouncing leading-relaxed italic">
+                    「求你將耶和華那日應許我的這山地給我；那裡有亞衲族人，並寬大堅固的城，你也曾聽見了。或者耶和華照他所應許的與我同在，我就把他們趕出去。」
+                </p>
+                <p class="text-gold mt-4 text-sm tracking-widest font-bold">約書亞記 14:12</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="p-3 bg-gold/10 rounded-full">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white tracking-widest">禱告</h2>
+            </div>
+            <div class="content-card p-8 md:p-12 rounded-3xl text-lg md:text-xl leading-relaxed italic text-gray-300">
+                主啊，求祢賜我們如迦勒般專心跟從的心志。當面對生命中的「亞衲族人」與艱難的山地時，不看環境的險惡，只仰望祢信實的應許。求祢更新我們的力量，使我們無論在人生哪個階段，都能勇敢宣告「將這山地賜給我」，並倚靠祢的同在得勝。奉主耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="p-3 bg-gold/10 rounded-full">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white tracking-widest">大綱與深入解析</h2>
+            </div>
+            
+            <!-- Outline Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section-1" class="p-6 bg-gold/20 border border-gold/30 rounded-2xl hover:bg-gold/30 transition-all text-center">
+                    <span class="block text-gold text-xs font-bold mb-1">第一段 (書 14:1-5)</span>
+                    <span class="text-white font-bold">應許的傳承</span>
+                </a>
+                <a href="#section-2" class="p-6 bg-gold/20 border border-gold/30 rounded-2xl hover:bg-gold/30 transition-all text-center">
+                    <span class="block text-gold text-xs font-bold mb-1">第二段 (書 14:6-9)</span>
+                    <span class="text-white font-bold">四十五年的堅持</span>
+                </a>
+                <a href="#section-3" class="p-6 bg-gold/20 border border-gold/30 rounded-2xl hover:bg-gold/30 transition-all text-center">
+                    <span class="block text-gold text-xs font-bold mb-1">第三段 (書 14:10-15)</span>
+                    <span class="text-white font-bold">未竟之志</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Sections -->
+            <div class="space-y-20">
+                <!-- Section 1 -->
+                <div id="section-1" class="scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-gold border-l-4 border-gold pl-4 mb-8">應許的傳承：按神心意領受產業</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                        <div class="lg:col-span-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="text-gold text-xs font-black uppercase mb-4 tracking-widest">引用經文</h4>
+                            <p class="text-sm leading-relaxed text-gray-400 italic">以色列人在迦南地所得的產業...是照耶和華藉摩西所吩咐的，把產業拈鬮分給九個半支派...耶磐華怎樣吩咐摩西，以色列人就照樣行，把地分了。</p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-white/10 text-white text-xs font-bold rounded-full mb-3">關鍵字原文</span>
+                                <p class="text-lg text-white font-bold">拈鬮 (goral / גּוֹרָל)</p>
+                                <p class="text-gray-400 text-sm mt-1">將結果與主權完全交託給上帝，表明產業出於神的心意與恩典。</p>
+                            </div>
+                            <div class="content-card p-6 rounded-2xl">
+                                <p class="text-gold font-bold mb-2">關鍵問題：面對人生的「分配」，我們如何信賴上帝的主權？</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">真正的順服，是相信無論得著什麼樣的產業，都在上帝全知的藍圖之中。神的主權分配，即使看似惡劣，卻隱藏著極深的美意。</p>
+                            </div>
+                            <blockquote class="border-l-2 border-gray-600 pl-6 py-2 italic text-gray-400">
+                                「當我們認識到一切都由上帝的護理所掌管時，我們就能在最大的風暴中找到安寧。」 —— 約翰·加爾文
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section-2" class="scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-gold border-l-4 border-gold pl-4 mb-8">四十五年的堅持：專心跟從的信仰印記</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                        <div class="lg:col-span-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="text-gold text-xs font-black uppercase mb-4 tracking-widest">引用經文</h4>
+                            <p class="text-sm leading-relaxed text-gray-400 italic">「...然而，同我上去的眾弟兄使百姓的心消化；但我專心跟從耶和華－我的神。當日摩西起誓說：『你腳所踏之地定要歸你和你的子孫永遠為業』」</p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-white/10 text-white text-xs font-bold rounded-full mb-3">關鍵字原文</span>
+                                <p class="text-lg text-white font-bold">專心跟從 (male achare / מָלֵא אַחֲרֵי)</p>
+                                <p class="text-gray-400 text-sm mt-1">「充滿在後」或「完全跟隨」。一種毫不保留、沒有二心的委身。</p>
+                            </div>
+                            <div class="content-card p-6 rounded-2xl">
+                                <p class="text-gold font-bold mb-2">關鍵問題：什麼是「專心跟從神」？如何保持確信？</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">專心跟從需要抵擋群眾的壓力。就像芬尼·克羅斯比不因失明抱怨，反而將苦難化為讚美，毫無旁騖地歌頌神。</p>
+                            </div>
+                            <blockquote class="border-l-2 border-gray-600 pl-6 py-2 italic text-gray-400">
+                                「門徒訓練的核心，就是『在同一個方向上長久順服』。」 —— 畢德生
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section-3" class="scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-gold border-l-4 border-gold pl-4 mb-8">未竟之志：將這山地賜給我</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                        <div class="lg:col-span-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="text-gold text-xs font-black uppercase mb-4 tracking-widest">引用經文</h4>
+                            <p class="text-sm leading-relaxed text-gray-400 italic">「求你將耶和華那日應許我的這山地給我；那裡有亞衲族人...我就把他們趕出去。」約書亞為迦勒祝福，將希伯崙給他為業。</p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-white/10 text-white text-xs font-bold rounded-full mb-3">關鍵字原文</span>
+                                <p class="text-lg text-white font-bold">山地 (har / הַר)</p>
+                                <p class="text-gray-400 text-sm mt-1">代表極大的軍事挑戰與艱難，同時也是神應許的極致體現。</p>
+                            </div>
+                            <div class="content-card p-6 rounded-2xl">
+                                <p class="text-gold font-bold mb-2">關鍵問題：為什麼八十五歲仍主動要求最艱難的山地？</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">迦勒的眼光不在於「安逸」。就像馬禮遜宣教士面對龐大的挑戰時說：「我不行，但我相信上帝能。」他憑這力量攻克了語言的「亞衲族人」。</p>
+                            </div>
+                            <blockquote class="border-l-2 border-gray-600 pl-6 py-2 italic text-gray-400">
+                                「信仰不是為了讓我們過得舒服，而是為了讓我們擁有不被擊倒的勇氣。」 —— 提摩太·凱勒
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Direction -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 space-y-4">
+                <h4 class="text-gold font-black uppercase tracking-widest text-sm">應用 01</h4>
+                <p class="text-white font-bold text-lg">檢視心中的巨猿</p>
+                <p class="text-gray-400 text-sm leading-relaxed">將焦點從巨人的高大，轉移到神應許的真實。</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 space-y-4">
+                <h4 class="text-gold font-black uppercase tracking-widest text-sm">應用 02</h4>
+                <p class="text-white font-bold text-lg">培養屬靈耐力</p>
+                <p class="text-gray-400 text-sm leading-relaxed">學習迦勒在45年漫長等待中不抱怨、不妥協。</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/5 space-y-4">
+                <h4 class="text-gold font-black uppercase tracking-widest text-sm">應用 03</h4>
+                <p class="text-white font-bold text-lg">離開舒適圈</p>
+                <p class="text-gray-400 text-sm leading-relaxed">不再尋求平原安逸，主動為神挑戰「山地」。</p>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="p-3 bg-gold/10 rounded-full">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5L6 9H2V15H6L11 19V5Z M15.54 8.46a5 5 0 010 7.07 M19.07 4.93a10 10 0 010 14.14"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white tracking-widest">講章文稿</h2>
+            </div>
+
+            <article class="prose prose-invert max-w-none space-y-12">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-4xl font-black text-white mb-4">書14:1-15：將山地賜給我<br><span class="text-gold">專心跟從的信仰傳奇</span></h3>
+                </div>
+
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    弟兄姊妹們，今天我們要來看一位聖經中極具魄力的人物——迦勒。我們常渴望生命平順，但迦勒的信仰卻充滿了等待、挑戰與極大的勇氣。透過約書亞記14章1到15節，讓我們一起經歷這份「專心跟從」的震撼。
+                </p>
+
+                <div class="space-y-8">
+                    <h4 class="text-2xl font-bold text-white flex items-center"><span class="w-8 h-1 bg-gold mr-4"></span>一、應許的傳承：按神心意領受產業</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        面對人生的位置與資源，我們常常充滿比較與算計。為什麼別人分到肥沃的平原，我卻分到貧瘠的山地？但這裡的「拈鬮」，不是機率，而是絕對的順服。上帝擁有完全的主權，祂深知每個支派、每個人的需要與能承擔的使命。<br><br>
+                        <span class="text-gold font-black text-xl">真正的順服，就是相信上帝量給我的地界，永遠是最美好的。</span>
+                    </p>
+
+                    <h4 class="text-2xl font-bold text-white flex items-center"><span class="w-8 h-1 bg-gold mr-4"></span>二、四十五年的堅持：專心跟從的信仰印記</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        迦勒宣告：<span class="text-white font-bold">「但我專心跟從耶和華－我的神。」</span><br><br>
+                        什麼是「專心跟從」？這不是一種感覺，而是一種定意。45年來，迦勒忍受了無數的灰塵、抱怨與死亡，他的信心卻沒有因此發霉。他只是默默地、專心地跟從神。在充滿負面聲音的時代，我們是否也能像迦勒一樣，不被群眾的恐懼綁架，堅守神的話語？
+                    </p>
+
+                    <h4 class="text-2xl font-bold text-white flex items-center"><span class="w-8 h-1 bg-gold mr-4"></span>三、未竟之志：將這山地賜給我</h4>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        八十五歲，本該是退休安養天年的年紀。迦勒大可以要求一塊有水泉、沒有敵人的平原。但他卻指著最危險、敵人最巨大、城牆最堅固的「希伯崙山地」說：<span class="text-gold font-black">「把這山地給我！」</span><br><br>
+                        因為那是神應許的地方，迦勒絕不妥協！我們的力量不取決於肉體的年紀，而取決於上帝的同在。不要被眼前的巨人嚇退！願我們都能擁有迦勒的<span class="text-white font-bold">應許、專心與勇氣</span>，勇敢向神呼求：「主啊，將這山地賜給我，我要靠著祢的同在，將仇敵趕出去！」
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Keywords & Response -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="content-card p-10 rounded-[3rem]">
+                <h3 class="text-gold font-black tracking-widest mb-8 text-center uppercase text-sm">結論關鍵字</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-6 py-3 bg-white/10 rounded-full text-white font-bold text-lg">應許 Promise</span>
+                    <span class="px-6 py-3 bg-white/10 rounded-full text-white font-bold text-lg">專心 Wholeheartedness</span>
+                    <span class="px-6 py-3 bg-white/10 rounded-full text-white font-bold text-lg">勇氣 Courage</span>
+                </div>
+            </div>
+            <div class="content-card p-10 rounded-[3rem]">
+                <h3 class="text-gold font-black tracking-widest mb-8 text-center uppercase text-sm">回應實踐行動</h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-start space-x-3"><span class="text-gold font-black">01</span><span>重拾應許清單</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-gold font-black">02</span><span>操練專注時刻</span></li>
+                    <li class="flex items-start space-x-3"><span class="text-gold font-black">03</span><span>認領一座山地</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="p-3 bg-gold/10 rounded-full">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-black text-white tracking-widest">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「這個世界還未曾看見，一個完全奉獻給上帝的人，上帝能藉著他成就何等大的事。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">慕迪 (D.L. Moody)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《慕迪傳》</p>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「門徒訓練的核心，就是『在同一個方向上長久順服』。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">畢德生 (Eugene Peterson)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《長久順服》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「信仰不是為了讓我們過得舒服，而是為了讓我們在面對生命的風暴與高山時，擁有不被擊倒的勇氣。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">提摩太·凱勒 (Tim Keller)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《揮霍的上帝》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「上帝總是在尋找那些願意將全心交給祂的人，好向他們顯明祂的榮耀。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">陶恕 (A.W. Tozer)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《渴慕神》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">潘霍華 (Dietrich Bonhoeffer)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《追隨基督》</p>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「當我們認識到一切都由上帝的護理所掌管時，我們就能在最大的風暴中找到安寧。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">約翰·加爾文 (John Calvin)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《基督教要義》</p>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「信心是走上愛所建造的樓梯，並從盼望所開啟的窗戶向外觀看。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">司布真 (Charles Spurgeon)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《清晨甘露》</p>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「聽從神並將結果交給祂，是我們一生中最需要學習的功課。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">查爾斯·史丹利 (Charles Stanley)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《生命的準則》</p>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「唯有當我們確信自己是神所愛的孩子時，我們才能在充滿恐懼的世界中勇敢前行。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">盧雲 (Henri Nouwen)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《浪子回頭》</p>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="content-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 font-medium italic mb-6">「真實的信仰必定會帶出勇敢的行動；沒有行動的信仰，只不過是屬靈的幻想。」</p>
+                    <div class="text-right">
+                        <p class="text-gold font-bold">約翰·史托德 (John Stott)</p>
+                        <p class="text-gray-500 text-xs italic">—— 出處：《當代基督門徒》</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Label -->
+        <div class="pt-20 pb-10 text-center text-gray-600 text-sm tracking-widest">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-12 h-12 bg-gold/90 text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

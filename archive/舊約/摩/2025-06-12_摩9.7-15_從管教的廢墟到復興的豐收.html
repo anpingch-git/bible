@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摩9:7-15:從管教的廢墟到復興的豐收</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FDE68A',
+                            DEFAULT: '#D4AF37',
+                            dark: '#92400E',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.5s ease-out forwards',
+                        'slide-up': 'slideUp 1s ease-out forwards',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-4px);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #92400E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(2, 6, 23, 0.3) 0%, rgba(2, 6, 23, 1) 100%);
+        }
+        .outline-text {
+            -webkit-text-stroke: 1px rgba(212, 175, 55, 0.3);
+            color: transparent;
+        }
+        .sticky-nav-item {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .sticky-nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .sticky-nav-item:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .bento-item {
+            grid-column: span 12;
+        }
+        @media (min-width: 768px) {
+            .bento-item-6 { grid-column: span 6; }
+            .bento-item-8 { grid-column: span 8; }
+            .bento-item-4 { grid-column: span 4; }
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '摩9:7-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '摩',         // 動態注入書卷縮寫，例如：出
+              'note_title': '從管教的廢墟到復興的豐收' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-gold selection:text-slate-950">
+
+    <!-- Top Banner -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_1e7b8260-0703-4a6c-9895-4652c89ebc54.jpg' alt='摩亞西斯復興' class="w-full h-full object-cover opacity-60 scale-110" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl animate-fade-in">
+            <span class="font-accent tracking-[0.3em] text-gold uppercase mb-4 block text-sm sm:text-base">Amos 9:7-15</span>
+            <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl font-black mb-8 leading-tight">
+                從管教的<span class="gold-gradient">廢墟</span><br>
+                到復興的<span class="gold-gradient">豐收</span>
+            </h1>
+            <div class="flex flex-col items-center gap-6">
+                <div class="h-16 w-px bg-gradient-to-b from-gold to-transparent opacity-50"></div>
+                <p class="text-slate-400 font-accent text-lg max-w-2xl leading-relaxed">
+                    透過神公義的篩選，看見大衛帳幕的重建，與永恆應許的栽種。
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-display font-bold text-gold/90 text-sm sm:text-base tracking-wider hidden sm:block">
+                摩 9:7-15
+            </div>
+            <div class="flex gap-6 sm:gap-10 text-xs sm:text-sm font-accent tracking-widest text-slate-300 mx-auto sm:mx-0">
+                <a href="#prayer" class="sticky-nav-item hover:text-gold uppercase">禱告</a>
+                <a href="#outline" class="sticky-nav-item hover:text-gold uppercase">大綱</a>
+                <a href="#sermon" class="sticky-nav-item hover:text-gold uppercase">講章</a>
+                <a href="#quotes" class="sticky-nav-item hover:text-gold uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 金句 Section -->
+        <section class="flex justify-center" id="gold-verse">
+            <div class="relative p-12 glass-card rounded-3xl border-l-4 border-l-gold max-w-4xl w-full">
+                <svg class="absolute -top-6 -left-6 w-12 h-12 text-gold opacity-30" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H11.017C10.4647 12 10.017 11.5523 10.017 11V6C10.017 4.89543 10.8954 4 12.017 4H19.017C21.2261 4 23.017 5.79086 23.017 8V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1.017 21L1.017 18C1.017 16.8954 1.91243 16 3.017 16H6.017C6.56928 16 7.017 15.5523 7.017 15V9C7.017 8.44772 6.56928 8 6.017 8H2.017C1.46472 8 1.017 8.44772 1.017 9V11C1.017 11.5523 0.569282 12 0.017 12H-1.983C-2.53528 12 -2.983 11.5523 -2.983 11V6C-2.983 4.89543 -2.10457 4 -1.017 4H6.017C8.22614 4 10.017 5.79086 10.017 8V15C10.017 18.3137 7.33072 21 4.017 21H1.017Z" /></svg>
+                <h3 class="text-gold font-accent tracking-tighter text-sm mb-4">GOLDEN VERSE</h3>
+                <blockquote class="font-display text-2xl sm:text-3xl lg:text-4xl leading-relaxed text-white font-bold">
+                    「到那日，我必建立大衛倒塌的帳幕，堵住其中的破口，把那破壞的建立起來，重新修造，像古時一樣。」
+                </blockquote>
+                <cite class="block mt-6 text-slate-400 font-accent italic">— 阿摩司書 9:11</cite>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-gold/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A4.834 4.834 0 0112 9.25c-1.39 0-2.662.586-3.568 1.522L4.5 12m15 9V10.332A4.834 4.834 0 0112 9.25c-1.39 0-2.662.586-3.568 1.522L4.5 12" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">開路禱告</h2>
+            </div>
+            <div class="glass-card p-8 sm:p-12 rounded-3xl leading-loose text-slate-300 text-lg sm:text-xl border-t-2 border-t-gold/30">
+                親愛的天父，我們承認在祢面前，我們時常像驕傲的以色列人一樣，倚靠過去的屬靈經歷與恩典，卻輕忽了對罪的警覺。主啊，感謝祢在公義的管教中，仍為我們存留不滅絕的恩典。求祢今天對我們的心說話，當我們的生命如同倒塌的帳幕時，願祢大能的手親自修補我們生命中的破口，將廢墟重建為祢榮耀的居所。求祢將我們深深栽種在祢不變的愛與豐盛的應許中，使我們結出生命的果子。奉主耶穌基督的聖名禱告，阿們。
+            </div>
+        </section>
+
+        <!-- 大綱 Navigation Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="bg-gold/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass-card p-6 rounded-2xl group">
+                    <span class="text-gold font-accent text-xs mb-2 block opacity-60">SECTION 01</span>
+                    <h4 class="font-display font-bold text-lg group-hover:text-gold transition-colors">破除特權迷思：神公義的管教與精準的篩選</h4>
+                    <p class="text-slate-500 text-sm mt-2">摩 9:7-10</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl group">
+                    <span class="text-gold font-accent text-xs mb-2 block opacity-60">SECTION 02</span>
+                    <h4 class="font-display font-bold text-lg group-hover:text-gold transition-colors">恩典的重修：大衛倒塌帳幕的榮耀重建</h4>
+                    <p class="text-slate-500 text-sm mt-2">摩 9:11-12</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl group">
+                    <span class="text-gold font-accent text-xs mb-2 block opacity-60">SECTION 03</span>
+                    <h4 class="font-display font-bold text-lg group-hover:text-gold transition-colors">永恆的栽種：超越想像的豐盛與安息</h4>
+                    <p class="text-slate-500 text-sm mt-2">摩 9:13-15</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown -->
+        <div class="space-y-40">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-32 bento-grid">
+                <div class="bento-item lg:col-span-12">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-6xl font-black outline-text opacity-50 font-accent">01</span>
+                        <h3 class="text-3xl font-display font-bold">破除特權迷思：神公義的管教與精準的篩選</h3>
+                    </div>
+                </div>
+                
+                <div class="bento-item bento-item-8 glass-card p-8 rounded-3xl">
+                    <h4 class="text-gold font-accent text-sm mb-4 flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.392A7.969 7.969 0 015.5 14c1.255 0 2.443.29 3.5.804V4.804zM11 4.804A7.968 7.968 0 0114.5 4c1.255 0 2.443.29 3.5.804v10.392a7.969 7.969 0 00-3.5-.804V4.804z"></path></svg>
+                        SCRIPTURE
+                    </h4>
+                    <div class="text-slate-300 italic border-l-2 border-gold/20 pl-6 leading-relaxed">
+                        耶和華說：以色列人哪，我豈不看你們如古實人嗎？我豈不是領以色列人出埃及地，領非利士人出迦斐託，領亞蘭人出吉珥嗎？主耶和華的眼目察看這有罪的國，必將這國從地上滅絕，卻不將雅各家滅絕淨盡。這是耶和華說的。我必下令，將以色列家分散在萬國中，好像用篩子篩穀，連一粒也不落在地上。我民中的一切罪人說：災禍必追不上我們，也迎不著我們。他們必死在刀下。
+                    </div>
+                </div>
+
+                <div class="bento-item bento-item-4 bg-gold/5 border border-gold/20 p-8 rounded-3xl">
+                    <h4 class="text-gold font-accent text-sm mb-4">KEYWORD 原文</h4>
+                    <div class="mb-4">
+                        <span class="text-2xl font-bold block mb-1">篩子</span>
+                        <span class="text-slate-400 text-sm font-accent">希伯來文：כְּבָרָה kᵉbârâh</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        象徵神精準的審判與管教。神雖然將以色列分散在列國中震盪，但祂的目的是篩掉那些自以為義的「罪人」，卻保守真正的餘民連一粒也不失落。
+                    </p>
+                </div>
+
+                <div class="bento-item bento-item-6 glass-card p-8 rounded-3xl">
+                    <h4 class="text-gold font-accent text-sm mb-4">關鍵問題與解析</h4>
+                    <p class="font-bold text-lg mb-4 text-white">當我們自認擁有「屬靈特權」時，是否反而失去了對罪的敬畏與警覺？</p>
+                    <p class="text-slate-400 leading-relaxed">神的揀選不是讓人放縱犯罪的特權。真正的信仰不在於過去的頭銜，而在於此刻對神的敬畏。當神搖動生命的「篩子」時，驕傲的人將被淘汰，唯有謙卑的人能被保守。</p>
+                </div>
+
+                <div class="bento-item bento-item-6 glass-card p-8 rounded-3xl border-b-4 border-b-gold/20">
+                    <h4 class="text-gold font-accent text-sm mb-4">名言佳句</h4>
+                    <p class="text-xl font-display font-bold leading-relaxed mb-4">「廉價的恩典是我們教會的死敵......廉價的恩典是沒有付上代價的恩典，是沒有十字架的恩典。」</p>
+                    <p class="text-slate-500 font-accent">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-32 bento-grid">
+                <div class="bento-item lg:col-span-12">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-6xl font-black outline-text opacity-50 font-accent">02</span>
+                        <h3 class="text-3xl font-display font-bold">恩典的重修：大衛倒塌帳幕的榮耀重建</h3>
+                    </div>
+                </div>
+                
+                <div class="bento-item bento-item-8 glass-card p-8 rounded-3xl order-1 md:order-none">
+                    <h4 class="text-gold font-accent text-sm mb-4 flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.392A7.969 7.969 0 015.5 14c1.255 0 2.443.29 3.5.804V4.804zM11 4.804A7.968 7.968 0 0114.5 4c1.255 0 2.443.29 3.5.804v10.392a7.969 7.969 0 00-3.5-.804V4.804z"></path></svg>
+                        SCRIPTURE
+                    </h4>
+                    <div class="text-slate-300 italic border-l-2 border-gold/20 pl-6 leading-relaxed">
+                        到那日，我必建立大衛倒塌的帳幕，堵住其中的破口，把那破壞的建立起來，重新修造，像古時一樣，使以色列人得以東所餘剩的，和所有稱為我名下的國。此乃行這事的耶和華說的。
+                    </div>
+                </div>
+
+                <div class="bento-item bento-item-4 bg-gold/5 border border-gold/20 p-8 rounded-3xl">
+                    <h4 class="text-gold font-accent text-sm mb-4">KEYWORD 原文</h4>
+                    <div class="mb-4">
+                        <span class="text-2xl font-bold block mb-1">帳幕</span>
+                        <span class="text-slate-400 text-sm font-accent">希伯來文：סֻכָּה sukkah</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        原意是簡陋的棚子。暗示大衛王朝將降卑到極點，如同搖搖欲墜的草棚。但也正是在卑微中，神要親自使其站立，彰顯這復興完全出於神的恩典。
+                    </p>
+                </div>
+
+                <div class="bento-item bento-item-6 glass-card p-8 rounded-3xl">
+                    <h4 class="text-gold font-accent text-sm mb-4">關鍵問題與解析</h4>
+                    <p class="font-bold text-lg mb-4 text-white">生命中看似已經徹底「倒塌」的破口，神如何將其轉化為恩典的器皿？</p>
+                    <p class="text-slate-400 leading-relaxed">神擅長在廢墟中動工。當我們的關係或健康出現破口時，正是神大能介入的「到那日」。神不僅要修補，還要擴張，在軟弱中的重建，往往比原先更榮耀。</p>
+                </div>
+
+                <div class="bento-item bento-item-6 glass-card p-8 rounded-3xl border-b-4 border-b-gold/20">
+                    <h4 class="text-gold font-accent text-sm mb-4">例證：金繕 (Kintsugi)</h4>
+                    <p class="text-slate-300 leading-relaxed">日本傳統修復技術，用純金漆黏合破碎陶器。修復後的陶器金色的裂痕反而讓它比破碎前更加美麗且價值連城。神在我們生命中做的正是「金繕」。</p>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-32 bento-grid">
+                <div class="bento-item lg:col-span-12">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-6xl font-black outline-text opacity-50 font-accent">03</span>
+                        <h3 class="text-3xl font-display font-bold">永恆的栽種：超越想像的豐盛與安息</h3>
+                    </div>
+                </div>
+                
+                <div class="bento-item bento-item-8 glass-card p-8 rounded-3xl">
+                    <h4 class="text-gold font-accent text-sm mb-4 flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.392A7.969 7.969 0 015.5 14c1.255 0 2.443.29 3.5.804V4.804zM11 4.804A7.968 7.968 0 0114.5 4c1.255 0 2.443.29 3.5.804v10.392a7.969 7.969 0 00-3.5-.804V4.804z"></path></svg>
+                        SCRIPTURE
+                    </h4>
+                    <div class="text-slate-300 italic border-l-2 border-gold/20 pl-6 leading-relaxed">
+                        耶和華說：日子將到，耕種的必接續收割的；踹葡萄的必接續撒種的；大山要滴下甜酒；小山都必流奶。我必使我民以色列被擄的歸回；他們必重修荒廢的城邑居住，栽種葡萄園，吃其中的果子。我必將他們栽於本地，他們不再從我所賜給他們的地上拔出來。
+                    </div>
+                </div>
+
+                <div class="bento-item bento-item-4 bg-gold/5 border border-gold/20 p-8 rounded-3xl">
+                    <h4 class="text-gold font-accent text-sm mb-4">KEYWORD 原文</h4>
+                    <div class="mb-4">
+                        <span class="text-2xl font-bold block mb-1">栽種</span>
+                        <span class="text-slate-400 text-sm font-accent">希伯來文：נָטַע nata'</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        意為「堅固確立」、「使之生根」。神宣告祂將親自把子民「栽」在應許之地。代表著一種不可逆轉的永恆安息與保障。
+                    </p>
+                </div>
+
+                <div class="bento-item bento-item-12 glass-card p-10 rounded-3xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="text-gold font-accent text-sm mb-4">屬靈見解</h4>
+                            <p class="text-slate-300 leading-relaxed">
+                                經文描繪了一幅超乎自然的豐收圖畫，意味著作物生長極其迅速，四季的福分首尾相連。這不是靠人努力積攢的財富，而是當人回歸與神的立約關係時，神所賜下的滿溢恩典。真正的安息在於知道自己被神親自「栽種」。
+                            </p>
+                        </div>
+                        <div class="border-l border-white/10 pl-10">
+                            <h4 class="text-gold font-accent text-sm mb-4">名言</h4>
+                            <p class="text-xl font-bold text-white mb-4 italic">「神的恩典從不枯竭。祂的糧倉總是滿的，祂的活泉永不乾涸。當你以為已經來到了神恩典的盡頭時，其實你才剛剛接觸到它的邊緣。」</p>
+                            <p class="text-slate-500 font-accent">— 司布真 (Charles Spurgeon)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 講章全文 -->
+        <section id="sermon" class="scroll-mt-32 max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            <div class="space-y-8 text-slate-300 text-lg leading-relaxed">
+                <p class="text-2xl text-gold font-display font-bold">摩9:7-15:從管教的廢墟到復興的豐收</p>
+                <p>弟兄姊妹，平安。今天我們要在阿摩司書的最後一段經文中，看見神令人敬畏的公義，以及祂令人屏息的恩典。</p>
+                
+                <h4 class="text-xl text-white font-bold border-l-4 border-gold pl-4 mt-12 mb-6">一、破除特權迷思：神公義的管教與精準的篩選</h4>
+                <p>在阿摩司的時代，以色列人享受著繁榮，他們認為：「我們是神的選民，有出埃及的偉大歷史，災禍絕對臨不到我們。」但神在摩9:7-10重重地擊碎了這個迷思。神說，如果沒有敬畏與順服，你們在我眼中與古實人沒有兩樣！</p>
+                <p class="bg-white/5 p-6 rounded-2xl border border-white/10 font-bold text-white italic">「好像用篩子篩穀，連一粒也不落在地上。」</p>
+                <p>神的管教是極其精準的。這個「篩子」要搖掉的是什麼？是那些驕傲、自以為義的罪人。這對我們是何等大的提醒！當我們自認擁有「屬靈特權」——受過洗、穩定聚會、甚至熱心服事時，我們是否反而失去了對罪的警覺？<span class="text-gold">廉價的恩典是我們教會的死敵。</span> 我們不能把神的恩典當作犯罪的許可證。</p>
+
+                <h4 class="text-xl text-white font-bold border-l-4 border-gold pl-4 mt-12 mb-6">二、恩典的重修：大衛倒塌帳幕的榮耀重建</h4>
+                <p>管教之後，難道只剩下絕望嗎？不！我們來看今天的金句。這是一幅多麼美的圖畫！神沒有說大衛輝煌的皇宮，而是說「帳幕」。因為犯罪與管教，大衛家已經降卑到了極點，如同一個破敗的草棚。但也正是在這無人問津的廢墟中，神要親自動工。</p>
+                <p class="text-white">你生命中是否有看似已經「倒塌」的破口？也許是破裂的關係、失敗的事業、或是軟弱的屬靈光景。神就像那位進行「金繕」的工匠，祂不僅要修復你的破口，還要用基督的寶血，讓你的破碎成為盛裝恩典的器皿。</p>
+
+                <h4 class="text-xl text-white font-bold border-l-4 border-gold pl-4 mt-12 mb-6">三、永恆的栽種：超越想像的豐盛與安息</h4>
+                <p>當神重建之後，祂賜下的是超乎想像的豐盛。摩9:13描述：「耕種的必接續收割的；踹葡萄的必接續撒種的」。這是極大的恩典爆發，收成快到連下一次播種都來不及！</p>
+                <p><span class="text-gold font-bold">「我必將他們栽於本地，他們不再從我所賜給他們的地上拔出來。」</span> 經歷過流離失所、經歷過管教的篩選，神最終的旨意是要將我們深深「栽種」在祂裡面。這是永恆的保障。</p>
+                
+                <div class="mt-16 pt-10 border-t border-white/10">
+                    <p class="text-slate-400 font-bold mb-4 italic">結論</p>
+                    <p>阿摩司書的信息帶給我們三個關鍵：<span class="text-gold">管教、重建、豐盛</span>。神因愛而管教，在廢墟中重建，最後賜下不被拔出的豐盛。弟兄姊妹，讓我們脫下屬靈的驕傲，將生命中倒塌的帳幕交給主，滿心期待祂那超越想像的復興與豐收。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 行動與總結 -->
+        <section class="bento-grid">
+            <div class="bento-item bento-item-6 glass-card p-10 rounded-3xl border-t-4 border-t-gold">
+                <h3 class="text-2xl font-display font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold font-accent font-bold">01</span>
+                        <p class="text-slate-300"><strong class="text-white">認罪與悔改：</strong>本週花一段時間安靜在神面前，承認並遠離任何輕忽神聖潔的罪。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-accent font-bold">02</span>
+                        <p class="text-slate-300"><strong class="text-white">為破口代求：</strong>寫下生命中的「破口」，每天宣告摩9:11的應許，求神修造。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-accent font-bold">03</span>
+                        <p class="text-slate-300"><strong class="text-white">分享盼望：</strong>主動關心一位處於低谷的肢體，分享神在廢墟中重建的見證。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-item bento-item-6 glass-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-display font-bold mb-8">應用方向</h3>
+                <div class="space-y-4">
+                    <div class="p-4 bg-white/5 rounded-xl border-l-4 border-gold">省察屬靈的驕傲</div>
+                    <div class="p-4 bg-white/5 rounded-xl border-l-4 border-gold">在破碎中擁抱盼望</div>
+                    <div class="p-4 bg-white/5 rounded-xl border-l-4 border-gold">安全感建立在神的「栽種」上</div>
+                </div>
+                <div class="mt-8 flex gap-3 flex-wrap">
+                    <span class="px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-accent">#管教 Discipline</span>
+                    <span class="px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-accent">#重建 Rebuilding</span>
+                    <span class="px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-accent">#豐盛 Abundance</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言 Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="bg-gold/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute -right-4 -bottom-4 text-9xl font-black outline-text opacity-5 group-hover:opacity-10 transition-opacity uppercase font-accent">01</div>
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed relative z-10">「福音是這樣的：我們比自己所敢相信的還要敗壞和充滿缺陷；但同時，我們在耶穌基督裡，卻比自己所敢盼望的更蒙接納和被愛。」</p>
+                    <div class="flex items-center gap-3 relative z-10">
+                        <div class="w-8 h-px bg-gold"></div>
+                        <p class="text-gold font-bold">提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute -right-4 -bottom-4 text-9xl font-black outline-text opacity-5 group-hover:opacity-10 transition-opacity uppercase font-accent">03</div>
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed relative z-10">「在神能大大使用一個人之前，祂必須先深深地擊碎他。」</p>
+                    <div class="flex items-center gap-3 relative z-10">
+                        <div class="w-8 h-px bg-gold"></div>
+                        <p class="text-gold font-bold">陶恕 (A.W. Tozer)</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute -right-4 -bottom-4 text-9xl font-black outline-text opacity-5 group-hover:opacity-10 transition-opacity uppercase font-accent">05</div>
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed relative z-10">「沒有人能幫助別人，除非他自己也經歷過破碎。我們所能給予最深刻的醫治，是來自於我們自身的創傷。」</p>
+                    <div class="flex items-center gap-3 relative z-10">
+                        <div class="w-8 h-px bg-gold"></div>
+                        <p class="text-gold font-bold">盧雲 (Henri Nouwen)</p>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute -right-4 -bottom-4 text-9xl font-black outline-text opacity-5 group-hover:opacity-10 transition-opacity uppercase font-accent">08</div>
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed relative z-10">「神從無中創造出萬有。因此，直到一個人徹底成為『無』，神才能用他成就任何事。」</p>
+                    <div class="flex items-center gap-3 relative z-10">
+                        <div class="w-8 h-px bg-gold"></div>
+                        <p class="text-gold font-bold">馬丁·路德 (Martin Luther)</p>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden group md:col-span-2">
+                    <div class="absolute -right-4 -bottom-4 text-9xl font-black outline-text opacity-5 group-hover:opacity-10 transition-opacity uppercase font-accent">10</div>
+                    <p class="text-xl text-slate-300 mb-6 leading-relaxed relative z-10 font-display font-bold">「神許可苦難臨到我們，不是要毀滅我們，而是要雕刻我們，使我們身上彰顯出基督那無法朽壞的榮耀形像。」</p>
+                    <div class="flex items-center gap-3 relative z-10">
+                        <div class="w-8 h-px bg-gold"></div>
+                        <p class="text-gold font-bold">唐崇榮 (Stephen Tong)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mt-20 text-center text-slate-600 text-sm font-accent">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center text-slate-950 shadow-2xl hover:scale-110 transition-transform active:scale-95 z-50 animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" /></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling with offset for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navHeight = document.querySelector('nav').offsetHeight;
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - navHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple intersection observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, .glass-card').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
+

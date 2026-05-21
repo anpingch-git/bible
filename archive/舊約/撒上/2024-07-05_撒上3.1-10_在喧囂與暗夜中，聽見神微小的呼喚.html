@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒上3:1-10: 在喧囂與暗夜中，聽見神微小的呼喚</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1f1f27',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.6, 0, 0.8, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-shake': 'shake 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        shake: {
+                            '0%, 100%': { transform: 'translateX(0) translateY(0)' },
+                            '25%': { transform: 'translateX(1px) translateY(-1px)' },
+                            '75%': { transform: 'translateX(-1px) translateY(1px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, transparent 0%, #0a0a0c 100%);
+        }
+        .bento-card {
+            background: #141418;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: #ca8a04;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(202, 138, 4, 0.5);
+        }
+        .pulse-overlay {
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-display font-bold text-gold-500 tracking-wider">撒上3:1-10</span>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner Section -->
+    <header id="top" class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <div class="pulse-overlay absolute inset-0 bg-black z-10"></div>
+            <img src='image/img_02cd329a-4ecb-47cc-8bc3-92f56e9baf11.jpg' alt='media_1' class="w-full h-full object-cover opacity-80 scale-105" />
+            <div class="banner-gradient absolute inset-0 z-20"></div>
+        </div>
+        
+        <div class="relative z-30 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-serif font-black mb-8 leading-tight text-white">
+                在喧囂與暗夜中<br/>
+                <span class="text-gold-500 text-glow">聽見神微小的呼喚</span>
+            </h1>
+            <div class="animate-gentle-shake inline-block px-4 py-2">
+                <p class="text-lg md:text-2xl font-medium text-gold-200 tracking-widest italic">
+                    「請說，僕人敬聽！」
+                </p>
+                <p class="mt-4 text-sm md:text-base text-gray-400 font-sans tracking-widest">
+                    撒母耳記上 3:10
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">禱告詞</h2>
+            </div>
+            <div class="bento-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-serif italic text-center">
+                    「親愛的天父，在這喧囂、忙碌且充滿各種聲音的世代裡，我們的耳朵常被世界的吵雜塞滿，我們的心靈也常在暗夜中迷失。求祢賜給我們如同童子撒母耳般柔軟的心，以及敏銳的屬靈聽覺。當祢微小的聲音呼喚我們時，願我們不再錯過，不再誤認。求祢喚醒我們沉睡的靈，教導我們安靜在祢面前，勇敢且順服地回應：『請說，僕人敬聽！』奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="py-12">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-blue-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">大綱與深入解析</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="bento-card p-6 rounded-2xl text-center group">
+                    <span class="block text-xs text-gold-500 mb-2 font-display uppercase tracking-widest">Part 01</span>
+                    <h3 class="font-bold text-white group-hover:text-gold-400 transition-colors">暗夜中的微光</h3>
+                    <p class="text-xs text-gray-400 mt-2">撒上 3:1-3</p>
+                </a>
+                <a href="#part2" class="bento-card p-6 rounded-2xl text-center group">
+                    <span class="block text-xs text-gold-500 mb-2 font-display uppercase tracking-widest">Part 02</span>
+                    <h3 class="font-bold text-white group-hover:text-gold-400 transition-colors">屢次的呼喚</h3>
+                    <p class="text-xs text-gray-400 mt-2">撒上 3:4-8</p>
+                </a>
+                <a href="#part3" class="bento-card p-6 rounded-2xl text-center group">
+                    <span class="block text-xs text-gold-500 mb-2 font-display uppercase tracking-widest">Part 03</span>
+                    <h3 class="font-bold text-white group-hover:text-gold-400 transition-colors">甦醒的聽覺</h3>
+                    <p class="text-xs text-gray-400 mt-2">撒上 3:9-10</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-full bg-gold-600 flex items-center justify-center text-sm">1</span>
+                        暗夜中的微光：當神的話語稀少 (撒上 3:1-3)
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <p class="text-gold-400 font-bold mb-2">引用經文</p>
+                                <p class="text-gray-300 italic leading-relaxed">「童子撒母耳在以利面前事奉耶和華。當那些日子，耶和華的言語稀少，不常有默示。一日，以利睡在自己的地方；他眼目昏花，看不分明。神的燈在神耶和華殿內約櫃那裡，還沒有熄滅，撒母耳已經睡了。」</p>
+                            </div>
+                            <div class="bento-card p-6 rounded-2xl">
+                                <p class="text-gold-400 font-bold mb-2">關鍵字解析</p>
+                                <ul class="space-y-3">
+                                    <li><span class="text-white font-medium">稀少 (yakar)：</span>在希伯來文中意為「珍貴的」、「罕見的」。暗示因百姓屬靈黑暗，神的話變得如稀世珍寶。</li>
+                                    <li><span class="text-white font-medium">默示 (chazon)：</span>意指「異象」或「神聖的啟示」。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bento-card p-6 rounded-2xl border-l-4 border-gold-500">
+                                <p class="text-gold-400 font-bold mb-2">關鍵問題：為什麼聽不見神的聲音？</p>
+                                <p class="text-gray-300">有時神的話語「稀少」，並非神失去了說話的能力，而是人的心「眼目昏花」。當心靈被罪惡、世俗妥協佔據時，神的話語就會顯得稀少。但「神的燈還沒有熄滅」，神依然保留恩典的微光。</p>
+                            </div>
+                            <div class="bg-dark-700/50 p-6 rounded-2xl border border-dashed border-gray-700">
+                                <p class="text-gray-400 text-sm mb-2 italic">「神一直都在說話，只是我們沒有安靜下來聽。」—— 陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-full bg-gold-600 flex items-center justify-center text-sm">2</span>
+                        屢次的呼喚：在懵懂中尋找聲音的源頭 (撒上 3:4-8)
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <p class="text-gold-400 font-bold mb-2">關鍵字解析</p>
+                                <p class="text-gray-300"><span class="text-white font-medium">認識 (yada)：</span>關係性的詞彙，不只是理智上的知道，而是經歷上的相交、親密的體認。</p>
+                            </div>
+                            <div class="bento-card p-6 rounded-2xl border-l-4 border-gold-500">
+                                <p class="text-gold-400 font-bold mb-2">關鍵問題：誤認神的聲音？</p>
+                                <p class="text-gray-300">事奉的熱心不能取代對神親密的「認識」。我們容易把聖靈的感動當作突發奇想。神充滿耐心，祂願意一次又一次地呼喚，直到我們聽懂為止。</p>
+                            </div>
+                        </div>
+                        <div class="bento-card p-8 rounded-2xl flex flex-col justify-center">
+                            <p class="text-gold-400 font-bold mb-4 italic">例證：嬰兒與母親</p>
+                            <p class="text-gray-300 leading-relaxed">剛出生的嬰兒起初無法分辨誰是母親。但經過日復一日的擁抱與聆聽，孩子就能在嘈雜的房間裡，單單認出母親呼喚他名字的聲音。屬靈聽覺也需如此磨練。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-full bg-gold-600 flex items-center justify-center text-sm">3</span>
+                        甦醒的屬靈聽覺：請說，僕人敬聽 (撒上 3:9-10)
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bento-card p-8 rounded-2xl">
+                            <p class="text-gold-400 font-bold mb-4 italic">例證：樂團調音</p>
+                            <p class="text-gray-300 leading-relaxed">交響樂團在演奏前，會對齊雙簧管吹出的標準「A」音。當我們說「請說，僕人敬聽」時，就是讓神的話語成為我們生命中的標準音，重新調校失序的生活。</p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <p class="text-gold-400 font-bold mb-2">關鍵字解析</p>
+                                <p class="text-gray-300"><span class="text-white font-medium">敬聽 (shama)：</span>「聽」與「順服」是同一個詞。不僅是接收聲音，更是意志上的降服，準備好執行命令。</p>
+                            </div>
+                            <div class="bento-card p-6 rounded-2xl border-l-4 border-gold-500">
+                                <p class="text-gold-400 font-bold mb-2">關鍵問題：聽如何轉化為改變？</p>
+                                <p class="text-gray-300">「請說，僕人敬聽」代表完全敞開、不帶條件的順服。當神第四次呼喚時，祂是「降臨，站著」，顯示神對願意順服生命的看重。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="py-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-purple-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">應用與行動</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="bento-card p-8 rounded-3xl">
+                    <h4 class="text-gold-500 font-bold text-xl mb-4">講道應用方向</h4>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <span class="text-gold-500">●</span>
+                            <span class="text-gray-200"><strong class="text-white">檢視屬靈光景</strong>：你的生命中，神的話語是豐盛還是稀少？</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gold-500">●</span>
+                            <span class="text-gray-200"><strong class="text-white">辨識神的聲音</strong>：不輕忽聖靈微小的感動，尋求屬靈長輩印證。</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-gold-500">●</span>
+                            <span class="text-gray-200"><strong class="text-white">建立僕人聽覺</strong>：轉換為「主啊，請說，僕人敬聽」。</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bento-card p-8 rounded-3xl bg-dark-800">
+                    <h4 class="text-blue-400 font-bold text-xl mb-4">回應實踐行動</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-blue-500/20 rounded flex-shrink-0 flex items-center justify-center text-blue-400 font-bold">1</div>
+                            <p class="text-gray-300"><strong class="text-white">每日刻意留白</strong>：本週每天安排10分鐘完全安靜的時間。</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-blue-500/20 rounded flex-shrink-0 flex items-center justify-center text-blue-400 font-bold">2</div>
+                            <p class="text-gray-300"><strong class="text-white">記錄屬靈感動</strong>：準備筆記本記錄微小的感動、責備或提醒。</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-blue-500/20 rounded flex-shrink-0 flex items-center justify-center text-blue-400 font-bold">3</div>
+                            <p class="text-gray-300"><strong class="text-white">改變禱告開場白</strong>：未來一週抉擇前先說：「主啊，請說，僕人敬聽」。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusion Keywords -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <span class="px-8 py-3 rounded-full bg-gold-600/10 border border-gold-600/30 text-gold-400 font-display font-bold tracking-widest">靜默 SILENCE</span>
+                <span class="px-8 py-3 rounded-full bg-gold-600/10 border border-gold-600/30 text-gold-400 font-display font-bold tracking-widest">辨識 DISCERNMENT</span>
+                <span class="px-8 py-3 rounded-full bg-gold-600/10 border border-gold-600/30 text-gold-400 font-display font-bold tracking-widest">順服 OBEDIENCE</span>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="py-20 border-t border-white/5">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-emerald-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">講章文稿</h2>
+            </div>
+
+            <div class="prose prose-invert prose-lg max-w-none">
+                <h3 class="text-2xl text-gold-400 font-bold mb-6">撒上3:1-10：在喧囂與暗夜中，聽見神微小的呼喚</h3>
+                <p>各位弟兄姐妹，平安。我們今天生活在一個歷史上最吵雜的時代。從早晨醒來的那一刻起，新聞、社群媒體、工作訊息、生活的焦慮，就不斷地轟炸我們的耳朵。在這樣喧囂的環境裡，我們的心靈常常感到疲憊不堪。有時候，我們甚至會覺得，上帝好像沉默了。</p>
+                
+                <p class="text-gold-300 font-bold">暗夜中的微光：當神的話語稀少</p>
+                <p>經文第一節說：「當那些日子，耶和華的言語稀少，不常有默示。」稀少，在原文中是「珍貴、罕見」的意思。為什麼神的話語會稀少？因為當時的祭司以利「眼目昏花」。這不只是生理的老化，更是整個國家屬靈洞察力的喪失。當人們不再敬畏神，神的話語自然就變得稀少。</p>
+                <p>陶恕曾說過：<span class="text-white bg-gold-900/50 px-1 font-medium">「神一直都在說話，只是我們沒有安靜下來聽。」</span>我們常常抱怨聽不見神的聲音，但或許是因為我們的心已經被世界的雜音塞滿了。然而，即使在最黑暗的時代，第三節告訴我們：「神的燈在神耶和華殿內約櫃那裡，還沒有熄滅」。</p>
+
+                <p class="text-gold-300 font-bold">屢次的呼喚：在懵懂中尋找聲音的源頭</p>
+                <p>當神呼喚撒母耳時，撒母耳連續三次跑到以利那裡。為什麼？因為經文第七節說：「那時撒母耳還未認識耶和華」。撒母耳在聖殿裡長大，每天參與服事，但他對神的認識僅止於宗教儀式，他還沒有與神建立真實、親密的關係。</p>
+                <p>我們是否也常常如此？我們熟悉教會的聚會，熟悉詩歌，但當聖靈在生活中微小地提醒我們時，我們卻常把它當作自己的錯覺。盧雲曾提醒我們：<span class="text-white font-medium">「禱告是將我們的心思意念對準上帝，以便能分辨出那在我們生命中微小卻堅定的聲音。」</span></p>
+
+                <p class="text-gold-300 font-bold">甦醒的屬靈聽覺：請說，僕人敬聽</p>
+                <p>最後，以利明白了這是神的呼喚，他教導撒母耳一個極其重要的禱告：「耶和華啊，請說，僕人敬聽！」</p>
+                <p>「聽」在原文中與「順服」息息相關。真實的聆聽，不是為了參考上帝的意見，而是準備好要執行上帝的命令。潘霍華說：<span class="text-white font-medium">「只有順服的人才會真正相信；也只有相信的人才會真正順服。」</span>當我們對神說「請說，僕人敬聽」時，我們就是把自己放在僕人的位置上，把主權交還給神。</p>
+                
+                <div class="my-12 p-8 border-y-2 border-gold-600/30 bg-gold-600/5">
+                    <p class="text-2xl font-serif text-white text-center leading-relaxed">
+                        <span class="text-gold-500 font-black">【金句】</span><br/>
+                        「耶和華降臨，站著，像前三次呼喚說：『撒母耳啊！撒母耳啊！』撒母耳回答說：『請說，僕人敬聽！』」
+                    </p>
+                </div>
+
+                <p>當撒母耳預備好自己的心時，神不再只是遠遠地呼喚，神乃是「降臨，站著」。神極其看重一顆願意順服、願意聆聽的心。願我們每個人都能在每一天的生活中，對主說：「主啊，請說，僕人敬聽！」阿們。</p>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-20">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-red-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Quote 1 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「神一直都在說話，只是我們沒有安靜下來聽。我們若要在心靈中聽見神的聲音，就必須先除去世界的噪音。」</p>
+                    <p class="text-gold-500 text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「只有順服的人才會真正相信；也只有相信的人才會真正順服。」</p>
+                    <p class="text-gold-500 text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「禱告並非只是我們對神說話，更是我們靜下心來，讓神對我們說話。屬靈生活的核心，就是去聆聽那稱呼我們為『蒙愛者』的聲音。」</p>
+                    <p class="text-gold-500 text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「我們必須學習在神的話語中聆聽祂的聲音，否則我們將在世界的喧囂中迷失方向。」</p>
+                    <p class="text-gold-500 text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「在這個講求速度與效率的世界裡，學習安靜並聆聽神的微小聲音，是一種漫長而持續的順服。」</p>
+                    <p class="text-gold-500 text-sm">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「聽到神的聲音並非少數屬靈菁英的特權，而是每一個與神建立親密關係的兒女應有的日常經歷。」</p>
+                    <p class="text-gold-500 text-sm">— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「神常常在我們最安靜的時候，給予我們最深刻的教導。當你無法聽見祂的聲音時，請確信祂仍在看顧你。」</p>
+                    <p class="text-gold-500 text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「如果我們不先願意做神的學生，存著敬畏的心聆聽祂的教導，我們就永遠無法成為真理的追隨者。」</p>
+                    <p class="text-gold-500 text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「聖靈的引導從來不會違背聖經的真理。聆聽聖靈的聲音，就是將我們的心智降服於神已啟示的話語之下。」</p>
+                    <p class="text-gold-500 text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-serif">「我的良心是被神的話語所俘虜的。這是我站立的立場，求神幫助我。」</p>
+                    <p class="text-gold-500 text-sm">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-gray-500 text-xs tracking-widest uppercase">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-600 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-500 transition-all transform hover:scale-110 z-50">
+        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+</body>
+</html>
+

@@ -76,7 +76,24 @@
             box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '徒13:1-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '徒',         // 動態注入書卷縮寫，例如：出
+              'note_title': '突破舒適圈的聖靈浪潮：從安提阿起行的福音使命' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="selection:bg-brand-500 selection:text-white">
 
     <!-- Top Navigation Bar -->
@@ -95,7 +112,7 @@
     <!-- Banner / Hero Section -->
     <header class="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src='image/img_b7d0791c-22a2-4038-b0e9-179c023c8cf3.jpg' alt='media_1' class="w-full h-full object-cover opacity-60 hero-mask" />
+            <img src='https://anpingch-git.github.io/bible/archive/%E6%96%B0%E7%B4%84/%E5%BE%92/img_b7d0791c-22a2-4038-b0e9-179c023c8cf3.jpg' alt='media_1' class="w-full h-full object-cover opacity-60 hero-mask" />
         </div>
         <div class="relative z-10 text-center px-6 max-w-4xl">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black mb-6 leading-tight text-white drop-shadow-2xl">

@@ -201,6 +201,15 @@
         function renderMap() {
             const otContainer = document.getElementById('ot-grid');
             const ntContainer = document.getElementById('nt-grid');
+			//----
+			// 偵測是否由 LINE 帶參數外部直接連結進來
+			const urlParams = new URLSearchParams(window.location.search);
+			const directBook = urlParams.get('book'); // 取得 "出"
+			if (directBook) {
+				// 自動模擬使用者點選該書卷，這會觸發你原本寫好的所有顯示與追蹤邏輯！
+				startShowBook(directBook); 
+			}
+			//----
             const makeButtons = (books, container) => {
                 books.forEach(b => {
                     const count = fullDatabase.filter(item => item.chapter.startsWith(b)).length;

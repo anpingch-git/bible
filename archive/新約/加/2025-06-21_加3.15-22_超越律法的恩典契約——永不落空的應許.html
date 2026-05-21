@@ -76,7 +76,24 @@
             background: linear-gradient(90deg, transparent, rgba(217, 140, 16, 0.4), transparent);
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '加3:15-22',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '加',         // 動態注入書卷縮寫，例如：出
+              'note_title': '超越律法的恩典契約——永不落空的應許' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="bg-dark-900 text-gray-200 font-sans selection:bg-gold-500 selection:text-white">
 
     <!-- Navigation -->

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彌7:1-10: 在最深的黑暗中，仰望破曉的光</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141417',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float-gentle': 'float-gentle 3s ease-in-out infinite',
+                        'subtle-wiggle': 'subtle-wiggle 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 0.85, filter: 'brightness(100%)' },
+                            '50%': { opacity: 0.5, filter: 'brightness(50%)' },
+                        },
+                        'float-gentle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-wiggle': {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '25%': { transform: 'translateY(-2px) scale(1.01)' },
+                            '75%': { transform: 'translateY(2px) scale(0.99)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(30, 30, 36, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(to right, #fde047, #eab308, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #facc15;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-anchor {
+            scroll-margin-top: 100px;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #facc15; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '彌7:1-10',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '彌',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在最深的黑暗中，仰望破曉的光' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body leading-relaxed text-gray-200 overflow-x-hidden">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card px-4 py-3 flex justify-between items-center border-b border-white/5">
+        <div class="font-display font-bold text-gold-400 text-sm md:text-base">
+            彌迦書 7:1-10
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_f06f63df-c3c0-48f7-a2f0-f2df2f619bd6.jpg' alt='Banner' class="w-full h-full object-cover animate-pulse-slow" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-900/40 via-dark-900/60 to-dark-900"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                在最深的黑暗中<br/>
+                <span class="text-gradient-gold">仰望破曉的光</span>
+            </h1>
+            
+            <div class="animate-subtle-wiggle inline-block">
+                <p class="text-xl md:text-2xl font-display text-gold-100 italic leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
+                    「至於我，我要仰望耶和華，要等候那救我的神；我的神必應允我。」
+                    <span class="block text-sm mt-2 font-accent opacity-80">（彌迦書 7:7）</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor">
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 text-9xl text-white/5 font-display rotate-12 transition-transform group-hover:scale-110">🙏</div>
+                <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-8">
+                    <span>✨</span> 禱告詞
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 leading-loose italic">
+                    主阿，當我們身處在道德沉淪、關係破裂，甚至連最親近的人都無法信任的黑暗時刻，求祢保守我們的心。不叫我們陷入憤世嫉俗的絕望中，而是賜給我們彌迦先知的眼光，將視線從敗壞的世界轉向祢。主啊，賜我們耐心與信心，讓我們在管教與苦難中依然宣告：<span class="text-white font-bold underline decoration-gold-500">「我雖跌倒，卻要起來；我雖坐在黑暗裡，耶和華卻作我的光。」</span>奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="section-anchor">
+            <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-10">
+                <span>📖</span> 深入大綱解析
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="glass-card p-6 rounded-2xl hover:border-gold-400/50 transition-all hover:-translate-y-1">
+                    <span class="text-gold-400 font-accent text-sm mb-2 block uppercase tracking-widest">Part 01</span>
+                    <h3 class="text-lg font-bold">荒涼的果園</h3>
+                    <p class="text-xs text-gray-400 mt-2">彌迦書 7:1-4</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl hover:border-gold-400/50 transition-all hover:-translate-y-1">
+                    <span class="text-gold-400 font-accent text-sm mb-2 block uppercase tracking-widest">Part 02</span>
+                    <h3 class="text-lg font-bold">破碎的防線</h3>
+                    <p class="text-xs text-gray-400 mt-2">彌迦書 7:5-6</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl hover:border-gold-400/50 transition-all hover:-translate-y-1">
+                    <span class="text-gold-400 font-accent text-sm mb-2 block uppercase tracking-widest">Part 03</span>
+                    <h3 class="text-lg font-bold">守望的曙光</h3>
+                    <p class="text-xs text-gray-400 mt-2">彌迦書 7:7-10</p>
+                </a>
+            </div>
+
+            <!-- Outline Detailed Content -->
+            <div class="space-y-16">
+                <!-- Part 1 -->
+                <div id="part1" class="section-anchor scroll-mt-24 border-l-2 border-gold-500/30 pl-8 relative">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-gold-500 shadow-[0_0_15px_rgba(234,179,8,0.5)]"></div>
+                    <h3 class="text-2xl font-bold text-white mb-6">荒涼的果園：面對社會敗壞與孤獨的嘆息</h3>
+                    
+                    <div class="bg-dark-800 rounded-xl p-6 mb-8 border border-white/5">
+                        <p class="text-gray-400 text-sm mb-4 font-accent">引用經文</p>
+                        <blockquote class="text-gray-300 italic">
+                            哀哉！我正如夏天的果子已被收盡，又像摘了葡萄所剩下的，沒有一掛可吃的；我心羨慕初熟的無花果。地上遺留的善人滅盡，世間沒有一個正直人...
+                        </blockquote>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">🔍 關鍵字解讀</h4>
+                            <ul class="space-y-3 text-sm">
+                                <li><strong class="text-white">善人 (chasid):</strong> 指敬虔、忠誠、守約的人。彌迦感嘆社會已找不到對神忠誠的人。</li>
+                                <li><strong class="text-white">蒺藜 / 荊棘籬笆 (chedek):</strong> 原本應用來保護羊群，卻變成刺傷人的傷害物。形容領袖失職。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">💡 問題與解析</h4>
+                            <p class="text-sm text-gray-300 italic mb-2">當努力行善卻發現周遭充滿腐敗時，如何不絕望？</p>
+                            <p class="text-sm text-gray-400">解析：必須承認世界的墮落，不抱烏托邦幻想。神允許看見黑暗是為了讓我們明白公義只能從神而來。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                        <p class="text-sm text-gold-300"><strong>「星星在最黑的夜裡顯得最亮。同樣地，上帝的應許在我們最艱難的時刻，閃耀得最為燦爛。」</strong> —— 司布真</p>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="section-anchor scroll-mt-24 border-l-2 border-gold-500/30 pl-8 relative">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-gold-500 shadow-[0_0_15px_rgba(234,179,8,0.5)]"></div>
+                    <h3 class="text-2xl font-bold text-white mb-6">破碎的防線：當最親近的人帶來背叛</h3>
+                    
+                    <div class="bg-dark-800 rounded-xl p-6 mb-8 border border-white/5">
+                        <p class="text-gray-400 text-sm mb-4 font-accent">引用經文</p>
+                        <blockquote class="text-gray-300 italic">
+                            不要倚賴鄰舍；不要信靠密友。要守住你的口；不要向你懷中的妻提說...人的仇敵就是自己家裡的人。
+                        </blockquote>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">🔍 關鍵字解讀</h4>
+                            <ul class="space-y-3 text-sm">
+                                <li><strong class="text-white">藐視 (nabel):</strong> 輕看、使之蒙羞。這是一種極度的輕蔑與關係的徹底撕裂。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">💡 問題與解析</h4>
+                            <p class="text-sm text-gray-300 italic mb-2">被最信任的親友傷害時，如何找到醫治？</p>
+                            <p class="text-sm text-gray-400">解析：不可將任何人當作終極的安全感來源。人的防線破裂時，正是將信任重新拋向神的時刻。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                        <p class="text-sm text-gold-300"><strong>「如果你把人當作上帝，他們就會像魔鬼一樣折磨你；因為人無法承受成為別人上帝的重量。」</strong> —— 提摩太·凱勒</p>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="section-anchor scroll-mt-24 border-l-2 border-gold-500/30 pl-8 relative">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-gold-500 shadow-[0_0_15px_rgba(234,179,8,0.5)]"></div>
+                    <h3 class="text-2xl font-bold text-white mb-6">守望的曙光：在絕境中定睛等候神</h3>
+                    
+                    <div class="bg-dark-800 rounded-xl p-6 mb-8 border border-white/5">
+                        <p class="text-gray-400 text-sm mb-4 font-accent">引用經文</p>
+                        <blockquote class="text-gray-300 italic">
+                            至於我，我要仰望耶和華，要等候那救我的神...我雖跌倒，卻要起來；我雖坐在黑暗裡，耶和華卻作我的光。
+                        </blockquote>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">🔍 關鍵字解讀</h4>
+                            <ul class="space-y-3 text-sm">
+                                <li><strong class="text-white">仰望 (tsaphah):</strong> 軍事用語，像守望者專注地看。這是高度警覺的期盼。</li>
+                                <li><strong class="text-white">等候 (yachal):</strong> 確信結果必然發生的痛苦忍耐。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">💡 問題與解析</h4>
+                            <p class="text-sm text-gray-300 italic mb-2">等候是消極的無能為力，還是積極的信仰行動？</p>
+                            <p class="text-sm text-gray-400">解析：「至於我」是整段轉折。先知雖承認得罪神，但深信神本性是拯救。這是一種以神信實為基礎的積極反擊。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                        <p class="text-sm text-gold-300"><strong>「一個與神親密同行的人，絕不會對未來感到絕望；因為他知道，無論夜有多黑，神的黎明終將到來。」</strong> —— 陶恕</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="section-anchor">
+            <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-10">
+                <span>🎙️</span> 講章文稿
+            </h2>
+            <div class="glass-card p-10 md:p-16 rounded-[40px] leading-loose space-y-10 text-gray-300">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-display font-black text-white mb-4">彌7:1-10：在最深的黑暗中，仰望破曉的光</h3>
+                    <div class="w-20 h-1 bg-gold-500 mx-auto"></div>
+                </div>
+
+                <p class="text-lg">弟兄姊妹們，今天我們要來看看一幅極度黑暗的圖畫，這幅畫是由先知彌迦所描繪的。當我們打開報紙、滑開手機，看見社會上充滿了欺詐、暴力、貪污，甚至親人為了利益對簿公堂時，我們往往會感到無力與憤怒。這正是彌迦當年的處境。然而，在這段經文中，彌迦教導了我們一個極其重要的功課：<span class="text-white font-bold bg-gold-600/20 px-2 rounded">當世界最黑暗的時候，正是信仰最該發光的時刻。</span></p>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-display font-bold text-gold-400">一、荒涼的果園：面對社會敗壞與孤獨的嘆息</h4>
+                    <p>彌迦環顧四周，發出深沉的哀嘆，他說自己就像在夏天去收成的果園，卻發現「沒有一掛可吃的」。社會的領袖、審判官都在追求私利，人與人之間充滿了算計。我們是否也常有這種感覺？當你堅持誠實納稅，卻發現別人靠逃漏稅發大財。但德國神學家潘霍華曾說過，基督徒的呼召就是跟隨基督走向十字架。<span class="text-gold-200 font-bold">社會越是像荊棘，我們越要成為那座屹立不搖的燈塔。</span></p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-display font-bold text-gold-400">二、破碎的防線：當最親近的人帶來背叛</h4>
+                    <p>社會敗壞還能忍受，但彌迦說：「不要信靠密友...兒子藐視父親」。當罪惡侵蝕人心，最親密的家庭防線也隨之瓦解。人性的脆弱告訴我們，任何人都不該成為我們生命中的「上帝」。<span class="text-gold-200 font-bold">當你最強大的保護傘破洞時，正是神邀請你進入祂全能翅膀蔭下的時刻。</span></p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-display font-bold text-gold-400">三、守望的曙光：在絕境中定睛等候神</h4>
+                    <p>在經歷了社會腐敗與親人背叛後，彌迦沒有選擇輕生或憤世嫉俗。他在第7節作出了信仰史上最偉大的宣告之一：<span class="text-white text-2xl block my-6 font-display border-l-4 border-gold-500 pl-6 italic">「至於我，我要仰望耶和華，要等候那救我的神；我的神必應允我。」</span></p>
+                    <p>弟兄姊妹，這就是基督徒的韌性！等候神，從來不是消極的無能為力，而是積極的信仰行動。不管你現在是跌倒在罪惡中、坐在病痛的黑暗裡，請記住，哨兵在黑夜裡不絕望，因為他知道太陽一定會升起。</p>
+                </div>
+
+                <div class="pt-10 border-t border-white/10">
+                    <p class="text-xl text-center text-white font-bold italic">
+                        世界可以奪走我們的財富，但沒有任何事物能奪走我們仰望神的權利。讓我們今天就作這個決定，對著我們生命中的黑暗大聲宣告：「至於我，我要仰望耶和華！」神必迎我們進入光明，阿們！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor">
+            <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-10">
+                <span>💬</span> 屬靈前輩佳句名言
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gold-200 font-bold mb-4">「信心就是在黑暗中看見光明，在死亡中看見生命。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-sm text-gray-400">—— 馬丁·路德</span>
+                        <span class="text-xs text-gray-500 font-accent italic">《桌邊談》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gold-200 font-bold mb-4">「星星在最黑的夜裡顯得最亮。上帝的應許在最艱難時刻，閃耀得最為燦爛。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-sm text-gray-400">—— 司布真</span>
+                        <span class="text-xs text-gray-500 font-accent italic">《清晨與夜晚》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gold-200 font-bold mb-4">「如果你把人當作上帝，他們就會像魔鬼一樣折磨你。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-sm text-gray-400">—— 提摩太·凱勒</span>
+                        <span class="text-xs text-gray-500 font-accent italic">《揮霍的上帝》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gold-200 font-bold mb-4">「等候上帝並不是無所事事；是我們能做的最積極、最重要的事。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-sm text-gray-400">—— 畢德生</span>
+                        <span class="text-xs text-gray-500 font-accent italic">《長久順服》</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-20 py-8 border-t border-white/5 text-center text-xs text-gray-500">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(234,179,8,0.4)] hover:bg-gold-400 transition-transform active:scale-95 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

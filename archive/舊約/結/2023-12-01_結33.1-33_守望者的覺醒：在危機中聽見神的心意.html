@@ -86,7 +86,24 @@
             -webkit-text-fill-color: transparent;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '結33:1-33',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '結',         // 動態注入書卷縮寫，例如：出
+              'note_title': '守望者的覺醒：在危機中聽見神的心意' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="antialiased">
 
     <!-- Navbar -->

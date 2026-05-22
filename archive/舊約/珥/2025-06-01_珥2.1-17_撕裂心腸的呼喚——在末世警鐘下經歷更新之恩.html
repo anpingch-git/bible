@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珥2:1-17:撕裂心腸的呼喚——在末世警鐘下經歷更新之恩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E2B870', // Gold/Brass
+                        secondary: '#D94E33', // Deep Red
+                        accent: '#6B21A8', // Purple
+                        dark: '#0A0A0B',
+                        card: 'rgba(26, 26, 29, 0.8)',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(20, 20, 25, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-container {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .banner-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            animation: breath 8s infinite ease-in-out;
+        }
+        @keyframes breath {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(226, 184, 112, 0.6);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtle-bounce 2s ease-in-out infinite;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #E2B870;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            background: linear-gradient(135deg, rgba(226, 184, 112, 0.1), rgba(217, 78, 51, 0.1));
+            border-left: 4px solid #E2B870;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateX(10px);
+            background: linear-gradient(135deg, rgba(226, 184, 112, 0.2), rgba(217, 78, 51, 0.2));
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2D3748;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E2B870;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '珥2:1-17',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '珥',         // 動態注入書卷縮寫，例如：出
+              'note_title': '撕裂心腸的呼喚——在末世警鐘下經歷更新之恩' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-primary font-bold text-sm md:text-base tracking-widest hidden md:block">
+            珥 2:1-17
+        </div>
+        <div class="flex gap-6 md:gap-10 text-xs md:text-sm font-medium uppercase tracking-tighter">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner-container" id="top">
+        <img src='image/img_3864be08-aa72-4655-8e2a-cce1ec4c2b67.jpg' alt='media_1' class="banner-img" />
+        <div class="relative z-10 px-6 max-w-5xl mx-auto">
+            <h1 class="text-4xl md:text-7xl font-serif font-black text-white mb-8 tracking-tight leading-tight">
+                撕裂心腸的呼喚<br>
+                <span class="text-primary text-2xl md:text-4xl block mt-4 font-sans tracking-widest">— 在末世警鐘下經歷更新之恩 —</span>
+            </h1>
+            <div class="text-lg md:text-2xl text-gray-100 font-medium max-w-3xl mx-auto leading-relaxed jump-text">
+                「你們要撕裂心腸，不撕裂衣服。歸向耶和華─你們的神；因為他有恩典，有憐憫，不輕易發怒，有豐盛的慈愛，並且後悔不降所說的災。」<br>
+                <span class="text-sm md:text-lg block mt-2 opacity-80">（約珥書 2:13）</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-primary/20 rounded-full">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-3.187A2 2 0 012.454 16.12l1.062-10.383a2 2 0 011.378-1.685l8.228-3.187a2 2 0 011.776 0l8.228 3.187a2 2 0 011.378 1.685l1.062 10.383a2 2 0 01-1.318 1.693L12 21z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">開聲禱告</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl border-l-8 border-primary italic text-lg leading-loose text-gray-200">
+                滿有恩典與憐憫的阿爸天父，當審判的警鐘敲響，我們承認自己常在宗教的儀式中躲藏，卻未曾真實將心交給祢。主啊，求祢赦免我們表面的敬虔，賜下聖靈的光照，讓我們真實地撕裂心腸，毫無保留地回轉歸向祢。求祢甦醒祢的教會，讓我們不再沉睡，而是站在破口之中，為這世代迫切哀哭代求，好叫祢豐盛的慈愛再次臨到這地。奉主耶穌基督的聖名祈求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-secondary/20 rounded-full">
+                    <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="#part1" class="outline-btn p-6 rounded-xl flex justify-between items-center group">
+                    <div>
+                        <span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">PART 01</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">警鐘敲響：直面無法逃避的神聖審判</h3>
+                        <p class="text-gray-400 text-sm mt-1">經文範圍：珥 2:1-11</p>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-primary transition-all transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-xl flex justify-between items-center group">
+                    <div>
+                        <span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">PART 02</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">撕裂心腸：超越宗教儀式的真實悔改</h3>
+                        <p class="text-gray-400 text-sm mt-1">經文範圍：珥 2:12-14</p>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-primary transition-all transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-xl flex justify-between items-center group">
+                    <div>
+                        <span class="text-primary text-xs font-bold uppercase tracking-widest block mb-1">PART 03</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">聚集呼求：堵住破口的群體代求</h3>
+                        <p class="text-gray-400 text-sm mt-1">經文範圍：珥 2:15-17</p>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-primary transition-all transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <section class="space-y-24">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-32">
+                <div class="mb-12">
+                    <h3 class="text-secondary text-lg font-bold mb-2">深度解析 一</h3>
+                    <h2 class="text-4xl font-serif font-black text-white mb-6">警鐘敲響：直面無法逃避的神聖審判</h2>
+                    <div class="bg-dark/50 p-6 rounded-2xl border border-white/5 text-gray-300 mb-8 leading-relaxed">
+                        <span class="text-primary font-bold">【經文】</span>「你們要在錫安吹角，在我聖山吹出大聲...地震天漏，日月昏暗，星宿無光。耶和華在他軍旅前發聲...因為耶和華的日子大而可畏，誰能當得起呢？」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="group">
+                                <h4 class="text-primary font-bold flex items-center gap-2 mb-2">
+                                    <span class="w-2 h-2 bg-primary rounded-full"></span> 關鍵字解析
+                                </h4>
+                                <p class="text-gray-400 leading-relaxed">「耶和華的日子」(Yom Yahweh)。在先知書中常指上帝親自介入人類歷史的時刻。對悔改的餘民而言，是拯救與復興的日子。</p>
+                            </div>
+                            <div class="group">
+                                <h4 class="text-primary font-bold flex items-center gap-2 mb-2">
+                                    <span class="w-2 h-2 bg-primary rounded-full"></span> 關鍵問題
+                                </h4>
+                                <p class="text-gray-400 leading-relaxed">當絕境臨到，我們該如何看待上帝的管教？人常視為隨機，卻忽略了這正是為了喚醒沉睡百姓的「警鐘」。</p>
+                            </div>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                屬靈名言
+                            </h4>
+                            <blockquote class="text-gray-300 italic border-l-4 border-secondary pl-4">
+                                「在上帝的審判中，我們看見祂對罪的絕對憎惡；但這審判的背後，始終隱藏著祂呼喚我們回轉的愛。」
+                                <footer class="mt-2 text-secondary text-sm font-bold">— 約翰·加爾文 (John Calvin)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-32">
+                <div class="mb-12">
+                    <h3 class="text-secondary text-lg font-bold mb-2">深度解析 二</h3>
+                    <h2 class="text-4xl font-serif font-black text-white mb-6">撕裂心腸：超越宗教儀式的真實悔改</h2>
+                    <div class="bg-dark/50 p-6 rounded-2xl border border-white/5 text-gray-300 mb-8 leading-relaxed">
+                        <span class="text-primary font-bold">【經文】</span>「耶和華說：雖然如此，你們應當禁食、哭泣、悲哀，一心歸向我。你們要撕裂心腸，不撕裂衣服。歸向耶和華─你們的神...」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="group">
+                                <h4 class="text-primary font-bold flex items-center gap-2 mb-2">
+                                    <span class="w-2 h-2 bg-primary rounded-full"></span> 關鍵字解析
+                                </h4>
+                                <p class="text-gray-400 leading-relaxed">「歸向」(shuv)。完全地轉回。不僅是行為修正，更是意志和情感上徹底轉向。神不要「宗教業績」，祂要「心」。</p>
+                            </div>
+                            <div class="group">
+                                <h4 class="text-primary font-bold flex items-center gap-2 mb-2">
+                                    <span class="w-2 h-2 bg-primary rounded-full"></span> 關鍵問題
+                                </h4>
+                                <p class="text-gray-400 leading-relaxed">信仰是否只剩表面儀式？真實悔改是看見罪的深重而心碎，卻因神的憐憫而勇敢投入祂的懷抱。</p>
+                            </div>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                屬靈名言
+                            </h4>
+                            <blockquote class="text-gray-300 italic border-l-4 border-secondary pl-4">
+                                「悔改不只是行為的改變，而是情感的轉移。當你發現上帝比你的罪更美麗時，真實的悔改就發生了。」
+                                <footer class="mt-2 text-secondary text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-32">
+                <div class="mb-12">
+                    <h3 class="text-secondary text-lg font-bold mb-2">深度解析 三</h3>
+                    <h2 class="text-4xl font-serif font-black text-white mb-6">聚集呼求：堵住破口的群體代求</h2>
+                    <div class="bg-dark/50 p-6 rounded-2xl border border-white/5 text-gray-300 mb-8 leading-relaxed">
+                        <span class="text-primary font-bold">【經文】</span>「聚集眾民，使會眾自潔：招聚老者...事奉耶和華的祭司要在廊子和祭壇中間哭泣，說：耶和華啊，求你顧惜你的百姓...」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="group">
+                                <h4 class="text-primary font-bold flex items-center gap-2 mb-2">
+                                    <span class="w-2 h-2 bg-primary rounded-full"></span> 關鍵字解析
+                                </h4>
+                                <p class="text-gray-400 leading-relaxed">「顧惜」(chus)。帶有深深的同情，甚至流淚護衛。祭司被呼召站在神與人之間的中保位置，為民呼求。</p>
+                            </div>
+                            <div class="group">
+                                <h4 class="text-primary font-bold flex items-center gap-2 mb-2">
+                                    <span class="w-2 h-2 bg-primary rounded-full"></span> 關鍵問題
+                                </h4>
+                                <p class="text-gray-400 leading-relaxed">在世代危機中，教會是否願意放下個人事務，成為哀哭代求的祭司？上帝在尋找站在破口中的人。</p>
+                            </div>
+                        </div>
+                        <div class="glass p-6 rounded-2xl">
+                            <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                屬靈名言
+                            </h4>
+                            <blockquote class="text-gray-300 italic border-l-4 border-secondary pl-4">
+                                「我們若不為這個沉淪的世界流淚，我們就沒有資格向這個世界傳道。」
+                                <footer class="mt-2 text-secondary text-sm font-bold">— 慕迪 (D.L. Moody)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-accent/20 rounded-full">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">講道文稿</h2>
+            </div>
+            <div class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300">
+                <p class="text-2xl font-serif text-white border-b border-primary/30 pb-4 mb-10">珥2:1-17：撕裂心腸的呼喚——在末世警鐘下經歷更新之恩</p>
+                
+                <p>各位弟兄姊妹，平安。當我們環顧當今的世界，天災人禍、瘟疫戰爭頻傳，許多人心中充滿了恐懼與不安。今天我們要透過《約珥書》第二章，來聆聽上帝在這個充滿危機的世代中，對我們發出的深刻呼喚。</p>
+
+                <h3 class="text-primary text-2xl font-bold mt-12 mb-4">一、 警鐘敲響：直面無法逃避的神聖審判</h3>
+                <p>約珥書二章一開始，先知吹響了刺耳的號角：<strong class="text-white">「你們要在錫安吹角，在我聖山吹出大聲...因為耶和華的日子將到，已經臨近。」</strong> 這不僅僅是一場自然災害，先知清楚地指出，這是「耶和華的日子」，是上帝親自率領的軍隊。正如約翰·加爾文所說：「在上帝的審判中，我們看見祂對罪的絕對憎惡；但這審判的背後，始終隱藏著祂呼喚我們回轉的愛。」</p>
+
+                <h3 class="text-primary text-2xl font-bold mt-12 mb-4">二、 撕裂心腸：超越宗教儀式的真實悔改</h3>
+                <p>當警鐘敲響，上帝要我們如何回應？神親自發出了充滿恩典的邀請：<strong class="text-secondary text-xl">「你們要撕裂心腸，不撕裂衣服。歸向耶和華─你們的神；因為他有恩典，有憐憫，不輕易發怒，有豐盛的慈愛，並且後悔不降所說的災。」</strong></p>
+                <p>猶太人習慣在悲痛時「撕裂衣服」，但上帝說，我要的不是你們表面的儀式，我要的是你們的「心」。提摩太·凱勒曾說：「悔改不只是行為的改變，而是情感的轉移。」真實的悔改，是因為看見自己的罪傷了神的心而痛悔，同時又因為確信神有「豐盛的慈愛」而勇敢地奔向祂。</p>
+
+                <h3 class="text-primary text-2xl font-bold mt-12 mb-4">三、 聚集呼求：堵住破口的群體代求</h3>
+                <p>先知呼籲：<strong class="text-white">「聚集眾民，使會眾自潔...使新郎出離洞房，新婦出離內室。事奉耶和華的祭司要在廊子和祭壇中間哭泣。」</strong></p>
+                <p>上帝在呼召今天的教會，恢復祭司的職分，站在神與人之間的破口。慕迪曾說：「我們若不為這個沉淪的世界流淚，我們就沒有資格向這個世界傳道。」當我們願意真實回轉，那位有恩典、有憐憫的上帝，必定為我們留下豐富的祝福。</p>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-primary font-bold text-xl mb-6">應用方向</h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-3 text-gray-400"><span class="text-primary font-bold">01.</span> 省察個人的信仰體質：檢視是否陷入「宗教儀式化」危機。</li>
+                    <li class="flex gap-3 text-gray-400"><span class="text-primary font-bold">02.</span> 正視環境的警鐘：將生活挫折視為回轉的信號。</li>
+                    <li class="flex gap-3 text-gray-400"><span class="text-primary font-bold">03.</span> 恢復祭司代求職分：為國家社會破口迫切流淚。</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-secondary font-bold text-xl mb-6">回應行動</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded bg-secondary/20 border border-secondary/40 flex-shrink-0 mt-1"></div>
+                        <p class="text-gray-300"><span class="font-bold text-white block">個人的內室自省</span> 本週每天15分鐘，求聖靈光照隱而未現的罪。</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded bg-secondary/20 border border-secondary/40 flex-shrink-0 mt-1"></div>
+                        <p class="text-gray-300"><span class="font-bold text-white block">群體的禁食代求</span> 本週選擇一餐禁食，專門為國家危機或教會復興禱告。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Conclusion Keywords -->
+        <section class="flex flex-wrap justify-center gap-6 py-12 border-y border-white/10">
+            <div class="text-center">
+                <span class="block text-primary text-4xl font-serif font-black tracking-widest">警醒</span>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Awakening</span>
+            </div>
+            <div class="w-px h-12 bg-white/10 hidden md:block"></div>
+            <div class="text-center">
+                <span class="block text-primary text-4xl font-serif font-black tracking-widest">悔改</span>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Repentance</span>
+            </div>
+            <div class="w-px h-12 bg-white/10 hidden md:block"></div>
+            <div class="text-center">
+                <span class="block text-primary text-4xl font-serif font-black tracking-widest">代求</span>
+                <span class="text-xs uppercase tracking-widest text-gray-500">Intercession</span>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-secondary/20 rounded-full">
+                    <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl border-t-4 border-primary">
+                    <p class="text-gray-300 italic mb-3">「廉價的恩典是我們教會的死敵。昂貴的恩典是必須尋找的寶藏。」</p>
+                    <span class="text-primary text-sm font-bold">— 潘霍華，《追隨基督》</span>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-4 border-secondary">
+                    <p class="text-gray-300 italic mb-3">「在我們能夠被神大大使用之前，我們必須先被神深深地擊碎。」</p>
+                    <span class="text-secondary text-sm font-bold">— 陶恕，《渴慕神》</span>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-4 border-primary">
+                    <p class="text-gray-300 italic mb-3">「神不會無緣無故地打擊祂的孩子。每一次管教背後，都隱藏著天父深切的愛。」</p>
+                    <span class="text-primary text-sm font-bold">— 司布真，《清晨甘露》</span>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-4 border-secondary">
+                    <p class="text-gray-300 italic mb-3">「信徒的一生應當是持續不斷悔改的一生。」</p>
+                    <span class="text-secondary text-sm font-bold">— 馬丁·路德，《九十五條論綱》</span>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-4 border-primary">
+                    <p class="text-gray-300 italic mb-3">「那些將世界翻轉過來的人，都是那些在禱告中屈膝的人。」</p>
+                    <span class="text-primary text-sm font-bold">— 慕迪，《祈禱的得勝》</span>
+                </div>
+                <div class="glass p-6 rounded-2xl border-t-4 border-secondary">
+                    <p class="text-gray-300 italic mb-3">「唯有當我們願意擁抱自己的破碎時，我們才能成為別人的『負傷的醫治者』。」</p>
+                    <span class="text-secondary text-sm font-bold">— 盧雲，《負傷的治療者》</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caution -->
+        <div class="text-center py-10 border-t border-white/5">
+            <p class="text-gray-600 text-sm tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Scroll to top button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-dark rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

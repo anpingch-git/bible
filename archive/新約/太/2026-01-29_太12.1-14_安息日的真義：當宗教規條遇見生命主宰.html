@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太12:1-14 安息日的真義：當宗教規條遇見生命主宰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        accent: '#F59E0B',
+                        bgDark: '#0A0A0B',
+                        cardDark: '#161618',
+                        textDim: '#A1A1AA'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'jump': 'jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 0.9 },
+                            '50%': { opacity: 0.4 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'jump': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '20%, 50%, 80%': { transform: 'translateY(-3px)' },
+                            '40%, 60%': { transform: 'translateY(1px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #F4F4F5;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #F59E0B, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .section-padding {
+            padding-top: 80px;
+        }
+        .jump-text span {
+            display: inline-block;
+            animation: jump 4s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太12:1-14',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '安息日的真義：當宗教規條遇見生命主宰' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans selection:bg-gold selection:text-black">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3 flex justify-between items-center overflow-x-auto">
+        <span class="font-display font-bold text-sm tracking-widest text-gold whitespace-nowrap">太12:1-14</span>
+        <div class="flex space-x-6 text-sm font-medium ml-6">
+            <a href="#prayer" class="hover:text-gold transition-colors whitespace-nowrap">禱告</a>
+            <a href="#outline" class="hover:text-gold transition-colors whitespace-nowrap">大綱</a>
+            <a href="#sermon" class="hover:text-gold transition-colors whitespace-nowrap">講章</a>
+            <a href="#quotes" class="hover:text-gold transition-colors whitespace-nowrap">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header / Banner Section -->
+    <header id="top" class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_a59c7c81-52d3-4327-bf8d-a9f92f98fc0d.jpg' alt='Banner' class="w-full h-full object-cover banner-mask animate-pulse-slow" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-bgDark/40 to-bgDark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-display font-black mb-6 leading-tight tracking-tighter">
+                安息日的真義：<br/>
+                <span class="text-gradient">當宗教規條遇見生命主宰</span>
+            </h1>
+            
+            <div class="mt-8 text-lg md:text-xl font-light text-zinc-300 leading-relaxed max-w-2xl mx-auto jump-text italic">
+                <p>
+                    「『我喜愛憐恤，不喜愛祭祀。』你們若明白這話的意思，就不將無罪的當作有罪的了。因為人子是安息日的主。」（馬太福音12:7-8）
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding">
+            <div class="glass p-8 rounded-3xl relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl">🙏</span>
+                    <h2 class="text-2xl font-bold text-gold">開路禱告</h2>
+                </div>
+                <div class="text-zinc-200 leading-loose text-lg italic">
+                    親愛的主耶穌，祢是安息日的主，也是我們生命的主宰。求祢開我們的眼睛，讓我們看見律法與規條背後，那份深不見底的愛與憐憫。赦免我們常常像法利賽人一樣，用僵化的傳統和宗教的尺來衡量人，卻忽略了人真實的需要與傷痛。求聖靈更新我們的心，讓我們在祢裡面找到真正的安息，並賜給我們勇氣與力量，去活出「喜愛憐恤」的信仰生命。奉主耶穌基督的名求，阿們。
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="section-padding">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-2xl">📜</span>
+                <h2 class="text-3xl font-display font-bold">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <a href="#part1" class="glass p-4 rounded-2xl hover:border-gold/50 transition-all group text-left">
+                    <span class="text-xs text-textDim font-mono mb-2 block tracking-widest">太12:1-4</span>
+                    <h3 class="font-bold group-hover:text-gold transition-colors">突破傳統框架：看見生命的飢餓與需要</h3>
+                </a>
+                <a href="#part2" class="glass p-4 rounded-2xl hover:border-gold/50 transition-all group text-left">
+                    <span class="text-xs text-textDim font-mono mb-2 block tracking-widest">太12:5-8</span>
+                    <h3 class="font-bold group-hover:text-gold transition-colors">超越宗教儀文：認識安息日的真正主宰</h3>
+                </a>
+                <a href="#part3" class="glass p-4 rounded-2xl hover:border-gold/50 transition-all group text-left">
+                    <span class="text-xs text-textDim font-mono mb-2 block tracking-widest">太12:9-14</span>
+                    <h3 class="font-bold group-hover:text-gold transition-colors">恢復生命的安息：以行動帶出醫治與憐憫</h3>
+                </a>
+            </div>
+
+            <!-- Part 1 Content -->
+            <div id="part1" class="mb-16 space-y-6">
+                <div class="inline-block bg-gold/10 text-gold px-4 py-1 rounded-full text-sm font-bold mb-4">第一分段</div>
+                <h3 class="text-2xl font-bold mb-4">突破傳統框架：看見生命的飢餓與需要 (太12:1-4)</h3>
+                <div class="border-l-4 border-gold/30 pl-6 my-6 text-zinc-400 italic">
+                    「那時，耶穌在安息日從麥地裡經過。他的門徒餓了，就掐起麥穗來吃。法利賽人看見，就對耶穌說：『看哪，你的門徒做安息日不可做的事了！』耶穌對他們說：『經上記著大衛和跟從他的人飢餓之時所做的事，你們沒有念過嗎？...』」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-cardDark p-6 rounded-2xl">
+                        <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">🔍</span> 關鍵字解析</h4>
+                        <p class="text-sm text-zinc-300"><strong>掐起 (τίλλω)</strong>：意為摘下。傳統將其定義為「收割」，是安息日三十九類禁止的工作之一。</p>
+                    </div>
+                    <div class="bg-cardDark p-6 rounded-2xl border border-zinc-800">
+                        <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">❓</span> 關鍵問題</h4>
+                        <p class="text-sm text-zinc-300">為什麼法利賽人如此反感？我們是否也常陷入「規條比人重要」的盲點？</p>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-accent font-bold mb-3">💡 深入析讀與故事</h4>
+                    <p class="text-zinc-300 leading-relaxed">
+                        法利賽人看見的是「破壞規矩」，耶穌看見的是「門徒餓了」。當信仰只剩下對錯，我們就失去愛的能力。如同一位警衛死守探病時間規定，卻忽略了病危家屬的心碎；耶穌則是那位開門的護理長，看見生命的急迫性。
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-white/5 italic text-sm text-gold/80">
+                        「宗教的核心是『我順服，所以我蒙悅納』；福音的核心是『我蒙悅納，所以我順服』。」——提摩太·凱勒
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 Content -->
+            <div id="part2" class="mb-16 space-y-6">
+                <div class="inline-block bg-gold/10 text-gold px-4 py-1 rounded-full text-sm font-bold mb-4">第二分段</div>
+                <h3 class="text-2xl font-bold mb-4">超越宗教儀文：認識安息日的真正主宰 (太12:5-8)</h3>
+                <div class="border-l-4 border-gold/30 pl-6 my-6 text-zinc-400 italic">
+                    「『我喜愛憐恤，不喜愛祭祀。』你們若明白這話的意思，就不將無罪的當作有罪的了。因為人子是安息日的主。」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-cardDark p-6 rounded-2xl">
+                        <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">🔍</span> 關鍵字解析</h4>
+                        <p class="text-sm text-zinc-300"><strong>憐恤 (ἔλεος)</strong>：指對深陷苦難之人的同情與實際援助行動。<strong>主 (κύριος)</strong>：擁有絕對權柄。耶穌宣告自己是設立者。</p>
+                    </div>
+                    <div class="bg-cardDark p-6 rounded-2xl border border-zinc-800">
+                        <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">❓</span> 關鍵問題</h4>
+                        <p class="text-sm text-zinc-300">「人子是安息日的主」對信仰生活有何震撼？通往神的道路不再是透過建築物或特定日子。</p>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-accent font-bold mb-3">💡 深入析讀與故事</h4>
+                    <p class="text-zinc-300 leading-relaxed">
+                        聖殿與安息日是猶太信仰支柱。耶穌宣告超越兩者，意味著通往神是透過基督本人。就像鋼琴家死守音符卻無情感，與完全融入作曲家心境的對比。法利賽人守音符，耶穌道出了作曲家（上帝）真正的心意——愛與憐憫。
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-white/5 italic text-sm text-gold/80">
+                        「如果我們在上帝面前只不過是遵守規條，卻沒有愛祂的熱情，我們的信仰就是死的。」——陶恕
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 Content -->
+            <div id="part3" class="mb-16 space-y-6">
+                <div class="inline-block bg-gold/10 text-gold px-4 py-1 rounded-full text-sm font-bold mb-4">第三分段</div>
+                <h3 class="text-2xl font-bold mb-4">恢復生命的安息：以行動帶出醫治與憐憫 (太12:9-14)</h3>
+                <div class="border-l-4 border-gold/30 pl-6 my-6 text-zinc-400 italic">
+                    「耶穌說：『人比羊何等貴重呢！所以，在安息日做善事是可以的。』於是對那人說：『伸出手來！』他把手一伸，手就復了原。」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-cardDark p-6 rounded-2xl">
+                        <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">🔍</span> 關鍵字解析</h4>
+                        <p class="text-sm text-zinc-300"><strong>枯乾 (ξηρός)</strong>：萎縮、僵硬。<strong>復原 (ἀποκαθίστημι)</strong>：恢復到原來的狀態，包含尊嚴與完整性的恢復。</p>
+                    </div>
+                    <div class="bg-cardDark p-6 rounded-2xl border border-zinc-800">
+                        <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">❓</span> 關鍵問題</h4>
+                        <p class="text-sm text-zinc-300">耶穌為何選擇在安息日治病？祂刻意要翻轉錯誤的神學：安息日是釋放而非枷鎖。</p>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-accent font-bold mb-3">💡 深入析讀與故事</h4>
+                    <p class="text-zinc-300 leading-relaxed">
+                        想像消防員在安息日拒絕出勤，眼睜睜看著房屋燒毀。耶穌以羊掉進坑裡的例子，凸顯出宗教若失去對人的關懷，將變得何等偽善。安息日的真義是恢復生命的完整，讓受壓制的得自由。
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-white/5 italic text-sm text-gold/80">
+                        「教會是為了別人的益處而存在的。教會若不為他人而活，就不是教會。」——潘霍華
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="section-padding">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-2xl">📖</span>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            <div class="bg-cardDark p-8 rounded-[2rem] border border-zinc-800 shadow-2xl space-y-8">
+                <div class="text-center">
+                    <h2 class="text-2xl font-black text-gradient">太12:1-14：安息日的真義：當宗教規條遇見生命主宰</h2>
+                </div>
+                <p class="text-zinc-300 leading-loose">各位弟兄姊妹，平安。今天我們要看馬太福音12章1到14節。這段經文記載了耶穌和法利賽人之間兩次激烈的衝突，這兩次衝突都圍繞著一個核心議題——「安息日」。</p>
+                
+                <h3 class="text-xl font-bold text-gold border-b border-gold/20 pb-2">第一段：突破傳統框架：看見真實的需要</h3>
+                <p class="text-zinc-300 leading-loose">
+                    弟兄姊妹，法利賽人看見的是<span class="text-accent font-bold">「破壞規矩的行為」</span>，但耶穌看見的卻是<span class="text-accent font-bold">「門徒的飢餓與需要」</span>。耶穌藉此提醒我們一個重要的真理：<span class="bg-gold/10 px-1 text-white font-bold">在神眼中，保存生命與憐恤人的基本需求，永遠優先於儀式性的規條。</span>
+                </p>
+
+                <h3 class="text-xl font-bold text-gold border-b border-gold/20 pb-2">第二段：超越宗教儀文：認識安息日的主</h3>
+                <p class="text-zinc-300 leading-loose">
+                    耶穌向他們揭示了神真正的心意：<span class="text-accent font-bold italic">「『我喜愛憐恤，不喜愛祭祀。』你們若明白這話的意思，就不將無罪的當作有罪的了。」</span>
+                    上帝不是不要我們敬拜祂，而是如果我們的敬拜沒有產生出對人的愛與憐恤，那這個敬拜在神眼中毫無價值。
+                </p>
+
+                <h3 class="text-xl font-bold text-gold border-b border-gold/20 pb-2">第三段：恢復生命的安息：以憐憫代替祭祀</h3>
+                <p class="text-zinc-300 leading-loose">
+                    耶穌刻意在安息日行神蹟。為什麼？因為耶穌要向世人宣告：面對一個受苦的生命，袖手旁觀才是真正違反安息日！<span class="text-accent font-bold underline decoration-gold/50 underline-offset-4">安息日的真義，正是恢復生命的完整，是讓受壓制的得自由！</span>
+                </p>
+
+                <div class="p-6 bg-gold/5 rounded-2xl border border-gold/10">
+                    <h3 class="text-lg font-black mb-2">結論</h3>
+                    <p class="text-zinc-300">
+                        今天這段經文給我們三個關鍵的提醒：<strong class="text-gold">憐憫、主宰、恢復</strong>。當我們尊耶穌為主宰時，我們就不會被宗教規條所轄制，而是能用基督的愛，去觸摸身邊那些心靈枯乾的人。願我們都能活出「喜愛憐恤」的信仰生命！阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="section-padding grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+                <h2 class="text-2xl font-display font-bold mb-6 flex items-center text-gold">
+                    <span class="mr-3">🎯</span> 應用方向
+                </h2>
+                <ul class="space-y-4 text-zinc-300">
+                    <li class="flex gap-3"><span class="text-gold">•</span> 檢視內心的法利賽主義</li>
+                    <li class="flex gap-3"><span class="text-gold">•</span> 找回安息日的真義</li>
+                    <li class="flex gap-3"><span class="text-gold">•</span> 付諸憐憫的行動</li>
+                    <li class="flex gap-3"><span class="text-gold">•</span> 順服安息日的主</li>
+                </ul>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+                <h2 class="text-2xl font-display font-bold mb-6 flex items-center text-accent">
+                    <span class="mr-3">⚡</span> 回應行動
+                </h2>
+                <ul class="space-y-4 text-zinc-300">
+                    <li class="flex gap-3"><span class="text-accent">1.</span> 主動關懷一個「枯乾」的生命</li>
+                    <li class="flex gap-3"><span class="text-accent">2.</span> 重新調整主日的態度</li>
+                    <li class="flex gap-3"><span class="text-accent">3.</span> 為自己的冷漠悔改禱告</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-padding">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="text-2xl">✨</span>
+                <h2 class="text-3xl font-display font-bold">屬靈佳句名言</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「宗教的核心是『我順服，所以我蒙悅納』；福音的核心是『我蒙悅納，所以我順服』。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「如果我們在上帝面前只不過是遵守規條，卻沒有愛祂的熱情，我們的信仰就是死的。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 陶恕 (A. W. Tozer)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「教會是為了別人的益處而存在的。教會若不為他人而活，就不是教會。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「安息日不是一個讓我們從生活中抽離的暫停鍵，而是一個讓我們進入上帝同在的神聖時刻。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「真正的憐憫不是高高在上的施捨，而是願意走進別人的痛苦中，與他們同在。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「律法是為了把我們逼向基督，而基督是讓我們能夠真正履行律法精義——愛。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「恩典不是讓我們免於順服，恩典是賜給我們順服的能力與喜樂。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 魏樂德 (Dallas Willard)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「當我們將傳統高舉過於聖經時，我們就在無意中取代了上帝的主權。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「一個沒有憐憫心腸的基督徒，是一個屬靈的矛盾體。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-zinc-200">「我們很容易因為專注於神學的正確而忘記愛；但沒有愛的真理往往會變成傷人的利器。」</p>
+                    <p class="text-right text-gold mt-2 font-medium">— 約翰·史托德 (John Stott)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <section class="mt-24 text-center">
+            <div class="inline-block p-4 rounded-xl border border-red-500/20 bg-red-500/5 text-zinc-500 text-xs">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold text-bgDark rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth jump animation effect for gold verses
+        const jumpElements = document.querySelectorAll('.jump-text p');
+        jumpElements.forEach(p => {
+            const text = p.innerText;
+            p.innerHTML = '';
+            [...text].forEach((char, i) => {
+                const span = document.createElement('span');
+                span.innerText = char;
+                span.style.setProperty('--i', i);
+                p.appendChild(span);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -82,7 +82,24 @@
             scroll-margin-top: 100px;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '拉10:1-44',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '拉',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在破碎中重築聖潔：真實悔改的代價與恩典' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans leading-relaxed">
 
     <!-- Sticky Navigation -->
@@ -99,7 +116,7 @@
     </nav>
 
     <!-- Top Banner Section -->
-    <header id="top" class="relative  h-[60vh] md:h-[80vh]  w-full h-screen  overflow-hidden flex items-center justify-center pt-16">
+    <header id="top" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <div class="absolute inset-0 z-0">
             <img src='image/img_a788b53a-6cd2-4e4d-a53b-8fbdc78642ef.jpg' alt='以斯拉記10章大雨中的悔改' class="w-full h-full object-cover animate-breath" />
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-darkBg/50 to-darkBg"></div>

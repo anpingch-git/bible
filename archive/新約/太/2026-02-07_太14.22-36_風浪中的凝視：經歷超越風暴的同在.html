@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太14:22-36:風浪中的凝視：經歷超越風暴的同在</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18d',
+                            300: '#fce64d',
+                            400: '#fbd81c',
+                            500: '#e1bd06',
+                            600: '#af9305',
+                        },
+                        ocean: {
+                            800: '#0a192f',
+                            900: '#020c1b',
+                            950: '#010811',
+                        }
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-pulse': 'gentle-pulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                            '50%': { transform: 'scale(1.02)', opacity: '0.9' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(2, 12, 27, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(251, 216, 28, 0.3);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbd81c 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太14:22-36',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '風浪中的凝視：經歷超越風暴的同在' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-ocean-950 text-slate-200 font-sans selection:bg-gold-500/30">
+
+    <!-- Floating Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-gold-400 font-semibold tracking-wider text-sm md:text-base hidden sm:block">太 14:22-36</span>
+            <div class="flex gap-6 text-xs md:text-sm font-medium tracking-widest uppercase">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header id="top" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_a8b1998e-1fd6-44c6-b0b9-f44e826bb04c.jpg' alt='Stormy Sea Banner' class="w-full h-full object-cover animate-breathe scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-ocean-950/40 via-ocean-950/60 to-ocean-950"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <p class="text-gold-400 font-semibold tracking-[0.3em] mb-4 md:mb-6 animate-pulse uppercase">Matthew 14:22-36</p>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight tracking-tight">
+                風浪中的<span class="text-gradient">凝視</span>：<br/>經歷超越風暴的同在
+            </h1>
+            
+            <!-- Verse (Golden Verse with animation) -->
+            <div class="mt-12 animate-gentle-pulse">
+                <p class="text-lg md:text-2xl font-light italic text-slate-300 leading-relaxed max-w-2xl mx-auto">
+                    「耶穌連忙對他們說：『你們放心，是我，不要怕！』」
+                </p>
+                <p class="mt-4 text-gold-500 font-semibold tracking-widest">— 馬太福音 14:27</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-32 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-20">
+            <div class="flex items-center gap-4 mb-8">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.904A17.963 17.963 0 0112 5.035a17.963 17.963 0 018.228 6.061L12 21z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 13a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                <h2 class="text-3xl font-display font-bold">禱告</h2>
+            </div>
+            <div class="bg-gradient-to-r from-gold-500/10 to-transparent border-l-4 border-gold-500 p-8 md:p-12 rounded-r-2xl">
+                <p class="text-xl md:text-2xl text-slate-300 leading-loose font-light">
+                    親愛的主耶穌，我們生命中時常遭遇突如其來的狂風巨浪。當我們在黑夜裡搖櫓甚苦、感到孤立無援時，求祢開我們的屬靈眼睛，看見祢正踏著海浪向我們走來。主啊，賜給我們彼得般跨出船身的勇氣，更求祢保守我們的眼目，在風暴中不看環境的凶險，單單定睛在祢的身上。當我們軟弱下沉時，願祢伸出大能的手拉住我們。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline / Bento Grid Section -->
+        <section id="outline" class="pt-20">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                <h2 class="text-3xl font-display font-bold">大綱導覽</h2>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+                <a href="#section1" class="p-6 rounded-2xl bento-card text-center group">
+                    <p class="text-xs text-gold-500/60 mb-2 uppercase font-bold tracking-tighter">Part 01</p>
+                    <p class="font-bold group-hover:text-gold-400 transition-colors">順服帶來的風暴</p>
+                    <p class="text-xs text-slate-500 mt-2">太 14:22-24</p>
+                </a>
+                <a href="#section2" class="p-6 rounded-2xl bento-card text-center group">
+                    <p class="text-xs text-gold-500/60 mb-2 uppercase font-bold tracking-tighter">Part 02</p>
+                    <p class="font-bold group-hover:text-gold-400 transition-colors">黑暗中的神聖顯現</p>
+                    <p class="text-xs text-slate-500 mt-2">太 14:25-27</p>
+                </a>
+                <a href="#section3" class="p-6 rounded-2xl bento-card text-center group">
+                    <p class="text-xs text-gold-500/60 mb-2 uppercase font-bold tracking-tighter">Part 03</p>
+                    <p class="font-bold group-hover:text-gold-400 transition-colors">信心與眼目的拔河</p>
+                    <p class="text-xs text-slate-500 mt-2">太 14:28-33</p>
+                </a>
+                <a href="#section4" class="p-6 rounded-2xl bento-card text-center group">
+                    <p class="text-xs text-gold-500/60 mb-2 uppercase font-bold tracking-tighter">Part 04</p>
+                    <p class="font-bold group-hover:text-gold-400 transition-colors">經歷拯救的完全敬拜</p>
+                    <p class="text-xs text-slate-500 mt-2">太 14:34-36</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-24 border-t border-slate-800 pt-16">
+                    <div class="grid lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-1">
+                            <span class="text-5xl font-black text-slate-800">01</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-6 text-gold-400">順服帶來的風暴：當神的引導遇見現實的顛簸</h3>
+                            <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800 text-sm italic text-slate-400 leading-relaxed">
+                                太 14:22-24 「耶穌隨即催門徒上船，先渡到那邊去...因風不順，被浪搖撼。」
+                            </div>
+                        </div>
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-gold-400 rounded-full"></span> 關鍵字：催 (anagkazō)
+                                </h4>
+                                <p class="text-slate-300">意為強迫、敦促。進入風暴不是因為悖逆，而是因為完全順服。耶穌為了保護門徒免於世俗成功的試探，親自將他們推入風暴。</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="bg-ocean-900/50 p-6 rounded-2xl border border-slate-800">
+                                    <h4 class="font-bold mb-3 text-slate-100 italic">為什麼順服反而有風暴？</h4>
+                                    <p class="text-sm text-slate-400">風暴不是神缺席的證明，而是神熬煉門徒信心、使他們經歷神大能的訓練場。平安港口不是造船的目的。</p>
+                                </div>
+                                <div class="bg-ocean-900/50 p-6 rounded-2xl border border-slate-800">
+                                    <h4 class="font-bold mb-3 text-slate-100 italic">佳句銘刻</h4>
+                                    <p class="text-sm text-gold-200/80">「我們不該求神讓我們免於苦難，而應求神在苦難中與我們同在。」——提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-24 border-t border-slate-800 pt-16">
+                    <div class="grid lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-1">
+                            <span class="text-5xl font-black text-slate-800">02</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-6 text-gold-400">黑暗中的神聖顯現：在恐懼中認出「我是」</h3>
+                            <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800 text-sm italic text-slate-400 leading-relaxed">
+                                太 14:25-27 「耶穌連忙對他們說：『你們放心，是我，不要怕！』」
+                            </div>
+                        </div>
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-gold-400 rounded-full"></span> 關鍵字：是我 (egō eimi)
+                                </h4>
+                                <p class="text-slate-300">等同於舊約「我是自有永有的」。耶穌在宣告神聖的臨在。恐懼的解藥不是風平浪靜，而是認出那位掌管萬有的主就在這裡。</p>
+                            </div>
+                            <div class="bg-ocean-900/50 p-8 rounded-2xl border border-slate-800 flex gap-6">
+                                <div class="hidden sm:block text-4xl text-slate-700">“</div>
+                                <p class="text-slate-400 italic leading-relaxed">
+                                    「我們最大的恐懼，往往是因為我們用肉眼去看環境，而不是用心靈的耳朵去聽基督的聲音。」——司布真
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-24 border-t border-slate-800 pt-16">
+                    <div class="grid lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-1">
+                            <span class="text-5xl font-black text-slate-800">03</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-6 text-gold-400">信心與眼目的拔河：從水面到下沉的視線轉移</h3>
+                            <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800 text-sm italic text-slate-400 leading-relaxed">
+                                太 14:28-33 「只因見風甚大，就害怕，將要沉下去...耶穌趕緊伸手拉住他」
+                            </div>
+                        </div>
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-gold-400 rounded-full"></span> 關鍵字：疑惑 (distazō)
+                                </h4>
+                                <p class="text-slate-300">意為「心思游移不定」。彼得的失敗是因為注意力被一分為二。信心就是靈魂的仰望，將視線從一切事物上轉移，單單定睛於神。</p>
+                            </div>
+                            <div class="bg-ocean-900/50 p-6 rounded-2xl border border-slate-800">
+                                <h4 class="font-bold mb-3 text-slate-100 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+                                    走鋼索的秘訣
+                                </h4>
+                                <p class="text-sm text-slate-400">雜技演員絕不能看腳下，必須盯住前方。過度分析環境的艱難，就會在絕望中下沉。下沉時唯一正確的做法：立刻呼求「主啊，救我！」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="section4" class="scroll-mt-24 border-t border-slate-800 pt-16">
+                    <div class="grid lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-1">
+                            <span class="text-5xl font-black text-slate-800">04</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-6 text-gold-400">經歷拯救的完全敬拜：風暴過後的觸摸與醫治</h3>
+                            <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800 text-sm italic text-slate-400 leading-relaxed">
+                                太 14:34-36 「摸著的人就都好了。」
+                            </div>
+                        </div>
+                        <div class="lg:col-span-2 space-y-8">
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-gold-400 rounded-full"></span> 關鍵字：摸 (haptomai)
+                                </h4>
+                                <p class="text-slate-300">緊緊抓住、依附。經歷過風浪後，信仰不再是知識，而是真實的連結。風暴的最終目的，是將我們帶向對神兒子更深切的敬拜與真實的觸摸。</p>
+                            </div>
+                            <p class="text-slate-400 text-sm italic text-right">「只有那些真正順服的人才相信，也只有那些真正相信的人才順服。」——潘霍華</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="bg-gradient-to-br from-slate-900 to-ocean-900 rounded-[3rem] p-8 md:p-20 border border-slate-800 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-10 opacity-10">
+                <svg class="w-40 h-40 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 10-2 0v1a1 1 0 102 0zM13 16v-1a1 1 0 10-2 0v1a1 1 0 102 0zM14.95 15.05a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 0zM6.464 14.95a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 0z"/></svg>
+            </div>
+            <div class="relative z-10 grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-display font-bold mb-8">應用方向</h2>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold">1</span>
+                            <p class="text-slate-300"><strong>重新定義風暴：</strong> 明白有時候是神「催」我們進入風浪，為了塑造我們，而非祂不愛我們。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold">2</span>
+                            <p class="text-slate-300"><strong>辨識主的聲音：</strong> 在焦慮中練習安靜，尋找並聆聽「是我，不要怕」，讓同在成為安慰。</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold">3</span>
+                            <p class="text-slate-300"><strong>校準屬靈視線：</strong> 當發現下沉時，停止關注問題，將目光轉向耶穌。</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-display font-bold mb-8">實踐行動</h2>
+                    <div class="space-y-4">
+                        <div class="p-5 bg-white/5 rounded-2xl border border-white/10 hover:border-gold-500/30 transition-all">
+                            <p class="text-gold-400 font-bold mb-1">寫下「風浪清單」</p>
+                            <p class="text-sm text-slate-400">列出讓你焦慮的事項，逐一宣告「是我，不要怕」。</p>
+                        </div>
+                        <div class="p-5 bg-white/5 rounded-2xl border border-white/10 hover:border-gold-500/30 transition-all">
+                            <p class="text-gold-400 font-bold mb-1">定睛於神的晨禱</p>
+                            <p class="text-sm text-slate-400">在讀訊息前先讀經，確保一天的開始是看著耶穌。</p>
+                        </div>
+                        <div class="p-5 bg-white/5 rounded-2xl border border-white/10 hover:border-gold-500/30 transition-all">
+                            <p class="text-gold-400 font-bold mb-1">練習即時呼救</p>
+                            <p class="text-sm text-slate-400">當壓力爆表時，立刻簡短禱告：「主啊，救我！」。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex gap-3 flex-wrap">
+                        <span class="px-4 py-1 rounded-full border border-gold-500/30 text-gold-400 text-xs font-bold tracking-widest uppercase">視線 Gaze</span>
+                        <span class="px-4 py-1 rounded-full border border-gold-500/30 text-gold-400 text-xs font-bold tracking-widest uppercase">呼求 Cry out</span>
+                        <span class="px-4 py-1 rounded-full border border-gold-500/30 text-gold-400 text-xs font-bold tracking-widest uppercase">同在 Presence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript -->
+        <section id="sermon" class="pt-20 max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            <div class="prose prose-invert prose-lg max-w-none space-y-12 text-slate-300 leading-relaxed">
+                <p class="text-xl font-medium leading-loose">
+                    弟兄姊妹們，平安！我們常常有一種迷思：如果我走在神的旨意裡，如果我順服神，我的生活就應該一帆風順。然而，今天我們從馬太福音第14章看見的，卻是一個完全相反的圖畫。
+                </p>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-gold-400 border-b border-gold-500/20 pb-2">一、 順服帶來的風暴——當神的引導遇見現實的顛簸</h3>
+                    <p>
+                        經文一開始告訴我們，耶穌剛剛行了五餅二魚的偉大神蹟，群眾情緒高昂。但第22節說：「耶穌隨即催門徒上船，先渡到那邊去」。這個「催」字在原文中帶有強迫的意思。門徒進入這場在夜裡的狂風巨浪，不是因為他們走錯了路，而是因為他們<strong class="text-gold-200">完全順服耶穌的命令</strong>！
+                    </p>
+                    <p>
+                        為什麼順服主，反而會陷入風暴？因為耶穌要把門徒從世俗虛榮的群眾狂熱中抽離出來。有時候，神將我們推入風暴中，是為了保護我們免受更大的屬世試探。提摩太·凱勒曾說過：「我們不該求神讓我們免於苦難，而應求神在苦難中與我們同在。」<span class="text-gold-300 font-bold">風暴不是神缺席的證明，而是神熬煉我們信心的訓練場。</span>
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-gold-400 border-b border-gold-500/20 pb-2">二、 黑暗中的神聖顯現——在恐懼中認出「我是」</h3>
+                    <p>
+                        到了夜裡四更天，門徒在海上搖櫓甚苦。這時，耶穌在海面上走過來。門徒的反應是什麼？他們驚慌喊叫：「是個鬼怪！」我們常常像門徒一樣，當神以我們不熟悉的方式介入我們的困境時，我們反而會感到害怕。
+                    </p>
+                    <p class="bg-gold-500/10 p-6 rounded-2xl border border-gold-500/30 font-bold text-gold-100">
+                        「耶穌連忙對他們說：『你們放心，是我，不要怕！』」
+                    </p>
+                    <p>
+                        這句「是我」，在原文中就是宣告上帝的名字「I AM」（我是自有永有的）。耶穌在告訴他們：你們眼前的不是致命的危機，而是掌管萬有的主。恐懼的解藥從來不是風平浪靜，而是認出那位在風暴中掌權的主。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-gold-400 border-b border-gold-500/20 pb-2">三、 信心與眼目的拔河——從水面到下沉的視線轉移</h3>
+                    <p>
+                        彼得走出去了！但經文說，他「只因見風甚大，就害怕，將要沉下去」。彼得的失敗不是因為風浪變大了，而是因為他的<strong class="text-gold-200">視線轉移了</strong>。
+                    </p>
+                    <p>
+                        當彼得看著耶穌時，水面如同磐石；當他的眼目轉向風浪時，水就成了深淵。我們生命中也是如此，陶恕牧師說得好：「信心就是靈魂的仰望，將我們的視線從一切事物上轉移，單單定睛於神。」
+                    </p>
+                    <p>
+                        然而，彼得給了我們一個極美的榜樣。當他下沉時，他立刻大喊：「主啊，救我！」耶穌沒有嘲笑他，而是<strong class="text-gold-300 underline underline-offset-8">趕緊伸手拉住他</strong>。主允許我們經歷小信的下沉，為了讓我們體會祂那雙即時拯救的大手。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-display font-bold text-gold-400 border-b border-gold-500/20 pb-2">四、 經歷拯救的完全敬拜——風暴過後的觸摸與醫治</h3>
+                    <p>
+                        當耶穌一上船，風就止住了。門徒在船上拜祂，說：「你真是神的兒子了。」這場風暴達到了它的終極目的——帶來對上帝真實的敬拜。
+                    </p>
+                    <p>
+                        弟兄姊妹，你現在正在風暴中嗎？不要定睛於風浪，不要依靠自己的力量掙扎。聽見那句：<strong class="text-gold-300">「你們放心，是我，不要怕！」</strong> 勇敢地把你的視線轉向耶穌，當你快要淹沒時大聲呼求祂，祂必趕緊伸手拉住你。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-20">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「我們不該求神讓我們免於苦難，而應求神在苦難中與我們同在。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 《與上帝一起走過苦難》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「我們最大的恐懼，往往是因為我們用肉眼去看環境，而不是用心靈的耳朵去聽基督的聲音。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真 《清晨與晚安》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「信心就是靈魂的仰望，將我們的視線從一切事物上轉移，單單定睛於神。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 《渴慕神》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「只有那些真正順服的人才相信，也只有那些真正相信的人才順服。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 《做門徒的代價》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「上帝的同在並非意味著問題的消失，而是意味著我們在任何環境中都有了終極的安全感。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 魏樂德 《神聖的約定》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「我們所信的上帝，不是一位站在岸邊冷眼旁觀的上帝，而是一親自步入我們的風暴、並與我們一同登船的上帝。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德 《基督的十字架》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="pt-20 text-center">
+            <div class="inline-block px-8 py-4 bg-red-500/5 border border-red-500/20 rounded-full text-red-400 text-sm">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-ocean-950 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 group">
+        <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

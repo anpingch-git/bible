@@ -58,7 +58,24 @@
             -webkit-text-fill-color: transparent;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '提前5:1-25',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '提前',         // 動態注入書卷縮寫，例如：出
+              'note_title': '神家中的秩序與相愛：以真誠、敬重與純潔建立教會' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans antialiased">
 
     <!-- Sticky Navigation -->

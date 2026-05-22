@@ -79,7 +79,24 @@
             .mobile-title { font-size: 2rem; }
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '結37:15-28',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '結',         // 動態注入書卷縮寫，例如：出
+              'note_title': '從分裂到合一：在主手裡成為一杖' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-body selection:bg-gold/30">
 
     <!-- Banner & Background Logic -->

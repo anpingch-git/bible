@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哀 4:1-22 褪色的真金：從錫安的悲歌看罪的代價與最終的盼望</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef7cf',
+                            200: '#fdec9b',
+                            300: '#fadc5c',
+                            400: '#f8cc2d',
+                            500: '#eeb311',
+                            600: '#cf8b0a',
+                            700: '#a6640c',
+                            800: '#884e11',
+                            900: '#734114',
+                        },
+                        onyx: '#121212',
+                        crimson: '#8b0000',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0a; color: #e5e7eb; -webkit-font-smoothing: antialiased; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gold-gradient { background: linear-gradient(135deg, #fadc5c 0%, #cf8b0a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .border-gold-glow { border: 1px solid rgba(238, 179, 17, 0.3); box-shadow: 0 0 15px rgba(238, 179, 17, 0.1); }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background: #eeb311; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .section-padding { padding-top: 100px; margin-top: -60px; }
+        .bento-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .bento-card:hover { transform: translateY(-5px); border-color: rgba(238, 179, 17, 0.5); }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-gold-500 font-display font-bold tracking-wider text-sm md:text-base">
+                哀 4:1-22 褪色的真金
+            </div>
+            <div class="flex items-center space-x-6 text-xs md:text-sm font-medium tracking-widest uppercase">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/f150c8b6-853e-4d74-ae69-466ac5a23e7f' alt='media_1' class="w-full h-full object-cover opacity-40 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/60 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <div class="inline-block px-4 py-1 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 text-xs font-bold tracking-widest uppercase mb-6 animate-pulse-slow">
+                Lamentations 4:1-22
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-6">
+                <span class="block mb-2">褪色的真金</span>
+                <span class="gold-gradient">從錫安的悲歌看罪的代價</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl font-light tracking-wide max-w-2xl mx-auto italic">
+                「黃金何其暗淡！純金何其變色！」
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-padding mb-24">
+            <div class="max-w-3xl mx-auto text-center glass border-gold-glow rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-gold-500"></div>
+                <div class="text-gold-500 mb-6 flex justify-center">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-8.228A5.992 5.992 0 014 8.768c0-3.327 2.684-6.011 6.011-6.011 1.488 0 2.846.541 3.898 1.438a5.98 5.98 0 014.091-1.438c3.327 0 6.011 2.684 6.011 6.011 0 1.48-.535 2.836-1.418 3.876L12 21z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold mb-8">慈愛公義的禱告</h2>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic">
+                    主啊，我們來到祢面前，心中充滿敬畏。當我們讀到錫安的黃金如何暗淡，曾經的榮耀如何化為廢墟時，我們深刻看見罪惡所帶來的毀滅與祢公義的審判。求祢開我們的眼睛，讓我們不輕忽罪的代價；也求祢鑒察我們的內心，看看我們是否將虛假的依靠當作拯救。當我們落在管教與軟弱中時，求祢賜下悔改的恩典，讓我們看見刑罰終有滿足之日，而在祢的公義中，藏著對屬祢子民最終的憐憫與復興。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="section-padding mb-16">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-2 bg-gold-500/20 rounded-lg text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">訊息大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="glass p-8 rounded-2xl bento-card border-white/5 hover:bg-gold-500/5 group">
+                    <div class="text-xs font-bold text-gold-500 mb-2 uppercase tracking-tighter">Part 01 | 哀 4:1-11</div>
+                    <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">昔日榮華化為塵土</h3>
+                    <p class="text-sm text-gray-400">探討罪的毀滅性代價與人性尊嚴的喪失。</p>
+                </a>
+                <a href="#part2" class="glass p-8 rounded-2xl bento-card border-white/5 hover:bg-gold-500/5 group">
+                    <div class="text-xs font-bold text-gold-500 mb-2 uppercase tracking-tighter">Part 02 | 哀 4:12-16</div>
+                    <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">屬靈領袖的墮落</h3>
+                    <p class="text-sm text-gray-400">分析內部腐敗如何導致神聖堡壘的破裂。</p>
+                </a>
+                <a href="#part3" class="glass p-8 rounded-2xl bento-card border-white/5 hover:bg-gold-500/5 group">
+                    <div class="text-xs font-bold text-gold-500 mb-2 uppercase tracking-tighter">Part 03 | 哀 4:17-22</div>
+                    <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">虛假倚靠與終點</h3>
+                    <p class="text-sm text-gray-400">看見神公義管教的限度與復興的曙光。</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Part 1 -->
+            <div id="part1" class="mb-32">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4">
+                        <div class="sticky top-24">
+                            <h3 class="text-4xl font-serif font-bold mb-6">01. 昔日榮華化為塵土</h3>
+                            <div class="p-6 bg-crimson/10 border-l-4 border-crimson rounded-r-xl mb-6">
+                                <p class="text-xs font-bold text-crimson uppercase mb-2">Key Scripture</p>
+                                <p class="text-sm italic leading-relaxed text-gray-300">「錫安寶貴的眾子好比精金，現在何竟算為窯匠手所做的瓦器？」</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="glass p-4 rounded-xl">
+                                    <span class="text-xs font-bold text-gold-500 block mb-1">關鍵字詞</span>
+                                    <span class="text-lg font-bold">暗淡 (עָמַם)</span>
+                                    <p class="text-sm text-gray-400 mt-1">失去光澤、被遮蔽。象徵神的榮耀離開。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                <span class="text-white font-bold block mb-2">為什麼神容許祂所愛的子民經歷如此慘劇？</span>
+                                這段經文展示了「罪的真實面貌」。神容許這一切發生，是為了顯明罪的後果比所多瑪的毀滅更可怕（哀4:6）。這提醒我們，罪的最終代價是奪走人身上一切神聖的尊嚴。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass p-6 rounded-2xl bg-white/5">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    例證小故事
+                                </h4>
+                                <p class="text-sm text-gray-400 leading-relaxed">
+                                    一艘豪華郵輪（如鐵達尼號），因為船長的驕傲與疏忽，最終撞上冰山。沉沒後，曾經價值連城的水晶吊燈、黃金餐具，都在冰冷黑暗的海底被淤泥覆蓋，與廉價的廢鐵無異。
+                                </p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl border-l-4 border-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                                    屬靈佳句
+                                </h4>
+                                <p class="text-lg font-serif italic text-white leading-snug">
+                                    「罪惡的本質，就是我們想要自己作神；而罪惡的結果，就是我們連人都做不成。」
+                                </p>
+                                <p class="text-xs text-gold-500 mt-2">— 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Dive Part 2 -->
+            <div id="part2" class="mb-32">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-8 order-2 lg:order-1 space-y-8">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                <span class="text-white font-bold block mb-2">為什麼耶路撒冷的淪陷，特別歸咎於「先知和祭司的罪惡」？</span>
+                                屬靈領袖的墮落是社群敗壞的催化劑。先知說假預言粉飾太平，祭司中飽私囊。當本該傳遞真理的導管充滿毒藥，全城必走向滅亡。這表明神對屬靈領袖的要求更為嚴格。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass p-6 rounded-2xl bg-white/5">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    例證小故事
+                                </h4>
+                                <p class="text-sm text-gray-400 leading-relaxed">
+                                    如果一座城市的城牆堅固無比，敵人久攻不下，唯一的破城方法就是城裡的守衛親自打開城門。先知和祭司的罪，就像是內部的叛徒，從裡面腐蝕了信仰的根基。
+                                </p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl border-l-4 border-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                                    屬靈佳句
+                                </h4>
+                                <p class="text-lg font-serif italic text-white leading-snug">
+                                    「當牧者不再宣講悔改，祭壇上就不再有神的火。廉價的恩典是我們教會的死敵。」
+                                </p>
+                                <p class="text-xs text-gold-500 mt-2">— 潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 order-1 lg:order-2">
+                        <div class="sticky top-24">
+                            <h3 class="text-4xl font-serif font-bold mb-6 text-right">02. 屬靈領袖的墮落</h3>
+                            <div class="p-6 bg-gold-500/10 border-r-4 border-gold-500 rounded-l-xl mb-6 text-right">
+                                <p class="text-xs font-bold text-gold-500 uppercase mb-2">Key Scripture</p>
+                                <p class="text-sm italic leading-relaxed text-gray-300">「人向他們喊著說：『不潔淨的，躲開，躲開！不要挨近我！』」</p>
+                            </div>
+                            <div class="space-y-4 text-right">
+                                <div class="glass p-4 rounded-xl">
+                                    <span class="text-xs font-bold text-gold-500 block mb-1">關鍵字詞</span>
+                                    <span class="text-lg font-bold">玷污 (גָּאַל)</span>
+                                    <p class="text-sm text-gray-400 mt-1">儀式和道德上的不潔。祭司竟成為不潔的傳染源。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Dive Part 3 -->
+            <div id="part3" class="mb-32">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4">
+                        <div class="sticky top-24">
+                            <h3 class="text-4xl font-serif font-bold mb-6">03. 虛假的倚靠與公義的終點</h3>
+                            <div class="p-6 bg-gold-500/10 border-l-4 border-gold-500 rounded-r-xl mb-6">
+                                <p class="text-xs font-bold text-gold-500 uppercase mb-2">Key Scripture</p>
+                                <p class="text-sm italic leading-relaxed text-gray-300">「錫安的民哪，你罪孽的刑罰受足了，耶和華必不肯再使你被擄。」</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="glass p-4 rounded-xl">
+                                    <span class="text-xs font-bold text-gold-500 block mb-1">關鍵字詞</span>
+                                    <span class="text-lg font-bold">刑罰 (עָוֹן)</span>
+                                    <p class="text-sm text-gray-400 mt-1">含「罪惡、內疚」與「懲罰」。意指公義滿足後恩典介入。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="glass p-8 rounded-3xl">
+                            <h4 class="text-gold-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                <span class="text-white font-bold block mb-2">猶大國仰望「不能救人的國」有什麼提醒？</span>
+                                猶大指望軍事結盟逃避神的管教，結果是「眼目失明、還是枉然」。神在結尾宣告：錫安的刑罰終有盡頭。這帶出了終極盼望——管教是為了恢復，而不是毀滅。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass p-6 rounded-2xl bg-white/5">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                    例證小故事
+                                </h4>
+                                <p class="text-sm text-gray-400 leading-relaxed">
+                                    病人在醫生的手術與偏方間猶豫。偏方徹底無效後才回到手術台。手術雖痛苦，但當醫生宣告病灶清除（刑罰受足），就是重生的開始。
+                                </p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl border-l-4 border-gold-500">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                                    屬靈佳句
+                                </h4>
+                                <p class="text-lg font-serif italic text-white leading-snug">
+                                    「凡是你生命中試圖取代神的事物，最終都會使你感到絕望；但神在基督裡的審判，卻能帶來真正的醫治。」
+                                </p>
+                                <p class="text-xs text-gold-500 mt-2">— 約翰·加爾文</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-2 bg-gold-500/20 rounded-lg text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">應用方向</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl relative">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-gold-500 text-onyx flex items-center justify-center font-bold rounded-full">1</span>
+                    <h4 class="text-xl font-bold mb-2">檢視生命的「含金量」</h4>
+                    <p class="text-gray-400 leading-relaxed">我們的信仰是否已經世俗化，從「真金」變成了「瓦器」？需要回到神的話語，恢復屬神子民的尊貴。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl relative">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-gold-500 text-onyx flex items-center justify-center font-bold rounded-full">2</span>
+                    <h4 class="text-xl font-bold mb-2">為屬靈領袖守望</h4>
+                    <p class="text-gray-400 leading-relaxed">領袖的軟弱會帶來群體災難。信徒應當用禱告托住牧者，並在真理中共同持守聖潔。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl relative">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-gold-500 text-onyx flex items-center justify-center font-bold rounded-full">3</span>
+                    <h4 class="text-xl font-bold mb-2">拆除虛假的「安全網」</h4>
+                    <p class="text-gray-400 leading-relaxed">在危機中，我們是否依賴金錢、權勢或人際關係？必須認清世俗的幫助是「不能救人的」。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl relative">
+                    <span class="absolute -top-4 -left-4 w-10 h-10 bg-gold-500 text-onyx flex items-center justify-center font-bold rounded-full">4</span>
+                    <h4 class="text-xl font-bold mb-2">在管教中看見盼望</h4>
+                    <p class="text-gray-400 leading-relaxed">如果你正面臨管教，不要絕望。神的管教有其「滿足」之日，真正屬神的兒女，神絕不永遠丟棄。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-padding mb-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-2 bg-gold-500/20 rounded-lg text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">講章文稿</h2>
+            </div>
+            <div class="glass p-10 md:p-16 rounded-[40px] font-serif leading-loose text-lg md:text-xl text-gray-200">
+                <p class="mb-8">弟兄姊妹們，當我們打開耶利米哀歌第四章，我們彷彿走進了一個滿目瘡痍的災難現場。這裡沒有粉飾太平的言語，只有令人窒息的絕望。但正是在這片廢墟中，神要對我們說話。今天，我們要從錫安的悲歌中，看見三個極為重要的屬靈真相。</p>
+                
+                <h3 class="text-gold-500 font-bold text-2xl mb-6">第一：昔日榮華化為塵土——千萬不要低估罪的毀滅性</h3>
+                <p class="mb-8">經文開篇就發出悲嘆：<strong class="text-white">「黃金何其暗淡！純金何其變色！」（哀4:1）</strong> 曾經，錫安的子民在神眼中如同寶貴的精金，但如今卻被算為廉價的瓦器。為什麼？因為罪。經文殘酷地描寫了飢荒中的慘狀，甚至慈母煮食自己的兒女。神為何容許這事？因為祂要我們看見，罪的後果比失去生命更可怕，罪會剝奪人一切的尊嚴與神聖。</p>
+                
+                <h3 class="text-gold-500 font-bold text-2xl mb-6">第二：屬靈領袖的墮落——堡壘往往從內部被攻破</h3>
+                <p class="mb-8">耶路撒冷有堅固的城牆，地上的君王都不信敵人能進城。但城門卻破了！經文直指核心：這是因她先知的罪惡和祭司的罪孽。當帶領人親近神的祭司沾滿罪惡，當宣告神話語的先知成了瞎子，這座城就失去了神的保護。我們必須為我們的牧者迫切禱告，因為當守望者瞎了眼，全城都將陷入危險。</p>
+                
+                <h3 class="text-gold-500 font-bold text-2xl mb-6">第三：虛假的倚靠與公義的終局——仰望人不如仰望神</h3>
+                <p class="mb-8">猶大人指望埃及的軍隊來救他們，但那只是虛假的盼望。弟兄姊妹，當你遇到危機時，你第一個尋求的「埃及」是什麼？是信用卡？還是某個有權勢的朋友？但感謝神，哀歌沒有停在絕望中。在第22節，我們看見了破曉的曙光。神的管教有其終點！因為公義的刑罰得到滿足，恩典就要掌權。</p>
+                
+                <div class="text-center mt-12 py-8 border-y border-white/10">
+                    <p class="text-2xl font-bold gold-gradient italic">「罪價・偶像・刑罰與復興」</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-2 bg-gold-500/20 rounded-lg text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">回應行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-2xl border-b-4 border-gold-500">
+                    <h4 class="font-bold text-xl mb-4">1. 認罪與自省</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">寫下生活中可能正在取代神地位的「虛假倚靠」，並具體向神悔改，宣告唯有神是拯救。</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-b-4 border-gold-500">
+                    <h4 class="font-bold text-xl mb-4">2. 代禱行動</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">本週特別為教會的牧者、長老及小組長禱告，求神保守他們遠離試探，不被世俗玷污。</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-b-4 border-gold-500">
+                    <h4 class="font-bold text-xl mb-4">3. 擁抱管教</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">若正面臨因自身過犯帶來的困難，安靜順服在神面前，求神讓這段管教成為生命更新的轉折點。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-padding mb-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-2 bg-gold-500/20 rounded-lg text-gold-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold">名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Quote Cards -->
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「人的心根本就是一座製造偶像的工廠。我們總是輕易地將受造之物放在造物主的寶座上。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">約翰·加爾文</span>
+                        <span class="text-gray-500">《基督教要義》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「若非神主權的恩典與憐憫托住我們，我們隨時都會墜入地獄的深淵。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">喬納森·愛德華茲</span>
+                        <span class="text-gray-500">《落在憤怒之神手中》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5 bg-gold-500/5 border-gold-500/20">
+                    <p class="text-lg font-serif italic mb-4">「廉價的恩典是我們教會的死敵。它之所以昂貴，是因為它使人付上生命。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">潘霍華</span>
+                        <span class="text-gray-500">《追隨基督》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「神有時會把我們逼到絕境，為了讓我們發現，除了祂以外，我們根本無處可去。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">司布真</span>
+                        <span class="text-gray-500">《清晨到夜晚》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「當我們失去某樣東西而感到活不下去時，那樣東西就不再只是個好東西，它成了偶像。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">提摩太·凱勒</span>
+                        <span class="text-gray-500">《假神》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「我們對神的觀念，決定了我們靈命的品質。若缺乏敬畏，對罪的態度就會變得隨便。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">陶恕</span>
+                        <span class="text-gray-500">《神聖的認識》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「罪不僅是犯錯，更是對神主權的叛逆。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">約翰·史托德</span>
+                        <span class="text-gray-500">《當代基督十架》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「我們必須每天把我們的罪淹死在悔改的淚水中；若我們不治死罪，罪就會治死我們。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">馬丁·路德</span>
+                        <span class="text-gray-500">《加拉太書註釋》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「跟隨耶穌是一種『長期的順服』。沒有捷徑可以避開苦難與管教。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">畢德生</span>
+                        <span class="text-gray-500">《恆久專一的順服》</span>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl break-inside-avoid border-white/5">
+                    <p class="text-lg font-serif italic mb-4">「神允許苦難臨到我們，不是為了毀滅我們，而是為了燒盡我們生命中那些不是真金的雜質。」</p>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gold-500 font-bold">提摩太·凱勒</span>
+                        <span class="text-gray-500">《與神同行在苦難中》</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Message -->
+        <div class="max-w-xl mx-auto text-center px-4 py-8 opacity-50 text-xs tracking-widest uppercase">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Prayer Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-onyx rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-40 group">
+        <svg class="w-6 h-6 animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+        <span class="absolute right-full mr-4 bg-onyx text-gold-500 px-3 py-1 rounded text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">回到禱告</span>
+    </a>
+
+    <script>
+        // Smooth scroll implementation already handled by CSS. 
+        // Logic for navigation highlighting could be added here if needed for more interactivity.
+    </script>
+</body>
+</html>

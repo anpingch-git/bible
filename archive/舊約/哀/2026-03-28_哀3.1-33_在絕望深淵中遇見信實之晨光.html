@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哀3:1-33：在絕望深淵中遇見信實之晨光</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E0C097', // Gold/Sand for highlights
+                        accent: '#FF4D4D',   // Warm red for important text
+                        bgDark: '#0A0A0B',  // Deep dark
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'gentle-jump': 'gentleJump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        breathe: {
+                            '0%, 100%': { opacity: 0.4 },
+                            '50%': { opacity: 0.85 },
+                        },
+                        gentleJump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .banner-container {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(10,10,11,0.2), rgba(10,10,11,1));
+            z-index: 10;
+        }
+        .banner-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .breathe-effect {
+            animation: breathe 6s ease-in-out infinite;
+        }
+        .jump-text {
+            animation: gentle-jump 3s ease-in-out infinite;
+            display: inline-block;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: #E0C097;
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            cursor: pointer;
+            z-index: 100;
+            transition: transform 0.3s;
+        }
+        .back-to-top:hover {
+            transform: scale(1.1);
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(224, 192, 151, 0.3);
+        }
+        .outline-btn:hover {
+            background: #E0C097;
+            color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(224, 192, 151, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #E0C097 0%, #FFFFFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '哀3:1-33',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '哀',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在絕望深淵中遇見信實之晨光' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-primary selection:text-black">
+
+    <!-- Back to top -->
+    <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-nav">
+        <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-primary font-display font-bold text-lg tracking-wider">哀歌 3:1-33</div>
+            <div class="flex space-x-6 text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#prayer" class="hover:text-primary transition">禱告</a>
+                <a href="#outline" class="hover:text-primary transition">大綱</a>
+                <a href="#sermon" class="hover:text-primary transition">講章</a>
+                <a href="#quotes" class="hover:text-primary transition">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="banner-container">
+        <img src='image/img_2c26927d-b1cd-45d0-b5a9-6cfa28a3e74e.jpg' alt='Banner' class="banner-img breathe-effect" />
+        <div class="banner-overlay"></div>
+        <div class="relative z-20 text-center px-6 mt-20">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-6 leading-tight gradient-text">
+                在絕望深淵中<br>遇見信實之晨光
+            </h1>
+            <div class="max-w-2xl mx-auto">
+                <p class="jump-text text-xl md:text-2xl font-light text-white leading-relaxed italic">
+                    「我們不致消滅，是出於耶和華諸般的慈愛；是因他的憐憫不致斷絕。每早晨，這都是新的；你的誠實極其廣大！」（哀 3:22-23）
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-screen-lg mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-12">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3c1.782 0 3.442.465 4.882 1.281m2.147 2.147a10.014 10.014 0 011.035 3.997m-4.8 9.07a10.003 10.003 0 01-5.445-1.087L6 21l.593-3.926a10.003 10.003 0 01-1.01-4.474 10.003 10.003 0 01.056-1.059" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-primary">禱告詞</h2>
+                </div>
+                <p class="text-xl leading-relaxed text-gray-300 font-light">
+                    主耶和華，當我們的生命陷入黑暗，彷彿被你遺忘的時刻，求你賜給我們誠實面對痛苦的勇氣。在憂悶與絕望的深淵中，懇求聖靈引導我們的意志轉向你，使我們想起你永不斷絕的慈愛與極其廣大的信實。主啊，幫助我們在靜默中等候你，深信你允許我們經歷碎裂，是為了讓我們承載你更豐盛的榮耀，因你本不甘心使人受苦。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-primary">大綱索引</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full">
+                    <span class="text-xs opacity-60 mb-2">哀 3:1-18</span>
+                    <span class="text-lg font-bold">當黑暗吞噬盼望——誠實面對生命的破碎</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full">
+                    <span class="text-xs opacity-60 mb-2">哀 3:19-24</span>
+                    <span class="text-lg font-bold">意志的翻轉點——在痛苦中選擇回轉仰望</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full">
+                    <span class="text-xs opacity-60 mb-2">哀 3:25-33</span>
+                    <span class="text-lg font-bold">靜默中的等候——深信上帝的慈悲與良善</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline & Analysis -->
+        <section class="space-y-32">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-24 border-l-2 border-primary/20 pl-8 relative">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_#E0C097]"></div>
+                <h3 class="text-2xl md:text-4xl font-display font-bold mb-8 text-primary">當黑暗吞噬盼望——誠實面對生命的破碎</h3>
+                
+                <div class="mb-12 glass-card p-6 italic text-gray-400 text-lg leading-relaxed">
+                    <p class="mb-2">1 我是因耶和華忿怒的杖，遭遇困苦的人。</p>
+                    <p class="mb-2">2 他引導我，使我行在黑暗中，不行在光明裡。</p>
+                    <p class="mb-2">...</p>
+                    <p>18 我就說：我的力量衰敗；我在耶和華那裡，毫無指望！</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-4 border-primary">
+                            <h4 class="text-primary font-bold mb-2">關鍵原文詞彙</h4>
+                            <p class="text-gray-300"><strong class="text-white">困苦（H6040 עֳנִי / 'oniy）</strong>：意指苦難、貧困、被貶低或受壓迫的狀態。形容先知不僅是身體遭受苦楚，更是靈魂深處感到被神擊打的極度枯竭與無助。</p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-xl">
+                            <h4 class="text-accent font-bold mb-2">關鍵問題與解析</h4>
+                            <p class="text-sm opacity-60 mb-2 font-bold">問題：為何上帝允許我們經歷彷彿被祂當作箭靶子的極度黑暗？</p>
+                            <p class="text-gray-300">上帝並未要求信徒在苦難中假裝剛強。這段哀歌告訴我們，真實的信仰容許我們向上帝發出最赤裸的抗議與絕望。上帝允許黑暗臨到，往往是為了剝除我們對世俗安穩的虛假依賴。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-primary/5 p-6 rounded-xl border border-primary/20">
+                            <h4 class="text-primary font-bold mb-2">生命例證</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">著名的靈修大師十架約翰曾提出「靈魂的暗夜」。在這種狀態下，信徒感覺不到神的同在。一位失去孩子的母親，在幾個月內無法感恩，只能流淚抗議。正是這種不掩飾的「哀歌」，成為她緊緊抓住神不放的另一種形式。</p>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-2xl font-display italic text-white/90">「我學會了親吻那將我猛烈推向萬古磐石的波浪。」</p>
+                            <p class="text-right text-primary mt-2">——司布真</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-24 border-l-2 border-primary/20 pl-8 relative">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_#E0C097]"></div>
+                <h3 class="text-2xl md:text-4xl font-display font-bold mb-8 text-primary">意志的翻轉點——在痛苦中選擇回轉仰望</h3>
+
+                <div class="mb-12 glass-card p-6 italic text-gray-400 text-lg leading-relaxed">
+                    <p class="mb-2 text-primary font-bold">22 我們不致消滅，是出於耶和華諸般的慈愛；是因他的憐憫不致斷絕。</p>
+                    <p class="text-primary font-bold">23 每早晨，這都是新的；你的誠實極其廣大！</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-4 border-primary">
+                            <h4 class="text-primary font-bold mb-2">關鍵原文詞彙</h4>
+                            <p class="text-gray-300 mb-2"><strong class="text-white">慈愛（H2617 חֶסֶד / chesed）</strong>：指上帝基於聖約而發出的忠誠之愛。不是短暫情感，而是神永不放棄的委身。</p>
+                            <p class="text-gray-300"><strong class="text-white">想起（H7725 שׁוּ認 / shuwb）</strong>：原文有「轉回」之意。是意志上刻意地將心思從絕望中轉向神的屬性。</p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-xl">
+                            <h4 class="text-accent font-bold mb-2">關鍵問題與解析</h4>
+                            <p class="text-sm opacity-60 mb-2 font-bold">問題：當環境毫無改變時，盼望是從何而來的？</p>
+                            <p class="text-gray-300">盼望不是來自環境的好轉，而是來自「意志的刻意轉向」。先知選擇「想起」上帝的本質。真正的信心是在黑暗中宣告神的光明，在消耗殆盡時仰望每天早晨常新的恩典。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-primary/5 p-6 rounded-xl border border-primary/20">
+                            <h4 class="text-primary font-bold mb-2">生命例證</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">彭柯麗在納粹集中營，營房環境沒有一天是新的，但她們每天早晨都經歷神話語中「新的憐憫」，這股力量讓她們不僅存活，還能向身邊的囚犯傳福音。</p>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-2xl font-display italic text-white/90">「恩典不只是上帝給我們的一個禮物，恩典就是上帝自己；當我們一無所有時，祂就是我們的『分』。」</p>
+                            <p class="text-right text-primary mt-2">——提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-24 border-l-2 border-primary/20 pl-8 relative">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_#E0C097]"></div>
+                <h3 class="text-2xl md:text-4xl font-display font-bold mb-8 text-primary">靜默中的等候——深信上帝的慈悲與良善</h3>
+
+                <div class="mb-12 glass-card p-6 italic text-gray-400 text-lg leading-relaxed">
+                    <p class="mb-2">25 凡等候耶和華，心裡尋求他的，耶和華必施恩給他。</p>
+                    <p class="mb-2 text-primary font-bold">33 因他並不甘心使人受苦，使人憂愁。</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-4 border-primary">
+                            <h4 class="text-primary font-bold mb-2">關鍵原文詞彙</h4>
+                            <p class="text-gray-300"><strong class="text-white">等候（H6960 קָוָה / qavah）</strong>：本意是「綁在一起」。這種等候不是被動的無奈，而是如同繩索緊緊纏繞在神身上，充滿張力的積極信靠。</p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-xl">
+                            <h4 class="text-accent font-bold mb-2">關鍵問題與解析</h4>
+                            <p class="text-sm opacity-60 mb-2 font-bold">問題：為何上帝會允許苦難臨到，我們又該如何「靜默等候」？</p>
+                            <p class="text-gray-300">「祂並不甘心使人受苦」。苦難從不是上帝最終的目的，而是過程中的修剪。靜默等候代表完全順服在神的主權之下。當我們知道苦難背後有天父慈悲的雙手，我們就能在「負軛」中找到安息。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-primary/5 p-6 rounded-xl border border-primary/20">
+                            <h4 class="text-primary font-bold mb-2">生命例證</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">銀匠在精煉銀子時，必須眼睛緊盯著銀子。當銀子能反映出銀匠自己的倒影時，才算煉好。神熬煉我們，直到我們反映出基督的榮美。</p>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-2xl font-display italic text-white/90">「除非上帝曾深深地傷害過一個人，否則祂很難大大地使用這個人。」</p>
+                            <p class="text-right text-primary mt-2">——陶恕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-primary">講章文稿</h2>
+            </div>
+            <div class="glass-card p-10 md:p-16 space-y-8 text-lg leading-relaxed text-gray-300">
+                <p>弟兄姊妹們，平安。當我們翻開聖經，我們常喜歡讀到勝利、喜樂與醫治，但聖經中同樣保留了極大篇幅的「哀歌」。今天我們要來看一段在絕境中迸發出最耀眼光芒的經文。我們今天的講道主題是：<strong class="text-primary text-xl">「哀3:1-33：在絕望深淵中遇見信實之晨光」</strong>。</p>
+                
+                <p>首先，我們進入第一段：<strong class="text-white underline decoration-primary underline-offset-4">當黑暗吞噬盼望——誠實面對生命的破碎</strong>。
+                在耶利米哀歌第三章的前18節，我們看到先知經歷了極大的痛苦。他說：「我是因耶和華忿怒的杖，遭遇困苦的人。他引導我，使我行在黑暗中，不行在光明裡。」先知不僅身體受到折磨，甚至感覺神「反手攻擊我」，甚至「掩耳不聽我的禱告」。弟兄姊妹，這是一種何等深沉的絕望！到第18節，他甚至喊出：「我的力量衰敗；我在耶和華那裡，毫無指望！」</p>
+
+                <p>我們常以為，屬靈的人不該說出這樣的話。但上帝將這段話留在聖經裡，是在告訴我們：祂接納我們的破碎。司布真曾說：「<strong class="text-accent">我學會了親吻那將我猛烈推向萬古磐石的波浪。</strong>」上帝允許黑暗的波浪襲來，往往是為了打碎我們一切虛假的依靠。如果你現在正處在深淵中，請不要假裝剛強，上帝允許你誠實地來到祂面前哀哭。</p>
+
+                <p>然而，先知的生命並沒有停留在第18節。這帶我們進入第二段：<strong class="text-white underline decoration-primary underline-offset-4">意志的翻轉點——在痛苦中選擇回轉仰望</strong>。
+                就在他最憂悶的時候，經文迎來了聖經中最偉大的轉折之一。第21節說：「我想起這事，心裡就有指望。」他想起了什麼？
+                這就是我們今天的<strong class="text-primary">金句</strong>：<strong class="text-xl text-primary italic">「我們不致消滅，是出於耶和華諸般的慈愛；是因他的憐憫不致斷絕。每早晨，這都是新的；你的誠實極其廣大！」（哀 3:22-23）</strong></p>
+
+                <p>環境改變了嗎？沒有。耶路撒冷依然成為廢墟，他的處境依然淒涼。但他的「意志」轉向了。盼望不是因為看到環境的一絲曙光，盼望是因為看見了「神是誰」。神的「慈愛」（Chesed），那永不放棄的立約之愛，是我們在黑暗中唯一的錨。提摩太·凱勒牧師提醒我們：「<strong class="text-accent">恩典不只是上帝給我們的一個禮物，恩典就是上帝自己；當我們一無所有時，祂就是我們的『分』。</strong>」每天早晨，儘管問題依然存在，但神給你的憐憫與力量，卻是全新的。</p>
+
+                <p>最後，我們來到第三段：<strong class="text-white underline decoration-primary underline-offset-4">靜默中的等候——深信上帝的慈悲與良善</strong>。
+                當我們抓住神的信實後，我們該如何面對眼前的苦難？第26節說：「人仰望耶和華，靜默等候他的救恩，這原是好的。」第28節更說：「他當獨坐無言，因為這是耶和華加在他身上的。」</p>
+
+                <p>這是一種極深的順服。等候不是消極的躺平，而是將自己的生命緊緊與神綁在一起。為什麼我們可以甘心順服？因為第33節給了我們答案：<strong class="text-accent text-xl">「因他並不甘心使人受苦，使人憂愁。」</strong></p>
+
+                <p>上帝從來不以我們的痛苦為樂。正如陶恕所說：「除非上帝曾深深地傷害過一個人，否則祂很難大大地使用這個人。」神如同煉銀匠，祂將我們放在火中，是為了燒盡雜質，直到在我們身上看見基督的倒影。</p>
+
+                <p>弟兄姊妹，無論你現在身處多深的幽谷，願你擁有<strong class="text-primary">「誠實」</strong>面對自己的勇氣，在意志上作一個<strong class="text-primary">「轉向」</strong>上帝的決定，並在<strong class="text-primary">「等候」</strong>中經歷祂每日早晨常新的慈愛。阿們。</p>
+            </div>
+        </section>
+
+        <!-- Applications & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-8">
+                <h2 class="text-2xl font-display font-bold text-primary mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-2"><span class="text-primary">1.</span> 接納自己與他人的哀傷：不要急於用宗教術語掩蓋痛苦。</li>
+                    <li class="flex gap-2"><span class="text-primary">2.</span> 建立「刻意回想」的習慣：在低谷時主動宣告並默想神的屬性。</li>
+                    <li class="flex gap-2"><span class="text-primary">3.</span> 操練「靜默與降服」：停止不休的抱怨，學習順服當下。</li>
+                </ul>
+                <div class="mt-8 pt-6 border-t border-white/10">
+                    <h3 class="text-primary font-bold mb-4">結論關鍵字</h3>
+                    <div class="flex gap-4">
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-primary/30 text-primary font-bold">誠實</span>
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-primary/30 text-primary font-bold">轉向</span>
+                        <span class="px-4 py-2 bg-white/5 rounded-full border border-primary/30 text-primary font-bold">等候</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 border-l-4 border-accent">
+                <h2 class="text-2xl font-display font-bold text-accent mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    </svg>
+                    回應行動
+                </h2>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="bg-white/5 p-4 rounded-lg">
+                        <strong class="text-white block mb-1">撰寫哀禱日記</strong>
+                        誠實寫下一篇給神的禱告，不修飾你的痛苦。
+                    </li>
+                    <li class="bg-white/5 p-4 rounded-lg">
+                        <strong class="text-white block mb-1">早晨的宣告</strong>
+                        連續七天早晨起床大聲朗讀哀歌3:22-23。
+                    </li>
+                    <li class="bg-white/5 p-4 rounded-lg">
+                        <strong class="text-white block mb-1">十分鐘的靜默</strong>
+                        每天安排10分鐘獨處，操練「獨坐無言」。
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-primary">屬靈前輩佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote Items -->
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「我學會了親吻那將我猛烈推向萬古磐石的波浪。」</p>
+                    <p class="text-primary text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「恩典不只是上帝給我們的一個禮物，恩典就是上帝自己；當我們一無所有時，祂就是我們的『分』。」</p>
+                    <p class="text-primary text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「除非上帝曾深深地傷害過一個人，否則祂很難大大地使用這個人。」</p>
+                    <p class="text-primary text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「只有受傷的醫治者，才能真正帶來醫治。我們自己的傷口，正是上帝用來醫治他人的器皿。」</p>
+                    <p class="text-primary text-sm font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「上帝不是在我們受苦時才存在，上帝正是在我們的受苦中存在，並在那裡與我們同在。」</p>
+                    <p class="text-primary text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「等候上帝需要極大的屬靈耐心，這是在同一個方向上長期的順服。」</p>
+                    <p class="text-primary text-sm font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「信徒最大的安慰是：知道發生在我們身上的一切，並非出於偶然，而是出於天父那充滿智慧的安排。」</p>
+                    <p class="text-primary text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「真正的屬靈喜樂，並非源於環境的平順，而是深知即使在最黑暗的時刻，上帝本身仍是我們至高的善。」</p>
+                    <p class="text-primary text-sm font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「十字架是上帝對人類痛苦最深切的回應；祂沒有免去我們的苦難，而是親自走入苦難中承擔了它。」</p>
+                    <p class="text-primary text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-card p-6 border-t-2 border-primary/40">
+                    <p class="italic text-lg mb-4">「當你以為上帝完全離開你的時候，正是你的信仰受考驗，要生出最堅定之盼望的時候。」</p>
+                    <p class="text-primary text-sm font-bold">— 唐崇榮 (Stephen Tong)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="text-center pb-20">
+            <p class="text-gray-600 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

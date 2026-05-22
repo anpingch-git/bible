@@ -89,7 +89,24 @@
         ::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #eab308; }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '拉7:1-28',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '拉',         // 動態注入書卷縮寫，例如：出
+              'note_title': '看不見的恩手與預備好的心' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="bg-slate-950 text-slate-100 font-body leading-relaxed overflow-x-hidden" id="top">
 
     <!-- Top Navigation Bar -->
@@ -104,10 +121,10 @@
     </nav>
 
     <!-- Header Banner -->
-    <header class="relative h-[50vh] md:h-[80vh]  w-full h-screen flex items-center justify-center overflow-hidden  pt-16">
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src='image/img_d89ac97f-40ee-41fd-9bfa-e0d09bff0f69.jpg' alt='media_1' class="w-full h-full object-cover animate-breath scale-110" />
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/20 to-slate-950"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/60 to-slate-950"></div>
         </div>
 
         <div class="relative z-10 text-center px-6 max-w-5xl">
@@ -138,7 +155,7 @@
                     <svg class="w-8 h-8 text-slate-950" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
                 </div>
                 <h2 class="text-3xl font-display font-bold mb-8 text-gold-400 flex items-center gap-3">
-                    禱告
+                    虔誠禱告
                 </h2>
                 <p class="text-xl md:text-2xl leading-loose font-light text-slate-200 italic">
                     親愛的天父，我們為祢那看不見卻時刻施恩的手獻上感恩。在動盪與充滿挑戰的世代中，求祢賜給我們如同以斯拉一般「定志」的心，願意深深考究祢的話語，並在生活中切實遵行。當我們面對世俗的權柄與看似不可能的環境時，求祢開我們的屬靈眼睛，看見祢是掌管歷史與君王之心的萬軍之耶和華。求祢堅固我們，使我們因祢恩手的幫助而剛強壯膽，勇敢承擔祢所託付的使命。奉主耶穌基督的聖名禱告，阿們。

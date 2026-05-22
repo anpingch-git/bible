@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太2:13-23:在暗夜與逃難中看見神的主權</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#DC143C',
+                        midnight: '#0A0E14',
+                        accent: '#3B82F6',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: '0.9' },
+                            '50%': { opacity: '0.4' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0E14;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(212, 175, 55, 0.5);
+            background: rgba(212, 175, 55, 0.1);
+            border-color: #D4AF37;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtle-bounce 2s ease-in-out infinite;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太2:13-23',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在暗夜與逃難中看見神的主權' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-midnight/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div class="text-gold font-display font-bold tracking-tight text-lg md:text-xl">太2:13-23</div>
+        <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+            <a href="#prayer" class="nav-link text-gray-300 hover:text-gold">禱告</a>
+            <a href="#outline" class="nav-link text-gray-300 hover:text-gold">大綱</a>
+            <a href="#sermon" class="nav-link text-gray-300 hover:text-gold">講章</a>
+            <a href="#quotes" class="nav-link text-gray-300 hover:text-gold">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner Section -->
+    <header id="header" class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_9f312e27-9fc5-4fe7-8e4e-8130dcb15f67.jpg' alt='media_1' class="w-full h-full object-cover animate-pulse-slow" />
+            <div class="absolute inset-0 bg-gradient-to-b from-midnight/20 via-midnight/60 to-midnight"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                在暗夜與逃難中<br><span class="text-gradient">看見神的主權</span>
+            </h1>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl font-medium text-gold leading-relaxed jump-text">
+                    「這是要應驗主藉先知所說的話，說：『我從埃及召出我的兒子來。』」
+                </p>
+                <p class="text-gray-400 mt-2 text-sm md:text-base">— 馬太福音 2:15下</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.45l8.27 14.3H3.73L12 5.45zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-gold/10 rounded-2xl">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-white">啟始禱告</h2>
+                </div>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed italic">
+                    「親愛的天父，在我們人生的旅途中，時常會遭遇突如其來的風暴、看似失控的黑夜，以及平凡隱藏的低谷。求主的聖靈今天藉著這段經文開啟我們的眼睛，讓我們看見，即使在最混亂與卑微的環境中，祢的主權依然掌管一切，祢的應許必然成就。賜給我們如約瑟般順服的信心，在每一個祢所量給我們的『埃及』與『拿撒勒』中，定意跟隨祢。奉主耶穌基督的聖名祈求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-accent/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">講道大綱導覽</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="outline-btn border border-white/10 p-8 rounded-3xl block h-full">
+                    <span class="text-gold text-xs font-bold tracking-widest mb-4 block uppercase">第一階段 | 太 2:13-15</span>
+                    <h3 class="text-xl font-bold text-white mb-2">順服的起步</h3>
+                    <p class="text-gray-400 text-sm">在突如其來的風暴中信靠</p>
+                </a>
+                <a href="#part2" class="outline-btn border border-white/10 p-8 rounded-3xl block h-full">
+                    <span class="text-gold text-xs font-bold tracking-widest mb-4 block uppercase">第二階段 | 太 2:16-18</span>
+                    <h3 class="text-xl font-bold text-white mb-2">悲劇中的盼望</h3>
+                    <p class="text-gray-400 text-sm">在看似失控的世界看見神</p>
+                </a>
+                <a href="#part3" class="outline-btn border border-white/10 p-8 rounded-3xl block h-full">
+                    <span class="text-gold text-xs font-bold tracking-widest mb-4 block uppercase">第三階段 | 太 2:19-23</span>
+                    <h3 class="text-xl font-bold text-white mb-2">隱藏的恩典</h3>
+                    <p class="text-gray-400 text-sm">在卑微平凡中成就偉大應許</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Sections -->
+        <div class="space-y-24">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-32 border-l-2 border-gold/30 pl-8 md:pl-12">
+                <h3 class="text-3xl font-bold text-gold mb-6">順服的起步——在突如其來的風暴中信靠</h3>
+                <div class="grid md:grid-cols-5 gap-12">
+                    <div class="md:col-span-3 space-y-8">
+                        <div class="bg-white/5 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文
+                            </h4>
+                            <ul class="space-y-2 text-gray-300">
+                                <li><b class="text-white">逃往 (anachōreō)</b>：戰略性撤退，為了保護神應許的種子。</li>
+                                <li><b class="text-white">起來 (egeirō)</b>：興起、站起來。約瑟在夜間毫不遲疑的行動。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-accent font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-white font-medium">為什麼神允許突如其來的危機打亂我們原本平靜的生活？</p>
+                            <p class="text-gray-400">神並沒有應許順服祂的人免受世上的危險與逼迫。神的引導總是及時的。約瑟的偉大在於他「沒有問為什麼」，也沒有拖延。神允許風暴發生，是為了將我們帶入祂更深遠的救贖計畫。</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="glass-card p-6 border-gold/20">
+                            <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                生活例證
+                            </h4>
+                            <p class="text-sm text-gray-300 leading-relaxed">二戰期間，荷蘭的彭柯麗一家因藏匿猶太人而突然被捕，在充滿死亡威脅的「埃及」中，她們擴張了拯救的版圖。</p>
+                        </div>
+                        <blockquote class="border-l-4 border-accent pl-4 py-2 italic text-gray-400 text-sm">
+                            「神在我們生命中所允許的每一次苦難，都是為著我們最終的益處和祂至高的榮耀而精心設計的。」—— 提摩太·凱勒
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-32 border-l-2 border-crimson/30 pl-8 md:pl-12">
+                <h3 class="text-3xl font-bold text-crimson mb-6">悲劇中的盼望——在看似失控的世界裡看見神</h3>
+                <div class="grid md:grid-cols-5 gap-12">
+                    <div class="md:col-span-3 space-y-8">
+                        <div class="bg-white/5 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文
+                            </h4>
+                            <p class="text-gray-300">
+                                <b class="text-white">號咷大哭 (klauthmos kai odyrmos)</b>：形容極度悲痛、撕心裂肺的哀號。連結了以色列人被擄的歷史與當下的慘劇。
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-accent font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-white font-medium">當無辜者受苦、世界看似被邪惡的掌權者控制時，神在哪裡？</p>
+                            <p class="text-gray-400">神沒有掩蓋這世界的殘酷。馬太指出這「應驗」了先知的話，表明即便在最邪惡的暴行中，神依然知道且救贖計畫沒有失控。耶穌最終在十字架上親自承擔了這一切。</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="glass-card p-6 border-crimson/20">
+                            <h4 class="text-crimson font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                生活例證
+                            </h4>
+                            <p class="text-sm text-gray-300 leading-relaxed">斯帕福德在失去了四個女兒後，於哀痛中寫下了《我心靈得安寧》。在失控的悲劇中，他看見了超越環境的主權。</p>
+                        </div>
+                        <blockquote class="border-l-4 border-crimson pl-4 py-2 italic text-gray-400 text-sm">
+                            「只有一位受苦的神才能幫助我們。」—— 潘霍華
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-32 border-l-2 border-blue-500/30 pl-8 md:pl-12">
+                <h3 class="text-3xl font-bold text-blue-400 mb-6">隱藏的恩典——在卑微與平凡中成就偉大應許</h3>
+                <div class="grid md:grid-cols-5 gap-12">
+                    <div class="md:col-span-3 space-y-8">
+                        <div class="bg-white/5 p-6 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                關鍵原文
+                            </h4>
+                            <p class="text-gray-300">
+                                <b class="text-white">拿撒勒人 (Nazōraios)</b>：帶有貶義的稱呼，同時與希伯來文的「枝子」(netzer) 相關，預言彌賽亞將以卑微姿態出現。
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-accent font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-white font-medium">當神將我們安置在不起眼、被輕看的「拿撒勒」時，我們如何看待處境？</p>
+                            <p class="text-gray-400">萬王之王沒有在皇宮中長大，而是在木匠家。神的工作往往隱藏在平凡中。在神所安置的「拿撒勒」忠心生活，就是參與在祂偉大的計畫中。</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="glass-card p-6 border-blue-500/20">
+                            <h4 class="text-blue-400 font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                生活例證
+                            </h4>
+                            <p class="text-sm text-gray-300 leading-relaxed">十七世紀的勞倫斯弟兄，在修道院廚房裡洗碗。他卻在鍋碗瓢盆之間經歷了極深的神同在。廚房就是他的至聖所。</p>
+                        </div>
+                        <blockquote class="border-l-4 border-blue-400 pl-4 py-2 italic text-gray-400 text-sm">
+                            「通往神國的道路是向下的移動，耶穌選擇了隱藏、卑微和順服的道路。」—— 盧雲
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-white/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM14 3v5h5"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">講章全篇</h2>
+            </div>
+            
+            <div class="glass-card p-8 md:p-16 space-y-8 leading-relaxed text-lg text-gray-300">
+                <div class="text-center mb-16">
+                    <h3 class="text-gold font-bold text-2xl md:text-4xl mb-4">在逃難與暗夜中看見神的主權</h3>
+                    <p class="text-gray-500">經文範圍：太 2:13-23</p>
+                </div>
+
+                <p>弟兄姊妹們，今天我們要從馬太福音第二章看見一個充滿戲劇性、卻又異常真實的場景。剛誕生的耶穌基督，沒有受到夾道歡迎，反而一出生就面臨殺機。在這段經文中，我們看到了人性的殘暴、命運的顛沛流離，但更重要的是，我們看見了神超越一切的掌權。</p>
+
+                <div class="bg-gold/5 border-l-4 border-gold p-8 my-10">
+                    <h4 class="text-white font-bold text-xl mb-4">第一段：順服的起步</h4>
+                    <p>馬太福音 2:13告訴我們：<span class="text-white font-bold">「有主的使者向約瑟夢中顯現，說：『起來！帶著小孩子同他母親逃往埃及』」</span>。想像約瑟的處境，他們才剛剛安頓，剛剛接受了榮耀敬拜，突然間，危機降臨。第14節說：<span class="text-gold font-bold">「約瑟就起來，夜間帶著小孩子和他母親往埃及去」</span>。這是一個毫無保留的順服。</p>
+                </div>
+
+                <p>神在我們生命中所允許的每一次苦難，都是為著我們最終的益處和祂至高的榮耀而精心設計的。神的計畫從未脫軌。當突如其來的風暴來臨時，我們是否能像約瑟一樣，立刻「起來」，順服神的帶領？</p>
+
+                <div class="bg-crimson/5 border-l-4 border-crimson p-8 my-10">
+                    <h4 class="text-white font-bold text-xl mb-4">第二段：悲劇中的盼望</h4>
+                    <p>第16節提到希律王因被愚弄而大大發怒，殘忍地屠殺了伯利恆兩歲以內的男嬰。這是撕心裂肺的<span class="text-crimson font-bold text-xl">「號咷大哭」</span>。</p>
+                </div>
+
+                <p>當無辜的嬰孩被殺，當邪惡看似得勝的時候，神在哪裡？馬太告訴我們，連這一切悲劇都在神預知的眼光之中。潘霍華在面對納粹政權的逼迫時寫下：「只有一位受苦的神才能幫助我們。」基督已經與我們一同受苦，祂是我們最終的盼望與安慰。</p>
+
+                <div class="bg-blue-500/5 border-l-4 border-blue-500 p-8 my-10">
+                    <h4 class="text-white font-bold text-xl mb-4">第三段：隱藏的恩典</h4>
+                    <p>最後，約瑟帶著家人回到以色列，神引導他們來到了一個默默無聞的小鎮：拿撒勒。第23節說：<span class="text-blue-300 font-bold">「到了一座城，名叫拿撒勒，就住在那裡。這是要應驗先知所說，他將稱為拿撒勒人的話了。」</span></p>
+                </div>
+
+                <p>「拿撒勒人」在當時是個被輕視的稱呼。萬王之王沒有選擇羅馬，祂選擇了偏遠、平凡、甚至被鄙視的拿撒勒，並在那裡度過了三十年默默無聞的時光。盧雲曾深刻地指出：<span class="text-white">「通往神國的道路是向下的移動，耶穌選擇了隱藏、卑微和順服的道路。」</span></p>
+
+                <p>不要輕看你的拿撒勒！神在隱藏與卑微之中，正在成就祂偉大的應許。願我們都能以順服的心，走完這條蒙恩的道路。</p>
+                
+                <div class="pt-12 border-t border-white/10">
+                    <h4 class="text-2xl font-bold text-white mb-6">結論關鍵字</h4>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-6 py-2 bg-gold/20 text-gold rounded-full font-bold">主權</span>
+                        <span class="px-6 py-2 bg-gold/20 text-gold rounded-full font-bold">順服</span>
+                        <span class="px-6 py-2 bg-gold/20 text-gold rounded-full font-bold">應驗</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-gold/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「神在我們身上的旨意，絕不會把我們帶到祂恩典無法保守我們的地方。」</p>
+                    <div class="text-sm font-bold text-gold">— 葛理翰 / 《葛理翰講道集》</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「當你看不見神的手時，請相信神的心。」</p>
+                    <div class="text-sm font-bold text-gold">— 司布真 / 《清晨甘露》</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「對神真正的信心，是即使神沒有按照我們期待的方式介入，我們依然相信祂。」</p>
+                    <div class="text-sm font-bold text-gold">— 提摩太·凱勒 / 《苦難中的盼望》</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「我們不需要從神那裡得到對於苦難的哲學解釋；我們需要的是祂的同在。」</p>
+                    <div class="text-sm font-bold text-gold">— 陶恕 / 《渴慕神》</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「基督徒的生命不是一場短跑，而是朝著同一個方向恆久專一的順服。」</p>
+                    <div class="text-sm font-bold text-gold">— 畢德生 / 《恆久專一的順服》</div>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「神使用那些被世人視為無有的人，好讓一切的榮耀都歸給祂自己。」</p>
+                    <div class="text-sm font-bold text-gold">— 約翰·加爾文 / 《基督教要義》</div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <p class="text-gray-600 text-sm italic">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-12 h-12 bg-gold text-midnight rounded-full flex items-center justify-center shadow-2xl hover:bg-white transition-all transform hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth Scrolling Logic
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

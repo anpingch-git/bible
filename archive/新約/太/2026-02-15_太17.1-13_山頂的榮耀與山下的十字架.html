@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太17:1-13:山頂的榮耀與山下的十字架</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#991B1B',
+                        darkBg: '#0A0A0B',
+                        cardBg: '#161618',
+                        accent: '#6366f1',
+                    },
+                    fontFamily: {
+                        display: ['Noto+Serif+TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        script: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.03)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #F5E6AB, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .jumping-text span {
+            display: inline-block;
+            animation: jumping 1.5s infinite;
+        }
+        @keyframes jumping {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .bento-card {
+            background: rgba(22, 22, 24, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太17:1-13',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '山頂的榮耀與山下的十字架' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-darkBg text-gray-200 font-body selection:bg-gold selection:text-black">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center justify-between px-6">
+        <div class="text-gold font-bold text-sm md:text-lg truncate max-w-[40%]">太17:1-13</div>
+        <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium tracking-widest">
+            <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[70vh] md:h-[80vh] overflow-hidden flex items-center justify-center pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_eee821b7-d165-4243-835b-169d577542f8.jpg' alt='山頂榮耀' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/40 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 id="top" class="font-display text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">
+                <span class="text-white block mb-2">山頂的榮耀與</span>
+                <span class="text-gold">山下的十字架</span>
+            </h1>
+            
+            <div class="jumping-text text-xl md:text-2xl lg:text-3xl font-display text-white/90 italic tracking-wide">
+                <span>「</span><span>他</span><span>們</span><span>舉</span><span>目</span><span>不</span><span>見</span><span>一</span><span>人</span><span>，</span><span>只</span><span>見</span><span>耶</span><span>穌</span><span>在</span><span>那</span><span>裡</span><span>。</span><span>」</span>
+                <p class="text-sm md:text-lg mt-4 font-body not-italic text-gold/80">（馬太福音 17:8）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-8 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="max-w-3xl mx-auto text-center scroll-mt-24">
+            <div class="flex justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gold animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+            </div>
+            <h2 class="font-display text-3xl font-bold mb-8 text-gold">開會禱告</h2>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-300 font-serif tracking-widest italic">
+                「親愛的天父，感謝祢透過愛子耶穌基督向我們顯明祢無比的榮耀。當我們在世俗的喧囂中迷失，或者在屬靈的安逸中停滯時，求祢聖靈的雲彩再次遮蓋我們，開啟我們的屬靈雙耳，讓我們單單聽從祢的愛子。求祢賜給我們勇氣，不眷戀山頂的風光，而是願意跟隨耶穌走下山谷，背起十字架，活出真實的信仰。奉耶穌基督得勝的名求，阿們。」
+            </p>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+                <h2 class="font-display text-3xl font-bold">講道分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section1" class="group p-6 bg-cardBg border border-gold/20 rounded-2xl hover:border-gold transition-all duration-300">
+                    <span class="text-gold text-xs font-mono mb-2 block tracking-widest">SECTION 01</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold transition-colors">榮耀的破曉</h3>
+                    <p class="text-sm text-gray-400 mt-2">馬太福音 17:1-4</p>
+                </a>
+                <a href="#section2" class="group p-6 bg-cardBg border border-gold/20 rounded-2xl hover:border-gold transition-all duration-300">
+                    <span class="text-gold text-xs font-mono mb-2 block tracking-widest">SECTION 02</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold transition-colors">聖父的宣告</h3>
+                    <p class="text-sm text-gray-400 mt-2">馬太福音 17:5-8</p>
+                </a>
+                <a href="#section3" class="group p-6 bg-cardBg border border-gold/20 rounded-2xl hover:border-gold transition-all duration-300">
+                    <span class="text-gold text-xs font-mono mb-2 block tracking-widest">SECTION 03</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold transition-colors">十字架的現實</h3>
+                    <p class="text-sm text-gray-400 mt-2">馬太福音 17:9-13</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-32">
+                
+                <!-- Section 1 Detail -->
+                <div id="section1" class="scroll-mt-32">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/3">
+                            <div class="sticky top-32">
+                                <h3 class="text-3xl font-bold font-display text-white mb-4">1. 榮耀的破曉</h3>
+                                <p class="text-gold font-medium mb-6">超越平凡的巔峰經歷與屬靈的盲點</p>
+                                <div class="p-4 bg-crimson/10 border-l-4 border-crimson rounded-r-xl">
+                                    <h4 class="text-xs uppercase tracking-widest text-crimson font-bold mb-2">引用經文 (太17:1-4)</h4>
+                                    <p class="text-sm text-gray-300 leading-relaxed italic">「過了六天，耶穌帶著彼得、雅各，和雅各的兄弟約翰，暗暗地上了高山，就在他們面前變了形像，臉面明亮如日頭，衣裳潔白如光。忽然，有摩西、以利亞向他們顯現，同耶穌說話。彼得對耶穌說：『主啊，我們在這裡真好！你若願意，我就在這裡搭三座棚，一座為你，一座為摩西，一座為以利亞。』」</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl col-span-1 md:col-span-2">
+                                <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-xs">A</span>
+                                    關鍵原文：變了形像 (metamorphoo)
+                                </h4>
+                                <p class="text-gray-300">意指「從內而外本質的改變與彰顯」。這不是外在打光的錯覺，而是耶穌原本神性的榮耀從祂的人性肉身中透射出來，是真實本體的顯露。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold font-bold mb-4">關鍵問題：為何搭棚？</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">這反映了人類企圖將短暫的「屬靈高峰體驗」永久化的本能。彼得想停留在此，反映出我們常希望停留在神蹟與榮耀中，卻逃避神呼召我們下山面對挑戰的旨意。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold font-bold mb-4 italic">佳句：陶恕</h4>
+                                <p class="text-gray-300 text-sm italic">「神從未打算讓我們把屬靈的經歷當作終點；所有真實的屬靈經歷，都是為了引導我們更深地認識神。」</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl col-span-1 md:col-span-2 bg-gradient-to-br from-cardBg to-accent/5">
+                                <h4 class="text-white font-bold mb-2">生活例證</h4>
+                                <p class="text-gray-400 text-sm">登山客見日出想在巔峰紮營，但若不下去將會凍死。山頂是為了眺望，生命是在山谷中延續的。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 Detail -->
+                <div id="section2" class="scroll-mt-32">
+                    <div class="flex flex-col lg:flex-row-reverse gap-12">
+                        <div class="lg:w-1/3">
+                            <div class="sticky top-32">
+                                <h3 class="text-3xl font-bold font-display text-white mb-4">2. 聖父的宣告</h3>
+                                <p class="text-gold font-medium mb-6">褪去繁華，唯獨聽從基督</p>
+                                <div class="p-4 bg-accent/10 border-l-4 border-accent rounded-r-xl">
+                                    <h4 class="text-xs uppercase tracking-widest text-accent font-bold mb-2">引用經文 (太17:5-8)</h4>
+                                    <p class="text-sm text-gray-300 leading-relaxed italic">「說話之間，忽然有一朵光明的雲彩遮蓋他們，且有聲音從雲彩裡出來，說：『這是我的愛子，我所喜悅的。你們要聽他！』門徒聽見，就俯伏在地，極其害怕。耶穌進前來，摸他們，說：『起來，不要害怕！』他們舉目不見一人，只見耶穌在那裡。」</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl col-span-1 md:col-span-2">
+                                <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-xs">B</span>
+                                    關鍵原文：聽從 (akouo)
+                                </h4>
+                                <p class="text-gray-300">不僅是聽見聲音，更包含「留心聽、明白並且順服、付諸行動」的意思。天父的要求是絕對的生命降服。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold font-bold mb-4">為什麼「不見一人」？</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">摩西和以利亞是舊約的影兒，當實體（耶穌）來到時，影兒必須退去。神清空了所有英雄，確立了基督超越一切的獨一性。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold font-bold mb-4 italic">佳句：潘霍華</h4>
+                                <p class="text-gray-300 text-sm italic">「當基督呼召一個人的時候，祂是叫他來死。……我們只能聽從那唯一的聲音。」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 Detail -->
+                <div id="section3" class="scroll-mt-32">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/3">
+                            <div class="sticky top-32">
+                                <h3 class="text-3xl font-bold font-display text-white mb-4">3. 十字架的現實</h3>
+                                <p class="text-gold font-medium mb-6">從榮耀走向受苦的必然</p>
+                                <div class="p-4 bg-crimson/10 border-l-4 border-crimson rounded-r-xl">
+                                    <h4 class="text-xs uppercase tracking-widest text-crimson font-bold mb-2">引用經文 (太17:9-13)</h4>
+                                    <p class="text-sm text-gray-300 leading-relaxed italic">「下山的時候，耶穌吩咐他們說：『人子還沒有從死裡復活，你們不要將所看見的告訴人。』...門徒這才明白耶穌所說的是指著施洗約翰。」</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl col-span-1 md:col-span-2">
+                                <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-xs">C</span>
+                                    關鍵原文：受害 (pascho)
+                                </h4>
+                                <p class="text-gray-300">意為「經歷強烈的痛苦、受苦」。這裡明確指出，苦難是通往復活與榮耀不可或缺的過程。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold font-bold mb-4">為何立刻談論受苦？</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">因為沒有十字架，就沒有冠冕。榮耀的景象是為了堅固門徒，去面對山下即將到來的十字架苦難。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <h4 class="text-gold font-bold mb-4 italic">佳句：約翰·史托德</h4>
+                                <p class="text-gray-300 text-sm italic">「受苦不是榮耀的絆腳石，受苦本身就是通往榮耀的唯一道路。」</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24 max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+                <h2 class="font-display text-3xl font-bold">講章文稿</h2>
+            </div>
+            
+            <article class="bg-cardBg p-8 md:p-12 rounded-[2rem] border border-white/5 space-y-8 text-gray-300 leading-loose text-lg font-serif">
+                <h3 class="text-gold text-2xl md:text-3xl font-bold mb-6 border-b border-gold/20 pb-4">太17:1-13：山頂的榮耀與山下的十字架</h3>
+                
+                <p>弟兄姊妹們，我們一生中總會經歷一些難以忘懷的高峰時刻。然而，當掌聲落下、聚光燈熄滅，我們終究要回到平凡甚至充滿挑戰的現實中。今天我們所讀的馬太福音第17章，正是講述這樣一個從巔峰回到現實的深刻經歷。</p>
+
+                <h4 class="text-white text-xl font-bold mt-12 mb-4">一、榮耀的破曉：超越平凡的巔峰經歷與屬靈的盲點</h4>
+                <p>「過了六天，耶穌帶著彼得、雅各，和雅各的兄弟約翰，暗暗地上了高山，就在他們面前變了形像...」這是一個震撼的時刻。耶穌那隱藏在平凡肉身之下的神性榮耀，瞬間爆發出來，臉面明亮如日頭。此時，舊約的兩大巨擘——摩西與以利亞也顯現了。</p>
+                <p>彼得想為自己的感覺「搭帳棚」。然而，正如陶恕所言，神賜下屬靈經歷從來不是為了讓我們停滯不前，而是為了賦予我們使命。山頂是為了眺望，但生命必須在山谷中結出果實。我們不能永遠留在山上。</p>
+
+                <h4 class="text-white text-xl font-bold mt-12 mb-4">二、聖父的宣告：褪去繁華，唯獨聽從基督</h4>
+                <p>天父的命令極其明確：不是聽摩西，不是聽以利亞，而是<span class="text-gold font-bold underline">聽從</span>基督。</p>
+                <div class="my-8 p-6 bg-gold/10 border-y border-gold/30 text-center">
+                    <p class="text-2xl text-white font-bold mb-2">「他們舉目不見一人，只見耶穌在那裡。」</p>
+                    <p class="text-sm text-gold">（馬太福音 17:8）</p>
+                </div>
+                <p>弟兄姊妹，這就是我們信仰的核心。神要剝除這一切的干擾，讓我們在生命的畫布上，<span class="text-gold font-bold">只見耶穌</span>。只有當耶穌成為我們唯一的焦點與權威時，我們才算真正走在門徒的道路上。</p>
+
+                <h4 class="text-white text-xl font-bold mt-12 mb-4">三、十字架的現實：從榮耀走向受苦的必然</h4>
+                <p>在基督的國度裡，沒有十字架就沒有復活，沒有受苦就沒有榮耀。這對今天的我們也是強烈的提醒：不要以為跟隨主就只有山頂的風光，我們同樣被呼召走向山下，進入受苦的人群中，背起我們自己的十字架。</p>
+                
+                <div class="pt-8 border-t border-white/10 mt-12">
+                    <p class="font-bold text-white text-center">願我們的一生，都能夠不見一人，只見耶穌在那裡，並跟隨祂的腳步，勇敢地走進世界。</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- 應用方向 -->
+            <div class="bento-card p-10 rounded-[2.5rem]">
+                <h3 class="text-gold text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                    </svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">01.</span>
+                        <p class="text-gray-300">破除屬靈消費主義：檢視自己是否只追求「美好的感覺」，而非每日的順服。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">02.</span>
+                        <p class="text-gray-300">重新對焦於基督：在眾多聲音中，學習分辨並單單聽從基督的話語。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">03.</span>
+                        <p class="text-gray-300">擁抱十字架的呼召：接受生活中的挑戰，明白受苦是成長的必經之路。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 實踐行動 -->
+            <div class="bento-card p-10 rounded-[2.5rem] bg-accent/5">
+                <h3 class="text-accent text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    回應行動
+                </h3>
+                <div class="space-y-4">
+                    <div class="p-4 bg-darkBg/50 rounded-2xl border border-accent/20">
+                        <p class="text-sm font-bold text-accent mb-1">每日操練</p>
+                        <p class="text-gray-300 text-sm">每日十分鐘的「安靜聆聽」，不求任何事物，單單安靜在神面前。</p>
+                    </div>
+                    <div class="p-4 bg-darkBg/50 rounded-2xl border border-accent/20">
+                        <p class="text-sm font-bold text-accent mb-1">本週行動</p>
+                        <p class="text-gray-300 text-sm">拆毀一座「安逸的帳棚」，寫下一件逃避的服事，並採取具體行動。</p>
+                    </div>
+                    <div class="p-4 bg-darkBg/50 rounded-2xl border border-accent/20">
+                        <p class="text-sm font-bold text-accent mb-1">心態重塑</p>
+                        <p class="text-gray-300 text-sm">用十字架的眼光重塑困境，求神在痛苦中顯明祂復活的榮耀。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+                <h2 class="font-display text-3xl font-bold">屬靈前輩佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Quote Cards -->
+                <div class="break-inside-avoid bento-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <p class="text-gold text-right font-bold text-sm">— 潘霍華 《追隨基督》</p>
+                </div>
+                <div class="break-inside-avoid bento-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「我們的心是一個不斷製造偶像的工廠，唯有基督的真光照耀，才能使我們定睛於那唯一的真神。」</p>
+                    <p class="text-gold text-right font-bold text-sm">— 約翰·加爾文 《基督教要義》</p>
+                </div>
+                <div class="break-inside-avoid bento-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「門徒的道路是一場『在同一方向上的長期順服』，沒有捷徑，也沒有速成的榮耀。」</p>
+                    <p class="text-gold text-right font-bold text-sm">— 畢德生 《長道漫漫》</p>
+                </div>
+                <div class="break-inside-avoid bento-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「耶穌基督是歷史上唯一一位為了失去一切而來到世上的王；祂用祂的受苦買贖了我們。」</p>
+                    <p class="text-gold text-right font-bold text-sm">— 提摩太·凱勒 《被釘十字架的王》</p>
+                </div>
+                <div class="break-inside-avoid bento-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">「十字架本身就是我們最好的神學。不在十字架的苦難中認識神的人，根本不認識神。」</p>
+                    <p class="text-gold text-right font-bold text-sm">— 馬丁·路德 《海德堡爭辯》</p>
+                </div>
+                <div class="break-inside-avoid bento-card p-6 rounded-2xl border-accent/30">
+                    <p class="text-gray-300 italic mb-4">「真正的屬靈生命，不是逃離這個破碎的世界，而是帶著基督的愛，深深地進入這個世界的痛苦之中。」</p>
+                    <p class="text-gold text-right font-bold text-sm">— 盧雲 《負傷的治療者》</p>
+                </div>
+                <!-- ... More quotes summarized visually ... -->
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <footer class="pt-16 pb-32 border-t border-white/5">
+            <div class="bg-crimson/5 border border-crimson/20 p-6 rounded-2xl text-center">
+                <p class="text-crimson/80 text-sm tracking-widest">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50 group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth reveal on scroll for sections
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

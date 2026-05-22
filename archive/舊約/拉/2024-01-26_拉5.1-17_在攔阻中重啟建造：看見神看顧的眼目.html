@@ -122,7 +122,24 @@
             background: #f4b612;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '以斯拉記 5:1-17',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '以斯拉記',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在攔阻中重啟建造：看見神看顧的眼目' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans">
 
     <!-- Fixed Header -->
@@ -141,7 +158,7 @@
     </header>
 
     <!-- Hero Banner Section -->
-    <section id="top" class="relative  h-[50vh] md:h-[80vh] h-screen w-full overflow-hidden flex items-center justify-center">
+    <section id="top" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <div class="absolute inset-0 z-0">
             <div class="animate-breath w-full h-full">
                 <img src='image/img_c9bb4243-02c5-4f19-8e8b-b20be9634d03.jpg' alt='拉5:1-17 史詩電影風格 Banner' class="w-full h-full object-cover filter brightness-75 contrast-125" />

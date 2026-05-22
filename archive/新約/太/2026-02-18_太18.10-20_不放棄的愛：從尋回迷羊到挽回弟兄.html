@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太18:10-20: 不放棄的愛：從尋回迷羊到挽回弟兄</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FFD700',
+                            DEFAULT: '#D4AF37',
+                            dark: '#B8860B',
+                        },
+                        accent: '#EAB308',
+                        deep: '#0F172A',
+                        card: 'rgba(30, 41, 59, 0.7)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-shake': 'gentle-shake 2s infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.4' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-shake': {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '25%': { transform: 'translateX(-1px) rotate(-0.5deg)' },
+                            '75%': { transform: 'translateX(1px) rotate(0.5deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(234, 179, 8, 0.6);
+        }
+        .bg-mesh {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #EAB308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .jump-text span {
+            display: inline-block;
+            animation: gentle-shake 2s infinite;
+            animation-delay: calc(var(--i) * 0.1s);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太18:10-20',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '不放棄的愛：從尋回迷羊到挽回弟兄' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-deep text-slate-200 font-sans leading-relaxed selection:bg-accent selection:text-deep">
+
+    <!-- Header / Nav -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/10 px-4 py-3 sm:px-8 flex justify-between items-center">
+        <div class="text-accent font-display font-bold text-lg sm:text-xl tracking-tighter">
+            太18:10-20
+        </div>
+        <div class="flex gap-4 sm:gap-8 text-sm sm:text-base font-medium">
+            <a href="#prayer" class="nav-link text-slate-300 hover:text-accent">禱告</a>
+            <a href="#outline" class="nav-link text-slate-300 hover:text-accent">大綱</a>
+            <a href="#sermon" class="nav-link text-slate-300 hover:text-accent">講章</a>
+            <a href="#quotes" class="nav-link text-slate-300 hover:text-accent">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] sm:h-[80vh] w-full overflow-hidden flex items-center justify-center pt-16">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="animate-pulse-slow w-full h-full object-cover">
+                <img src='image/img_0c00ab1f-02ba-4469-b0a3-9d5b6f43e2be.jpg' alt='media_1' class="w-full h-full object-cover scale-105" />
+            </div>
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1 id="top" class="text-4xl sm:text-6xl font-black mb-6 text-white tracking-tight leading-tight">
+                不放棄的愛：<br/>
+                <span class="text-accent text-glow">從尋回迷羊到挽回弟兄</span>
+            </h1>
+            
+            <div class="mt-8 space-y-4">
+                <p class="jump-text text-lg sm:text-2xl font-light italic text-white/90">
+                    <span style="--i:1">「</span><span style="--i:2">你</span><span style="--i:3">們</span><span style="--i:4">在</span><span style="--i:5">天</span><span style="--i:6">上</span><span style="--i:7">的</span><span style="--i:8">父</span><span style="--i:9">也</span><span style="--i:10">是</span><span style="--i:11">這</span><span style="--i:12">樣</span><span style="--i:13">，</span><span style="--i:14">不</span><span style="--i:15">願</span><span style="--i:16">意</span><span style="--i:17">這</span><span style="--i:18">小</span><span style="--i:19">子</span><span style="--i:20">裡</span><span style="--i:21">失</span><span style="--i:22">喪</span><span style="--i:23">一</span><span style="--i:24">個</span><span style="--i:25">。</span><span style="--i:26">」</span>
+                </p>
+                <p class="text-sm sm:text-lg text-slate-300 font-medium">（太18:14）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                <h2 class="text-3xl font-bold text-white tracking-wide">禱告詞</h2>
+            </div>
+            <div class="glass p-8 sm:p-12 rounded-3xl border-l-4 border-l-accent shadow-2xl bg-gradient-to-br from-slate-800/50 to-transparent">
+                <p class="text-xl sm:text-2xl leading-relaxed text-slate-100 font-light italic">
+                    「親愛的天父，感謝祢以不放棄的愛尋找我們這群曾經迷失的羊。求祢將祢那尋回失喪者的心腸賜給我們，使我們不輕看任何一個微小的生命。當我們在群體中面對衝突與得罪時，求賜我們勇氣與溫柔，用真理與愛心去挽回弟兄，而不是定罪或放棄。願主的靈在我們兩三個人的同心合意中運行，讓我們的教會成為充滿饒恕、復和與主同在的真實群體。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                <h2 class="text-3xl font-bold text-white">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="group p-6 glass rounded-2xl hover:border-accent transition-all duration-300">
+                    <span class="text-xs text-accent uppercase font-bold tracking-widest block mb-2">Part 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-accent transition-colors">尋回的恩典</h3>
+                    <p class="text-sm text-slate-400 mt-1">太 18:10-14</p>
+                </a>
+                <a href="#part2" class="group p-6 glass rounded-2xl hover:border-accent transition-all duration-300">
+                    <span class="text-xs text-accent uppercase font-bold tracking-widest block mb-2">Part 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-accent transition-colors">挽回的操練</h3>
+                    <p class="text-sm text-slate-400 mt-1">太 18:15-17</p>
+                </a>
+                <a href="#part3" class="group p-6 glass rounded-2xl hover:border-accent transition-all duration-300">
+                    <span class="text-xs text-accent uppercase font-bold tracking-widest block mb-2">Part 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-accent transition-colors">同心的權柄</h3>
+                    <p class="text-sm text-slate-400 mt-1">太 18:18-20</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline Analysis -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <article id="part1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28 space-y-4">
+                            <h3 class="text-4xl font-black text-accent tracking-tighter">尋回的恩典</h3>
+                            <p class="text-slate-400 font-medium">馬太福音 18:10-14</p>
+                            <div class="p-6 glass rounded-xl mt-8">
+                                <p class="text-sm leading-relaxed text-slate-200">
+                                    「你們要小心，不可輕看這小子裡的一個；我告訴你們，他們的使者在天上，常見我天父的面... 若是找著了，我實在告訴你們，他為這一隻羊歡喜，比為那沒有迷路的九十九隻歡喜還大呢！」
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-12">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-4 border-b border-accent/30 pb-2">關鍵原文詞彙</h4>
+                            <ul class="space-y-4">
+                                <li class="bg-white/5 p-4 rounded-lg">
+                                    <strong class="text-accent block text-lg">迷路 (planaō)</strong>
+                                    <span class="text-slate-300">希臘文意為「偏離正道、遊蕩、被欺騙」。這表示羊的迷失往往不是刻意叛逆，而是不知不覺偏離了群體與牧人。</span>
+                                </li>
+                                <li class="bg-white/5 p-4 rounded-lg">
+                                    <strong class="text-accent block text-lg">失喪 (apollymi)</strong>
+                                    <span class="text-slate-300">意為「毀滅、失去、沉淪」。天父的旨意是保護每一個微小的信徒免於最終的沉淪。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-accent/10 p-8 rounded-3xl border border-accent/20">
+                            <h4 class="text-xl font-bold text-accent mb-4">關鍵問題與解析</h4>
+                            <p class="font-bold text-white mb-2 text-lg">撇下九十九隻去尋找一隻，這符合經濟效益與常理嗎？</p>
+                            <p class="text-slate-300 leading-relaxed">
+                                上帝的恩典經濟學不建立在「功利主義」的計算上，而是建立在「為父的心腸」上。對牧羊人（天父）來說，每一隻羊都具有無可取代的獨特價值。這挑戰了教會常以「多數人利益」為由而犧牲邊緣弱勢者的冷漠心態。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-accent font-bold mb-2 uppercase text-xs tracking-widest">生活例證</h4>
+                                <p class="text-slate-300 text-sm">想像一位母親帶著五個孩子去遊樂園，其中一個走失了。她絕不會因為「還有四個」而安慰，她會發瘋似地尋找。這正是天父焦急的愛。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl border-r-4 border-r-accent">
+                                <h4 class="text-accent font-bold mb-2 uppercase text-xs tracking-widest">佳句名言</h4>
+                                <p class="text-white font-medium italic">「上帝的愛不是建立在我們的可愛上，而是建立在我們的需要上。」</p>
+                                <p class="text-slate-400 text-xs mt-2">—— 提摩太·凱勒 (Timothy Keller)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 2 -->
+            <article id="part2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28 space-y-4">
+                            <h3 class="text-4xl font-black text-accent tracking-tighter">挽回的操練</h3>
+                            <p class="text-slate-400 font-medium">馬太福音 18:15-17</p>
+                            <div class="p-6 glass rounded-xl mt-8">
+                                <p class="text-sm leading-relaxed text-slate-200 italic">
+                                    「倘若你的弟兄得罪你，你就去，趁著只有他和你在一處的時候，指出他的錯來... 若是不聽，你就另外帶一兩個人同去... 若是不聽教會，就看他像外邦人和稅吏一樣。」
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-12">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-4 border-b border-accent/30 pb-2">關鍵原文詞彙</h4>
+                            <ul class="space-y-4">
+                                <li class="bg-white/5 p-4 rounded-lg border-r-4 border-accent">
+                                    <strong class="text-accent block text-lg">得著/挽回 (kerdainō)</strong>
+                                    <span class="text-slate-300">意為「贏得、獲得利益」。指的是「贏回這個弟兄」。挽回關係是教會紀律的唯一目的。</span>
+                                </li>
+                                <li class="bg-white/5 p-4 rounded-lg">
+                                    <strong class="text-accent block text-lg">指出他的錯 (elenchō)</strong>
+                                    <span class="text-slate-300">意為「使之知罪、說服、責備」。是一個帶著愛心使人看見盲點的過程，而非出於血氣的控告。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800/80 p-8 rounded-3xl border border-white/10">
+                            <h4 class="text-xl font-bold text-accent mb-4">關鍵問題與解析</h4>
+                            <p class="font-bold text-white mb-2 text-lg">為什麼耶穌要求我們先「私下」指出對方的錯？</p>
+                            <p class="text-slate-300 leading-relaxed">
+                                私下溝通需要極大的勇氣與脆弱，且保護了犯罪者的自尊。背後抱怨是為了保護自己的安全感。耶穌的教導是要我們承擔關係破裂的痛苦，以付代價的愛去修復破口。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-accent font-bold mb-2 uppercase text-xs tracking-widest">生活例證</h4>
+                                <p class="text-slate-300 text-sm">外科醫生面對病患身上的壞疽，若視而不見會導致截肢。「挽回」的手術刀必須由愛與恩典來執刀。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl border-r-4 border-r-accent">
+                                <h4 class="text-accent font-bold mb-2 uppercase text-xs tracking-widest">佳句名言</h4>
+                                <p class="text-white font-medium italic">「沒有什麼比把別人任憑在罪中不管，更殘忍的寬容了。」</p>
+                                <p class="text-slate-400 text-xs mt-2">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 3 -->
+            <article id="part3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28 space-y-4">
+                            <h3 class="text-4xl font-black text-accent tracking-tighter">同心的權柄</h3>
+                            <p class="text-slate-400 font-medium">馬太福音 18:18-20</p>
+                            <div class="p-6 glass rounded-xl mt-8">
+                                <p class="text-sm leading-relaxed text-slate-200">
+                                    「...若是你們中間有兩個人在地上同心合意地求什麼事，我在天上的父必為他們成全。因為無論在哪裡，有兩三個人奉我的名聚會，那裡就有我在他們中間。」
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-12">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-4 border-b border-accent/30 pb-2">關鍵原文詞彙</h4>
+                            <ul class="space-y-4">
+                                <li class="bg-white/5 p-4 rounded-lg">
+                                    <strong class="text-accent block text-lg">同心合意 (symphōneō)</strong>
+                                    <span class="text-slate-300">英文 symphony（交響樂）的字源，意指「發出和諧的聲音」。是在基督裡調和成和諧的旋律。</span>
+                                </li>
+                                <li class="bg-white/5 p-4 rounded-lg">
+                                    <strong class="text-accent block text-lg">聚會 (synagō)</strong>
+                                    <span class="text-slate-300">被動語態，意為「被聚集」。信徒不是靠自己聚集，而是奉耶穌的名被聖靈吸引。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-accent/10 p-8 rounded-3xl border border-accent/20">
+                            <h4 class="text-xl font-bold text-accent mb-4">關鍵問題與解析</h4>
+                            <p class="font-bold text-white mb-2 text-lg">「兩三個人聚會」是指人數少的禱告會嗎？</p>
+                            <p class="text-slate-300 leading-relaxed">
+                                耶穌在強調，當教會群體（即使極小）帶著愛心去處理罪、尋求復和時，他們就擁有天上的權柄，且耶穌親自臨在於這個艱難的過程中。
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-accent font-bold mb-2 uppercase text-xs tracking-widest">生活例證</h4>
+                                <p class="text-slate-300 text-sm">一百架鋼琴若對準同一個「音叉（耶穌）」調音，彼此之間自然就會和諧，發出直達天庭的交響樂。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl border-r-4 border-r-accent">
+                                <h4 class="text-accent font-bold mb-2 uppercase text-xs tracking-widest">佳句名言</h4>
+                                <p class="text-white font-medium italic">「教會就是一個由被饒恕者所組成，並且不斷操練饒恕的群體。」</p>
+                                <p class="text-slate-400 text-xs mt-2">—— 約翰·史托德 (John Stott)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sermon Content Section -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-3xl font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-lg max-w-none space-y-16">
+                <div class="bg-mesh p-8 sm:p-16 rounded-[3rem] shadow-inner">
+                    <p class="text-xl leading-relaxed text-slate-100">
+                        弟兄姊妹們，今天我們要從馬太福音第18章來看一個關於教會群體的偉大藍圖。這段經文常被我們拆開來看：前面講迷羊，中間講教會紀律，後面講禱告。但事實上，這是一脈相承的教導。耶穌在告訴我們：<strong class="text-accent text-glow">一個真正有主同在的群體，是一個充滿「尋找」與「挽回」的群體。</strong>
+                    </p>
+
+                    <div class="mt-16 space-y-8">
+                        <h3 class="text-3xl font-bold text-accent flex items-center gap-3">
+                            <span class="text-6xl opacity-20 font-display">01</span> 尋回的恩典
+                        </h3>
+                        <p class="text-slate-200">
+                            首先，耶穌將我們的眼光轉向天父的心。經文提到：<strong class="text-white">「一個人若有一百隻羊，一隻走迷了路...他豈不撇下這九十九隻，往山裡去找那隻迷路的羊嗎？」</strong>
+                        </p>
+                        <p class="text-slate-300">
+                            從人類的經濟學來看，為了百分之一的資產去冒險是不理智的。但天父的愛從來不是功利主義的計算。這隻羊之所以迷失，或許是因為軟弱、受傷或被欺騙。天父沒有責備，只有焦急的尋找。
+                        </p>
+                        <div class="border-l-4 border-accent pl-6 py-2 my-8">
+                            <p class="text-2xl font-bold text-white leading-tight">「你們在天上的父也是這樣，不願意這小子裡失喪一個。」</p>
+                        </div>
+                        <p class="text-slate-300">
+                            在教會中，誰是「這小子」？可能是那些坐在角落、沒有服事、社經地位不顯眼，甚至帶著許多生命殘缺的人。我們很容易忽視他們，甚至覺得教會少了一兩個人也無所謂。但提摩太·凱勒牧師提醒我們：<span class="text-accent font-medium">「上帝的愛不是建立在我們的可愛上，而是建立在我們的需要上。」</span>
+                        </p>
+                    </div>
+
+                    <div class="mt-16 space-y-8">
+                        <h3 class="text-3xl font-bold text-accent flex items-center gap-3">
+                            <span class="text-6xl opacity-20 font-display">02</span> 挽回的操練
+                        </h3>
+                        <p class="text-slate-200">
+                            當羊群聚集在一起，無可避免地會有摩擦。耶穌接著教導我們如何面對群體中的傷害：<strong class="text-white">「倘若你的弟兄得罪你，你就去，趁著只有他和你在一處的時候，指出他的錯來。他若聽你，你便得了你的弟兄。」</strong>
+                        </p>
+                        <p class="text-slate-300">
+                            耶穌不是教我們如何吵贏一場架，而是教我們如何<strong class="text-accent">「贏回一個弟兄」</strong>。我們常把這段經文當作SOP，但它的核心是愛。
+                        </p>
+                        <p class="text-slate-300 italic bg-white/5 p-6 rounded-2xl">
+                            潘霍華曾嚴厲地指出：「沒有什麼比把別人任憑在罪中不管，更殘忍的寬容了。」真正不放棄的愛，是願意承擔衝突的尷尬與痛苦，如同外科醫生切除壞疽，痛卻是為了帶來生命的醫治。
+                        </p>
+                    </div>
+
+                    <div class="mt-16 space-y-8">
+                        <h3 class="text-3xl font-bold text-accent flex items-center gap-3">
+                            <span class="text-6xl opacity-20 font-display">03</span> 同心的權柄
+                        </h3>
+                        <p class="text-slate-200">
+                            當我們願意去尋找迷羊、願意去挽回弟兄時，耶穌給了我們一個極大的應許。祂說：<strong class="text-white">「若是你們中間有兩個人在地上同心合意地求什麼事...我在天上的父必為他們成全。」</strong>
+                        </p>
+                        <p class="text-slate-300">
+                            這裡的「同心合意」是交響樂的意思。當兩三個弟兄姊妹不是為了定罪，而是為了挽回一個靈魂時，他們就動用了天上的權柄。當我們願意在艱難的關係中放下自我，<strong class="text-accent">兩三個人奉主的名對準耶穌這個「音叉」時</strong>，天父就在我們中間，賜下醫治、饒恕與突破。
+                        </p>
+                    </div>
+                    
+                    <div class="mt-20 pt-10 border-t border-white/10">
+                        <p class="text-2xl font-bold text-white text-center">
+                            弟兄姊妹，從尋回迷羊到挽回弟兄，這就是不放棄的愛。<br/>
+                            願我們的教會成為天父愛的延伸。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-bold text-white">名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-accent">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「沒有什麼比把別人任憑在罪中不管，更殘忍的寬容了。」</p>
+                    <p class="text-sm text-accent font-bold">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-slate-500">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「福音是這樣的：我們比自己膽敢相信的還要罪惡深重與瑕疵滿佈，但同時，我們在耶穌基督裡所蒙的愛與接納，卻比我們膽敢盼望的還要多。」</p>
+                    <p class="text-sm text-accent font-bold">—— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-accent">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「教會就是一個由被饒恕者所組成，並且不斷操練饒恕的群體。」</p>
+                    <p class="text-sm text-accent font-bold">—— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-slate-500">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「一百架鋼琴如果都與同一個音叉調音，它們彼此之間自然也就調準了。信徒若都定睛於基督，他們彼此之間就會有真正的合一。」</p>
+                    <p class="text-sm text-accent font-bold">—— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-accent">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「如果你是一隻迷失的羊，請記住，好牧人的記號不僅是引導羊群，更是去尋找那迷失的。」</p>
+                    <p class="text-sm text-accent font-bold">—— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-slate-500">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「團契生活不是一個浪漫的夢想，而是一個嚴肅的屬靈現實；我們必須藉著彼此饒恕來經歷這現實。」</p>
+                    <p class="text-sm text-accent font-bold">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-accent">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「上帝尋找我們，遠比我們尋找上帝更加熱切。」</p>
+                    <p class="text-sm text-accent font-bold">—— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl border-l-4 border-slate-500">
+                    <p class="text-slate-100 mb-4 font-medium leading-relaxed">「基督徒的愛心，在於願意背負弟兄的重擔；若沒有重擔要背，愛心就無用武之地。」</p>
+                    <p class="text-sm text-accent font-bold">—— 馬丁·路德 (Martin Luther)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actions Section -->
+        <section class="glass p-8 sm:p-12 rounded-[3rem] border border-accent/30 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">回應與實踐行動</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-accent/20 text-accent rounded-full flex items-center justify-center mx-auto text-xl font-bold">1</div>
+                    <p class="text-slate-200">本週寫下一個近期「走迷了路」的弟兄姊妹名字，為他禱告並發送關懷訊息。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-accent/20 text-accent rounded-full flex items-center justify-center mx-auto text-xl font-bold">2</div>
+                    <p class="text-slate-200">主動修復關係。若想起有誰得罪了你，本週試著約對方喝杯咖啡，在愛中挽回彼此。</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-accent/20 text-accent rounded-full flex items-center justify-center mx-auto text-xl font-bold">3</div>
+                    <p class="text-slate-200">尋找一位屬靈夥伴，進行一次15分鐘的同心禱告，特別為教會受傷的關係呼求。</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-12 border-t border-white/10 text-center space-y-4">
+            <p class="text-slate-500 text-sm italic">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-accent hover:bg-yellow-500 text-deep rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth reveal animations for scrolling
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, article').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太19:13-26：放下擁有，擁抱豐盛：從神國看真正的富足</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf0',
+                            100: '#fef7da',
+                            200: '#fdecab',
+                            300: '#fbd870',
+                            400: '#f9bd36',
+                            500: '#f49e1a',
+                            600: '#da7b10',
+                            700: '#b55811',
+                            800: '#944415',
+                            900: '#7a3816',
+                        },
+                        deep: '#0a0a0c',
+                        surface: '#16161a',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'vibrate': 'vibrate 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        vibrate: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '25%': { transform: 'translateY(-2px)' },
+                            '75%': { transform: 'translateY(2px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0c; color: #e5e7eb; overflow-x: hidden; }
+        .glass { background: rgba(22, 22, 26, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .banner-mask { background: linear-gradient(to bottom, transparent 60%, #0a0a0c 100%); }
+        .text-gradient { background: linear-gradient(135deg, #fbd870 0%, #f49e1a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-link { position: relative; transition: all 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #f49e1a; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        
+        @keyframes breathing {
+            0%, 100% { opacity: 0.6; filter: brightness(0.8); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .animate-breathing { animation: breathing 8s ease-in-out infinite; }
+        
+        .verse-vibrate { display: inline-block; animation: vibrate 3s ease-in-out infinite; }
+        
+        .outline-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .outline-card:hover { transform: translateY(-8px); border-color: #f49e1a; box-shadow: 0 10px 30px -10px rgba(244, 158, 26, 0.3); }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0c; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f49e1a; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太19:13-26',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '放下擁有，擁抱豐盛：從神國看真正的富足' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-display font-bold text-gold-400 text-lg md:text-xl truncate mr-4">太19:13-26</span>
+            <div class="flex space-x-6 md:space-x-10 text-sm md:text-base font-medium tracking-wider">
+                <a href="#prayer" class="nav-link text-gray-300 hover:text-gold-400">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300 hover:text-gold-400">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300 hover:text-gold-400">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300 hover:text-gold-400">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="relative h-[80vh] md:h-[90vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_9acaf1c2-3433-4200-953e-061f726e08ea.jpg' alt='財主青年與耶穌的對話' class="w-full h-full object-cover animate-breathing" />
+            <div class="absolute inset-0 banner-mask"></div>
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">
+                <span class="block text-white mb-2">放下擁有 擁抱豐盛</span>
+                <span class="text-gradient">從神國看真正的富足</span>
+            </h1>
+            
+            <!-- Verse (Floating/Vibrating) -->
+            <div class="mt-12">
+                <p class="verse-vibrate text-xl md:text-3xl font-display text-gold-200 italic font-medium leading-relaxed drop-shadow-lg">
+                    「在人這是不能的，在神凡事都能。」<br>
+                    <span class="text-sm md:text-lg opacity-80 mt-2 block">— 太19:26 —</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-32 relative">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-24 mb-32">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">禱告詞</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden border-l-4 border-gold-500">
+                <p class="text-lg md:text-xl leading-loose text-gray-300 font-light italic">
+                    親愛的主耶穌，我們常常像那位富有的少年人一樣，緊緊抓住地上的財寶、個人的成就與安全感，卻忽略了祢所賜那真正豐盛的生命。求祢賜給我們如同小孩子般單純的信心，幫助我們看透內心的偶像，勇敢放下手中的緊握。讓我們深知，得救與生命的翻轉，在人不能，但在祢凡事都能。求聖靈今天對我們的心說話，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="mb-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#section-1" class="outline-card glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-accent font-bold text-sm tracking-widest block mb-2">PART 01</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-300 transition-colors">拒絕世俗傲慢<br>重拾嬰孩單純</h3>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4">太19:13-15</span>
+                </a>
+                <a href="#section-2" class="outline-card glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-accent font-bold text-sm tracking-widest block mb-2">PART 02</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-300 transition-colors">看透成就虛無<br>直視內心偶像</h3>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4">太19:16-22</span>
+                </a>
+                <a href="#section-3" class="outline-card glass p-6 rounded-2xl flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-accent font-bold text-sm tracking-widest block mb-2">PART 03</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-300 transition-colors">承認人的不能<br>經歷神的全能</h3>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-4">太19:23-26</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-20">
+                <!-- Section 1 -->
+                <article id="section-1" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-4xl font-accent font-black text-white/10">01</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gold-400">拒絕世俗的傲慢，重拾嬰孩的單純</h3>
+                    </div>
+                    <div class="space-y-8 pl-4 border-l border-white/10">
+                        <div class="bg-surface/50 p-6 rounded-2xl border border-white/5">
+                            <p class="text-gray-400 italic leading-relaxed">「耶穌說：『讓小孩子到我這裡來，不要禁止他們；因為在天國的，正是這樣的人。』」</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-300 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-300"></span> 關鍵原文解釋
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white">「小孩子」</strong>（希臘文：*paidion*）。代表著「微不足道」、「全然依賴」。耶穌指的不是孩童的天真無邪，而是那種「沒有任何籌碼、只能完全仰賴恩典」的狀態。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-300 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-300"></span> 關鍵問題與解析
+                            </h4>
+                            <div class="p-5 glass rounded-xl border-blue-500/30 border">
+                                <p class="text-blue-200 font-medium mb-2">Q: 為什麼天國屬於「這樣的人」？</p>
+                                <p class="text-gray-300 text-sm md:text-base">天國的本質是「恩典」而非「業績」。唯有承認自己如同小孩般無助、無法靠自己賺取救恩的人，才能進入天國。</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-white/5 rounded-2xl">
+                                <p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-2">例證</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">游泳池邊的孩子，因為看見父親伸出雙臂而勇敢躍下。真正的信仰是放下自我掌控，完全信任天父。</p>
+                            </div>
+                            <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/10">
+                                <p class="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2">名言</p>
+                                <p class="text-gold-100/90 text-sm leading-relaxed font-display">「我們最大的陷阱，是拒絕承認我們對上帝的全然倚靠。」— 盧雲</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="section-2" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-4xl font-accent font-black text-white/10">02</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gold-400">看透成就的虛無，直視內心的偶像</h3>
+                    </div>
+                    <div class="space-y-8 pl-4 border-l border-white/10">
+                        <div class="bg-surface/50 p-6 rounded-2xl border border-white/5">
+                            <p class="text-gray-400 italic leading-relaxed">「耶穌說：『你若願意作完全人，可去變賣你所有的...你還要來跟從我。』那少年人聽見這話，就憂憂愁愁地走了...」</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-300 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-300"></span> 關鍵原文解釋
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white">「憂憂愁愁」</strong>（希臘文：*lupeo*）。意為極度悲痛、內在衝突。這是內心深處的偶像被挑戰時，靈魂所發出的劇烈陣痛。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-300 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-300"></span> 關鍵問題與解析
+                            </h4>
+                            <div class="p-5 glass rounded-xl border-blue-500/30 border">
+                                <p class="text-blue-200 font-medium mb-2">Q: 阻擋你全然跟隨耶穌的「產業」是什麼？</p>
+                                <p class="text-gray-300 text-sm md:text-base">少年人試圖用「做什麼」換取永生。耶穌要求他變賣所有，是點出財富已經成為他的「神」。當真神要求放下假神，他無法割捨。</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-white/5 rounded-2xl">
+                                <p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-2">非洲猴子的陷阱</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">猴子抓住花生不願鬆手，導致手卡在瓶口被擒。緊抓偶像而不願放手，是人類最大的悲劇。</p>
+                            </div>
+                            <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/10">
+                                <p class="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2">名言</p>
+                                <p class="text-gold-100/90 text-sm leading-relaxed font-display">「偶像就是任何比上帝更根本地成為你生命意義的事物。」— 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="section-3" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-3 mb-6">
+                        <span class="text-4xl font-accent font-black text-white/10">03</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gold-400">承認人的不能，經歷神的無所不能</h3>
+                    </div>
+                    <div class="space-y-8 pl-4 border-l border-white/10">
+                        <div class="bg-surface/50 p-6 rounded-2xl border border-white/5">
+                            <p class="text-gray-400 italic leading-relaxed">「在人這是不能的，在神凡事都能。」</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-300 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-300"></span> 關鍵原文解釋
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed"><strong class="text-white">「不能的 / 都能」</strong>（希臘文：*adunatos* vs *dunatos*）。形成強烈對比：前者是毫無可能，後者是絕對可能。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-300 font-bold mb-3 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-gold-300"></span> 關鍵問題與解析
+                            </h4>
+                            <div class="p-5 glass rounded-xl border-blue-500/30 border">
+                                <p class="text-blue-200 font-medium mb-2">Q: 既然進天國這麼難，我們該如何面對軟弱？</p>
+                                <p class="text-gray-300 text-sm md:text-base">耶穌用「駱駝穿過針眼」粉碎靠自力得救的幻想。承認「人不能」，是經歷「神能」的唯一起點。</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-white/5 rounded-2xl">
+                                <p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-2">流沙的比喻</p>
+                                <p class="text-gray-300 text-sm leading-relaxed">掉入流沙的人越掙扎越深。唯有停止自救，仰賴上方垂下的繩索。救恩就是那條繩索。</p>
+                            </div>
+                            <div class="p-6 bg-gold-500/5 rounded-2xl border border-gold-500/10">
+                                <p class="text-xs font-bold tracking-widest text-gold-500 uppercase mb-2">名言</p>
+                                <p class="text-gold-100/90 text-sm leading-relaxed font-display">「當你到了自己能力的盡頭，你才剛剛來到了上帝恩典的起點。」— 司布真</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript Section -->
+        <section id="sermon" class="mb-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <div class="glass p-8 md:p-16 rounded-[2rem] leading-loose text-gray-300 space-y-8 text-lg">
+                <p>弟兄姊妹們，平安！今天我們要來探討一個關乎我們生命核心價值的主題：<strong class="text-gold-400 text-xl">「放下擁有，擁抱豐盛：從神國看真正的富足」</strong>。現代社會不斷教導我們：要擁有得更多，要有更高的成就，要掌握更多的財富，這樣人生才會有安全感。然而，耶穌在《馬太福音》第19章中，卻給了我們一個完全顛覆的眼光。</p>
+                
+                <h4 class="text-2xl font-bold text-white mt-12 mb-4">拒絕世俗的傲慢，重拾嬰孩的單純</h4>
+                <p>當人們帶著小孩子來到耶穌面前時，門徒卻出面阻擋。為什麼？因為在當時的社會，小孩子代表著沒有生產力、沒有地位、微不足道。門徒的反應，其實就是我們現代人的通病。但耶穌卻說：「讓小孩子到我這裡來...因為在天國的，正是這樣的人。」<span class="text-gold-400 font-bold">天國的門太矮了，驕傲的人挺著胸膛是進不去的</span>；唯有我們願意放下世俗的傲慢，承認自己毫無籌碼，像個嬰孩般完全仰望天父的恩典時，我們才配得天國。</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-4">看透成就的虛無，直視內心的偶像</h4>
+                <p>這位跑來找耶穌的少年人，他有錢、有地位，而且道德高尚。但當耶穌要他去變賣所有並來跟從祂時，聖經說他「憂憂愁愁地走了」。這是一個多麼令人心碎的轉身！耶穌不是要剝奪他的快樂，耶穌是看見了財富已經成為這少年人生命中的「神」。<span class="text-gold-400 font-bold">我們生命中是不是也抓著一個「拔不出來的花生瓶」？</span>那個讓你捨不得放手、以為沒有它就活不下去的事物，就是你的偶像。</p>
+
+                <h4 class="text-2xl font-bold text-white mt-12 mb-4">承認人的不能，經歷神的無所不能</h4>
+                <p>耶穌說：「駱駝穿過針的眼，比財主進神的國還容易呢！」這句話徹底粉碎了靠自救的幻想。請記住今天的金句：<span class="text-gold-300 font-bold text-2xl font-display underline decoration-gold-500/50 underline-offset-8">耶穌看著他們，說：「在人這是不能的，在神凡事都能。」(太19:26)</span></p>
+                
+                <p>當我們來到自己能力的盡頭，不再試圖拉著自己的頭髮離開泥沼，而是向上帝舉起雙手說：「主啊，我不能，求祢救我」的時候，我們就走進了上帝無所不能的恩典之中。</p>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion -->
+        <section class="mb-32 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-bold text-gold-400 mb-6 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                    回應與實踐行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-gold-500">1.</span> <strong>「無所求」禱告：</strong>本週15分鐘，單單享受天父同在，不求任何事物。</li>
+                    <li class="flex gap-3"><span class="text-gold-500">2.</span> <strong>斷捨離奉獻：</strong>將一部分金錢或有價物奉獻，打破「擁有」的執著。</li>
+                    <li class="flex gap-3"><span class="text-gold-500">3.</span> <strong>宣告神能：</strong>在困境中宣告：「主啊，我無能為力，但在祢凡事都能。」</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-white/20">
+                <h3 class="text-xl font-bold text-white mb-6">三個關鍵字</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-5 py-2 bg-white/10 rounded-full text-white font-accent">單純 Simplicity</span>
+                    <span class="px-5 py-2 bg-white/10 rounded-full text-white font-accent">捨己 Surrender</span>
+                    <span class="px-5 py-2 bg-white/10 rounded-full text-white font-accent">恩典 Grace</span>
+                </div>
+                <div class="mt-8 pt-8 border-t border-white/5">
+                    <p class="text-sm text-gray-500 italic">放下手中的緊握，才能擁抱真正的豐盛。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="mb-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「廉價的恩典是我們自己賜給自己的恩典；重價的恩典是必須付上生命代價去跟隨耶穌的呼召。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華，《追隨基督》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「耶穌並不是說財富本身是邪惡的，祂是在指出，當財富成為你生命中的終極追求時，它就成了一個殘酷的假神。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒，《假神》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「我們必須在心裡對所有的東西『解約』，將我們一切的所有都交給神。東西本身沒有罪，罪是在人心裡對東西的執著。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「人的心腸本質上就是一個永無止境的偶像製造廠。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「你的心所依附和信靠的任何事物，實際上就是你的上帝。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 馬丁·路德，《大問答》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「信靠神，意味著我們完全相信祂在統管萬有，即使我們失去世上的一切，也絕不會失去真正的生命。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 魏樂德，《神聖的約定》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「作門徒的呼召，是從我們承認自己無法掌控生命的那一刻開始的。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 畢德生，《長闊高深的服事》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「人的軟弱永遠是神彰顯祂大能的最佳舞台；當我們一無所有時，祂就是我們的萬有。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真，《清晨甘露》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「成為神的兒女，意味著我們願意放棄那種『必須靠自己賺取被愛資格』的幻想。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 盧雲，《浪子回頭》</p>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:bg-white/5 transition-colors">
+                    <p class="text-gray-300 italic mb-3">「十字架無情地粉碎了人類可以自救的驕傲，它宣告了人在道德上的徹底破產，同時也彰顯了神豐盛的恩典。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德，《當代基督十架》</p>
+                </div>
+            </div>
+            
+            <!-- Warning/Disclaimer -->
+            <div class="mt-20 text-center">
+                <p class="text-gray-600 text-sm bg-white/5 inline-block px-4 py-2 rounded-lg border border-white/5">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-deep rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all z-50 group active:scale-95">
+        <svg class="w-8 h-8 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

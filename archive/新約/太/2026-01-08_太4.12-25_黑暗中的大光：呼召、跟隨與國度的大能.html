@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太4:12-25：黑暗中的大光：呼召、跟隨與國度的大能</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9d1',
+                            200: '#fdf1a3',
+                            300: '#fce56c',
+                            400: '#fbd841',
+                            500: '#f9c21a',
+                            600: '#e0a108',
+                            700: '#bb7c0a',
+                            800: '#98610f',
+                            900: '#7d5012',
+                        },
+                        dark: {
+                            base: '#0a0a0c',
+                            card: '#16161a',
+                            accent: '#1f1f27'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        serif: ['"Noto Serif TC"', 'serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-subtle': 'pulse-subtle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'jump': 'jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', filter: 'brightness(0.5)' },
+                            '50%': { opacity: '1', filter: 'brightness(1)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'pulse-subtle': {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.7' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: #16161a;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: #f9c21a;
+            box-shadow: 0 0 20px rgba(249, 194, 26, 0.1);
+        }
+        .highlight-text {
+            background: linear-gradient(120deg, #f9c21a 0%, #ffcc33 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        .gradient-border {
+            border-image: linear-gradient(to right, #f9c21a, #7d5012) 1;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #f9c21a;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太4:12-25',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '黑暗中的大光：呼召、跟隨與國度的大能' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased custom-scrollbar">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-screen-xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="text-gold-500 font-bold text-sm md:text-base truncate mr-4">
+                太4:12-25 黑暗中的大光
+            </div>
+            <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline-buttons" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_1a06a0fa-4c56-481c-8648-78700e76347e.jpg' alt='Banner Background' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-dark-base/40 to-dark-base"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 id="top" class="text-4xl md:text-7xl font-serif font-black mb-6 leading-tight drop-shadow-2xl">
+                黑暗中的大光：<br>
+                <span class="text-gold-500">呼召、跟隨與國度的大能</span>
+            </h1>
+            <div class="inline-block mt-8">
+                <p class="text-xl md:text-3xl font-medium tracking-widest text-white/90 animate-jump">
+                    「耶穌對他們說：『來跟從我，我要叫你們得人如得魚一樣。』」
+                </p>
+                <p class="text-gold-400 mt-2 text-lg font-bold">（太4:19）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-gold-600 to-yellow-400 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+            <div class="relative bento-card p-8 md:p-12 rounded-3xl">
+                <div class="flex items-center space-x-3 mb-6">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-3.657A2 2 0 012.625 15.54V4.5a2 2 0 011.875-1.996L4.5 2.5a2 2 0 012 2v11.5c0 1.105.895 2 2 2h4l2 3h4l2-3h4c1.105 0 2-.895 2-2V4.5a2 2 0 012-2c.11 0 .215.011.315.032A2 2 0 0121.375 4.5v11.04a2 2 0 01-1.147 1.803L12 21z"></path></svg>
+                    <h2 class="text-2xl md:text-3xl font-bold">禱告詞</h2>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 italic first-letter:text-4xl first-letter:text-gold-500 first-letter:mr-1">
+                    親愛的天父，我們感謝祢。當我們仍坐在死蔭幽谷與黑暗中時，祢的愛子耶穌基督作了那清晨的日光，照亮了我們的生命。主啊，求祢賜給我們如同彼得、安得烈一般捨網跟從的勇氣，放下屬世的倚靠，單單注視祢的呼召。求祢聖靈的大能今天運行在我們當中，醫治我們的疾病與軟弱，將我們塑造成為祢天國福音的器皿，去得人如得魚。奉耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline-buttons" class="space-y-8">
+            <div class="flex items-center space-x-3 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <h2 class="text-2xl md:text-3xl font-bold">分段大綱快速連結</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="bento-card p-6 rounded-2xl hover:bg-gold-500/10 group">
+                    <div class="text-gold-500 text-sm mb-2">第一段 | 太4:12-17</div>
+                    <div class="font-bold text-lg group-hover:text-gold-400">當真光照進死蔭之地</div>
+                </a>
+                <a href="#section2" class="bento-card p-6 rounded-2xl hover:bg-gold-500/10 group">
+                    <div class="text-gold-500 text-sm mb-2">第二段 | 太4:18-22</div>
+                    <div class="font-bold text-lg group-hover:text-gold-400">毫不猶豫的跟隨</div>
+                </a>
+                <a href="#section3" class="bento-card p-6 rounded-2xl hover:bg-gold-500/10 group">
+                    <div class="text-gold-500 text-sm mb-2">第三段 | 太4:23-25</div>
+                    <div class="font-bold text-lg group-hover:text-gold-400">帶來翻轉的國度大能</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Sections (Bento Layout) -->
+        <div class="space-y-32">
+            <!-- Section 1 -->
+            <section id="section1" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12">
+                        <h2 class="text-3xl md:text-4xl font-black mb-8 border-l-8 border-gold-500 pl-6">當真光照進死蔭之地——絕望中的神聖介入</h2>
+                    </div>
+                    
+                    <div class="lg:col-span-7 bento-card p-8 rounded-3xl">
+                        <div class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-4">Scripture 經文</div>
+                        <p class="text-xl font-serif text-white/90 leading-loose italic">
+                            耶穌聽見約翰下了監，就退到加利利去；後又離開拿撒勒，往迦百農去，就住在那裡。那地方靠海，在西布倫和拿弗他利的邊界上。這是要應驗先知以賽亞的話，說：西布倫地，拿弗他利地，就是沿海的路，約但河外，外邦人的加利利地。那坐在黑暗裡的百姓看見了大光；坐在死蔭之地的人有光發現照著他們。從那時候，耶穌就傳起道來，說：「天國近了，你們應當悔改！」
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 flex flex-col gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center"><svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"></path></svg> 關鍵字解析</h4>
+                            <ul class="space-y-3">
+                                <li><span class="text-gold-400 font-bold">大光 (Light)</span>: φῶς (phōs)，屬靈上的真理與神的同在。</li>
+                                <li><span class="text-gold-400 font-bold">悔改 (Repent)</span>: μετανοέω (metanoeō)，生命方向徹底的轉變。</li>
+                            </ul>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gold-900/10">
+                            <h4 class="text-gold-500 font-bold mb-2">屬靈前輩佳句</h4>
+                            <p class="italic text-gray-300">「當基督呼召一個人時，祂是呼召他來為祂死。」——潘霍華</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-12 bento-card p-8 rounded-3xl border-t-4 border-t-gold-500">
+                        <h4 class="text-xl font-bold mb-4 text-gold-400">關鍵問題與深入回答</h4>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            <strong class="text-white">為什麼耶穌選擇在被視為邊陲的「外邦人的加利利」開始祂的服事？</strong><br>
+                            神的恩典總是先臨到那些最破碎、最被邊緣化、自知毫無盼望的人。加利利代表著我們生命中最黑暗的角落。耶穌提醒我們，只要我們承認自己的黑暗，神的真光就會在那裡照亮我們。
+                        </p>
+                        <div class="p-4 bg-dark-base rounded-xl border border-white/5">
+                            <span class="text-gold-500 font-bold">例證：</span>一位死刑犯在絕望的監獄中看見了經文中的光，他的心境被翻轉，成為了獄中的「大光」。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12">
+                        <h2 class="text-3xl md:text-4xl font-black mb-8 border-l-8 border-gold-500 pl-6">毫不猶豫的跟隨——放下安全感的呼召</h2>
+                    </div>
+                    
+                    <div class="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center"><svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"></path></svg> 關鍵字解析</h4>
+                            <ul class="space-y-3">
+                                <li><span class="text-gold-400 font-bold">跟從 (Follow)</span>: δεῦτε ὀπίσω μου，代表將主權交出，讓耶穌引導。</li>
+                                <li><span class="text-gold-400 font-bold">捨了 (Left)</span>: ἀφίημι，一種決絕的切割與放棄。</li>
+                            </ul>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gold-900/10">
+                            <h4 class="text-gold-500 font-bold mb-2">屬靈前輩佳句</h4>
+                            <p class="italic text-gray-300">「如果耶穌基督是神，並且為我而死，那麼我為祂所做的任何犧牲都不算大。」——查理·斯圖德</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 bento-card p-8 rounded-3xl order-1 lg:order-2">
+                        <div class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-4">Scripture 經文</div>
+                        <p class="text-xl font-serif text-white/90 leading-loose italic">
+                            耶穌在加利利海邊行走，看見弟兄二人，就是那稱呼彼得的西門和他兄弟安得烈，在海裡撒網；他們本是打魚的。耶穌對他們說：「來跟從我，我要叫你們得人如得魚一樣。」他們就立刻捨了網，跟從了他。從那裡往前走，又看見弟兄二人，就是西庇太的兒子雅各和他兄弟約翰，同他們的父親西庇太在船上補網，耶穌就呼召他們，他們立刻捨了船，別了父親，跟從了耶穌。
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-12 bento-card p-8 rounded-3xl border-t-4 border-t-gold-500 order-3">
+                        <h4 class="text-xl font-bold mb-4 text-gold-400">關鍵問題與深入回答</h4>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            <strong class="text-white">「網」與「船」對當時的漁夫意味著什麼？現代人的「網」又是什麼？</strong><br>
+                            網和船代表著他們的經濟來源、安全感與家族傳承。現代人的「網」可能是高薪工作、舒適圈或社會地位。耶穌要求我們將這些從生命的第一寶座上「捨棄」，降服於祂。
+                        </p>
+                        <div class="p-4 bg-dark-base rounded-xl border border-white/5">
+                            <span class="text-gold-500 font-bold">例證：</span>劍橋七傑之一的查理·斯圖德放棄遺產與板球明星地位，前往亞洲與非洲宣教，那就是捨了他的「網」。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="scroll-mt-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-12">
+                        <h2 class="text-3xl md:text-4xl font-black mb-8 border-l-8 border-gold-500 pl-6">帶來翻轉的國度大能——全人醫治的福音</h2>
+                    </div>
+                    
+                    <div class="lg:col-span-7 bento-card p-8 rounded-3xl">
+                        <div class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-4">Scripture 經文</div>
+                        <p class="text-xl font-serif text-white/90 leading-loose italic">
+                            耶穌走遍加利利，在各會堂裡教訓人，傳天國的福音，醫治百姓各樣的病症。他的名聲就傳遍了敘利亞。那裡的人把一切害病的，就是害各樣疾病、各樣疼痛的和被鬼附的、癲癇的、癱瘓的，都帶了來，耶穌就治好了他們。當下，有許多人從加利利、底加波利、耶路撒冷、猶太、約但河外來跟著他。
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 flex flex-col gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center"><svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"></path></svg> 關鍵字解析</h4>
+                            <ul class="space-y-3">
+                                <li><span class="text-gold-400 font-bold">傳 (Proclaiming)</span>: κηρύσσω，像傳令官宣告君王旨意。</li>
+                                <li><span class="text-gold-400 font-bold">醫治 (Healing)</span>: therapeuō，包含照料、服侍、使之完整。</li>
+                            </ul>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gold-900/10">
+                            <h4 class="text-gold-500 font-bold mb-2">屬靈前輩佳句</h4>
+                            <p class="italic text-gray-300">「福音不只是一套得救的教義，更是一個新社會的宣告。」——約翰·史托德</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-12 bento-card p-8 rounded-3xl border-t-4 border-t-gold-500">
+                        <h4 class="text-xl font-bold mb-4 text-gold-400">關鍵問題與深入回答</h4>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            <strong class="text-white">耶穌的服事包含「教訓」、「傳道」與「醫治」，對今日教會使命有何啟示？</strong><br>
+                            耶穌的福音是「全人」的福音。教訓解決愚昧，傳道解決靈魂歸屬，醫治解決肉體痛苦。教會不能只停留在口頭傳講，必須介入社會苦難，彰顯天國已經臨到。
+                        </p>
+                        <div class="p-4 bg-dark-base rounded-xl border border-white/5">
+                            <span class="text-gold-500 font-bold">例證：</span>馬雅各、馬偕等宣教士帶著聖經也帶著醫療工具，用實際的醫治行動打開福音的大門。
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center space-x-3 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                <h2 class="text-2xl md:text-3xl font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="bento-card p-8 md:p-16 rounded-[3rem] leading-relaxed text-gray-200">
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-lg">
+                        弟兄姐妹們，今天我們要一同進入馬太福音第4章。在這裡，我們看見了耶穌基督傳道生涯的起點。這段經文不僅是歷史的紀錄，更是對我們每一個人的生命發出的神聖呼召。今天我們的主題是：<span class="highlight-text text-xl">黑暗中的大光：呼召、跟隨與國度的大能</span>。
+                    </p>
+
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-gold-500">第一段：當真光照進死蔭之地——絕望中的神聖介入</h3>
+                        <p>
+                            耶穌出來傳道，祂沒有選擇去宗教氣息最濃厚的耶路撒冷，反而退到了加利利。加利利在當時被視為邊陲地帶，甚至被稱為「外邦人的加利利」。但馬太福音引用以賽亞書說：<span class="text-gold-400 font-bold">「那坐在黑暗裡的百姓看見了大光；坐在死蔭之地的人有光發現照著他們。」（太4:16）</span>
+                        </p>
+                        <p>
+                            弟兄姐妹，我們每個人的生命中，都有一個「加利利」。你也許覺得自己不夠好，但耶穌的服事正是從最黑暗的地方開始的！悔改，就是轉過身來，讓這道光照進你的黑暗。
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-gold-500">第二段：毫不猶豫的跟隨——放下安全感的呼召</h3>
+                        <p>
+                            當真光照亮生命後，耶穌對彼得、安得烈發出了震撼的邀請：<span class="highlight-text">「來跟從我，我要叫你們得人如得魚一樣。」（太4:19）</span>
+                        </p>
+                        <p>
+                            聖經記載他們<span class="font-bold underline decoration-gold-500">立刻捨了網</span>，<span class="font-bold underline decoration-gold-500">立刻捨了船，別了父親</span>。今天阻礙我們跟隨耶穌的「網」是什麼？是名利？是對未來的焦慮？你願意在今天，放下你的網，將生命的主權交給祂嗎？
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-gold-500">第三段：帶來翻轉的國度大能——全人醫治的福音</h3>
+                        <p>
+                            耶穌走遍加利利，做三件事：<span class="text-gold-400 font-bold">教訓人、傳天國的福音、醫治百姓各樣的病症。</span>
+                        </p>
+                        <p>
+                            耶穌帶來的福音，不是只有死後上天堂的空頭支票，而是帶來全人翻轉的大能。今天，我們被呼召去「得人如得魚」，這不僅是用言語傳道，更要帶著基督醫治的大能進入世界。
+                        </p>
+                    </div>
+
+                    <div class="pt-8 border-t border-white/10 text-center">
+                        <h3 class="text-3xl font-serif font-black text-gold-500 mb-6">結論</h3>
+                        <p class="text-xl mb-6">
+                            祂是那道<span class="highlight-text">「真光」</span>，照亮你的死蔭之地；祂呼召你<span class="highlight-text">「捨棄」</span>世俗依戀；祂要使用你，成為這個世界中<span class="highlight-text">「醫治」</span>的導管。
+                        </p>
+                        <p class="text-2xl font-bold">願我們今天都能回應主：主啊，我願放下我的網，跟隨祢！阿們！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-gold-500 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start"><span class="bg-gold-500 text-dark-base rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1 shrink-0">1</span> 檢視生命的黑暗面，邀請基督的真光照進並對付。</li>
+                    <li class="flex items-start"><span class="bg-gold-500 text-dark-base rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1 shrink-0">2</span> 辨識並放下你的「網」，調整人生的優先順序。</li>
+                    <li class="flex items-start"><span class="bg-gold-500 text-dark-base rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-1 shrink-0">3</span> 參與全人的醫治服事，用實際愛心行動關懷他人。</li>
+                </ul>
+            </div>
+            <div class="bento-card p-8 rounded-3xl bg-gold-900/5">
+                <h3 class="text-2xl font-bold text-gold-500 mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start border-l-2 border-gold-500/30 pl-4 py-1"><strong>悔改與自省：</strong>本週每天撥出10分鐘獨處，寫下一件需要轉向的心思意念。</li>
+                    <li class="flex items-start border-l-2 border-gold-500/30 pl-4 py-1"><strong>具體的捨棄練習：</strong>在本週設定明確的界線，禁食手機一小時用來讀經。</li>
+                    <li class="flex items-start border-l-2 border-gold-500/30 pl-4 py-1"><strong>愛心的醫治行動：</strong>本週主動聯絡一位正處於低潮的朋友，提供實質幫助。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-8">
+            <div class="flex items-center space-x-3 mb-8">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                <h2 class="text-2xl md:text-3xl font-bold">名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 gap-6 space-y-6">
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「當基督呼召一個人時，祂是呼召他來為祂死。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 潘霍華 (Dietrich Bonhoeffer), 《追隨基督》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「福音是這樣的：我們比自己敢於相信的更加罪惡深重；但同時，我們在耶穌基督裡，比自己敢於盼望的更加被愛和被接納。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 提摩太·凱勒 (Timothy Keller), 《婚姻的意義》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「我們想到上帝時，心中浮現的意念，是我們身上最重要的一件事。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 陶恕 (A. W. Tozer), 《渴慕神》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「我們所有的智慧，若真是確切可靠的智慧，幾乎都包含兩部分：對上帝的認識，以及對我們自己的認識。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 約翰·加爾文 (John Calvin), 《基督教要義》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「真實的信心必然會產生好行為，就像太陽不能不發光一樣。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 馬丁·路德 (Martin Luther), 《羅馬書註釋序言》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「一個從不流淚的耶穌，永遠無法擦乾我的眼淚。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 司布真 (Charles Spurgeon), 《司布真講道集》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「門徒訓練是朝著同一個方向長期的順服。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 畢德生 (Eugene Peterson), 《長期的順服》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「我們是被揀選、被祝福、被擘開，然後被給予的。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 盧雲 (Henri Nouwen), 《愛勝過恐懼》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「恩典與努力並不對立，恩典是與『賺取』對立。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 魏樂德 (Dallas Willard), 《品格的革命》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl break-inside-avoid">
+                    <p class="text-lg italic mb-3">「上帝在十字架上證明了祂的愛。當基督被懸掛、流血並死去時，那是上帝在對這個世界說：『我愛你』。」</p>
+                    <p class="text-gold-500 text-sm font-medium">— 葛理翰 (Billy Graham), 《葛理翰佈道集》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <section class="mt-24 mb-16 pt-8 border-t border-white/5">
+            <div class="text-center text-gray-500 text-sm">
+                <p class="bg-dark-accent inline-block px-4 py-2 rounded-full">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-base rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 group">
+        <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation (extra layer)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

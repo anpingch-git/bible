@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太15:29-39: 在荒野中遇見豐盛的憐憫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FDE68A',
+                            DEFAULT: '#D4AF37',
+                            dark: '#92400E',
+                        },
+                        surface: '#0A0A0B',
+                        card: '#161618',
+                        accent: '#EAB308',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-bounce': 'gentle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-3px) scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes breathing {
+            0%, 100% { opacity: 0.6; filter: brightness(0.8); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+        .banner-breath {
+            animation: breathing 8s ease-in-out infinite;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FDE68A, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太15:29-39',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在荒野中遇見豐盛的憐憫' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-surface text-gray-200 font-sans selection:bg-gold/30">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-display font-bold text-gold tracking-tight hidden sm:block">太 15:29-39</span>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <div class="banner-breath w-full h-full">
+                <img src='image/img_fee65ac2-8734-498d-98c3-8233f3249654.jpg' alt='media_1' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight text-white drop-shadow-2xl">
+                太15:29-39<br/>
+                <span class="text-gradient">在荒野中遇見豐盛的憐憫</span>
+            </h1>
+            
+            <div class="animate-gentle-bounce">
+                <p class="text-lg md:text-2xl font-medium text-gold-light max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
+                    「我憐憫這眾人，因為他們同我在這裡已經三天，也沒有吃的了。我不願意叫他們餓著回去，恐怕在路上困乏。」
+                </p>
+                <p class="text-sm font-display mt-2 opacity-80 uppercase tracking-widest">— 太15:32 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-20">
+            <div class="bg-card border border-white/10 rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform duration-700">
+                    <svg class="w-24 h-24 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="p-3 bg-gold/10 rounded-xl">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                    </span>
+                    <h2 class="text-3xl font-bold text-white">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 italic font-light">
+                    「親愛的天父，感謝祢是那位在荒野中依然賜下豐盛的主。當我們看見自己的殘缺與環境的匱乏時，求祢開我們的眼睛，讓我們看見祢那深不可測的憐憫。主啊，教導我們不再定睛於眼前的『沒有』，而是願意將僅有的『七個餅與幾條小魚』交在祢手中，經歷祢那使缺乏變為有餘的奇妙大能。奉主耶穌基督得勝的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-gold/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white">講道大綱</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="p-6 bg-card hover:bg-white/5 border border-white/10 rounded-2xl transition-all hover:-translate-y-1 group">
+                    <span class="text-xs font-display text-gold mb-2 block tracking-widest">PART 01</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold transition-colors">帶著殘缺來到主前</h3>
+                    <p class="text-sm text-gray-500 mt-1">太15:29-31</p>
+                </a>
+                <a href="#part2" class="p-6 bg-card hover:bg-white/5 border border-white/10 rounded-2xl transition-all hover:-translate-y-1 group">
+                    <span class="text-xs font-display text-gold mb-2 block tracking-widest">PART 02</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold transition-colors">荒野中的憐憫之心</h3>
+                    <p class="text-sm text-gray-500 mt-1">太15:32-34</p>
+                </a>
+                <a href="#part3" class="p-6 bg-card hover:bg-white/5 border border-white/10 rounded-2xl transition-all hover:-translate-y-1 group">
+                    <span class="text-xs font-display text-gold mb-2 block tracking-widest">PART 03</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold transition-colors">從缺乏到有餘的恩典</h3>
+                    <p class="text-sm text-gray-500 mt-1">太15:35-39</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24 mt-20">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-display font-black text-white/10">01</span>
+                        <h3 class="text-3xl font-bold text-gold">帶著殘缺來到主前：經歷醫治的大能</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 bg-card p-6 rounded-2xl border-l-4 border-gold h-fit">
+                            <h4 class="text-sm font-bold text-gold uppercase tracking-widest mb-4">引用經文</h4>
+                            <p class="text-gray-300 leading-relaxed text-sm">
+                                耶穌離開那地方，來到靠近加利利的海邊，就上山坐下。有許多人到他那裡，帶著瘸子、瞎子、啞巴、有殘疾的，和好些別的病人，都放在他腳前；他就治好了他們。甚至眾人都希奇；因為看見啞巴說話，殘疾的痊癒，瘸子行走，瞎子看見，他們就歸榮耀給以色列的神。
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl">
+                                    <h5 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/></svg>
+                                        關鍵原文
+                                    </h5>
+                                    <ul class="space-y-3 text-sm">
+                                        <li><strong class="text-white">治好 (therapeuō)：</strong> 原意是「服事、照顧」，這不僅是身體疾病的消除，更包含著耶穌如同僕人般親自服事。</li>
+                                        <li><strong class="text-white">歸榮耀 (doxazō)：</strong> 承認並頌讚神本有的光輝，將焦點轉向神。</li>
+                                    </ul>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                                        關鍵問題與解析
+                                    </h5>
+                                    <p class="text-sm text-gray-400 italic mb-2">為什麼人們願意帶著極大的不便將病人帶到耶穌「腳前」？</p>
+                                    <p class="text-sm">這顯出極大的信心。真正的醫治，始於我們願意把生命中一切的殘缺與無能為力，毫無保留地帶到主的腳前。</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-gold/5 rounded-2xl border border-gold/20">
+                                <h5 class="text-gold font-bold mb-3">例證：金繼 (Kintsugi)</h5>
+                                <p class="text-sm leading-relaxed">修復後的瓷器不僅恢復了功能，那些金色的裂痕反而使它變得比原本更美麗。我們帶著破碎來到主前，祂的醫治就像「金繼」，使我們的生命成為彰顯祂榮耀的藝術品。</p>
+                                <div class="mt-4 p-4 bg-black/30 rounded-xl italic text-gray-300 text-sm border-l-2 border-gold">
+                                    「福音的核心是：我們比自己所敢相信的更加罪惡敗壞，但同時，我們在耶穌基督裡所蒙的愛與接納，也遠超過我們所敢盼望的。」—— 提摩太·凱勒
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-display font-black text-white/10">02</span>
+                        <h3 class="text-3xl font-bold text-gold">荒野中的憐憫之心：看見需要的看顧</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 bg-card p-6 rounded-2xl border-l-4 border-gold h-fit lg:order-2">
+                            <h4 class="text-sm font-bold text-gold uppercase tracking-widest mb-4">引用經文</h4>
+                            <p class="text-gray-300 leading-relaxed text-sm">
+                                耶穌叫門徒來，說：「我憐憫這眾人，因為他們同我在這裡已經三天，也沒有吃的了。我不願意叫他們餓著回去，恐怕在路上困乏。」門徒說：「我們在這野地，哪裡有這麼多的餅叫這許多人吃飽呢？」耶穌說：「你們有多少餅？」他們說：「有七個，還有幾條小魚。」
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8 lg:order-1">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl">
+                                    <h5 class="text-gold font-bold mb-3">關鍵原文</h5>
+                                    <p class="text-sm"><strong class="text-white">憐憫 (splanchnizomai)：</strong> 源於內臟。耶穌的「憐憫」不是表面的同情，而是從內心深處發出的強烈震動，是一種感同身受的痛楚。</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold font-bold mb-3">關鍵問題與解析</h5>
+                                    <p class="text-sm text-gray-400 italic mb-2">面對龐大的需要，門徒與耶穌看見的有何不同？</p>
+                                    <p class="text-sm">門徒看見的是「缺乏的經濟學」，而耶穌是「恩典的經濟學」。神不要求我們拿出我們沒有的，祂只問我們願意交出多少現有的。</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-gold/5 rounded-2xl border border-gold/20">
+                                <h5 class="text-gold font-bold mb-3">例證：德蕾莎修女</h5>
+                                <p class="text-sm leading-relaxed">面對龐大的需要，德蕾莎修女說：「我不會去計算群眾的數字，我只看著眼前這一個人的需要。我從一個人開始愛起。」耶穌的憐憫也是如此具體。</p>
+                                <div class="mt-4 p-4 bg-black/30 rounded-xl italic text-gray-300 text-sm border-l-2 border-gold">
+                                    「憐憫要求我們走到那些受苦的人中間，與他們同在。憐憫不是從上而下的施捨，而是平等的同行。」—— 盧雲
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24">
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl font-display font-black text-white/10">03</span>
+                        <h3 class="text-3xl font-bold text-gold">從缺乏到有餘的恩典：獻上所有的神蹟</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 bg-card p-6 rounded-2xl border-l-4 border-gold h-fit">
+                            <h4 class="text-sm font-bold text-gold uppercase tracking-widest mb-4">引用經文</h4>
+                            <p class="text-gray-300 leading-relaxed text-sm">
+                                吩咐眾人坐在地上，拿著這七個餅和幾條魚，祝謝了，擘開，遞給門徒；門徒又遞給眾人。眾人都吃，並且吃飽了，收拾剩下的零碎，裝滿了七個筐子。吃的人，除了婦女孩子，共有四千。耶穌打發眾人回去，就上船，來到馬加丹的境界。
+                            </p>
+                        </div>
+                        <div class="lg:col-span-8 space-y-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl">
+                                    <h5 class="text-gold font-bold mb-3">關鍵原文</h5>
+                                    <ul class="space-y-3 text-sm">
+                                        <li><strong class="text-white">祝謝 (eucharisteō)：</strong> 表達感謝。在極度不足的情況下依然向神獻上感謝。</li>
+                                        <li><strong class="text-white">吃飽了 (chortazō)：</strong> 指人得到完全的飽足，毫無缺乏。</li>
+                                    </ul>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                                    <h5 class="text-gold font-bold mb-3">關鍵問題與解析</h5>
+                                    <p class="text-sm text-gray-400 italic mb-2">耶穌為什麼要透過門徒遞給眾人？</p>
+                                    <p class="text-sm">耶穌定意要讓門徒參與在神蹟中。當我們願意成為傳遞者時，神的能力就要在我們的順服中流露出來，顯出神恩典的豐盛有餘。</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-gold/5 rounded-2xl border border-gold/20">
+                                <h5 class="text-gold font-bold mb-3">例證：喬治·慕勒 (George Müller)</h5>
+                                <p class="text-sm leading-relaxed">在空無一物的餐桌前作謝飯禱告。隨後麵包師傅與送奶車的到訪，正是「祝謝」與「吃飽」的神蹟見證。</p>
+                                <div class="mt-4 p-4 bg-black/30 rounded-xl italic text-gray-300 text-sm border-l-2 border-gold">
+                                    「微小的信心能帶領你的靈魂上天堂，但巨大的信心能把天堂帶進你的靈魂裡。」—— 司布真
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <span class="p-3 bg-gold/10 rounded-xl text-gold">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </span>
+                    <h2 class="text-3xl font-bold text-white">講道應用</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-6 bg-card rounded-2xl border border-white/5 hover:border-gold/30 transition-colors">
+                        <h4 class="text-gold font-bold mb-2">1. 不再隱藏你的殘缺</h4>
+                        <p class="text-gray-400 text-sm">勇於將軟弱、疾病與無能為力帶到耶穌腳前，尋求真實醫治。</p>
+                    </div>
+                    <div class="p-6 bg-card rounded-2xl border border-white/5 hover:border-gold/30 transition-colors">
+                        <h4 class="text-gold font-bold mb-2">2. 培養基督的憐憫心腸</h4>
+                        <p class="text-gray-400 text-sm">求神賜下「牽動內臟」的憐憫，看見身邊人的真實需要。</p>
+                    </div>
+                    <div class="p-6 bg-card rounded-2xl border border-white/5 hover:border-gold/30 transition-colors">
+                        <h4 class="text-gold font-bold mb-2">3. 獻上你的「七個餅」</h4>
+                        <p class="text-gray-400 text-sm">不因微小而拒絕奉獻。交給主，讓祂來擘開、祝福並倍增。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <span class="p-3 bg-gold/10 rounded-xl text-gold">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                    </span>
+                    <h2 class="text-3xl font-bold text-white">回應行動</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex gap-4 p-6 bg-gold/5 rounded-2xl">
+                        <span class="text-gold font-black text-2xl">A</span>
+                        <div>
+                            <h4 class="text-white font-bold mb-1">帶到主前</h4>
+                            <p class="text-gray-400 text-sm">寫下一項「殘缺」或「野地」，在每天禱告中交託給祂。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-6 bg-gold/5 rounded-2xl">
+                        <span class="text-gold font-black text-2xl">B</span>
+                        <div>
+                            <h4 class="text-white font-bold mb-1">憐憫行動</h4>
+                            <p class="text-gray-400 text-sm">本週採取一個具體行動（咖啡、電話）服事身邊疲乏的人。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-6 bg-gold/5 rounded-2xl">
+                        <span class="text-gold font-black text-2xl">C</span>
+                        <div>
+                            <h4 class="text-white font-bold mb-1">盤點與奉獻</h4>
+                            <p class="text-gray-400 text-sm">向神感恩現有的資源，求神指示本週如何為主擺上。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="pt-20 scroll-mt-24">
+            <div class="bg-card border border-white/5 rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-gold/5 blur-[100px] -z-10"></div>
+                
+                <div class="flex items-center gap-4 mb-12">
+                    <span class="p-3 bg-gold/10 rounded-xl text-gold">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </span>
+                    <h2 class="text-3xl font-bold text-white">講章文稿</h2>
+                </div>
+
+                <div class="prose prose-invert prose-gold max-w-none space-y-8 text-lg leading-relaxed text-gray-300">
+                    <header class="mb-12">
+                        <p class="text-gold font-display font-bold uppercase tracking-widest mb-2">Sermon Scripture: Matthew 15:29-39</p>
+                        <h3 class="text-4xl font-black text-white m-0">在荒野中遇見豐盛的憐憫</h3>
+                    </header>
+
+                    <p>弟兄姊妹們，我們一生中總會遇到生命裡的「荒野」。在荒野中，資源匱乏、身體疲乏，我們往往只能看見自己的無能為力。今天我們要從馬太福音第15章來看，當我們身處荒野時，如何遇見那位充滿憐憫的耶穌。</p>
+
+                    <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold my-10">
+                        <h4 class="text-2xl font-bold text-white mb-4">首先，我們要看見：帶著殘缺來到主前</h4>
+                        <p>經文說，耶穌上了山，群眾<strong class="text-gold text-xl">「帶著瘸子、瞎子、啞巴、有殘疾的，和好些別的病人，都放在他腳前；他就治好了他們。」</strong> 這些人長途跋涉，非常不方便。但他們為什麼願意來？因為他們有極大的信心，願意把最不堪、最軟弱的一面攤在耶穌面前。</p>
+                        <p class="italic text-gray-400 mt-4 font-light">提摩太·凱勒牧師曾說：「福音的核心是：我們比自己所敢相信的更加罪惡敗壞，但同時，我們在耶穌基督裡所蒙的愛與接納，也遠超過我們所敢盼望的。」</p>
+                    </div>
+
+                    <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold my-10">
+                        <h4 class="text-2xl font-bold text-white mb-4">接著，是荒野中的憐憫之心</h4>
+                        <p>我們來看今天的金句，耶穌說：<strong class="text-gold text-xl">「我憐憫這眾人，因為他們同我在這裡已經三天，也沒有吃的了。我不願意叫他們餓著回去，恐怕在路上困乏。」</strong></p>
+                        <p>這裡的「憐憫」是從內臟發出的強烈痛楚。耶穌深深體會群眾的飢餓與疲乏。然而，門徒看見的是「缺乏」，耶穌看見的卻是「憐憫」與「門徒手中僅有的資源」。主耶穌問：「你們有多少？」祂不向我們要我們沒有的，祂只邀請我們交出我們現有的。</p>
+                    </div>
+
+                    <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold my-10">
+                        <h4 class="text-2xl font-bold text-white mb-4">最後，是從缺乏到有餘的恩典</h4>
+                        <p>耶穌拿到那微不足道的七個餅和幾條小魚，祂做了什麼？祂<strong class="text-gold text-xl">「祝謝了，擘開，遞給門徒；門徒又遞給眾人」</strong>。在極度的缺乏中，耶穌依然向天父感恩。當這些微小的食物經過主的手，神蹟就發生了。群眾不但「都吃，並且吃飽了」，甚至還裝滿了七個筐子。</p>
+                    </div>
+
+                    <p class="text-2xl font-bold text-white text-center py-10">
+                        「不要看輕你的七個餅，當你願意帶著感恩的心獻上，交在主的手中，主就要在你的荒野中，彰顯祂豐盛有餘的神蹟！阿們！」
+                    </p>
+                </div>
+
+                <div class="mt-12 flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-gold/10 border border-gold/20 rounded-full text-gold text-sm font-bold"># 憐憫 Compassion</span>
+                    <span class="px-4 py-2 bg-gold/10 border border-gold/20 rounded-full text-gold text-sm font-bold"># 獻上 Surrender</span>
+                    <span class="px-4 py-2 bg-gold/10 border border-gold/20 rounded-full text-gold text-sm font-bold"># 豐盛 Abundance</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-20 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-gold/10 rounded-xl text-gold">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white">屬靈前輩佳句名言</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Quote 1 -->
+                <div class="p-8 bg-card border border-white/10 rounded-3xl hover:border-gold/50 transition-all flex flex-col justify-between group">
+                    <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors italic">「廉價的恩典是我們教會的死敵。它是重價的，因為它呼召人來跟從；它是恩典，因為它呼召人來跟從耶穌基督。」</p>
+                    <div class="mt-6 border-t border-white/5 pt-4">
+                        <p class="text-gold font-bold">潘霍華</p>
+                        <p class="text-xs text-gray-500">《追隨基督》</p>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="p-8 bg-card border border-white/10 rounded-3xl hover:border-gold/50 transition-all flex flex-col justify-between group">
+                    <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors italic">「神在尋找那些願意把一切都交給祂的人。當神找到這樣的人時，祂就會透過他們彰顯祂無窮的豐盛。」</p>
+                    <div class="mt-6 border-t border-white/5 pt-4">
+                        <p class="text-gold font-bold">陶恕</p>
+                        <p class="text-xs text-gray-500">《渴慕神》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="p-8 bg-card border border-white/10 rounded-3xl hover:border-gold/50 transition-all flex flex-col justify-between group md:col-span-1 lg:col-span-1">
+                    <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors italic">「信心就是對神恩典一種活潑而大膽的信靠；這種信靠如此確定，以至於信徒甘願為此死上一千次。」</p>
+                    <div class="mt-6 border-t border-white/5 pt-4">
+                        <p class="text-gold font-bold">馬丁·路德</p>
+                        <p class="text-xs text-gray-500">《羅馬書序言》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="p-8 bg-card border border-white/10 rounded-3xl hover:border-gold/50 transition-all flex flex-col justify-between group">
+                    <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors italic">「我們雖然是軟弱、缺乏的，但當我們將眼目轉向神，祂的護理就成為我們在一切缺乏中最穩固的安慰。」</p>
+                    <div class="mt-6 border-t border-white/5 pt-4">
+                        <p class="text-gold font-bold">約翰·加爾文</p>
+                        <p class="text-xs text-gray-500">《基督教要義》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="p-8 bg-card border border-white/10 rounded-3xl hover:border-gold/50 transition-all flex flex-col justify-between group">
+                    <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors italic">「神對我們品格的看重，遠勝過對我們舒適的看重；祂經常允許我們經歷荒野，好讓我們的信心得以真實成長。」</p>
+                    <div class="mt-6 border-t border-white/5 pt-4">
+                        <p class="text-gold font-bold">大衛·鮑森</p>
+                        <p class="text-xs text-gray-500">講道語錄</p>
+                    </div>
+                </div>
+                <!-- More quotes collapsed/simply displayed -->
+                <div class="p-8 bg-card border border-white/10 rounded-3xl hover:border-gold/50 transition-all flex flex-col justify-between group">
+                    <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors italic">「跟隨耶穌不是一場短跑，而是『在同一方向上長期的順服』。」</p>
+                    <div class="mt-6 border-t border-white/5 pt-4">
+                        <p class="text-gold font-bold">畢德生</p>
+                        <p class="text-xs text-gray-500">《長久順服邁向神》</p>
+                    </div>
+                </div>
+                <!-- Quote 10 Highlight -->
+                <div class="p-8 bg-gold/10 border-2 border-gold/30 rounded-3xl hover:border-gold transition-all flex flex-col justify-between group md:col-span-2">
+                    <p class="text-white text-xl leading-relaxed italic">「你把僅有的交在神的手裡，那不是犧牲，那是投資在永恆裡的特權。神從來不虧待那些願意為主擺上的人。」</p>
+                    <div class="mt-6 border-t border-gold/20 pt-4 flex justify-between items-end">
+                        <div>
+                            <p class="text-gold font-bold text-lg">唐崇榮</p>
+                            <p class="text-xs text-gray-400">《神權、人權、國權》講座</p>
+                        </div>
+                        <svg class="w-12 h-12 text-gold/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.017 21L2.017 18C2.017 16.8954 2.91243 16 4.017 16H7.017C7.56928 16 8.017 15.5523 8.017 15V9C8.017 8.44772 7.56928 8 7.017 8H3.017C2.46472 8 2.017 8.44772 2.017 9V11C2.017 11.5523 1.56928 12 1.017 12H0.017V5H10.017V15C10.017 18.3137 7.33072 21 4.017 21H2.017Z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-20 py-8 border-t border-white/5 text-center">
+                <p class="text-gray-600 text-sm tracking-widest">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-gold text-surface rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-light hover:-translate-y-2 transition-all z-[60]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

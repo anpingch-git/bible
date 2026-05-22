@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哀5:1-22:在廢墟中仰望永恆寶座：從哀求到復興的轉向</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        charcoal: '#121212',
+                        accent: '#c8a165',
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'subtle-float': 'float 3s ease-in-out infinite',
+                        'gentle-pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #c8a165);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link:hover {
+            color: #fde047;
+            text-shadow: 0 0 8px rgba(253, 224, 71, 0.6);
+        }
+        .bento-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-item:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.07);
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        @keyframes subtle-jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .animate-jump {
+            animation: subtle-jump 4s ease-in-out infinite;
+        }
+        .outline-btn {
+            border: 1px solid rgba(200, 161, 101, 0.4);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            border-color: #fde047;
+            background: rgba(253, 224, 71, 0.05);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '哀5:1-22',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '哀',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在廢墟中仰望永恆寶座：從哀求到復興的轉向' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-serif font-bold text-accent tracking-wider hidden md:block">哀 5:1-22</span>
+            <div class="flex gap-6 text-sm font-medium tracking-widest text-gray-400 overflow-x-auto whitespace-nowrap scrollbar-hide">
+                <a href="#prayer" class="nav-link uppercase">禱告</a>
+                <a href="#outline" class="nav-link uppercase">大綱</a>
+                <a href="#sermon" class="nav-link uppercase">講章</a>
+                <a href="#quotes" class="nav-link uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black z-10"></div>
+            <img src='image/img_8fc20553-bb0e-4169-873e-5dd98640d274.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+        </div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <p class="text-gold-400 font-serif tracking-[0.3em] mb-4 text-sm md:text-base animate-pulse">哀歌 5:1-22</p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-black mb-8 leading-tight tracking-tight text-white">
+                在廢墟中仰望<br/>
+                <span class="text-gradient">永恆寶座</span>
+            </h1>
+            <div class="max-w-2xl mx-auto space-y-4">
+                <p class="text-xl md:text-2xl font-serif italic text-white/90 leading-relaxed animate-jump">
+                    「耶和華啊，求你使我們向你回轉，我們便得回轉。求你復新我們的日子，像古時一樣。」
+                </p>
+                <p class="text-gold-500 font-medium">— 哀歌 5:21</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-600/20 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold tracking-widest">禱告詞</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12">
+                <p class="text-lg md:text-xl leading-loose font-serif text-gray-300 italic">
+                    主耶和華，當我們放眼望去，看見生命的破敗與環境的荒涼時，我們的心中充滿哀痛。求祢記念我們的遭遇，垂顧我們的軟弱。我們承認，我們頭上的冠冕已經落下，我們得罪了祢。主啊！雖然地上的國度會傾覆，我們所倚靠的會失去，但祢的寶座卻存到萬代。求祢施恩，親自拉起我們的手，使我們向祢回轉；求祢復興我們的生命，如同古時一樣。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-600/20 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold tracking-widest">大綱導覽</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section-1" class="outline-btn p-6 rounded-2xl text-center group">
+                    <span class="block text-gold-500 text-xs tracking-widest mb-2">哀 5:1-10</span>
+                    <span class="font-bold text-gray-100 group-hover:text-gold-300 transition-colors">苦難的深淵：正視破碎</span>
+                </a>
+                <a href="#section-2" class="outline-btn p-6 rounded-2xl text-center group">
+                    <span class="block text-gold-500 text-xs tracking-widest mb-2">哀 5:11-18</span>
+                    <span class="font-bold text-gray-100 group-hover:text-gold-300 transition-colors">榮耀的消逝：罪的代價</span>
+                </a>
+                <a href="#section-3" class="outline-btn p-6 rounded-2xl text-center group">
+                    <span class="block text-gold-500 text-xs tracking-widest mb-2">哀 5:19-22</span>
+                    <span class="font-bold text-gray-100 group-hover:text-gold-300 transition-colors">永恆的錨點：仰望寶座</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Section 1 -->
+            <div id="section-1" class="space-y-12 mb-20">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-serif font-bold text-gold-400 sticky top-24">第一段：苦難的深淵<br/><span class="text-base font-sans font-normal text-gray-500 tracking-tighter">— 正視失去與破碎的現實 —</span></h3>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 space-y-8">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3">引用經文</h4>
+                            <p class="text-gray-400 font-serif leading-relaxed italic">耶和華啊，求你記念我們所遭遇的事...因飢餓燥熱，我們的皮膚就黑如烤爐。(v.1-10)</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-item p-5 bg-white/5 rounded-xl">
+                                <span class="text-gold-500 text-sm font-bold block mb-1">關鍵字</span>
+                                <p class="text-lg font-bold">記念 (זָכַר / zakar)</p>
+                                <p class="text-sm text-gray-400 mt-2">不僅是回憶，更是「帶出行動的關注」。呼求神介入，基於聖約採取行動。</p>
+                            </div>
+                            <div class="bento-item p-5 bg-white/5 rounded-xl">
+                                <span class="text-gold-500 text-sm font-bold block mb-1">名言</span>
+                                <p class="text-sm italic text-gray-300 leading-relaxed">「真正的禱告，是從我們真實的所在之處開始，而不是從我們自以為應該在的地方開始。」—— 畢德生</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-6 rounded-xl border-l-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-2">問題：上帝無所不知，為何仍要哀告？</h4>
+                            <p class="text-gray-300 leading-relaxed">哀歌不是為了「提供資訊」，而是為了「建立關係的真實」。正視現實的破碎，是經歷醫治的第一步。我們不需要在神面前假裝堅強。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Section 2 -->
+            <div id="section-2" class="space-y-12 mb-20">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-serif font-bold text-gold-400 sticky top-24">第二段：榮耀的消逝<br/><span class="text-base font-sans font-normal text-gray-500 tracking-tighter">— 罪的代價與荒涼的心靈 —</span></h3>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 space-y-8">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3">引用經文</h4>
+                            <p class="text-gray-400 font-serif leading-relaxed italic">我們頭上的冠冕已經落下；我們犯罪了，我們有禍了！錫安山荒涼，野狗在其中行走。(v.11-18)</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-item p-5 bg-white/5 rounded-xl">
+                                <span class="text-gold-500 text-sm font-bold block mb-1">關鍵字</span>
+                                <p class="text-lg font-bold">冠冕 (עֲטֶרֶת / atarah)</p>
+                                <p class="text-sm text-gray-400 mt-2">象徵尊榮、喜樂與神的祝福。「冠冕落下」代表因悖逆失去了屬靈身分地位。</p>
+                            </div>
+                            <div class="bento-item p-5 bg-white/5 rounded-xl">
+                                <span class="text-gold-500 text-sm font-bold block mb-1">名言</span>
+                                <p class="text-sm italic text-gray-300 leading-relaxed">「恩典必須是重價的，因為它定罪為罪，並呼召罪人悔改。」—— 潘霍華</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-6 rounded-xl border-l-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-2">問題：如何避免陷入自怨自艾？</h4>
+                            <p class="text-gray-300 leading-relaxed">勇敢承擔責任並承認罪愆。將焦點從環境的殘忍轉向自我省察。從受害者轉變為尋求赦免的悔改者。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis Section 3 -->
+            <div id="section-3" class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-serif font-bold text-gold-400 sticky top-24">第三段：永恆的錨點<br/><span class="text-base font-sans font-normal text-gray-500 tracking-tighter">— 仰望寶座與回轉的呼求 —</span></h3>
+                    </div>
+                    <div class="md:w-2/3 glass-card p-8 space-y-8">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3">引用經文</h4>
+                            <p class="text-gray-400 font-serif leading-relaxed italic">耶和華啊，你存到永遠；你的寶座存到萬代。求你使我們向你回轉，我們便得回轉。(v.19-22)</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-item p-5 bg-white/5 rounded-xl">
+                                <span class="text-gold-500 text-sm font-bold block mb-1">關鍵字</span>
+                                <p class="text-lg font-bold">回轉 (שׁוּב / shuv)</p>
+                                <p class="text-sm text-gray-400 mt-2">這是一個強烈的呼求，承認人墮落到極點時，連自我悔改的能力都沒有。</p>
+                            </div>
+                            <div class="bento-item p-5 bg-white/5 rounded-xl">
+                                <span class="text-gold-500 text-sm font-bold block mb-1">名言</span>
+                                <p class="text-sm italic text-gray-300 leading-relaxed">「上帝的主權是信徒在最深苦難中，最柔軟的枕頭。」—— 司布真</p>
+                            </div>
+                        </div>
+                        <div class="bg-gold-500/5 p-6 rounded-xl border-l-4 border-gold-500">
+                            <h4 class="text-gold-500 font-bold mb-2">問題：絕境中信仰的支撐點在哪？</h4>
+                            <p class="text-gray-300 leading-relaxed">支撐點不在於環境的改善，而在於「神的寶座存到萬代」。靈命必須下錨於神不變的統治權柄上。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-600/20 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold tracking-widest">講章文稿</h2>
+            </div>
+            
+            <article class="glass-card p-10 md:p-16 space-y-10 font-serif leading-loose text-gray-200">
+                <div class="border-b border-white/10 pb-8">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-2">在廢墟中仰望永恆寶座</h3>
+                    <p class="text-gray-500 tracking-widest text-sm uppercase">哀 5:1-22</p>
+                </div>
+
+                <p class="text-lg">
+                    弟兄姊妹，平安。當我們失去一切的時候，我們還剩下什麼？耶利米哀歌第五章，是以色列人在經歷國破家亡、耶路撒冷化為廢墟之後，全體百姓向神發出最深沉的呼求。今天，讓我們透過這段經文，一起走過這條從哀求到復興的道路。
+                </p>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-gold-500">一、苦難的深淵：正視失去與破碎的現實</h4>
+                    <p>
+                        經文一開始，先知就發出了強烈的呼求：「耶和華啊，求你記念我們所遭遇的事，觀看我們所受的凌辱。」（哀5:1）。接下來的經文，是一連串慘不忍睹的現實。我們常常以為，有信心的基督徒應該永遠保持微笑，不應該抱怨。但是，哀歌告訴我們，<span class="text-white border-b border-gold-400 font-bold">真正的信仰不是假裝苦難不存在。</span>
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-gold-500">二、榮耀的消逝：罪的代價與荒涼的心靈</h4>
+                    <p>
+                        隨著哀歌的推進，先知不僅看見外在的苦難，更看透了背後深層的原因。哀5:16說：<span class="text-white font-bold text-xl block my-4 border-l-4 border-gold-500 pl-4">「我們頭上的冠冕已經落下；我們犯罪了，我們有禍了！」</span>
+                        這一切的轉折點在於「我們犯罪了」。當罪進入生命，冠冕就必定落下。<span class="text-gold-400 font-bold">真正的悔改，是榮耀被恢復的唯一途徑。</span>
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-gold-500">三、永恆的錨點：仰望寶座與回轉的呼求</h4>
+                    <p>
+                        先知在絕望的谷底，突然將目光轉向了天上的榮耀。哀5:19宣告：<span class="text-white border-b border-gold-400 font-bold italic">「耶和華啊，你存到永遠；你的寶座存到萬代。」</span>
+                        這是整卷耶利米哀歌最核心的盼望！地上的聖殿被毀了，但天上的寶座從未動搖。向神呼求：「主啊，使我向祢回轉！」當我們願意回轉，那帶來復興的恩典，就必使我們的生命重新得力。
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application & Action Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <section class="glass-card p-10 border-t-4 border-gold-500">
+                <h3 class="text-2xl font-serif font-bold text-gold-400 mb-8 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">01</span> 建立真實的禱告生活：學習用「哀歌」形式將痛苦真實傾吐。</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">02</span> 勇敢面對生命破口：省察「冠冕落下」是否是因為隱藏的罪。</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">03</span> 視角轉換的操練：刻意將目光從「地上的廢墟」轉向「天上的寶座」。</li>
+                </ul>
+            </section>
+            
+            <section class="glass-card p-10 border-t-4 border-gold-500">
+                <h3 class="text-2xl font-serif font-bold text-gold-400 mb-8 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4"><span class="bg-gold-500/20 text-gold-400 px-2 py-1 rounded text-xs h-fit">實踐</span> 寫下一篇個人的「哀歌」，將焦虑與痛苦帶到神面前。</li>
+                    <li class="flex gap-4"><span class="bg-gold-500/20 text-gold-400 px-2 py-1 rounded text-xs h-fit">檢視</span> 求聖靈光照生命中得罪神的盲點，尋求寶血潔淨。</li>
+                    <li class="flex gap-4"><span class="bg-gold-500/20 text-gold-400 px-2 py-1 rounded text-xs h-fit">宣告</span> 連續七天起床宣告哀5:19，深信主寶座存到萬代。</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gold-600/20 text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold tracking-widest">名言佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass-card p-8 break-inside-avoid">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「真正的禱告，是從我們真實的所在之處開始，而不是從我們自以為應該在的地方開始。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 畢德生 (Eugene Peterson)</cite>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「上帝的主權是信徒在最深苦難中，最柔軟的枕頭。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「恩典必須是重價的，因為它定罪為罪，並呼召罪人悔改。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid border-l-2 border-gold-500">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「當人墮落到極點，唯有仰望神永不改變的寶座，才能在絕望中找到信仰的支撐點。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 唐崇榮 (Stephen Tong)</cite>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「當你除了上帝之外一無所有時，你就會發現上帝已經足夠了。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「我們若不認識自己的罪，就永遠無法認識上帝的恩典。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「如果上帝不是至高無上的，祂就不可能是上帝。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass-card p-8 break-inside-avoid">
+                    <p class="text-gray-200 italic leading-relaxed mb-4">「破碎的心靈是神施恩的最佳容器。當我們承認自己的無能時，神的大能才開始介入。」</p>
+                    <cite class="text-gold-500 text-sm font-bold block">— 盧雲 (Henri Nouwen)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center py-20 border-t border-white/5">
+            <p class="text-gray-600 text-xs tracking-widest flex items-center justify-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-600 text-black rounded-full flex items-center justify-center floating-btn hover:bg-gold-400 transition-colors z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+</body>
+</html>

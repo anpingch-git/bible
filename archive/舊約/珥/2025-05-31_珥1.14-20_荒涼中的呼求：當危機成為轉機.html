@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珥1:14-20：荒涼中的呼求：當危機成為轉機</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18c',
+                            300: '#fbe44f',
+                            400: '#f9d51d',
+                            500: '#eeb80c',
+                            600: '#ce9107',
+                            700: '#a46809',
+                            800: '#86510e',
+                            900: '#724212',
+                        },
+                        abyss: '#05070a',
+                        surface: '#0f141d',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: '0.8', filter: 'brightness(0.9)' },
+                            '50%': { opacity: '1', filter: 'brightness(1.1)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)', transitionTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'translateY(-3px)', transitionTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #05070a;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #f9d51d 0%, #ce9107 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f9d51d;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '珥1:14-20',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '珥',         // 動態注入書卷縮寫，例如：出
+              'note_title': '荒涼中的呼求：當危機成為轉機' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-gold-500 selection:text-black">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-abyss/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-gold-400 font-display font-extrabold text-xl tracking-tighter">
+                珥 1:14-20
+            </div>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base font-medium">
+                <a href="#prayer" class="nav-link relative text-gray-300 hover:text-white transition">禱告</a>
+                <a href="#outline" class="nav-link relative text-gray-300 hover:text-white transition">大綱</a>
+                <a href="#sermon" class="nav-link relative text-gray-300 hover:text-white transition">講章</a>
+                <a href="#quotes" class="nav-link relative text-gray-300 hover:text-white transition">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden" id="header">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_7f3b78f0-7052-4d89-9a60-8346afc688bf.jpg' alt='Banner Image' class="w-full h-full object-cover animate-pulse-slow scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-abyss/60 via-abyss/40 to-abyss"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 tracking-tight leading-tight">
+                <span class="gold-gradient">荒涼中的呼求</span><br/>
+                當危機成為轉機
+            </h1>
+            
+            <div class="mt-12 animate-subtle-bounce">
+                <p class="text-lg md:text-2xl font-light italic leading-relaxed text-gray-100 max-w-2xl mx-auto drop-shadow-2xl">
+                    「你們要分定禁食的日子，宣告嚴肅會，招聚長老和國中的一切居民到耶和華─你們神的殿，向耶和華哀求。」
+                </p>
+                <p class="mt-4 text-gold-400 font-semibold tracking-widest">— 約珥書 1:14 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card p-8 md:p-16 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition duration-700">
+                    <svg class="w-32 h-32 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"></path></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center text-gold-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold text-white tracking-wide uppercase">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-loose text-gray-300 font-light italic">
+                    主耶和華，當我們面對生命中的枯乾、環境的荒涼與資源的斷絕時，求祢赦免我們常倚靠自己而不倚靠祢的罪。懇求聖靈喚醒我們的靈，使我們不再沉睡，而是願意刻苦己心，真實地回到祢的殿中向祢哀求。願我們的危機成為轉機，在絕境中看見祢的全能，在枯乾中經歷祢的復興。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-wide uppercase">大綱導覽</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="glass-card p-8 hover:bg-gold-500/10 hover:border-gold-500/50 transition-all duration-500 group">
+                    <span class="text-gold-500 font-bold text-sm block mb-2 opacity-60">珥 1:14</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition">絕境中的召喚：刻苦己心的轉向</h3>
+                </a>
+                <a href="#section2" class="glass-card p-8 hover:bg-gold-500/10 hover:border-gold-500/50 transition-all duration-500 group">
+                    <span class="text-gold-500 font-bold text-sm block mb-2 opacity-60">珥 1:15-18</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition">正視眼前的荒涼：主日子的警鐘</h3>
+                </a>
+                <a href="#section3" class="glass-card p-8 hover:bg-gold-500/10 hover:border-gold-500/50 transition-all duration-500 group">
+                    <span class="text-gold-500 font-bold text-sm block mb-2 opacity-60">珥 1:19-20</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition">枯乾中的仰望：向全能者發聲</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline & Analysis -->
+        <div class="space-y-40">
+            <!-- Section 1 -->
+            <section id="section1" class="scroll-mt-32">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="w-full md:w-1/3">
+                        <div class="sticky top-32">
+                            <h3 class="text-4xl font-black mb-6 gold-gradient">第一段：<br/>絕境中的召喚</h3>
+                            <div class="p-6 bg-surface rounded-3xl border border-white/5 space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="bg-gold-500 text-black px-2 py-0.5 rounded text-xs font-bold mt-1">Key</span>
+                                    <p class="text-gray-300"><strong class="text-white">哀求 (זָעַק)</strong>：在絕望、極度痛苦時發出撕心裂肺的呼喊。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-12">
+                        <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <p class="text-2xl font-serif text-gray-100 leading-relaxed">「你們要分定禁食的日子，宣告嚴肅會，招聚長老和國中的一切居民到耶和華─你們神的殿，向耶和華哀求。」</p>
+                        </div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-gold-400 font-bold text-xl mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.443 1.103m-2.457 2.227h.023m1.233 1.233h.023m-4.606 0H12"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-gray-400 italic mb-2">當危機來臨時，我們的第一反應是尋找人的方法，還是向神哀求？</p>
+                                <p class="text-gray-300 leading-loose">人面對災難的本能往往是尋求資源重組或人為解救。但先知約珥呼籲的不是召開「經濟對策會議」，而是「宣告嚴肅會」。這提醒我們，屬世的危機往往帶有屬靈的意涵，唯有先處理我們與神的關係，集體回到神面前悔改，才是解決根本問題的唯一途徑。</p>
+                            </div>
+                            <div class="p-8 bg-gold-900/10 rounded-3xl border border-gold-500/20">
+                                <h4 class="text-gold-400 font-bold mb-4">敦克爾克的神蹟 (1940)</h4>
+                                <p class="text-gray-300 leading-loose">三十多萬英法聯軍被困，面臨全軍覆沒。英國國王喬治六世呼籲「全國祈禱日」。成千上萬民眾湧入教堂，隨後海面奇蹟般平靜並出現大霧，軍隊成功撤退。這正是「向神哀求」的現代見證。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="scroll-mt-32">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="w-full md:w-1/3">
+                        <div class="sticky top-32">
+                            <h3 class="text-4xl font-black mb-6 gold-gradient text-right">第二段：<br/>正視眼前的荒涼</h3>
+                            <div class="p-6 bg-surface rounded-3xl border border-white/5 space-y-4 text-right">
+                                <div class="flex items-start gap-3 justify-end">
+                                    <p class="text-gray-300"><strong class="text-white">毀滅 (שֹׁד)</strong>：指暴力的破壞。經文在此玩了文字遊戲：毀滅(shod)從全能者(Shaddai)來到。</p>
+                                    <span class="bg-gold-500 text-black px-2 py-0.5 rounded text-xs font-bold mt-1">Key</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-12">
+                        <div class="bg-white/5 p-8 rounded-3xl border-r-4 border-gold-500 text-right">
+                            <p class="text-xl font-serif text-gray-100 leading-relaxed">「哀哉！耶和華的日子臨近了。這日來到，好像毀滅從全能者來到...穀種在土塊下朽爛；倉也荒涼，廩也破壞。」</p>
+                        </div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-gold-400 font-bold text-xl mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-gray-400 italic mb-2">為什麼慈愛的神會允許環境的荒涼臨到我們？</p>
+                                <p class="text-gray-300 leading-loose">神更看重我們的聖潔與對祂的真實倚靠。「耶和華的日子」不僅是末世的審判，也常藉由當下的危機來敲響警鐘。剝奪與荒涼是神管教的擴音器，目的是要喚醒沉睡的百姓，打破我們對物質的虛假安全感。</p>
+                            </div>
+                            <div class="p-8 bg-gold-900/10 rounded-3xl border border-gold-500/20">
+                                <h4 class="text-gold-400 font-bold mb-4">果園的破碎與重生</h4>
+                                <p class="text-gray-300 leading-loose">罕見蟲害摧毀了果園。農夫在清理時發現原本的灌溉系統淤堵、土壤硬化。災難迫使他重新翻土、尋找純淨水源。幾年後，果園產量遠勝從前。神允許荒涼，是為了重建我們生命的根基。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="scroll-mt-32">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="w-full md:w-1/3">
+                        <div class="sticky top-32">
+                            <h3 class="text-4xl font-black mb-6 gold-gradient">第三段：<br/>枯乾中的仰望</h3>
+                            <div class="p-6 bg-surface rounded-3xl border border-white/5 space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="bg-gold-500 text-black px-2 py-0.5 rounded text-xs font-bold mt-1">Key</span>
+                                    <p class="text-gray-300"><strong class="text-white">求告 (קָרָא)</strong>：呼叫、大聲喊叫、宣告。先知帶頭向神呼求。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 space-y-12">
+                        <div class="bg-white/5 p-8 rounded-3xl border-l-4 border-gold-500">
+                            <p class="text-xl font-serif text-gray-100 leading-relaxed">「耶和華啊，我向你求告，因為火燒滅曠野的草場；火焰燒盡田野的樹木。田野的走獸向你發喘；因為溪水乾涸...」</p>
+                        </div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-gold-400 font-bold text-xl mb-4 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-gray-400 italic mb-2">當一切資源都枯竭時，我們還能做什麼？</p>
+                                <p class="text-gray-300 leading-loose">當溪水乾涸、人類智慧無能為力。這時，真實的信仰才剛開始。我們必須將目光從「枯乾的溪水」轉向「賜活水的源頭」，承認我們的受造者身份，單單仰望祂的憐憫。</p>
+                            </div>
+                            <div class="p-8 bg-gold-900/10 rounded-3xl border border-gold-500/20">
+                                <h4 class="text-gold-400 font-bold mb-4">喬治·穆勒的空盤子</h4>
+                                <p class="text-gray-300 leading-loose">廚房完全沒有食物，幾百個孩子在等。穆勒帶領孩子為「即將賜下的食物」感謝禱告。隨後，一位半夜受感烤餅的麵包師與一輛拋錨贈送牛奶的車相繼來到。溪水乾涸時，正是經歷神開路的時候。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-wide uppercase">講章文稿</h2>
+            </div>
+            
+            <div class="glass-card p-8 md:p-16 space-y-10 text-lg leading-loose text-gray-300 max-w-4xl mx-auto shadow-2xl">
+                <h3 class="text-3xl font-black text-white border-b border-gold-500/30 pb-4 mb-8">荒涼中的呼求：當危機成為轉機</h3>
+                
+                <p>各位弟兄姊妹，平安。當我們環顧當今的世界，或是檢視我們個人的生活時，是否有時會感到一種難以言喻的枯乾與荒涼？也許是財務上的危機，也許是家庭關係的破裂，又或者是靈性上的長期乾旱。今天我們所讀的約珥書，正是一幅極度絕望的畫卷。一場史無前例的蝗災與旱災，將猶大國摧毀得體無完膚。</p>
+                
+                <p class="font-bold text-gold-400 text-xl">首先，我們來看第一段：絕境中的召喚：刻苦己心的轉向。</p>
+                <p>我們來看今天的金句：<span class="text-white bg-gold-900/40 px-2 py-1 rounded">「你們要分定禁食的日子，宣告嚴肅會，招聚長老和國中的一切居民到耶和華─你們神的殿，向耶和華哀求。」（約珥書 1:14）</span> 當國家面臨經濟崩潰與農業絕收時，先知沒有呼籲召開緊急經濟對策會議，而是呼籲大家來到神的殿中。經文中的「哀求」原文是 za'aq，意思是撕心裂肺的呼救。當危機來臨時，我們的第一反應往往是找關係、找方法，但神要我們找祂。</p>
+                
+                <p class="font-bold text-gold-400 text-xl">接著，我們來到第二段：正視眼前的荒涼：主日子的警鐘。</p>
+                <p>經文15節說：<span class="text-white underline decoration-gold-500 underline-offset-8">「哀哉！耶和華的日子臨近了。這日來到，好像毀滅從全能者來到。」</span> 為什麼慈愛的神允許這一切發生？因為人在安逸中容易忘記神。神有時必須藉由環境的「毀滅」來喚醒我們。這不是神殘忍，而是神愛的管教。陶恕牧師曾說：「神若要大大使用一個人，必先深深地破碎他。」神容許荒涼臨到，是為了除掉我們的偶像，讓我們看清什麼才是真正不可動搖的根基。</p>
+                
+                <p class="font-bold text-gold-400 text-xl">最後，我們來看第三段：枯乾中的仰望：向全能者發聲。</p>
+                <p>當連田野的走獸都在發喘，溪水完全乾涸時，先知帶頭向神「求告」。當人的力量到了盡頭，正是神大能的起頭。司布真曾如此深刻地說：<span class="text-white italic">「我已經學會親吻那將我擊打在萬古磐石上的海浪。」</span> 即使這海浪帶來的是荒涼，但只要它將我們推向耶穌基督這萬古磐石，這場危機就成為了我們生命中最偉大的轉機。</p>
+                
+                <div class="pt-10 border-t border-white/10 text-center">
+                    <p class="text-2xl font-black gold-gradient">阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 bg-surface">
+                <h3 class="text-2xl font-bold text-white mb-8 border-l-4 border-gold-500 pl-4">應用方向</h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">01.</span>
+                        <p class="text-gray-300">在個人健康、財務或關係面臨「蝗災」與「乾旱」時，不單求環境改變，更求問神要藉此對我們說什麼。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">02.</span>
+                        <p class="text-gray-300">在安逸中我們容易失去屬靈的敏銳度；教會與信徒應在面對重大抉擇或危機時，恢復禁食禱告的操練。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold-500 font-bold">03.</span>
+                        <p class="text-gray-300">約珥呼籲招聚長老和「一切居民」，這提醒我們不可孤立自己，而要與信仰群體一同面對挑戰。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 bg-gold-900/10 border-gold-500/30">
+                <h3 class="text-2xl font-bold text-white mb-8 border-l-4 border-white pl-4">回應行動</h3>
+                <div class="space-y-4">
+                    <label class="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition cursor-pointer">
+                        <input type="checkbox" class="mt-1.5 w-5 h-5 rounded border-gray-300 text-gold-500 focus:ring-gold-500">
+                        <span class="text-gray-200"><strong>定意禁食：</strong> 本週選擇一餐或一天禁食，專心為「枯乾」處禱告。</span>
+                    </label>
+                    <label class="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition cursor-pointer">
+                        <input type="checkbox" class="mt-1.5 w-5 h-5 rounded border-gray-300 text-gold-500 focus:ring-gold-500">
+                        <span class="text-gray-200"><strong>建立守望：</strong> 尋找兩位同伴，每週一次進行迫切的聯合禱告。</span>
+                    </label>
+                    <label class="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition cursor-pointer">
+                        <input type="checkbox" class="mt-1.5 w-5 h-5 rounded border-gray-300 text-gold-500 focus:ring-gold-500">
+                        <span class="text-gray-200"><strong>徹底交託：</strong> 寫下「荒涼」事項，宣告放棄人為操控，單單仰望。</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center text-gold-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-wide uppercase">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「神若要大大使用一個人，必先深深地破碎他。」</p>
+                    <p class="text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「禱告不是要求神滿足我們的願望，而是調整我們的心去順服神的旨意。」</p>
+                    <p class="text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「我已經學會親吻那將我擊打在萬古磐石上的海浪。」</p>
+                    <p class="text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「廉價的恩典是我們教會的死敵...呼召人來死。」</p>
+                    <p class="text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「基督徒若不禱告，就如同活人卻不呼吸一樣是不可能的。」</p>
+                    <p class="text-gold-500 font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「禱告是信心的最主要操練，我們藉此天天領受神的恩典。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「當我們帶著敞開的雙手來到神面前，我們才能接納祂所賜的一切。」</p>
+                    <p class="text-gold-500 font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「禁食的作用在於揭露控制我們的那些事物。」</p>
+                    <p class="text-gold-500 font-bold">— 傅士德 (Richard Foster)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「這世界充滿了立竿見影的解決方案，但神邀請我們進入在同一個方向上的長期順服。」</p>
+                    <p class="text-gold-500 font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-8 group hover:-translate-y-2 transition duration-500">
+                    <p class="text-xl text-gray-100 font-serif mb-4 leading-relaxed">「恩典不是用來免除我們的努力，而是用來取代我們的賺取。」</p>
+                    <p class="text-gold-500 font-bold">— 魏樂德 (Dallas Willard)</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-6 bg-red-900/20 border border-red-500/30 rounded-2xl text-center">
+                <p class="text-red-400 text-sm tracking-widest">⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 z-50 group">
+        <svg class="w-6 h-6 text-black group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

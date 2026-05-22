@@ -67,7 +67,24 @@
             background: rgba(255, 255, 255, 0.06);
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '結13:1-16',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '結',         // 動態注入書卷縮寫，例如：出
+              'note_title': '粉飾的太平：拆毀虛假，建造於神真實的話語' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="bg-darkBg text-slate-200 font-body leading-relaxed overflow-x-hidden">
 
     <!-- Sticky Navbar -->

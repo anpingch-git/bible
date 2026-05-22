@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太3:1-12: 曠野的呼聲：真實的悔改與生命重整</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E2B875',
+                        accent: '#F59E0B',
+                        bgDark: '#0A0A0B',
+                        cardBg: 'rgba(28, 28, 30, 0.7)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'gentle-float 3s ease-in-out infinite',
+                        'pulse-subtle': 'pulse-subtle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { filter: 'brightness(0.3)' },
+                            '50%': { filter: 'brightness(0.8)' },
+                        },
+                        'gentle-float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        'pulse-subtle': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.7 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #E2B875 0%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #E2B875;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2.5s ease-in-out infinite;
+        }
+        @keyframes jump {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-5px);}
+            60% {transform: translateY(-3px);}
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太3:1-12',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '曠野的呼聲：真實的悔改與生命重整' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-bgDark text-gray-200 font-sans leading-relaxed selection:bg-primary selection:text-black">
+
+    <!-- Header / Banner Area -->
+    <header id="top" class="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_49e05cc7-7378-40b3-a59a-3901056278f5.jpg' alt='media_1' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-bgDark/40 to-bgDark"></div>
+        </div>
+
+        <nav class="fixed top-0 left-0 right-0 z-50 glass py-4 px-6 flex justify-between items-center">
+            <div class="text-primary font-bold tracking-wider font-display hidden md:block">太 3:1-12</div>
+            <div class="flex gap-6 md:gap-10 text-xs md:text-sm font-semibold tracking-widest uppercase">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </nav>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-black font-display text-white mb-8 tracking-tight drop-shadow-2xl">
+                曠野的呼聲：<br/><span class="text-gradient">真實的悔改與生命重整</span>
+            </h1>
+            
+            <div class="space-y-4 mb-12">
+                <p class="text-xl md:text-3xl font-display text-primary/90 italic jump-text">
+                    「你們要結出果子來，與悔改的心相稱。」
+                </p>
+                <p class="text-sm md:text-lg text-gray-400 font-light tracking-[0.2em]">（馬太福音 3:8）</p>
+            </div>
+            
+            <div class="flex justify-center animate-bounce mt-10">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass p-8 md:p-16 rounded-[2.5rem] relative overflow-hidden group">
+                <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl transition-all group-hover:bg-primary/20"></div>
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="p-3 bg-primary/10 rounded-2xl">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-white tracking-wide">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light">
+                    親愛的天父，我們感謝祢透過施洗約翰在曠野的呼聲，喚醒我們沉睡的心靈。主啊，求祢赦免我們常常安於宗教的習慣，卻失去了真實悔改的動力。懇求聖靈的光照耀我們，讓我們不單單只是在嘴唇上認罪，更能結出與悔改相稱的生命果子。願主耶穌基督用聖靈與火為我們施洗，燒盡我們生命中一切虛浮的糠粃，煉淨我們的內心，使我們預備好自己，成為祢榮耀的居所。<br><span class="text-primary font-bold mt-4 block">奉主耶穌基督的聖名禱告，阿們。</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-primary/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                </span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white tracking-wide">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section-1" class="glass p-6 rounded-2xl hover:bg-primary/10 transition-all border-l-4 border-l-primary group">
+                    <div class="text-xs text-primary mb-2 font-bold tracking-widest uppercase">Section 01</div>
+                    <div class="text-lg font-bold text-white group-hover:text-primary transition-colors">曠野的呼喚</div>
+                    <div class="text-sm text-gray-400 mt-1">太 3:1-4</div>
+                </a>
+                <a href="#section-2" class="glass p-6 rounded-2xl hover:bg-primary/10 transition-all border-l-4 border-l-primary group">
+                    <div class="text-xs text-primary mb-2 font-bold tracking-widest uppercase">Section 02</div>
+                    <div class="text-lg font-bold text-white group-hover:text-primary transition-colors">拒絕廉價恩典</div>
+                    <div class="text-sm text-gray-400 mt-1">太 3:5-10</div>
+                </a>
+                <a href="#section-3" class="glass p-6 rounded-2xl hover:bg-primary/10 transition-all border-l-4 border-l-primary group">
+                    <div class="text-xs text-primary mb-2 font-bold tracking-widest uppercase">Section 03</div>
+                    <div class="text-lg font-bold text-white group-hover:text-primary transition-colors">聖靈與火的洗</div>
+                    <div class="text-sm text-gray-400 mt-1">太 3:11-12</div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <article id="section-1" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-display font-bold text-primary mb-6">第一段：曠野的呼喚</h3>
+                            <div class="p-6 bg-white/5 rounded-3xl border border-white/10 italic text-gray-300 leading-relaxed mb-6">
+                                「那時，有施洗的約翰出來，在猶太的曠野傳道，說：『天國近了，你們應當悔改！』」
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-2">關鍵原文</h4>
+                                    <p class="text-lg"><span class="text-white font-bold">預備 (Prepare)</span>：希臘原文為 <i>ἑτοιμάζω (hetoimazō)</i>。意指為迎接神聖君王清除生命中的罪惡與攔阻。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-xl text-white mb-4">我們的心是否還有「曠野」的空間來聆聽上帝的聲音？</p>
+                                <p class="text-gray-400">上帝的聲音通常微小，我們必須刻意為自己創造「屬靈的曠野」，安靜下來面對自己真實的屬靈光景。</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-primary/5 p-6 rounded-2xl border border-primary/20">
+                                    <h5 class="text-primary font-bold mb-2">💡 例證</h5>
+                                    <p class="text-sm text-gray-300">一位忙碌的企業家在「退修會」中斷絕手機連線，第三天他在寂靜中聽見了神的呼喚。當外在噪音斷絕，神音才清晰。</p>
+                                </div>
+                                <div class="bg-accent/5 p-6 rounded-2xl border border-accent/20">
+                                    <h5 class="text-accent font-bold mb-2">📜 名言</h5>
+                                    <p class="text-sm text-gray-300">「我們必須刻意清空自己，才能被神充滿。」—— 畢德生</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="section-2" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row-reverse gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-display font-bold text-primary mb-6">第二段：拒絕廉價恩典</h3>
+                            <div class="p-6 bg-white/5 rounded-3xl border border-white/10 italic text-gray-300 leading-relaxed mb-6">
+                                「你們要結出果子來，與悔改的心相稱。不要自己心裡說：有亞伯拉罕為我們的祖宗。」
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-2">關鍵原文</h4>
+                                    <p class="text-lg"><span class="text-white font-bold">悔改 (Repentance)</span>：希臘原文為 <i>μετάνοια (metanoia)</i>。意為「心智的轉變」，是心思意念180度的轉向。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-xl text-white mb-4">我們的信仰是停留在宗教習慣的驕傲，還是擁有真實改變生命的果子？</p>
+                                <p class="text-gray-400">法利賽人驕傲於血統，今日信徒也可能落入「第幾代基督徒」的驕傲。神看重的是「果子」——真實的生命改變。</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-primary/5 p-6 rounded-2xl border border-primary/20">
+                                    <h5 class="text-primary font-bold mb-2">💡 例證</h5>
+                                    <p class="text-sm text-gray-300">農夫準備砍掉只有葉子不結果的蘋果樹。沒有果子的信仰，外表再好看也失去了本質。</p>
+                                </div>
+                                <div class="bg-accent/5 p-6 rounded-2xl border border-accent/20">
+                                    <h5 class="text-accent font-bold mb-2">📜 名言</h5>
+                                    <p class="text-sm text-gray-300">「廉價的恩典是不要背十字架的恩典。」—— 潘霍華</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="section-3" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-display font-bold text-primary mb-6">第三段：聖靈與火的洗</h3>
+                            <div class="p-6 bg-white/5 rounded-3xl border border-white/10 italic text-gray-300 leading-relaxed mb-6">
+                                「他要用聖靈與火給你們施洗。他手裡拿著簸箕，要揚淨他的場...」
+                            </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-2">關鍵原文</h4>
+                                    <p class="text-lg"><span class="text-white font-bold">揚淨 (Winnow)</span>：希臘原文為 <i>διακαθαρίζω (diakatharizō)</i>。農夫拋起麥穗讓風吹走糠粃，象徵分離真實信仰與虛假雜質。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div class="glass p-8 rounded-3xl">
+                                <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-xl text-white mb-4">我們是否願意讓耶穌基督的「火」，燒盡我們生命中的「糠粃」？</p>
+                                <p class="text-gray-400">聖靈與火的洗禮是「煉淨的火」，燒毀私慾與驕傲。基督徒要經歷生命的深層翻轉。</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-primary/5 p-6 rounded-2xl border border-primary/20">
+                                    <h5 class="text-primary font-bold mb-2">💡 例證</h5>
+                                    <p class="text-sm text-gray-300">金匠煉金直到水面映照出自己的倒影。耶穌用聖靈煉淨我們，是為了看見祂榮美的倒影。</p>
+                                </div>
+                                <div class="bg-accent/5 p-6 rounded-2xl border border-accent/20">
+                                    <h5 class="text-accent font-bold mb-2">📜 名言</h5>
+                                    <p class="text-sm text-gray-300">「聖靈降臨是要用聖潔的火燒盡我們生命中與神不和的雜質。」—— 陶恕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Content Section -->
+        <section id="sermon" class="scroll-mt-24 space-y-16">
+            <div class="flex items-center gap-4">
+                <span class="p-3 bg-primary/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white tracking-wide">分段講章文稿</h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-20">
+                <div class="border-l-2 border-primary/30 pl-8 md:pl-12 space-y-10">
+                    <p class="text-2xl text-gray-300">弟兄姊妹平安！今天我們要從馬太福音第三章，施洗約翰的出現，來思想我們生命的真實光景。</p>
+                    
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-display font-black text-primary">第一段：曠野的呼喚——在喧囂中預備心靈的覺醒</h3>
+                        <p class="text-xl text-white font-bold italic">「在曠野有人聲喊著說：預備主的道，修直他的路！」（太3:3）</p>
+                        <p class="text-lg text-gray-400 leading-loose">
+                            施洗約翰沒有出現在繁華的耶路撒冷，也沒有在金碧輝煌的聖殿中講道，他出現在猶太的曠野。為什麼是曠野？因為曠野是一個沒有干擾、剝除一切依靠的地方。今天，我們生活在一個被手機、網路、工作和無盡的娛樂填滿的時代。我們太忙了，忙到聽不見上帝的聲音。我們的心中充滿了坑洞與彎曲，這就是為什麼神呼喚我們要<span class="text-primary font-bold underline decoration-2">「預備主的道」</span>。預備，就是要為君王的到來清除一切障礙。
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-display font-black text-primary">第二段：拒絕廉價恩典——結出與悔改相稱的果子</h3>
+                        <p class="text-xl text-white font-bold italic">「你們要結出果子來，與悔改的心相稱。不要自己心裡說：有亞伯拉罕為我們的祖宗。」（太3:8-9）</p>
+                        <p class="text-lg text-gray-400 leading-loose">
+                            法利賽人有著最純正的血統，最嚴格的宗教生活，但約翰卻稱他們為「毒蛇的種類」。為什麼？因為他們的信仰只有外表，沒有真實的改變。悔改，不是流幾滴眼淚，不是聚會時感到內疚，悔改是「心思意念的徹底轉向」，並在生活中結出果子。潘霍華警告我們，不要追求「廉價的恩典」，那是沒有悔改的赦免。神不看我們是第幾代基督徒，不看我們在教會有多少頭銜，祂看的是：<span class="text-accent font-bold">「斧子已經放在樹根上，凡不結好果子的樹就砍下來。」（太3:10）</span>
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-display font-black text-primary">第三段：聖靈與火的洗——容讓基督煉淨我們的生命</h3>
+                        <p class="text-xl text-white font-bold italic">「他要用聖靈與火給你們施洗。他手裡拿著簸箕，要揚淨他的場...」（太3:11-12）</p>
+                        <p class="text-lg text-gray-400 leading-loose">
+                            約翰能做的，只是用水給我們施洗，代表外在的悔改；但耶穌基督帶來的，是聖靈與火的洗。火是會痛的，火會燒毀一切虛假的事物。就像金匠煉金，必須把金子放進高溫的火中，雜質才會浮現並被燒盡。耶穌正拿著簸箕，要在你我的生命中進行「揚淨」的工作。風一吹，那些沒有重量的糠粃、我們隱藏的驕傲與自私，都要被吹走、被燒盡。<span class="text-white font-bold bg-primary/20 px-2 rounded">你願意讓聖靈的火來煉淨你嗎？</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass p-10 rounded-[2.5rem] border-t-4 border-t-primary">
+                <h3 class="text-2xl font-display font-bold text-white mb-8 flex items-center gap-3">
+                    <span class="text-primary text-3xl">#</span> 結論關鍵字
+                </h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-primary font-bold">1. 預備 Preparation</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-primary font-bold">2. 悔改 Repentance</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-primary font-bold">3. 揚淨 Refinement</span>
+                </div>
+                
+                <h3 class="text-2xl font-display font-bold text-white mt-12 mb-8 flex items-center gap-3">
+                    <span class="text-primary text-3xl">#</span> 回應與實踐
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 items-start text-gray-300">
+                        <span class="w-6 h-6 bg-primary rounded-full flex-shrink-0 flex items-center justify-center text-black font-bold text-xs mt-1">1</span>
+                        每天刻意撥出15分鐘，關掉所有電子設備，在安靜中尋求神。
+                    </li>
+                    <li class="flex gap-4 items-start text-gray-300">
+                        <span class="w-6 h-6 bg-primary rounded-full flex-shrink-0 flex items-center justify-center text-black font-bold text-xs mt-1">2</span>
+                        寫下需要悔改的具體罪惡，向神認罪，採取實際改變行動。
+                    </li>
+                    <li class="flex gap-4 items-start text-gray-300">
+                        <span class="w-6 h-6 bg-primary rounded-full flex-shrink-0 flex items-center justify-center text-black font-bold text-xs mt-1">3</span>
+                        每天禱告邀請聖靈的火降臨，顯明並燒毀生命中的「糠粃」。
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass p-10 rounded-[2.5rem] border-t-4 border-t-accent">
+                <h3 class="text-2xl font-display font-bold text-white mb-8 flex items-center gap-3">
+                    <span class="text-accent text-3xl">#</span> 應用方向
+                </h3>
+                <div class="space-y-6">
+                    <div class="group">
+                        <h4 class="text-accent font-bold mb-2">檢視生活節奏</h4>
+                        <p class="text-gray-400 group-hover:text-gray-200 transition-colors">鼓勵信徒在日常生活中建立「獨處與安靜」的習慣，打造心靈的曠野。</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="text-accent font-bold mb-2">破除宗教驕傲</h4>
+                        <p class="text-gray-400 group-hover:text-gray-200 transition-colors">反省自己是否把聚會、事奉當作逃避真實悔改的藉口。</p>
+                    </div>
+                    <div class="group">
+                        <h4 class="text-accent font-bold mb-2">渴望聖靈工作</h4>
+                        <p class="text-gray-400 group-hover:text-gray-200 transition-colors">教導信徒不要懼怕生命中的挑戰與熬煉，那是基督揚淨我們生命的過程。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-primary/10 rounded-2xl">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white tracking-wide">名言佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Quote 1 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「除非人認識到自己的罪，否則他絕不會真正尋求基督的恩典。真正的悔改是信仰的第一個音符。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 約翰·加爾文 (John Calvin)</p>
+                        <p class="text-xs text-gray-500">《基督教要義》</p>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「悔改不僅僅是對罪的悲傷，它更是離棄罪惡，全心轉向神的行動。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 司布真 (Charles Spurgeon)</p>
+                        <p class="text-xs text-gray-500">講道集</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「當我們的主耶穌基督說『你們應當悔改』時，祂的意思是信徒的一生應該是一個不斷悔改的過程。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 馬丁·路德 (Martin Luther)</p>
+                        <p class="text-xs text-gray-500">《九十五條論綱》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「廉價的恩典是教會的死敵。我們今天所爭戰的，是重價的恩典......重價的恩典是必須尋找的寶藏。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                        <p class="text-xs text-gray-500">《追隨基督》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「福音的真理是：你比你所敢相信的還要敗壞和充滿罪惡，但同時，你在基督裡比你所敢盼望的還要蒙愛和被接納。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 提摩太·凱勒 (Tim Keller)</p>
+                        <p class="text-xs text-gray-500">《被隱藏的意義》</p>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「神不能使用一個還未被聖靈的火煉淨的人；在神能重用你之前，祂必須先用火燒盡你生命中的自信與驕傲。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 陶恕 (A.W. Tozer)</p>
+                        <p class="text-xs text-gray-500">《渴慕神》</p>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「真實的屬靈成長（結出果子），是我們內在品格逐漸被塑造成為基督樣式的必然結果。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 魏樂德 (Dallas Willard)</p>
+                        <p class="text-xs text-gray-500">《靈性操練真諦》</p>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「悔改就是帶著我們破碎的自我來到十字架前。沒有十字架，我們的悔改只是道德主義。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 約翰·史托德 (John Stott)</p>
+                        <p class="text-xs text-gray-500">《當代基督十架》</p>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「沒有真理的光照，就沒有真實的悔改。今天許多教會充滿了沒有悔改的信徒。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 唐崇榮 (Stephen Tong)</p>
+                        <p class="text-xs text-gray-500">神學講座記錄</p>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="break-inside-avoid glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                    <p class="text-gray-300 italic mb-6 leading-relaxed font-display text-lg">「真宗教的本質在於聖潔的情感。當聖靈真正動工時，祂會改變人的心志。」</p>
+                    <div class="text-right">
+                        <p class="text-primary font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                        <p class="text-xs text-gray-500">《宗教情操真偽辨》</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center py-10 opacity-40 hover:opacity-100 transition-opacity">
+            <p class="text-sm tracking-widest text-gray-500">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-black rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110 active:scale-95 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

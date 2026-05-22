@@ -87,7 +87,24 @@
             box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '路4:1-13',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '路',         // 動態注入書卷縮寫，例如：出
+              'note_title': '曠野中的得勝：耶穌如何面對試探' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans antialiased">
 
     <!-- Sticky Navigation -->

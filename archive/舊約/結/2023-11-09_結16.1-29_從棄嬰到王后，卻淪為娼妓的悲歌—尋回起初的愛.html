@@ -87,7 +87,24 @@
             border-left: 4px solid #f59e0b;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '結16:1-29',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '結',         // 動態注入書卷縮寫，例如：出
+              'note_title': '從棄嬰到王后，卻淪為娼妓的悲歌—尋回起初的愛' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-body">
 
     <!-- Sticky Navbar -->

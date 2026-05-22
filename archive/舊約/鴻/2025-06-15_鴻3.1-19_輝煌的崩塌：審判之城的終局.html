@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鴻 3:1-19:輝煌的崩塌：審判之城的終局</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        crimson: '#dc2626',
+                        darkBg: '#0a0a0c',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-hop': 'subtle-hop 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.9' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-hop': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, transparent, #0a0a0c);
+        }
+        .jump-text span {
+            display: inline-block;
+            animation: subtle-hop 3s ease-in-out infinite;
+            animation-delay: calc(var(--i) * 0.1s);
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '鴻 3:1-19',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '鴻',         // 動態注入書卷縮寫，例如：出
+              'note_title': '輝煌的崩塌：審判之城的終局' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3 flex justify-center items-center gap-6 text-sm font-accent tracking-widest uppercase md:text-base">
+        <span class="text-gold-400 font-bold border-r border-white/20 pr-4">鴻 3:1-19</span>
+        <div class="flex gap-4 md:gap-8">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors text-gold-500">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="top" class="relative h-[70vh] w-full overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_0df6d312-5184-40ee-bcc5-2d82f66eb1f9.jpg' alt='輝煌的崩塌' class="w-full h-full object-cover animate-pulse-slow" />
+        </div>
+        <div class="absolute inset-0 banner-gradient z-10"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-end pb-20 px-6 z-20 text-center">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
+                輝煌的崩塌：<br/><span class="text-gold-400">審判之城的終局</span>
+            </h1>
+            
+            <!-- Jumping Golden Verse -->
+            <div class="max-w-3xl jump-text text-lg md:text-xl font-display text-white/90 italic leading-relaxed">
+                「你的損傷無法醫治；你的傷痕極其重大。凡聽見你信息的必都向你拍掌；因為你的惡行豈不是時常加在眾人身上嗎？」——《那鴻書 3:19》
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 rounded-full bg-gold-500/10 border border-gold-500/20">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-display font-bold text-white tracking-widest">禱告詞</h2>
+            </div>
+            <div class="p-8 rounded-2xl glass leading-relaxed text-lg border-l-4 border-l-gold-500 italic text-white/80">
+                公義且聖潔的主啊，我們在祢面前戰兢低頭。透過尼尼微城的結局，祢提醒我們：一個建立在強暴、謊言與淫行上的權勢，終究無法逃脫祢公義的審判。主啊，求祢保守我們的心，不叫我們迷失在世界的繁華與虛假的保障中，讓我們懂得敬畏祢，追求誠實與和平。願祢的公義如光發出，也願祢的慈愛領人悔改，使我們在祢的國度裡找到永遠的安息。奉主耶穌基督聖名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 rounded-full bg-blue-500/10 border border-blue-500/20">
+                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-display font-bold text-white tracking-widest">分段大綱</h2>
+            </div>
+
+            <!-- Quick Jump Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <a href="#section-1" class="p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-gold-500/10 hover:border-gold-500/40 transition-all group">
+                    <span class="text-xs font-accent text-white/40 block mb-1">SECTION 01</span>
+                    <p class="font-display font-bold text-gold-400 group-hover:text-gold-200">罪惡之城的禍哉與羞辱</p>
+                    <p class="text-xs text-white/50 mt-1">鴻 3:1-7</p>
+                </a>
+                <a href="#section-2" class="p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-gold-500/10 hover:border-gold-500/40 transition-all group">
+                    <span class="text-xs font-accent text-white/40 block mb-1">SECTION 02</span>
+                    <p class="font-display font-bold text-gold-400 group-hover:text-gold-200">歷史與屏障的虛假安全感</p>
+                    <p class="text-xs text-white/50 mt-1">鴻 3:8-13</p>
+                </a>
+                <a href="#section-3" class="p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-gold-500/10 hover:border-gold-500/40 transition-all group">
+                    <span class="text-xs font-accent text-white/40 block mb-1">SECTION 03</span>
+                    <p class="font-display font-bold text-gold-400 group-hover:text-gold-200">無可挽救的崩塌與普世拍掌</p>
+                    <p class="text-xs text-white/50 mt-1">鴻 3:14-19</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-16">
+                <!-- Sub Section 1 -->
+                <div id="section-1" class="scroll-mt-32 border-l-2 border-white/10 pl-8 relative">
+                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-gold-500 rounded-full shadow-[0_0_10px_#eab308]"></div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-6">1. 罪惡之城的禍哉與羞辱 (3:1-7)</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border border-white/5">
+                            <h4 class="text-xs font-accent uppercase tracking-widest text-gold-500 mb-2">引用經文</h4>
+                            <p class="text-white/80 leading-relaxed italic font-display">「禍哉！這流人血的城，滿有詭詐刑罰，搶奪的事總不止息。響鞭的聲音...人碰著屍骸；都因那美貌的妓女多有淫行...」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass p-5 rounded-xl">
+                                <h4 class="text-sm font-bold text-gold-400 mb-2">關鍵字解析：禍哉</h4>
+                                <p class="text-sm text-white/70">Hebrew: <span class="text-gold-300">Hôy</span>。這不僅是審判的宣告，更是一種葬禮上的哀悼語。代表邪惡政權的葬禮。</p>
+                            </div>
+                            <div class="glass p-5 rounded-xl">
+                                <h4 class="text-sm font-bold text-gold-400 mb-2">關鍵問題：羞辱的方式</h4>
+                                <p class="text-sm text-white/70">上帝以「揭起衣襟」審判，是公義的報應。讓罪惡失去偽裝，暴露出最醜陋的真相。</p>
+                            </div>
+                        </div>
+                        <div class="bg-crimson/10 p-5 rounded-xl border border-crimson/20">
+                            <p class="text-sm italic"><span class="font-bold text-crimson">大師佳句：</span>「公義的上帝絕不會對罪惡視而不見，祂的沉默不是忽略，而是審判前的寬容。」—— 司布真 (Charles Spurgeon)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub Section 2 -->
+                <div id="section-2" class="scroll-mt-32 border-l-2 border-white/10 pl-8 relative">
+                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-gold-500 rounded-full shadow-[0_0_10px_#eab308]"></div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-6">2. 歷史與屏障的虛假安全感 (3:8-13)</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border border-white/5">
+                            <h4 class="text-xs font-accent uppercase tracking-widest text-gold-500 mb-2">引用經文</h4>
+                            <p class="text-white/80 leading-relaxed italic font-display">「你豈比挪亞蒙強呢？挪亞蒙坐落在河濱，周圍有水...你一切保障必像無花果樹上初熟的無花果，若一搖撼，就落在吃的人口中。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass p-5 rounded-xl">
+                                <h4 class="text-sm font-bold text-gold-400 mb-2">關鍵字解析：挪亞蒙</h4>
+                                <p class="text-sm text-white/70">No-Amon。埃及底比斯。曾被認為不可攻破，卻被亞述親手毀滅。諷刺尼尼微必同樣覆滅。</p>
+                            </div>
+                            <div class="glass p-5 rounded-xl">
+                                <h4 class="text-sm font-bold text-gold-400 mb-2">例證：鐵達尼號</h4>
+                                <p class="text-sm text-white/70">當人過度信靠人造的堅固（如號稱不沉的船），往往就是崩潰的開始。</p>
+                            </div>
+                        </div>
+                        <div class="bg-crimson/10 p-5 rounded-xl border border-crimson/20">
+                            <p class="text-sm italic"><span class="font-bold text-crimson">大師佳句：</span>「除非上帝保守城池，否則守望者的警醒不過是徒然。」—— 約翰·加爾文 (John Calvin)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub Section 3 -->
+                <div id="section-3" class="scroll-mt-32 border-l-2 border-white/10 pl-8 relative">
+                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-gold-500 rounded-full shadow-[0_0_10px_#eab308]"></div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-6">3. 無可挽救的崩塌與普世拍掌 (3:14-19)</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border border-white/5">
+                            <h4 class="text-xs font-accent uppercase tracking-widest text-gold-500 mb-2">引用經文</h4>
+                            <p class="text-white/80 leading-relaxed italic font-display">「你打水預備受圍困吧！...你的損傷無法醫治；你的傷痕極其重大。凡聽見你信息的必都向你拍掌。」</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass p-5 rounded-xl">
+                                <h4 class="text-sm font-bold text-gold-400 mb-2">關鍵字解析：無法醫治</h4>
+                                <p class="text-sm text-white/70">Hebrew: <span class="text-gold-300">Kēhāh</span>。傷口潰爛至無法復原，象徵罪惡與刑罰已到徹底毀滅的程度。</p>
+                            </div>
+                            <div class="glass p-5 rounded-xl">
+                                <h4 class="text-sm font-bold text-gold-400 mb-2">關鍵問題：為何拍掌？</h4>
+                                <p class="text-sm text-white/70">不是幸災樂禍，而是公義得勝後的歡呼。代表欺壓的終止與受壓迫者的釋放。</p>
+                            </div>
+                        </div>
+                        <div class="bg-crimson/10 p-5 rounded-xl border border-crimson/20">
+                            <p class="text-sm italic"><span class="font-bold text-crimson">大師佳句：</span>「上帝的磨石磨得很慢，但磨得很細。」—— 唐崇榮</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-bold text-gold-400 mb-6 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-white/70">
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">01.</span> 檢視生命的根基：是否將安全感建立在財富或成就上？</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">02.</span> 追求真正的公義：在職場中是否曾為利益而欺壓他人？</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">03.</span> 警惕虛假信仰：外表的強大而無敬虔，終必在試煉中崩塌。</li>
+                </ul>
+            </div>
+            <div class="bg-gold-500/10 p-8 rounded-3xl border border-gold-500/20">
+                <h3 class="text-xl font-bold text-gold-400 mb-6 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-white/70">
+                    <li class="flex gap-3 items-start"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-2 flex-shrink-0"></span> 自我察驗：本週禱告求聖靈顯明心中的驕傲或詭詐。</li>
+                    <li class="flex gap-3 items-start"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-2 flex-shrink-0"></span> 公義行動：為受壓迫者發聲或提供實際幫助。</li>
+                    <li class="flex gap-3 items-start"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-2 flex-shrink-0"></span> 重新對焦：每日提醒自己唯有上帝的話是永恆保障。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="text-center">
+                <div class="inline-block p-3 rounded-full bg-white/5 mb-4">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-black text-white">講章文稿</h2>
+                <p class="text-gold-500 mt-2 font-accent tracking-widest">SERMON TRANSCRIPT</p>
+            </div>
+
+            <article class="prose prose-invert max-w-none space-y-8 text-white/80 leading-relaxed text-lg font-display">
+                <h3 class="text-2xl text-gold-400 font-bold border-b border-white/10 pb-4">主題：輝煌的崩塌：審判之城的終局</h3>
+                
+                <p>各位弟兄姊妹，今天我們要看的經文是《那鴻書》第三章。這是一篇關於「強權覆滅」的輓歌。尼尼微，這座當時世界最強大的城市，正走向它無可挽救的終點。</p>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl text-white font-bold">【罪惡之城的禍哉與羞辱】</h4>
+                    <p>經文一開始就用「禍哉」來形容尼尼微。這座城充滿了流血、詭詐與搶奪。<span class="text-gold-400 font-bold">「禍哉！這流人血的城，滿有詭詐刑罰，搶奪的事總不止息。」</span>上帝直指核心：一個建立在他人痛苦之上的繁榮，必不能長久。當萬軍之耶和華說「我與你為敵」時，任何牆垣都失去了意義。罪惡最終會剝去華麗的外衣，讓人看見赤身露體的醜陋。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl text-white font-bold">【歷史與屏障的虛假安全感】</h4>
+                    <p>尼尼微人曾以為自己高枕無憂，但先知提醒他們看一看埃及的「挪亞蒙」。<span class="text-gold-400 font-bold">「你豈比挪亞蒙強呢？挪亞蒙坐落在河濱，周圍有水，海作她的壕溝，海作她的城牆。」</span>如果更強大的城市都倒下了，尼尼微又有什麼理由認為自己能倖免？這給我們一個深刻的提醒：歷史是上帝的課堂，若不悔改，悲劇必會重演。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-xl text-white font-bold">【無可挽救的崩塌】</h4>
+                    <p>到了最後，先知用了一種近乎諷刺的語氣，叫尼尼微去修築保障、去踏泥抹牆。但這一切努力都是徒然。<span class="text-gold-400 font-bold">「你的損傷無法醫治；你的傷痕極其重大。凡聽見你信息的必都向你拍掌。」</span>這是一個極其悲哀的結局——當一個強權倒下時，全世界竟然都在拍手歡呼，因為受苦的人太多了。</p>
+                </div>
+
+                <div class="bg-gold-500/5 p-8 rounded-2xl border border-gold-500/10 text-center mt-12">
+                    <h4 class="text-gold-400 font-bold text-2xl mb-4">結論關鍵字</h4>
+                    <div class="flex justify-center gap-6 text-xl">
+                        <span class="px-4 py-1 rounded-full border border-gold-500/40">公義</span>
+                        <span class="px-4 py-1 rounded-full border border-gold-500/40">警誡</span>
+                        <span class="px-4 py-1 rounded-full border border-gold-500/40">終局</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="p-3 rounded-full bg-purple-500/10 border border-purple-500/20">
+                    <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-display font-bold text-white tracking-widest">屬靈大師佳句名言錄</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「上帝並不急於審判，但當祂動手時，卻是徹底的。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「驕傲是所有罪惡的根源，它讓人以為自己可以獨立於上帝之外。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「我們若不活在真理中，就必死在謊言裡。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「上帝的審判與其說是祂的主動打擊，不如說是祂放手讓罪人承受自己選擇的結果。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 大衛·鮑森 (David Pawson)</p>
+                </div>
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「如果我們不對罪感到憂傷，我們就還沒有真正認識上帝的聖潔。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「歷史的教訓是，人類從不吸取歷史的教訓，除非他們回到上帝面前。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 葛理翰 (Billy Graham)</p>
+                </div>
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「一個不公義的國度，不過是一個巨大的強盜集團。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 奧古斯丁 (Augustine)</p>
+                </div>
+                <div class="p-6 rounded-2xl glass hover:border-gold-500/50 transition-all">
+                    <p class="text-white/80 italic mb-4">「我們信靠什麼，什麼就是我們的神；如果我們信靠權力，我們就必被權力毀滅。」</p>
+                    <p class="text-sm text-gold-500 font-bold text-right">—— 馬丁·路德 (Martin Luther)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="py-12 border-t border-white/5 text-center">
+            <p class="text-white/30 text-xs tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gold-600/80 text-white flex items-center justify-center backdrop-blur-md shadow-lg hover:bg-gold-500 transition-all hover:-translate-y-2 group z-50">
+        <svg class="w-6 h-6 group-hover:scale-125 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7 7 7M12 19V3"></path></svg>
+    </a>
+
+    <script>
+        // Apply animation delays to jump text letters
+        const jumpText = document.querySelector('.jump-text');
+        const textContent = jumpText.innerText;
+        jumpText.innerHTML = '';
+        textContent.split('').forEach((char, i) => {
+            const span = document.createElement('span');
+            span.textContent = char === ' ' ? '\u00A0' : char;
+            span.style.setProperty('--i', i);
+            jumpText.appendChild(span);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彌6:1-16：從法庭到祭壇：神所要的真實敬拜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        accent: '#FFD700',
+                        deep: '#0a0a0a',
+                        card: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'jump': 'jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .section-card {
+            background: linear-gradient(145deg, #1a1a1a, #111111);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2s ease-in-out infinite;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFD700;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '彌6:1-16',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '彌',         // 動態注入書卷縮寫，例如：出
+              'note_title': '從法庭到祭壇：神所要的真實敬拜' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-4 md:px-8 justify-between">
+        <span class="text-accent font-bold md:text-lg truncate mr-4">彌6:1-16：從法庭到祭壇</span>
+        <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium overflow-x-auto no-scrollbar">
+            <a href="#prayer" class="hover:text-accent transition-colors whitespace-nowrap">禱告</a>
+            <a href="#outline" class="hover:text-accent transition-colors whitespace-nowrap">大綱</a>
+            <a href="#sermon" class="hover:text-accent transition-colors whitespace-nowrap">講章</a>
+            <a href="#quotes" class="hover:text-accent transition-colors whitespace-nowrap">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="relative h-[70vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_9ecaa184-5879-4813-bdc7-0b173cdde9f0.jpg' alt='Banner' class="w-full h-full object-cover animate-breath opacity-70" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-deep/40 to-deep"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 text-white tracking-tight leading-tight">
+                從法庭到祭壇<br/>
+                <span class="text-gradient">神所要的真實敬拜</span>
+            </h1>
+            
+            <div class="text-lg md:text-2xl font-medium text-white/90 italic jump-text leading-relaxed">
+                「世人哪，耶和華已指示你何為善。他向你所要的是什麼呢？只要你行公義，好憐憫，存謙卑的心，與你的神同行。」
+                <span class="block mt-2 text-sm not-italic opacity-80">— 彌迦書 6:8</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A4.806 4.806 0 0112 15.75a4.805 4.805 0 01-5.25-5.418V21"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-gradient">靈修禱告</h2>
+            </div>
+            <div class="section-card p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.45l8.15 14.1H3.85L12 5.45z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic">
+                    「親愛的天父，我們來到祢的施恩座前，承認我們時常陷入宗教的儀文，卻失去了信仰的實質。求祢的聖靈今天透過彌迦先知的信息光照我們，打破我們心中虛假的敬拜與偽善的驕傲。主啊，幫助我們不單是在嘴唇上讚美祢，更在生活中行公義，在人際關係中好憐憫，在祢的面前存謙卑的心，與祢同行。奉主耶穌基督的聖名祈求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-gradient">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#part1" class="p-6 bg-accent/10 hover:bg-accent/20 border border-accent/20 rounded-2xl transition-all text-center">
+                    <span class="block text-accent font-bold text-xl mb-1">宇宙法庭的控訴</span>
+                    <span class="text-xs opacity-60 tracking-widest">彌 6:1-5</span>
+                </a>
+                <a href="#part2" class="p-6 bg-accent/10 hover:bg-accent/20 border border-accent/20 rounded-2xl transition-all text-center">
+                    <span class="block text-accent font-bold text-xl mb-1">宗教狂熱的迷思</span>
+                    <span class="text-xs opacity-60 tracking-widest">彌 6:6-8</span>
+                </a>
+                <a href="#part3" class="p-6 bg-accent/10 hover:bg-accent/20 border border-accent/20 rounded-2xl transition-all text-center">
+                    <span class="block text-accent font-bold text-xl mb-1">虛假繁榮的審判</span>
+                    <span class="text-xs opacity-60 tracking-widest">彌 6:9-16</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-28">
+                    <div class="mb-6">
+                        <span class="text-sm font-bold text-accent tracking-tighter uppercase px-3 py-1 border border-accent/30 rounded-full mb-4 inline-block">第一段</span>
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4">宇宙法庭的控訴：神那不被記念的恩典</h3>
+                        <p class="text-accent/80 font-medium">經文範圍：彌迦書 6:1-5</p>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="section-card p-6 rounded-2xl md:col-span-2">
+                            <p class="text-gray-400 leading-relaxed italic border-l-4 border-accent/30 pl-6 py-2">
+                                以色列人哪，當聽耶和華的話！要起來向山嶺爭辯，使岡陵聽你的話... 因為耶和華要與他的百姓爭辯，與以色列結怨...
+                            </p>
+                        </div>
+                        <div class="section-card p-6 rounded-2xl bg-gradient-to-br from-card to-accent/5">
+                            <h4 class="text-accent font-bold mb-2">關鍵原文 Keyword</h4>
+                            <p class="text-2xl font-bold mb-2 font-display">爭辯 (rîḇ / ריב)</p>
+                            <p class="text-gray-400 text-sm">法律用語，意指「訴訟、控告」。描繪宇宙法庭畫面，神是原告，以色列是受審被告，大自然是見證人。</p>
+                        </div>
+                        <div class="section-card p-8 rounded-2xl md:col-span-3">
+                            <div class="grid md:grid-cols-2 gap-12">
+                                <div>
+                                    <h4 class="text-accent font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                                        關鍵問題與解析
+                                    </h4>
+                                    <p class="font-bold text-white mb-2">為什麼全能的神不直接懲罰，而是要與百姓「爭辯」？</p>
+                                    <p class="text-gray-400">這是神深沉愛的表現。當關係破裂時，神沒有立刻降下毀滅，而是透過法庭程序喚醒百姓記憶。這反映出神在乎的不是律法的定罪，而是關係的挽回。</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-accent font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/></svg>
+                                        例證與佳句
+                                    </h4>
+                                    <p class="text-gray-400 italic mb-4">「我們最大的罪，不是違背了某些道德條文，而是背叛了一位深深愛我們的神。」—— 約翰·史托德</p>
+                                    <p class="text-sm text-gray-500">一位辛勤供養孩子的父親，面對孩子的背棄，不是報復，而是拿著相簿問：「我哪裡對不起你？」這正是神的心碎控訴。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-28">
+                    <div class="mb-6 text-right">
+                        <span class="text-sm font-bold text-accent tracking-tighter uppercase px-3 py-1 border border-accent/30 rounded-full mb-4 inline-block text-right">第二段</span>
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4">宗教狂熱的迷思：神真正渴慕的獻祭</h3>
+                        <p class="text-accent/80 font-medium">經文範圍：彌迦書 6:6-8</p>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="section-card p-6 rounded-2xl bg-gradient-to-bl from-card to-accent/10">
+                            <h4 class="text-accent font-bold mb-2">關鍵原文 Keyword</h4>
+                            <div class="mb-4">
+                                <p class="text-xl font-bold font-display">憐憫 (ḥeseḏ / חסד)</p>
+                                <p class="text-gray-400 text-xs italic">堅貞的愛、立約的慈愛</p>
+                            </div>
+                            <div>
+                                <p class="text-xl font-bold font-display">謙卑 (ṣānaʿ / צנע)</p>
+                                <p class="text-gray-400 text-xs italic">放下自我，完全順服</p>
+                            </div>
+                        </div>
+                        <div class="section-card p-6 rounded-2xl md:col-span-2">
+                            <p class="text-gray-400 leading-relaxed italic border-r-4 border-accent/30 pr-6 py-2 text-right">
+                                耶和華豈喜悅千千的公羊，或是萬萬的油河嗎？... 世人哪，耶和華已指示你何為善。他向你所要的是什麼呢？只要你行公義，好憐憫，存謙卑的心，與你的神同行。
+                            </p>
+                        </div>
+                        <div class="section-card p-8 rounded-2xl md:col-span-3">
+                            <div class="grid md:grid-cols-2 gap-12">
+                                <div>
+                                    <h4 class="text-accent font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                                        解析：為何物質祭物不能討神喜悅？
+                                    </h4>
+                                    <p class="text-gray-400">宗教儀式容易成為交易籌碼或遮羞布。神真正要的「善」，不是我們「給」祂什麼昂貴的物質，而是我們「成為」什麼樣的人——彰顯公義、活出慈愛、保持謙卑。</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-accent font-bold mb-4 flex items-center gap-2 text-right justify-end">
+                                        佳句與故事
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/></svg>
+                                    </h4>
+                                    <p class="text-gray-400 italic mb-4 text-right">「如果你的宗教不能改變你的日常生活... 那麼你的宗教就一文不值。」—— 陶恕</p>
+                                    <p class="text-sm text-gray-500 text-right">以色列人企圖用「宗教的鑽石」來掩飾對聖約的背叛。就像背叛的丈夫用鑽石項鍊企圖彌補心碎的妻子。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-28">
+                    <div class="mb-6">
+                        <span class="text-sm font-bold text-accent tracking-tighter uppercase px-3 py-1 border border-accent/30 rounded-full mb-4 inline-block">第三段</span>
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4">虛假繁榮的審判：與信仰脫節的生活</h3>
+                        <p class="text-accent/80 font-medium">經文範圍：彌迦書 6:9-16</p>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="section-card p-6 rounded-2xl md:col-span-2">
+                            <p class="text-gray-400 leading-relaxed italic border-l-4 border-accent/30 pl-6 py-2">
+                                惡人家中不仍有非義之財和可惡的小升斗嗎？我若用不公道的天平和囊中詭詐的法碼，豈可算為清潔呢？...
+                            </p>
+                        </div>
+                        <div class="section-card p-6 rounded-2xl bg-gradient-to-br from-card to-accent/5">
+                            <h4 class="text-accent font-bold mb-2">關鍵原文 Keyword</h4>
+                            <p class="text-2xl font-bold mb-2 font-display">詭詐 (mirmâ / מרמה)</p>
+                            <p class="text-gray-400 text-sm">欺騙、不誠實、虛假。指商業交易中刻意使用不公平的度量衡來剝削他人。</p>
+                        </div>
+                        <div class="section-card p-8 rounded-2xl md:col-span-3">
+                            <div class="grid md:grid-cols-2 gap-12">
+                                <div>
+                                    <h4 class="text-accent font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+                                        解析：神為何對商業詭詐如此震怒？
+                                    </h4>
+                                    <p class="text-gray-400">生活是信仰的試金石。不公義的手段違背了神聖潔的屬性。「吃卻不得飽」的審判，是讓百姓看見：建立在剝削與欺騙上的繁榮，最終只是一場空虛。</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-accent font-bold mb-4 flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/></svg>
+                                        佳句與故事
+                                    </h4>
+                                    <p class="text-gray-400 italic mb-4">「我們不是在主日成為基督徒，而是在週一到週六證明我們是基督徒。」—— 提摩太·凱勒</p>
+                                    <p class="text-sm text-gray-500">主打有機健康公司的長老老闆，私下添加有害物質。當事件曝光，名譽掃地。神不為這種雙面人的生活背書。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.25c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-gradient">講章全文</h2>
+            </div>
+            
+            <div class="section-card p-10 md:p-20 rounded-[3rem] shadow-2xl relative overflow-hidden">
+                <div class="prose prose-invert prose-lg max-w-none space-y-12">
+                    <div class="text-center mb-16">
+                        <h3 class="text-4xl md:text-5xl font-black mb-6 text-white leading-tight">從法庭到祭壇：神所要的真實敬拜</h3>
+                        <div class="w-24 h-1 bg-accent mx-auto"></div>
+                    </div>
+
+                    <div class="space-y-6 text-gray-300 leading-relaxed">
+                        <p class="text-xl">弟兄姐妹平安！今天我們要看的是舊約先知彌迦書的第六章。很多時候，我們以為只要主日來到教會，唱了詩歌、聽了道、投了奉獻，我們就完成了一個禮拜的「信仰配額」。但今天，神要透過先知彌迦打破我們這種舒適的幻覺。</p>
+                        
+                        <div class="py-10">
+                            <h4 class="text-2xl font-bold text-accent mb-6">第一段：宇宙法庭的控訴</h4>
+                            <p>想像一下，大自然的群山峻嶺成為了陪審團，而全能的神站在原告席上。神問了一個非常深刻的問題：「<strong class="text-white text-2xl">我的百姓啊，我向你做過什麼呢？我在什麼事上使你厭煩？</strong>」</p>
+                            <p class="mt-4">神在乎的不是法庭上的輸贏，祂在乎的是與你我的關係！當我們把神的恩典當作理所當然，甚至對神感到「厭煩」時，神用祂那不被記念的恩典，呼喚我們迴轉。</p>
+                        </div>
+
+                        <div class="py-10 border-y border-white/5">
+                            <h4 class="text-2xl font-bold text-accent mb-6">第二段：宗教狂熱的迷思</h4>
+                            <p>以色列人提出了一連串極端的宗教補償方案：「我要獻上一歲的牛犢嗎？<strong class="text-white text-2xl">耶和華豈喜悅千千的公羊，或是萬萬的油河嗎？</strong> 甚至我要把我的親生骨肉、我的長子獻上嗎？」</p>
+                            <p class="mt-4">這暴露了宗教最大的迷思——我們總以為可以用物質的犧牲來賄賂神。於是，聖經中最偉大的金句出現了：</p>
+                            <div class="my-10 p-8 bg-white/5 rounded-2xl border-l-8 border-accent">
+                                <p class="text-3xl font-black text-white mb-2 leading-tight">「世人哪，耶和華已指示你何為善。他向你所要的是什麼呢？只要你行公義，好憐憫，存謙卑的心，與你的神同行。」</p>
+                                <p class="text-accent text-right">— 彌迦書 6:8</p>
+                            </div>
+                        </div>
+
+                        <div class="py-10">
+                            <h4 class="text-2xl font-bold text-accent mb-6">第三段：虛假繁榮的審判</h4>
+                            <p>神指控他們家中有「<strong class="text-white">非義之財和可惡的小升斗</strong>」，使用了「<strong class="text-white">不公道的天平和囊中詭詐的法碼</strong>」。</p>
+                            <p class="mt-4 italic text-accent">「我們不是在主日成為基督徒，而是在週一到週六證明我們是基督徒。」</p>
+                            <p class="mt-4">當我們的生活與信仰脫節，當我們在職場上與世俗同流合污時，神說，這樣的繁榮必招致審判——「<strong class="text-white">你必吃，卻不得飽；你必撒種，卻不得收割。</strong>」</p>
+                        </div>
+
+                        <div class="mt-16 pt-10 border-t border-accent/20">
+                            <h4 class="text-3xl font-black text-white text-center mb-10">結語</h4>
+                            <p class="text-2xl text-center leading-relaxed font-light">
+                                彌迦書第六章是對每一位基督徒的靈魂拷問。讓我們的生命緊緊扣住這三個核心：<br/>
+                                <span class="text-accent font-bold text-4xl block my-6 tracking-widest">行公義、好憐憫、與神同行</span>
+                                願我們的主日敬拜，真實地延伸到週一的辦公室、家庭的餐桌，以及我們生命中的每一個角落！阿們！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response and Action -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="section-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="p-2 bg-accent/20 rounded-lg text-accent">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    </span>
+                    應用方向
+                </h3>
+                <ul class="space-y-6 text-gray-400">
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">01</span>
+                        <span>檢視敬拜動機：省察服事是為了關係，還是企圖「賄賂」神換取平安。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">02</span>
+                        <span>信仰職場整合：落實行公義好憐憫，拒絕不誠實的報告與剝削。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">03</span>
+                        <span>建立同行日常：看重內在生命，而非僅追求外在活動。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="p-2 bg-accent/20 rounded-lg text-accent">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </span>
+                    回應行動
+                </h3>
+                <ul class="space-y-6 text-gray-400">
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">A</span>
+                        <span>職場誠信審查：檢視並糾正任何不誠實或佔人便宜的行為。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">B</span>
+                        <span>給予恩慈行動：本週對一位不可愛的人展現憐憫。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">C</span>
+                        <span>隱藏安靜時刻：每天15分鐘單單安靜在神面前操練同行。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                <h2 class="text-3xl font-display font-bold text-gradient">屬靈名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「外表的敬虔如果沒有內在的公義與聖潔來支持，在神眼中不僅是虛無，更是可憎的。」</p>
+                    <p class="text-accent font-bold">— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「真正的恩典必然會結出順服的果子。神所要的不是我們手裡的禮物，而是我們順服的心。」</p>
+                    <p class="text-accent font-bold">— 喬納森·愛德華茲，《宗教情操真偽辨》</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「憐憫不是一種天然的同情心，而是因著我們深刻經歷了十字架上那不配得的恩典，而流淌向他人的愛。」</p>
+                    <p class="text-accent font-bold">— 提摩太·凱勒，《慷慨的正義》</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「只有與神同行的人，才能在世人面前站立得穩。謙卑不是看輕自己，而是少想到自己。」</p>
+                    <p class="text-accent font-bold">— 提摩太·凱勒，《與神同行》</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「廉價的恩典是我們教會的死敵。我們今天所爭取的，是重價的恩典。... 重價的恩典是必須步步跟隨耶穌基督的呼召。」</p>
+                    <p class="text-accent font-bold">— 潘霍華，《追隨基督》</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「當你發現自己內心充滿了對人的苛刻與不公義時，你需要回到神面前，因為你已經失去了與祂同行的親密。」</p>
+                    <p class="text-accent font-bold">— 盧雲，《向下的移動》</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「敬拜若沒有影響我們的道德生活，那根本不是敬拜，只是一種宗教的娛樂。」</p>
+                    <p class="text-accent font-bold">— 陶恕，《神所渴慕的敬拜》</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「神不在乎我們為祂做了多少偉大的事奉，祂更在乎我們在日常隱密處，是否有一顆謙卑與祂同行的心。」</p>
+                    <p class="text-accent font-bold">— 慕迪，《慕迪講道集》</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「我們在聚會中的阿們，必須要在我們的商業合同和工作倫理中被證實。」</p>
+                    <p class="text-accent font-bold">— 司布真，《大衛寶庫》</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="section-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-6">「基督徒的生命是一場漫長而順服的同向跋涉。與神同行不是一時的激情，而是一生的堅持。」</p>
+                    <p class="text-accent font-bold">— 畢德生，《長存順服》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center py-10 border-t border-white/10">
+            <p class="text-gray-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-accent text-deep rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation (browser default is used via CSS scroll-behavior: smooth)
+        // Adding active state for nav (optional enhancement)
+        window.addEventListener('scroll', () => {
+            const sections = ['prayer', 'outline', 'sermon', 'quotes'];
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = document.getElementById(section).offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-accent');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-accent');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可 1:21-45 權能的彰顯：與彌賽亞的生命奇遇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#121216',
+                            700: '#1a1a22',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.7 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(26, 26, 34, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(234, 179, 8, 0.2);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '可 1:21-45',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '可',         // 動態注入書卷縮寫，例如：出
+              'note_title': '權能的彰顯：與彌賽亞的生命奇遇' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Header / Banner -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 animate-pulse-slow">
+            <img src='image/img_b01528a8-9692-4338-9661-649fd249af56.jpg' alt='權能的彰顯' class="w-full h-full object-cover opacity-60" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-dark-900/50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="inline-block px-4 py-1 mb-6 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 text-sm tracking-widest font-bold uppercase">
+                Gospel of Mark 1:21-45
+            </div>
+            <h1 class="font-serif text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+                權能的彰顯：<br/>
+                <span class="text-gradient">與彌賽亞的生命奇遇</span>
+            </h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#prayer" class="px-8 py-3 bg-gold-600 hover:bg-gold-500 text-black font-bold rounded-full transition-all duration-300 shadow-lg shadow-gold-600/20">開始禱告</a>
+                <a href="#outline" class="px-8 py-3 glass hover:bg-white/10 text-white font-bold rounded-full transition-all duration-300">查閱大綱</a>
+            </div>
+        </div>
+
+        <!-- Sticky Nav -->
+        <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5 py-4 px-6">
+            <div class="max-w-6xl mx-auto flex justify-between items-center">
+                <span class="text-gold-500 font-black text-lg tracking-tighter">可 1:21-45</span>
+                <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+                    <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                    <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                    <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                    <a href="#quotes" class="hover:text-gold-400 transition-colors text-gold-500">名言</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- 金句 Section -->
+        <section id="verses" class="text-center">
+            <div class="inline-flex items-center gap-2 text-gold-500 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                </svg>
+                <span class="font-bold tracking-widest">KEY VERSES</span>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute -right-4 -top-4 text-gold-500/10 text-9xl font-serif">"</div>
+                    <p class="text-xl md:text-2xl font-serif leading-relaxed italic relative z-10 text-white">
+                        「眾人很希奇他的教訓；因為他教訓他們，正像有權柄的人，不像文士。」
+                    </p>
+                    <p class="mt-4 text-gold-500 font-bold">可 1:22</p>
+                </div>
+                <div class="glass p-8 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute -right-4 -top-4 text-gold-500/10 text-9xl font-serif">"</div>
+                    <p class="text-xl md:text-2xl font-serif leading-relaxed italic relative z-10 text-white">
+                        「耶穌動了慈心，就伸手摸他，說：『我肯，你潔淨了吧！』」
+                    </p>
+                    <p class="mt-4 text-gold-500 font-bold">可 1:41</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 禱告 Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass p-10 md:p-16 rounded-[3rem] border-gold-500/20 shadow-2xl relative">
+                <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-gold-600 rounded-full flex items-center justify-center shadow-xl shadow-gold-600/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif text-center mb-8 text-gold-400">開路禱告</h2>
+                <p class="text-xl md:text-2xl leading-loose text-slate-300 font-light text-center max-w-3xl mx-auto">
+                    親愛的主耶穌，我們感謝祢，因為祢不僅是滿有權柄的真理導師，更是那充滿憐憫、願意俯就卑微者的救主。當我們面對生命中的混亂、疾病與孤單時，求祢那帶有能力的教訓震懾我們的心，使我們降服在祢的權下。主啊，求祢那慈悲的手再次觸摸我們生命中不潔與軟弱之處，使我們得著全然的醫治與更新。願我們在忙碌的服事中，也學習祢退到曠野禱告的榜樣，時刻與天父連結。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- 大綱快速導覽 -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="mb-12 flex items-center gap-3">
+                <div class="w-2 h-10 bg-gold-600 rounded-full"></div>
+                <h2 class="text-4xl font-black font-serif">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <a href="#point-1" class="glass p-6 rounded-2xl border-l-4 border-gold-600 hover:bg-gold-500/10 transition-all">
+                    <span class="text-xs text-gold-500 font-bold block mb-1">PART 01</span>
+                    <span class="text-lg font-bold">權柄的震撼：真理與黑暗的交鋒</span>
+                    <span class="block text-sm text-slate-400 mt-2">可 1:21-28</span>
+                </a>
+                <a href="#point-2" class="glass p-6 rounded-2xl border-l-4 border-gold-600 hover:bg-gold-500/10 transition-all">
+                    <span class="text-xs text-gold-500 font-bold block mb-1">PART 02</span>
+                    <span class="text-lg font-bold">憐憫的觸摸：進入家庭與群體的醫治</span>
+                    <span class="block text-sm text-slate-400 mt-2">可 1:29-34</span>
+                </a>
+                <a href="#point-3" class="glass p-6 rounded-2xl border-l-4 border-gold-600 hover:bg-gold-500/10 transition-all">
+                    <span class="text-xs text-gold-500 font-bold block mb-1">PART 03</span>
+                    <span class="text-lg font-bold">力量的源頭：在靜謐中校準使命</span>
+                    <span class="block text-sm text-slate-400 mt-2">可 1:35-39</span>
+                </a>
+                <a href="#point-4" class="glass p-6 rounded-2xl border-l-4 border-gold-600 hover:bg-gold-500/10 transition-all">
+                    <span class="text-xs text-gold-500 font-bold block mb-1">PART 04</span>
+                    <span class="text-lg font-bold">突破的潔淨：跨越隔閡的愛</span>
+                    <span class="block text-sm text-slate-400 mt-2">可 1:40-45</span>
+                </a>
+            </div>
+
+            <!-- 分段深度解析 -->
+            <div class="space-y-24">
+                <!-- Point 1 -->
+                <div id="point-1" class="scroll-mt-32 section-card border-b border-white/5 pb-16">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-12 h-12 rounded-xl bg-gold-600 flex items-center justify-center text-black font-black text-xl">1</span>
+                        <h3 class="text-3xl font-bold text-white">權柄的震撼：真理與黑暗的交鋒</h3>
+                    </div>
+                    <div class="bg-dark-800 p-8 rounded-3xl border border-white/5 mb-8 italic text-slate-400 leading-relaxed">
+                        「到了迦百農，耶穌就在安息日進了會堂教訓人。眾人很希奇他的教訓；因為他教訓他們，正像有權柄的人，不像文士...」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-lg"><span class="text-white font-bold">權柄</span> (希臘文：*Exousia*)。意指「合法行使的能力」或「支配權」。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                                    問題與解析
+                                </h4>
+                                <p class="text-slate-300">知識上的認知不等於生命上的降服。真正的信仰是將生命的主權交託給這位有權柄的主，而非僅止於神學知識。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <span class="text-xs uppercase tracking-widest text-gold-500 font-black">名言</span>
+                                <p class="text-xl font-serif mt-2">「基督的權柄不是要轄制人，而是要叫人得自由。」</p>
+                                <p class="mt-2 text-right text-slate-500">— 馬丁·路德</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div id="point-2" class="scroll-mt-32 section-card border-b border-white/5 pb-16">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-12 h-12 rounded-xl bg-gold-600 flex items-center justify-center text-black font-black text-xl">2</span>
+                        <h3 class="text-3xl font-bold text-white">憐憫的觸摸：進入家庭與群體的醫治</h3>
+                    </div>
+                    <div class="bg-dark-800 p-8 rounded-3xl border border-white/5 mb-8 italic text-slate-400 leading-relaxed">
+                        「耶穌進前拉著他的手，扶他起來，熱就退了，他就服事他們。天晚日落的時候，有人帶著一切害病的...」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">關鍵原文</h4>
+                                <p class="text-lg"><span class="text-white font-bold">服事</span> (希臘文：*Diakoneo*)。強調卑微的僕人式事奉。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">問題與解析</h4>
+                                <p class="text-slate-300">耶穌不希望大眾因著「神蹟奇事」而對祂產生錯誤的期待，祂要人們透過十字架才真正認識祂。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <span class="text-xs uppercase tracking-widest text-gold-500 font-black">名言</span>
+                                <p class="text-xl font-serif mt-2">「神醫治我們，不僅是為了讓我們感覺好過，更是為了讓我們能更好地愛祂並服事鄰舍。」</p>
+                                <p class="mt-2 text-right text-slate-500">— 司布真</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div id="point-3" class="scroll-mt-32 section-card border-b border-white/5 pb-16">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-12 h-12 rounded-xl bg-gold-600 flex items-center justify-center text-black font-black text-xl">3</span>
+                        <h3 class="text-3xl font-bold text-white">力量的源頭：在靜謐中校準使命</h3>
+                    </div>
+                    <div class="bg-dark-800 p-8 rounded-3xl border border-white/5 mb-8 italic text-slate-400 leading-relaxed">
+                        「次日早晨，天未亮的時候，耶穌起來，到曠野地方去，在那裡禱告...」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">關鍵原文</h4>
+                                <p class="text-lg"><span class="text-white font-bold">曠野</span> (希臘文：*Eremos*)。指安靜、無人打擾的地方。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">問題與解析</h4>
+                                <p class="text-slate-300">「眾人的需要」不等於「上帝的旨意」。耶穌透過禱告校準使命，清楚自己是為「傳道」而來。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <span class="text-xs uppercase tracking-widest text-gold-500 font-black">名言</span>
+                                <p class="text-xl font-serif mt-2">「如果不先在私下的禱告中得勝，我們就無法在公開的戰場上得勝。」</p>
+                                <p class="mt-2 text-right text-slate-500">— 慕迪</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point 4 -->
+                <div id="point-4" class="scroll-mt-32 section-card">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-12 h-12 rounded-xl bg-gold-600 flex items-center justify-center text-black font-black text-xl">4</span>
+                        <h3 class="text-3xl font-bold text-white">突破的潔淨：跨越隔閡的愛</h3>
+                    </div>
+                    <div class="bg-dark-800 p-8 rounded-3xl border border-white/5 mb-8 italic text-slate-400 leading-relaxed">
+                        「耶穌動了慈心，就伸手摸他，說：『我肯，你潔淨了吧！』大麻瘋即時離開他，他就潔淨了...」
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">關鍵原文</h4>
+                                <p class="text-lg"><span class="text-white font-bold">動了慈心</span> (希臘文：*Splanchnizomai*)。原意是「腸子在翻動」，形容極其深切的憐憫。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-500 font-bold flex items-center gap-2 mb-2">問題與解析</h4>
+                                <p class="text-slate-300">當「聖潔之源」耶穌觸摸不潔時，是不潔被聖潔吞滅。耶穌的觸摸醫治了身體，更醫治了長期被社會排斥的心靈。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="glass p-6 rounded-2xl">
+                                <span class="text-xs uppercase tracking-widest text-gold-500 font-black">名言</span>
+                                <p class="text-xl font-serif mt-2">「愛，就是願意把自己交出來，進入對方的痛苦中。」</p>
+                                <p class="mt-2 text-right text-slate-500">— 盧雲</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 應用方向 -->
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl border-t-4 border-gold-600">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <span class="text-gold-500">01</span> 承認主權
+                </h3>
+                <p class="text-slate-400">檢視生活中是否有哪個領域（金錢、感情、時間）尚未降服在耶穌的權柄之下？</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-gold-600">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <span class="text-gold-500">02</span> 建立祭壇
+                </h3>
+                <p class="text-slate-400">在極度忙碌中，學習耶穌「天未亮」就禱告的榜樣，每天分別15分鐘與神獨處。</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-t-4 border-gold-600">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <span class="text-gold-500">03</span> 主動觸摸
+                </h3>
+                <p class="text-slate-400">關注身邊「現代的大麻瘋者」，給予一個主動的關懷或代禱。</p>
+            </div>
+        </section>
+
+        <!-- 講章文稿 -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex flex-col items-center mb-12">
+                <div class="w-12 h-1 bg-gold-600 mb-4"></div>
+                <h2 class="text-4xl font-black font-serif text-center">講章文稿</h2>
+            </div>
+            <div class="max-w-3xl mx-auto prose prose-invert prose-gold">
+                <div class="glass p-8 md:p-12 rounded-[2rem] space-y-8 leading-relaxed text-lg">
+                    <p>各位弟兄姊妹，今天我們要透過《馬可福音》第一章，來看耶穌服事的開端。這段經文充滿了震撼與溫暖，讓我們看見一位「有權柄」且「動了慈心」的救主。</p>
+                    
+                    <p>首先，我們看到<span class="text-gold-400 font-bold text-xl">「權柄的震撼」</span>。當耶穌走進迦百農的會堂，祂的教導讓所有人震驚。聖經說：<span class="text-white font-bold bg-gold-600/20 px-1">「眾人很希奇他的教訓；因為他教訓他們，正像有權柄的人，不像文士。」</span> 耶穌的話語帶有改變現實的力量。連污鬼在祂面前都站不住腳。這提醒我們，面對生命中的屬靈爭戰，我們需要的不是更多資訊，而是降服在耶穌的權柄之下。</p>
+                    
+                    <p>接著，耶穌從公共場合進入了私人家庭，展現了<span class="text-gold-400 font-bold text-xl">「憐憫的觸摸」</span>。祂醫治了西門的岳母，並且在黃昏時醫治了合城的人。最令人感動的是，當那個人人都躲避的大麻瘋病人來到祂面前時，<span class="text-white font-bold bg-gold-600/20 px-1">「耶穌動了慈心，就伸手摸他，說：『我肯，你潔淨了吧！』」</span> 這一「摸」，打破了數百年的隔閡。耶穌不怕你的污穢，祂渴望你的潔淨。</p>
+                    
+                    <p>然而，在服事的高峰，耶穌卻選擇了退去。這是<span class="text-gold-400 font-bold text-xl">「力量的源頭」</span>。<span class="text-white font-bold bg-gold-600/20 px-1">「次日早晨，天未亮的時候，耶穌起來，到曠野地方去，在那裡禱告。」</span> 弟兄姊妹，如果你覺得生活精疲力竭，或許是因為你太忙於「做工」，而忘了「連結」。耶穌讓我們看到，服事的力量不是來自於忙碌，而是來自於與父神的親密關係。</p>
+                    
+                    <p>最後，這段經文挑戰我們：我們是否願意讓這位有權柄的耶穌，進入我們最隱密的痛苦中？祂「肯」醫治你，祂也「能」改變你。讓我們不僅僅是跟隨群眾去「找」耶穌，而是真正地被祂得著。</p>
+                    
+                    <div class="mt-12 pt-8 border-t border-white/10 flex justify-between items-center text-sm font-bold tracking-widest text-gold-500">
+                        <span>結論關鍵字</span>
+                        <span>權柄 • 連結 • 憐憫</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 回應行動 -->
+        <section class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-serif text-center mb-10 text-gold-400 italic">回應與實踐行動</h2>
+            <div class="space-y-4">
+                <div class="flex gap-6 items-start glass p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-gold-500 font-bold">1</div>
+                    <p class="text-lg"><strong>具體代禱：</strong>本週為一位身體有軟弱或心靈憂傷的朋友禱告，並傳簡訊鼓勵他。</p>
+                </div>
+                <div class="flex gap-6 items-start glass p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-gold-500 font-bold">2</div>
+                    <p class="text-lg"><strong>靜默練習：</strong>明天早晨不先看手機，先讀一段經文並安靜禱告5分鐘再出門。</p>
+                </div>
+                <div class="flex gap-6 items-start glass p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 text-gold-500 font-bold">3</div>
+                    <p class="text-lg"><strong>甘心服事：</strong>在家庭或教會中，找一件「沒人看見的小事」去服事，像西門岳母一樣。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 名言佳句 Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-12">
+                <div class="w-2 h-10 bg-gold-600 rounded-full"></div>
+                <h2 class="text-4xl font-black font-serif">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「上帝最喜歡從無有中創造。因此，只要人還不是無有，上帝就無法從他身上創造出什麼。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「禱告並不是要把上帝拉下來與我們在一起，而是要把我們提升到與上帝在一起。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 葛理翰 (Billy Graham)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「如果不認識自己，就不認識上帝；如果不認識上帝，就不認識自己。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「我們必須先聽上帝的話，然後才能向世界說話。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「上帝的旨意絕不會將你帶到上帝的恩典無法支撐你的地方。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 查爾斯·史丹利 (Charles Stanley)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「如果你的心對上帝是正確的，那麼你的行為也將是正確的。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「服事神的人，必須先有安靜的心，才能在忙碌中不失序。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 唐崇榮 (Stephen Tong)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「耶穌基督不是要來讓我們變得更好，祂是要讓我們活過來。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「一個不禱告的信徒，就像一個沒有武器的士兵。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-gold-500/40 transition-colors">
+                    <p class="text-slate-300 italic mb-4">「現代人最大的貧窮，是內心失去了靜默的能力。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-6 bg-red-900/20 border border-red-500/20 rounded-xl text-center text-red-400 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top / Prayer -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-black rounded-full flex items-center justify-center shadow-2xl shadow-gold-600/40 hover:scale-110 transition-transform z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+</body>
+</html>

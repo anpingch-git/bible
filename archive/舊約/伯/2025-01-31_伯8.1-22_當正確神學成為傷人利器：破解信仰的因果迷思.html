@@ -84,6 +84,23 @@
           });
       });
     </script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '伯8:1-22',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '伯',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當正確神學成為傷人利器：破解信仰的因果迷思' // 動態注入講章主題
+          });
+      });
+    </script>
     </head>
 <body class="bg-brand-dark text-gray-200 font-body selection:bg-brand-gold selection:text-black overflow-x-hidden">
 

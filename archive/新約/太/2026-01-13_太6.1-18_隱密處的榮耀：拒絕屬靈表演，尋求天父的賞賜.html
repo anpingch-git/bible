@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太6:1-18:隱密處的榮耀：拒絕屬靈表演，尋求天父的賞賜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18e',
+                            300: '#fbe44e',
+                            400: '#f9d51d',
+                            500: '#e9bc0a',
+                            600: '#c89206',
+                            700: '#a06a08',
+                            800: '#83540e',
+                            900: '#704512',
+                        },
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 0.85, filter: 'brightness(100%)' },
+                            '50%': { opacity: 0.5, filter: 'brightness(60%)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(233, 188, 10, 0.4);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9d51d 0%, #e9bc0a 50%, #c89206 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-container {
+            position: relative;
+            height: 65vh;
+            overflow: hidden;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .bouncing-text {
+            display: inline-block;
+            animation: subtle-bounce 2s ease-in-out infinite;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #e9bc0a;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '太6:1-18',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '太',         // 動態注入書卷縮寫，例如：出
+              'note_title': '隱密處的榮耀：拒絕屬靈表演，尋求天父的賞賜' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body">
+
+    <!-- Scroll to Top -->
+    <a href="#top" class="scroll-to-top bg-gold-500 text-slate-950 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-400 transition-transform hover:scale-110 active:scale-95">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-6">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
+            <span class="font-display font-bold text-gold-500 tracking-tight text-lg hidden md:block">太6:1-18 隱密處的榮耀</span>
+            <div class="flex gap-6 md:gap-8 text-sm font-medium tracking-wide mx-auto md:mx-0">
+                <span class="text-slate-400 hidden lg:inline">馬太福音 6:1-18</span>
+                <a href="#prayer" class="nav-link text-slate-200">禱告</a>
+                <a href="#outline" class="nav-link text-slate-200">大綱</a>
+                <a href="#sermon" class="nav-link text-slate-200">講章</a>
+                <a href="#quotes" class="nav-link text-slate-200">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Banner Section -->
+    <header id="top" class="banner-container">
+        <div class="absolute inset-0 animate-pulse-slow">
+            <img src='image/img_28227d05-7ad6-4d9b-899f-810e617ba48f.jpg' alt='Banner' class="banner-img" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <div class="absolute inset-0 flex flex-col justify-end items-center pb-12 px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-display font-black mb-6 leading-tight max-w-4xl">
+                <span class="text-gradient">隱密處的榮耀</span><br>
+                <span class="text-white">拒絕屬靈表演，尋求天父的賞賜</span>
+            </h1>
+            <div class="max-w-2xl text-lg md:text-xl text-slate-200 font-light italic bouncing-text px-4">
+                「你禱告的時候，要進你的內屋，關上門，禱告你在暗中的父；你父在暗中察看，必然報答你。」<br>
+                <span class="text-gold-500 font-semibold text-base mt-2 block">— 馬太福音 6:6</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21c4.97 0 9-3.582 9-8s-4.03-8-9-8-9 3.582-9 8 4.03 8 9 8z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 13v.01" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 11h8" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-tight">禱告詞</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-gold-500"></div>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-300 font-light italic">
+                    「親愛的天父，我們來到祢的面前，承認我們的心常常渴望人的掌聲過於祢的笑臉。求祢的聖靈光照我們，褪去我們身上屬靈表演的偽裝，讓我們看見在隱密處與祢相遇的榮耀。教導我們在施捨、禱告與禁食上，單單為主而作，不求人的讚賞，只求天父的鑒察與喜悅。奉主耶穌基督的聖名禱告，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation (Buttons) -->
+        <section id="outline">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-tight">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <a href="#outline-1" class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-500/5 group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm mb-2 block tracking-widest">PART 01</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">施捨的真諦</h3>
+                        <p class="text-slate-400 text-sm mt-2">太 6:1-4</p>
+                    </div>
+                    <div class="mt-4 flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </div>
+                </a>
+                <a href="#outline-2" class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-500/5 group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm mb-2 block tracking-widest">PART 02</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">禱告的深度</h3>
+                        <p class="text-slate-400 text-sm mt-2">太 6:5-15</p>
+                    </div>
+                    <div class="mt-4 flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </div>
+                </a>
+                <a href="#outline-3" class="glass-card p-6 rounded-2xl flex flex-col justify-between hover:bg-gold-500/5 group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm mb-2 block tracking-widest">PART 03</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">禁食的喜樂</h3>
+                        <p class="text-slate-400 text-sm mt-2">太 6:16-18</p>
+                    </div>
+                    <div class="mt-4 flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline 1 -->
+            <div id="outline-1" class="space-y-8 mb-24 scroll-mt-24">
+                <div class="border-l-4 border-gold-500 pl-6">
+                    <h3 class="text-2xl font-bold text-white mb-2">1. 施捨的真諦：放下掌聲，尋求天父的暗中鑒察</h3>
+                    <p class="text-gold-500 font-medium">經文範圍：太 6:1-4</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl space-y-6">
+                    <p class="text-slate-300 leading-relaxed bg-slate-950/30 p-4 rounded-xl border border-slate-800 italic">「你們要小心，不可將善事行在人的面前，故意叫他們看見...你施捨的時候，不要叫左手知道右手所做的，要叫你施捨的事行在暗中。你父在暗中察看，必然報答你。」</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵原文 (Keywords)
+                            </h4>
+                            <ul class="space-y-3 text-slate-300 text-sm">
+                                <li><strong class="text-white">假冒為善的人 (hypokritēs)</strong>：原指演戲戴面具的「舞台演員」。</li>
+                                <li><strong class="text-white">賞賜 (misthos)</strong>：指工資報酬。選擇人前的讚美，這份工資就已結清。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-slate-300 text-sm italic mb-2">Q: 為何我們做好事時常渴望被看見？</p>
+                            <p class="text-slate-400 text-sm">人類有深層被認可的需求。要克服，必須將「觀眾」轉向天父，認清天父的看見更有永恆價值。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gold-500/5 p-6 rounded-2xl border border-gold-500/20">
+                        <h4 class="text-gold-500 font-bold mb-2">例證小故事</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">一位匿名奉獻的弟兄堅持不具名，他說：「如果他們知道了，會感謝我；如果不知道，會感謝上帝。我想要上帝得到完全的榮耀。」</p>
+                    </div>
+
+                    <div class="text-right italic text-slate-400 text-sm">
+                        「基督徒的善行不是為了引人注目，而是為了吸引人歸向神。」 — 約翰·史托德 (John Stott)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Outline 2 -->
+            <div id="outline-2" class="space-y-8 mb-24 scroll-mt-24">
+                <div class="border-l-4 border-gold-500 pl-6">
+                    <h3 class="text-2xl font-bold text-white mb-2">2. 禱告的深度：關上房門，與天父在隱密處相會</h3>
+                    <p class="text-gold-500 font-medium">經文範圍：太 6:5-15</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl space-y-6">
+                    <p class="text-slate-300 leading-relaxed bg-slate-950/30 p-4 rounded-xl border border-slate-800 italic">「你禱告的時候，要進你的內屋，關上門，禱告你在暗中的父...因為你們沒有祈求以先，你們所需用的，你們的父早已知道了。」</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵原文 (Keywords)
+                            </h4>
+                            <p class="text-slate-300 text-sm"><strong class="text-white">內屋 (tameion)</strong>：指儲藏室或密室，唯一有鎖的地方。象徵隔絕外界、私密親近神的空間。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-slate-300 text-sm italic mb-2">Q: 禱告是為了改變上帝心意，還是展現屬靈？</p>
+                            <p class="text-slate-400 text-sm">核心是關係。禱告不是操控神，而是對齊神的心，在同在中享受父子的親密。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gold-500/5 p-6 rounded-2xl border border-gold-500/20">
+                        <h4 class="text-gold-500 font-bold mb-2">例證小故事</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">蘇珊娜·衛斯理在繁忙家務中，以圍裙蓋頭作為她的「內屋」。在那圍裙下，她培養出了改變世界的屬靈偉人。</p>
+                    </div>
+
+                    <div class="text-right italic text-slate-400 text-sm">
+                        「一個人的真實信仰，就在於他獨處時的禱告。」 — 慕迪 (D.L. Moody)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Outline 3 -->
+            <div id="outline-3" class="space-y-8 mb-8 scroll-mt-24">
+                <div class="border-l-4 border-gold-500 pl-6">
+                    <h3 class="text-2xl font-bold text-white mb-2">3. 禁食的喜樂：梳頭洗臉，單單為主攻克己身</h3>
+                    <p class="text-gold-500 font-medium">經文範圍：太 6:16-18</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl space-y-6">
+                    <p class="text-slate-300 leading-relaxed bg-slate-950/30 p-4 rounded-xl border border-slate-800 italic">「你禁食的時候，要梳頭洗臉，不叫人看出你禁食來，只叫你暗中的父看見；你父在暗中察看，必然報答你。」</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵原文 (Keywords)
+                            </h4>
+                            <p class="text-slate-300 text-sm"><strong class="text-white">愁容 (skythrōpos)</strong>：意指陰沉、故意展現痛苦。耶穌要求的<strong class="text-white">梳頭洗臉</strong>是赴宴時的打扮，象徵屬靈操練中的喜樂。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-slate-300 text-sm italic mb-2">Q: 若無人知曉我的付代價，我還願意做嗎？</p>
+                            <p class="text-slate-400 text-sm">真正的操練是與神之間的秘密。故意隱藏辛苦並展現喜樂，能使動機純粹化。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gold-500/5 p-6 rounded-2xl border border-gold-500/20">
+                        <h4 class="text-gold-500 font-bold mb-2">例證小故事</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">默默打掃廁所的長輩總是盛裝打扮、面帶微笑。他說：「我是在打掃天父的家，我梳頭洗臉，因為這是我和天父的約會。」</p>
+                    </div>
+
+                    <div class="text-right italic text-slate-400 text-sm">
+                        「屬靈操練的本質不是為了受苦，而是為了自由。」 — 魏樂德 (Dallas Willard)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content Section -->
+        <section id="sermon" class="pt-16 border-t border-slate-800">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-tight">講章文稿</h2>
+            </div>
+
+            <article class="prose prose-invert prose-gold max-w-none space-y-12 text-slate-300">
+                <div class="bg-slate-900/50 p-8 rounded-3xl border border-slate-800">
+                    <h3 class="text-3xl font-black text-white mb-6">引言</h3>
+                    <p class="text-lg leading-relaxed">
+                        弟兄姊妹們，我們生活在一個充滿「按讚、分享、訂閱」的時代。我們的價值似乎建立在有多少人看見我們、有多少人肯定我們。然而，今天耶穌在馬太福音第六章，給了我們一個極具顛覆性的挑戰。祂要把我們的信仰從「公共的舞台」拉回到「隱密的內室」。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">第一段：施捨的真諦：放下掌聲，尋求天父的暗中鑒察</h3>
+                    <p class="text-lg leading-relaxed">
+                        耶穌一開始就發出強烈的警告：「你們要小心，不可將善事行在人的面前，故意叫他們看見。」在太6:1-4中，耶穌提到那些在街道上吹號、故意要得人榮耀的人。耶穌稱他們為<span class="text-white font-bold">「假冒為善的人」</span>，原文的意思就是「舞台上的演員」。
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        我們必須誠實面對自己：我們做好事、參與服事，是不是常常渴望被表揚？如果在教會服事了一年，牧師沒有在台上公開感謝你，你會不會覺得受傷？耶穌說，那些為了得人掌聲而做的事，<span class="text-gold-500 font-bold underline decoration-2 underline-offset-4">「他們已經得了他們的賞賜。」</span> 當世人的掌聲響起，天父的帳本就已經結清了。
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        真正的慷慨是甚麼？是<span class="text-white font-bold">「不要叫左手知道右手所做的」</span>。當你匿名幫助一個需要的人，當你把所有的功勞歸給神，你就是在天父的銀行裡存入了永恆的賞賜。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">第二段：禱告的深度：關上房門，與天父在隱密處相會</h3>
+                    <p class="text-lg leading-relaxed">
+                        接下來，耶穌談到了我們與神的溝通。請特別注意今天的【金句】：「你禱告的時候，要進你的內屋，關上門，禱告你在暗中的父；你父在暗中察看，必然報答你。」
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        當時的宗教領袖喜歡在十字路口禱告，因為那裡人最多。但耶穌卻要我們進到<span class="text-white font-bold">「內屋」</span>。內屋是古代房子裡最隱密、唯一有鎖的地方。禱告不是一場演講比賽，不需要華麗的詞藻；禱告是回到天父的懷抱。
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        你平常的禱告生活是什麼樣子？慕迪曾說：「一個人的真實品格，就是在無人看見時他的所作所為。」同樣的，一個人的真實靈性，取決於他關上房門後，在隱密處與神的關係。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">第三段：禁食的喜樂：梳頭洗臉，單單為主攻克己身</h3>
+                    <p class="text-lg leading-relaxed">
+                        最後，耶穌談到了禁食與受苦的操練 (太 6:16-18)。當我們為了信仰付代價時，我們常有一種試探，就是想讓別人知道我們有多麼敬虔、多麼辛苦。法利賽人禁食的時候，故意面帶愁容、不洗臉，彷彿在昭告天下：「看哪，我正在為神受苦！」
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        但耶穌說：「你禁食的時候，要梳頭洗臉！」耶穌的意思是：當你為神付代價時，不要裝可憐，要表現得像平時一樣喜樂。為什麼？因為這是你和天父之間的秘密。當你不再需要別人的同情或讚美時，你就真正自由了。
+                    </p>
+                </div>
+
+                <div class="bg-gold-500 text-slate-950 p-10 rounded-3xl">
+                    <h3 class="text-3xl font-black mb-4">結論：隱密處的相遇</h3>
+                    <p class="text-xl font-medium mb-6">
+                        隱密 (Secret)、動機 (Motive)、賞賜 (Reward)，是我們今天信息的關鍵。
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        天父在暗中察看，祂看見你那些無人知曉的眼淚，看見你默默無聞的付出，看見你在內屋裡真誠的呼求。讓我們拒絕信仰的表演，脫下屬靈的面具，回到那隱密處，因為那裡有全世界最榮耀的相遇。
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">1.</span> 檢視服事動機：若無人看見，我還願意做嗎？</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">2.</span> 建立「內屋」習慣：每天一段專屬時間與空間。</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">3.</span> 操練隱密的慷慨：練習「左手不讓右手知道」。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-3xl border-gold-500/30">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    實踐行動
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">●</span> 本週進行一次「無人知曉的善行」。</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">●</span> 設定每日「內屋禱告」十分鐘。</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">●</span> 進行一次「喜樂的禁食」（或禁戒社群媒體）。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-16 border-t border-slate-800 pb-12">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-500/10 rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-tight">屬靈前輩佳句名言</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「隱密的善行是捨己的標誌；當我們把屬靈操練變成自我誇耀的工具時，我們就已經失去了它。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「如果我們內在的生命不比我們外在的表現更深厚，我們的信仰就只是一場空洞的表演。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「沒有什麼比在隱密處與神交通，更能使一個人的靈魂變得強壯。私下的禱告是講台能力的真正來源。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「獨處與隱密處不是要我們逃避世界，而是要我們在沒有人的掌聲與批判中，找到自己身為神蒙愛兒女的真實身分。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「福音帶來的謙卑是『不再需要想到自己』。我不需要透過別人的看見來證明我的價值，因為基督已經為我成就了一切。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「少有言語而多有情感的禱告，遠勝過多有言語而少有情感的禱告。神看重的是心，而不是嘴唇的表演。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「我們一切的行為，若不是單單為了上帝的榮耀而做，在上帝的眼中就只是燦爛的罪惡。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「在這個崇尚即時見效與公開展演的世界裡，真正的基督徒生命，是在隱密處對上帝『長期的順服』。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「真正的屬靈情感，必然會結出隱密處的果子。一個真基督徒最甜美的喜樂，往往是在無人看見的時刻。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-slate-300 italic mb-4">「品格就是在黑暗中你的樣子。上帝在暗中所看見的你，才是最真實的你。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 葛理翰 (Billy Graham)</p>
+                </div>
+            </div>
+
+            <!-- Warning Disclaimer -->
+            <div class="mt-16 text-center text-slate-500 text-xs tracking-widest uppercase border-t border-slate-900 pt-8">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky nav scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-2xl');
+            } else {
+                nav.classList.remove('shadow-2xl');
+            }
+        });
+    </script>
+</body>
+</html>

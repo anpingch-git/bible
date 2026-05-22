@@ -81,7 +81,24 @@
             background: #d4af37;
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '可14:43-52',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '可',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在黑暗掌權的時刻：面對背叛與恐懼的真實考驗' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-body overflow-x-hidden">
 
     <!-- Top Navigation -->
@@ -102,7 +119,7 @@
     <!-- Hero Banner -->
     <header class="relative h-[70vh] md:h-[85vh] w-full overflow-hidden flex items-center justify-center pt-16">
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="absolute inset-0 bg-black/20 z-10"></div>
             <div class="animate-breath absolute inset-0">
                 <img src='image/img_2d3f85b1-c449-4180-a66e-fc05317f5141.jpg' alt='media_1' class="w-full h-full object-cover banner-mask" />
             </div>

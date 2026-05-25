@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒上20:1-23: 在絕境中看見盟約的力量</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        divine: '#8B5CF6',
+                        accent: '#F43F5E',
+                        darkBg: '#0F172A',
+                        glass: 'rgba(30, 41, 59, 0.7)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'breathe': 'breathe 8s infinite ease-in-out',
+                        'subtle-jump': 'subtleJump 4s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        breathe: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        subtleJump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '10%, 20%': { transform: 'translateY(-3px)' },
+                            '15%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-morphism {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #FDE68A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            background: rgba(30, 41, 59, 0.6);
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
+        }
+        .banner-container {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.3), #0F172A);
+        }
+        .breathing-overlay {
+            position: absolute;
+            inset: 0;
+            background: #000;
+            pointer-events: none;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒上20:1-23',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在絕境中看見盟約的力量' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-darkBg text-slate-200 font-sans selection:bg-gold/30">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-morphism px-6 py-4 flex justify-between items-center">
+        <div class="text-gold font-bold font-outfit text-lg tracking-wider">撒上20:1-23</div>
+        <div class="flex gap-6 text-sm md:text-base font-medium overflow-x-auto no-scrollbar">
+            <a href="#prayer" class="hover:text-gold transition-colors whitespace-nowrap">禱告</a>
+            <a href="#outline" class="hover:text-gold transition-colors whitespace-nowrap">大綱</a>
+            <a href="#sermon" class="hover:text-gold transition-colors whitespace-nowrap">講章</a>
+            <a href="#quotes" class="hover:text-gold transition-colors whitespace-nowrap">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner Area -->
+    <header class="relative banner-container" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_0659a49b-9d8d-4115-ad84-83002c787555.jpg' alt='media_1' class="banner-img" />
+            <div class="breathing-overlay animate-breathe"></div>
+            <div class="banner-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 flex flex-col items-center justify-end h-full pb-16 px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-black font-serif mb-6 text-white drop-shadow-2xl">
+                在絕境中看見<br/><span class="text-gradient">盟約的力量</span>
+            </h1>
+            <div class="animate-subtle-jump max-w-2xl">
+                <p class="text-xl md:text-2xl font-medium text-slate-100 italic">
+                    「約拿單因愛大衛如同愛自己的性命，就使他再起誓。」
+                </p>
+                <p class="text-sm md:text-base text-gold mt-2 opacity-90">（撒母耳記上 20:17）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09a2 2 0 013.447 0l.054.09m9.172-9.33a9.047 9.047 0 01-1.139 3.41m-2.231 1.14a9.048 9.048 0 01-3.41 1.139M9.172 9.172a9.047 9.047 0 013.41-1.139m2.231 1.141a9.048 9.048 0 011.139 3.41m-9.172-11.41a9.047 9.047 0 00-3.41 1.139m1.141 2.231a9.048 9.048 0 00-1.139 3.41m9.172 9.172a9.047 9.047 0 01-1.139-3.41m-2.231-1.141a9.048 9.048 0 01-3.41-1.139M12 11c0-3.517 1.009-6.799 2.753-9.571m3.44 2.04l-.054.09a2 2 0 00-3.447 0l-.054.09M3 20c3.517 0 6.799-1.009 9.571-2.753m-2.04-3.44l.09-.054a2 2 0 010-3.447l-.09-.054M21 20c-3.517 0-6.799-1.009-9.571-2.753m2.04-3.44l-.09-.054a2 2 0 000-3.447l.09-.054"></path></svg>
+                <h2 class="text-3xl font-bold text-white">啟始禱告</h2>
+            </div>
+            <div class="bento-card p-8 rounded-3xl border-l-4 border-l-gold leading-loose text-lg text-slate-300">
+                主耶和華，祢是守約施慈愛的上帝。當我們如同大衛般面臨生命的危急、前途的黑暗與人際的背叛時，求祢賜給我們如同約拿單一般的屬靈夥伴。幫助我們在恐懼中能坦誠面對自己，在利益交關時能選擇祢的旨意，在未知的等待中能全然信靠祢的主權。願我們彼此相愛的心，能反映出基督為我們捨己的盟約之愛。奉耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                <h2 class="text-3xl font-bold text-white">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <a href="#section1" class="group p-5 bento-card rounded-2xl flex flex-col justify-between hover:scale-105">
+                    <span class="text-xs text-gold font-bold mb-2 uppercase tracking-widest">第一階段 (20:1-8)</span>
+                    <span class="text-white font-bold group-hover:text-gold transition-colors leading-snug">當恐懼來襲：在真實的坦誠中尋求遮蓋</span>
+                </a>
+                <a href="#section2" class="group p-5 bento-card rounded-2xl flex flex-col justify-between hover:scale-105">
+                    <span class="text-xs text-gold font-bold mb-2 uppercase tracking-widest">第二階段 (20:9-17)</span>
+                    <span class="text-white font-bold group-hover:text-gold transition-colors leading-snug">超越血緣的呼召：持守「耶和華的慈愛」</span>
+                </a>
+                <a href="#section3" class="group p-5 bento-card rounded-2xl flex flex-col justify-between hover:scale-105">
+                    <span class="text-xs text-gold font-bold mb-2 uppercase tracking-widest">第三階段 (20:18-23)</span>
+                    <span class="text-white font-bold group-hover:text-gold transition-colors leading-snug">暗號與箭矢：在未知中信靠神的主權</span>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-16">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-32">
+                    <h3 class="text-2xl font-bold text-gold mb-6 border-b border-white/10 pb-4">第一段：當恐懼來襲：在真實的坦誠中尋求遮蓋</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-divine italic text-slate-400">
+                            「我做了什麼？我有什麼罪孽呢？...我指著永生的耶和華，又敢在你面前起誓，我離死不過一步。」
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2"><span class="w-1.5 h-1.5 bg-divine rounded-full"></span>關鍵字解析</h4>
+                                <p class="text-sm leading-relaxed"><strong class="text-white">「施恩」(hesed)</strong>：意指「立約的忠誠」或「恩慈」。大衛呼籲約拿單履行在神面前所立的盟約義務。</p>
+                            </div>
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="text-accent font-bold mb-2 flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent rounded-full"></span>關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">大衛深知「盟約」的效力大過「血緣」。坦誠與脆弱能使人在屬靈關係中找到遮蓋。</p>
+                            </div>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gradient-to-br from-blue-900/20 to-transparent">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">🌱 例證與佳句</h4>
+                            <p class="text-sm mb-4">二戰壕溝中的士兵：「我知道你會來。」這種盟約式的信任是大衛與約拿單關係的寫照。</p>
+                            <div class="border-t border-white/10 pt-4 italic text-white/80">
+                                「基督徒需要另一個宣揚上帝話語的基督徒，當他陷入不確定和沮喪時，他需要這位弟兄。」—— 潘霍華
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-32">
+                    <h3 class="text-2xl font-bold text-gold mb-6 border-b border-white/10 pb-4">第二段：超越血緣的呼召：持守「耶和華的慈愛」</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-divine italic text-slate-400">
+                            「願耶和華與你同在，如同從前與我父親同在一樣。你要照耶和華的慈愛恩待我...」
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2"><span class="w-1.5 h-1.5 bg-divine rounded-full"></span>關鍵字解析</h4>
+                                <p class="text-sm leading-relaxed"><strong class="text-white">「結盟」(karath berith)</strong>：字面意思是「切開一個約」。象徵背約者願受毀滅，展現對神完全的順服。</p>
+                            </div>
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="text-accent font-bold mb-2 flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent rounded-full"></span>關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">約拿單看見了上帝的手在大衛身上，他選擇了「神國的利益」而非「家族的王朝」。</p>
+                            </div>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gradient-to-br from-purple-900/20 to-transparent">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">🌱 例證與佳句</h4>
+                            <p class="text-sm mb-4">如同施洗約翰對耶穌說：「祂必興旺，我必衰微」。具備國度胸襟的領袖會成為對方的墊腳石。</p>
+                            <div class="border-t border-white/10 pt-4 italic text-white/80">
+                                「屬靈的友誼，就是熱切地幫助彼此，以越來越深的方式去認識、服事、愛慕並效法上帝。」—— 提摩太·凱勒
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-32">
+                    <h3 class="text-2xl font-bold text-gold mb-6 border-b border-white/10 pb-4">第三段：暗號與箭矢：在未知中信靠神的主權</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-divine italic text-slate-400">
+                            「我若對童子說：『箭在前頭』，你就要去，因為是耶和華打發你去的。」
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="text-divine font-bold mb-2 flex items-center gap-2"><span class="w-1.5 h-1.5 bg-divine rounded-full"></span>關鍵字解析</h4>
+                                <p class="text-sm leading-relaxed"><strong class="text-white">「為證」(beyn)</strong>：原意是「在...之間」。上帝是這段關係的中保，即便距離遙遠，神始終在中間。</p>
+                            </div>
+                            <div class="bento-card p-6 rounded-2xl">
+                                <h4 class="text-accent font-bold mb-2 flex items-center gap-2"><span class="w-1.5 h-1.5 bg-accent rounded-full"></span>關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">射箭代表了人力的極限。最終的結果必須交託給掌管兩人命運的上帝。</p>
+                            </div>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl bg-gradient-to-br from-amber-900/20 to-transparent">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">🌱 例證與佳句</h4>
+                            <p class="text-sm mb-4">彭柯麗一家的木牌暗號：保護他們的不是信號，而是掌管一切的上帝。信心在微小時最純粹。</p>
+                            <div class="border-t border-white/10 pt-4 italic text-white/80">
+                                「當你看不清上帝的手時，你必須信靠上帝的心。」—— 司布真
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-3xl font-bold text-white">講章文稿</h2>
+            </div>
+            <article class="bento-card p-8 md:p-12 rounded-[2rem] space-y-8 text-lg leading-relaxed font-light text-slate-300">
+                <p>弟兄姊妹們，今天我們要從撒母耳記上第20章，來看一段聖經中最動人的友誼，也是最深刻的屬靈功課。這不只是一個關於兩個好朋友的故事，這是一個關乎生死、關乎順服，以及關乎上帝盟約的故事。</p>
+                
+                <h4 class="text-xl font-bold text-gold pt-4 border-t border-white/5">當恐懼來襲：在真實的坦誠中尋求遮蓋</h4>
+                <p>大衛剛從拉瑪的拿約死裡逃生，他驚魂未定地來到約拿單面前。大衛沒有隱藏他的恐懼，他連續問了三個問題：「我做了什麼？我有什麼罪孽呢？」大衛甚至對約拿單起誓說：<strong class="text-white">「我離死不過一步！」</strong></p>
+                <p>在危難中，大衛深知「盟約」的遮蓋力大過世上的任何保障。大衛展現了極大的脆弱與坦誠。今天我們在教會中，是否也擁有這樣可以坦誠「我離死不過一步」，卻依然接納並保護我們的屬靈夥伴？</p>
+
+                <h4 class="text-xl font-bold text-gold pt-4 border-t border-white/5">超越血緣的呼召：持守「耶和華的慈愛」</h4>
+                <p>面對大衛的恐懼，約拿單做出了驚人的回應。聖經說：<strong class="text-white">「約拿單因愛大衛如同愛自己的性命，就使他再起誓。」</strong></p>
+                <p>約拿單是王位的合法繼承人，大衛是他最大的政治威脅。如果約拿單按照世俗的邏輯，他應該順水推舟讓父親殺了大衛。但約拿單卻看見了上帝的手在大衛身上，他選擇了「神國的旨意」而非「家族的王權」。約拿單的愛，預表了耶穌基督為了我們捨棄天上榮華的愛。</p>
+
+                <h4 class="text-xl font-bold text-gold pt-4 border-t border-white/5">暗號與箭矢：在未知中信靠神的主權</h4>
+                <p>最後，他們用「射箭」來作暗號。約拿單說，如果我說箭在前頭，<strong class="text-white">「你就要去，因為是耶和華打發你去的。至於你我今日所行的話，有耶和華在你我中間為證，直到永遠。」</strong></p>
+                <p>這個射箭的計畫充滿了無奈。當我們已經盡了人力的極限時，剩下的只能交託給神。無論箭落在前方還是後方，請記住，是耶和華在引導你，祂的慈愛與盟約永遠在你們中間。</p>
+            </article>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-8 rounded-3xl">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-accent font-bold">01</span> 建立「盟約式」的屬靈夥伴關係</li>
+                    <li class="flex gap-3"><span class="text-accent font-bold">02</span> 放下自我主權，順服神的揀選</li>
+                    <li class="flex gap-3"><span class="text-accent font-bold">03</span> 在黑暗與未知中尋求神的引導</li>
+                </ul>
+            </div>
+            <div class="bento-card p-8 rounded-3xl">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-divine" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    回應行動
+                </h2>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-divine font-bold">#</span> 聯繫一位屬靈夥伴分享近期挑戰</li>
+                    <li class="flex gap-3"><span class="text-divine font-bold">#</span> 寫下交託清單，向神宣告主權</li>
+                    <li class="flex gap-3"><span class="text-divine font-bold">#</span> 面對未知的困境獻上感恩禱告</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pb-20">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-bold text-white">屬靈佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="bento-card p-6 rounded-2xl border-l-2 border-gold/30">
+                    <p class="text-slate-300 italic mb-3">「屬靈的友誼，就是熱切地幫助彼此，以越來越深的方式去認識、服事、愛慕並效法上帝。」</p>
+                    <cite class="text-gold text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-2 border-gold/30">
+                    <p class="text-slate-300 italic mb-3">「基督徒需要另一個宣揚上帝話語的基督徒，當他陷入不確定和沮喪時，他需要這位弟兄。」</p>
+                    <cite class="text-gold text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-2 border-gold/30">
+                    <p class="text-slate-300 italic mb-3">「當你看不清上帝的手時，你必須信靠上帝的心。」</p>
+                    <cite class="text-gold text-sm font-bold">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-2 border-gold/30">
+                    <p class="text-slate-300 italic mb-3">「信心就是對上帝在黑暗中的引導說『阿們』。」</p>
+                    <cite class="text-gold text-sm font-bold">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-2 border-gold/30">
+                    <p class="text-slate-300 italic mb-3">「友誼是一份極大的屬靈恩賜，因為真正的朋友是在你忘記自己是誰時，能提醒你你是屬神的人。」</p>
+                    <cite class="text-gold text-sm font-bold">— 盧雲 (Henri Nouwen)</cite>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-2 border-gold/30">
+                    <p class="text-slate-300 italic mb-3">「上帝有時會把我們放在黑暗中，好讓我們學會完全倚靠祂那看不見的同在。」</p>
+                    <cite class="text-gold text-sm font-bold">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-slate-500 text-sm py-8 border-t border-white/5">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 bg-gold hover:bg-white text-darkBg w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

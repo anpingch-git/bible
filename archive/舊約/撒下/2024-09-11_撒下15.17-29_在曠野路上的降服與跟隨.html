@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒下15:17-29:在曠野路上的降服與跟隨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        abyss: '#0a0a0c',
+                        surface: '#16161a',
+                        accent: '#d4af37', // Classic Gold
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                        script: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtleBounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        subtleBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .banner-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: pulse-brightness 10s ease-in-out infinite;
+        }
+
+        @keyframes pulse-brightness {
+            0%, 100% { filter: brightness(0.4) contrast(1.1); }
+            50% { filter: brightness(0.7) contrast(1.2); }
+        }
+
+        .golden-text {
+            background: linear-gradient(to right, #fde047, #d4af37, #fde047);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .bento-card {
+            background: #16161a;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bento-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: #d4af37;
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .section-title-icon {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+        }
+
+        .verse-highlight {
+            border-left: 4px solid #d4af37;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #cbd5e1;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: #d4af37;
+            color: #000;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒下15:17-29',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在曠野路上的降服與跟隨' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed top-0 left-0 right-0 z-[1000] py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-accent font-display font-bold tracking-tighter text-lg md:text-xl">
+            撒下 15:17-29
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-widest uppercase">
+            <a href="#prayer" class="hover:text-accent transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-accent transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-accent transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-accent transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header id="top" class="banner-container flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_f69d7dd6-c33a-4a71-af62-5d145738e2bf.jpg' alt='media_1' class="banner-img" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-abyss"></div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 tracking-tight leading-tight">
+                在曠野路上的<br>
+                <span class="golden-text">降服與跟隨</span>
+            </h1>
+            
+            <!-- Golden Verse (Micro-vibrating) -->
+            <div class="mt-8 px-6 animate-subtle-bounce">
+                <p class="text-lg md:text-2xl font-script text-gold-200 leading-relaxed max-w-3xl mx-auto italic">
+                    「你將神的約櫃抬進城去。我若在耶和華眼前蒙恩，祂必使我回來...倘若祂說：『我不喜悅你』，看哪，我在這裡，願祂憑自己的意旨待我！」
+                </p>
+                <p class="text-sm md:text-base mt-4 text-accent/80 font-display">— 撒母耳記下 15:25-26 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="bento-card p-8 md:p-16 border-l-8 border-l-accent text-center">
+                <div class="flex justify-center mb-6">
+                    <svg class="section-title-icon w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold mb-8 text-white">啟程的禱告</h2>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-300 font-light max-w-3xl mx-auto">
+                    主啊，當我們人生的道路遇見背叛、危機與曠野時，求祢賜給我們如以太般堅定的忠誠，不計代價地跟隨祢；也求祢賜下如大衛般謙卑降服的心，不將祢的同在當作掌控環境的籌碼。幫助我們在黑暗與未知中，依然能放手將生命的主權交還給祢，深信祢的意旨盡都美好。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation & Quick Links -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center mb-12">
+                <svg class="section-title-icon w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                <h2 class="text-3xl font-bold tracking-tight">信息大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="bento-card p-8 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-accent font-display font-bold text-lg">01</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2 group-hover:text-accent transition-colors">真實的跟隨</h3>
+                        <p class="text-slate-400 text-sm">患難中的不離不棄</p>
+                    </div>
+                    <div class="mt-6 text-xs text-slate-500">撒下 15:17-22</div>
+                </a>
+                <a href="#part2" class="bento-card p-8 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-accent font-display font-bold text-lg">02</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2 group-hover:text-accent transition-colors">放下主權的降服</h3>
+                        <p class="text-slate-400 text-sm">拒絕挾持上帝</p>
+                    </div>
+                    <div class="mt-6 text-xs text-slate-500">撒下 15:23-26</div>
+                </a>
+                <a href="#part3" class="bento-card p-8 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-accent font-display font-bold text-lg">03</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2 group-hover:text-accent transition-colors">靈巧的信靠</h3>
+                        <p class="text-slate-400 text-sm">在黑暗中安息於神</p>
+                    </div>
+                    <div class="mt-6 text-xs text-slate-500">撒下 15:27-29</div>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-32 space-y-8">
+                    <div class="flex items-baseline gap-4">
+                        <h3 class="text-4xl font-black text-accent">一</h3>
+                        <h3 class="text-4xl font-black">真實的跟隨：患難中的不離不棄</h3>
+                    </div>
+                    <div class="verse-highlight mb-10 text-lg">
+                        撒下15:17-22 ...「無論生死，王在哪裡，僕人也必在哪裡。」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bento-card p-8">
+                            <h4 class="text-accent font-bold mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed">
+                                <strong class="text-white">慈愛 (חֶסֶד - hesed) 與 誠實 (אֱמֶת - emet)</strong>：大衛在落難中，將上帝最核心的兩個屬性祝福在一個外邦人身上，顯示出他即使在危機中，依然擁有寬闊與愛人的心。
+                            </p>
+                        </div>
+                        <div class="bento-card p-8">
+                            <h4 class="text-accent font-bold mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-slate-300">
+                                <span class="block text-gold-200 mb-2 font-semibold">Q: 在順境中跟隨很容易，逆境時呢？</span>
+                                以太展現了超越利益的「盟約之愛」。這挑戰我們檢視信仰動機：我們跟隨主，是為了今生的好處，還是出於對祂全然的愛？
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-surface/50 border border-white/5 rounded-3xl p-10 mt-8">
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div class="flex-1">
+                                <h4 class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-6 italic">經典例證</h4>
+                                <p class="text-xl font-light text-slate-200 italic leading-relaxed">
+                                    「二次大戰期間，潘霍華毅然決然搭船返回德國參與抵抗運動。這正是一種『無論生死，王在哪裡，僕人也必在哪裡』的真實跟隨。」
+                                </p>
+                            </div>
+                            <div class="md:w-1/3 flex flex-col justify-center items-center text-center border-l border-white/10 pl-10">
+                                <div class="text-5xl text-accent mb-4 font-script">"</div>
+                                <p class="text-lg font-bold text-white mb-2">當基督呼召一個人時，祂是吩咐他來死。</p>
+                                <cite class="text-slate-500 text-sm">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-32 space-y-8">
+                    <div class="flex items-baseline gap-4">
+                        <h3 class="text-4xl font-black text-accent">二</h3>
+                        <h3 class="text-4xl font-black">放下主權的降服：拒絕挾持上帝</h3>
+                    </div>
+                    <div class="verse-highlight mb-10 text-lg">
+                        撒下15:23-26 ...王對撒督說：「你將神的約櫃抬進城去...願祂憑自己的意旨待我！」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bento-card p-8">
+                            <h4 class="text-accent font-bold mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed">
+                                <strong class="text-white">蒙恩 (חֵן - chen)</strong>：意為恩惠、喜悅。大衛不依靠約櫃這個「宗教聖物」來保障勝利，而是完全仰望上帝的恩惠。得救不在乎儀式，乃在乎神的主權。
+                            </p>
+                        </div>
+                        <div class="bento-card p-8">
+                            <h4 class="text-accent font-bold mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-slate-300">
+                                <span class="block text-gold-200 mb-2 font-semibold">Q: 我們是否利用屬靈象徵來「挾持」神？</span>
+                                大衛拒絕把神當作護身符。他把約櫃送回，表示他寧願失去王位，也不願越過神的主權。真正的信仰是讓神作神。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-surface/50 border border-white/5 rounded-3xl p-10 mt-8">
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div class="flex-1">
+                                <h4 class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-6 italic">現代見證</h4>
+                                <p class="text-xl font-light text-slate-200 italic leading-relaxed">
+                                    「一位牧者在面臨人事危機時辭去職位，他說：『如果這間教會是神的，祂會自己保守；如果這只是我的事業，那就讓它倒去吧。』這就是送回約櫃的降服。」
+                                </p>
+                            </div>
+                            <div class="md:w-1/3 flex flex-col justify-center items-center text-center border-l border-white/10 pl-10">
+                                <div class="text-5xl text-accent mb-4 font-script">"</div>
+                                <p class="text-lg font-bold text-white mb-2">如果你把任何事物看得比神更重要，那它就是你的偶像。</p>
+                                <cite class="text-slate-500 text-sm">— 提摩太·凱勒 (Timothy Keller)</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-32 space-y-8">
+                    <div class="flex items-baseline gap-4">
+                        <h3 class="text-4xl font-black text-accent">三</h3>
+                        <h3 class="text-4xl font-black">靈巧的信靠：在黑暗中安息於神</h3>
+                    </div>
+                    <div class="verse-highlight mb-10 text-lg">
+                        撒下15:27-29 ...王又對祭司撒督說：「你不是先見嗎？你可以平平安安地回城去...」
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bento-card p-8">
+                            <h4 class="text-accent font-bold mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <p class="text-slate-300 leading-relaxed">
+                                <strong class="text-white">先見 (רֹאֶה - ro'eh)</strong>：字根有「觀察」之意。大衛賦予祭司戰略任務。這顯示大衛在交託主權的同時，仍盡上人的本分與智慧。
+                            </p>
+                        </div>
+                        <div class="bento-card p-8">
+                            <h4 class="text-accent font-bold mb-4 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-slate-300">
+                                <span class="block text-gold-200 mb-2 font-semibold">Q: 如何平衡「信靠」與「盡本分」？</span>
+                                信靠不等於消極。真正的信靠是在神所允許的範圍內盡力而為，然後將結果安息在神的手中。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-surface/50 border border-white/5 rounded-3xl p-10 mt-8">
+                        <div class="flex flex-col md:flex-row gap-10">
+                            <div class="flex-1">
+                                <h4 class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-6 italic">智慧比喻</h4>
+                                <p class="text-xl font-light text-slate-200 italic leading-relaxed">
+                                    「遇到暴風雨的水手必須用盡一切知識來掌穩船舵，同時在內心深處明白，最終決定生死的是掌管風浪的上帝。」
+                                </p>
+                            </div>
+                            <div class="md:w-1/3 flex flex-col justify-center items-center text-center border-l border-white/10 pl-10">
+                                <div class="text-5xl text-accent mb-4 font-script">"</div>
+                                <p class="text-lg font-bold text-white mb-2">當你看不見神的手時，請相信祂的心。</p>
+                                <cite class="text-slate-500 text-sm">— 司布真 (Charles Spurgeon)</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center mb-12">
+                <svg class="section-title-icon w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                <h2 class="text-3xl font-bold tracking-tight">講章全文</h2>
+            </div>
+            
+            <div class="bento-card p-10 md:p-20 text-slate-300 leading-loose text-lg space-y-8 max-w-4xl mx-auto shadow-2xl">
+                <p>各位弟兄姊妹，平安。當我們讀到撒母耳記下15章時，我們看見了以色列歷史上最令人心碎的場景之一。大衛，這位偉大的君王，正被迫逃離他深愛的耶路撒冷。背叛他的不是外敵，而是他的親生兒子押沙龍。這是一條充滿眼淚、羞辱與未知的曠野之路。然而，正是在這個人生最黑暗的時刻，大衛的屬靈生命綻放出最美麗的光芒。今天，我們要透過這段經文，一起來學習<span class="text-accent font-bold">「在曠野路上的降服與跟隨」</span>。</p>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-4">第一，我們看見真實的跟隨：患難中的不離不棄。</h4>
+                    <p>當大衛落難時，跟隨他的人並不多，但其中有一位外邦將領引起了我們的注意，他就是迦特人以太。大衛出於體恤，勸這位剛來投靠的外邦人回去，不要跟著自己受苦。但以太堅定地起誓：<span class="text-white bg-gold-900/50 px-2 font-semibold">「無論生死，王在哪裡，僕人也必在哪裡。」</span>這句話深深地震撼了我們。在順境中跟隨很容易，當大衛在王座上時，人人都想沾光；但現在大衛正在逃亡，跟隨他意味著失去一切，甚至喪命。以太展現了什麼是真正的忠誠。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-4">第二，我們看見放下主權的降服：拒絕挾持上帝。</h4>
+                    <p>當大衛走到汲淪溪畔時，祭司撒督抬著神的約櫃來了。大衛做了一個極其反常、卻極度屬靈的決定：<span class="text-accent font-bold italic">「你將神的約櫃抬進城去。我若在耶和華眼前蒙恩...倘若祂說：『我不喜悅你』，看哪，我在這裡，願祂憑自己的意旨待我！」</span>這是何等深沉的降服！大衛拒絕把上帝當作護身符，他拒絕挾持上帝。真正的信仰，是把約櫃送回去，讓神作神，完全降服在祂的主權之下。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-4">第三，我們看見靈巧的信靠：在黑暗中安息於神。</h4>
+                    <p>大衛雖然交出了約櫃，把自己交給神，但他並沒有消極地躺在曠野裡等死。他立刻對撒督說：「你不是先見嗎？你回城裡去，在曠野的渡口等著，把你觀察到的情報送來給我。」這告訴我們一個重要的屬靈真理：信靠神的主權，與盡上人的本分，兩者從來都不衝突。在風暴中，我們不能只是閉上眼睛禱告，我們還必須去掌舵、去拉帆。</p>
+                </div>
+
+                <div class="pt-10 border-t border-white/10">
+                    <p class="text-xl text-white font-medium italic">
+                        讓我們學習以太的<span class="text-accent">忠誠</span>，學習大衛的<span class="text-accent">降服</span>，承認神的<span class="text-accent">主權</span>。願神祝福我們！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary Image / Media -->
+        <section class="max-w-4xl mx-auto overflow-hidden rounded-3xl shadow-2xl">
+            <img src='image/img_1ae2dc39-2d5c-4ead-8b2c-19ec4a28350c.jpg' alt='media_2' class="w-full h-auto" />
+        </section>
+
+        <!-- Application & Response -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <div class="flex items-center mb-8">
+                    <svg class="section-title-icon w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h2 class="text-2xl font-bold">講道應用方向</h2>
+                </div>
+                <ul class="space-y-6">
+                    <li class="bento-card p-6 border-l-2 border-accent">
+                        <span class="text-accent font-bold block mb-1">01. 檢視動機</span>
+                        當信仰不再帶來舒適時，我還能跟隨嗎？
+                    </li>
+                    <li class="bento-card p-6 border-l-2 border-accent">
+                        <span class="text-accent font-bold block mb-1">02. 辨識偶像</span>
+                        找出那些你試圖用來操控上帝的安全感籌碼。
+                    </li>
+                    <li class="bento-card p-6 border-l-2 border-accent">
+                        <span class="text-accent font-bold block mb-1">03. 積極交託</span>
+                        在困境中分辨神的主權與我的本分。
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="flex items-center mb-8">
+                    <svg class="section-title-icon w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h2 class="text-2xl font-bold">回應實踐行動</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 bg-gold-600 rounded-full flex-shrink-0 mt-1"></div>
+                        <p class="text-slate-300"><strong class="text-white">寫下「放手禱告」：</strong>將目前最焦慮的人事物具體宣告交還給神。</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 bg-gold-600 rounded-full flex-shrink-0 mt-1"></div>
+                        <p class="text-slate-300"><strong class="text-white">成為別人的「以太」：</strong>本週主動陪伴一位正處於人生低谷的弟兄姊妹。</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 bg-gold-600 rounded-full flex-shrink-0 mt-1"></div>
+                        <p class="text-slate-300"><strong class="text-white">採取智慧行動：</strong>針對難題，執行一個「現在立刻可以做」的步驟。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center mb-12">
+                <svg class="section-title-icon w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-3xl font-bold tracking-tight">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bento-card p-8">
+                    <p class="italic text-lg text-white mb-4">「真正的順服，就是在我們不明白神為什麼這樣做的時候，依然選擇信靠祂。」</p>
+                    <span class="text-accent text-sm">— 查爾斯·史丹利</span>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="italic text-lg text-white mb-4">「我們所渴望的，不應是上帝的恩賜，而是上帝自己。」</p>
+                    <span class="text-accent text-sm">— 陶恕 (A.W. Tozer)</span>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="italic text-lg text-white mb-4">「信心不是相信上帝會做你想做的事；信心是相信上帝會做對的事。」</p>
+                    <span class="text-accent text-sm">— 畢德生 (Eugene Peterson)</span>
+                </div>
+                <div class="bento-card p-8">
+                    <p class="italic text-lg text-white mb-4">「上帝的恩典不代表我們不會經歷苦難，而是代表在苦難中，我們永遠不會被孤立無援。」</p>
+                    <span class="text-accent text-sm">— 盧雲 (Henri Nouwen)</span>
+                </div>
+                <div class="bento-card p-8 col-span-1 md:col-span-2">
+                    <p class="italic text-lg text-white mb-4">「神在我們順遂時對我們細語；在我們受苦時對我們大聲呼喊。痛苦是神用來喚醒這個耳聾世界的麥克風。」</p>
+                    <span class="text-accent text-sm">— 魯益師 (C.S. Lewis)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="pt-20 border-t border-white/5 text-center">
+            <p class="text-slate-500 text-sm tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Top Button -->
+    <a href="#top" class="scroll-top-btn group">
+        <svg class="w-6 h-6 transition-transform group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation handled by CSS, but we can add JS for better control if needed.
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

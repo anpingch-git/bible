@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒上19:1-24:絕境中的避難所：當危機來襲時的三重護衛</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fbe462',
+                            400: '#f9d232',
+                            500: '#f2b810',
+                            600: '#d6920a',
+                            700: '#b26e0b',
+                            800: '#915610',
+                            900: '#774712',
+                        },
+                        abyss: '#0a0a0c',
+                        surface: '#16161a',
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(22, 22, 26, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: rgba(242, 184, 16, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(242, 184, 16, 0.3);
+        }
+        .floating-action {
+            box-shadow: 0 10px 30px rgba(242, 184, 16, 0.2);
+        }
+        .jiggle {
+            display: inline-block;
+            animation: jiggle 2s ease-in-out infinite;
+        }
+        @keyframes jiggle {
+            0%, 100% { transform: translateY(0); }
+            25% { transform: translateY(-3px) rotate(-1deg); }
+            75% { transform: translateY(-1px) rotate(1deg); }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #f2b810;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒上19:1-24',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '絕境中的避難所：當危機來襲時的三重護衛' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-abyss text-gray-200 font-sans selection:bg-gold-500/30 overflow-x-hidden custom-scrollbar">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-4 md:px-8 justify-between">
+        <div class="flex items-center space-x-2">
+            <span class="text-gold-500 font-outfit font-semibold text-lg tracking-wider">1 SAM 19:1-24</span>
+        </div>
+        <div class="flex space-x-4 md:space-x-8 text-sm font-medium tracking-widest text-gray-400">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors uppercase">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse Section -->
+    <header id="top" class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_babe7cd3-ff1c-468e-8e97-55a408f43083.jpg' alt='Celestial Background' class="w-full h-full object-cover animate-breath scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-b from-abyss/40 via-abyss/60 to-abyss"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-black text-white mb-12 leading-tight tracking-tighter drop-shadow-2xl">
+                絕境中的<span class="text-gold-500 italic">避難所</span><br/>
+                <span class="text-2xl md:text-3xl font-sans font-light tracking-[0.2em] text-gray-300 block mt-4">危機來襲時的三重護衛</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl font-serif text-gold-100 leading-relaxed jiggle">
+                    「大衛逃避，來到拉瑪見撒母耳，將掃羅向他所行的事述說了一遍。他就和撒母耳往拿約去交遊。」
+                </p>
+                <p class="mt-4 font-outfit text-gold-500 font-semibold tracking-widest">（撒母耳記上19:18）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="bento-card rounded-3xl p-8 md:p-16 relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 opacity-10">
+                    <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor" class="text-gold-500">
+                        <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+                    </svg>
+                </div>
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="bg-gold-500/20 p-3 rounded-xl">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight text-white">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl text-gray-300 font-light leading-relaxed font-serif italic">
+                    「親愛的天父，當我們如同大衛一樣，面對人生突如其來的風暴、不公義的對待與絕境時，求祢開我們的眼睛，看見祢始終是我們最堅固的避難所。謝謝祢常常透過身邊的屬靈伙伴、環境的開路，甚至是聖靈親自的介入來保護我們。求祢賜給我們平靜安穩的心，在最黑暗的時刻，依然能定睛於祢的主權與恩典。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="bg-gold-500/20 p-3 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">講道大綱</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <button onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth'})" class="bento-card p-6 rounded-2xl text-left group">
+                    <span class="text-gold-500 text-sm font-outfit block mb-2 opacity-60">PART 01</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold-400 transition-colors">危機中的屬靈摯友：約拿單的代求</h3>
+                    <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest">撒上 19:1-7</p>
+                </button>
+                <button onclick="document.getElementById('section2').scrollIntoView({behavior: 'smooth'})" class="bento-card p-6 rounded-2xl text-left group">
+                    <span class="text-gold-500 text-sm font-outfit block mb-2 opacity-60">PART 02</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold-400 transition-colors">破口中的緊急救援：米甲的機智</h3>
+                    <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest">撒上 19:8-17</p>
+                </button>
+                <button onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth'})" class="bento-card p-6 rounded-2xl text-left group">
+                    <span class="text-gold-500 text-sm font-outfit block mb-2 opacity-60">PART 03</span>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gold-400 transition-colors">絕境中的神聖介入：聖靈的護庇</h3>
+                    <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest">撒上 19:18-24</p>
+                </button>
+            </div>
+
+            <!-- Detailed Outline Sections -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-32">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-4 space-y-6">
+                            <h3 class="text-2xl font-black text-gold-500 font-serif leading-tight">危機中的屬靈摯友<br/>約拿單的代求</h3>
+                            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                                <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">引用經文</h4>
+                                <p class="text-sm text-gray-400 leading-relaxed">
+                                    掃羅對他兒子約拿單和眾臣僕說，要殺大衛；掃羅的兒子約拿單卻甚喜愛大衛... 約拿單向他父親掃羅替大衛說好話... 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl">
+                                <span class="text-gold-500 font-bold mb-4 block">關鍵字</span>
+                                <p class="text-xl text-white mb-2">說好話 <span class="text-gray-500 text-sm italic">dabar tob</span></p>
+                                <p class="text-gray-400 text-sm">在敵意環境中，勇敢說出基於真理與良善的言辭。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <span class="text-gold-500 font-bold mb-4 block">關鍵問題</span>
+                                <p class="text-gray-200">面對無理逼迫時，你是否願意冒險成為和平之子，為無辜者發聲？</p>
+                            </div>
+                            <div class="md:col-span-2 bento-card p-8 rounded-3xl border-l-4 border-l-gold-500">
+                                <p class="text-gray-400 italic">「基督徒的弟兄團契不是一個我們必須去實現的理想，而是上帝在基督裡早已創造，並讓我們有份參與的屬靈實體。」——潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-32">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-4 space-y-6">
+                            <h3 class="text-2xl font-black text-gold-500 font-serif leading-tight">破口中的緊急救援<br/>米甲的機智</h3>
+                            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                                <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">引用經文</h4>
+                                <p class="text-sm text-gray-400 leading-relaxed">
+                                    米甲將大衛從窗戶裡縋下去；大衛就逃走，躲避了。米甲把神像放在床上... 掃羅打發人去捉拿大衛，米甲說：「他病了。」
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl">
+                                <span class="text-gold-500 font-bold mb-4 block">關鍵字</span>
+                                <p class="text-xl text-white mb-2">躲避 / 逃脫 <span class="text-gray-500 text-sm italic">malat</span></p>
+                                <p class="text-gray-400 text-sm">強調在千鈞一髮之際的得救與滑脫。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <span class="text-gold-500 font-bold mb-4 block">關鍵問題</span>
+                                <p class="text-gray-200">我們是否敏銳於神透過看似平凡的人事物（如家人的機智），為我們開的出路？</p>
+                            </div>
+                            <div class="md:col-span-2 bento-card p-8 rounded-3xl border-l-4 border-l-gold-500">
+                                <p class="text-gray-400 italic">「上帝的護理不僅彰顯在那些轟轟烈烈的神蹟中，更隱藏在日常生活的每一個微小細節和人的決策裡。」——約翰·加爾文</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-32">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-4 space-y-6">
+                            <h3 class="text-2xl font-black text-gold-500 font-serif leading-tight">絕境中的神聖介入<br/>聖靈的護庇</h3>
+                            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                                <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">引用經文</h4>
+                                <p class="text-sm text-gray-400 leading-relaxed">
+                                    神的靈也感動他，一面走一面說話，直到拉瑪的拿約。他就脫了衣服，在撒母耳面前受感說話，一晝一夜露體躺臥。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-8 rounded-3xl">
+                                <span class="text-gold-500 font-bold mb-4 block">關鍵字</span>
+                                <p class="text-xl text-white mb-2">受感說話 <span class="text-gray-500 text-sm italic">naba</span></p>
+                                <p class="text-gray-400 text-sm">上帝以絕對主權介入、瓦解仇敵武裝行動的超自然彰顯。</p>
+                            </div>
+                            <div class="bento-card p-8 rounded-3xl">
+                                <span class="text-gold-500 font-bold mb-4 block">關鍵問題</span>
+                                <p class="text-gray-200">當面對無法抗拒的仇敵時，我們是否知道最終極的避難所是在「神的同在」裡？</p>
+                            </div>
+                            <div class="md:col-span-2 bento-card p-8 rounded-3xl border-l-4 border-l-gold-500">
+                                <p class="text-gray-400 italic">「我們在試煉中最安全的避難所，就是上帝的胸懷；那裡不僅有安慰，更有能使所有仇敵靜默的絕對權能。」——查爾斯·史丹利</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="bg-gold-500/20 p-3 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">講章文稿</h2>
+            </div>
+
+            <div class="space-y-12 max-w-4xl mx-auto text-gray-300 leading-[2] text-lg md:text-xl font-light">
+                <p>弟兄姊妹們，平安。我們一生中總會遇到突如其來的風暴。有時這些風暴來自於環境的改變，有時來自於他人無端的嫉妒與攻擊。今天我們要從撒母耳記上19章來看一個主題：<span class="text-gold-400 font-bold">「絕境中的避難所：當危機來襲時的三重護衛」</span>。</p>
+
+                <p>大衛剛剛擊敗了歌利亞，本該是國家的英雄，但這卻引發了掃羅王極深的嫉妒。掃羅的嫉妒演變成瘋狂的殺意。然而，在這段充滿追殺與驚險的經文中，我們卻看見了神為大衛預備的「三重護衛」。</p>
+
+                <div class="my-16 border-y border-white/10 py-12">
+                    <h3 class="text-2xl font-bold text-gold-500 mb-6 font-serif">第一段：危機中的屬靈摯友——約拿單的代求</h3>
+                    <p>首先，我們看到<span class="text-white font-medium">危機中的屬靈摯友——約拿單的代求</span>。掃羅公開下達了追殺令，但在這最危險的時刻，大衛最好的朋友、掃羅的兒子約拿單挺身而出。約拿單沒有選擇明哲保身，他勇敢地向父親「說好話」。原文的「說好話」不是拍馬屁，而是在充滿敵意的環境中，勇敢說出基於真理與良善的言辭。他指出大衛是「無辜」的。</p>
+                </div>
+
+                <div class="my-16 border-y border-white/10 py-12">
+                    <h3 class="text-2xl font-bold text-gold-500 mb-6 font-serif">第二段：破口中的緊急救援——米甲的幫助</h3>
+                    <p>然而，掃羅內心的惡魔並沒有徹底離開。當大衛再次得勝，掃羅的嫉妒如火山爆發，直接拿起槍要將大衛釘在牆上。大衛連夜逃跑。這引出了神的第二重護衛：<span class="text-white font-medium">破口中的緊急救援——米甲的幫助</span>。</p>
+                    <p class="mt-4 text-gold-200 italic font-serif">「上帝的護理不僅彰顯在那些轟轟烈烈的神蹟中，更隱藏在日常生活的每一個微小細節和人的決策裡。」</p>
+                </div>
+
+                <div class="my-16 border-y border-white/10 py-12">
+                    <h3 class="text-2xl font-bold text-gold-500 mb-6 font-serif">第三段：絕境中的神聖介入——聖靈的護庇</h3>
+                    <p>大衛連夜逃命，他失去了宮廷的地位，失去了溫暖的家，他現在是個一無所有的通緝犯。這時，大衛做了一個至關重要的決定。<span class="text-gold-400 font-bold">「大衛逃避，來到拉瑪見撒母耳，將掃羅向他所行的事述說了一遍。他就和撒母耳往拿約去交遊。」</span>（撒母耳記上19:18）</p>
+                    <p class="mt-4">大衛沒有去招兵買馬，也沒有逃往外國，他選擇逃向屬靈的導師，逃向神的同在——拉瑪的拿約。這帶來了第三重護衛：<span class="text-white font-medium">絕境中的神聖介入——聖靈的護庇</span>。</p>
+                </div>
+
+                <div class="bg-gold-500/10 p-10 rounded-3xl border border-gold-500/20 text-center">
+                    <p class="text-gray-200">弟兄姊妹，面對人生的絕境，你的「拿約」在哪裡？當人的資源用盡，當仇敵逼近，我們最安全的避難所，就是神的同在。求主幫助我們，在危機中經歷祂豐盛的護庇！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="bg-gold-500/20 p-3 rounded-xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-gray-200 font-serif leading-relaxed mb-6">「苦難往往是上帝用來將我們驅趕到祂恩典避難所的牧羊犬。」</p>
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm">— 提摩太·凱勒</span>
+                        <p class="text-gray-500 text-xs italic mt-1">《走過苦難幽谷》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between border-t-4 border-t-gold-500">
+                    <p class="text-gray-200 font-serif leading-relaxed mb-6">「上帝絕不會犯錯，祂太過良善以致不會殘忍，太過全智以致不會出錯。當你無法看清祂的手時，你可以信靠祂的心。」</p>
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm">— 司布真</span>
+                        <p class="text-gray-500 text-xs italic mt-1">司布真講道集</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-gray-200 font-serif leading-relaxed mb-6">「在一個充滿焦慮的世界裡，唯一能讓我們心靈真正安息的避難所，就是毫無保留地降服於上帝不變的愛。」</p>
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm">— 盧雲</span>
+                        <p class="text-gray-500 text-xs italic mt-1">《浪子回頭》</p>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="bento-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-gray-200 font-serif leading-relaxed mb-6">「當一切世俗的支撐都被撤去時，我們才會發現，上帝的同在是我們唯一且足夠的依靠。」</p>
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm">— 陶恕</span>
+                        <p class="text-gray-500 text-xs italic mt-1">《渴慕神》</p>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="bento-card p-8 rounded-3xl md:col-span-2 flex flex-col justify-between bg-gradient-to-br from-gold-500/10 to-transparent">
+                    <p class="text-gray-200 font-serif leading-relaxed mb-6">「神允許苦難與逼迫臨到屬祂的人，不是為了毀滅他們，而是為了熬煉他們，讓世人看見神的主權凌駕於一切人間的權勢之上。」</p>
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm">— 唐崇榮</span>
+                        <p class="text-gray-500 text-xs italic mt-1">《神權、人權、政權》</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caution Footer -->
+        <section class="text-center pt-12 border-t border-white/5">
+            <p class="text-gray-600 text-xs tracking-[0.2em]">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-abyss rounded-full flex items-center justify-center floating-action animate-float hover:bg-gold-400 transition-all z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </a>
+
+</body>
+</html>

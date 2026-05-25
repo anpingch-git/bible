@@ -85,7 +85,24 @@
             .bento-span-2 { grid-column: span 2; }
         }
     </style>
-</head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '來11:17-40',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '來',         // 動態注入書卷縮寫，例如：出
+              'note_title': '超越眼見的信心——在未見之處看見神的「更美」' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
 <body class="font-sans antialiased selection:bg-gold-500 selection:text-slate-950">
 
     <!-- Sticky Navigation -->

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒下13:1-19:慾望的陷阱——當愛被私慾吞噬</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Inter:wght@300;400;600&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        crimson: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            900: '#4c0519',
+                        },
+                        obsidian: '#0a0a0c',
+                        gold: '#d4af37',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'micro-jump': 'micro-jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'micro-jump': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            background: linear-gradient(to bottom, rgba(10,10,12,0.3) 0%, rgba(10,10,12,0.8) 70%, #0a0a0c 100%);
+        }
+        .section-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(244, 63, 94, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f43f5e 0%, #fb923c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .outline-btn {
+            background: rgba(244, 63, 94, 0.1);
+            border: 1px solid rgba(244, 63, 94, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: rgba(244, 63, 94, 0.2);
+            transform: translateY(-2px);
+            border-color: rgba(244, 63, 94, 0.5);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒下13:1-19',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '慾望的陷阱——當愛被私慾吞噬' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-crimson-500/30">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav px-4 py-3 sm:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="text-crimson-500 font-heading font-bold text-lg tracking-tight">撒下13:1-19</span>
+            <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-medium tracking-wide text-gray-300">
+                <a href="#prayer" class="hover:text-crimson-500 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-crimson-500 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-crimson-500 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-crimson-500 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse -->
+    <header class="relative h-[85vh] flex items-center justify-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_ee3739bf-e498-454a-8620-44f447a342d7.jpg' alt='Banner' class="w-full h-full object-cover animate-pulse-slow opacity-60" />
+            <div class="absolute inset-0 banner-mask"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl sm:text-6xl font-black mb-8 leading-tight tracking-tighter">
+                <span class="block text-gray-400 text-xl sm:text-2xl font-heading mb-2">撒下13:1-19</span>
+                慾望的陷阱<br/>
+                <span class="text-gradient">當愛被私慾吞噬</span>
+            </h1>
+            
+            <div class="animate-micro-jump">
+                <p class="text-xl sm:text-3xl font-display italic text-gray-100 leading-relaxed max-w-2xl mx-auto">
+                    「隨後，暗嫩極其恨她，那恨她的心比先前愛她的心更甚，對她說：『你起來，去吧！』」
+                </p>
+                <p class="mt-4 text-crimson-500 font-heading tracking-widest text-sm">— 撒母耳記下 13:15 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-16">
+            <div class="section-card p-8 sm:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
+                    <svg width="200" height="200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.45L19.55 19H4.45L12 5.45zM11 16h2v2h-2v-2zm0-7h2v5h-2V9z"/></svg>
+                </div>
+                <h2 class="flex items-center gap-3 text-2xl sm:text-3xl font-display font-bold text-crimson-500 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    禱告主言
+                </h2>
+                <div class="text-lg sm:text-xl text-gray-300 leading-relaxed font-light italic">
+                    「主啊，我們來到祢面前，承認人心比萬物都詭詐，壞到極處。求祢的光照亮我們內心深處隱藏的私慾，賜我們屬靈的洞察力，能辨識並拒絕有毒的建議與試探。求祢保守我們的心勝過保守一切，讓我們的愛建立在真理與聖潔之上，而非自私的佔有與毀滅。也求祢醫治那些在罪惡與權力下受傷的靈魂，用祢恩典纏裹他們的傷處。奉主耶穌基督的名求，阿們。」
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation / Outline Index -->
+        <section id="outline" class="pt-16">
+            <h2 class="flex items-center gap-3 text-2xl sm:text-3xl font-display font-bold text-crimson-500 mb-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                信息大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section-1" class="outline-btn p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <span class="text-gray-500 font-heading text-sm mb-2">Section 01</span>
+                    <span class="text-lg font-bold group-hover:text-crimson-500 transition-colors">潛伏的危機：變質的情感與有毒的謀士</span>
+                    <span class="mt-2 text-xs text-crimson-600/70">13:1-5</span>
+                </a>
+                <a href="#section-2" class="outline-btn p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <span class="text-gray-500 font-heading text-sm mb-2">Section 02</span>
+                    <span class="text-lg font-bold group-hover:text-crimson-500 transition-colors">越界的悲劇：盲目的縱容與失控的暴力</span>
+                    <span class="mt-2 text-xs text-crimson-600/70">13:6-14</span>
+                </a>
+                <a href="#section-3" class="outline-btn p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <span class="text-gray-500 font-heading text-sm mb-2">Section 03</span>
+                    <span class="text-lg font-bold group-hover:text-crimson-500 transition-colors">罪後的廢墟：慾望的幻滅與受害者的傷痕</span>
+                    <span class="mt-2 text-xs text-crimson-600/70">13:15-19</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <div id="section-1" class="scroll-mt-24">
+                    <div class="border-l-4 border-crimson-500 pl-6 mb-8">
+                        <h3 class="text-2xl font-bold mb-2">一、 潛伏的危機：變質的情感與有毒的謀士</h3>
+                        <p class="text-crimson-500 font-heading">撒下 13:1-5</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-gray-900/50 p-6 rounded-xl text-gray-400 italic text-sm leading-relaxed">
+                            大衛的兒子押沙龍有一個美貌的妹子，名叫他瑪。大衛的兒子暗嫩愛她... 約拿達說：「你不如躺在床上裝病...」
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-crimson-400 font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-gray-300"><strong>朋友 (rea')</strong>：教唆犯罪的計謀。顯示了「朋友」若沒有真理的引導，可能成為引人走向滅亡的推手。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-crimson-400 font-bold mb-2">深度解析 Q&A</h4>
+                                <p class="text-gray-300">為什麼容易把「私慾」誤認為「愛」？真正的愛是為對方尋求益處，而私慾則是為了滿足自己而犧牲對方。當人被慾望蒙蔽時，往往會失去理智。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-gold/5 border border-gold/20 p-6 rounded-xl italic text-gold/90">
+                        「罪的本質就是將自己當作上帝，把自己的慾望置於一切律法與他人的福祉之上。」—— 約翰·加爾文
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="section-2" class="scroll-mt-24">
+                    <div class="border-l-4 border-crimson-500 pl-6 mb-8">
+                        <h3 class="text-2xl font-bold mb-2">二、 越界的悲劇：盲目的縱容與失控的暴力</h3>
+                        <p class="text-crimson-500 font-heading">撒下 13:6-14</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-gray-900/50 p-6 rounded-xl text-gray-400 italic text-sm leading-relaxed">
+                            ...他便拉住他瑪，說：「我妹妹，你來與我同寢。」他瑪說：「我哥哥，不要玷辱我...」但暗嫩不肯聽。
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-crimson-400 font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-gray-300"><strong>玷辱 ('anah)</strong>：壓迫、強暴或降卑。表達了權力上的不對等。暗嫩利用了大衛的信任與他瑪的順服。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-crimson-400 font-bold mb-2">深度解析 Q&A</h4>
+                                <p class="text-gray-300">為何理智與道德勸阻往往會失效？當私慾被懷胎，環境許可（單獨相處）時，罪的力量會壓倒一切良知。逃避試探的唯一方法是不給肉體留地步。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-gold/5 border border-gold/20 p-6 rounded-xl italic text-gold/90">
+                        「在試探中，人不再仰望神，只看見他所渴望的對象。罪使人盲目。」—— 潘霍華
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="section-3" class="scroll-mt-24">
+                    <div class="border-l-4 border-crimson-500 pl-6 mb-8">
+                        <h3 class="text-2xl font-bold mb-2">三、 罪後的廢墟：慾望的幻滅與受害者的傷痕</h3>
+                        <p class="text-crimson-500 font-heading">撒下 13:15-19</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-gray-900/50 p-6 rounded-xl text-gray-400 italic text-sm leading-relaxed">
+                            隨後，暗嫩極其恨她... 他瑪把灰撒在頭上，撕裂所穿的彩衣，以手抱頭，一面走，一面哭喊。
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-crimson-400 font-bold mb-2">關鍵原文 Keyword</h4>
+                                <p class="text-gray-300"><strong>恨 (sane')</strong>：極度的憎恨。揭示了情慾的虛謊本質。罪惡得逞後，帶來的不是滿足，而是強烈的空虛。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-crimson-400 font-bold mb-2">深度解析 Q&A</h4>
+                                <p class="text-gray-300">為什麼罪惡滿足後是更深的痛苦？因為罪的承諾永遠是謊言。暗嫩的「恨」其實是他自身罪惡感與羞恥感的投射，他將受害者當成替罪羔羊。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-gold/5 border border-gold/20 p-6 rounded-xl italic text-gold/90">
+                        「罪所承諾的快樂只是一個幻影；當我們伸手去抓時，它便化為烏有。」—— 陶恕
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="pt-16">
+            <h2 class="flex items-center gap-3 text-2xl sm:text-3xl font-display font-bold text-crimson-500 mb-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                講章文稿
+            </h2>
+            <div class="prose prose-invert max-w-none text-gray-300 space-y-8 leading-relaxed text-lg">
+                <div class="text-center mb-12">
+                    <p class="text-crimson-500 font-heading tracking-widest uppercase text-sm mb-4">Sermon Manuscript</p>
+                    <h3 class="text-3xl sm:text-4xl font-display font-bold text-white">慾望的陷阱——當愛被私慾吞噬</h3>
+                </div>
+                
+                <p>弟兄姊妹們，今天我們要面對聖經中極其沉重、令人心碎的一段歷史。這段歷史發生在合神心意的大衛王家中。當大衛在拔示巴的事件上犯了淫亂與謀殺的罪後，先知拿單曾預言：「刀劍必永不離開你的家。」撒母耳記下第13章，就是這悲慘預言應驗的開端。這裡沒有外邦人的攻擊，只有家庭內部的撕裂；沒有戰場上的刀光劍影，只有私慾失控後的極度殘酷。</p>
+
+                <div class="border-l-4 border-crimson-500 pl-6 py-2 bg-crimson-900/10">
+                    <h4 class="text-xl font-bold text-white mb-2">一、 潛伏的危機：變質的情感與有毒的謀士</h4>
+                    <p>暗嫩以為自己「愛」他瑪，但這根本不是愛，這是赤裸裸的私慾。愛是渴望付出，私慾是急於佔有。</p>
+                </div>
+
+                <p>約拿達代表了我們生命中那些**「有毒的謀士」**。那些告訴你「只要你喜歡有什麼不可以」、「神會原諒你的，先做了再說」的聲音，正引導你走向毀滅的懸崖。我們必須警醒，沒有真理約束的「友誼」，往往是撒但的工具。</p>
+
+                <div class="border-l-4 border-crimson-500 pl-6 py-2 bg-crimson-900/10">
+                    <h4 class="text-xl font-bold text-white mb-2">二、 越界的悲劇：盲目的縱容與失控的暴力</h4>
+                </div>
+
+                <p class="font-bold text-crimson-400 text-xl italic">「但暗嫩不肯聽她的話，因比她力大，就玷辱她，與她同寢。」</p>
+
+                <p>當人允許私慾懷胎，並刻意營造犯罪的環境時，理智的煞車就完全失靈了。逃避試探的唯一方式，就是連裝病的床都不要躺上去，連約拿達的建議都不要聽！</p>
+
+                <div class="border-l-4 border-crimson-500 pl-6 py-2 bg-crimson-900/10">
+                    <h4 class="text-xl font-bold text-white mb-2">三、 罪後的廢墟：慾望的幻滅與受害者的傷痕</h4>
+                </div>
+
+                <p>發生了什麼事？一分鐘前他還非她不可，一分鐘後他卻「極其恨她」。為什麼？因為這就是罪惡的真相！罪的承諾永遠是謊言。暗嫩得到他瑪後得到的只有深沉的罪惡感、羞恥感，以及靈魂的死亡。</p>
+                
+                <p>暗嫩的悲劇是對我們每個人的警告。私慾、界線、後果，這三個詞沉重地壓在這段經文上。求主保守我們的心，過濾我們生命中的聲音，拒絕一切有毒的建議。</p>
+            </div>
+            
+            <!-- Application Directions -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-crimson-900/20 p-8 rounded-3xl border border-crimson-500/20">
+                    <h4 class="text-crimson-500 font-bold mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-crimson-500 rounded-full"></span> 應用方向
+                    </h4>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li>• 檢視我們的人際網絡</li>
+                        <li>• 認清情慾的欺騙性</li>
+                        <li>• 設立嚴格的界線，保護弱勢</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                    <h4 class="text-crimson-500 font-bold mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-crimson-500 rounded-full"></span> 結論關鍵字
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-crimson-500/10 text-crimson-500 rounded-full text-xs">私慾 Selfish Desire</span>
+                        <span class="px-3 py-1 bg-crimson-500/10 text-crimson-500 rounded-full text-xs">界線 Boundaries</span>
+                        <span class="px-3 py-1 bg-crimson-500/10 text-crimson-500 rounded-full text-xs">後果 Consequences</span>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                    <h4 class="text-crimson-500 font-bold mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-crimson-500 rounded-full"></span> 回應行動
+                    </h4>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li>1. 審查你的「密友」</li>
+                        <li>2. 設立「防火牆」</li>
+                        <li>3. 為受傷者禱告並發聲</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-16">
+            <h2 class="flex items-center gap-3 text-2xl sm:text-3xl font-display font-bold text-crimson-500 mb-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「偶像崇拜就是把美好的事物變成終極的事物。當我們把人的愛或任何渴望推向終極時，它就會成為吞噬我們的猛獸。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 提摩太·凱勒，《假神眾多》</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「在試探者的欺騙之下，上帝在我們眼中失去了祂的真實性。此時唯有我們的慾望才是真實的。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 潘霍華，《誘惑》</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「上帝的律法不是為了限制我們的自由而設的欄杆，而是為了保護我們免於墜落懸崖的防護網。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 大衛·鮑森，《解開聖經》</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「你無法阻止鳥兒從你頭上飛過，但你可以阻止牠們在你頭髮裡築巢。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 馬丁·路德</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「罪不僅是對上帝的背叛，也是對自身人性的破壞。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 約翰·史托德，《真理的尋索》</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「罪會帶你走得比你原本想去的更遠，把你留在那裡比你原本想留的更久。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 查爾斯·史丹利，《戰勝生命中的試探》</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「我們生活在一個將慾望神聖化的世界裡，但基督的呼召是將我們的慾望釘在十字架上。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 畢德生，《莫測樹下》</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「不要與微小的罪惡玩耍，因為它會長成一頭足以吞噬你靈魂的巨獸。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 司布真</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「誘惑總是依賴一個錯覺：它試圖讓我們相信，我們可以得到我們想要的東西，而不需要承擔後果。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 魏樂德</p>
+                </div>
+                <div class="section-card p-6">
+                    <p class="text-gray-300 italic mb-4">「自由不是『我想做什麼就做什麼』，那是放縱；真正的自由是『我不想做神不喜悅的事，我就有能力不做』。」</p>
+                    <p class="text-crimson-500 text-sm font-bold">— 唐崇榮</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center py-12 text-gray-600 text-sm tracking-widest border-t border-white/5">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Scroll to Top FAB -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-crimson-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-crimson-500 transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

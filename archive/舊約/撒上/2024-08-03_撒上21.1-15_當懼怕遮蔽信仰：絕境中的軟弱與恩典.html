@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒上21:1-15:當懼怕遮蔽信仰：絕境中的軟弱與恩典</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;700&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        obsidian: '#0a0a0c',
+                        card: 'rgba(255, 255, 255, 0.03)',
+                        accent: '#c4a77d'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 4s ease-in-out infinite',
+                        'subtle-float': 'float 3s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+                        'jump': 'jump 2.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { textShadow: '0 0 10px rgba(196,167,125,0.4)' },
+                            '50%': { textShadow: '0 0 20px rgba(196,167,125,0.8)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '10%, 30%': { transform: 'translateY(-3px)' },
+                            '20%': { transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #facc15 0%, #c4a77d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 4s ease-in-out infinite;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒上21:1-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當懼怕遮蔽信仰：絕境中的軟弱與恩典' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-accent font-display font-semibold tracking-wider text-sm md:text-base">
+            撒上 21:1-15
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest text-gray-300">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative w-full h-[70vh] flex flex-col justify-center items-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_8fbca21d-84ce-40f6-ae62-2fa04c475709.jpg' alt='media_1' class="w-full h-full object-cover animate-breathe banner-mask" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h1 class="text-3xl md:text-6xl font-serif font-black leading-tight mb-8">
+                <span class="block text-gray-400 text-lg md:text-2xl mb-2 font-display uppercase tracking-[0.2em]">Samuel 21:1-15</span>
+                <span class="text-gradient">當懼怕遮蔽信仰：絕境中的軟弱與恩典</span>
+            </h1>
+            
+            <div class="mt-12 md:mt-20">
+                <p class="text-xl md:text-3xl font-serif italic text-gold-100 jump-text leading-relaxed tracking-wide">
+                    「大衛說：『這刀沒有可比的！求你交給我。』」
+                </p>
+                <p class="text-gray-500 mt-4 font-sans tracking-[0.3em] text-xs md:text-sm">— 撒母耳記上 21:9 —</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pb-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="py-24 scroll-mt-24">
+            <div class="glass rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M11,2H13V4H11V2M11,20H13V22H11V20M2,11H4V13H2V11M20,11H22V13H20V11M18.36,16.95L19.78,18.36L18.36,19.78L16.95,18.36L18.36,16.95M18.36,4.22L19.78,5.64L18.36,7.05L16.95,5.64L18.36,4.22M4.22,4.22L5.64,5.64L7.05,4.22L5.64,2.81L4.22,4.22M4.22,16.95L5.64,18.36L7.05,19.78L5.64,21.19L4.22,19.78M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6Z" /></svg>
+                </div>
+                <h2 class="flex items-center text-2xl font-bold mb-8 text-gold-500 font-serif">
+                    <span class="mr-3 p-2 bg-gold-600/20 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </span>
+                    禱告詞
+                </h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-200 font-serif whitespace-pre-wrap italic">
+                    主啊，當我們身處絕境、被恐懼四面環繞時，我們常像大衛一樣，試圖用自己的謊言來保護自己，用屬血氣的刀劍來尋找安全感。求祢赦免我們小信的罪。求祢開啟我們的屬靈眼睛，讓我們看見即使在我們最軟弱、最不堪、甚至裝瘋賣傻的時刻，祢的恩典依然托住我們。幫助我們放下心中的「歌利亞之刀」，重新單單仰望祢的拯救。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="py-12 scroll-mt-24">
+            <h2 class="flex items-center text-2xl font-bold mb-10 text-gold-500 font-serif">
+                <span class="mr-3 p-2 bg-gold-600/20 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </span>
+                分段解析大綱
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section-1" class="group p-6 glass hover:bg-gold-600/10 transition-all rounded-2xl border-l-4 border-gold-600">
+                    <span class="text-xs text-gold-500 font-bold tracking-widest uppercase">第一段 (v. 1-6)</span>
+                    <h3 class="text-lg font-bold mt-2 group-hover:text-gold-400 transition-colors">挪伯的謊言</h3>
+                    <p class="text-xs text-gray-400 mt-2">當恐懼取代了信靠</p>
+                </a>
+                <a href="#section-2" class="group p-6 glass hover:bg-gold-600/10 transition-all rounded-2xl border-l-4 border-gold-600">
+                    <span class="text-xs text-gold-500 font-bold tracking-widest uppercase">第二段 (v. 7-9)</span>
+                    <h3 class="text-lg font-bold mt-2 group-hover:text-gold-400 transition-colors">歌利亞的刀</h3>
+                    <p class="text-xs text-gray-400 mt-2">抓住錯誤的倚靠</p>
+                </a>
+                <a href="#section-3" class="group p-6 glass hover:bg-gold-600/10 transition-all rounded-2xl border-l-4 border-gold-600">
+                    <span class="text-xs text-gold-500 font-bold tracking-widest uppercase">第三段 (v. 10-15)</span>
+                    <h3 class="text-lg font-bold mt-2 group-hover:text-gold-400 transition-colors">迦特的裝瘋</h3>
+                    <p class="text-xs text-gray-400 mt-2">跌入谷底的籌謀</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline -->
+            <div class="space-y-16">
+                <!-- Section 1 -->
+                <div id="section-1" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-4 mb-6">
+                        <span class="text-4xl font-black text-gold-600/30 font-display">01</span>
+                        <h3 class="text-2xl font-bold text-gray-100 font-serif">挪伯的謊言——當恐懼取代了信靠</h3>
+                    </div>
+                    <div class="pl-0 md:pl-12 space-y-8">
+                        <div class="bg-white/5 border-l border-white/10 p-6 italic text-gray-300 text-sm leading-relaxed">
+                            大衛到了挪伯祭司亞希米勒那裡，亞希米勒戰戰兢兢地出來迎接他...大衛回答祭司亞希米勒說：「王吩咐我一件事說：『我差遣你委託你的這件事，不要使人知道。』...」
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 text-sm tracking-widest uppercase flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                    原文及詞彙
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed"><span class="text-gold-500 font-bold">「戰戰兢兢」(חרד，charad)</span>：意為發抖、恐懼。祭司感受到危機；大衛則因恐懼而說出連串謊言。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 text-sm tracking-widest uppercase flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed">為何信心勇士大衛選擇說謊？當恐懼接管了內心，人會試圖用肉體的方法（謊言）來掌控局面。</p>
+                            </div>
+                        </div>
+                        <div class="bg-accent/5 p-6 rounded-2xl border border-accent/20">
+                            <h4 class="text-accent font-bold mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                名言佳句
+                            </h4>
+                            <p class="font-serif italic text-gray-200">「恐懼是我們為那些取代神位置的偶像所付出的代價。當安全感成了我們的偶像，失去它就會讓我們陷入極度的恐慌與妥協。」 —— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section-2" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-4 mb-6">
+                        <span class="text-4xl font-black text-gold-600/30 font-display">02</span>
+                        <h3 class="text-2xl font-bold text-gray-100 font-serif">歌利亞的刀——抓住錯誤的倚靠</h3>
+                    </div>
+                    <div class="pl-0 md:pl-12 space-y-8">
+                        <div class="bg-white/5 border-l border-white/10 p-6 italic text-gray-300 text-sm leading-relaxed">
+                            大衛問：「你手下有槍有刀沒有？」...祭司說：「你在以拉谷殺非利士人歌利亞的那刀在這裡...」大衛說：「這刀沒有可比的！求你交給我。」
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 text-sm tracking-widest uppercase flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                    原文及詞彙
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed"><span class="text-gold-500 font-bold">「多益」(דּוֹאֵג，Doeg)</span>：意為「焦慮」。諷刺的是大衛在聖所遇見了恐懼的化身多益。<br><span class="text-gold-500 font-bold">「刀」(חֶרֶב，chereb)</span>：代表武力與屬世的安全感。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 text-sm tracking-widest uppercase flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed">大衛曾說「不靠刀槍」，此刻卻說敵人之刀「無可比擬」。這反映信徒在絕境中極易回頭抓取最堅硬的武器，卻忘記神才是盾牌。</p>
+                            </div>
+                        </div>
+                        <div class="bg-accent/5 p-6 rounded-2xl border border-accent/20">
+                            <h4 class="text-accent font-bold mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                名言佳句
+                            </h4>
+                            <p class="font-serif italic text-gray-200">「我們若倚靠自己的籌謀，就只能得到人智所能及的結果；若倚靠神，就能看見神所能成就的。」 —— 陶恕</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section-3" class="scroll-mt-32">
+                    <div class="flex items-baseline gap-4 mb-6">
+                        <span class="text-4xl font-black text-gold-600/30 font-display">03</span>
+                        <h3 class="text-2xl font-bold text-gray-100 font-serif">迦特的裝瘋——跌入谷底的籌謀</h3>
+                    </div>
+                    <div class="pl-0 md:pl-12 space-y-8">
+                        <div class="bg-white/5 border-l border-white/10 p-6 italic text-gray-300 text-sm leading-relaxed">
+                            大衛逃到迦特王亞吉那裡...就在眾人面前假裝瘋癲，在城門的門扇上胡寫亂畫，使唾沫流在鬍子上。
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 text-sm tracking-widest uppercase flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                    原文及詞彙
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed"><span class="text-gold-500 font-bold">「裝瘋」(שָׁגַע，shaga')</span>：狂妄、瘋癲。在古代中東，瘋子被認為被神擊打，人們會避開以防染厄。</p>
+                            </div>
+                            <div class="glass p-6 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-3 text-sm tracking-widest uppercase flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題
+                                </h4>
+                                <p class="text-gray-300 leading-relaxed">大衛逃到歌利亞故鄉是極荒謬的決定。靠自己籌謀不僅無安全感，反帶來羞辱。但正是谷底經歷促使他寫下詩篇34篇。</p>
+                            </div>
+                        </div>
+                        <div class="bg-accent/5 p-6 rounded-2xl border border-accent/20">
+                            <h4 class="text-accent font-bold mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                名言佳句
+                            </h4>
+                            <p class="font-serif italic text-gray-200">「最強壯的信徒，若被神暫時任憑，也會變得比最軟弱的人更軟弱。我們裡面沒有一絲一毫可以自誇的本錢。」 —— 司布真</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content Section -->
+        <section id="sermon" class="py-24 scroll-mt-24 border-t border-white/5">
+            <h2 class="flex items-center text-3xl font-bold mb-12 text-gold-500 font-serif">
+                <span class="mr-3 p-2 bg-gold-600/20 rounded-lg">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </span>
+                講章文稿
+            </h2>
+
+            <article class="prose prose-invert prose-gold max-w-none space-y-10">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl font-serif font-black text-white mb-4">大衛的逃亡：當懼怕遮蔽信仰</h3>
+                    <div class="w-24 h-1 bg-gold-600 mx-auto"></div>
+                </div>
+
+                <p class="text-xl leading-relaxed text-gray-300">
+                    弟兄姊妹們，我們常以為偉大的屬靈領袖永遠堅強。但在撒母耳記上21章，我們看見了以色列歷史上最偉大的君王大衛，跌入了人生與信仰的最低谷。今天的信息主題是：<strong class="text-gold-400 border-b border-gold-400 pb-1">絕境中的軟弱與恩典</strong>。
+                </p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold-500 font-serif border-l-4 border-gold-600 pl-4">第一段：挪伯的謊言——當恐懼取代了信靠</h4>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        大衛正在逃亡。他失去了地位、妻子、摯友，孤身一人來到挪伯。面對祭司亞希米勒的詢問，大衛害怕了。<strong class="text-white bg-gold-600/20 px-1">「大衛回答祭司亞希米勒說：『王吩咐我一件事……』」</strong>(撒上21:2)。這是一個徹頭徹尾的謊言。為什麼一個曾經單挑歌利亞的勇士，現在卻害怕得說謊？因為<strong class="text-gold-400">當恐懼取代了信靠，我們就會試圖用自己的方法來掌控局面</strong>。
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        提摩太·凱勒曾說：「恐懼是我們為那些取代神位置的偶像所付出的代價。」大衛眼前的環境太巨大，以至於上帝變得微小。他陷入了屬靈的隧道視覺，只能用謊言作為自我保護的急救包。但謊言從來不能帶來真正的保護，反而會拖累無辜的人。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold-500 font-serif border-l-4 border-gold-600 pl-4">第二段：歌利亞的刀——抓住錯誤的倚靠</h4>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        大衛不僅要了食物，他還需要武器。祭司告訴他，這裡只有當年他擊殺歌利亞的那把刀。<strong class="text-white bg-gold-600/20 px-1">「大衛說：『這刀沒有可比的！求你交給我。』」</strong>(撒上21:9)。
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        這是何等諷刺的畫面！當年大衛大聲宣告：「耶和華使人得勝，不是用刀用槍。」如今，他卻把敵人的刀視為「無可比擬」的保障。當我們處在絕境中，我們極容易忘記神，轉而去抓取這世界上最世俗的武器——也許是我們存款的數字、我們的學歷、或是我們的人脈。我們以為這把刀能帶來安全感，卻不知道，<strong class="text-gold-400">抓住錯誤的倚靠，只會讓我們離神越來越遠。</strong>
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold-500 font-serif border-l-4 border-gold-600 pl-4">第三段：迦特的裝瘋——跌入谷底的籌謀</h4>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        拿著歌利亞的刀，大衛逃到了哪裡？他逃到了歌利亞的家鄉——迦特！這是一個荒謬至極的決定。他立刻被認了出來，命懸一線。為了活命，大衛選擇了最羞辱的方式：<strong class="text-white bg-gold-600/20 px-1">「在他們手下假裝瘋癲，在城門的門扇上胡寫亂畫，使唾沫流在鬍子上。」</strong>(撒上21:13)。
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        大衛的籌謀讓他失去了所有的尊嚴。司布真曾說：「最強壯的信徒，若被神暫時任憑，也會變得比最軟弱的人更軟弱。」靠自己籌謀的結果，就是跌入羞辱的谷底。
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        然而，奇妙的是，上帝的恩典沒有在谷底放棄他。上帝藉著亞吉王的不屑，讓大衛活著離開了迦特。大衛後來為這段經歷寫下了《詩篇34篇》：「我曾尋求耶和華，他就應允我，救我脫離了一切的恐懼。」
+                    </p>
+                </div>
+
+                <div class="mt-16 bg-gold-600/10 p-10 rounded-3xl border border-gold-600/30">
+                    <p class="text-xl md:text-2xl font-serif text-white text-center leading-relaxed">
+                        弟兄姊妹，無論你現在多麼恐懼，無論你抓錯了什麼刀，甚至無論你現在看起來多麼狼狽。請記得，<span class="text-gold-400 font-bold underline decoration-wavy">放下你的謊言，丟掉歌利亞的刀，重新仰望那位在谷底依然托住你的神。</span>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Application Cards -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl border-t-4 border-gold-500">
+                    <div class="text-gold-500 mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h5 class="text-xl font-bold mb-3 text-white">應用：誠實面對</h5>
+                    <p class="text-sm text-gray-400 leading-relaxed">不要試圖用謊言或假裝堅強來掩飾恐懼。來到神面前承認自己的軟弱。</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-gold-500">
+                    <div class="text-gold-500 mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h5 class="text-xl font-bold mb-3 text-white">應用：檢視依賴</h5>
+                    <p class="text-sm text-gray-400 leading-relaxed">反省我們是否倚靠某種屬世的安全感（金錢、人脈），並認為它「無可比擬」？</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-t-4 border-gold-500">
+                    <div class="text-gold-500 mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h5 class="text-xl font-bold mb-3 text-white">應用：谷底恩典</h5>
+                    <p class="text-sm text-gray-400 leading-relaxed">神曾救大衛脫離恐懼。即便在最糟的決定後，神的恩典依舊沒有離開。</p>
+                </div>
+            </div>
+
+            <div class="mt-12 p-8 bg-obsidian rounded-2xl flex flex-wrap gap-4 items-center justify-center border border-white/10">
+                <span class="text-xs font-display tracking-widest text-gray-500 uppercase">Keywords:</span>
+                <span class="px-4 py-1 rounded-full bg-gold-600/20 text-gold-400 text-sm font-bold">#懼怕</span>
+                <span class="px-4 py-1 rounded-full bg-gold-600/20 text-gold-400 text-sm font-bold">#倚靠</span>
+                <span class="px-4 py-1 rounded-full bg-gold-600/20 text-gold-400 text-sm font-bold">#恩典</span>
+            </div>
+        </section>
+
+        <!-- Response Action Section -->
+        <section class="py-12">
+            <h2 class="flex items-center text-2xl font-bold mb-8 text-gold-500 font-serif">
+                <span class="mr-3 p-2 bg-gold-600/20 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </span>
+                回應行動
+            </h2>
+            <div class="space-y-4">
+                <div class="flex gap-4 p-5 glass rounded-2xl">
+                    <div class="w-8 h-8 bg-gold-600 rounded-full flex items-center justify-center flex-shrink-0 text-obsidian font-bold">1</div>
+                    <p class="text-gray-200"><strong class="text-gold-400">認罪與交託</strong>：在禱告中向神承認一件目前讓你感到極度焦慮的事，並求神赦免你試圖用自己方法解決的念頭。</p>
+                </div>
+                <div class="flex gap-4 p-5 glass rounded-2xl">
+                    <div class="w-8 h-8 bg-gold-600 rounded-full flex items-center justify-center flex-shrink-0 text-obsidian font-bold">2</div>
+                    <p class="text-gray-200"><strong class="text-gold-400">放下刀劍</strong>：本週刻意放棄一個你習以為常的「屬世依靠」（例如：過度加班以求表現、用手段去贏得某個合約），將結果交給神。</p>
+                </div>
+                <div class="flex gap-4 p-5 glass rounded-2xl">
+                    <div class="w-8 h-8 bg-gold-600 rounded-full flex items-center justify-center flex-shrink-0 text-obsidian font-bold">3</div>
+                    <p class="text-gray-200"><strong class="text-gold-400">讚美代替恐懼</strong>：閱讀並默想《詩篇34篇》，用大衛在迦特蒙拯救後所寫的讚美詩，來取代你心中正在編織的「危機應對劇本」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-24 scroll-mt-24">
+            <h2 class="flex items-center text-2xl font-bold mb-12 text-gold-500 font-serif">
+                <span class="mr-3 p-2 bg-gold-600/20 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </span>
+                屬靈前輩佳句名言
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="p-6 glass rounded-2xl relative">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「恩典是白白得來的，但不是廉價的。廉價的恩典是我們自己給自己的恩典，是沒有十字架的恩典。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 潘霍華</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《追隨基督》(The Cost of Discipleship)</p>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="p-6 glass rounded-2xl relative">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「在這個崇尚瞬息萬變的世界裡，基督徒的生命呼召我們進行一種『同一方向的長久順服』。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 畢德生</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《長闊高深的順服》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="p-6 glass rounded-2xl relative border-l-2 border-gold-600">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「我的恐懼常使我成為一個防衛心重、充滿焦慮的人，但天父的愛能將我的恐懼化為被擁抱的安息。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 盧雲</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《浪子回頭》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="p-6 glass rounded-2xl relative border-l-2 border-gold-600">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「上帝的旨意不是要我們逃離這個世界，而是在這個世界中活出屬天的生命。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 魏樂德</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《神聖的約定》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="p-6 glass rounded-2xl relative">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「如果我們不先看見神在十字架上的自我替代，就永遠無法明白神對我們的愛有多深。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 約翰·史托德</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《基督的十字架》</p>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="p-6 glass rounded-2xl relative">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「即使我今天知道世界明天就要毀滅，我仍然要種下我的蘋果樹。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 馬丁·路德</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《馬丁路德言行錄》</p>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="p-6 glass rounded-2xl relative border-l-2 border-gold-600">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「除非我們首先認識神，否則我們永遠無法真正認識自己；同樣，除非我們認識自己，否則也無法真正認識神。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 約翰·加爾文</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《基督教要義》</p>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="p-6 glass rounded-2xl relative border-l-2 border-gold-600">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「真正的宗教主要在乎神聖的情感。沒有感情的信仰，就像沒有熱度的光。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 喬納森·愛德華茲</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《宗教情操真偽辨》</p>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="p-6 glass rounded-2xl relative">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「一個沒有被真理約束的自由，其實是另一種形式的奴役。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 唐崇榮</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《信仰與奮鬥》</p>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="p-6 glass rounded-2xl relative">
+                    <p class="text-gray-200 italic font-serif mb-4 leading-relaxed">「信心沒有任何功勞可言；它只是那隻伸出來接受神恩典的乞丐之手。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-500 text-sm font-bold">— 慕迪</span>
+                        <p class="text-[10px] text-gray-500 mt-1">《祕密的能力》</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-20 pt-8 border-t border-white/5 text-center text-xs text-gray-600 tracking-widest">
+                <p>⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-6 h-6 text-obsidian" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Offset for fixed nav
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

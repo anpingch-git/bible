@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒上12:1-12: 在時代轉折中看見領袖的無愧與真王的信實</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        accent: '#6366f1',
+                        dark: '#0a0a0a',
+                        card: 'rgba(255, 255, 255, 0.05)',
+                        border: 'rgba(255, 255, 255, 0.1)'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 0.9, filter: 'brightness(100%)' },
+                            '50%': { opacity: 0.4, filter: 'brightness(40%)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .hero-banner {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .banner-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .bouncing-text {
+            animation: subtle-bounce 3s infinite ease-in-out;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-4px);
+            background: rgba(99, 102, 241, 0.2);
+            border-color: #6366f1;
+        }
+        .quote-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 80px;
+            color: rgba(212, 175, 55, 0.2);
+            font-family: serif;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒上12:1-12',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在時代轉折中看見領袖的無愧與真王的信實' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-display font-bold text-lg tracking-wider text-gold">撒上 12:1-12</div>
+            <div class="flex gap-4 md:gap-8 text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="header" class="hero-banner pt-16">
+        <img src='image/img_0e2a61b8-b594-4251-8f03-7a56befe9e29.jpg' alt='Banner' class="banner-img animate-pulse-slow" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-dark"></div>
+        <div class="relative z-10 px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-6 leading-tight">
+                在時代轉折中看見<br/>
+                <span class="text-gold">領袖的無愧</span> 與 <span class="text-accent">真王的信實</span>
+            </h1>
+            <div class="bouncing-text text-xl md:text-2xl font-light italic text-white/90 max-w-2xl mx-auto">
+                「現在你們要站住，等我在耶和華面前對你們理問，論到耶和華向你們和你們列祖所行一切公義的事。」
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card p-8 md:p-12 relative overflow-hidden group">
+            <div class="absolute -right-10 -top-10 text-gold/10 transform rotate-12 transition-transform group-hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="m18 11-6-6-6 6"/><path d="m18 17-6-6-6 6"/></svg>
+            </div>
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold/20 rounded-full text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9Z"/><path d="M12 12V7"/><path d="M12 12H7"/><path d="m12 12 3.5 3.5"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-tight">會前禱告</h2>
+            </div>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-300 font-light">
+                親愛的天父，我們感謝祢，因祢是歷史的主宰，也是我們生命中永遠的真王。主啊，我們常像昔日的以色列人一樣，在危機來到時，眼目只定睛在看得見的保障，卻忘記了祢過去一切信實的作為。求祢赦免我們心中的悖逆與小信，幫助我們拆毀心中一切取代祢地位的偶像。求祢賜給我們如同撒母耳般清白無愧的心，在世人面前作光作鹽；也求聖靈開啟我們的靈眼，使我們在人生的每個轉折處，都能堅定宣告：耶和華我們的神是我們的王。奉主耶穌基督的聖名祈求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-accent/20 rounded-full text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-tight">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#section-1" class="outline-btn block p-6 glass-card border-accent/20">
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest block mb-2">Part 01</span>
+                    <h3 class="text-lg font-bold">領袖的品格</h3>
+                    <p class="text-gray-500 text-sm mt-1">撒上 12:1-5</p>
+                </a>
+                <a href="#section-2" class="outline-btn block p-6 glass-card border-accent/20">
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest block mb-2">Part 02</span>
+                    <h3 class="text-lg font-bold">歷史的指控</h3>
+                    <p class="text-gray-500 text-sm mt-1">撒上 12:6-11</p>
+                </a>
+                <a href="#section-3" class="outline-btn block p-6 glass-card border-accent/20">
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest block mb-2">Part 03</span>
+                    <h3 class="text-lg font-bold">錯謬的倚靠</h3>
+                    <p class="text-gray-500 text-sm mt-1">撒上 12:12</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Sections -->
+        <div class="space-y-32">
+            <!-- Section 1 -->
+            <section id="section-1" class="scroll-mt-24 space-y-8">
+                <div class="flex items-baseline gap-4">
+                    <span class="text-5xl font-display font-black text-white/10">01</span>
+                    <h3 class="text-3xl font-bold text-gold">領袖的品格：一生無愧的見證</h3>
+                </div>
+                
+                <div class="border-l-4 border-gold/30 pl-6 py-2 italic text-gray-400 bg-white/5 rounded-r-xl">
+                    <p>1 撒母耳對以色列全眾說：「你們向我所求的，我已應允了，為你們立了一個王；2 現在有這王在你們前面行。我已年老髮白，我的兒子都在你們這裡。我從幼年直到今日都在你們前面行。3 我現在這裡，你們要在耶和華和他的受膏者面前給我作見證。我奪過誰的牛，搶過誰的驢，欺負過誰，虐待過誰，從誰手裡受過賄賂因而瞎了眼呢？若有，我必償還。」4 眾人說：「你未曾欺負我們，虐待我們，也未曾從誰手裡受過什麼。」5 撒母耳對他們說：「你們在我手裡沒有找著什麼，有耶和華和他的受膏者今日為證。」他們說：「願他為證。」</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-accent font-bold flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+                            關鍵原文
+                        </h4>
+                        <p class="text-gray-300"><strong class="text-white">欺負 (Hebrew: 'ashaq)</strong>：原意為「壓迫、欺壓、榨取」。指利用權勢或地位對他人進行剝削。撒母耳表明自己身為士師與先知，擁有極大的權力，卻從未濫權壓迫百姓。</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-accent font-bold flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            關鍵問題
+                        </h4>
+                        <p class="text-gray-300">為什麼撒母耳在交接權力的時刻，首要之務是公開要求百姓檢視他的清白？</p>
+                        <p class="text-sm text-gray-400 bg-white/5 p-4 rounded-lg border border-white/10">撒母耳如此做並非為了自我炫耀，而是為了證明一個屬靈的事實：以色列人要求立王，並不是因為領袖失職。他的清白突顯了百姓求王的動機完全出於對神的不信。</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 bg-gold/5 border-gold/20">
+                    <h4 class="text-gold font-bold mb-3 italic">「品格就是你在暗處時的樣子。」 —— 慕迪 (D.L. Moody)</h4>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" class="scroll-mt-24 space-y-8">
+                <div class="flex items-baseline gap-4">
+                    <span class="text-5xl font-display font-black text-white/10">02</span>
+                    <h3 class="text-3xl font-bold text-accent">歷史的指控：上帝信實與百姓悖逆</h3>
+                </div>
+                
+                <div class="border-l-4 border-accent/30 pl-6 py-2 italic text-gray-400 bg-white/5 rounded-r-xl">
+                    <p>7 現在你們要站住，等我在耶和華面前對你們理問，論到耶和華向你們和你們列祖所行一切公義的事。8 從前雅各到了埃及... 9 他們卻忘記耶和華─他們的神... 10 他們就呼求耶和華說：『我們離棄耶和華，事奉巴力和亞斯他錄，是有罪了。』</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2">關鍵原文</h4>
+                        <p class="text-gray-300"><strong class="text-white">理問 (Hebrew: shaphat)</strong>：原意為「審判、辯護、爭論」。帶有「將證據攤開來檢視」的意思。撒母耳在此彷彿扮演檢察官，將神過去的恩典作為呈堂證供。</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2">關鍵問題</h4>
+                        <p class="text-gray-300">為什麼人在平順時容易「忘記」神，卻在痛苦中才「呼求」神？</p>
+                        <p class="text-sm text-gray-400 bg-white/5 p-4 rounded-lg border border-white/10">經文刻畫了士師記的循環：恩典→遺忘→受苦→呼求→拯救。人性的軟弱在於將神的恩典視為理所當然。當生活安逸時，我們傾向依賴周遭的世界。</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 bg-accent/5 border-accent/20">
+                    <h4 class="text-accent font-bold mb-3 italic">「如果我們忘記了福音，我們就會退化到宗教的道德主義，或是世俗主義中。」 —— 提摩太·凱勒 (Tim Keller)</h4>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="scroll-mt-24 space-y-8">
+                <div class="flex items-baseline gap-4">
+                    <span class="text-5xl font-display font-black text-white/10">03</span>
+                    <h3 class="text-3xl font-bold text-red-400">錯謬的倚靠：在危機中棄絕真王</h3>
+                </div>
+                
+                <div class="border-l-4 border-red-400/30 pl-6 py-2 italic text-gray-400 bg-white/5 rounded-r-xl">
+                    <p>12 你們見亞捫人的王拿轄來攻擊你們，就對我說：『我們定要一個王治理我們。』其實耶和華─你們的神是你們的王。</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-accent font-bold flex items-center gap-2">關鍵原文</h4>
+                        <p class="text-gray-300"><strong class="text-white">王 (Hebrew: melek)</strong>：指擁有最高統治權。以色列人要求的王，不是屬靈帶領者，而是能像列國一樣，帶兵打仗、提供「具體安全感」的政治軍事強人。</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-accent font-bold flex items-center gap-2">關鍵問題</h4>
+                        <p class="text-gray-300">當生活中的「拿轄」（危機）來臨時，我們生命中真正倚靠的「王」是什麼？</p>
+                        <p class="text-sm text-gray-400 bg-white/5 p-4 rounded-lg border border-white/10">亞捫王拿轄的威脅，暴露了以色列人心底的恐懼。他們覺得看不見的神不夠實在。今天我們的「拿轄」可能是經濟危機或人際衝突，而我們所求的「王」可能是金錢或權力。</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 bg-red-400/5 border-red-400/20">
+                    <h4 class="text-red-400 font-bold mb-3 italic">「人心就是一個永無止境的偶像製造廠。」 —— 約翰·加爾文 (John Calvin)</h4>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="py-20 border-t border-white/10">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-white/10 rounded-full text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 8-8 8 8"/><path d="m20 12-8 8-8-8"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-tight">完整講章文稿</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300">
+                <p class="text-xl font-medium text-white mb-10">各位弟兄姊妹，平安！今天我們要透過《撒母耳記上》12章1到12節，來思想一個重要的主題：<span class="text-gold">「在時代轉折中看見領袖的無愧與真王的信實」</span>。</p>
+                
+                <p>當我們來到撒母耳記上第12章，這是一個極其重要的歷史轉折點。這是撒母耳的告別演說，也是以色列從「士師時代」邁入「君王時代」的交接典禮。在這個充滿張力的時刻，撒母耳對百姓說了語重心長的話。</p>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-4">一、 領袖的品格：一生無愧的見證</h3>
+                <p>撒母耳一開口，沒有談偉大的願景，而是要求百姓檢驗他一生的品格。他說：<span class="text-accent font-bold italic">「我奪過誰的牛，搶過誰的驢，欺負過誰，虐待過誰，從誰手裡受過賄賂因而瞎了眼呢？若有，我必償還。」</span></p>
+                <p>撒母耳為什麼要在這個時候極力澄清自己的清白？因為他要證明一件事：以色列人今天鬧著要立王，絕對不是因為他這個屬靈領袖貪污舞弊！他的清廉照出了百姓求王動機的敗壞。慕迪曾說：「品格就是你在暗處時的樣子。」</p>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-4">二、 歷史的指控：上帝信實與百姓悖逆</h3>
+                <p>今天的<span class="text-gold font-bold">【金句】撒上12:7 說：「現在你們要站住，等我在耶和華面前對你們理問，論到耶和華向你們和你們列祖所行一切公義的事。」</span></p>
+                <p>撒母耳在這裡像是一位檢察官，用「理問」這個法庭用語。他回顧了從摩西出埃及到士師時代。這段歷史充滿了一個悲哀的循環：上帝施恩、百姓忘記神、仇敵欺壓、百姓呼求、上帝拯救。我們是不是也常患了這種「屬靈健忘症」？</p>
+
+                <h3 class="text-2xl font-bold text-white mt-12 mb-4">三、 錯謬的倚靠：在危機中棄絕真王</h3>
+                <p>第12節是一針見血的責備：<span class="text-red-400 font-bold italic">「你們見亞捫人的王拿轄來攻擊你們... 其實耶和華─你們的神是你們的王。」</span></p>
+                <p>面對看得見的軍事威脅，他們恐慌了。加爾文說得好：「人心就是一個永無止境的偶像製造廠。」我們常常用金錢、權力、人脈來取代上帝。但撒母耳大聲宣告：<span class="text-gold font-black underline underline-offset-8">其實耶和華你們的神，是你們的王！</span></p>
+
+                <div class="mt-16 p-8 glass-card border-gold/40">
+                    <h3 class="text-gold text-2xl font-bold mb-4">結論關鍵字</h3>
+                    <div class="flex flex-wrap gap-4 text-xl">
+                        <span class="px-4 py-2 bg-white/10 rounded-full">無愧 (Integrity)</span>
+                        <span class="px-4 py-2 bg-white/10 rounded-full">記念 (Remembrance)</span>
+                        <span class="px-4 py-2 bg-white/10 rounded-full">真王 (True King)</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="py-20">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold/20 rounded-full text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1Z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold tracking-tight">屬靈前輩佳句名言</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-card p-6 relative quote-card group hover:bg-white/10 transition-colors">
+                    <p class="text-lg leading-relaxed mb-4">「人心就是一個永無止境的偶像製造廠。」</p>
+                    <p class="text-gold font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-6 relative quote-card group hover:bg-white/10 transition-colors">
+                    <p class="text-lg leading-relaxed mb-4">「廉價的恩典是我們教會的死敵。我們今天所爭辯的，是重價的恩典。」</p>
+                    <p class="text-gold font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 relative quote-card group hover:bg-white/10 transition-colors">
+                    <p class="text-lg leading-relaxed mb-4">「偶像就是任何你注視著，並在心底深處說：『如果我擁有了它，我的生命就有意義...』的事物。」</p>
+                    <p class="text-gold font-bold text-sm">— 提摩太·凱勒 (Tim Keller)</p>
+                </div>
+                <div class="glass-card p-6 relative quote-card group hover:bg-white/10 transition-colors">
+                    <p class="text-lg leading-relaxed mb-4">「信心就是在黑暗中依然信靠神。在光明中信靠神算不得什麼。」</p>
+                    <p class="text-gold font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 relative quote-card group hover:bg-white/10 transition-colors">
+                    <p class="text-lg leading-relaxed mb-4">「神正在尋找那些願意將心中的偶像從寶座上拉下來的人。」</p>
+                    <p class="text-gold font-bold text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 relative quote-card group hover:bg-white/10 transition-colors">
+                    <p class="text-lg leading-relaxed mb-4">「我生命中最偉大的屬靈爭戰，就是宣告我真實的身分——我是神所愛的孩子。」</p>
+                    <p class="text-gold font-bold text-sm">— 盧雲 (Henri Nouwen)</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center text-gray-500 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-accent text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

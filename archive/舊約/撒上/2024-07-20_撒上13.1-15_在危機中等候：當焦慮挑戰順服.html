@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒上13:1-15:在危機中等候：當焦慮挑戰順服</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#DC2626',
+                        deepBlue: '#0A0F1E',
+                        accentBlue: '#3B82F6',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 0.8 },
+                            '50%': { opacity: 0.3 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'none', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #05070A;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #94A3B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .breathing-banner {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        @keyframes subtle-hop {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .hop-text {
+            display: inline-block;
+            animation: subtle-hop 2s ease-in-out infinite;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒上13:1-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在危機中等候：當焦慮挑戰順服' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-sm md:text-base font-bold gold-gradient">撒上13:1-15</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm tracking-widest uppercase font-display">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner Area -->
+    <div id="header" class="relative h-[85vh] w-full overflow-hidden flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_9370bab9-c2ee-47ec-9f53-f0471f4a42be.jpg' alt='Banner' class="w-full h-full object-cover breathing-banner animate-pulse-slow" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <p class="text-gold tracking-[0.3em] font-display mb-4 animate-fade-in">1 SAMUEL 13:1-15</p>
+            <h1 class="text-4xl md:text-7xl font-black text-white leading-tight mb-8 drop-shadow-2xl font-display">
+                在危機中等候：<br/><span class="gold-gradient">當焦慮挑戰順服</span>
+            </h1>
+            
+            <!-- Verse (Golden Quote) -->
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg md:text-2xl text-white/90 leading-relaxed font-light italic hop-text">
+                    「耶和華已經尋著一個合他心意的人，立他作百姓的君，因為你沒有遵守耶和華所吩咐你的。」
+                </p>
+                <p class="text-gold/80 mt-4 font-display">— 撒母耳記上 13:14</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-5xl mx-auto px-6 space-y-32 pb-32 -mt-20 relative z-20">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card p-8 md:p-16 text-center">
+            <div class="flex justify-center mb-6">
+                <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-8 tracking-widest text-white/60 uppercase">禱告詞</h2>
+            <p class="text-xl md:text-2xl leading-relaxed text-slate-300 font-light">
+                親愛的天父，我們承認在面對環境的風暴與時間的壓迫時，我們的內心常常充滿焦慮，甚至企圖用自己的方法來取代祢的旨意。求祢賜給我們一顆安靜等候的心，讓我們在最危急的時刻，依然能堅定相信祢的信實與掌權。幫助我們不追求外在的捷徑，而是渴望成為一個真正「合祢心意」的人。奉主耶穌基督的名求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                <h2 class="text-3xl font-bold tracking-tight text-gradient">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="group glass-card p-8 hover:bg-white/10 transition-all duration-500 border-l-4 border-l-gold">
+                    <span class="text-gold font-display block mb-2">01.</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold transition-colors">風暴逼近：當恐懼動搖信心</h3>
+                    <p class="text-white/40 text-sm mt-2">撒上 13:1-7</p>
+                </a>
+                <a href="#part2" class="group glass-card p-8 hover:bg-white/10 transition-all duration-500 border-l-4 border-l-accentBlue">
+                    <span class="text-accentBlue font-display block mb-2">02.</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-accentBlue transition-colors">焦慮的越界：等不及的祭壇</h3>
+                    <p class="text-white/40 text-sm mt-2">撒上 13:8-10</p>
+                </a>
+                <a href="#part3" class="group glass-card p-8 hover:bg-white/10 transition-all duration-500 border-l-4 border-l-crimson">
+                    <span class="text-crimson font-display block mb-2">03.</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-crimson transition-colors">遲來的代價：失落王位的悲歌</h3>
+                    <p class="text-white/40 text-sm mt-2">撒上 13:11-15</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Part 1 -->
+        <section id="part1" class="space-y-8 scroll-mt-24">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-28">
+                        <h3 class="text-4xl font-black text-gold mb-6">風暴逼近</h3>
+                        <p class="text-white/60 mb-4 tracking-widest font-display">1 SAMUEL 13:1-7</p>
+                        <div class="glass-card p-6 border-gold/20">
+                            <h4 class="text-gold font-bold mb-2">關鍵原文</h4>
+                            <p class="text-xl font-bold">戰戰兢兢 (charad)</p>
+                            <p class="text-sm text-white/50 mt-2">意指極度恐懼、發抖、驚悸。這種深層恐慌常使人失去理智。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-8">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/5 italic text-white/80 leading-loose">
+                        掃羅登基年四十歲...非利士人聚集，要與以色列人爭戰，有車三萬輛，馬兵六千，步兵像海邊的沙那樣多...以色列百姓見自己危急，窘迫，就藏在山洞...掃羅還是等在吉甲，百姓都戰戰兢兢地跟隨他。
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="w-2 h-2 bg-gold rounded-full"></span> 關鍵問題：如何面對內心恐慌？
+                        </h4>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            以色列人看見非利士人「像海邊的沙」，對比自己的微弱，立刻陷入恐慌。恐懼的本質在於我們放大了環境的艱難，卻縮小了上帝的全能。克服恐懼的方法不是評估自己的勝算，而是將眼目轉向那位曾在過去施行拯救的上帝。
+                        </p>
+                    </div>
+                    <div class="p-6 border-l-2 border-white/20 bg-white/5 rounded-r-xl">
+                        <p class="text-gold italic font-bold">「信心並非沒有恐懼，而是在恐懼中依然選擇信靠神。」</p>
+                        <p class="text-sm text-white/40 mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Part 2 -->
+        <section id="part2" class="space-y-8 scroll-mt-24">
+            <div class="flex flex-col md:flex-row-reverse gap-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-28">
+                        <h3 class="text-4xl font-black text-accentBlue mb-6">焦慮的越界</h3>
+                        <p class="text-white/60 mb-4 tracking-widest font-display">1 SAMUEL 13:8-10</p>
+                        <div class="glass-card p-6 border-accentBlue/20">
+                            <h4 class="text-accentBlue font-bold mb-2">關鍵原文</h4>
+                            <p class="text-xl font-bold">勉強 (aphaq)</p>
+                            <p class="text-sm text-white/50 mt-2">有強迫自己、克制或硬著頭皮的意思。常用來合理化錯誤行為。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-8">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/5 italic text-white/80 leading-loose">
+                        掃羅照著撒母耳所定的日期等了七日。撒母耳還沒有來到吉甲，百姓也離開掃羅散去了。掃羅說：「把燔祭和平安祭交給我。」掃羅就獻上燔祭。
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="w-2 h-2 bg-accentBlue rounded-full"></span> 關鍵問題：可以為了目的妥協原則嗎？
+                        </h4>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            掃羅獻祭的目的看似敬虔，但他卻用了神所禁止的方法。神看重的是我們對祂命令的「順服」，而非我們為祂做了多麼偉大的「事工」。實用主義（只要有效就可以做）在神的國度裡是行不通的。
+                        </p>
+                    </div>
+                    <div class="p-6 border-l-2 border-white/20 bg-white/5 rounded-r-xl">
+                        <p class="text-accentBlue italic font-bold">「只有順服的人才相信，只有相信的人才順服。」</p>
+                        <p class="text-sm text-white/40 mt-2">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Part 3 -->
+        <section id="part3" class="space-y-8 scroll-mt-24">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <div class="sticky top-28">
+                        <h3 class="text-4xl font-black text-crimson mb-6">失落王位</h3>
+                        <p class="text-white/60 mb-4 tracking-widest font-display">1 SAMUEL 13:11-15</p>
+                        <div class="glass-card p-6 border-crimson/20">
+                            <h4 class="text-crimson font-bold mb-2">關鍵原文</h4>
+                            <p class="text-xl font-bold">合他心意 (k'levavo)</p>
+                            <p class="text-sm text-white/50 mt-2">直譯「按著祂的心」。指一個人的心向著神是柔軟的，尊神為主。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 space-y-8">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/5 italic text-white/80 leading-loose">
+                        撒母耳說：「你做了糊塗事了...現在你的王位必不長久。耶和華已經尋著一個合他心意的人...因為你沒有遵守耶和華所吩咐你的。」
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-bold text-white flex items-center gap-2">
+                            <span class="w-2 h-2 bg-crimson rounded-full"></span> 關鍵問題：為何掃羅失去王位？
+                        </h4>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            掃羅面對責備時，充滿了推卸責任的藉口。合神心意的人（如大衛）在犯錯時會真實悔改。神剝奪掃羅的王位，不是因為他能力不足，而是因為他的心不再尊神為大。
+                        </p>
+                    </div>
+                    <div class="p-6 border-l-2 border-white/20 bg-white/5 rounded-r-xl">
+                        <p class="text-crimson italic font-bold">「順服神，並將所有的後果交給祂。」</p>
+                        <p class="text-sm text-white/40 mt-2">— 查爾斯·史丹利 (Charles Stanley)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="glass-card p-10 md:p-20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-10 opacity-10">
+                <svg class="w-64 h-64 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-4xl font-bold tracking-tight text-white">講章文稿</h2>
+            </div>
+
+            <div class="prose prose-invert prose-xl max-w-none space-y-12 text-slate-300">
+                <p class="text-2xl font-light">各位弟兄姊妹，平安。今天我們要透過撒母耳記上13章的故事，來看看一個在極度危機中的領袖，是如何面對他內心最大的考驗。</p>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold border-b border-gold/30 pb-2">一、風暴逼近：當恐懼動搖信心</h3>
+                    <p>當你面臨醫生的切片報告、公司的裁員名單、或婚姻的冰點時，那種<strong class="text-white underline decoration-gold/50">「戰戰兢兢」</strong>的感覺我們都懂。恐懼的危險在於它會蒙蔽我們的屬靈視力。以色列人只看見非利士人的強大，卻忘記了帶領他們出埃及的耶和華神。在危機中，我們必須將目光鎖定在神的應許上。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-accentBlue border-b border-accentBlue/30 pb-2">二、焦慮的越界：等不及的祭壇</h3>
+                    <p>掃羅內心的焦慮達到了臨界點，他說：「把燔祭和平安祭交給我。」他越過了君王的界線，僭越了祭司的職分。他用了一個詞來合理化自己：<strong class="text-white underline decoration-accentBlue/50">「我就勉強獻上燔祭。」</strong>這正是我們常犯的毛病。神看重的從來不是宗教儀式，而是絕對的順服。焦慮常常誘惑我們去建立一個「等不及的祭壇」，用自己的方法去幫神的忙。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-crimson border-b border-crimson/30 pb-2">三、遲來的代價：失落王位的悲歌</h3>
+                    <p>耶和華尋找一個<strong class="text-white underline decoration-crimson/50">「合他心意的人」</strong>。這並不是說接班的大衛完美無缺，而是大衛被先知責備時，他立刻仆倒悔改，沒有半句推託。合神心意，就是讓神真正掌權。當焦慮挑戰順服時，願我們都能停下急躁的腳步，選擇相信神的定時。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 border-gold/20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6 text-slate-300">
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">01.</span>
+                        <span>檢視生命中的「吉甲」，將焦慮的領域重新交託。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">02.</span>
+                        <span>對付屬靈的「實用主義」，學習在小事上堅持神的法則。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-gold font-bold">03.</span>
+                        <span>學習真實的悔改，停止為錯誤找藉口。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 border-accentBlue/20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-accentBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-6 text-slate-300">
+                    <li class="flex gap-4">
+                        <span class="text-accentBlue font-bold">01.</span>
+                        <span><b class="text-white">認罪禱告：</b>寫下本週焦慮越軌的事件並向神認罪。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accentBlue font-bold">02.</span>
+                        <span><b class="text-white">延遲操練：</b>重大決定前先禱告等候24小時。</span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accentBlue font-bold">03.</span>
+                        <span><b class="text-white">經文宣告：</b>每日朗讀箴言3:5-6，持續一週。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Gallery -->
+        <section id="quotes" class="space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="text-4xl font-bold text-gradient">名言佳句</h2>
+                <p class="text-white/40 tracking-widest uppercase">Spiritual Wisdom</p>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <!-- Quote Items -->
+                <div class="break-inside-avoid glass-card p-8 hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-white/90 italic">「等候神並不是什麼都不做，而是將我們的靈魂完全向神的主權敞開。」</p>
+                    <p class="mt-4 text-gold font-bold">— 傅士德 (Richard Foster)</p>
+                </div>
+                <div class="break-inside-avoid glass-card p-8 hover:scale-[1.02] transition-transform border-gold/30">
+                    <p class="text-lg leading-relaxed text-white/90 italic">「神未曾應許天色常藍，但祂應許祂的同在。」</p>
+                    <p class="mt-4 text-gold font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="break-inside-avoid glass-card p-8 hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-white/90 italic">「人心是一個製造偶像的工廠；我們最容易把自己的計劃和掌控慾當作神來拜。」</p>
+                    <p class="mt-4 text-gold font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="break-inside-avoid glass-card p-8 hover:scale-[1.02] transition-transform border-accentBlue/30">
+                    <p class="text-lg leading-relaxed text-white/90 italic">「牧養中最艱難的工作，就是在不確定的情況下保持對神的專注，而不是急著去解決問題。」</p>
+                    <p class="mt-4 text-gold font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="break-inside-avoid glass-card p-8 hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-white/90 italic">「神有時會把我們逼到絕境，為的是讓我們看見，除了祂，我們別無倚靠。」</p>
+                    <p class="mt-4 text-gold font-bold">— 慕迪 (D.L. Moody)</p>
+                </div>
+                <div class="break-inside-avoid glass-card p-8 hover:scale-[1.02] transition-transform">
+                    <p class="text-lg leading-relaxed text-white/90 italic">「我們不該問：『神啊，祢為什麼不照我的時間表？』我們該問的是：『主啊，祢在這個等待中要教導我什麼？』」</p>
+                    <p class="mt-4 text-gold font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+            </div>
+            
+            <!-- Warning -->
+            <div class="pt-20 text-center">
+                <p class="text-white/20 text-sm tracking-widest">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-lg hover:bg-gold/80 transition-all active:scale-95 z-50 animate-float">
+        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+</body>
+</html>

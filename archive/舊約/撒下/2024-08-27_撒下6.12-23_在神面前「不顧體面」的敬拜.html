@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒下6:12-23: 在神面前「不顧體面」的敬拜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        deepNavy: '#0A0E17',
+                        sacredRed: '#8B0000',
+                        glassWhite: 'rgba(255, 255, 255, 0.1)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0E17;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #F9D976);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .outline-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(212, 175, 55, 0.3);
+        }
+        @keyframes subtle-dance {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-2px) rotate(0.5deg); }
+            75% { transform: translateY(1px) rotate(-0.5deg); }
+        }
+        .dance-text {
+            display: inline-block;
+            animation: subtle-dance 3s infinite ease-in-out;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒下6:12-23',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在神面前「不顧體面」的敬拜' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Header / Toolbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-md border-b border-white/10 px-4 py-3 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-display font-extrabold text-gold text-lg md:text-xl truncate max-w-[40%]">
+                撒下6:12-23
+            </div>
+            <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+                <a href="#prayer" class="nav-link text-white/80 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-white/80 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-white/80 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-white/80 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner Section -->
+    <header id="top" class="relative h-[70vh] md:h-[85vh] w-full overflow-hidden flex flex-col justify-center items-center text-center px-6">
+        <div class="absolute inset-0 z-0 animate-pulse-slow banner-mask">
+            <img src='image/img_548517a2-3819-472a-8f4e-8936f71570ce.jpg' alt='media_1' class="w-full h-full object-cover opacity-60" />
+        </div>
+        
+        <div class="relative z-10 max-w-4xl pt-20">
+            <span class="inline-block px-4 py-1 rounded-full bg-gold/20 text-gold font-semibold tracking-widest text-xs md:text-sm mb-4 uppercase">Sermon Script</span>
+            <h1 class="font-display text-4xl md:text-7xl font-black text-white mb-6 drop-shadow-2xl leading-tight">
+                在神面前「不顧體面」的敬拜
+            </h1>
+            
+            <div class="dance-text mt-8 max-w-2xl mx-auto">
+                <p class="text-lg md:text-2xl font-medium text-white/90 leading-relaxed italic">
+                    「這是在耶和華面前；... 我也必更加卑微，自己看為輕賤。」
+                </p>
+                <p class="text-sm md:text-lg text-gold mt-2 font-bold">— 撒母耳記下 6:21-22</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-20 relative z-20 space-y-16 pb-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card p-8 md:p-12 shadow-2xl relative overflow-hidden group">
+            <div class="absolute -right-10 -top-10 opacity-5 group-hover:rotate-12 transition-transform duration-700">
+                <svg width="200" height="200" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+                <div class="p-3 bg-gold/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21V3m0 0l-4 4m4-4l4 4"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">禱告詞</h2>
+            </div>
+            <p class="text-xl md:text-2xl text-white/90 leading-loose font-light">
+                榮耀的君王、萬軍之耶和華，我們來到祢的施恩座前，承認祢是配得我們全心、全人、全力敬拜的唯一真神。求祢奪回我們的心，擊碎我們裡面的驕傲與自我包裝，讓我們能像大衛一樣，在祢面前脫下屬世的冠冕，單單因祢的同在而歡欣踴躍。主啊，賜給我們不顧世俗眼光的勇氣，讓我們的敬拜不再受制於人的評價，而是全然傾倒在祢的腳前。奉主耶穌基督得勝的名求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-blue-500/10 rounded-xl">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">講道大綱</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="#outline-1" class="outline-btn glass-card p-6 flex flex-col h-full border-l-4 border-l-gold">
+                    <span class="text-xs text-gold font-bold mb-2 tracking-widest">SECTION 01</span>
+                    <h3 class="text-xl font-bold text-white mb-2">踏出獻祭的舞步</h3>
+                    <p class="text-sm text-white/60">撒下 6:12-15：敬畏與狂喜交織的敬拜</p>
+                </a>
+                <a href="#outline-2" class="outline-btn glass-card p-6 flex flex-col h-full border-l-4 border-l-blue-400">
+                    <span class="text-xs text-blue-400 font-bold mb-2 tracking-widest">SECTION 02</span>
+                    <h3 class="text-xl font-bold text-white mb-2">傾注祝福的盛宴</h3>
+                    <p class="text-sm text-white/60">撒下 6:16-19：從聖殿溢流到日常的恩典</p>
+                </a>
+                <a href="#outline-3" class="outline-btn glass-card p-6 flex flex-col h-full border-l-4 border-l-purple-400">
+                    <span class="text-xs text-purple-400 font-bold mb-2 tracking-widest">SECTION 03</span>
+                    <h3 class="text-xl font-bold text-white mb-2">放下身段的謙卑</h3>
+                    <p class="text-sm text-white/60">撒下 6:20-23：超越世俗眼光的真實奉獻</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="space-y-24">
+            <!-- Part 1 -->
+            <section id="outline-1" class="scroll-mt-24">
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-4 sticky top-24">
+                        <div class="p-8 bg-gradient-to-br from-gold/20 to-transparent rounded-3xl border border-gold/30">
+                            <h3 class="text-2xl font-black text-gold mb-4 leading-tight">1. 踏出獻祭的舞步：<br>敬畏與狂喜交織的敬拜</h3>
+                            <div class="space-y-4 text-white/70">
+                                <p class="text-sm bg-white/5 p-3 rounded-lg"><strong>範圍：</strong> 撒下 6:12-15</p>
+                                <div class="space-y-2">
+                                    <p class="text-xs font-bold text-gold uppercase tracking-wider">關鍵原文</p>
+                                    <p class="text-base font-medium text-white">極力跳舞 (mekharker)</p>
+                                    <p class="text-sm">意為旋轉、跳躍。毫無保留全身心投入。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-8 md:p-12 space-y-10">
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-gold italic text-white/90">
+                            「大衛穿著細麻布的以弗得，在耶和華面前極力跳舞...將耶和華的約櫃抬上來。」
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h4 class="text-xl font-bold text-gold flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center text-sm">Q</span> 關鍵問題與解析
+                            </h4>
+                            <p class="text-lg leading-relaxed text-white/80">
+                                <strong class="text-white">為什麼大衛要「走了六步就獻祭」？</strong><br>
+                                大衛學會了極深的「敬畏」。每走六步就獻祭，代表他認知到神的聖潔是不可輕忽的。真實的敬拜，永遠是「極深的敬畏」與「極大的喜樂」的結合。
+                            </p>
+                        </div>
+
+                        <div class="p-6 bg-sacredRed/10 rounded-2xl border border-sacredRed/20">
+                            <h4 class="text-sm font-bold text-sacredRed uppercase tracking-widest mb-4">靈魂故事</h4>
+                            <p class="text-white/80">一位跨國企業CEO在經受低谷後，在教會跪地敬拜。面對「有失身分」的質疑，他回答：「在神面前，我只是一個蒙恩得救的乞丐。如果我連自己的面子都放不下，我怎麼配說我愛祂？」</p>
+                        </div>
+
+                        <div class="text-center pt-6">
+                            <p class="text-gold font-display italic text-xl">「如果我們對神的敬拜沒有從內心湧出驚嘆與喜樂，我們的信仰就只是死板的宗教。」</p>
+                            <p class="text-white/40 text-sm mt-2">— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="outline-2" class="scroll-mt-24">
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-4 md:order-last sticky top-24">
+                        <div class="p-8 bg-gradient-to-br from-blue-500/20 to-transparent rounded-3xl border border-blue-500/30">
+                            <h3 class="text-2xl font-black text-blue-400 mb-4 leading-tight">2. 傾注祝福的盛宴：<br>從聖殿溢流到日常的恩典</h3>
+                            <div class="space-y-4 text-white/70">
+                                <p class="text-sm bg-white/5 p-3 rounded-lg"><strong>範圍：</strong> 撒下 6:16-19</p>
+                                <div class="space-y-2">
+                                    <p class="text-xs font-bold text-blue-400 uppercase tracking-wider">關鍵原文</p>
+                                    <p class="text-base font-medium text-white">平安祭 (shelamim)</p>
+                                    <p class="text-sm">源於「沙龍」，象徵神與人、人與人之間的和好與團契。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-8 md:p-12 space-y-10">
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-blue-400 italic text-white/90">
+                            「大衛獻完了祭，就奉萬軍之耶和華的名給民祝福，分給眾人一個餅，一塊肉，一個葡萄餅。」
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h4 class="text-xl font-bold text-blue-400 flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-sm">Q</span> 關鍵問題與解析
+                            </h4>
+                            <p class="text-lg leading-relaxed text-white/80">
+                                <strong class="text-white">大衛敬拜的高潮為什麼是「分餅和肉」？</strong><br>
+                                真實的敬拜必然會帶來「外溢的慷慨」。敬拜的終點不是自我感覺良好，而是成為別人生命中的祝福。大衛將神同在的喜樂，化作百姓手中的飽足。
+                            </p>
+                        </div>
+
+                        <div class="p-6 bg-blue-500/10 rounded-2xl border border-blue-500/20">
+                            <h4 class="text-sm font-bold text-blue-400 uppercase tracking-widest mb-4">例證</h4>
+                            <p class="text-white/80">喬治·慕勒（George Müller）牧師將敬拜轉化為對布里斯托孤兒的照顧。真正的敬拜，會讓一個人的手心從「向神索取」變成「向人給予」。</p>
+                        </div>
+
+                        <div class="text-center pt-6">
+                            <p class="text-blue-400 font-display italic text-xl">「當你深知你比你所敢承認的更敗壞，但同時卻比你所敢期望的更被愛。你就能自由地去服事與給予。」</p>
+                            <p class="text-white/40 text-sm mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="outline-3" class="scroll-mt-24">
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-4 sticky top-24">
+                        <div class="p-8 bg-gradient-to-br from-purple-500/20 to-transparent rounded-3xl border border-purple-500/30">
+                            <h3 class="text-2xl font-black text-purple-400 mb-4 leading-tight">3. 放下身段的謙卑：<br>超越世俗眼光的真實奉獻</h3>
+                            <div class="space-y-4 text-white/70">
+                                <p class="text-sm bg-white/5 p-3 rounded-lg"><strong>範圍：</strong> 撒下 6:20-23</p>
+                                <div class="space-y-2">
+                                    <p class="text-xs font-bold text-purple-400 uppercase tracking-wider">關鍵原文</p>
+                                    <p class="text-base font-medium text-white">卑微 (shaphal)</p>
+                                    <p class="text-sm">意為降低、降卑。自己看為輕賤(qalal)。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-8 md:p-12 space-y-10">
+                        <div class="bg-white/5 p-6 rounded-2xl border-l-2 border-purple-400 italic text-white/90">
+                            「大衛對米甲說：這是在耶和華面前...我也必更加卑微，自己看為輕賤。」
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h4 class="text-xl font-bold text-purple-400 flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center text-sm">Q</span> 關鍵問題與解析
+                            </h4>
+                            <p class="text-lg leading-relaxed text-white/80">
+                                <strong class="text-white">米甲代表了什麼樣的信仰致命傷？</strong><br>
+                                她代表了「宗教化」與「世俗化」的結合——在乎外表的體面勝過內心的誠實。大衛的回應表明，當一個人清楚知道自己是神恩典的揀選時，就不再需要依靠外在的體面來維持尊嚴。
+                            </p>
+                        </div>
+
+                        <div class="p-6 bg-purple-500/10 rounded-2xl border border-purple-500/20">
+                            <h4 class="text-sm font-bold text-purple-400 uppercase tracking-widest mb-4">宣教士足跡</h4>
+                            <p class="text-white/80">施達德（C.T. Studd）放棄地位與遺產前往中國宣教，被世人視為瘋子，他卻說：「如果耶穌基督為我死，我為祂作任何犧牲都算不得太大。」</p>
+                        </div>
+
+                        <div class="text-center pt-6">
+                            <p class="text-purple-400 font-display italic text-xl">「人的驕傲是敬拜最大的敵人。當我們真正看見上帝的威嚴時，我們唯一的反應就是在灰塵中懊悔。」</p>
+                            <p class="text-white/40 text-sm mt-2">— 約翰·加爾文 (John Calvin)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Full Sermon Content -->
+        <section id="sermon" class="glass-card p-8 md:p-16 space-y-12">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="p-3 bg-white/5 rounded-xl">
+                    <svg class="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM7 8h5m-5 4h10"/></svg>
+                </div>
+                <h2 class="text-4xl font-display font-black text-white">講章文稿</h2>
+            </div>
+
+            <div class="prose prose-invert prose-lg max-w-none space-y-12">
+                <p class="text-xl leading-relaxed border-l-4 border-gold pl-6 py-2">
+                    弟兄姊妹，平安！今天我們要來思想一段非常生動、充滿張力的經文：<span class="text-gold font-bold">撒下6:12-23：在神面前「不顧體面」的敬拜</span>。想像一下這個畫面：一國之君，不穿華麗的龍袍，在大街上像個孩子一樣瘋狂跳舞。有人看了感動，有人看了卻滿心鄙視。
+                </p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold">第一段：踏出獻祭的舞步：敬畏與狂喜交織的敬拜</h4>
+                    <p>
+                        大衛曾經因為用人的方法運送約櫃導致烏撒死亡。那次失敗讓他學到：<span class="bg-gold/20 px-1">神是聖潔的，不容輕慢</span>。因此這次他每走六步就獻祭，這是極深的敬畏。
+                    </p>
+                    <p>
+                        但大衛心中又充滿狂喜，完全忘記了國王的身份。真實的敬拜永遠是敬畏與狂喜的結合。當你在神面前時，你願意脫下你那件名為「體面」的外衣嗎？
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-blue-400">第二段：傾注祝福的盛宴：從聖殿溢流到日常的恩典</h4>
+                    <p>
+                        大衛的敬拜沒有停留在個人的狂喜中。他立刻奉神的名給民祝福，分給眾人餅和肉。真實的敬拜必然帶來生命的溢流。
+                    </p>
+                    <p>
+                        你的敬拜是不是只停留在禮拜天的詩歌裡？還是化作了你對家人、對同事、對社區的祝福與分享？<span class="text-blue-400 font-bold underline decoration-blue-500/30 underline-offset-8">大衛把神同在的喜樂，變成了百姓手中的葡萄餅。</span>
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-purple-400">第三段：放下身段的謙卑：超越世俗眼光的真實奉獻</h4>
+                    <p>
+                        故事的高潮是大衛妻子米甲的嘲諷。米甲代表了世界的眼光與宗教化的框架。面對嘲諷，大衛宣告：<span class="text-white font-black">「這是在耶和華面前...我也必更加卑微，自己看為輕賤。」</span>
+                    </p>
+                    <p>
+                        當我們願意在神面前放下身段時，神必親自將我們升高。讓我們一生都在神面前，獻上那最真實、最不顧體面的敬拜！
+                    </p>
+                </div>
+
+                <!-- Summary Components -->
+                <div class="grid md:grid-cols-2 gap-8 pt-12">
+                    <div class="bg-white/5 rounded-3xl p-8">
+                        <h5 class="text-gold font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                            應用方向
+                        </h5>
+                        <ul class="space-y-4 text-white/70">
+                            <li>• 檢視敬拜態度：是否過度在意他人眼光？</li>
+                            <li>• 恩典行動轉化：將感動變為實際祝福。</li>
+                            <li>• 拒絕「米甲的靈」：不被世俗價值觀綁架。</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/5 rounded-3xl p-8">
+                        <h5 class="text-blue-400 font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            實踐行動
+                        </h5>
+                        <ul class="space-y-4 text-white/70">
+                            <li>• 嘗試突破舒適圈的方式敬拜（如：高舉雙手）。</li>
+                            <li>• 本週主動送一份禮物祝福有需要的人。</li>
+                            <li>• 禱告交託害怕被看不起的事，求謙卑的自由。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-8">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-gold/10 rounded-xl">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">名言佳句</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-card p-6 border-t border-white/10 hover:border-gold/50 transition-colors">
+                    <p class="text-white/90 italic mb-4">「敬拜的真義，就是被神的威嚴所懾服，被祂的愛所融化，並且用全人來回應祂的榮耀。」</p>
+                    <p class="text-sm text-gold font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 border-t border-white/10 hover:border-gold/50 transition-colors">
+                    <p class="text-white/90 italic mb-4">「我們的心是一個製造偶像的工廠，唯有真實的敬拜能將我們從自我中心釋放。」</p>
+                    <p class="text-sm text-gold font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-6 border-t border-white/10 hover:border-gold/50 transition-colors">
+                    <p class="text-white/90 italic mb-4">「恩典意味著你不必再為了證明自己的價值而拼命表現。」</p>
+                    <p class="text-sm text-gold font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-6 border-t border-white/10 hover:border-gold/50 transition-colors">
+                    <p class="text-white/90 italic mb-4">「謙卑不是看輕自己，而是少想到自己。真正謙卑的人目光完全轉向了神。」</p>
+                    <p class="text-sm text-gold font-bold">— C.S. Lewis / 司布真</p>
+                </div>
+                <div class="glass-card p-6 border-t border-white/10 hover:border-gold/50 transition-colors">
+                    <p class="text-white/90 italic mb-4">「如果耶穌基督為我死，那麼我為祂作任何犧牲，都算不得太大。」</p>
+                    <p class="text-sm text-gold font-bold">— 施達德 (C.T. Studd)</p>
+                </div>
+                <div class="glass-card p-6 border-t border-white/10 hover:border-gold/50 transition-colors">
+                    <p class="text-white/90 italic mb-4">「如果你不知道自己是『蒙愛的人』，你會不斷地想要透過成功來填補內心。」</p>
+                    <p class="text-sm text-gold font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 p-6 bg-white/5 rounded-2xl text-center">
+                <p class="text-white/40 text-sm tracking-widest">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-[100] group">
+        <svg class="w-6 h-6 text-deepNavy group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/>
+        </svg>
+    </a>
+
+    <script>
+        // Smooth reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

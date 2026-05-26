@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士19:1-21：士師時代的暗夜：當生命失去王權</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            crimson: '#9B1B30',
+                            dark: '#0A0A0B',
+                            card: '#161618',
+                            accent: '#3B82F6',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'gentle-float 3s ease-in-out infinite',
+                        'pulse-subtle': 'pulse-subtle 4s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+                            '50%': { opacity: '1', transform: 'scale(1.05)' },
+                        },
+                        'gentle-float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'pulse-subtle': {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.7' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .bento-card {
+            background: #161618;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-4px);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #F5E6AD 0%, #D4AF37 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .jump-text span {
+            display: inline-block;
+            animation: jump 2s infinite ease-in-out;
+            animation-delay: calc(0.1s * var(--i));
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .scroll-margin {
+            scroll-margin-top: 100px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士19:1-21',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '士師時代的暗夜：當生命失去王權' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-brand-dark text-gray-200 font-body leading-relaxed overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-brand-gold font-display font-bold text-lg">士 19:1-21</div>
+            <div class="flex space-x-6 text-sm font-semibold tracking-wider">
+                <a href="#prayer" class="hover:text-brand-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-brand-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-brand-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-brand-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner Section -->
+    <header class="relative h-[70vh] w-full overflow-hidden flex items-center justify-center pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_0fcd0ee1-872e-4d02-859c-9217268d79f3.jpg' alt='Banner' class="w-full h-full object-cover animate-breath opacity-70 filter brightness-75" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-dark/40 to-brand-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 tracking-tight text-white drop-shadow-2xl">
+                士師時代的暗夜：<br/>
+                <span class="text-gradient-gold">當生命失去王權</span>
+            </h1>
+            
+            <div id="golden-verse" class="max-w-2xl mx-auto py-6 px-4">
+                <p class="text-xl md:text-2xl font-display leading-relaxed jump-text text-gray-100 italic">
+                    <span style="--i:1">「</span><span style="--i:2">當</span><span style="--i:3">以</span><span style="--i:4">色</span><span style="--i:5">列</span><span style="--i:6">中</span><span style="--i:7">沒</span><span style="--i:8">有</span><span style="--i:9">王</span><span style="--i:10">的</span><span style="--i:11">時</span><span style="--i:12">候</span><span style="--i:13">，</span><span style="--i:14">有</span><span style="--i:15">住</span><span style="--i:16">以</span><span style="--i:17">法</span><span style="--i:18">蓮</span><span style="--i:19">山</span><span style="--i:20">地</span><span style="--i:21">那</span><span style="--i:22">邊</span><span style="--i:23">的</span><span style="--i:24">一</span><span style="--i:25">個</span><span style="--i:26">利</span><span style="--i:27">未</span><span style="--i:28">人</span><span style="--i:29">，</span><span style="--i:30">娶</span><span style="--i:31">了</span><span style="--i:32">一</span><span style="--i:33">個</span><span style="--i:34">猶</span><span style="--i:35">大</span><span style="--i:36">伯</span><span style="--i:37">利</span><span style="--i:38">恆</span><span style="--i:39">的</span><span style="--i:40">女</span><span style="--i:41">子</span><span style="--i:42">為</span><span style="--i:43">妾</span><span style="--i:44">。</span><span style="--i:45">」</span>
+                </p>
+                <p class="mt-4 text-brand-gold/80 font-semibold tracking-widest uppercase text-sm">—— 士師記 19:1</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-margin bento-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor" class="text-brand-gold"><path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/></svg>
+            </div>
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="p-3 bg-brand-gold/20 rounded-2xl text-brand-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                </span>
+                <h2 class="text-3xl font-display font-bold text-white">禱告詞</h2>
+            </div>
+            <p class="text-xl md:text-2xl leading-relaxed text-gray-300 italic font-display">
+                「主啊，我們來到祢面前，懇求祢光照我們心中的幽暗。在這個充滿妥協與混亂的世代，我們常常像士師時代的人一樣，偏行己路，失去屬靈的警覺。求祢再次登基作我們生命的主、我們心中的王，賜給我們敏銳的靈，不被虛假的安全感迷惑，並在冷漠的社會中，勇敢活出祢真理的光芒與溫暖的接待。奉主耶穌基督的聖名禱告，阿們。」
+            </p>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-margin">
+            <div class="flex items-center space-x-4 mb-12">
+                <span class="p-3 bg-brand-accent/20 rounded-2xl text-brand-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
+                </span>
+                <h2 class="text-3xl font-display font-bold text-white">分段解析大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section-1" class="group p-6 bento-card rounded-2xl flex flex-col justify-between hover:bg-brand-gold/5">
+                    <div>
+                        <div class="text-brand-gold font-bold mb-2">第一段 (19:1-9)</div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition-colors">妥協的起點——失去呼召的屬靈領袖</h3>
+                    </div>
+                    <div class="mt-6 text-sm flex items-center text-gray-500">點選查看深度解析 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
+                </a>
+                <a href="#section-2" class="group p-6 bento-card rounded-2xl flex flex-col justify-between hover:bg-brand-accent/5">
+                    <div>
+                        <div class="text-brand-accent font-bold mb-2">第二段 (19:10-15)</div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-brand-accent transition-colors">錯誤的安全感——迷失在標籤的險境</h3>
+                    </div>
+                    <div class="mt-6 text-sm flex items-center text-gray-500">點選查看深度解析 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
+                </a>
+                <a href="#section-3" class="group p-6 bento-card rounded-2xl flex flex-col justify-between hover:bg-white/5">
+                    <div>
+                        <div class="text-gray-400 font-bold mb-2">第三段 (19:16-21)</div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-gray-100 transition-colors">異鄉的微光——冷漠世代中的真實接待</h3>
+                    </div>
+                    <div class="mt-6 text-sm flex items-center text-gray-500">點選查看深度解析 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section-1" class="scroll-margin border-l-2 border-brand-gold/30 pl-8 space-y-8">
+                    <div class="inline-block bg-brand-gold/10 text-brand-gold px-4 py-1 rounded-full text-sm font-bold tracking-widest mb-4">SECTION 01</div>
+                    <h3 class="text-4xl font-display font-bold text-white">妥協的起點——失去呼召的屬靈領袖</h3>
+                    
+                    <div class="bg-brand-card/50 p-6 rounded-2xl border border-white/5 italic text-gray-400">
+                        「妾行淫離開丈夫...丈夫起來...用好話勸她回來...那人的岳父...將那人留下住了三天...到第五天...他岳父強留他...」
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-brand-gold font-bold mb-2 flex items-center"><span class="w-2 h-2 bg-brand-gold rounded-full mr-2"></span> 關鍵原文：妾 (Pilegesh)</h4>
+                                <p class="text-gray-400">指次妻。身為教導律法的「利未人」卻隨從世俗納妾，顯示屬靈領袖在道德上的墮落。</p>
+                            </div>
+                            <div class="p-6 bg-white/5 rounded-2xl">
+                                <h4 class="text-white font-bold mb-3 italic">關鍵問題：為何被挽留五天？</h4>
+                                <p class="text-gray-400">利未人沉溺於肉體滿足（吃喝、暢快），失去了時間感與使命感。這反映信徒將安逸置於呼召之上時，靈性會逐漸麻痺。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="p-6 bg-brand-gold/5 border border-brand-gold/10 rounded-2xl">
+                                <h4 class="text-brand-gold font-bold mb-3">生活例證</h4>
+                                <p class="text-gray-300">溫水煮青蛙：在舒適中失去警覺，漸進式的妥協往往是墮落的開端。</p>
+                            </div>
+                            <blockquote class="border-l-4 border-brand-gold pl-6 py-2">
+                                <p class="text-lg italic text-gray-300">「如果聖靈離開今日的教會，有百分之九十的事工仍會照常運作，沒人會發現...」</p>
+                                <footer class="mt-2 text-brand-gold/60 text-sm">—— 陶恕 (A.W. Tozer)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section-2" class="scroll-margin border-l-2 border-brand-accent/30 pl-8 space-y-8">
+                    <div class="inline-block bg-brand-accent/10 text-brand-accent px-4 py-1 rounded-full text-sm font-bold tracking-widest mb-4">SECTION 02</div>
+                    <h3 class="text-4xl font-display font-bold text-white">錯誤的安全感——迷失在「屬靈標籤」的險境</h3>
+                    
+                    <div class="bg-brand-card/50 p-6 rounded-2xl border border-white/5 italic text-gray-400">
+                        「我們不可進不是以色列人住的外邦城，不如過到基比亞去...將到便雅憫的基比亞，日頭已經落了...無人接他們進家住宿。」
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-brand-accent font-bold mb-2 flex items-center"><span class="w-2 h-2 bg-brand-accent rounded-full mr-2"></span> 關鍵原文：外邦 (Nokhri)</h4>
+                                <p class="text-gray-400">指外族。利未人以宗教血統判斷安全，卻不知屬神選民的基比亞已實質敗壞。</p>
+                            </div>
+                            <div class="p-6 bg-white/5 rounded-2xl">
+                                <h4 class="text-white font-bold mb-3 italic">關鍵問題：判斷標準的盲點？</h4>
+                                <p class="text-gray-400">盲點在於：外表的宗教標籤不能保證內在的聖潔。失去敬畏神之心的信徒，可能比不信者更冷漠。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="p-6 bg-brand-accent/5 border border-brand-accent/10 rounded-2xl">
+                                <h4 class="text-brand-accent font-bold mb-3">生活例證</h4>
+                                <p class="text-gray-300">基督徒企業的迷思：標籤不代表誠信，屬靈名號若無生命相稱，只是危險的偽裝。</p>
+                            </div>
+                            <blockquote class="border-l-4 border-brand-accent pl-6 py-2">
+                                <p class="text-lg italic text-gray-300">「廉價的恩典是我們教會的死敵。我們今天所爭辯的，乃是昂貴的恩典。」</p>
+                                <footer class="mt-2 text-brand-accent/60 text-sm">—— 潘霍華 (Dietrich Bonhoeffer)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section-3" class="scroll-margin border-l-2 border-white/30 pl-8 space-y-8">
+                    <div class="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-sm font-bold tracking-widest mb-4">SECTION 03</div>
+                    <h3 class="text-4xl font-display font-bold text-white">異鄉的微光——冷漠世代中的真實接待</h3>
+                    
+                    <div class="bg-brand-card/50 p-6 rounded-2xl border border-white/5 italic text-gray-400">
+                        「晚上，有一個老人家從田間做工回來。他原是以法蓮山地的人，在基比亞寄居...老人家說：願你平安！你所需用的我都給你，只是不可在街上過夜。」
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-gray-100 font-bold mb-2 flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-2"></span> 關鍵原文：寄居的 (Gur)</h4>
+                                <p class="text-gray-400">指客旅。冷漠的本地人中，唯有沒地位的寄居者伸出援手。</p>
+                            </div>
+                            <div class="p-6 bg-white/5 rounded-2xl">
+                                <h4 class="text-white font-bold mb-3 italic">關鍵問題：為何只有老人家接待？</h4>
+                                <p class="text-gray-400">老人家保有憐憫心與傳統。啟發我們：在集體墮落中，不應隨波逐流，需持守屬神的良善。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="p-6 bg-white/10 border border-white/20 rounded-2xl">
+                                <h4 class="text-white font-bold mb-3">生活例證</h4>
+                                <p class="text-gray-300">辛德勒的名單：在龐大黑暗體制下，選擇傾盡所有提供庇護，成為人性的微光。</p>
+                            </div>
+                            <blockquote class="border-l-4 border-white pl-6 py-2">
+                                <p class="text-lg italic text-gray-300">「基督徒的品格不在於隔絕世界，而在於世俗洪流中依然站立得穩。」</p>
+                                <footer class="mt-2 text-white/60 text-sm">—— 約翰·加爾文 (John Calvin)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-margin space-y-12">
+            <div class="flex items-center space-x-4">
+                <span class="p-3 bg-brand-crimson/20 rounded-2xl text-brand-crimson">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                </span>
+                <h2 class="text-3xl font-display font-bold text-white">講章文稿</h2>
+            </div>
+
+            <article class="prose prose-invert prose-xl max-w-none space-y-10 text-gray-300">
+                <p class="text-2xl font-display text-white">各位弟兄姊妹，平安。</p>
+                
+                <p>今天我們要看的是舊約聖經中最黑暗、最令人痛心的篇章之一。<strong class="text-brand-gold">「當以色列中沒有王的時候，有住以法蓮山地那邊的一個利未人，娶了一個猶大伯利恆的女子為妾。」（士師記 19:1）</strong> 這句金句，不僅是士師記的時代背景，更是今天許多信徒生命狀態的寫照。當我們的心中失去了「王」，沒有神來掌權時，我們的生活會變成什麼樣子？</p>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-brand-gold border-b border-brand-gold/20 pb-2">妥協的起點：失去呼召的屬靈領袖</h3>
+                    <p>故事一開始，我們看到一個利未人。利未人是神特別揀選，要在以色列人中教導律法、帶領敬拜的屬靈領袖。然而，他卻「娶了妾」。這是一個強烈的對比：一個應當最明白神心意的人，卻在婚姻與道德上妥協了。當他的妾離開他回娘家後，他去尋找。結果在岳父家，他被世俗的安逸與盛情款待所牽絆。</p>
+                    <p>一天、兩天、三天……他原本的使命與行程，在「吃喝快樂、暢快心懷」中被不斷延宕。這就是妥協的起點。弟兄姊妹，撒但摧毀一個基督徒，往往不是藉著巨大的逼迫，而是藉著安逸的<strong class="text-white bg-brand-crimson/30 px-2 rounded">溫水煮青蛙</strong>。我們是否也像這個利未人一樣，在追逐生活的小確幸中，把神給我們的使命、讀經禱告的紀律，一天拖過一天？</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-brand-accent border-b border-brand-accent/20 pb-2">錯誤的安全感：迷失在「屬靈標籤」的險境</h3>
+                    <p>當利未人終於在第五天傍晚啟程時，他面臨了住宿的選擇。他的僕人建議在耶布斯（外邦人的城）過夜，但利未人斷然拒絕：<strong class="text-brand-accent">「我們不可進不是以色列人住的外邦城」</strong>。他充滿了宗教的驕傲與偏見，認為「外邦人」代表危險，而「自己的弟兄」便雅憫人的基比亞城才是安全的。</p>
+                    <p>結果呢？當他們進入基比亞，竟然沒有一個人願意接待他們。這個掛著「神選民」招牌的城市，內部已經腐敗不堪。這給我們一個極大的警惕：<strong class="text-white italic underline">錯誤的安全感是致命的。</strong> 我們不能只靠著「我是基督徒」、「我有去教會」這些屬靈標籤來保證生命的平安。如果沒有真實敬畏神的生命，教會的環境也可能藏著傷害。我們要認清，唯有行在神的旨意中，才是真正的安全。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white border-b border-white/20 pb-2">異鄉的微光：冷漠世代中的真實接待</h3>
+                    <p>就在利未人絕望地坐在街坊上時，<strong class="text-white">「晚上，有一個老人家從田間做工回來……老人家說：『願你平安！你所需用的我都給你，只是不可在街上過夜。』」</strong></p>
+                    <p>整座城的人都冷眼旁觀，唯獨這位從田間勞苦回來的老人家，而且他自己也是個「寄居的」，卻願意向陌生人敞開家門。在一個集體失去王權、道德淪喪的黑暗社會中，這份接待顯得無比珍貴。這提醒我們，即使我們身處在一個自私、冷漠的世代，我們依然可以選擇作那盞發光的燈。</p>
+                </div>
+
+                <div class="bg-brand-card p-10 rounded-3xl border-t-4 border-brand-gold">
+                    <p class="text-xl leading-relaxed">
+                        弟兄姊妹，士師時代的荒涼，根源在於「心中沒有王，各人任意而行」。今天，我們的心中是誰在作王？是我們的情慾、我們的偏見，還是主耶穌基督？讓我們重新將生命的王權交還給神，拒絕世俗的妥協，打破虛假的屬靈驕傲，並在這個冷漠的世代中，活出基督那真實且溫暖的愛。
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Actions & Keywords -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-8 rounded-3xl">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    回應行動
+                </h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-brand-gold mr-4 font-bold">01</span>
+                        <div>
+                            <strong class="text-white block mb-1">拔除一個妥協</strong>
+                            <p class="text-gray-400">寫下一項最近在生活讓步的習慣（如：時間、言語、財務），在神面前悔改並重建界線。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-brand-gold mr-4 font-bold">02</span>
+                        <div>
+                            <strong class="text-white block mb-1">活出一次接待</strong>
+                            <p class="text-gray-400">本週主動關心一位教會新朋友或生活中有困難的人，提供實質的幫助。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-brand-gold mr-4 font-bold">03</span>
+                        <div>
+                            <strong class="text-white block mb-1">宣告主權禱告</strong>
+                            <p class="text-gray-400">每天早晨宣告：「主啊，今天祢是我的王，我願順服祢的引導。」</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card p-8 rounded-3xl flex flex-col justify-center text-center">
+                <h2 class="text-xl font-bold text-gray-500 mb-8 uppercase tracking-widest">關鍵字摘要</h2>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-8 py-3 bg-brand-gold/10 text-brand-gold rounded-full text-2xl font-bold border border-brand-gold/20">妥協</span>
+                    <span class="px-8 py-3 bg-brand-accent/10 text-brand-accent rounded-full text-2xl font-bold border border-brand-accent/20">錯覺</span>
+                    <span class="px-8 py-3 bg-white/5 text-white rounded-full text-2xl font-bold border border-white/10">警醒</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-margin space-y-12">
+            <div class="flex items-center space-x-4">
+                <span class="p-3 bg-brand-gold/20 rounded-2xl text-brand-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+                </span>
+                <h2 class="text-3xl font-display font-bold text-white">屬靈前輩佳句名言</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-gold">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「如果神不是全部的主，祂就根本不是主。」</p>
+                    <p class="text-sm text-brand-gold font-semibold italic">—— 慕安德烈，《絕對的降服》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-accent">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「一個不警醒的基督徒，就像一個在敵軍陣營中熟睡的士兵。」</p>
+                    <p class="text-sm text-brand-accent font-semibold italic">—— 司布真，《清晨甘露》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-gold">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「妥協是一條漸進的下坡路，你一旦開始妥協，就已經在谷底了。」</p>
+                    <p class="text-sm text-brand-gold font-semibold italic">—— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-accent">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「我們真正的安全感，不在於我們身處的環境是否屬靈，而在於我們是否與主同行。」</p>
+                    <p class="text-sm text-brand-accent font-semibold italic">—— 大衛·鮑森，《解開聖經》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-gold">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「當我們不讓基督作王時，我們自己就成了最糟糕的暴君。」</p>
+                    <p class="text-sm text-brand-gold font-semibold italic">—— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-accent">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「基督徒群體的標誌不是完美的同質性，而是對軟弱者和客旅的無條件接待。」</p>
+                    <p class="text-sm text-brand-accent font-semibold italic">—— 盧雲，《尋找居所》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-gold">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「罪惡的蔓延，往往不是因為惡人的囂張，而是因為好人的沉默與妥協。」</p>
+                    <p class="text-sm text-brand-gold font-semibold italic">—— 約翰·史托德，《當代基督十架》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-accent">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「不要把你的信仰變成一張保險單；信仰是將你的生命主權完全交託給王。」</p>
+                    <p class="text-sm text-brand-accent font-semibold italic">—— 提摩太·凱勒，《諸神的面具》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-gold">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「恩典是免費的，但絕不是廉價的；它付出了神兒子的生命，也要求我們獻上全人。」</p>
+                    <p class="text-sm text-brand-gold font-semibold italic">—— 潘霍華，《追隨基督》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl border-l-4 border-brand-accent">
+                    <p class="text-lg text-gray-200 mb-3 font-display">「接待陌生人，就是在我們的生命中為神騰出空間。」</p>
+                    <p class="text-sm text-brand-accent font-semibold italic">—— 畢德生，《與馬同跑》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center py-10 border-t border-white/10 opacity-40 hover:opacity-100 transition-opacity">
+            <p class="text-sm text-gray-400">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Scroll to Top FAB -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

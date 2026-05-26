@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民3:1-39: 從凡火到聖職：神聖次序中的揀選與事奉</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18d',
+                            300: '#fbe34f',
+                            400: '#f9d21c',
+                            500: '#e1b409',
+                            600: '#c28d05',
+                            700: '#9b6606',
+                            800: '#7e500b',
+                            900: '#6c420f',
+                        },
+                        priest: {
+                            deep: '#0a0a0c',
+                            surface: '#16161a',
+                            accent: '#c28d05',
+                            text: '#e2e2e7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-bounce': 'gentleBounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        gentleBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e2e7;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 60%, #0a0a0c 100%);
+            z-index: 10;
+        }
+        .breathing-image {
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.6; filter: brightness(0.8) scale(1); }
+            50% { opacity: 1; filter: brightness(1.1) scale(1.05); }
+        }
+        .text-jump {
+            display: inline-block;
+            animation: gentleBounce 2.5s ease-in-out infinite;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #c28d05;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c28d05;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民3:1-39',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '從凡火到聖職：神聖次序中的揀選與事奉' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card py-4 px-6 flex justify-between items-center border-b border-white/10">
+        <div class="text-gold-400 font-display font-bold text-lg tracking-wider">民3:1-39</div>
+        <div class="flex gap-6 text-sm font-medium tracking-widest text-gray-300">
+            <a href="#prayer" class="nav-link hover:text-gold-400 uppercase">禱告</a>
+            <a href="#outline" class="nav-link hover:text-gold-400 uppercase">大綱</a>
+            <a href="#sermon" class="nav-link hover:text-gold-400 uppercase">講章</a>
+            <a href="#quotes" class="nav-link hover:text-gold-400 uppercase">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="top" class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src='image/img_a80ee20d-b164-4f97-9f49-fc10e26f6ef9.jpg' alt='Sacred Order' class="w-full h-full object-cover breathing-image" />
+            <div class="banner-glow"></div>
+        </div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
+                從凡火到聖職：<br/>
+                <span class="text-gold-400">神聖次序中的揀選與事奉</span>
+            </h1>
+            
+            <!-- Verse (No background, jumping text) -->
+            <div class="text-jump">
+                <p class="text-lg md:text-2xl font-medium text-white/90 leading-relaxed italic">
+                    「我從以色列人中揀選了利未人，代替以色列人一切頭生的；利未人要歸我。」
+                </p>
+                <p class="mt-4 text-gold-500 font-bold tracking-widest">—— 民數記 3:12</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative py-10">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-900/30 rounded-full text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-widest text-white border-l-4 border-gold-500 pl-4">禱告詞</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 text-gold-900/10">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic">
+                    主啊，我們來到祢的施恩座前，滿懷敬畏與感恩。謝謝祢以無比的恩典揀選了我們，如同祢當年揀選利未人代替以色列的長子歸於祢。求祢赦免我們有時在事奉中獻上不蒙悅納的「凡火」，用自己的熱心代替了對祢的順服。求聖靈開啟我們的眼睛，看見祢在教會與我們生命中所設立的神聖次序。幫助我們在每一個微小的服事上盡忠，成為聖潔、專屬祢的器皿。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-gold-900/30 rounded-full text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-widest text-white border-l-4 border-gold-500 pl-4">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-all group">
+                    <div class="text-xs text-gold-500 mb-2 font-bold tracking-widest">PART 01 (民3:1-4)</div>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">聖潔的警惕：不容忽視的「凡火」與事奉的敬畏</h3>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-all group">
+                    <div class="text-xs text-gold-500 mb-2 font-bold tracking-widest">PART 02 (民3:5-13)</div>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">恩典的揀選：從「頭生子」到「利未人」的專屬歸屬</h3>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl hover:border-gold-500/50 transition-all group">
+                    <div class="text-xs text-gold-500 mb-2 font-bold tracking-widest">PART 03 (民3:14-39)</div>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">忠心的次序：在神聖藍圖中「各盡其職」的微小偉大</h3>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24 mt-16">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24 space-y-8">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-28 space-y-4">
+                                <span class="bg-gold-500 text-black px-3 py-1 text-sm font-black rounded-sm">SECTION 1</span>
+                                <h3 class="text-2xl font-bold text-white">聖潔的警惕</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">民3:1-4 耶和華在西乃山曉諭摩西的日子，亞倫和摩西的代系記在下面...</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-12">
+                            <!-- Keyword -->
+                            <div class="border-l-2 border-gold-900/50 pl-6">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-gold-400 rounded-full"></span> 關鍵原文
+                                </h4>
+                                <p class="text-lg text-gray-300"><strong>凡火 (Strange fire)</strong>：希伯來原文是 <span class="text-gold-300 font-serif">זָר</span> (Zar)，意指「外邦的、陌生的、未經授權的、不合法的」。這指的是未按照上帝所吩咐的方式所獻上的火。</p>
+                            </div>
+                            <!-- QA -->
+                            <div class="glass-card p-8 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                                <p class="text-white font-bold mb-2">Q: 為什麼獻上「凡火」會帶來死亡的代價？</p>
+                                <p class="text-gray-400 leading-relaxed">上帝是聖潔的，祂定規了親近祂的方式。拿答和亞比戶的死，是因為他們的熱心越過了上帝的啟示與命令。這提醒我們，事奉的目的與手段都必須以神為中心。</p>
+                            </div>
+                            <!-- Illustration -->
+                            <div class="bg-white/5 p-6 rounded-xl border border-white/5">
+                                <p class="italic text-gray-400">💡 <strong>例證：</strong> 船隻的羅盤如果附近放了一塊磁鐵，哪怕只有些微的干擾，偏離了一點點角度，航行幾天後就會完全錯過目的地。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24 space-y-8">
+                    <div class="flex flex-col md:flex-row-reverse gap-8">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-28 space-y-4 text-right">
+                                <span class="bg-gold-500 text-black px-3 py-1 text-sm font-black rounded-sm">SECTION 2</span>
+                                <h3 class="text-2xl font-bold text-white">恩典的揀選</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">民3:5-13 耶和華曉諭摩西說：你使利未支派近前來...</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-12">
+                            <div class="border-r-2 border-gold-900/50 pr-6 text-right">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2 justify-end">
+                                    關鍵原文 <span class="w-2 h-2 bg-gold-400 rounded-full"></span>
+                                </h4>
+                                <p class="text-lg text-gray-300"><strong>代替 (Instead of)</strong>：希伯來原文 <span class="text-gold-300 font-serif">תַּחַת</span> (Tachat)，意為「在...之下、代替」。預表了福音中「替代性代贖」的核心概念。</p>
+                            </div>
+                            <div class="glass-card p-8 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                                <p class="text-white font-bold mb-2">Q: 神為什麼要用利未人「代替」以色列的頭生子？</p>
+                                <p class="text-gray-400 leading-relaxed">揭示了恩典的法則：我們得以存活並服事，完全是因為有一位「代替者」。基督就是那位終極的代替者。我們的事奉是因為我們已被重價買贖，理當全人歸屬於祂。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24 space-y-8">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-28 space-y-4">
+                                <span class="bg-gold-500 text-black px-3 py-1 text-sm font-black rounded-sm">SECTION 3</span>
+                                <h3 class="text-2xl font-bold text-white">忠心的次序</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">民3:14-39 耶和華在西乃的曠野曉諭摩西說：你要照利未人的宗族數點他們...</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-12">
+                            <div class="border-l-2 border-gold-900/50 pl-6">
+                                <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-gold-400 rounded-full"></span> 關鍵原文
+                                </h4>
+                                <p class="text-lg text-gray-300"><strong>看守 (Keep charge)</strong>：希伯來原文 <span class="text-gold-300 font-serif">מִשְׁמֶרֶת</span> (Mishmereth)，意指「守衛、職責」。強調這不只是一份工作，更是神所託付的神聖守望。</p>
+                            </div>
+                            <div class="glass-card p-8 rounded-2xl">
+                                <h4 class="text-gold-400 font-bold mb-4">關鍵問題與解析</h4>
+                                <p class="text-white font-bold mb-2">Q: 為什麼上帝要如此鉅細靡遺地分配搬運工作？</p>
+                                <p class="text-gray-400 leading-relaxed">上帝是充滿次序的神。在神的國度裡，沒有不重要的事情，只有不忠心的態度。每一次搬運繩子、每一個卯座的安置，都是在參與上帝神聖同在的彰顯。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="space-y-16">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-900/30 rounded-full text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-widest text-white border-l-4 border-gold-500 pl-4">講章文稿</h2>
+            </div>
+
+            <div class="prose prose-invert prose-gold max-w-none space-y-12 text-lg leading-loose text-gray-300">
+                <p class="first-letter:text-5xl first-letter:font-bold first-letter:text-gold-400 first-letter:mr-3 first-letter:float-left">
+                    弟兄姊妹們，當我們翻開舊約，看到那些繁瑣的家譜、名單和帳幕的規矩時，常常會覺得枯燥乏味。然而，在《民數記》第三章的字裡行間，卻隱藏著上帝對事奉者極其深刻的呼召與愛。今天我們要透過這段經文，來看見一個專屬上帝的器皿，是如何在神聖的次序中被塑造的。這不僅僅是幾千年前利未人的故事，這更是今天每一位蒙恩得救的基督徒，我們生命與事奉的縮影。
+                </p>
+
+                <div class="bg-priest-surface p-10 rounded-3xl border-l-8 border-gold-500 shadow-2xl">
+                    <h3 class="text-3xl font-black text-white mb-6">一、 聖潔的警惕：不容忽視的「凡火」</h3>
+                    <p>經文一開始，就給了我們一個極具震撼力的回顧。拿答、亞比戶在西乃的曠野向耶和華獻凡火的時候就死在耶和華面前了。上帝要的不是我們盲目的熱心，而是建立在順服之上的敬畏。當我們在事奉中，用屬血氣的競爭取代了相愛，用世俗的行銷手段取代了對聖靈的倚靠，我們就是在獻凡火。<strong>「凡火」將事奉的中心從「上帝」轉向了「自己」。</strong></p>
+                </div>
+
+                <div class="bg-priest-surface p-10 rounded-3xl border-l-8 border-gold-500 shadow-2xl">
+                    <h3 class="text-3xl font-black text-white mb-6">二、 恩典的揀選：專屬上帝的歸屬</h3>
+                    <p>當拿答、亞比戶倒下後，上帝宣告：<strong>「利未人要歸我」</strong>。這裡出現了一個偉大的詞：「代替」(Tachat)。我們就像是那些本該死亡的囚犯，但耶穌基督成了那完美的羔羊，祂「代替」了我們承受刑罰。帶著這樣的感恩去服事，事奉就不再是重擔，而是極大的特權。</p>
+                </div>
+
+                <div class="bg-priest-surface p-10 rounded-3xl border-l-8 border-gold-500 shadow-2xl">
+                    <h3 class="text-3xl font-black text-white mb-6">三、 忠心的次序：在神聖藍圖中盡職</h3>
+                    <p>上帝對利未人的三個宗族進行了極其細緻的分工。米拉利人負責看守並搬運最不起眼的「橛子和繩子」。在上帝的國度裡，沒有所謂「卑微」的服事，每一項任務都在完成上帝榮耀的藍圖。<strong>你看守的不是木板和繩子，你看守的是上帝同在的榮耀！</strong></p>
+                </div>
+
+                <div class="text-center py-10 border-y border-white/10">
+                    <h4 class="text-gold-400 font-bold mb-4 tracking-widest">結論三個關鍵字</h4>
+                    <div class="flex justify-center gap-8 md:gap-16">
+                        <div class="text-center">
+                            <div class="text-4xl font-black text-white mb-2">敬畏</div>
+                            <div class="text-xs text-gold-600">REVERENCE</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-black text-white mb-2">歸屬</div>
+                            <div class="text-xs text-gold-600">BELONGING</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-black text-white mb-2">忠心</div>
+                            <div class="text-xs text-gold-600">FAITHFULNESS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h5 class="text-gold-400 font-bold mb-4">1. 悔改與對齊</h5>
+                        <p class="text-sm">具體寫下一項目前參與的服事，重新將主權交還給神，按著祂的心意來做。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h5 class="text-gold-400 font-bold mb-4">2. 奉獻的宣告</h5>
+                        <p class="text-sm">本週每日晨起，向神宣告：我今日的生命完全歸祢，求祢差遣。</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h5 class="text-gold-400 font-bold mb-4">3. 認領隱藏服事</h5>
+                        <p class="text-sm">承擔一項「沒有人會注意到」的微小服事，並帶著敬拜神的心去完成。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-gold-900/30 rounded-full text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold tracking-widest text-white border-l-4 border-gold-500 pl-4">屬靈名言</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 rounded-3xl border-t-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200 mb-6 leading-relaxed">「上帝不接受任何不是由聖靈引導、不以基督為中心的事奉。許多在教會裡的忙碌，若沒有敬畏與順服，只不過是另一種形式的凡火。」</p>
+                    <div>
+                        <span class="block font-bold text-gold-400">— 陶恕 (A.W. Tozer)</span>
+                        <span class="text-xs text-gray-500">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 rounded-3xl border-t-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200 mb-6 leading-relaxed">「每一個微小的順服之舉，若是在愛中完成的，在神眼中都閃耀著光芒。」</p>
+                    <div>
+                        <span class="block font-bold text-gold-400">— 司布真 (Charles Spurgeon)</span>
+                        <span class="text-xs text-gray-500">《晨報與晚鐘》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-8 rounded-3xl border-t-4 border-gold-500 flex flex-col justify-between md:col-span-2">
+                    <p class="text-xl italic text-gray-200 mb-6 leading-relaxed">「如果上帝呼召你做一個清道夫，你就應該像米開朗基羅畫畫、貝多芬作曲、莎士比亞寫詩那樣去清掃街道。你要把街道打掃得如此完美，以至於天國的使者都會停下來說：『這裡住著一個偉大的清道夫，他把工作做得很好。』」</p>
+                    <div>
+                        <span class="block font-bold text-gold-400">— 馬丁·路德 (Martin Luther)</span>
+                        <span class="text-xs text-gray-500">關於呼召的教導</span>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-8 rounded-3xl border-t-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200 mb-6 leading-relaxed">「福音的本質是替代：基督替我們活了我們本該活出的完美生命，又替我們受了我們本該受的刑罰。」</p>
+                    <div>
+                        <span class="block font-bold text-gold-400">— 提摩太·凱勒 (Timothy Keller)</span>
+                        <span class="text-xs text-gray-500">《揮霍的上帝》</span>
+                    </div>
+                </div>
+                 <!-- Quote 8 -->
+                 <div class="glass-card p-8 rounded-3xl border-t-4 border-gold-500 flex flex-col justify-between">
+                    <p class="text-lg italic text-gray-200 mb-6 leading-relaxed">「在門徒訓練中沒有速成班。這是一場『同向順服的長久跋涉』。」</p>
+                    <div>
+                        <span class="block font-bold text-gold-400">— 畢德生 (Eugene Peterson)</span>
+                        <span class="text-xs text-gray-500">《同向順服的長久跋涉》</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caution -->
+            <div class="text-center pt-10">
+                <div class="inline-block border border-red-900/30 bg-red-900/5 px-6 py-3 rounded-full text-red-400 text-sm tracking-widest font-medium">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 bg-gold-500 text-black p-4 rounded-full shadow-2xl hover:bg-gold-400 transition-transform hover:scale-110 active:scale-95 z-50 animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

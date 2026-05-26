@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士5:1-23 當呼召臨到：從旁觀退縮到甘心獻上</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FFD700',
+                            DEFAULT: '#C5A059',
+                            dark: '#8B6B23',
+                        },
+                        accent: '#E63946',
+                        darkBg: '#0A0A0B',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) translateX(-50%)' },
+                            '50%': { transform: 'translateY(-10px) translateX(-50%)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(20, 20, 25, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(197, 160, 89, 0.4);
+            transform: translateY(-4px);
+        }
+        .text-jump {
+            display: inline-block;
+            animation: jump 2s infinite ease-in-out;
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFD700 0%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #C5A059;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            background: rgba(197, 160, 89, 0.05);
+            transition: all 0.3s;
+        }
+        .outline-btn:hover {
+            background: rgba(197, 160, 89, 0.2);
+            border-color: #C5A059;
+            transform: scale(1.02);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士5:1-23',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當呼召臨到：從旁觀退縮到甘心獻上' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body overflow-x-hidden">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 w-full z-50 glass px-4 py-3 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="text-gold font-semibold text-sm md:text-base hidden sm:block">士 5:1-23</span>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wider">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="header" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_04aa3519-e735-4ffa-b9a7-1ca69a1faacf.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/60 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-6 leading-tight">
+                當呼召臨到：<br/>
+                <span class="gradient-text">從旁觀退縮到甘心獻上</span>
+            </h1>
+            <div class="text-gold-light text-xl md:text-2xl font-display font-medium text-jump tracking-widest mt-8">
+                士師記 5:2「因為以色列中有軍長率領，百姓也甘心犧牲自己，你們應當頌讚耶和華！」
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 md:px-12 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="bento-card p-8 md:p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="text-4xl">🙏</span>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold gradient-text">禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic">
+                    主耶和華，我們讚美祢！因為祢是施行拯救、在歷史中掌權的上帝。當我們面對世代的黑暗與屬靈的爭戰時，求祢赦免我們經常選擇安逸、猶豫甚至袖手旁觀的軟弱。求聖靈今天藉著底波拉的詩歌來奮興我們的心，讓我們如同當年甘心獻上自己的百姓一樣，聽見祢的呼召就不再遲疑。賜給我們勇敢的心志，從屬靈的沉睡中甦醒，在祢的國度中甘心擺上自己。奉主耶穌基督的名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-4xl">📜</span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold gradient-text">大綱導覽</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full group">
+                    <div>
+                        <span class="text-gold text-xs font-bold tracking-widest uppercase mb-2 block">第一段</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold transition-colors">頌讚的起點——看見神作為與甘心獻上</h3>
+                    </div>
+                    <span class="text-sm text-gray-500">士師記 5:1-9</span>
+                </a>
+                <a href="#section-2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full group">
+                    <div>
+                        <span class="text-gold text-xs font-bold tracking-widest uppercase mb-2 block">第二段</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold transition-colors">復興的呼喚——從安逸沉睡中甦醒</h3>
+                    </div>
+                    <span class="text-sm text-gray-500">士師記 5:10-15a</span>
+                </a>
+                <a href="#section-3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full group">
+                    <div>
+                        <span class="text-gold text-xs font-bold tracking-widest uppercase mb-2 block">第三段</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold transition-colors">抉擇的十字路口——猶豫旁觀還是奮勇爭戰？</h3>
+                    </div>
+                    <span class="text-sm text-gray-500">士師記 5:15b-23</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Sections -->
+        <section class="space-y-24">
+            <!-- Section 1 -->
+            <div id="section-1" class="scroll-mt-24 bento-card p-8 md:p-12">
+                <div class="border-l-4 border-gold pl-6 mb-10">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold mb-2">第一段：頌讚的起點——看見神作為與甘心獻上</h3>
+                    <p class="text-gold opacity-80">經文範圍：士師記 5:1-9</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div class="bg-darkBg/50 p-6 rounded-xl border border-white/5">
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                引用經文
+                            </h4>
+                            <p class="text-gray-400 italic text-sm leading-relaxed">
+                                「那時，底波拉和亞比挪菴的兒子巴拉作歌，說：因為以色列中有軍長率領，百姓也甘心犧牲自己，你們應當頌讚耶和華！...」 (5:1-9)
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold font-bold mb-2">關鍵原文：甘心犧牲自己</h4>
+                            <p class="text-gray-300"><strong>nāḏaḇ / נָדַב</strong>：指「自願提供」、「甘心樂意地獻上」。這不是被迫，而是出於對神的愛和信靠，主動將生命擺在祭壇上。</p>
+                        </div>
+                        <div class="p-6 bg-white/5 rounded-xl border-l-2 border-accent">
+                            <h4 class="text-white font-bold mb-2">關鍵問題：為什麼真正的頌讚總是伴隨著信徒的「甘心獻上」？</h4>
+                            <p class="text-gray-400">當百姓在極度困乏中仍願意挺身而出，這本身就是神恩典作為的明證。頌讚不只是一種嘴唇的果子，更是生命降服的行動。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-gold/5 p-6 rounded-xl border border-gold/20">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">📖 例證故事</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                摩拉維亞弟兄會的兩位年輕宣教士為了進入西印度群島向奴隸傳福音，甘心將自己賣為奴隸。他們喊著：「願被殺的羔羊，得著祂受苦的酬勞！」這正是「甘心犧牲自己」的現代寫照。
+                            </p>
+                        </div>
+                        <div class="text-right italic">
+                            <p class="text-xl text-white font-display">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                            <span class="text-gold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div id="section-2" class="scroll-mt-24 bento-card p-8 md:p-12">
+                <div class="border-l-4 border-gold pl-6 mb-10">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold mb-2">第二段：復興的呼喚——從安逸沉睡中甦醒</h3>
+                    <p class="text-gold opacity-80">經文範圍：士師記 5:10-15a</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-gold font-bold mb-2">關鍵原文：奮興</h4>
+                            <p class="text-gray-300"><strong>'ûr / עוּר</strong>：意思是「喚醒」、「激動」、「睜開眼睛」。經文連續使用了四次，表明迫切的呼喚。</p>
+                        </div>
+                        <div class="p-6 bg-white/5 rounded-xl border-l-2 border-accent">
+                            <h4 class="text-white font-bold mb-2">關鍵問題：是什麼讓我們在屬靈的爭戰中保持沉默或選擇安逸？</h4>
+                            <p class="text-gray-400">安逸的生活往往是屬靈生命最大的麻醉劑。我們常以為只要維持現狀就好，但屬靈的戰爭是不容中立的。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-gold/5 p-6 rounded-xl border border-gold/20">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">💡 心理學觀點</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                「旁觀者效應」：旁觀者越多，願意伸出援手的人反而越少，因為每個人都覺得「別人會去處理」。我們常坐在「錦褥」上期待別人去打仗。
+                            </p>
+                        </div>
+                        <div class="text-right italic">
+                            <p class="text-xl text-white font-display">「安逸是屬靈成長的致命傷。神總是在尋找那些願意從沙發上站起來，為主受苦的人。」</p>
+                            <span class="text-gold text-sm">— 陶恕 (A.W. Tozer)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div id="section-3" class="scroll-mt-24 bento-card p-8 md:p-12">
+                <div class="border-l-4 border-gold pl-6 mb-10">
+                    <h3 class="text-2xl md:text-3xl font-display font-bold mb-2">第三段：抉擇的十字路口——猶豫旁觀還是奮勇爭戰？</h3>
+                    <p class="text-gold opacity-80">經文範圍：士師記 5:15b-23</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-gold font-bold mb-2">關鍵原文：心中定大志 / 設大謀</h4>
+                            <p class="text-gray-300"><strong>ḥiq·rê-lêḇ / חִקְרֵי־לֵב</strong>：原文指「心中有極大的探求或思量」。流便支派想了很多，但最終卻坐在羊圈內聽笛，是「思想上的巨人，行動上的侏儒」。</p>
+                        </div>
+                        <div class="p-6 bg-white/5 rounded-xl border-l-2 border-accent">
+                            <h4 class="text-white font-bold mb-2">關鍵問題：為什麼上帝嚴厲譴責袖手旁觀的支派？</h4>
+                            <p class="text-gray-400">在神國的爭戰中，不作為就是一種背叛。米羅斯受咒詛是因為他們「不來幫助耶和華」。神定意要祂的子民與祂同工。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-gold/5 p-6 rounded-xl border border-gold/20">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">⚽ 賽場喻道</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                就像足球賽中，球隊最終贏得冠軍時，那些坐在板凳上滑手機、對勝負毫不在乎的球員，是無法體會勝利的喜悅的。勝利的喜悅中有你的份嗎？
+                            </p>
+                        </div>
+                        <div class="text-right italic">
+                            <p class="text-xl text-white font-display">「無所作為，不僅是對上帝的輕忽，更是成為魔鬼僕人的捷徑。」</p>
+                            <span class="text-gold text-sm">— 司布真 (C.H. Spurgeon)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Transcript Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-4xl">🎙️</span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold gradient-text">講章文稿</h2>
+            </div>
+            <div class="bg-white/5 p-8 md:p-16 rounded-[40px] prose prose-invert prose-lg max-w-none shadow-2xl">
+                <p class="text-2xl text-gold font-semibold mb-10">主題：當呼召臨到：從旁觀退縮到甘心獻上</p>
+                
+                <p class="leading-relaxed mb-8">
+                    各位弟兄姐妹，平安！今天我們要來看一段充滿力量與激情的經文——底波拉之歌。當國家面臨極大的危機，仇敵的鐵車壓境，以色列人連基本的武器都沒有時，上帝卻成就了奇妙的拯救。但這段經文不只是一首慶祝勝利的詩歌，它更是一面屬靈的鏡子，照出我們每個人在面對上帝呼召時的真實態度。
+                </p>
+
+                <div class="my-12">
+                    <h3 class="text-accent text-2xl font-bold mb-6">一、頌讚的起點——看見神作為與甘心獻上</h3>
+                    <p>詩歌的一開頭，底波拉就把「上帝的率領」與「百姓的<strong class="text-white bg-gold/20 px-2">甘心獻上</strong>」放在一起。這個字在原文的意思是「自願提供、甘心樂意」。當時的以色列人極度軟弱，經文說他們「四萬人中豈能見藤牌槍矛」，可以說是手無寸鐵。但在這樣的絕境中，有一群人沒有選擇逃跑，他們<strong>甘心犧牲自己</strong>。</p>
+                    <p class="italic text-gray-400 mt-4">真正的頌讚，從來不僅止於主日禮拜中美妙的歌聲，真正的頌讚總是伴隨著信徒的「甘心獻上」。</p>
+                </div>
+
+                <div class="my-12">
+                    <h3 class="text-accent text-2xl font-bold mb-6">二、復興的呼喚——從安逸沉睡中甦醒</h3>
+                    <p>底波拉呼喚那些「騎白驢的、坐錦褥的」——也就是當時生活安逸、富裕的人，也要起來傳揚。經文第12節更是連續四次發出呼喊：<strong class="text-gold text-2xl font-display">「底波拉啊，奮興，奮興，你當奮興，奮興，唱歌。」</strong></p>
+                    <p>為什麼需要連續四次呼叫「奮興」？因為人的本性是營造安逸的。上帝今天也在對你的靈魂呼喊：<strong>奮興！奮興！從屬靈的沉睡中甦醒過來！</strong></p>
+                </div>
+
+                <div class="my-12">
+                    <h3 class="text-accent text-2xl font-bold mb-6">三、抉擇的十字路口——猶豫旁觀還是奮勇爭戰？</h3>
+                    <p>這首詩歌最令人震撼的部分，在於它毫不留情地記錄了各支派面對呼召時的反應。我們來到了一個抉擇的十字路口。西布倫和拿弗他利是<strong class="text-white underline decoration-gold underline-offset-4">「拚命敢死」</strong>的；但是，流便支派呢？他們「心中定大志」、「心中設大謀」，但最終卻「坐在羊圈內聽群中吹笛的聲音」。他們是思想上的巨人，行動上的侏儒！</p>
+                    <p>在神國的爭戰中，沒有中立地帶。袖手旁觀，就是一種背叛。面對這個世代的挑戰，你要選擇繼續坐在羊圈旁聽安逸的笛聲，還是要回應上帝的呼召，成為那群<strong>「甘心犧牲自己」</strong>的跟隨者？</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-4xl">✨</span>
+                <h2 class="text-3xl md:text-4xl font-display font-bold gradient-text">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <span class="text-gold text-sm">— 潘霍華《追隨基督》</span>
+                </div>
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「無所作為，不僅是對上帝的輕忽，更是成為魔鬼僕人的捷徑。」</p>
+                    <span class="text-gold text-sm">— 司布真《司布真講道集》</span>
+                </div>
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「如果你把安逸和舒適當作生命中最重要的事，那麼安逸就是你的偶像。」</p>
+                    <span class="text-gold text-sm">— 提摩太·凱勒《假神眾像》</span>
+                </div>
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「安逸是屬靈成長的致命傷。神總是在尋找那些願意從沙發上站起來的人。」</p>
+                    <span class="text-gold text-sm">— 陶恕《渴慕神》</span>
+                </div>
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「上帝絕對無法豐豐富富地賜福給一個沒有完全降服於祂的人。」</p>
+                    <span class="text-gold text-sm">— 慕安德烈《絕對的降服》</span>
+                </div>
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「信仰不是買保險，信仰是投入戰場；耶穌不是來讓我們舒服，是讓我們聖潔。」</p>
+                    <span class="text-gold text-sm">— 大衛·鮑森</span>
+                </div>
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「十字架的呼召不是叫我們走向安逸，而是走向犧牲。」</p>
+                    <span class="text-gold text-sm">— 約翰·史托德《當代基督十架》</span>
+                </div>
+                <div class="bento-card p-8 border-t-2 border-gold/40">
+                    <p class="text-xl mb-4 italic">「這個世界還沒有看見一個完全奉獻給神的人，上帝能藉他成就何等大的事。」</p>
+                    <span class="text-gold text-sm">— 慕迪 (D.L. Moody)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Summary & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bento-card p-10 bg-accent/5 border-accent/20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="text-3xl text-accent">🎯</span> 應用方向
+                </h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">01</span>
+                        <p class="text-gray-300"><strong>檢視屬靈姿態：</strong>你是拚命敢死，還是被世俗事務纏累？</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">02</span>
+                        <p class="text-gray-300"><strong>打破旁觀者心態：</strong>跨出舒適圈，回應已看見的需要。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-accent font-bold">03</span>
+                        <p class="text-gray-300"><strong>重新定準生命價值：</strong>將才幹與時間投資在永恆的神國。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card p-10 bg-gold/5 border-gold/20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="text-3xl text-gold">🚀</span> 回應行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="p-4 bg-white/5 rounded-lg">
+                        <h4 class="text-gold font-bold mb-1">每日禱告檢視</h4>
+                        <p class="text-sm text-gray-400">每天早晨使用士師記5:2禱告，求神賜下「甘心獻上」的靈。</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-lg">
+                        <h4 class="text-gold font-bold mb-1">具體參與服事</h4>
+                        <p class="text-sm text-gray-400">本月主動聯繫牧者，投入一項迫切需要人手的服事。</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-lg">
+                        <h4 class="text-gold font-bold mb-1">對付流便的猶豫</h4>
+                        <p class="text-sm text-gray-400">寫下一件猶豫不決的事，本週採取第一步行動。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center text-gray-600 text-sm py-10">
+            <p>⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 animate-subtle-pulse">
+        <svg class="w-6 h-6 text-darkBg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </a>
+
+</body>
+</html>

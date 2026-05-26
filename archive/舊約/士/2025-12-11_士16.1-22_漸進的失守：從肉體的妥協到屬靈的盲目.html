@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士16:1-22:漸進的失守：從肉體的妥協到屬靈的盲目</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#990000',
+                        deepBlack: '#0a0a0a',
+                        glassWhite: 'rgba(255, 255, 255, 0.1)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: 0.6, filter: 'brightness(80%) saturate(80%)' },
+                            '50%': { opacity: 1, filter: 'brightness(110%) saturate(120%)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0a; color: #e5e5e5; overflow-x: hidden; }
+        
+        .glass-morphism {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #F9D976);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .scroll-top-btn:hover { transform: scale(1.1); background: #f9d976; }
+
+        .jump-text {
+            display: inline-block;
+            animation: gentle-float 3s ease-in-out infinite;
+        }
+
+        .nav-item {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s;
+        }
+        .nav-item:hover::after { width: 100%; }
+
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .outline-btn:hover {
+            background: #D4AF37;
+            color: #000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士16:1-22',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '漸進的失守：從肉體的妥協到屬靈的盲目' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body">
+
+    <!-- Header / Banner -->
+    <header class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_8635f915-5f32-4108-a22c-f21d8733ded7.jpg' alt='參孫扛迦薩城門' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-deepBlack/40 to-deepBlack"></div>
+        </div>
+
+        <!-- Sticky Toolbar -->
+        <nav class="fixed top-0 left-0 w-full z-50 glass-morphism py-4 px-6 flex justify-between items-center">
+            <div class="text-gold font-display font-bold text-lg hidden md:block">
+                士師記 16:1-22
+            </div>
+            <div class="flex gap-6 text-sm font-semibold tracking-widest uppercase items-center mx-auto md:mx-0">
+                <a href="#prayer" class="nav-item">禱告</a>
+                <a href="#outline" class="nav-item">大綱</a>
+                <a href="#sermon" class="nav-item">講章</a>
+                <a href="#quotes" class="nav-item">名言</a>
+            </div>
+        </nav>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h2 class="text-gold font-display text-xl md:text-2xl mb-4 tracking-widest opacity-90">士師記 16:1-22</h2>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight drop-shadow-2xl">
+                漸進的失守：<br/><span class="text-gradient">從肉體的妥協到屬靈的盲目</span>
+            </h1>
+            
+            <!-- Verse (Golden Text, Jumping) -->
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg md:text-xl font-display italic leading-relaxed text-white drop-shadow-lg jump-text">
+                    「大利拉說：『參孫哪，非利士人拿你來了！』參孫從睡夢中醒來，心裡說：『我要像前幾次出去活動身體』；他卻不知道耶和華已經離開他了。」
+                    <span class="block mt-2 text-sm text-gold/80 not-italic">— 士師記 16:20</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="glass-morphism p-8 md:p-12 rounded-3xl border-l-4 border-l-gold">
+                <div class="flex items-center gap-4 mb-6">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" /></svg>
+                    <h2 class="text-3xl font-display font-bold text-gold">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed font-light text-slate-300 italic">
+                    主啊，我們來到祢面前，承認我們的心常像參孫一樣，容易被世界的誘惑吸引，在罪惡的邊緣徘徊與妥協。求祢賜給我們敏銳的靈，讓我們看見隱藏在安逸與肉體情慾背後的致命危機。當我們自以為剛強、能掌控一切時，求祢光照我們的盲目。主啊，保守我們不失去祢的同在，賜給我們逃避試探的勇氣，並且一生持守對祢的聖潔與呼召。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                <h2 class="text-3xl font-display font-bold text-gold">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="outline-btn glass-morphism p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold/50 font-bold mb-2 block">PART 01</span>
+                    <h3 class="text-xl font-bold mb-4">輕忽的警訊——在試探邊緣的危險試探</h3>
+                    <span class="text-sm opacity-60">士 16:1-3</span>
+                </a>
+                <a href="#part2" class="outline-btn glass-morphism p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold/50 font-bold mb-2 block">PART 02</span>
+                    <h3 class="text-xl font-bold mb-4">致命的眷戀——與罪惡共舞的自信謊言</h3>
+                    <span class="text-sm opacity-60">士 16:4-14</span>
+                </a>
+                <a href="#part3" class="outline-btn glass-morphism p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-gold/50 font-bold mb-2 block">PART 03</span>
+                    <h3 class="text-xl font-bold mb-4">同在的撤離——恩典流失與屬靈的盲目</h3>
+                    <span class="text-sm opacity-60">士 16:15-22</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <section class="space-y-24">
+            
+            <!-- Part 1 -->
+            <article id="part1" class="space-y-12">
+                <div class="border-b border-white/10 pb-6">
+                    <h2 class="text-4xl font-display font-bold text-gold mb-4">第一段：輕忽的警訊——在試探邊緣的危險試探</h2>
+                    <p class="text-white/60 font-semibold tracking-widest uppercase">士師記 16:1-3</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="glass-morphism p-8 rounded-3xl md:col-span-2">
+                        <h4 class="text-gold font-bold mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                            經文引用
+                        </h4>
+                        <p class="text-lg leading-relaxed text-slate-300">
+                            1 參孫到了迦薩，在那裡看見一個妓女，就與她親近。 2 有人告訴迦薩人說：「參孫到這裡來了！」他們就把他團團圍住，終夜在城門悄悄地埋伏，說：「等到天亮我們便殺他。」 3 參孫睡到半夜，起來，將城門的門扇、門框、門閂，一齊拆下來，扛在肩上，扛到希伯崙前的山頂上。
+                        </p>
+                    </div>
+                    
+                    <div class="glass-morphism p-8 rounded-3xl bg-gold/5">
+                        <h4 class="text-gold font-bold mb-4">關鍵原文</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-2xl font-bold text-white mb-1">בּוֹא (bo)</p>
+                                <p class="text-gold text-sm">親近 / 進入</p>
+                                <p class="text-sm mt-2 opacity-70">參孫本該過分別為聖的生活，但他卻隨意「進入」道德的泥沼。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl">
+                        <h4 class="text-crimson font-bold mb-4">關鍵問題</h4>
+                        <p class="font-bold text-xl text-white mb-4">為什麼我們經常忽略屬靈生命中早期的警訊？</p>
+                        <p class="opacity-80">參孫此時依然靠著怪力脫困，這種「犯罪後依然沒有立刻受到懲罰」的錯覺，使人產生了傲慢與僥倖心態。我們常以為事工還有果效，神就默許罪。</p>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl border-t-4 border-gold">
+                        <h4 class="text-gold font-bold mb-4 italic">佳句名言</h4>
+                        <blockquote class="text-xl italic font-display">
+                            「我們最大的危險不是在於突然跌倒，而是在於那些我們認為無傷大雅、微不足道的妥協中，逐漸偏離了神。」
+                            <footer class="mt-4 text-sm text-gold/70">— 司布真 (Charles Spurgeon)</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 2 -->
+            <article id="part2" class="space-y-12">
+                <div class="border-b border-white/10 pb-6">
+                    <h2 class="text-4xl font-display font-bold text-gold mb-4">第二段：致命的眷戀——與罪惡共舞的自信謊言</h2>
+                    <p class="text-white/60 font-semibold tracking-widest uppercase">士師記 16:4-14</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="glass-morphism p-8 rounded-3xl bg-gold/5">
+                        <h4 class="text-gold font-bold mb-4">關鍵原文</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-2xl font-bold text-white mb-1">אָהֵב (aheb)</p>
+                                <p class="text-gold text-sm">喜愛 / 依戀</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-white mb-1">הָתַל (hathal)</p>
+                                <p class="text-gold text-sm">欺哄 / 玩弄</p>
+                            </div>
+                        </div>
+                        <p class="text-sm mt-4 opacity-70">參孫以為自己在玩弄大利拉，卻不知自己才是被玩弄的獵物。</p>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl md:col-span-2">
+                        <h4 class="text-gold font-bold mb-4">例證與比喻</h4>
+                        <div class="flex flex-col md:flex-row gap-6 items-start">
+                            <div class="flex-1">
+                                <p class="text-lg italic text-slate-300">
+                                    有人把一隻小老虎當寵物養，自以為完全馴服了這隻猛獸。但老虎長大後，聞到主人手上的血腥味，獸性大發。罪就像這隻老虎，你以為可以馴服它，但它最終的目的是吞吃你。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl border-t-4 border-gold">
+                        <h4 class="text-gold font-bold mb-4 italic">佳句名言</h4>
+                        <blockquote class="text-xl italic font-display">
+                            「你無法阻止鳥兒從你頭上飛過，但你可以阻止牠們在你頭上築巢。」
+                            <footer class="mt-4 text-sm text-gold/70">— 馬丁·路德 (Martin Luther)</footer>
+                        </blockquote>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl">
+                        <h4 class="text-crimson font-bold mb-4">關鍵問題</h4>
+                        <p class="font-bold text-xl text-white mb-4">為什麼我們以為自己能控制罪，而不是逃避罪？</p>
+                        <p class="opacity-80">參孫三次向大利拉說謊，他享受在危險邊緣試探的刺激感。罪不是用來「控制」的，聖經的教導永遠是「逃避」少年的私慾。</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 3 -->
+            <article id="part3" class="space-y-12">
+                <div class="border-b border-white/10 pb-6">
+                    <h2 class="text-4xl font-display font-bold text-gold mb-4">第三段：同在的撤離——恩典流失與屬靈的盲目</h2>
+                    <p class="text-white/60 font-semibold tracking-widest uppercase">士師記 16:15-22</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <div class="glass-morphism p-8 rounded-3xl md:col-span-3 bg-crimson/5 border-l-4 border-l-crimson">
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="flex-1">
+                                <h4 class="text-crimson font-bold mb-4">最可怕的真相</h4>
+                                <p class="text-3xl font-display font-bold text-white mb-4">他卻不知道耶和華已經離開他了。</p>
+                                <p class="text-slate-300 leading-relaxed">
+                                    一個基督徒最可怕的屬靈狀態不是患難，而是「神離開了你，你卻不知道」。參孫以為恩賜（力氣）是屬於自己的。當他打破最後的底線，聖靈撤離，他不僅失去力量，更失去了雙眼。
+                                </p>
+                            </div>
+                            <div class="md:w-64 space-y-6">
+                                <div>
+                                    <p class="text-2xl font-bold text-white mb-1">סוּר (sur)</p>
+                                    <p class="text-gold text-sm font-bold">離開 / 撤離</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-white mb-1">לֹא יָדַע (lo yada)</p>
+                                    <p class="text-gold text-sm font-bold">不知道 (悲劇性的無知)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-morphism p-8 rounded-3xl border-t-4 border-gold md:col-span-3">
+                        <h4 class="text-gold font-bold mb-4 italic text-center">佳句名言</h4>
+                        <blockquote class="text-2xl italic font-display text-center leading-relaxed">
+                            「如果今天聖靈從教會中被收回，我們現今有百分之九十五的活動仍會照常進行，而我們卻絲毫察覺不到有什麼異樣。」
+                            <footer class="mt-4 text-sm text-gold/70 text-right">— 陶恕 (A.W. Tozer)</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                <h2 class="text-3xl font-display font-bold text-gold">講章文稿</h2>
+            </div>
+            
+            <div class="glass-morphism p-8 md:p-16 rounded-[3rem] text-lg leading-relaxed text-slate-200 space-y-8 font-light">
+                <p>弟兄姊妹們，今天我們要來看一段充滿張力與悲劇色彩的經文——士師記16章1到22節。講道的主題是：<strong class="text-gold font-bold">「漸進的失守：從肉體的妥協到屬靈的盲目」</strong>。</p>
+                
+                <p>參孫是聖經中最具傳奇色彩的士師，他擁有超然的怪力，但他的一生卻像是一場高開低走的悲劇。他的失敗不是一夕之間造成的，而是一連串妥協的結果。</p>
+
+                <h4 class="text-2xl font-bold text-gold pt-6">第一段：輕忽的警訊</h4>
+                <p>在士師記16:1-3中提到，參孫到了迦薩，不僅進入了敵人的重鎮，還找了妓女。迦薩人埋伏要殺他，但參孫半夜起來，竟然把城門都拆了扛走。這裡有一個極大的危機。參孫犯罪了，但他沒有受到懲罰，他的力氣還在！這給了他一個致命的錯覺：<span class="text-gold border-b border-gold/30">神不在乎我的道德，只要我還有能力就好。</span>我們常以為只要事工有果效，神就默許我們的罪。不要忽略你生命中的警示燈！</p>
+
+                <h4 class="text-2xl font-bold text-gold pt-6">第二段：致命的眷戀</h4>
+                <p>參孫後來在梭烈谷愛上了大利拉。大利拉被非利士人收買，三次試探參孫能力的來源。參孫知道她的目的嗎？他當然知道！但他太驕傲了。他用青繩子、新繩子、編頭髮來欺哄大利拉，他在玩一場與罪惡共舞的遊戲。面對試探，聖經從來不教我們去「挑戰」它，而是教我們去<span class="text-gold font-bold underline">「逃避」</span>它！</p>
+
+                <h4 class="text-2xl font-bold text-crimson pt-6">第三段：同在的撤離</h4>
+                <p>大利拉天天用話催逼他，參孫終於洩露了拿細耳人頭髮的秘密。當他的頭髮被剃掉，悲劇發生了。請特別注意今天的<strong class="text-gold">金句：士師記 16:20：「...參孫從睡夢中醒來，心裡說：『我要像前幾次出去活動身體』；他卻不知道耶和華已經離開他了。」</strong></p>
+
+                <p>這是整本聖經中最令人毛骨悚然的一句話——<strong class="text-crimson bg-crimson/10 px-2">他卻不知道耶和華已經離開他了</strong>。參孫以為力量是自己的，只要「像前幾次一樣」動動身體就好，但他不知道，恩賜的源頭是神。失去了神的同在，他立刻被敵人拿住，雙眼被剜，在監牢裡痛苦地推磨。</p>
+
+                <p class="pt-8 border-t border-white/10">今天，讓我們停止一切的妥協，拒絕屬靈的盲目，重新渴慕並緊緊抓住神的同在！不要等到失去了雙眼，在黑暗中推磨時，才想起神恩典的可貴。</p>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h2 class="text-3xl font-display font-bold text-gold flex items-center gap-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-4">
+                    <li class="glass-morphism p-5 rounded-2xl border-l-4 border-gold">檢視生命的「迦薩」：反省生活中是否有明明知道不對，卻仍縱容的灰色地帶。</li>
+                    <li class="glass-morphism p-5 rounded-2xl border-l-4 border-gold">正視恩賜與品格的落差：外在的能力，不能等同於神對我們品格的認可。</li>
+                    <li class="glass-morphism p-5 rounded-2xl border-l-4 border-gold">拒絕與罪談判：對待罪的唯一策略是設立界線並立即逃避。</li>
+                    <li class="glass-morphism p-5 rounded-2xl border-l-4 border-gold">珍惜神的同在：將「神的同在」視為生命中最寶貴的資產。</li>
+                </ul>
+            </div>
+
+            <div class="space-y-8">
+                <h2 class="text-3xl font-display font-bold text-gold flex items-center gap-4">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                    回應與實踐
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <span class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center shrink-0 font-bold text-gold">1</span>
+                        <p class="text-lg">本週花一小時安靜在神面前，寫下生活中正在「妥協」的一件事，並向神悔改。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center shrink-0 font-bold text-gold">2</span>
+                        <p class="text-lg">尋找一位成熟的屬靈同伴，坦誠分享自己面對的試探，建立守望與問責關係。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center shrink-0 font-bold text-gold">3</span>
+                        <p class="text-lg text-crimson font-bold">斬斷試探來源：針對引發犯罪的媒介（APP、關係、習慣），採取立即刪除或遠離的行動。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" /></svg>
+                <h2 class="text-3xl font-display font-bold text-gold">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="italic text-lg mb-2">「人心是一座製造偶像的工廠。」</p>
+                    <footer class="text-sm text-gold/60">— 約翰·加爾文 (John Calvin)</footer>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="italic text-lg mb-2">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是昂貴的恩典。」</p>
+                    <footer class="text-sm text-gold/60">— 潘霍華 (Dietrich Bonhoeffer)</footer>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="italic text-lg mb-2">「罪是一個盜賊，它偷走我們與神相交的喜樂，讓我們在屬靈上變成貧窮。」</p>
+                    <footer class="text-sm text-gold/60">— 司布真 (Charles Spurgeon)</footer>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="italic text-lg mb-2">「任何事物，若對你來說比神更重要，那就是你的偶像。」</p>
+                    <footer class="text-sm text-gold/60">— 提摩太·凱勒 (Timothy Keller)</footer>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="italic text-lg mb-2">「我們最深的痛苦，來自於我們拒絕接受自己是神所愛的孩子這個核心身分。」</p>
+                    <footer class="text-sm text-gold/60">— 盧雲 (Henri Nouwen)</footer>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl">
+                    <p class="italic text-lg mb-2">「神接納你現在的樣子；但祂不願意你停留在原來的樣子。」</p>
+                    <footer class="text-sm text-gold/60">— 大衛·鮑森 (David Pawson)</footer>
+                </div>
+            </div>
+
+            <div class="mt-20 py-10 border-t border-white/10 text-center">
+                <p class="text-slate-500 text-sm tracking-widest animate-pulse">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll Top Button -->
+    <a href="#top" class="scroll-top-btn" aria-label="Back to top">
+        <svg class="w-6 h-6 text-deepBlack" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" /></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

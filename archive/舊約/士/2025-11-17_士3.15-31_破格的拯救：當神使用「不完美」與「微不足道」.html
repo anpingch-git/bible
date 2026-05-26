@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士3:15-31:破格的拯救：當神使用「不完美」與「微不足道」</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FDE68A',
+                            DEFAULT: '#D4AF37',
+                            dark: '#926239',
+                        },
+                        divine: '#E2E8F0',
+                        accent: '#EAB308'
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'micro-jump': 'jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #FDE68A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, transparent 0%, rgba(10, 10, 10, 0.8) 70%, #0a0a0a 100%);
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.5));
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士3:15-31',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '破格的拯救：當神使用「不完美」與「微不足道」' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans leading-relaxed">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-white/10 px-4 py-3 sm:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-gold font-bold text-sm sm:text-lg truncate tracking-wider font-display">
+                士3:15-31
+            </div>
+            <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-medium tracking-widest text-gray-300">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header id="header" class="relative h-screen w-full overflow-hidden flex items-center justify-center pt-16">
+        <div class="absolute inset-0 z-0">
+            <!-- Image 1 -->
+            <div class="absolute inset-0 animate-breath" style="animation-delay: 0s;">
+                <img src='image/img_ef278681-247f-4c27-9173-63c90565c569.jpg' alt='以笏的秘密刺殺' class="w-full h-full object-cover opacity-60" />
+            </div>
+            <!-- Image 2 with different timing to overlap -->
+            <div class="absolute inset-0 animate-breath opacity-0" style="animation-delay: 4s;">
+                <img src='image/img_9c5363be-d144-42ec-be08-0de18028db08.jpg' alt='珊迦的英勇禦敵' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 banner-gradient"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="inline-block px-4 py-1 border border-gold/50 text-gold text-xs tracking-[0.3em] uppercase mb-6 animate-pulse">
+                Judges 3:15-31
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-black mb-8 leading-tight">
+                破格的<span class="text-gradient">拯救</span><br/>
+                <span class="text-2xl sm:text-4xl block mt-4 font-normal tracking-wide text-gray-300">當神使用「不完美」與「微不足道」</span>
+            </h1>
+            
+            <!-- Floating Scripture Text -->
+            <div class="mt-12 animate-micro-jump">
+                <p class="text-xl sm:text-2xl font-display italic text-divine leading-relaxed drop-shadow-lg">
+                    「以色列人呼求耶和華的時候，耶和華就為他們興起一位拯救者...」
+                </p>
+                <p class="text-gold font-bold mt-4 tracking-widest">士師記 3:15a</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <span class="section-icon text-gold">🙏</span>
+                <h2 class="text-3xl font-display font-bold text-gold">親近上帝</h2>
+            </div>
+            <div class="glass-panel p-8 sm:p-12 rounded-3xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <p class="text-xl sm:text-2xl leading-relaxed font-light text-gray-200 italic font-serif">
+                    「親愛的天父，我們常常看著自己的軟弱與限制，以為自己無法為祢所用；我們也常常看著手中微薄的資源，認為這不足以成就任何大事。但今天求祢開啟我們的屬靈眼睛，讓我們看見祢是使無變有、在人的軟弱上顯得完全的上帝。求祢拿走我們的自卑與推託，幫助我們將自己真實的本相與手中僅有的一切，毫無保留地交在祢的手中。願祢的聖靈親自對我們的心說話，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Links / Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <span class="section-icon text-gold">📜</span>
+                <h2 class="text-3xl font-display font-bold text-gold">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section1" class="glass-panel hover:bg-gold/10 p-6 rounded-2xl transition-all border-l-4 border-gold group">
+                    <p class="text-xs text-gold/60 mb-2 font-bold tracking-widest">第一段</p>
+                    <h3 class="font-bold group-hover:translate-x-2 transition-transform">意想不到的刺客：當神使用我們的「限制」</h3>
+                    <p class="text-xs mt-3 opacity-50">士 3:15-23</p>
+                </a>
+                <a href="#section2" class="glass-panel hover:bg-gold/10 p-6 rounded-2xl transition-all border-l-4 border-gold group">
+                    <p class="text-xs text-gold/60 mb-2 font-bold tracking-widest">第二段</p>
+                    <h3 class="font-bold group-hover:translate-x-2 transition-transform">把握時機的呼召：當神透過我們的「行動」得勝</h3>
+                    <p class="text-xs mt-3 opacity-50">士 3:24-30</p>
+                </a>
+                <a href="#section3" class="glass-panel hover:bg-gold/10 p-6 rounded-2xl transition-all border-l-4 border-gold group">
+                    <p class="text-xs text-gold/60 mb-2 font-bold tracking-widest">第三段</p>
+                    <h3 class="font-bold group-hover:translate-x-2 transition-transform">平凡工具的神蹟：當神使用我們的「僅有」</h3>
+                    <p class="text-xs mt-3 opacity-50">士 3:31</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-24">
+                <!-- Section 1 Details -->
+                <div id="section1" class="scroll-mt-32 border-l border-white/10 pl-8 relative">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(212,175,55,1)]"></div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-8">第一段：意想不到的刺客 (士 3:15-23)</h3>
+                    
+                    <div class="grid gap-8">
+                        <div class="glass-panel p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold text-sm tracking-widest mb-4 uppercase">引用經文</h4>
+                            <p class="text-sm leading-relaxed text-gray-400">「以色列人呼求耶和華的時候，耶和華就為他們興起一位拯救者...它是個左手便利的人。以笏打了一把兩刃的劍，長一肘，帶在右腿上衣服裡面...」</p>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <p class="text-accent font-bold">關鍵字：左手便利</p>
+                                <p class="text-sm">原文直譯為「右手受限制的」。在古代代表弱點，但以笏的限制成為他能避開搜身、成功行刺的關鍵。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-accent font-bold">關鍵問題：為何選右手受限者？</p>
+                                <p class="text-sm">神刻意顛覆英雄定義。人的盡頭是神恩典的起點，缺陷能轉化為仇敵無法破解的「奇兵」。</p>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/5 pt-6">
+                            <p class="italic text-gray-400 text-sm">「神最看重的器皿，往往是那些在自己眼中看為微小，在世人眼中看為軟弱的人。」——司布真</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 Details -->
+                <div id="section2" class="scroll-mt-32 border-l border-white/10 pl-8 relative">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(212,175,55,1)]"></div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-8">第二段：把握時機的呼召 (士 3:24-30)</h3>
+                    <div class="grid gap-8">
+                        <div class="glass-panel p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold text-sm tracking-widest mb-4 uppercase">引用經文</h4>
+                            <p class="text-sm leading-relaxed text-gray-400">「以笏逃到西伊拉；到了，就在以法蓮山地吹角。以色列人隨著他下了山地...對他們說：『你們隨我來，因為耶和華已經把你們的仇敵摩押人交在你們手中。』」</p>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <p class="text-accent font-bold">關鍵字：吹角</p>
+                                <p class="text-sm">公羊角製成的樂器。象徵發出警報、招聚軍隊，宣告耶和華的得勝與同在。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-accent font-bold">關鍵問題：為何要呼召眾人？</p>
+                                <p class="text-sm">刺殺只是破口，得勝需全體參與。個人的順服是點燃群體復興的火種，不再是個人的英雄主義。</p>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/5 pt-6">
+                            <p class="italic text-gray-400 text-sm">「行動不是出於思想，而是出於願意承擔責任的心。」——潘霍華</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 Details -->
+                <div id="section3" class="scroll-mt-32 border-l border-white/10 pl-8 relative">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gold rounded-full shadow-[0_0_15px_rgba(212,175,55,1)]"></div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-8">第三段：平凡工具的神蹟 (士 3:31)</h3>
+                    <div class="grid gap-8">
+                        <div class="glass-panel p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold text-sm tracking-widest mb-4 uppercase">引用經文</h4>
+                            <p class="text-sm leading-relaxed text-gray-400">「以笏之後，有亞拿的兒子珊迦，他用趕牛的棍子打死六百非利士人。他也救了以色列人。」</p>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <p class="text-accent font-bold">關鍵字：趕牛的棍子</p>
+                                <p class="text-sm">兩三公尺的木棍，非正規武器，只是最平凡的農具。代表神使用現有的資源。</p>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-accent font-bold">關鍵問題：如何擊殺六百人？</p>
+                                <p class="text-sm">關鍵不在工具，而在珊迦願意獻上所有。神將平凡的技能轉化為拯救靈魂的利器。</p>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/5 pt-6">
+                            <p class="italic text-gray-400 text-sm">「給我一個完全奉獻給神的人，我要看看神能藉著他做什麼。」——慕迪</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <span class="section-icon text-gold">📖</span>
+                <h2 class="text-3xl font-display font-bold text-gold">講章文稿</h2>
+            </div>
+            <article class="prose prose-invert prose-gold max-w-none space-y-8 text-gray-300">
+                <h3 class="text-3xl font-display text-white mb-10 border-b border-gold/20 pb-4">士3:15-31：破格的拯救</h3>
+                
+                <p class="text-lg">各位弟兄姊妹，平安！我們今天來到士師記第三章，這段經文記載了兩位非常特別的士師：以笏和珊迦。在我們一般的印象中，拯救國家於水火之中的英雄，應該是高大威猛、裝備精良、背景顯赫的人。然而，上帝的邏輯往往與人不同。</p>
+
+                <div class="bg-gold/5 border-l-4 border-gold p-6 my-8">
+                    <h4 class="text-gold font-bold mb-2">第一：意想不到的刺客：當神使用我們的「限制」</h4>
+                    <p>在士師記 3:15提到：「以色列人呼求耶和華的時候，耶和華就為他們興起一位拯救者，就是便雅憫人基拉的兒子以笏，他是個左手便利的人。」這正是我們今天的金句。</p>
+                    <p class="mt-4"><span class="text-gold font-bold">「左手便利」不是指左撇子天才，而是指「右手受限制的」。</span> 在古代，右手象徵力量，右手受限幾乎等同於一種缺陷。但我們看到，正是因為這個缺陷，敵人對以笏放下了戒心。正如司布真所說：「神最看重的器皿，往往是那些在自己眼中看為微小，在世人眼中看為軟弱的人。」</p>
+                </div>
+
+                <div class="bg-gold/5 border-l-4 border-gold p-6 my-8">
+                    <h4 class="text-gold font-bold mb-2">第二：把握時機的呼召：當神透過我們的「行動」得勝</h4>
+                    <p>以笏在成功刺殺摩押王伊磯倫後，他沒有獨自逃跑躲藏，而是吹響了角。刺殺一個王，不能帶來真正的和平；唯有整個群體站起來，才能制伏仇敵。潘霍華曾說：<span class="text-white font-bold">「行動不是出於思想，而是出於願意承擔責任的心。」</span> 以笏承擔了這個責任，他的行動就像黑暗中點燃的第一根火柴。</p>
+                </div>
+
+                <div class="bg-gold/5 border-l-4 border-gold p-6 my-8">
+                    <h4 class="text-gold font-bold mb-2">第三：平凡工具的神蹟：當神使用我們的「僅有」</h4>
+                    <p>珊迦用趕牛的棍子打死六百非利士人。關鍵不在於那根棍子，而在於珊迦願意把他手中僅有的工具，毫不保留地交在神手中。慕迪曾說：<span class="text-white font-bold">「給我一個完全奉獻給神的人，我要看看神能藉著他做什麼。」</span> 只要你願意獻上這微不足道的「趕牛棍」，神就能用它成就神蹟！</p>
+                </div>
+
+                <div class="mt-12 text-xl font-display font-bold text-center">
+                    <p class="text-gold italic">總結：限制、順服、器皿</p>
+                    <p class="text-gray-400 mt-4">神不在乎你的限制，只要你願意順服，將自己手中微小的器皿獻給祂。阿們！</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Action -->
+        <section class="glass-panel p-10 rounded-[3rem] border border-gold/30">
+            <h2 class="text-2xl font-display font-bold text-gold mb-8 text-center italic">回應與實踐行動</h2>
+            <div class="grid gap-6">
+                <div class="flex gap-6 items-start">
+                    <div class="bg-gold/20 text-gold font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</div>
+                    <div>
+                        <p class="font-bold mb-1">認領一個弱點</p>
+                        <p class="text-sm text-gray-400">寫下自己最自卑的一個弱點，向神獻上感恩，求神在其中顯出祂的榮耀。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="bg-gold/20 text-gold font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</div>
+                    <div>
+                        <p class="font-bold mb-1">踏出一步行動</p>
+                        <p class="text-sm text-gray-400">尋找一個長期被忽略的需要，主動承擔責任，成為那個「吹角」的人。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="bg-gold/20 text-gold font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</div>
+                    <div>
+                        <p class="font-bold mb-1">奉獻一樣工具</p>
+                        <p class="text-sm text-gray-400">挑選一樣日常平凡物品，為它做奉獻禱告，求神本週使用它成為祝福別人的器皿。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Grid -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <span class="section-icon text-gold">✨</span>
+                <h2 class="text-3xl font-display font-bold text-gold">屬靈佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 1 -->
+                <div class="glass-panel p-6 rounded-2xl border-t-2 border-accent/30">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「福音的核心是：我們比自己所敢相信的更加敗壞和有罪，但同時我們在耶穌基督裡，卻比自己所敢盼望的更蒙愛和被接納。」</p>
+                    <p class="text-gold text-sm font-bold">— 提摩太·凱勒 《揮霍的上帝》</p>
+                </div>
+                <!-- 2 -->
+                <div class="glass-panel p-6 rounded-2xl border-t-2 border-accent/30">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「在神能大大使用一個人之前，祂必先深深地破碎他。」</p>
+                    <p class="text-gold text-sm font-bold">— 陶恕 《榮耀的基甸》</p>
+                </div>
+                <!-- 3 -->
+                <div class="glass-panel p-6 rounded-2xl border-t-2 border-accent/30">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「廉價的恩典是我們自己給自己的恩典；昂貴的恩典是呼召我們跟從耶穌基督。」</p>
+                    <p class="text-gold text-sm font-bold">— 潘霍華 《追隨基督》</p>
+                </div>
+                <!-- 4 -->
+                <div class="glass-panel p-6 rounded-2xl border-t-2 border-accent/30">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「水總是流向最低的地方；神的恩典也總是流向那些承認自己一無所有、倒空自己的人。」</p>
+                    <p class="text-gold text-sm font-bold">— 慕安德烈 《謙卑》</p>
+                </div>
+                <!-- 5 -->
+                <div class="glass-panel p-6 rounded-2xl border-t-2 border-accent/30">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「恩典不與努力對立，而是與『賺取』對立。賺取是一種態度，努力是一種行動。」</p>
+                    <p class="text-gold text-sm font-bold">— 魏樂德 《靈性操練的真諦》</p>
+                </div>
+                <!-- 6 -->
+                <div class="glass-panel p-6 rounded-2xl border-t-2 border-accent/30">
+                    <p class="text-gray-200 mb-4 leading-relaxed italic">「順服神，把所有的結果交給祂。這就是平安的秘訣。」</p>
+                    <p class="text-gold text-sm font-bold">— 查爾斯·史丹利 《聽神的聲音》</p>
+                </div>
+            </div>
+            
+            <!-- Disclaimer -->
+            <div class="mt-20 text-center text-gray-600 text-xs tracking-widest">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-light transition-all transform hover:-translate-y-2 z-50">
+        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+
+</body>
+</html>

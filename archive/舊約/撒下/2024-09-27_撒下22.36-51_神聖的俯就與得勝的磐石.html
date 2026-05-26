@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒下22:36-51:神聖的俯就與得勝的磐石</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            DEFAULT: '#D4AF37',
+                        },
+                        stone: {
+                            950: '#0c0a09',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0c0a09;
+            color: #e7e5e4;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(28, 25, 23, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(to bottom right, #D4AF37, #FDE68A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-container {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            animation: breathe 10s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { filter: brightness(0.4); transform: scale(1.05); }
+            50% { filter: brightness(0.7); transform: scale(1); }
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-card {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .outline-card:hover {
+            transform: scale(1.02);
+            border-color: #D4AF37;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒下22:36-51',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '神聖的俯就與得勝的磐石' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-white/10 px-4 py-3 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-gold font-display font-extrabold text-sm md:text-lg tracking-wider">
+                撒下 22:36-51
+            </div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest text-stone-300">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="banner-container flex items-center justify-center text-center px-6">
+        <img src='image/img_0936d2f6-5d1c-44bf-befe-ffc581f9a9d2.jpg' alt='Epic Biblical Banner' class="banner-img absolute inset-0 -z-10" />
+        <div class="max-w-4xl z-10">
+            <h1 id="top" class="text-4xl md:text-7xl font-display font-black mb-6 tracking-tight leading-tight">
+                <span class="block text-white mb-2">神聖的俯就與</span>
+                <span class="text-gradient">得勝的磐石</span>
+            </h1>
+            <div class="animate-subtle-bounce mt-12">
+                <p class="text-xl md:text-2xl text-gold-200 font-medium italic">
+                    「你把你的救恩給我作盾牌；你的溫和使我為大。」
+                </p>
+                <p class="mt-4 text-stone-400 font-display">— 撒母耳記下 22:36</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white mb-8 tracking-widest">禱告內容</h2>
+                <div class="glass-panel p-8 md:p-12 rounded-3xl text-stone-200 leading-loose text-lg md:text-xl italic">
+                    親愛的天父，我們讚美祢，因祢是活著的磐石，是我們爭戰中的盾牌。主啊，我們常在困境中感到軟弱無力，面對生命的仇敵與挑戰時心生畏懼。但我們感謝祢，因祢未曾輕看我們，反而以祢的溫和與慈愛俯就我們，賜下力量束我們的腰。求祢開啟我們的屬靈眼睛，讓我們看見祢已經為我們成就的得勝，教導我們在每一個艱難中，懂得投靠祢這座永不動搖的磐石。奉主耶穌基督得勝的名求，阿們。
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-widest">分段大綱</h2>
+            </div>
+
+            <!-- Quick Navigation Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="outline-card glass-panel p-6 rounded-2xl border-l-4 border-l-gold block">
+                    <span class="text-gold text-xs font-bold uppercase tracking-tighter mb-2 block">PART 01</span>
+                    <h3 class="text-lg font-bold text-white">溫和與大能——神賜下救恩的盾牌</h3>
+                    <p class="text-stone-400 text-sm mt-2 font-display">撒下 22:36-40</p>
+                </a>
+                <a href="#part2" class="outline-card glass-panel p-6 rounded-2xl border-l-4 border-l-gold block">
+                    <span class="text-gold text-xs font-bold uppercase tracking-tighter mb-2 block">PART 02</span>
+                    <h3 class="text-lg font-bold text-white">突破與掌權——在絕境中的全然翻轉</h3>
+                    <p class="text-stone-400 text-sm mt-2 font-display">撒下 22:41-46</p>
+                </a>
+                <a href="#part3" class="outline-card glass-panel p-6 rounded-2xl border-l-4 border-l-gold block">
+                    <span class="text-gold text-xs font-bold uppercase tracking-tighter mb-2 block">PART 03</span>
+                    <h3 class="text-lg font-bold text-white">活石與慈愛——永不動搖的得勝磐石</h3>
+                    <p class="text-stone-400 text-sm mt-2 font-display">撒下 22:47-51</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 Deep Dive -->
+                <article id="part1" class="scroll-mt-32">
+                    <div class="border-b border-white/10 pb-6 mb-10">
+                        <h3 class="text-2xl md:text-3xl font-bold text-gold mb-4">第一段：溫和與大能——神賜下救恩的盾牌</h3>
+                        <p class="text-stone-400 font-display">撒下 22:36-40</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-8">
+                            <div class="bg-stone-900/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-stone-300"><strong class="text-white">溫和 (עֲנָוָה, 'anavah)</strong>：此字在希伯來文中有「謙卑、俯就、溫和」之意。描繪至高神願意「降卑」自己，介入人類苦難，將微小的人扶持起來。</p>
+                            </div>
+                            <div class="bg-stone-900/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3">關鍵解析</h4>
+                                <p class="text-stone-300">神不以威嚇來驅使大衛，而是以救恩作盾牌，用溫柔的恩典托住他。神不是遠遠地發號施令，而是如同父母彎腰牽起蹣跚學步的孩子。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="glass-panel p-8 rounded-2xl border-t-4 border-t-gold">
+                                <h4 class="text-white font-bold mb-4 italic">「神的恩典不是來尋找那些已經配得的人，而是來尋找那些願意承認自己不配，並接受神俯就的人。」</h4>
+                                <p class="text-stone-400 text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                            </div>
+                            <div class="border-l-2 border-gold/30 pl-6 py-2">
+                                <h4 class="text-stone-400 text-sm font-bold uppercase tracking-widest mb-2">小故事</h4>
+                                <p class="text-stone-300 text-sm leading-relaxed">想像一位父親看見孩子在泥濘中摔倒，他不顧自己西裝筆挺，直接跪在泥濘中，把孩子抱起來。這就是神的「溫和使我為大」。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 2 Deep Dive -->
+                <article id="part2" class="scroll-mt-32">
+                    <div class="border-b border-white/10 pb-6 mb-10 text-right lg:text-left">
+                        <h3 class="text-2xl md:text-3xl font-bold text-gold mb-4">第二段：突破與掌權——在絕境中的全然翻轉</h3>
+                        <p class="text-stone-400 font-display">撒下 22:41-46</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                         <div class="order-2 lg:order-1 space-y-8">
+                            <div class="glass-panel p-8 rounded-2xl border-t-4 border-t-gold">
+                                <h4 class="text-white font-bold mb-4 italic">「當你覺得自己已經到了盡頭，那正是神大能的起頭。信心就是在黑暗中依然能看見神在掌權。」</h4>
+                                <p class="text-stone-400 text-sm">— 司布真 (Charles Spurgeon)</p>
+                            </div>
+                            <div class="border-l-2 border-gold/30 pl-6 py-2">
+                                <h4 class="text-stone-400 text-sm font-bold uppercase tracking-widest mb-2">例證</h4>
+                                <p class="text-stone-300 text-sm leading-relaxed">二戰期間英國面對納粹轟炸。在最黑暗時刻，人民透過禱告與堅持，最終迎來了翻轉。當我們堅守在神的陣營，神必使仇敵「轉背逃跑」。</p>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2 space-y-8">
+                            <div class="bg-stone-900/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-stone-300"><strong class="text-white">拯救 (יָשัׁע, yasha')</strong>：意為「解救、釋放、給予寬闊的空間」。對比大衛蒙神拯救，仇敵在絕境中呼求卻得不到，因為他們與真理隔絕。</p>
+                            </div>
+                            <div class="bg-stone-900/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3">關鍵解析</h4>
+                                <p class="text-stone-300">仇敵的呼求出於恐懼而非悔改。真實的呼求是建立在平時與神建立的親密關係。信仰不是臨時抱佛腳的功利主義。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 3 Deep Dive -->
+                <article id="part3" class="scroll-mt-32">
+                    <div class="border-b border-white/10 pb-6 mb-10">
+                        <h3 class="text-2xl md:text-3xl font-bold text-gold mb-4">第三段：活石與慈愛——永不動搖的得勝磐石</h3>
+                        <p class="text-stone-400 font-display">撒下 22:47-51</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-8">
+                            <div class="bg-stone-900/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-stone-300"><strong class="text-white">磐石 (צוּר, tsur)</strong>：巨石、避難所。強調神穩固、不可動搖。 <strong class="text-white">慈愛 (חֶסֶד, hesed)</strong>：神立約的忠貞之愛。</p>
+                            </div>
+                            <div class="bg-stone-900/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3">關鍵解析</h4>
+                                <p class="text-stone-300">神不是死板的教條，而是會行動、會拯救、會伸冤的「永活真神」。當我們認定神是活著的磐石，我們在風暴中便有超越環境的安全感。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="glass-panel p-8 rounded-2xl border-t-4 border-t-gold">
+                                <h4 class="text-white font-bold mb-4 italic">「基督是那塊試金石，也是那塊萬古磐石；在祂之上，一切虛假的根基都將粉碎，唯有建立在祂上面的生命能存到永遠。」</h4>
+                                <p class="text-stone-400 text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                            </div>
+                            <div class="border-l-2 border-gold/30 pl-6 py-2">
+                                <h4 class="text-stone-400 text-sm font-bold uppercase tracking-widest mb-2">例證</h4>
+                                <p class="text-stone-300 text-sm leading-relaxed">燈塔之所以不倒，是因為它深深地打樁在海底的岩床(磐石)上。生命若扎根在基督，任何強暴都無法將我們連根拔起。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-widest">講章文稿</h2>
+            </div>
+            
+            <div class="glass-panel p-8 md:p-16 rounded-[2rem] leading-relaxed text-stone-200 text-lg space-y-12">
+                <div>
+                    <h3 class="text-gold font-black text-2xl mb-6">引言</h3>
+                    <p>弟兄姊妹，今天我們要來看大衛在經歷一生無數的逃亡、爭戰與患難後，所唱出的一首得勝之歌。大衛的一生充滿了危機，但他卻在這一切的背後，看見了神那雙看不見卻大有能力的手。今天講道的主題是：<span class="text-white underline decoration-gold underline-offset-8">「神聖的俯就與得勝的磐石」</span>。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-gold font-black text-2xl mb-6">第一段：溫和與大能——神賜下救恩的盾牌</h3>
+                    <p class="mb-6">大衛在撒母耳記下 22:36 說出了整篇詩歌中最動人的金句：<span class="text-gold-300 font-bold">「你把你的救恩給我作盾牌；你的溫和使我為大。」</span></p>
+                    <p>這是一幅何等美麗的圖畫。我們常以為，要成為偉大，必須靠自己的努力去攀爬；但大衛卻發現，他之所以能站在高處，是因為至高無上的上帝願意「降卑」祂自己，彎下腰來。這裡的「溫和」，原文有俯就、謙卑的意思。神用祂的救恩保護我們，不計較我們的軟弱與不堪，就像一位父親跪在泥濘中扶起跌倒的孩子。<span class="text-white font-bold">神的恩典不是來尋找那些已經配得的人，而是來尋找那些願意承認自己不配，並接受神俯就的人。</span> 面對生命中的挑戰，我們不需要假裝堅強，因為神已經用力量束我們的腰，祂的溫和，正是我們得勝的根基。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-gold font-black text-2xl mb-6">第二段：突破與掌權——在絕境中的全然翻轉</h3>
+                    <p class="mb-6">大衛不僅經歷了神的保護，更經歷了神使他在仇敵面前的突破。在41到46節中，大衛宣告：<span class="text-gold-300 font-bold">「你又使我的仇敵在我面前轉背逃跑...我搗碎他們，如同地上的灰塵。」</span></p>
+                    <p>在我們的人生中，常常會遇到看似無法戰勝的仇敵。有時候，我們彷彿被逼到了死角。但對於與神立約的兒女，神必親自為我們作戰。當你覺得自己已經到了盡頭，請記住，<span class="text-white font-bold">信心就是在黑暗中依然能看見神在掌權。</span> 神不僅會拯救我們脫離險境，更要全然翻轉我們的處境，使我們在屬靈的爭戰中作首領，讓一切抵擋神的勢力都在我們面前衰殘。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-gold font-black text-2xl mb-6">第三段：活石與慈愛——永不動搖的得勝磐石</h3>
+                    <p class="mb-6">最後，大衛在47節發出強烈而榮耀的宣告：<span class="text-gold-300 font-bold italic">「耶和華是活著的。願我的磐石被人稱頌！願神─那拯救我的磐石被人尊崇！」</span></p>
+                    <p>大衛為什麼強調神是「活著的」？因為他親身經歷過神的拯救！神不是刻在石板上冷冰冰的律法，祂是又真又活的磐石。<span class="text-white font-bold">基督是那塊萬古磐石，唯有建立在祂上面的生命能存到永遠。</span> 大衛知道，他所有的勝利、地位與王權，都不是靠他的聰明才智，而是神「施慈愛給祂的受膏者」。弟兄姊妹，今天你的磐石是什麼？唯有那位為我們伸冤、拯救我們的永活真神，才是我們永遠的保障。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="glass-panel p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold text-gold mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6 text-stone-300">
+                    <li class="flex gap-4"><span class="text-gold font-bold">01</span> 承認軟弱，領受神的俯就。不靠自我表現，安息於恩典。</li>
+                    <li class="flex gap-4"><span class="text-gold font-bold">02</span> 穿上屬靈軍裝，依靠神「束腰」的力量積極爭戰。</li>
+                    <li class="flex gap-4"><span class="text-gold font-bold">03</span> 焦點轉向永活磐石，在風暴中宣告「耶和華是活著的」。</li>
+                </ul>
+            </div>
+            <div class="bg-gold p-10 rounded-3xl text-stone-950">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-6 font-medium">
+                    <li class="flex gap-4 border-b border-stone-900/10 pb-4">每天朗讀撒下22:47，將焦點對準神。</li>
+                    <li class="flex gap-4 border-b border-stone-900/10 pb-4">寫下三件已經經歷過的「神拯救」感恩事項。</li>
+                    <li class="flex gap-4">尋找一位正在經歷爭戰的肢體，主動為其代禱。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white tracking-widest">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-panel p-8 rounded-2xl">
+                    <p class="text-stone-200 italic mb-4">「上帝並非在遠處袖手旁觀我們的苦難，祂藉著耶穌基督走入我們的泥沼，用祂的恩典將我們托起。」</p>
+                    <p class="text-gold text-sm font-bold">— 提摩太·凱勒，《揮霍的上帝》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl">
+                    <p class="text-stone-200 italic mb-4">「信心的眼目不看環境的狂風暴雨，而是定睛於那座隱藏在風雨背後的萬古磐石。」</p>
+                    <p class="text-gold text-sm font-bold">— 司布真，《大衛寶庫》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl">
+                    <p class="text-stone-200 italic mb-4">「當我們與神同行時，最大的危險不是外在的仇敵，而是忘記了我們所站立的根基是神自己。」</p>
+                    <p class="text-gold text-sm font-bold">— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl">
+                    <p class="text-stone-200 italic mb-4">「十字架是神用最溫柔卻又最具能力的方式，徹底擊潰了罪惡與死亡的仇敵。」</p>
+                    <p class="text-gold text-sm font-bold">— 約翰·史托德，《當代基督十架》</p>
+                </div>
+            </div>
+
+            <div class="mt-20 pt-10 border-t border-white/5 text-center text-stone-500 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-[60]">
+        <svg class="w-6 h-6 text-stone-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+</body>
+</html>

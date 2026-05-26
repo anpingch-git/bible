@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士20:1-25: 當正義遭遇挫敗：從慘痛失敗到真實的降服</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        accent: '#E67E22',
+                        darkBg: '#0A0A0B',
+                        cardBg: 'rgba(25, 25, 28, 0.7)',
+                        brandText: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtleBounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        subtleBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #F3F4F6;
+            scroll-behavior: smooth;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-container {
+            height: 70vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { filter: brightness(0.4); transform: scale(1.0); }
+            50% { filter: brightness(0.75); transform: scale(1.05); }
+        }
+        .golden-text {
+            color: #D4AF37;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+        .content-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        .content-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .outline-btn {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(230, 126, 34, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-2px);
+            border-color: #D4AF37;
+            background: rgba(212, 175, 55, 0.2);
+        }
+        .scroll-top {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+        .scroll-top:hover {
+            transform: scale(1.1);
+        }
+        .scripture-block {
+            border-left: 3px solid #D4AF37;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #A0AEC0;
+        }
+        .highlight {
+            color: #E67E22;
+            font-weight: 700;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士20:1-25',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當正義遭遇挫敗：從慘痛失敗到真實的降服' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav px-6 py-4 flex justify-between items-center">
+        <span class="font-display font-bold text-sm md:text-lg text-white tracking-widest">士師記 20:1-25</span>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-accent uppercase tracking-wider">
+            <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="banner-container flex items-center justify-center text-center px-6">
+        <img src='image/img_6e0a8c8c-f83a-4c1e-8463-a01ae1bbe222.jpg' alt='media_1' class="banner-img absolute inset-0 -z-10" />
+        <div class="z-10 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight animate-float">
+                當正義遭遇挫敗：<br>
+                <span class="golden-text">從慘痛失敗到真實的降服</span>
+            </h1>
+            <div class="animate-subtle-bounce text-xl md:text-2xl text-white font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
+                「以色列人就起來，到伯特利去求問神說：『我們中間誰當首先上去與便雅憫人爭戰呢？』耶和華說：『猶大當先上去。』」
+                <p class="text-sm mt-2 opacity-80 font-accent">— 士師記 20:18</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="flex flex-col items-center text-center">
+            <div class="inline-block p-4 rounded-full bg-gold/10 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-8 tracking-widest">禱告</h2>
+            <div class="content-card p-8 md:p-12 max-w-3xl">
+                <p class="text-xl md:text-2xl leading-relaxed font-light italic text-gray-300">
+                    主啊，我們常以為只要目標正確、帶著熱心與正義感，就必然凡事順利。然而，當我們在事奉與生活中遭遇挫敗時，求祢憐憫我們的自傲與血氣。求祢透過環境的破碎，煉淨我們隱藏的驕傲，教導我們不單是尋求祢的背書，而是完全降服於祢的主權。讓我們在眼淚中學會真實的倚靠，奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Selection Buttons -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-accent/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="outline-btn p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-accent text-gold uppercase mb-2 block">Part 01</span>
+                        <h3 class="text-xl font-bold mb-4">義憤填膺的聚集：當血氣取代了神聖的呼召</h3>
+                    </div>
+                    <p class="text-sm opacity-60">士 20:1-11</p>
+                </a>
+                <a href="#section2" class="outline-btn p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-accent text-gold uppercase mb-2 block">Part 02</span>
+                        <h3 class="text-xl font-bold mb-4">選擇性的尋求：要神背書還是讓神作主？</h3>
+                    </div>
+                    <p class="text-sm opacity-60">士 20:12-18</p>
+                </a>
+                <a href="#section3" class="outline-btn p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-accent text-gold uppercase mb-2 block">Part 03</span>
+                        <h3 class="text-xl font-bold mb-4">難以理解的慘敗：在破碎中學會真正的降服</h3>
+                    </div>
+                    <p class="text-sm opacity-60">士 20:19-25</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Sections -->
+            <div class="space-y-24 mt-20">
+                <!-- Section 1 Detail -->
+                <div id="section1" class="content-card p-10 scroll-mt-24">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-gold mb-6">1. 義憤填膺的聚集</h4>
+                            <div class="scripture-block text-sm leading-relaxed">
+                                於是以色列從但到別是巴，以及住基列地的眾人，都出來如同一人，聚集在米斯巴耶和華面前... 拿刀的步兵共有四十萬...
+                            </div>
+                            <div class="mt-8 space-y-6">
+                                <div>
+                                    <h5 class="text-accent font-bold mb-2">重要原文：קָהָל (Qahal)</h5>
+                                    <p class="text-gray-400">聚集 / 會眾。常指神聖集會，但此處雖「如同一人」，卻建立在人的義憤與籌劃上，完全沒有先尋求神。</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-accent font-bold mb-2">關鍵提問：為什麼正義的集結可能沒有神的同在？</h5>
+                                    <p class="text-gray-400">當我們用屬肉體的方法去成就屬靈的目的時，正義就淪為另一種自大的暴力。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 bg-white/5 p-8 rounded-xl">
+                            <p class="text-gold font-display text-lg mb-4 italic">「聖靈不會在未經十字架對付的肉體上蓋印；神絕不與人肉體的驕傲妥協。」</p>
+                            <span class="text-xs block text-right opacity-50">— 陶恕 (A.W. Tozer)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 Detail -->
+                <div id="section2" class="content-card p-10 scroll-mt-24">
+                    <div class="flex flex-col md:flex-row-reverse gap-12">
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-gold mb-6">2. 選擇性的尋求</h4>
+                            <div class="scripture-block text-sm leading-relaxed">
+                                以色列人就起來，到伯特利去求問神說：「我們中間誰當首先上去與便雅憫人爭戰呢？」耶和華說：「猶大當先上去。」
+                            </div>
+                            <div class="mt-8 space-y-6">
+                                <div>
+                                    <h5 class="text-accent font-bold mb-2">重要原文：שָׁאַל (Sha'al)</h5>
+                                    <p class="text-gray-400">求問。以色列人的問題是「誰先上去」，而非「該不該打」。這是一個預設好立場的求問。</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-accent font-bold mb-2">關鍵提問：你的禱告是引導還是背書？</h5>
+                                    <p class="text-gray-400">真正的順服，是拿著一張簽了自己名字的空白支票，交給神由祂填寫內容。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 bg-white/5 p-8 rounded-xl">
+                            <p class="text-gold font-display text-lg mb-4 italic">「如果你的神從不反對你，從不要求你放下自己的想法，那麼你敬拜的可能只是你自己。」</p>
+                            <span class="text-xs block text-right opacity-50">— 提摩太·凱勒 (Timothy Keller)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 Detail -->
+                <div id="section3" class="content-card p-10 scroll-mt-24">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold text-gold mb-6">3. 難以理解的慘敗</h4>
+                            <div class="scripture-block text-sm leading-relaxed">
+                                便雅憫人也從基比亞出來... 當日殺死以色列人二萬二千... 第二日又殺死以色列人一萬八千。
+                            </div>
+                            <div class="mt-8 space-y-6">
+                                <div>
+                                    <h5 class="text-accent font-bold mb-2">重要原文：בָּכָה (Bakah)</h5>
+                                    <p class="text-gray-400">哭泣。神正透過失敗剝奪他們的自恃。失敗是為了把他們帶到完全倒空、真正痛悔的地步。</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-accent font-bold mb-2">關鍵提問：遭遇神「許可」的失敗時，該如何面對？</h5>
+                                    <p class="text-gray-400">神不僅要審判便雅憫，也要對付以色列其餘支派的自以為義。得勝不在於人數，而在於生命的煉淨。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 bg-white/5 p-8 rounded-xl">
+                            <p class="text-gold font-display text-lg mb-4 italic">「患難是神的烈火，用來燒掉渣滓；挫敗是神的鐵砧，用來塑造品格。」</p>
+                            <span class="text-xs block text-right opacity-50">— 司布真 (Charles Spurgeon)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-gold/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">分段講章文稿</h2>
+            </div>
+
+            <div class="content-card p-8 md:p-16 leading-loose space-y-12 text-gray-200 text-lg">
+                <div class="border-b border-white/10 pb-8">
+                    <p class="font-bold text-white text-2xl mb-4">各位弟兄姊妹，平安：</p>
+                    <p>今天我們要來看一段聖經中非常令人費解，卻又無比真實的歷史。我們常有一種迷思：只要我站在「正義」這一方，只要我人多勢眾，只要我做的是對的事，上帝理所當然要讓我順順利利。但今天士師記20章的經文，卻狠狠地打破了這個迷思。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="highlight text-2xl">第一段：義憤填膺的聚集：當血氣取代了神聖的呼召</h4>
+                    <p>在士師記20章一開始，我們看到一場駭人聽聞的命案。基比亞人犯下了令人髮指的惡行，導致利未人的妾慘死。全以色列人聽見後，<span class="text-gold font-bold">「眾民都起來如同一人... 聚集在米斯巴」</span>。他們聚集了四十萬大軍！從人的角度看，這是一場無懈可擊的正義之戰。</p>
+                    <p>但請注意，在這前11節的經文中，這四十萬人<span class="highlight">完全沒有尋求神</span>。他們聽了報告，馬上發言、抽籤、調兵遣將。這就是我們常犯的致命錯誤：當血氣取代了神聖的呼召。</p>
+                    <p class="italic text-gray-400">「聖靈不會在未經十字架對付的肉體上蓋印。」我們常以為多數人的共識加上道德的正確，就等於神的旨意。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="highlight text-2xl">第二段：選擇性的尋求：要神背書還是讓神作主？</h4>
+                    <p>到了第12到18節，便雅憫人拒絕交出凶手，戰爭一觸即發。這時候，以色列人終於想到神了。在第18節，我們的金句這樣說：<span class="text-gold font-bold">「以色列人就起來，到伯特利去求問神說：『我們中間誰當首先上去與便雅憫人爭戰呢？』」</span></p>
+                    <p>這句話聽起來很屬靈，對吧？但如果你仔細看，他們問的問題是什麼？他們不是問：「主啊，我們該不該打？」他們問的是：「主啊，誰先上？」這就是<span class="highlight">選擇性的尋求</span>。他們心裡早就做好了決定，現在只是來找神蓋個章。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="highlight text-2xl">第三段：難以理解的慘敗：在破碎中學會真正的信靠</h4>
+                    <p>接下來發生的事，是整段經文最震撼的地方。神說了「猶大當先上去」，也說了「可以上去攻擊」，結果呢？以色列人第一天死了二萬二千人，第二天又死了一萬八千人。四十萬的正義之師，被區區兩萬多人的便雅憫軍隊殺得片甲不留！</p>
+                    <p>你一定會問：為什麼？神不是同意了嗎？神不是站在正義這邊嗎？這就是<span class="highlight">難以理解的慘敗</span>。因為神不僅要審判便雅憫的罪，神也要對付以色列人的驕傲。神看見他們裡面的自恃、看見他們仗著人多勢眾的狂妄。</p>
+                    <p>在第23節，我們看到以色列人<span class="text-gold font-bold">「在耶和華面前哭泣直到晚上」</span>。神允許慘痛的失敗發生，是為了剝奪他們對「自己」的倚靠。</p>
+                </div>
+
+                <div class="pt-8 border-t border-white/10">
+                    <h4 class="text-2xl font-bold mb-4">結語</h4>
+                    <p>弟兄姊妹，從自以為是到真實的降服，這條路往往鋪滿了眼淚與挫敗。但請記住，當正義遭遇挫敗時，不要急著離棄神。讓神的火煉淨我們，把我們從「倚靠勢力與才能」的血氣中拯救出來，帶入「單單倚靠耶和華的靈」的真實得勝裡。阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response and Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="content-card p-10">
+                <h3 class="text-accent text-xl font-bold mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-2"><span class="text-gold">•</span> 檢視動機：是否參雜血氣或盲目自信？</li>
+                    <li class="flex gap-2"><span class="text-gold">•</span> 調整禱告：從「求神賜福」轉向「求神顯明」。</li>
+                    <li class="flex gap-2"><span class="text-gold">•</span> 定義挫敗：看見神正在進行更深的生命煉淨工程。</li>
+                </ul>
+            </div>
+            <div class="content-card p-10 border-gold/20">
+                <h3 class="text-gold text-xl font-bold mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-2"><span class="text-gold">•</span> <b>安靜尋求：</b>面對義憤時先安靜禱告10分鐘。</li>
+                    <li class="flex gap-2"><span class="text-gold">•</span> <b>更改禱告：</b>求神顯明旨意，若非神意請攔阻。</li>
+                    <li class="flex gap-2"><span class="text-gold">•</span> <b>感恩挫敗：</b>列出神在挫折中教導你的功課。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-white/10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">屬靈佳句</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Quote Cards -->
+                <div class="break-inside-avoid p-6 rounded-2xl bg-white/5 border border-white/10">
+                    <p class="text-gold italic mb-4">「當基督呼召一個人時，他是呼召他來死。」</p>
+                    <p class="text-xs text-gray-500">— 潘霍華 《追隨基督》</p>
+                </div>
+                <div class="break-inside-avoid p-6 rounded-2xl bg-white/5 border border-white/10">
+                    <p class="text-gold italic mb-4">「謙卑不是輕看自己，而是根本不看自己；單單仰望神。」</p>
+                    <p class="text-xs text-gray-500">— 慕安德烈 《謙卑》</p>
+                </div>
+                <div class="break-inside-avoid p-6 rounded-2xl bg-white/5 border border-white/10">
+                    <p class="text-gold italic mb-4">「我們最大的醫治，往往來自於我們最深的創傷。」</p>
+                    <p class="text-xs text-gray-500">— 盧雲 《負傷的醫治者》</p>
+                </div>
+                <div class="break-inside-avoid p-6 rounded-2xl bg-white/5 border border-white/10">
+                    <p class="text-gold italic mb-4">「十字架的真理告訴我們，真正的勝利是藉著失敗而來，榮耀是藉著受苦而來的。」</p>
+                    <p class="text-xs text-gray-500">— 約翰·史托德 《基督的十字架》</p>
+                </div>
+                <div class="break-inside-avoid p-6 rounded-2xl bg-white/5 border border-white/10">
+                    <p class="text-gold italic mb-4">「我們若不深刻認識自己的可悲，就無法真正認識上帝的榮耀。」</p>
+                    <p class="text-xs text-gray-500">— 約翰·加爾文 《基督教要義》</p>
+                </div>
+                <div class="break-inside-avoid p-6 rounded-2xl bg-white/5 border border-white/10">
+                    <p class="text-gold italic mb-4">「在同一個方向上長期的順服，是唯一的解藥。」</p>
+                    <p class="text-xs text-gray-500">— 畢德生 《恆久專一的順服》</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-20 text-center border-t border-white/10 opacity-60">
+            <p class="text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-10 right-10 w-14 h-14 bg-gold rounded-full flex items-center justify-center text-darkBg scroll-top z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+</body>
+</html>

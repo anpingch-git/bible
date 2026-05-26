@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士9:1-21:權力的荊棘與王權的失落</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            crimson: '#9A1B1B',
+                            dark: '#0A0A0B',
+                            glass: 'rgba(255, 255, 255, 0.05)',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 3s ease-in-out infinite',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4', transform: 'scale(1.05)' },
+                            '50%': { opacity: '0.8', transform: 'scale(1)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FFF 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-icon {
+            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士9:1-21',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '權力的荊棘與王權的失落' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-brand-gold selection:text-black">
+
+    <!-- Header / Sticky Nav -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-display font-bold text-brand-gold tracking-tight hidden md:block">士9:1-21</span>
+            <div class="flex gap-6 md:gap-10 text-xs md:text-sm font-medium tracking-widest uppercase">
+                <a href="#prayer" class="nav-link text-gray-300 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse -->
+    <header id="top" class="relative h-[90vh] w-full overflow-hidden flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-brand-dark z-10"></div>
+            <!-- Media 1 -->
+            <div class="absolute inset-0 animate-breath opacity-60">
+                <img src='image/img_717acfca-f53e-4a63-a643-c4a45773ac48.jpg' alt='Epic Banner 1' class="w-full h-full object-cover">
+            </div>
+            <!-- Media 2 (Layered) -->
+            <div class="absolute inset-0 opacity-20 mix-blend-overlay">
+                <img src='image/img_b580c6d4-d0a2-4192-adfd-296ddf8b53a7.jpg' alt='Epic Banner 2' class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="relative z-20 text-center px-6 max-w-4xl animate-fade-in">
+            <h1 class="font-display text-4xl md:text-7xl font-extrabold mb-8 text-gradient leading-tight">
+                權力的荊棘與<br>王權的失落
+            </h1>
+            
+            <!-- Golden Verse: No border, subtle bounce -->
+            <div class="animate-subtle-bounce mt-12 space-y-4">
+                <span class="text-brand-gold font-bold tracking-[0.3em] text-sm uppercase">Golden Verse 金句</span>
+                <p class="text-xl md:text-3xl font-light italic leading-relaxed text-white drop-shadow-2xl">
+                    「荊棘回答樹木說：『你們若誠誠實實地膏我為王，就要投在我的蔭下；不然，願火從荊棘裡出來，燒滅黎巴嫩的香柏樹。』」
+                </p>
+                <p class="text-brand-gold/80 font-medium">—— 士師記 9:15</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <svg class="w-8 h-8 text-brand-gold section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V7m0-4v4m0 4l-4 4m8 0l-4-4m-4 4h8m-4-8V3"></path></svg>
+                    <h2 class="text-3xl font-bold tracking-tighter">禱告詞 <span class="text-brand-gold/50 text-xl font-light italic ml-2">Prayer</span></h2>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 font-light">
+                    主上帝，祢是我們生命中唯一真正的王。求祢赦免我們時常在心中設立自己的寶座，追逐世俗的權力與掌控，甚至為達目的而迷失了祢的呼召。求祢用真理的光照亮我們內心的黑暗，使我們看見野心的虛妄，並賜給我們甘心順服、安於祢所賜之呼召的謙卑。願我們不作傷害他人的荊棘，而是成為在祢國度中結出生命果實的器皿。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline / Navigation Grid -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-brand-gold section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                <h2 class="text-3xl font-bold tracking-tighter">講道大綱 <span class="text-brand-gold/50 text-xl font-light italic ml-2">Outline</span></h2>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#section1" class="glass-card p-6 hover:border-brand-gold/50 transition-all group">
+                    <span class="text-brand-gold text-xs font-bold mb-2 block tracking-widest uppercase">第一段</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-brand-gold transition-colors">慾望的網羅</h3>
+                    <p class="text-sm text-gray-400">不擇手段的野心 (士9:1-6)</p>
+                </a>
+                <a href="#section2" class="glass-card p-6 hover:border-brand-gold/50 transition-all group">
+                    <span class="text-brand-gold text-xs font-bold mb-2 block tracking-widest uppercase">第二段</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-brand-gold transition-colors">荊棘的誘惑</h3>
+                    <p class="text-sm text-gray-400">錯位的權力與呼召 (士9:7-15)</p>
+                </a>
+                <a href="#section3" class="glass-card p-6 hover:border-brand-gold/50 transition-all group">
+                    <span class="text-brand-gold text-xs font-bold mb-2 block tracking-widest uppercase">第三段</span>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-brand-gold transition-colors">先知的警告</h3>
+                    <p class="text-sm text-gray-400">忘恩負義的代價 (士9:16-21)</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="scroll-mt-32 space-y-8">
+                    <div class="border-l-4 border-brand-gold pl-6">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">第一段：慾望的網羅——不擇手段的野心</h3>
+                        <p class="text-brand-gold/80 italic">士師記 9:1-6</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-brand-gold font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                                    關鍵原文解析
+                                </h4>
+                                <ul class="space-y-4 text-sm text-gray-300">
+                                    <li><strong class="text-white">管理 (Mashal)</strong>：意為「統轄、作王」。亞比米勒將基甸拒絕的權力包裝成需求。</li>
+                                    <li><strong class="text-white">骨肉 ('Etsem wa-basar)</strong>：直譯為「骨頭和肉」。利用認同政治將利益凌駕於原則。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-brand-crimson/10 p-6 rounded-2xl border border-brand-crimson/20">
+                                <h4 class="text-brand-crimson font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-sm text-gray-300">為什麼人會為了權力犧牲至親？<br><br>亞比米勒因身分自卑而極度渴望權力。當權力成為偶像，它便要求獻祭。沒有神約束的野心終將演變成殘酷的暴力。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <blockquote class="border-r-4 border-gray-700 pr-6 text-right italic text-gray-400">
+                                「當任何事物變得比神更重要時，它就成了偶像；而偶像最終總會要求你為它獻上人祭。」
+                                <footer class="text-brand-gold mt-2 font-bold">— 提摩太·凱勒 (Timothy Keller)</footer>
+                            </blockquote>
+                            <div class="bg-gray-800/40 p-6 rounded-2xl border border-white/5">
+                                <h4 class="text-gray-300 font-bold mb-3">生活例證</h4>
+                                <p class="text-sm leading-relaxed text-gray-400">現代企業中的「亞比米勒現象」：為了上位不擇手段排除異己，最終雖然得權，卻失去了信任與平安。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="scroll-mt-32 space-y-8">
+                    <div class="border-l-4 border-brand-gold pl-6">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">第二段：荊棘的誘惑——錯位的權力與呼召</h3>
+                        <p class="text-brand-gold/80 italic">士師記 9:7-15</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-brand-gold font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                                    關鍵原文解析
+                                </h4>
+                                <ul class="space-y-4 text-sm text-gray-300">
+                                    <li><strong class="text-white">荊棘 ('Atad)</strong>：無果、多刺、易燃。象徵無品格卻具破壞力的領袖。</li>
+                                    <li><strong class="text-white">飄颻 (Nua')</strong>：意為「在眾人之上炫耀」。好樹認為放棄呼召去換取虛榮是空虛的。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-brand-gold/10 p-6 rounded-2xl border border-brand-gold/20">
+                                <h4 class="text-brand-gold font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-sm text-gray-300">好樹為何拒絕作王？<br><br>它們清楚神的命定：產油、結甜果、釀新酒。真正的偉大在於忠心於神的呼召，而非頭銜。拒絕虛榮，才能保留生命的價值。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <blockquote class="border-r-4 border-gray-700 pr-6 text-right italic text-gray-400">
+                                「屬靈的領袖不是追求權力的人，而是被聖靈充滿，甘願隱藏自己，只為彰顯基督的人。」
+                                <footer class="text-brand-gold mt-2 font-bold">— 陶恕 (A.W. Tozer)</footer>
+                            </blockquote>
+                            <div class="bg-gray-800/40 p-6 rounded-2xl border border-white/5">
+                                <h4 class="text-gray-300 font-bold mb-3">生活例證</h4>
+                                <p class="text-sm leading-relaxed text-gray-400">熱愛教學的老師轉任校長後卻失去喜樂。認清自己是「無花果樹」而非「管理行政的荊棘」，回到教室才是真正的卓越。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section3" class="scroll-mt-32 space-y-8">
+                    <div class="border-l-4 border-brand-gold pl-6">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">第三段：先知的警告——忘恩負義的代價</h3>
+                        <p class="text-brand-gold/80 italic">士師記 9:16-21</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-brand-gold font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                                    關鍵原文解析
+                                </h4>
+                                <ul class="space-y-4 text-sm text-gray-300">
+                                    <li><strong class="text-white">誠實正直 ('Emet & Tamiym)</strong>：真理與無瑕疵。約坦質疑示劍人的選擇毫無道德基礎。</li>
+                                    <li><strong class="text-white">火 (Esh)</strong>：審判。暗示錯誤的領袖與跟隨者最終會互相毀滅。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-brand-crimson/10 p-6 rounded-2xl border border-brand-crimson/20">
+                                <h4 class="text-brand-crimson font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    關鍵問題與解析
+                                </h4>
+                                <p class="text-sm text-gray-300">跟隨錯誤領袖的代價？<br><br>缺乏真理基礎的結合是極其脆弱的。選擇了荊棘，必被荊棘之火吞噬。忘恩負義的群體終將陷入彼此毀滅的悲劇。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <blockquote class="border-r-4 border-gray-700 pr-6 text-right italic text-gray-400">
+                                「種下罪惡的種子，就不要奢望收成平安的果實；神的公義必然會讓惡人陷入自己所挖的坑中。」
+                                <footer class="text-brand-gold mt-2 font-bold">— 司布真 (Charles Spurgeon)</footer>
+                            </blockquote>
+                            <div class="bg-gray-800/40 p-6 rounded-2xl border border-white/5">
+                                <h4 class="text-gray-300 font-bold mb-3">生活例證</h4>
+                                <p class="text-sm leading-relaxed text-gray-400">歷史上的獨裁政權：民眾因狂熱將權力交給「荊棘」，以為能得保護，最後卻引發燒滅國家的戰火。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-brand-gold section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                <h2 class="text-3xl font-bold tracking-tighter">講章文稿 <span class="text-brand-gold/50 text-xl font-light italic ml-2">Sermon Script</span></h2>
+            </div>
+            <div class="glass-card p-8 md:p-16 space-y-10">
+                <div class="text-center space-y-4">
+                    <h3 class="text-2xl md:text-4xl font-bold text-white">權力的荊棘與王權的失落</h3>
+                    <p class="text-brand-gold font-medium tracking-widest uppercase">士師記 9:1-21</p>
+                </div>
+                
+                <div class="prose prose-invert prose-brand max-w-none space-y-8 text-gray-300 leading-relaxed md:text-lg">
+                    <p>
+                        各位弟兄姊妹，平安。今天我們要從士師記第九章，來看一個關於權力、野心與呼召的悲劇。基甸死後，以色列陷入了權力的真空。基甸雖然嘴上說「我不管理你們，惟有耶和華管理你們」，但他的生活卻如同君王一般。而他與妾所生的兒子亞比米勒，更是將隱藏的野心化為殘酷的行動。這段歷史不僅是古代的政治鬥爭，更是對現今每一個基督徒生命的深刻鑒察。
+                    </p>
+
+                    <h4 class="text-xl md:text-2xl font-bold text-brand-gold">一、 慾望的網羅：不擇手段的野心</h4>
+                    <p>
+                        亞比米勒為了奪取王位，跑到示劍去煽動他的母舅。他利用血緣關係，對他們說：「你們又要記念我是你們的骨肉。」他收買人心，雇了匪徒，甚至在一塊磐石上，親手殺死了自己七十個同父異母的弟兄。
+                        為什麼人會為了權力而泯滅人性？因為亞比米勒將「統轄」當作了他生命的救主。當我們把成功、地位、掌控權當作偶像時，我們就會像他一樣，開始為偶像獻祭——犧牲我們的良知、犧牲我們的家人、犧牲我們的道德底線。正如提摩太·凱勒所說：<span class="text-white font-bold underline decoration-brand-gold underline-offset-4">「當任何事物變得比神更重要時，它就成了偶像；而偶像最終總會要求你為它獻上人祭。」</span>我們必須問自己：在我的生活、職場甚至教會中，是否也有那種不擇手段想證明自己的「亞比米勒式的野心」？
+                    </p>
+
+                    <h4 class="text-xl md:text-2xl font-bold text-brand-gold">二、 荊棘的誘惑：錯位的權力與呼召</h4>
+                    <p>
+                        面對這場大屠殺，唯一倖存的小兒子約坦，站在基利心山上，說出了一個極具震撼力的寓言。樹木要去膏立一個王。他們先找了橄欖樹、無花果樹和葡萄樹。但這三種好樹都拒絕了。為什麼？因為他們清楚自己的呼召！橄欖樹要供奉油，無花果樹要結甜果，葡萄樹要釀新酒。他們異口聲說：「我豈肯止住我的果實，去飄颻在眾樹之上呢？」
+                        「飄颻」就是炫耀。真正的偉大，不是追求高高在上的頭銜，而是忠於神給你的呼召。很多時候，我們放棄了結出生命果實的機會，去追逐那些看起來光鮮亮麗的職位，最終卻枯萎了。
+                        <span class="text-brand-gold font-bold italic block my-6 text-xl text-center">「荊棘回答樹木說：『你們若誠誠實實地膏我為王，就要投在我的蔭下；不然，願火從荊棘裡出來，燒滅黎巴嫩的香柏樹。』」</span>
+                        荊棘沒有果實，不能提供遮蔽，只會刺傷人。陶恕說得好：<span class="text-white font-bold underline decoration-brand-gold underline-offset-4">「屬靈的領袖不是追求權力的人，而是被聖靈充滿，甘願隱藏自己，只為彰顯基督的人。」</span>我們應當渴望成為結實的好樹，而不是追求掌權的荊棘。
+                    </p>
+
+                    <h4 class="text-xl md:text-2xl font-bold text-brand-gold">三、 先知的警告：忘恩負義的代價</h4>
+                    <p>
+                        最後，約坦發出了先知的警告。他指責示劍人，選擇亞比米勒完全違背了「誠實正直」。基甸曾冒死拯救他們，他們卻忘恩負義，殺了他的眾子。約坦預言，這種建立在利益和血腥上的結合，最終必帶來互相毀滅。「願火從亞比米勒發出，燒滅示劍人…又願火從示劍人中出來，燒滅亞比米勒。」
+                        這是一個嚴肅的屬靈定律。當一個群體拒絕神，選擇了荊棘作為領袖，他們以為能在荊棘下乘涼，最終卻會被荊棘引發的大火吞噬。司布真曾警告：<span class="text-white font-bold underline decoration-brand-gold underline-offset-4">「種下罪惡的種子，就不要奢望收成平安的果實；神的公義必然會讓惡人陷入自己所挖的坑中。」</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Conclusion -->
+            <div class="glass-card p-8">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    結論關鍵字
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-brand-gold/10 text-brand-gold rounded-full border border-brand-gold/30 font-bold">野心</span>
+                    <span class="px-4 py-2 bg-brand-gold/10 text-brand-gold rounded-full border border-brand-gold/30 font-bold">呼召</span>
+                    <span class="px-4 py-2 bg-brand-gold/10 text-brand-gold rounded-full border border-brand-gold/30 font-bold">順服</span>
+                </div>
+                
+                <h3 class="text-xl font-bold mt-10 mb-6">應用方向</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3">
+                        <span class="text-brand-gold">01</span> 檢視心中的野心，分辨動機是為了服事還是掌控。
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-brand-gold">02</span> 忠於神賜的呼召，不因追逐地位而放棄生命果實。
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-brand-gold">03</span> 培養屬靈分辨力，推選具備「誠實正直」品格的領袖。
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Response Actions -->
+            <div class="glass-card p-8 bg-brand-gold/5">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    回應或實踐行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 shrink-0 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center font-bold">1</div>
+                        <p class="text-gray-300"><strong class="text-white block">認罪禱告</strong>安靜在主前，求聖靈光照心中是否有「亞比米勒式」的野心，求主赦免。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 shrink-0 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center font-bold">2</div>
+                        <p class="text-gray-300"><strong class="text-white block">感恩與定位</strong>寫下目前能「使神和人喜樂」的服事，為專屬呼召感恩，拒絕攀比。</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 shrink-0 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center font-bold">3</div>
+                        <p class="text-gray-300"><strong class="text-white block">為領袖代求</strong>為社會及教會領袖禱告，求神賜下敬畏祂的心，使其成為結好果子的樹。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-8 h-8 text-brand-gold section-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-bold tracking-tighter">屬靈前輩佳句名言 <span class="text-brand-gold/50 text-xl font-light italic ml-2">Famous Quotes</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「人心是一座製造偶像的工廠，我們總是傾向於用虛妄的受造物來取代創造主的榮耀。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「當基督呼召一個人的時候，祂是叫他來死。這死可能是捨棄自己的野心，也可能是真正的殉道。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「基督教領袖的誘惑，往往是想要變得強大、有影響力、引人注目；但耶穌的呼召卻是向下移動，走向隱藏與捨己。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 盧雲 (Henri Nouwen)</cite>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「在這個推崇快速成功與權力擴張的世代，基督徒的呼召是在同一個方向上，作長期的順服。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 畢德生 (Eugene Peterson)</cite>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「人不順服神，就必然會被自己的慾望和世界的權勢所奴役；真正的自由，只存在於對真理的絕對順服之中。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 唐崇榮 (Stephen Tong)</cite>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「我們這個時代最大的悲劇不是缺乏有恩賜的人，而是缺乏有品格、願意在隱密處與神同行的人。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 魏樂德 (Dallas Willard)</cite>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「除了罪，我一無所懼；除了神，我一無所求。這才是神僕人該有的心志。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 約翰·衛斯理 (John Wesley)</cite>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「人若想靠著自己的力量和聰明去掌管教會或世界，他就是在篡奪上帝的寶座，最終必招致毀滅。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「權力本身並非罪惡，但當權力不受聖靈的約束時，它就成了魔鬼最致命的武器。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 葛理翰 (Billy Graham)</cite>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-6 border-l-4 border-brand-gold">
+                    <p class="text-gray-300 mb-4 leading-relaxed">「驕傲是所有罪的根源；它使我們拒絕服事，卻渴望被服事，這完全違背了十字架的本質。」</p>
+                    <cite class="text-brand-gold not-italic font-bold text-sm">— 約翰·史托德 (John Stott)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="text-center py-10 border-t border-white/5">
+            <p class="text-sm text-gray-600 tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

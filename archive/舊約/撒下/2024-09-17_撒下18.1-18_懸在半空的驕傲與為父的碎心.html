@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撒下18:1-18: 懸在半空的驕傲與為父的碎心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            crimson: '#991B1B',
+                            dark: '#0A0A0A',
+                            surface: '#1A1A1A',
+                            accent: '#6366f1'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: #1A1A1A;
+            border: 1px solid #333;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: #D4AF37;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '撒下18:1-18',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '撒下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '懸在半空的驕傲與為父的碎心' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-brand-dark text-gray-200 font-sans selection:bg-brand-gold selection:text-black">
+
+    <!-- Hero Banner Section -->
+    <header id="header" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_8ad4603f-b415-4729-9565-99f52dc12af8.jpg' alt='media_1' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-brand-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-serif text-4xl md:text-7xl font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                撒下 18:1-18<br/>
+                <span class="text-gradient">懸在半空的驕傲<br/>與為父的碎心</span>
+            </h1>
+            
+            <!-- Verse (Floating Design) -->
+            <div class="mt-12 animate-subtle-bounce">
+                <p class="text-xl md:text-2xl font-serif italic text-brand-gold/90 max-w-3xl mx-auto leading-relaxed">
+                    「你們要為我的緣故寬待那少年人押沙龍。」
+                </p>
+                <p class="mt-4 text-sm tracking-widest uppercase text-gray-400">— 撒母耳記下 18:5 —</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky-nav glass py-4 px-6 border-b border-white/5">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-bold text-brand-gold hidden md:block">撒下 18:1-18</span>
+            <div class="flex gap-6 md:gap-12 text-sm font-semibold tracking-widest uppercase mx-auto md:mx-0">
+                <a href="#prayer" class="hover:text-brand-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-brand-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-brand-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-brand-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-brand-gold/10 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white uppercase tracking-wider">天父的憐憫</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl border-l-4 border-brand-gold shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 opacity-5 -translate-y-1/4 translate-x-1/4">
+                    <svg width="200" height="200" fill="white" viewBox="0 0 24 24"><path d="M12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2Z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed font-serif text-gray-300 italic">
+                    「天父上帝，當我們讀到大衛與押沙龍這段令人心碎的歷史時，我們看見了驕傲如何使人墜入死亡的網羅，也看見了一位父親在公義與慈愛中掙扎的痛苦。主啊，求祢光照我們的心，拔除我們生命中如同押沙龍一般隱藏的悖逆與驕傲，不讓我們為自己建立虛榮的紀念碑；同時，也求祢讓我們深深體會祢那份『為我們的緣故寬待我們』的天父之愛。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-brand-gold/10 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white uppercase tracking-wider">訊息大綱</h2>
+            </div>
+            
+            <!-- Quick Navigation Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="bento-card p-6 rounded-2xl group">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase mb-2 block">Part 01</span>
+                    <h3 class="text-lg font-serif font-bold text-white group-hover:text-brand-gold transition-colors mb-2">慈父的囑託</h3>
+                    <p class="text-sm text-gray-500">撒下 18:1-5 — 公義戰場上的恩典呼喚</p>
+                </a>
+                <a href="#part2" class="bento-card p-6 rounded-2xl group">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase mb-2 block">Part 02</span>
+                    <h3 class="text-lg font-serif font-bold text-white group-hover:text-brand-gold transition-colors mb-2">致命的糾纏</h3>
+                    <p class="text-sm text-gray-500">撒下 18:6-10 — 驕傲成為滅亡的網羅</p>
+                </a>
+                <a href="#part3" class="bento-card p-6 rounded-2xl group">
+                    <span class="text-brand-gold text-xs font-bold tracking-widest uppercase mb-2 block">Part 03</span>
+                    <h3 class="text-lg font-serif font-bold text-white group-hover:text-brand-gold transition-colors mb-2">無情的槍刺</h3>
+                    <p class="text-sm text-gray-500">撒下 18:11-18 — 自立紀念碑的荒涼結局</p>
+                </a>
+            </div>
+
+            <!-- Deep Dive Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 Deep Dive -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="mb-8 border-b border-white/10 pb-4">
+                        <h3 class="text-2xl font-serif font-bold text-brand-gold mb-2 flex items-center gap-3">
+                            <span class="text-4xl opacity-20">01</span> 第一段：慈父的囑託——公義戰場上的恩典呼喚
+                        </h3>
+                        <p class="text-gray-400 tracking-widest">撒下 18:1-5</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-xl italic font-serif leading-loose text-gray-300">
+                                王囑咐約押、亞比篩、以太說：「你們要為我的緣故寬待那少年人押沙龍。」王為押沙龍吩咐眾將的話，兵丁都聽見了。
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-white font-bold flex items-center gap-2"><span class="w-2 h-2 bg-brand-gold rounded-full"></span> 關鍵解析</h4>
+                                <p class="text-gray-400"><strong>寬待 (אַט - 'at')：</strong> 原文意指溫和地、輕柔地。大衛身為君王必須彰顯公義，但身為父親，他懇求給予叛徒溫柔，這象徵了上帝在公義審判中對罪人的慈愛不捨。</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-4 space-y-6">
+                            <div class="bento-card p-6 rounded-xl border-l-2 border-brand-accent">
+                                <h4 class="text-xs font-black uppercase tracking-tighter text-brand-accent mb-3">名言佳句</h4>
+                                <p class="text-sm italic leading-relaxed">「上帝的恩典是：儘管我們深陷在罪惡的叛逆中，祂仍以我們無法想像的愛來愛我們。」— 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Deep Dive -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="mb-8 border-b border-white/10 pb-4">
+                        <h3 class="text-2xl font-serif font-bold text-brand-gold mb-2 flex items-center gap-3">
+                            <span class="text-4xl opacity-20">02</span> 第二段：致命的糾纏——驕傲成為滅亡的網羅
+                        </h3>
+                        <p class="text-gray-400 tracking-widest">撒下 18:6-10</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-xl italic font-serif leading-loose text-gray-300">
+                                押沙龍騎著騾子...他的頭髮被樹枝繞住，就懸掛起來，所騎的騾子便離他去了。
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-white font-bold flex items-center gap-2"><span class="w-2 h-2 bg-brand-gold rounded-full"></span> 關鍵解析</h4>
+                                <p class="text-gray-400"><strong>懸掛 (תָּלָה - talah)：</strong> 象徵被神咒詛的狀態。押沙龍引以為傲的頭髮（驕傲的資本）成為了致命的網羅。當我們賴以自豪的事物纏住我們時，支撐我們的「騾子」便會離去。</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-4 space-y-6">
+                            <div class="bento-card p-6 rounded-xl border-l-2 border-brand-gold">
+                                <h4 class="text-xs font-black uppercase tracking-tighter text-brand-gold mb-3">生活例證</h4>
+                                <p class="text-sm leading-relaxed">伊索寓言中的鹿，逃命時細腿是幫手，美麗的鹿角卻成了被樹枝卡住、喪命的原因。我們所驕傲的，往往是我們滅亡的原因。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Deep Dive -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="mb-8 border-b border-white/10 pb-4">
+                        <h3 class="text-2xl font-serif font-bold text-brand-gold mb-2 flex items-center gap-3">
+                            <span class="text-4xl opacity-20">03</span> 第三段：無情的槍刺——自立紀念碑的荒涼結局
+                        </h3>
+                        <p class="text-gray-400 tracking-widest">撒下 18:11-18</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bg-white/5 p-6 rounded-xl italic font-serif leading-loose text-gray-300">
+                                押沙龍活著的時候，在王谷立了一根柱子...因他說：「我沒有兒子為我留名。」
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-white font-bold flex items-center gap-2"><span class="w-2 h-2 bg-brand-gold rounded-full"></span> 關鍵解析</h4>
+                                <p class="text-gray-400"><strong>紀念碑 (מַצֵּבָה - matstsebah)：</strong> 與最終埋葬他的「大坑」形成諷刺對比。人試圖靠自己建立榮耀，結果必然虛空。唯有建立神的國，才具備永恆的價值。</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-4 space-y-6">
+                            <div class="bento-card p-6 rounded-xl border-l-2 border-red-500">
+                                <h4 class="text-xs font-black uppercase tracking-tighter text-red-500 mb-3">強烈警示</h4>
+                                <p class="text-sm italic leading-relaxed">「當人試圖為自己建造紀念碑時，他就已經開始挖掘自己的墳墓了。」— 陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-brand-gold/10 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white uppercase tracking-wider">講章文稿</h2>
+            </div>
+            
+            <article class="glass p-8 md:p-16 rounded-[2rem] shadow-inner font-serif prose prose-invert prose-brand max-w-none">
+                <h3 class="text-3xl md:text-4xl font-black text-center mb-16 text-brand-gold underline underline-offset-8 decoration-brand-gold/30">懸在半空的驕傲與為父的碎心</h3>
+                
+                <div class="space-y-12 text-lg md:text-xl leading-loose text-gray-300">
+                    <p>弟兄姐妹們，平安。今天我們所要看的經文，是聖經中最具戲劇性，同時也最令人心碎的篇章之一。這是一場父親與兒子之間的戰爭，是一場恩典與驕傲的對決。</p>
+
+                    <div class="border-l-4 border-brand-gold pl-6 my-10">
+                        <h4 class="text-2xl font-bold text-white mb-4">第一段：慈父的囑託——公義戰場上的恩典呼喚</h4>
+                        <p>大衛對三位將軍下達了一個令人震驚的命令：<span class="text-brand-gold font-bold">「你們要為我的緣故寬待那少年人押沙龍。」</span>這是一個極不合理的命令！押沙龍該死、是敵軍首領。但大衛說：「為我的緣故，寬待他。」大衛身為君王的公義必須討伐叛逆，但他身為父親的慈愛卻在苦苦哀求。這正是上帝對我們的心——在公義審判中，對十字架上的耶穌說：「為我的緣故，寬待他們。」</p>
+                    </div>
+
+                    <div class="border-l-4 border-brand-accent pl-6 my-10">
+                        <h4 class="text-2xl font-bold text-white mb-4">第二段：致命的糾纏——驕傲成為滅亡的網羅</h4>
+                        <p>押沙龍那標誌性的、引以為傲的濃密頭髮，被大橡樹的密枝死死纏住。<span class="text-brand-accent font-bold">他被懸掛起來，所騎的騾子便離他去了。</span>當我們為自己的才華、財富感到驕傲時，上帝往往容許我們最驕傲的事物，成為我們生命中的「橡樹枝」。當世界提供的「騾子」離我們而去時，我們才會驚覺自己的軟弱。</p>
+                    </div>
+
+                    <div class="border-l-4 border-red-800 pl-6 my-10">
+                        <h4 class="text-2xl font-bold text-white mb-4">第三段：無情的槍刺——自立紀念碑的荒涼結局</h4>
+                        <p>押沙龍一生追求權力，想為自己建立永垂不朽的紀念碑。但上帝的審判告訴我們：人若離棄神，在地上建立的一切自我榮耀，最終只不過是一場虛空。<span class="text-white font-bold">陪伴他的，不是華麗的石柱，而是荒涼的亂石坑。</span>不要讓驕傲將我們懸在半空，而要在恩典中謙卑屈膝。</p>
+                    </div>
+
+                    <div class="bg-brand-gold/5 p-8 rounded-2xl mt-12">
+                        <h4 class="text-brand-gold font-bold mb-4 uppercase tracking-widest text-center">關鍵字結論</h4>
+                        <div class="flex justify-center gap-10 md:gap-20">
+                            <div class="text-center">
+                                <span class="block text-3xl font-black text-white">恩典</span>
+                                <span class="text-xs text-gray-500">GRACE</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="block text-3xl font-black text-white">驕傲</span>
+                                <span class="text-xs text-gray-500">PRIDE</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="block text-3xl font-black text-white">紀念碑</span>
+                                <span class="text-xs text-gray-500">PILLAR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Application -->
+            <div>
+                <h3 class="text-2xl font-serif font-bold text-white mb-8 border-l-4 border-brand-gold pl-4">應用方向</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-4"><span class="text-brand-gold font-bold">01</span> 檢視生命中的「押沙龍現象」。</li>
+                    <li class="flex gap-4"><span class="text-brand-gold font-bold">02</span> 體會天父的「寬待」之心。</li>
+                    <li class="flex gap-4"><span class="text-brand-gold font-bold">03</span> 放下建造「自我紀念碑」的執念。</li>
+                </ul>
+            </div>
+            <!-- Action -->
+            <div>
+                <h3 class="text-2xl font-serif font-bold text-white mb-8 border-l-4 border-brand-accent pl-4">回應行動</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-4"><span class="text-brand-accent font-bold">●</span> <strong>認罪與交託：</strong>將引以為傲的事物在禱告中交給神。</li>
+                    <li class="flex gap-4"><span class="text-brand-accent font-bold">●</span> <strong>效法寬待：</strong>本週選擇去寬待一個曾得罪你的人。</li>
+                    <li class="flex gap-4"><span class="text-brand-accent font-bold">●</span> <strong>隱藏的服事：</strong>本月刻意做一件無人知曉的善舉。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-brand-gold/10 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white uppercase tracking-wider">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg font-serif italic mb-4">「人心是一座日夜不休製造偶像的工廠。」</p>
+                    <cite class="text-brand-gold not-italic text-sm">— 約翰·加爾文《基督教要義》</cite>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg font-serif italic mb-4">「廉價的恩典是我們教會的死敵。昂貴的恩典是重價的，因為它使人付上生命。」</p>
+                    <cite class="text-brand-gold not-italic text-sm">— 潘霍華《做門徒的代價》</cite>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg font-serif italic mb-4">「驕傲是所有罪惡中最難對付的。上帝必定向驕傲宣告永恆的戰爭。」</p>
+                    <cite class="text-brand-gold not-italic text-sm">— 司布真《早晚靈修》</cite>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg font-serif italic mb-4">「如果你把任何事物看得比上帝更重要...那它就是你的偶像，最終它會毀滅你。」</p>
+                    <cite class="text-brand-gold not-italic text-sm">— 提摩太·凱勒《假神》</cite>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg font-serif italic mb-4">「我們都是乞丐，這是真的。我們能站在上帝面前，完全是因為祂那白白的恩典。」</p>
+                    <cite class="text-brand-gold not-italic text-sm">— 馬丁·路德《臨終遺言》</cite>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <p class="text-lg font-serif italic mb-4">「在十字架上，神親自擔當了我們的罪與審判，這正是公義與慈愛最深邃的結合。」</p>
+                    <cite class="text-brand-gold not-italic text-sm">— 約翰·史托德《基督的十字架》</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="pt-20 border-t border-white/5 text-center">
+            <p class="text-gray-600 text-sm tracking-widest bg-white/5 inline-block px-6 py-2 rounded-full">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士3:3-14:妥協的代價與甦醒的恩典：打破屬靈的惡性循環</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        stone: {
+                            900: '#1c1917',
+                            950: '#0c0a09',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                        'float-up': 'float-up 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.8', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                            '50%': { transform: 'scale(1.02)', opacity: '0.9' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0c0a09;
+            color: #e7e5e4;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(12, 10, 9, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(234, 179, 8, 0.3);
+        }
+        .text-jump {
+            display: inline-block;
+            animation: float 2.5s ease-in-out infinite;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fef9c3 0%, #eab308 50%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-anchor {
+            scroll-margin-top: 100px;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0c0a09;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #eab308;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士3:3-14',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '妥協的代價與甦醒的恩典：打破屬靈的惡性循環' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-gold-500 selection:text-stone-950">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center justify-between px-6 md:px-12">
+        <div class="font-accent font-extrabold text-gold-500 text-lg tracking-wider">士3:3-14</div>
+        <div class="flex gap-6 md:gap-10 text-sm font-medium tracking-widest text-stone-300">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner Hero Section -->
+    <header class="relative w-full h-[85vh] overflow-hidden flex items-center justify-center pt-16">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_e1daa4e3-c4f7-451a-868b-839ba4d34eab.jpg' alt='Epic Biblical Scene' class="w-full h-full object-cover animate-breath opacity-80" />
+        </div>
+        <div class="relative z-20 text-center px-4 max-w-5xl">
+            <h1 id="top" class="font-display text-4xl md:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">
+                妥協的代價與<span class="gradient-text">甦醒的恩典</span><br/>
+                <span class="text-2xl md:text-4xl font-normal block mt-4 opacity-90">打破屬靈的惡性循環</span>
+            </h1>
+            <div class="text-jump text-lg md:text-2xl font-display italic text-white max-w-3xl mx-auto drop-shadow-lg font-light">
+                「以色列人呼求耶和華的時候，耶和華就為他們興起一位拯救者救他們，就是迦勒兄弟基納斯的兒子俄陀聶。」<br/>
+                <span class="text-gold-400 font-accent mt-2 block not-italic">— 士師記 3:9</span>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 opacity-50">
+            <svg class="w-8 h-8 animate-bounce text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor">
+            <div class="glass-card p-8 md:p-16 rounded-[2.5rem] relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold-600/10 rounded-full blur-3xl group-hover:bg-gold-600/20 transition-all"></div>
+                <h2 class="flex items-center gap-4 text-3xl font-display font-bold mb-8 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-4.5v-9L12 3m0 18l8-4.5v-9L12 3m0 18V3"></path></svg>
+                    神聖呼求：禱告
+                </h2>
+                <p class="text-xl md:text-2xl leading-relaxed text-stone-200 font-light italic">
+                    親愛的天父，我們承認我們的心時常像以色列人一樣，容易在安逸中忘記祢的恩典，在世界的誘惑中妥協退後。求祢的聖靈今天光照我們，讓我們看見生命中隱藏的偶像與破口。當我們在管教與痛苦中時，求祢賜給我們真實悔改的心，大聲向祢呼求。願祢興起拯救的恩典，打破我們生命中犯罪與失敗的惡性循環，使我們全心歸向祢，一生行在祢的旨意中。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Grid -->
+        <section id="outline" class="section-anchor">
+            <h2 class="flex items-center gap-4 text-3xl font-display font-bold mb-12 text-gold-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                分段大綱與深度解析
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 hover:scale-105 active:scale-95 transition-transform flex flex-col justify-between">
+                    <span class="text-xs font-accent text-gold-500 tracking-tighter uppercase mb-2">Part I</span>
+                    <h3 class="text-lg font-bold mb-1">溫水煮青蛙</h3>
+                    <p class="text-sm text-stone-400">當信仰與世俗妥協 (3:3-7)</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 hover:scale-105 active:scale-95 transition-transform flex flex-col justify-between">
+                    <span class="text-xs font-accent text-gold-500 tracking-tighter uppercase mb-2">Part II</span>
+                    <h3 class="text-lg font-bold mb-1">痛苦中的呼求</h3>
+                    <p class="text-sm text-stone-400">神興起拯救的器皿 (3:8-11)</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-500 hover:scale-105 active:scale-95 transition-transform flex flex-col justify-between">
+                    <span class="text-xs font-accent text-gold-500 tracking-tighter uppercase mb-2">Part III</span>
+                    <h3 class="text-lg font-bold mb-1">恩典後的遺忘</h3>
+                    <p class="text-sm text-stone-400">警惕屬靈健忘症 (3:12-14)</p>
+                </a>
+            </div>
+
+            <!-- Part 1 Content -->
+            <div id="part1" class="section-anchor space-y-12 mb-24">
+                <div class="flex flex-col md:flex-row gap-12 items-start">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="inline-block px-4 py-1 rounded-full bg-gold-500/10 text-gold-400 text-sm font-bold tracking-widest mb-2">第一段：妥協</div>
+                        <h3 class="text-4xl font-display font-bold">溫水煮青蛙：當信仰與世俗妥協</h3>
+                        <div class="bg-stone-900/50 p-6 rounded-xl border border-stone-800 text-stone-300 leading-relaxed italic">
+                            「以色列人竟住在迦南人...中間，娶他們的女兒為妻，將自己的女兒嫁給他們的兒子，並事奉他們的神。以色列人行耶和華眼中看為惡的事，忘記耶和華－他們的 神...」
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="glass-card p-6 rounded-xl">
+                                <span class="text-gold-500 font-bold block mb-2">關鍵原文：忘記 (שָׁכַח / shakach)</span>
+                                <p class="text-sm text-stone-400 leading-relaxed">原意為「忽略」、「不再關心」。並非失憶，而是意志上將神排除在外，不再以神為中心。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 space-y-8">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題
+                            </h4>
+                            <p class="text-stone-300">為什麼以色列人會不知不覺中隨從外邦神？我們生命中的「迦南人」是什麼？</p>
+                            <div class="bg-gold-500/5 p-4 rounded-lg border-l-2 border-gold-600">
+                                <p class="text-sm text-stone-400">這是漸進妥協的過程。當我們不徹底對付罪，容許世俗價值觀（金錢、權力、享樂）留在生活中，最終就會被同化，取代神在心中的寶座。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                名言與例證
+                            </h4>
+                            <p class="text-sm text-stone-300 italic mb-2">「人心就像一個製造偶像的工廠，我們不斷地將受造之物放在造物主的位置上。」——約翰·加爾文</p>
+                            <p class="text-xs text-stone-500">溫水煮青蛙：信仰的妥協是漸進的。偶爾一次不誠實、一次對罪的包容，漸漸屬靈知覺就會麻木。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 Content -->
+            <div id="part2" class="section-anchor space-y-12 mb-24">
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-start">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="inline-block px-4 py-1 rounded-full bg-gold-500/10 text-gold-400 text-sm font-bold tracking-widest mb-2">第二段：甦醒</div>
+                        <h3 class="text-4xl font-display font-bold">痛苦中的呼求：神興起拯救的器皿</h3>
+                        <div class="bg-stone-900/50 p-6 rounded-xl border border-stone-800 text-stone-300 leading-relaxed italic">
+                            「以色列人呼求耶和華的時候，耶和華就為他們興起一位拯救者救他們...耶和華的靈降在他身上，他就作了以色列的士師，出去爭戰。」
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="glass-card p-4 rounded-xl">
+                                <span class="text-gold-500 font-bold block mb-1">呼求 (זָעַק)</span>
+                                <p class="text-xs text-stone-400">痛苦中的哀號，完全仰望神憐憫。</p>
+                            </div>
+                            <div class="glass-card p-4 rounded-xl">
+                                <span class="text-gold-500 font-bold block mb-1">神的靈 (רוּחַ)</span>
+                                <p class="text-xs text-stone-400">聖靈降臨，賜予超自然能力與智慧。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 space-y-8">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2">關鍵問題</h4>
+                            <p class="text-stone-300">神的管教是出於憤怒還是愛？呼求的態度是什麼？</p>
+                            <div class="bg-gold-500/5 p-4 rounded-lg border-l-2 border-gold-600">
+                                <p class="text-sm text-stone-400">管教是為了「喚醒」。我們的呼求不能只是為了解決痛苦，而應該是轉向神、承認己罪的真實悔改。當我們真實呼求，神就賜下能力帶來突破。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2">名言與例證</h4>
+                            <p class="text-sm text-stone-300 italic mb-2">「痛苦是神用來喚醒這個耳聾世界的麥克風。」——提摩太·凱勒</p>
+                            <p class="text-xs text-stone-500">車道偏移警示：警示聲讓人不舒服，但能救命。神的管教是屬靈的警示，讓我們回到正確軌道。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 Content -->
+            <div id="part3" class="section-anchor space-y-12">
+                <div class="flex flex-col md:flex-row gap-12 items-start">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="inline-block px-4 py-1 rounded-full bg-gold-500/10 text-gold-400 text-sm font-bold tracking-widest mb-2">第三段：警惕</div>
+                        <h3 class="text-4xl font-display font-bold">恩典後的遺忘：警惕屬靈的健忘症</h3>
+                        <div class="bg-stone-900/50 p-6 rounded-xl border border-stone-800 text-stone-300 leading-relaxed italic">
+                            「以色列人又行耶和華眼中看為惡的事...於是以色列人服事摩押王伊磯倫十八年。」
+                        </div>
+                        <div class="glass-card p-6 rounded-xl">
+                            <span class="text-gold-500 font-bold block mb-2">關鍵原文：又 (יָסַף / yacaph)</span>
+                            <p class="text-sm text-stone-400 leading-relaxed">意思是「重複」、「增加」。指出了心痛的循環：平安一久，再次重蹈覆轍，甚至變本加厲。</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 space-y-8">
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2">關鍵問題</h4>
+                            <p class="text-stone-300">為什麼太平日子一過，人就容易再次墮落？如何維持復興？</p>
+                            <div class="bg-gold-500/5 p-4 rounded-lg border-l-2 border-gold-600">
+                                <p class="text-sm text-stone-400">人在安逸中最容易忘記恩典。必須建立日常屬靈紀律（讀經、禱告、團契），主動記念神，而非等到危機才尋求。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-500 font-bold flex items-center gap-2">名言與例證</h4>
+                            <p class="text-sm text-stone-300 italic mb-2">「廉價的恩典是我們教會的死敵...是沒有十字架的恩典，是沒有耶穌基督的恩典。」——潘霍華</p>
+                            <p class="text-xs text-stone-500">溜溜球效應：節食後恢復飲食會反彈。屬靈生命若缺乏持續紀律，就會在犯罪與悔改間不斷循環。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-anchor max-w-4xl mx-auto">
+            <h2 class="flex items-center gap-4 text-3xl font-display font-bold mb-12 text-gold-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                講章文稿
+            </h2>
+            <div class="space-y-12 text-stone-300 text-lg md:text-xl leading-relaxed font-light">
+                <h3 class="text-2xl md:text-3xl font-display font-black text-white border-b-2 border-gold-600 pb-4">妥協的代價與甦醒的恩典：打破屬靈的惡性循環</h3>
+                
+                <p>弟兄姊妹們，我們常說人生充滿了循環。然而，在屬靈生命中，有一種循環是我們必須竭力打破的，那就是「妥協、犯罪、受苦、呼求、拯救、再次墮落」的惡性循環。這正是士師記中以色列人的真實寫照。</p>
+
+                <div>
+                    <h4 class="text-gold-500 font-bold text-xl mb-4">第一段：溫水煮青蛙——當信仰與世俗妥協</h4>
+                    <p class="mb-4">以色列人並不是一夜之間背叛上帝的。經文給我們看到一個漸進過程：從「住在中間」到「通婚」，最後才是「事奉」。</p>
+                    <p class="font-bold text-white bg-white/5 p-4 rounded-lg">我們生命中的「迦南人」是什麼？也許是職場上的潛規則、是對金錢無止盡的追求。起初以為「稍微通融沒關係」，但漸漸就被同化了。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-gold-500 font-bold text-xl mb-4">第二段：痛苦中的呼求——神興起拯救的器皿</h4>
+                    <p class="mb-4">神愛祂的子民，管教看似痛苦，卻是神喚醒我們的擴音器。當以色列人走到盡頭，他們撕心裂肺地呼求。</p>
+                    <div class="text-gold-400 font-bold text-2xl py-6 border-y border-gold-900/50 my-6 animate-subtle-pulse text-center">
+                        「只要我們願意真實悔改呼求，神拯救的恩典永遠為我們存留。」
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-gold-500 font-bold text-xl mb-4">第三段：恩典後的遺忘——警惕屬靈的健忘症</h4>
+                    <p class="mb-4">故事出現了令人心碎的字：「又」。四十年的太平一過，屬靈健忘症再次發作。這是屬靈的「溜溜球效應」。</p>
+                    <p>要打破這個惡性循環，我們不能只停留在危機時的呼求，而必須在平日的安逸中，建立堅實的屬靈紀律，天天警醒。</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-gold-900/20 to-stone-900 p-8 rounded-3xl border border-gold-800/30">
+                    <h4 class="text-gold-400 font-bold mb-4">【結論：回轉與更新】</h4>
+                    <p>弟兄姊妹，今天神的話語呼喚我們：檢視你的生命，斬斷與世界的妥協；在軟弱中不要隱藏，向神大聲呼求；在平安的日子裡，更要緊緊跟隨。讓神的聖靈今天就降臨在我們身上，帶領我們進入真實且持久的復興！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Actions (Bento Box Layout) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-[2rem] space-y-6">
+                <h3 class="text-2xl font-bold text-gold-500 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 7h.01M7 12h.01M7 17h.01M10 7h10M10 12h10M10 17h10"></path></svg>
+                    講道應用方向
+                </h3>
+                <ul class="space-y-4 text-stone-300">
+                    <li class="flex gap-3"><span class="text-gold-500">1.</span> 檢視生活中的「妥協區」：反省是否接納了不討神喜悅的價值觀。</li>
+                    <li class="flex gap-3"><span class="text-gold-500">2.</span> 正確面對「苦難與管教」：尋求神是否正透過挫折喚醒我們。</li>
+                    <li class="flex gap-3"><span class="text-gold-500">3.</span> 建立日常屬靈紀律：在順境中更要刻意親近神，防止健忘。</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-[2rem] space-y-6 bg-gold-500/5 border-gold-500/20">
+                <h3 class="text-2xl font-bold text-gold-500 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應與實踐行動
+                </h3>
+                <ul class="space-y-4 text-stone-200 font-medium">
+                    <li class="flex items-start gap-3 bg-stone-950/50 p-3 rounded-xl border border-white/5">
+                        <span class="w-2 h-2 rounded-full bg-gold-500 mt-2 shrink-0"></span>
+                        <span><b>斬斷一個妥協：</b>下定決心斬斷一項與世俗妥協的習慣。</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-stone-950/50 p-3 rounded-xl border border-white/5">
+                        <span class="w-2 h-2 rounded-full bg-gold-500 mt-2 shrink-0"></span>
+                        <span><b>設立呼求祭壇：</b>每天10分鐘專屬禱告，為屬靈光景呼求。</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-stone-950/50 p-3 rounded-xl border border-white/5">
+                        <span class="w-2 h-2 rounded-full bg-gold-500 mt-2 shrink-0"></span>
+                        <span><b>尋找屬靈守望者：</b>找夥伴每週分享彼此光景，避免退後。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor">
+            <h2 class="flex items-center gap-4 text-3xl font-display font-bold mb-12 text-gold-400">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                屬靈前輩佳句名言
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「人若不把世界釘在十字架上，世界就會把他釘在十字架上。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 約翰·加爾文</span>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「廉價的恩典是傳揚不需悔改的赦免，不用受洗的聚會，不需認罪的聖餐。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 潘霍華</span>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「偶像就是任何對你來說，比上帝更重要的事物；任何比上帝更能吸引你的心的事物。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 提摩太·凱勒</span>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「神從不勉強人的意志，祂只會改變人的意志；神從不剝奪人的自由，祂只會引導人的自由。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 唐崇榮</span>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「世界之所以對我們有如此大的吸引力，是因為我們與神之間的距離太遠了。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 陶恕</span>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「除非你意識到自己有極大的危險，否則你不會去尋求極大的拯救。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 司布真</span>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「神常常會帶領我們到一個地步，讓我們發現除了祂以外，我們別無所有；那時我們才會發現，有祂就足夠了。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 查爾斯·史丹利</span>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「我們在神面前的屬靈光景，不是取決於我們在聚會中的表現，而是取決於我們在獨處時。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 慕迪</span>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「真正的屬靈生命不是一場百米衝刺，而是一場需要恆久忍耐的馬拉松。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 約翰·衛斯理</span>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <p class="text-lg leading-relaxed text-stone-200 mb-4">「我們的心太小，裝不下這世界；但我們的心又太大，除了無限的神以外，沒任何能填滿它。」</p>
+                    <span class="text-gold-500 font-bold self-end">— 喬治·懷特腓</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="text-center pt-10 pb-20 border-t border-stone-800">
+            <p class="text-stone-500 text-sm tracking-widest flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 hover:bg-gold-400 text-stone-950 rounded-full flex items-center justify-center shadow-2xl transition-all hover:-translate-y-2 z-[60] focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+
+</body>
+</html>

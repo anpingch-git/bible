@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士17:1-13 信仰的拼裝車：當「我覺得」取代了「神說」</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FFD700',
+                            DEFAULT: '#C5A059',
+                            dark: '#A67C00',
+                        },
+                        dark: {
+                            bg: '#0A0A0A',
+                            card: '#161616',
+                            accent: '#1F1F1F',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto+Sans+TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto+Sans+TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtleBounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        subtleBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0A;
+            color: #E0E0E0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(22, 22, 22, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(197, 160, 89, 0.5);
+            transform: translateY(-4px);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FFD700, #C5A059);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-glow {
+            animation: breathe 8s infinite alternate;
+        }
+        @keyframes breathe {
+            from { opacity: 0.6; filter: brightness(0.8); }
+            to { opacity: 1; filter: brightness(1.2); }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtleBounce 2s ease-in-out infinite;
+        }
+        .outline-btn {
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: #C5A059;
+            color: #000;
+            transform: scale(1.05);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士17:1-13',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '信仰的拼裝車：當「我覺得」取代了「神說」' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-gold font-display font-bold text-lg tracking-tight hidden md:block">
+                士師記 17:1-13
+            </div>
+            <div class="flex gap-6 text-sm font-medium tracking-widest text-gray-400">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[80vh] w-full overflow-hidden flex items-end justify-center pb-20">
+        <div class="absolute inset-0 z-0">
+            <div class="banner-glow h-full w-full">
+                <img src='image/img_33b6447d-bd49-40bf-986c-87771c579332.jpg' alt='media_1' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 id="top" class="text-4xl md:text-6xl font-black mb-6 leading-tight font-display tracking-tighter">
+                信仰的拼裝車：<br/>
+                <span class="text-gradient">當「我覺得」取代了「神說」</span>
+            </h1>
+            <div class="jump-text text-xl md:text-2xl font-medium text-gold-light italic">
+                「那時以色列中沒有王，各人任意而行。」（士師記 17:6）
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 opacity-10">
+                    <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" /></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="p-3 bg-gold/20 rounded-full text-gold">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path></svg>
+                    </span>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">會前禱告</h2>
+                </div>
+                <p class="text-lg leading-relaxed text-gray-300 italic font-light">
+                    親愛的天父，我們來到祢面前，承認我們的心常如米迦一般，容易被世俗的價值觀同化，甚至在不知不覺中為自己雕刻了無形的偶像。求祢的聖靈今天透過士師記的經文光照我們，打破我們心中那些「以自我為中心」的宗教框架。求祢在我們生命的寶座上作王掌權，不讓我們「任意而行」，而是單單順服祢的真理。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-gold/20 rounded-full text-gold">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white tracking-tight">深入解析大綱</h2>
+            </div>
+
+            <!-- Outline Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#section-1" class="outline-btn rounded-2xl p-6 text-left group">
+                    <div class="text-xs text-gold/60 uppercase tracking-widest mb-2">Part 01</div>
+                    <div class="font-bold text-lg leading-snug">走味的敬拜：以「神」之名的偶像崇拜</div>
+                    <div class="text-sm opacity-50 mt-2">士師記 17:1-4</div>
+                </a>
+                <a href="#section-2" class="outline-btn rounded-2xl p-6 text-left group">
+                    <div class="text-xs text-gold/60 uppercase tracking-widest mb-2">Part 02</div>
+                    <div class="font-bold text-lg leading-snug">失序的生命：當「自我」成為信仰中心</div>
+                    <div class="text-sm opacity-50 mt-2">士師記 17:5-6</div>
+                </a>
+                <a href="#section-3" class="outline-btn rounded-2xl p-6 text-left group">
+                    <div class="text-xs text-gold/60 uppercase tracking-widest mb-2">Part 03</div>
+                    <div class="font-bold text-lg leading-snug">功利的信仰：把「上帝」當作工具</div>
+                    <div class="text-sm opacity-50 mt-2">士師記 17:7-13</div>
+                </a>
+            </div>
+
+            <!-- Section 1 Details -->
+            <div id="section-1" class="scroll-mt-24 space-y-12 mb-32">
+                <div class="border-l-4 border-gold pl-6 py-2">
+                    <h3 class="text-2xl font-bold text-gold-light mb-2">第一段：走味的敬拜——以「神」之名的偶像崇拜</h3>
+                    <p class="text-sm text-gray-500 uppercase tracking-widest font-display">Judges 17:1-4</p>
+                </div>
+                
+                <div class="bg-dark-accent/50 p-8 rounded-2xl border border-white/5 italic text-gray-300 leading-relaxed">
+                    以法蓮山地有一個人名叫米迦。他對母親說：「你那一千一百舍客勒銀子被人拿去，你因此咒詛，並且告訴了我。看哪，這銀子在我這裡，是我拿去了。」他母親說：「我兒啊，願耶和華賜福與你！」米迦就把這一千一百舍客勒銀子還他母親。他母親說：「我分出這銀子來為你獻給耶和華，好雕刻一個偶像，鑄成一個偶像。現在我交還給你。」米迦將銀子還他母親，他母親將二百舍客勒銀子交給銀匠，雕刻一個偶像，鑄成一個偶像，安置在米迦的屋內。
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵原文詞彙</h4>
+                        <ul class="space-y-3">
+                            <li class="bg-white/5 p-4 rounded-xl">
+                                <span class="text-gold-light font-bold">雕刻的偶像 (Pesel / פֶּסֶל)</span>: 指木頭或石頭雕刻的偶像。
+                            </li>
+                            <li class="bg-white/5 p-4 rounded-xl">
+                                <span class="text-gold-light font-bold">鑄成的偶像 (Massekah / מַסֵּכָה)</span>: 指金屬鎔鑄的偶像。
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵問題與解析</h4>
+                        <div class="text-gray-400 text-sm leading-relaxed">
+                            <p class="font-bold text-white mb-2">Q: 為什麼米迦的母親要把獻給耶和華的錢用來造偶像？</p>
+                            這反映出當信徒不認識神的真理時，就會按照「自己喜歡的方式」去敬拜。危機在於我們常常以為自己正在敬拜上帝，但實際上我們敬拜的是一個被我們「本土化、世俗化、迎合自我慾望」的假神。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 bg-gradient-to-br from-gold/5 to-transparent">
+                    <h4 class="text-gold font-bold mb-4">生活例證</h4>
+                    <p class="text-gray-300">就像去吃「自助餐」（Buffet），人們只挑選自己喜歡吃的菜。現代許多基督徒的信仰也是「自助餐式信仰」：接受上帝是慈愛的，卻拒絕祂是公義的；喜歡上帝賜福的應許，卻略過背起十字架的呼召。</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <p class="text-gold italic">「人心中所想像的上帝，若與聖經中所啟示的上帝不符，那這個想像本身就是一個偶像。」— 陶恕 (A.W. Tozer)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 Details -->
+            <div id="section-2" class="scroll-mt-24 space-y-12 mb-32">
+                <div class="border-l-4 border-gold pl-6 py-2">
+                    <h3 class="text-2xl font-bold text-gold-light mb-2">第二段：失序的生命——當「自我」成為信仰的中心</h3>
+                    <p class="text-sm text-gray-500 uppercase tracking-widest font-display">Judges 17:5-6</p>
+                </div>
+                
+                <div class="bg-dark-accent/50 p-8 rounded-2xl border border-white/5 italic text-gray-300 leading-relaxed">
+                    這米迦有了神堂，又製造以弗得和家中的神像，分派他一個兒子作祭司。那時以色列中沒有王，各人任意而行。
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵原文詞彙</h4>
+                        <div class="bg-white/5 p-4 rounded-xl">
+                            <span class="text-gold-light font-bold">任意而行 (Yashar / יָשָׁר)</span>: 原文意為「直的」、「對的」。直譯是「各人做自己眼中看為正的事」。當沒有絕對真理時，每個人心中的「對」，就成了混亂根源。
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵問題與解析</h4>
+                        <div class="text-gray-400 text-sm leading-relaxed">
+                            <p class="font-bold text-white mb-2">Q: 當代社會推崇「做自己」，與聖經中的「任意而行」有何異同？</p>
+                            真正的自由不是想做什麼就做什麼，而是在上帝的真理規範中，擁有不犯罪的自由。脫離了神的「任意而行」，最終帶來的是靈性的崩壞與自我毀滅。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 bg-gradient-to-br from-gold/5 to-transparent">
+                    <h4 class="text-gold font-bold mb-4">生活例證</h4>
+                    <p class="text-gray-300">飛行員在濃霧中飛行，如果他相信直覺而非「水平儀」，飛機就會墜毀。在信仰中，聖經就是我們的儀表板，當我們的感覺與聖經衝突時，必須順服聖經。</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <p class="text-gold italic">「真正的自由並不是沒有限制；真正的自由是找到正確的限制（那與我們受造本性相符的限制）。」— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 Details -->
+            <div id="section-3" class="scroll-mt-24 space-y-12">
+                <div class="border-l-4 border-gold pl-6 py-2">
+                    <h3 class="text-2xl font-bold text-gold-light mb-2">第三段：功利的信仰——把「上帝」當作賜福的工具</h3>
+                    <p class="text-sm text-gray-500 uppercase tracking-widest font-display">Judges 17:7-13</p>
+                </div>
+                
+                <div class="bg-dark-accent/50 p-8 rounded-2xl border border-white/5 italic text-gray-300 leading-relaxed">
+                    米迦說：「你與我同住，我聘你為父、為祭司。我每年給你十舍客勒銀子，一套衣服和度日的食物。」... 米迦說：「現在我知道耶和華必賜福與我，因我有一個利未人作祭司。」
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵原文詞彙</h4>
+                        <ul class="space-y-3">
+                            <li class="bg-white/5 p-4 rounded-xl">
+                                <span class="text-gold-light font-bold">賜福 (Yatav / יָטַב)</span>: 意為「得好處」。米迦的邏輯是交易式的：我付出成本，上帝「必須」給我好處。
+                            </li>
+                            <li class="bg-white/5 p-4 rounded-xl">
+                                <span class="text-gold-light font-bold">祭司 (Kohen / כֹּהֵן)</span>: 本應是神聖職分，在此卻淪為受雇於人的宗教法師，為私利背書。
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵問題與解析</h4>
+                        <div class="text-gray-400 text-sm leading-relaxed">
+                            <p class="font-bold text-white mb-2">Q: 我們敬拜神，究竟是為了得著「神自己」，還是「好處」？</p>
+                            米迦把信仰變成了一種「操控神」的工具（Spiritual Manipulation）。他以為只要把外在的宗教儀式做足，神就會買單。這不是信仰，這是迷信與交易。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 bg-gradient-to-br from-gold/5 to-transparent">
+                    <h4 class="text-gold font-bold mb-4">生活例證</h4>
+                    <p class="text-gray-300">阿拉丁神燈的精靈只為滿足主人願望。許多時候我們把上帝當作「有求必應的自動販賣機」。但上帝不是被我們雇用的利未人，祂是宇宙萬有的主宰。</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <p class="text-gold italic">「廉價的恩典是我們教會的死敵...只求赦免，不要悔改；只要恩典，不要門徒的代價。」— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Draft -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-gold/20 rounded-full text-gold">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20l-7-7-7 7V5a2 2 0 012-2h10a2 2 0 012 2v15z"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white tracking-tight">完整講章文稿</h2>
+            </div>
+            
+            <div class="glass-card rounded-3xl p-10 md:p-16 space-y-10 leading-loose text-gray-300 text-lg">
+                <h3 class="text-3xl font-black text-white text-center mb-12">信仰的拼裝車：當「我覺得」取代了「神說」</h3>
+                
+                <p>各位弟兄姊妹，平安。如果我們觀察今天的世代，會發現這是一個推崇「客製化」的時代。我們買車可以選配，吃火鍋可以自選湯底，就連我們接收新聞的推播，都是演算法為我們「量身打造」的。然而，當這種「客製化」的心態進入到我們的信仰時，就會產生巨大的災難。</p>
+
+                <p>今天我們要來看一段舊約聖經中極度荒謬、卻又無比真實的歷史。請翻開 <span class="text-gold font-bold">士師記 17:1-13</span>。這段經文為我們描繪了一幅「信仰拼裝車」的圖畫，告訴我們當人失去絕對真理時，信仰會變得多麼扭曲。今天的金句是 <span class="text-white bg-gold/30 px-2 py-1 rounded">士師記 17:6：「那時以色列中沒有王，各人任意而行。」</span> 這句話不僅是士師時代的總結，更是對現代教會的一記警鐘。</p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold tracking-tight border-b border-gold/20 pb-4">第一段：走味的敬拜——以「神」之名的偶像崇拜</h4>
+                    <p>經文一開始，我們看到一個名叫米迦的人，偷了母親一千一百舍客勒銀子。母親咒詛小偷，米迦害怕了，把錢還給母親。母親一高興，竟然說：「我分出這銀子來為你獻給耶和華，好雕刻一個偶像，鑄成一個偶像。」</p>
+                    <p>弟兄姊妹，這真是令人啼笑皆非的場景。十誡的第二誡明明說：「不可為自己雕刻偶像」，但這位母親卻打著「獻給耶和華」的旗號，去造了一個耶和華最憎惡的偶像！這叫作信仰的混合主義。</p>
+                    <p class="font-bold text-white italic">「我們是不是也常常把世俗的價值觀，貼上『屬靈的標籤』就帶進教會？」</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold tracking-tight border-b border-gold/20 pb-4">第二段：失序的生命——當「自我」成為信仰的中心</h4>
+                    <p>接下來，米迦的信仰拼裝車越做越大。經文第5節說：「這米迦有了神堂，又製造以弗得和家中的神像，分派他一個兒子作祭司。」聖經接著在第6節下了一個沉痛的註解：「那時以色列中沒有王，各人任意而行。」</p>
+                    <p>「任意而行」原文的意思是「各人做自己眼中看為正的事」。這不正是我們這個時代的口號嗎？「只要我喜歡，有什麼不可以」、「跟著你的感覺走」。然而，當「我覺得」取代了「神說」，當「自我」成為信仰的中心，生命必然走向失序。</p>
+                    <p class="font-bold text-white italic">「聖經就是我們生命的儀表板。當我們的感覺、社會的潮流與聖經衝突時，我們必須順服真理。」</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-gold tracking-tight border-b border-gold/20 pb-4">第三段：功利的信仰——把「上帝」當作賜福的工具</h4>
+                    <p>故事的最後，來了一個猶大伯利恆的年輕利未人。米迦一看，這可是正牌的神職人員啊！於是用每年十舍客勒銀子、一套衣服和食物包養了他。米迦滿心歡喜地說：「現在我知道耶和華必賜福與我，因我有一個利未人作祭司。」（士17:13）</p>
+                    <p>米迦的信仰露出了最真實的底色——功利主義。他弄神堂、造偶像、雇祭司，這一切的投資，為的只是換取上帝的「賜福」。他把上帝當成了可以被操控的自動販賣機，以為只要投下足夠的宗教硬幣，上帝就「必須」掉出祝福。</p>
+                    <p class="font-bold text-white italic">「服事神，究竟是為了得著『神自己』，還是為了得著神手中的『好處』？」</p>
+                </div>
+
+                <div class="bg-gold/10 p-8 rounded-2xl border border-gold/30 mt-12 text-center">
+                    <h4 class="text-xl font-bold text-gold mb-6 uppercase tracking-widest">結論：三個關鍵字</h4>
+                    <div class="flex justify-around text-2xl font-black text-white">
+                        <span>真理</span>
+                        <span>主權</span>
+                        <span>順服</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-4">
+                    <span class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-dark-bg text-sm font-bold">1</span>
+                    講道應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-gold">●</span> 檢視敬拜的純粹性：反省信仰生活是否摻雜了世俗價值觀。</li>
+                    <li class="flex gap-3"><span class="text-gold">●</span> 打破「任意而行」：建立以「聖經」為絕對標準的生活準則。</li>
+                    <li class="flex gap-3"><span class="text-gold">●</span> 淨化動機：學習愛「賜恩的主」勝過愛「主的恩賜」。</li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-4">
+                    <span class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-dark-bg text-sm font-bold">2</span>
+                    實踐回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-gold">●</span> 每日靈修：每天讓神的話語來校正我們心中的「儀表板」。</li>
+                    <li class="flex gap-3"><span class="text-gold">●</span> 拆毀偶像：具體反省並向神認罪，將生命主權交還給神。</li>
+                    <li class="flex gap-3"><span class="text-gold">●</span> 轉化禱告：增加「神啊，求祢改變我，使我順服」的禱告。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-gold/20 rounded-full text-gold">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </span>
+                <h2 class="text-3xl font-bold text-white tracking-tight">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「人類的心根本就是一個製造偶像的工廠。」</p>
+                    <div>
+                        <p class="text-gold font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                        <p class="text-gray-500 text-xs mt-1">《基督教要義》</p>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「神不是為了滿足我們的需要而存在的；我們是為了滿足神的旨意而存在的。」</p>
+                    <div>
+                        <p class="text-gold font-bold text-sm">— 大衛·鮑森 (David Pawson)</p>
+                        <p class="text-gray-500 text-xs mt-1">《舊約縱覽》</p>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「任何事物，只要它在你心中的地位比上帝更重要...它就是一個假神。」</p>
+                    <div>
+                        <p class="text-gold font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                        <p class="text-gray-500 text-xs mt-1">《假神眾生相》</p>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <div>
+                        <p class="text-gold font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                        <p class="text-gray-500 text-xs mt-1">《追隨基督》</p>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「我們對上帝的看法，是我們身上最重要的一件事。」</p>
+                    <div>
+                        <p class="text-gold font-bold text-sm">— 陶恕 (A.W. Tozer)</p>
+                        <p class="text-gray-500 text-xs mt-1">《認識至聖者》</p>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-lg text-gray-200 mb-4 font-medium italic">「真理不依賴多數人的贊同。即使全世界都反對，真理依然是真理。」</p>
+                    <div>
+                        <p class="text-gold font-bold text-sm">— 查爾斯·司布真 (Charles Spurgeon)</p>
+                        <p class="text-gray-500 text-xs mt-1">《大衛寶庫》</p>
+                    </div>
+                </div>
+                <!-- More Quotes can be listed similarly -->
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="pt-20 pb-10 text-center border-t border-white/5">
+            <p class="text-gray-600 text-sm italic">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full shadow-2xl flex items-center justify-center text-dark-bg hover:scale-110 active:scale-95 transition-all z-50 border-4 border-dark-bg">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+</body>
+</html>

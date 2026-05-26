@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士18:1-12:迷失的尋覓：當私慾取代了神的命定</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A059',
+                            dark: '#0A0A0B',
+                            accent: '#E5C185',
+                            card: '#161618',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float-custom 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: '0.8' },
+                            '50%': { opacity: '0.3' },
+                        },
+                        'float-custom': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(197, 160, 89, 0.4);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0A0A0B; }
+        ::-webkit-scrollbar-thumb { background: #C5A059; border-radius: 4px; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士18:1-12',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '迷失的尋覓：當私慾取代了神的命定' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center justify-between px-6 lg:px-12">
+        <div class="text-brand-gold font-bold tracking-tight text-sm md:text-base">
+            士 18:1-12
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium uppercase tracking-widest text-slate-400">
+            <a href="#prayer" class="hover:text-brand-gold transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-brand-gold transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-brand-gold transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-brand-gold transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <img src='image/img_ba51a73f-e306-426a-8d52-fd298c54e0d5.jpg' alt='media_1' class="w-full h-full object-cover animate-pulse-slow" />
+        </div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl">
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight text-white">
+                迷失的尋覓：<br>
+                <span class="text-brand-gold text-glow">當私慾取代了神的命定</span>
+            </h1>
+            <div class="inline-block animate-bounce-subtle">
+                <p class="text-lg md:text-2xl font-light text-brand-accent tracking-widest italic">
+                    「那時，以色列中沒有王。但支派的人仍在尋地居住...」
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24 flex flex-col items-center">
+            <div class="w-12 h-12 bg-brand-gold/10 rounded-full flex items-center justify-center mb-6 text-brand-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-serif font-bold text-center mb-10 tracking-widest text-brand-gold">禱告詞</h2>
+            <div class="max-w-2xl text-center">
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-300 font-serif italic">
+                    主阿，我們來到祢面前，承認我們常常像但支派一樣，在面對祢所賜的應許與挑戰時，選擇了逃避與妥協。我們總想尋找一條輕省的捷徑，甚至用虛假的屬靈印證來包裝自己的私慾。求聖靈光照我們的心，賜給我們真實的勇氣，去承接祢量給我們的產業，不再尋求人意的安逸，而是單單順服祢的旨意。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigator Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+                <h2 class="text-3xl font-serif font-bold tracking-widest text-brand-gold uppercase">大綱導覽</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section-1" class="group bg-brand-card p-6 rounded-2xl border border-white/5 hover:border-brand-gold/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <span class="text-brand-gold text-xs font-bold block mb-2">第一部分 · 士 18:1-2</span>
+                    <h3 class="text-lg font-bold group-hover:text-brand-gold transition-colors">逃避命定的尋覓</h3>
+                    <p class="text-slate-500 text-sm mt-2">當我們放棄了神起初的呼召</p>
+                </a>
+                <a href="#section-2" class="group bg-brand-card p-6 rounded-2xl border border-white/5 hover:border-brand-gold/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <span class="text-brand-gold text-xs font-bold block mb-2">第二部分 · 士 18:3-6</span>
+                    <h3 class="text-lg font-bold group-hover:text-brand-gold transition-colors">虛妄的屬靈印證</h3>
+                    <p class="text-slate-500 text-sm mt-2">當信仰淪為私慾的背書</p>
+                </a>
+                <a href="#section-3" class="group bg-brand-card p-6 rounded-2xl border border-white/5 hover:border-brand-gold/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <span class="text-brand-gold text-xs font-bold block mb-2">第三部分 · 士 18:7-12</span>
+                    <h3 class="text-lg font-bold group-hover:text-brand-gold transition-colors">捏造的捷徑與虛假安全</h3>
+                    <p class="text-slate-500 text-sm mt-2">當欺凌弱小被誤認為神祝</p>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Section 1 Detail -->
+                <article id="section-1" class="scroll-mt-24 space-y-12">
+                    <div class="border-l-4 border-brand-gold pl-6">
+                        <h3 class="text-2xl md:text-4xl font-serif font-bold mb-4">第一段：逃避命定的尋覓——當我們放棄了神起初的呼召</h3>
+                        <p class="text-brand-accent font-medium">經文：士 18:1-2</p>
+                    </div>
+                    
+                    <div class="bg-brand-card p-8 rounded-3xl border border-white/5 shadow-2xl">
+                        <blockquote class="text-lg italic text-slate-400 mb-8 font-serif">
+                            「那時，以色列中沒有王。但支派的人仍在尋地居住；因為到那日子，他們還沒有在以色列支派中得地為業。但人從瑣拉和以實陶打發本族中的五個勇士，去探子、窺探那地...」
+                        </blockquote>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-brand-gold font-bold flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    <strong class="text-white">得地為業 (nachalah)</strong>：指神所劃定、賜予的產業。約書亞記19章記載，神早已將地分給但支派，但他們因懼怕亞摩利人的鐵車，不願付代價爭戰，於是放棄了神量給他們的「命定」。
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-brand-gold font-bold flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 10-2 0h-1a1 1 0 100 2h1a1 1 0 102 0zm-7 5a1 1 0 10-2 0v1a1 1 0 102 0v-1zM5.05 6.464a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM5 10a1 1 0 10-2 0H2a1 1 0 100 2h1a1 1 0 102 0zm.757 4.95a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM10 18a1 1 0 100-2v-1a1 1 0 10-2 0v1a1 1 0 100 2z" /></svg>
+                                    問題與解答
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    <strong class="text-white">Q: 我們是否因困難而放棄神原先的呼召？</strong><br>
+                                    解析：但支派的「尋地」出於逃避。當我們在婚姻或職場遇挑戰時，天性是逃跑，並美其名為「尋找新帶領」。神常要我們在原地倚靠恩典得勝，而非繞過困難。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row gap-8 items-center">
+                            <div class="flex-1 italic text-brand-accent">「廉價的恩典是我們自己給自己的恩典……是不需要付代價的饒恕，是沒有十字架的恩典。」—— 潘霍華</div>
+                            <div class="flex-1 text-sm text-slate-400">
+                                <span class="text-brand-gold font-bold">故事例證：</span>年輕人在教會服事遇衝突，不選修剪生命而換教會，終究找不到「完美」屬靈家園。逃避爭戰只會讓人一生流浪。
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 Detail -->
+                <article id="section-2" class="scroll-mt-24 space-y-12">
+                    <div class="border-l-4 border-brand-gold pl-6">
+                        <h3 class="text-2xl md:text-4xl font-serif font-bold mb-4">第二段：虛妄的屬靈印證——當信仰淪為私慾的背書</h3>
+                        <p class="text-brand-accent font-medium">經文：士 18:3-6</p>
+                    </div>
+                    
+                    <div class="bg-brand-card p-8 rounded-3xl border border-white/5 shadow-2xl">
+                        <blockquote class="text-lg italic text-slate-400 mb-8 font-serif">
+                            「祭司對他們說：『你們可以平平安安地去，你們所行的道路是在耶和華面前的。』」
+                        </blockquote>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-brand-gold font-bold flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    <strong class="text-white">平平安安 (shalom)</strong>：這祭司所說的「平安」完全是順水推舟的場面話。他沒有真正求問耶和華，只是給了探子一個他們想聽的答案。
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-brand-gold font-bold flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 10-2 0h-1a1 1 0 100 2h1a1 1 0 102 0zm-7 5a1 1 0 10-2 0v1a1 1 0 102 0v-1zM5.05 6.464a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM5 10a1 1 0 10-2 0H2a1 1 0 100 2h1a1 1 0 102 0zm.757 4.95a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM10 18a1 1 0 100-2v-1a1 1 0 10-2 0v1a1 1 0 100 2z" /></svg>
+                                    問題與解答
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    <strong class="text-white">Q: 我們是尋求神心意，還是尋求神批准我們的計畫？</strong><br>
+                                    解析：但支派找私設祭司求問。當心存私慾時，我們會自動過濾反對聲，只聽能迎合自己的虛假印證，這其實是一種屬靈的自欺。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row gap-8 items-center">
+                            <div class="flex-1 italic text-brand-accent">「人最大的悲劇，就是把自己的心意當作神的旨意，然後用一生的時間去證明它是對的。」—— 陶恕</div>
+                            <div class="flex-1 text-sm text-slate-400">
+                                <span class="text-brand-gold font-bold">故事例證：</span>商人在法律灰色地帶投資，刻意避開正直長老，去問只說好話的朋友，獲得「神開路」的假平安感。
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 Detail -->
+                <article id="section-3" class="scroll-mt-24 space-y-12">
+                    <div class="border-l-4 border-brand-gold pl-6">
+                        <h3 class="text-2xl md:text-4xl font-serif font-bold mb-4">第三段：捏造的捷徑與虛假的安全——當欺凌弱小被誤認為神的祝福</h3>
+                        <p class="text-brand-accent font-medium">經文：士 18:7-12</p>
+                    </div>
+                    
+                    <div class="bg-brand-card p-8 rounded-3xl border border-white/5 shadow-2xl">
+                        <blockquote class="text-lg italic text-slate-400 mb-8 font-serif">
+                            「神已將那地交在你們手中；那地百物俱全，一無所缺。」
+                        </blockquote>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-brand-gold font-bold flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                                    關鍵原文
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    <strong class="text-white">安居無慮 (shaqat & betach)</strong>：指拉億人處於沒有防備、與世無爭的狀態。但支派不敢打亞摩利人，卻選擇欺負弱小的拉億人，並解讀為「神交給他們」。
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-brand-gold font-bold flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 10-2 0h-1a1 1 0 100 2h1a1 1 0 102 0zm-7 5a1 1 0 10-2 0v1a1 1 0 102 0v-1zM5.05 6.464a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM5 10a1 1 0 10-2 0H2a1 1 0 100 2h1a1 1 0 102 0zm.757 4.95a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM10 18a1 1 0 100-2v-1a1 1 0 10-2 0v1a1 1 0 100 2z" /></svg>
+                                    問題與解答
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    <strong class="text-white">Q: 環境順利是否等同於神的旨意？</strong><br>
+                                    解析：極大的屬靈陷阱。通往滅亡的路往往寬闊平坦。神旨意常伴隨十字架代價，而非藉由犧牲別人來成就自己的順利。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row gap-8 items-center">
+                            <div class="flex-1 italic text-brand-accent">「我們很容易把環境的順遂當作神喜悅的印證，卻忘記了通往滅亡的路也是寬闊平坦的。」—— 司布真</div>
+                            <div class="flex-1 text-sm text-slate-400">
+                                <span class="text-brand-gold font-bold">故事例證：</span>職場上踩著老實同事上位，過程異常順利。雖然可能自稱「神祝福」，但神絕不會違背公義屬性去祝福充滿算計的捷徑。
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Summary & Application -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="bg-gradient-to-br from-brand-gold/20 to-transparent p-12 rounded-3xl border border-brand-gold/10">
+                <h2 class="text-3xl font-serif font-bold text-brand-gold mb-8">講道應用方向</h2>
+                <ul class="space-y-6 text-slate-300 text-lg">
+                    <li class="flex gap-4">
+                        <span class="text-brand-gold font-bold">01</span>
+                        <p>檢視生命的「未得之地」：反省目前在那一個領域（克服罪、修復關係、事奉）正在逃避呼召。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-brand-gold font-bold">02</span>
+                        <p>重塑尋求神旨意的動機：檢驗自己禱告時是帶著「降服」還是「既定結論」。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-brand-gold font-bold">03</span>
+                        <p>打破「順利即神意」迷思：拒絕那些違背道德、欺凌弱小卻看似天賜良機的捷徑。</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-brand-card p-12 rounded-3xl border border-white/5 flex flex-col justify-center items-center text-center">
+                <h2 class="text-3xl font-serif font-bold text-brand-gold mb-8">結論關鍵字</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <span class="text-4xl md:text-6xl font-black text-white tracking-widest px-6 py-2 border-b-2 border-brand-gold">命定</span>
+                    <span class="text-4xl md:text-6xl font-black text-white tracking-widest px-6 py-2 border-b-2 border-brand-gold">察驗</span>
+                    <span class="text-4xl md:text-6xl font-black text-white tracking-widest px-6 py-2 border-b-2 border-brand-gold">順服</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Items -->
+        <section class="space-y-12">
+            <h2 class="text-3xl font-serif font-bold text-center text-brand-gold">回應與實踐行動</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                    <div class="text-brand-gold mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" /></svg></div>
+                    <h3 class="text-xl font-bold mb-3">直面挑戰的禱告</h3>
+                    <p class="text-slate-400">本週列出一件你一直在逃避的事，每天禱告10分鐘，求神賜下勇氣。</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                    <div class="text-brand-gold mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg></div>
+                    <h3 class="text-xl font-bold mb-3">安靜聆聽的操練</h3>
+                    <p class="text-slate-400">重大決定前，停止尋求人的意見，花一天時間禁食或獨處察驗神的心意。</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                    <div class="text-brand-gold mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                    <h3 class="text-xl font-bold mb-3">拒絕不義的捷徑</h3>
+                    <p class="text-slate-400">若有任何建立在「佔他人便宜」或「妥協真理」上的安逸，勇敢放棄。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Transcript -->
+        <section id="sermon" class="scroll-mt-24 max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-black text-brand-gold mb-4">講章文稿</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+            <div class="prose prose-invert prose-lg max-w-none space-y-10 text-slate-300 leading-loose">
+                <p class="text-2xl font-bold text-white text-center mb-12">士18:1-12：迷失的尋覓：當私慾取代了神的命定</p>
+                
+                <p>弟兄姊妹們，今天我們要從士師記18章來看一個關於迷失的故事。今天這段經文的背景，充滿了混亂與妥協。正如<span class="text-brand-gold font-bold">「那時，以色列中沒有王。但支派的人仍在尋地居住；因為到那日子，他們還沒有在以色列支派中得地為業。」（士師記 18:1）</span>這節<span class="text-brand-gold">金句</span>所點出的，當人心中沒有讓神作王時，生活就會陷入一種焦躁的「尋找」中。</p>
+
+                <div class="bg-brand-gold/5 p-8 border-l-2 border-brand-gold rounded-r-xl">
+                    <h4 class="text-white font-bold text-xl mb-4">第一段：逃避命定的尋覓</h4>
+                    <p>但支派的人為什麼要「尋地居住」？神難道沒有分給他們產業嗎？有的。在約書亞記中，神早就劃定了他們的應許之地。但是，他們面對當地強悍的亞摩利人，遭遇了鐵車的威脅，他們害怕了、退縮了。他們不願意付代價去爭戰，於是選擇了逃避。這引發了一個<span class="text-brand-gold underline decoration-brand-gold/30 underline-offset-8">關鍵問題：我們是否也常因為眼前的困難，而放棄了神原本託付給我們的責任，轉而去尋找一條「看似上帝開路」的捷徑？</span></p>
+                </div>
+
+                <div class="bg-brand-gold/5 p-8 border-l-2 border-brand-gold rounded-r-xl">
+                    <h4 class="text-white font-bold text-xl mb-4">第二段：虛妄的屬靈印證</h4>
+                    <p>五個探子來到米迦的家，遇到一個為了錢財受雇的假祭司。探子問他：「請你求問神，我們所行的道路通達不通達？」祭司順口就回答：<span class="text-white italic">「你們可以平平安安地去，你們所行的道路是在耶和華面前的。」</span>（士 18:6）。這是一個極大的警鐘！當我們心中已經充滿了私慾，我們常常只聽那些能迎合我們的虛假印證。</p>
+                </div>
+
+                <div class="bg-brand-gold/5 p-8 border-l-2 border-brand-gold rounded-r-xl">
+                    <h4 class="text-white font-bold text-xl mb-4">第三段：捏造的捷徑與虛假的安全</h4>
+                    <p>探子報告說：<span class="text-white italic">「神已將那地交在你們手中；那地百物俱全，一無所缺。」</span>這聽起來多屬靈啊！但這真的是神的帶領嗎？神要他們去打的是迦南的強敵，他們卻去欺負毫無防備的弱小群體。<span class="text-brand-gold underline decoration-brand-gold/30 underline-offset-8">環境的順利、道路的通達，是否就等於是神的旨意？</span>絕對不是！</p>
+                </div>
+
+                <p class="text-xl text-center text-brand-accent py-8 font-serif italic border-y border-white/10">
+                    弟兄姊妹，讓我們從但支派的失敗中學到教訓。求神幫助我們不逃避祂的命定，不尋求虛假的印證，也不走妥協的捷徑。願我們都能勇敢面對神量給我們的真實產業！
+                </p>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 space-y-16">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-5xl font-serif font-black text-brand-gold mb-4">屬靈名言佳句</h2>
+                <p class="text-slate-500">智慧先賢的提醒</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Quote cards -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 hover:border-brand-gold/30 transition-all flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">「十字架是基督信仰的中心，任何繞過十字架去尋求榮耀與安逸的企圖，都是對福音的背叛。」</p>
+                    <div class="text-brand-gold font-bold text-sm">—— 約翰·史托德</div>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 hover:border-brand-gold/30 transition-all flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">「在這個充滿即溶咖啡與速成方案的世界裡，跟隨耶穌意味著一種長期的、在同一個方向上的順服。」</p>
+                    <div class="text-brand-gold font-bold text-sm">—— 畢德生</div>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 hover:border-brand-gold/30 transition-all flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">「如果你心中的某個渴望變得如此絕對，以至於你願意為了得到它而違背神的律法，那就是你的偶像。」</p>
+                    <div class="text-brand-gold font-bold text-sm">—— 提摩太·凱勒</div>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 hover:border-brand-gold/30 transition-all flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">「我們今天太常把『平安』當作神旨意的唯一印證，卻忘了耶穌在客西馬尼園裡極其傷痛，但祂仍行在神的旨意中。」</p>
+                    <div class="text-brand-gold font-bold text-sm">—— 大衛·鮑森</div>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 hover:border-brand-gold/30 transition-all flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">「誘惑往往不是引誘我們去做明顯的壞事，而是引誘我們去走一條沒有十字架的捷徑。」</p>
+                    <div class="text-brand-gold font-bold text-sm">—— 盧雲</div>
+                </div>
+                <div class="bg-brand-card p-8 rounded-3xl border border-white/5 hover:border-brand-gold/30 transition-all flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">「真正的降服，是當我們來到神面前，不再帶著自己的計畫請祂蓋章，而是交出一張白紙，請祂在上面寫下祂的旨意。」</p>
+                    <div class="text-brand-gold font-bold text-sm">—— 慕安德烈</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="py-12 border-t border-white/5 text-center">
+            <p class="text-slate-600 text-sm tracking-widest">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold rounded-full flex items-center justify-center text-brand-dark floating-btn hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+</body>
+</html>

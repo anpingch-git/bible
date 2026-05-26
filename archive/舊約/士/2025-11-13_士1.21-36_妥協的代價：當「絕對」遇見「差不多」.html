@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士1:21-36：妥協的代價：當「絕對」遇見「差不多」</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FFD700',
+                            DEFAULT: '#C5A059',
+                            dark: '#8B6B23',
+                        },
+                        brand: {
+                            bg: '#0A0A0B',
+                            card: '#161618',
+                            accent: '#E5C07B',
+                            text: '#E2E2E2',
+                            danger: '#FF4D4D'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'subtle-float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E2E2;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: #161618;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(229, 192, 123, 0.3);
+            transform: translateY(-2px);
+        }
+        .text-jump {
+            display: inline-block;
+            animation: subtle-float 3s ease-in-out infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #E5C07B 0%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-anchor {
+            scroll-margin-top: 100px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '士1:21-36',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '士',         // 動態注入書卷縮寫，例如：出
+              'note_title': '妥協的代價：當「絕對」遇見「差不多」' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-4 md:px-8">
+        <div class="max-w-6xl mx-auto w-full flex justify-between items-center overflow-x-auto whitespace-nowrap gap-6 no-scrollbar">
+            <span class="font-display font-bold text-brand-accent text-sm md:text-base">士1:21-36</span>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#prayer" class="hover:text-brand-accent transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-brand-accent transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-brand-accent transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-brand-accent transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <div class="absolute inset-0 animate-breath">
+            <img src='image/img_fa3811d8-53f4-4316-8d83-8adfa1a214a2.jpg' alt='Banner' class="w-full h-full object-cover" />
+        </div>
+        <div class="relative z-20 text-center px-6">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-4 leading-tight tracking-tight">
+                士1:21-36<br>
+                <span class="gradient-text">妥協的代價</span>
+            </h1>
+            <p class="text-lg md:text-2xl font-light tracking-widest text-gray-300">當「差不多」成為致命傷</p>
+        </div>
+    </header>
+
+    <!-- Golden Verse (Absolute Floating) -->
+    <div class="relative z-30 -mt-20 px-6 max-w-4xl mx-auto text-center">
+        <div class="text-jump">
+            <p class="text-xl md:text-3xl font-medium leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+                「及至以色列強盛了，就使迦南人做苦工，沒有把他們全然趕出。」
+            </p>
+            <p class="mt-2 text-brand-accent font-display text-sm md:text-lg">（士師記 1:28）</p>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor">
+            <div class="bento-card rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 opacity-5 group-hover:opacity-10 transition-opacity">
+                    <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-brand-accent/10 rounded-xl text-brand-accent">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-4.5v-9L12 3l8 4.5v9l-8 4.5z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold font-display">禱告詞</h2>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 first-letter:text-5xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:text-brand-accent">
+                    主阿，我們來到祢面前，承認我們的心常常充滿了妥協。我們像昔日的以色列人一樣，在祢絕對的命令面前，選擇了對自己有利的捷徑；在面對生命中的罪與世俗時，我們常常只求「受控」，卻不願「全然趕出」。求祢的聖靈光照我們，讓我們看見任何一點點的妥協，最終都將成為生命中的網羅。賜給我們徹底順服的勇氣，不計算代價地追求聖潔，將我們生命的主權完全交給祢。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="section-anchor">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-brand-accent/10 rounded-xl text-brand-accent">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">大綱導覽</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="bento-card p-6 rounded-2xl border-l-4 border-l-brand-accent hover:bg-white/5 transition-all">
+                    <span class="text-xs text-brand-accent font-bold uppercase tracking-widest">Part 01</span>
+                    <h3 class="mt-2 text-xl font-bold">捷徑的誘惑</h3>
+                    <p class="mt-1 text-sm text-gray-400">當「人意恩待」取代「神聖旨意」</p>
+                    <p class="mt-4 text-xs font-mono opacity-60">士 1:21-26</p>
+                </a>
+                <a href="#section2" class="bento-card p-6 rounded-2xl border-l-4 border-l-brand-accent hover:bg-white/5 transition-all">
+                    <span class="text-xs text-brand-accent font-bold uppercase tracking-widest">Part 02</span>
+                    <h3 class="mt-2 text-xl font-bold">現實的算計</h3>
+                    <p class="mt-1 text-sm text-gray-400">當「利益價值」凌駕「絕對順服」</p>
+                    <p class="mt-4 text-xs font-mono opacity-60">士 1:27-33</p>
+                </a>
+                <a href="#section3" class="bento-card p-6 rounded-2xl border-l-4 border-l-brand-accent hover:bg-white/5 transition-all">
+                    <span class="text-xs text-brand-accent font-bold uppercase tracking-widest">Part 03</span>
+                    <h3 class="mt-2 text-xl font-bold">主權的喪失</h3>
+                    <p class="mt-1 text-sm text-gray-400">當「與罪共存」演變為「被罪轄制」</p>
+                    <p class="mt-4 text-xs font-mono opacity-60">士 1:34-36</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Sections -->
+        <div class="space-y-24">
+            <!-- Section 1 Details -->
+            <section id="section1" class="section-anchor">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="sticky top-24">
+                            <h3 class="text-brand-accent font-black text-6xl opacity-20 mb-2 font-display">01</h3>
+                            <h2 class="text-3xl font-bold mb-6">捷徑的誘惑</h2>
+                            <div class="bento-card p-6 rounded-xl space-y-4">
+                                <div>
+                                    <h4 class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-1">關鍵原文</h4>
+                                    <p class="text-lg font-medium italic">恩待 (hesed)</p>
+                                    <p class="text-sm text-gray-400">此字在舊約中常指「慈愛、忠誠、立約的愛」。將屬神的「恩待」錯置在神已下令當滅的迦南人身上，是對神命令的背叛。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-brand-card p-8 rounded-3xl border border-white/5">
+                            <h4 class="text-sm font-bold text-brand-accent mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 007 7.938V4.804zM11 4.804v15.134A7.998 7.998 0 0018 12a7.993 7.993 0 00-7-7.196z"></path></svg>
+                                引用經文 (士師記 1:21-26)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed italic">
+                                便雅憫人沒有趕出住耶路撒冷的耶布斯人...約瑟家也上去攻打伯特利...窺探的人對那人說：「求你將進城的路指示我們，我們必恩待你。」那人指示他們，他們就用刀擊殺了城中的居民，但將那人和他全家放去。那人往赫人之地去，築了一座城，起名叫路斯...
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-accent mb-2">問題與回答</h4>
+                                <p class="text-gray-300">約瑟家依靠人的方法而非仰望神。未被徹底對付的罪只是換了地方滋生。對罪的「仁慈」，就是對神聖潔的輕忽。</p>
+                            </div>
+                            <div class="p-6 bg-brand-accent/5 rounded-2xl border-l-2 border-brand-accent">
+                                <h4 class="text-lg font-bold mb-2">「拔除草根」</h4>
+                                <p class="text-gray-400 text-sm">妥協的罪就像未拔除的草根，它總會在他處重建「路斯」。只剪去上半部，最終會扼殺整個花園。</p>
+                            </div>
+                            <blockquote class="border-t border-b border-white/10 py-6 text-center italic text-xl text-gray-200">
+                                「廉價的恩典是我們教會的死敵。」 —— 潘霍華
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 Details -->
+            <section id="section2" class="section-anchor">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4 space-y-6 lg:order-last">
+                        <div class="sticky top-24">
+                            <h3 class="text-brand-accent font-black text-6xl opacity-20 mb-2 font-display">02</h3>
+                            <h2 class="text-3xl font-bold mb-6">現實的算計</h2>
+                            <div class="bento-card p-6 rounded-xl space-y-4">
+                                <div>
+                                    <h4 class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-1">關鍵原文</h4>
+                                    <p class="text-lg font-medium italic">全然趕出 (yarash) / 做苦工 (mas)</p>
+                                    <p class="text-sm text-gray-400">前者意為佔有與驅逐；後者意為經濟利益的強迫勞役。實用主義取代了神的聖潔標準。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-brand-card p-8 rounded-3xl border border-white/5">
+                            <h4 class="text-sm font-bold text-brand-accent mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 007 7.938V4.804zM11 4.804v15.134A7.998 7.998 0 0018 12a7.993 7.993 0 00-7-7.196z"></path></svg>
+                                引用經文 (士師記 1:27-33)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed italic">
+                                瑪拿西沒有趕出...迦南人卻執意住在那些地方。及至以色列強盛了，就使迦南人做苦工，沒有把他們全然趕出...亞設因為沒有趕出那地的迦南人，就住在他們中間...
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-accent mb-2">問題與回答</h4>
+                                <p class="text-gray-300">以色列人「強盛了」之後，有能力順服神時卻選擇了經濟利益。不順服的原因已經從「不能」變成了「不肯」。</p>
+                            </div>
+                            <div class="p-6 bg-brand-accent/5 rounded-2xl border-l-2 border-brand-accent">
+                                <h4 class="text-lg font-bold mb-2">「遊走邊緣的企業」</h4>
+                                <p class="text-gray-400 text-sm">起初無力改變潛規則，壯大後卻捨不得利潤。這種妥協最終會腐蝕文化，摧毀屬靈見證。</p>
+                            </div>
+                            <blockquote class="border-t border-b border-white/10 py-6 text-center italic text-xl text-gray-200">
+                                「部分順服，等同於不順服。」 —— 陶恕
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 Details -->
+            <section id="section3" class="section-anchor">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="sticky top-24">
+                            <h3 class="text-brand-accent font-black text-6xl opacity-20 mb-2 font-display">03</h3>
+                            <h2 class="text-3xl font-bold mb-6">主權的喪失</h2>
+                            <div class="bento-card p-6 rounded-xl space-y-4">
+                                <div>
+                                    <h4 class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-1">關鍵原文</h4>
+                                    <p class="text-lg font-medium italic">強逼 (lachats) / 不容 (lo nathan)</p>
+                                    <p class="text-sm text-gray-400">壓迫與不允許。這揭示了屬靈律：如果你不征服罪，罪就會征服你。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-brand-card p-8 rounded-3xl border border-white/5">
+                            <h4 class="text-sm font-bold text-brand-accent mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a7.998 7.998 0 007 7.938V4.804zM11 4.804v15.134A7.998 7.998 0 0018 12a7.993 7.993 0 00-7-7.196z"></path></svg>
+                                引用經文 (士師記 1:34-36)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed italic">
+                                亞摩利人強逼但人退到山地，不容他們下到平原；亞摩利人卻執意住在希烈山...然而約瑟家勝了他們，使他們成了服苦的人。
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-accent mb-2">問題與回答</h4>
+                                <p class="text-gray-300">我們以為可以掌控罪惡，但妥協的最終結果往往是失去神賜予的產業和平原，被擠壓到狹窄窒息的山地。</p>
+                            </div>
+                            <div class="p-6 bg-brand-accent/5 rounded-2xl border-l-2 border-brand-accent">
+                                <h4 class="text-lg font-bold mb-2">「溫水煮青蛙」</h4>
+                                <p class="text-gray-400 text-sm">以為能掌控環境，但隨著溫度升高慢慢失去力量，最終無力跳出，喪失立足之地。</p>
+                            </div>
+                            <blockquote class="border-t border-b border-white/10 py-6 text-center italic text-xl text-gray-200">
+                                「除非我們治死罪，否則罪將治死我們。」 —— 司布真
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-anchor">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-brand-accent/10 rounded-xl text-brand-accent">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM7 8h5M7 12h8M7 16h8"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">講章文稿</h2>
+            </div>
+            
+            <div class="bento-card rounded-3xl p-8 md:p-16 space-y-10 prose prose-invert max-w-none">
+                <header class="text-center">
+                    <h3 class="text-2xl md:text-4xl font-bold text-brand-accent leading-tight">士1:21-36：妥協的代價：當「差不多」成為致命傷</h3>
+                </header>
+
+                <div class="space-y-6 text-gray-300 text-lg leading-relaxed">
+                    <p>各位弟兄姊妹，平安。當我們讀到士師記第一章的時候，我們看到的是一幅令人遺憾的圖畫。以色列人剛剛在約書亞的帶領下，經歷了輝煌的勝利。神已經把應許之地賜給了他們，現在，他們只需要上去，憑著信心得地為業。可是，從第21節開始，我們不斷讀到一個令人心痛的短語：「<strong class="text-brand-danger">沒有趕出</strong>」。</p>
+
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-brand-accent pl-4">第一段：捷徑的誘惑——當「人意恩待」取代「神聖旨意」</h4>
+                    <p>首先，我們來看約瑟家的故事。他們沒有尋求神的方法，而是派探子去，用人的方法賄賂了一個城裡的人。看起來，這是一個極其聰明的戰術！沒有傷亡，不費吹灰之力就拿下了城池。但是結果呢？那個人到了赫人之地，<strong class="text-white">「築了一座城，起名叫路斯。」</strong></p>
+                    <p>這就是妥協的第一步：捷徑的誘惑。在職場上、在生活裡，我們遇到困難時，首先想到的不是「神要我怎麼做」，而是「怎麼做最快」。但請記住：<span class="text-brand-accent font-bold">當我們對罪惡心慈手軟時，那未被對付的罪，遲早會在我們生命的另一處，建立起另一座「路斯城」。</span></p>
+
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-brand-accent pl-4">第二段：現實的算計——當「利益價值」凌駕「絕對順服」</h4>
+                    <p>接下來，妥協進入了第二階段。請注意金句：<span class="text-white font-bold bg-brand-accent/20 px-2">「及至以色列強盛了，就使迦南人做苦工，沒有把他們全然趕出。」</span></p>
+                    <p>這節經文揭露了真相。當他們「強盛了」，有絕對優勢時，他們依然「沒有趕出」。為什麼？因為利益。迦南人可以做苦工，可以帶來財富。此時，<strong class="text-brand-danger">不順服的理由已經從「不能」，變成了「不肯」</strong>。你我的生命中，有沒有一些「為我們做苦工的迦南人」？你以為你控制了它，但部分順服等同於不順服。當你選擇了利益而放棄了聖潔，你已經失去了屬靈的根基。</p>
+
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-brand-accent pl-4">第三段：主權的喪失——當「與罪共存」演變為「被罪轄制」</h4>
+                    <p>最後，這種妥協帶來了終極後果：<strong class="text-white">「亞摩利人強逼但人退到山地，不容他們下到平原。」</strong></p>
+                    <p>但支派不再是征服者，反而變成了被壓迫者。這就是妥協的可怕：一開始以為可以共存，接著以為可以利用，最終必然被轄制。屬靈的戰場上沒有中立區，沒有停戰協議。我們生命中那些不願趕出的「亞摩利人」，最終會奪走我們的平安。</p>
+                </div>
+
+                <div class="pt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="p-4 bg-brand-accent/10 rounded-xl border border-brand-accent/30">
+                        <span class="text-xs uppercase tracking-widest text-brand-accent font-bold">結論關鍵字</span>
+                        <p class="text-2xl font-black mt-1">順服 (Obedience)</p>
+                    </div>
+                    <div class="p-4 bg-brand-accent/10 rounded-xl border border-brand-accent/30">
+                        <span class="text-xs uppercase tracking-widest text-brand-accent font-bold">結論關鍵字</span>
+                        <p class="text-2xl font-black mt-1">妥協 (Compromise)</p>
+                    </div>
+                    <div class="p-4 bg-brand-accent/10 rounded-xl border border-brand-accent/30">
+                        <span class="text-xs uppercase tracking-widest text-brand-accent font-bold">結論關鍵字</span>
+                        <p class="text-2xl font-black mt-1">聖潔 (Holiness)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action & Direction -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bento-card p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-full bg-brand-accent text-brand-bg flex items-center justify-center text-sm">1</span>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3">
+                        <span class="text-brand-accent">✦</span>
+                        檢視生命中的「路斯」：反省是否在某些事上用了捷徑，卻留下了罪惡種子。
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-brand-accent">✦</span>
+                        打破「實用主義」：檢視事業與人際，是否為了利益違背聖潔原則。
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-brand-accent">✦</span>
+                        拒絕與罪惡共存：認清容忍小罪必導致大敗，勇敢對付隱而未現的罪。
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-full bg-brand-accent text-brand-bg flex items-center justify-center text-sm">2</span>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3">
+                        <span class="text-brand-accent font-bold font-display">Action 1</span>
+                        寫下一個妥協的清單，求聖靈光照。
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-brand-accent font-bold font-display">Action 2</span>
+                        尋求守望者，向屬靈成熟肢體承認並請其禱告。
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-brand-accent font-bold font-display">Action 3</span>
+                        在24小時內採取具體的切斷行動（刪除APP或停止不當利潤）。
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 bg-brand-accent/10 rounded-xl text-brand-accent">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold font-display">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「只有順服的人才相信，也只有相信的人才順服。」 —— <span class="font-bold text-brand-accent">潘霍華</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「神不能使用一個心懷二意的人。我們若不願將自己完全獻給祂，祂就無法將祂的豐盛傾倒在我們身上。」 —— <span class="font-bold text-brand-accent">陶恕</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「偶像就是任何比上帝對你更重要的事物...任何你認為藉此可以得到那唯獨上帝才能賜予的東西。」 —— <span class="font-bold text-brand-accent">提摩太·凱勒</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「我們不能在與罪妥協的同時，又期待享受與神親密的交通。」 —— <span class="font-bold text-brand-accent">司布真</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「除非我們徹底意識到自己的敗壞，否則我們永遠不會真誠地尋求神的恩典。」 —— <span class="font-bold text-brand-accent">約翰·加爾文</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「這個世界尚未看到一個完全絕對奉獻給神的人，神能藉著他成就何等大的事。」 —— <span class="font-bold text-brand-accent">慕迪</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「十字架不僅是我們得救的根基，也是我們生活的準則。」 —— <span class="font-bold text-brand-accent">約翰·史托德</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「真正的宗教信仰核心在於聖潔的情感；而這情感必然引導人產生真實的順服。」 —— <span class="font-bold text-brand-accent">喬納森·愛德華茲</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「基督徒的生命不在於靜止不動，而在於從善走向更好的過程。」 —— <span class="font-bold text-brand-accent">馬丁·路德</span>
+                </div>
+                <div class="bento-card p-6 rounded-2xl italic border-l border-brand-accent/30">
+                    「你若在真理上妥協，你就是對魔鬼開門；教會若不對罪惡發出公義的怒吼，就會失去她存在的價值。」 —— <span class="font-bold text-brand-accent">唐崇榮</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Message -->
+        <div class="text-center py-12">
+            <div class="inline-block px-6 py-2 rounded-full bg-brand-danger/10 text-brand-danger border border-brand-danger/20 text-sm">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-accent rounded-full flex items-center justify-center text-brand-bg shadow-2xl hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for the jump links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    return;
+                }
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

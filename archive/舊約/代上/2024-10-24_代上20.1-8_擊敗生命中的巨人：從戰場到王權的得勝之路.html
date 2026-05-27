@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代上20:1-8:擊敗生命中的巨人：從戰場到王權的得勝之路</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            accent: '#FF4D4D',
+                            dark: '#0A0A0B',
+                            card: '#161618',
+                            muted: '#A0A0AB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                            '50%': { transform: 'scale(1.05)', opacity: '0.9' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(22, 22, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: #161618;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: #D4AF37;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F8E4A0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtle-pulse 2.5s infinite ease-in-out;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代上20:1-8',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '擊敗生命中的巨人：從戰場到王權的得勝之路' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-brand-dark text-gray-100 font-sans selection:bg-brand-gold selection:text-black">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="font-display font-bold text-brand-gold tracking-tight hidden sm:block">代上 20:1-8</span>
+            <div class="flex gap-6 text-sm font-medium tracking-widest overflow-x-auto whitespace-nowrap">
+                <a href="#prayer" class="hover:text-brand-gold transition-colors uppercase">禱告</a>
+                <a href="#outline" class="hover:text-brand-gold transition-colors uppercase">大綱</a>
+                <a href="#sermon" class="hover:text-brand-gold transition-colors uppercase">講章</a>
+                <a href="#quotes" class="hover:text-brand-gold transition-colors uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header id="header" class="relative h-[85vh] w-full overflow-hidden flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_c7ac23cb-bcda-4f2a-a421-2d6cba032167.jpg' alt='Banner Image' class="w-full h-full object-cover animate-breath brightness-75" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-dark/20 to-brand-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <div class="mb-6 flex justify-center">
+                <span class="px-4 py-1 border border-brand-gold text-brand-gold text-xs tracking-[0.3em] uppercase rounded-full">Sermon Archive</span>
+            </div>
+            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+                擊敗生命中的<span class="text-gradient">巨人</span>
+                <span class="block text-2xl md:text-3xl mt-4 font-light text-gray-300">從戰場到王權的得勝之路</span>
+            </h1>
+            
+            <!-- Golden Verse (Jump Text) -->
+            <div class="mt-12 max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl font-medium leading-relaxed italic text-white jump-text">
+                    「這三個人是迦特偉人的兒子，都死在大衛和他僕人的手下。」
+                </p>
+                <p class="mt-4 text-brand-gold font-display font-bold">—— 歷代志上 20:8</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-32 py-20">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="absolute -left-10 top-0 text-brand-gold/10 text-9xl font-black opacity-20 pointer-events-none">PRAYER</div>
+            <div class="flex flex-col md:flex-row items-center gap-12 bento-card p-8 md:p-16 rounded-3xl relative overflow-hidden">
+                <div class="text-brand-gold">
+                    <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-4.5v-9L12 3l8 4.5v9L12 21z M12 12l8-4.5 M12 12v9 M12 12l-8-4.5"></path></svg>
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold mb-6 flex items-center gap-4">
+                        開路禱告
+                    </h2>
+                    <p class="text-xl leading-loose text-gray-300 font-light">
+                        主阿，我們感謝祢，因祢是萬軍之耶和華，是率領我們爭戰得勝的元帥。求祢賜給我們屬靈的洞察力，使我們在安逸中保持警醒，不容黑暗的破口留存；求祢賜給我們屬天的勇氣，使我們在面對生命中看似不可戰勝的「巨人」時，能倚靠祢的大能挺身而出。願祢興起教會，如同大衛和他的勇士一般，彼此扶持、世代傳承，將得勝的旌旗插在每一處屬靈的戰場上。奉主耶穌基督得勝的名求，阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold mb-4 tracking-tighter">分段大綱</h2>
+                <p class="text-brand-muted uppercase tracking-widest text-sm italic">Sermon Outline & Key Points</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="group bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-brand-gold font-display text-4xl font-black opacity-30 group-hover:opacity-100 transition-opacity">01</span>
+                        <h3 class="text-xl font-bold mt-4 group-hover:text-brand-gold transition-colors">攻堅與加冕</h3>
+                        <p class="text-sm text-brand-muted mt-2 italic">代上 20:1-3</p>
+                    </div>
+                    <div class="mt-8 flex items-center text-xs text-brand-gold gap-2 uppercase font-bold tracking-widest">
+                        深入解析 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+                <a href="#section-2" class="group bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-brand-gold font-display text-4xl font-black opacity-30 group-hover:opacity-100 transition-opacity">02</span>
+                        <h3 class="text-xl font-bold mt-4 group-hover:text-brand-gold transition-colors">挺身迎敵</h3>
+                        <p class="text-sm text-brand-muted mt-2 italic">代上 20:4-5</p>
+                    </div>
+                    <div class="mt-8 flex items-center text-xs text-brand-gold gap-2 uppercase font-bold tracking-widest">
+                        深入解析 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+                <a href="#section-3" class="group bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-brand-gold font-display text-4xl font-black opacity-30 group-hover:opacity-100 transition-opacity">03</span>
+                        <h3 class="text-xl font-bold mt-4 group-hover:text-brand-gold transition-colors">傳承得勝</h3>
+                        <p class="text-sm text-brand-muted mt-2 italic">代上 20:6-8</p>
+                    </div>
+                    <div class="mt-8 flex items-center text-xs text-brand-gold gap-2 uppercase font-bold tracking-widest">
+                        深入解析 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24 mt-32">
+                <!-- Section 1 Details -->
+                <article id="section-1" class="grid md:grid-cols-12 gap-12 items-start">
+                    <div class="md:col-span-4 sticky top-24">
+                        <div class="p-6 border-l-4 border-brand-gold bg-white/5">
+                            <h4 class="text-brand-gold uppercase tracking-tighter text-sm font-bold mb-2">Section 01</h4>
+                            <h3 class="text-3xl font-bold leading-tight">警惕隱藏在榮耀中的安逸</h3>
+                            <p class="text-brand-muted mt-4 text-sm font-display tracking-widest italic">1 Chronicles 20:1-3</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 space-y-12">
+                        <div class="bento-card p-8 rounded-3xl">
+                            <h5 class="flex items-center gap-2 text-brand-gold font-bold mb-4 uppercase text-sm tracking-widest"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> 引用經文</h5>
+                            <p class="text-gray-300 leading-relaxed italic">「過了一年，到列王出戰的時候，約押率領軍兵毀壞亞捫人的地，圍攻拉巴；大衛仍住在耶路撒冷...」</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="bg-brand-gold/5 p-6 rounded-2xl border border-brand-gold/20">
+                                <span class="text-brand-gold text-xs font-bold uppercase block mb-3">關鍵原文 Keyword</span>
+                                <p class="text-lg mb-1"><strong class="text-brand-gold">tshuwbah</strong> (תְּשׁוּבָה)</p>
+                                <p class="text-sm text-brand-muted">年度循環、轉折點，適合出征的季節。</p>
+                                <hr class="my-4 border-white/10">
+                                <p class="text-lg mb-1"><strong class="text-brand-gold">yashab</strong> (יָשัׁב)</p>
+                                <p class="text-sm text-brand-muted">停留、坐下、居住。暗示與前線形成對比。</p>
+                            </div>
+                            <div class="bg-brand-accent/5 p-6 rounded-2xl border border-brand-accent/20">
+                                <span class="text-brand-accent text-xs font-bold uppercase block mb-3">問題與解析 Q&A</span>
+                                <p class="text-sm font-bold text-brand-accent mb-2">為什麼大衛卻「仍住在耶路撒冷」？</p>
+                                <p class="text-sm text-gray-400 leading-relaxed">這是一個伏筆。屬靈巔峰往往是最容易放鬆警戒的時刻。提醒我們屬靈爭戰沒有「休假」。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-8">
+                            <blockquote class="text-2xl font-light text-gray-300 italic mb-4">
+                                「試探是銼刀，用來磨去我們自信的鐵鏽。」
+                            </blockquote>
+                            <cite class="text-brand-gold font-bold">— 司布真 (Charles Spurgeon)</cite>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 Details -->
+                <article id="section-2" class="grid md:grid-cols-12 gap-12 items-start">
+                    <div class="md:col-span-4 sticky top-24 md:order-last">
+                        <div class="p-6 border-r-4 border-brand-accent bg-white/5 text-right">
+                            <h4 class="text-brand-accent uppercase tracking-tighter text-sm font-bold mb-2">Section 02</h4>
+                            <h3 class="text-3xl font-bold leading-tight">直面接踵而來的巨人</h3>
+                            <p class="text-brand-muted mt-4 text-sm font-display tracking-widest italic">1 Chronicles 20:4-5</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 space-y-12">
+                        <div class="bento-card p-8 rounded-3xl">
+                            <h5 class="flex items-center gap-2 text-brand-accent font-bold mb-4 uppercase text-sm tracking-widest">引用經文</h5>
+                            <p class="text-gray-300 leading-relaxed italic">「後來，以色列人在基色與非利士人打仗。戶沙人西比該殺了偉人的一個兒子細派，非利士人就被制伏了...」</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <span class="text-brand-gold text-xs font-bold uppercase block mb-3">關鍵原文 Keyword</span>
+                                <p class="text-lg text-brand-gold font-bold">rapha (רָפָא)</p>
+                                <p class="text-sm text-brand-muted italic mb-4">利乏音人：身材高大、力量驚人，恐懼的象徵。</p>
+                                <p class="text-lg text-brand-gold font-bold">kana (כָּנַע)</p>
+                                <p class="text-sm text-brand-muted italic">被制伏、屈服。神的大能使驕傲的仇敵屈膝。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <span class="text-brand-gold text-xs font-bold uppercase block mb-3">實踐例證 Example</span>
+                                <p class="text-sm text-gray-300 leading-relaxed">
+                                    如同「打地鼠」遊戲。你剛克服了「驕傲」，「嫉妒」又冒出來。我們必須依靠聖靈，見一個打一個，永不妥協。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-8">
+                            <blockquote class="text-2xl font-light text-gray-300 italic mb-4">
+                                「你無法阻止鳥兒從你頭上飛過，但你可以阻止牠們在你頭髮裡築巢。」
+                            </blockquote>
+                            <cite class="text-brand-gold font-bold">— 馬丁·路德 (Martin Luther)</cite>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 Details -->
+                <article id="section-3" class="grid md:grid-cols-12 gap-12 items-start">
+                    <div class="md:col-span-4 sticky top-24">
+                        <div class="p-6 border-l-4 border-brand-gold bg-white/5">
+                            <h4 class="text-brand-gold uppercase tracking-tighter text-sm font-bold mb-2">Section 03</h4>
+                            <h3 class="text-3xl font-bold leading-tight">團隊作戰除滅殘存黑暗</h3>
+                            <p class="text-brand-muted mt-4 text-sm font-display tracking-widest italic">1 Chronicles 20:6-8</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 space-y-12">
+                        <div class="bento-card p-8 rounded-3xl">
+                            <h5 class="flex items-center gap-2 text-brand-gold font-bold mb-4 uppercase text-sm tracking-widest">引用經文</h5>
+                            <p class="text-gray-300 leading-relaxed italic">「這三個人是迦特偉人的兒子，都死在大衛和他僕人的手下。」</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-brand-gold/20 to-transparent p-8 rounded-3xl border border-brand-gold/30">
+                            <h5 class="text-brand-gold font-bold mb-4">團隊傳承的屬靈意義</h5>
+                            <p class="text-gray-300 leading-relaxed">
+                                早年大衛獨自面對歌利亞，如今他的勇士與後輩都能擊殺巨人。得勝已經傳承給了團隊。健康的教會不能只依賴一個屬靈偉人，而是要訓練出無數個能爭戰的勇士。
+                            </p>
+                        </div>
+                        <div class="border-t border-white/10 pt-8">
+                            <blockquote class="text-2xl font-light text-gray-300 italic mb-4">
+                                「當基督呼召一個人時，祂是呼召他來為祂死。」
+                            </blockquote>
+                            <cite class="text-brand-gold font-bold">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-16">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center gap-6 mb-12">
+                    <div class="h-[2px] flex-1 bg-brand-gold/30"></div>
+                    <h2 class="text-4xl font-black text-gradient uppercase tracking-widest">講章文稿</h2>
+                    <div class="h-[2px] flex-1 bg-brand-gold/30"></div>
+                </div>
+                
+                <div class="prose prose-invert prose-lg max-w-none space-y-12 text-gray-300 leading-relaxed">
+                    <div class="text-center mb-16">
+                        <h3 class="text-3xl font-bold text-white mb-4 underline decoration-brand-gold decoration-4 underline-offset-8">擊敗生命中的巨人：從戰場到王權的得勝之路</h3>
+                    </div>
+
+                    <p>弟兄姊妹，今天我們要透過《歷代志上》第20章，來看大衛王和他的勇士們如何面對連綿不斷的爭戰。我們的屬靈生命也是一場永無止境的戰役，我們不僅要贏得眼前的勝利，更要防備隱藏的危機，並且將得勝的生命傳承下去。</p>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-brand-gold flex items-center gap-3">
+                            <span class="bg-brand-gold text-black px-2 py-1 text-sm rounded">一</span> 攻堅與加冕：警惕隱藏在榮耀中的安逸
+                        </h4>
+                        <p>經文一開始告訴我們，<span class="text-brand-accent font-bold">「過了一年，到列王出戰的時候……大衛仍住在耶路撒冷。」</span>這是一個極具警示意味的畫面。前方，將帥約押正率領軍隊浴血奮戰；後方，身為最高統帥的大衛，卻選擇留在安逸的王宮中。</p>
+                        <p>後來，大衛得到了極大的榮耀與財富，但正是這個「仍住在耶路撒冷」的決定，讓大衛在安逸中陷入了生命中最黑暗的拔示巴事件。這提醒我們：<span class="text-white bg-brand-gold/20 px-1 font-bold">最大的危機，往往潛伏在我們最安逸、最成功的時刻。</span></p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-brand-gold flex items-center gap-3">
+                            <span class="bg-brand-gold text-black px-2 py-1 text-sm rounded">二</span> 挺身迎敵：直面生命中接踵而來的巨人
+                        </h4>
+                        <p>當亞捫人的戰事告一段落，非利士人的威脅又接踵而來。出現了細派和拉哈米——這些都是迦特「偉人」的後代，其中拉哈米更是當年那令人聞風喪膽的歌利亞的兄弟。</p>
+                        <p>這告訴我們，<span class="text-brand-accent font-bold">擊敗了一個歌利亞，不代表生命中從此沒有巨人。</span>你可能靠著主戒除了一個壞習慣，但過不久，另一個試探又會以不同的面貌出現。神容許這些巨人存在，是為了訓練我們的雙手能夠爭戰！</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-brand-gold flex items-center gap-3">
+                            <span class="bg-brand-gold text-black px-2 py-1 text-sm rounded">三</span> 傳承得勝：團隊作戰除滅殘存的黑暗
+                        </h4>
+                        <p>最後，擊殺巨人的不是大衛，而是大衛的侄子約拿單。金句總結：<span class="text-brand-gold font-black italic">「這三個人是迦特偉人的兒子，都死在大衛和他僕人的手下。」</span></p>
+                        <p><span class="text-white border-b-2 border-brand-gold font-bold">真正的得勝，不是塑造一個無敵的超級英雄，而是建立一個同心合意、能夠聯手除滅黑暗的屬靈群體。</span>離開屬靈的安逸區，勇敢面對那些巨人，並且在教會中彼此扶持、世代傳承。</p>
+                    </div>
+                </div>
+
+                <!-- Summary/Application Bento -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-24">
+                    <div class="bento-card p-10 rounded-3xl bg-gradient-to-br from-brand-gold/10 to-transparent">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 結論關鍵字</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-white/10 px-4 py-2 rounded-lg text-brand-gold font-bold">警醒 Vigilance</span>
+                            <span class="bg-white/10 px-4 py-2 rounded-lg text-brand-gold font-bold">爭戰 Warfare</span>
+                            <span class="bg-white/10 px-4 py-2 rounded-lg text-brand-gold font-bold">得勝 Victory</span>
+                        </div>
+                    </div>
+                    <div class="bento-card p-10 rounded-3xl border-brand-accent/30">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg> 回應行動</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex gap-2"><span>1.</span> 盤點生活中的安逸破口</li>
+                            <li class="flex gap-2"><span>2.</span> 尋找夥伴宣告得勝巨人</li>
+                            <li class="flex gap-2"><span>3.</span> 分享得勝經歷傳承兵器</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="space-y-16">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold mb-4 tracking-tighter">屬靈前輩佳句</h2>
+                <div class="h-1 w-24 bg-brand-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote Cards -->
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-lg text-gray-200 italic mb-4">「神正在尋找那些祂能藉著他們成就『不可能之事』的人。」</p>
+                    <p class="text-brand-gold font-bold text-sm">— 陶恕 (A.W. Tozer) 《渴慕神》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-lg text-gray-200 italic mb-4">「人的心是一座永無止境的偶像製造廠。」</p>
+                    <p class="text-brand-gold font-bold text-sm">— 約翰·加爾文 (John Calvin) 《基督教要義》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-lg text-gray-200 italic mb-4">「福音告訴我們，你比你所敢相信的還要罪惡，但同時也比你所敢盼望的更被愛。」</p>
+                    <p class="text-brand-gold font-bold text-sm">— 提摩太·凱勒 (Timothy Keller) 《揮霍的上帝》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-lg text-gray-200 italic mb-4">「給我一百個除了神之外什麼都不渴求的人；這樣的人就能震動地獄之門。」</p>
+                    <p class="text-brand-gold font-bold text-sm">— 約翰·衛斯理 (John Wesley) 《衛斯理書信集》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-lg text-gray-200 italic mb-4">「在我們自身的創傷中，我們可以成為別人生命的泉源。」</p>
+                    <p class="text-brand-gold font-bold text-sm">— 盧雲 (Henri Nouwen) 《負傷的治療者》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-lg text-gray-200 italic mb-4">「我給自己惹的麻煩，比任何人給我惹的麻煩都多。」</p>
+                    <p class="text-brand-gold font-bold text-sm">— 慕迪 (D.L. Moody) 《慕迪講道集》</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-12">
+                <p class="text-brand-accent font-medium text-sm border border-brand-accent/20 inline-block px-6 py-2 rounded-full">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 group">
+        <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

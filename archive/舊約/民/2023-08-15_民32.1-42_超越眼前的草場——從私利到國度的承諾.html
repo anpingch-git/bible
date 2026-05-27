@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民32:1-42：超越眼前的草場——從私利到國度的承諾</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        accent: '#ff3e00',
+                        deep: '#0a0a0c',
+                        surface: '#16161a',
+                        glass: 'rgba(255, 255, 255, 0.03)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 6s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                        'shake-lite': 'shake-lite 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.05)' },
+                        },
+                        'shake-lite': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '25%': { transform: 'translateY(-2px)' },
+                            '75%': { transform: 'translateY(2px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+        .glass-morphism {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #ff3e00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(251, 191, 36, 0.4);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fbbf24;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民32:1-42',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '超越眼前的草場——從私利到國度的承諾' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-morphism h-16 flex items-center justify-between px-6 md:px-12 border-b border-white/10">
+        <div class="font-display font-bold text-lg md:text-xl tracking-tight text-gold-400">
+            民 32:1-42
+        </div>
+        <div class="flex gap-6 md:gap-8 text-sm font-medium tracking-wide">
+            <a href="#prayer" class="nav-link hover:text-gold-400">禱告</a>
+            <a href="#outline" class="nav-link hover:text-gold-400">大綱</a>
+            <a href="#sermon" class="nav-link hover:text-gold-400">講章</a>
+            <a href="#quotes" class="nav-link hover:text-gold-400">名言</a>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="top" class="relative h-[70vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_a6636356-b3c9-4078-9453-d0eff69924f5.jpg' alt='Banner Image' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-t from-deep via-deep/40 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tighter">
+                超越眼前的<span class="text-gradient">草場</span><br>
+                <span class="text-2xl md:text-4xl font-light opacity-90">從私利到國度的承諾</span>
+            </h1>
+            <div class="animate-shake-lite inline-block">
+                <p class="text-lg md:text-2xl font-medium text-white/90 max-w-2xl mx-auto italic leading-relaxed">
+                    「難道你們的弟兄去打仗，你們竟坐在這裡嗎？」
+                    <span class="block text-sm md:text-base mt-2 opacity-70 font-sans not-italic">— 民數記 32:6 —</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative z-20 px-4 md:px-0 max-w-5xl mx-auto -mt-20 pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-morphism rounded-3xl p-8 md:p-12 mb-16 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10">
+                <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,6V13L16.5,16.25L17.25,15L12.5,12.19V6H11Z" /></svg>
+            </div>
+            <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-8">
+                <span>🙏</span> 禱告開端
+            </h2>
+            <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic">
+                主耶和華，我們感謝祢賜下豐富的恩典與產業。求祢赦免我們常常只看見眼前的青草地，卻忽略了神國度的呼召與弟兄姊妹的需要。求聖靈開啟我們的屬靈視野，賜給我們甘心捨己、與群體同行的勇氣。讓我們不單顧自己的事，更顧念神國度的事，信守與祢、與人的承諾，直到應許之地完全被得著。奉主耶穌基督的聖名祈求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline / Navigation Cards -->
+        <section id="outline" class="mb-16">
+            <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-10">
+                <span>📜</span> 講道大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="section-card bg-surface p-8 rounded-2xl border border-white/5 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-accent font-bold text-sm tracking-widest uppercase mb-4 block">Part 01</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">視角之爭：當眼前利益遮蔽國度呼召</h3>
+                        <p class="text-gray-500 mt-2 text-sm">民 32:1-15</p>
+                    </div>
+                    <div class="mt-8 flex items-center text-gold-500 font-bold text-sm">
+                        深度解析 <span class="ml-2">→</span>
+                    </div>
+                </a>
+                <a href="#part2" class="section-card bg-surface p-8 rounded-2xl border border-white/5 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-accent font-bold text-sm tracking-widest uppercase mb-4 block">Part 02</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">挽回破口：從利己主義到甘心捨己的同工</h3>
+                        <p class="text-gray-500 mt-2 text-sm">民 32:16-27</p>
+                    </div>
+                    <div class="mt-8 flex items-center text-gold-500 font-bold text-sm">
+                        深度解析 <span class="ml-2">→</span>
+                    </div>
+                </a>
+                <a href="#part3" class="section-card bg-surface p-8 rounded-2xl border border-white/5 flex flex-col justify-between group">
+                    <div>
+                        <span class="text-accent font-bold text-sm tracking-widest uppercase mb-4 block">Part 03</span>
+                        <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">恩典之約：在信實與當責中承受應許</h3>
+                        <p class="text-gray-500 mt-2 text-sm">民 32:28-42</p>
+                    </div>
+                    <div class="mt-8 flex items-center text-gold-500 font-bold text-sm">
+                        深度解析 <span class="ml-2">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Deep Dives -->
+        <div class="space-y-16">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="bg-surface/50 rounded-3xl p-8 md:p-12 border border-white/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-accent text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">第一段</span>
+                        <h2 class="text-2xl md:text-4xl font-bold">視角之爭：當眼前利益遮蔽國度呼召</h2>
+                    </div>
+                    <div class="mb-8 p-6 bg-deep/50 rounded-xl border-l-4 border-accent">
+                        <h4 class="text-accent font-bold mb-2">【經文範圍】民 32:1-15</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm md:text-base">流便子孫和迦得子孫的牲畜極其眾多；他們看見雅謝地和基列地是可牧放牲畜之地...求你把這地給僕人為業，不要叫我們過約但河。摩西對...說：「難道你們的弟兄去打仗，你們竟坐在這裡嗎？」</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 italic">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-500 font-bold block">看見 (רָאָה / ra'ah)</span>
+                                    <span class="text-gray-400 text-sm">字面意思是「看見、觀察、注視」。流便和迦得支派的眼光停留在物質層面。</span>
+                                </li>
+                                <li>
+                                    <span class="text-gold-500 font-bold block">灰心喪膽 (נוּא / nuw')</span>
+                                    <span class="text-gray-400 text-sm">原文有「阻礙、使之退縮」的意思。個人的停滯會成為整體的阻力。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 italic">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <span class="font-bold text-white block mb-1">問題：當神賜下豐富恩典時，我們是否容易停滯？</span>
+                                流便與迦得支派因為「牲畜極其眾多」這個上帝所賜的恩典，反而產生了停留在約旦河東的念頭。當我們獲得了安頓，很容易失去為神國度爭戰的動力。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 p-6 bg-glass rounded-2xl border border-white/5 italic text-gray-400 text-sm">
+                        <p class="mb-4">「有一支登山隊伍...兩名隊員覺得這裡已經夠好了，決定留下來喝熱茶休息...他們的決定立刻影響了其他隊員的士氣...我們停在半山腰的「舒適」，往往會成為別人的「灰心」。 」</p>
+                        <p class="text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="bg-surface/50 rounded-3xl p-8 md:p-12 border border-white/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-accent text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">第二段</span>
+                        <h2 class="text-2xl md:text-4xl font-bold">挽回破口：從利己主義到甘心捨己的同工</h2>
+                    </div>
+                    <div class="mb-8 p-6 bg-deep/50 rounded-xl border-l-4 border-accent">
+                        <h4 class="text-accent font-bold mb-2">【經文範圍】民 32:16-27</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm md:text-base">我們要在這裡為牲畜壘圈...我們自己要帶兵器行在以色列人的前頭，好把他們領到他們的地方...直等到以色列人各承受自己的產業。</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 italic">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-500 font-bold block">帶兵器/武裝起來 (חָלוּץ / chaluts)</span>
+                                    <span class="text-gray-400 text-sm">意為「準備好作戰的」。這代表一種積極的備戰狀態。</span>
+                                </li>
+                                <li>
+                                    <span class="text-gold-500 font-bold block">無罪 (נָקִי / naqiy)</span>
+                                    <span class="text-gray-400 text-sm">意為「免除責任」。這表明在神的國度中，沒有盡到對肢體的責任，在神面前就是有罪的。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 italic">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <span class="font-bold text-white block mb-1">問題：如何在追求安頓時，不忽略對神國度的責任？</span>
+                                兩支派提出了平衡方案：先為家人提供安全保障，但男丁不留戀安逸，反而成為先鋒。這啟示我們，照顧家庭與為國度爭戰並不衝突，關鍵在於「優先次序」。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 p-6 bg-glass rounded-2xl border border-white/5 italic text-gray-400 text-sm">
+                        <p class="mb-4">「在第二次世界大戰中...許多人奮勇衝鋒...不是為了抽象的國家利益，而是「為了我身旁的弟兄」。教會中真正的同工關係就像這種「兄弟連」。 」</p>
+                        <p class="text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="bg-surface/50 rounded-3xl p-8 md:p-12 border border-white/5">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="bg-accent text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">第三段</span>
+                        <h2 class="text-2xl md:text-4xl font-bold">恩典之約：在信實與當責中承受應許</h2>
+                    </div>
+                    <div class="mb-8 p-6 bg-deep/50 rounded-xl border-l-4 border-accent">
+                        <h4 class="text-accent font-bold mb-2">【經文範圍】民 32:28-42</h4>
+                        <p class="text-gray-400 leading-relaxed text-sm md:text-base">迦得子孫和流便子孫，凡帶兵器在耶和華面前去打仗的，若與你們一同過約但河，那地被你們制伏了，你們就要把基列地給他們為業。</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 italic">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵原文解析
+                            </h4>
+                            <ul class="space-y-4">
+                                <li>
+                                    <span class="text-gold-500 font-bold block">產業 (אֲחֻזָּה / achuzzah)</span>
+                                    <span class="text-gray-400 text-sm">意為「財產、所有物」。強調穩固所有權，但建立在履行聖約基礎上。</span>
+                                </li>
+                                <li>
+                                    <span class="text-gold-500 font-bold block">吩咐 (צָוָה / tsavah)</span>
+                                    <span class="text-gray-400 text-sm">摩西將約定轉交給未來領袖，建立了一個「當責（Accountability）」的機制。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-gold-400 font-bold flex items-center gap-2 italic">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                關鍵問題與解析
+                            </h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <span class="font-bold text-white block mb-1">問題：承諾如何轉化為行動？我們的約是否經得起考驗？</span>
+                                摩西設立了嚴格的檢驗標準。神國度的建造需要具體的當責機制。兩支派在接下來的十四年中忠心征戰，最終真正得著了產業。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 p-6 bg-glass rounded-2xl border border-white/5 italic text-gray-400 text-sm">
+                        <p class="mb-4">「曾有一家營造廠承接了建造孤兒院的專案...在經費不足時，自掏腰包補貼材料...直到孩子們安全入住。這就是「不折不扣地行你們口中所出的」。信仰也是如此。 」</p>
+                        <p class="text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="mt-24">
+            <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-12">
+                <span>🎤</span> 講章文稿
+            </h2>
+            <article class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300 leading-relaxed">
+                <div class="bg-deep p-10 rounded-[2rem] border border-white/10 shadow-inner">
+                    <p class="text-xl md:text-2xl font-medium text-white mb-8">各位弟兄姊妹，平安！</p>
+                    <p>我們今天來到民數記第32章，此時以色列人經過了四十年的曠野漂流，終於來到了約旦河東。應許之地就在眼前，但就在這即將跨越的關鍵時刻，卻發生了一場可能導致整個民族分裂的危機。今天我們就要透過這段歷史，來探討一個極為重要的主題：<strong class="text-gold-400">超越眼前的草場——從私利到國度的承諾。</strong></p>
+                    
+                    <h3 class="text-gold-500 font-bold text-2xl mt-12 mb-6">第一段：視角之爭</h3>
+                    <p>在經文的第1到15節，流便和迦得支派的人來到摩西面前。他們發現約旦河東的雅謝地和基列地水草豐美，非常適合放牧。因為他們的「牲畜極其眾多」，於是他們向摩西提出了一個請求：「不要叫我們過約旦河，把這地給我們為業吧！」</p>
+                    <p class="bg-accent/10 p-6 rounded-xl border-l-4 border-accent italic">「難道你們的弟兄去打仗，你們竟坐在這裡嗎？」</p>
+                    <p>弟兄姊妹，這句話如雷貫耳。當神賜給我們豐富的恩典——也許是一份好工作、一個幸福的家庭時，我們是不是也容易對主說：「主啊，這樣就很好了，我不想再過約旦河去打仗了」？</p>
+
+                    <h3 class="text-gold-500 font-bold text-2xl mt-12 mb-6">第二段：挽回破口</h3>
+                    <p>面對摩西的雷霆之怒，這兩個支派立刻調整了他們的態度。他們承諾，會先在這裡為婦人孩子造城、為羊群壘圈，但是，所有的男丁都要<strong class="text-white underline decoration-gold-500 underline-offset-4">「帶著兵器行在以色列人的前頭」</strong>，直到所有的弟兄都得著了產業，他們才回家。</p>
+                    <p>這是一個多麼美麗的轉折！從利己主義，轉變為甘心捨己的同工。他們沒有放棄照顧家庭的責任，但他們將神國度中「弟兄的需要」放在了自己享受安逸的權利之前。</p>
+
+                    <h3 class="text-gold-500 font-bold text-2xl mt-12 mb-6">第三段：恩典之約</h3>
+                    <p>最後，我們看到這個承諾被正式確立下來。摩西不僅聽了他們的承諾，還將這個約定轉交給下一代領袖監督。神國度的產業，是留給那些願意信守承諾、承擔責任的人。</p>
+                    <p class="text-center py-12">
+                        <span class="text-3xl md:text-5xl font-display font-black text-white tracking-widest opacity-20">眼界 • 委身 • 同行</span>
+                    </p>
+                    <p>不要讓弟兄去打仗，而你獨自坐在這裡。讓我們一起武裝起來，進入神為我們預備的豐盛應許！阿們。</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Summary & Actions -->
+        <section class="mt-24 grid md:grid-cols-2 gap-8">
+            <div class="bg-surface p-10 rounded-3xl border border-white/5">
+                <h3 class="text-xl font-bold text-gold-400 mb-6 flex items-center gap-2">
+                    🎯 應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-accent">01</span> 檢視屬靈視野與舒適區：評估自己是否停留在「約旦河東」？</li>
+                    <li class="flex gap-3"><span class="text-accent">02</span> 擁抱群體，拒絕單干：認知到自己的不冷不熱會影響整個教會。</li>
+                    <li class="flex gap-3"><span class="text-accent">03</span> 建立當責與信守承諾：做一個「說到做到」的基督徒。</li>
+                </ul>
+            </div>
+            <div class="bg-surface p-10 rounded-3xl border border-white/5">
+                <h3 class="text-xl font-bold text-gold-400 mb-6 flex items-center gap-2">
+                    🚀 回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-accent">●</span> 盤點恩典：寫下三個恩典，並拿出一部分服事有需要的肢體。</li>
+                    <li class="flex gap-3"><span class="text-accent">●</span> 參與爭戰：加入代禱、探訪或福音外展，不只「坐在這裡」。</li>
+                    <li class="flex gap-3"><span class="text-accent">●</span> 當責夥伴：找一位成熟信徒分享目標，並請他每週詢問進度。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Famous Quotes Carousel/Grid -->
+        <section id="quotes" class="mt-24">
+            <h2 class="flex items-center gap-3 text-3xl font-display font-bold text-gold-400 mb-12">
+                <span>💡</span> 名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「行動不是從思想而來，而是從願意承擔責任的準備而來。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「教會不是聖人的博物館，而是罪人的醫院。福音使我們建立真正捨己的社群。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「我們對神的愛，是用我們順服的程度來衡量的。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「一個不為別人靈魂焦急的人，證明他自己的靈魂還沒有得救。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「群體將我們從自私的幻覺中拯救出來。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 盧雲 (Henri Nouwen)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「信徒的生命應當是一場持續的戰鬥。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「基督徒是全然自由的萬人之主，也是全然順服的萬人之僕。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 馬丁·路德 (Martin Luther)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「不可把基督的十字架僅僅當作得救根據，要把它當作生活模式。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 約翰·史托德 (John Stott)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「門徒的生命，就是在同一個方向上長期的順服。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 畢德生 (Eugene Peterson)</span>
+                </div>
+                <div class="p-6 bg-glass rounded-xl border border-white/10 hover:bg-white/5 transition-all">
+                    <p class="text-gray-300 italic mb-3">「品格是一個別人都看不見你的時候，你在暗處的真正樣貌。」</p>
+                    <span class="text-xs text-gold-500 font-bold">— 慕迪 (D.L. Moody)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="mt-20 py-8 border-t border-white/5 text-center text-gray-500 text-sm tracking-widest">
+            ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-deep rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

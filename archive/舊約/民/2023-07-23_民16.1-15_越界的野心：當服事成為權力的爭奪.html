@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民16:1-15:越界的野心：當服事成為權力的爭奪</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#fde68a',
+                            DEFAULT: '#fbbf24',
+                            dark: '#b45309',
+                        },
+                        accent: '#8b5cf6',
+                        darkBg: '#0a0a0c',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-shake': 'shake 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        shake: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '25%': { transform: 'translateY(-2px)' },
+                            '75%': { transform: 'translateY(2px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+        }
+        .section-anchor {
+            scroll-margin-top: 100px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民16:1-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '越界的野心：當服事成為權力的爭奪' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-gold/30">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass px-4 py-3 sm:px-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-gold font-display font-bold text-sm sm:text-base truncate mr-4">
+                民 16:1-15
+            </div>
+            <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-semibold tracking-wider">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header id="top" class="relative h-[70vh] sm:h-[85vh] overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0 animate-pulse-slow banner-mask">
+            <img src='image/img_5ca87f61-f9a2-495f-bd23-7c542fb8b41a.jpg' alt='media_1' class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-black/40"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl sm:text-6xl font-black text-white mb-6 leading-tight font-display tracking-tight drop-shadow-2xl">
+                越界的野心<br/>
+                <span class="text-gold text-2xl sm:text-4xl mt-2 block font-medium">當服事成為權力的爭奪</span>
+            </h1>
+            <div class="mt-8 animate-gentle-shake">
+                <p class="text-lg sm:text-2xl text-gold-light font-light leading-relaxed max-w-2xl mx-auto italic drop-shadow-md">
+                    「以色列的上帝從以色列會中將你們分別出來...辦耶和華帳幕的事...這豈為小事？」
+                </p>
+                <p class="mt-2 text-sm text-gray-300">— 民數記 16:9</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 sm:px-12 -mt-16 relative z-20 pb-20">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor mb-16">
+            <div class="glass p-8 sm:p-12 rounded-3xl border-l-4 border-l-gold shadow-2xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-3.657a.5.5 0 01-.272-.449V5a2 2 0 012-2h13a2 2 0 012 2v11.894a.5.5 0 01-.272.449L12 21z"></path></svg>
+                    <h2 class="text-2xl font-bold text-gold tracking-widest">開聲禱告</h2>
+                </div>
+                <p class="text-xl sm:text-2xl leading-relaxed text-gray-200 font-light italic">
+                    「主啊，我們來到祢面前，承認我們的心常被隱藏的驕傲與野心所蒙蔽。求祢光照我們，讓我們看見祢對我們生命與服事的呼召是何等神聖與尊貴。赦免我們有時對現狀的不滿，以及用屬靈的藉口包裝個人的私慾。求主賜我們謙卑與順服的心，教導我們在祢所量給我們的界線內忠心事奉，不嫉妒別人的職份，也不發怨言。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="section-anchor mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <h2 class="text-2xl font-bold text-gold tracking-widest uppercase">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="glass p-6 rounded-2xl hover:bg-gold/10 transition-all group border-t-2 border-transparent hover:border-gold">
+                    <span class="text-xs text-gold font-bold block mb-2 opacity-70">第一段 | 民 16:1-3</span>
+                    <h3 class="font-bold text-lg group-hover:text-gold transition-colors">以「平權」為名的叛亂</h3>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl hover:bg-gold/10 transition-all group border-t-2 border-transparent hover:border-gold">
+                    <span class="text-xs text-gold font-bold block mb-2 opacity-70">第二段 | 民 16:4-11</span>
+                    <h3 class="font-bold text-lg group-hover:text-gold transition-colors">輕忽蒙召的尊貴</h3>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl hover:bg-gold/10 transition-all group border-t-2 border-transparent hover:border-gold">
+                    <span class="text-xs text-gold font-bold block mb-2 opacity-70">第三段 | 民 16:12-15</span>
+                    <h3 class="font-bold text-lg group-hover:text-gold transition-colors">扭曲事實的怨言</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline & Content -->
+        <div class="space-y-24">
+            <!-- Part 1 -->
+            <section id="part1" class="section-anchor">
+                <div class="flex flex-col lg:flex-row gap-10">
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-24">
+                            <h3 class="text-3xl font-black text-white mb-4 leading-tight">第一段：<br/><span class="text-gold">權力慾望的偽裝</span></h3>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm">
+                                <p class="text-gold font-bold mb-2">引用的經文</p>
+                                <p class="text-gray-400 italic">民數記 16:1-3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 space-y-8">
+                        <div class="bg-cardBg p-6 rounded-2xl border border-white/5">
+                            <p class="text-gray-300 leading-loose">
+                                利未的曾孫、哥轄的孫子、以斯哈的兒子可拉，和流便子孫中以利押的兒子大坍、亞比蘭，與比勒的兒子安，並以色列會中的二百五十個首領，就是有名望選入會中的人，在摩西面前一同起來，聚集攻擊摩西、亞倫，說：「你們擅自專權！全會眾個個既是聖潔，耶和華也在他們中間，你們為甚麼自高，超過耶和華的會眾呢？」
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵字原文</h4>
+                                <p class="text-gray-400">「擅自專權」(rab lakem)：字面意為「對你們來說太多了」。可拉以此控訴摩西，諷刺的是摩西在第7節以此反擊，揭露其僭越本分。</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵問題</h4>
+                                <p class="text-gray-400">為何看似屬靈的理由背後隱藏破壞力？分辨關鍵在於「果子」：動機是否帶來分裂與結黨。</p>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent/50 pl-6 py-2">
+                            <p class="text-accent-light font-bold text-sm uppercase tracking-widest mb-2">名言佳句</p>
+                            <blockquote class="text-xl font-light italic">「罪不僅僅是做壞事，罪是把美好的事物（如服事、影響力）放在了上帝的位置上，變成了偶像。」— 提摩太·凱勒</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="section-anchor">
+                <div class="flex flex-col lg:flex-row-reverse gap-10">
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-24">
+                            <h3 class="text-3xl font-black text-white mb-4 leading-tight">第二段：<br/><span class="text-gold">恩典中的盲點</span></h3>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm">
+                                <p class="text-gold font-bold mb-2">引用的經文</p>
+                                <p class="text-gray-400 italic">民數記 16:4-11</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 space-y-8">
+                        <div class="bg-cardBg p-6 rounded-2xl border border-white/5">
+                            <p class="text-gray-300 leading-loose">
+                                摩西又對可拉說：「利未的子孫哪，你們聽我說！以色列的上帝從以色列會中將你們分別出來...辦耶和華帳幕的事...這豈為小事？你們還要求祭司的職任嗎？」
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵字原文</h4>
+                                <p class="text-gray-400">「小事」(me'at)：意為「微不足道」。摩西質問這豈為小事，揭露被慾望蒙蔽者會輕看神所賜的尊貴職份。</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵問題</h4>
+                                <p class="text-gray-400">當感到「大材小用」時，我們對抗的是誰？答案是：攻擊耶和華（第11節），質疑神的主權。</p>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent/50 pl-6 py-2">
+                            <p class="text-accent-light font-bold text-sm uppercase tracking-widest mb-2">名言佳句</p>
+                            <blockquote class="text-xl font-light italic">「如果上帝呼召你成為一名宣教士，千萬不要屈就去當英國的國王。」— 司布真</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="section-anchor">
+                <div class="flex flex-col lg:flex-row gap-10">
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-24">
+                            <h3 class="text-3xl font-black text-white mb-4 leading-tight">第三段：<br/><span class="text-gold">扭曲事實的怨言</span></h3>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm">
+                                <p class="text-gold font-bold mb-2">引用的經文</p>
+                                <p class="text-gray-400 italic">民數記 16:12-15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-2/3 space-y-8">
+                        <div class="bg-cardBg p-6 rounded-2xl border border-white/5">
+                            <p class="text-gray-300 leading-loose">
+                                他們說：「我們不上去！你將我們從流奶與蜜之地領上來，要在曠野殺我們，這豈為小事？你還要自立為王轄管我們嗎？」
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵字原文</h4>
+                                <p class="text-gray-400">「流奶與蜜之地」：大坍等人竟將「埃及」稱為應許地，完全顛倒是非，以此合理化自己的背叛。</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="text-gold font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 關鍵問題</h4>
+                                <p class="text-gray-400">為何人會美化過去的罪惡？因為不順服會產生認知扭曲，把拯救抹黑成謀殺。</p>
+                            </div>
+                        </div>
+                        <div class="border-l-2 border-accent/50 pl-6 py-2">
+                            <p class="text-accent-light font-bold text-sm uppercase tracking-widest mb-2">名言佳句</p>
+                            <blockquote class="text-xl font-light italic">「門徒造就，就是朝著同一個方向，長期而專注的順服。」— 畢德生</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application & Action -->
+        <section class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-gold font-bold text-xl mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-gold font-bold">1.</span> 檢視事奉動機：是否為了彰顯自己或獲得權力？</li>
+                    <li class="flex gap-3"><span class="text-gold font-bold">2.</span> 操練知足品格：無論台前幕後，皆為神聖呼召。</li>
+                    <li class="flex gap-3"><span class="text-gold font-bold">3.</span> 拒絕怨言結黨：循聖經原則溝通，防堵破口。</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl bg-gold/5 border-gold/20">
+                <h3 class="text-gold font-bold text-xl mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-3"><span class="text-gold font-bold">1.</span> 為目前三個事奉角色獻上感恩，宣告這「豈為小事」。</li>
+                    <li class="flex gap-3"><span class="text-gold font-bold">2.</span> 生出抱怨時，轉為對方代禱三分鐘。</li>
+                    <li class="flex gap-3"><span class="text-gold font-bold">3.</span> 向屬靈長輩坦誠內心的嫉妒，尋求赦免潔淨。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-anchor mt-32 bg-cardBg rounded-[3rem] p-8 sm:p-16 border border-white/5">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                <h2 class="text-4xl font-black tracking-tight text-white">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-10 text-lg sm:text-xl text-gray-300 leading-relaxed font-light">
+                <p>各位弟兄姊妹，平安。今天我們要看一段舊約歷史中非常令人痛心的記載。當神的百姓在曠野中行進時，最大的危機往往不是來自外部的仇敵，而是來自內部的背叛與權力的爭奪。在民數記第16章，我們看到了可拉黨的叛亂。這不僅是一場政治鬥爭，更是一面鏡子，照出人心中隱藏的驕傲與不滿足。</p>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gold mb-6 border-b border-gold/30 pb-2">一、權力慾望的偽裝：以「平權」為名的叛亂</h3>
+                    <p>在經文的第1到第3節，我們看到可拉、大坍、亞比蘭聯合了二百五十位首領，聚集攻擊摩西和亞倫。他們指控摩西：「<span class="text-white font-bold bg-gold/20 px-1">你們擅自專權！全會眾個個既是聖潔，耶和華也在他們中間，你們為甚麼自高，超過耶和華的會眾呢？</span>」</p>
+                    <p class="mt-4">請注意可拉的策略。他用了一個非常屬靈、非常動聽的理由——「全會眾個個都是聖潔的」。他以「平權」為名，行「叛亂」之實。這提醒我們，<span class="text-gold font-bold">最危險的野心往往披著屬靈的外衣。</span> 當「服事的位置」成了我們的偶像，我們就會不擇手段地去爭奪。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gold mb-6 border-b border-gold/30 pb-2">二、恩典中的盲點：輕忽蒙召的尊貴</h3>
+                    <p>摩西轉向可拉，說出了一段發人深省的話。民數記 16:9：「<span class="text-white font-bold bg-gold/20 px-1">以色列的上帝從以色列會中將你們分別出來...辦耶和華帳幕的事...這豈為小事？</span>」</p>
+                    <p class="mt-4">可拉負責搬運會幕中最神聖的器具，這在當時是極大的尊榮！但被權力蒙蔽的眼睛，看不見已擁有的恩典。弟兄姊妹，我們是否也常犯可拉的毛病？當我們拒絕神所量給我們的界線，輕看目前的服事時，我們對抗的不是牧師或領袖，而是上帝的主權！在神的國度裡，<span class="text-gold font-bold">沒有任何一個呼召是微不足道的。</span></p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gold mb-6 border-b border-gold/30 pb-2">三、扭曲事實的怨言：拒絕順服的藉口</h3>
+                    <p>大坍和亞比蘭說出了極度扭曲事實的話：「<span class="text-white font-bold bg-gold/20 px-1">你將我們從流奶與蜜之地領上來，要在曠野殺我們，這豈為小事？</span>」</p>
+                    <p class="mt-4">他們竟然把充滿奴役的「埃及」稱為流奶與蜜之地！這就是怨言的破壞力。當我們心中充滿不滿時，我們也會開始扭曲記憶。順服不是在順境時的點頭，而是在曠野中不發怨言的跟隨。願可拉黨的歷史成為我們的鑒戒，讓我們的服事回歸單純的愛與順服。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes Section -->
+        <section id="quotes" class="section-anchor mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-4xl font-black tracking-tight text-white">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「如果上帝呼召你成為一名宣教士，千萬不要屈就去當英國的國王。」</p>
+                    <div class="text-gold font-bold text-sm">— 司布真</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「我們所有屬靈問題的根源都在於驕傲；我們所有問題的解答都在於謙卑。」</p>
+                    <div class="text-gold font-bold text-sm">— 陶恕</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「愛自己對基督徒群體之夢想的人，若超過愛基督徒群體本身，就會成為這群體的破壞者。」</p>
+                    <div class="text-gold font-bold text-sm">— 潘霍華</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「人的本性，可以說是一個不斷製造偶像的工廠。」</p>
+                    <div class="text-gold font-bold text-sm">— 約翰·加爾文</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「罪不僅僅是做壞事，罪是把美好的事物放在了上帝的位置上，變成了偶像。」</p>
+                    <div class="text-gold font-bold text-sm">— 提摩太·凱勒</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「在世界上，領袖是統治的人；但在神國裡，領袖是服事的人。」</p>
+                    <div class="text-gold font-bold text-sm">— 盧雲</div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「驕傲必須在你裡面死去，否則天堂裡的任何事物都無法在你裡面存活。」</p>
+                    <div class="text-gold font-bold text-sm">— 慕安德烈</div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「毫無疑問，驕傲是傳道人主要的職業危險。」</p>
+                    <div class="text-gold font-bold text-sm">— 約翰·史托德</div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「你無法阻止鳥兒飛過你的頭頂，但你可以阻止牠們在你的頭髮裡築巢。」</p>
+                    <div class="text-gold font-bold text-sm">— 馬丁·路德</div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-lg italic text-gray-200 mb-4">「門徒造就，就是朝著同一個方向，長期而專注的順服。」</p>
+                    <div class="text-gold font-bold text-sm">— 畢德生</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="mt-20 text-center text-gray-500 text-sm italic">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-light hover:scale-110 transition-all z-50 animate-float">
+        <svg class="w-6 h-6 text-darkBg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

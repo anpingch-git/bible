@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民8:1-26: 點燃生命之光，獻作聖潔活祭</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#9E1B32',
+                        deepNavy: '#0A0E14',
+                        glassWhite: 'rgba(255, 255, 255, 0.1)',
+                        accentAmber: '#FFBF00'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0A0E14; color: #E5E7EB; overflow-x: hidden; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .text-glow { text-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        
+        /* Specific jump animation for Scripture */
+        @keyframes micro-jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .micro-jump {
+            display: inline-block;
+            animation: micro-jump 4s ease-in-out infinite;
+        }
+
+        .outline-btn {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民8:1-26',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '點燃生命之光，獻作聖潔活祭' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-deepNavy/80 backdrop-blur-md border-b border-white/5 px-4 py-3 flex justify-between items-center lg:px-12">
+        <div class="text-accentAmber font-display font-bold text-sm lg:text-lg">民 8:1-26</div>
+        <div class="flex gap-4 lg:gap-8 text-sm lg:text-base font-medium">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_acc40377-7913-41c5-a612-cea27f4d41bc.jpg' alt='media_1' class="w-full h-full object-cover animate-breathe opacity-70" />
+            <div class="absolute inset-0 bg-gradient-to-b from-deepNavy/20 via-deepNavy/60 to-deepNavy"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl pt-20" id="top">
+            <h1 class="text-4xl lg:text-6xl font-black mb-8 leading-tight tracking-tight font-display text-white">
+                民 8:1-26<br/>
+                <span class="text-accentAmber text-glow">點燃生命之光，獻作聖潔活祭</span>
+            </h1>
+            <div class="micro-jump text-xl lg:text-2xl font-medium text-gray-100 max-w-2xl mx-auto leading-relaxed">
+                「這樣，你從以色列人中將利未人分別出來，利未人便要歸我。」<br/>
+                <span class="text-accentAmber/80 text-sm">（民數記 8:14）</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-5xl mx-auto px-6 pb-24 -mt-10">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-card p-8 lg:p-12 mb-16 relative overflow-hidden group">
+            <div class="flex items-center gap-4 mb-6">
+                <span class="text-3xl">🙏</span>
+                <h2 class="text-2xl font-bold text-accentAmber">會前禱告</h2>
+            </div>
+            <p class="text-lg lg:text-xl leading-relaxed text-gray-200 italic">
+                「親愛的天父，感謝祢在萬民中揀選了我們，如同祢當年揀選利未人一樣，將我們從世界中分別為聖。求祢真理的聖靈光照我們，如同點燃會幕中的金燈臺，使我們的生命能向周圍的世界發出基督的真光。求祢用主的寶血潔淨我們的身心，使我們能全然獻上，當作聖潔的活祭，一生按著祢的節奏與心意忠心服事。奉主耶穌基督的聖名禱告，阿們。」
+            </p>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="mb-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl">📜</span>
+                <h2 class="text-3xl font-bold text-white">深入解析大綱</h2>
+            </div>
+
+            <!-- Quick Navigation Buttons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs text-accentAmber font-bold tracking-widest uppercase">第一段</span>
+                    <span class="text-lg font-bold">點燃發光：照亮神同在的真光</span>
+                    <span class="text-sm opacity-60">民 8:1-4</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs text-accentAmber font-bold tracking-widest uppercase">第二段</span>
+                    <span class="text-lg font-bold">潔淨與奉獻：成為神專屬器皿</span>
+                    <span class="text-sm opacity-60">民 8:5-14</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs text-accentAmber font-bold tracking-widest uppercase">第三段</span>
+                    <span class="text-lg font-bold">忠心服事與傳承：生命節奏</span>
+                    <span class="text-sm opacity-60">民 8:15-26</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Content -->
+            <div class="space-y-16">
+                <!-- Part 1 -->
+                <div id="part1" class="scroll-mt-24 bg-white/5 rounded-[32px] p-8 lg:p-12 border border-white/5">
+                    <h3 class="text-2xl font-bold text-accentAmber mb-6 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-accentAmber rounded-full"></span>
+                        第一段：點燃發光：照亮神同在的真光 (8:1-4)
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-black/30 p-6 rounded-xl border-l-4 border-accentAmber italic text-gray-300">
+                            耶和華曉諭摩西說：「你告訴亞倫說：點燈的時候，七盞燈都要向燈臺前面發光。」亞倫便這樣行。他點燈臺上的燈，使燈向前發光，是照耶和華所吩咐摩西的...
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold font-bold flex items-center gap-2">📖 關鍵原文</h4>
+                                <ul class="space-y-2">
+                                    <li><span class="text-accentAmber font-bold">點 (ha'alotekha):</span> 使之上升、獻上。點燈是一種將敬拜升到神面前的行動。</li>
+                                    <li><span class="text-accentAmber font-bold">發光 ('or):</span> 照亮、發出亮光。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold font-bold flex items-center gap-2">❓ 關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-white font-semibold">為什麼向「前面」發光？</span><br/>
+                                    燈光向前照亮陳設餅的桌子（基督），這啟示我們生命的發光是為了引導人看見主，而非彰顯自己。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-6 border-t border-white/5">
+                            <p class="text-sm italic opacity-80 mb-4">「基督徒是神恩典的窗戶；窗戶本身不發光，但它若保持潔淨，就能讓真光照耀進來。」—— 陶恕</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="scroll-mt-24 bg-white/5 rounded-[32px] p-8 lg:p-12 border border-white/5">
+                    <h3 class="text-2xl font-bold text-accentAmber mb-6 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-accentAmber rounded-full"></span>
+                        第二段：潔淨與奉獻：成為神專屬的器皿 (8:5-14)
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-black/30 p-6 rounded-xl border-l-4 border-accentAmber italic text-gray-300 text-sm">
+                            「...你從以色列人中選出利未人來，潔淨他們。潔淨他們當這樣行：用除罪水彈在他們身上... 亞倫也將他們奉到耶和華面前，當作搖祭...」
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold font-bold">📖 關鍵原文</h4>
+                                <ul class="space-y-2">
+                                    <li><span class="text-accentAmber font-bold">潔淨 (tahar):</span> 禮儀與道德上被煉淨。</li>
+                                    <li><span class="text-accentAmber font-bold">搖祭 (tenuphah):</span> 所有權的完全轉移。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold font-bold">❓ 關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-white font-semibold">為何活人要做「搖祭」？</span><br/>
+                                    象徵不再屬於自己。如同羅馬書12:1的「活祭」，全然交出主權，才能被神使用。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-6 border-t border-white/5">
+                            <p class="text-sm italic opacity-80 mb-4">「神賜福與使用一個人的唯一條件，就是他對神有絕對的降服與全然的奉獻。」—— 慕安德烈</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="scroll-mt-24 bg-white/5 rounded-[32px] p-8 lg:p-12 border border-white/5">
+                    <h3 class="text-2xl font-bold text-accentAmber mb-6 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-accentAmber rounded-full"></span>
+                        第三段：忠心服事與傳承：按神定規的節奏 (8:15-26)
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-black/30 p-6 rounded-xl border-l-4 border-accentAmber italic text-gray-300 text-sm">
+                            「...從二十五歲以外，他們要前來任職... 到了五十歲要停工退任，不再辦事，只要在會幕裡，和他們的弟兄一同伺候...」
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-gold font-bold">📖 關鍵原文</h4>
+                                <ul class="space-y-2">
+                                    <li><span class="text-accentAmber font-bold">任職 (tsaba):</span> 如軍隊出戰般嚴謹服事。</li>
+                                    <li><span class="text-accentAmber font-bold">退任 (shub min hatsaba):</span> 從服役中退下。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold font-bold">❓ 關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-white font-semibold">為何規定五十歲退任？</span><br/>
+                                    一方面是體恤肉體極限，另一方面是強調「傳承」與「成全聖徒」的指導角色。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-6 border-t border-white/5">
+                            <p class="text-sm italic opacity-80 mb-4">「你的工作不是你的身分。福音使我們從成就的無盡勞役中得著釋放。」—— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="mb-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl">🎤</span>
+                <h2 class="text-3xl font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <article class="glass-card p-8 lg:p-16 space-y-10 text-lg leading-relaxed text-gray-300">
+                <h2 class="text-3xl lg:text-4xl font-black text-center text-white mb-12">
+                    <span class="text-accentAmber">民8:1-26：</span>點燃生命之光，獻作聖潔活祭
+                </h2>
+
+                <p>弟兄姊妹們，平安！今天我們要從民數記第8章來思想一個重要的主題：「點燃生命之光，獻作聖潔活祭」。我們在世上，到底要活出什麼樣的生命？我們的事奉又該具備什麼樣的態度？神透過對利未人的吩咐，給了我們極美的藍圖。</p>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-accentAmber flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-accentAmber"></span> 第一段：點燃發光：照亮神同在的真光
+                    </h3>
+                    <p>民數記8章一開始，神吩咐亞倫點燈臺。神特別強調：<strong class="text-white underline decoration-accentAmber underline-offset-4">「點燈的時候，七盞燈都要向燈臺前面發光。」</strong> 為什麼要向「前面」發光？因為燈臺前面擺設著陳設餅桌，象徵著神豐盛的同在與基督生命的糧。這給我們一個極大的提醒：我們被神點燃，不是為了讓別人看到這盞燈臺有多麼華麗，而是要將人的目光引向神！</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-accentAmber flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-accentAmber"></span> 第二段：潔淨與奉獻：成為神專屬的器皿
+                    </h3>
+                    <p>有了光，就需要有合用的器皿。神吩咐摩西：<strong class="text-white text-xl block my-4 border-l-4 border-gold pl-4">「這樣，你從以色列人中將利未人分別出來，利未人便要歸我。」（民數記 8:14）</strong></p>
+                    <p>神如何使利未人歸給祂呢？透過「潔淨」與「搖祭」。利未人必須被彈上除罪水、剃除毛髮、洗淨衣服。這告訴我們一個鐵律：<strong class="text-white">神不使用未經潔淨的器皿。</strong> 我們常求神賜下能力，但神更看重我們的聖潔。你今天願意將你的事業、家庭、時間，完全當作搖祭交在神的手中嗎？</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-accentAmber flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-accentAmber"></span> 第三段：忠心服事與交棒：按神定規的生命節奏
+                    </h3>
+                    <p>當利未人潔淨並獻上後，他們就開始了軍隊般的服事。但神定下了一個奇妙的規矩：利未人到了五十歲就要<strong class="text-white">「停工退任，不再辦事，只要在會幕裡，和他們的弟兄一同伺候」</strong>。</p>
+                    <p>懂得在適當的時候退下來，成全弟兄姊妹，把經驗傳承下去，這是極大的屬靈智慧。教會是一場接力賽，交棒與接棒同樣重要。</p>
+                </div>
+
+                <div class="bg-accentAmber/10 p-8 rounded-3xl border border-accentAmber/30 mt-12">
+                    <h4 class="text-xl font-bold text-accentAmber mb-4">🌟 結論：三個關鍵字</h4>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-6 py-2 bg-accentAmber text-deepNavy font-black rounded-full">發光</span>
+                        <span class="px-6 py-2 bg-accentAmber text-deepNavy font-black rounded-full">聖潔</span>
+                        <span class="px-6 py-2 bg-accentAmber text-deepNavy font-black rounded-full">傳承</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Practical Action -->
+        <section class="mb-24 grid lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl">⚙️</span>
+                    <h2 class="text-2xl font-bold text-white">應用方向</h2>
+                </div>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-4"><span class="text-accentAmber font-bold">01.</span> 檢視生命的焦點：是彰顯自己還是照亮基督？</li>
+                    <li class="flex gap-4"><span class="text-accentAmber font-bold">02.</span> 徹底對付罪惡：效法潔淨禮儀，尋求聖靈光照。</li>
+                    <li class="flex gap-4"><span class="text-accentAmber font-bold">03.</span> 擁抱傳承智慧：不霸佔位置，樂於成為導師。</li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl">🔥</span>
+                    <h2 class="text-2xl font-bold text-white">回應實踐</h2>
+                </div>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex gap-4"><span class="text-accentAmber font-bold">●</span> 每日10分鐘求神話語潔淨，將主權交託。</li>
+                    <li class="flex gap-4"><span class="text-accentAmber font-bold">●</span> 向教會尋求一個可以委身參與的事工。</li>
+                    <li class="flex gap-4"><span class="text-accentAmber font-bold">●</span> 建立跨代關係，主動關懷後輩或請益前輩。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="mb-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl">✍️</span>
+                <h2 class="text-3xl font-bold text-white">屬靈前輩名言佳句</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 border-l-2 border-accentAmber">
+                    <p class="mb-4 text-gray-200">「我們不是自己的，所以不要讓我們的理智與意志來統治我們的計劃和行為；我們乃是神的...」</p>
+                    <cite class="text-sm text-gold block">— 約翰·加爾文《基督教要義》</cite>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 border-l-2 border-accentAmber">
+                    <p class="mb-4 text-gray-200">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <cite class="text-sm text-gold block">— 潘霍華《做門徒的代價》</cite>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 border-l-2 border-accentAmber">
+                    <p class="mb-4 text-gray-200">「神賜福與使用一個人的唯一條件，就是他對神有絕對的降服與全然的奉獻。」</p>
+                    <cite class="text-sm text-gold block">— 慕安德烈《絕對的降服》</cite>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 border-l-2 border-accentAmber">
+                    <p class="mb-4 text-gray-200">「如果你不能成為光照亮遠方，那就成為一盞小燈，照亮你所在的角落。」</p>
+                    <cite class="text-sm text-gold block">— 司布真《早晚靈修》</cite>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 border-l-2 border-accentAmber">
+                    <p class="mb-4 text-gray-200">「基督徒是神恩典的窗戶；窗戶本身不發光，但它若保持潔淨，就能讓真光照耀進來。」</p>
+                    <cite class="text-sm text-gold block">— 陶恕《渴慕神》</cite>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 border-l-2 border-accentAmber">
+                    <p class="mb-4 text-gray-200">「你的工作不是你的身分。福音使我們從『成就』的無盡勞役中得著釋放。」</p>
+                    <cite class="text-sm text-gold block">— 提摩太·凱勒《工作的好理由》</cite>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center py-12 border-t border-white/5 opacity-50 text-sm">
+            ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-accentAmber text-deepNavy rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+</body>
+</html>
+

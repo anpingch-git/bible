@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代上26:1-32：看不見的榮耀：在守望與管理中看見神聖呼召</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        temple: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float-slow': 'float 6s ease-in-out infinite',
+                        'subtle-pulse': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'gentle-bounce': 'gentleBounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+                            '50%': { opacity: '1', transform: 'scale(1.05)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        gentleBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #92400e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .verse-animate {
+            animation: gentleBounce 3s ease-in-out infinite;
+            display: inline-block;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代上26:1-32',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '看不見的榮耀：在守望與管理中看見神聖呼召' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-temple-900/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-gold-400 font-bold tracking-wider text-sm md:text-base hidden md:block">代上 26:1-32</span>
+            <div class="flex gap-6 md:gap-10 text-sm md:text-base font-medium mx-auto md:mx-0">
+                <a href="#prayer" class="nav-link text-gray-300 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner Section -->
+    <header class="relative h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-breath w-full h-full banner-mask">
+                <img src='image/img_d4fd8f04-fe70-49b0-a397-7eb7dbdd7642.jpg' alt='Celestial Temple' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-temple-900 via-transparent to-temple-900/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <p class="text-gold-400 font-display tracking-[0.3em] text-sm md:text-lg mb-4 opacity-90">CHRONICLES 26:1-32</p>
+            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tighter">
+                <span class="gold-gradient-text block mb-2">看不見的榮耀</span>
+                <span class="text-white">在守望中看見神聖呼召</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg md:text-2xl font-medium text-white/90 verse-animate leading-relaxed">
+                    「這些守門的班長與他們的弟兄一同在耶和華殿裡按班供職。」<br>
+                    <span class="text-gold-300 text-sm md:text-lg">（歷代志上 26:12）</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 space-y-32 pb-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute -right-12 -top-12 opacity-5 group-hover:opacity-10 transition-opacity">
+                    <svg class="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 rounded-2xl bg-gold-500/10 text-gold-400">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight">神聖禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic">
+                    「主耶和華，我們感謝祢，因為在祢的國度裡，沒有任何一個職位是微不足道的。無論是在聖殿門口守望、管理府庫的資源，還是在外邦中治理審判，都是祢神聖的呼召。求祢賜給我們大能與忠心的靈，讓我們在隱密處的服事中看見祢的榮耀，並將我們生活中所獲得的一切成就與恩典，分別為聖獻給祢。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-2xl bg-gold-500/10 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold">講道大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#part1" class="glass-card p-6 hover:bg-white/5 transition-all group border-l-4 border-l-gold-600">
+                    <span class="text-gold-500 text-xs font-bold uppercase tracking-widest block mb-2">Part 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">警醒守望：守門者的神聖職分</h3>
+                    <p class="text-gray-400 text-sm mt-2">代上 26:1-19</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 hover:bg-white/5 transition-all group border-l-4 border-l-blue-600">
+                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest block mb-2">Part 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-blue-400 transition-colors">忠心管家：府庫與奉獻的管理者</h3>
+                    <p class="text-gray-400 text-sm mt-2">代上 26:20-28</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 hover:bg-white/5 transition-all group border-l-4 border-l-emerald-600">
+                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest block mb-2">Part 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-emerald-400 transition-colors">國度治理：打破聖俗二分的殿外事奉</h3>
+                    <p class="text-gray-400 text-sm mt-2">代上 26:29-32</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Parts -->
+            <div class="space-y-24">
+                <!-- Part 1 Detail -->
+                <div id="part1" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-gold-400 mb-4">第一段：警醒守望</h3>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm leading-relaxed text-gray-400">
+                                守門的班次... 這些守門的班長與他們的弟兄一同在耶和華殿裡按班供職... 他們無論大小，都按著宗族掣籤，看守各門...
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div>
+                                <h4 class="text-gold-200 font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-1.5 h-6 bg-gold-500 rounded-full"></span> 關鍵原文
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="p-4 bg-temple-800 rounded-lg">
+                                        <div class="text-gold-400 font-bold mb-1">守門的 (sho'er)</div>
+                                        <p class="text-sm">屬靈的防禦者，負責防止任何不潔之物進入聖所。</p>
+                                    </div>
+                                    <div class="p-4 bg-temple-800 rounded-lg">
+                                        <div class="text-gold-400 font-bold mb-1">大能的壯士 (chayil)</div>
+                                        <p class="text-sm">形容戰士的詞彙，顯示守望是一場真實的屬靈爭戰。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-200 font-bold mb-3">問題與解析</h4>
+                                <p class="text-gray-300 leading-relaxed">教會中看似平凡、隱藏的服事（如招待、清潔、代禱），在靈界中都是至關重要的防線。防守神聖的空間需要極大的屬靈力量與忠心。</p>
+                            </div>
+                            <div class="p-6 bg-gold-900/20 border border-gold-900/50 rounded-2xl italic">
+                                "信徒若能在最小的事上忠心，他就是完成了一項最偉大的屬靈工作。" —— 司布真
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Detail -->
+                <div id="part2" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-blue-400 mb-4">第二段：忠心管家</h3>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm leading-relaxed text-gray-400">
+                                利未人亞希雅掌管神殿的府庫... 示羅密和他的弟兄掌管府庫的聖物... 將爭戰時所奪的財物分別為聖...
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div>
+                                <h4 class="text-blue-200 font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-1.5 h-6 bg-blue-500 rounded-full"></span> 關鍵原文
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="p-4 bg-temple-800 rounded-lg">
+                                        <div class="text-blue-400 font-bold mb-1">府庫 (otsar)</div>
+                                        <p class="text-sm">分「日常營運」與「聖物/戰利品」府庫。</p>
+                                    </div>
+                                    <div class="p-4 bg-temple-800 rounded-lg">
+                                        <div class="text-blue-400 font-bold mb-1">分別為聖 (qadash)</div>
+                                        <p class="text-sm">被切割出來、保留給神。承認勝利源頭來自神。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-blue-200 font-bold mb-3">問題與解析</h4>
+                                <p class="text-gray-300 leading-relaxed">我們在職場、商場中的「爭戰」與得利，其最終目的是為了神國的榮耀與建造。財富與恩賜應當被「分別為聖」。</p>
+                            </div>
+                            <div class="p-6 bg-blue-900/20 border border-blue-900/50 rounded-2xl italic">
+                                "我一生中最驕傲的不是建立了一個乳酪帝國，而是我成為了上帝資源的忠心管家。" —— 卡夫 (J.L. Kraft)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Detail -->
+                <div id="part3" class="scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-emerald-400 mb-4">第三段：國度治理</h3>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm leading-relaxed text-gray-400">
+                                以斯哈族有基拿尼雅和他眾子作官長和士師... 管理以色列的外事... 辦理耶和華與王的事...
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 space-y-8">
+                            <div>
+                                <h4 class="text-emerald-200 font-bold mb-3 flex items-center gap-2">
+                                    <span class="w-1.5 h-6 bg-emerald-500 rounded-full"></span> 關鍵原文
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="p-4 bg-temple-800 rounded-lg">
+                                        <div class="text-emerald-400 font-bold mb-1">外事 (melakhah hachitsonah)</div>
+                                        <p class="text-sm">聖殿範圍之外的民事、行政與司法工作。</p>
+                                    </div>
+                                    <div class="p-4 bg-temple-800 rounded-lg">
+                                        <div class="text-emerald-400 font-bold mb-1">辦理神和王的事</div>
+                                        <p class="text-sm">顯示在神眼中，公義的社會治理同樣是屬神的事奉。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-emerald-200 font-bold mb-3">問題與解析</h4>
+                                <p class="text-gray-300 leading-relaxed">基督徒在社會中的正當職業（公務員、律師、教師等），只要是按神的心意而做，就是「辦理神和王的事」。</p>
+                            </div>
+                            <div class="p-6 bg-emerald-900/20 border border-emerald-900/50 rounded-2xl italic">
+                                "宇宙中沒有一寸土地是萬有之主的基督不能指著說：『這是我的！』的。" —— 亞伯拉罕·凱波爾
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-2xl bg-gold-500/10 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25H5.625A2.25 2.25 0 013.375 18V4.625C3.375 4.004 3.879 3.5 4.5 3.5h9.75a1.125 1.125 0 011.125 1.125V7.5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold">完整講章</h2>
+            </div>
+            
+            <article class="prose prose-invert prose-gold max-w-none space-y-12">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl font-black text-white mb-4">看不見的榮耀</h3>
+                    <div class="h-1 w-24 bg-gold-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="bg-temple-800/40 p-8 rounded-3xl border border-white/5 leading-relaxed text-lg">
+                    親愛的弟兄姊妹，當我們談到聖殿裡的服事時，我們腦海中浮現的往往是穿著華麗外袍的大祭司，或是帶領千萬人敬拜的詩班。但在《歷代志上》第26章，聖經卻花了一整章的篇幅，記錄了一群在幕後默默無聞的人——守門的、管倉庫的，以及在殿外辦理行政事務的利未人。今天，我們要從這段經文中看見一個重要的屬靈真理：在神國度裡，<span class="text-gold-400 font-bold">沒有任何一種服事是微不足道的。</span>
+                </div>
+
+                <div class="space-y-8">
+                    <h4 class="text-2xl font-bold text-gold-400 border-b border-gold-900/50 pb-2">第一：警醒守望：守門者的神聖職分</h4>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        在第12節，聖經特別強調：<span class="text-white font-bold underline decoration-gold-600 underline-offset-4">「這些守門的班長與他們的弟兄一同在耶和華殿裡按班供職。」</span> 更令人震撼的是，聖經形容這些看門的人是<span class="text-gold-400 font-bold">「大能的壯士」</span>！為什麼看門的工作需要大能的壯士？因為守門不只是體力活，這是一場屬靈的爭戰！守門者的職責是防止一切不潔淨的事物進入神的殿，他們是神同在的第一道防線。
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        今天在教會中，誰是守門的？那些站在門口發週報的招待、主日學看顧孩童的老師、默默在清晨為教會代禱的弟兄姊妹，<span class="text-white font-bold">你們就是神國度裡「大能的壯士」！</span>
+                    </p>
+
+                    <h4 class="text-2xl font-bold text-blue-400 border-b border-blue-900/50 pb-2">第二：忠心管家：府庫與奉獻的管理者</h4>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        第27節是一節非常特別的經文：<span class="text-white font-bold underline decoration-blue-600 underline-offset-4">「他們將爭戰時所奪的財物分別為聖，以備修造耶和華的殿。」</span>大衛和他的將領們在戰場上出生入死，流血流汗打勝仗。但他們知道，勝利不是靠自己的膀臂，而是耶和華的恩典。因此，他們把最寶貴的戰利品「分別為聖」。
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        我們每天在職場上打拼，商場如戰場，當我們獲得獎金、利潤時，我們是否願意將其中的一部分<span class="text-blue-400 font-bold">分別為聖</span>？神呼召我們在財務上作忠心的管家，讓我們的錢包經歷真正的悔改。
+                    </p>
+
+                    <h4 class="text-2xl font-bold text-emerald-400 border-b border-emerald-900/50 pb-2">第三：國度治理：打破聖俗二分的殿外事奉</h4>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        第29到32節提到他們「辦理神和王的事」。在神的眼光中，<span class="text-emerald-400 font-bold">沒有「聖」與「俗」的二分法。</span>不是只有在教會裡帶敬拜才叫服事神。當一位法官秉公行義、當一位母親在家中教導孩子，這一切都是在「辦理神的事」！
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300 italic font-medium text-emerald-100">
+                        我們的辦公桌，就是我們的祭壇；我們的工作服，就是我們的祭司袍。
+                    </p>
+                </div>
+
+                <div class="bg-gold-600/10 p-10 rounded-[40px] border border-gold-500/20 text-center">
+                    <h4 class="text-xl font-bold text-gold-400 mb-6 tracking-widest uppercase">總結：三個關鍵字</h4>
+                    <div class="flex flex-wrap justify-center gap-4 md:gap-12">
+                        <div class="flex flex-col items-center">
+                            <span class="text-4xl font-black text-white mb-2">守望</span>
+                            <span class="text-xs text-gold-500 font-display">WATCHFULNESS</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-4xl font-black text-white mb-2">管家</span>
+                            <span class="text-xs text-gold-500 font-display">STEWARDSHIP</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-4xl font-black text-white mb-2">呼召</span>
+                            <span class="text-xs text-gold-500 font-display">CALLING</span>
+                        </div>
+                    </div>
+                    <p class="mt-10 text-gray-300">
+                        讓我們帶著大能壯士的靈，在看不見的隱密處，活出神看得見的榮耀！
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Action Section -->
+        <section class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-2xl bg-gold-500/10 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 1.12a14.98 14.98 0 00-6.16 12.12c0 2.22.48 4.33 1.34 6.23"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold">回應與實踐行動</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:border-gold-500/30 transition-all">
+                    <div class="text-gold-500 font-display text-4xl font-bold mb-4">01</div>
+                    <h4 class="text-xl font-bold mb-3">參與一項隱藏服事</h4>
+                    <p class="text-gray-400">本週主動報名或參與一項不引人注目的服事，並在其中為教會禱告守望。</p>
+                </div>
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:border-gold-500/30 transition-all">
+                    <div class="text-gold-500 font-display text-4xl font-bold mb-4">02</div>
+                    <h4 class="text-xl font-bold mb-3">設定財務奉獻目標</h4>
+                    <p class="text-gray-400">將工作所得（爭戰所得）中固定比例分別為聖，奉獻支持教會建堂或宣教。</p>
+                </div>
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10 hover:border-gold-500/30 transition-all">
+                    <div class="text-gold-500 font-display text-4xl font-bold mb-4">03</div>
+                    <h4 class="text-xl font-bold mb-3">職場祭壇禱告</h4>
+                    <p class="text-gray-400">每天早上宣告工作場域就是你的「祭壇」，求神幫助你「辦理神和王的事」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="p-3 rounded-2xl bg-gold-500/10 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold">知名牧者佳句名言</h2>
+            </div>
+
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <!-- Quote 1 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「將生活分為『屬靈的』與『世俗的』，是基督徒生活中最大的悲劇之一。只要我們的心是向著神的，我們在工作檯前的勞動，與我們在聖餐桌前的敬拜，在神眼中是一樣神聖的。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <!-- Quote 2 -->
+                <div class="break-inside-avoid glass-card p-8 border-l-4 border-gold-500">
+                    <p class="text-lg leading-relaxed mb-4">「信徒若能在最小的事上忠心，他就是完成了一項最偉大的屬靈工作。神看的不是我們做的事情有多大，而是我們做這事時所獻上的愛與忠心有多深。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <!-- Quote 3 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「鞋匠在製作鞋子時，並不是藉著在鞋子上畫上十字架來榮耀神，而是藉著製作一雙好鞋來榮耀神；因為神對所有誠實的工作都感興趣。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <!-- Quote 4 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「賺取你所能賺取的一切，節省你所能節省的一切，並且奉獻你所能奉獻的一切。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 約翰·衛斯理 (John Wesley)</cite>
+                </div>
+                <!-- Quote 5 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「工作並不是人類墮落後的懲罰，它是神創造計畫的一部分。我們藉著工作，參與了神對這個世界的護理與修復。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <!-- Quote 6 -->
+                <div class="break-inside-avoid glass-card p-8 border-l-4 border-gold-500">
+                    <p class="text-lg leading-relaxed mb-4">「當基督呼召一個人時，祂是呼召他來死。這死可能是為主殉道，但也可能是在每一天對自我中心意願的死去，好讓神能在我們身上完全掌權。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <!-- Quote 7 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「神沒有要求我們成功，祂只要求我們忠心。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 葛理翰 (Billy Graham)</cite>
+                </div>
+                <!-- Quote 8 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「絕對的降服，意味著我們將生命中每一個區域，包括我們的金錢、事業和隱私，都無條件地交在主的手中。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 慕安德烈 (Andrew Murray)</cite>
+                </div>
+                <!-- Quote 9 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「每一個基督徒蒙召，不僅是為了自身的得救，更是為了建立神的教會。我們所擁有的一切恩賜與資源，都應當為此目的而效力。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <!-- Quote 10 -->
+                <div class="break-inside-avoid glass-card p-8">
+                    <p class="text-lg leading-relaxed mb-4">「在同一個方向上長久順服，是這個追求速成時代中最缺少的品格；但這正是神在平凡瑣碎的日常中，鍛鍊我們成為耶穌門徒的唯一途徑。」</p>
+                    <cite class="text-gold-500 not-italic font-bold block text-sm">— 畢德生 (Eugene Peterson)</cite>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-20 py-8 border-t border-white/5 text-center text-gray-500 text-sm tracking-widest">
+                <p>⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 hover:bg-gold-500 text-white rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

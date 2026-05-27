@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民21:1-9 在絕望中仰望：曠野中的毒蛇與拯救之恩</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffbf0',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        copper: '#b87333',
+                        deep: '#0a0a0c',
+                        surface: '#16161a',
+                        accent: '#ff4d4d',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        calligraphy: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.05)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(22, 22, 26, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(245, 158, 11, 0.3);
+            transform: translateY(-4px);
+            background: rgba(22, 22, 26, 0.8);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #ff4d4d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .copper-glow {
+            box-shadow: 0 0 30px rgba(184, 115, 51, 0.2);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtle-bounce 2s ease-in-out infinite;
+        }
+        .media-banner {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民21:1-9',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在絕望中仰望：曠野中的毒蛇與拯救之恩' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-gold-500/30">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-gold-400 font-display font-bold text-sm md:text-lg tracking-wider">民 21:1-9</div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Title Section -->
+    <header id="top" class="relative min-h-[85vh] flex flex-col items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="w-full h-full animate-breath media-banner">
+                <img src='image/img_e78b3754-e6f3-45e0-a7f4-866b990ee78b.jpg' alt='media_1' class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-deep via-deep/20 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <div class="inline-block px-4 py-1 border border-gold-500/50 rounded-full text-gold-400 text-xs font-bold mb-6 tracking-[0.2em] bg-gold-500/10">
+                NUMBERS 21:1-9
+            </div>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 leading-tight drop-shadow-2xl">
+                在絕望中<span class="text-gradient">仰望</span>：<br>
+                <span class="text-3xl md:text-5xl font-light text-gray-300">曠野中的毒蛇與拯救之恩</span>
+            </h1>
+
+            <div class="text-lg md:text-2xl font-display text-gold-50/90 leading-relaxed italic max-w-2xl mx-auto">
+                <span class="jump-text">「摩西便製造一條銅蛇，掛在竿子上；凡被蛇咬的，一望這銅蛇就活了。」</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-5xl mx-auto px-6 pb-20 -mt-20">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="mb-20 pt-20">
+            <div class="bento-card p-8 md:p-12 copper-glow">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="p-3 bg-gold-500/10 rounded-xl text-gold-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c4.418 0 8-3.582 8-8V7a2 2 0 00-2-2H6a2 2 0 00-2 2v6c0 4.418 3.582 8 8 8z" />
+                        </svg>
+                    </span>
+                    <h2 class="text-3xl font-display font-bold">開路之禱</h2>
+                </div>
+                <p class="text-lg md:text-xl text-gray-300 leading-loose font-light italic">
+                    親愛的天父，我們承認在人生的曠野路上，我們常像以色列人一樣，因為道路崎嶇、資源缺乏而心生煩躁，甚至對祢發出怨言。求祢赦免我們忘恩的罪，開啟我們屬靈的眼睛，讓我們在被罪惡與苦難之蛇咬傷的絕望中，不看自己的傷口，而是專心仰望那掛在木頭上、為我們成就救恩的耶穌基督。賜給我們轉眼仰望祢的信心，使我們在祢裡面得著醫治與真正的生命。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="mb-12">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-accent/10 rounded-xl text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    </svg>
+                </span>
+                <h2 class="text-3xl font-display font-bold">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section-1" class="bento-card p-6 flex flex-col justify-between group hover:border-gold-500">
+                    <span class="text-gold-500 font-bold mb-2">PART 01</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">倚靠與得勝：當危機化為屬靈的轉機</h3>
+                    <span class="text-sm text-gray-500 mt-4">民 21:1-3</span>
+                </a>
+                <a href="#section-2" class="bento-card p-6 flex flex-col justify-between group hover:border-gold-500">
+                    <span class="text-gold-500 font-bold mb-2">PART 02</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">煩躁與抱怨：忘恩是腐蝕靈魂的毒藥</h3>
+                    <span class="text-sm text-gray-500 mt-4">民 21:4-5</span>
+                </a>
+                <a href="#section-3" class="bento-card p-6 flex flex-col justify-between group hover:border-gold-500">
+                    <span class="text-gold-500 font-bold mb-2">PART 03</span>
+                    <h3 class="text-xl font-bold group-hover:text-gold-400 transition-colors">仰望與醫治：凝視十架上的奇異恩典</h3>
+                    <span class="text-sm text-gray-500 mt-4">民 21:6-9</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1 Analysis -->
+        <section id="section-1" class="mb-12 pt-16">
+            <div class="bento-card p-8 md:p-10 border-l-4 border-l-gold-500">
+                <div class="mb-6">
+                    <span class="text-gold-500 text-sm font-black tracking-widest">SECTION 1</span>
+                    <h3 class="text-3xl font-display font-bold mt-2">倚靠與得勝：當危機化為屬靈的轉機</h3>
+                </div>
+                <div class="space-y-8">
+                    <div class="bg-surface/50 p-6 rounded-2xl border border-white/5 italic text-gray-300">
+                        民 21:1-3：住南地的迦南人亞拉得王...就和以色列人爭戰...以色列人向耶和華發願說：「你若將這民交付我手，我就把他們的城邑盡行毀滅。」耶和華應允了以色列人...
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                                原文解析
+                            </h4>
+                            <p class="text-gray-400"><strong class="text-gray-200">盡行毀滅 (何珥瑪/Hormah)</strong>：希伯來原文是 חָרַם (*charam*)，意指「完全奉獻給神」。這表明勝利的主權完全歸屬神，人不取戰利品。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
+                                關鍵思索
+                            </h4>
+                            <p class="text-gray-400">以色列人在危機中轉向神，而非憑血氣抱怨，展現了信心的成長。當我們願意放棄自身利益，神便彰顯大能。</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 border-t border-white/5 pt-6">
+                        <p class="text-sm uppercase tracking-widest text-gold-500 mb-2">名言佳句</p>
+                        <blockquote class="text-xl font-display italic text-gray-200">「神一直在等待著一個完全順服祂的人，好藉著他彰顯神的大能。」—— 慕迪 (D.L. Moody)</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 Analysis -->
+        <section id="section-2" class="mb-12 pt-16">
+            <div class="bento-card p-8 md:p-10 border-l-4 border-l-accent">
+                <div class="mb-6">
+                    <span class="text-accent text-sm font-black tracking-widest">SECTION 2</span>
+                    <h3 class="text-3xl font-display font-bold mt-2">煩躁與抱怨：忘恩是腐蝕靈魂的毒藥</h3>
+                </div>
+                <div class="space-y-8">
+                    <div class="bg-surface/50 p-6 rounded-2xl border border-white/5 italic text-gray-300">
+                        民 21:4-5：...百姓因這路難行，心中甚是煩躁，就怨讟神和摩西...我們的心厭惡這淡薄的食物。
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">原文解析</h4>
+                            <p class="text-gray-400"><strong class="text-gray-200">煩躁 (qatsar)</strong>：意為「靈裡失去耐心」。<strong class="text-gray-200">淡薄的 (qeloqel)</strong>：意為「可鄙的」。他們藐視了神的日常恩典。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">深度透視</h4>
+                            <p class="text-gray-400">抱怨是「屬靈的健忘症」。以色列人將救命的嗎哪貶為垃圾，這不僅是抱怨環境，更是對上帝慈愛的踐踏。</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 border-t border-white/5 pt-6">
+                        <p class="text-sm uppercase tracking-widest text-accent mb-2">名言佳句</p>
+                        <blockquote class="text-xl font-display italic text-gray-200">「感恩與抱怨無法共存於同一顆心中。不感恩的心，就是不信的種子。」—— 潘霍華 (Dietrich Bonhoeffer)</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Analysis -->
+        <section id="section-3" class="mb-24 pt-16">
+            <div class="bento-card p-8 md:p-10 border-l-4 border-l-copper">
+                <div class="mb-6">
+                    <span class="text-copper text-sm font-black tracking-widest">SECTION 3</span>
+                    <h3 class="text-3xl font-display font-bold mt-2 text-copper">仰望與醫治：凝視十架上的奇異恩典</h3>
+                </div>
+                <div class="space-y-8">
+                    <div class="bg-surface/50 p-6 rounded-2xl border border-white/5 italic text-gray-300">
+                        民 21:8-9：耶和華對摩西說：「你製造一條火蛇，掛在竿子上；凡被咬的，一望這蛇，就必得活。」...凡被蛇咬的，一望這銅蛇就活了。
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">原文解析</h4>
+                            <p class="text-gray-400"><strong class="text-gray-200">望 (nabat)</strong>：意指「專注地看」、「定睛凝視」。這是一種帶著期待、完全依賴的注視。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-accent font-bold mb-3 flex items-center gap-2">十架預表</h4>
+                            <p class="text-gray-400">銅蛇預表了耶穌基督。得救不靠功勞，只靠信心仰望。神保留火蛇讓人看見罪的後果，提供銅蛇讓人看見恩典的出路。</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 border-t border-white/5 pt-6">
+                        <p class="text-sm uppercase tracking-widest text-copper mb-2">名言佳句</p>
+                        <blockquote class="text-xl font-display italic text-gray-200">「信心不是注視自己的心靈，而是將目光從自己身上移開，定睛在耶穌基督身上。」—— 約翰·加爾文 (John Calvin)</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="mb-24 pt-16">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-gold-500/10 rounded-xl text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20l-7-7-7 7V4a1 1 0 011-1h12a1 1 0 011 1v16z" />
+                    </svg>
+                </span>
+                <h2 class="text-4xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-12">
+                <div class="bento-card p-10 md:p-16">
+                    <h1 class="text-3xl md:text-5xl font-display font-black text-gold-400 text-center mb-12">在絕望中仰望：<br><span class="text-2xl md:text-3xl font-normal text-gray-400">曠野中的毒蛇與拯救之恩</span></h1>
+                    
+                    <div class="space-y-8 text-lg md:text-xl leading-relaxed text-gray-300 font-light">
+                        <p>各位弟兄姊妹，平安。人生的道路，就像以色列人行走的曠野，有時會有突如其來的攻擊，有時則充滿了崎嶇難行的石子路。當我們面對這些處境時，我們的反應是什麼？今天我們要透過民數記21章1到9節，來看以色列人在曠野中的一段經歷，從中學習如何在絕望與危機中，找到神所賜的救恩之路。</p>
+
+                        <div class="border-l-4 border-gold-500 pl-8 my-10 py-2">
+                            <h3 class="text-2xl font-bold text-gold-400 mb-4 uppercase tracking-tighter">一、倚靠與得勝：當危機化為屬靈的轉機</h3>
+                            <p>在經文的開頭，以色列人遭遇了亞拉得王的突襲。這次，他們做了一個正確的決定：向神發願。他們承認戰爭的主權在於神。慕迪曾說：「神一直在等待著一個完全順服祂的人，好藉著他彰顯神的大能。」我們面對危機時，是否也願意將主權完全交給神？</p>
+                        </div>
+
+                        <div class="border-l-4 border-accent pl-8 my-10 py-2">
+                            <h3 class="text-2xl font-bold text-accent mb-4 uppercase tracking-tighter">二、煩躁與抱怨：忘恩是腐蝕靈魂的毒藥</h3>
+                            <p>信心的巔峰往往緊接著低谷。以色列人因為「路難行」，心就「甚是煩躁」。他們將神每日信實供應的「嗎哪」貶低為垃圾。弟兄姊妹，這就是抱怨的真面目：<span class="text-accent font-bold italic underline">抱怨是一種屬靈的健忘症</span>。當我們在生活中對配偶、工作充滿抱怨時，我們其實是在質疑神的良善。</p>
+                        </div>
+
+                        <div class="border-l-4 border-copper pl-8 my-10 py-2">
+                            <h3 class="text-2xl font-bold text-copper mb-4 uppercase tracking-tighter">三、仰望與醫治：凝視十架上的奇異恩典</h3>
+                            <p>當百姓悔改呼求時，神給出了一個奇妙的方法：<span class="text-gold-400 font-black">「一望這銅蛇就活了。」</span> 為什麼是看銅蛇？神要他們學習：停止看自己的傷口，單單用信心仰望。這條銅蛇，正是主耶穌基督十字架的預表。加爾文曾說：「信心不是注視自己的心靈，而是將目光從自己身上移開，定睛在耶穌基督身上。」</p>
+                        </div>
+
+                        <div class="bg-gold-500/5 p-8 rounded-3xl text-center border border-gold-500/20">
+                            <h4 class="text-2xl font-display font-bold text-gold-400 mb-4">結論與呼召</h4>
+                            <p class="text-gray-200">你今天被生活的重疊咬傷了嗎？不要再看著你潰爛的傷口，不要再抱怨這條路有多難行。<span class="text-gradient font-black text-2xl">抬起頭來！仰望那為你掛在十字架上的耶穌基督。</span>當你真實地仰望祂，祂的恩典與醫治，就要在你的生命中湧流！阿們。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+            <div class="bento-card p-8 bg-gradient-to-br from-surface to-accent/5">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-accent font-bold">1.</span> 檢視心中的「火蛇」：反思生命中是否有持續的抱怨與不滿。</li>
+                    <li class="flex gap-3"><span class="text-accent font-bold">2.</span> 改變面對危機的策略：學習將主權交給神，而非憑血氣爭戰。</li>
+                    <li class="flex gap-3"><span class="text-accent font-bold">3.</span> 單單仰望十字架：停止自我拯救的努力，轉向十架上的基督。</li>
+                </ul>
+                <div class="mt-8 flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-deep rounded-full text-xs text-accent border border-accent/20">#抱怨</span>
+                    <span class="px-3 py-1 bg-deep rounded-full text-xs text-accent border border-accent/20">#悔改</span>
+                    <span class="px-3 py-1 bg-deep rounded-full text-xs text-accent border border-accent/20">#仰望</span>
+                </div>
+            </div>
+            <div class="bento-card p-8 bg-gradient-to-br from-surface to-gold-500/5">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    實踐行動
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">1.</span> 建立感恩日記：每天寫下三件神所賜、看似「平淡」的恩典。</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">2.</span> 停損與禱告：察覺「煩躁」時，閉上嘴巴，默禱十秒。</li>
+                    <li class="flex gap-3"><span class="text-gold-500 font-bold">3.</span> 分享見證：向朋友分享你藉著仰望神度過難關的經歷。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="mb-24 pt-16">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="p-3 bg-white/5 rounded-xl text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </span>
+                <h2 class="text-3xl font-display font-bold">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="bento-card p-6 border-white/5 bg-white/5">
+                    <p class="italic text-gray-200 mb-4">「信心不是注視自己的心靈，而是將目光從自己身上移開，定睛在耶穌基督身上。」</p>
+                    <cite class="text-sm text-gold-500">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="bento-card p-6 border-white/5 bg-white/5">
+                    <p class="italic text-gray-200 mb-4">「感恩與抱怨無法共存於同一顆心中。不感恩的心，就是不信的種子。」</p>
+                    <cite class="text-sm text-gold-500">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="bento-card p-6 border-white/5 bg-white/5">
+                    <p class="italic text-gray-200 mb-4">「年輕人，你在苦惱中，仰望耶穌基督吧！只要仰望！」</p>
+                    <cite class="text-sm text-gold-500">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="bento-card p-6 border-white/5 bg-white/5">
+                    <p class="italic text-gray-200 mb-4">「十字架是神恩典的頂峰，在那裡，神的公義與慈愛完美地相遇。」</p>
+                    <cite class="text-sm text-gold-500">— 約翰·史托德 (John Stott)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center py-10 border-t border-white/5">
+            <p class="text-gray-600 text-sm tracking-widest">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-deep group-hover:animate-subtle-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+</body>
+</html>

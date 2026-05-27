@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民20:14-29: 穿越拒絕與告別的曠野</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E2B87E', // 典雅金色
+                        secondary: '#A67C52',
+                        accent: '#FF4D4D',
+                        darkBg: '#0F1115',
+                        glass: 'rgba(255, 255, 255, 0.03)',
+                        borderGlass: 'rgba(255, 255, 255, 0.1)'
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', filter: 'brightness(80%)' },
+                            '50%': { opacity: '1', filter: 'brightness(110%)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F1115;
+            color: #E2E8F0;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #E2B87E 0%, #A67C52 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #E2B87E;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .breath-banner {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        .jumpy-text {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        .floating-btn {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民20:14-29',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '穿越拒絕與告別的曠野' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-sm font-bold tracking-widest text-primary hidden md:block">民20:14-29</span>
+            <div class="flex gap-6 text-xs md:text-sm font-medium tracking-wide">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header Section -->
+    <header id="top" class="relative min-h-[85vh] flex flex-col items-center justify-center pt-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full animate-breath breath-banner opacity-60">
+                <img src='image/img_356037ee-d4e8-4c4f-8401-9dfb06ab1676.jpg' alt='Banner' class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-darkBg/20 via-darkBg/60 to-darkBg"></div>
+        </div>
+
+        <div class="relative z-10 text-center max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight">
+                <span class="block text-white opacity-80 text-xl md:text-2xl font-light mb-4 tracking-[0.3em]">民 20:14-29</span>
+                <span class="text-gradient">穿越拒絕與告別的曠野</span>
+            </h1>
+
+            <!-- Golden Verse (Jumpy Design) -->
+            <div class="px-4 py-8 rounded-3xl max-w-2xl mx-auto">
+                <p class="text-lg md:text-2xl leading-relaxed text-white/90 font-medium jumpy-text italic">
+                    「摩西把亞倫的聖衣剝下來，給他的兒子以利亞撒穿上，亞倫就死在山頂那裡。於是摩西和以利亞撒下了山。」
+                </p>
+                <p class="mt-4 text-primary font-bold tracking-widest">— 民數記 20:28</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="relative z-10 max-w-5xl mx-auto px-6 pb-32 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card p-8 md:p-12 text-center relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                </div>
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5L6 9H2V15H6L11 19V5Z M15.54 8.46a5 5 0 0 1 0 7.07 M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                    <h2 class="text-3xl font-bold text-white tracking-widest">祈禱</h2>
+                </div>
+                <p class="text-xl leading-relaxed text-gray-300 max-w-3xl mx-auto">
+                    主阿，在我們生命的旅程中，常常會面對如以東般的拒絕，以及如何珥山上的告別。當我們的善意被誤解、當我們的道路被攔阻，甚至當我們必須放下曾經的呼召與所愛的人時，求祢賜給我們順服的勇氣。讓我們真知道，拒絕我們的雖是人，引導我們腳步的卻是祢；結束的是人生的季節，永不改變的是祢的主權與同在。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                <h2 class="text-3xl font-bold text-white tracking-widest">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#section1" class="glass-card p-6 hover:bg-white/5 transition-all group border-l-4 border-l-primary">
+                    <span class="text-primary text-xs font-bold block mb-2">PART 01</span>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">意想不到的拒絕</h3>
+                    <p class="text-sm text-gray-400">民數記 20:14-17</p>
+                </a>
+                <a href="#section2" class="glass-card p-6 hover:bg-white/5 transition-all group border-l-4 border-l-primary">
+                    <span class="text-primary text-xs font-bold block mb-2">PART 02</span>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">恩典的轉向</h3>
+                    <p class="text-sm text-gray-400">民數記 20:18-21</p>
+                </a>
+                <a href="#section3" class="glass-card p-6 hover:bg-white/5 transition-all group border-l-4 border-l-primary">
+                    <span class="text-primary text-xs font-bold block mb-2">PART 03</span>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-primary transition-colors">何珥山上的告別</h3>
+                    <p class="text-sm text-gray-400">民數記 20:22-29</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Depth Analysis Sections -->
+        <div class="space-y-32">
+            <!-- Section 1 -->
+            <section id="section1" class="scroll-mt-32">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-32">
+                            <h2 class="text-5xl font-black text-white/10 absolute -top-8 -left-4 select-none">01</h2>
+                            <h3 class="text-3xl font-bold text-primary mb-4 leading-tight">意想不到的拒絕：當善意換來無情的高牆</h3>
+                            <div class="bg-primary/10 rounded-xl p-4 border border-primary/20">
+                                <p class="text-sm font-bold text-primary mb-2 uppercase tracking-widest">Key Original Words</p>
+                                <div class="space-y-3">
+                                    <div>
+                                        <p class="text-white font-bold">弟兄 (אח, 'ach)</p>
+                                        <p class="text-xs text-gray-400">血緣親屬。喚起歷史親情。</p>
+                                    </div>
+                                    <hr class="border-white/10">
+                                    <div>
+                                        <p class="text-white font-bold">勞苦 (תּלָאָה, tla'ah)</p>
+                                        <p class="text-xs text-gray-400">艱難困苦、疲憊遭遇。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="glass-card p-8 border-r-4 border-r-secondary/30">
+                            <h4 class="text-secondary font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 0010 0 7.993 7.993 0 00-7-7.196z"/></svg> 經文引用 (民 20:14-17)
+                            </h4>
+                            <p class="text-gray-300 italic leading-relaxed">
+                                摩西從加低斯差遣使者去見以東王...「求你容我們從你的地經過。我們不走田地和葡萄園，也不喝井裡的水，只走大道，不偏左右，直到過了你的境界。」
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-xl font-bold text-white">關鍵解析</h4>
+                            <p class="text-gray-400 leading-relaxed text-lg">
+                                我們常以為「態度夠好、理由夠正當，別人就應該成全」。但這段經文提醒，神允許「不合情理的拒絕」發生，是為了保護我們免於對人產生依賴，進而專一仰望神的供應。
+                            </p>
+                        </div>
+                        <div class="bg-white/5 rounded-2xl p-6 border-l-2 border-primary">
+                            <p class="text-sm text-primary font-bold mb-2 tracking-tighter">牧者佳句</p>
+                            <p class="text-xl font-medium text-white italic">「神若是讓我們在人生的旅途中處處碰壁，那必定是因為祂為我們預備了一條更好的道路。」</p>
+                            <p class="text-right text-gray-500 mt-2">— 司布真 (Charles Spurgeon)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section2" class="scroll-mt-32">
+                <div class="flex flex-col md:flex-row-reverse gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-32">
+                            <h2 class="text-5xl font-black text-white/10 absolute -top-8 -right-4 select-none">02</h2>
+                            <h3 class="text-3xl font-bold text-primary mb-4 leading-tight">恩典的轉向：在不平中選擇順服的退讓</h3>
+                            <div class="bg-primary/10 rounded-xl p-4 border border-primary/20">
+                                <p class="text-sm font-bold text-primary mb-2 uppercase tracking-widest">Key Original Words</p>
+                                <div class="space-y-3">
+                                    <div>
+                                        <p class="text-white font-bold">轉去 (נָטָה, natah)</p>
+                                        <p class="text-xs text-gray-400">避開、屈服。克制血氣。</p>
+                                    </div>
+                                    <hr class="border-white/10">
+                                    <div>
+                                        <p class="text-white font-bold">強硬的手 (חָזָק, chazaq)</p>
+                                        <p class="text-xs text-gray-400">強大猛烈的軍事威脅。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8 text-right md:text-left">
+                        <div class="glass-card p-8 border-l-4 border-l-secondary/30">
+                            <h4 class="text-secondary font-bold mb-4 flex items-center gap-2 justify-end md:justify-start">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 0010 0 7.993 7.993 0 00-7-7.196z"/></svg> 經文引用 (民 20:18-21)
+                            </h4>
+                            <p class="text-gray-300 italic leading-relaxed">
+                                以東王說：「你們不可經過！」就率領許多人出來，要用強硬的手攻擊以色列人... 於是他們轉去，離開他。
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-xl font-bold text-white">關鍵解析</h4>
+                            <p class="text-gray-400 leading-relaxed text-lg">
+                                屬靈的勇敢不在於硬碰硬。以色列人的「轉去」是在不平等待遇中「對神旨意的順服」。真正的得勝，是有能力還擊時，卻為了順服神而選擇退讓。
+                            </p>
+                        </div>
+                        <div class="bg-white/5 rounded-2xl p-6 border-r-2 border-primary">
+                            <p class="text-sm text-primary font-bold mb-2 tracking-tighter">牧者佳句</p>
+                            <p class="text-xl font-medium text-white italic">「饒恕與退讓，是將審判的權柄交還給神，這正是我們信靠祂主權的最高表現。」</p>
+                            <p class="text-right text-gray-500 mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section3" class="scroll-mt-32">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-32">
+                            <h2 class="text-5xl font-black text-white/10 absolute -top-8 -left-4 select-none">03</h2>
+                            <h3 class="text-3xl font-bold text-primary mb-4 leading-tight">何珥山上的告別：生命的脫下與神聖的傳承</h3>
+                            <div class="bg-primary/10 rounded-xl p-4 border border-primary/20">
+                                <p class="text-sm font-bold text-primary mb-2 uppercase tracking-widest">Key Original Words</p>
+                                <div class="space-y-3">
+                                    <div>
+                                        <p class="text-white font-bold">歸到 (אָסַף, 'asaph)</p>
+                                        <p class="text-xs text-gray-400">聚集、收回。安息與歸屬。</p>
+                                    </div>
+                                    <hr class="border-white/10">
+                                    <div>
+                                        <p class="text-white font-bold">聖衣 (בֶּגֶד, beged)</p>
+                                        <p class="text-xs text-gray-400">神聖職分。卸下與傳承。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="glass-card p-8 border-r-4 border-r-secondary/30">
+                            <h4 class="text-secondary font-bold mb-4 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.993 7.993 0 002 12a5 5 0 0010 0 7.993 7.993 0 00-7-7.196z"/></svg> 經文引用 (民 20:22-29)
+                            </h4>
+                            <p class="text-gray-300 italic leading-relaxed">
+                                「把亞倫的聖衣剝下來，給他的兒子以利亞撒穿上；亞倫必死在那裡，歸他列祖。」摩西就照耶和華所吩咐的行。
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-xl font-bold text-white">關鍵解析</h4>
+                            <p class="text-gray-400 leading-relaxed text-lg">
+                                「剝下聖衣」宣告：事奉的職分屬於神。我們只是管家，時候到了，就必須甘心樂意地將職位與光環「脫下」，交給下一代。這既是承認人的有限，也是讚美神的信實。
+                            </p>
+                        </div>
+                        <div class="bg-white/5 rounded-2xl p-6 border-l-2 border-primary">
+                            <p class="text-sm text-primary font-bold mb-2 tracking-tighter">牧者佳句</p>
+                            <p class="text-xl font-medium text-white italic">「神埋葬了祂的工人，卻繼續祂的工作。」</p>
+                            <p class="text-right text-gray-500 mt-2">— 約翰·衛斯理 (John Wesley)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 2v4a2 2 0 002 2h4"/></svg>
+                <h2 class="text-3xl font-bold text-white tracking-widest">講章文稿</h2>
+            </div>
+            <div class="glass-card p-8 md:p-16 space-y-8 leading-loose text-gray-300 text-lg">
+                <div class="text-center mb-12">
+                    <p class="text-primary font-bold mb-2">講道主題</p>
+                    <h3 class="text-4xl font-black text-white">穿越拒絕與告別的曠野</h3>
+                </div>
+                
+                <p>弟兄姊妹們，人生就是一場穿越曠野的旅程。在這條路上，我們最害怕遇到的兩件事：一個是<strong class="text-white border-b-2 border-primary">「被拒絕」</strong>，另一個是<strong class="text-white border-b-2 border-primary">「說再見」</strong>。今天的經文民數記20章，以色列人就同時經歷了這兩件令人心碎的事。</p>
+
+                <p>首先，我們來看第一段：<strong class="text-primary">意想不到的拒絕：當善意換來無情的高牆</strong>。以東王無情地拒絕了。有時候，我們在遵行神旨意的道路上，換來的卻是冷酷的高牆。我們的心中不禁會問：「神啊，我是在為祢做事，為什麼祢容許我這樣被對待？」提摩太·凱勒牧師提醒我們：「饒恕與退讓，是將審判的權柄交還給神。」以東的拒絕，其實是神在剪斷以色列人對人的倚靠。</p>
+
+                <p>這就引導我們來到第二段：<strong class="text-primary">恩典的轉向：在不平中選擇順服的退讓</strong>。面對威脅，以色列人沒有打仗，他們選擇了繞道。這不是懦弱，而是順服。為了順服神，他們寧願咽下這口氣。真正的屬靈成熟，是當你有能力報復、有理由爭辯時，為了神的榮耀，你選擇了退讓。這看似是一條吃虧的繞道，卻是恩典的轉向。</p>
+
+                <div class="my-12 p-8 border-y border-white/10 text-center">
+                    <p class="text-2xl md:text-3xl font-bold text-white leading-relaxed">「摩西把亞倫的聖衣剝下來，給他的兒子以利亞撒穿上，亞倫就死在山頂那裡。」</p>
+                    <p class="mt-4 text-secondary">— 民 20:28</p>
+                </div>
+
+                <p>最後，我們來到<strong class="text-primary">何珥山上的告別：生命的脫下與神聖的傳承</strong>。亞倫安靜地跟著摩西上山，順服地讓摩西一件、一件地剝下他的大祭司聖衣。弟兄姊妹，我們每個人終有一天，都要上到自己的「何珥山」，面對生命的脫下。亞倫的脫下，成就了以利亞撒的穿上。屬靈的服事從來不屬於我們個人，我們只是暫時的管家。</p>
+
+                <p class="text-white font-bold">無論你現在正經歷以東的「拒絕」，還是何珥山的「告別」，請記得：神的主權從未失控。讓我們帶著順服的心，繼續穿越這片曠野，走向神為我們預備的應許之地！</p>
+                
+                <div class="pt-10 flex flex-wrap gap-3">
+                    <span class="px-4 py-1 bg-white/5 rounded-full text-sm text-primary border border-primary/20">#拒絕</span>
+                    <span class="px-4 py-1 bg-white/5 rounded-full text-sm text-primary border border-primary/20">#順服</span>
+                    <span class="px-4 py-1 bg-white/5 rounded-full text-sm text-primary border border-primary/20">#傳承</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                <h2 class="text-3xl font-bold text-white tracking-widest">屬靈前輩名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote cards would repeat here -->
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-4">「神埋葬了祂的工人，卻繼續祂的工作。」</p>
+                    <p class="text-primary font-bold text-right">— 約翰·衛斯理 (John Wesley)</p>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-4">「只有當我們願意放開緊握雙手的事物時，我們才能領受神要給我們的新恩典。」</p>
+                    <p class="text-primary font-bold text-right">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-4">「基督徒的生命不是由我們自己來主導何時上台、何時下台，而是完全取決於那位呼召我們的主。」</p>
+                    <p class="text-primary font-bold text-right">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 flex flex-col justify-between">
+                    <p class="text-lg text-gray-300 italic mb-4">「當我們看不見神的手時，我們必須學會信任神的心。」</p>
+                    <p class="text-primary font-bold text-right">— 查爾斯·史丹利 (Charles Stanley)</p>
+                </div>
+                <!-- ... other quotes ... -->
+            </div>
+        </section>
+
+        <!-- Warning Message -->
+        <div class="text-center pt-10 pb-20">
+            <p class="text-sm text-gray-500 bg-white/5 inline-block px-6 py-2 rounded-full border border-white/5">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-darkBg rounded-full flex items-center justify-center floating-btn hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

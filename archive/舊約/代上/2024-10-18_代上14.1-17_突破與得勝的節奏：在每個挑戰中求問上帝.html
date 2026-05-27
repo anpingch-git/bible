@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代上14:1-17:突破與得勝的節奏：在每個挑戰中求問上帝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        accent: '#6366f1',
+                        dark: '#0a0a0c',
+                        surface: '#16161a',
+                        card: '#1c1c21',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gentle-bounce': 'gentle-bounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-slow': {
+                            '0%, 100%': { opacity: 0.9 },
+                            '50%': { opacity: 0.4 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'gentle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0c; color: #e5e7eb; -webkit-font-smoothing: antialiased; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gold-gradient { background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .banner-mask { mask-image: linear-gradient(to bottom, black 60%, transparent 100%); }
+        .sticky-nav { position: sticky; top: 0; z-index: 50; transition: all 0.3s ease; }
+        .bounce-text { display: inline-block; animation: gentle-bounce 2s ease-in-out infinite; }
+        .outline-card { border-left: 4px solid #D4AF37; }
+        .nav-item { position: relative; padding: 0.5rem 1rem; color: #9ca3af; transition: color 0.3s; }
+        .nav-item:hover { color: #fff; }
+        .nav-item::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: #D4AF37; transition: all 0.3s; transform: translateX(-50%); }
+        .nav-item:hover::after { width: 80%; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代上14:1-17',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '突破與得勝的節奏：在每個挑戰中求問上帝' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Banner & Header -->
+    <header class="relative w-full h-[60vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_4368fb04-bd7c-4343-bbb8-45f1fccb89c5.jpg' alt='Celestial Path' class="w-full h-full object-cover animate-pulse-slow banner-mask" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/40 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
+            <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight tracking-tight">
+                代上14:1-17：<br>
+                <span class="gold-gradient">突破與得勝的節奏</span><br>
+                <span class="text-2xl md:text-4xl font-medium opacity-90 block mt-2">在每個挑戰中求問上帝</span>
+            </h1>
+            <div id="golden-verse" class="mt-8 text-lg md:text-2xl font-light text-white/90 leading-relaxed italic max-w-3xl mx-auto">
+                <span class="bounce-text">「大衛又求問神。神說：『不要一直地上去，要轉到他們後頭，從桑樹林對面攻打他們。』」</span>
+                <p class="text-sm md:text-lg mt-2 text-gold font-medium">（歷代志上 14:14）</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav glass bg-dark/80 px-4 py-3 flex justify-between items-center shadow-2xl">
+        <div class="text-gold font-bold text-sm md:text-base outfit uppercase tracking-widest px-2 hidden sm:block">
+            1 Chronicles 14
+        </div>
+        <div class="flex space-x-1 md:space-x-6 mx-auto md:mx-0">
+            <a href="#prayer" class="nav-item text-xs md:text-sm font-medium">禱告</a>
+            <a href="#outline" class="nav-item text-xs md:text-sm font-medium">大綱</a>
+            <a href="#sermon" class="nav-item text-xs md:text-sm font-medium">講章</a>
+            <a href="#quotes" class="nav-item text-xs md:text-sm font-medium">名言</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold outfit">禱告詞 PRAYER</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-[2.5rem] border-t-2 border-gold/30">
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-medium italic">
+                    「主阿，祢是賜下突破與得勝的上帝。當我們處在順境時，求祢保守我們的心不偏離祢；當我們面臨爭戰與危機時，提醒我們第一時間回轉求問祢。求祢賜給我們敏銳的靈，不倚靠過去的經驗，而是時刻聆聽祢在桑樹梢上的腳步聲，緊緊跟隨祢的帶領。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold outfit">分段大綱 OUTLINE</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="glass p-6 rounded-2xl hover:bg-gold/10 transition-all border border-white/5 flex flex-col justify-between group">
+                    <span class="text-gold text-sm font-bold outfit mb-2">PART 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">安逸中的恩典與潛在危機</h3>
+                    <p class="text-xs text-gray-400 mt-2">代上 14:1-7</p>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl hover:bg-gold/10 transition-all border border-white/5 flex flex-col justify-between group">
+                    <span class="text-gold text-sm font-bold outfit mb-2">PART 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">首戰告捷：凡事求問的突破</h3>
+                    <p class="text-xs text-gray-400 mt-2">代上 14:8-12</p>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl hover:bg-gold/10 transition-all border border-white/5 flex flex-col justify-between group">
+                    <span class="text-gold text-sm font-bold outfit mb-2">PART 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">再戰非利士：順服新策略</h3>
+                    <p class="text-xs text-gray-400 mt-2">代上 14:13-17</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Parts -->
+            <div class="space-y-24 mt-16">
+                <!-- Part 1 -->
+                <article id="part1" class="space-y-8 scroll-mt-24">
+                    <div class="outline-card pl-6">
+                        <h3 class="text-2xl font-bold text-gold mb-4">第一段：安逸中的恩典與潛在危機 (代上 14:1-7)</h3>
+                        <p class="text-gray-400 leading-relaxed bg-surface/50 p-4 rounded-xl italic">
+                            推羅王希蘭將香柏木運到大衛那裡...大衛就知道耶和華堅立他作以色列王...大衛在耶路撒冷又立后妃，又生兒女。
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="glass p-6 rounded-3xl">
+                            <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest">關鍵原文分析</h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">知道 (Yada)</strong>：深刻的經歷與確認，而非頭腦知識。</li>
+                                <li><strong class="text-white">堅立 (Kuwb)</strong>：確立、固定。王權根基在於上帝的穩固。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-3xl">
+                            <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest">問題與解析</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <span class="text-gold font-bold">問：</span>順境中容易陷入什麼盲點？<br>
+                                <span class="text-indigo-300 font-bold">析：</span>順境更考驗人心。大衛在巔峰時妥協於世俗成功的聯姻模式，提醒我們安逸常是妥協的溫床。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-surface/30 border border-white/5 p-8 rounded-3xl">
+                        <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                            生活應用小故事
+                        </h4>
+                        <p class="text-gray-300 leading-relaxed italic border-l-2 border-accent/30 pl-6">
+                            一家基督徒企業在成功後取消了禱告會，改用商界潛規則擴張，雖獲得財富卻失去了最初的見證。
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Part 2 -->
+                <article id="part2" class="space-y-8 scroll-mt-24">
+                    <div class="outline-card pl-6">
+                        <h3 class="text-2xl font-bold text-gold mb-4">第二段：首戰告捷：凡事求問的突破 (代上 14:8-12)</h3>
+                        <p class="text-gray-400 leading-relaxed bg-surface/50 p-4 rounded-xl italic">
+                            大衛求問神，說：「我可以上去攻打非利士人嗎？」耶和華說：「你可以上去，我必將他們交在你手裡。」
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="glass p-6 rounded-3xl">
+                            <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest">關鍵原文分析</h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">求問 (Sha'al)</strong>：詢問、尋求指導，是面對危機的第一反應。</li>
+                                <li><strong class="text-white">巴力‧毘拉心</strong>：字面意思「突破之主」，榮耀歸給神。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-3xl">
+                            <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest">問題與解析</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <span class="text-gold font-bold">問：</span>如何建立「求問神」的直覺？<br>
+                                <span class="text-indigo-300 font-bold">析：</span>人本能依靠現有資源。建立直覺需在平日小事操練對神的依賴，視神為生命戰場的最高統帥。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface/30 border border-white/5 p-8 rounded-3xl">
+                        <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                            生活應用小故事
+                        </h4>
+                        <p class="text-gray-300 leading-relaxed italic border-l-2 border-accent/30 pl-6">
+                            機長在雷暴中必須拋棄直覺聽從塔台。在人生風暴中，「求問神」就是接通屬靈的塔台。
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Part 3 -->
+                <article id="part3" class="space-y-8 scroll-mt-24">
+                    <div class="outline-card pl-6">
+                        <h3 class="text-2xl font-bold text-gold mb-4">第三段：再戰非利士：放下經驗，順服新策略 (代上 14:13-17)</h3>
+                        <p class="text-gray-400 leading-relaxed bg-surface/50 p-4 rounded-xl italic">
+                            「神說：不要一直地上去，要轉到他們後頭...你聽見桑樹梢上有步步的聲音，就要出戰。」
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="glass p-6 rounded-3xl">
+                            <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest">關鍵原文分析</h4>
+                            <ul class="space-y-4">
+                                <li><strong class="text-white">步步的聲音 (Tse'adah)</strong>：行軍腳步聲，代表上帝隱形的軍隊已行動。</li>
+                                <li><strong class="text-white">遵著...去行 (Asah)</strong>：大衛沒有因為策略奇怪而猶豫。</li>
+                            </ul>
+                        </div>
+                        <div class="glass p-6 rounded-3xl">
+                            <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest">問題與解析</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                <span class="text-gold font-bold">問：</span>為什麼上帝要給截然不同的策略？<br>
+                                <span class="text-indigo-300 font-bold">析：</span>為讓大衛保持「持續且新鮮的依賴」。昨日的嗎哪不能留到今日。神要我們跟隨祂此刻的腳步。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-surface/30 border border-white/5 p-8 rounded-3xl">
+                        <h4 class="font-bold mb-4 text-accent uppercase text-sm tracking-widest flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                            生活應用小故事
+                        </h4>
+                        <p class="text-gray-300 leading-relaxed italic border-l-2 border-accent/30 pl-6">
+                            籃球教練根據當下狀態制定戰術。神不允許我們成為「屬靈自動導航機」，要隨時聽祂在桑樹梢上的聲音。
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="space-y-12 bg-surface p-8 md:p-16 rounded-[3rem] border border-white/5 shadow-inner">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold outfit">講章文稿 SERMON</h2>
+            </div>
+
+            <div class="prose prose-invert prose-lg max-w-none space-y-8 font-light text-gray-300 leading-loose">
+                <p class="text-gold text-xl font-bold mb-8">經文範圍：代上 14:1-17：突破與得勝的節奏</p>
+                
+                <p>弟兄姊妹們，我們一生中會經歷許多大大小小的爭戰。有時是職場上的競爭，有時是家庭關係的撕裂，有時是內心軟弱的掙扎。我們都渴望突破，渴望得勝。但得勝的節奏是什麼？在大衛王向我們展示了一個得勝者最核心的秘訣。</p>
+
+                <h3 class="text-2xl font-bold text-white border-b border-white/10 pb-2">安逸中的恩典與潛在危機</h3>
+                <p>經文告訴我們，當大衛作王，大衛<span class="text-indigo-400 font-bold">「就知道耶和華堅立他作以色列王」</span>。然而，經文立刻接著說，大衛在耶路撒冷<span class="text-indigo-400 font-bold">「又立后妃，又生兒女」</span>。這是一個極其真實的屬靈危機！提摩太·凱勒曾警告我們：「成功帶給人的屬靈危險，遠比貧窮大。」求主幫助我們，在順境中依然保持聖潔。</p>
+
+                <h3 class="text-2xl font-bold text-white border-b border-white/10 pb-2">首戰告捷：凡事求問的突破</h3>
+                <p>非利士人聽見大衛作王，大軍壓境。大衛做的第一件事是：<span class="text-gold font-black underline decoration-indigo-500 underline-offset-8">大衛求問神</span>。這就是大衛生命的亮點！他將那地方命名為<span class="text-indigo-400 font-bold">「巴力‧毘拉心」</span>，意思是「突破之主」。當我們面對攻擊，是先找關係，還是先接通屬靈的塔台？</p>
+
+                <h3 class="text-2xl font-bold text-white border-b border-white/10 pb-2">再戰非利士：放下經驗，順服新策略</h3>
+                <p>非利士人「又」來了！大衛沒有倚靠上次的方程式，他<span class="text-indigo-400 font-bold">「又求問神」</span>。神給了全新的策略：聽桑樹梢上步步的聲音。上帝不要大衛成為依賴經驗的自動導航機，祂要我們保持新鮮的聆聽。不要讓昨天的經驗限制了神今天要做的「新事」！</p>
+                
+                <div class="bg-dark/50 p-8 rounded-3xl border border-gold/20 mt-12">
+                    <h4 class="text-gold font-bold mb-4 uppercase tracking-widest text-sm">回應與實踐</h4>
+                    <ul class="space-y-4 text-sm md:text-base">
+                        <li class="flex gap-3"><span class="text-gold">●</span> 設立「決策禱告日誌」：本週重大決定前先禱告記錄。</li>
+                        <li class="flex gap-3"><span class="text-gold">●</span> 盤點生命中的「妥協」：檢視是否在安逸中引進了世俗習慣。</li>
+                        <li class="flex gap-3"><span class="text-gold">●</span> 尋求一次「新鮮的聆聽」：放棄慣用方式，為老問題禁食禱告。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold outfit">名言佳句 QUOTES</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass p-8 rounded-3xl relative group">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold/20 serif font-black">“</span>
+                    <p class="text-lg leading-relaxed mb-4">成功和繁榮帶給人的屬靈危險，遠比貧窮和逆境來得大。</p>
+                    <cite class="text-gold text-sm block not-italic">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl relative group">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold/20 serif font-black">“</span>
+                    <p class="text-lg leading-relaxed mb-4">我們越是感覺自己無能為力，就越應該緊緊抓住禱告這個無敵的武器。</p>
+                    <cite class="text-gold text-sm block not-italic">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl relative group">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold/20 serif font-black">“</span>
+                    <p class="text-lg leading-relaxed mb-4">絕對不要讓昨天對神的認識，限制了神今天要在你生命中所做的新事。</p>
+                    <cite class="text-gold text-sm block not-italic">— 慕安德烈 (Andrew Murray)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl relative group">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold/20 serif font-black">“</span>
+                    <p class="text-lg leading-relaxed mb-4">順服是信心的果子；只有順服的人才相信，也只有相信的人才順服。</p>
+                    <cite class="text-gold text-sm block not-italic">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl relative group">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold/20 serif font-black">“</span>
+                    <p class="text-lg leading-relaxed mb-4">上帝的同在不會在我們充滿自滿時降臨，祂只向那些迫切渴慕祂的人顯現。</p>
+                    <cite class="text-gold text-sm block not-italic">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl relative group">
+                    <span class="absolute -top-4 -left-2 text-6xl text-gold/20 serif font-black">“</span>
+                    <p class="text-lg leading-relaxed mb-4">信心不是一勞永逸的成就，而是一場每天都在進行的戰鬥。</p>
+                    <cite class="text-gold text-sm block not-italic">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="pt-12 border-t border-white/5 text-center text-xs md:text-sm text-gray-500 tracking-widest uppercase">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 w-14 h-14 bg-indigo-600 hover:bg-gold text-white rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110 active:scale-95 z-50 group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script>
+        // Smooth reveal on scroll animation
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, article').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+
+        // Sticky nav shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-dark/95');
+                nav.classList.remove('py-3', 'bg-dark/80');
+            } else {
+                nav.classList.add('py-3', 'bg-dark/80');
+                nav.classList.remove('py-2', 'bg-dark/95');
+            }
+        });
+    </script>
+</body>
+</html>

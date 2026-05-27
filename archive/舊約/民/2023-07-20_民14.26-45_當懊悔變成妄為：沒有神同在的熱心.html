@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民14:26-45:當懊悔變成妄為：沒有神同在的熱心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#DC143C',
+                        deepBlue: '#0A0E17',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                        accent: '#EAB308'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'jump': 'jump 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        jump: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0E17;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FDE68A, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        .breath-img {
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #EAB308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2.5s ease-in-out infinite;
+        }
+        .section-card {
+            border-left: 4px solid #EAB308;
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateX(10px);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民14:26-45',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當懊悔變成妄為：沒有神同在的熱心' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-morphism py-4 px-6 flex justify-between items-center">
+        <div class="text-accent font-bold text-sm md:text-lg tracking-wider">民14:26-45</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden flex items-end justify-center pb-20">
+        <div class="absolute inset-0 z-0">
+            <img src="image/img_ee54b2c8-c27f-4845-9432-c5a0a0173dd8.jpg" alt="Background" class="w-full h-full object-cover breath-img banner-mask">
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 id="top" class="text-4xl md:text-6xl font-black mb-6 text-white leading-tight drop-shadow-2xl">
+                當懊悔變成妄為：<br><span class="text-accent">沒有神同在的熱心</span>
+            </h1>
+            <div class="text-xl md:text-2xl font-medium text-slate-200 tracking-wide jump-text">
+                「不要上去；因為耶和華不在你們中間，恐怕你們被仇敵殺敗了。」<br>
+                <span class="text-sm md:text-lg opacity-80">（民數記 14:42）</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                <h2 class="text-3xl font-bold text-white tracking-tight">開路禱告</h2>
+            </div>
+            <div class="glass-morphism p-8 rounded-3xl leading-relaxed text-lg italic text-slate-300 border-l-4 border-accent">
+                主啊，我們來到祢面前，承認我們常常像曠野中的以色列人一樣，在祢賜下應許時充滿不信與退縮，卻在祢管教臨到時憑著血氣妄為。求祢賜給我們一顆真正柔和謙卑的心，幫助我們明白，真正的悔改不是用自己的方法去彌補過錯，而是絕對順服祢的主權與時間表。求祢的聖靈光照我們，讓我們不再倚靠自己的熱心，而是緊緊跟隨祢的同在。奉主耶穌基督的名求，阿們。
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                <h2 class="text-3xl font-bold text-white tracking-tight">信息大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-4 mb-12">
+                <a href="#part1" class="glass-morphism p-6 rounded-2xl flex justify-between items-center hover:bg-white/10 transition-all group">
+                    <span class="text-lg font-semibold">一、 曠野的判決：不信的代價 (14:26-35)</span>
+                    <span class="text-accent group-hover:translate-x-2 transition-transform">➔</span>
+                </a>
+                <a href="#part2" class="glass-morphism p-6 rounded-2xl flex justify-between items-center hover:bg-white/10 transition-all group">
+                    <span class="text-lg font-semibold">二、 遲來的順服：懊悔不等於悔改 (14:36-40)</span>
+                    <span class="text-accent group-hover:translate-x-2 transition-transform">➔</span>
+                </a>
+                <a href="#part3" class="glass-morphism p-6 rounded-2xl flex justify-between items-center hover:bg-white/10 transition-all group">
+                    <span class="text-lg font-semibold">三、 致命的衝動：沒有神同在的爭戰 (14:41-45)</span>
+                    <span class="text-accent group-hover:translate-x-2 transition-transform">➔</span>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Part 1 -->
+            <div id="part1" class="scroll-mt-24 space-y-8 mb-20">
+                <div class="section-card bg-slate-900/50 p-8 rounded-r-3xl">
+                    <h3 class="text-2xl font-bold text-accent mb-4">一、 曠野的判決：不信的代價</h3>
+                    <div class="text-slate-400 text-sm mb-4">經文範圍：民數記 14:26-35</div>
+                    <div class="p-6 bg-black/40 rounded-xl text-slate-300 mb-6 leading-relaxed border-l border-white/10 italic">
+                        「這惡會眾向我發怨言，我忍耐他們要到幾時呢？...你們的屍首必倒在這曠野...按你們窺探那地的四十日，一年頂一日，你們要擔當罪孽四十年。」
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded text-xs font-bold uppercase mb-2">重要關鍵字</span>
+                            <p class="text-lg"><strong class="text-white">怨言 (תְּלוּנָה / Tlunah)</strong>：帶有「固執地抱怨」之意。這裡的怨言是一種持續性、根深蒂固對神的不信，將神的良善扭曲為惡意。</p>
+                        </div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-2">關鍵問題：為什麼上帝對「發怨言」的反應如此嚴厲？</h4>
+                            <p class="text-slate-300 leading-relaxed">「發怨言」的本質是對神屬性的否定。百姓經歷了十災、過紅海、嗎哪，卻認定神要害死他們。上帝的判決彰顯了公義：既然不信，神就任憑他們留在曠野。不信的代價，就是錯失應許。</p>
+                        </div>
+                        <div class="flex gap-4 items-start bg-blue-900/10 p-6 rounded-2xl border border-blue-500/20">
+                            <div class="text-2xl">💡</div>
+                            <p class="text-sm text-slate-400">就像重病患者，醫生已治好他致命疾病，患者卻因復健辛苦大罵醫生謀殺。醫生的嚴厲，是因為患者踐踏了救命的恩典與信任。</p>
+                        </div>
+                        <div class="text-right italic text-accent font-medium">「不信的罪在於，它本質上是指控上帝在說謊。」—— 陶恕</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Analysis Part 2 -->
+            <div id="part2" class="scroll-mt-24 space-y-8 mb-20">
+                <div class="section-card bg-slate-900/50 p-8 rounded-r-3xl">
+                    <h3 class="text-2xl font-bold text-accent mb-4">二、 遲來的順服：懊悔不等於悔改</h3>
+                    <div class="text-slate-400 text-sm mb-4">經文範圍：民數記 14:36-40</div>
+                    <div class="p-6 bg-black/40 rounded-xl text-slate-300 mb-6 leading-relaxed border-l border-white/10 italic">
+                        「摩西將這些話告訴以色列眾人，他們就甚悲哀。清早起來...說：『我們在這裏，我們有罪了；情願上耶和華所應許的地方去。』」
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded text-xs font-bold uppercase mb-2">重要關鍵字</span>
+                            <p class="text-lg"><strong class="text-white">悲哀 (אָבַל / Abal)</strong>：意指「哀悼、悲痛」。這種悲痛更多是為了即將承擔的後果，而不是因為得罪了神。</p>
+                        </div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-2">關鍵問題：為何承認了有罪並願意前進，仍不蒙神悅納？</h4>
+                            <p class="text-slate-300 leading-relaxed">因為這是「懊悔」而非真正的「悔改」。真正的悔改是順服神現在的旨意；而他們只是試圖推翻管教。在神說「去」時不去，神說「退」時偏要去，本質上仍是以自我為中心的悖逆。</p>
+                        </div>
+                        <div class="flex gap-4 items-start bg-blue-900/10 p-6 rounded-2xl border border-blue-500/20">
+                            <div class="text-2xl">✈️</div>
+                            <p class="text-sm text-slate-400">就像錯過飛機的人，在艙門關閉後強行衝撞地勤大喊「我願意上飛機了」，這種衝動無法改變現實，只會帶來更大的混亂。</p>
+                        </div>
+                        <div class="text-right italic text-accent font-medium">「廉價的恩典是沒有悔改的赦免...是沒有十字架的恩典。」—— 潘霍華</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Analysis Part 3 -->
+            <div id="part3" class="scroll-mt-24 space-y-8 mb-20">
+                <div class="section-card bg-slate-900/50 p-8 rounded-r-3xl border-accent">
+                    <h3 class="text-2xl font-bold text-accent mb-4">三、 致命的衝動：沒有神同在的爭戰</h3>
+                    <div class="text-slate-400 text-sm mb-4">經文範圍：民數記 14:41-45</div>
+                    <div class="p-6 bg-black/40 rounded-xl text-slate-300 mb-6 leading-relaxed border-l border-white/10 italic">
+                        「不要上去；因為耶和華不在你們中間...他們卻擅敢上山頂去，然而耶和華的約櫃和摩西沒有出營。」
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded text-xs font-bold uppercase mb-2">重要關鍵字</span>
+                            <p class="text-lg"><strong class="text-white">擅敢 (עָפַל / Aphal)</strong>：意思是「腫脹、高傲、狂妄自大」。形容人在沒有神的許可下，憑著血氣與驕傲盲目向前衝。</p>
+                        </div>
+                        <div class="p-6 bg-slate-800/50 rounded-2xl">
+                            <h4 class="text-accent font-bold mb-2">關鍵問題：如何分辨行動是出於「信心」還是「血氣」？</h4>
+                            <p class="text-slate-300 leading-relaxed">關鍵在於「是否有神的同在與命令」。真正的信心建立在神的話語上；血氣的妄為則是忽視警告，企圖靠自己的力量成就。沒有神同在的熱心，最終必遭失敗。</p>
+                        </div>
+                        <div class="flex gap-4 items-start bg-blue-900/10 p-6 rounded-2xl border border-blue-500/20">
+                            <div class="text-2xl">⚡</div>
+                            <p class="text-sm text-slate-400">如同參孫失去神同在後，醒來還以為能像往常一樣掙脫仇敵。失去了神，再強大的經驗都無法應付眼前的爭戰。</p>
+                        </div>
+                        <div class="text-right italic text-accent font-medium">「沒有神的同在，我們所有的努力都只是在建造巴別塔。」—— 司布真</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-morphism p-8 rounded-3xl border-t-4 border-accent">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-accent font-bold">01</span> 檢視生命中的「怨言」，在逆境中學習感恩。</li>
+                    <li class="flex gap-3"><span class="text-accent font-bold">02</span> 分辨「懊悔」與「悔改」，謙卑接受神管教的過程。</li>
+                    <li class="flex gap-3"><span class="text-accent font-bold">03</span> 尋求「神的同在」勝於「事工的成功」，凡事求問。</li>
+                </ul>
+            </div>
+            <div class="glass-morphism p-8 rounded-3xl border-t-4 border-white/20">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    回應行動
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-green-500">✔</span> 本週內禁戒抱怨，遇事立刻改為感恩禱告。</li>
+                    <li class="flex gap-3"><span class="text-green-500">✔</span> 寫下順服禱告，宣告願意在目前的曠野中學習。</li>
+                    <li class="flex gap-3"><span class="text-green-500">✔</span> 重大決策操練「約櫃不動，我不動」，尋求印證。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24 glass-morphism p-8 md:p-12 rounded-[3rem] relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-10 opacity-10">
+                <svg class="w-32 h-32 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.948 1.561c-3.227.79-5.54 3.063-5.857 5.871h4.409v10.281h-9.5v-6zm-11 0c0-5.141 3.892-10.519 10-11.725l.948 1.561c-3.227.79-5.54 3.063-5.857 5.871h4.409v10.281h-9.5v-6z"></path></svg>
+            </div>
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                <h2 class="text-3xl font-bold text-white tracking-tight">講章文稿</h2>
+            </div>
+            <article class="prose prose-invert prose-lg max-w-none space-y-6 text-slate-300 leading-relaxed">
+                <p class="text-xl font-bold text-white text-center mb-10">當懊悔變成妄為：沒有神同在的熱心</p>
+                <p>各位弟兄姊妹，平安。今天我們所看的經文是以色列歷史上最令人心痛的轉折點之一。當十二個探子從迦南地回來，其中十個報了惡信，導致全會眾大發怨言，拒絕進入應許之地。上帝因此宣判，這世代的人要在曠野飄流四十年。今天我們要從民數記 14:26-45 來看，當人面對自己的失敗時，如果不明白神的心意，會陷入何等可怕的錯誤。</p>
+                <p>首先，我們看到<strong class="text-accent">「曠野的判決：不信的代價」</strong>。在第28節，神說：「我必要照你們達到我耳中的話待你們。」這句話何等嚴厲！以色列人不斷發<strong>怨言</strong>。在希伯來文中，怨言（Tlunah）不僅僅是抱怨天氣不好或食物難吃，它是一種根深蒂固對神的不信，是將上帝的良善扭曲為惡意。陶恕曾說：「不信的罪在於，它本質上是指控上帝在說謊。」因為不信，他們錯失了應許之地。</p>
+                <p>接著，經文帶我們看到<strong class="text-accent">「遲來的順服：懊悔不等於悔改」</strong>。當百姓聽見要在曠野死去的判決，經文說「他們就甚悲哀」。第二天清早，他們突然非常積極地說：「我們有罪了，情願上耶和華所應許的地方去。」但摩西卻立刻制止他們。為什麼？因為他們只是在「懊悔」，而不是「悔改」。潘霍華提醒我們警惕「廉價的恩典」。真正的悔改，是順服神「現在」的旨意。神現在的旨意是讓他們退回曠野接受管教，但他們為了逃避管教，試圖用自己的方法去強求已經錯過的機會。</p>
+                <p>最後，這段經文揭示了<strong class="text-accent">「致命的衝動：沒有神同在的爭戰」</strong>。摩西明確警告他們：<span class="text-white font-bold underline decoration-accent decoration-2">「不要上去；因為耶和華不在你們中間，恐怕你們被仇敵殺敗了。」（民數記 14:42）</span> 這是今天的<strong>金句</strong>。但百姓卻<strong>「擅敢」</strong>上山頂去。這個詞在原文有狂妄自大、輕率行事的意思。結果如何呢？約櫃沒有出營，神不在他們當中，他們被打得落花流水。司布真曾說：「沒有神的同在，我們所有的努力都只是在建造巴別塔。」我們常常憑著一時的熱心、衝動，甚至是為了證明自己，就在沒有神同在的情況下衝上戰場。這不叫信心，這叫妄為。</p>
+                
+                <div class="bg-accent/10 p-8 rounded-3xl border border-accent/20 mt-12">
+                    <h4 class="text-white font-bold text-xl mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3 11H7v-2h6v2zm0-4H7V7h6v2z"></path></svg>
+                        結論關鍵字
+                    </h4>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-6 py-2 bg-accent text-black font-black rounded-full">順服 Obedience</span>
+                        <span class="px-6 py-2 bg-accent text-black font-black rounded-full">悔改 Repentance</span>
+                        <span class="px-6 py-2 bg-accent text-black font-black rounded-full">同在 Presence</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <h2 class="text-3xl font-bold text-white tracking-tight">屬靈前輩佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「廉價的恩典是我們自己賜給自己的恩典...是沒有門徒職分的恩典，是沒有十字架的恩典。」</p>
+                    <div class="text-accent text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「真實的悔改不僅是為罪感到憂傷，更是轉身離開罪惡，並將意志完全降服於上帝的主權之下。」</p>
+                    <div class="text-accent text-sm font-bold">— 慕安德烈 (Andrew Murray)</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「悔改不僅是為過去感到抱歉，更是心智與方向的徹底轉變；是從『我做主』的寶座上下來，讓基督掌權。」</p>
+                    <div class="text-accent text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「不信的罪在於，它本質上是指控上帝在說謊；而信心則是將上帝的話語當作最高的現實。」</p>
+                    <div class="text-accent text-sm font-bold">— 陶恕 (A.W. Tozer)</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「人若不先將自己與上帝的威嚴相比，就永遠無法真正意識到自己的卑微與全然無能。」</p>
+                    <div class="text-accent text-sm font-bold">— 約翰·加爾文 (John Calvin)</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「沒有神的同在，我們所有的努力都只是在建造巴別塔；看似高聳入雲，最終卻只會帶來混亂與傾倒。」</p>
+                    <div class="text-accent text-sm font-bold">— 司布真 (Charles Spurgeon)</div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「驕傲是拒絕讓上帝成為上帝；它是試圖將自己推上宇宙的寶座，這正是所有悖逆的根源。」</p>
+                    <div class="text-accent text-sm font-bold">— 約翰·史托德 (John Stott)</div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「在順服這條長期的道路上，沒有捷徑可走。我們不能用一時的熱情來取代每日與神同行的耐心。」</p>
+                    <div class="text-accent text-sm font-bold">— 畢德生 (Eugene Peterson)</div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「我們常常試圖用外在的忙碌與事工的狂熱，來掩飾內心缺乏神同在的空虛。」</p>
+                    <div class="text-accent text-sm font-bold">— 傅士德 (Richard Foster)</div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-morphism p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 italic mb-4">「沒有聖靈同在的熱心，叫做血氣；沒有真理引導的勇敢，叫做衝動。真正的信仰是建立在神話語的光照之上。」</p>
+                    <div class="text-accent text-sm font-bold">— 唐崇榮 (Stephen Tong)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="py-10 border-t border-white/10 text-center">
+            <p class="text-slate-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-accent hover:bg-yellow-400 text-black rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民23:25-24:25: 無法逆轉的祝福與雅各之星</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        deepBlue: '#0A192F',
+                        accentBlue: '#64FFDA',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'vibrate': 'vibrate 2s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        vibrate: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '25%': { transform: 'translateY(-2px)' },
+                            '75%': { transform: 'translateY(1px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050a12;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(45deg, #64FFDA, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .breath-anim {
+            animation: breath 8s infinite ease-in-out;
+        }
+        @keyframes breath {
+            0%, 100% { opacity: 0.4; transform: scale(1.05); }
+            50% { opacity: 0.8; transform: scale(1); }
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #64FFDA;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: vibrate 3s ease-in-out infinite;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050a12;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '民23:25-24:25',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '民',         // 動態注入書卷縮寫，例如：出
+              'note_title': '無法逆轉的祝福與雅各之星' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#050a12]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-accentBlue font-display font-bold text-lg hidden md:block">民 23:25-24:25</div>
+            <div class="flex gap-6 text-sm font-medium tracking-widest uppercase">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="breath-anim w-full h-full">
+                 <img src='image/img_76fd6f43-997d-4b54-be85-756568a1df87.jpg' alt='Banner' class="w-full h-full object-cover banner-mask" />
+            </div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 text-white leading-tight">
+                無法逆轉的祝福 <br><span class="text-gradient">與雅各之星</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 font-light tracking-wide mb-12">民數記 23:25 - 24:25</p>
+            
+            <!-- Verse (Micro-animation) -->
+            <div class="jump-text text-xl md:text-2xl font-medium text-white max-w-2xl mx-auto leading-relaxed border-l-4 border-accentBlue pl-6 py-2">
+                「我看他卻不在現時；我望他卻不在近日。有星要出於雅各，有杖要興於以色列，必打破摩押的四角，毀壞擾亂之子。」
+                <span class="block text-sm mt-2 text-accentBlue opacity-80">（民數記 24:17）</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-16 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-accentBlue mb-8 flex items-center gap-3">
+                    <span>✨</span> 禱告詞
+                </h2>
+                <p class="text-lg md:text-xl leading-loose text-gray-300 italic">
+                    「掌管萬有、至高無上的主宰，我們讚美祢！因為祢的旨意無法被攔阻，祢對祢子民的賜福更是無法被逆轉。當世界和仇敵試圖咒詛或削弱我們時，祢卻以聖靈的權能保護我們，並賜下那明亮的晨星——耶穌基督，作我們永遠的君王。求主開啟我們的眼目，讓我們不看眼前的艱難與荒涼，而是看見祢在我們生命中所定意的華美與得勝。幫助我們放下憑血氣的籌算，完全順服聖靈的引導，一生行在祢的應許之中。奉主耶穌基督得勝的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-3xl font-display font-bold text-accentBlue mb-2 flex items-center gap-3">
+                        <span>🗺️</span> 分段大綱
+                    </h2>
+                    <p class="text-gray-500">點擊按鈕跳轉至深度解析</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="#section-1" class="glass-card p-6 hover:bg-white/10 transition-all border-l-4 border-accentBlue">
+                    <span class="text-xs text-accentBlue font-bold uppercase tracking-widest">Part 01</span>
+                    <h3 class="text-lg font-bold mt-2">順服的轉換</h3>
+                    <p class="text-sm text-gray-400 mt-1">民 23:25 - 24:2</p>
+                </a>
+                <a href="#section-2" class="glass-card p-6 hover:bg-white/10 transition-all border-l-4 border-gold">
+                    <span class="text-xs text-gold font-bold uppercase tracking-widest">Part 02</span>
+                    <h3 class="text-lg font-bold mt-2">屬天的眼光</h3>
+                    <p class="text-sm text-gray-400 mt-1">民 24:3 - 24:9</p>
+                </a>
+                <a href="#section-3" class="glass-card p-6 hover:bg-white/10 transition-all border-l-4 border-white">
+                    <span class="text-xs text-white font-bold uppercase tracking-widest">Part 03</span>
+                    <h3 class="text-lg font-bold mt-2">永恆的掌權</h3>
+                    <p class="text-sm text-gray-400 mt-1">民 24:10 - 24:25</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Sections -->
+        <div class="space-y-40">
+            <!-- Section 1 -->
+            <section id="section-1" class="scroll-mt-32">
+                <div class="grid md:grid-cols-12 gap-12">
+                    <div class="md:col-span-4">
+                        <div class="sticky top-32">
+                            <h3 class="text-5xl font-black text-white/10 mb-4 font-display">01</h3>
+                            <h4 class="text-2xl font-bold text-accentBlue leading-tight mb-4">從倚靠法術到<br>聖靈引導</h4>
+                            <div class="text-sm text-gray-500 space-y-2">
+                                <p>📍 民 23:25 - 24:2</p>
+                                <p class="flex items-center gap-2 text-gold">🔑 法術 (nachash)</p>
+                                <p class="flex items-center gap-2 text-gold">🕊️ 感動 (ruach Elohim)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 space-y-10">
+                        <div class="bg-white/5 rounded-3xl p-8 border border-white/10">
+                            <h5 class="text-sm font-bold uppercase text-gray-400 mb-4 tracking-widest">引用經文</h5>
+                            <p class="text-lg text-gray-300 leading-relaxed">巴蘭見耶和華喜歡賜福與以色列，就不像前兩次去求法術，卻面向曠野。巴蘭舉目，看見以色列人照著支派居住。神的靈就感動他。</p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h5 class="text-xl font-bold text-white flex items-center gap-2"><span>❓</span> 關鍵問題與解析</h5>
+                            <p class="text-gray-400 leading-relaxed border-l-2 border-accentBlue/30 pl-6">
+                                <strong class="text-white block mb-2">為什麼巴蘭放棄了「求法術」？</strong>
+                                巴蘭最終發現「耶和華喜歡賜福與以色列」是不可撼動的事實。放棄法術，代表放棄試圖操控神來成就私慾。神要我們放下這些手段，單單面向祂的帶領，讓聖靈的主權完全臨到。
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-accentBlue/5 p-6 rounded-2xl border border-accentBlue/20">
+                                <p class="text-xs font-bold text-accentBlue mb-2">🎨 例證</p>
+                                <p class="text-sm text-gray-300">水手拿著大扇子朝帆扇風是徒勞的，唯有放下扇子調整方向，讓海風（聖靈）吹來，船才能破浪前行。</p>
+                            </div>
+                            <div class="bg-gold/5 p-6 rounded-2xl border border-gold/20">
+                                <p class="text-xs font-bold text-gold mb-2">📜 名言</p>
+                                <p class="text-sm text-gray-300 italic">「聖靈的內住不是為了讓我們利用祂，而是祂要得著我們。」—— 慕安德烈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" class="scroll-mt-32">
+                <div class="grid md:grid-cols-12 gap-12">
+                    <div class="md:col-span-4 md:order-last">
+                        <div class="sticky top-32">
+                            <h3 class="text-5xl font-black text-white/10 mb-4 font-display">02</h3>
+                            <h4 class="text-2xl font-bold text-gold leading-tight mb-4">看見神所定意的<br>屬天榮美</h4>
+                            <div class="text-sm text-gray-500 space-y-2">
+                                <p>📍 民 24:3 - 24:9</p>
+                                <p class="flex items-center gap-2 text-accentBlue">🔑 異象 (machazeh)</p>
+                                <p class="flex items-center gap-2 text-accentBlue">🔑 華美 (tov)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 space-y-10">
+                        <div class="bg-white/5 rounded-3xl p-8 border border-white/10">
+                            <h5 class="text-sm font-bold uppercase text-gray-400 mb-4 tracking-widest">引用經文</h5>
+                            <p class="text-lg text-gray-300 leading-relaxed italic">「雅各啊，你的帳棚何等華美！以色列啊，你的帳幕何其華麗！如接連的山谷，如河畔的園子...」</p>
+                        </div>
+                        
+                        <div class="space-y-6 text-right md:text-left">
+                            <h5 class="text-xl font-bold text-white flex items-center gap-2 md:justify-start"><span>❓</span> 關鍵問題與解析</h5>
+                            <p class="text-gray-400 leading-relaxed border-l-2 border-gold/30 pl-6">
+                                <strong class="text-white block mb-2">為何悖逆的群體在異象中卻是華美？</strong>
+                                神不是根據我們現在的軟弱來定義我們，而是根據祂恩典的揀選與最終成全的榮耀。巴蘭看見的是神眼中的以色列——因著神的同在而被稱義。
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gold/5 p-6 rounded-2xl border border-gold/20">
+                                <p class="text-xs font-bold text-gold mb-2">🎨 例證</p>
+                                <p class="text-sm text-gray-300">雕刻家在粗糙的巨石中看見了困在裡面的天使。神看我們也是如此，祂看見基督在我們裡面成形的樣式。</p>
+                            </div>
+                            <div class="bg-accentBlue/5 p-6 rounded-2xl border border-accentBlue/20">
+                                <p class="text-xs font-bold text-accentBlue mb-2">📜 名言</p>
+                                <p class="text-sm text-gray-300 italic">「我們必須透過耶穌基督來看待弟兄姊妹。」—— 潘霍華</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="scroll-mt-32">
+                <div class="grid md:grid-cols-12 gap-12">
+                    <div class="md:col-span-4">
+                        <div class="sticky top-32">
+                            <h3 class="text-5xl font-black text-white/10 mb-4 font-display">03</h3>
+                            <h4 class="text-2xl font-bold text-white leading-tight mb-4">雅各之星與<br>歷史的結局</h4>
+                            <div class="text-sm text-gray-500 space-y-2">
+                                <p>📍 民 24:10 - 24:25</p>
+                                <p class="flex items-center gap-2 text-gold">👑 星與杖 (kokhav & shevet)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8 space-y-10">
+                        <div class="bg-white/5 rounded-3xl p-8 border border-white/10">
+                            <h5 class="text-sm font-bold uppercase text-gray-400 mb-4 tracking-widest">引用經文</h5>
+                            <p class="text-xl font-bold text-white leading-relaxed">「有星要出於雅各，有杖要興於以色列...有一位出於雅各的，必掌大權。」</p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h5 class="text-xl font-bold text-white flex items-center gap-2"><span>❓</span> 關鍵問題與解析</h5>
+                            <p class="text-gray-400 leading-relaxed border-l-2 border-white/30 pl-6">
+                                <strong class="text-white block mb-2">「雅各之星」如何帶給信徒安慰？</strong>
+                                歷史的結局已經定準。「雅各之星」耶穌基督必掌大權。無論眼前的世界局勢或個人處境多麼險惡，歷史的寶座並非空無一人。
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <p class="text-xs font-bold text-white mb-2">🎨 例證</p>
+                                <p class="text-sm text-gray-300">西洋棋名宿看一眼棋局就知道贏了：白棋已經勝了，只是他自己還不知道。基督的降臨就是那步致勝棋。</p>
+                            </div>
+                            <div class="bg-accentBlue/5 p-6 rounded-2xl border border-accentBlue/20">
+                                <p class="text-xs font-bold text-accentBlue mb-2">📜 名言</p>
+                                <p class="text-sm text-gray-300 italic">「歷史的寶座上並非空無一人。那位為我們釘十字架的王正掌管萬有。」—— 提摩太·凱勒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Applications -->
+        <section id="applications" class="space-y-12">
+            <h2 class="text-3xl font-display font-bold text-accentBlue flex items-center gap-3">
+                <span>💡</span> 講道應用與實踐
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8">
+                    <h3 class="text-xl font-bold text-gold mb-4">應用方向</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-3"><span class="text-accentBlue">01</span> 省察禱告動機：放下「操控」的法術。</li>
+                        <li class="flex gap-3"><span class="text-accentBlue">02</span> 改變待人眼光：看見神栽種的華美。</li>
+                        <li class="flex gap-3"><span class="text-accentBlue">03</span> 仰望雅各之星：在困境中定錨於得勝。</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8">
+                    <h3 class="text-xl font-bold text-accentBlue mb-4">回應行動</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-3"><span class="text-gold">✓</span> 進行一次「放下操控」的誠實禱告。</li>
+                        <li class="flex gap-3"><span class="text-gold">✓</span> 傳遞祝福：寫卡片肯定他人的屬天華美。</li>
+                        <li class="flex gap-3"><span class="text-gold">✓</span> 默想應許：宣告「雅各之星」已勝過世界。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center gap-8 py-8">
+                <div class="text-center">
+                    <div class="text-2xl font-black text-accentBlue">聖靈</div>
+                    <div class="text-xs text-gray-500 uppercase">Spirit</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-black text-gold">眼光</div>
+                    <div class="text-xs text-gray-500 uppercase">Vision</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-black text-white">掌權</div>
+                    <div class="text-xs text-gray-500 uppercase">Sovereignty</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-16">
+                <h2 class="text-3xl font-display font-bold text-accentBlue mb-12 flex items-center gap-3">
+                    <span>📖</span> 講章文稿
+                </h2>
+                <div class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300">
+                    <p class="text-2xl font-bold text-white">經文：民23:25-24:25：無法逆轉的祝福與雅各之星</p>
+                    <p>各位弟兄姊妹，平安。當我們在生活中遭遇挑戰、敵對或莫名打擊時，我們常常會問：「神啊，祢的祝福在哪裡？」今天我們要看見神的主權如何超越一切環境，以及我們當如何在這位掌權的神面前生活。</p>
+                    
+                    <h3 class="text-gold text-2xl font-bold border-l-4 border-gold pl-4">第一：順服的轉換</h3>
+                    <p>巴蘭發現「耶和華喜歡賜福與以色列」是確定的。他放下了操控的法術，轉向曠野，這時「神的靈就感動他」。<strong class="text-accentBlue">真正的屬靈生命，不是我們去操控神，而是讓聖靈來掌管我們。</strong></p>
+
+                    <h3 class="text-gold text-2xl font-bold border-l-4 border-gold pl-4">第二：屬天的眼光</h3>
+                    <p>巴蘭在異象中看見的是神眼中的以色列。雖然他們滿身塵土，但在神的眼中，這群子民如同耶和華所栽的沉香樹。<strong class="text-accentBlue">當世界定罪我們時，神卻因著基督稱我們為義。凡神所祝福的，沒有人能咒詛。</strong></p>
+
+                    <h3 class="text-gold text-2xl font-bold border-l-4 border-gold pl-4">第三：永恆的掌權</h3>
+                    <p>最後巴蘭看見了更遙遠的異象：<strong class="text-white text-xl">「有星要出於雅各，有杖要興於以色列」</strong>。這指向人類歷史的終局——耶穌基督。不管現在的世界局勢多麼混亂，歷史的終局已經定案。耶穌基督已經得勝！</p>
+                    
+                    <p class="font-bold text-white text-center mt-12 py-6 border-y border-white/10">求神幫助我們，在生活中順服聖靈的引導，用屬天的眼光看見華美，並信靠那位永遠掌權的雅各之星！阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 space-y-12">
+            <h2 class="text-3xl font-display font-bold text-accentBlue mb-8 flex items-center gap-3">
+                <span>💬</span> 屬靈前輩佳句名言
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="p-6 bg-white/5 rounded-2xl border-t-2 border-accentBlue">
+                    <p class="text-lg italic text-gray-300 mb-4">「神的心意不是要我們去改變祂的旨意，而是要我們的意志被祂的聖靈所征服。」</p>
+                    <p class="text-sm font-bold text-accentBlue">—— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="p-6 bg-white/5 rounded-2xl border-t-2 border-gold">
+                    <p class="text-lg italic text-gray-300 mb-4">「我們在基督裡所蒙的愛與接納，比我們所敢期盼的還要豐盛。」</p>
+                    <p class="text-sm font-bold text-gold">—— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="p-6 bg-white/5 rounded-2xl border-t-2 border-white">
+                    <p class="text-lg italic text-gray-300 mb-4">「世界上最安穩的地方，就是身處在神旨意的正中心，那裡沒有任何咒詛能觸及。」</p>
+                    <p class="text-sm font-bold text-white">—— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="p-6 bg-white/5 rounded-2xl border-t-2 border-accentBlue">
+                    <p class="text-lg italic text-gray-300 mb-4">「基督徒群體之所以美麗，是因為我們是一群破碎的人，聚集在完美的救主下。」</p>
+                    <p class="text-sm font-bold text-accentBlue">—— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="p-6 bg-white/5 rounded-2xl border-t-2 border-gold">
+                    <p class="text-lg italic text-gray-300 mb-4">「神的主權是信徒在風暴中最堅固的錨。祂也掌管著我們生命中的每一次遭遇。」</p>
+                    <p class="text-sm font-bold text-gold">—— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="p-6 bg-white/5 rounded-2xl border-t-2 border-white">
+                    <p class="text-lg italic text-gray-300 mb-4">「除非我們用永恆的視角來看待現實，否則我們將永遠隨波逐流。」</p>
+                    <p class="text-sm font-bold text-white">—— 畢德生 (Eugene Peterson)</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-20">
+                <p class="text-xs text-gray-600 tracking-widest">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-accentBlue text-deepBlue rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利16:1-22：極致的代價，完全的自由：贖罪日的啟示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-gold: #D4AF37;
+            --accent-crimson: #9B1B1B;
+            --glass-bg: rgba(15, 15, 20, 0.85);
+        }
+
+        body {
+            background-color: #050505;
+            color: #E2E8F0;
+            font-family: 'Outfit', 'Noto Serif TC', serif;
+            overflow-x: hidden;
+        }
+
+        .font-display { font-family: 'Outfit', sans-serif; }
+        .font-serif-tc { font-family: 'Noto Serif TC', serif; }
+
+        @keyframes breathe {
+            0%, 100% { opacity: 0.7; filter: brightness(0.8); }
+            50% { opacity: 1; filter: brightness(1.2); }
+        }
+
+        @keyframes subtle-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .banner-container {
+            position: relative;
+            height: 90vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: breathe 8s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, #050505 100%);
+            z-index: 1;
+        }
+
+        .floating-text {
+            animation: subtle-float 4s ease-in-out infinite;
+        }
+
+        .glass-nav {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bento-card {
+            background: rgba(20, 20, 25, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bento-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-4px);
+            background: rgba(30, 30, 40, 0.8);
+        }
+
+        .outline-btn {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--accent-gold);
+            transition: all 0.3s ease;
+        }
+
+        .outline-btn:hover {
+            background: var(--accent-gold);
+            color: #000;
+        }
+
+        .section-title {
+            background: linear-gradient(90deg, #D4AF37, #F97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .quote-border {
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 1.5rem;
+        }
+
+        .floating-arrow {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-gold);
+            color: black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            cursor: pointer;
+            z-index: 100;
+            transition: transform 0.3s;
+        }
+
+        .floating-arrow:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '利16:1-22',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '利',         // 動態注入書卷縮寫，例如：出
+              'note_title': '極致的代價，完全的自由：贖罪日的啟示' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased">
+
+    <!-- Floating Arrow -->
+    <a href="#top" class="floating-arrow" title="回到頂部">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <!-- Sticky Nav -->
+    <nav class="glass-nav fixed top-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-xs md:text-sm font-bold tracking-widest text-amber-500 uppercase">
+            利 16:1-22
+        </div>
+        <div class="flex space-x-6 text-sm font-medium">
+            <a href="#prayer" class="hover:text-amber-500 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-amber-500 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-amber-500 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-amber-500 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header id="top" class="banner-container">
+        <img src='image/img_1396468c-3313-4a21-a0f4-41bc82645e19.jpg' alt='大贖罪日場景' class="banner-img" />
+        <div class="banner-overlay"></div>
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1 class="font-serif-tc text-4xl md:text-7xl font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                極致的代價 <br/> <span class="text-amber-500">完全的自由</span>
+            </h1>
+            <div class="floating-text max-w-3xl mx-auto">
+                <p class="text-lg md:text-2xl font-serif-tc font-bold text-slate-200 leading-relaxed drop-shadow-lg">
+                    「兩手按在羊頭上，承認以色列人諸般的罪孽過犯...把這罪都歸在羊的頭上...送到曠野去...這羊要擔當他們一切的罪孽，帶到無人之地。」
+                </p>
+                <p class="mt-4 text-amber-400 font-bold tracking-widest">— 利未記 16:21-22 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 md:px-12 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24 pt-12">
+            <div class="flex items-center space-x-4 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21l-8-4.5v-9L12 3l8 4.5v9l-8 4.5z" />
+                </svg>
+                <h2 class="text-3xl font-bold section-title">禱告詞</h2>
+            </div>
+            <div class="bento-card p-8 md:p-12 border-l-4 border-amber-500 bg-opacity-10">
+                <p class="text-xl md:text-2xl leading-loose font-serif-tc text-slate-300">
+                    榮耀聖潔的天父，我們來到祢的施恩座前，心中充滿敬畏與感恩。主啊，我們本是滿身污穢的罪人，無法靠近祢那不可侵犯的聖潔。但我們感謝祢，因著祢無比的憐憫，祢為我們設立了贖罪的恩典。感謝主耶穌基督，祢不僅是那位為我們流血的代罪羔羊，滿足了神公義的要求；祢也是那擔當我們一切罪孽，將我們的過犯帶到無人之地的阿撒瀉勒。求聖靈今日開啟我們的眼睛，讓我們從舊約的贖罪日中，看見十字架上極致的代價與完全的自由，使我們不再被定罪，能坦然無懼地敬拜祢。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+                <h2 class="text-3xl font-bold section-title">分段大綱與解析</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#section-1" class="outline-btn p-6 rounded-2xl text-center group transition-all">
+                    <span class="block text-xs uppercase tracking-widest text-amber-500 mb-2 group-hover:text-black">第一段</span>
+                    <span class="text-lg font-bold">敬畏與預備</span>
+                    <p class="text-sm mt-2 opacity-60 group-hover:text-black">利 16:1-5</p>
+                </a>
+                <a href="#section-2" class="outline-btn p-6 rounded-2xl text-center group transition-all">
+                    <span class="block text-xs uppercase tracking-widest text-amber-500 mb-2 group-hover:text-black">第二段</span>
+                    <span class="text-lg font-bold">獻祭與遮蓋</span>
+                    <p class="text-sm mt-2 opacity-60 group-hover:text-black">利 16:6-19</p>
+                </a>
+                <a href="#section-3" class="outline-btn p-6 rounded-2xl text-center group transition-all">
+                    <span class="block text-xs uppercase tracking-widest text-amber-500 mb-2 group-hover:text-black">第三段</span>
+                    <span class="text-lg font-bold">承擔與遠離</span>
+                    <p class="text-sm mt-2 opacity-60 group-hover:text-black">利 16:20-22</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-16">
+                <!-- Section 1 -->
+                <div id="section-1" class="scroll-mt-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4">
+                            <h3 class="text-2xl font-black text-amber-500 mb-4">第一段：敬畏與預備——親近聖潔的代價</h3>
+                            <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5">
+                                <p class="text-sm leading-relaxed text-slate-400">
+                                    <span class="block font-bold text-white mb-2 underline decoration-amber-500 underline-offset-4">引用經文</span>
+                                    亞倫的兩個兒子近到耶和華面前死了。死了之後，耶和華曉諭摩西說：「要告訴你哥哥亞倫，不可隨時進聖所的幔子內...免得他死亡，因為我要從雲中顯現在施恩座上。」
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-6">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">🔤</span> 關鍵字解讀
+                                </h4>
+                                <p class="text-slate-300">「聖所」(קֹדֶשׁ / Qodesh)：意為「分別為聖」。神的聖潔具有毀滅罪惡的力量，親近神必須按著神所規定的方式。</p>
+                            </div>
+                            <div class="bento-card p-6">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">💡</span> 關鍵問題
+                                </h4>
+                                <p class="text-slate-300 font-medium italic">為什麼人不能「隨時」且「隨意」地親近上帝？</p>
+                                <p class="text-slate-400 mt-2 text-sm">解析：神的愛不代表妥協了聖潔。我們唯有穿上基督的義袍，才能朝見神。</p>
+                            </div>
+                            <div class="bento-card p-6 md:col-span-2">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">🌟</span> 佳句名言
+                                </h4>
+                                <p class="text-slate-300 italic">「上帝的聖潔不僅僅是最高道德無限放大的結果。聖潔是神獨有的屬性。」—— 陶恕</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section-2" class="scroll-mt-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 lg:order-last">
+                            <h3 class="text-2xl font-black text-amber-500 mb-4">第二段：獻祭與遮蓋——施恩座上的血</h3>
+                            <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5">
+                                <p class="text-sm leading-relaxed text-slate-400">
+                                    <span class="block font-bold text-white mb-2 underline decoration-amber-500 underline-offset-4">引用經文</span>
+                                    「亞倫要把贖罪祭的公牛奉上...拈鬮看哪一隻歸與耶和華...隨後他要宰那為百姓作贖罪祭的公山羊，把羊的血帶入幔子內，彈在施恩座的上面...」
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-6">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">🔤</span> 關鍵字解讀
+                                </h4>
+                                <p class="text-slate-300">「施恩座」(כַּפֹּרֶת / Kapporet)：字根為 kaphar，意為「遮蓋」。血灑在其上，公義的審判就被遮蓋，成為施恩之處。</p>
+                            </div>
+                            <div class="bento-card p-6">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">💡</span> 關鍵問題
+                                </h4>
+                                <p class="text-slate-300 font-medium italic">為什麼非要有「血」的彈灑，才能完成贖罪？</p>
+                                <p class="text-slate-400 mt-2 text-sm">解析：血代表生命的傾倒，用以償還罪債。這滿足了神對公義的要求，使審判座變成了施恩座。</p>
+                            </div>
+                            <div class="bento-card p-6 md:col-span-2">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">📖</span> 例證故事
+                                </h4>
+                                <p class="text-slate-300 text-sm">法官父親為罪犯兒子繳清罰金的故事。第一隻羊的血，就是神親自為我們付出的「生命罰金」。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section-3" class="scroll-mt-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4">
+                            <h3 class="text-2xl font-black text-amber-500 mb-4">第三段：承擔與遠離——阿撒瀉勒的自由</h3>
+                            <div class="bg-slate-900/50 p-6 rounded-xl border border-white/5">
+                                <p class="text-sm leading-relaxed text-slate-400">
+                                    <span class="block font-bold text-white mb-2 underline decoration-amber-500 underline-offset-4">引用經文</span>
+                                    「兩手按在羊頭上，承認以色列人諸般的罪孽過犯...要把這羊放在曠野，這羊要擔當他們一切的罪孽，帶到無人之地。」
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bento-card p-6">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">🔤</span> 關鍵字解讀
+                                </h4>
+                                <p class="text-slate-300">「阿撒瀉勒」(עֲזָאזֵל / Azazel)：意指「移去、完全的消除」。象徵罪惡被徹底帶走，不再回來。</p>
+                            </div>
+                            <div class="bento-card p-6">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">💡</span> 關鍵問題
+                                </h4>
+                                <p class="text-slate-300 font-medium italic">為什麼需要第二隻活著的羊（代罪羔羊）？</p>
+                                <p class="text-slate-400 mt-2 text-sm">解析：第一隻羊滿足神，第二隻羊釋放人。神不僅赦免我們的罪，更要將罪疚感從我們身上完全挪去。</p>
+                            </div>
+                            <div class="bento-card p-6 md:col-span-2">
+                                <h4 class="text-amber-500 font-bold mb-3 flex items-center">
+                                    <span class="mr-2">🌟</span> 佳句名言
+                                </h4>
+                                <p class="text-slate-300 italic">「你看見那代罪羔羊如何將罪帶進無人之地了嗎？你的罪永遠不能再找到你。」—— 司布真</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24 pt-12">
+            <div class="flex items-center space-x-4 mb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                </svg>
+                <h2 class="text-3xl font-bold section-title">講章文稿</h2>
+            </div>
+            
+            <article class="max-w-4xl mx-auto space-y-12 font-serif-tc text-lg md:text-xl leading-relaxed text-slate-300">
+                <p class="font-bold text-2xl text-white">親愛的弟兄姊妹，平安。</p>
+                <p>
+                    如果我們要用一天的時間，來總結舊約信仰的最高峰，那毫無疑問就是「贖罪日」。在猶太人的曆法中，這是一年中最神聖、最嚴肅的一天。今天，我們要透過《利未記》16章1到22節，一起回到幾千年前的會幕現場，看見當神聖遇見罪人時，上帝如何預備了一條既滿足公義，又充滿恩典的道路。我們今天的主題是：<strong class="text-amber-500">「極致的代價，完全的自由：贖罪日的啟示」</strong>。
+                </p>
+
+                <div class="border-l-4 border-amber-500 pl-8 my-8">
+                    <h4 class="text-2xl font-bold text-white mb-4">一、敬畏與預備——親近聖潔的代價</h4>
+                    <p>
+                        經文一開始就提到一個悲劇：亞倫的兩個兒子拿答和亞比戶，因為獻凡火而死在神面前。神藉此嚴厲地警告大祭司亞倫：<strong class="text-white bg-red-900/30 px-2">「不可隨時進聖所的幔子內、到櫃上的施恩座前，免得他死亡。」</strong>
+                        我們活在一個強調「便利」與「隨性」的時代，我們常常以為上帝是我們的「屬靈提款機」。但神說，我是聖潔的烈火。
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-orange-500 pl-8 my-8">
+                    <h4 class="text-2xl font-bold text-white mb-4">二、獻祭與遮蓋——施恩座上的血</h4>
+                    <p>
+                        亞倫要取兩隻公山羊，第一隻羊要歸給耶和華，被宰殺，並且將牠的血彈在至聖所的「施恩座」上。為什麼必須流血？因為罪的工價就是死。
+                        <strong class="text-amber-200">約櫃的蓋子被稱為「施恩座」，但它原本是審判的寶座</strong>。血遮蓋了律法的定罪，審判座就此變成了施恩座！
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-yellow-500 pl-8 my-8">
+                    <h4 class="text-2xl font-bold text-white mb-4">三、承擔與遠離——阿撒瀉勒的自由</h4>
+                    <p class="italic text-amber-500 font-black text-2xl mb-6">
+                        「兩手按在羊頭上，承認以色列人諸般的罪孽過犯...這羊要擔當他們一切的罪孽，帶到無人之地。」
+                    </p>
+                    <p>
+                        第一隻羊死了，解決了上帝那邊公義的要求；但會眾心中的罪疚感呢？神何等溫柔，祂預備了第二隻活著的羊，稱為「阿撒瀉勒」。百姓看著那隻羊越走越遠，直到消失在地平線的盡頭。上帝在宣告：<strong class="text-white underline decoration-amber-500">「看啊！你的罪已經離開你了，去了無人之地，永遠不會再回來找你！」</strong>
+                    </p>
+                </div>
+
+                <div class="bg-amber-950/20 p-8 rounded-3xl border border-amber-500/20">
+                    <h4 class="text-xl font-bold text-amber-400 mb-4">📍 結論：三個關鍵字</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                        <div class="p-4 bg-black/40 rounded-xl border border-white/5">
+                            <span class="block text-2xl font-black text-white">聖潔</span>
+                            <span class="text-xs text-slate-500">Holiness</span>
+                        </div>
+                        <div class="p-4 bg-black/40 rounded-xl border border-white/5">
+                            <span class="block text-2xl font-black text-white">代贖</span>
+                            <span class="text-xs text-slate-500">Substitution</span>
+                        </div>
+                        <div class="p-4 bg-black/40 rounded-xl border border-white/5">
+                            <span class="block text-2xl font-black text-white">自由</span>
+                            <span class="text-xs text-slate-500">Freedom</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Action Section -->
+        <section class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+                <h2 class="text-3xl font-bold section-title">回應與實踐行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bento-card p-8">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">1</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">真誠的認罪與洗淨</h4>
+                    <p class="text-slate-400 text-sm">安排一段獨處時間，具體寫下心中的隱惡，在禱告中宣告基督寶血塗抹，隨後將紙條撕毀。</p>
+                </div>
+                <div class="bento-card p-8">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">2</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">拒絕撒但的控告</h4>
+                    <p class="text-slate-400 text-sm">當罪疚感浮現，操練大聲宣告利未記16:22，提醒自己「耶穌已經將我的罪帶到無人之地」。</p>
+                </div>
+                <div class="bento-card p-8">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl">3</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">分享代贖的恩典</h4>
+                    <p class="text-slate-400 text-sm">尋找一位被罪惡感壓垮的朋友，向他分享「兩隻羊」的福音，見證神如何使我們得自由。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pt-12">
+            <div class="flex items-center space-x-4 mb-12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+                <h2 class="text-3xl font-bold section-title">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="bento-card p-6 break-inside-avoid">
+                    <p class="text-slate-300 italic mb-4">「罪的赦免是免費的，但絕不是廉價的；這赦免花費了上帝極大的代價，就是祂兒子的寶血。」</p>
+                    <p class="text-amber-500 font-bold text-right">— 約翰·史托德</p>
+                </div>
+                <div class="bento-card p-6 break-inside-avoid">
+                    <p class="text-slate-300 italic mb-4">「主耶穌，祢是我的公義，我是祢的罪惡。祢擔當了我的所是，並將祢的所是賜給了我。」</p>
+                    <p class="text-amber-500 font-bold text-right">— 馬丁·路德</p>
+                </div>
+                <div class="bento-card p-6 break-inside-avoid">
+                    <p class="text-slate-300 italic mb-4">「福音就是：你比你敢於承認的還要敗壞、有罪；但同時，你比你敢於盼望的還要更蒙愛、更被接納。」</p>
+                    <p class="text-amber-500 font-bold text-right">— 提摩太·凱勒</p>
+                </div>
+                <div class="bento-card p-6 break-inside-avoid">
+                    <p class="text-slate-300 italic mb-4">「上帝已經將我們的罪投進了深海裡，並且在那裡立了一個牌子，上面寫著：『禁止釣魚』。」</p>
+                    <p class="text-amber-500 font-bold text-right">— 慕迪</p>
+                </div>
+                <div class="bento-card p-6 break-inside-avoid">
+                    <p class="text-slate-300 italic mb-4">「廉價的恩典是傳揚不需悔改的赦免...是沒有十字架的恩典，是沒有耶穌基督的恩典。」</p>
+                    <p class="text-amber-500 font-bold text-right">— 潘霍華</p>
+                </div>
+                <div class="bento-card p-6 break-inside-avoid">
+                    <p class="text-slate-300 italic mb-4">「十字架是神智慧的最高彰顯。在十字架上，神的公義與神的慈愛同時達到了極致的滿足。」</p>
+                    <p class="text-amber-500 font-bold text-right">— 唐崇榮</p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-24 p-8 text-center text-slate-500 border-t border-white/5">
+                <p class="text-sm tracking-widest uppercase">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Banner dynamic darkening on scroll
+        window.addEventListener('scroll', () => {
+            const scroll = window.scrollY;
+            const banner = document.querySelector('.banner-img');
+            if (banner) {
+                banner.style.transform = `scale(${1 + scroll / 5000})`;
+            }
+        });
+    </script>
+</body>
+</html>

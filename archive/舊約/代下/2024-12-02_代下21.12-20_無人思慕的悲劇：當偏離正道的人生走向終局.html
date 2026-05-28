@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代下21:12-20:無人思慕的悲劇：當偏離正道的人生走向終局</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#DC143C',
+                        darkBg: '#0F172A',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'gentle-float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        'gentle-float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0F172A; color: #E2E8F0; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+        .glass-morphism {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #FCD34D, #F59E0B, #EF4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .bento-item {
+            grid-column: span 12;
+        }
+        @media (min-width: 768px) {
+            .bento-item-half { grid-column: span 6; }
+            .bento-item-large { grid-column: span 8; }
+            .bento-item-small { grid-column: span 4; }
+        }
+        .floating-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: gentle-float 3s ease-in-out infinite;
+        }
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: rgba(212, 175, 55, 0.15);
+            transform: translateY(-2px);
+            border-color: #D4AF37;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代下21:12-20',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '無人思慕的悲劇：當偏離正道的人生走向終局' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased">
+
+    <!-- Top Navigation Bar -->
+    <nav class="floating-nav glass-morphism px-4 py-3 sm:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-gold font-bold text-sm sm:text-lg tracking-tight">代下 21:12-20</div>
+            <div class="flex gap-4 sm:gap-8 text-xs sm:text-sm font-semibold uppercase tracking-widest text-slate-300">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header Area -->
+    <header class="relative h-[70vh] w-full overflow-hidden flex flex-col items-center justify-center text-center px-6">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_bb75c6d6-ade6-4a6b-b777-0013db1fb6f0.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-darkBg/60 via-darkBg/40 to-darkBg"></div>
+        </div>
+        
+        <div class="relative z-10 space-y-6 max-w-4xl">
+            <h1 id="top" class="text-4xl sm:text-6xl md:text-7xl font-display font-black leading-tight text-white drop-shadow-2xl">
+                無人思慕的<span class="text-gradient">悲劇</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-300 font-light tracking-[0.2em]">當偏離正道的人生走向終局</p>
+            
+            <div class="pt-10">
+                <div class="text-lg sm:text-xl font-display text-white italic max-w-2xl mx-auto leading-relaxed jump-text">
+                    「約蘭登基的時候年三十二歲，在耶路撒冷作王八年。他去世無人思慕，眾人葬他在大衛城，只是不在列王的墳墓裡。」
+                    <div class="mt-2 text-gold font-normal text-sm">— 歷代志下 21:20</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass-morphism rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 text-gold/10 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5z"/></svg>
+            </div>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="p-2 bg-gold/20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 0012 3c1.268 0 2.39.63 3.068 1.593m0 0a10.013 10.013 0 013.758 3.848m-14.23 4.93L5.41 11.03M4.5 9.75l10.5 10.5" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">禱告詞</h2>
+            </div>
+            <p class="text-lg sm:text-xl leading-relaxed text-slate-300">
+                主阿，我們來到祢面前，懇求祢光照我們的生命。約蘭王一生的悲劇提醒著我們，若偏離祢的真道，縱然擁有屬世的權力與財富，最終也將是一場空。求祢賜給我們一顆敬畏祢的心，不被世俗的貪婪與權力蒙蔽，讓我們一生行在祢的旨意中，留下榮神益人的美好見證。奉主耶穌基督的名求，阿們。
+            </p>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-blue-500/20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">大綱解析</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="outline-btn border border-slate-700 bg-slate-800/50 p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs font-bold text-gold uppercase tracking-tighter">第一分段 (v.12-15)</span>
+                    <span class="text-lg font-bold text-white">遲來的警告——罪惡的累積與上帝的宣判</span>
+                </a>
+                <a href="#part2" class="outline-btn border border-slate-700 bg-slate-800/50 p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs font-bold text-gold uppercase tracking-tighter">第二分段 (v.16-17)</span>
+                    <span class="text-lg font-bold text-white">破裂的防線——當屬世的倚靠被徹底摧毀</span>
+                </a>
+                <a href="#part3" class="outline-btn border border-slate-700 bg-slate-800/50 p-6 rounded-2xl flex flex-col gap-2">
+                    <span class="text-xs font-bold text-gold uppercase tracking-tighter">第三分段 (v.18-20)</span>
+                    <span class="text-lg font-bold text-white">悲慘的終局——失去尊嚴與無人思慕的落幕</span>
+                </a>
+            </div>
+
+            <!-- Deep Dive Content -->
+            <div class="space-y-16 mt-12">
+                <!-- Part 1 -->
+                <div id="part1" class="space-y-6 scroll-mt-24">
+                    <h3 class="text-2xl font-display font-bold text-gold flex items-center gap-3">
+                        <span class="w-8 h-[2px] bg-gold"></span> 遲來的警告
+                    </h3>
+                    <div class="bg-slate-900/50 border-l-4 border-gold p-6 rounded-r-2xl italic text-slate-300">
+                        「耶和華降大災與你的百姓和你的妻子、兒女，並你一切所有的。你的腸子必患病，日加沉重，以致你的腸子墜落下來。」
+                    </div>
+                    <div class="bento-grid">
+                        <div class="bento-item-half glass-morphism p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> 關鍵原文</h4>
+                            <p class="text-slate-300"><span class="text-white font-bold">「行邪淫」 (zanah)</span>：在舊約中，常被用來比喻屬靈上的淫亂，即轉離真神去敬拜偶像。</p>
+                        </div>
+                        <div class="bento-item-half glass-morphism p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵問題</h4>
+                            <p class="text-slate-300 font-bold mb-2">為什麼上帝要藉由一封信來宣告審判？</p>
+                            <p class="text-slate-400 text-sm italic">上帝在施行嚴厲管教之前，必定先給予清楚的警告與定罪，彰顯出神對罪惡的零容忍。</p>
+                        </div>
+                        <div class="bento-item glass-morphism p-6 rounded-2xl border-t-2 border-gold/30">
+                            <h4 class="text-gold font-bold mb-2 flex items-center gap-2">📖 佳句名言</h4>
+                            <p class="text-xl text-white font-display">「神不輕易發怒，但這不代表祂永遠不發怒。當恩典的期限過去，公義的審判必將到來。」</p>
+                            <span class="text-slate-500 text-sm block mt-1">— 司布真 (Charles Spurgeon)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="space-y-6 scroll-mt-24">
+                    <h3 class="text-2xl font-display font-bold text-gold flex items-center gap-3">
+                        <span class="w-8 h-[2px] bg-gold"></span> 破裂的防線
+                    </h3>
+                    <div class="bg-slate-900/50 border-l-4 border-gold p-6 rounded-r-2xl italic text-slate-300">
+                        「以後，耶和華激動非利士人和靠近古實的阿拉伯人來攻擊約蘭。他們上來攻擊猶大...擄掠了王宮裡所有的財寶和他的妻子、兒女。」
+                    </div>
+                    <div class="bento-grid">
+                        <div class="bento-item-small glass-morphism p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold mb-3">關鍵原文</h4>
+                            <p class="text-slate-300"><span class="text-white font-bold">「激動」 (`uwr)</span>：喚醒、激起。顯示歷史走向與外邦行動都在上帝掌管之中。</p>
+                        </div>
+                        <div class="bento-item-large glass-morphism p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold mb-3">關鍵問題與例證</h4>
+                            <p class="text-slate-300 mb-4">約蘭企圖用殺戮和聯姻建立的王國，在上帝興起的風浪面前，就像沙堡一樣脆弱。沒有神的保守，一切屬世的防線都是虛設的。</p>
+                            <div class="bg-darkBg/50 p-4 rounded-xl text-sm border border-slate-700">
+                                <strong class="text-gold">沙灘上的城堡：</strong> 漲潮一到，海浪湧來，所有的防禦工事瞬間被夷為平地。
+                            </div>
+                        </div>
+                        <div class="bento-item glass-morphism p-6 rounded-2xl border-t-2 border-gold/30">
+                            <h4 class="text-gold font-bold mb-2">📖 佳句名言</h4>
+                            <p class="text-xl text-white font-display">「凡是你在神之外所緊緊抓住的，神必定會把它從你手中奪走，好讓你知道唯有祂是你的磐石。」</p>
+                            <span class="text-slate-500 text-sm block mt-1">— 陶恕 (A.W. Tozer)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="space-y-6 scroll-mt-24">
+                    <h3 class="text-2xl font-display font-bold text-gold flex items-center gap-3">
+                        <span class="w-8 h-[2px] bg-gold"></span> 悲慘的終局
+                    </h3>
+                    <div class="bg-slate-900/50 border-l-4 border-gold p-6 rounded-r-2xl italic text-slate-300">
+                        「他去世無人思慕，眾人葬他在大衛城，只是不在列王的墳墓裡。」
+                    </div>
+                    <div class="bento-grid">
+                        <div class="bento-item-half glass-morphism p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold mb-3">關鍵原文</h4>
+                            <p class="text-slate-300"><span class="text-white font-bold">「無人思慕」 (lo hemdah)</span>：意指渴望、有價值的。此處指他離世時，沒有人感到惋惜，他的一生被蓋棺論定為一個「毫無價值」的悲劇。</p>
+                        </div>
+                        <div class="bento-item-half glass-morphism p-6 rounded-2xl">
+                            <h4 class="text-gold font-bold mb-3">關鍵解析</h4>
+                            <p class="text-slate-300">權力可以逼迫人屈服，卻無法贏得真正的敬重。人生的成功不在於你活著時擁有多高的地位，而在於你離世後，你留下了什麼樣的屬靈資產。</p>
+                        </div>
+                        <div class="bento-item glass-morphism p-6 rounded-2xl border-t-2 border-gold/30">
+                            <h4 class="text-gold font-bold mb-2">📖 佳句名言</h4>
+                            <p class="text-xl text-white font-display">「生命的價值不在於其長度，而在於其被奉獻的程度；我們活著是為了在別人的生命中留下基督的印記。」</p>
+                            <span class="text-slate-500 text-sm block mt-1">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Draft -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-crimson/20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-crimson" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto prose prose-invert prose-lg prose-slate">
+                <h3 class="text-3xl font-bold text-white mb-8">無人思慕的悲劇：當偏離正道的人生走向終局</h3>
+                
+                <p>各位弟兄姊妹，平安。當我們參加一場安息禮拜時，常常會聽到親友對逝者的緬懷與不捨。然而，今天我們要看一位君王的人生終局，聖經對他下了一個極為悲哀的結論。<strong class="text-gold">「約蘭登基的時候年三十二歲，在耶路撒冷作王八年。他去世無人思慕，眾人葬他在大衛城，只是不在列王的墳墓裡。」（歷代志下 21:20）</strong></p>
+
+                <div class="my-10 space-y-8">
+                    <div class="relative pl-8 border-l-2 border-gold/40">
+                        <h4 class="text-xl font-bold text-gold mb-2">第一段：遲來的警告——罪惡的累積與上帝的宣判</h4>
+                        <p>約蘭作王後，殺了所有的親兄弟，並且引進了偶像崇拜，帶領全國陷入屬靈的淫亂。這封來自以利亞的信，就像儀表板上的<span class="text-crimson font-bold uppercase">紅色警示燈</span>，警告他引擎即將爆炸。誠如司布真所言：<span class="text-white italic">「神不輕易發怒，但這不代表祂永遠不發怒。」</span>千萬不要無視這些屬靈的警示燈。</p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-2 border-gold/40">
+                        <h4 class="text-xl font-bold text-gold mb-2">第二段：破裂的防線——當屬世的倚靠被徹底摧毀</h4>
+                        <p>上帝「激動」了周邊的仇敵。約蘭當初為了鞏固王位而殺害親兄弟，但他費盡心機建立的防線，在上帝的管教面前，就像海灘上的沙堡，一個海浪就被夷為平地。陶恕牧師曾說：<span class="text-white italic">「凡是你在神之外所緊緊抓住的，神必定會把它從你手中奪走。」</span></p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-2 border-gold/40">
+                        <h4 class="text-xl font-bold text-gold mb-2">第三段：悲慘的終局——失去尊嚴與無人思慕的落幕</h4>
+                        <p>聖經冷冷地寫下：<strong class="text-white text-2xl underline decoration-crimson">「他去世無人思慕」</strong>。這提醒了我們，權力與金錢買不到真正的尊重。潘霍華說：「生命的價值不在於其長度，而在於其被奉獻的程度。」我們今天怎麼活，決定了我們明天怎麼被記念。</p>
+                    </div>
+                </div>
+
+                <p class="text-xl text-slate-300 leading-relaxed bg-slate-800/30 p-8 rounded-3xl">
+                    弟兄姊妹，約蘭的一生是一個嚴厲的警惕。讓我們的人生走到終點時，不是「無人思慕」，而是能夠聽見主對我們說：<span class="text-gold font-bold">「你這又良善又忠心的僕人，可以進來享受你主人的快樂！」</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass-morphism p-8 rounded-3xl">
+                <h3 class="text-2xl font-display font-bold text-gold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-gold">01</span> 檢視安全感的來源：拒絕用錯誤方法建立安全感。</li>
+                    <li class="flex gap-3"><span class="text-gold">02</span> 正視屬靈的警告：悔改而非硬著頸項。</li>
+                    <li class="flex gap-3"><span class="text-gold">03</span> 拒絕屬靈的淫亂：遠離權力、財富的誘惑。</li>
+                    <li class="flex gap-3"><span class="text-gold">04</span> 建立永恆的傳承：思考自己的墓誌銘。</li>
+                </ul>
+            </div>
+            <div class="bg-gold/10 border border-gold/20 p-8 rounded-3xl">
+                <h3 class="text-2xl font-display font-bold text-gold mb-6 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h3>
+                <div class="space-y-4 text-slate-300">
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 hover:border-gold/30 transition-all">
+                        <p class="font-bold text-white mb-1">1. 寫下個人墓誌銘</p>
+                        <p class="text-sm">以此作為今天生活行事的準則。</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 hover:border-gold/30 transition-all">
+                        <p class="font-bold text-white mb-1">2. 處理生命中的「破口」</p>
+                        <p class="text-sm">具體找出一項一再妥協的罪，向神認罪。</p>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 hover:border-gold/30 transition-all">
+                        <p class="font-bold text-white mb-1">3. 建立家庭祭壇</p>
+                        <p class="text-sm">不再讓家人跟隨世俗，留下屬靈遺產。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-slate-500/20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" /></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold text-white">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「如果你在神的話語中看見了自己的罪，不要逃避，這正是神愛你的證明；祂指出你的病，是為了賜下醫治的藥。」</p>
+                    <p class="text-gold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「沒有任何人可以靠著行惡來獲得真正的安全。一切在基督以外的根基，最終都將在審判的烈火中被燒毀。」</p>
+                    <p class="text-gold text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「罪惡總是一步步地蒙蔽人的雙眼；開始時只是對世界的一點妥協，最終卻會奪走你生命中所有的祝福。」</p>
+                    <p class="text-gold text-sm">— 約翰·衛斯理 (John Wesley)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「真正的財富不是你生前積攢了多少，而是你死後在天上存留了多少，以及你在地上留下了多少屬靈的影響力。」</p>
+                    <p class="text-gold text-sm">— 慕迪 (D.L. Moody)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「一個不肯順服神的人，他的人生就是一場漫長而痛苦的迷失；唯有降服於祂的旨意，我們才能找到歸家之路。」</p>
+                    <p class="text-gold text-sm">— 慕安德烈 (Andrew Murray)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「當上帝要管教一個人的時候，祂會挪去那人所倚靠的屬世柺杖，好讓他不得不跌入上帝恩典的臂膀中。」</p>
+                    <p class="text-gold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「神從來不把我們交給命運，祂用主權管理一切。即便外邦人的刀劍，也是上帝管教祂兒女的杖。」</p>
+                    <p class="text-gold text-sm">— 唐崇榮 (Stephen Tong)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「我們一生中最重要的事，不是我們做了什麼偉大的事，而是我們是否忠心地聽從了那位偉大之上帝的聲音。」</p>
+                    <p class="text-gold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「當一個人選擇離開上帝的真道時，他同時也選擇了接受罪惡所帶來的毀滅性後果。」</p>
+                    <p class="text-gold text-sm">— 查爾斯·史丹利 (Charles Stanley)</p>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 font-display mb-3">「死並不可怕，可怕的是到死的時候，才發現自己從來沒有為上帝真正活過。」</p>
+                    <p class="text-gold text-sm">— 喬治·懷特腓 (George Whitefield)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center text-slate-500 text-sm mt-20 border-t border-slate-800 pt-10">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold hover:bg-yellow-600 text-darkBg rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+    </a>
+
+</body>
+</html>

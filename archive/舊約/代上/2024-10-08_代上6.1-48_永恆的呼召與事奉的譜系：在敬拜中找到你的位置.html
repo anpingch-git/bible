@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代上6:1-48:永恆的呼召與事奉的譜系：在敬拜中找到你的位置</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        priest: '#c5a36b',
+                        levite: '#4a6d8c',
+                        worship: '#8e44ad',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'gentle-float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'pulse-subtle 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'pulse-subtle': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #facc15;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2s ease-in-out infinite;
+        }
+        @keyframes jump {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-5px);}
+            60% {transform: translateY(-3px);}
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代上6:1-48',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代上',         // 動態注入書卷縮寫，例如：出
+              'note_title': '永恆的呼召與事奉的譜系：在敬拜中找到你的位置' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body">
+
+    <!-- Header Banner -->
+    <header id="top" class="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_871847c8-c529-4f94-9ccc-26e7fcc759f6.jpg' alt='media_1' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-[#0a0a0c]"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <p class="text-gold-400 font-display font-bold tracking-widest mb-4 uppercase animate-gentle-float">Chronicles 6:1-48</p>
+            <h1 class="text-4xl md:text-7xl font-display font-extrabold mb-8 leading-tight">
+                永恆的呼召與<br><span class="gold-text-gradient">事奉的譜系</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl text-white font-medium italic leading-relaxed jump-text">
+                    「...他們就在會幕前當歌唱的差...按著班次供職。」
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="font-display font-bold text-lg text-gold-400">代上 6:1-48</div>
+            <div class="flex gap-6 text-sm md:text-base font-medium overflow-x-auto whitespace-nowrap pb-2 md:pb-0">
+                <a href="#prayer" class="nav-link">禱告</a>
+                <a href="#outline" class="nav-link">大綱</a>
+                <a href="#sermon" class="nav-link">講章</a>
+                <a href="#quotes" class="nav-link">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="pt-10">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2L9 4.12 10.88 6 9 7.88 11 10l2-2.12L11.12 6 13 4.12 11 2zm6.21 6.5l-1.42 1.42L18.21 12l-2.42 2.08 1.42 1.42L21 12l-3.79-3.5zM3 12l3.79 3.5 1.42-1.42L5.79 12l2.42-2.08-1.42-1.42L3 12zm10 2l-2 2.12L12.88 18 11 19.88 13 22l2-2.12L12.12 18 14 16.12 13 14z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                    <span class="p-3 bg-gold-500/20 rounded-xl text-gold-400">🙏</span> 禱告
+                </h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 italic first-letter:text-5xl first-letter:font-bold first-letter:text-gold-400 first-letter:mr-3 first-letter:float-left">
+                    親愛的天父，我們感謝祢，因祢是那位在歷史洪流中掌權，並在萬民中揀選我們來事奉祢的上帝。當我們翻閱這些看似古老的名字時，求聖靈開啟我們的眼睛，讓我們看見祢信實的傳承與永恆的呼召。主啊！求祢幫助我們明白，無論我們在祢的家中扮演什麼角色，都是極大且神聖的恩典。願祢將敬拜的火種點燃在我們心中，使我們的生命成為一首讚美的詩歌，按著祢所定的旨意，忠心站立在祢面前服事。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline">
+            <h2 class="text-3xl font-display font-bold mb-8 flex items-center gap-4">
+                <span class="p-3 bg-blue-500/20 rounded-xl text-blue-400">📋</span> 分段大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="glass-card p-6 hover:border-gold-500/50 transition-all group">
+                    <p class="text-gold-400 text-sm font-bold mb-2">PART 01</p>
+                    <h3 class="text-lg font-bold group-hover:text-gold-300">隱藏在名單背後的恩典：揀選與傳承的祭司血脈</h3>
+                    <p class="text-gray-500 text-sm mt-2">(代上 6:1-15)</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 hover:border-levite/50 transition-all group">
+                    <p class="text-blue-400 text-sm font-bold mb-2">PART 02</p>
+                    <h3 class="text-lg font-bold group-hover:text-blue-300">平凡中的神聖定意：各司其職的利未支派</h3>
+                    <p class="text-gray-500 text-sm mt-2">(代上 6:16-30)</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 hover:border-worship/50 transition-all group">
+                    <p class="text-purple-400 text-sm font-bold mb-2">PART 03</p>
+                    <h3 class="text-lg font-bold group-hover:text-purple-300">永不止息的讚美交響曲：敬拜者的榮耀呼召</h3>
+                    <p class="text-gray-500 text-sm mt-2">(代上 6:31-48)</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-8 mb-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28">
+                            <h3 class="text-4xl font-display font-black text-gold-500 mb-4">01</h3>
+                            <h4 class="text-2xl font-bold mb-4">隱藏在名單背後的恩典</h4>
+                            <p class="text-gray-400 border-l-4 border-gold-500 pl-4 py-2">
+                                歷代志上 6:1-15<br>
+                                專注：揀選與傳承
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="bg-white/5 p-6 rounded-2xl">
+                            <h5 class="text-gold-400 font-bold mb-2 flex items-center gap-2">📖 經文摘錄</h5>
+                            <p class="text-gray-300 italic">「利未的兒子是革順、哥轄、米拉利... 亞倫的兒子是拿答、亞比戶、以利亞撒... 當耶和華藉尼布甲尼撒的手擄掠猶大和耶路撒冷人的時候，這約薩答也被擄去。」</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass-card p-6">
+                                <h5 class="text-gold-400 font-bold mb-3">🔑 關鍵字：祭司 (kohen)</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">希伯來原文 *kohen* (כֹּהֵן)。意思是「代表百姓來到神面前，並代表神向百姓宣告祝福的人」，是神與人之間的中保。</p>
+                            </div>
+                            <div class="glass-card p-6">
+                                <h5 class="text-gold-400 font-bold mb-3">💡 關鍵問題</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">這些看似枯燥冗長的家譜名字，對今天的我們有何屬靈意義？即使在國家滅亡、百姓被擄時，譜系依然沒有斷絕，證明上帝的救贖計畫永不中斷。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-8">
+                            <h5 class="text-gold-400 font-bold mb-4">🌿 生活中的亮光</h5>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 rounded-full bg-gold-500/20 flex-shrink-0 flex items-center justify-center text-gold-400 font-bold">📜</div>
+                                <div>
+                                    <p class="text-gray-300 mb-4">在二次大戰期間，一個猶太父親在進入毒氣室前將銀色燭台交給兒子，叮囑他「記住你是誰」。家譜就是我們的「燭台」，在最黑暗的歷史灰燼中，保守著恩典的血脈。</p>
+                                    <blockquote class="border-l-2 border-gold-500/50 pl-4 py-1 italic text-gold-200">
+                                        「我們得救不是因為我們抓住了上帝，而是因為上帝抓住了我們。」—— 提摩太·凱勒
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse gap-8 mb-12">
+                    <div class="md:w-1/3 text-right">
+                        <div class="sticky top-28">
+                            <h3 class="text-4xl font-display font-black text-blue-500 mb-4">02</h3>
+                            <h4 class="text-2xl font-bold mb-4">平凡中的神聖定意</h4>
+                            <p class="text-gray-400 border-r-4 border-blue-500 pr-4 py-2">
+                                歷代志上 6:16-30<br>
+                                專注：各司其職
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="bg-white/5 p-6 rounded-2xl border-r-4 border-blue-500/30">
+                            <h5 class="text-blue-400 font-bold mb-2 flex items-center gap-2">📖 經文摘錄</h5>
+                            <p class="text-gray-300 italic">「革順、哥轄、米拉利... 按著宗族記下利未的家譜... 這備拉亞是流便支派的首領，被亞述王提革拉‧毘列色擄去的。」</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass-card p-6">
+                                <h5 class="text-blue-400 font-bold mb-3">🔑 關鍵字：事奉 (avodah)</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">希伯來原文 *avodah* (עֲבוֹדָה)。同時包含了「日常工作」、「僕人的勞動」與「對神的敬拜」。</p>
+                            </div>
+                            <div class="glass-card p-6">
+                                <h5 class="text-blue-400 font-bold mb-3">💡 關鍵問題</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">當我們覺得自己的服事（搬運、打掃）微不足道時，該如何看待？上帝精確記錄他們的名字，因為在神國裡沒有「卑微」的事奉，只有「不忠心」的事奉。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-8">
+                            <h5 class="text-blue-400 font-bold mb-4">🏗️ 建築師的視角</h5>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 rounded-full bg-blue-500/20 flex-shrink-0 flex items-center justify-center text-blue-400 font-bold">🔨</div>
+                                <div>
+                                    <p class="text-gray-300 mb-4">「三個石匠」的故事：第三個石匠知道他不是在砌磚，而是在「建造一座榮耀上帝的大教堂」。平凡的搬運與勞動，都是參與在上帝榮耀同在的建造。</p>
+                                    <blockquote class="border-l-2 border-blue-500/50 pl-4 py-1 italic text-blue-200">
+                                        「即使是擠牛奶的農婦，如果她為主而做，她的工作與講道一樣神聖。」—— 馬丁·路德
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row gap-8 mb-12">
+                    <div class="md:w-1/3">
+                        <div class="sticky top-28">
+                            <h3 class="text-4xl font-display font-black text-purple-500 mb-4">03</h3>
+                            <h4 class="text-2xl font-bold mb-4">永不止息的讚美交響曲</h4>
+                            <p class="text-gray-400 border-l-4 border-purple-500 pl-4 py-2">
+                                歷代志上 6:31-48<br>
+                                專注：榮耀呼召
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-8">
+                        <div class="bg-purple-900/10 p-6 rounded-2xl border-l-4 border-purple-500">
+                            <h5 class="text-purple-400 font-bold mb-2 flex items-center gap-2">📖 關鍵金句</h5>
+                            <p class="text-xl text-white font-bold tracking-wide animate-subtle-pulse">「約櫃安設之後，大衛派人在耶和華殿中管理歌唱的事... 他們便按著班次供職。」</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="glass-card p-6">
+                                <h5 class="text-purple-400 font-bold mb-3">🔑 關鍵字：供職 (amad)</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">希伯來原文 *amad* (עָמַד)。字面意思是「站立、侍立」。指敬拜者帶著敬畏的心，隨時等候差遣與事奉的姿態。</p>
+                            </div>
+                            <div class="glass-card p-6">
+                                <h5 class="text-purple-400 font-bold mb-3">💡 關鍵問題</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">為什麼要「按著班次」？敬拜不是隨興的，而是需要管理與紀律。充滿熱情的敬拜與嚴謹的秩序並不衝突，反而能讓敬拜之火長燃。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-8">
+                            <h5 class="text-purple-400 font-bold mb-4">🎻 聖潔的樂章</h5>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 rounded-full bg-purple-500/20 flex-shrink-0 flex items-center justify-center text-purple-400 font-bold">🎵</div>
+                                <div>
+                                    <p class="text-gray-300 mb-4">交響樂團演出前必須調音並注視指揮。大衛的敬拜團也是如此，他們不強調個人獨奏，而是看重在基督（指揮）的引導下發出和諧讚美。</p>
+                                    <blockquote class="border-l-2 border-purple-500/50 pl-4 py-1 italic text-purple-200">
+                                        「神造我們的目的，就是要我們成為敬拜者。敬拜是我們存在的最高目的。」—— 陶恕
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Application Section -->
+        <section class="py-16">
+            <h2 class="text-3xl font-display font-bold mb-12 text-center">生活應用與結論</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 border-t-4 border-gold-500">
+                    <h3 class="text-gold-400 text-xl font-bold mb-4">應用方向</h3>
+                    <ul class="space-y-4 text-gray-400 text-sm md:text-base">
+                        <li class="flex gap-2"><span>1.</span> 確信神不變的揀選。</li>
+                        <li class="flex gap-2"><span>2.</span> 忠心於隱藏與平凡的服事。</li>
+                        <li class="flex gap-2"><span>3.</span> 建立有紀律的敬拜生活。</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 border-t-4 border-blue-500 flex flex-col items-center justify-center text-center">
+                    <h3 class="text-blue-400 text-xl font-bold mb-6">核心關鍵字</h3>
+                    <div class="space-y-4">
+                        <div class="text-4xl font-black tracking-widest text-white">傳承</div>
+                        <div class="text-4xl font-black tracking-widest text-white">事奉</div>
+                        <div class="text-4xl font-black tracking-widest text-white">敬拜</div>
+                    </div>
+                </div>
+                <div class="glass-card p-8 border-t-4 border-purple-500">
+                    <h3 class="text-purple-400 text-xl font-bold mb-4">回應行動</h3>
+                    <ul class="space-y-4 text-gray-400 text-sm md:text-base">
+                        <li class="flex gap-2"><span>✅</span> <b>感恩屬靈傳承：</b>寫一張屬靈家譜感謝前輩。</li>
+                        <li class="flex gap-2"><span>✅</span> <b>認領隱藏服事：</b>委身一項沒人看見的服事。</li>
+                        <li class="flex gap-2"><span>✅</span> <b>制定敬拜班次：</b>每天定出具體的15分鐘。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="pt-20">
+            <h2 class="text-3xl font-display font-bold mb-12 flex items-center gap-4">
+                <span class="p-3 bg-red-500/20 rounded-xl text-red-400">📜</span> 講章文稿
+            </h2>
+            <div class="glass-card p-8 md:p-16 space-y-10 leading-loose text-gray-300">
+                <header class="text-center mb-12">
+                    <h3 class="text-2xl md:text-4xl font-bold text-white mb-4">代上6:1-48：永恆的呼召與事奉的譜系</h3>
+                    <div class="w-24 h-1 bg-gold-500 mx-auto"></div>
+                </header>
+                
+                <p>各位弟兄姊妹，平安。當我們翻開歷代志上第六章，眼前出現的是一長串的人名。老實說，這可能是我們讀經時最容易快速跳過的篇章。然而，在這些看似枯燥的名單背後，卻隱藏著上帝對你我生命最榮耀的呼召。今天，我們要從利未人的家譜中，看見我們在神國度裡的位置。</p>
+
+                <div>
+                    <h4 class="text-xl font-bold text-gold-400 mb-4 border-b border-gold-500/30 pb-2">第一段：隱藏在名單背後的恩典：揀選與傳承的祭司血脈</h4>
+                    <p>請看代上6:1-15。這裡記載了從利未到大祭司亞倫，一路傳承到被擄時期的約薩答。這裡有一個關鍵字叫做<span class="text-gold-400 font-bold">祭司 (*kohen*)</span>，意思是神與人之間的中保。</p>
+                    <p class="mt-4">我們不禁要問：<span class="bg-gold-500/20 px-1 text-gold-300 font-medium">這些看似枯燥冗長的家譜名字，對今天的我們有何屬靈意義？</span> 第15節給了我們極大的震撼：「當耶和華藉尼布甲尼撒的手擄掠猶大和耶路撒冷人的時候，這約薩答也被擄去。」國家滅亡了，聖殿被毀了，但這條服事的血脈斷了嗎？沒有！上帝藉著這份名單向我們宣告：人的失敗、環境的災難，永遠無法摧毀上帝的揀選與恩典。</p>
+                    <p class="mt-4 italic">正如提摩太·凱勒所言：<span class="text-white">「我們得救不是因為我們抓住了上帝，而是因為上帝抓住了我們。」</span> 你的名字，也被上帝緊緊抓在祂恩典的家譜中！</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-blue-400 mb-4 border-b border-blue-500/30 pb-2">第二段：平凡中的神聖定意：各司其職的利未支派</h4>
+                    <p>接著，在16-30節，經文轉向一般的利未宗族：革順、哥轄、米拉利。他們沒有亞倫後裔那樣穿著華麗祭司袍的榮耀，他們負責的是扛抬會幕的木柱、布幔，處理繁重的勞力工作。這裡的<span class="text-blue-400 font-bold">事奉 (*avodah*)</span>，在希伯來文中同時包含了「勞動」與「敬拜」的意思。</p>
+                    <p class="mt-4">當我們覺得自己的服事微不足道時，該如何看待？弟兄姊妹，在神眼中，從來沒有卑微的服事，只有不忠心的態度。當那個傳說中的第三個石匠說：「我在建造一座榮耀上帝的大教堂！」時，他明白了事奉的真諦。馬丁·路德曾說：<span class="text-white font-bold">「即使是擠牛奶的農婦，如果她為主而做，她的工作與傳道人在講台上的講道一樣神聖。」</span> 不要輕看你在教會中排椅子、掃廁所、默默代禱的服事，上帝都精確地把你的名字和擺上記錄在天上。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-purple-400 mb-4 border-b border-purple-500/30 pb-2">第三段：永不止息的讚美交響曲：敬拜者的榮耀呼召</h4>
+                    <p>最後，我們來到31-48節。這段經文迎來了今天的高潮與<span class="text-gold-400 font-bold underline decoration-wavy underline-offset-4">【金句】：「約櫃安設之後，大衛派人在耶和華殿中管理歌唱的事。他們就在會幕前當歌唱的差，及至所羅門在耶路撒冷建造了耶和華的殿，他們便按著班次供職。」（代上6:31-32）</span></p>
+                    <p class="mt-4">這裡的<span class="text-purple-400 font-bold">供職 (*amad*)</span>，意思是帶著敬畏的心站立、侍立在神面前。大衛設立希幔、亞薩、以探，讓他們分為左右，按著班次服事。這告訴我們，敬拜需要熱情，但也需要紀律與秩序。就像交響樂團，沒有一個人是為了凸顯自己，所有人都在指揮的引導下，發出和諧的樂音。</p>
+                    <p class="mt-4">陶恕牧師提醒我們：<span class="text-white font-bold italic">「神造我們的目的，就是要我們成為敬拜者。」</span> 弟兄姊妹，我們的受造就是為了敬拜。今天，讓我們回應這份永恆的呼召，看重屬靈的<span class="text-gold-400 font-bold">傳承</span>，委身於日常的<span class="text-blue-400 font-bold">事奉</span>，並將我們的生命獻上，成為一首不止息的<span class="text-purple-400 font-bold">敬拜</span>交響曲！阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes -->
+        <section id="quotes" class="pt-20 pb-10">
+            <h2 class="text-3xl font-display font-bold mb-12 flex items-center gap-4 text-gold-400">
+                <span class="p-3 bg-gold-500/20 rounded-xl text-gold-400">✨</span> 名言佳句
+            </h2>
+            <div class="bento-grid">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 flex flex-col justify-between hover:-translate-y-2 transition-transform">
+                    <p class="text-gray-300 italic mb-4">「神造我們的目的，就是要我們成為敬拜者。敬拜不是我們生命中附加的裝飾，而是我們存在的最高目的。」</p>
+                    <div class="text-right text-gold-500 font-bold text-xs">—— 陶恕 (A.W. Tozer)《渴慕神》</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 flex flex-col justify-between hover:-translate-y-2 transition-transform border-l-4 border-gold-500">
+                    <p class="text-gray-300 italic mb-4">「我們得救不是因為我們抓住了上帝，而是因為上帝抓住了我們。」</p>
+                    <div class="text-right text-gold-500 font-bold text-xs">—— 提摩太·凱勒 (Timothy Keller)</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 flex flex-col justify-between hover:-translate-y-2 transition-transform">
+                    <p class="text-gray-300 italic mb-4">「即使是擠牛奶的農婦，如果她為主而做，她的工作與傳道人在講台上的講道一樣神聖。」</p>
+                    <div class="text-right text-gold-500 font-bold text-xs">—— 馬丁·路德 (Martin Luther)</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 flex flex-col justify-between hover:-translate-y-2 transition-transform">
+                    <p class="text-gray-300 italic mb-4">「廉價的恩典是我們教會的死敵。我們今天所爭取的是重價的恩典……這恩典是重價的，因為它呼召人來跟從耶穌基督。」</p>
+                    <div class="text-right text-gold-500 font-bold text-xs">—— 潘霍華 (Dietrich Bonhoeffer)</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 flex flex-col justify-between hover:-translate-y-2 transition-transform">
+                    <p class="text-gray-300 italic mb-4">「你如果在小事上不忠心，上帝就不會把大事託付給你。服事的偉大不在於工作的規模，而在於對主的順服。」</p>
+                    <div class="text-right text-gold-500 font-bold text-xs">—— 查爾斯·史丹利 (Charles Stanley)</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 flex flex-col justify-between hover:-translate-y-2 transition-transform">
+                    <p class="text-gray-300 italic mb-4">「當我們讚美時，我們就是在參與天堂的預演；敬拜是我們在地上所能做最接近永恆的事。」</p>
+                    <div class="text-right text-gold-500 font-bold text-xs">—— 司布真 (Charles Spurgeon)</div>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-6 rounded-xl bg-red-950/20 border border-red-900/50 text-center">
+                <p class="text-red-400 text-sm font-medium">⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-colors z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

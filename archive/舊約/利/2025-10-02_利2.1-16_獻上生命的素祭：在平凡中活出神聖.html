@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利2:1-16:獻上生命的素祭：在平凡中活出神聖</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fff9d6',
+                            200: '#ffefad',
+                            300: '#ffde75',
+                            400: '#ffc83d',
+                            500: '#f9a61a',
+                            600: '#e0830f',
+                            700: '#ba5f0f',
+                            800: '#974a13',
+                            900: '#7c3e14',
+                        },
+                        onyx: '#0a0a0a',
+                        surface: '#161616',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 4s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #f9a61a 0%, #ffde75 50%, #ba5f0f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: #f9a61a;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(249, 166, 26, 0.2);
+        }
+        .jumping-text {
+            display: inline-block;
+            animation: jumping 2s ease-in-out infinite;
+        }
+        @keyframes jumping {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f9a61a; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '利未記2:1-16',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '利未記',         // 動態注入書卷縮寫，例如：出
+              'note_title': '獻上生命的素祭：在平凡中活出神聖' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-onyx text-gray-200 font-sans selection:bg-gold-500 selection:text-onyx">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-screen-xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-serif font-black text-gold-400 text-lg tracking-tight">利未記 2:1-16</span>
+            <div class="flex gap-6 text-sm font-medium tracking-widest uppercase">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_95bd9117-3d22-4af6-8374-6a0b082a3309.jpg' alt='Leviticus Banner' class="w-full h-full object-cover animate-breath opacity-70 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-onyx/40 to-onyx"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="font-serif text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+                <span class="text-gradient-gold">獻上生命的素祭</span><br/>
+                <span class="text-white">在平凡中活出神聖</span>
+            </h1>
+            
+            <div class="space-y-4">
+                <p class="text-lg md:text-2xl font-light text-gray-300 italic jumping-text">
+                    「若有人獻素祭為供物給耶和華，要用細麵澆上油，加上乳香。」
+                </p>
+                <p class="text-gold-500 font-bold tracking-[0.2em]">（利未記 2:1）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-gold-500/10 rounded-full flex items-center justify-center mb-6 border border-gold-500/20">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.917c-.99-.906-1.543-2.146-1.543-3.443 0-2.618 2.301-4.743 5.109-4.743 1.341 0 2.628.52 3.662 1.463l1 1 1-1c1.034-.943 2.321-1.463 3.662-1.463 2.808 0 5.109 2.125 5.109 4.743 0 1.297-.553 2.537-1.543 3.443L12 21z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold mb-8 text-white">禱告詞</h2>
+                <div class="max-w-3xl glass-nav p-10 rounded-3xl border border-white/5 shadow-2xl">
+                    <p class="text-xl leading-relaxed text-gray-300">
+                        主啊，我們將自己的生命如同素祭一般呈獻在祢面前。求祢聖靈的膏油澆灌我們，使我們經過生活的磨碎與精煉後，能成為毫無雜質的細麵。求祢除去我們生命中的酵與蜜，不容罪惡蔓延，也不容虛浮的榮耀摻雜；並在我們裡面加上立約的鹽，使我們對祢的愛與委身永不朽壞。願我們手所作的工、口所出的話，都成為祢眼中馨香的祭。奉主耶穌基督的名求，阿們。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-10 h-10 bg-gold-500 flex items-center justify-center rounded-lg shadow-lg">
+                    <svg class="w-6 h-6 text-onyx" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="bento-card p-8 rounded-2xl group">
+                    <span class="text-gold-500 text-sm font-bold block mb-4 tracking-tighter">利 2:1-3</span>
+                    <h3 class="text-2xl font-serif font-bold text-white group-hover:text-gold-400 transition-colors">精煉與恩膏：獻上最美的細麵</h3>
+                    <div class="mt-6 flex justify-end">
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </div>
+                </a>
+                <a href="#part2" class="bento-card p-8 rounded-2xl group">
+                    <span class="text-gold-500 text-sm font-bold block mb-4 tracking-tighter">利 2:4-12</span>
+                    <h3 class="text-2xl font-serif font-bold text-white group-hover:text-gold-400 transition-colors">純潔與真實：拒絕發酵與虛甜的生命</h3>
+                    <div class="mt-6 flex justify-end">
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </div>
+                </a>
+                <a href="#part3" class="bento-card p-8 rounded-2xl group">
+                    <span class="text-gold-500 text-sm font-bold block mb-4 tracking-tighter">利 2:13-16</span>
+                    <h3 class="text-2xl font-serif font-bold text-white group-hover:text-gold-400 transition-colors">永恆的立約：加上不可或缺的鹽</h3>
+                    <div class="mt-6 flex justify-end">
+                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown -->
+        <section class="space-y-24">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-32">
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="text-5xl font-black text-white/10 italic">01</span>
+                    <h3 class="text-4xl font-serif font-bold text-gold-400">精煉與恩膏：獻上最美的細麵</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-surface p-8 rounded-3xl border-l-4 border-gold-500">
+                            <p class="text-xl text-white italic leading-relaxed">「若有人獻素祭為供物給耶和華，要用細麵澆上油，加上乳香...這是獻與耶和華的火祭中為至聖的。」</p>
+                            <span class="block mt-4 text-gold-600 font-bold">—— 利未記 2:1-3</span>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold-500 font-bold mb-2 uppercase tracking-widest text-sm">關鍵詞解析</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">素祭 (Minchah)</strong>：代表將勞碌所得與生命奉獻。</li>
+                                    <li><strong class="text-white">細麵 (Soleth)</strong>：經過磨碎、無雜質的高級麵粉。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold-500 font-bold mb-2 uppercase tracking-widest text-sm">深度解析</h4>
+                                <p class="text-gray-400">麥子必須經過嚴格的「磨碎」才能成為細麵，象徵老我與驕傲必須被神破碎。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-4 space-y-6">
+                        <div class="bg-gold-900/20 p-8 rounded-3xl border border-gold-500/30">
+                            <div class="text-gold-500 mb-4"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/></svg></div>
+                            <p class="text-white font-medium italic">「神所重用的人，必先經歷深深的破碎。」</p>
+                            <p class="text-gold-600 text-sm mt-2">— 慕安德烈</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-32">
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="text-5xl font-black text-white/10 italic">02</span>
+                    <h3 class="text-4xl font-serif font-bold text-gold-400">純潔與真實：拒絕發酵與虛甜的生命</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-surface p-8 rounded-3xl border-l-4 border-red-500/50">
+                            <p class="text-xl text-white italic leading-relaxed">「凡獻給耶和華的素祭都不可有酵；因為你們不可燒一點酵、一點蜜當作火祭獻給耶和華。」</p>
+                            <span class="block mt-4 text-gold-600 font-bold">—— 利未記 2:4-12</span>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold-500 font-bold mb-2 uppercase tracking-widest text-sm">關鍵禁令</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">酵 (Seor)</strong>：象徵罪惡、虛偽或腐敗的蔓延。</li>
+                                    <li><strong class="text-white">蜜 (Debash)</strong>：象徵天然情感與討好人的虛榮。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold-500 font-bold mb-2 uppercase tracking-widest text-sm">為何禁蜜？</h4>
+                                <p class="text-gray-400">蜜代表天然的甘甜，經不起祭壇之火的試煉。神要的是未經糖衣包裝的真實。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-4">
+                        <div class="bg-onyx border border-white/10 p-8 rounded-3xl h-full flex flex-col justify-center">
+                            <p class="text-lg leading-relaxed text-gray-400">「廉價的恩典是我們教會的死敵...那是沒有十字架的恩典。」</p>
+                            <p class="text-gold-600 font-bold mt-4">— 潘霍華</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-32">
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="text-5xl font-black text-white/10 italic">03</span>
+                    <h3 class="text-4xl font-serif font-bold text-gold-400">永恆的立約：加上不可或缺的鹽</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-surface p-8 rounded-3xl border-l-4 border-blue-400/50">
+                            <p class="text-xl text-white italic leading-relaxed">「凡獻為素祭的供物都要用鹽調和，在素祭上不可缺了你神立約的鹽。一切的供物都要配鹽而獻。」</p>
+                            <span class="block mt-4 text-gold-600 font-bold">—— 利未記 2:13-16</span>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold-500 font-bold mb-2 uppercase tracking-widest text-sm">永恆象徵</h4>
+                                <ul class="space-y-4">
+                                    <li><strong class="text-white">鹽 (Melach)</strong>：防腐、調味、不朽壞。</li>
+                                    <li><strong class="text-white">鹽約 (Covenant)</strong>：象徵與神之間永不廢棄的關係。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl">
+                                <h4 class="text-gold-500 font-bold mb-2 uppercase tracking-widest text-sm">防腐的作用</h4>
+                                <p class="text-gray-400">信仰操守就是防止世界腐敗的鹽，提醒我們在敗壞中持守真理。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-4">
+                        <div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col h-full justify-between">
+                            <svg class="w-12 h-12 text-gold-500/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <p class="text-lg text-gray-300 italic mb-6">「基督徒要作世上的鹽，意味著我們必須滲透進入社會，發揮防腐與潔淨的作用。」</p>
+                            <p class="text-gold-500 font-bold">— 約翰·史托德</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center gap-4 mb-16 justify-center">
+                    <div class="w-12 h-12 bg-gold-500 flex items-center justify-center rounded-full">
+                        <svg class="w-7 h-7 text-onyx" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                    </div>
+                    <h2 class="text-4xl font-serif font-black text-white">講章文稿</h2>
+                </div>
+
+                <div class="prose prose-invert prose-gold max-w-none space-y-12 text-gray-300 leading-loose text-lg">
+                    <h3 class="text-3xl font-serif font-bold text-white border-b border-white/10 pb-4">利未記2:1-16：獻上生命的素祭：在平凡中活出神聖</h3>
+                    
+                    <p>弟兄姊妹們，當我們談到舊約的獻祭，腦海中浮現的往往是牛羊的血、燃燒的祭壇和贖罪的畫面。但在利未記的五祭中，有一個非常特別、完全不流血的祭，那就是「素祭」。素祭原文的意思是「禮物」，它代表的不是為罪付上代價，而是<span class="text-gold-400 font-bold underline decoration-gold-500/30">將我們日常勞碌的成果、我們平凡的生命，當作感恩的禮物獻給神。</span></p>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-serif font-bold text-white flex items-center gap-3">一、 精煉與恩膏：獻上最美的細麵</h4>
+                        <p>利未記2:1告訴我們：<span class="text-white font-bold">「若有人獻素祭為供物給耶和華，要用細麵澆上油，加上乳香。」</span></p>
+                        <p>神不要粗糙的麥粒，祂指定要「細麵」。為什麼？因為麥子要成為細麵，必須經歷農夫的打穀，經歷磨石無情地、反覆地輾壓與磨碎。弟兄姊妹，這就是我們生命的寫照！<span class="text-gold-400 font-black">神若要使用我們，必先破碎我們。</span> 祂要磨去我們性格中的稜角、我們的自以為是、我們的暴躁與驕傲。</p>
+                        <p>當我們被生活中的艱難磨碎，成為柔軟順服的細麵時，神說，還要<span class="text-white font-bold">「澆上油，加上乳香」</span>。油代表聖靈，乳香代表禱告。我們那些看似枯燥的工作、平凡的家務，只要經過聖靈的膏抹，加上我們每天向神的禱告，這一切就不再是世俗的勞役，而是<span class="text-gold-500 font-bold">「獻與耶和華為馨香的火祭」</span>！</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-serif font-bold text-white flex items-center gap-3">二、 純潔與真實：拒絕發酵與虛甜的生命</h4>
+                        <p>接著，神給了嚴格的禁令。第11節說：<span class="text-white font-bold">「你們不可燒一點酵、一點蜜當作火祭獻給耶和華。」</span></p>
+                        <p>我們都知道「酵」在聖經中代表罪、虛偽和自我膨脹。我們不能帶著隱藏的罪來事奉神。但是，為什麼連甜美的「蜜」也不能獻？蜜代表我們天然的感情、肉體的狂熱，或者是為了討好人而產生的「虛甜」。</p>
+                        <p>很多時候，我們的信仰充滿了「蜜」。我們喜歡聽好聽的話，喜歡在教會中維持表面的和氣，甚至我們的事奉是為了換取別人的按讚與掌聲。但神說，<span class="text-gold-400 font-black">蜜經不起祭壇的火</span>！高溫一燒，蜜就會變酸、變焦。那些建立在人情世故上的信仰，一旦遇到試煉與逼迫，瞬間就會崩塌。<span class="text-gold-500 font-bold">神不要我們用酵來膨脹自己，也不要我們用蜜來粉飾太平；祂要我們帶著純潔與真實來到祂面前。</span></p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-serif font-bold text-white flex items-center gap-3">三、 永恆的立約：加上不可或缺的鹽</h4>
+                        <p>既然不可有酵、不可有蜜，那素祭到底該加什麼？第13節給了我們答案：<span class="text-white font-bold">「在素祭上不可缺了你神立約的鹽。一切的供物都要配鹽而獻。」</span></p>
+                        <p>鹽的作用是什麼？是防腐，是不朽壞。古代沒有冰箱，要讓肉不爛，就必須抹上厚厚的鹽。神稱這為「立約的鹽」，代表我們與神的關係是堅貞不移、永不廢棄的。</p>
+                        <p>在今天這個道德快速腐敗、價值觀崩潰的世代，神呼召我們在職場上、在家庭中，成為「配上鹽的素祭」。<span class="text-gold-500 font-black">你的誠實、你的正直、你對婚姻的忠貞、你對真理的堅持，就是這個世界的防腐劑。</span> 當我們帶著立約的鹽生活時，我們就是在宣告：我對主的忠誠，絕不向這個世界妥協！</p>
+                    </div>
+
+                    <div class="bg-surface p-10 rounded-3xl mt-12 border border-white/5 shadow-inner">
+                        <p class="font-bold text-white mb-6 text-2xl">結語：我們正在獻上素祭</p>
+                        <p>弟兄姊妹，明天當你走進辦公室、當你在家中照顧孩子，請記住，你正在獻上你的素祭。讓神來破碎你成為<span class="text-gold-500">細麵</span>，求聖靈的<span class="text-gold-500">油</span>膏抹你；除去生命中虛假的<span class="text-gold-500">酵與蜜</span>，並加上忠貞立約的<span class="text-gold-500">鹽</span>。願我們每一天的生活，都成為主眼中最馨香的祭！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-10 h-10 bg-gold-500 flex items-center justify-center rounded-lg">
+                    <svg class="w-6 h-6 text-onyx" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">屬靈前輩佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote Items -->
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「我們的心不是我們自己的，所以不可順從世俗的慾望；我們的心乃是屬乎神的，所以應當把心全然奉獻給祂，當作活祭。」</p>
+                    <p class="text-gold-500 font-bold text-sm">—— 約翰·加爾文，《基督教要義》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「神所重用的人，必先經歷深深的破碎；因為唯有完全的降服，才能帶來完全的恩典。」</p>
+                    <p class="text-gold-500 font-bold text-sm">—— 慕安德烈，《絕對的降服》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「廉價的恩典是我們教會的死敵...那是沒有十字架的恩典，是沒有活生生、道成肉身的耶穌基督的恩典。」</p>
+                    <p class="text-gold-500 font-bold text-sm">—— 潘霍華，《追隨基督》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「基督徒要作世上的鹽，意味著我們必須滲透進入社會，發揮防腐與潔淨的作用，阻止道德的腐敗。」</p>
+                    <p class="text-gold-500 font-bold text-sm">—— 約翰·史托德，《登山寶訓的信息》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「真正的敬拜，是將我們整個生命——包括我們的工作、思想和愛好——毫無保留地呈獻在神面前。」</p>
+                    <p class="text-gold-500 font-bold text-sm">—— 陶恕，《渴慕神》</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「沒有任何一項正當的工作是卑微的，當我們為神而做時，即便是最平凡的勞動，也能成為榮耀神的敬拜。」</p>
+                    <p class="text-gold-500 font-bold text-sm">—— 提摩太·凱勒，《工作的好理由》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <section class="border-t border-white/5 pt-12 text-center">
+            <div class="bg-red-500/10 border border-red-500/20 py-4 px-6 inline-block rounded-full">
+                <p class="text-red-400 text-sm">⚠️ 網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Back to top -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-onyx rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <!-- Application Summary Overlay (Optional/Mobile context) -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 pointer-events-none md:hidden z-40">
+        <div class="bg-surface/90 backdrop-blur p-4 rounded-2xl border border-white/10 shadow-2xl pointer-events-auto">
+            <h5 class="text-gold-500 font-bold text-xs mb-2 uppercase tracking-widest">實踐行動</h5>
+            <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                <span class="whitespace-nowrap bg-white/5 px-3 py-1 rounded-full text-xs">清晨的素祭</span>
+                <span class="whitespace-nowrap bg-white/5 px-3 py-1 rounded-full text-xs">檢視動機</span>
+                <span class="whitespace-nowrap bg-white/5 px-3 py-1 rounded-full text-xs">發揮鹽的作用</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

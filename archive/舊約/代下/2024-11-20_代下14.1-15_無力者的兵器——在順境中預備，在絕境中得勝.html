@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代下14:1-15:無力者的兵器——在順境中預備，在絕境中得勝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9d1',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.03)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #facc15, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .jumping-text {
+            display: inline-block;
+            animation: jumping 1.5s ease-in-out infinite;
+        }
+        @keyframes jumping {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .tab-btn.active {
+            background: #eab308;
+            color: #020617;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代下14:1-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '無力者的兵器——在順境中預備，在絕境中得勝' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed selection:bg-gold-500 selection:text-slate-950">
+
+    <!-- Header Banner -->
+    <header class="relative h-[60vh] md:h-[70vh] w-full overflow-hidden flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_c60b97c0-69f4-4a19-ac31-36da3ffb912e.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/60 to-slate-950"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-8 tracking-tight drop-shadow-2xl">
+                <span class="block text-white mb-2">代下14:1-15</span>
+                <span class="text-gradient drop-shadow-lg">無力者的兵器：<br>在順境中預備，在絕境中得勝</span>
+            </h1>
+            
+            <div class="max-w-3xl mx-auto py-8">
+                <p class="text-xl md:text-2xl font-display leading-relaxed jumping-text text-gold-100 font-medium italic">
+                    「耶和華啊，惟有你能幫助軟弱的，勝過強盛的...求你幫助我們；因為我們仰賴你，奉你的名來攻擊這大軍。」
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 glass border-b border-white/10 px-4 md:px-8 h-16 flex items-center justify-between">
+        <div class="hidden md:flex font-display font-bold text-gold-400">代下14:1-15</div>
+        <div class="flex gap-4 md:gap-10 mx-auto md:mx-0 font-semibold tracking-wide text-sm md:text-base uppercase overflow-x-auto no-scrollbar whitespace-nowrap">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors flex items-center gap-1">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors flex items-center gap-1">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors flex items-center gap-1">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors flex items-center gap-1">名言</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass p-8 md:p-16 rounded-[2rem] border-gold-600/30 relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold-600/10 rounded-full blur-3xl group-hover:bg-gold-600/20 transition-all"></div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-gold-600/20 rounded-xl text-gold-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A4.833 4.833 0 0012 5.518 4.833 4.833 0 005.25 10.332V21" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-display font-bold">謙卑呼求禱告</h2>
+                </div>
+                <p class="text-lg md:text-2xl font-display leading-loose text-slate-300 italic">
+                    「親愛的天父，我們承認在面對生命中巨大如百萬大軍般的挑戰時，我們是軟弱無力的。但我們感謝祢，因為人的盡頭就是祢大能的起頭。求祢赦免我們在順境中常常忘記尋求祢，在逆境中又常常依靠自己的聰明。求主賜給我們亞撒王那專一仰望的信心，讓我們在無可倚靠時，懂得大聲向祢呼求，真知道勝敗乃在乎耶和華。奉主耶穌基督得勝的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-blue-600/20 rounded-xl text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold">分段解析導航</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="glass p-6 rounded-2xl hover:border-gold-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm mb-2 block uppercase tracking-widest">Part 01</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">順境中的屬靈預備</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm">代下 14:1-8 | 拆毀偶像與建造根基</p>
+                </a>
+                <a href="#part2" class="glass p-6 rounded-2xl hover:border-gold-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm mb-2 block uppercase tracking-widest">Part 02</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">絕境中的全心仰望</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm">代下 14:9-11 | 承認軟弱與呼求神名</p>
+                </a>
+                <a href="#part3" class="glass p-6 rounded-2xl hover:border-gold-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <span class="text-gold-500 font-bold text-sm mb-2 block uppercase tracking-widest">Part 03</span>
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-gold-400 transition-colors">爭戰中的全然得勝</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm">代下 14:12-15 | 神親自出手與豐盛得著</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-24">
+                <!-- Part 1 Detail -->
+                <div id="part1" class="scroll-mt-24 bento-grid">
+                    <div class="col-span-12 lg:col-span-8 glass p-8 md:p-12 rounded-[2.5rem]">
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-gold-400 mb-6 flex items-center gap-3">
+                            <span class="text-6xl text-gold-500/20 font-black">01</span>
+                            順境中的屬靈預備：拆毀偶像與建造根基
+                        </h3>
+                        <div class="prose prose-invert max-w-none text-slate-300 space-y-4">
+                            <p class="bg-slate-900/50 p-4 border-l-4 border-gold-600 italic">代下 14:1-8 ...亞撒行耶和華─他神眼中看為善為正的事，除掉外邦神的壇和邱壇...吩咐猶大人尋求耶和華─他們列祖的神...</p>
+                            <p class="text-lg leading-relaxed pt-4">
+                                <strong class="text-gold-100 text-xl block mb-2">重要 Keyword: 尋求 (Darash / דָּרַשׁ)</strong>
+                                原文意指「踐踏、頻繁地去、努力追尋」。這不是偶爾的探訪，而是在生活中走出一條常去朝見神的習慣之路。亞撒在太平時期沒有懈怠，而是「積極尋求」神。
+                            </p>
+                            <div class="mt-8">
+                                <h4 class="text-gold-500 font-bold mb-2">關鍵問題：為什麼在順境與太平的日子裡，我們更需要積極對付偶像並建造屬靈根基？</h4>
+                                <p>解析：危機無法替我們建造品格或信心，危機只會「顯露」我們真實的根基。太平日子是神賜給我們的恩典窗口，目的是讓我們有餘裕去清除生命中隱而未現的偶像，並築起抵禦未來風暴的城牆。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 flex flex-col gap-6">
+                        <div class="bg-gold-600/10 p-8 rounded-[2rem] border border-gold-600/20 flex-1">
+                            <h4 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                </svg>
+                                例證故事
+                            </h4>
+                            <p class="text-slate-300">船長在風平浪靜時清除船底藤壺。基督徒生命中，平安的日子是我們修補靈命漏洞的最佳時機。</p>
+                        </div>
+                        <div class="bg-slate-800/50 p-8 rounded-[2rem] border border-white/5 flex-1 italic text-gold-100/80">
+                            「神不能完全祝福一個人，直到祂先徹底征服了他。」 —— 陶恕 (A.W. Tozer)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Detail -->
+                <div id="part2" class="scroll-mt-24 bento-grid">
+                    <div class="col-span-12 lg:col-span-4 flex flex-col gap-6">
+                        <div class="bg-red-600/10 p-8 rounded-[2rem] border border-red-600/20 flex-1">
+                            <h4 class="text-red-400 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                </svg>
+                                例證故事
+                            </h4>
+                            <p class="text-slate-300">小男孩搬不動大石頭，父親說：「你還沒用盡全力，因為你還沒開口請我幫忙。」</p>
+                        </div>
+                        <div class="bg-slate-800/50 p-8 rounded-[2rem] border border-white/5 flex-1 italic text-gold-100/80">
+                            「我們最大的軟弱，就是我們最好的防禦，因為它迫使我們去尋求神的庇護。」 —— 司布真
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-8 glass p-8 md:p-12 rounded-[2.5rem]">
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-red-400 mb-6 flex items-center gap-3">
+                            <span class="text-6xl text-red-500/20 font-black">02</span>
+                            絕境中的全心仰望：承認軟弱與呼求神名
+                        </h3>
+                        <div class="prose prose-invert max-w-none text-slate-300 space-y-4">
+                            <p class="bg-slate-900/50 p-4 border-l-4 border-red-600 italic">代下 14:9-11 ...有古實王謝拉率領軍兵一百萬...亞撒呼求耶和華：惟有你能幫助軟弱的...</p>
+                            <p class="text-lg leading-relaxed pt-4">
+                                <strong class="text-gold-100 text-xl block mb-2">重要 Keyword: 仰賴 (Sha'an / שָׁעัן)</strong>
+                                原文有「倚靠、支撐、將重量完全傾倒在某物上」之意。當亞撒說「我們仰賴你」，他表示猶大國的存亡重量已完全壓在上帝身上，若上帝不支撐，他們必將崩塌。
+                            </p>
+                            <div class="mt-8">
+                                <h4 class="text-gold-500 font-bold mb-2">關鍵問題：為什麼「承認軟弱」反而是得著神大能介入的絕對條件？</h4>
+                                <p>解析：驕傲與自恃是攔阻神恩典的最大障礙。亞撒有五十八萬大軍，但他面對一百萬敵軍時，他直呼自己是「軟弱的」。當我們承認資源耗盡，我們就清空了心中的寶座，讓神得以在我們的無能上彰顯全能。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Detail -->
+                <div id="part3" class="scroll-mt-24 bento-grid">
+                    <div class="col-span-12 lg:col-span-8 glass p-8 md:p-12 rounded-[2.5rem]">
+                        <h3 class="text-2xl md:text-3xl font-display font-bold text-green-400 mb-6 flex items-center gap-3">
+                            <span class="text-6xl text-green-500/20 font-black">03</span>
+                            爭戰中的全然得勝：神親自出手與豐盛得著
+                        </h3>
+                        <div class="prose prose-invert max-w-none text-slate-300 space-y-4">
+                            <p class="bg-slate-900/50 p-4 border-l-4 border-green-600 italic">代下 14:12-15 ...於是耶和華使古實人敗在亞撒和猶大人面前...奪了許多財物...</p>
+                            <p class="text-lg leading-relaxed pt-4">
+                                <strong class="text-gold-100 text-xl block mb-2">重要 Keyword: 敗退/擊打 (Nagaph / נָגַף)</strong>
+                                原文意思是「重擊、擊殺」。值得注意的是，經文說是「耶和華」使古實人敗退，神親自成為了戰場上的主帥，施展致命的打擊。
+                            </p>
+                            <div class="mt-8">
+                                <h4 class="text-gold-500 font-bold mb-2">關鍵問題：當上帝為我們爭戰時，勝利帶來的最終結果是什麼？</h4>
+                                <p>解析：上帝賜下的得勝不僅僅是「免於滅亡」的倖存，更是帶有「豐盛掠物」的凱旋。每一次靠神勝過危機的經歷，都會成為我們生命中豐盛的屬靈資產，使我們的信心更加富足。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-4 flex flex-col gap-6">
+                        <div class="bg-green-600/10 p-8 rounded-[2rem] border border-green-600/20 flex-1">
+                            <h4 class="text-green-400 font-bold mb-4 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                                </svg>
+                                例證故事
+                            </h4>
+                            <p class="text-slate-300">喬治·慕勒與孤兒院的斷糧奇蹟。上帝的解救總是帶來意想不到的豐盛供應。</p>
+                        </div>
+                        <div class="bg-slate-800/50 p-8 rounded-[2rem] border border-white/5 flex-1 italic text-gold-100/80">
+                            「當我們完全放下自己的力量，上帝就會以祂無限的豐盛來充滿我們倒空的器皿。」 —— 慕安德烈
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-purple-600/20 rounded-xl text-purple-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold">講章文稿</h2>
+            </div>
+
+            <div class="glass p-8 md:p-16 rounded-[2.5rem] bg-slate-900/40 relative">
+                <div class="prose prose-invert prose-lg max-w-none text-slate-200 space-y-12">
+                    <div class="text-center mb-12">
+                        <h3 class="text-3xl md:text-5xl font-display font-black text-white mb-4">無力者的兵器</h3>
+                        <p class="text-gold-500 font-bold tracking-widest uppercase">在順境中預備，在絕境中得勝</p>
+                    </div>
+
+                    <div>
+                        <p>各位弟兄姊妹，我們的一生中總是充滿了高山與低谷，有時風平浪靜，有時卻狂風暴雨。今天我們要從猶大王亞撒的生命中，看見一個得勝的迴圈。亞撒王面對的，是古實王謝拉率領的一百萬大軍，這是絕對的劣勢、絕對的絕境。但他卻打贏了這場不可能的戰爭。他的得勝秘訣在哪裡？</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-display font-bold text-gold-400 flex items-center gap-2">
+                            <span class="w-8 h-[2px] bg-gold-400"></span> 第一、順境中的屬靈預備：拆毀偶像與建造根基
+                        </h4>
+                        <p>亞撒執政初期，國中太平了十年。我們通常在太平的時候最容易忘記神，我們安逸、放鬆、甚至妥協。但亞撒不是這樣，經文說他<span class="text-gold-100 font-bold">「除掉外邦神的壇和邱壇...吩咐猶大人尋求耶和華」</span>。他趁著沒有戰爭的時候，在猶大建造了堅固城。</p>
+                        <p>弟兄姊妹，危機從來不會為我們建造品格與信心，危機只會「顯露」我們真實的根基。沒有一位船長會在暴風雨來襲時才開始修補船底的破洞。如果你現在的生活相對平穩，感謝神，這不是讓你放縱的藉口，這是神賜給你建立堅固城的黃金期！</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-display font-bold text-red-400 flex items-center gap-2">
+                            <span class="w-8 h-[2px] bg-red-400"></span> 第二、絕境中的全心仰望：承認軟弱與呼求神名
+                        </h4>
+                        <p>即便我們做好了準備，人生的風暴依然會來臨。古實的一百萬大軍壓境，亞撒的軍隊只有五十八萬。亞撒作了一個聖經中最偉大、最深刻的禱告：</p>
+                        <div class="bg-gold-500/10 p-8 rounded-2xl border border-gold-500/30 my-8">
+                            <p class="text-2xl font-display font-black text-gold-400 mb-0 animate-subtle-pulse leading-relaxed">
+                                「耶和華啊，惟有你能幫助軟弱的，勝過強盛的...求你幫助我們；因為我們仰賴你，奉你的名來攻擊這大軍。」
+                            </p>
+                        </div>
+                        <p>亞撒宣告自己是「軟弱的」。這是一個違反人性的禱告。我們總喜歡在神面前證明自己還有點用處，但亞撒把國家存亡的重量，完全「仰賴」——也就是傾倒——在神的身上。你現在面對的挑戰是不是大到讓你無法喘息？太好了，因為只有當你承認自己無力時，上帝的全能才開始接管！</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-display font-bold text-green-400 flex items-center gap-2">
+                            <span class="w-8 h-[2px] bg-green-400"></span> 第三、爭戰中的全然得勝：神親自出手與豐盛得著
+                        </h4>
+                        <p>當亞撒完全退讓，把戰場交給上帝時，發生了什麼事？經文說：<span class="text-gold-100 font-bold">「耶和華使古實人敗在亞撒和猶大人面前...」</span> 是上帝親自重擊了敵人！不僅如此，猶大人還奪了許多財物、羊群和駱駝。</p>
+                        <p>神賜給我們的得勝，從來不只是讓我們「勉強活下來」，祂要給我們豐盛的屬靈掠物。每一次你在絕境中呼求神，看見神為你開路，你的生命就會奪得屬靈的戰利品——你的信心會被擴張，你的平安會更加深厚，你對神的認識會更加真實。</p>
+                    </div>
+
+                    <div class="border-t border-white/10 pt-12">
+                        <h4 class="text-2xl font-display font-bold text-white mb-6">應用與結論</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-slate-800/50 p-6 rounded-xl">
+                                <h5 class="text-gold-500 font-bold mb-2">1. 預備 (Preparation)</h5>
+                                <p class="text-sm">盤點生命中的「和平時期」，拆毀隱藏偶像。</p>
+                            </div>
+                            <div class="bg-slate-800/50 p-6 rounded-xl">
+                                <h5 class="text-gold-500 font-bold mb-2">2. 仰賴 (Reliance)</h5>
+                                <p class="text-sm">轉換對「軟弱」的視角，在禱告中具體承認無力。</p>
+                            </div>
+                            <div class="bg-slate-800/50 p-6 rounded-xl">
+                                <h5 class="text-gold-500 font-bold mb-2">3. 得勝 (Victory)</h5>
+                                <p class="text-sm">宣告「神的名字」作為兵器，經歷屬靈豐盛。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gold-600 text-slate-950 p-8 rounded-3xl font-bold">
+                        <h4 class="text-xl mb-4 text-slate-950">回應行動：</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>拆毀一個偶像：本週具體減少一項竊取你對神專注的事物之時間。</li>
+                            <li>操練無力的禱告：將代下 14:11 設為手機桌布，在焦慮時宣告。</li>
+                            <li>分享得勝見證：向一位正在面對困難的朋友分享神帶領你得勝的經歷。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pb-20">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-600/20 rounded-xl text-gold-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold">名言佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「我們最大的軟弱，就是我們最好的防禦，因為它迫使我們去尋求神的庇護。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「在神能完全使用一個人之前，祂必須先徹底粉碎他。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「禱告不是把上帝拉下來配合我們的意志，而是將我們的心提升至上帝的旨意中。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 慕安德烈 (Andrew Murray)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「如果我每天早晨不花兩個小時禱告，魔鬼就會在那一天得勝。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「上帝除了回應禱告之外，什麼都不做。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 約翰·衛斯理 (John Wesley)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「偶像就是任何你打從心底認為『只要擁有了它，我的生命就有意義』的事物。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「禱告是信心的首要操練，也是我們天天領受神恩典的管道。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="glass p-8 rounded-3xl card-hover">
+                    <p class="text-lg font-display mb-4 italic">「神不會滿足我們所有的願望，但祂必定會實現祂所有的應許。」</p>
+                    <cite class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center text-slate-500 text-sm">
+                <p class="mb-2">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll Top Button -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 text-slate-950 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-500 transition-all hover:scale-110 z-[60] focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+</body>
+</html>
+

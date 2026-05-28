@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代下18:1-11:致命的妥協與真實的聲音</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        dark: {
+                            900: '#0a0a0b',
+                            800: '#141417',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        accent: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(20, 20, 23, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: linear-gradient(145deg, #1a1a1f 0%, #111114 100%);
+            border-left: 4px solid #ca8a04;
+        }
+        .bento-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(202, 138, 4, 0.3);
+        }
+        @keyframes subtle-jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtle-jump 3s ease-in-out infinite;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代下18:1-11',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '致命的妥協與真實的聲音' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-dark-900 text-gray-200 font-body leading-relaxed">
+
+    <!-- Sticky Header -->
+    <nav class="fixed top-0 w-full z-50 glass py-3 px-6 flex justify-between items-center border-b border-white/10">
+        <div class="text-gold-400 font-display font-bold text-sm md:text-base tracking-wider">
+            代下 18:1-11
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors uppercase">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse Overlay -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_7496759e-18a4-490e-8ae7-3b50489dbe8c.jpg' alt='Cross and Light' class="w-full h-full object-cover animate-breathe" />
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-8 tracking-tighter">
+                <span class="block text-white opacity-90 mb-2">致命的妥協與</span>
+                <span class="text-gradient">真實的聲音</span>
+            </h1>
+            
+            <div class="max-w-2xl mx-auto space-y-4">
+                <p class="text-gold-300 font-accent text-2xl md:text-3xl jump-text tracking-wide">
+                    「約沙法對以色列王說：『請你先求問耶和華。』」
+                </p>
+                <p class="text-gray-400 text-sm md:text-lg italic font-light">— 代下 18:4</p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24 flex flex-col items-center text-center">
+            <div class="w-16 h-16 bg-gold-600/20 rounded-full flex items-center justify-center mb-6 border border-gold-600/30">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+            </div>
+            <h2 class="font-display text-3xl font-bold mb-8 tracking-widest text-white flex items-center gap-3">
+                虔心禱告
+            </h2>
+            <div class="max-w-3xl bg-dark-800 p-8 md:p-12 rounded-3xl border border-white/5 relative">
+                <div class="absolute -top-4 -left-4 text-6xl text-gold-900 opacity-30 font-serif">“</div>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300 italic">
+                    主阿，我們來到祢面前，承認我們常被世界的安逸、利益與多數人的聲音所迷惑。求祢賜給我們屬靈的洞察力，不叫我們在真理上妥協，也不叫我們為了迎合人而犧牲了祢的道。當我們面臨抉擇時，願我們有勇氣像約沙法一樣尋求真實的聲音，更有勇氣順服祢那有時刺耳卻能帶來生命的真理。奉主耶穌基督的名求，阿們。
+                </p>
+                <div class="absolute -bottom-10 -right-4 text-6xl text-gold-900 opacity-30 font-serif">”</div>
+            </div>
+        </section>
+
+        <!-- Quick Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <h2 class="font-display text-3xl font-bold tracking-widest text-white flex items-center gap-3">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                        講章大綱
+                    </h2>
+                    <p class="text-gray-500 mt-2">點擊以下分段可快速導覽至深度解析</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#sec1" class="bento-item glass p-8 rounded-2xl group border-l-4 border-gold-600">
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-tighter block mb-2">Part 01</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">看似雙贏的危險結盟</h3>
+                    <p class="text-gray-500 text-sm mt-2">代下 18:1-3</p>
+                </a>
+                <a href="#sec2" class="bento-item glass p-8 rounded-2xl group border-l-4 border-gold-600">
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-tighter block mb-2">Part 02</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">多數決的屬靈盲點</h3>
+                    <p class="text-gray-500 text-sm mt-2">代下 18:4-7</p>
+                </a>
+                <a href="#sec3" class="bento-item glass p-8 rounded-2xl group border-l-4 border-gold-600">
+                    <span class="text-gold-600 font-bold text-xs uppercase tracking-tighter block mb-2">Part 03</span>
+                    <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors">迎合世俗的虛假表演</h3>
+                    <p class="text-gray-500 text-sm mt-2">代下 18:8-11</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Sections -->
+        <div class="space-y-40">
+            <!-- Section 1 -->
+            <section id="sec1" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="bg-gold-600 text-dark-900 font-black px-4 py-1 text-2xl skew-x-[-12deg]">01</div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">看似雙贏的危險結盟</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="bg-dark-800 p-6 rounded-xl border-l-2 border-gold-500/50">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V15a1 1 0 01-1.243.97l-1.257-.315V4.804z"></path></svg>
+                                查考經文
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed font-display text-lg">
+                                約沙法大有尊榮資財，就與亞哈結親。過了幾年，他下到撒馬利亞去見亞哈。亞哈為他和跟從他的人宰了許多牛羊，勸他與自己同去攻取基列的拉末。以色列王亞哈問猶大王約沙法說：「你肯同我去攻取基列的拉末嗎？」他回答說：「你我不分彼此，我的民與你的民一樣，必與你同去爭戰。」
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h4 class="text-white font-bold text-xl border-b border-gold-600/30 pb-2">深入解析</h4>
+                            <div class="flex gap-4">
+                                <span class="bg-white/5 p-2 rounded text-gold-400 h-fit">Keyword</span>
+                                <div>
+                                    <p class="font-bold text-gold-300">「結親」 (原文：חָתַן / chathan)</p>
+                                    <p class="text-gray-400 text-sm">意為「成為女婿」或「締結婚姻結盟」。指約沙法為了政治考量讓兒子娶了亞哈的女兒，這是一個政治與外交上的妥協動作。</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-gold-400 font-bold">Q: 為什麼敬畏神的約沙法會在巔峰時期選擇結盟？</p>
+                                <p class="text-gray-300">約沙法當時「大有尊榮資財」，人在豐富與安逸中，往往會為了維持現狀的「和平與利益」而放下屬靈的界線。這提醒我們，妥協往往發生在我們最成功、想要「保住一切」的時候。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/[0.07] transition-all">
+                            <h5 class="text-gold-500 font-bold mb-4 flex items-center gap-2 uppercase tracking-widest text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                生活例證
+                            </h5>
+                            <p class="text-gray-400 italic text-sm md:text-base">
+                                一位基督徒企業家為了拓展市場與手段遊走法律邊緣的大佬合作。起初利潤翻倍，最終卻捲入詐欺案，賠上資產與信仰見證。看似雙贏，實則劇毒。
+                            </p>
+                        </div>
+                        <div class="bg-gold-600/10 p-8 rounded-3xl border border-gold-600/20">
+                            <h5 class="text-gold-500 font-bold mb-2 text-xs uppercase tracking-widest">前輩名言</h5>
+                            <p class="text-white font-display text-lg">「妥協是基督徒生命中最可怕的毒藥。當我們將屬天的標準與屬世的智慧混合時，我們失去的不是世界，而是神同在的能力。」</p>
+                            <p class="text-gold-600 text-sm mt-2">— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="sec2" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="bg-gold-600 text-dark-900 font-black px-4 py-1 text-2xl skew-x-[-12deg]">02</div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">多數決的屬靈盲點</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-7 space-y-8 lg:order-2">
+                        <div class="bg-dark-800 p-6 rounded-xl border-l-2 border-gold-500/50">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V15a1 1 0 01-1.243.97l-1.257-.315V4.804z"></path></svg>
+                                查考經文
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed font-display text-lg">
+                                約沙法對以色列王說：「請你先求問耶和華。」於是以色列王招聚先知四百人...他們說：「可以上去，因為神必將那城交在王的手裡。」約沙法說：「這裡不是還有耶和華的先知，我們可以求問他嗎？」以色列王對約沙法說：「還有一個米該雅...只是我恨他；因為他...從來沒有吉語，常是凶言。」
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h4 class="text-white font-bold text-xl border-b border-gold-600/30 pb-2">深入解析</h4>
+                            <div class="flex gap-4">
+                                <span class="bg-white/5 p-2 rounded text-gold-400 h-fit">Keyword</span>
+                                <div>
+                                    <p class="font-bold text-gold-300">「求問」 (原文：דָּרַשׁ / darash)</p>
+                                    <p class="text-gray-400 text-sm">意為「尋求、查究、仔細探求」。約沙法要求的是真實的引導，而非四百先知所提供的「屬靈橡皮圖章」。</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-gold-400 font-bold">Q: 四百個人都說好，約沙法為何仍覺不對勁？</p>
+                                <p class="text-gray-300">四百個先知雖然口稱「神必將那城交在王的手裡」，但他們的動機是討好亞哈。約沙法的屬靈直覺意識到這些聲音缺乏敬畏。真理往往不在於音量，而在於是否與神公義的本性相符。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-5 space-y-6 lg:order-1">
+                        <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                            <h5 class="text-gold-500 font-bold mb-4 flex items-center gap-2 uppercase tracking-widest text-xs">阿比林悖論</h5>
+                            <p class="text-gray-400 italic text-sm">
+                                一家人為迎合彼此，最後去了一個大家都不想去的地方。當整個文化都告訴你「這沒什麼大不了」時，四百個聲音會形成巨大壓力，唯有熟悉神聲音的人才能聽出真理。
+                            </p>
+                        </div>
+                        <div class="bg-gold-600/10 p-8 rounded-3xl border border-gold-600/20">
+                            <h5 class="text-gold-500 font-bold mb-2 text-xs uppercase tracking-widest">前輩名言</h5>
+                            <p class="text-white font-display text-lg">「即使全世界都與真理背道而馳，真理依然是真理。我的良心是神話語的俘虜。」</p>
+                            <p class="text-gold-600 text-sm mt-2">— 馬丁·路德 (Martin Luther)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="sec3" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="bg-gold-600 text-dark-900 font-black px-4 py-1 text-2xl skew-x-[-12deg]">03</div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">迎合世俗的虛假表演</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="bg-dark-800 p-6 rounded-xl border-l-2 border-gold-500/50">
+                            <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V15a1 1 0 01-1.243.97l-1.257-.315V4.804z"></path></svg>
+                                查考經文
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed font-display text-lg">
+                                西底家造了兩個鐵角，說：「耶和華如此說：『你要用這角牴觸亞蘭人，直到將他們滅盡。』」所有的先知也都這樣預言說：「可以上基列的拉末去，必然得勝，因為耶和華必將那城交在王的手裡。」
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h4 class="text-white font-bold text-xl border-b border-gold-600/30 pb-2">深入解析</h4>
+                            <div class="flex gap-4">
+                                <span class="bg-white/5 p-2 rounded text-gold-400 h-fit">Keyword</span>
+                                <div>
+                                    <p class="font-bold text-gold-300">「吉語/吉言」 (原文：טוֹב / towb)</p>
+                                    <p class="text-gray-400 text-sm">意為「好的、令人愉悅的」。亞哈恨米該雅因為他不說「吉言」，這代表了迎合人慾望與喜好的虛假訊息。</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-gold-400 font-bold">Q: 為什麼要造「鐵角」表演？這對今日有何警示？</p>
+                                <p class="text-gray-300">西底家的鐵角是強化虛假預言的視覺道具。當人失去聖靈真實啟示，往往依賴「聲光效果」或「屬靈表演」。信徒應警醒，不要被迎合感官的成功神學迷惑，而拒絕了十字架真實的代價。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                            <h5 class="text-gold-500 font-bold mb-4 flex items-center gap-2 uppercase tracking-widest text-xs">手術刀的真理</h5>
+                            <p class="text-gray-400 italic text-sm">
+                                醫生只給止痛藥不開刀是在害人。真理有時像手術刀，雖有短暫刺痛（凶言），卻能切除罪惡帶來醫治。
+                            </p>
+                        </div>
+                        <div class="bg-gold-600/10 p-8 rounded-3xl border border-gold-600/20">
+                            <h5 class="text-gold-500 font-bold mb-2 text-xs uppercase tracking-widest">前輩名言</h5>
+                            <p class="text-white font-display text-lg">「如果你的神從來不會與你意見相左，那麼你敬拜的，很可能只是你理想化的倒影。」</p>
+                            <p class="text-gold-600 text-sm mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <h2 class="font-display text-3xl font-bold tracking-widest text-white flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                講章文稿
+            </h2>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-10">
+                <div class="text-center mb-16">
+                    <h3 class="text-gold-400 text-3xl md:text-5xl font-display font-black mb-4">代下 18:1-11：致命的妥協與真實的聲音</h3>
+                </div>
+
+                <div class="space-y-6 text-gray-300 text-lg md:text-xl leading-relaxed">
+                    <p>弟兄姊妹們，今天我們要從歷代志下18章，來看一個關於成功、妥協與聽見真實聲音的故事。我們常以為，基督徒最危險的時刻是在經歷患難或貧窮的時候；但其實，屬靈生命最危險的時刻，往往是在我們「大有尊榮資財」、一切看似順利的時候。</p>
+                    
+                    <div class="section-card p-8 my-10">
+                        <h4 class="text-white font-bold text-2xl mb-4">看似雙贏的危險結盟</h4>
+                        <p class="mb-4">我們來看第一段經文：<span class="text-gold-300 font-bold">「約沙法大有尊榮資財，就與亞哈結親...亞哈問猶大王約沙法說：『你肯同我去攻取基列的拉末嗎？』他回答說：『你我不分彼此...』」(代下18:1-3)</span></p>
+                        <p>約沙法是一位敬畏神的猶大王，神賜福他，讓他極其豐富。但他為了國家的長治久安，做了一個致命的決定——他與以色列最敗壞的王亞哈「結親」。這是一個典型的「政治妥協」。過了幾年，當他去見亞哈時，亞哈用豐盛的牛羊款待他，並邀請他一起去打仗。吃人嘴軟，拿人手短，約沙法竟然回答：「你我不分彼此」。</p>
+                        <p class="text-gold-200 mt-4 font-bold underline decoration-gold-600/50 underline-offset-8">妥協往往披著「和平與雙贏」的外衣。我們在職場上、在感情中，是不是也常為了眼前的利益，與不合神心意的價值觀「結盟」？</p>
+                    </div>
+
+                    <div class="section-card p-8 my-10">
+                        <h4 class="text-white font-bold text-2xl mb-4">多數決的屬靈盲點</h4>
+                        <p class="mb-4">當約沙法答應之後，他心中隱隱不安。這帶出我們今天的金句：<span class="text-gold-300 font-bold">「約沙法對以色列王說：『請你先求問耶和華。』」(代下18:4)</span></p>
+                        <p>亞哈立刻找來了四百個先知，這四百人異口同聲地說：「可以上去，因為神必將那城交在王的手裡。」四百對一，這是一個壓倒性的多數！但約沙法知道，這些聲音裡沒有真理的重量。我們在這裡看到一個極大的屬靈盲點：多數人的聲音不等於神的聲音。</p>
+                        <p class="text-gold-200 mt-4 font-bold underline decoration-gold-600/50 underline-offset-8">當全世界都背離真理，真理依舊屹立不搖。我們要求問神，而不是求問群眾。</p>
+                    </div>
+
+                    <div class="section-card p-8 my-10">
+                        <h4 class="text-white font-bold text-2xl mb-4">迎合世俗的虛假表演</h4>
+                        <p class="mb-4"><span class="text-gold-300 font-bold">「以色列王和猶大王約沙法...坐在位上...西底家造了兩個鐵角...」(代下18:9-10)</span></p>
+                        <p>這些假先知不僅說亞哈愛聽的「吉言」，甚至還拿出了道具「鐵角」來表演。當人沒有了聖靈真實的同在，就必須依靠外在的表演來包裝。亞哈只喜歡聽「吉言」，不喜歡聽「凶言」，最終導致了他的陣亡。</p>
+                        <p class="text-gold-200 mt-4 font-bold underline decoration-gold-600/50 underline-offset-8">我們來到教會，是為了聽一場迎合我們的「表演」，還是為要領受生命的真道？真理有時會刺痛我們，但唯有真理能救我們的命。</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+                    <div class="p-6 glass rounded-2xl text-center">
+                        <span class="block text-4xl mb-4">⚠️</span>
+                        <h5 class="text-gold-400 font-bold text-xl mb-2">妥協</h5>
+                        <p class="text-gray-400 text-sm">Compromise</p>
+                    </div>
+                    <div class="p-6 glass rounded-2xl text-center">
+                        <span class="block text-4xl mb-4">🙏</span>
+                        <h5 class="text-gold-400 font-bold text-xl mb-2">求問</h5>
+                        <p class="text-gray-400 text-sm">Inquire</p>
+                    </div>
+                    <div class="p-6 glass rounded-2xl text-center">
+                        <span class="block text-4xl mb-4">⚖️</span>
+                        <h5 class="text-gold-400 font-bold text-xl mb-2">分辨</h5>
+                        <p class="text-gray-400 text-sm">Discernment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h2 class="font-display text-3xl font-bold text-white flex items-center gap-3">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    應用方向
+                </h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="w-8 h-8 bg-gold-600 flex-shrink-0 rounded-full flex items-center justify-center font-bold text-dark-900">1</div>
+                        <p class="text-gray-300">評估目前的工作夥伴、感情關係或人際交往，是否有為了利益或安逸而妥協了信仰的底線。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="w-8 h-8 bg-gold-600 flex-shrink-0 rounded-full flex items-center justify-center font-bold text-dark-900">2</div>
+                        <p class="text-gray-300">在做重大決定時，不再單憑「大家都這麼做」來定奪，而是尋求敢於說真話的屬靈夥伴的意見。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="w-8 h-8 bg-gold-600 flex-shrink-0 rounded-full flex items-center justify-center font-bold text-dark-900">3</div>
+                        <p class="text-gray-300">改變聽道態度。不要只喜歡聽「祝福、成功」的信息，要願意接受關於「悔改、捨己」的挑戰。</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-gold-600 p-10 rounded-[3rem] text-dark-900">
+                <h2 class="font-display text-3xl font-black mb-8 flex items-center gap-3">
+                    回應行動
+                </h2>
+                <div class="space-y-8">
+                    <div class="border-b border-dark-900/10 pb-4">
+                        <p class="font-bold mb-1">✍️ 清單檢視</p>
+                        <p class="text-dark-900/80">本週寫下一個你明知不討神喜悅，卻因為「人情」或「利益」而妥協的清單，並向神認罪。</p>
+                    </div>
+                    <div class="border-b border-dark-900/10 pb-4">
+                        <p class="font-bold mb-1">🔥 禁食求問</p>
+                        <p class="text-dark-900/80">在即將面臨的一項重大決策前，暫停一切世俗諮詢，安靜禁食禱告一天，單單求問神。</p>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-1">🛡️ 尋找守望</p>
+                        <p class="text-dark-900/80">主動尋找一位在信仰上成熟、敢於對你說真話的屬靈長輩，請他成為你的守望者。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes -->
+        <section id="quotes" class="scroll-mt-24 space-y-12">
+            <h2 class="font-display text-3xl font-bold tracking-widest text-white flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                名言佳句
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「廉價的恩典是我們教會的致命傷。廉價的恩典就是將恩典視為一種教義、一種原則、一種制度...這是不需要付上門徒代價的恩典。」</p>
+                    <p class="text-gold-500 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「人心是一座製造偶像的工廠。我們太容易把神所賜的好東西，高舉成取代神的偶像。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「真理不依賴群眾的多寡來決定。即便所有人都背棄了它，真理依舊屹立不搖。」</p>
+                    <p class="text-gold-500 font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「如果你的神從來不會與你意見相左，那麼你所敬拜的，很可能只是你自己理想化的倒影。」</p>
+                    <p class="text-gold-500 font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「妥協是基督徒生命中最可怕的毒藥。當我們將屬天的標準與屬世的智慧混合時，我們失去的不是世界，而是神同在的能力。」</p>
+                    <p class="text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「真實的福音從來不是為了討好人；十字架的真理在世人眼中總是冒犯人的。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「聖經不是用來增加我們的知識，而是用來改變我們的生命。如果我們只聽而不行，這道對我們毫無益處。」</p>
+                    <p class="text-gold-500 font-bold">— 慕迪 (D.L. Moody)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「世界上有很多聲音告訴我們『你必須成功』，但神微小的聲音卻告訴我們：『你是蒙愛的，這就夠了。』」</p>
+                    <p class="text-gold-500 font-bold">— 盧雲 (Henri Nouwen)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「真正的信仰，其核心在於對神聖潔榮耀的熱切愛慕，而非僅僅是為了逃避地獄。」</p>
+                    <p class="text-gold-500 font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass p-8 rounded-3xl bento-item">
+                    <p class="text-white text-lg mb-4 italic">「當教會不敢對時代宣告罪的審判，只講神愛你的時候，這個教會已經失去了作光作鹽的功用。」</p>
+                    <p class="text-gold-500 font-bold">— 唐崇榮 (Stephen Tong)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Section -->
+        <section class="flex flex-col items-center">
+            <div class="glass px-8 py-4 rounded-full flex items-center gap-3">
+                <span class="text-gold-500 font-bold">⚠️</span>
+                <p class="text-gray-400 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-600 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-500 transition-all hover:scale-110 group z-50">
+        <svg class="w-6 h-6 text-dark-900 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

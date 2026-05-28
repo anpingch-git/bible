@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代下25:17-28:驕傲的代價與失落的榮耀：當人心偏離真神</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                        calligraphy: ['"Ma Shan Zheng"', 'cursive'],
+                    },
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fbe462',
+                            400: '#f9d332',
+                            500: '#f2b810',
+                            600: '#d79308',
+                            700: '#b46e09',
+                            800: '#92570f',
+                            900: '#784812',
+                        },
+                        onyx: '#0f0f12',
+                        royal: '#1a1a2e',
+                    },
+                    animation: {
+                        'breath': 'breath 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-3px) scale(1.02)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0f12;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(26, 26, 46, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #f9d332 0%, #d79308 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sticky-nav {
+            background: rgba(15, 15, 18, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(242, 184, 16, 0.2);
+        }
+        .bento-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(242, 184, 16, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: subtle-pulse 2s ease-in-out infinite;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代下25:17-28',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '驕傲的代價與失落的榮耀：當人心偏離真神' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 sticky-nav py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-gold-400 font-bold tracking-wider text-sm md:text-base hidden sm:block">代下 25:17-28</span>
+            <div class="flex gap-6 md:gap-10 text-xs md:text-sm font-semibold uppercase tracking-widest text-gray-300">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header class="relative h-[85vh] w-full overflow-hidden flex items-center justify-center pt-20" id="header">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="animate-breath w-full h-full">
+                <img src='image/img_1555c370-d238-4e89-a391-2c642324347a.jpg' alt='驕傲與失落' class="w-full h-full object-cover" />
+            </div>
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight drop-shadow-2xl">
+                驕傲的代價與<br/>
+                <span class="text-gold-400">失落的榮耀</span>
+            </h1>
+            
+            <div class="mb-12">
+                <p class="text-xl md:text-2xl font-serif text-white/90 leading-relaxed jump-text max-w-2xl mx-auto italic">
+                    「亞瑪謝卻不肯聽從。這是出乎神，目的在於將他們交在敵人手裡，因為他們尋求以東的神。」
+                </p>
+                <p class="mt-4 text-gold-500 font-bold tracking-widest">代下 25:20</p>
+            </div>
+
+            <div class="flex justify-center animate-bounce mt-10">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="animate-fade-in-up">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-24 h-24 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-gold-400 mb-8 flex items-center gap-3">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-10.428A24.933 24.933 0 0112 3.935c2.18 0 4.303.44 6.246 1.235m-3.44 10.428A24.933 24.933 0 0112 18.065c-2.18 0-4.303-.44-6.246-1.235M6 7H6.01M6 11H6.01M6 15H6.01M10 7H10.01M10 11H10.01M10 15H10.01M14 7H14.01M14 11H14.01M14 15H14.01M18 7H18.01M18 11H18.01M18 15H18.01"></path></svg>
+                    謙卑求主禱告
+                </h2>
+                <p class="text-xl md:text-2xl font-serif leading-loose text-gray-200">
+                    親愛的天父，我們來到祢面前，承認我們的心常在順境中生出驕傲，在成就中忘記了祢的恩典。求祢的光照亮我們內心的隱密處，拆毀我們自以為是的堅固營壘。求祢賜我們柔軟受教的心，當我們偏離時，能聽見祢的警告並及時悔改；不讓世俗的偶像取代祢在我們心中的寶座。願我們的生命始終謙卑與祢同行，將一切榮耀都歸給祢。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline">
+            <h2 class="text-4xl font-serif font-bold text-white mb-12 flex items-center gap-4">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                分段大綱導航
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                <a href="#section-1" class="glass-card p-6 bento-item group border-l-4 border-l-gold-500 hover:bg-gold-500/10">
+                    <span class="text-gold-500 font-bold block mb-2">第一部分</span>
+                    <h3 class="text-lg font-bold text-white mb-1">盲目的自信</h3>
+                    <p class="text-sm text-gray-400">代下 25:17-19</p>
+                </a>
+                <a href="#section-2" class="glass-card p-6 bento-item group border-l-4 border-l-red-500 hover:bg-red-500/10">
+                    <span class="text-red-500 font-bold block mb-2">第二部分</span>
+                    <h3 class="text-lg font-bold text-white mb-1">致命的固執</h3>
+                    <p class="text-sm text-gray-400">代下 25:20</p>
+                </a>
+                <a href="#section-3" class="glass-card p-6 bento-item group border-l-4 border-l-orange-500 hover:bg-orange-500/10">
+                    <span class="text-orange-500 font-bold block mb-2">第三部分</span>
+                    <h3 class="text-lg font-bold text-white mb-1">慘痛的崩塌</h3>
+                    <p class="text-sm text-gray-400">代下 25:21-24</p>
+                </a>
+                <a href="#section-4" class="glass-card p-6 bento-item group border-l-4 border-l-gray-500 hover:bg-gray-500/10">
+                    <span class="text-gray-400 font-bold block mb-2">第四部分</span>
+                    <h3 class="text-lg font-bold text-white mb-1">悲涼的落幕</h3>
+                    <p class="text-sm text-gray-400">代下 25:25-28</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section-1" class="scroll-mt-32">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/3">
+                            <h3 class="text-5xl font-serif font-black text-white/20 mb-4">01</h3>
+                            <h4 class="text-3xl font-serif font-bold text-gold-400 mb-6">盲目的自信：驕傲蒙蔽了屬靈的雙眼</h4>
+                            <div class="bg-white/5 rounded-xl p-6 border border-white/10">
+                                <h5 class="text-gold-300 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"></path></svg>
+                                    原文解經
+                                </h5>
+                                <p class="text-sm text-gray-300 mb-4"><strong>相見 (ra'ah)</strong>：原指「戰場上見真章」。</p>
+                                <p class="text-sm text-gray-300"><strong>心高氣傲 (gabah)</strong>：指因成就而內心膨脹。</p>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 space-y-6">
+                            <div class="glass-card p-8 bg-gold-900/10">
+                                <p class="font-serif text-lg leading-relaxed text-gold-50">「...你說：『看哪，我打敗了以東人』，你就心高氣傲，以致矜誇。你在家裡安居就罷了，為何要惹禍，使自己和猶大國一同敗亡呢？」</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl">
+                                    <h5 class="text-gold-400 font-bold mb-3">關鍵問題</h5>
+                                    <p class="text-gray-300 text-sm">成功時，人往往將榮耀歸給自己的能力，忽視了能力的來源。亞瑪謝勝利的滋味讓他失去對現實的判斷。</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-gold-900/30">
+                                    <h5 class="text-gold-400 font-bold mb-3">名言佳句</h5>
+                                    <p class="italic text-gray-200">「驕傲是罪惡的一氧化碳，它會在不知不覺中悄悄地殺死你。」—— 提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section-2" class="scroll-mt-32">
+                    <div class="flex flex-col lg:flex-row-reverse gap-12">
+                        <div class="lg:w-1/3">
+                            <h3 class="text-5xl font-serif font-black text-white/20 mb-4">02</h3>
+                            <h4 class="text-3xl font-serif font-bold text-red-400 mb-6">致命的固執：拒絕忠言背後的屬靈破口</h4>
+                            <div class="bg-white/5 rounded-xl p-6 border border-white/10">
+                                <h5 class="text-red-300 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"></path></svg>
+                                    原文解經
+                                </h5>
+                                <p class="text-sm text-gray-300 mb-4"><strong>不肯聽從 (lo shama)</strong>：拒絕留意、不順服。</p>
+                                <p class="text-sm text-gray-300"><strong>出乎神 (min 'Elohim)</strong>：指神任憑人在驕傲中走向審判。</p>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 space-y-6">
+                            <div class="glass-card p-8 bg-red-900/10">
+                                <p class="font-serif text-lg leading-relaxed text-red-50">「亞瑪謝卻不肯聽從。這是出乎神，目的在於將他們交在敵人手裡，因為他們尋求以東的神。」</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl">
+                                    <h5 class="text-red-400 font-bold mb-3">深度解析</h5>
+                                    <p class="text-gray-300 text-sm">神並非剝奪自由意志，而是按著亞瑪謝心中偶像崇拜的結果，收回攔阻恩典。當人執意偏行時，最可怕的審判就是「任憑」。</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-red-900/30">
+                                    <h5 class="text-red-400 font-bold mb-3">名言佳句</h5>
+                                    <p class="italic text-gray-200">「上帝對人最可怕的審判，就是任憑他偏行己路，不再管教他。」—— 司布真</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="section-3" class="scroll-mt-32">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="lg:w-1/3">
+                            <h3 class="text-5xl font-serif font-black text-white/20 mb-4">03</h3>
+                            <h4 class="text-3xl font-serif font-bold text-orange-400 mb-6">慘痛的崩塌：偏離真神帶來的全面潰敗</h4>
+                            <div class="bg-white/5 rounded-xl p-6 border border-white/10">
+                                <h5 class="text-orange-300 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"></path></svg>
+                                    原文解經
+                                </h5>
+                                <p class="text-sm text-gray-300 mb-4"><strong>拆毀 (parats)</strong>：徹底喪失防禦與尊嚴。</p>
+                                <p class="text-sm text-gray-300"><strong>質 (ta'arubah)</strong>：徹底的屈服與失去自由。</p>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 space-y-6">
+                            <div class="glass-card p-8 bg-orange-900/10">
+                                <p class="font-serif text-lg leading-relaxed text-orange-50">「...又將神殿裡的一切金銀和器皿，與王宮裡的財寶都拿了去，並帶人去為質，就回撒瑪利亞去了。」</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl">
+                                    <h5 class="text-orange-400 font-bold mb-3">關鍵問題</h5>
+                                    <p class="text-gray-300 text-sm">神不眷顧沒有真實敬拜的物質建築。心靈城牆的倒塌（驕傲與背逆），必然帶來現實生活防禦的崩潰。</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-orange-900/30">
+                                    <h5 class="text-orange-400 font-bold mb-3">名言佳句</h5>
+                                    <p class="italic text-gray-200">「罪總是帶你走得比你想去的更遠，留你比你想待的更久。」—— 大衛·鮑森</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="section-4" class="scroll-mt-32">
+                    <div class="flex flex-col lg:flex-row-reverse gap-12">
+                        <div class="lg:w-1/3">
+                            <h3 class="text-5xl font-serif font-black text-white/20 mb-4">04</h3>
+                            <h4 class="text-3xl font-serif font-bold text-gray-400 mb-6">悲涼的落幕：失去神同在的漂泊人生</h4>
+                            <div class="bg-white/5 rounded-xl p-6 border border-white/10">
+                                <h5 class="text-gray-300 font-bold mb-3 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"></path></svg>
+                                    原文解經
+                                </h5>
+                                <p class="text-sm text-gray-300 mb-4"><strong>背叛 (qesher)</strong>：同謀、結黨。</p>
+                                <p class="text-sm text-gray-300"><strong>離棄 (suwr)</strong>：轉身離開、偏離。</p>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 space-y-6">
+                            <div class="glass-card p-8 bg-white/5">
+                                <p class="font-serif text-lg leading-relaxed text-gray-300">「自從亞瑪謝離棄耶和華之後，在耶路撒冷有人背叛他，他就逃到拉吉；叛黨卻打發人到拉吉將他殺了。」</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="p-6 bg-white/5 rounded-2xl">
+                                    <h5 class="text-gray-400 font-bold mb-3">人生總結</h5>
+                                    <p class="text-gray-300 text-sm">亞瑪謝多活的十五年並非恩典的延續，而是苟延殘喘。失去神同在的年日，即使壽命延長，也只是在恐懼與空虛中度過。</p>
+                                </div>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/20">
+                                    <h5 class="text-gray-400 font-bold mb-3">名言佳句</h5>
+                                    <p class="italic text-gray-200">「基督徒的生命，必須是『在同一方向上長期的順服』。」—— 畢德生</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="pt-20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-serif font-bold text-white mb-16 text-center">
+                    <span class="block text-gold-500 text-sm tracking-[0.3em] uppercase mb-4">Full Message</span>
+                    講章文稿
+                </h2>
+                
+                <div class="font-serif space-y-12 text-xl leading-[2.2] text-gray-300">
+                    <p class="text-2xl font-bold text-gold-400 border-b-2 border-gold-900 pb-4">代下25:17-28：驕傲的代價與失落的榮耀：當人心偏離真神</p>
+                    
+                    <p>各位弟兄姊妹，平安。今天我們要透過猶大王亞瑪謝的生命，來看見一個令人痛心的屬靈軌跡。我們常以為失敗是人生最大的危機，但聖經告訴我們，很多時候「成功」才是我們信仰最大的考驗。</p>
+
+                    <div class="relative pl-8 border-l-4 border-gold-500 py-2">
+                        <h4 class="text-2xl font-bold text-white mb-4">第一段：盲目的自信——驕傲蒙蔽了屬靈的雙眼</h4>
+                        <p>經文記載，亞瑪謝剛剛打敗了以東人，這場勝利讓他不可一世。他向以色列王約阿施發出挑戰：「你來，我們見面交戰吧！」這是一種極端狂妄的態度。約阿施用蒺藜與香柏樹的比喻警告他：<span class="text-gold-400 font-bold">「看哪，我打敗了以東人，你就心高氣傲，以致矜誇。」</span></p>
+                        <p>弟兄姊妹，為什麼成功往往比失敗更危險？因為失敗讓我們跪下，成功卻常讓我們忘記神。亞瑪謝的眼睛被驕傲蒙蔽，他忘記了勝利是神賜予的。正如提摩太·凱勒所說，驕傲是罪惡的一氧化碳，它在無形中扼殺我們的屬靈生命。</p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-4 border-red-500 py-2">
+                        <h4 class="text-2xl font-bold text-white mb-4">第二段：致命的固執——拒絕忠言背後的屬靈破口</h4>
+                        <p>面對警告，亞瑪謝的反應是什麼？聖經說：<span class="text-red-400 font-bold underline decoration-red-900 underline-offset-8">「亞瑪謝卻不肯聽從。這是出乎神，目的在於將他們交在敵人手裡，因為他們尋求以東的神。」</span> (代下 25:20)</p>
+                        <p>這句經文揭示了一個可怕的屬靈真相：神的任憑。神為什麼任憑他不聽？因為他已經在心裡背棄了神，他去尋求以東的偶像。當我們心中有了偶像，我們屬靈的耳朵就會發沉。司布真曾警告我們：「上帝對人最可怕的審判，就是任憑他偏行己路。」</p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-4 border-orange-500 py-2">
+                        <h4 class="text-2xl font-bold text-white mb-4">第三段：慘痛的崩塌——偏離真神帶來的全面潰敗</h4>
+                        <p>因為亞瑪謝的驕傲與固執，猶大國迎來了慘痛的崩塌。他在戰場上大敗，自己被俘虜，更悲慘的是：<span class="text-orange-400 font-bold italic">「又拆毀耶路撒冷的城牆...又將神殿裡的一切金銀和器皿，與王宮裡的財寶都拿了去」</span>。</p>
+                        <p>當心中的信仰城牆倒塌，外在的防禦也必隨之瓦解。聖殿裡的器皿原本是神聖的，但當君王與百姓不再專一敬拜神時，那些物質的輝煌就失去了神的保護。我們生命中那些引以為傲的成就，若沒有神的同在，隨時可能被仇敵洗劫一空。</p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-4 border-gray-500 py-2">
+                        <h4 class="text-2xl font-bold text-white mb-4">第四段：悲涼的落幕——失去神同在的漂泊人生</h4>
+                        <p>故事的最後，亞瑪謝雖然又活了十五年，但那不是榮耀的年歲。聖經做了一個悲哀的總結：<span class="text-gray-400 font-bold">「自從亞瑪謝離棄耶和華之後，在耶路撒冷有人背叛他...」</span>他最終在逃亡中被暗殺。</p>
+                        <p>一個曾經有過輝煌勝利的君王，最後的十五年充滿了恐懼與背叛。這提醒我們，信仰的價值不在於我們曾經多麼輝煌，而在於我們能否堅持到底。畢德生牧師說，信仰是「在同一方向上長期的順服」。沒有順服，就沒有榮耀的結局。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Actions -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-10">
+                <h3 class="text-2xl font-bold text-gold-400 mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    應用方向
+                </h3>
+                <ul class="space-y-6 text-gray-300">
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">01</span> 檢視心中的驕傲：成就時，是否竊奪了神的榮耀？</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">02</span> 對屬靈警告保持敏銳：選擇固執己見，還是謙卑悔改？</li>
+                    <li class="flex gap-4"><span class="text-gold-500 font-bold">03</span> 除掉隱藏的偶像：面對是否有取代神位置的事物。</li>
+                </ul>
+                <div class="mt-12 flex gap-4">
+                    <span class="px-3 py-1 bg-white/10 rounded-full text-xs text-gold-400 border border-gold-400/30">驕傲 (Pride)</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-full text-xs text-gold-400 border border-gold-400/30">順服 (Obedience)</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-full text-xs text-gold-400 border border-gold-400/30">結局 (Finish)</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-10 border-gold-500/20">
+                <h3 class="text-2xl font-bold text-gold-400 mb-8 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應與實踐行動
+                </h3>
+                <div class="space-y-6">
+                    <div class="group cursor-default">
+                        <p class="font-bold text-white group-hover:text-gold-400 transition-colors">1. 感恩與歸榮耀</p>
+                        <p class="text-sm text-gray-400">每天晚上寫下三件感恩的事，明確承認這些成就是神的恩典。</p>
+                    </div>
+                    <div class="group cursor-default">
+                        <p class="font-bold text-white group-hover:text-gold-400 transition-colors">2. 建立守望關係</p>
+                        <p class="text-sm text-gray-400">主動尋求屬靈同伴，授權他們在發現你偏離時，直言不諱地提醒。</p>
+                    </div>
+                    <div class="group cursor-default">
+                        <p class="font-bold text-white group-hover:text-gold-400 transition-colors">3. 偶像大掃除</p>
+                        <p class="text-sm text-gray-400">花時間安靜禱告，求聖靈光照是否有任何事物佔據了你尋求神的時間。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pb-20">
+            <h2 class="text-4xl font-serif font-bold text-white mb-12 flex items-center gap-4">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                屬靈前輩名言
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 hover:bg-white/5 transition-all">
+                    <p class="text-lg italic text-gray-200 mb-4">「偶像崇拜不是把一個壞的東西當作神，而是把一個好的東西當作終極。」</p>
+                    <p class="text-gold-500 font-bold">— 提摩太·凱勒 《山寨版的上帝》</p>
+                </div>
+                <div class="glass-card p-8 hover:bg-white/5 transition-all">
+                    <p class="text-lg italic text-gray-200 mb-4">「在我們未曾經歷神徹底的剝奪之前，我們永遠不知道自己對事物有多麼依賴。」</p>
+                    <p class="text-gold-500 font-bold">— 陶恕 《渴慕神》</p>
+                </div>
+                <div class="glass-card p-8 hover:bg-white/5 transition-all">
+                    <p class="text-lg italic text-gray-200 mb-4">「驕傲是所有罪惡中最難死去的；即使你以為它已經被釘死，它依然會復活。」</p>
+                    <p class="text-gold-500 font-bold">— 司布真 《晨晨昏昏》</p>
+                </div>
+                <div class="glass-card p-8 hover:bg-white/5 transition-all">
+                    <p class="text-lg italic text-gray-200 mb-4">「謙卑是意識到我們一無所有，而看見神是一切。」</p>
+                    <p class="text-gold-500 font-bold">— 慕安德烈 《謙卑》</p>
+                </div>
+                <div class="glass-card p-8 hover:bg-white/5 transition-all">
+                    <p class="text-lg italic text-gray-200 mb-4">「人心是一座永遠在製造偶像的工廠。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·加爾文 《基督教要義》</p>
+                </div>
+                <div class="glass-card p-8 hover:bg-white/5 transition-all">
+                    <p class="text-lg italic text-gray-200 mb-4">「我們在十字架面前不可能驕傲，因為正是我們的罪把基督釘在那裡。」</p>
+                    <p class="text-gold-500 font-bold">— 約翰·史托德 《基督的十字架》</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-8 border border-white/10 rounded-2xl bg-white/5 text-center">
+                <p class="text-gray-500 text-sm">網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-onyx rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>
+

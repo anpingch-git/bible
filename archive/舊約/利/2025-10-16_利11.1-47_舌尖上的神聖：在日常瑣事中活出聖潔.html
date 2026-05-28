@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利11:1-47:舌尖上的神聖：在日常瑣事中活出聖潔</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: '#D4AF37',
+                        holy: {
+                            light: '#F8F9FA',
+                            gold: '#E0C097',
+                            dark: '#0A0A0B',
+                            accent: '#FFD700',
+                        }
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtleBounce 2.5s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.8' },
+                            '50%': { opacity: '0.4' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        subtleBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-4px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFD700 0%, #E0C097 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-anchor {
+            scroll-margin-top: 100px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '利11:1-47',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '利',         // 動態注入書卷縮寫，例如：出
+              'note_title': '舌尖上的神聖：在日常瑣事中活出聖潔' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-holy-dark text-gray-200 font-body antialiased">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center px-4 md:px-8 justify-between">
+        <div class="text-holy-gold font-display font-bold text-sm md:text-lg tracking-widest">利 11:1-47</div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="hover:text-holy-gold transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-holy-gold transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-holy-gold transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-holy-gold transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Hero -->
+    <header class="relative h-[90vh] w-full flex flex-col items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_6409f67a-82ed-4c83-bcf3-10554eb60f78.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-holy-dark/60 to-holy-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-display font-black mb-6 leading-tight gradient-text" id="top">
+                舌尖上的神聖：<br><span class="text-white">在日常瑣事中活出聖潔</span>
+            </h1>
+            <div class="mt-8 animate-subtle-bounce inline-block">
+                <p class="text-lg md:text-xl font-light italic text-holy-gold tracking-wide px-4 py-2 border-y border-holy-gold/30">
+                    「我是耶和華─你們的　神；所以你們要成為聖潔，因為我是聖潔的。」
+                </p>
+                <p class="mt-2 text-sm opacity-70">利未記 11:44-45</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor">
+            <div class="bento-card p-8 md:p-12 relative overflow-hidden">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="text-3xl">🙏</span>
+                    <h2 class="text-2xl font-display font-bold text-holy-gold">開路禱告</h2>
+                </div>
+                <div class="text-lg md:text-xl leading-relaxed text-gray-300 italic">
+                    親愛的天父，我們感謝祢，因祢是聖潔、榮耀且滿有恩典的主。祢不僅在西奈山上彰顯威嚴，更在我們的日常飲食與生活細節中，呼召我們作屬祢的子民。主啊，求祢開啟我們的屬靈眼睛，讓我們看見這些古老律法背後祢那不變的聖潔心意。求聖靈光照我們，使我們明白「聖潔」不是宗教的重擔，而是蒙愛兒女的特權。幫助我們在每一個選擇、每一次拒絕中，都能榮耀祢的名。奉主耶穌基督得勝的名求，阿們。
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="section-anchor">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl">📜</span>
+                <h2 class="text-3xl font-display font-bold text-holy-gold">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                <a href="#outline-1" class="bento-card p-6 flex flex-col justify-center items-center text-center hover:bg-holy-gold/10 group transition-all">
+                    <span class="text-xs text-holy-gold/60 mb-2 uppercase tracking-tighter">Part 01</span>
+                    <span class="text-lg font-bold group-hover:text-holy-gold">劃清界線</span>
+                    <span class="text-sm opacity-60">利 11:1-23</span>
+                </a>
+                <a href="#outline-2" class="bento-card p-6 flex flex-col justify-center items-center text-center hover:bg-holy-gold/10 group transition-all">
+                    <span class="text-xs text-holy-gold/60 mb-2 uppercase tracking-tighter">Part 02</span>
+                    <span class="text-lg font-bold group-hover:text-holy-gold">拒絕沾染</span>
+                    <span class="text-sm opacity-60">利 11:24-43</span>
+                </a>
+                <a href="#outline-3" class="bento-card p-6 flex flex-col justify-center items-center text-center hover:bg-holy-gold/10 group transition-all">
+                    <span class="text-xs text-holy-gold/60 mb-2 uppercase tracking-tighter">Part 03</span>
+                    <span class="text-lg font-bold group-hover:text-holy-gold">聖潔呼召</span>
+                    <span class="text-sm opacity-60">利 11:44-47</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-12">
+                <!-- Part 1 -->
+                <div id="outline-1" class="section-anchor p-8 border-l-4 border-holy-gold bg-white/5 rounded-r-2xl">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <span class="bg-holy-gold text-black px-3 py-1 rounded text-sm">一</span> 劃清界線——在「選擇」中看見神的主權
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-holy-gold font-bold mb-2 flex items-center gap-2">📖 引用經文</p>
+                            <p class="text-sm opacity-80 leading-relaxed italic border-l border-white/20 pl-4 mb-6">
+                                「耶和華對摩西、亞倫說：『你們曉諭以色列人說，在地上一切走獸中可吃的乃是這些：凡蹄分兩瓣、倒嚼的走獸，你們都可以吃。...水裡可吃的乃是這些：凡在水裡、海裡、河裡、有翅有鱗的，都可以吃。...』」
+                            </p>
+                            <p class="text-holy-gold font-bold mb-2 flex items-center gap-2">🔍 關鍵原文</p>
+                            <ul class="space-y-2 mb-6">
+                                <li><strong class="text-white">潔淨 (Tahor / טָהוֹר)：</strong>指在儀式上、道德上純潔，符合親近神的標準。</li>
+                                <li><strong class="text-white">不潔淨 (Tame' / טָמֵא)：</strong>指被污染、不合格，無法進入神聖潔的同在中。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-black/30 p-4 rounded-xl">
+                                <p class="font-bold text-white mb-2">❓ 為什麼規定飲食？</p>
+                                <p class="text-sm text-gray-400">飲食是人類最基本需求。神藉此將「分別為聖」深植於日常生活，提醒我們主權不只在會幕，更在餐桌。信仰必須落實在最平凡的瑣事中。</p>
+                            </div>
+                            <div class="text-sm border-t border-white/10 pt-4 italic text-gray-400">
+                                「我們若不在微小的事上順服神，就不能期望在重大的事上為神成就什麼。」——約翰·加爾文
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="outline-2" class="section-anchor p-8 border-l-4 border-holy-gold bg-white/5 rounded-r-2xl">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <span class="bg-holy-gold text-black px-3 py-1 rounded text-sm">二</span> 拒絕沾染——在「世界」中保守屬靈的敏銳
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-holy-gold font-bold mb-2 flex items-center gap-2">📖 引用經文</p>
+                            <p class="text-sm opacity-80 leading-relaxed italic border-l border-white/20 pl-4 mb-6">
+                                「『這些都能使你們不潔淨。凡摸了死的，必不潔淨到晚上。...地上的爬物是與你們不潔淨的...你們不可因什麼爬物使自己成為可憎的，也不可因這些使自己不潔淨，以致染了污穢。』」
+                            </p>
+                            <p class="text-holy-gold font-bold mb-2 flex items-center gap-2">🔍 關鍵原文</p>
+                            <ul class="space-y-2 mb-6">
+                                <li><strong class="text-white">屍首/死亡 (Nevelah / נְבֵלָה)：</strong>指死亡與敗壞。在聖經中，死亡與賜生命的上帝完全對立。</li>
+                                <li><strong class="text-white">沾染/污穢 (Tame')：</strong>指從外界感染了不潔，導致與神隔絕。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-black/30 p-4 rounded-xl">
+                                <p class="font-bold text-white mb-2">❓ 觸摸為何不潔？</p>
+                                <p class="text-sm text-gray-400">神是生命主，死亡是罪的工價。不潔物代表墮落世界的敗壞，具有「傳染性」。提醒我們在世生活，極易被世俗價值觀沾染，必須保持屬靈敏銳。</p>
+                            </div>
+                            <div class="text-sm border-t border-white/10 pt-4 italic text-gray-400">
+                                「罪惡就像下坡路，一旦你開始妥協，就很難在半路停住腳步。」——司布真
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="outline-3" class="section-anchor p-8 border-l-4 border-holy-gold bg-white/5 rounded-r-2xl">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <span class="bg-holy-gold text-black px-3 py-1 rounded text-sm">三</span> 聖潔呼召——在「身分」中回應神的屬性
+                    </h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-holy-gold font-bold mb-2 flex items-center gap-2">📖 引用經文</p>
+                            <p class="text-sm opacity-80 leading-relaxed italic border-l border-white/20 pl-4 mb-6">
+                                「我是耶和華─你們的　神；所以你們要成為聖潔，因為我是聖潔的。...我是把你們從埃及地領出來的耶和華，要作你們的　神；所以你們要聖潔，因為我是聖潔的。」
+                            </p>
+                            <p class="text-holy-gold font-bold mb-2 flex items-center gap-2">🔍 關鍵原文</p>
+                            <ul class="space-y-2 mb-6">
+                                <li><strong class="text-white">聖潔 (Qadosh / קָדוֹשׁ)：</strong>核心意義為「分別出來」(set apart)，指被分別出來專屬於神。</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-black/30 p-4 rounded-xl">
+                                <p class="font-bold text-white mb-2">❓ 聖潔是遙不可及的標準？</p>
+                                <p class="text-sm text-gray-400">聖潔的前提是「恩典的拯救」。不是靠行為換取聖潔，而是因為神已拯救我們，生活方式應與尊貴身分相稱。聖潔是活出真實的身分。</p>
+                            </div>
+                            <div class="text-sm border-t border-white/10 pt-4 italic text-gray-400">
+                                「聖潔並非做特別的事，而是用特別的心去做尋常的事。」——慕安德烈
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="section-anchor">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl">🎙️</span>
+                <h2 class="text-3xl font-display font-bold text-holy-gold">講章全文</h2>
+            </div>
+            <article class="bento-card p-8 md:p-16 space-y-12 leading-loose text-lg text-gray-300">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-holy-gold/30 pb-2">引言</h3>
+                    <p>弟兄姊妹，平安！今天我們要看的是一段許多人在讀經時會快轉跳過的經文——《利未記》第11章。這裡充滿了哪些動物可以吃、哪些不能吃的繁瑣規定。或許你會問：「神管得也太寬了吧？難道連我餐桌上吃什麼，神也要干섭嗎？」然而，正是在這些看似枯燥的日常瑣事中，隱藏著神對我們生命最深切的呼召。今天我們講道的主題是：<strong class="text-holy-gold">「舌尖上的神聖：在日常瑣事中活出聖潔」</strong>。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-holy-gold/30 pb-2">第一段：劃清界線——在「選擇」中看見神的主權</h3>
+                    <p>讓我們先來看第一段。神在利未記11章前半段，極其詳細地分類了潔淨與不潔淨的動物。神為什麼要這樣做？因為<strong class="text-white underline decoration-holy-gold underline-offset-4">飲食是人類每天最頻繁的選擇</strong>。神要以色列人明白，信仰絕對不僅僅是安息日在會幕裡的敬拜，信仰是從你走出會幕、回到家中、坐在餐桌前的那一刻開始的。</p>
+                    <p class="mt-4">當一個以色列人看著眼前的食物，他必須停下來思考：「這是神允許的嗎？」這個看似微小的動作，其實是在操練一個極大的屬靈功課：<strong class="text-holy-gold">承認神在我生命每一個細節上的主權。</strong>正如加爾文所說：*「我們若不在微小的事上順服神，就不能期望在重大的事上為神成就什麼。」*</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-holy-gold/30 pb-2">第二段：拒絕沾染——在「世界」中保守屬靈的敏銳</h3>
+                    <p>接下來，經文提到如果觸摸了動物的屍體或是某些爬行物，就會成為不潔淨。在聖經中，死亡是罪的結果。神透過這些外在的律法，教導一個內在的屬靈真相：<strong class="text-white underline decoration-holy-gold underline-offset-4">罪與敗壞是會傳染的</strong>。</p>
+                    <p class="mt-4">想像一個剛刷好手、準備動手術的外科醫生，只要他的指尖輕輕碰到了未消毒的手術台，他就必須重新刷手。屬靈的世界也是如此。我們活在一個墮落的世界裡，每天被各種世俗的價值觀包圍。我們常常以為「稍微碰一下沒關係」、「大家都這樣做」，卻不知道我們的心已經被沾染，屬靈的敏銳度已經漸漸喪失。司布真曾警告我們：*「罪惡就像下坡路，一旦你開始妥協，就很難在半路停住腳步。」*</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-holy-gold/30 pb-2">第三段：聖潔呼召——在「身分」中回應神的屬性</h3>
+                    <p>最後，神在第44和45節宣告了這一切規定的終極原因。這也是我們今天的<strong class="text-holy-gold">【金句】：「我是耶和華─你們的　神；所以你們要成為聖潔，因為我是聖潔的。......我是把你們從埃及地領出來的耶和華，要作你們的　神；所以你們要聖潔，因為我是聖潔的。」</strong></p>
+                    <p class="mt-4">很多時候，我們覺得「聖潔」是一個重擔，是一個高不可攀的道德標準。但請注意神說話的順序！神是先說「我是把你們從埃及地領出來的耶和華」，然後才說「所以你們要聖潔」。神不是要求我們靠自己的努力達到聖潔，好換取祂的拯救；神是<strong class="text-white">已經</strong>用大能將我們從罪惡中拯救出來，收納我們作祂的兒女。聖潔，不是業績；聖潔，是我們尊貴身分的樣式。</p>
+                </div>
+
+                <div class="bg-holy-gold/10 p-8 rounded-3xl border border-holy-gold/20">
+                    <h3 class="text-2xl font-bold text-holy-gold mb-6 flex items-center gap-3">✨ 結論與應用</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="font-bold text-white mb-4">三個結論關鍵字：</p>
+                            <ul class="flex flex-wrap gap-3">
+                                <li class="bg-holy-gold text-black px-4 py-1 rounded-full font-bold">分別 Separation</li>
+                                <li class="bg-holy-gold text-black px-4 py-1 rounded-full font-bold">順服 Obedience</li>
+                                <li class="bg-holy-gold text-black px-4 py-1 rounded-full font-bold">聖潔 Holiness</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white mb-4">回應行動：</p>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex gap-2"><span>1.</span> 實行一週「媒體禁食」與審查。</li>
+                                <li class="flex gap-2"><span>2.</span> 在一個微小決定上操練順服。</li>
+                                <li class="flex gap-2"><span>3.</span> 每日早晨宣告聖潔身分。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor pb-20">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-3xl">💎</span>
+                <h2 class="text-3xl font-display font-bold text-holy-gold">名言佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bento-card p-6">
+                    <p class="italic text-gray-300 mb-4">「聖潔，這不僅是神的一個屬性，更是祂所有屬性的完美與榮耀。」</p>
+                    <p class="text-holy-gold font-bold text-sm">— 陶恕 (A. W. Tozer)</p>
+                </div>
+                <div class="bento-card p-6">
+                    <p class="italic text-gray-300 mb-4">「廉價的恩典是我們教會的致命敵人。這恩典是重價的，因為它呼召我們跟從耶穌基督。」</p>
+                    <p class="text-holy-gold font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="bento-card p-6">
+                    <p class="italic text-gray-300 mb-4">「不要以為你可以與世界握手言和，同時又與神保持親密。」</p>
+                    <p class="text-holy-gold font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="bento-card p-6">
+                    <p class="italic text-gray-300 mb-4">「福音是：你比你所敢相信的還要敗壞，但同時比你所敢盼望的還要更蒙愛。」</p>
+                    <p class="text-holy-gold font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="bento-card p-6">
+                    <p class="italic text-gray-300 mb-4">「給我一百個除了罪惡別無所懼，除了神別無所求的人，他們將震動地獄的大門。」</p>
+                    <p class="text-holy-gold font-bold text-sm">— 約翰·衛斯理 (John Wesley)</p>
+                </div>
+                <div class="bento-card p-6">
+                    <p class="italic text-gray-300 mb-4">「十字架是神恩典與神聖潔的交會點。神不輕忽罪，也不放棄罪人。」</p>
+                    <p class="text-holy-gold font-bold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- ... More quotes can be added if needed, but keeping 6 for visual balance on mobile/desktop -->
+            </div>
+            
+            <div class="mt-12 text-center text-xs text-gray-500 bg-white/5 py-4 rounded-lg px-4">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-holy-gold text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-[100] animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation handled by 'scroll-smooth' class in HTML
+        // Active link highlighting could be added here for more premium feel
+    </script>
+</body>
+</html>

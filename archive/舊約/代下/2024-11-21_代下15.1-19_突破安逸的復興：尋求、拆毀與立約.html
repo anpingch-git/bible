@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代下15:1-19: 突破安逸的復興：尋求、拆毀與立約</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E2B875', // Soft Gold
+                        secondary: '#C8A2C8', // Muted Purple
+                        accent: '#FF4D4D', // Impact Red
+                        dark: '#0A0A0B',
+                        surface: '#161618',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtleBounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        subtleBounce: {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-3px) scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E5E7EB;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(22, 22, 24, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #E2B875, #FDE68A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-glow {
+            animation: breathe 10s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 0.25; }
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #E2B875;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            border: 1px solid rgba(226, 184, 117, 0.3);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(226, 184, 117, 0.1);
+            border-color: #E2B875;
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '代下15:1-19',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '代下',         // 動態注入書卷縮寫，例如：出
+              'note_title': '突破安逸的復興：尋求、拆毀與立約' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-6 py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="text-primary font-display font-bold text-sm md:text-base tracking-widest uppercase">
+                代下 15:1-19
+            </div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-wide">
+                <a href="#prayer" class="nav-link relative">禱告</a>
+                <a href="#outline" class="nav-link relative">大綱</a>
+                <a href="#sermon" class="nav-link relative">講章</a>
+                <a href="#quotes" class="nav-link relative">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner Section -->
+    <header class="relative h-[70vh] md:h-[85vh] overflow-hidden flex items-center justify-center">
+        <!-- Banner Image with Breathing Effect -->
+        <div class="absolute inset-0 z-0">
+            <img src="image/img_22ef7938-fdc8-40de-9b21-7e1179b11dfe.jpg" alt="Church Revival Banner" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black banner-glow"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/20 via-transparent to-dark"></div>
+        </div>
+
+        <!-- Title & Scripture (Floating Over Banner) -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="inline-block px-4 py-1 rounded-full glass border border-primary/20 text-primary text-xs md:text-sm font-bold mb-6 tracking-[0.2em]">
+                CHRONICLES II 15:1-19
+            </div>
+            <h1 class="font-serif text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+                突破安逸的復興：<br/>
+                <span class="text-gradient">尋求、拆毀與立約</span>
+            </h1>
+            
+            <!-- Verse (Micro-animation) -->
+            <div class="animate-subtle-bounce inline-block mt-4">
+                <p class="text-lg md:text-2xl font-medium text-white/90 italic leading-relaxed max-w-2xl mx-auto font-serif">
+                    「你們若順從耶和華，耶和華必與你們同在；你們若尋求他，就必尋見；你們若離棄他，他必離棄你們。」
+                </p>
+                <span class="block mt-2 text-primary/80 font-display text-sm">— 歷代志下 15:2b —</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 rounded-2xl bg-primary/10 border border-primary/20">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.912a6 6 0 118.228 0 6 6 0 118.228 0L12 21z"/></svg>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">虔心禱告</h2>
+            </div>
+            <div class="p-8 md:p-12 rounded-[2rem] glass relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <p class="text-xl md:text-2xl leading-loose font-serif text-gray-200">
+                    全能的阿爸天父，我們來到祢施恩的寶座前，渴望經歷如同亞撒王時期的屬靈復興。主啊，求祢的聖靈今天對我們的心說話，喚醒我們沉睡的靈魂。給我們勇敢的心，去拆毀生命中一切不討祢喜悅的偶像；賜給我們堅定的意志，盡心盡意地尋求祢的面。願祢的同在成為我們生命中最深的滿足與保障。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="p-3 rounded-2xl bg-primary/10 border border-primary/20">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">大綱快速索引</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#sec1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-primary/50 font-display font-bold mb-4">01</span>
+                    <h3 class="text-lg font-bold group-hover:text-primary transition-colors">傾聽真理：抓住神同在的應許</h3>
+                    <p class="text-xs text-gray-400 mt-2">代下 15:1-7</p>
+                </a>
+                <a href="#sec2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-primary/50 font-display font-bold mb-4">02</span>
+                    <h3 class="text-lg font-bold group-hover:text-primary transition-colors">雷厲風行：清除偶像與更新祭壇</h3>
+                    <p class="text-xs text-gray-400 mt-2">代下 15:8-15</p>
+                </a>
+                <a href="#sec3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between group">
+                    <span class="text-primary/50 font-display font-bold mb-4">03</span>
+                    <h3 class="text-lg font-bold group-hover:text-primary transition-colors">毫無妥協：付上代價的真實順服</h3>
+                    <p class="text-xs text-gray-400 mt-2">代下 15:16-19</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="space-y-32">
+            <!-- Section 1 -->
+            <section id="sec1" class="scroll-mt-32">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4">
+                        <h3 class="text-3xl font-black font-serif text-primary mb-4 leading-tight">傾聽真理：<br/>抓住神同在的應許</h3>
+                        <p class="text-secondary font-bold tracking-widest text-sm mb-6 uppercase">I. Listening to Truth</p>
+                        <div class="bg-surface p-6 rounded-2xl border border-white/5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-500 mb-2 uppercase tracking-tighter">重要 Keyword</h4>
+                                <p class="text-xl text-primary font-bold">尋求 (דָּרַשׁ - darash)</p>
+                                <p class="text-sm text-gray-400 mt-1 italic">原文意為「踐踏、頻繁前往、詢問、渴求、敬拜」。一種刻意、持續且熱切的追求。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-surface/50 p-8 rounded-[2rem] border-l-4 border-primary">
+                            <h4 class="text-sm font-bold text-primary mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                經文範圍 (代下 15:1-7)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed font-serif">
+                                神的靈感動俄德的兒子亞撒利雅。他出來迎接亞撒，對他說：「亞撒和猶大、便雅憫眾人哪，要聽我說：你們若順從耶和華，耶和華必與你們同在；你們若尋求他，就必尋見；你們若離棄他，他必離棄你們。以色列人不信真神，沒有教訓人的祭司，也沒有律法，已經好久了；但他們在急難的時候歸向耶和華─以色列的神，尋求他，他就被他們尋見。那時，出入的人不得平安，列國的居民都遭大亂...」
+                            </p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <h4 class="font-bold text-white mb-3">關鍵問題與解析</h4>
+                                <p class="text-sm text-primary mb-2">Q: 亞撒剛勝仗，為何神這時警告？</p>
+                                <p class="text-sm text-gray-400">人最容易在極大的得勝後陷入屬靈驕傲。神提醒「神的同在」是動態關係，取決於人是否持續尋求。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <h4 class="font-bold text-white mb-3">例證 / 小故事</h4>
+                                <p class="text-sm text-gray-400">「成功是失敗之母」。如同昔日手機巨頭 Nokia 在輝煌時忽略創新。屬靈生命也是，昨天的復興不能取代今天的尋求。</p>
+                            </div>
+                        </div>
+                        <div class="text-right italic text-secondary text-sm font-medium">
+                            「神在等待被我們尋見，然而我們卻用世界上那些毫無價值的事物來填滿自己的心，以至於沒有空間留給祂。」 — 陶恕
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="sec2" class="scroll-mt-32">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4">
+                        <h3 class="text-3xl font-black font-serif text-primary mb-4 leading-tight">雷厲風行：<br/>清除偶像與更新祭壇</h3>
+                        <p class="text-secondary font-bold tracking-widest text-sm mb-6 uppercase">II. Purge and Rebuild</p>
+                        <div class="bg-surface p-6 rounded-2xl border border-white/5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-500 mb-2 uppercase tracking-tighter">重要 Keywords</h4>
+                                <p class="text-xl text-primary font-bold">立約 (בְּרִית - berith)</p>
+                                <p class="text-xl text-primary font-bold">壯起膽來 (חָזַק - chazaq)</p>
+                                <p class="text-sm text-gray-400 mt-1 italic">意為「變得堅強、剛強、勇敢」。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-surface/50 p-8 rounded-[2rem] border-l-4 border-primary">
+                            <h4 class="text-sm font-bold text-primary mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                經文範圍 (代下 15:8-15)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed font-serif">
+                                亞撒聽見這話...就壯起膽來，在猶大、便雅憫全地...將可憎之物盡都除掉，又在耶和華殿的廊前重新修築耶和華的壇...他們就立約，要盡心盡性地尋求耶和華─他們列祖的神。凡不尋求耶和華─以色列神的，無論大小、男女，必被治死。他們就大聲歡呼...
+                            </p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <h4 class="font-bold text-white mb-3">關鍵問題與解析</h4>
+                                <p class="text-sm text-primary mb-2">Q: 為何必須包含「拆毀」與「建立」？</p>
+                                <p class="text-sm text-gray-400">悔改不能只停留在情緒。不清除偶像（拆毀），敬拜就只是儀式。拆毀是騰出空間，建立是迎來神。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <h4 class="font-bold text-white mb-3">例證 / 小故事</h4>
+                                <p class="text-sm text-gray-400">翻修白蟻老房，不能只刷漆。必須拆除受損木材（除偶像），重打地基（築祭壇）。過程雖痛卻是唯一途徑。</p>
+                            </div>
+                        </div>
+                        <div class="text-right italic text-secondary text-sm font-medium">
+                            「除非罪在你眼中變得苦澀，否則基督對你而言永遠不會是甜美的。」 — 司布真
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="sec3" class="scroll-mt-32">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4">
+                        <h3 class="text-3xl font-black font-serif text-primary mb-4 leading-tight">毫無妥協：<br/>付上代價的真實順服</h3>
+                        <p class="text-secondary font-bold tracking-widest text-sm mb-6 uppercase">III. Uncompromised Obedience</p>
+                        <div class="bg-surface p-6 rounded-2xl border border-white/5 space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold text-gray-500 mb-2 uppercase tracking-tighter">重要 Keyword</h4>
+                                <p class="text-xl text-primary font-bold">誠實 (שָׁלֵם - shalem)</p>
+                                <p class="text-sm text-gray-400 mt-1 italic">意為「完整的、全心全意的、純誠的」。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-8">
+                        <div class="bg-surface/50 p-8 rounded-[2rem] border-l-4 border-primary">
+                            <h4 class="text-sm font-bold text-primary mb-4 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                                經文範圍 (代下 15:16-19)
+                            </h4>
+                            <p class="text-gray-300 leading-relaxed font-serif">
+                                亞撒王貶了他祖母瑪迦太後的位，因她造了可憎的偶像亞舍拉。亞撒砍下她的偶像，搗得粉碎，燒在汲淪溪邊。只是邱壇還沒有從以色列中廢去，然而亞撒的心一生誠實。亞撒將他父所分別為聖、與自己所分別為聖的金銀和器皿都奉到神的殿裡。
+                            </p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <h4 class="font-bold text-white mb-3">關鍵問題與解析</h4>
+                                <p class="text-sm text-primary mb-2">Q: 為何要廢除祖母？對我們的提醒？</p>
+                                <p class="text-sm text-gray-400">亞撒將「對神的順服」置於親情、傳統之上。提醒我們在世俗文化與真理衝突時，必須尊主為大。</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                                <h4 class="font-bold text-white mb-3">例證 / 小故事</h4>
+                                <p class="text-sm text-gray-400">企業家發現家族長輩貪腐，選擇舉發雖面臨決裂，卻因聖潔帶來更大商譽與神賜平安。</p>
+                            </div>
+                        </div>
+                        <div class="text-right italic text-secondary text-sm font-medium">
+                            「如果你的神從來不反對你，也不要求你做出痛苦的改變，那麼你敬拜的可能不是真神。」 — 提摩太·凱勒
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="p-3 rounded-2xl bg-primary/10 border border-primary/20">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white uppercase tracking-tighter font-display">Sermon Script <span class="font-sans font-bold text-gray-500 ml-2">講章文稿</span></h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none space-y-8 font-serif text-lg leading-relaxed text-gray-300">
+                <h3 class="text-2xl font-black text-primary border-b border-primary/20 pb-2 mb-6 font-sans">代下 15:1-19：突破安逸的復興</h3>
+                
+                <p>弟兄姊妹們，今天我們來到歷代志下第15章。這段經文記載了猶大國歷史上一段極為振奮人心的復興。然而，這場復興並不是發生在絕望的谷底，而是發生在一場巨大的勝利之後。</p>
+
+                <div class="bg-surface/30 p-8 rounded-3xl border border-white/5 my-10">
+                    <h4 class="text-xl font-bold text-secondary mb-4 font-sans">段落一：傾聽真理：抓住神同在的應許</h4>
+                    <p>當亞撒凱旋歸來時，神的靈感動先知亞撒利雅出來迎接他。先知的第一句話不是恭喜，而是一句劃時代的宣告：<span class="text-primary font-bold">「你們若順從耶和華，耶和華必與你們同在；你們若尋求他，就必尋見；你們若離棄他，他必離棄你們。」</span></p>
+                    <p>為什麼神要在這時候說這樣的話？因為神知道人的軟弱。我們往往在急難中拼命禱告，卻在問題解決後立刻忘記了神。先知提醒亞撒：「尋求」是一個現在進行式。<span class="text-white font-bold underline decoration-primary underline-offset-4">神的同在從來不是理所當然的，它保留給那些持續渴慕祂的人</span>。</p>
+                </div>
+
+                <div class="bg-surface/30 p-8 rounded-3xl border border-white/5 my-10">
+                    <h4 class="text-xl font-bold text-secondary mb-4 font-sans">段落二：雷厲風行：清除偶像與更新祭壇</h4>
+                    <p>亞撒聽見這話，他沒有驕傲地反駁，而是<span class="text-accent font-bold">「壯起膽來」</span>。他展開了一場全國性的屬靈大掃除。經文告訴我們，他<span class="text-primary font-bold">「將可憎之物盡都除掉，又在耶和華殿的廊前重新修築耶和華的壇」</span>。</p>
+                    <p>真正的復興，必定伴隨著痛苦的「拆毀」與付代價的「建立」。你不能一邊擁抱世界的偶像，一邊想要神的同在。亞撒不僅除掉偶像，他還重築祭壇，<span class="text-white font-bold">「他們就立約，要盡心盡性地尋求耶和華」</span>。這是一個毫無保留的約！</p>
+                </div>
+
+                <div class="bg-surface/30 p-8 rounded-3xl border border-white/5 my-10">
+                    <h4 class="text-xl font-bold text-secondary mb-4 font-sans">段落三：毫無妥協：付上代價的真實順服</h4>
+                    <p>復興中最艱難的考驗，往往來自我們最親近的人。經文第16節記載了一個令人震驚的舉動：<span class="text-accent font-bold font-sans">「亞撒王貶了他祖母瑪迦太後的位」</span>。</p>
+                    <p>在亞撒心中，神的真理高於一切傳統與親情。他是一個<span class="text-primary font-bold">「心一生誠實」</span>的人。因著亞撒的勇敢與專一，神賜給猶大國長達三十五年的太平。今天，神也在呼召我們，作一個敢於拆毀偶像、專一尋求神的人。</p>
+                </div>
+            </div>
+
+            <!-- Conclusion & Actions Grid -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-[2rem]">
+                    <h3 class="text-xl font-bold text-primary mb-6 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        應用方向與行動
+                    </h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li class="flex gap-3"><span class="text-primary font-bold">01</span> 檢視對神的渴慕：是否只在「急難中」才尋求神？</li>
+                        <li class="flex gap-3"><span class="text-primary font-bold">02</span> 清除現代偶像：金錢、成就感、或某段取代神地位的關係。</li>
+                        <li class="flex gap-3"><span class="text-primary font-bold">03</span> 屬靈健檢：寫下佔據你最多的三件事，評估其健康度。</li>
+                        <li class="flex gap-3"><span class="text-primary font-bold">04</span> 重築祭壇：每天固定15分鐘不受干擾的讀經禱告。</li>
+                    </ul>
+                </div>
+                <div class="bg-primary p-8 rounded-[2rem] text-dark">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-widest font-display">Conclusion Keywords</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-6 py-2 bg-dark text-primary rounded-full font-bold text-lg">尋求 Seek</span>
+                        <span class="px-6 py-2 bg-dark text-primary rounded-full font-bold text-lg">拆毀 Purge</span>
+                        <span class="px-6 py-2 bg-dark text-primary rounded-full font-bold text-lg">立約 Covenant</span>
+                    </div>
+                    <p class="mt-8 font-serif font-bold italic border-l-2 border-dark/20 pl-4">
+                        當我們盡心尋求祂，祂必被我們尋見，並要將那出人意外的平安，賞賜給我們！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="p-3 rounded-2xl bg-primary/10 border border-primary/20">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/></svg>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">屬靈前輩佳句</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「給我一百個什麼都不怕、只怕罪，什麼都不渴求、只渴求神的人...必定能震動地獄之門。」</p>
+                    <p class="text-sm font-bold text-primary">— 約翰·衛斯理 (John Wesley)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「神不是要我們在順境中忘記祂，在逆境中才利用祂。神要的是我們全心全意地與祂立約。」</p>
+                    <p class="text-sm font-bold text-primary">— 大衛·鮑森 (David Pawson)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「在我們的心裡，如果還有任何不願向神交出的『以撒』，我們就永遠無法經歷神同在的豐盛。」</p>
+                    <p class="text-sm font-bold text-primary">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「廉價的恩典是我們自己給自己的；昂貴的恩典則是呼召我們跟從耶穌基督。」</p>
+                    <p class="text-sm font-bold text-primary">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「偶像就是任何對你來說比神更重要的事物，任何比神更能吸引你的心、你的幻想的事物。」</p>
+                    <p class="text-sm font-bold text-primary">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「沒有真實悔改的信仰，只是虛假的安慰。你必須先對罪感到憂傷，才能在基督裡找到喜樂。」</p>
+                    <p class="text-sm font-bold text-primary">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「人心是一座製造偶像的工廠。我們若不每日藉著聖靈治死肉體私慾，就會造出新的偶像。」</p>
+                    <p class="text-sm font-bold text-primary">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「真正的信仰，在於我們的情感完全被神的美善與聖潔所吸引。」</p>
+                    <p class="text-sm font-bold text-primary">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「復興的起點，在於我們深刻意識到自己是多麼需要神，並且願意完全降服。」</p>
+                    <p class="text-sm font-bold text-primary">— 慕安德烈 (Andrew Murray)</p>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary/30">
+                    <p class="text-gray-300 italic mb-4">「如果我們不把神當作神來敬畏，我們就會把其他東西當作神。唯有緊緊抓住真神，偶像才會粉碎。」</p>
+                    <p class="text-sm font-bold text-primary">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <footer class="pt-12 border-t border-white/5 text-center">
+            <p class="text-gray-500 text-xs tracking-widest uppercase">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-dark rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

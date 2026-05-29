@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩10:當上帝彷彿缺席時：在黑暗中看見公義的曙光</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9cd',
+                            200: '#fdf19d',
+                            300: '#fae362',
+                            400: '#f8d234',
+                            500: '#f1b811',
+                            600: '#d5920a',
+                            700: '#b26e0b',
+                            800: '#915610',
+                            900: '#774712',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141418',
+                            700: '#1e1e24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.2s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0c; color: #e5e7eb; overflow-x: hidden; }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .bento-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(241, 184, 17, 0.4);
+            transform: translateY(-4px);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f8d234 0%, #d5920a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-anchor { scroll-margin-top: 100px; }
+        .quote-border {
+            border-left: 4px solid #f1b811;
+            padding-left: 1.5rem;
+        }
+        .outline-btn {
+            background: rgba(241, 184, 17, 0.1);
+            border: 1px solid rgba(241, 184, 17, 0.3);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            background: rgba(241, 184, 17, 0.2);
+            border-color: #f1b811;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Navigation -->
+    <nav class="glass-nav fixed top-0 left-0 right-0 z-50 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-gold-400 font-display font-bold text-lg tracking-tight hidden md:block">
+                詩篇 10
+            </div>
+            <div class="flex gap-6 md:gap-10 text-sm font-medium tracking-widest text-gray-300">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/87629fd8-8ad5-43a6-9aec-467264618e65' alt='詩篇第10篇主題創作的史詩電影風格' class="w-full h-full object-cover opacity-60 scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-dark-900/50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl animate-fade-in">
+            <p class="text-gold-400 font-display font-bold tracking-[0.3em] mb-4 uppercase text-sm md:text-base">Psalm 10</title>
+            <h1 class="text-4xl md:text-7xl font-display font-extrabold mb-6 leading-tight">
+                當上帝彷彿缺席時：<br/>
+                <span class="gold-gradient-text">在黑暗中看見公義的曙光</span>
+            </h1>
+            <div class="w-24 h-1 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+            <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-900/30 text-gold-400 mb-6 border border-gold-500/20">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold gold-gradient-text">開路禱告</h2>
+            </div>
+            <div class="bento-card p-8 md:p-12 rounded-3xl relative">
+                <div class="absolute top-0 left-0 p-4 text-gold-900/20 text-8xl font-serif">“</div>
+                <p class="text-lg md:text-2xl leading-relaxed text-gray-200 font-serif italic text-center">
+                    主阿，當我們身處幽谷、看見世上充滿不公與欺壓時，我們的心也如同詩人一般吶喊：「祢為何站在遠處？在患難中為何隱藏？」求祢赦免我們在黑暗中常生出的疑惑與軟弱。主阿，求祢開啟我們的屬靈眼睛，讓我們看見即便在惡人狂傲、看似祢已缺席的時刻，祢依然是坐著為王的神。求祢堅固我們的信心，賜給我們勇氣為受欺壓的發聲，並在絕望中緊緊抓住祢永不落空的公義。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Section -->
+        <section id="outline" class="section-anchor">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-4 border-b border-gray-800 pb-8">
+                <div>
+                    <div class="flex items-center gap-3 text-gold-400 mb-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                        <span class="uppercase tracking-widest text-sm font-bold">Navigation</span>
+                    </div>
+                    <h2 class="text-4xl font-display font-bold">講道大綱解析</h2>
+                </div>
+                <p class="text-gray-400 max-w-sm text-sm">點擊下方按鈕快速跳轉至各段落深度解析與經文細節。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+                <a href="#section1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full group">
+                    <span class="text-gold-400 font-display font-bold text-xs mb-4">第一段</span>
+                    <h3 class="text-lg font-bold mb-2">隱藏的上帝與狂傲的惡人</h3>
+                    <p class="text-gray-400 text-xs">詩篇 10:1-4</p>
+                </a>
+                <a href="#section2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full group">
+                    <span class="text-gold-400 font-display font-bold text-xs mb-4">第二段</span>
+                    <h3 class="text-lg font-bold mb-2">虛假的安全感與無助的受害者</h3>
+                    <p class="text-gray-400 text-xs">詩篇 10:5-11</p>
+                </a>
+                <a href="#section3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full group">
+                    <span class="text-gold-400 font-display font-bold text-xs mb-4">第三段</span>
+                    <h3 class="text-lg font-bold mb-2">呼求真神介入的禱告</h3>
+                    <p class="text-gray-400 text-xs">詩篇 10:12-15</p>
+                </a>
+                <a href="#section4" class="outline-btn p-6 rounded-2xl flex flex-col justify-between h-full group">
+                    <span class="text-gold-400 font-display font-bold text-xs mb-4">第四段</span>
+                    <h3 class="text-lg font-bold mb-2">永恆的君王與最終的公義</h3>
+                    <p class="text-gray-400 text-xs">詩篇 10:16-18</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Sections -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <div id="section1" class="section-anchor grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="text-gold-500 font-display font-bold">SECTION 01</div>
+                        <h3 class="text-3xl md:text-4xl font-bold leading-tight">隱藏的上帝與<br/>狂傲的惡人</h3>
+                        <div class="bento-card p-6 rounded-2xl bg-gold-900/10 border-gold-500/20">
+                            <p class="text-gold-400 font-bold mb-2">引用經文 (10:1-4)</p>
+                            <p class="text-gray-300 leading-relaxed font-serif">耶和華啊，你為甚麼站在遠處？在患難的時候為甚麼隱藏？惡人在驕傲中把困苦人追得火急；願他們陷在自己所設的計謀裡。因為惡人以心願自誇；貪財的背棄耶和華，並且輕慢他。惡人面帶驕傲，說：耶和華必不追究；他一切所想的都以為沒有神。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> 關鍵原文</h4>
+                            <p class="text-sm text-gray-300">「隱藏」：*ta'lim*，意思是掩面、遮掩、看不見。表達極度痛苦中強烈的「神不在場感」。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 關鍵問題</h4>
+                            <p class="text-sm text-gray-300">神為何看似遙遠？上帝的「隱藏」是為了熬煉信心，使我們從依賴環境轉向單單仰望祂的本質。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 生活例證</h4>
+                            <p class="text-sm text-gray-300">父親在公園暫時「隱藏」在樹後，是為了訓練摔倒的孩子學會自己站起來，但祂從未移開視線。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg> 佳句</h4>
+                            <p class="text-sm text-gray-300 italic">「上帝的沉默，往往是為了讓我們聽見祂在深處的呼喚。」—— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="section2" class="section-anchor grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-5 space-y-6 lg:order-2">
+                        <div class="text-gold-500 font-display font-bold">SECTION 02</div>
+                        <h3 class="text-3xl md:text-4xl font-bold leading-tight">虛假的安全感與<br/>無助的受害者</h3>
+                        <div class="bento-card p-6 rounded-2xl bg-gold-900/10 border-gold-500/20 text-right">
+                            <p class="text-gold-400 font-bold mb-2 text-left">引用經文 (10:5-11)</p>
+                            <p class="text-gray-300 leading-relaxed font-serif text-left">他凡事所行的，時常穩固...他心裡說：我必不動搖，世世代代不遭災難。他滿口是咒罵、詭詐、欺壓...他在隱密處殺害無辜的人。他的眼睛窺探無倚無靠的人...他心裡說：神竟忘記了；他掩面永不觀看。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6 lg:order-1">
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵原文</h4>
+                            <p class="text-sm text-gray-300">「穩固 / 不動搖」：*mot*，意為動搖、滑跌。惡人自認絕對安全，這是一種「實際的無神論」。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">關鍵問題</h4>
+                            <p class="text-sm text-gray-300">為何惡人能猖狂？惡人的狂傲來自於短暫的安逸，導致屬靈的盲目，這是殘忍與欺壓的根源。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">生活例證</h4>
+                            <p class="text-sm text-gray-300">鐵達尼號首航時的「永不沉沒」是極度的驕傲，最終在冰山面前粉碎。惡人的狂妄也是如此。</p>
+                        </div>
+                        <div class="bento-card p-6 rounded-2xl">
+                            <h4 class="text-gold-400 font-bold mb-3 flex items-center gap-2">佳句</h4>
+                            <p class="text-sm text-gray-300 italic">「在不需要上帝的情況下建立安全感，是人類最大的悲哀。」—— 陶恕</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 & 4 (Combined Style) -->
+                <div id="section3" class="section-anchor">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bento-card p-10 rounded-3xl space-y-6">
+                            <div class="text-gold-500 font-display font-bold">SECTION 03</div>
+                            <h3 class="text-3xl font-bold">呼求真神介入的禱告</h3>
+                            <div class="quote-border italic text-gray-400 text-sm">
+                                「耶和華啊，求你起來！神啊，求你舉手...其實你已經觀看；因為奸惡毒害，你都看見了。」(10:12-15)
+                            </div>
+                            <p class="text-gray-300">詩人從「對環境的絕望」轉向「對神屬性的確信」。神不僅看見（ra'ah），且要舉手施行報應。</p>
+                            <p class="text-gold-400 font-bold">名言：潘霍華曾說，可以把一切痛苦、憤怒和不解帶到上帝面前。</p>
+                        </div>
+                        <div id="section4" class="bento-card p-10 rounded-3xl space-y-6 border-gold-500/30">
+                            <div class="text-gold-500 font-display font-bold">SECTION 04</div>
+                            <h3 class="text-3xl font-bold">永恆的君王與最終公義</h3>
+                            <div class="quote-border italic text-gray-400 text-sm">
+                                「耶和華永永遠遠為王；外邦人從他的地已經滅絕了。」(10:16-18)
+                            </div>
+                            <p class="text-gray-300">盼望建立在「耶和華為王」的客觀事實上。暴風雨雖然猛烈但只是暫時，上帝的公義如同旭日必然破曉。</p>
+                            <p class="text-gold-400 font-bold">名言：約翰·加爾文提醒，在最混亂的局勢中，上帝依然坐在寶座上。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="section-anchor max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-900/30 text-gold-400 mb-6 border border-gold-500/20">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20l-7-7 7-7M5 20l7-7-7-7"></path></svg>
+                </div>
+                <h2 class="text-4xl font-display font-bold gold-gradient-text mb-4">講章文稿</h2>
+                <div class="h-1 w-20 bg-gold-500 mx-auto"></div>
+            </div>
+
+            <article class="prose prose-invert prose-gold max-w-none space-y-8 text-gray-200 leading-relaxed md:text-lg">
+                <h3 class="text-2xl md:text-3xl font-bold text-white border-l-4 border-gold-500 pl-4">詩10:當上帝彷彿缺席時：在黑暗中看見公義的曙光</h3>
+                
+                <p>弟兄姊妹們，你有沒有經歷過這樣的時刻：當你遭遇極大的不公義，當你看到世上惡人橫行、欺壓弱小，你拼命禱告，但天上卻似乎只有一片寂靜？今天我們要來看的詩篇第10篇，就是一首在極度黑暗與不公中，從痛苦吶喊走向榮耀確信的詩歌。</p>
+
+                <p>首先，我們看到 <span class="text-gold-400 font-bold">詩10:1-4 隱藏的上帝與狂傲的惡人</span>。詩人一開始就發出令人心碎的呼喊：<span class="text-white font-bold bg-gold-900/40 px-2">「耶和華啊，你為甚麼站在遠處？在患難的時候為甚麼隱藏？」</span> 這是人在苦難中最真實的感受——神不在場感。當我們受苦時，神彷彿隱藏了。與此同時，惡人卻極其狂傲，他們「一切所想的都以為沒有神」。提摩太·凱勒曾說：「上帝有時看似隱藏，是為了讓我們更深地尋求祂。」</p>
+
+                <p>接著，經文帶我們看見 <span class="text-gold-400 font-bold">詩10:5-11 虛假的安全感與無助的受害者</span>。惡人因為一時的得逞，心裡說：「我必不動搖，世世代代不遭災難...神竟忘記了；他掩面永不觀看。」這是一種極其危險的「實際無神論」。陶恕提醒我們：<span class="text-white font-bold italic underline decoration-gold-500 underline-offset-4">「人類最大的悲哀，就是在不需要上帝的情況下，試圖建立自己的安全感。」</span></p>
+
+                <p>然而，詩人發出了 <span class="text-gold-400 font-bold">詩10:12-15 呼求真神介入的禱告</span>。他大聲吶喊：「耶和華啊，求你起來！」詩人看破了惡人的謊言，他宣告：<span class="text-gold-300 font-bold">「其實你已經觀看；因為奸惡毒害，你都看見了！」</span> 神的眼睛從未閉上。當我們面對不公時，我們不是用自己的手段去報復，而是把無助交託給這位向來幫助孤兒的上帝。</p>
+
+                <p>最後，詩篇的結尾迎來了破曉的曙光：<span class="text-gold-400 font-bold">詩10:16-18 永恆的君王與最終的公義</span>。詩人的眼光超越了當下的苦難，宣告了一個永恆的事實：<span class="text-2xl md:text-4xl text-gold-400 font-black block text-center my-10 tracking-widest">「耶和華永永遠遠為王！」</span> 這就是我們信仰的根基！暴風雨再猛烈，太陽依然會升起；惡人再猖狂，上帝依然坐在寶座上。</p>
+                
+                <div class="bg-dark-800 p-8 rounded-3xl border border-gray-800">
+                    <h4 class="text-xl font-bold mb-4 text-gold-400">總結 3 個關鍵字</h4>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="p-4 bg-dark-700 rounded-xl">
+                            <span class="block text-2xl font-bold mb-1">隱藏</span>
+                            <span class="text-xs text-gray-400">環境的表象</span>
+                        </div>
+                        <div class="p-4 bg-dark-700 rounded-xl">
+                            <span class="block text-2xl font-bold mb-1">呼求</span>
+                            <span class="text-xs text-gray-400">信心的行動</span>
+                        </div>
+                        <div class="p-4 bg-dark-700 rounded-xl">
+                            <span class="block text-2xl font-bold mb-1">掌權</span>
+                            <span class="text-xs text-gray-400">永恆的真相</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Action -->
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-display font-bold gold-gradient-text mb-8 flex items-center gap-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                回應行動
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bento-card p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center mb-4 font-bold">1</div>
+                    <p class="text-gray-200">撰寫一篇哀歌禱告，將痛苦傾訴轉向對神主權的宣告。</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center mb-4 font-bold">2</div>
+                    <p class="text-gray-200">省察隱藏的罪，悔改那些以為「神看不見」而犯下的過錯。</p>
+                </div>
+                <div class="bento-card p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center mb-4 font-bold">3</div>
+                    <p class="text-gray-200">本週主動關懷一位無倚無靠的人，用行動彰顯神的慈愛。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold gold-gradient-text mb-4">名言佳句</h2>
+                <p class="text-gray-400">屬靈前輩的智慧啟迪</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 rounded-3xl border-l-4 border-l-gold-500">
+                    <p class="text-lg text-gray-200 font-serif italic mb-4">「如果我們完全明白上帝的作為，我們就不需要信心了。苦難的存在不是上帝缺席的證明，而是呼喚我們信靠祂隱藏的智慧。」</p>
+                    <cite class="text-sm text-gold-400 font-bold">— 提摩太·凱勒, 《苦難的奧祕》</cite>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-8 rounded-3xl border-l-4 border-l-gray-600">
+                    <p class="text-lg text-gray-200 font-serif italic mb-4">「雖然神有時似乎在睡覺，但祂的眼睛是睜開的；當祂舉起手時，將帶來無法抗拒的拯救。」</p>
+                    <cite class="text-sm text-gold-400 font-bold">— 司布真, 《大衛寶庫》</cite>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 rounded-3xl border-l-4 border-l-gray-600">
+                    <p class="text-lg text-gray-200 font-serif italic mb-4">「詩篇教導我們，沒有任何人類的情感——包括憤怒和絕望——是不能帶到神面前的。」</p>
+                    <cite class="text-sm text-gold-400 font-bold">— 潘霍華, 《詩篇：聖經的祈禱書》</cite>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-8 rounded-3xl border-l-4 border-l-gray-600">
+                    <p class="text-lg text-gray-200 font-serif italic mb-4">「在十字架上，上帝並沒有對苦難袖手旁觀；祂親自進入了最深的不義之中。」</p>
+                    <cite class="text-sm text-gold-400 font-bold">— 約翰·史托德, 《基督的十字架》</cite>
+                </div>
+                <!-- Add remaining quotes as needed following this pattern -->
+                 <div class="bento-card p-8 rounded-3xl border-l-4 border-l-gray-600">
+                    <p class="text-lg text-gray-200 font-serif italic mb-4">「上帝之所以容許惡人暫時亨通，是為了在最終審判時，更完全地彰顯祂不可侵犯的聖潔與公義。」</p>
+                    <cite class="text-sm text-gold-400 font-bold">— 喬納森·愛德華茲, 《講道集》</cite>
+                </div>
+                <div class="bento-card p-8 rounded-3xl border-l-4 border-l-gray-600">
+                    <p class="text-lg text-gray-200 font-serif italic mb-4">「世俗主義最大的傲慢，就是認為人可以成為自己命運的主宰；但詩篇提醒我們，唯有耶和華才是永永遠遠的王。」</p>
+                    <cite class="text-sm text-gold-400 font-bold">— 提摩太·凱勒, 《我為什麼相信》</cite>
+                </div>
+            </div>
+            
+            <div class="mt-20 py-10 border-t border-gray-900 text-center text-gray-600 text-sm">
+                <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-dark-900 rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all z-50 transform hover:scale-110">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth reveal on scroll logic (optional, but adds to the wow factor)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0');
+                    entry.target.classList.add('translate-y-0');
+                    entry.target.classList.remove('translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+

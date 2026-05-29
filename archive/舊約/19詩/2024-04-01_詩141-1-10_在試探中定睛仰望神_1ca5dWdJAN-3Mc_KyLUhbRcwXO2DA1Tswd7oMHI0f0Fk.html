@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩141:1-10: 亂世中的持守——在試探中定睛仰望神</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf2',
+                            100: '#fff9e6',
+                            200: '#ffefbf',
+                            300: '#ffe08c',
+                            400: '#ffd059',
+                            500: '#ffc126',
+                            600: '#e6a600',
+                            700: '#bf8a00',
+                            800: '#996e00',
+                            900: '#735200',
+                        },
+                        dark: {
+                            bg: '#0a0a0c',
+                            card: '#16161a',
+                            border: '#2a2a30'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(22, 22, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffd059 0%, #bf8a00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ffd059;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            background: linear-gradient(145deg, #1e1e24, #16161a);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            border-color: #ffd059;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(255, 208, 89, 0.15);
+        }
+        .highlight-quote {
+            border-left: 4px solid #ffd059;
+            padding-left: 1.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Toolbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card px-4 py-3 border-b border-dark-border">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="font-display font-bold text-gold-400 text-sm md:text-base tracking-tight">
+                詩 141:1-10
+            </div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-widest">
+                <a href="#prayer" class="nav-link text-gray-400 hover:text-gold-400">禱告</a>
+                <a href="#outline" class="nav-link text-gray-400 hover:text-gold-400">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-400 hover:text-gold-400">講章</a>
+                <a href="#quotes" class="nav-link text-gray-400 hover:text-gold-400">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/cd34ea33-d804-4285-be86-486ff9ae1628' alt='亂世中的持守' class="w-full h-full object-cover opacity-60" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl animate-fade-in-up">
+            <h1 class="font-display text-4xl md:text-7xl font-extrabold mb-4 leading-tight">
+                亂世中的<span class="text-gradient">持守</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-300 font-light tracking-widest">
+                在試探中定睛仰望神 · 詩篇 141 篇
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative group">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/><path d="M12 9V3"/><path d="m9 18 3 3 3-3"/></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold tracking-wider">開聲禱告</h2>
+            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-gold-400"></div>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-200 italic font-light">
+                    主耶和華啊，我們來到祢施恩的寶座前，願我們的禱告如香陳列在祢面前，我們舉手祈求，如獻晚祭。在這個充滿試探、謊言與網羅的世代中，求祢親自禁止我們的口，把守我們的嘴，不叫我們的心偏向邪惡，也不叫我們貪戀世俗的美味。求祢賜我們謙卑受教的心，將義人的責備視為頭上的膏油；在四面受敵的危難中，讓我們的眼目單單仰望祢。求祢將我們隱藏在祢的翅膀蔭下，救我們脫離惡人所設的網羅。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-12">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h10"/></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold tracking-wider">信息大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">Part 01</span>
+                    <span class="text-xl font-semibold text-white">將禱告化為馨香的獻祭</span>
+                    <span class="text-gray-500 text-sm mt-4">詩 141:1-2</span>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">Part 02</span>
+                    <span class="text-xl font-semibold text-white">求神把守口與心的防線</span>
+                    <span class="text-gray-500 text-sm mt-4">詩 141:3-4</span>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">Part 03</span>
+                    <span class="text-xl font-semibold text-white">擁抱義人的責備與管教</span>
+                    <span class="text-gray-500 text-sm mt-4">詩 141:5-7</span>
+                </a>
+                <a href="#part4" class="outline-btn p-6 rounded-2xl flex flex-col justify-between">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">Part 04</span>
+                    <span class="text-xl font-semibold text-white">危難中定睛仰望主</span>
+                    <span class="text-gray-500 text-sm mt-4">詩 141:8-10</span>
+                </a>
+            </div>
+
+            <!-- Deep Analysis Sections -->
+            <div class="space-y-24 mt-20">
+                <!-- Part 1 Detail -->
+                <div id="part1" class="scroll-mt-24 bg-dark-card/50 p-8 rounded-3xl border border-dark-border">
+                    <h3 class="font-display text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                        <span class="text-4xl opacity-20">01</span> 將禱告化為馨香的獻祭
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-dark-bg p-6 rounded-xl border-l-2 border-gold-500/50">
+                            <p class="text-gray-400 text-sm mb-2">引用經文</p>
+                            <p class="italic text-lg">「耶和華啊，我曾求告你，求你快快臨到我這裡！願我的禱告如香陳列在你面前！願我舉手祈求，如獻晚祭！」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> 關鍵原文</h4>
+                                <p class="text-sm leading-relaxed text-gray-300"><strong>香 (qetoreth)</strong>：指祭司每日早晚焚燒的特製香料。代表神聖、專注與蒙神悅納的敬拜。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> 問題與回答</h4>
+                                <p class="text-sm leading-relaxed text-gray-300">問題：危難急迫時，第一反應是焦慮還是祈求？<br>解析：大衛將焦慮化為聖所中的「香」。提醒我們，禱告是神聖的連結，而非備胎。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-dark-border">
+                            <p class="text-gold-400/80 font-semibold italic text-sm">「禱告是信心的呼吸。沒有呼吸，就沒有生命。」—— 司布真</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 Detail -->
+                <div id="part2" class="scroll-mt-24 bg-dark-card/50 p-8 rounded-3xl border border-dark-border">
+                    <h3 class="font-display text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                        <span class="text-4xl opacity-20">02</span> 求神把守口與心的防線
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-dark-bg p-6 rounded-xl border-l-2 border-gold-500/50">
+                            <p class="text-gray-400 text-sm mb-2">引用經文</p>
+                            <p class="italic text-lg">「耶和華啊，求你禁止我的口，把守我的嘴！求你不叫我的心偏向邪惡...也不叫我吃他們的美物。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> 關鍵原文</h4>
+                                <p class="text-sm leading-relaxed text-gray-300"><strong>把守 (nitsrah)</strong>：軍事用語，指「設置衛兵」。<br><strong>美物 (man'ammim)</strong>：引申為罪惡帶來的短暫利益與誘惑。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> 問題與回答</h4>
+                                <p class="text-sm leading-relaxed text-gray-300">問題：為何求保守「口」後緊接著求保守「心」？<br>解析：心是言語的泉源。拒絕罪惡的「美物」，是保守言語的根本。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-dark-border">
+                            <p class="text-gold-400/80 font-semibold italic text-sm">「人心是一個製造偶像的工廠。」—— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 Detail -->
+                <div id="part3" class="scroll-mt-24 bg-dark-card/50 p-8 rounded-3xl border border-dark-border">
+                    <h3 class="font-display text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                        <span class="text-4xl opacity-20">03</span> 擁抱義人的責備與管教
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-dark-bg p-6 rounded-xl border-l-2 border-gold-500/50">
+                            <p class="text-gray-400 text-sm mb-2">引用經文</p>
+                            <p class="italic text-lg">「任憑義人擊打我，這算為仁慈；任憑他責備我，這算為頭上的膏油；我的頭不要躲閃。」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> 關鍵原文</h4>
+                                <p class="text-sm leading-relaxed text-gray-300"><strong>責備 (yakakh)</strong>：為了真理解明的痛苦糾正。<br><strong>膏油 (shemen)</strong>：古代尊榮與款待的象徵。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> 問題與回答</h4>
+                                <p class="text-sm leading-relaxed text-gray-300">問題：人本能防衛批評，大衛為何將其視為膏油？<br>解析：義人的責備是神保守我們免於墮落的手術刀。良藥苦口，卻能切除毒瘤。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-dark-border">
+                            <p class="text-gold-400/80 font-semibold italic text-sm">「沒有什麼比真理更殘酷，但也更能帶來醫治。」—— 潘霍華</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 4 Detail -->
+                <div id="part4" class="scroll-mt-24 bg-dark-card/50 p-8 rounded-3xl border border-dark-border">
+                    <h3 class="font-display text-2xl font-bold text-gold-400 mb-6 flex items-center gap-3">
+                        <span class="text-4xl opacity-20">04</span> 危難中定睛仰望主
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="bg-dark-bg p-6 rounded-xl border-l-2 border-gold-500/50">
+                            <p class="text-gray-400 text-sm mb-2">引用經文</p>
+                            <p class="italic text-lg">「主耶和華啊，我的眼目仰望你；我投靠你，求你不要將我撇棄！」</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> 關鍵原文</h4>
+                                <p class="text-sm leading-relaxed text-gray-300"><strong>仰望 (einay)</strong>：字義是「我的雙眼」。<br><strong>投靠 (khasah)</strong>：尋求庇護，如雛鳥躲進母鳥翅膀。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg> 問題與回答</h4>
+                                <p class="text-sm leading-relaxed text-gray-300">問題：在四面網羅中，如何「得以逃脫」？<br>解析：秘訣在於「轉移視線」。盯著網羅會絕望，仰望神能得主權。神是解網者。</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-dark-border">
+                            <p class="text-gold-400/80 font-semibold italic text-sm">「信心就是靈魂的注視。」—— 陶恕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold tracking-wider text-white">完整講章文稿</h2>
+            </div>
+
+            <div class="prose prose-invert prose-gold max-w-none space-y-12 leading-loose text-gray-300">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">【引言】</h3>
+                    <p>弟兄姊妹，我們生活在一個充滿喧囂、誘惑與網羅的世代。每天打開手機，我們被各種聲音包圍，有引誘我們貪婪的「美物」，也有攻擊我們的暗箭。在這樣的亂世中，基督徒該如何持守生命？今天我們要從大衛的詩篇141篇，看見一個身處危難與試探中的屬靈偉人，如何透過禱告、持守聖潔，最終在試探中定睛仰望神。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">【第一段：將禱告化為馨香的獻祭】</h3>
+                    <p>當我們面對急迫的危機時，第一反應是什麼？是抓起電話向人求救？是上網抱怨？還是陷入焦慮？大衛在第1到2節給了我們最好的示範。</p>
+                    <p class="bg-dark-card p-6 rounded-xl italic border-l-4 border-gold-400 my-6">「耶和華啊，我曾求告你，求你快快臨到我這裡！……願我的禱告如香陳列在你面前！願我舉手祈求，如獻晚祭！」(詩141:1-2)</p>
+                    <p><span class="text-gold-400 font-bold">禱告不是我們生活遇到危機時才拿出來用的「備胎」，禱告是我們生命的「方向盤」。</span> 當我們把內心的焦慮、恐懼，轉化為向神舉手的敬拜時，那份急迫就成了蒙神悅納的馨香之祭。</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">【第二段：求神把守口與心的防線】</h3>
+                    <p>在急難中，人最容易犯的罪就是言語的罪，以及向世界的誘惑妥協。</p>
+                    <p class="bg-dark-card p-6 rounded-xl italic border-l-4 border-gold-400 my-6">「耶和華啊，求你禁止我的口，把守我的嘴！求你不叫我的心偏向邪惡...也不叫我吃他們的美物。」(詩141:3-4)</p>
+                    <p>大衛深知自己人性的軟弱。他求神在他的嘴唇設立「衛兵」，攔阻一切得罪神的話語。但他更知道，<span class="text-gold-400 font-bold">言語的失控，源自於內心的貪婪</span>。我們需要天天呼求神：「主啊，把守我的口，保守我的心！」</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">【第三段：擁抱義人的責備與管教】</h3>
+                    <p>要保守心懷意念，我們還需要一個防護網，那就是屬靈群體的守望。</p>
+                    <p class="bg-dark-card p-6 rounded-xl italic border-l-4 border-gold-400 my-6">「任憑義人擊打我，這算為仁慈；任憑他責備我，這算為頭上的膏油；我的頭不要躲閃。」(詩141:5)</p>
+                    <p>這是一節極難實踐的<span class="text-gold-400 font-bold">金句</span>。當別人指出我們的錯誤時，我們第一本能就是「躲閃」、防衛、甚至反擊。但大衛卻將義人的責備看作「頭上的膏油」。我們身邊是否有這樣能對我們說真話的「義人」？我們是否願意把他們的責備當作神賜下的仁慈？</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">【第四段：危難中定睛仰望主】</h3>
+                    <p>最後，大衛將視線轉向了最終的拯救者。</p>
+                    <p class="bg-dark-card p-6 rounded-xl italic border-l-4 border-gold-400 my-6">「主耶和華啊，我的眼目仰望你；我投靠你，求你不要將我撇棄！」(詩141:8-9)</p>
+                    <p>在四面都是網羅的環境裡，大衛沒有一直盯著那些陷阱看，他選擇說：<span class="text-gold-400 font-bold">「我的眼目仰望你」</span>。就像彼得在水面上行走，只要定睛在耶穌身上，就能超越風浪；一旦看風浪，就會下沉。惡人終將落在自己的網裡，而投靠主的人，必得以逃脫！</p>
+                </div>
+
+                <div class="bg-gold-400/10 p-10 rounded-3xl border border-gold-400/20">
+                    <h3 class="text-2xl font-bold text-gold-400 mb-6">【結論：亂世中的三個關鍵字】</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🙏</div>
+                            <div class="font-bold text-xl text-white">禱告 (Prayer)</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">✨</div>
+                            <div class="font-bold text-xl text-white">聖潔 (Holiness)</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">👁️</div>
+                            <div class="font-bold text-xl text-white">仰望 (Looking)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="space-y-12">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold tracking-wider">回應行動</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 rounded-2xl border-t-2 border-gold-400">
+                    <h4 class="font-bold text-gold-400 mb-4">1. 定時獻祭</h4>
+                    <p class="text-sm text-gray-300">本週每天設定固定時間，不求任何事物，單純讚美神、將心思如香陳列。</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-t-2 border-gold-400">
+                    <h4 class="font-bold text-gold-400 mb-4">2. 三秒守衛</h4>
+                    <p class="text-sm text-gray-300">在開口批評或網路留言前，停頓3秒默禱：「主啊，求祢把守我的嘴」。</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-t-2 border-gold-400">
+                    <h4 class="font-bold text-gold-400 mb-4">3. 尋求膏油</h4>
+                    <p class="text-sm text-gray-300">邀請一位屬靈長輩指出自己的一個盲點，並帶著感恩的心接受責備。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="w-12 h-12 rounded-full bg-gold-400/10 flex items-center justify-center text-gold-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1Z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1Z"/></svg>
+                </div>
+                <h2 class="font-display text-3xl font-bold tracking-wider">名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「禱告並非改變神的旨意，而是讓我們的心對準神的旨意。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 約翰·加爾文，《基督教要義》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「成為一個沒有禱告的基督徒，就像要成為一個不呼吸卻活著的人一樣不可能。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 馬丁·路德，《桌邊談》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「真誠的禱告，是靈魂的呼吸；它不需要華麗的詞藻，只需要一顆破碎且仰望的心。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 司布真，《早晚靈修》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「信心就是靈魂的注視，是將我們內心的眼目轉向那無所不在的神。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 陶恕，《渴慕神》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「出於愛的責備是我們彼此相愛的最高表現之一。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 潘霍華，《團契生活》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「我們的心是一個無休止的偶像製造工廠，總是試圖將美好的事物變成終極的事物。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 提摩太·凱勒，《浪子上帝》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「門徒訓練是一場『長期的順服』。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 畢德生，《長期的順服》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「聖潔不是一連串的不可做什麼，而是我們全心全意地將自己獻給神。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 約翰·史托德，《當代基督門徒》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「真正的信仰主要存在於聖潔的屬靈情感中。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 喬納森·愛德華茲，《宗教情操真偽辨》</footer>
+                </div>
+                <div class="glass-card p-6 rounded-xl break-inside-avoid highlight-quote">
+                    <p class="text-gray-200">「禱告不僅是我們向神提出要求，更是讓神那令人敬畏的榮耀進入我們的心中，重新塑造我們。」</p>
+                    <footer class="mt-4 text-xs text-gold-400">— 提摩太·凱勒，《禱告：解密與體驗》</footer>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="text-center py-20 opacity-30 text-xs tracking-widest border-t border-dark-border mt-20">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- FAB: Back to top (Prayer) -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-400 text-dark-bg rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </a>
+
+    <script>
+        // Simple scroll spy for navigation highlight could be added here
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

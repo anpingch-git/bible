@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利18:1-30: 拒絕世界的模樣，活出屬天的聖潔</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c4a661;
+            --secondary: #e5e7eb;
+            --accent: #f59e0b;
+            --bg-dark: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--secondary);
+            font-family: 'Noto Sans TC', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Banner Breathing Animation */
+        @keyframes breathing {
+            0%, 100% { opacity: 0.6; filter: brightness(0.4); }
+            50% { opacity: 1; filter: brightness(0.8); }
+        }
+        .banner-container {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: breathing 8s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        /* Micro-vibration for Golden Verse */
+        @keyframes micro-vibrate {
+            0%, 100% { transform: translateY(0); }
+            25% { transform: translateY(-2px); }
+            75% { transform: translateY(1px); }
+        }
+        .vibrate-text {
+            animation: micro-vibrate 4s ease-in-out infinite;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        /* Glassmorphism Navigation */
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Section Icon Style */
+        .section-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            margin-right: 12px;
+            box-shadow: 0 4px 15px rgba(196, 166, 97, 0.3);
+        }
+
+        /* Outline Button Effects */
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(196, 166, 97, 0.3);
+        }
+        .outline-btn:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Scroll to Top */
+        #scrollTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-dark);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            cursor: pointer;
+            z-index: 50;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        #scrollTop.visible {
+            opacity: 1;
+        }
+
+        /* Content Highlighting */
+        .highlight {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .quote-card {
+            border-left: 4px solid var(--primary);
+            background: rgba(255, 255, 255, 0.03);
+            transition: transform 0.3s ease;
+        }
+        .quote-card:hover {
+            transform: translateX(5px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '利18:1-30',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '利',         // 動態注入書卷縮寫，例如：出
+              'note_title': '拒絕世界的模樣，活出屬天的聖潔' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="leading-relaxed">
+
+    <!-- Top Navigation -->
+    <nav class="glass-nav fixed top-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-sm md:text-base font-bold tracking-widest text-white">利18:1-30</div>
+        <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm uppercase tracking-widest font-medium">
+            <a href="#prayer" class="hover:text-[#c4a661] transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-[#c4a661] transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-[#c4a661] transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-[#c4a661] transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner-container pt-16">
+        <img src="image/img_979f1ccc-f7ce-4add-b324-4838d41b7e08.jpg" alt="利未記 聖潔" class="banner-img">
+        <div class="z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-3xl md:text-6xl font-black mb-8 leading-tight tracking-tight text-white drop-shadow-2xl">
+                拒絕世界的模樣<br>
+                <span class="text-[#c4a661]">活出屬天的聖潔</span>
+            </h1>
+            <div class="vibrate-text">
+                <p class="text-lg md:text-2xl font-light italic text-gray-100 max-w-2xl mx-auto leading-relaxed">
+                    「你們要守我的律例典章；人若遵行，就必因此活著。我是耶和華。」
+                </p>
+                <p class="mt-4 text-sm font-bold text-[#c4a661] tracking-widest">（利未記 18:4-5）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="flex items-center mb-8">
+                <span class="section-icon">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21l-8.228-9.96a5 5 0 117.228-6.904 5 5 0 117.228 6.904L12 21z"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight">禱告詞</h2>
+            </div>
+            <div class="bg-slate-800/50 p-8 rounded-3xl border border-white/5 backdrop-blur-sm">
+                <p class="text-lg text-gray-300 leading-loose">
+                    主耶和華，我們感謝祢，因為祢是聖潔的神，並且祢呼召我們成為聖潔的子民。在這個充滿妥協與價值觀扭曲的世代中，求祢賜給我們敏銳的靈，不效法從前埃及的惡俗，也不隨從迦南地的風氣。求祢的真理成為我們腳前的燈、路上的光，使我們在人際關係與身體的界線上，單單敬畏祢。願聖靈賜我們力量，勇敢拒絕世界的模樣，活出屬天子民的尊貴與聖潔。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline">
+            <div class="flex items-center mb-10">
+                <span class="section-icon">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <a href="#part1" class="outline-btn p-5 rounded-2xl flex flex-col items-start">
+                    <span class="text-xs opacity-60 mb-1">Part 1</span>
+                    <span class="font-bold">呼召的根基：拒絕世俗</span>
+                    <span class="text-sm opacity-80 mt-1">利未記 18:1-5</span>
+                </a>
+                <a href="#part2" class="outline-btn p-5 rounded-2xl flex flex-col items-start">
+                    <span class="text-xs opacity-60 mb-1">Part 2</span>
+                    <span class="font-bold">關係的界線：家庭秩序</span>
+                    <span class="text-sm opacity-80 mt-1">利未記 18:6-18</span>
+                </a>
+                <a href="#part3" class="outline-btn p-5 rounded-2xl flex flex-col items-start">
+                    <span class="text-xs opacity-60 mb-1">Part 3</span>
+                    <span class="font-bold">身體的聖潔：拒絕情慾</span>
+                    <span class="text-sm opacity-80 mt-1">利未記 18:19-23</span>
+                </a>
+                <a href="#part4" class="outline-btn p-5 rounded-2xl flex flex-col items-start">
+                    <span class="text-xs opacity-60 mb-1">Part 4</span>
+                    <span class="font-bold">聖潔的結果：承受地土</span>
+                    <span class="text-sm opacity-80 mt-1">利未記 18:24-30</span>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Analysis -->
+            <div class="space-y-20">
+                <!-- Part 1 -->
+                <article id="part1" class="border-t border-white/10 pt-10">
+                    <h3 class="text-2xl font-bold text-[#c4a661] mb-6 italic">1. 呼召的根基：拒絕世俗，認清「我是耶和華」</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl text-sm italic border-l-2 border-[#c4a661]">
+                            「耶和華對摩西說：『你曉諭以色列人說：我是耶和華－你們的神。你們從前住的埃及地，那裡人的行為，你們不可效法，我要領你們到的迦南地，那裡人的行為也不可效法，也不可照他們的惡俗行...』」
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵原文</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li><span class="text-white font-medium">效法 / 照...行 (עָשָׂה - 'asah)</span>：原文帶有「行走、生活模式、習慣」之意。</li>
+                                    <li><span class="text-white font-medium">活著 (חָיָה - chayah)</span>：不僅指肉體，更指在神面前擁有豐盛生命。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-white font-medium">為何我們易在不知覺中效法世界？</span><br>
+                                    文化如空氣，埃及代表「過去的習慣」，迦南代表「未來的誘惑」。若無神的律例更新，必被同化。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800/30 p-5 rounded-xl border border-white/5">
+                            <span class="text-xs font-bold text-gray-500 uppercase">例證/故事</span>
+                            <p class="text-sm mt-2 text-gray-400 italic">比目魚隨環境變色，人類亦然。基督徒的呼召不是做「變色龍」融入，而是做「鹽和光」改變。</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 2 -->
+                <article id="part2" class="border-t border-white/10 pt-10">
+                    <h3 class="text-2xl font-bold text-[#c4a661] mb-6 italic">2. 關係的界線：尊重神所設立的家庭秩序</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl text-sm italic border-l-2 border-[#c4a661]">
+                            「你們都不可親近骨肉之親，露他們的下體。我是耶和華。不可露你母親的下體...」
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵原文</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li><span class="text-white font-medium">骨肉之親 (שְׁאֵר בָּשָׂר)</span>：字面意思是「肉體的血肉」。</li>
+                                    <li><span class="text-white font-medium">露下體 (גָּלָה עֶרְוָה)</span>：希伯來委婉語，專指發生性關係。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-white font-medium">神為何設立嚴格的性界線？</span><br>
+                                    家庭是愛與安全的避風港。當界線被突破，長輩變剝削者，摧毀信任。界線是為了保護弱勢。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800/30 p-5 rounded-xl border border-white/5">
+                            <span class="text-xs font-bold text-gray-500 uppercase">例證/故事</span>
+                            <p class="text-sm mt-2 text-gray-400 italic">懸崖邊的圍欄不是限制自由，而是讓孩子能在安全範圍內盡情奔跑玩耍。</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 3 -->
+                <article id="part3" class="border-t border-white/10 pt-10">
+                    <h3 class="text-2xl font-bold text-[#c4a661] mb-6 italic">3. 身體的聖潔：拒絕情慾的扭曲與偶像的崇拜</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl text-sm italic border-l-2 border-[#c4a661]">
+                            「不可使你的兒女經火歸與摩洛，也不可褻瀆你神的名。我是耶和華。不可與男人苟合...」
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵原文</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li><span class="text-white font-medium">玷污 (טָמֵא)</span>：道德上的不潔，使人無法與神親近。</li>
+                                    <li><span class="text-white font-medium">可憎惡的 (תּוֹעֵבָה)</span>：違背受造本性。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-white font-medium">為何性道德中插入「摩洛」？</span><br>
+                                    扭曲的情慾本質是「偶像崇拜」，為了私慾犧牲別人（甚至下一代）。拜偶像與道德敗壞同源。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 4 -->
+                <article id="part4" class="border-t border-white/10 pt-10">
+                    <h3 class="text-2xl font-bold text-[#c4a661] mb-6 italic">4. 聖潔的結果：承受地土與蒙神保守</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl text-sm italic border-l-2 border-[#c4a661]">
+                            「連地也玷污了，所以我追討那地的罪孽，那地也吐出它的居民...」
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵原文</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li><span class="text-white font-medium">吐出 (קוֹא)</span>：地土被擬人化，無法忍受罪惡累積，將居民排斥。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase tracking-widest text-[#c4a661] font-bold mb-3">關鍵問題</h4>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-white font-medium">道德影響國家存亡嗎？</span><br>
+                                    罪具有傳染性與破壞性。當道德全面崩潰，土地將失去神庇護。沒有所謂「純粹個人的罪」。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="pt-10">
+            <div class="flex items-center mb-10">
+                <span class="section-icon">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight">講章全文</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none text-gray-300 leading-loose space-y-12">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-black text-white mb-2">拒絕世界的模樣，活出屬天的聖潔</h3>
+                    <div class="w-24 h-1 bg-[#c4a661] mx-auto"></div>
+                </div>
+
+                <p class="text-xl">
+                    弟兄姊妹們，平安。當我們翻開利未記第十八章時，我們看見的是一篇非常直白、甚至讓人讀起來有些不舒服的經文。神在這裡極其詳細地列出了各種關於性與關係的禁忌。但今天我們要明白，這段經文的核心不僅僅是一張「不可做」的清單，而是一場<span class="highlight">爭奪我們心思意念的屬靈爭戰</span>。
+                </p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center">
+                        <span class="w-2 h-8 bg-[#c4a661] mr-4"></span>第一段：呼召的根基
+                    </h4>
+                    <p>
+                        在利未記18章開頭，神對以色列人發出了一個極具震撼力的宣告。神說：<span class="highlight">「你們從前住的埃及地，那裡人的行為，你們不可效法，我要領你們到的迦南地，那裡人的行為也不可效法…我是耶和華－你們的神。」</span>
+                    </p>
+                    <p>
+                        這難道不是我們今天的寫照嗎？我們生活在一個被世俗文化包圍的時代。社會告訴我們：「只要我喜歡，有什麼不可以？」但神呼召我們，不要做一隻在溫水裡被煮熟的青蛙。<span class="highlight">「你們要守我的律例典章；人若遵行，就必因此活著。」</span>真正的生命，不是來自迎合世界的潮流，而是來自順服創造我們的主。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center">
+                        <span class="w-2 h-8 bg-[#c4a661] mr-4"></span>第二段：關係的界線
+                    </h4>
+                    <p>
+                        神在第6到18節列出了一長串不可跨越的親屬關係界線。為什麼？因為<span class="highlight">家庭是神所設立的神聖避風港</span>。當長輩或親屬跨越了這條界線，原本應該給予保護的愛，就變成了極具破壞性的剝削與傷害。
+                    </p>
+                    <p>
+                        弟兄姊妹，神所設立的「界線」從來不是為了剝奪我們的快樂，而是為了保護我們。當我們尊重神在人際關係、婚姻中設立的界線時，我們才能享受最純粹、最沒有恐懼的愛。
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center">
+                        <span class="w-2 h-8 bg-[#c4a661] mr-4"></span>第三段：身體的聖潔
+                    </h4>
+                    <p>
+                        特別值得注意的是第21節：<span class="highlight">「不可使你的兒女經火歸與摩洛，也不可褻瀆你神的名。」</span>這揭示了一個可怕的真相：<span class="highlight">扭曲的情慾，本質上就是一場偶像崇拜。</span>
+                    </p>
+                    <p>
+                        當我們為了滿足一時的快感，不惜犧牲婚姻的誓言、傷害配偶的心、破壞兒女的未來時，我們就是在把我們的家庭獻給了現代的「摩洛」。神要我們持守身體的聖潔，因為我們的身體是聖靈的殿。
+                    </p>
+                </div>
+
+                <div class="space-y-6 border-b border-white/10 pb-16">
+                    <h4 class="text-2xl font-bold text-white flex items-center">
+                        <span class="w-2 h-8 bg-[#c4a661] mr-4"></span>第四段：聖潔的結果
+                    </h4>
+                    <p>
+                        最後，神給出了一個極其嚴肅的警告。第25節說：<span class="highlight">「連地也玷污了，所以我追討那地的罪孽，那地也吐出它的居民。」</span>
+                    </p>
+                    <p>
+                        個人的罪，從來都不是「我自己的事」。我們在暗處的妥協，累積起來會成為敗壞整個社會與國家的毒藥。今天，我們蒙召在這塊土地上生活，我們有責任以聖潔的生命，成為這塊土地的防腐劑。求神幫助我們，勇敢拒絕世界的模樣，活出屬天的聖潔！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="flex items-center">
+                    <span class="section-icon">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    </span>
+                    <h2 class="text-2xl font-bold">應用方向</h2>
+                </div>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-start"><span class="text-[#c4a661] mr-2">✦</span> 檢視媒體、影視與網路文化對我們觀念的形塑。</li>
+                    <li class="flex items-start"><span class="text-[#c4a661] mr-2">✦</span> 在職場、交友及家庭中重新建立健康界線。</li>
+                    <li class="flex items-start"><span class="text-[#c4a661] mr-2">✦</span> 將身體視為聖殿，在婚姻盟約中享受性與親密。</li>
+                    <li class="flex items-start"><span class="text-[#c4a661] mr-2">✦</span> 站在破口上，為國家與社會的罪惡悔改代求。</li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <div class="flex items-center">
+                    <span class="section-icon">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </span>
+                    <h2 class="text-2xl font-bold">回應實踐</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#c4a661]/50 transition-colors">
+                        <h5 class="font-bold text-white text-sm mb-1">媒體守望</h5>
+                        <p class="text-sm text-gray-400">進行「媒體斷捨離」，過濾不潔內容。</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#c4a661]/50 transition-colors">
+                        <h5 class="font-bold text-white text-sm mb-1">守望關係</h5>
+                        <p class="text-sm text-gray-400">與屬靈夥伴建立 Accountablity，彼此代禱。</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10 hover:border-[#c4a661]/50 transition-colors">
+                        <h5 class="font-bold text-white text-sm mb-1">家庭祝福</h5>
+                        <p class="text-sm text-gray-400">為主動向家人表達感恩，建立禱告祭壇。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="pt-10">
+            <div class="flex items-center mb-10">
+                <span class="section-icon">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </span>
+                <h2 class="text-3xl font-bold tracking-tight">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「我們若與世界妥協，世界就不會再敵擋我們；但同時，世界也不會再尊重我們。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「真自由不是想做什麼就做什麼，而是有能力做應該做的事。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「人心就是一個不斷製造偶像的工廠。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「罪惡不僅僅是打破了上帝的規則，它更是破壞了上帝所設立的平安。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 5 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「聖潔不是一連串的『不可』，而是對神那充滿愛的『是』。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 慕安德烈 (Andrew Murray)</p>
+                </div>
+                <!-- Quote 6 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「順服神是我們對祂慈愛最自然的回應。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <!-- Quote 7 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「不要為你的罪找藉口，要承認它。因為上帝不赦免藉口，祂只赦免罪。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <!-- Quote 8 -->
+                <div class="quote-card p-6 rounded-r-xl">
+                    <p class="text-gray-300 italic mb-3">「如果你對罪惡妥協，你就是對魔鬼發出邀請函。」</p>
+                    <p class="text-right text-[#c4a661] text-xs font-bold">— 查爾斯·史丹利 (Charles Stanley)</p>
+                </div>
+            </div>
+
+            <div class="mt-20 py-8 border-t border-white/5 text-center">
+                <p class="text-gray-500 text-sm">
+                    ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scroll Top Button -->
+    <div id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg>
+    </div>
+
+    <script>
+        // Scroll Top visibility
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const navHeight = 64; // Adjust based on your nav height
+                    window.scrollTo({
+                        top: targetElement.offsetTop - navHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

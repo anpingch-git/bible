@@ -346,7 +346,9 @@
                                const data = JSON.parse('${trackingData}');
                                gtag('event', 'view_chapter', {
                                    'chapter_name': data.chapter,
-                                   'book_abbr': data.chapter.substring(0, 1),
+                                   //'book_abbr': data.chapter.substring(0, 1),
+								   // 修正後 (自動抓取開頭的所有中文字)：
+									'book_abbr': data.chapter.match(/^[^\d\s]+/)[0],
                                    'note_title': data.title
                                });
                            ">

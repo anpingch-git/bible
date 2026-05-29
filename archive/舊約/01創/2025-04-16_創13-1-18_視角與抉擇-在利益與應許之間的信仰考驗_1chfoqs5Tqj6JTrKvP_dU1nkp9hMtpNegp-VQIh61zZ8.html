@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創13:1-18: 視角與抉擇：在利益與應許之間的信仰考驗</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9be',
+                            200: '#fdf18d',
+                            300: '#fbe44f',
+                            400: '#f9d623',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#141417',
+                            700: '#1f1f23',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'Outfit', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(31, 31, 35, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-gradient {
+            background: linear-gradient(to bottom, rgba(10, 10, 12, 0) 0%, rgba(10, 10, 12, 1) 95%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+        }
+        .section-card {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .outline-btn {
+            background: linear-gradient(135deg, #1f1f23 0%, #141417 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .outline-btn:hover {
+            border-color: #f9d623;
+            background: rgba(249, 214, 35, 0.05);
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: #eab308;
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(234, 179, 8, 0.4);
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        .back-to-top:hover {
+            transform: scale(1.1);
+            background: #f9d623;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Top Banner -->
+    <header class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='https://opal.google/board/blobs/4b4e352e-798d-4690-bc51-c9ec3eb22f54' alt='視角與抉擇' class="w-full h-full object-cover opacity-60 scale-105" />
+            <div class="absolute inset-0 banner-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+            <span class="inline-block px-4 py-1 mb-6 text-sm font-semibold tracking-widest uppercase bg-gold-600 text-black rounded-full">Genesis 創世記 13:1-18</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-black mb-8 leading-tight text-glow">
+                視角與抉擇：<br/>在利益與應許之間的信仰考驗
+            </h1>
+            <div class="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Sticky Toolbar -->
+    <nav class="sticky-nav glass py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="text-gold-400 font-bold tracking-tighter">創13:1-18</span>
+            </div>
+            <div class="flex items-center gap-6 text-sm md:text-base font-medium overflow-x-auto whitespace-nowrap">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden border-l-4 border-l-gold-500">
+                <div class="flex items-center gap-3 mb-8">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM12 7v5l3 3"></path></svg>
+                    <h2 class="text-3xl font-serif font-bold text-white">禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl text-gray-300 leading-relaxed italic font-light">
+                    「主啊，我們來到祢面前，承認我們常像羅得一樣，被眼前『滋潤的平原』所吸引，在利益與安逸的誘惑中迷失了屬靈的方向。求祢賜給我們亞伯蘭的信心，使我們即使面對衝突與看似吃虧的處境，仍能看重與人的和睦，並深信祢的應許才是我們真正的產業。求聖靈開啟我們屬靈的眼目，讓我們不憑眼見，乃憑信心生活，勇敢地築起祭壇，時刻求告祢的名。奉主耶穌基督的名求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <h2 class="text-3xl font-serif font-bold text-white">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="outline-btn p-6 rounded-2xl group">
+                    <span class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 block">Part 01</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">重返起點：恩典中的回轉與築壇</h3>
+                    <p class="text-gray-500 text-sm mt-2">創 13:1-4</p>
+                </a>
+                <a href="#part2" class="outline-btn p-6 rounded-2xl group">
+                    <span class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 block">Part 02</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">利益衝突：眼目所見與屬血氣的抉擇</h3>
+                    <p class="text-gray-500 text-sm mt-2">創 13:5-13</p>
+                </a>
+                <a href="#part3" class="outline-btn p-6 rounded-2xl group">
+                    <span class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 block">Part 03</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold-400 transition-colors">應許之光：神所賜的永恆基業</h3>
+                    <p class="text-gray-500 text-sm mt-2">創 13:14-18</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Analysis Sections -->
+        <div class="space-y-16">
+            <!-- Section 1 -->
+            <article id="part1" class="scroll-mt-24">
+                <div class="bg-dark-800 p-8 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3">
+                        <span class="bg-gold-500 text-black px-3 py-1 rounded text-lg font-black">1</span>
+                        重返起點：恩典中的回轉與築壇
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-dark-900/50 p-6 rounded-xl border-l-2 border-gold-700">
+                            <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter italic">引用經文</h4>
+                            <p class="text-gray-400 italic mb-4 leading-relaxed">
+                                (創 13:1) 亞伯蘭帶著他的妻子與羅得，並一切所有的，都從埃及上南地去。<br>
+                                (創 13:2) 亞伯蘭的金、銀、牲畜極多。<br>
+                                (創 13:3) 他從南地漸漸往伯特利去，到了伯特利和艾的中間，就是從前支搭帳棚的地方，<br>
+                                (創 13:4) 也是他起先築壇的地方；他又在那裡求告耶和華的名。
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">關鍵原文</h4>
+                                <div class="bg-dark-700/50 p-5 rounded-xl">
+                                    <p class="text-xl font-bold mb-1">求告 (קָרָא - qara)</p>
+                                    <p class="text-gray-400 text-sm">呼叫、宣告、敬拜。這不僅是個人的祈禱，更是在公眾面前宣告耶和華是他的神。</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">核心問答</h4>
+                                <p class="text-white font-medium mb-2">Q: 當我們在信仰道路上軟弱跌倒，該如何重新出發？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">屬靈的復興必須回到我們最初遇見神、向神委身的地方。失敗後的豐盛不能取代與神的關係。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/5 pt-8">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white/5 p-3 rounded-full">💡</div>
+                                <div>
+                                    <h4 class="text-gold-500 font-bold mb-2">導航系統的「重新計算路線」</h4>
+                                    <p class="text-gray-400 leading-relaxed">當我們走錯路時，GPS會引導我們回到主幹道上。埃及的失敗不是終點，神總是在伯特利等待我們回轉。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <blockquote class="bg-gold-500/5 border-l-4 border-gold-500 p-6 rounded-r-xl italic">
+                            <p class="text-white mb-2">「福音的本質是：我們比自己所敢相信的更加罪惡和敗壞；但同時，我們在耶穌基督裡，也比自己所敢期望的更被愛和接納。」</p>
+                            <cite class="text-gold-400 text-sm not-italic font-bold">— 提摩太·凱勒 (Timothy Keller)</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 2 -->
+            <article id="part2" class="scroll-mt-24">
+                <div class="bg-dark-800 p-8 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3">
+                        <span class="bg-gold-500 text-black px-3 py-1 rounded text-lg font-black">2</span>
+                        利益衝突：眼目所見與屬血氣的抉擇
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-dark-900/50 p-6 rounded-xl border-l-2 border-gold-700">
+                            <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter italic">引用經文</h4>
+                            <p class="text-gray-400 italic text-sm leading-relaxed">
+                                (創 13:8) 亞伯蘭就對羅得說：「你我不可相爭...因為我們是骨肉。 (創 13:10) 羅得舉目看見約旦河的全平原...滋潤的...如同耶和華的園子... (創 13:12) 羅得住在平原的城邑，漸漸挪移帳棚，直到所多瑪。
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">關鍵原文</h4>
+                                <div class="bg-dark-700/50 p-5 rounded-xl space-y-4">
+                                    <div>
+                                        <p class="text-xl font-bold mb-1">舉目 (נָשָׂא עַיִן - nasa ayin)</p>
+                                        <p class="text-gray-400 text-sm">代表人的慾望與價值的判斷。</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-xl font-bold mb-1">滋潤 (מַשְׁקֶה - mashqeh)</p>
+                                        <p class="text-gray-400 text-sm">代表利益、安逸與不需要單單仰望神。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">核心問答</h4>
+                                <p class="text-white font-medium mb-2">Q: 面對利益衝突時，我們做決定的標準是「眼見的滋潤」還是「神的應許」？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">亞伯蘭選擇和睦，因為他知道供應他的是神。羅得選擇眼前的肥沃，卻忽略了屬靈環境的「罪大惡極」。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/5 pt-8">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white/5 p-3 rounded-full">🐵</div>
+                                <div>
+                                    <h4 class="text-gold-500 font-bold mb-2">捕猴子的陷阱</h4>
+                                    <p class="text-gray-400 leading-relaxed">猴子抓住椰子裡的米不肯放手，最終被捕。羅得抓住平原卻失去了自由，而亞伯蘭選擇了「放手」。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <blockquote class="bg-gold-500/5 border-l-4 border-gold-500 p-6 rounded-r-xl italic">
+                            <p class="text-white mb-2">「這個世界正在滅亡，不是因為它缺少美好的事物，而是因為它把美好的事物當作了神。」</p>
+                            <cite class="text-gold-400 text-sm not-italic font-bold">— 陶恕 (A.W. Tozer)</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 3 -->
+            <article id="part3" class="scroll-mt-24">
+                <div class="bg-dark-800 p-8 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3">
+                        <span class="bg-gold-500 text-black px-3 py-1 rounded text-lg font-black">3</span>
+                        應許之光：神所賜的永恆基業
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-dark-900/50 p-6 rounded-xl border-l-2 border-gold-700">
+                            <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter italic">引用經文</h4>
+                            <p class="text-gray-400 italic leading-relaxed">
+                                (創 13:14) ...「從你所在的地方，你舉目向東西南北觀看；凡你所看見的一切地，我都要賜給你和你的後裔，直到永遠。... (創 13:17) 你起來，縱橫走遍這地，因為我必把這地賜給你。」
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">關鍵原文</h4>
+                                <div class="bg-dark-700/50 p-5 rounded-xl">
+                                    <p class="text-xl font-bold mb-1">縱橫走遍 (הָלַך - halakh)</p>
+                                    <p class="text-gray-400 text-sm">行走、來回巡視。象徵取得所有權，憑信心去經歷並宣告神的應許。</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 text-sm font-bold mb-4 uppercase tracking-tighter">核心問答</h4>
+                                <p class="text-white font-medium mb-2">Q: 當我們為了信仰放棄眼前的利益時，神會如何回應我們？</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">神會親自對我們說話。當我們為神放棄短暫的利益時，神必親自成為我們永恆的獎賞。</p>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-white/5 pt-8">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white/5 p-3 rounded-full">🛣️</div>
+                                <div>
+                                    <h4 class="text-gold-500 font-bold mb-2">荒地與高速公路</h4>
+                                    <p class="text-gray-400 leading-relaxed">亞伯蘭看重的是「神未來的藍圖」，而不是「眼前的景象」。荒山也能成為價值連城的商業樞紐。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <blockquote class="bg-gold-500/5 border-l-4 border-gold-500 p-6 rounded-r-xl italic">
+                            <p class="text-white mb-2">「信心是在黑暗中看見黎明，並在尚未看見結果之前，就已經開始讚美神。」</p>
+                            <cite class="text-gold-400 text-sm not-italic font-bold">— 司布真 (Charles Spurgeon)</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                <h2 class="text-3xl font-serif font-bold text-white">講章全文</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-gold max-w-none space-y-12 text-gray-300 leading-loose text-lg">
+                <div class="text-center pb-8">
+                    <h3 class="text-3xl md:text-4xl font-serif font-black text-white mb-4">【創13:1-18: 視角與抉擇：在利益與應許之間的信仰考驗】</h3>
+                </div>
+
+                <p>弟兄姊妹們，今天我們要從創世記第十三章來看一個關乎「視角與抉擇」的故事。人生充滿了選擇，而我們做選擇的標準，往往反映了我們內心真正信靠的是什麼。</p>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-400 mb-6">一、 重返起點：恩典中的回轉與築壇</h4>
+                    <p class="mb-4">在創世記十二章，亞伯蘭因為饑荒下到埃及，甚至為了自保而撒謊，差點失去了妻子。但神以恩典介入，將他帶了出來。今天經文一開始：<span class="text-white font-bold">「他從南地漸漸往伯特利去...也是他起先築壇的地方；他又在那裡求告耶和華的名。」(創 13:3-4)</span></p>
+                    <p>這是一幅美麗的「回轉」圖畫。亞伯蘭帶著極多的財富離開埃及，但他沒有因為物質的豐富而忘記神。相反地，他知道自己需要回到起點。就像我們開車迷路時，導航會說「重新計算路線」，神的恩典也總是給我們重新出發的機會。提摩太·凱勒曾說：「我們在耶穌基督裡，比自己所敢期望的更被愛和接納。」當我們在世俗（埃及）中跌倒時，<span class="text-gold-300 border-b-2 border-gold-700 pb-1">真正的復興是回到「伯特利」，重新築起那座敬拜的祭壇，再次求告神的主權。</span></p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-400 mb-6">二、 利益衝突：眼目所見與屬血氣的抉擇</h4>
+                    <p class="mb-4">然而，財富的增加帶來了新的考驗。亞伯蘭和姪子羅得的牧人因為土地不夠而相爭。面對衝突，亞伯蘭展現了屬靈的成熟：<span class="text-white font-bold">「你我不可相爭...遍地不都在你眼前嗎？請你離開我：你向左，我就向右；你向右，我就向左。」(創 13:8-9)</span> 亞伯蘭放棄了長輩的優先權，因為他看重和睦，更因為他知道供應他的是神。</p>
+                    <p>反觀羅得：<span class="text-white font-bold">「羅得舉目看見約旦河的全平原...都是滋潤的...於是羅得選擇約旦河的全平原，往東遷移...漸漸挪移帳棚，直到所多瑪。」(創 13:10-12)</span> 羅得「舉目」看見的，是表面的利益、肥沃的土地和安逸的生活。他以世俗的標準做了選擇，卻無視所多瑪在神面前「罪大惡極」的事實。多少時候，我們找工作、買房子、做決定，不也是單看「薪水多不多、輕不輕鬆」，卻任憑自己的屬靈生命「漸漸挪移」到危險的境地嗎？陶恕提醒我們：<span class="text-gold-300 border-b-2 border-gold-700 pb-1">「這個世界正在滅亡...是因為它把美好的事物當作了神。」</span>求主幫助我們，不要為了抓住眼前的花生，而成為被世界困住的猴子。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-gold-400 mb-6">三、 應許之光：神所賜的永恆基業</h4>
+                    <p class="mb-4">當羅得把最好的地都挑走後，亞伯蘭似乎成了輸家，站在貧瘠的山地。但就在他最孤獨、看似失去一切的時候，神說話了：<span class="text-white font-bold">「羅得離別亞伯蘭以後，耶和華對亞伯蘭說：『從你所在的地方，你舉目向東西南北觀看；凡你所看見的一切地，我都要賜給你和你的後裔，直到永遠。』」(創 13:14-15)</span></p>
+                    <p>神也要亞伯蘭「舉目」，但這一次不是看世界的利益，而是看神的應許。羅得憑血氣只得到一塊平原，神卻將「東西南北」全都賜給了亞伯蘭！神更吩咐他：<span class="text-white font-bold">「你起來，縱橫走遍這地」(創 13:17)</span>。這是一個信心的行動，神要他用腳步去宣告應許的真實。司布真說：<span class="text-gold-300 border-b-2 border-gold-700 pb-1">「信心是在黑暗中看見黎明，並在尚未看見結果之前，就已經開始讚美神。」</span></p>
+                    <p>弟兄姊妹，當你為了順服神、為了愛與和睦而選擇「吃虧」時，不要懼怕。因為失去那些屬世的滋潤，往往是為了騰出雙手，來領受神那永恆的應許。讓我們回到祭壇前，憑信心舉目，因為神自己，就是我們最豐盛的產業！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 text-gold-500 uppercase tracking-widest">核心關鍵字</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-lg border border-white/10">回轉 Return</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-lg border border-white/10">抉擇 Choice</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-lg border border-white/10">應許 Promise</span>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 text-gold-500 uppercase tracking-widest">應用與實踐</h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-gold-500 text-black flex-shrink-0 flex items-center justify-center rounded-full text-xs font-bold mt-1">1</span>
+                        <span><strong class="text-white">重築祭壇：</strong>建立每日個人靈修時光。</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-gold-500 text-black flex-shrink-0 flex items-center justify-center rounded-full text-xs font-bold mt-1">2</span>
+                        <span><strong class="text-white">主動退讓：</strong>在衝突中練習交託權利。</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-gold-500 text-black flex-shrink-0 flex items-center justify-center rounded-full text-xs font-bold mt-1">3</span>
+                        <span><strong class="text-white">屬靈散步：</strong>為社區行走禱告宣告祝福。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-10">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                <h2 class="text-3xl font-serif font-bold text-white">名言佳句</h2>
+            </div>
+            <div class="columns-1 md:columns-2 gap-8 space-y-8">
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「信心不是對於神是否存在的一種猜測，而是對於神對我們之愛的堅定且確切的認識。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「恩典是白白得來的，但它卻讓人付上了一切。因為它賜給你生命，卻要求你釘死自己的老我。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「廉價的恩典是我們教會的死敵。我們今天所爭戰的，是重價的恩典。重價的恩典是呼召我們跟從耶穌基督。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「如果神是我們人生的全部，那麼我們失去任何東西，都不會影響我們的富足；因為在神裡面，我們已經擁有了萬有。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 陶恕 (A.W. Tozer)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「在這個速成的時代，基督徒的生命卻是一場在同一方向上的長久順服。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 畢德生 (Eugene Peterson)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「神在黑夜中所賜的星光，往往比白晝的太陽更能教導我們認識祂的信實。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 司布真 (Charles Spurgeon)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「偶像就是任何比神更根本的事物；任何取代了神，成為你的快樂、人生意義和身分認同的核心事物。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「十字架是神恩典的極致展現，在這裡，神不只是赦免我們，祂更親自承擔了我們的罪債。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 約翰·史托德 (John Stott)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「屬靈的真理若只停留在理智的認知，就毫無價值；它必須深深觸動我們的情感，改變我們的生命。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</cite>
+                </div>
+                <div class="break-inside-avoid glass p-6 rounded-2xl italic border-l-2 border-gold-500">
+                    <p class="text-gray-200 mb-3">「人心是一座製造偶像的工廠，我們不斷地用神以外的事物來填補內心的空缺，直到我們真正安息在祂裡面。」</p>
+                    <cite class="text-gold-500 font-bold not-italic text-sm">— 約翰·加爾文 (John Calvin)</cite>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-12 border-t border-white/5 text-center">
+            <p class="text-gray-600 text-sm italic">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <button onclick="document.getElementById('prayer').scrollIntoView({behavior: 'smooth'})" class="back-to-top" title="回到起點">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+</body>
+</html>

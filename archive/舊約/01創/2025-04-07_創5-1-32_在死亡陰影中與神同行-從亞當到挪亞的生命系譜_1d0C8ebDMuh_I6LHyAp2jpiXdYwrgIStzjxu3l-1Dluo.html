@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創5:1-32:在死亡陰影中與神同行：從亞當到挪亞的生命系譜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffcf0',
+                            400: '#eab308',
+                            500: '#ca8a04',
+                            600: '#a16207',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#16161a',
+                            700: '#23232a',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Noto Serif TC', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 26, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: linear-gradient(145deg, #1a1a20 0%, #111116 100%);
+            border-left: 4px solid #ca8a04;
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #ca8a04;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .banner-overlay {
+            background: linear-gradient(to bottom, rgba(10,10,12,0.4) 0%, rgba(10,10,12,1) 100%);
+        }
+        .btn-outline {
+            border: 1px solid rgba(202, 138, 4, 0.5);
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background: #ca8a04;
+            color: white;
+            box-shadow: 0 0 20px rgba(202, 138, 4, 0.3);
+        }
+        .floating-arrow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- Sticky Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3 sm:px-8">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="text-gold-500 font-display font-extrabold text-lg sm:text-xl tracking-tight">創5:1-32</div>
+            <div class="flex gap-4 sm:gap-8 text-sm sm:text-base font-medium">
+                <a href="#prayer" class="nav-link text-gray-300 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="relative h-[60vh] sm:h-[80vh] flex items-end overflow-hidden">
+        <img src='https://opal.google/board/blobs/bc5d0873-cd71-4acc-b15a-6456a0dad8c2' alt='創世記第五章生命系譜' class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 banner-overlay"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-6 pb-12 sm:pb-24 w-full">
+            <h2 class="text-gold-400 font-display font-semibold tracking-widest text-lg sm:text-2xl mb-4 uppercase">創世記 5:1-32</h2>
+            <h1 class="text-4xl sm:text-7xl font-display font-black text-white leading-tight mb-6">
+                在死亡陰影中<br/><span class="text-gradient">與神同行</span>
+            </h1>
+            <p class="text-gray-300 text-lg sm:text-xl max-w-2xl font-light">
+                從亞當到挪亞的生命系譜：在勞苦與咒詛的循環中，尋見永恆安息的曙光。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A10.003 10.003 0 004.204 12c0-2.391.839-4.588 2.236-6.307m8.757 14.826A9.836 9.836 0 0112 21.75c-2.776 0-5.323-1.15-7.143-3.007m14.286-6.243a8.958 8.958 0 01-2.236 6.307M12 2.25c.34 0 .67.033 1 .096m0 0a10.003 10.003 0 018.757 14.826m-9.757-14.922a10.002 10.002 0 018.757 14.826M12 2.25l-.054.09A10.003 10.003 0 0012 2.25z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-display font-bold">開會禱告</h3>
+            </div>
+            <div class="glass p-8 sm:p-12 rounded-3xl border-l-8 border-gold-500 italic text-xl sm:text-2xl leading-relaxed text-gray-200">
+                「主啊，創造生命的主宰，我們來到祢面前。在這段看似枯燥的家譜中，我們看見了人類犯罪後無可避免的結局——死亡的陰影籠罩著每一個世代。但我們也看見了祢不變的恩典，看見了以諾與祢同行的美好，看見了在咒詛之地中對挪亞所存的安慰與盼望。求祢的聖靈今天開啟我們的心，讓我們在短暫必朽的年日中，學會算計自己的日子，定意與祢同行，並在耶穌基督裡找到真正的安息與拯救。奉主耶穌基督的名求，阿們。」
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h3 class="text-3xl font-display font-bold">分段大綱</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <a href="#part1" class="btn-outline p-6 rounded-2xl flex flex-col items-start gap-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-500 opacity-80">第一段 | 創 5:1-5</span>
+                    <span class="text-xl font-bold">失落與傳承：帶著神形象的必死之人</span>
+                </a>
+                <a href="#part2" class="btn-outline p-6 rounded-2xl flex flex-col items-start gap-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-500 opacity-80">第二段 | 創 5:6-20</span>
+                    <span class="text-xl font-bold">死亡的喪鐘：罪惡咒詛下的無情節奏</span>
+                </a>
+                <a href="#part3" class="btn-outline p-6 rounded-2xl flex flex-col items-start gap-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-500 opacity-80">第三段 | 創 5:21-24</span>
+                    <span class="text-xl font-bold">突破的曙光：在平凡歲月中與神同行</span>
+                </a>
+                <a href="#part4" class="btn-outline p-6 rounded-2xl flex flex-col items-start gap-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-500 opacity-80">第四段 | 創 5:25-32</span>
+                    <span class="text-xl font-bold">最終的安慰：在勞苦愁煩中仰望安息</span>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Cards -->
+            <div class="space-y-16">
+                <!-- Part 1 -->
+                <div id="part1" class="section-card p-8 sm:p-12 rounded-3xl scroll-mt-24">
+                    <h4 class="text-2xl sm:text-3xl font-bold text-white mb-6">第一段：失落與傳承——帶著神形象的必死之人</h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 space-y-6">
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>引用經文</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">亞當的後代記在下面... 亞當活到一百三十歲，生了一個兒子，形像樣式和自己相似... 共活了九百三十歲就死了。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16"></path></svg>關鍵字</h5>
+                                <p class="text-gray-200">樣式 (Demuth / דְּמוּת) 與 形象 (Tselem / צֶלֶם)</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bg-dark-900/50 p-6 rounded-xl border border-white/5">
+                                <h5 class="text-white font-bold mb-3 italic">Q: 為什麼這份家譜要從「神的形象」開始談起？</h5>
+                                <p class="text-gray-300">這提醒我們人類尊貴的起源。即使人因犯罪墮落，面臨死亡，人依然帶有神的形象。罪惡扭曲了這形象，但並未完全消滅。這為後續神要施行救贖、恢復人在基督裡（神本體的真像）的形象埋下伏筆。</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">視覺例證</h6>
+                                    <p class="text-sm text-gray-300">一面曾經完美無瑕、如今卻佈滿裂痕的古董鏡子。雖然碎裂，但仍能隱約反射出光芒。</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">牧者佳句</h6>
+                                    <p class="text-sm text-gray-100 font-bold">「我們雖然可憐地墮落了，但在我們靈魂的廢墟中，仍能看見神起初榮耀形象的殘跡。」——加爾文</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="section-card p-8 sm:p-12 rounded-3xl scroll-mt-24">
+                    <h4 class="text-2xl sm:text-3xl font-bold text-white mb-6">第二段：死亡的喪鐘——罪惡咒詛下的無情節奏</h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 space-y-6">
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>引用經文</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">塞特共活了九百一十二歲就死了。以挪士共活了九百零五歲就死了... 雅列共活了九百六十二歲就死了。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16"></path></svg>關鍵字</h5>
+                                <p class="text-gray-200">就死了 (Vayamath / וַיָּמֹת)</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bg-dark-900/50 p-6 rounded-xl border border-white/5">
+                                <h5 class="text-white font-bold mb-3 italic">Q: 為什麼聖經要不厭其煩地重複「就死了」這三個字？</h5>
+                                <p class="text-gray-300">這是對創 2:17 最真實的驗證。不管活了多麼漫長的歲月，有過多少豐功偉業，死亡是全人類無可避免的終局。它打破了人對永恆的虛假幻想，逼迫人正視罪的工價。</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">視覺例證</h6>
+                                    <p class="text-sm text-gray-300">就像心電圖儀器，無論波浪起伏多麼劇烈、持續多長，最終都會變成一條直線，伴隨著長長的「滴——」聲。</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">牧者佳句</h6>
+                                    <p class="text-sm text-gray-100 font-bold">「死亡不是一個終點，它是罪惡在人生命中掌權的最終展示。」——馬丁·路德</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="section-card p-8 sm:p-12 rounded-3xl scroll-mt-24">
+                    <h4 class="text-2xl sm:text-3xl font-bold text-white mb-6">第三段：突破的曙光——在平凡歲月中與神同行</h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 space-y-6">
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>引用經文</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">以諾活到六十五歲，生了瑪土撒拉... 與神同行三百年... 神將他取去，他就不在世了。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16"></path></svg>關鍵字</h5>
+                                <p class="text-gray-200">與神同行 (Hithhallekh / הִתְהַלֵּךְ)</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bg-dark-900/50 p-6 rounded-xl border border-white/5">
+                                <h5 class="text-white font-bold mb-3 italic">Q: 「與神同行」是一種脫離現實的隱居生活嗎？</h5>
+                                <p class="text-gray-300">絕對不是。經文特別記載以諾「並且生兒養女」。他是在換尿布、耕種、面對生活瑣事的平凡歲月中，持續與神保持親密的團契。這表明真正的屬靈生命是在日常煙火中活出對神的順服。</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">視覺例證</h6>
+                                    <p class="text-sm text-gray-300">勞倫斯弟兄（Brother Lawrence）在修道院廚房裡洗碗時，他的心依然與神牽手散步。</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">牧者佳句</h6>
+                                    <p class="text-sm text-gray-100 font-bold">「兩個人若不同心，豈能同行呢？」——司布真</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 4 -->
+                <div id="part4" class="section-card p-8 sm:p-12 rounded-3xl scroll-mt-24">
+                    <h4 class="text-2xl sm:text-3xl font-bold text-white mb-6">第四段：最終的安慰——在勞苦愁煩中仰望安息</h4>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-4 space-y-6">
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>引用經文</h5>
+                                <p class="text-gray-400 text-sm leading-relaxed">這個兒子必為我們的操作和手中的勞苦安慰我們... 挪亞五百歲生了閃、含、雅弗。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-gold-500 font-bold mb-2 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16"></path></svg>關鍵字</h5>
+                                <p class="text-gray-200">安慰/安息 (Nacham / נָחַם ; Nuach / נוּחַ)</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <div class="bg-dark-900/50 p-6 rounded-xl border border-white/5">
+                                <h5 class="text-white font-bold mb-3 italic">Q: 拉麥的嘆息反映了什麼樣的世界觀？挪亞真的能帶來最終的安慰嗎？</h5>
+                                <p class="text-gray-300">拉麥深切體會到罪帶來的「咒詛」與「勞苦」。挪亞在洪水審判中為人類帶來了保存，但他無法除去罪根。這預表了我們需要一位「更大的挪亞」——耶穌基督，唯有祂能真正承擔咒詛，賜下永遠的安息。</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">視覺例證</h6>
+                                    <p class="text-sm text-gray-300">就像在烈日下背負重物跋涉的旅人，渴望看見一個可以歇息的涼亭。基督才是那座永遠的避難所。</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-gold-600/5 border border-gold-600/20">
+                                    <h6 class="text-gold-500 text-xs font-black mb-2 tracking-widest uppercase">牧者佳句</h6>
+                                    <p class="text-sm text-gray-100 font-bold">「挪亞只是暫時的救生艇，基督才是那不沉的方舟。」——提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Manuscript -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-display font-bold">講章文稿</h3>
+            </div>
+
+            <article class="prose prose-invert prose-gold max-w-none space-y-8 text-lg leading-relaxed text-gray-300">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">在死亡陰影中與神同行</h2>
+                    <div class="w-24 h-1 bg-gold-500 mx-auto"></div>
+                </div>
+
+                <p>弟兄姐妹們，當我們翻開創世記第五章，面對長長的人名和數字時，我們常會覺得這不過是一份枯燥的家譜。但如果我們仔細聆聽，這段經文其實是一首交響樂。一開始，它是沉重的、悲傷的，但中途卻出現了明亮的變奏，最後把我們引向了榮耀的盼望。今天，我們要從這段經文中看見：<span class="text-white font-bold border-b-2 border-gold-600">在死亡陰影中，我們如何與神同行。</span></p>
+
+                <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-4">第一段：失落與傳承——帶著神形象的必死之人</h4>
+                <p>聖經一開始提醒我們：<span class="text-white font-bold">「當神造人的日子，是照著自己的樣式造的」</span>(創5:1)。人類擁有無比尊貴的起源，我們本是為了反映神的榮耀而受造的。但到了第3節，經文說亞當生了一個兒子，<span class="text-white font-bold">「形像樣式和自己相似」</span>。這是一個悲傷的轉折。亞當墮落了，他不僅傳承了生命，也傳承了罪的裂痕。我們就像一面破碎的古董鏡子，雖然碎裂，但依然帶著造物主最初的心意。</p>
+
+                <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-4">第二段：死亡的喪鐘——罪惡咒詛下的無情節奏</h4>
+                <div class="bg-dark-800 p-6 rounded-2xl border-r-4 border-gold-600 my-8">
+                    <p class="italic text-xl">「活了……生了……又活了……就死了」</p>
+                </div>
+                <p><span class="text-white font-bold">「就死了……就死了……」</span>這三個字在第五章出現了八次，像是一座古老教堂裡的喪鐘，不斷地敲響。神曾對亞當說：「你吃的日子必定死」。魔鬼說：「你們不一定死」。創世記第五章給出了最終的答案。弟兄姐妹，如果你的人生意義只停留在「生兒養女、賺錢退休」，那麼死亡將剝奪你的一切。</p>
+
+                <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-4">第三段：突破的曙光——在平凡歲月中與神同行</h4>
+                <p>就在這無盡的死亡名單中，出現了一道耀眼的曙光！<span class="text-white font-bold">「以諾與神同行，神將他取去，他就不在世了。」</span>(創5:24) 以諾打破了「就死了」的魔咒！他是怎麼做到的？經文說他<span class="text-white font-bold">「與神同行」</span>。請注意，以諾不是躲在深山裡修煉，他是在這三百年間「並且生兒養女」。<span class="text-gold-500 font-bold">真正的屬靈，不是脫離現實，而是在最平凡的歲月中，緊緊牽著天父的手。</span></p>
+
+                <h4 class="text-2xl font-bold text-gold-400 mt-12 mb-4">第四段：最終的安慰——在勞苦愁煩中仰望安息</h4>
+                <p>拉麥給兒子起名叫<span class="text-white font-bold">挪亞</span>，並發出了一聲深深的嘆息：<span class="text-white font-bold">「這個兒子必為我們的操作和手中的勞苦安慰我們」</span>。拉麥誠實地道出了我們每一個人的心聲。這段家譜最終指引我們看向那位「更大的挪亞」——<span class="text-gold-500 font-black">主耶穌基督</span>！耶穌在十字架上為我們承擔了咒詛，祂發出呼召：「凡勞苦擔重擔的人可以到我這裡來，我就使你們得安息。」</p>
+
+                <div class="mt-16 p-8 bg-gold-600/10 rounded-3xl border border-gold-600/30">
+                    <h4 class="text-xl font-bold text-white mb-4 flex items-center gap-2"><svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>應用方向</h4>
+                    <ul class="space-y-4 text-gray-200">
+                        <li class="flex gap-3"><span class="text-gold-500 font-bold">01.</span> 正視死亡與永恆：認清「就死了」的循環，投資於永恆。</li>
+                        <li class="flex gap-3"><span class="text-gold-500 font-bold">02.</span> 在日常中操練同在：在育兒、工作等平凡瑣事中與神同行。</li>
+                        <li class="flex gap-3"><span class="text-gold-500 font-bold">03.</span> 轉向真正的安息主：仰望真正能帶來安慰的基督。</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Conclusion Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
+                <div class="bg-dark-800 p-8 rounded-2xl text-center border-b-4 border-red-500">
+                    <div class="text-sm text-gray-500 mb-2 uppercase tracking-tighter">Keyword 01</div>
+                    <div class="text-2xl font-black text-white">死亡 (Death)</div>
+                </div>
+                <div class="bg-dark-800 p-8 rounded-2xl text-center border-b-4 border-gold-500">
+                    <div class="text-sm text-gray-500 mb-2 uppercase tracking-tighter">Keyword 02</div>
+                    <div class="text-2xl font-black text-white">同行 (Walk)</div>
+                </div>
+                <div class="bg-dark-800 p-8 rounded-2xl text-center border-b-4 border-blue-500">
+                    <div class="text-sm text-gray-500 mb-2 uppercase tracking-tighter">Keyword 03</div>
+                    <div class="text-2xl font-black text-white">安息 (Rest)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="bg-gold-600 rounded-3xl p-8 sm:p-12 text-black">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="p-3 bg-black/10 rounded-full">
+                    <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                </div>
+                <h3 class="text-3xl font-display font-black">回應與行動</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-2">
+                    <h5 class="font-black text-lg">1. 永恆視野的盤點</h5>
+                    <p class="opacity-80">寫下本週你花費最多時間的三件事，並禱告問神：當我走到生命盡頭時，這些事在永恆中有什麼價值？</p>
+                </div>
+                <div class="space-y-2">
+                    <h5 class="font-black text-lg">2. 設立「同行」提醒</h5>
+                    <p class="opacity-80">在手機設定三個每日鬧鐘，鬧鐘響起時暫停一分鐘，意識神的同在。</p>
+                </div>
+                <div class="space-y-2">
+                    <h5 class="font-black text-lg">3. 傳遞安息的福音</h5>
+                    <p class="opacity-80">本週尋找一位正在為生活勞苦愁煩的親友，為他禱告，分享耶穌基督所賜的平安。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-gold-600/20 rounded-full">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-display font-bold">名言佳句</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「與神同行意味著我們的意志與祂的意志完全降服與一致；因為兩個人若不同心，豈能同行呢？」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「我們雖然可憐地墮落了，但在我們靈魂的廢墟中，仍能看見神起初榮耀形象的殘跡。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「死亡不是一個終點，它是罪惡在人生命中掌權的最終展示；直到基督勝過它，我們才能真正活著。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 馬丁·路德 (Martin Luther)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「挪亞只是暫時的救生艇，基督才是那不沉的方舟與永遠的安息。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「上帝造我們是為祂自己，我們的心若不在此安息，便永遠得不到安寧。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「在一個充滿短暫與速成文化的世界裡，基督徒的生命呼召是一場『同一個方向的長期順服』。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「死亡是最高尚的恩典，因為它使我們脫離這敗壞的世界，並引領我們進入與基督完全的聯合之中。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「立志：我絕不浪費任何一刻時間，只要我有生命氣息，我就要盡最大的努力去善用它。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「基督的十字架是神對人類苦難和咒詛的最終回應，在那裡我們找到了最深的安慰。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <p class="text-gray-200 mb-4 font-medium leading-relaxed">「如果我們只是為這個世界而活，那麼死亡剝奪了我們的一切；但如果我們為神而活，死亡不過是進入更大喜樂的門檻。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="border-t border-white/10 pt-12 text-center text-gray-500 text-sm">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#prayer" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 rounded-full flex items-center justify-center text-black floating-arrow z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

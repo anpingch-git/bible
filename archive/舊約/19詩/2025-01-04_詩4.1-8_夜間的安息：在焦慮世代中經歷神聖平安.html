@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詩4:1-8：夜間的安息：在焦慮世代中經歷神聖平安</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            400: '#eab308',
+                            500: '#d4af37',
+                            600: '#b8860b',
+                        },
+                        indigo: {
+                            900: '#1e1b4b',
+                            950: '#0f172a',
+                        },
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'breathe': 'breathe 3s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                            '50%': { transform: 'scale(1.02)', opacity: '0.85' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fde047, #d4af37, #fef08a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            background: rgba(30, 41, 59, 0.7);
+        }
+        .breathe-text {
+            animation: breathe 3s ease-in-out infinite;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        .chiasmus-item {
+            border-left: 3px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+        .chiasmus-item:hover {
+            border-left-color: #d4af37;
+            background: rgba(212, 175, 55, 0.05);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '詩4:1-8',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '詩',         // 動態注入書卷縮寫，例如：出
+              'note_title': '夜間的安息：在焦慮世代中經歷神聖平安' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="bg-indigo-950 text-slate-200 font-sans leading-relaxed">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-display font-semibold tracking-tighter text-gold-400">詩篇 4:1-8</span>
+            <div class="flex gap-4 sm:gap-8 text-sm font-medium">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors uppercase tracking-widest">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors uppercase tracking-widest">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors uppercase tracking-widest">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors uppercase tracking-widest">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Banner -->
+    <header class="relative w-full h-[60vh] sm:h-[70vh] overflow-hidden pt-16">
+        <div class="absolute inset-0 banner-mask animate-pulse-slow">
+            <img src='image/img_0c73da12-0c29-4173-bf9d-2d3a9ce4b96a.jpg' alt='Psalm 4 Banner' class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative h-full flex flex-col items-center justify-center text-center px-6" id="header">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black font-serif mb-6 tracking-tight drop-shadow-2xl text-white">
+                夜間的安息：<br>
+                <span class="text-gradient">在焦慮世代中經歷神聖平安</span>
+            </h1>
+            <div class="max-w-2xl text-xl md:text-2xl font-serif breathe-text font-light text-gold-50 tracking-wide mt-4">
+                「我必安然躺下睡覺，因為獨有你－耶和華使我安然居住。」
+                <span class="block text-sm mt-2 opacity-80">(詩篇 4:8)</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-card p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-1 h-full bg-gold-500"></div>
+            <div class="flex items-center gap-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                <h2 class="text-3xl font-bold font-serif text-white">心靈的呼求</h2>
+            </div>
+            <p class="text-xl italic font-serif leading-relaxed text-slate-300 first-letter:text-4xl first-letter:font-bold first-letter:text-gold-500">
+                親愛的天父，當這世界的喧囂與內心的焦慮如夜幕般將我們籠罩時，求祢垂聽我們的呼求。教導我們在面對他人的誤解與環境的動盪時，不致犯罪，反而在床榻上安靜沉澱。主啊，求祢仰起祢的臉光照我們，賜給我們超越世上豐收的喜樂，使我們能在祢的懷抱中安然躺臥。奉主耶穌基督的聖名祈求，阿們。
+            </p>
+        </section>
+
+        <!-- Literary Structure -->
+        <section class="space-y-8">
+            <div class="flex items-center gap-3 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+                <h2 class="text-3xl font-bold font-serif text-white">猶太文學結構分析</h2>
+            </div>
+            
+            <div class="space-y-4 font-serif">
+                <p class="text-gold-400 font-semibold text-lg">交錯配列結構 (Chiasmus)</p>
+                <div class="space-y-4 border-l border-slate-700 ml-4">
+                    <div class="chiasmus-item ml-0 p-4">
+                        <span class="text-gold-500 font-bold mr-2">A (第1節)</span> 轉向神：絕境中的呼求，經歷神在急難中的「寬廣」。
+                    </div>
+                    <div class="chiasmus-item ml-8 p-4">
+                        <span class="text-gold-500 font-bold mr-2">B (第2-3節)</span> 轉向人(惡人)：質問世俗的虛妄，宣告神將虔誠人「分別」出來。
+                    </div>
+                    <div class="chiasmus-item ml-16 p-4 bg-indigo-900/50 rounded-r-lg border-l-4 border-gold-500">
+                        <span class="text-gold-500 font-bold mr-2">C (第4節)</span> 核心轉折：在床榻上「安靜」與自我省察。
+                    </div>
+                    <div class="chiasmus-item ml-8 p-4">
+                        <span class="text-gold-500 font-bold mr-2">B' (第5-6節)</span> 轉向人(眾人)：呼籲獻上公義的祭，對比世人只求物質好處的盲目。
+                    </div>
+                    <div class="chiasmus-item ml-0 p-4">
+                        <span class="text-gold-500 font-bold mr-2">A' (第7-8節)</span> 轉向神：經歷神賜的喜樂，在平安中「躺下睡覺」。
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <div class="section-card p-6 bg-slate-800/40 border-t-4 border-t-gold-500">
+                    <h4 class="text-gold-400 font-bold mb-2">同義平行</h4>
+                    <p class="text-sm">兩句重疊，強調世人價值的顛倒與虛妄。</p>
+                </div>
+                <div class="section-card p-6 bg-slate-800/40 border-t-4 border-t-gold-500">
+                    <h4 class="text-gold-400 font-bold mb-2">反義平行</h4>
+                    <p class="text-sm">「物質豐收」與「屬靈喜樂」形成生命價值的強烈對比。</p>
+                </div>
+                <div class="section-card p-6 bg-slate-800/40 border-t-4 border-t-gold-500">
+                    <h4 class="text-gold-400 font-bold mb-2">空間對稱</h4>
+                    <p class="text-sm">從外在環境的「寬廣」走到內在心境的「安息」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Outline Buttons -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center gap-3 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+                <h2 class="text-3xl font-bold font-serif text-white">大綱快速索引</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="p-6 rounded-xl border border-gold-500/30 bg-gold-500/5 hover:bg-gold-500/20 transition-all text-center group">
+                    <span class="block text-gold-400 text-xs tracking-widest mb-2 uppercase">第一部分</span>
+                    <span class="font-serif font-bold text-white group-hover:text-gold-300">絕境中的呼求<br>(詩 4:1-3)</span>
+                </a>
+                <a href="#part2" class="p-6 rounded-xl border border-gold-500/30 bg-gold-500/5 hover:bg-gold-500/20 transition-all text-center group">
+                    <span class="block text-gold-400 text-xs tracking-widest mb-2 uppercase">第二部分</span>
+                    <span class="font-serif font-bold text-white group-hover:text-gold-300">憤怒中的沉澱<br>(詩 4:4-5)</span>
+                </a>
+                <a href="#part3" class="p-6 rounded-xl border border-gold-500/30 bg-gold-500/5 hover:bg-gold-500/20 transition-all text-center group">
+                    <span class="block text-gold-400 text-xs tracking-widest mb-2 uppercase">第三部分</span>
+                    <span class="font-serif font-bold text-white group-hover:text-gold-300">黑夜中的安息<br>(詩 4:6-8)</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Outline -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <article id="part1" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h3 class="text-4xl font-black font-serif text-white mb-6 border-b border-gold-500/30 pb-4">一、 絕境中的呼求：看穿世俗的虛妄</h3>
+                    <div class="p-6 bg-gold-500/10 rounded-lg border-l-4 border-gold-500 italic mb-8">
+                        詩篇 4:1-3：「顯我為義的　神啊，我呼求的時候，求你應允我！我在急難中，你曾使我寬廣；現在求你憐恤我，聽我的禱告！...」
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2"><span class="w-2 h-2 bg-gold-500 rounded-full"></span> 關鍵原文 Keyword</h4>
+                        <ul class="space-y-4">
+                            <li><strong class="text-white">寬廣 (*rachab*)：</strong> 原意為「擴張、騰出空間」。在狹窄受壓中，神開創了自由行動的屬靈空間。</li>
+                            <li><strong class="text-white">分別 (*palah*)：</strong> 原意為「奇妙地對待」。神以奇妙方式區隔屬祂的人。</li>
+                        </ul>
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2 mt-8"><span class="w-2 h-2 bg-gold-500 rounded-full"></span> 核心解析 Problem/Answer</h4>
+                        <p class="text-sm">當我們面臨名譽受損時，常急於向人證明自己。但詩人提醒，世人追求的是「虛妄」。當我們意識到被神「分別」出來，尊榮就不再取決於人的掌聲。</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-700">
+                            <h4 class="text-gold-400 font-bold mb-3 italic">故事 / 例證</h4>
+                            <p class="text-sm leading-relaxed">在狂風暴雨中，一艘船的安危取決於船錨是否深深扎根在海底的磐石上。大衛沒有用虛妄去回擊，而是將生命的錨拋向那位「顯他為義」的神。</p>
+                        </div>
+                        <blockquote class="p-6 border-l-4 border-gold-500 bg-indigo-900/40 rounded-r-2xl">
+                            <p class="text-sm italic mb-2">「如果我們在人群中尋求自我身分，我們就會成為他人看法的奴隸；但如果我們在基督裡尋求，我們就能獲得真正的自由。」</p>
+                            <cite class="text-xs text-gold-400 font-bold">— 提摩太·凱勒 (Timothy Keller)</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 2 -->
+            <article id="part2" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h3 class="text-4xl font-black font-serif text-white mb-6 border-b border-gold-500/30 pb-4">二、 憤怒中的沉澱：轉向神聖的倚靠</h3>
+                    <div class="p-6 bg-gold-500/10 rounded-lg border-l-4 border-gold-500 italic mb-8">
+                        詩篇 4:4-5：「你們應當畏懼，不可犯罪；在床上的時候，要心裡思想，並要肅靜。當獻上公義的祭，又當倚靠耶和華。」
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2"><span class="w-2 h-2 bg-gold-500 rounded-full"></span> 關鍵原文 Keyword</h4>
+                        <ul class="space-y-4">
+                            <li><strong class="text-white">畏懼/發怒 (*ragaz*)：</strong> 原意為「震動、顫抖」。可指因敬畏神而戰兢，也指因屈辱而發抖。</li>
+                            <li><strong class="text-white">肅靜 (*damam*)：</strong> 原意為「靜默、停止、休息」。</li>
+                        </ul>
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2 mt-8"><span class="w-2 h-2 bg-gold-500 rounded-full"></span> 核心解析 Problem/Answer</h4>
+                        <p class="text-sm">如何在極度憤怒中「不可犯罪」？詩人建議：帶到床上（私密處）、心裡思想（理智引導）、肅靜（停止報復），最後將審判權交還給神。</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-700">
+                            <h4 class="text-gold-400 font-bold mb-3 italic">故事 / 例證</h4>
+                            <p class="text-sm leading-relaxed">一杯渾濁的泥水，如果不斷搖晃，永遠都是混濁的。但如果將它靜靜地放在桌上，泥沙就會慢慢沉澱。神要求我們「肅靜」，正是為了讓我們心面恢復清澈。</p>
+                        </div>
+                        <blockquote class="p-6 border-l-4 border-gold-500 bg-indigo-900/40 rounded-r-2xl">
+                            <p class="text-sm italic mb-2">「安靜不是不說話，而是內心降服於神的旨意；在靜默中，我們放下了自己掌控生命的權利。」</p>
+                            <cite class="text-xs text-gold-400 font-bold">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 3 -->
+            <article id="part3" class="scroll-mt-24">
+                <div class="mb-12">
+                    <h3 class="text-4xl font-black font-serif text-white mb-6 border-b border-gold-500/30 pb-4">三、 黑夜中的安息：超越環境的喜樂</h3>
+                    <div class="p-6 bg-gold-500/10 rounded-lg border-l-4 border-gold-500 italic mb-8">
+                        詩篇 4:6-8：「耶和華啊，求你仰起臉來，光照我們。你使我心裡快樂，勝過那豐收五穀新酒的人。我必安然躺下睡覺...」
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2"><span class="w-2 h-2 bg-gold-500 rounded-full"></span> 關鍵原文 Keyword</h4>
+                        <ul class="space-y-4">
+                            <li><strong class="text-white">安然 (*shalom*)：</strong> 原意為「和平、完整、健全」。生命各方面在神裡的滿足。</li>
+                            <li><strong class="text-white">獨有 (*badad*)：</strong> 原意為「單獨」。神是唯一的倚靠，也是唯一的庇護。</li>
+                        </ul>
+                        <h4 class="text-gold-400 font-bold flex items-center gap-2 mt-8"><span class="w-2 h-2 bg-gold-500 rounded-full"></span> 核心解析 Problem/Answer</h4>
+                        <p class="text-sm">世人尋找可見的「好處」（物質）。但詩人求神「仰起臉來」。神的臉光（同在）比物質豐收更能帶來深層快樂，使人能在黑夜中入睡。</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-700">
+                            <h4 class="text-gold-400 font-bold mb-3 italic">故事 / 例證</h4>
+                            <p class="text-sm leading-relaxed">一幅得獎的畫作，題目是「平安」：畫中巨大瀑布、狂風暴雨，但瀑布旁細樹枝上的鳥巢裡，小鳥正在安睡。平安不是沒有風暴，而是在風暴中有神同在。</p>
+                        </div>
+                        <blockquote class="p-6 border-l-4 border-gold-500 bg-indigo-900/40 rounded-r-2xl">
+                            <p class="text-sm italic mb-2">「信心將靈魂的重擔拋給上帝，然後準備去睡覺。」</p>
+                            <cite class="text-xs text-gold-400 font-bold">— 司布真 (Charles Spurgeon)</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="text-center">
+                <div class="flex justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gold-500 animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black font-serif text-white tracking-tight">講章文稿：夜間的安息</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="prose prose-invert prose-lg max-w-none font-serif leading-relaxed text-slate-300 space-y-8">
+                <p class="text-xl">弟弟姊妹們，平安。我們生活在一個充滿焦慮的世代。無論是經濟壓力、人際衝突，還是對未來的茫然，許多人到了夜晚，躺在床上，腦海中卻像在上演無數部電影，輾轉難眠。今天，我們要透過大衛的詩篇第四篇，來學習如何在危機與焦慮中，尋找真正的安息。</p>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-gold-400">一、 絕境中的呼求：看穿世俗的虛妄</h4>
+                    <p>大衛寫這首詩時正處於極大危機，可能是押沙龍叛變，他失去了王位、財富，甚至面臨生命威脅。在第1到3節中，我們看見他如何看穿世俗。大衛沒有向人訴苦，第一時間轉向神。他知道世人追求的掌聲與地位不過是「虛妄與虛假」。</p>
+                    <p class="p-4 bg-slate-800 rounded border-l-4 border-gold-500 italic text-white">
+                        你的價值不是建立在別人的評價上，而是建立在神已經將你分別為聖的恩典上！
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-gold-400">二、 憤怒中的沉澱：轉向神聖的倚靠</h4>
+                    <p>在第4到5節，大衛教導我們處理情緒的神聖空間：**在床上的時候**。當憤怒快吞噬我們時，神呼召我們「肅靜」。這像一杯泥水，安靜能讓泥沙沉澱。停止用血氣報復，將審判主權交還給神，這就是信仰的實力。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-gold-400">三、 黑夜中的安息：超越環境的喜樂</h4>
+                    <p>世人問「誰能指示我們什麼好處」，追求「五穀新酒」。但大衛求的是「神的臉光」。他發現了一個祕密：<span class="text-white font-bold underline decoration-gold-500">神同在的光照，勝過物質的豐收。</span> 只要有神的笑臉，我們心裡就有說不出的快樂。</p>
+                </div>
+
+                <div class="text-center py-12">
+                    <p class="text-2xl text-gold-300 font-bold italic breathe-text">
+                        「我必安然躺下睡覺，因為獨有你－耶和華使我安然居住。」
+                    </p>
+                    <p class="mt-4 opacity-70">願今晚你不再被焦慮綁架，經歷夜間的神聖安息。阿們。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="section-card p-8 md:p-12">
+            <h2 class="text-3xl font-bold font-serif text-white mb-8 flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                回應與實踐行動
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-indigo-900/30 p-6 rounded-2xl border-t-4 border-gold-500">
+                    <span class="text-gold-400 font-display font-bold text-2xl">01</span>
+                    <h4 class="text-white font-bold my-2">夜間的省察</h4>
+                    <p class="text-sm">每天睡前5分鐘不看手機，將今日的焦慮化為「公義的祭」交給神。</p>
+                </div>
+                <div class="bg-indigo-900/30 p-6 rounded-2xl border-t-4 border-gold-500">
+                    <span class="text-gold-400 font-display font-bold text-2xl">02</span>
+                    <h4 class="text-white font-bold my-2">打破虛妄</h4>
+                    <p class="text-sm">寫下一件讓你焦慮的事，宣告「神已將我分別為聖」，拒絕被世俗標準綁架。</p>
+                </div>
+                <div class="bg-indigo-900/30 p-6 rounded-2xl border-t-4 border-gold-500">
+                    <span class="text-gold-400 font-display font-bold text-2xl">03</span>
+                    <h4 class="text-white font-bold my-2">憤怒中的肅靜</h4>
+                    <p class="text-sm">遇激動時，強迫自己肅靜10秒，祈求：「主啊，求祢仰起臉來光照我」。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                </svg>
+                <h2 class="text-3xl font-bold font-serif text-white">10句屬靈前輩佳句名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「一個充滿了神平安的人，絕不會被世界的動盪所驚嚇，因為他的根基建立在永恆的磐石上。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 陶恕 (A.W. Tozer) / 《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「禱告不是去改變神的旨意，而是讓我們的心去契合神的旨意，在祂的旨意中找到安息。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 馬丁·路德 (Martin Luther)</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「在一個被速度與效率捆綁的世界裡，安靜與安息是我們對抗世俗的最強烈抗議。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 畢德生 (Eugene Peterson)</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「只有當我們意識到自己是神所愛的孩子，我們才能在充滿敵意的世界中，找到不被動搖的內在平安。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 盧雲 (Henri Nouwen)</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「當信徒將一切憂慮卸給神時，他們就為靈魂找到了最穩妥的避風港。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 約翰·加爾文 (John Calvin)</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「不要急躁，不要煩躁。在靜默中等候神，祂必在你內心最深處動工，賜你超乎人能了解的平安。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 慕安德烈 (Andrew Murray)</span>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「屬靈的喜樂不是來自於環境的順遂，而是來自於靈魂看見了神榮耀的屬性。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 喬納森·愛德華茲</span>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「神應許的平安不是免於爭戰的平安，而是在激烈爭戰中仍能保持心思安穩的平安。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 大衛·鮑森 (David Pawson)</span>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「當我們跪下向神禱告時，我們就能在面對世人時站立得穩。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 查爾斯·史丹利 (Charles Stanley)</span>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-gold-500/50 transition-colors">
+                    <p class="italic text-slate-300 text-sm mb-4">「我願意像一個全然信靠父親的孩童那樣，把所有的憂慮交給上帝，然後安然入眠。」</p>
+                    <div class="text-right">
+                        <span class="text-gold-400 text-xs font-bold">— 約翰·衛斯理 (John Wesley)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="py-8 text-center opacity-50 text-xs border-t border-slate-800">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-400 transition-all transform hover:scale-110 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#header') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    const element = document.querySelector(targetId);
+                    const headerOffset = 80;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

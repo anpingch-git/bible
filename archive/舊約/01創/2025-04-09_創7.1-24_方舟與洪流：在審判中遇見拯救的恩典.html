@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創7:1-24:方舟與洪流：在審判中遇見拯救的恩典</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366f1',
+                        accent: '#f43f5e',
+                        gold: '#fbbf24',
+                        dark: '#0f172a',
+                        card: 'rgba(30, 41, 59, 0.7)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(-2%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'none', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f1f5f9;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+        }
+        .section-title-icon {
+            @apply mr-3 text-primary text-3xl;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+        @keyframes breathe {
+            0%, 100% { filter: brightness(0.3) contrast(1.1); }
+            50% { filter: brightness(0.8) contrast(1.2); }
+        }
+        .breathe-animation {
+            animation: breathe 10s ease-in-out infinite;
+        }
+        
+        .jump-text {
+            display: inline-block;
+            animation: jump 2.5s infinite ease-in-out;
+        }
+        @keyframes jump {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-8px);}
+            60% {transform: translateY(-4px);}
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '創7:1-24',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '創',         // 動態注入書卷縮寫，例如：出
+              'note_title': '方舟與洪流：在審判中遇見拯救的恩典' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans selection:bg-primary selection:text-white">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-3">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <span class="font-display font-extrabold text-xl tracking-tighter text-white">創 7:1-24</span>
+            <div class="flex space-x-6 text-sm font-medium tracking-wide">
+                <a href="#prayer" class="hover:text-primary transition-colors uppercase">禱告</a>
+                <a href="#outline" class="hover:text-primary transition-colors uppercase">大綱</a>
+                <a href="#sermon" class="hover:text-primary transition-colors uppercase">講章</a>
+                <a href="#quotes" class="hover:text-primary transition-colors uppercase">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header id="top" class="relative h-[90vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="image/img_53767d26-9425-40e6-881b-5e8b0c9f72f4.jpg" alt="方舟與洪流" class="w-full h-full object-cover breathe-animation banner-mask" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/20"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tight text-white text-glow">
+                方舟與洪流：<br/>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">在審判中遇見拯救的恩典</span>
+            </h1>
+            
+            <div class="jump-text px-4 py-2 text-lg md:text-2xl font-light italic text-blue-100 max-w-2xl mx-auto leading-relaxed">
+                「耶和華對挪亞說：『你和你的全家都要進入方舟；因為在這世代中，我見你在我面前是義人。』」<br/>
+                <span class="text-sm font-bold not-italic text-gold opacity-80">— 創世記 7:1 —</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 -mt-20 relative z-20 space-y-16 pb-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass rounded-3xl p-8 md:p-12 shadow-2xl transition-all hover:border-primary/30">
+            <div class="flex items-center mb-6">
+                <span class="section-title-icon">🙏</span>
+                <h2 class="text-3xl font-bold text-white tracking-wide">禱告詞</h2>
+            </div>
+            <p class="text-lg md:text-xl leading-relaxed text-slate-300 italic font-light">
+                親愛的天父，我們敬畏祢的公義，也深深感恩祢的慈愛。在充滿罪惡與悖逆的世代中，祢為我們預備了基督作為拯救的方舟。求祢賜給我們如同挪亞般的信心與順服，聽見祢的呼喚便毫不遲疑地進入祢的恩典之中。當世界的洪流與生命的風暴襲來時，讓我們的全家都在祢裡面得著安穩與庇護。奉主耶穌基督的聖名禱告，阿們。
+            </p>
+        </section>
+
+        <!-- Background Analysis -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 space-y-6">
+                <div class="flex items-center">
+                    <span class="section-title-icon">🌍</span>
+                    <h2 class="text-3xl font-bold text-white">背景分析</h2>
+                </div>
+                <div class="text-slate-400 leading-relaxed space-y-4">
+                    <p>創世記第七章描述的是上古時代的全球性大洪水。當時的社會背景是一個「人在地上罪惡很大，終日所思想的盡都是惡」的時代。</p>
+                    <p>在人文與政治上，當時有「偉人」（尼非林人）在世，社會充滿了強暴、爭鬥與道德的全面敗壞。上帝的審判並非猝不及防，挪亞建造方舟經歷了漫長的歲月，這段時間本身就是上帝對當代人無聲的警告與恩典的延遲。</p>
+                </div>
+            </div>
+            <div class="bg-primary/10 border border-primary/20 rounded-3xl p-6 flex flex-col justify-center">
+                <div class="text-primary font-bold text-sm uppercase tracking-widest mb-4">時代特徵</div>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-accent mr-3"></span>道德全面敗壞</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-accent mr-3"></span>沈迷世俗宴樂</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-accent mr-3"></span>對審判毫無覺察</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center">
+                <span class="section-title-icon">📜</span>
+                <h2 class="text-3xl font-bold text-white">分段大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#part1" class="glass hover:bg-primary/20 p-6 rounded-2xl transition-all group border-l-4 border-l-primary">
+                    <div class="text-primary text-xs font-bold mb-2">PART 01</div>
+                    <div class="text-white font-bold group-hover:text-primary transition-colors">恩典的呼喚</div>
+                    <div class="text-slate-500 text-sm mt-1 italic">創 7:1-10</div>
+                </a>
+                <a href="#part2" class="glass hover:bg-accent/20 p-6 rounded-2xl transition-all group border-l-4 border-l-accent">
+                    <div class="text-accent text-xs font-bold mb-2">PART 02</div>
+                    <div class="text-white font-bold group-hover:text-accent transition-colors">審判的降臨</div>
+                    <div class="text-slate-500 text-sm mt-1 italic">創 7:11-16</div>
+                </a>
+                <a href="#part3" class="glass hover:bg-gold/20 p-6 rounded-2xl transition-all group border-l-4 border-l-gold">
+                    <div class="text-gold text-xs font-bold mb-2">PART 03</div>
+                    <div class="text-white font-bold group-hover:text-gold transition-colors">洪流的洗禮</div>
+                    <div class="text-slate-500 text-sm mt-1 italic">創 7:17-24</div>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-24 pt-12">
+                <!-- Part 1 -->
+                <div id="part1" class="space-y-8">
+                    <div class="border-b border-white/10 pb-4">
+                        <h3 class="text-2xl font-bold text-primary mb-2">1. 恩典的呼喚：進入信心的避難所</h3>
+                        <p class="text-slate-400 italic">經文：創 7:1-10</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-dark/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">🔍</span> 關鍵原文解析</h4>
+                                <ul class="space-y-4">
+                                    <li><span class="text-white font-bold">義人 (Tzadiq)</span>：指對神有真實的信心，並因信產生順服的生活態度。</li>
+                                    <li><span class="text-white font-bold">進入 (Bo)</span>：神說「來/進入」，暗示神自己就在方舟內呼召挪亞。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-primary font-bold flex items-center"><span class="mr-2">💡</span> 關鍵問題：神為什麼看挪亞為「義人」？</h4>
+                                <p class="text-slate-300">挪亞的義並非出於行為的無瑕疵，而是出於他對神話語的絕對信任。真實的信心必然帶來順服的行動。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-primary pl-6 py-2">
+                                <h4 class="text-slate-400 text-sm uppercase font-bold mb-2">例證</h4>
+                                <p class="text-slate-300">如同海嘯警報響起，唯有真正相信警報的人，才會立刻放下一切，往高處逃生。</p>
+                            </div>
+                            <blockquote class="bg-white/5 p-6 rounded-2xl italic text-lg text-slate-200">
+                                「只有相信的人才順服，也只有順服的人才相信。」
+                                <footer class="text-primary mt-3 text-sm not-italic">— 潘霍華 (Dietrich Bonhoeffer)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div id="part2" class="space-y-8">
+                    <div class="border-b border-white/10 pb-4">
+                        <h3 class="text-2xl font-bold text-accent mb-2">2. 審判的降臨：恩典之門的關閉</h3>
+                        <p class="text-slate-400 italic">經文：創 7:11-16</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-dark/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">🔍</span> 關鍵原文解析</h4>
+                                <ul class="space-y-4">
+                                    <li><span class="text-white font-bold">大淵的泉源 (tehom)</span>：指創造秩序的逆轉，天地回到混沌狀態。</li>
+                                    <li><span class="text-white font-bold">關在裡頭 (sagar)</span>：主詞是耶和華。代表神親自的封鎖。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-accent font-bold flex items-center"><span class="mr-2">💡</span> 關鍵問題：神的「關門」代表什麼？</h4>
+                                <p class="text-slate-300">第一，絕對的保護：外面的洪水無法衝破神所封印的門。第二，恩典的期限：審判時刻已定，門一旦關上，再無人能進。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-accent pl-6 py-2">
+                                <h4 class="text-slate-400 text-sm uppercase font-bold mb-2">例證</h4>
+                                <p class="text-slate-300">潛水艇的水密門。一旦鎖死，內部得到絕對保護，但外部的人也就再無機會進入。</p>
+                            </div>
+                            <blockquote class="bg-white/5 p-6 rounded-2xl italic text-lg text-slate-200">
+                                「被神關在裡面，這不是囚禁，而是無與倫比的安全。當神將你關在基督裡，全宇宙的風暴都無法觸及你。」
+                                <footer class="text-accent mt-3 text-sm not-italic">— 司布真 (Charles Spurgeon)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div id="part3" class="space-y-8">
+                    <div class="border-b border-white/10 pb-4">
+                        <h3 class="text-2xl font-bold text-gold mb-2">3. 洪流的洗禮：唯獨在基督裡得救</h3>
+                        <p class="text-slate-400 italic">經文：創 7:17-24</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <div class="bg-dark/50 p-6 rounded-2xl">
+                                <h4 class="text-gold font-bold mb-3 flex items-center"><span class="mr-2">🔍</span> 關鍵原文解析</h4>
+                                <ul class="space-y-4">
+                                    <li><span class="text-white font-bold">除滅 (machah)</span>：意為塗抹、擦去。將罪惡完全抹除。</li>
+                                    <li><span class="text-white font-bold">只留下 (sha'ar)</span>：指存留、成為敬虔的「餘民」。</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-gold font-bold flex items-center"><span class="mr-2">💡</span> 關鍵問題：方舟在水面漂流的預表？</h4>
+                                <p class="text-slate-300">方舟代替裡面的人承受了洪水的擊打。同樣地，耶穌基督在十字架上為我們承受了神對罪的忿怒洪流。</p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-gold pl-6 py-2">
+                                <h4 class="text-slate-400 text-sm uppercase font-bold mb-2">例證</h4>
+                                <p class="text-slate-300">草原大火中的焦土。站在已經燒過的焦土上是安全的，因為審判之火不再臨到那裡。</p>
+                            </div>
+                            <blockquote class="bg-white/5 p-6 rounded-2xl italic text-lg text-slate-200">
+                                「耶穌是真正的方舟。祂沒有免於神公義的洪流，而是被洪流淹沒，好讓我們這些躲藏在祂裡面的人，能夠安然無恙。」
+                                <footer class="text-gold mt-3 text-sm not-italic">— 提摩太·凱勒 (Timothy Keller)</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Content -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center">
+                <span class="section-title-icon">📢</span>
+                <h2 class="text-3xl font-bold text-white">講章文稿</h2>
+            </div>
+            <div class="glass rounded-3xl p-8 md:p-16 space-y-8 leading-loose text-slate-300 text-lg">
+                <p>親愛的弟兄姊妹，今天我們要進入創世記第七章，這是一段關於毀滅與拯救、審判與恩典的震撼經文。今天的信息主題是：<span class="text-white font-black border-b-2 border-primary">「方舟與洪流：在審判中遇見拯救的恩典」</span>。</p>
+                
+                <p>首先，我們來看第一段：<span class="text-primary font-bold">恩典的呼喚：進入信心的避難所</span>。在創世記7章1節，耶和華對挪亞說：「你和你的全家都要進入方舟」。神發出了一個充滿恩典的邀請——「進入方舟」。在一個思想盡都是惡的世代，挪亞被神稱為義人。這不是因為挪亞完美無缺，而是因為他對神有真實的信心。當恩典的呼喚臨到，信心必須化為順服的腳步。</p>
+
+                <p>接著，歷史來到了關鍵的轉折點：<span class="text-accent font-bold">審判的降臨：恩典之門的關閉</span>。當挪亞一家和所有動物都進入方舟後，第16節最後一句話非常震撼：<span class="text-white font-bold bg-accent/20 px-2 uppercase tracking-widest">「耶和華就把他關在方舟裡頭。」</span> 這扇門是神親自關上的。這扇門的關閉帶來了雙重意義：對內，它是絕對的安全與保護；對外，它宣告了恩典期限的結束。今天就是拯救的日子，我們決不能將神的忍耐當作理所當然。</p>
+
+                <p>最後，我們看到：<span class="text-gold font-bold">洪流的洗禮：唯獨在基督裡得救</span>。在17到24節中，外面是毀滅性的災難。但在水勢浩大的水面上，方舟漂來漂去。方舟代替裡面的人承受了暴風雨的擊打，這正是耶穌基督為我們所成就的救恩預表。我們能逃脫罪的刑罰，不是因為我們會游泳，不是因為我們比外面的人優秀，唯獨因為我們<span class="text-white underline decoration-gold underline-offset-8">「在基督裡」</span>。</p>
+                
+                <div class="bg-primary/10 border border-primary/30 p-8 rounded-2xl mt-12 text-center">
+                    <h4 class="text-white font-bold mb-4">結論與應用</h4>
+                    <div class="flex flex-wrap justify-center gap-4 mb-6 text-sm font-bold tracking-widest">
+                        <span class="bg-primary px-4 py-1 rounded-full text-white">呼召</span>
+                        <span class="bg-primary px-4 py-1 rounded-full text-white">順服</span>
+                        <span class="bg-primary px-4 py-1 rounded-full text-white">拯救</span>
+                    </div>
+                    <div class="text-left grid grid-cols-1 md:grid-cols-3 gap-6 text-sm leading-relaxed">
+                        <div class="space-y-2">
+                            <span class="text-primary font-black">01 檢視信心</span>
+                            <p>本週花時間安靜，檢視自己目前的信仰狀態。</p>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="text-primary font-black">02 全家得救</span>
+                            <p>為家中尚未信主成員提名代求。</p>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="text-primary font-black">03 成為警告</span>
+                            <p>向一位朋友分享福音，告訴他們基督裡的避難所。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-8">
+            <div class="flex items-center">
+                <span class="section-title-icon">✨</span>
+                <h2 class="text-3xl font-bold text-white">屬靈佳句</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-primary hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 mb-4 italic">「信心是一份活潑的、大膽的對神恩典的信靠，如此確定，以至於一個人寧願為它死一千次。」</p>
+                    <div class="text-sm font-bold text-primary">— 馬丁·路德 (Martin Luther)</div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-accent hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 mb-4 italic">「我們若不完全放棄對自己的信任，就無法在基督裡找到安全的避難所。」</p>
+                    <div class="text-sm font-bold text-accent">— 約翰·加爾文 (John Calvin)</div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-gold hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 mb-4 italic">「基督是那座能抵擋神憤怒風暴的唯一避難所；在祂以外，只有毫無掩蔽的毀滅。」</p>
+                    <div class="text-sm font-bold text-gold">— 喬納森·愛德華茲 (Jonathan Edwards)</div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-indigo-400 hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 mb-4 italic">「神的恩典不是用來讓我們免於順服，而是賦予我們能力去順服。」</p>
+                    <div class="text-sm font-bold text-indigo-400">— 陶恕 (A.W. Tozer)</div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-emerald-400 hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 mb-4 italic">「十字架是神公義與慈愛相遇的地方。在那裡，神對罪的憤怒被傾倒，好讓神對罪人的愛得以流淌。」</p>
+                    <div class="text-sm font-bold text-emerald-400">— 約翰·史托德 (John Stott)</div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass p-6 rounded-2xl border-l-4 border-pink-400 hover:scale-[1.02] transition-transform">
+                    <p class="text-slate-200 mb-4 italic">「真正的得救不是一次性的決定，而是一生持續留在基督裡的狀態。」</p>
+                    <div class="text-sm font-bold text-pink-400">— 大衛·鮑森 (David Pawson)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Area -->
+        <div class="pt-12 text-center opacity-40 hover:opacity-100 transition-opacity">
+            <p class="text-sm text-slate-500">網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-accent transition-colors animate-float z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+</body>
+</html>

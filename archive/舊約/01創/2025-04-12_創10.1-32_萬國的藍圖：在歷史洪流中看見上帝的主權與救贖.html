@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創10:1-32:萬國的藍圖：在歷史洪流中看見上帝的主權與救贖</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            200: '#fcefb4',
+                            400: '#f9d648',
+                            500: '#f4c40e',
+                            600: '#d4a008',
+                        },
+                        dark: {
+                            900: '#0a0a0c',
+                            800: '#151518',
+                            700: '#1f1f23',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-container {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.6; filter: brightness(0.7); }
+            50% { opacity: 1; filter: brightness(1.1); }
+        }
+        .bouncing-text {
+            display: inline-block;
+            animation: bounce-subtle 2s infinite;
+        }
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f4c40e 0%, #f9d648 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .outline-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        .outline-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: #f4c40e;
+            transform: translateY(-2px);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #f4c40e;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(244, 196, 14, 0.4);
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        .back-to-top:hover {
+            transform: scale(1.1);
+        }
+        .quote-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '創10:1-32',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '創',         // 動態注入書卷縮寫，例如：出
+              'note_title': '萬國的藍圖：在歷史洪流中看見上帝的主權與救贖' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav glass-nav py-4 px-6 flex justify-between items-center">
+        <div class="text-gold-400 font-display font-bold text-lg">創世記 10:1-32</div>
+        <div class="hidden md:flex space-x-8 text-sm tracking-widest font-medium uppercase">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+        <div class="md:hidden flex space-x-4 text-xs">
+             <a href="#prayer">禱告</a>
+             <a href="#outline">大綱</a>
+             <a href="#sermon">講章</a>
+        </div>
+    </nav>
+
+    <!-- Top Banner Section -->
+    <header id="top" class="relative banner-container flex items-center justify-center text-center px-4">
+        <img src='image/img_ae4eac38-1a2e-4bd5-8103-34b11fdfb160.jpg' alt='media_1' class="absolute inset-0 banner-img" />
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-serif font-black mb-6 leading-tight gradient-text drop-shadow-2xl">
+                萬國的藍圖：在歷史洪流中<br>看見上帝的主權與救贖
+            </h1>
+            <div class="bouncing-text">
+                <p class="text-xl md:text-2xl font-medium text-white/90 italic tracking-wide max-w-2xl mx-auto drop-shadow-lg">
+                    「這些都是挪亞三個兒子的宗族...洪水以後，他們在地上分為邦國。」
+                </p>
+                <span class="block mt-2 text-gold-200 text-sm font-bold tracking-widest">(創世記 10:32)</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="bg-gold-500/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">禱告詞</h2>
+            </div>
+            <div class="bg-dark-800 p-8 md:p-12 rounded-3xl border border-white/5 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-5">
+                    <svg class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"></path></svg>
+                </div>
+                <p class="text-xl leading-relaxed text-gray-300 font-light">
+                    主耶和華，歷史的掌權者，我們讚美祢！從洪水的審判到萬國的建立，祢的恩典與護理從未間斷。在創世記的家譜中，我們看見祢對全人類的奇妙藍圖。求祢開我們的眼睛，讓我們不只看見冰冷的名字，而是看見祢在歷史洪流中那永不失敗的救贖旨意。求祢幫助我們，在這彎曲悖謬的世代中，不效法寧錄去建立屬世的巴別塔，而是謙卑地走在閃的帳棚裡，領受並傳承祢的應許。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Background Analysis Section -->
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-serif font-bold mb-4 flex items-center text-gold-400">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2.945M8 3.935A9 9 0 0116.5 19.065m-8.5-15.13a9 9 0 00-8.5 15.13"></path></svg>
+                    背景分析
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">創世記第十章被稱為「萬國表」，記錄了洪水後人類的分散與文明的起源。</p>
+            </div>
+            <div class="md:col-span-2 grid gap-6">
+                <div class="outline-card p-6 rounded-2xl">
+                    <h4 class="text-gold-200 font-bold mb-2">歷史與地理環境</h4>
+                    <p class="text-gray-300 text-sm">70個國族代表全人類的總和，象徵完全。這份名單不僅是地理分佈，更是救贖歷史的地圖。</p>
+                </div>
+                <div class="outline-card p-6 rounded-2xl">
+                    <h4 class="text-gold-200 font-bold mb-2">人文與政治背景</h4>
+                    <p class="text-gray-300 text-sm">人類逐漸從遊牧走向定居，開始建立城邦。這是一個從「神治」轉向「人治」與「強權崇拜」的時代。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+             <div class="flex items-center space-x-4 mb-8">
+                <div class="bg-gold-500/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">大綱導覽</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="#part1" class="outline-card p-6 rounded-2xl text-center group">
+                    <span class="block text-gold-500 text-xs font-bold mb-2">第一段</span>
+                    <span class="block text-lg font-bold group-hover:text-gold-400 transition-colors">雅弗的後裔：神所賜的疆界</span>
+                    <span class="text-xs text-gray-500">(10:1-5)</span>
+                </a>
+                <a href="#part2" class="outline-card p-6 rounded-2xl text-center group">
+                    <span class="block text-gold-500 text-xs font-bold mb-2">第二段</span>
+                    <span class="block text-lg font-bold group-hover:text-gold-400 transition-colors">含的後裔：傲慢與悖逆的網羅</span>
+                    <span class="text-xs text-gray-500">(10:6-20)</span>
+                </a>
+                <a href="#part3" class="outline-card p-6 rounded-2xl text-center group">
+                    <span class="block text-gold-500 text-xs font-bold mb-2">第三段</span>
+                    <span class="block text-lg font-bold group-hover:text-gold-400 transition-colors">閃的後裔：救贖歷史的伏筆</span>
+                    <span class="text-xs text-gray-500">(10:21-32)</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown Section -->
+        <section class="space-y-32">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-24">
+                <div class="border-l-4 border-gold-500 pl-6 mb-8">
+                    <h3 class="text-2xl font-serif font-bold text-white mb-2">第一段：雅弗的後裔——擴張與開拓</h3>
+                    <p class="text-gold-400">創世記 10:1-5</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="bg-dark-700/50 p-6 rounded-2xl italic text-gray-300 text-sm border-l-2 border-white/20">
+                            「雅弗的兒子是歌篾、瑪各...這些人的後裔將各國的地土、海島分開居住，各隨各的方言、宗族立國。」
+                        </div>
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-gold-600/20 text-gold-400 rounded-full text-xs font-bold mb-2">關鍵字: H339 海島 (אִי)</span>
+                            <p class="text-gray-400 text-sm">代表「海岸線」或「遙遠邊界」，象徵神將人類疆界向未知領域擴展。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h4 class="font-bold text-gold-200">關鍵問題：如何看待生命中的擴張？</h4>
+                        <p class="text-gray-300">真正的擴張不是滿足野心，而是彰顯神的榮耀。若無神的引導，所有的擴張最終都會失去重心。</p>
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm italic">
+                            「神給我們一切的恩賜，若無帶領我們進入神的旨意，最終只會帶領我們遠離神。」—— 加爾文
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-24">
+                <div class="border-l-4 border-red-500 pl-6 mb-8">
+                    <h3 class="text-2xl font-serif font-bold text-white mb-2">第二段：含的後裔——屬世的強權</h3>
+                    <p class="text-red-400">創世記 10:6-20</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="bg-dark-700/50 p-6 rounded-2xl italic text-gray-300 text-sm border-l-2 border-white/20">
+                            「古實又生寧錄，他為世上英雄之首。他在耶和華面前是個英勇的獵戶...他國的起頭是巴別。」
+                        </div>
+                        <div class="space-y-3">
+                            <span class="inline-block px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-xs font-bold">關鍵字: H1368 英雄之首 (גִּבּוֹר)</span>
+                            <span class="inline-block px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-xs font-bold">寧錄 (Nimrod): 我們背叛吧</span>
+                            <p class="text-gray-400 text-sm">寧錄代表了人類對上帝主權的公然反抗與強權崇拜。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h4 class="font-bold text-gold-200">關鍵問題：當成就成為終極追求時？</h4>
+                        <p class="text-gray-300">寧錄建造了巴別與亞述，這兩者皆為以色列死敵。高舉個人成就過於上帝，必陷入傲慢的網羅。</p>
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm italic">
+                            「人的心就是一個製造偶像的工廠。」—— 提摩太·凱勒
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-24">
+                <div class="border-l-4 border-blue-500 pl-6 mb-8">
+                    <h3 class="text-2xl font-serif font-bold text-white mb-2">第三段：閃的後裔——應許的傳承</h3>
+                    <p class="text-blue-400">創世記 10:21-32</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div class="bg-dark-700/50 p-6 rounded-2xl italic text-gray-300 text-sm border-l-2 border-white/20">
+                            「雅弗的哥哥閃，是希伯來子孫之祖...希伯生了兩個兒子，一個名叫法勒，因為那時人就分地居住。」
+                        </div>
+                        <div class="space-y-3">
+                            <span class="inline-block px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-xs font-bold">關鍵字: H5677 希伯來 (עֵבֶר)</span>
+                            <span class="inline-block px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-xs font-bold">法勒 (Peleg): 分裂</span>
+                            <p class="text-gray-400 text-sm">「過河的人」為亞伯拉罕鋪路，在撕裂的世界中保留救贖的線索。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h4 class="font-bold text-gold-200">關鍵問題：在分裂的世界中，選民的命定？</h4>
+                        <p class="text-gray-300">閃的後裔默默傳承敬拜，成為承載恩典的器皿。真正的偉大在於忠心傳承應許。</p>
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-sm italic">
+                            「神歷史的列車永遠行駛在神主權的軌道上。」—— 司布真
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Section -->
+        <section id="sermon" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="bg-gold-500/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">講章全文</h2>
+            </div>
+            <article class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300 leading-relaxed">
+                <p class="text-2xl text-white font-bold">各位弟兄姊妹，平安！</p>
+                <p>
+                    今天我們要來看一段許多人在讀經時會快速跳過的經文——創世記第十章。這是一份古老的家譜，裡面充滿了難以發音的名字。然而，如果我們跳過它，我們就錯失了一張<strong class="text-gold-400">上帝掌管人類歷史的偉大藍圖</strong>。
+                </p>
+
+                <div class="bg-gold-500/5 p-8 rounded-3xl border border-gold-500/20 my-10">
+                    <p class="text-white font-bold text-xl mb-4">今日金句：</p>
+                    <p class="text-2xl text-gold-400 font-serif font-black italic tracking-wider">
+                        「這些都是挪亞三個兒子的宗族，各隨他們的支派立國。洪水以後，他們在地上分為邦國。」(創世記 10:32)
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gold-400">一、雅弗的後裔——擴張與開拓：神所賜的疆界</h3>
+                    <p>上帝並不反對人類拓展疆土。但是弟兄姊妹，我們必須問自己：我們人生疆界的擴張，是為了什麼？<span class="text-white font-bold underline decoration-gold-500">沒有帶領我們進入神旨意的擴展，最終只會讓我們遠離神。</span>我們生命中每一次的「開疆闢土」，都應該是為了福音的廣傳。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-red-400">二、含的後裔——屬世的強權：傲慢與悖逆的網羅</h3>
+                    <p>寧錄代表了人類最深的驕傲——想要不倚靠神，單憑人類的力量建立屬世的烏托邦。我們這個世代充滿了對「強人」的崇拜。但我們必須警惕心中的「寧錄情結」。<span class="text-white font-bold">當成就與能力成為你人生的終極追求時，你就是在建造自己的巴別塔。</span></p>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-blue-400">三、閃的後裔——應許的傳承：救贖歷史的伏筆</h3>
+                    <p>為什麼聖經要把閃放在最後壓軸？因為這是一條隱藏的「救恩之線」。他們是「希伯來人」——意思是「過河的人」。他們持守著屬天的身分，最終迎來了全人類的救主——耶穌基督！真正的偉大，是在這世代成為神救恩的忠心傳遞者。</p>
+                </div>
+
+                <div class="bg-dark-800 p-8 rounded-2xl border-t-4 border-gold-500 mt-12">
+                    <h4 class="text-xl font-bold text-white mb-4">結論與應用</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <span class="text-gold-500 font-bold block mb-2">主權 (Sovereignty)</span>
+                            <p class="text-sm">認清歷史的主宰，安息在神的主權中。</p>
+                        </div>
+                        <div>
+                            <span class="text-gold-500 font-bold block mb-2">驕傲 (Pride)</span>
+                            <p class="text-sm">警醒「寧錄情結」，將能力降服於基督。</p>
+                        </div>
+                        <div>
+                            <span class="text-gold-500 font-bold block mb-2">傳承 (Legacy)</span>
+                            <p class="text-sm">看重屬靈傳承，成為時代的福音接力者。</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Response Action Section -->
+        <section class="bg-gradient-to-br from-gold-600/20 to-transparent p-12 rounded-[3rem] border border-gold-500/20">
+            <h2 class="text-3xl font-serif font-bold text-gold-400 mb-8 flex items-center">
+                <svg class="w-8 h-8 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                回應或實踐行動
+            </h2>
+            <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                    <span class="w-8 h-8 bg-gold-500 text-black font-bold rounded-full flex items-center justify-center shrink-0">1</span>
+                    <p class="text-lg"><strong>為萬國代求：</strong>每週選擇一個未得之民或戰亂國家禱告。</p>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <span class="w-8 h-8 bg-gold-500 text-black font-bold rounded-full flex items-center justify-center shrink-0">2</span>
+                    <p class="text-lg"><strong>生命動機健檢：</strong>檢視目前三大目標，誠實面對是否有「寧錄式驕傲」。</p>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <span class="w-8 h-8 bg-gold-500 text-black font-bold rounded-full flex items-center justify-center shrink-0">3</span>
+                    <p class="text-lg"><strong>建立屬靈傳承：</strong>每週安排一次與家人的分享時間，傳遞福音火種。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24 pb-12">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="bg-gold-500/10 p-3 rounded-2xl">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-gold-400">名言佳句</h2>
+            </div>
+            <div class="quote-grid">
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「歷史不僅是事件的總和，它是神榮耀的劇院；在列國的更迭中，神正無誤地推動祂的救贖計畫。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 約翰·加爾文</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「當人拒絕在天堂做上帝的僕人時，他就會選擇在地獄建立自己的王國。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 陶恕</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「神引導歷史的護理之手，或許有時令人難以測透，但我們始終確信，那隻手是釘有十字架釘痕的手。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 約翰·史托德</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「城市的建造往往伴隨驕傲，但神的恩典卻能將世俗城池轉化為新耶路撒冷。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 提摩太·凱勒</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「唯獨基督的國度，是藉著君王死在十字架上而建立，並且永不敗落。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 潘霍華</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「當我們看不清前方的道路時，我們要信靠那位畫出全景地圖的上帝。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 查爾斯·史丹利</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「救贖的歷史是一條長長的金線，貫穿了整個人類墮落與悖逆的黑暗編年史。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 喬納森·愛德華茲</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「不要在世上為自己建立偉大的名聲，因為這世界終將過去。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 慕迪</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「History 就是『His Story』。沒有任何勢力能阻撓神為人類所定的最終旨意。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 葛理翰</span>
+                </div>
+                <div class="outline-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-300 italic mb-4">「當人離開神去尋找偉大時，找到的只有虛空；俯伏在十字架前，才真正找到榮耀的傳承。」</p>
+                    <span class="text-gold-500 text-xs font-bold">— 唐崇榮</span>
+                </div>
+            </div>
+            <div class="mt-12 p-6 bg-red-900/20 border border-red-500/20 rounded-xl text-center text-red-400 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="back-to-top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

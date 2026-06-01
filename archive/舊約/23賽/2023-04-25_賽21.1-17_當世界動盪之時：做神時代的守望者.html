@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽21:1-17 當世界動盪之時：做神時代的守望者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8cc',
+                            200: '#fdf099',
+                            300: '#fbe266',
+                            400: '#f9d333',
+                            500: '#f7c400',
+                            600: '#c59d00',
+                            700: '#947600',
+                            800: '#624e00',
+                            900: '#312700',
+                        },
+                        dark: {
+                            base: '#0a0a0a',
+                            card: '#161616',
+                            elevated: '#222222'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                        'float-subtle': 'float-subtle 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        'float-subtle': {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(22, 22, 22, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #f7c400, #ff9d00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            background: #161616;
+            border: 1px solid #222;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            border-color: #f7c400;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(247, 196, 0, 0.2);
+        }
+        .jump-text {
+            display: inline-block;
+            animation: float-subtle 3s ease-in-out infinite;
+        }
+        .nav-item {
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #f7c400;
+            transition: width 0.3s;
+        }
+        .nav-item:hover::after {
+            width: 100%;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '賽21:1-17',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '賽',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當世界動盪之時：做神時代的守望者' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Header / Banner Section -->
+    <header class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_12e6ec47-c1b9-4775-b740-a961b5de6f78.jpg' alt='media_1' class="w-full h-full object-cover animate-breathe" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-[#0a0a0a]"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-display text-4xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                <span class="block text-white mb-2">賽21:1-17</span>
+                <span class="text-gradient">當世界動盪之時：做神時代的守望者</span>
+            </h1>
+            
+            <div class="mt-12 text-xl md:text-3xl font-medium text-white/90 max-w-3xl mx-auto italic leading-relaxed">
+                <span class="jump-text">「主對我這樣說：你去設立守望的，叫他述說他所看見的。」</span>
+                <p class="text-sm md:text-base mt-4 font-normal text-gold-400 not-italic">（以賽亞書 21:6）</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav glass py-4 px-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <span class="font-display font-bold text-gold-500 tracking-wider">ISAIAH 21:1-17</span>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#prayer" class="nav-item text-white/70 hover:text-white">禱告</a>
+                <a href="#outline" class="nav-item text-white/70 hover:text-white">大綱</a>
+                <a href="#sermon" class="nav-item text-white/70 hover:text-white">講章</a>
+                <a href="#quotes" class="nav-item text-white/70 hover:text-white">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-gold-500/10 rounded-full flex items-center justify-center mb-6 border border-gold-500/20">
+                    <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h2 class="text-3xl font-bold mb-8 tracking-wide">開場禱告</h2>
+                <div class="bento-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-5">
+                        <svg class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2z"/></svg>
+                    </div>
+                    <p class="text-xl md:text-2xl text-gray-300 leading-relaxed italic">
+                        「全能的主上帝，祢是掌管歷史與萬國的主宰。當我們面對動盪不安的世界、看似強大的世俗權勢，以及生命中的黑夜時，求祢開我們的屬靈眼睛，使我們不致落入恐懼與虛假的倚靠中。求祢呼召我們成為這個時代的守望者，敏銳於祢的作為，忠實地宣告祢的真理，並在黑暗中為迷失的人群帶來盼望與安慰。奉主耶穌基督的聖名祈求，阿們。」
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background Analysis (Bento Grid) -->
+        <section class="scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-4">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                歷史與環境背景
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bento-card p-8 rounded-3xl md:col-span-2">
+                    <h3 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 時代脈絡
+                    </h3>
+                    <p class="text-gray-400 leading-loose">
+                        以賽亞書第21章處於主前八世紀末至七世紀初的古代近東大動盪時期。當時的超級霸權是亞述帝國，他們以殘酷的軍事力量征服列國。本章包含三個「默示」（巴比倫、度瑪/以東、亞拉伯）。
+                    </p>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <h3 class="text-gold-500 font-bold mb-4">巴比倫 (海旁曠野)</h3>
+                    <p class="text-sm text-gray-400">當時巴比倫試圖聯合各國反叛亞述。先知預言巴比倫將滅，警告猶大勿倚靠政治結盟。</p>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <h3 class="text-gold-500 font-bold mb-4">度瑪 (以東)</h3>
+                    <p class="text-sm text-gray-400">受到亞述壓迫，處於政治黑夜，人們焦慮詢問何時能見光明。</p>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <h3 class="text-gold-500 font-bold mb-4">亞拉伯</h3>
+                    <p class="text-sm text-gray-400">游牧民族在戰亂中流離失所，反映戰爭帶來的難民危機與世事無常。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-4">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                大綱導覽
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#part1" class="flex-1 bento-card p-6 rounded-2xl text-center group">
+                    <span class="block text-xs text-gold-500/60 mb-2 font-display">SECTION 01</span>
+                    <h4 class="font-bold text-lg group-hover:text-gold-400 transition-colors">海旁曠野的默示</h4>
+                    <p class="text-sm text-gray-500 mt-2">賽 21:1-10</p>
+                </a>
+                <a href="#part2" class="flex-1 bento-card p-6 rounded-2xl text-center group">
+                    <span class="block text-xs text-gold-500/60 mb-2 font-display">SECTION 02</span>
+                    <h4 class="font-bold text-lg group-hover:text-gold-400 transition-colors">度瑪的默示</h4>
+                    <p class="text-sm text-gray-500 mt-2">賽 21:11-12</p>
+                </a>
+                <a href="#part3" class="flex-1 bento-card p-6 rounded-2xl text-center group">
+                    <span class="block text-xs text-gold-500/60 mb-2 font-display">SECTION 03</span>
+                    <h4 class="font-bold text-lg group-hover:text-gold-400 transition-colors">亞拉伯的默示</h4>
+                    <p class="text-sm text-gray-500 mt-2">賽 21:13-17</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1 Deep Dive -->
+        <section id="part1" class="scroll-mt-24 space-y-12">
+            <div class="border-l-4 border-gold-500 pl-8">
+                <h2 class="text-4xl font-black tracking-tight text-white mb-2">看透世俗強權的傾覆</h2>
+                <p class="text-gold-500 font-bold uppercase tracking-widest text-sm">海旁曠野的默示 (賽 21:1-10)</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <h4 class="text-gold-400 font-bold mb-4">【經文內容】</h4>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            論海旁曠野的默示：有仇敵從曠野，從可怕之地而來，好像南方的旋風，猛然掃過。令人悲痛的異象顯現於我...巴比倫傾倒了！傾倒了！他一切雕刻的神像都打碎於地。
+                        </p>
+                    </div>
+                    <div class="bento-card p-8 rounded-3xl">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵原文</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-white font-bold">默示 ( מַשָּׂא / massa )：</span>
+                                <span class="text-gray-400 text-sm">「重擔」。先知領受信息如同重擔，必須宣告才能得釋放。</span>
+                            </div>
+                            <div>
+                                <span class="text-white font-bold">守望的 ( צָפָה / tsaphah )：</span>
+                                <span class="text-gray-400 text-sm">「眺望、守望」。敏銳於神的作為，發出警告。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+                            <span class="text-gold-500">?</span> 關鍵問題與解析
+                        </h4>
+                        <div class="bento-card p-6 rounded-2xl bg-gold-500/5">
+                            <p class="font-bold text-white mb-3">為什麼先知看見敵國傾覆反而感到「滿腰疼痛、驚惶戰兢」？</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">猶大當時盼望與巴比倫結盟。先知的痛苦來自異象的殘酷，以及深知百姓虛假的盼望將破滅。提醒我們：建立在偶像上的安全感，最終必迎來崩潰。</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="p-6 bg-white/5 rounded-2xl border-l-2 border-gold-500">
+                            <p class="text-sm italic text-gray-400 mb-2">「如果你把任何事物當作你的神，除了真實的上帝之外，它最終一定會讓你失望，並使你的心靈破碎。」</p>
+                            <p class="text-xs text-gold-500">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                        <div class="p-6 bg-white/5 rounded-2xl">
+                            <p class="text-xs font-bold text-white/40 mb-2 uppercase tracking-tighter">例證：鐵達尼號</p>
+                            <p class="text-sm text-gray-400">1912年鐵達尼號象徵人類極致榮耀，卻在幾小時內傾倒。巴比倫亦如是，看似強大，在神審判下不堪一擊。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 Deep Dive -->
+        <section id="part2" class="scroll-mt-24 space-y-12">
+            <div class="border-l-4 border-gold-500 pl-8">
+                <h2 class="text-4xl font-black tracking-tight text-white mb-2">在漫長黑夜中保持警醒</h2>
+                <p class="text-gold-500 font-bold uppercase tracking-widest text-sm">度瑪的默示 (賽 21:11-12)</p>
+            </div>
+
+            <div class="bento-card p-12 rounded-[3rem] relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-gold-500/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                    <div class="lg:col-span-2 space-y-8">
+                        <div class="text-2xl font-display italic text-white/90 leading-relaxed">
+                            「有人聲從西珥呼問我說：守望的啊，夜裡如何？守望的啊，夜裡如何？守望的說：早晨將到，黑夜也來。你們若要問就可以問，可以回頭再來。」
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2">夜裡如何</h4>
+                                <p class="text-gray-400 text-sm italic">反映在苦難中的煎熬與焦慮：「黑夜還剩下多少？」</p>
+                            </div>
+                            <div>
+                                <h4 class="text-gold-400 font-bold mb-2">回頭再來</h4>
+                                <p class="text-gray-400 text-sm italic">「回頭」與「悔改」同字根。尋求答案必須悔改歸向神。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-black/40 p-6 rounded-2xl border border-white/5">
+                            <h5 class="text-white font-bold mb-2 text-sm">深入解析</h5>
+                            <p class="text-xs text-gray-500 leading-relaxed">「早晨將到，黑夜也來」打破了廉價的樂觀主義。沒有上帝的救贖，歷史只是在晨昏間無盡輪迴。</p>
+                        </div>
+                        <div class="bg-gold-500 p-6 rounded-2xl text-black">
+                            <p class="text-xs font-black mb-1 uppercase">潘霍華 佳句</p>
+                            <p class="font-bold text-sm">「廉價的恩典是我們教會的致命傷...它之所以昂貴，因為它呼召人來跟從。」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Deep Dive -->
+        <section id="part3" class="scroll-mt-24 space-y-12">
+            <div class="border-l-4 border-gold-500 pl-8">
+                <h2 class="text-4xl font-black tracking-tight text-white mb-2">直面世事無常與生命的脆弱</h2>
+                <p class="text-gold-500 font-bold uppercase tracking-widest text-sm">亞拉伯的默示 (賽 21:13-17)</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bento-card p-10 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-gold-400 font-bold mb-6">經文觀察</h4>
+                        <p class="text-gray-300 leading-relaxed">那些原本驕傲、富足的亞拉伯部落，在戰爭的刀劍下變成了倉皇逃竄的難民。上帝說：「一年之內...基達的一切榮耀必歸於無有。」</p>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-white/5 flex gap-8">
+                        <div>
+                            <p class="text-2xl font-bold text-white">一年</p>
+                            <p class="text-xs text-gray-500 uppercase">精確的期限</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">榮耀</p>
+                            <p class="text-xs text-gray-500 uppercase">財富與勇士</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bento-card p-8 rounded-3xl">
+                        <h4 class="text-gold-400 font-bold mb-4">關鍵解析：神的精確掌控</h4>
+                        <p class="text-sm text-gray-400 leading-loose">「一年之內，照雇工的年數」展現上帝對歷史進程擁有絕對的主權。看似自由發展的局勢，實際上都在萬軍之耶和華的倒數計時之中。</p>
+                    </div>
+                    <div class="bento-card p-8 rounded-3xl bg-white/5">
+                        <p class="text-white italic text-lg mb-4">「如果一個人在世上擁有了一切，卻沒有上帝，他並不比一個只有上帝的人擁有得更多。」</p>
+                        <p class="text-gold-500 text-sm">— 陶恕 (A. W. Tozer)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Sermon Text -->
+        <section id="sermon" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-4">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM14 4v4h4"></path></svg>
+                講章全文
+            </h2>
+            <div class="max-w-4xl mx-auto bento-card p-8 md:p-16 rounded-[2rem] space-y-8 text-gray-300 leading-loose text-lg">
+                <p>各位弟兄姐妹，平安。今天我們所處的時代，充滿了動盪。戰爭的風聲、經濟的衰退、瘟疫的餘波，常常讓我們感到恐懼與不安。在以賽亞書第21章中，先知以賽亞同樣面對著一個極度動盪的國際局勢——亞述帝國的鐵蹄踐踏列國，各國陷入恐慌。然而，神藉著三個默示，向我們啟示了在世界動盪之時，我們當如何自處。</p>
+                
+                <div class="bg-gold-500/10 p-6 rounded-2xl border border-gold-500/20 text-center">
+                    <p class="text-gold-400 font-bold text-xl md:text-2xl italic">「主對我這樣說：你去設立守望的，叫他述說他所看見的。」（以賽亞書 21:6）</p>
+                    <p class="text-sm mt-2 text-gold-600">這是我們今天的金句。上帝不呼召我們隨波逐流，祂呼召我們做時代的守望者。</p>
+                </div>
+
+                <p>首先，我們來看第一段：<strong class="text-white">海旁曠野的默示——看透世俗強權的傾覆</strong>。先知在異象中看見當時的強國巴比倫即將被毀滅。這是一個沉痛的警告：不要把你生命的錨，拋在世俗權勢的船上。如同當年號稱永不沉沒的鐵達尼號，任何不是建立在耶穌基督磐石上的事物，最終都會傾倒。我們必須看透這屬世的虛謊，單單仰望神。</p>
+
+                <p>接著，我們進入第二段：<strong class="text-white">度瑪的默示——在漫長黑夜中保持警醒</strong>。以東人呼問先知：「守望的啊，夜裡如何？」先知的回答非常奇特：「早晨將到，黑夜也來。你們若要問就可以問，可以回頭再來。」歷史上會有短暫的和平，但如果沒有真實的悔改，黑暗終將重演。神今天藉著先知告訴我們，真正的出路在於「回頭」，在於真實的悔改。</p>
+
+                <p>最後，我們看第三段：<strong class="text-white">亞拉伯的默示——直面世事無常與生命的脆弱</strong>。那些原本驕傲、富足的亞拉伯部落，在戰爭的刀劍下變成了倉皇逃竄的難民。這提醒我們：不要倚靠無定的錢財，乃要倚靠那厚賜百物給我們享受的神；第二，當我們看見那些陷入絕境的人，我們應當成為那「拿水、拿餅」去迎接他們的人。</p>
+
+                <div class="pt-8 border-t border-white/10">
+                    <p class="text-white font-bold text-2xl mb-4">結論</p>
+                    <p>面對時代的動盪，我們需要緊抓三個關鍵字：<span class="text-gold-500 font-bold">守望、審判、倚靠</span>。明白神終將審判一切世俗的偶像，我們就要單單倚靠祂，並勇敢地站在破口防堵，成為這世代忠心的守望者。阿們！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action & Conclusion Tags -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bento-card p-10 rounded-3xl">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-4">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應行動
+                </h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/10 text-gold-500 flex items-center justify-center font-bold text-sm">1</span>
+                        <p class="text-gray-400"><span class="text-white font-bold">建立守望禱告習慣</span>：每日撥出10分鐘，專門為國家局勢、世界和平與教會復興代禱。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/10 text-gold-500 flex items-center justify-center font-bold text-sm">2</span>
+                        <p class="text-gray-400"><span class="text-white font-bold">盤點並交託偶像</span>：寫下一項你目前最擔心失去的屬世依託，宣告上帝才是唯一的保障。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-gold-500/10 text-gold-500 flex items-center justify-center font-bold text-sm">3</span>
+                        <p class="text-gray-400"><span class="text-white font-bold">展開接待行動</span>：留意身邊正處於人生「黑夜」的朋友，主動提供實質的幫助。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bento-card p-10 rounded-3xl flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-8 flex items-center gap-4">
+                    <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 7h.01M7 11h.01M7 15h.01M13 7h.01M13 11h.01M13 15h.01M17 7h.01M17 11h.01M17 15h.01"></path></svg>
+                    應用方向
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-gold-400 font-medium">檢視我們的「巴比倫」</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-gold-400 font-medium">擁抱守望者的呼召</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-gold-400 font-medium">付諸行動的慈悲</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full border border-white/10 text-gold-400 font-medium">真誠的悔改</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-4">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                屬靈佳句名言
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「只要教會還在禱告，世界就不會陷入徹底的絕望。」</p>
+                    <p class="text-sm text-gold-500">— 馬丁·路德 (Martin Luther) 《桌邊談話》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「無論我們面臨什麼樣的黑暗，上帝的主權是信徒靈魂最安穩的避風港。」</p>
+                    <p class="text-sm text-gold-500">— 約翰·加爾文 (John Calvin) 《基督教要義》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「在任何時代，教會最大的危機不是外在的逼迫，而是與世界妥協，失去了十字架的印記。」</p>
+                    <p class="text-sm text-gold-500">— 約翰·史托德 (John Stott) 《當代基督十架》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「沒有比知道上帝與我們同在，更能帶給我們面對世界動盪的勇氣了。」</p>
+                    <p class="text-sm text-gold-500">— 約翰·衛斯理 (John Wesley) 臨終遺言</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「如果我們的心不以上帝為最大的滿足，我們就會在這世界上製造出無數的偶像，最終被它們吞噬。」</p>
+                    <p class="text-sm text-gold-500">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「真正的屬靈生命，是在這破碎與苦難的世界中，依然能看見上帝恩典的運作。」</p>
+                    <p class="text-sm text-gold-500">— 盧雲 (Henri Nouwen) 《受傷的醫治者》</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「一個不屈膝禱告的基督徒，無法在充滿誘惑與恐懼的世界中站立得穩。」</p>
+                    <p class="text-sm text-gold-500">— 查爾斯·史丹利 (Charles Stanley)</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「我們不能一邊享受世界的罪中之樂，一邊期待在上帝的審判中得著平安。」</p>
+                    <p class="text-sm text-gold-500">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl">
+                    <p class="text-white italic mb-4 leading-relaxed">「這個世界不需要一個與它一模一樣的教會；這個世界需要一個被真理聖化、敢於指出世界黑暗的教會。」</p>
+                    <p class="text-sm text-gold-500">— 慕迪 (D. L. Moody)</p>
+                </div>
+                <div class="bento-card p-8 rounded-2xl border-gold-500/30">
+                    <p class="text-white italic mb-4 leading-relaxed">「先知的呼召，不是為了預測未來以滿足人的好奇心，而是為了將人的心意重新拉回上帝的聖約之中。」</p>
+                    <p class="text-sm text-gold-500">— 畢德生 (Eugene Peterson)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <section class="text-center py-12 border-t border-white/5">
+            <p class="text-gray-600 text-sm italic tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-black rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-[100] group">
+        <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-spy or visibility effects if needed
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創5:1-32:在死亡的幽谷中與神同行：從亞當到挪亞的生命譜系</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#991B1B',
+                        slate: {
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 4s ease-in-out infinite',
+                        'subtle-float': 'subtle-float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1.02)' },
+                            '50%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        'subtle-float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #FDE68A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-card {
+            background: rgba(30, 41, 59, 0.4);
+            border-radius: 24px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #D4AF37;
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            background: rgba(30, 41, 59, 0.6);
+            transform: translateY(-4px);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '創5:1-32',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '創',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在死亡的幽谷中與神同行：從亞當到挪亞的生命譜系' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="overflow-x-hidden">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass px-4 py-3 flex justify-between items-center md:px-8">
+        <span class="text-gold font-bold text-sm md:text-base truncate mr-4">創5:1-32</span>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+            <a href="#prayer" class="nav-link">禱告</a>
+            <a href="#outline" class="nav-link">大綱</a>
+            <a href="#sermon" class="nav-link">講章</a>
+            <a href="#quotes" class="nav-link">名言</a>
+        </div>
+    </nav>
+
+    <!-- Top Banner with Media -->
+    <header class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden" id="top">
+        <div class="absolute inset-0 z-0">
+            <div class="animate-breath w-full h-full">
+                <img src="image/img_d2f63d94-72fc-4c13-9367-c827d03abec9.jpg" alt="media_1" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/20 to-slate-950"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
+                <span class="text-white block">在死亡的幽谷中</span>
+                <span class="text-gold">與神同行</span>
+            </h1>
+            <div class="animate-subtle-float inline-block">
+                <p class="text-xl md:text-2xl font-light italic text-slate-100 max-w-2xl border-l-4 border-gold pl-4 mx-auto">
+                    「以諾與神同行，神將他取去，他就不在世了。」<br>
+                    <span class="text-sm not-italic opacity-80 mt-2 block">（創世記 5:24）</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-8 -mt-20 relative z-20 pb-20">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-card backdrop-blur-md">
+            <div class="flex items-center gap-3 mb-6">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                <h2 class="text-2xl font-bold text-white">禱告詞</h2>
+            </div>
+            <p class="text-lg leading-relaxed text-slate-300">
+                主阿，我們在祢面前屈膝。在這份記錄著人類衰老與死亡的古老譜系中，我們看見了罪的工價，但也看見了祢不離不棄的恩典。求祢教導我們，在這充滿勞苦與嘆息的世上，能像以諾一樣，在平凡的歲月中與祢同行；並在祢應許的救恩裡，找到如挪亞名字般真正的安息。願我們有限的年日，能成為見證祢榮耀的印記。奉主耶穌基督的聖名祈求，阿們。
+            </p>
+        </section>
+
+        <!-- Background Analysis -->
+        <section class="section-card border-l-blue-500">
+            <div class="flex items-center gap-3 mb-6">
+                <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-2xl font-bold text-white">背景分析</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 text-slate-300">
+                <div class="space-y-4">
+                    <h3 class="text-gold font-bold">歷史與文化環境</h3>
+                    <p>在古代近東文獻中，常有君王壽命長達數萬年的誇飾紀錄。相比之下，創世記第五章雖然壽命也極長，但卻極度寫實地在每個人物結尾加上「就死了」。這打破了古代神話的迷思，強調人類終究是必死的受造物。</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-gold font-bold">政治與社會環境</h3>
+                    <p>當時的社會正走向墮落。人類在文明上取得成就，但道德卻陷入暴力的深淵。這群人沒有豐功偉業的記錄，卻單單以「生兒育女」和「與神同行」來傳承信仰，這是一種極具顛覆性的屬靈反文化運動。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="mb-12">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <h2 class="text-2xl font-bold text-white">講道大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+                <a href="#part1" class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700 hover:border-gold transition-all text-center group">
+                    <span class="text-gold block mb-2 font-bold">第一分段</span>
+                    <span class="text-white font-medium">失落與傳承 (5:1-5)</span>
+                </a>
+                <a href="#part2" class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700 hover:border-gold transition-all text-center group">
+                    <span class="text-gold block mb-2 font-bold">第二分段</span>
+                    <span class="text-white font-medium">死亡迴圈中的奇蹟 (5:6-24)</span>
+                </a>
+                <a href="#part3" class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700 hover:border-gold transition-all text-center group">
+                    <span class="text-gold block mb-2 font-bold">第三分段</span>
+                    <span class="text-white font-medium">勞苦咒詛中的盼望 (5:25-32)</span>
+                </a>
+            </div>
+
+            <!-- Part 1 -->
+            <div id="part1" class="section-card bg-slate-900/60 scroll-mt-24">
+                <h3 class="text-2xl font-bold text-white mb-6">失落與傳承：按著神的形像受造卻難逃死亡</h3>
+                <div class="space-y-6">
+                    <blockquote class="border-l-4 border-slate-500 pl-4 py-2 italic text-slate-400">
+                        「亞當共活了九百三十歲就死了。」 (創 5:5)
+                    </blockquote>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-gold font-bold mb-2">關鍵原文</h4>
+                            <p class="text-sm"><span class="text-white font-bold">樣式/形像 (דְּמוּת/צֶלֶם)</span>：暗示雖然經歷了墮落，人類依然帶有上帝的尊貴印記。</p>
+                            <p class="text-sm mt-2"><span class="text-white font-bold">死了 (Muth)</span>：如喪鐘般敲響了八次，咒詛的完全實現。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold font-bold mb-2">關鍵問題</h4>
+                            <p class="text-sm">為何冗長記錄「死了」？這打破了人類長生不老的幻想。生命價值不在於長度，而在於傳承了什麼。</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                        <p class="text-sm italic">「我們必須在死之光照下生活，唯有如此，我們才能學會如何真正地活著。」—— 馬丁·路德</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="section-card bg-slate-900/60 scroll-mt-24 border-l-emerald-500">
+                <h3 class="text-2xl font-bold text-white mb-6">死亡迴圈中的奇蹟：在平凡歲月中與神同行</h3>
+                <div class="space-y-6">
+                    <blockquote class="border-l-4 border-emerald-500 pl-4 py-2 italic text-slate-400">
+                        「以諾與神同行，神將他取去，他就不在世了。」 (創 5:24)
+                    </blockquote>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-emerald-400 font-bold mb-2">關鍵原文</h4>
+                            <p class="text-sm"><span class="text-white font-bold">與神同行 (הָלַךְ)</span>：持續不斷地與神一起走，是一種類型化的生活方式。</p>
+                            <p class="text-sm mt-2"><span class="text-white font-bold">取去 (Laqach)</span>：打破了死亡的常規。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-emerald-400 font-bold mb-2">關鍵問題</h4>
+                            <p class="text-sm">以諾是否過著修道生活？不，他在「生兒育女」的日常瑣事中經歷神，把上帝帶入最平凡的日常。</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                        <p class="text-sm italic">「即使是掃地，也像敬拜一樣神聖。」—— 陶恕</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="section-card bg-slate-900/60 scroll-mt-24 border-l-amber-500">
+                <h3 class="text-2xl font-bold text-white mb-6">在勞苦咒詛中的盼望：等候那帶來安息的救恩</h3>
+                <div class="space-y-6">
+                    <blockquote class="border-l-4 border-amber-500 pl-4 py-2 italic text-slate-400">
+                        「這個兒子必為我們的操作和手中的勞苦安慰我們。」 (創 5:29)
+                    </blockquote>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-amber-400 font-bold mb-2">關鍵原文</h4>
+                            <p class="text-sm"><span class="text-white font-bold">挪亞 (Noach)</span>：意為「安息、休息」。</p>
+                            <p class="text-sm mt-2"><span class="text-white font-bold">勞苦 (Itstsabon)</span>：連結到創世記3:17的咒詛。</p>
+                        </div>
+                        <div>
+                            <h4 class="text-amber-400 font-bold mb-2">關鍵問題</h4>
+                            <p class="text-sm">拉麥的期待有何啟示？真正的、永恆的安息，最終是透過耶穌基督來成就的。唯有基督是我們真正的安息日。</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                        <p class="text-sm italic">「耶穌基督代替我們承擔了咒詛的勞苦，好讓我們能白白領受祂的安息。」—— 提摩太·凱勒</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Directions -->
+        <section class="section-card border-l-purple-500">
+            <div class="flex items-center gap-3 mb-6">
+                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <h2 class="text-2xl font-bold text-white">講道應用方向</h2>
+            </div>
+            <ul class="space-y-4 text-slate-300">
+                <li class="flex gap-4"><span class="text-purple-400 font-bold">01</span> 正視死亡的現實，投資於屬靈形像的傳承（如門徒訓練、家庭祭壇）。</li>
+                <li class="flex gap-4"><span class="text-purple-400 font-bold">02</span> 在日常瑣事中操練與神同行，打破「屬靈」與「世俗」的二分法。</li>
+                <li class="flex gap-4"><span class="text-purple-400 font-bold">03</span> 將生命重擔交託給賜安息的主，在基督裡尋求深處真正的安慰。</li>
+            </ul>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-card bg-slate-900 border-l-white scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                <h2 class="text-2xl font-bold text-white">講章文稿</h2>
+            </div>
+            <div class="prose prose-invert max-w-none space-y-6 text-slate-300 leading-loose">
+                <p>親愛的弟兄姊妹，平安。當我們翻開聖經的家譜時，很多人可能會覺得枯燥乏味。但請相信我，聖靈將這段經文留給我們，是要在死亡的幽谷中，向我們啟示生命的真理。</p>
+                
+                <h3 class="text-gold text-xl font-bold">一、失落與傳承：按著神的形像受造卻難逃死亡</h3>
+                <p>經文告訴我們：「<span class="text-white font-medium">亞當共活了九百三十歲就死了。</span>」在這章聖經中，「就死了」這三個字，像喪鐘一樣連續敲響了八次。這提醒我們一個現實：因為罪的進入，死亡成了全人類共同的終點。然而，這段經文也藏著恩典。死亡雖然必然來臨，但我們屬靈的生命與信仰，卻能透過傳承超越死亡的限制。</p>
+
+                <h3 class="text-gold text-xl font-bold">二、死亡迴圈中的奇蹟：在平凡歲月中與神同行</h3>
+                <p class="text-white text-lg font-bold bg-slate-800 p-4 rounded-lg border-l-4 border-gold">「以諾與神同行，神將他取去，他就不在世了。」（創世記 5:24）</p>
+                <p>在連續不斷的「就死了」之中，以諾打破了這個魔咒！經文明確指出他「並且生兒育女」。這意味著他在換尿布、教養小孩、面對鄰居糾紛的日常生活中，整整三百年牽著上帝的手！真正的敬虔是在最平凡、最瑣碎的生活中，邀請上帝參與。</p>
+
+                <h3 class="text-gold text-xl font-bold">三、在勞苦咒詛中的盼望：等候那帶來安息的救恩</h3>
+                <p>拉麥生了一個兒子名叫挪亞，說：「<span class="text-white font-medium">這個兒子必為我們的操作和手中的勞苦安慰我們。</span>」我們今天不也是如此嗎？每天為了房貸、工作績效而疲於奔命。真正的安息，是透過挪亞的後裔，也就是我們的主耶穌基督成就的！</p>
+                
+                <div class="bg-gold/10 p-6 rounded-2xl border border-gold/30 mt-12">
+                    <h4 class="text-gold font-black text-center text-2xl mb-4">結論：3個關鍵字</h4>
+                    <div class="flex justify-around text-xl font-bold text-white">
+                        <span>死亡</span>
+                        <span>同行</span>
+                        <span>盼望</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Action -->
+        <section class="section-card border-l-red-500">
+            <div class="flex items-center gap-3 mb-6">
+                <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                <h2 class="text-2xl font-bold text-white">回應與實踐</h2>
+            </div>
+            <div class="grid gap-4">
+                <div class="flex items-start gap-4 bg-slate-800/40 p-4 rounded-xl">
+                    <span class="bg-red-500 text-white w-6 h-6 flex items-center justify-center rounded-full text-xs flex-shrink-0 mt-1">1</span>
+                    <p><span class="text-white font-bold">撰寫屬靈遺囑</span>：分享你希望傳承給家人的信仰價值，而非僅是物質安排。</p>
+                </div>
+                <div class="flex items-start gap-4 bg-slate-800/40 p-4 rounded-xl">
+                    <span class="bg-red-500 text-white w-6 h-6 flex items-center justify-center rounded-full text-xs flex-shrink-0 mt-1">2</span>
+                    <p><span class="text-white font-bold">設立「同行鬧鐘」</span>：每天三個特定時間停下工作一分鐘，默默向神禱告。</p>
+                </div>
+                <div class="flex items-start gap-4 bg-slate-800/40 p-4 rounded-xl">
+                    <span class="bg-red-500 text-white w-6 h-6 flex items-center justify-center rounded-full text-xs flex-shrink-0 mt-1">3</span>
+                    <p><span class="text-white font-bold">安息日的主動交託</span>：把最勞苦愁煩的一件事寫在紙上並禱告交託，宣告領受安息。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-card border-l-slate-400 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-8 h-8 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-2xl font-bold text-white">屬靈前輩佳句名言</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div class="bg-slate-950/40 p-6 rounded-2xl border border-slate-800 hover:border-gold/50 transition-colors">
+                        <p class="italic mb-4">「我們在世上的一切勞苦與愁煩，唯有在認識耶穌基督的恩典中，才能找到真正的安息。」</p>
+                        <p class="text-gold text-right text-sm">—— 約翰·加爾文</p>
+                    </div>
+                    <div class="bg-slate-950/40 p-6 rounded-2xl border border-slate-800 hover:border-gold/50 transition-colors">
+                        <p class="italic mb-4">「上帝並非在尋找擁有非凡能力的人，祂在尋找那些願意在平凡的每一天中與祂同行的人。」</p>
+                        <p class="text-gold text-right text-sm">—— 慕安德烈</p>
+                    </div>
+                    <div class="bg-slate-950/40 p-6 rounded-2xl border border-slate-800 hover:border-gold/50 transition-colors">
+                        <p class="italic mb-4">「信心的生活不是一場百米衝刺，而是一場漫長的馬拉松；與神同行意味著在日常的每一個腳步中，都承認祂的主權。」</p>
+                        <p class="text-gold text-right text-sm">—— 司布真</p>
+                    </div>
+                    <div class="bg-slate-950/40 p-6 rounded-2xl border border-slate-800 hover:border-gold/50 transition-colors">
+                        <p class="italic mb-4">「真正的順服，是在同一方向上長期的順服。這正是在這喧囂世界中與神同行的方式。」</p>
+                        <p class="text-gold text-right text-sm">—— 畢德生</p>
+                    </div>
+                </div>
+                <!-- Extended Quotes list abbreviated for visual flow but all content remains reachable -->
+                <details class="text-slate-400 cursor-pointer">
+                    <summary class="hover:text-gold transition-colors">查看更多名言...</summary>
+                    <div class="mt-4 space-y-4">
+                        <p>5. 「重價的恩典是呼召我們跟從耶穌的恩典。」 —— 潘霍華</p>
+                        <p>6. 「如果你想在世界上留下永恆的印記，就必須在密室中花時間與神同行。」 —— 約翰·衛斯理</p>
+                        <p>7. 「人類的歷史是一部尋找安息的歷史，但我們常常在受造物中尋找。」 —— 提摩太·凱勒</p>
+                        <p>8. 「我們必須學會把日常生活中的瑣事看作是神聖的。」 —— 魏樂德</p>
+                        <p>9. 「認識神並不需要你擁有高深的學問，只需要你有一顆向祂敞開的心。」 —— 陶恕</p>
+                        <p>10. 「當我們真正明白愛子的身分時，就不必再為了證明價值而勞苦愁煩了。」 —— 盧雲</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <p class="text-center text-slate-500 text-xs mt-12 mb-8">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </p>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-gold hover:bg-yellow-600 text-slate-950 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

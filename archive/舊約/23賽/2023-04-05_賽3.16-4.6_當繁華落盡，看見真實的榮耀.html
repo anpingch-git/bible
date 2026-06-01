@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽3:16-4:6：當繁華落盡，看見真實的榮耀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef8cc',
+                            200: '#fef199',
+                            300: '#fde466',
+                            400: '#fcd333',
+                            500: '#facc15',
+                            600: '#eab308',
+                            700: '#ca8a04',
+                            800: '#a16207',
+                            900: '#854d0e',
+                        },
+                        onyx: '#121212',
+                        ash: '#1E1E1E',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'bounce-subtle': 'bounce-subtle 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(-5%)', 'animation-timing-function': 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'none', 'animation-timing-function': 'cubic-bezier(0,0,0.2,1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+        }
+        .bento-card {
+            background: rgba(30, 30, 30, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: rgba(250, 204, 21, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #facc15, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-glow {
+            animation: breathe 8s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { opacity: 0.7; filter: brightness(0.8); }
+            50% { opacity: 1; filter: brightness(1.1); }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 1.5s ease-in-out infinite;
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .outline-btn {
+            background: linear-gradient(135deg, rgba(250, 204, 21, 0.1) 0%, rgba(30, 30, 30, 0.8) 100%);
+            border: 1px solid rgba(250, 204, 21, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            border-color: #facc15;
+            background: rgba(250, 204, 21, 0.15);
+            transform: scale(1.02);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #facc15;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '賽3:16-4:6',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '賽',         // 動態注入書卷縮寫，例如：出
+              'note_title': '當繁華落盡，看見真實的榮耀' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body selection:bg-gold-500 selection:text-onyx">
+
+    <!-- Navbar -->
+    <nav class="glass-nav fixed top-0 left-0 right-0 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-gold-500 font-display font-extrabold text-lg md:text-xl tracking-tighter">
+            賽3:16-4:6
+        </div>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-semibold tracking-widest uppercase">
+            <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+            <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+            <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+            <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header id="top" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_f35cc3c6-031d-4bed-a451-3b1b086e4ee8.jpg' alt='Celestial glory background' class="w-full h-full object-cover banner-glow" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-onyx/40 to-onyx"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h1 class="font-display font-black text-4xl md:text-7xl mb-6 leading-tight">
+                <span class="block text-white opacity-80 text-xl md:text-2xl font-light mb-4 tracking-[0.2em]">ISAIAH 3:16-4:6</span>
+                當繁華落盡，<br>
+                <span class="text-gradient">看見真實的榮耀</span>
+            </h1>
+            
+            <div class="mt-12 space-y-4">
+                <p class="text-xl md:text-3xl text-gold-400 font-display font-medium jump-text tracking-wide px-4 leading-relaxed">
+                    「到那日，耶和華發生的苗必華美尊榮，地上的出產必為以色列逃脫的人顯為榮華茂盛。」
+                </p>
+                <p class="text-gray-400 text-sm md:text-base font-light italic">—— 以賽亞書 4:2</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="bento-card p-8 md:p-16 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <svg class="w-32 h-32 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="p-3 bg-gold-500/10 rounded-2xl text-gold-500">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.54 1.118l-3.976-2.888a1 1 0 00-1.175 0l-3.976 2.888c-.784.57-1.838-.197-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                    </span>
+                    <h2 class="text-3xl font-display font-bold">禱告詞</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 font-light italic">
+                    聖潔公義的主，我們來到祢面前，承認我們常被這世界的虛浮華美所吸引，以致於心中的驕傲遮蔽了屬靈的雙眼。求祢的聖靈如同焚燒的靈，洗淨我們生命中的污穢，除去我們對物質與虛榮的依賴。願祢那華美尊榮的真理之苗在我們心中生長，使我們在繁華落盡之時，能單單看見祢的榮耀，並安息在祢神聖的護庇之中。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Background Analysis -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bento-card p-8 col-span-1">
+                <h3 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    歷史與政治
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">猶大國經歷了空前的經濟繁榮，但背後隱藏著亞述帝國崛起的危機。領袖與百姓沉浸在幻象中，失去了對耶和華的倚靠。</p>
+            </div>
+            <div class="bento-card p-8 col-span-1">
+                <h3 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    人文與社會
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">嚴重的貧富差距，精英階層壓榨窮人。錫安女子揮霍奢華，反映了整個國家的道德淪喪與屬靈盲目。</p>
+            </div>
+            <div class="bento-card p-8 col-span-1">
+                <h3 class="text-gold-500 font-bold mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+                    宗教背景
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">信仰形式化，將物質豐盛視為神祝福的唯一指標，卻忽略了公義、憐憫與聖潔的核心要求。</p>
+            </div>
+        </section>
+
+        <!-- Outline Section -->
+        <section id="outline">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-gold-500/10 rounded-2xl text-gold-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </span>
+                <h2 class="text-4xl font-display font-bold">分段大綱</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+                <a href="#part1" class="outline-btn p-8 rounded-3xl block">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest block mb-2">PART 01</span>
+                    <h3 class="text-xl font-bold mb-4">狂妄的虛華</h3>
+                    <p class="text-sm text-gray-500">賽 3:16-24</p>
+                </a>
+                <a href="#part2" class="outline-btn p-8 rounded-3xl block">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest block mb-2">PART 02</span>
+                    <h3 class="text-xl font-bold mb-4">絕望的倒塌</h3>
+                    <p class="text-sm text-gray-500">賽 3:25-4:1</p>
+                </a>
+                <a href="#part3" class="outline-btn p-8 rounded-3xl block">
+                    <span class="text-gold-500 text-xs font-bold tracking-widest block mb-2">PART 03</span>
+                    <h3 class="text-xl font-bold mb-4">榮耀的洗淨</h3>
+                    <p class="text-sm text-gray-500">賽 4:2-6</p>
+                </a>
+            </div>
+
+            <!-- Detailed Analysis Parts -->
+            <div class="space-y-24">
+                <!-- Part 1 -->
+                <article id="part1" class="space-y-8 scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-1/3 space-y-6">
+                            <h4 class="text-5xl font-display font-black text-gold-500/20">01</h4>
+                            <h3 class="text-3xl font-bold leading-tight">狂妄的虛華：當華麗成為屬靈的遮羞布</h3>
+                            <div class="p-4 bg-white/5 rounded-xl border-l-4 border-gold-500">
+                                <p class="text-gold-400 font-mono text-sm">關鍵原文：גָּבַהּ (gabah)</p>
+                                <p class="text-xs text-gray-500 mt-1">意為「高舉、自視甚高」</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-6">
+                            <div class="bento-card p-8 bg-gold-900/10">
+                                <h5 class="text-white font-bold mb-4 flex items-center gap-2">引用經文</h5>
+                                <p class="text-gray-300 italic leading-relaxed">耶和華又說：因為錫安的女子狂傲...主必除掉她們華美的腳釧、髮網、月牙圈...必有臭爛代替馨香，繩子代替腰帶...</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bento-card p-6">
+                                    <h5 class="text-gold-500 text-sm font-bold mb-2">關鍵問題</h5>
+                                    <p class="text-sm text-gray-300">上帝審判的焦點是「驕傲」與「不公義」。外在華麗若成為掩蓋靈性貧乏的遮羞布，即是偶像崇拜。</p>
+                                </div>
+                                <div class="bento-card p-6">
+                                    <h5 class="text-gold-500 text-sm font-bold mb-2">名言佳句</h5>
+                                    <p class="text-sm text-gray-300">「當任何事物比上帝對你更重要時，它就是偶像。」——提摩太·凱勒</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 2 -->
+                <article id="part2" class="space-y-8 scroll-mt-32">
+                    <div class="flex flex-col md:flex-row-reverse gap-8 items-start">
+                        <div class="w-full md:w-1/3 space-y-6">
+                            <h4 class="text-5xl font-display font-black text-gold-500/20">02</h4>
+                            <h3 class="text-3xl font-bold leading-tight">絕望的倒塌：失去倚靠的荒涼光景</h3>
+                            <div class="p-4 bg-white/5 rounded-xl border-l-4 border-red-500">
+                                <p class="text-red-400 font-mono text-sm">關鍵原文：נָקָה (naqah)</p>
+                                <p class="text-xs text-gray-500 mt-1">意為「被清空、被剝奪」</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-6">
+                            <div class="bento-card p-8 bg-red-900/10">
+                                <h5 class="text-white font-bold mb-4 flex items-center gap-2">引用經文</h5>
+                                <p class="text-gray-300 italic leading-relaxed">你的男丁必倒在刀下；你的勇士必死在陣上。錫安的城門必悲傷、哀號；她必荒涼坐在地上...</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bento-card p-6">
+                                    <h5 class="text-gold-500 text-sm font-bold mb-2">關鍵問題</h5>
+                                    <p class="text-sm text-gray-300">失去神的同在，再多物質也無法填補內心荒涼。當銀行帳戶歸零，生命意義若也歸零，即是悲劇。</p>
+                                </div>
+                                <div class="bento-card p-6">
+                                    <h5 class="text-gold-500 text-sm font-bold mb-2">名言佳句</h5>
+                                    <p class="text-sm text-gray-300">「上帝在我們心中擁有的空間，取決於我們願意清空多少世界。」——陶恕</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Part 3 -->
+                <article id="part3" class="space-y-8 scroll-mt-32">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-full md:w-1/3 space-y-6">
+                            <h4 class="text-5xl font-display font-black text-gold-500/20">03</h4>
+                            <h3 class="text-3xl font-bold leading-tight">榮耀的洗淨：真實的華美與神聖的護庇</h3>
+                            <div class="p-4 bg-white/5 rounded-xl border-l-4 border-blue-500">
+                                <p class="text-blue-400 font-mono text-sm">關鍵原文：צֶמַח (tsemach)</p>
+                                <p class="text-xs text-gray-500 mt-1">指「苗、芽」，象徵彌賽亞</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-6">
+                            <div class="bento-card p-8 bg-blue-900/10">
+                                <h5 class="text-white font-bold mb-4 flex items-center gap-2">引用經文</h5>
+                                <p class="text-gray-300 italic leading-relaxed">到那日，耶和華發生的苗必華美尊榮...主以公義的靈和焚燒的靈，將錫安女子的污穢洗去...</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bento-card p-6">
+                                    <h5 class="text-gold-500 text-sm font-bold mb-2">關鍵問題</h5>
+                                    <p class="text-sm text-gray-300">審判並非毀滅，而是洗淨。上帝要燒盡虛浮，讓基督那真正的華美彰顯，成為我們永恆的遮蔽。</p>
+                                </div>
+                                <div class="bento-card p-6">
+                                    <h5 class="text-gold-500 text-sm font-bold mb-2">名言佳句</h5>
+                                    <p class="text-sm text-gray-300">「我已學會親吻那將我擊倒的波浪，因為它將我拋在萬古磐石之上。」——司布真</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Draft Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-gold-500/10 rounded-2xl text-gold-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20l-7-7-7 7M19 4l-7 7-7-7"></path></svg>
+                </span>
+                <h2 class="text-4xl font-display font-bold">講章文稿</h2>
+            </div>
+
+            <div class="bento-card p-8 md:p-16 space-y-12">
+                <div class="max-w-3xl mx-auto space-y-8 text-lg leading-relaxed text-gray-300">
+                    <div class="space-y-4">
+                        <h4 class="text-gold-500 font-bold text-2xl">【前言】</h4>
+                        <p>弟兄姊妹，我們生活在一個極度重視「包裝」的時代。打開社交媒體，我們看見的是修飾過的照片、名牌的服飾、奢華的假期。我們往往以為，這就是「榮耀」。然而，當繁華落盡，我們生命的本質究竟剩下什麼？</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-gold-500 font-bold text-2xl">【狂妄的虛華——當華麗成為屬靈的遮羞布】</h4>
+                        <p>神在經文裡列出了一長串飾品。難道上帝反對人穿得漂亮嗎？絕對不是！上帝真正在意的是<span class="text-white font-bold underline decoration-gold-500">「狂傲」</span>。當時錫安女子身上的每一件名牌，都沾滿了不公義的代價。她們用外在的奢華來掩飾內在的腐敗。</p>
+                        <p class="border-l-4 border-gold-500 pl-6 py-2 italic bg-white/5">「當任何事物比上帝對你更重要時，它就是偶像。」</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-gold-500 font-bold text-2xl">【絕望的倒塌——失去倚靠的荒涼光景】</h4>
+                        <p>曾經高高在上、賣弄眼目的女子，如今失去了一切的倚靠，甚至放棄尊嚴去乞求一個名分。這段經文給我們極大的警惕：<span class="text-white font-bold">當人所依賴的物質與虛榮被剝奪時，生命的空洞與恐慌將展露無遺。</span></p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-gold-500 font-bold text-2xl">【榮耀的洗淨——真實的華美與神聖的護庇】</h4>
+                        <p class="text-gold-400 font-bold text-xl">「到那日，耶和華發生的苗必華美尊榮，地上的出產必為以色列逃脫的人顯為榮華茂盛。」</p>
+                        <p>神就像煉金匠，用烈火燒盡我們生命中的雜質。世界給的華服抵擋不了生命的狂風暴雨，唯有基督的義袍，能成為我們的藏身之處。</p>
+                    </div>
+
+                    <div class="pt-12 border-t border-white/10">
+                        <h4 class="text-gold-500 font-bold text-2xl mb-4">【結論】</h4>
+                        <p>當繁華落盡，我們終將面對生命最真實的樣貌。願我們不再用世界的虛華來裝飾自己，而是勇敢接受聖靈的洗淨，讓基督那真實的華美尊榮，成為我們生命中唯一的榮耀與護庇！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="p-3 bg-gold-500/10 rounded-2xl text-gold-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                </span>
+                <h2 class="text-4xl font-display font-bold">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card p-8 group">
+                    <p class="text-lg text-gray-300 italic mb-6 leading-relaxed group-hover:text-white transition-colors">「人心是一座製造偶像的工廠，每個人都傾向於用自己虛構的形象來取代真神。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">— 約翰·加爾文</span>
+                        <span class="text-xs text-gray-600">《基督教要義》</span>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-8 group">
+                    <p class="text-lg text-gray-300 italic mb-6 leading-relaxed group-hover:text-white transition-colors">「當基督呼召一個人時，祂是吩咐他來死。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">— 潘霍華</span>
+                        <span class="text-xs text-gray-600">《追隨基督》</span>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-8 group">
+                    <p class="text-lg text-gray-300 italic mb-6 leading-relaxed group-hover:text-white transition-colors">「耶穌是唯一一位，如果你尋見祂，祂必成就你；如果你得罪祂，祂必饒恕你的主。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">— 提摩太·凱勒</span>
+                        <span class="text-xs text-gray-600">《假神》</span>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-8 group">
+                    <p class="text-lg text-gray-300 italic mb-6 leading-relaxed group-hover:text-white transition-colors">「罪的本質就是人代替了神；救恩的本質則是神代替了人。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">— 約翰·史托德</span>
+                        <span class="text-xs text-gray-600">《基督的十字架》</span>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="bento-card p-8 group">
+                    <p class="text-lg text-gray-300 italic mb-6 leading-relaxed group-hover:text-white transition-colors">「如果我們不先將世界從心中驅逐出去，神就無法在我們心中掌權。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">— 陶恕</span>
+                        <span class="text-xs text-gray-600">《渴慕神》</span>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="bento-card p-8 group">
+                    <p class="text-lg text-gray-300 italic mb-6 leading-relaxed group-hover:text-white transition-colors">「神不會容許祂的孩子在罪中安逸；祂會用愛的管教，將我們從世界的泥沼中拔出來。」</p>
+                    <div class="flex justify-between items-end">
+                        <span class="text-gold-500 font-bold">— 司布真</span>
+                        <span class="text-xs text-gray-600">《早晚靈修》</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-500 text-sm italic py-4 border-t border-white/5">
+                    網絡資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-500 text-onyx rounded-full flex items-center justify-center shadow-2xl hover:bg-gold-400 transition-all z-[2000] animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <!-- Application Direction (Floating Section) -->
+    <section class="max-w-6xl mx-auto px-6 pb-32">
+        <div class="bento-card p-8 border-gold-500/30">
+            <h3 class="text-2xl font-bold mb-8 text-gradient">回應或實踐行動</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-500 font-bold">1</div>
+                    <h4 class="font-bold">屬靈盤點清單</h4>
+                    <p class="text-sm text-gray-400">寫下投入最多金錢與時間的前三件事，誠實禱告求問神，這些是否已成為遮羞布？</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-500 font-bold">2</div>
+                    <h4 class="font-bold">操練禁食與捨己</h4>
+                    <p class="text-sm text-gray-400">本週選擇一餐禁食，或將預備購買非必需品的費用奉獻出去，操練脫離物質依賴。</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-500 font-bold">3</div>
+                    <h4 class="font-bold">建立「亭子」安息</h4>
+                    <p class="text-sm text-gray-400">每天設立固定15分鐘安靜時間，單單進入神的同在裡，尋求祂如雲柱火柱般的護庇。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+

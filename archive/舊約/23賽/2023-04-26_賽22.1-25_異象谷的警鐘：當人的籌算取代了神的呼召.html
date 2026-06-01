@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽22:1-25：異象谷的警鐘：當人的籌算取代了神的呼召</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fdf7d6',
+                            200: '#fbedad',
+                            300: '#f7de7a',
+                            400: '#f2cc4c',
+                            500: '#eab325',
+                            600: '#cd8d1a',
+                            700: '#a36418',
+                            800: '#864f1a',
+                            900: '#72421b',
+                        },
+                        abyss: '#0a0a0c',
+                        surface: '#16161a',
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        accent: ['Ma Shan Zheng', 'cursive'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 2s infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: 0.9, transform: 'scale(1.05)' },
+                            '50%': { opacity: 0.4, transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e5e7eb;
+            font-family: 'Outfit', 'Noto Serif TC', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        .bento-card {
+            background: rgba(22, 22, 26, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(234, 179, 37, 0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .golden-gradient-text {
+            background: linear-gradient(135deg, #f7de7a 0%, #eab325 50%, #cd8d1a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-jump {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #eab325;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '賽22:1-25',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '賽',         // 動態注入書卷縮寫，例如：出
+              'note_title': '異象谷的警鐘：當人的籌算取代了神的呼召' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="custom-scrollbar">
+
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-gold-400 font-display font-bold tracking-wider text-sm md:text-base">賽22:1-25 異象谷的警鐘</span>
+            <div class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase">
+                <a href="#prayer" class="hover:text-gold-400 transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold-400 transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold-400 transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold-400 transition-colors">名言</a>
+            </div>
+            <!-- Mobile Menu Simple -->
+            <div class="md:hidden flex space-x-4 text-[10px] tracking-tighter">
+                <a href="#prayer">禱告</a>
+                <a href="#outline">大綱</a>
+                <a href="#sermon">講章</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Header -->
+    <header id="header" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <img src='image/img_059c59d2-20e5-4f34-92c2-dfbbb474c1aa.jpg' alt='Banner Background' class="w-full h-full object-cover animate-breath" />
+        </div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 leading-tight">
+                <span class="block text-white mb-2">異象谷的警鐘</span>
+                <span class="golden-gradient-text">當人的籌算取代了神的呼召</span>
+            </h1>
+            
+            <div class="mt-12">
+                <p class="text-xl md:text-2xl font-display text-white/90 italic leading-relaxed text-jump">
+                    「你們又在兩道城牆中間挖一個聚水池，為盛舊池的水，卻不仰望做這事的主，也不顧念從古定這事的。」
+                </p>
+                <p class="mt-4 text-gold-400 font-semibold tracking-widest">（以賽亞書 22:11）</p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="bento-card p-8 md:p-16 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                <svg class="w-32 h-32 text-gold-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/></svg>
+            </div>
+            <h2 class="text-3xl font-display font-bold mb-10 flex items-center text-gold-400">
+                <span class="mr-4 text-4xl">🙏</span> 禱告
+            </h2>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-300 first-letter:text-5xl first-letter:font-bold first-letter:text-gold-500 first-letter:mr-3 first-letter:float-left">
+                主耶和華，歷史的主宰，我們來到祢面前。我們承認，在面對生活中的危機與挑戰時，我們常常如同昔日的耶路撒冷居民，急於尋找世俗的解決方案，修補城牆、積蓄水源，卻忘記了抬起頭來仰望那創造我們、掌管萬有、從古時就定意這一切的主。求祢赦免我們依靠自己籌算而將祢邊緣化的罪。當祢呼召我們悔改與哀哭時，求祢不叫我們用屬世的麻木與享樂來逃避祢的聲音。求祢開我們的屬靈眼睛，讓我們看見真正的保障不在乎人的勢力，而在乎那掌握大衛鑰匙的耶穌基督。奉耶穌基督得勝的名求，阿們。
+            </p>
+        </section>
+
+        <!-- Background Analysis -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1 bento-card p-8 bg-gradient-to-br from-gold-900/20 to-transparent">
+                <h3 class="text-xl font-display font-bold text-gold-400 mb-6 flex items-center">
+                    <span class="mr-2">🏛️</span> 歷史背景
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    公元前701年，亞述王西拿基立大軍壓境。希西家王挖掘「西羅亞隧道」引水入城，這在軍事上是極大的成功，但在屬靈上卻是盲目的。
+                </p>
+            </div>
+            <div class="md:col-span-2 bento-card p-8">
+                <h3 class="text-xl font-display font-bold text-gold-400 mb-6 flex items-center">
+                    <span class="mr-2">🌍</span> 政治與靈性環境
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    耶路撒冷被稱為「異象谷」，諷刺這群本該最有洞察力的選民卻是屬靈瞎眼的。他們在危機解除時陷入狂歡，以「吃喝吧，明天要死了」這種絕望的享樂主義逃避上帝。同時，宮廷內部權力鬥爭激烈，驕傲的舍伯那試圖靠政治結盟自保。
+                </p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="space-y-12">
+            <h2 class="text-3xl font-display font-bold text-center text-white flex justify-center items-center">
+                <span class="mr-4">📜</span> 分段大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#section1" class="group block p-6 bento-card hover:bg-gold-500/10 border-gold-500/20">
+                    <span class="text-gold-500 font-bold block mb-2">第一段</span>
+                    <h4 class="text-lg font-bold group-hover:text-gold-400 transition-colors">狂歡背後的盲目：看見危機卻看不見神</h4>
+                    <p class="text-xs text-gray-500 mt-2">賽 22:1-11</p>
+                </a>
+                <a href="#section2" class="group block p-6 bento-card hover:bg-gold-500/10 border-gold-500/20">
+                    <span class="text-gold-500 font-bold block mb-2">第二段</span>
+                    <h4 class="text-lg font-bold group-hover:text-gold-400 transition-colors">麻木的享樂主義：拒絕悔改的絕望</h4>
+                    <p class="text-xs text-gray-500 mt-2">賽 22:12-14</p>
+                </a>
+                <a href="#section3" class="group block p-6 bento-card hover:bg-gold-500/10 border-gold-500/20">
+                    <span class="text-gold-500 font-bold block mb-2">第三段</span>
+                    <h4 class="text-lg font-bold group-hover:text-gold-400 transition-colors">權柄的轉移：從倚靠權貴到真正的保障</h4>
+                    <p class="text-xs text-gray-500 mt-2">賽 22:15-25</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <section class="space-y-24">
+            <!-- Section 1 Details -->
+            <div id="section1" class="scroll-mt-24">
+                <div class="flex items-center space-x-4 mb-8">
+                    <span class="bg-gold-500 text-black px-4 py-1 rounded-full font-bold text-sm">一</span>
+                    <h3 class="text-2xl md:text-4xl font-display font-bold text-white">狂歡背後的盲目</h3>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3 space-y-6">
+                        <div class="bg-surface/40 border-l-4 border-gold-500 p-6 italic text-gray-300">
+                            「...那日，你就仰望林庫內的軍器...你們又在兩道城牆中間挖一個聚水池...卻不仰望做這事的主。」
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">🔍</span> 關鍵原文：仰望 (nāḇaṭ)</h4>
+                            <p class="text-gray-400">意為「專注地看」、「注視」。百姓在危機中做了所有正確的防禦準備，卻唯獨沒有「注視」那位掌管歷史的主。這顯示了他們信仰的實質是無神論的實用主義。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">❓</span> 關鍵問題：修築城牆難道錯了嗎？</h4>
+                            <p class="text-gray-400">上帝並非反對人盡本分，祂責備的是「本末倒置」的依靠。當我們在解決問題時，如果整個籌算過程中完全排除了上帝，我們的「盡力」就成了對神主權的「僭越」。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="bento-card p-6 bg-white/5">
+                            <h4 class="text-white font-bold mb-3">📖 例證</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed italic">號稱「永不沉沒」的鐵達尼號...他們「仰望」了鋼鐵的厚度，卻忽略了潛藏的冰山。當人生只建立在物質保障上，我們隨時面臨沉船。</p>
+                        </div>
+                        <div class="bento-card p-6 border-l-2 border-gold-400">
+                            <p class="text-gold-100 font-medium italic">「我們常常把神當作是一個在緊急狀況下才拿出來使用的滅火器，卻從未將祂當作是我們生命建築的工程師。」</p>
+                            <p class="text-right text-xs text-gold-600 mt-2">— 陶恕 (A.W. Tozer)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 Details -->
+            <div id="section2" class="scroll-mt-24">
+                <div class="flex items-center space-x-4 mb-8">
+                    <span class="bg-gold-500 text-black px-4 py-1 rounded-full font-bold text-sm">二</span>
+                    <h3 class="text-2xl md:text-4xl font-display font-bold text-white">麻木的享樂主義</h3>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3 space-y-6">
+                        <div class="bg-surface/40 border-l-4 border-red-500/50 p-6 italic text-gray-300">
+                            「...誰知，人倒歡喜快樂...說：我們吃喝吧！因為明天要死了。」
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">🔍</span> 關鍵原文：歡喜快樂 (śāśôn)</h4>
+                            <p class="text-gray-400">與上帝呼召的「哭泣哀號」形成強烈諷刺。百姓選擇了逃避現實的狂歡，試圖用感官刺激來麻痺內心對死亡與審判的恐懼。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="bento-card p-6 border-l-2 border-gold-400">
+                            <p class="text-gold-100 font-medium italic">「如果我們在世俗的享樂中尋找安慰，我們就等於在告訴上帝：祢的恩典不足以滿足我。」</p>
+                            <p class="text-right text-xs text-gold-600 mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 Details -->
+            <div id="section3" class="scroll-mt-24">
+                <div class="flex items-center space-x-4 mb-8">
+                    <span class="bg-gold-500 text-black px-4 py-1 rounded-full font-bold text-sm">三</span>
+                    <h3 class="text-2xl md:text-4xl font-display font-bold text-white">權柄的轉移</h3>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3 space-y-6">
+                        <div class="bg-surface/40 border-l-4 border-blue-500/50 p-6 italic text-gray-300">
+                            「...我必將大衛家的鑰匙放在他肩頭上...釘在堅固處的釘子必壓斜，被砍斷落地...」
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">🔍</span> 關鍵原文：鑰匙 (map̄tēaḥ)</h4>
+                            <p class="text-gray-400">象徵絕對統治權。《啟示錄》3:7將此應用於耶穌基督，唯有祂是擁有終極主權的君王。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold-400 font-bold flex items-center"><span class="mr-2">❓</span> 關鍵問題：為什麼堅固的釘子會斷裂？</h4>
+                            <p class="text-gray-400">以利亞敬雖優秀，但他依然只是個人。任何屬世的領袖都不能成為我們終極的倚靠。那根真正永遠不會斷裂的釘子，是耶穌基督。</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="bento-card p-6 border-l-2 border-gold-400">
+                            <p class="text-gold-100 font-medium italic">「不要把你的信心建立在任何人身上...因為人都是會朽壞的根基。唯有基督，是那亙古不變的萬古磐石。」</p>
+                            <p class="text-right text-xs text-gold-600 mt-2">— 約翰·加爾文 (John Calvin)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="bento-card p-8 md:p-16 space-y-12">
+            <h2 class="text-3xl font-display font-bold text-center text-gold-400 flex justify-center items-center">
+                <span class="mr-4">🎙️</span> 講章文稿
+            </h2>
+            <div class="prose prose-invert max-w-none space-y-8 text-gray-300 leading-relaxed text-lg">
+                <p class="font-display text-2xl text-white text-center mb-12">賽22:1-25：異象谷的警鐘</p>
+                
+                <div>
+                    <h4 class="text-xl font-bold text-gold-400 mb-4">一、 狂歡背後的盲目：看見危機卻看不見神</h4>
+                    <p>
+                        猶大國的百姓做了極其周密的準備。他們拆毀房屋修補城牆，挖掘隧道引水入城。從人類軍事防禦的角度來看，他們做得完美無缺。但神卻嚴厲地責備他們。神責備的不是他們盡本分，而是那種「排除了神的實用主義」。
+                        <span class="block bg-gold-900/30 p-4 rounded-xl border-l-4 border-gold-500 my-4 text-white font-bold">
+                            「你們又在兩道城牆中間挖一個聚水池...卻不仰望做這事的主。」
+                        </span>
+                        我們是不是也像他們一樣？找盡了所有人脈，用盡了所有專業，唯獨把上帝晾在一邊？
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-gold-400 mb-4">二、 麻木的享樂主義：拒絕悔改的絕望</h4>
+                    <p>
+                        神呼召他們哭泣哀號，要他們看見這是管教。但他們卻說：<span class="text-white font-bold">「我們吃吃喝喝吧！因為明天要死了。」</span> 這是一種因為沒有上帝而產生的「絕望的享樂主義」。現代人何嘗不是如此？面對對未來的無力感，多少人沉溺於追劇、購物、或各種短暫的感官刺激中？
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-gold-400 mb-4">三、 權柄的轉移：從倚靠權貴到真正的保障</h4>
+                    <p>
+                        神宣告要興起以利亞敬。他被形容為一根「釘在堅固處的釘子」。但故事最後宣告：這根釘子最終一定會斷裂！人為的籌算會落空，屬世的領袖會崩塌。
+                        <span class="block text-center text-2xl font-display text-gold-400 my-8 py-4 border-y border-gold-500/20">
+                            唯有耶穌基督，是我們在異象谷中唯一的拯救！
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conclusion & Keywords -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 border-t border-white/10">
+                <div class="text-center">
+                    <span class="text-xs uppercase tracking-widest text-gray-500">結論關鍵字</span>
+                    <div class="flex justify-center space-x-4 mt-2">
+                        <span class="text-gold-400 font-bold">仰望</span>
+                        <span class="text-gold-400 font-bold">悔改</span>
+                        <span class="text-gold-400 font-bold">磐石</span>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="text-sm font-bold text-white mb-2 flex items-center">
+                        <span class="mr-2">🎯</span> 回應行動
+                    </h4>
+                    <ul class="text-sm text-gray-400 space-y-1 list-disc list-inside">
+                        <li>操練凡事仰望的禱告：重大決策前先安靜三分鐘。</li>
+                        <li>刻意的禁食與自省：選擇一天暫停社群媒體。</li>
+                        <li>重新對焦基督的權柄：將重擔從「人」的釘子上交給耶穌。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-12">
+            <h2 class="text-3xl font-display font-bold text-center text-gold-400 flex justify-center items-center">
+                <span class="mr-4">✨</span> 名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="bento-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic">「恩典是白白的，但絕不是廉價的。廉價的恩典是我們自己給自己的恩典，是沒有悔改的赦免，是沒有十字架的恩典。」</p>
+                    <p class="text-right text-xs text-gold-500 mt-4">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <!-- Quote 2 -->
+                <div class="bento-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic">「有神加上一切，並不比單單有神更多；有神減去一切，並不比單單有神更少。」</p>
+                    <p class="text-right text-xs text-gold-500 mt-4">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <!-- Quote 3 -->
+                <div class="bento-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic">「如果我們把任何事物變得比神更重要，那它就成了我們的偶像。」</p>
+                    <p class="text-right text-xs text-gold-500 mt-4">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <!-- Quote 4 -->
+                <div class="bento-card p-6 flex flex-col justify-between">
+                    <p class="text-gray-300 italic">「在試煉的黑夜裡，信心不看周圍的環境，而是仰望那位坐在寶座上、掌管萬有的神。」</p>
+                    <p class="text-right text-xs text-gold-500 mt-4">— 司布真 (Charles Spurgeon)</p>
+                </div>
+            </div>
+            
+            <!-- Warning -->
+            <div class="text-center text-gray-600 text-xs mt-12 py-8 border-t border-white/5">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top -->
+    <a href="#header" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-black rounded-full flex items-center justify-center shadow-lg hover:bg-gold-400 transition-all z-50 animate-float">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll active state to nav items (optional micro-interaction)
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('nav a');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('text-gold-400');
+                if (item.getAttribute('href').includes(current)) {
+                    item.classList.add('text-gold-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

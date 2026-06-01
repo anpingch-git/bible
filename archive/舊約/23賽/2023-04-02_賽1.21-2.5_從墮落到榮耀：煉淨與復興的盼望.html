@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽1:21-2:5: 從墮落到榮耀：煉淨與復興的盼望</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        flame: '#ff4d00',
+                        deep: '#0a0a0c',
+                        surface: '#16161a',
+                    },
+                    fontFamily: {
+                        serif: ['Noto Serif TC', 'serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'breathe': 'breathe 8s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) scale(1)' },
+                            '50%': { transform: 'translateY(-5px) scale(1.02)' },
+                        },
+                        breathe: {
+                            '0%, 100%': { opacity: '0.4' },
+                            '50%': { opacity: '0.8' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #0a0a0c; color: #e5e7eb; overflow-x: hidden; }
+        .glass-card {
+            background: rgba(22, 22, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow { text-shadow: 0 0 15px rgba(234, 179, 8, 0.3); }
+        .title-gradient {
+            background: linear-gradient(135deg, #fff 30%, #eab308 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .breathe-effect { animation: breathe 8s ease-in-out infinite; }
+        .micro-bounce { animation: float 4s ease-in-out infinite; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #0a0a0c; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #eab308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        
+        .outline-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(234, 179, 8, 0.2);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '賽1:21-2:5',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '賽',         // 動態注入書卷縮寫，例如：出
+              'note_title': '從墮落到榮耀：煉淨與復興的盼望' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/5 py-4 px-6 flex justify-between items-center">
+        <span class="font-display font-bold text-gold-500 tracking-wider text-sm md:text-base">賽 1:21 - 2:5</span>
+        <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium tracking-widest uppercase">
+            <a href="#prayer" class="nav-link text-gray-400 hover:text-white">禱告</a>
+            <a href="#outline" class="nav-link text-gray-400 hover:text-white">大綱</a>
+            <a href="#sermon" class="nav-link text-gray-400 hover:text-white">講章</a>
+            <a href="#quotes" class="nav-link text-gray-400 hover:text-white">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse Section -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <!-- Banner Image -->
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_ee4bb885-4a9d-49e0-9051-80af3d92aae2.jpg' alt='media_1' class="w-full h-full object-cover breathe-effect scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-deep"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-6 max-w-5xl" id="top">
+            <div class="mb-8 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
+                <h1 class="font-serif text-4xl md:text-7xl font-black mb-4 title-gradient leading-tight">
+                    從墮落到榮耀<br>
+                    <span class="text-2xl md:text-4xl font-normal opacity-90 block mt-4">煉淨與復興的盼望</span>
+                </h1>
+            </div>
+
+            <!-- Golden Verse (Micro-bouncing) -->
+            <div class="micro-bounce">
+                <p class="font-serif text-lg md:text-2xl italic text-gold-200 leading-relaxed max-w-3xl mx-auto drop-shadow-2xl">
+                    「必有許多國的民前往，說：來吧，我們登耶和華的山，奔雅各神的殿。主必將他的道教訓我們；我們也要行他的路。因為訓誨必出於錫安；耶和華的言語必出於耶路撒冷。」
+                </p>
+                <p class="mt-4 font-display font-semibold text-gold-500 tracking-widest">— 以賽亞書 2:3 —</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-32">
+            <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 bg-gold-600/20 rounded-xl">
+                        <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7v5l3 3"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-serif font-bold text-white">心靈禱告</h2>
+                </div>
+                <p class="font-serif text-xl md:text-2xl leading-relaxed text-gray-300 first-letter:text-5xl first-letter:text-gold-500 first-letter:font-bold first-letter:mr-3 first-letter:float-left">
+                    公義又慈愛的天父，我們來到祢面前，承認我們常常如同昔日的耶路撒冷，在安逸中失去了起初的忠貞，容讓世俗的價值觀與不義摻雜在我們的生命中。主啊，求祢那神聖的烈火來煉淨我們的渣滓，除淨我們的雜質，即使管教的過程帶來痛苦，我們仍願順服，因為知道祢的目的乃是恢復與醫治。求祢將祢的道教訓我們，吸引我們登耶和華的山，使我們在這黑暗彎曲的世代中，能將刀打成犁頭，成為和平的使者，並一生在耶和華的光明中同行。奉主耶穌基督得勝的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Background Section -->
+        <section class="space-y-8">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-blue-600/20 rounded-xl">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">時代背景</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-3xl border-l-4 border-gold-500">
+                    <p class="text-gray-300 leading-relaxed italic">
+                        公元前八世紀的猶大國。當時正值烏西雅、約坦、亞哈斯、希西家作王時期。在物質富裕下，社會貧富差距擴大，權貴階級貪贓枉法。
+                    </p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl border-l-4 border-flame">
+                    <p class="text-gray-300 leading-relaxed italic">
+                        北方亞述帝國威脅。先知以賽亞發出審判警告，但也指向末後上帝永恆國度的榮耀，透過「煉淨」來帶來真正的和平。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-purple-600/20 rounded-xl">
+                    <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">信息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+                <a href="#section-1" class="outline-btn glass-card p-6 rounded-2xl flex items-center justify-between group">
+                    <div class="flex flex-col">
+                        <span class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-1">Part 01</span>
+                        <span class="text-xl font-serif font-bold group-hover:text-gold-400 transition-colors">昔日忠貞變為淫婦：屬靈墮落與不義</span>
+                        <span class="text-gray-500 text-sm mt-1">賽 1:21-23</span>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-gold-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </a>
+                <a href="#section-2" class="outline-btn glass-card p-6 rounded-2xl flex items-center justify-between group">
+                    <div class="flex flex-col">
+                        <span class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-1">Part 02</span>
+                        <span class="text-xl font-serif font-bold group-hover:text-gold-400 transition-colors">神聖烈火煉淨渣滓：公義管教與恢復</span>
+                        <span class="text-gray-500 text-sm mt-1">賽 1:24-31</span>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-gold-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </a>
+                <a href="#section-3" class="outline-btn glass-card p-6 rounded-2xl flex items-center justify-between group">
+                    <div class="flex flex-col">
+                        <span class="text-gold-500 text-xs font-bold uppercase tracking-widest mb-1">Part 03</span>
+                        <span class="text-xl font-serif font-bold group-hover:text-gold-400 transition-colors">萬民流歸耶和華山：光明中的榮耀呼召</span>
+                        <span class="text-gray-500 text-sm mt-1">賽 2:1-5</span>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-600 group-hover:text-gold-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown Section 1 -->
+        <section id="section-1" class="scroll-mt-32 space-y-12">
+            <div class="border-l-8 border-flame pl-8 py-2">
+                <h3 class="text-flame font-bold tracking-tighter text-sm mb-2 uppercase">Analysis I</h3>
+                <h2 class="text-4xl font-serif font-black">昔日忠貞變為淫婦</h2>
+                <p class="text-gray-500 font-display mt-2 italic text-lg tracking-widest">Isaiah 1:21-23</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 關鍵原文
+                        </h4>
+                        <ul class="space-y-4">
+                            <li>
+                                <span class="text-lg font-serif text-white">妓女 (zanah)</span>
+                                <p class="text-sm text-gray-400 mt-1">指「屬靈的淫亂」。指背棄與神立的約，追求世俗利益。</p>
+                            </li>
+                            <li>
+                                <span class="text-lg font-serif text-white">攙對 (mahal)</span>
+                                <p class="text-sm text-gray-400 mt-1">低劣物質混入高貴者。象徵信仰純潔性的喪失。</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300 italic">"為什麼曾經充滿公義的群體會墮落？如何察覺生命中的「攙兌」？"</p>
+                        <p class="mt-3 text-gray-400 text-sm leading-relaxed">墮落是從微小妥協開始。容忍生活中的小罪（不誠實、冷漠），信仰就會失去原本的香氣。</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-gold-600/10 p-6 rounded-2xl border border-gold-600/20">
+                        <h4 class="text-gold-500 font-bold mb-3">生活例證</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            古羅馬商人混入便宜金屬。生命若只維持外表宗教行為，在暗處妥協，考驗時便會暴露出渣滓。
+                        </p>
+                    </div>
+                    <blockquote class="p-8 glass-card rounded-2xl border-r-4 border-gold-500">
+                        <p class="text-xl font-serif italic text-white">「妥協是基督徒生命中最致命的毒藥，它不會立刻殺死你，但會慢慢耗盡你屬靈的生命力。」</p>
+                        <footer class="mt-4 text-gold-500 font-bold">— 陶恕 (A.W. Tozer)</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown Section 2 -->
+        <section id="section-2" class="scroll-mt-32 space-y-12">
+            <div class="border-l-8 border-gold-500 pl-8 py-2 text-right md:text-left">
+                <h3 class="text-gold-500 font-bold tracking-tighter text-sm mb-2 uppercase">Analysis II</h3>
+                <h2 class="text-4xl font-serif font-black">神聖烈火煉淨渣滓</h2>
+                <p class="text-gray-500 font-display mt-2 italic text-lg tracking-widest">Isaiah 1:24-31</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="order-2 md:order-1 space-y-6">
+                    <div class="bg-flame/10 p-6 rounded-2xl border border-flame/20">
+                        <h4 class="text-flame font-bold mb-3">生活例證</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            銀匠說：「當我在熔化的銀子表面，能清楚看見我自己的倒影時，我就知道它已經純淨了。」神也如此在火爐中煉淨我們。
+                        </p>
+                    </div>
+                    <blockquote class="p-8 glass-card rounded-2xl border-r-4 border-flame">
+                        <p class="text-xl font-serif italic text-white">「神愛我們，不是要讓我們在罪中感到舒服，而是要在火爐中煉淨我們，使我們能承受祂的榮耀。」</p>
+                        <footer class="mt-4 text-flame font-bold">— 司布真 (Charles Spurgeon)</footer>
+                    </blockquote>
+                </div>
+                <div class="order-1 md:order-2 space-y-6">
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 關鍵原文
+                        </h4>
+                        <ul class="space-y-4">
+                            <li>
+                                <span class="text-lg font-serif text-white">煉盡 (tsaraph)</span>
+                                <p class="text-sm text-gray-400 mt-1">冶金學用語，指極高溫熔化金屬刮除雜質。管教目的是提純與潔淨。</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300 italic">"當我們遭遇困境或神的管教時，該如何用正確的眼光看待？"</p>
+                        <p class="mt-3 text-gray-400 text-sm leading-relaxed">神的「反手」管教其實是祂愛的干預。祂把我們當作貴重的銀子，因為在乎，所以必須煉淨。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown Section 3 -->
+        <section id="section-3" class="scroll-mt-32 space-y-12">
+            <div class="border-l-8 border-blue-500 pl-8 py-2">
+                <h3 class="text-blue-500 font-bold tracking-tighter text-sm mb-2 uppercase">Analysis III</h3>
+                <h2 class="text-4xl font-serif font-black">萬民流歸耶和華山</h2>
+                <p class="text-gray-500 font-display mt-2 italic text-lg tracking-widest">Isaiah 2:1-5</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 關鍵原文
+                        </h4>
+                        <ul class="space-y-4">
+                            <li>
+                                <span class="text-lg font-serif text-white">流歸 (nahar)</span>
+                                <p class="text-sm text-gray-400 mt-1">河水「往上」流的超自然景觀。象徵神真理的超自然吸引力。</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl">
+                        <h4 class="text-gold-500 font-bold mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gold-500"></span> 關鍵問題
+                        </h4>
+                        <p class="text-gray-300 italic">"真正的世界和平與復興的基礎是什麼？"</p>
+                        <p class="mt-3 text-gray-400 text-sm leading-relaxed">不是外交手段，而是萬民願意「登神的山、受神的教訓、行神的路」。人心降服，撕裂才能癒合。</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-blue-600/10 p-6 rounded-2xl border border-blue-600/20">
+                        <h4 class="text-blue-400 font-bold mb-3">生活例證</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            聯合國總部「劍打成犁」雕像。若無上帝掌權，條約僅是空文。唯有光照入生命，殺傷力才能轉化為造就力。
+                        </p>
+                    </div>
+                    <blockquote class="p-8 glass-card rounded-2xl border-r-4 border-blue-500">
+                        <p class="text-xl font-serif italic text-white">「真正的平安不是沒有衝突，而是在上帝的公義與真理中，經歷生命的完整與和好。」</p>
+                        <footer class="mt-4 text-blue-400 font-bold">— 提摩太·凱勒 (Timothy Keller)</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script Section -->
+        <section id="sermon" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-red-600/20 rounded-xl">
+                    <svg class="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">講章文稿</h2>
+            </div>
+            
+            <article class="font-serif text-lg md:text-xl text-gray-300 leading-loose space-y-12">
+                <h3 class="text-2xl md:text-3xl text-gold-500 font-black border-b border-white/10 pb-4">
+                    賽1:21-2:5：從墮落到榮耀：煉淨與復興的盼望
+                </h3>
+                
+                <p>各位弟兄姊妹，平安。今天我們所讀的以賽亞書，是一部充滿張力與盼望的書卷。當我們先看第一章時，會感到無比的沉重；但當我們翻到第二章，卻又看見極大的榮耀。這兩段經文放在一起，為我們描繪了一幅從墮落到復興的完整藍圖。</p>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <span class="w-2 h-8 bg-flame rounded-full"></span>
+                        第一、昔日忠貞變為淫婦
+                    </h4>
+                    <p class="bg-white/5 p-6 rounded-xl border-l-4 border-flame italic">
+                        以賽亞書 1:21-22 說：「<strong class="text-white">可歎，忠信的城變為妓女！從前充滿了公平，公義居在其中，現今卻有兇手居住。你的銀子變為渣滓；你的醇酒用水攙對。</strong>」
+                    </p>
+                    <p>上帝看著耶路撒冷，心中發出極大的嘆息。曾經，這是一座對神忠貞的城市，但因為長期的安逸與富裕，他們的信仰變質了。神用兩個比喻來形容這種墮落：銀子變為渣滓，醇酒用水攙對。弟兄姊妹，墮落往往不是一瞬間的背叛，而是一步步的「攙對」。我們在職場上稍微妥協一點誠信，在生活中稍微沾染一點世俗的價值觀，在信仰中把對神的敬畏兌了一點水。久而久之，我們外表還是基督徒，但內在已經失去了基督的香氣與公義。誠如陶恕所言：「妥協是基督徒生命中最致命的毒藥。」我們必須警醒，我們的心是否已經被這世界同化？</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <span class="w-2 h-8 bg-gold-500 rounded-full"></span>
+                        第二、神聖烈火煉淨渣滓
+                    </h4>
+                    <p class="bg-white/5 p-6 rounded-xl border-l-4 border-gold-500 italic">
+                        以賽亞書 1:25 說：「<strong class="text-white">我必反手加在你身上，煉盡你的渣滓，除淨你的雜質。</strong>」
+                    </p>
+                    <p>這是一句充滿恩典卻又帶著痛楚的應許。神在這裡化身為一位「冶金匠」，祂要把我們放入高溫的火爐中。管教的火是很痛的，患難的煎熬是令人難受的，但我們要知道，神不是要毀滅我們，祂是要「煉盡」我們。當我們在困境中時，不要急著抱怨神為什麼讓我遭遇這些，而是要問：「主啊，祢要從我生命中燒掉什麼雜質？」司布真曾說：「神愛我們，不是要讓我們在罪中感到舒服，而是要在火爐中煉淨我們。」唯有經歷烈火的修剪與煉淨，教會與個人的生命才能恢復起初的榮美。</p>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
+                        第三、萬民流歸耶和華山
+                    </h4>
+                    <p class="bg-white/5 p-6 rounded-xl border-l-4 border-blue-500 italic">
+                        以賽亞書 2:3 宣告：<strong class="text-white">「必有許多國的民前往，說：來吧，我們登耶和華的山，奔雅各神的殿。主必將他的道教訓我們；我們也要行他的路。」</strong>
+                    </p>
+                    <p>當教會被神煉淨，活出真實的公義與聖潔時，就會產生一種超自然的吸引力。萬民要「流歸」這山。這是一幅何等榮耀的畫面！當人們願意順服神的道，結果就是經文第4節所說的：「<strong class="text-white">他們要將刀打成犁頭，把槍打成鐮刀...他們也不再學習戰事。</strong>」人世間的紛爭、關係的破裂，唯有在耶和華的真理中才能得到真正的醫治。當神掌權，我們就不再需要用言語的「刀劍」去攻擊彼此，而是轉化為造就人的「犁頭」。</p>
+                </div>
+
+                <div class="bg-gold-600/20 p-8 rounded-3xl text-center border border-gold-500/30">
+                    <p class="text-xl md:text-2xl font-black text-gold-500 mb-4 tracking-tighter uppercase">Final Call</p>
+                    <p class="text-white italic text-2xl font-serif">
+                        「雅各家啊，來吧！我們在耶和華的光明中同行。」
+                    </p>
+                    <p class="mt-6 text-gray-400 text-sm">
+                        復興不是等待未來才發生的事，而是今天、現在，我們就決定從妥協的暗處走出來，勇敢地進入神的火爐中被煉淨，並立志行在祂的光明中。願神賜福我們！
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <div class="p-3 bg-green-600/20 rounded-xl">
+                        <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-serif font-bold text-white">應用方向</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li class="glass-card p-4 rounded-xl flex gap-4">
+                        <span class="text-gold-500 font-bold">01</span>
+                        <p class="text-gray-300">信仰純度檢測：反省個人生命是否在金錢、權力上出現「水攙酒」的妥協？</p>
+                    </li>
+                    <li class="glass-card p-4 rounded-xl flex gap-4">
+                        <span class="text-gold-500 font-bold">02</span>
+                        <p class="text-gray-300">擁抱管教的擁抱：改變對苦難看法，主動除掉生命雜質。</p>
+                    </li>
+                    <li class="glass-card p-4 rounded-xl flex gap-4">
+                        <span class="text-gold-500 font-bold">03</span>
+                        <p class="text-gray-300">成為和平使者：停止「學習戰事」，將武器轉化為建設行動。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-8">
+                <div class="flex items-center gap-4">
+                    <div class="p-3 bg-indigo-600/20 rounded-xl">
+                        <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h2 class="text-3xl font-serif font-bold text-white">回應行動</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li class="bg-indigo-900/20 p-4 rounded-xl flex gap-4 border border-indigo-500/20">
+                        <span class="text-indigo-400 font-bold">ACT</span>
+                        <p class="text-gray-300">認罪與除渣：本週寫下一項一直妥協的罪，並具體悔改。</p>
+                    </li>
+                    <li class="bg-indigo-900/20 p-4 rounded-xl flex gap-4 border border-indigo-500/20">
+                        <span class="text-indigo-400 font-bold">ACT</span>
+                        <p class="text-gray-300">登耶和華山：建立靈修習慣，視每日讀經為「登神的山」。</p>
+                    </li>
+                    <li class="bg-indigo-900/20 p-4 rounded-xl flex gap-4 border border-indigo-500/20">
+                        <span class="text-indigo-400 font-bold">ACT</span>
+                        <p class="text-gray-300">刀打成犁頭：主動與有嫌隙的人和好，用造就的話語取代攻擊。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="p-3 bg-yellow-600/20 rounded-xl">
+                    <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                </div>
+                <h2 class="text-3xl font-serif font-bold text-white">名言佳句</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote Items -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「廉價的恩典是我們教會的死敵...它是重價的，因為它使人付上生命；它是恩典，因為它賜給人那唯一的真生命。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「人的心本質上就是一座製造偶像的工廠。我們總是不斷地用受造物來取代造物主的位置。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·加爾文 (John Calvin)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「神未曾應許天色常藍，但祂應許在烈火的試煉中與我們同在；火爐的熱度不是為了毀滅銀子，而是為了除掉渣滓。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 司布真 (Charles Spurgeon)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「我們之所以在屬靈上如此軟弱，是因為我們允許世界的事物與神的事物在我們心中妥協、共存。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 陶恕 (A.W. Tozer)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「給我一百個除了罪惡一無所懼，除了上帝一無所求的人...他們都將震動地獄的門。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·衛斯理 (John Wesley)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「當你把任何比神更重要的事物當作你生命意義的中心時，那就是你的偶像。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 提摩太·凱勒 (Timothy Keller)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「十字架是上帝對世界暴力的終極回應。在十字架上，神親自承擔了我們的仇恨。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 約翰·史托德 (John Stott)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「在這個追求速成與浮躁的時代，基督徒的門徒訓練就是朝著同一個方向，作長期的順服。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 畢德生 (Eugene Peterson)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「這本書（聖經）會使你遠離罪惡，或者罪惡會使你遠離這本書。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 慕迪 (D.L. Moody)</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-colors group">
+                    <p class="text-gray-300 italic mb-4 leading-relaxed">「真正的宗教很大程度上在於屬靈的敬虔情感。光有外表的宗教形式...在神面前是無效的。」</p>
+                    <p class="text-gold-500 font-bold text-sm">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <footer class="pt-20 text-center border-t border-white/5">
+            <p class="text-gray-600 text-sm italic tracking-widest">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </footer>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 hover:bg-gold-500 text-deep flex items-center justify-center rounded-full shadow-2xl transition-all hover:scale-110 z-50 group">
+        <svg class="w-6 h-6 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </a>
+
+    <script>
+        // Smooth reveal logic if needed, but Tailwind classes handle basics.
+        // Interactivity for specific buttons or scrolling enhancements can go here.
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

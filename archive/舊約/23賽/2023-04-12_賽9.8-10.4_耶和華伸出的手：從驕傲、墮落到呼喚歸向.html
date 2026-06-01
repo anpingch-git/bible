@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽9:8-10:4：耶和華伸出的手：從驕傲、墮落到呼喚歸向</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        crimson: '#dc143c',
+                        obsidian: '#0a0a0c',
+                        slate: {
+                            850: '#1e293b',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse-custom 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s infinite',
+                    },
+                    keyframes: {
+                        'pulse-custom': {
+                            '0%, 100%': { opacity: 0.8 },
+                            '50%': { opacity: 0.4 },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)', transitionTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+                            '50%': { transform: 'translateY(-5%)', transitionTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #facc15;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-anchor {
+            scroll-margin-top: 100px;
+        }
+        .subtle-jump {
+            display: inline-block;
+            animation: subtle-bounce 3s infinite;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '賽9:8-10:4',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '賽',         // 動態注入書卷縮寫，例如：出
+              'note_title': '耶和華伸出的手：從驕傲、墮落到呼喚歸向' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-obsidian/80 backdrop-blur-lg border-b border-white/10 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="font-accent font-extrabold text-lg text-gold-400 tracking-wider">賽 9:8-10:4</div>
+        <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+            <a href="#prayer" class="nav-link text-gray-300 hover:text-gold-400">禱告</a>
+            <a href="#outline" class="nav-link text-gray-300 hover:text-gold-400">大綱</a>
+            <a href="#sermon" class="nav-link text-gray-300 hover:text-gold-400">講章</a>
+            <a href="#quotes" class="nav-link text-gray-300 hover:text-gold-400">名言</a>
+        </div>
+    </nav>
+
+    <!-- Banner & Header Area -->
+    <header id="header" class="relative min-h-[90vh] flex flex-col items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <img src='image/img_1334d759-e788-45d4-983b-8f32967e15e2.jpg' alt='Celestial/Divine Background' class="w-full h-full object-cover animate-pulse-slow banner-mask" />
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1 class="font-display text-4xl md:text-6xl font-black mb-8 leading-tight text-white drop-shadow-2xl">
+                耶和華伸出的手：<br/>
+                <span class="text-gradient-gold">從驕傲、墮落到呼喚歸向</span>
+            </h1>
+            
+            <div class="subtle-jump mt-12 mb-8">
+                <p class="text-xl md:text-2xl font-display italic text-gold-200 tracking-wide leading-relaxed">
+                    「這百姓還沒有歸向擊打他們的主，也沒有尋求萬軍之耶和華。」<br/>
+                    <span class="text-sm md:text-base mt-2 block opacity-80 font-accent">— 以賽亞書 9:13 —</span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-20 px-6 md:px-12 lg:px-24 pb-24 -mt-20">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="section-anchor max-w-4xl mx-auto mb-20">
+            <div class="glass-card p-8 md:p-12 shadow-2xl relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold-500/10 rounded-full blur-3xl group-hover:bg-gold-500/20 transition-all"></div>
+                <h2 class="flex items-center gap-4 text-2xl md:text-3xl font-display font-bold mb-6 text-gold-400">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8.228-9.288a5 5 0 117.456-6.67l.772.799.772-.799a5 5 0 117.456 6.67L12 21z"></path></svg>
+                    虔心禱告
+                </h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-200 font-light italic">
+                    主阿，我們來到祢的面前，承認我們常如同昔日的以色列人，在驕傲中築起虛假的安全感，在管教中仍硬著頸項拒絕歸向祢。求祢聖靈的光照耀我們，讓我們看見祢伸出的手不僅是公義的審判，更是呼喚我們悔改的恩典。賜給我們柔軟的心，使我們在祢的真理中得蒙光照，在彼此相愛中放下仇恨，在社會中行出祢的憐憫與公義。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Context & Overview -->
+        <section class="max-w-4xl mx-auto mb-24 grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8">
+                <h3 class="text-gold-400 font-display font-bold text-xl mb-4 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    背景分析
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    本段經文處於主前八世紀的北國以色列。亞述帝國正強勢崛起，北國在短暫繁榮後陷入嚴重的道德淪喪與社會不公。面對威脅，百姓沒有倚靠神，而是試圖透過政治結盟自救。以賽亞發出四首「哀歌」警告，上帝的審判是漸進的，帶著呼喚悔改的目的。
+                </p>
+            </div>
+            <div class="glass-card p-8 bg-gradient-to-br from-gold-900/20 to-transparent">
+                <h3 class="text-gold-400 font-display font-bold text-xl mb-4 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h.01M7 15h.01M11 7h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01"></path></svg>
+                    關鍵重點
+                </h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-gold-500/10 border border-gold-500/30 text-gold-300 rounded-full text-xs">驕傲 (Pride)</span>
+                    <span class="px-3 py-1 bg-gold-500/10 border border-gold-500/30 text-gold-300 rounded-full text-xs">管教 (Discipline)</span>
+                    <span class="px-3 py-1 bg-gold-500/10 border border-gold-500/30 text-gold-300 rounded-full text-xs">歸向 (Repentance)</span>
+                </div>
+                <ul class="text-gray-400 text-xs space-y-2 list-disc pl-4">
+                    <li>檢視內心的「磚牆」偶像</li>
+                    <li>正確回應神的管教</li>
+                    <li>在制度中實踐憐憫</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="section-anchor max-w-6xl mx-auto mb-20 text-center">
+            <h2 class="text-3xl font-display font-bold mb-10 text-white flex items-center justify-center gap-4">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                講道大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="#part1" class="glass-card p-6 hover:bg-gold-600/20 transition-all duration-300 flex flex-col items-center justify-center group">
+                    <span class="text-gold-500 text-sm font-accent mb-2">PART 01</span>
+                    <h3 class="text-white font-bold mb-2">驕傲的磚牆</h3>
+                    <p class="text-xs text-gray-500 font-accent">賽 9:8-12</p>
+                </a>
+                <a href="#part2" class="glass-card p-6 hover:bg-gold-600/20 transition-all duration-300 flex flex-col items-center justify-center group">
+                    <span class="text-gold-500 text-sm font-accent mb-2">PART 02</span>
+                    <h3 class="text-white font-bold mb-2">迷失的領袖</h3>
+                    <p class="text-xs text-gray-500 font-accent">賽 9:13-17</p>
+                </a>
+                <a href="#part3" class="glass-card p-6 hover:bg-gold-600/20 transition-all duration-300 flex flex-col items-center justify-center group">
+                    <span class="text-gold-500 text-sm font-accent mb-2">PART 03</span>
+                    <h3 class="text-white font-bold mb-2">內耗的野火</h3>
+                    <p class="text-xs text-gray-500 font-accent">賽 9:18-21</p>
+                </a>
+                <a href="#part4" class="glass-card p-6 hover:bg-gold-600/20 transition-all duration-300 flex flex-col items-center justify-center group">
+                    <span class="text-gold-500 text-sm font-accent mb-2">PART 04</span>
+                    <h3 class="text-white font-bold mb-2">歪曲的天平</h3>
+                    <p class="text-xs text-gray-500 font-accent">賽 10:1-4</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Sections -->
+        <div class="max-w-5xl mx-auto space-y-16">
+            
+            <!-- Section 1 -->
+            <article id="part1" class="section-anchor">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-1/3 glass-card p-8 border-l-4 border-gold-500 bg-obsidian">
+                        <div class="text-gold-500 font-accent text-5xl font-black mb-4 opacity-30">01</div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-6">驕傲的磚牆：自欺欺人的虛假安全感</h3>
+                        <div class="space-y-4">
+                            <div class="text-sm"><span class="text-gold-500 font-bold block mb-1">關鍵字</span><p class="text-gray-400">驕傲 (Ga'avah): 自大、高舉自己。</p></div>
+                            <div class="text-sm"><span class="text-gold-500 font-bold block mb-1">關鍵問題</span><p class="text-gray-400">當倚靠的事物倒塌時，你是靠己力重建，還是尋求神？</p></div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-6">
+                        <div class="bg-white/5 p-6 rounded-2xl italic text-gray-300 border-l border-white/10 leading-relaxed">
+                            「主使一言入於雅各...他們憑驕傲自大的心說：磚牆塌了，我們卻要鑿石頭建築；桑樹砍了，我們卻要換香柏樹...雖然如此，耶和華的怒氣還未轉消；他的手仍伸不縮。」
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            這段形容百姓在災難面前毫無悔意。人類文明常像鐵達尼號，在撞上冰山時仍誇口技術。<strong>提摩太·凱勒</strong>曾說：「偶像崇拜就是把美好的事物變成終極的事物。」當防禦成了偶像，就陷入了驕傲的網羅。
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 2 -->
+            <article id="part2" class="section-anchor">
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-start">
+                    <div class="md:w-1/3 glass-card p-8 border-r-4 border-gold-500 bg-obsidian">
+                        <div class="text-gold-500 font-accent text-5xl font-black mb-4 opacity-30 text-right">02</div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-6 text-right">迷失的領袖：拒絕歸向的剛硬之心</h3>
+                        <div class="space-y-4 text-right">
+                            <div class="text-sm"><span class="text-gold-500 font-bold block mb-1">關鍵字</span><p class="text-gray-400">歸向 (Shuv): 徹底的意志轉向。</p></div>
+                            <div class="text-sm"><span class="text-gold-500 font-bold block mb-1">關鍵問題</span><p class="text-gray-400">為何我們寧願聽信虛假的平安，也不願面對管教？</p></div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-6">
+                        <div class="bg-white/5 p-6 rounded-2xl italic text-gray-300 border-r border-white/10 text-right leading-relaxed">
+                            「這百姓還沒有歸向擊打他們的主...長老和尊貴人就是頭，以謊言教人的先知就是尾。因為，引導這百姓的使他們走錯；被引導的都必敗亡。」
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-right">
+                            上帝的「擊打」是為了醫治，如同醫師的針劑。但剛硬的心使我們推開救命的藥。<strong>陶恕</strong>說：「我們常常對上帝的作為感到不滿，是因為我們只想要祂的安慰，卻不想要祂的潔淨。」
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 3 -->
+            <article id="part3" class="section-anchor">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="md:w-1/3 glass-card p-8 border-l-4 border-crimson bg-obsidian">
+                        <div class="text-crimson font-accent text-5xl font-black mb-4 opacity-30">03</div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-6">內耗的野火：罪惡吞噬的骨肉相殘</h3>
+                        <div class="space-y-4">
+                            <div class="text-sm"><span class="text-crimson font-bold block mb-1">關鍵字</span><p class="text-gray-400">焚燒 (Ba'ar): 毀滅性的吞噬。</p></div>
+                            <div class="text-sm"><span class="text-crimson font-bold block mb-1">關鍵問題</span><p class="text-gray-400">罪惡如何演變成群體性的彼此分裂與內耗？</p></div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-6">
+                        <div class="bg-crimson/5 p-6 rounded-2xl italic text-gray-300 border-l border-crimson/30 leading-relaxed">
+                            「邪惡像火焚燒...百姓成為火柴；無人憐恤弟兄。有人右邊搶奪，仍受飢餓...瑪拿西吞吃以法蓮，以法蓮吞吃瑪拿西...」
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            罪惡具象化為失控的林火。血濃於水的支派竟然自相殘殺。<strong>潘霍華</strong>提醒：「沒有任何罪是單屬個人的，每一項罪都會對整個群體造成破壞。」
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Section 4 -->
+            <article id="part4" class="section-anchor">
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-start">
+                    <div class="md:w-1/3 glass-card p-8 border-r-4 border-gold-500 bg-obsidian">
+                        <div class="text-gold-500 font-accent text-5xl font-black mb-4 opacity-30 text-right">04</div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-6 text-right">歪曲的天平：失去憐憫的制度性欺壓</h3>
+                        <div class="space-y-4 text-right">
+                            <div class="text-sm"><span class="text-gold-500 font-bold block mb-1">關鍵字</span><p class="text-gray-400">孤兒/寡婦: 社會最邊緣無助者。</p></div>
+                            <div class="text-sm"><span class="text-gold-500 font-bold block mb-1">關鍵問題</span><p class="text-gray-400">當審判降臨時，世上的榮耀真能成為避難所嗎？</p></div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 space-y-6">
+                        <div class="bg-white/5 p-6 rounded-2xl italic text-gray-300 border-r border-white/10 text-right leading-relaxed">
+                            「禍哉！那些設立不義之律例的和記錄奸詐之判語的...到降罰的日子，有災禍從遠處臨到，那時，你們怎樣行呢？你們的榮耀存留何處呢？」
+                        </div>
+                        <p class="text-gray-300 leading-relaxed text-right">
+                            世上的榮耀在永恆前不過是「鋪馬路的磚頭」。<strong>約翰·加爾文</strong>說：「看見窮人時，應看見上帝將形象印在他們身上，藉此考驗我們的愛。」
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="section-anchor max-w-4xl mx-auto mt-32">
+            <h2 class="text-4xl font-display font-black text-center mb-16 flex items-center justify-center gap-4">
+                <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                講章文稿
+            </h2>
+            <div class="prose prose-invert prose-gold max-w-none space-y-10 text-gray-300 text-lg leading-relaxed">
+                <div class="border-l-2 border-gold-500/50 pl-6 py-2 bg-gold-500/5 rounded-r-xl">
+                    親愛的弟兄姊妹，今天我們要來看一段令人震撼，甚至有些沉重的經文——以賽亞書9章8節到10章4節。這段經文像是一首由四段組成的哀歌，每一段的結尾都重複著一句話：<span class="text-gold-400 font-bold">「雖然如此，耶和華的怒氣還未轉消；他的手仍伸不縮。」</span> 許多時候，我們害怕看見上帝發怒。但今天我們要明白，上帝伸出的手，不僅是審判的手，更是管教與呼喚的手。當管教臨到時，我們是否能在上帝的怒氣中，聽見祂呼喚我們歸向祂的恩典之聲？
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-4">一、 驕傲的磚牆：自欺欺人的虛假安全感</h3>
+                    <p>
+                        首先，我們看到百姓的反應。在以賽亞書9章9到10節說：「他們憑驕傲自大的心說：磚牆塌了，我們卻要鑿石頭建築；桑樹砍了，我們卻要換香柏樹。」
+                        這是一幅何等寫實的畫面！北國以色列面臨敵人的攻擊，他們的防禦工事（磚牆）倒塌了。正常來說，這是一個警訊，上帝要藉此提醒他們：你們已經離開了保護的遮蓋。但他們的回應是什麼？是驕傲。他們說：「沒關係，磚牆倒了，我們用更堅硬的石頭來蓋；普通的樹沒了，我們去買最頂級的香柏樹！」
+                        弟兄姊妹，這是不是我們生命的寫照？當我們生命中的事業、關係或健康出現危機，當上帝允許某些「磚牆」倒塌來提醒我們時，我們直覺的反應往往不是跪下來悔改，而是試圖用自己更大的努力、更多的金錢、更強的手段去「鑿石頭」，試圖建立一個連上帝都無法摧毀的虛假安全感。但<span class="text-gold-300 font-semibold">提摩太·凱勒牧師曾提醒我們：「偶像崇拜就是把美好的事物變成終極的事物。」</span> 當我們把自己的能力當作終極拯救時，這堵驕傲的石頭牆，最終必會將我們壓垮。
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-4">二、 迷失的領袖：拒絕歸向的剛硬之心</h3>
+                    <p>
+                        上帝的擊打沒有讓百姓回轉。9章13節告訴我們：<span class="text-gold-400 font-black text-xl">「這百姓還沒有歸向擊打他們的主，也沒有尋求萬軍之耶和華。」</span>
+                        上帝如同一個焦急的父親，看著生病的孩子，不得不拿起管教的杖。但這群百姓寧願聽信那些說謊的先知，聽信那些告訴他們「平安了，平安了」的假教師，也不願意真實地面對罪惡。<span class="text-gold-300 font-semibold">陶恕曾說：「我們常常對上帝的作為感到不滿，是因為我們只想要祂的安慰，卻不想要祂的潔淨。」</span>
+                        經文告訴我們，當領袖迷失，帶帶領百姓走錯路時，整個國家就走向敗亡。我們必須問自己：在痛苦與逆境中，我們是在尋找速效的安慰劑，還是真誠地尋求那位擊打我們、卻也定意醫治我們的主？
+                    </p>
+                </div>
+
+                <div class="bg-crimson/5 p-8 rounded-3xl border border-crimson/20">
+                    <h3 class="text-2xl font-display font-bold text-white mb-4">三、 內耗的野火：罪惡吞噬的骨肉相殘</h3>
+                    <p>
+                        當人不歸向神，罪惡就不會僅僅停留在個人層面。在9章18-20節中，先知描繪了一幅恐怖的景象：「邪惡像火焚燒...各人吃自己膀臂上的肉。瑪拿西吞吃以法蓮，以法蓮吞吃瑪拿西...」
+                        罪惡就像野火，從個人的驕傲蔓延成群體的撕裂。瑪拿西和以法蓮本是約瑟的兩個兒子，是親兄弟，如今卻因為自私、貪婪和資源的爭奪而互相吞咬。當社會失去了對上帝的敬畏，人與人之間就失去了憐恤。右邊搶奪，左邊吞吃，永遠無法滿足。這就是罪惡的本質——它是一種會吞噬關係的野火。我們看見現代社會的撕裂、家庭的破裂，不正是這場野火的縮影嗎？
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-4">四、 歪曲的天平：失去憐憫的制度性欺壓</h3>
+                    <p>
+                        最後，野火延燒到了社會制度的根本。10章1到2節說：「禍哉！那些設立不義之律例的和記錄奸詐之判語的，為要屈枉窮乏人...以寡婦當作擄物，以孤兒當作掠物。」
+                        上帝的眼目永遠看顧那些最弱勢、最無助的孤兒寡婦。當一個社會的法律和制度淪為權貴掠奪弱者的工具時，上帝的怒氣達到了頂點。先知發出了一個靈魂拷問（10:3）：<span class="text-gold-400 font-bold">「到降罰的日子...你們向誰逃奔求救呢？你們的榮耀存留何處呢？」</span>
+                        弟兄姊妹，我們在世上所追求的財富、地位、成就，在上帝審判的日子，一點都無法成為我們的避難所。若我們的信仰只關乎自己上天堂，卻對周遭受苦的肢體、社會的不公義視而不見，我們就不明白上帝的心。
+                    </p>
+                </div>
+
+                <div class="text-center pt-8 border-t border-white/10">
+                    <h3 class="text-3xl font-display font-black text-gold-400 mb-6">結論</h3>
+                    <p class="text-xl">
+                        「雖然如此，耶和華的怒氣還未轉消；他的手仍伸不縮。」這隻伸出的手，對驕傲不悔改的人來說，是審判的手；但對願意謙卑俯伏的人來說，這是釘十字架的耶穌基督那雙張開的手——呼喚我們轉回、醫治我們背道的病、赦免我們一切的罪。讓我們放下手中的石頭，拆除驕傲的磚牆，真實地歸向祂！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section-anchor max-w-5xl mx-auto mt-32">
+            <h2 class="text-3xl font-display font-bold text-center mb-12 flex items-center justify-center gap-4">
+                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                名言佳句
+            </h2>
+            <div class="columns-1 md:columns-2 gap-6 space-y-6">
+                <!-- Quote cards would go here -->
+                <div class="glass-card p-6 break-inside-avoid">
+                    <p class="text-gray-200 italic mb-4">「當我們看見窮人與受苦之人時，我們應當看見上帝將祂自己的形象印刻在他們身上，藉此來考驗我們的愛心。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·加爾文</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid border-l-2 border-gold-500">
+                    <p class="text-gray-200 italic mb-4">「神不會無緣無故地揮舞祂管教的杖；每一次的擊打，都帶著無限的愛意與智慧，為要將我們從罪惡中喚醒。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 查爾斯·司布真</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid">
+                    <p class="text-gray-200 italic mb-4">「偶像崇拜就是把美好的事物變成終極的事物。當這些事物崩塌時，我們就會感到絕望。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 提摩太·凱勒</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid">
+                    <p class="text-gray-200 italic mb-4">「我們常常對上帝的作為感到不滿，是因為我們只想要祂的安慰，卻不想要祂的潔淨。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 陶恕</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid border-l-2 border-crimson">
+                    <p class="text-gray-200 italic mb-4">「沒有任何罪是單屬個人的，每一項罪都會對整個群體造成破壞。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 潘霍華</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid">
+                    <p class="text-gray-200 italic mb-4">「盡你所能地賺錢，盡你所能地省錢，但更要盡你所能地給予。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·衛斯理</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid">
+                    <p class="text-gray-200 italic mb-4">「驕傲是一切罪的根源，唯有當我們在神面前看見自己的無有，才能夠領受祂豐盛的恩典。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 慕安德烈</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid">
+                    <p class="text-gray-200 italic mb-4">「十字架不仅是我们将人从个人罪恶中拯救出来的基础，也是我们呼吁社会正义的最终动力。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 約翰·史托德</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid border-l-2 border-gold-500">
+                    <p class="text-gray-200 italic mb-4">「當人離棄了神絕對的真理，他所建立的安全感不過是沙土上的房屋。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 唐崇榮</p>
+                </div>
+                <div class="glass-card p-6 break-inside-avoid">
+                    <p class="text-gray-200 italic mb-4">「這本書（聖經）會使你遠離罪惡，或者罪惡會使你遠離這本書。」</p>
+                    <p class="text-gold-500 text-sm font-bold">— 德懷特·慕迪</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-gray-500 text-xs italic">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#header" class="fixed bottom-8 right-8 w-14 h-14 bg-gold-600 hover:bg-gold-500 text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 group z-[100]">
+        <svg class="w-8 h-8 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+
+    <script>
+        // Smooth scroll implementation already handled by CSS but for older browsers:
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

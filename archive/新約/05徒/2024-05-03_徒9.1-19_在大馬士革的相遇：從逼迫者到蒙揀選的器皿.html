@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒9:1-19：在大馬士革的相遇：從逼迫者到蒙揀選的器皿</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#FFD700',
+                            DEFAULT: '#D4AF37',
+                            dark: '#996515',
+                        },
+                        accent: '#EAB308',
+                        deep: '#0A0A0B',
+                        card: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-pulse': 'subtle-pulse 4s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: '0.6' },
+                            '50%': { opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) translateX(-50%)' },
+                            '50%': { transform: 'translateY(-10px) translateX(-50%)' },
+                        },
+                        'subtle-pulse': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #F3F4F6;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .glow-text {
+            text-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
+        }
+        .shimmer {
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .jump-text {
+            display: inline-block;
+            animation: jump 2s infinite ease-in-out;
+        }
+        @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A0A0B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '徒9:1-19',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '徒',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在大馬士革的相遇：從逼迫者到蒙揀選的器皿' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav h-16 flex items-center justify-center px-6">
+        <div class="max-w-screen-xl w-full flex justify-between items-center">
+            <div class="font-display font-bold text-accent tracking-tighter text-lg md:text-xl">
+                徒9:1-19
+            </div>
+            <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium text-gray-300">
+                <a href="#prayer" class="hover:text-accent transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-accent transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-accent transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-accent transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
+        <div class="absolute inset-0 banner-mask">
+            <img src='image/img_e66eebca-7594-4d40-8092-fa4a4d13189f.jpg' alt='Banner' class="w-full h-full object-cover animate-breath" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-deep via-transparent to-transparent"></div>
+        
+        <!-- Hero Title -->
+        <div class="absolute bottom-10 left-0 right-0 px-6 text-center z-10" id="top">
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-black text-white mb-6 leading-tight font-display glow-text">
+                在大馬士革的相遇：<br><span class="text-accent">從逼迫者到蒙揀選的器皿</span>
+            </h1>
+            
+            <!-- Verse (Golden & Slightly Jumping) -->
+            <div class="max-w-3xl mx-auto py-6">
+                <p class="text-xl md:text-2xl text-gold-light italic font-medium leading-relaxed animate-subtle-pulse jump-text">
+                    「你只管去！他是我所揀選的器皿，要在外邦人和君王，並以色列人面前宣揚我的名。」
+                    <span class="block text-sm md:text-lg mt-2 font-sans opacity-80">— 徒 9:15</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24 relative z-20">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="shimmer absolute inset-0 pointer-events-none"></div>
+                <div class="flex items-center gap-3 mb-8">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    <h2 class="text-2xl md:text-3xl font-bold font-display">天父，我們呼求</h2>
+                </div>
+                <p class="text-lg md:text-xl text-gray-200 leading-loose tracking-wide">
+                    親愛的天父，我們感謝祢奇妙的恩典。如同祢當年在大馬士革的路上光照了掃羅，求祢真理的真光今天也照亮我們內心的黑暗與驕傲。主啊，賜給我們亞拿尼亞般的順服，放下偏見去擁抱祢所接納的人；也賜給我們掃羅般的悔改，願意被祢破碎並重新塑造。願祢的話語大有能力地對我們說話，使我們成為祢手中蒙揀選的器皿。奉主耶穌基督的名求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Background Analysis -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="text-accent font-bold mb-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-7h.01"></path></svg>
+                    政治司法
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">猶太公會在羅馬授權下行使引渡權，掃羅持文書前往大馬士革緝捕基督徒。</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="text-accent font-bold mb-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    地理環境
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">大馬士革距聖城240公里，是重要商業樞紐與早期門徒避難之地。</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="text-accent font-bold mb-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    宗教衝突
+                </h3>
+                <p class="text-sm text-gray-400 leading-relaxed">法利賽人視「這道」為褻瀆，雙方存在劇烈的神學衝突。</p>
+            </div>
+        </section>
+
+        <!-- Dynamic Outline Buttons -->
+        <section id="outline" class="scroll-mt-24 space-y-8">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <h2 class="text-2xl md:text-3xl font-bold font-display">信息大綱</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="#section1" class="glass-card p-6 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all text-center group">
+                    <span class="block text-accent text-sm font-bold mb-2 opacity-70 group-hover:opacity-100">徒 9:1-9</span>
+                    <span class="text-lg font-bold text-white">光照與仆倒：當驕傲遇見真光</span>
+                </a>
+                <a href="#section2" class="glass-card p-6 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all text-center group">
+                    <span class="block text-accent text-sm font-bold mb-2 opacity-70 group-hover:opacity-100">徒 9:10-14</span>
+                    <span class="text-lg font-bold text-white">順服與跨越：當恐懼遇見呼召</span>
+                </a>
+                <a href="#section3" class="glass-card p-6 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all text-center group">
+                    <span class="block text-accent text-sm font-bold mb-2 opacity-70 group-hover:opacity-100">徒 9:15-19</span>
+                    <span class="text-lg font-bold text-white">揀選與醫治：當破碎遇見恩典</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <section class="space-y-32">
+            <!-- Part 1 -->
+            <article id="section1" class="scroll-mt-24 space-y-10">
+                <div class="border-l-4 border-accent pl-6">
+                    <h3 class="text-3xl md:text-4xl font-black text-white mb-2">第一段：光照與仆倒</h3>
+                    <p class="text-accent font-bold">當驕傲遇見真光 (徒 9:1-9)</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl text-gray-300 italic leading-relaxed border-l-2 border-white/10">
+                    掃羅仍然向主的門徒口吐威嚇兇殺的話... 忽然從天上發光，四面照著他；他就仆倒在地... 「掃羅！掃羅！你為什麼逼迫我？」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">🔑 關鍵原文</h4>
+                            <ul class="space-y-4">
+                                <li class="text-sm bg-deep p-4 rounded-xl border border-white/5">
+                                    <span class="text-accent font-bold block mb-1">逼迫 (diōkō)</span>
+                                    原文有「追趕、獵捕」之意。掃羅如同獵人般執著，要消滅基督的跟隨者。
+                                </li>
+                                <li class="text-sm bg-deep p-4 rounded-xl border border-white/5">
+                                    <span class="text-accent font-bold block mb-1">光 (phōs)</span>
+                                    天上發出的聖潔顯現，不僅造成肉眼失明，更打破了靈性上的盲點。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">❓ 關鍵問題</h4>
+                            <div class="text-sm space-y-3">
+                                <p class="text-white font-medium">為什麼說「逼迫我」而非「逼迫教會」？</p>
+                                <p class="text-gray-400">這啟示了基督與教會的「聯合」。耶穌將信徒受的苦難視為自己所受。掃羅自以為事奉神，實則是攻擊神。</p>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-gold/10 rounded-2xl border border-gold/20">
+                            <h4 class="text-xs uppercase tracking-widest text-gold mb-2 font-bold">名言佳句</h4>
+                            <p class="text-sm text-gray-200">「福音告訴我們：我們比自己膽敢相信的還要罪惡深重；但同時，在基督裡卻比自己膽敢盼望的還要更蒙愛。」— 提摩太·凱勒</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 2 -->
+            <article id="section2" class="scroll-mt-24 space-y-10">
+                <div class="border-l-4 border-accent pl-6">
+                    <h3 class="text-3xl md:text-4xl font-black text-white mb-2">第二段：順服與跨越</h3>
+                    <p class="text-accent font-bold">當恐懼遇見呼召 (徒 9:10-14)</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl text-gray-300 italic leading-relaxed border-l-2 border-white/10">
+                    主在異象中對亞拿尼亞說：「起來！往直街去... 訪問一個大數人，名叫掃羅。」亞拿尼亞回答說：「主啊，我聽見這人怎樣多多苦害你的聖徒...」
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">🔑 關鍵原文</h4>
+                            <ul class="space-y-4">
+                                <li class="text-sm bg-deep p-4 rounded-xl border border-white/5">
+                                    <span class="text-accent font-bold block mb-1">聖徒 (hagios)</span>
+                                    「聖潔、分別為聖」。這是使徒行傳首次用此詞稱呼信徒，強調是被神分別出來的人。
+                                </li>
+                                <li class="text-sm bg-deep p-4 rounded-xl border border-white/5">
+                                    <span class="text-accent font-bold block mb-1">權柄 (exousia)</span>
+                                    官方賦予的合法權力。掃羅帶著屬世權柄來捆綁，亞拿尼亞卻帶著屬天權柄去釋放。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">❓ 關鍵問題</h4>
+                            <div class="text-sm space-y-3">
+                                <p class="text-white font-medium">當呼召違背常理時，該如何回應？</p>
+                                <p class="text-gray-400">真正的順服不是沒有恐懼，而是在恐懼中依然選擇說：「主，我在這裡，我願意去。」亞拿尼亞跨越了對恐怖份子的偏見。</p>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-gold/10 rounded-2xl border border-gold/20">
+                            <h4 class="text-xs uppercase tracking-widest text-gold mb-2 font-bold">名言佳句</h4>
+                            <p class="text-sm text-gray-200">「當基督呼召一個人的時候，祂是叫他來死。」— 潘霍華</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Part 3 -->
+            <article id="section3" class="scroll-mt-24 space-y-10">
+                <div class="border-l-4 border-accent pl-6">
+                    <h3 class="text-3xl md:text-4xl font-black text-white mb-2">第三段：揀選與醫治</h3>
+                    <p class="text-accent font-bold">當破碎遇見恩典 (徒 9:15-19)</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl text-gray-300 italic leading-relaxed border-l-2 border-white/10">
+                    主說：「他是我所揀選的器皿。」亞拿尼亞就去了... 說：「兄弟掃羅... 叫你能看見，又被聖靈充滿。」掃羅的眼睛上，好像有鱗立刻掉下來。
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">🔑 關鍵原文</h4>
+                            <ul class="space-y-4">
+                                <li class="text-sm bg-deep p-4 rounded-xl border border-white/5">
+                                    <span class="text-accent font-bold block mb-1">器皿 (skeuos)</span>
+                                    指工具或容器。強調重點是「主人」與「內容」，而非器皿本身。
+                                </li>
+                                <li class="text-sm bg-deep p-4 rounded-xl border border-white/5">
+                                    <span class="text-accent font-bold block mb-1">揀選 (eklogē)</span>
+                                    神主權的選擇。並非掃羅尋找神，而是神主動介入並揀選了他。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-gold font-bold mb-3 flex items-center gap-2">❓ 關鍵問題</h4>
+                            <div class="text-sm space-y-3">
+                                <p class="text-white font-medium">敵對神的人，真的能被大大使用嗎？</p>
+                                <p class="text-gray-400">神的恩典超越人的過去。掃羅被剝奪了視力與驕傲，成為倒空的器皿。上帝不是尋找完美，而是尋找願意被填滿的破碎者。</p>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-gold/10 rounded-2xl border border-gold/20">
+                            <h4 class="text-xs uppercase tracking-widest text-gold mb-2 font-bold">名言佳句</h4>
+                            <p class="text-sm text-gray-200">「神的恩典不是在尋找可以被祂認可的好人，而是在尋找祂可以拯救的被定罪之人。」— 司布真</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kintsugi Analogy -->
+                <div class="glass-card p-8 rounded-3xl border-dashed border-2 border-accent/30 text-center">
+                    <h4 class="text-gold font-bold mb-2">恩典的「金繼」(Kintsugi)</h4>
+                    <p class="text-gray-400">如同日本修復陶器的技術，破碎處用金漆填補。掃羅的破碎反而成了展現神榮耀的最佳載體。</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Main Sermon Text -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <h2 class="text-3xl font-black font-display">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-lg max-w-none space-y-8 text-gray-300">
+                <p>各位弟兄姊妹，平安。今天我們要來看一段聖經中最戲劇化、也最具影響力的生命翻轉——掃羅在大馬士革路上的經歷。</p>
+                
+                <p>首先我們看到第一段，<strong class="text-accent text-xl">光照與仆倒：當驕傲遇見真光</strong>。經文告訴我們，掃羅帶著公會的文書，意氣風發地要去大馬士革捉拿基督徒。此時的他，充滿了宗教的狂熱與自以為義的驕傲。但就在這時，<strong class="text-gold-light">「忽然從天上發光，四面照著他；他就仆倒在地」</strong>。弟兄姊妹，耶穌沒有用大軍來擊敗掃羅，祂只用了一道光。當上帝的真光照進我們生命時，我們第一個反應必然是「仆倒」。</p>
+
+                <p>接著，我們來到第二段，<strong class="text-accent text-xl">順服與跨越：當恐懼遇見呼召</strong>。鏡頭轉向大馬士革城內的一位平凡門徒——亞拿尼亞。亞拿尼亞的害怕是理所當然的，要他去找掃羅，簡直是羊入虎口。但我們必須明白，當恐懼遇見上帝的呼召時，真正的順服不是沒有害怕，而是帶著害怕依然前行。</p>
+
+                <p>最後是第三段，<strong class="text-accent text-xl">揀選與醫治：當破碎遇見恩典</strong>。神對亞拿尼亞宣告了我們今天的金句：<strong class="text-gold-light">「他是我所揀選的器皿」</strong>。這就是恩典的奇妙！一個原本滿手血腥的逼迫者，竟然被神稱為「我所揀選的器皿」。當亞拿尼亞見到掃羅時，他稱呼這個頭號敵人為<strong class="text-white text-xl">「兄弟掃羅」</strong>。這一聲「兄弟」，帶來了完全的接納與醫治。</p>
+            </div>
+
+            <!-- Application Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-10">
+                <div class="glass-card p-6 rounded-2xl border-t-4 border-accent">
+                    <span class="text-xs font-bold text-accent uppercase">應用 01</span>
+                    <p class="mt-2 text-sm text-gray-200">檢視生命中的「大馬士革」：求神的真光照亮我們未知的盲點與驕傲。</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-t-4 border-accent">
+                    <span class="text-xs font-bold text-accent uppercase">應用 02</span>
+                    <p class="mt-2 text-sm text-gray-200">跨越人際偏見：學習亞拿尼亞，用神的眼光看見他人是「可能被揀選的器皿」。</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl border-t-4 border-accent">
+                    <span class="text-xs font-bold text-accent uppercase">應用 03</span>
+                    <p class="mt-2 text-sm text-gray-200">擁抱破碎後的呼召：神能使用願意悔改倒空的破碎器皿，成就超乎想像的工作。</p>
+                </div>
+            </div>
+
+            <!-- Conclusion Keywords -->
+            <div class="flex flex-wrap justify-center gap-12 py-12 border-y border-white/5">
+                <div class="text-center">
+                    <div class="text-4xl font-black text-white mb-1">光照</div>
+                    <div class="text-xs tracking-widest text-accent uppercase">Illumination</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-white mb-1">順服</div>
+                    <div class="text-xs tracking-widest text-accent uppercase">Obedience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-black text-white mb-1">恩典</div>
+                    <div class="text-xs tracking-widest text-accent uppercase">Grace</div>
+                </div>
+            </div>
+
+            <!-- Response Actions -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold flex items-center gap-3">
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    回應與實踐
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4 p-4 glass-card rounded-xl">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold">1</span>
+                        <p class="text-gray-300">為生命中的「敵人」禱告：選定一個難以愛的人，每日為他禱告三分鐘。</p>
+                    </li>
+                    <li class="flex gap-4 p-4 glass-card rounded-xl">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold">2</span>
+                        <p class="text-gray-300">尋求當作的事：花一段安靜時間問主：「主啊，你要我做什麼？」</p>
+                    </li>
+                    <li class="flex gap-4 p-4 glass-card rounded-xl">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold">3</span>
+                        <p class="text-gray-300">分享見證：將你的遇見主的故事寫成3分鐘版本，本週與人分享。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Spiritual Quotes -->
+        <section id="quotes" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                <h2 class="text-3xl font-black font-display">屬靈前輩名言</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Quote 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「神的恩典不是在尋找可以被祂認可的好人，而是在尋找祂可以拯救的被定罪之人。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 司布真 (Charles Spurgeon)</span>
+                        <div class="text-xs text-gray-500">《司布真講道集》</div>
+                    </div>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「福音告訴我們：我們比自己膽敢相信的還要罪惡深重；但同時，我們在基督裡卻比自己膽敢盼望的還要更蒙愛、更蒙接納。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 提摩太·凱勒 (Timothy Keller)</span>
+                        <div class="text-xs text-gray-500">《揮揮的上帝》</div>
+                    </div>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「當基督呼召一個人的時候，祂是叫他來死。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 潘霍華 (Dietrich Bonhoeffer)</span>
+                        <div class="text-xs text-gray-500">《追隨基督》</div>
+                    </div>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「恩典是給不配得之人的愛；它是神向那些只配得定罪的人，主動傾倒下來的恩惠。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 約翰·史托德 (John Stott)</span>
+                        <div class="text-xs text-gray-500">《基督的十架》</div>
+                    </div>
+                </div>
+                <!-- Quote 5 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「在上帝能夠大大使用一個人之前，祂必須先深深地破碎他。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 陶恕 (A.W. Tozer)</span>
+                        <div class="text-xs text-gray-500">講章精選</div>
+                    </div>
+                </div>
+                <!-- Quote 6 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「除非我們首先認識神，否則我們永遠無法真正認識自己；同樣地，除非我們認識自己，否則我們也無法真正認識神。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 約翰·加爾文 (John Calvin)</span>
+                        <div class="text-xs text-gray-500">《基督教要義》</div>
+                    </div>
+                </div>
+                <!-- Quote 7 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「驕傲必須死在你裡面，否則屬天的生命無法在你裡面誕生。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 慕安德烈 (Andrew Murray)</span>
+                        <div class="text-xs text-gray-500">《謙卑》</div>
+                    </div>
+                </div>
+                <!-- Quote 8 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「給我一百個除了罪惡一無所懼、除了神一無所求的傳道人；這樣的人，就能震動地獄的門。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 約翰·衛斯理 (John Wesley)</span>
+                        <div class="text-xs text-gray-500">《衛斯理日記》</div>
+                    </div>
+                </div>
+                <!-- Quote 9 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「對得救之人而言，恩典不僅僅是赦免了他們的罪，更是改變了他們的心性。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 喬納森·愛德華茲 (Jonathan Edwards)</span>
+                        <div class="text-xs text-gray-500">《宗教情操真偽辨》</div>
+                    </div>
+                </div>
+                <!-- Quote 10 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <p class="text-gray-200 italic mb-4">「成為基督徒不僅僅是接受一份上天堂的保單，而是把生命的主權完全交還給救贖你的主。」</p>
+                    <div class="text-right">
+                        <span class="text-accent font-bold">— 大衛·鮑森 (David Pawson)</span>
+                        <div class="text-xs text-gray-500">《新約縱覽》</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="mt-16 text-center text-gray-600 text-sm border-t border-white/5 pt-8 pb-20">
+                ⚠️ 網路資料可能出錯，請小心查證、謹慎使用。
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-accent text-deep rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

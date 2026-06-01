@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒10:1-23:打破藩籬的異象：當順服跨越界線</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c4b5fd', // Soft violet
+                        accent: '#f472b6',  // Pink accent
+                        gold: '#fbbf24',    // Gospel gold
+                        surface: '#1e1e2e', // Deep dark blue-gray
+                        background: '#0f172a' // Darker slate
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-container {
+            height: 60vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            animation: breathe 10s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0%, 100% { filter: brightness(0.3); transform: scale(1); }
+            50% { filter: brightness(0.7); transform: scale(1.05); }
+        }
+        .golden-text {
+            background: linear-gradient(to right, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        .text-jump {
+            display: inline-block;
+            animation: subtle-bounce 2.5s ease-in-out infinite;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '徒10:1-23',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '徒',         // 動態注入書卷縮寫，例如：出
+              'note_title': '打破藩籬的異象：當順服跨越界線' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-body">
+
+    <!-- Top Banner -->
+    <header class="relative banner-container" id="top">
+        <img src='image/img_e52b57d6-9fd8-49c6-a2b0-95c061bae087.jpg' alt='media_1' class="banner-img" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-t from-background via-transparent to-transparent">
+            <h1 class="text-3xl md:text-5xl font-display font-bold mb-4 tracking-tight leading-tight">
+                徒10:1-23：打破藩籬的異象<br>
+                <span class="golden-text">當順服跨越界線</span>
+            </h1>
+            <div class="mt-8 text-xl md:text-2xl text-jump px-4 py-2 border-l-4 border-accent italic font-light max-w-2xl">
+                「第二次有聲音向他說：『神所潔淨的，你不可當作俗物。』」——使徒行傳 10:15
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Nav -->
+    <nav class="sticky-nav border-b border-white/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center overflow-x-auto whitespace-nowrap gap-6 no-scrollbar">
+            <span class="text-primary font-bold text-sm tracking-widest">使徒行傳 10:1-23</span>
+            <div class="flex gap-6 text-sm font-medium text-slate-300">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="glass rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 text-6xl opacity-10 pointer-events-none">🙏</div>
+            <h2 class="text-2xl font-display font-bold flex items-center gap-3 mb-6 text-primary">
+                <span>禱告</span>
+            </h2>
+            <p class="text-lg leading-relaxed text-slate-300 italic">
+                主阿，我們來到祢面前，承認我們心中常有許多無形的牆與成見，阻擋了我們愛人與傳福音的腳步。求祢賜下如當年賜給彼得般的啟示，開我們的屬靈眼睛，讓我們看見祢所愛、所潔淨的，我們不可輕看。賜給我們順服的勇氣，跨出舒適圈，將祢的恩典帶給那些在我們意料之外、卻已蒙祢預備的人。奉主耶穌基督的名求，阿們。
+            </p>
+        </section>
+
+        <!-- Background Analysis -->
+        <section class="space-y-8">
+            <h2 class="text-2xl font-display font-bold flex items-center gap-3 text-primary">
+                <span>背景分析</span>
+            </h2>
+            <div class="bento-grid">
+                <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all">
+                    <h3 class="text-accent font-bold mb-3">政治環境</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">哥尼流是「義大利營的百夫長」，代表著羅馬帝國的軍事力量。對猶太人而言，羅馬軍人是剝奪他們自由的統治階級。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all">
+                    <h3 class="text-accent font-bold mb-3">人文與宗教</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">猶太人有極嚴格的潔淨禮儀。觀念中外邦人是不潔淨的，不能同桌吃飯。這是持守信仰聖潔的必要條件。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl hover:border-primary/50 transition-all md:col-span-2 lg:col-span-1">
+                    <h3 class="text-accent font-bold mb-3">時代處境</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">福音主要仍局限在猶太人中。神要將福音傳到地極，首要任務便是打破彼得心中那道「猶太人與外邦人」的高牆。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="space-y-8">
+            <h2 class="text-2xl font-display font-bold flex items-center gap-3 text-primary">
+                <span>分段大綱</span>
+            </h2>
+            <div class="flex flex-col md:flex-row gap-4">
+                <a href="#part1" class="flex-1 glass p-6 rounded-2xl border-l-4 border-gold hover:bg-white/5 transition-all group">
+                    <span class="block text-xs text-slate-500 mb-1">Part 01</span>
+                    <h3 class="font-bold group-hover:text-gold transition-colors">跨越身分的敬虔：預備人心</h3>
+                    <p class="text-xs text-slate-400 mt-2">徒10:1-8</p>
+                </a>
+                <a href="#part2" class="flex-1 glass p-6 rounded-2xl border-l-4 border-accent hover:bg-white/5 transition-all group">
+                    <span class="block text-xs text-slate-500 mb-1">Part 02</span>
+                    <h3 class="font-bold group-hover:text-accent transition-colors">拆毀成見的宣告：神所潔淨的</h3>
+                    <p class="text-xs text-slate-400 mt-2">徒10:9-16</p>
+                </a>
+                <a href="#part3" class="flex-1 glass p-6 rounded-2xl border-l-4 border-primary hover:bg-white/5 transition-all group">
+                    <span class="block text-xs text-slate-500 mb-1">Part 03</span>
+                    <h3 class="font-bold group-hover:text-primary transition-colors">放下疑惑的跟隨：跨出舒適圈</h3>
+                    <p class="text-xs text-slate-400 mt-2">徒10:17-23</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis -->
+        <div class="space-y-32">
+            <!-- Part 1 -->
+            <section id="part1" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">1</span>
+                    <h3 class="text-3xl font-display font-bold">跨越身分的敬虔：預備人心</h3>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-2 border-white/20 italic text-slate-300">
+                            「在他那裡，說：『哥尼流。』哥尼流定睛看他，驚惶地說：『主啊，什麼事呢？』天使說：『你的禱告和你的賙濟達於神面前，已蒙記念了。』」
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-gold font-bold text-lg flex items-center gap-2">🔍 關鍵原文</h4>
+                            <p class="text-slate-300 leading-relaxed"><span class="text-white font-bold">虔誠人 (eusebēs)</span>：特指敬畏神、參加會堂聚會，但尚未受割禮的外邦人。<br><span class="text-white font-bold">記念 (mnēmosynon)</span>：祭物之意，哥尼流的行為如同馨香之祭升到神面前。</p>
+                            
+                            <h4 class="text-gold font-bold text-lg mt-6">❓ 關鍵問題</h4>
+                            <div class="glass p-5 rounded-xl border-gold/30">
+                                <p class="font-bold mb-2">神為何選擇一個羅馬百夫長？</p>
+                                <p class="text-slate-400 text-sm">神看重人的內心勝過外在標籤。福音不因國籍或職業受限，只要真心尋求，神必引導。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-gold/5 p-6 rounded-2xl border border-gold/10">
+                            <h4 class="text-gold font-bold mb-3">💡 生活例證</h4>
+                            <p class="text-xs text-slate-400 italic">曾有一位黑道老大的深夜呼求，遇上了受靈催逼的老奶奶，最終轉化成為監獄輔導。神總在不可思議的角落預備人心。</p>
+                        </div>
+                        <blockquote class="border-l-4 border-gold pl-4 py-2 text-sm text-slate-300">
+                            「神賜恩給謙卑的人。恩典的本質就是：它不看你過去的履歷，只看你現在空空的雙手。」<br>
+                            <span class="text-gold mt-2 block">— 提摩太·凱勒</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2 -->
+            <section id="part2" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">2</span>
+                    <h3 class="text-3xl font-display font-bold">拆毀成見的宣告：神所潔淨的</h3>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-2 border-white/20 italic text-slate-300">
+                            「又有聲音向他說：『彼得，起來，宰了吃！』彼得卻說：『主啊，這是不可的！』第二次有聲音說：『神所潔淨的，你不可當作俗物。』」
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-accent font-bold text-lg flex items-center gap-2">🔍 關鍵原文</h4>
+                            <p class="text-slate-300 leading-relaxed"><span class="text-white font-bold">魂遊象外 (ekstasis)</span>：脫離感官知覺，完全進入神所賜的異象境界。<br><span class="text-white font-bold">俗物 (koinos)</span>：禮儀上不潔淨、禁止食用的食物。</p>
+                            
+                            <h4 class="text-accent font-bold text-lg mt-6">❓ 關鍵問題</h4>
+                            <div class="glass p-5 rounded-xl border-accent/30">
+                                <p class="font-bold mb-2">為什麼用「食物」的異象？</p>
+                                <p class="text-slate-400 text-sm">飲食律法是區隔的首要標誌。神挑戰彼得最核心的禁忌，以此隱喻外邦人的潔淨，拆毀宗教傳統的藩籬。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-accent/5 p-6 rounded-2xl border border-accent/10">
+                            <h4 class="text-accent font-bold mb-3">💡 生活例證</h4>
+                            <p class="text-xs text-slate-400 italic">戴德生初到中國時剃髮留辮，穿上被西方視為不潔的傳統服飾，震驚差會，卻贏得了無數靈魂。</p>
+                        </div>
+                        <blockquote class="border-l-4 border-accent pl-4 py-2 text-sm text-slate-300">
+                            「如果我們的信仰只是一套符合我們文化習慣的傳統，我們就還沒有真正認識那位釘十字架的基督。」<br>
+                            <span class="text-accent mt-2 block">— 約翰·史托德</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3 -->
+            <section id="part3" class="scroll-mt-24">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">3</span>
+                    <h3 class="text-3xl font-display font-bold">放下疑惑的跟隨：跨出舒適圈</h3>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="bg-white/5 p-6 rounded-xl border-l-2 border-white/20 italic text-slate-300">
+                            「聖靈向他說：『有三個人來找你。起來，下去，和他們同往，不要疑惑，因為是我差他們來的。』」
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-primary font-bold text-lg flex items-center gap-2">🔍 關鍵原文</h4>
+                            <p class="text-slate-300 leading-relaxed"><span class="text-white font-bold">疑惑 (diakrinō)</span>：內在衝突產生的心理掙扎。<br><span class="text-white font-bold">請他們進去 (eiskaleomai)</span>：邀請外邦人入內，象徵彼得已開始實踐異象。</p>
+                            
+                            <h4 class="text-primary font-bold text-lg mt-6">❓ 關鍵問題</h4>
+                            <div class="glass p-5 rounded-xl border-primary/30">
+                                <p class="font-bold mb-2">當聖靈引導與認知衝突時？</p>
+                                <p class="text-slate-400 text-sm">順服往往先於理解。彼得用行動回應，先邀請住宿再啟程，展現了在未明白全貌時的跨步信心。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+                            <h4 class="text-primary font-bold mb-3">💡 生活例證</h4>
+                            <p class="text-xs text-slate-400 italic">彭柯麗在集中營受苦後，靠著神的禱告饒恕了曾經虐待她的納粹看守。順服能突破人性的極限。</p>
+                        </div>
+                        <blockquote class="border-l-4 border-primary pl-4 py-2 text-sm text-slate-300">
+                            「我們必須準備好，讓神以我們意想不到的方式來帶領我們，因為祂的道路非同我們的道路。」<br>
+                            <span class="text-primary mt-2 block">— 陶恕</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-12">
+            <h2 class="text-3xl font-display font-bold flex items-center gap-3 text-gold">
+                <span>講章文稿</span>
+            </h2>
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-8 text-lg">
+                <p>弟兄姊妹們，平安！今天我們要來看一段改變初期教會歷史的關鍵經文，使徒行傳10章1到23節。今天講道的主題是：<span class="text-white font-bold bg-gold/20 px-1">「打破藩籬的異象：當順服跨越界線」</span>。</p>
+                
+                <p>福音要傳到地極，最大的障礙往往不是外在的逼迫，而是神兒女心中的高牆。讓我們一起從彼得與哥尼流的故事中，看見神如何動工。</p>
+
+                <div class="border-l-4 border-gold pl-6 py-2">
+                    <h4 class="text-xl font-bold text-gold mb-4">跨越身分的敬虔：預備人心</h4>
+                    <p>哥尼流是一個羅馬百夫長，對猶太人來說，他是外邦人、是統治者、是不潔淨的代表。但是，神不看人的標籤。經文說他「是個虔誠人，他和全家都敬畏神，多多賙濟百姓，常常禱告神。」神聽見了他的禱告。這告訴我們，神在我們看不見的地方，在那些我們以為「不可能信主」的群體中，早已經預備了人心。就像提摩太·凱勒牧師說的，恩典不看你過去的履歷。我們是否願意相信，在我們周圍那些看來與信仰格格不入的人，神也正在預備他們的心？</p>
+                </div>
+
+                <div class="border-l-4 border-accent pl-6 py-2">
+                    <h4 class="text-xl font-bold text-accent mb-4">拆毀成見的宣告：神所潔淨的</h4>
+                    <p>彼得在房頂禱告時，看到了一塊大布降下，裡面全是猶太律法規定不可吃的不潔淨動物。神竟然對他說：「起來，宰了吃！」彼得直覺的反應是拒絕，他被自己的傳統與神學框住了。但神給了我們今天的<span class="text-accent font-bold">金句：「神所潔淨的，你不可當作俗物。」（徒10:15）</span></p>
+                    <p>弟兄姊妹，這不僅是關於食物的宣告，更是關於「人」的宣告。神在拆毀彼得心中那道幾百年來猶太人與外邦人之間的種族與文化高牆。我們今天的心中，是不是也有我們自己定義的「俗物」？是不是也有我們認為「不配得福音、不值得去愛」的人？求神打破我們的偏見，因為神所潔淨的，我們不可輕看！</p>
+                </div>
+
+                <div class="border-l-4 border-primary pl-6 py-2">
+                    <h4 class="text-xl font-bold text-primary mb-4">放下疑惑的跟隨：跨出舒適圈</h4>
+                    <p>面對這個顛覆認知的異象，彼得的反應是我們學習的榜樣。當哥尼流差遣的人來到門外時，彼得還在疑惑。但聖靈對他說：「起來，下去，和他們同往，不要疑惑，因為是我差他們來的。」彼得順服了。他做了一件當時猶太人絕不會做的事——他邀請這些外邦人進屋住了一宿，隔天跟著他們走。</p>
+                    <p>真正的信心，不是等一切都弄明白了才行動；真正的信心，是在內心還有掙扎、還有不習慣時，因為聽見聖靈的聲音，就勇敢跨出舒適圈。這一步，讓福音正式突破了猶太人的圈子，流向了全宇宙的外邦人，也流到了今天的你我身上。</p>
+                </div>
+
+                <p class="text-xl text-white font-bold pt-8">
+                    總結今天的經文，我們看見三個關鍵：<span class="text-gold">敬虔</span>、<span class="text-accent">拆毀</span>、<span class="text-primary">順服</span>。
+                </p>
+            </div>
+        </section>
+
+        <!-- Application & Action -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-display font-bold text-primary mb-6">應用方向</h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-primary">●</span> 檢視心中是否有「絕不接觸」的群體</li>
+                    <li class="flex gap-3"><span class="text-primary">●</span> 建立定時且敏銳的禱告生活</li>
+                    <li class="flex gap-3"><span class="text-primary">●</span> 在疑惑中學習先放下、後順服</li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl border-accent/20">
+                <h3 class="text-2xl font-display font-bold text-accent mb-6">實踐行動</h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex gap-3"><span class="text-accent">1.</span> 為一個你通常迴避或討厭的人祝福禱告</li>
+                    <li class="flex gap-3"><span class="text-accent">2.</span> 每天建立15分鐘專屬、不受打擾的禱告時段</li>
+                    <li class="flex gap-3"><span class="text-accent">3.</span> 主動與不同背景的人開啟一段友善的對話</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-8">
+            <h2 class="text-2xl font-display font-bold flex items-center gap-3 text-primary">
+                <span>名言佳句</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="glass p-6 rounded-2xl text-sm italic">「神賜恩給謙卑的人。恩典的本質就是：它不看你過去的履歷，只看你現在空空的雙手。」<br><span class="text-gold not-italic block mt-2">— 提摩太·凱勒</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「當基督呼召一個人時，祂是吩咐他來死。」<br><span class="text-gold not-italic block mt-2">— 潘霍華</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「我們必須準備好，讓神以我們意想不到的方式來帶領我們，因為祂的道路非同我們的道路。」<br><span class="text-gold not-italic block mt-2">— 陶恕</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「如果我們的信仰只是一套符合我們文化習慣的傳統，我們就還沒有真正認識那位釘十字架的基督。」<br><span class="text-gold not-italic block mt-2">— 約翰·史托德</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「信心就是一場活潑、大膽地對神恩典的信靠，一個人願意為此死上一千次。」<br><span class="text-gold not-italic block mt-2">— 馬丁·路德</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「順服乃是我們認識神的真正測量器。」<br><span class="text-gold not-italic block mt-2">— 約翰·加爾文</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「驕傲必須死在你裡面，否則天上將沒有你任何容身之處。」<br><span class="text-gold not-italic block mt-2">— 慕安德烈</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「除非聖靈在人的心裡動工，否則最雄辯的講道也無法使一個靈魂甦醒。」<br><span class="text-gold not-italic block mt-2">— 司布真</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「當上帝的旨意與我們的意願相衝突時，正是考驗我們是否真正尊主為大的時刻。」<br><span class="text-gold not-italic block mt-2">— 唐崇榮</span></div>
+                <div class="glass p-6 rounded-2xl text-sm italic">「把一切交給神，你不會失去任何真正有價值的事物。」<br><span class="text-gold not-italic block mt-2">— 葛理翰</span></div>
+            </div>
+        </section>
+
+        <!-- Warning Disclaimer -->
+        <div class="text-center text-slate-500 text-xs py-8 border-t border-white/5">
+            網路資料可能出錯，請小心查證、謹慎使用。
+        </div>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-background shadow-lg hover:scale-110 active:scale-95 transition-all z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const navHeight = document.querySelector('.sticky-nav').offsetHeight;
+                window.scrollTo({
+                    top: target.offsetTop - navHeight - 20,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

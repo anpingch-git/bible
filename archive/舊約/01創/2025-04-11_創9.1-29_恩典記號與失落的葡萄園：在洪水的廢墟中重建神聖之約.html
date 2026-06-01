@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創9:1-29：恩典記號與失落的葡萄園：在洪水的廢墟中重建神聖之約</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A059',
+                            crimson: '#E53E3E',
+                            indigo: '#4F46E5',
+                            accent: '#6366F1',
+                        },
+                        dark: {
+                            base: '#0A0A0B',
+                            card: '#161618',
+                            surface: '#1F1F23',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'Inter', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtle-bounce 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'subtle-bounce': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #E2E8F0;
+            scroll-behavior: smooth;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+        }
+        .section-card {
+            background: rgba(22, 22, 24, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            border-color: rgba(99, 102, 241, 0.3);
+            background: rgba(26, 26, 29, 0.8);
+        }
+        .outline-btn {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            background: rgba(99, 102, 241, 0.25);
+            transform: translateY(-2px);
+            border-color: #6366F1;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .bento-grid { grid-template-columns: 1fr; }
+        }
+        .floating-arrow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '創9:1-29',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '創',         // 動態注入書卷縮寫，例如：出
+              'note_title': '恩典記號與失落的葡萄園：在洪水的廢墟中重建神聖之約' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Sticky Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-screen-xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-brand-gold font-bold text-sm md:text-base hidden md:block">創9:1-29 恩典記號與失落的葡萄園</span>
+            <div class="flex space-x-6 md:space-x-8 text-xs md:text-sm font-medium tracking-wide uppercase">
+                <a href="#prayer" class="hover:text-brand-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-brand-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-brand-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-brand-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner & Golden Verse Overlay -->
+    <header id="top" class="relative h-screen min-h-[600px] flex flex-col justify-center items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src='image/img_d728831f-03be-4ca8-9898-c8036a4ae80d.jpg' alt='media_1' class="w-full h-full object-cover animate-pulse-slow" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-base/40 via-dark-base/60 to-dark-base"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black mb-8 leading-tight text-white tracking-tight">
+                恩典記號與<br/><span class="text-brand-gold">失落的葡萄園</span>
+            </h1>
+            <div class="inline-block animate-subtle-bounce">
+                <p class="text-xl md:text-2xl font-medium text-brand-gold leading-relaxed max-w-2xl text-glow italic">
+                    「我把虹放在雲彩中，這就可作我與地立約的記號了。」
+                </p>
+                <p class="mt-2 text-white/60 font-medium">（創世記 9:13）</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto px-6 py-12 space-y-32">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="section-card p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-24 h-24 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9-3.79-9-9 0-4.67 3.4-8.48 8-8.95V2zm2 0v1.05C17.6 3.52 21 7.33 21 12c0 5.21-3.93 9-9 9V2h2z"/></svg>
+                </div>
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="w-10 h-10 bg-brand-indigo rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-display font-bold">開路禱告</h2>
+                </div>
+                <p class="text-xl md:text-2xl leading-relaxed text-slate-300 font-light italic">
+                    「信實守約的阿爸天父，當我們站立在洪水的廢墟與新造的恩典之間，我們看見祢將審判的弓掛在雲彩中，化作平安的彩虹。感謝祢不輕易發怒，並以無條件的恩典與我們立約。求祢開啟我們的屬靈眼睛，讓我們不僅看見天上的彩虹而得著安慰，更在安逸的葡萄園中保持警醒，不容罪惡再次蒙蔽我們的心。求祢的聖靈光照我們，使我們活出祢尊貴的形像。奉主耶穌基督的聖名祈求，阿們。」
+                </p>
+            </div>
+        </section>
+
+        <!-- Background Info -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold text-brand-gold mb-4 border-l-4 border-brand-gold pl-4">背景透視</h3>
+                <p class="text-slate-400 text-sm leading-relaxed uppercase tracking-widest font-bold">History & Environment</p>
+            </div>
+            <div class="md:col-span-2 text-lg text-slate-300 leading-relaxed space-y-4">
+                <p>創世記第九章處於人類歷史的關鍵分水嶺——大洪水之後的「新造」。相較於古代近東神話，聖經呈現了一位滿有恩典與秩序的上帝。在洪水後的生態與氣候巨變中，神頒布了「挪亞之約」，重新賦予人類治理大地的權柄。</p>
+                <p>神首次允許人類食肉，但嚴格禁止吃血，並確立了司法原則。這反映了洪水後的人類依然帶有罪性，需透過法律來保護「神形像」的尊嚴。而挪亞醉酒事件，則深刻揭示了對父權權威的褻瀆與人性的脆弱。</p>
+            </div>
+        </section>
+
+        <!-- Outline Navigation -->
+        <section id="outline" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-dark-base" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講道分段解析</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="#sec1" class="outline-btn p-6 rounded-2xl">
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-tighter mb-2 block">Part 01</span>
+                    <h4 class="text-lg font-bold">全新起點的賜福與界線</h4>
+                    <p class="text-sm text-slate-400 mt-2">創世記 9:1-7</p>
+                </a>
+                <a href="#sec2" class="outline-btn p-6 rounded-2xl">
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-tighter mb-2 block">Part 02</span>
+                    <h4 class="text-lg font-bold">彩虹之約：審判下的印記</h4>
+                    <p class="text-sm text-slate-400 mt-2">創世記 9:8-17</p>
+                </a>
+                <a href="#sec3" class="outline-btn p-6 rounded-2xl">
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-tighter mb-2 block">Part 03</span>
+                    <h4 class="text-lg font-bold">葡萄園的裂痕：人性軟弱</h4>
+                    <p class="text-sm text-slate-400 mt-2">創世記 9:18-29</p>
+                </a>
+            </div>
+
+            <!-- Detailed Outline Content -->
+            <div class="space-y-24">
+                <!-- Section 1 -->
+                <article id="sec1" class="scroll-mt-32 section-card p-8 md:p-12">
+                    <div class="mb-10">
+                        <h3 class="text-3xl font-bold text-white mb-6">一、 全新起點的賜福與界線</h3>
+                        <div class="bg-dark-surface p-6 rounded-xl border-l-4 border-brand-indigo mb-8">
+                            <p class="text-slate-300 italic leading-relaxed">「神賜福給挪亞和他的兒子，對他們說：『你們要生養眾多，遍滿了地。...凡流人血的，他的血也必被人所流，因為神造人是照自己的形像造的。』」</p>
+                        </div>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="md:col-span-4 bg-brand-indigo/10 p-6 rounded-2xl border border-brand-indigo/20">
+                            <h5 class="text-brand-accent font-bold text-sm mb-3 uppercase tracking-widest">核心原文 Keyword</h5>
+                            <p class="text-xl font-bold mb-2">形像 <span class="text-sm font-normal text-slate-400">(צֶלֶם / tselem)</span></p>
+                            <p class="text-slate-400 text-sm">宣告每一個人類都具有上帝賦予的、不可侵犯的神聖尊嚴。</p>
+                        </div>
+                        <div class="md:col-span-8 bg-dark-surface/50 p-6 rounded-2xl">
+                            <h5 class="text-brand-gold font-bold text-sm mb-3 uppercase">關鍵解讀</h5>
+                            <p class="text-slate-300">洪水洗淨了大地，但罪性依舊。上帝在充滿暴力潛能的社會中劃下紅線，提醒人類：生命的主權在於神。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-dark-surface/50 p-6 rounded-2xl">
+                            <h5 class="text-slate-400 font-bold text-sm mb-3 uppercase">生活例證</h5>
+                            <p class="text-slate-300">如同剛修好的高速公路，警察必須設立嚴格測速，不是為了束縛，而是為了保護每一位上路者的安全。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-brand-gold/5 p-6 rounded-2xl border border-brand-gold/20">
+                            <h5 class="text-brand-gold font-bold text-sm mb-3 uppercase italic">名言金句</h5>
+                            <p class="text-brand-gold font-medium italic">「我們若要愛人，就必須穿透他們墮落的本性，看見他們裡面上帝的神聖形像。」—— 約翰·加爾文</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2 -->
+                <article id="sec2" class="scroll-mt-32 section-card p-8 md:p-12">
+                    <div class="mb-10">
+                        <h3 class="text-3xl font-bold text-white mb-6">二、 彩虹之約：在審判陰霾下的恩典印記</h3>
+                        <div class="bg-dark-surface p-6 rounded-xl border-l-4 border-brand-indigo mb-8">
+                            <p class="text-slate-300 italic leading-relaxed">「我把虹放在雲彩中，這就可作我與地立約的記號了。...我便記念我與你們和各樣有血肉的活物所立的約。」</p>
+                        </div>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="md:col-span-4 bg-brand-indigo/10 p-6 rounded-2xl border border-brand-indigo/20">
+                            <h5 class="text-brand-accent font-bold text-sm mb-3 uppercase tracking-widest">核心原文 Keyword</h5>
+                            <p class="text-xl font-bold mb-2">虹 / 弓 <span class="text-sm font-normal text-slate-400">(קֶשֶׁת / qesheth)</span></p>
+                            <p class="text-slate-400 text-sm">上帝將審判的「戰弓」掛在天際，且弓背朝下指向天，預表代贖恩典。</p>
+                        </div>
+                        <div class="md:col-span-8 bg-dark-surface/50 p-6 rounded-2xl">
+                            <h5 class="text-brand-gold font-bold text-sm mb-3 uppercase">關鍵解讀</h5>
+                            <p class="text-slate-300">神的「記念」是採取行動的宣告。彩虹指向神自己，預表了十字架上耶穌基督代受刑罰的終極犧牲。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-dark-surface/50 p-6 rounded-2xl">
+                            <h5 class="text-slate-400 font-bold text-sm mb-3 uppercase">生活例證</h5>
+                            <p class="text-slate-300">國王在平定叛亂後，將殺敵寶劍收入劍鞘懸掛於大廳，作為永不興起戰爭的和平保證。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-brand-gold/5 p-6 rounded-2xl border border-brand-gold/20">
+                            <h5 class="text-brand-gold font-bold text-sm mb-3 uppercase italic">名言金句</h5>
+                            <p class="text-brand-gold font-medium italic">「上帝的恩典若不是在罪惡與審判的黑雲映襯下，我們就無法看見它何等長闊高深。」—— 司布真</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 -->
+                <article id="sec3" class="scroll-mt-32 section-card p-8 md:p-12">
+                    <div class="mb-10">
+                        <h3 class="text-3xl font-bold text-white mb-6">三、 葡萄園的裂痕：恩典時代中的人性軟弱</h3>
+                        <div class="bg-dark-surface p-6 rounded-xl border-l-4 border-brand-indigo mb-8">
+                            <p class="text-slate-300 italic leading-relaxed">「挪亞作起農夫來，栽了一個葡萄園。他喝了園中的酒便醉了，在帳棚裡赤著身子。」</p>
+                        </div>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="md:col-span-4 bg-brand-indigo/10 p-6 rounded-2xl border border-brand-indigo/20">
+                            <h5 class="text-brand-accent font-bold text-sm mb-3 uppercase tracking-widest">核心原文 Keyword</h5>
+                            <p class="text-xl font-bold mb-2">赤身 <span class="text-sm font-normal text-slate-400">(עֶרְוָה / ervah)</span></p>
+                            <p class="text-slate-400 text-sm">代表羞辱與輕蔑，揭示了對父權與神聖秩序的僭越。</p>
+                        </div>
+                        <div class="md:col-span-8 bg-dark-surface/50 p-6 rounded-2xl">
+                            <h5 class="text-brand-gold font-bold text-sm mb-3 uppercase">關鍵解讀</h5>
+                            <p class="text-slate-300">最大危機往往在安逸時。洪水洗淨地球，卻洗不淨人心；救贖的盼望不能放在人身上，只能指向基督。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-dark-surface/50 p-6 rounded-2xl">
+                            <h5 class="text-slate-400 font-bold text-sm mb-3 uppercase">生活例證</h5>
+                            <p class="text-slate-300">老船長成功穿越超級颶風，卻在退休後回到溫馨家中，因踩到肥皂而在浴室滑倒摔傷。</p>
+                        </div>
+                        <div class="md:col-span-6 bg-brand-gold/5 p-6 rounded-2xl border border-brand-gold/20">
+                            <h5 class="text-brand-gold font-bold text-sm mb-3 uppercase italic">名言金句</h5>
+                            <p class="text-brand-gold font-medium italic">「當恩典變得廉價，當我們對罪失去警覺時，我們就已經走在跌倒的路上了。」—— 潘霍華</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24 space-y-12">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="w-10 h-10 bg-brand-crimson rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">講章文稿</h2>
+            </div>
+            
+            <div class="prose prose-invert prose-lg max-w-none text-slate-300 leading-relaxed space-y-10">
+                <p class="text-2xl font-bold text-brand-gold border-b border-brand-gold/20 pb-4">創9:1-29：恩典記號與失落的葡萄園：在洪水的廢墟中重建神聖之約</p>
+                
+                <p>親愛的弟兄姊妹，想像一下你剛經歷了一場毀滅性的全球災難。當方舟的門終於打開，挪亞一家踏上泥濘的大地，眼前是一片死寂的廢墟。在這個看似絕望的時刻，上帝卻向他們發出了恩典的宣告。今天，我們要從創世記第九章，看見神如何在洪水的廢墟中，與人類重建神聖的關係。</p>
+
+                <div class="bg-dark-surface p-8 rounded-3xl">
+                    <h4 class="text-xl font-bold text-brand-indigo mb-4 uppercase tracking-wider">全新起點的賜福與界線</h4>
+                    <p>神對挪亞說：「<strong class="text-brand-gold text-glow">你們要生養眾多，遍滿了地。...凡流人血的，他的血也必被人所流，因為神造人是照自己的形像造的。</strong>」大水雖然退去，但神知道人心的罪惡並沒有被水淹死。因此，神賜下了一個新的秩序。祂允許人吃肉，這是一種恩典的妥協，但祂劃下了一道嚴格的紅線——不可吃血，也不可流人血。今天，我們是否在職場、家庭、甚至網路上，輕易地用言語「流人的血」？</p>
+                </div>
+
+                <div class="bg-dark-surface p-8 rounded-3xl">
+                    <h4 class="text-xl font-bold text-brand-indigo mb-4 uppercase tracking-wider">彩虹之約：在審判陰霾下的恩典印記</h4>
+                    <p>神說：「<strong class="text-brand-gold text-glow">我把虹放在雲彩中，這就可作我與地立約的記號了。我使雲彩蓋地的時候，必有虹現在雲彩中，我看見，就要記念我與地上各樣有血肉的活物所立的永約。</strong>」這裡有一個極美的希伯來文字：虹（qesheth）。這原本是指戰士射箭的「戰弓」。上帝把祂審判的兵器掛在了天際，並且弓背朝下，指向天上的神自己。這預表了耶穌基督為我們承受了那本該射向我們的審判之箭！</p>
+                </div>
+
+                <div class="bg-dark-surface p-8 rounded-3xl">
+                    <h4 class="text-xl font-bold text-brand-indigo mb-4 uppercase tracking-wider">葡萄園的裂痕：恩典時代中的人性軟弱</h4>
+                    <p>聖經真實得令人心碎：「<strong class="text-brand-gold text-glow">挪亞作起農夫來，栽了一個葡萄園。他喝了園中的酒便醉了，在帳棚裡赤著身子。</strong>」那位在百年嘲笑中堅守信仰的「完全人」挪亞，熬過了驚濤駭浪，卻在風平浪靜的葡萄園裡跌倒了。潘霍華警告我們：最大的危險不在於外在環境，而在於內心的安逸。我們常常在生活順遂時，放下了屬靈的防備。</p>
+                </div>
+
+                <div class="border-l-4 border-brand-gold pl-6 py-4">
+                    <p class="text-xl">弟兄姊妹，我們都活在洪水的廢墟與新天新地之間。我們領受了<span class="text-brand-gold font-bold">恩典</span>，進入了神的<span class="text-brand-gold font-bold">立約</span>，但我們也必須時刻保持<span class="text-brand-gold font-bold">警醒</span>。願我們都能敬畏他人身上的神形像，在風暴中仰望彩虹，並在安逸的葡萄園中，緊緊跟隨主！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Bento -->
+        <section class="space-y-8">
+            <h2 class="text-3xl font-display font-bold">應用與行動</h2>
+            <div class="bento-grid">
+                <div class="md:col-span-4 bg-dark-surface p-8 rounded-3xl">
+                    <h4 class="text-brand-gold font-bold mb-4">結論關鍵字</h4>
+                    <ul class="space-y-3 text-xl font-display font-bold">
+                        <li class="flex items-center space-x-2"><span class="w-2 h-2 bg-brand-gold rounded-full"></span> <span>恩典 (Grace)</span></li>
+                        <li class="flex items-center space-x-2"><span class="w-2 h-2 bg-brand-gold rounded-full"></span> <span>立約 (Covenant)</span></li>
+                        <li class="flex items-center space-x-2"><span class="w-2 h-2 bg-brand-gold rounded-full"></span> <span>警醒 (Vigilance)</span></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-8 bg-brand-indigo/10 p-8 rounded-3xl border border-brand-indigo/20">
+                    <h4 class="text-brand-accent font-bold mb-6">回應行動</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <p class="font-bold mb-2">1. 尊榮生命</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">為一個你不喜歡的人禱告，宣告他也有「神的形像」。</p>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">2. 尋找彩虹</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">寫下過去生命風暴中的三個恩典記號，向神獻上感恩。</p>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">3. 園中體檢</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">分享你目前最容易放鬆警惕的「葡萄園」，請夥伴守望。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="scroll-mt-24">
+            <div class="flex items-center space-x-4 mb-12">
+                <div class="w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-dark-base" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                </div>
+                <h2 class="text-3xl font-display font-bold">屬靈前輩佳句名言</h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Quote Cards -->
+                    <div class="section-card p-6 border-l-4 border-brand-gold">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「我們若要愛人，就必須穿透他們墮落的本性，看見他們裡面上帝的神聖形像。唯有當我們敬畏上帝在他們身上的形像時，我們才能真正去愛。」</p>
+                        <p class="text-brand-gold text-sm font-bold">— 約翰·加爾文 (John Calvin)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-brand-indigo">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「彩虹若不是在烏雲的背景下，就無法顯出它的美麗；上帝的恩典若不是在罪惡與審判的黑雲映襯下，我們就無法看見它何等長闊高深。」</p>
+                        <p class="text-brand-indigo text-sm font-bold">— 司布真 (Charles Spurgeon)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-brand-crimson">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「我們最大的危險不在於外在環境的艱難，而在於內心的安逸。當恩典變得廉價，當我們對罪失去警覺時，我們就已經走在跌倒的路上了。」</p>
+                        <p class="text-brand-crimson text-sm font-bold">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-slate-400">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「罪的本質不是去觸犯某些規則，而是把自己當作上帝，在祂的恩典之外去尋找自己的安全感與葡萄園。」</p>
+                        <p class="text-slate-400 text-sm font-bold">— 提摩太·凱勒 (Timothy Keller)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-brand-gold">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「上帝的信實是我們在風暴中唯一的錨。祂既然在雲彩中放下了彩虹，祂就絕不會在我們被水淹沒時轉臉不顧我們。」</p>
+                        <p class="text-brand-gold text-sm font-bold">— 陶恕 (A.W. Tozer)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-brand-indigo">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「十字架就是上帝掛在宇宙中的最高彩虹，宣告祂對人類無條件的和平之約，並且祂親身承擔了所有的審判。」</p>
+                        <p class="text-brand-indigo text-sm font-bold">— 約翰·史托德 (John Stott)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-brand-crimson">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「律法告訴我們人性的敗壞，如同洪水彰顯神的憤怒；但恩典向我們展示了天上那彎和解的弓，那是唯獨藉著基督而來的。」</p>
+                        <p class="text-brand-crimson text-sm font-bold">— 馬丁·路德 (Martin Luther)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-slate-400">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「當你以為自己站得最穩、正坐在自己栽種的葡萄樹下享受時，那就是魔鬼最容易將你絆倒的時刻。」</p>
+                        <p class="text-slate-400 text-sm font-bold">— 慕迪 (D.L. Moody)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-brand-gold">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「我們都是破碎的人，即使在蒙恩之後，我們的軟弱與赤身露體依然存在。但我們學會拿著恩典的衣服為別人遮掩。」</p>
+                        <p class="text-brand-gold text-sm font-bold">— 盧雲 (Henri Nouwen)</p>
+                    </div>
+                    <div class="section-card p-6 border-l-4 border-brand-indigo">
+                        <p class="text-slate-300 italic mb-4 leading-relaxed">「上帝的約是歷史的脊梁。當世界在罪惡與審判中搖搖欲墜時，是上帝那『我看見就記念』的應許，托住了整個宇宙。」</p>
+                        <p class="text-brand-indigo text-sm font-bold">— 唐崇榮 (Stephen Tong)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Message -->
+        <section class="py-12 border-t border-white/5">
+            <p class="text-center text-slate-500 text-sm">
+                網路資料可能出錯，請小心查證、謹慎使用。
+            </p>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-gold text-dark-base rounded-full flex items-center justify-center floating-arrow hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

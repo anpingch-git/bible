@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創6:1-22:在洪流中築舟：黑暗世代中的恩典與順服</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        accent: '#6366f1',
+                        darkBg: '#0a0a0c',
+                        cardBg: 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'breath': 'breath 8s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { opacity: 0.6, transform: 'scale(1.02)' },
+                            '50%': { opacity: 1, transform: 'scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #e2e8f0;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 12, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .jump-text span {
+            display: inline-block;
+            animation: jump 2s ease-in-out infinite;
+        }
+        @keyframes jump {
+            0%, 20%, 100% { transform: translateY(0); }
+            10% { transform: translateY(-5px); }
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '創6:1-22',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '創',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在洪流中築舟：黑暗世代中的恩典與順服' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="overflow-x-hidden">
+
+    <!-- Top Banner & Image -->
+    <div class="relative h-[60vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 animate-breath">
+            <img src='image/img_457b6f9d-becd-476e-b6f3-17ef119e6c88.jpg' alt='Noah Ark' class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-darkBg/50 to-darkBg"></div>
+        
+        <!-- Hero Content (Golden Verse) -->
+        <div id="top" class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-3xl md:text-6xl font-display font-extrabold mb-6 tracking-tight">
+                <span class="block text-gold mb-2">創6:1-22</span>
+                在洪流中築舟：黑暗世代中的恩典與順服
+            </h1>
+            <div class="space-y-4 text-xl md:text-2xl font-light italic text-white/90 jump-text">
+                <p>「惟有挪亞在耶和華眼前蒙恩。」</p>
+                <p>「挪亞就這樣行。凡神所吩咐的，他都照樣行了。」</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center text-sm md:text-base font-medium">
+            <div class="text-gold font-bold">創世記 6:1-22</div>
+            <div class="flex gap-4 md:gap-8">
+                <a href="#prayer" class="hover:text-gold transition-colors">禱告</a>
+                <a href="#outline" class="hover:text-gold transition-colors">大綱</a>
+                <a href="#sermon" class="hover:text-gold transition-colors">講章</a>
+                <a href="#quotes" class="hover:text-gold transition-colors">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Prayer Section -->
+        <section id="prayer" class="relative">
+            <div class="glass p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 text-gold/10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07 0-9-3.79-9-8.5C2 8.79 5.93 5 11 5V2m2 0v3c5.07 0 9 3.79 9 8.5s-3.93 8.5-9 8.5v3c6.63 0 12-5.37 12-12S19.63 2 13 2z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-3xl">🙏</span>
+                    <h2 class="text-2xl font-bold text-gold uppercase tracking-widest">禱告詞</h2>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed font-light text-slate-200">
+                    主啊，在這充滿喧囂與罪惡的世代中，我們常被世俗的洪流裹挾，心思意念容易偏離祢的聖潔。求祢賜給我們如同挪亞般的恩典，使我們能在這黑暗的時代中與祢同行；賜給我們單純而堅定的信心，即使面對世人的嘲笑與不解，仍願意順服祢的呼召，在我們的生命中建造祢所吩咐的方舟。奉主耶穌基督的聖名禱告，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Background Analysis -->
+        <section class="space-y-8">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">🌍</span>
+                <h2 class="text-2xl font-bold text-gold uppercase tracking-widest">背景分析</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass p-6 rounded-2xl border-l-4 border-gold">
+                    <h3 class="text-xl font-bold mb-4 text-white">歷史與人文</h3>
+                    <p class="text-slate-400 leading-relaxed">當時人類繁衍增多，但道德極度敗壞。「神的兒子們」與「人的女子們」交合，其核心結果是：界限被打破，神聖的秩序被顛覆。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-accent">
+                    <h3 class="text-xl font-bold mb-4 text-white">社會與政治</h3>
+                    <p class="text-slate-400 leading-relaxed">地上充滿「偉人」（尼腓利人），崇尚暴力與強權。希伯來文中的「強暴」（hamas）遍滿全地，這是一個充滿流血、欺壓與肉弱強食的殘酷時代。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Navigation Buttons -->
+        <section id="outline" class="space-y-8">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">📜</span>
+                <h2 class="text-2xl font-bold text-gold uppercase tracking-widest">大綱導覽</h2>
+            </div>
+            <div class="flex flex-wrap gap-4">
+                <a href="#section1" class="flex-1 min-w-[280px] p-6 glass rounded-2xl hover:bg-gold/10 transition-all group">
+                    <span class="text-gold font-bold block mb-2">第一分段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">當慾望淹沒大地 (6:1-7)</h3>
+                </a>
+                <a href="#section2" class="flex-1 min-w-[280px] p-6 glass rounded-2xl hover:bg-gold/10 transition-all group">
+                    <span class="text-gold font-bold block mb-2">第二分段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">在絕望處遇見恩典 (6:8-12)</h3>
+                </a>
+                <a href="#section3" class="flex-1 min-w-[280px] p-6 glass rounded-2xl hover:bg-gold/10 transition-all group">
+                    <span class="text-gold font-bold block mb-2">第三分段</span>
+                    <h3 class="text-lg font-bold group-hover:text-gold transition-colors">荒謬中的極致順服 (6:13-22)</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 1 Detail -->
+        <section id="section1" class="space-y-12">
+            <div class="border-b border-white/10 pb-4">
+                <h2 class="text-3xl font-extrabold text-gradient">第一段：當慾望淹沒大地——人性的失控與神的痛心</h2>
+                <p class="text-slate-500 mt-2">創世記 6:1-7</p>
+            </div>
+            <div class="bento-grid">
+                <div class="glass p-6 rounded-2xl md:col-span-2">
+                    <h4 class="text-gold font-bold mb-3 flex items-center gap-2">📖 引用經文</h4>
+                    <p class="italic text-slate-300 leading-relaxed">耶和華見人在地上罪惡很大，終日所思想的盡都是惡，耶和華就後悔造人在地上，心中憂傷...</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-accent font-bold mb-3 flex items-center gap-2">🔍 關鍵原文</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><span class="text-white font-bold">思想 (Yetser):</span> 內心深處的意念、企圖。</li>
+                        <li><span class="text-white font-bold">惡 (Ra):</span> 罪徹底腐蝕了人性的核心。</li>
+                        <li><span class="text-white font-bold">憂傷 (Atsab):</span> 深切的痛苦，神的心被刺痛。</li>
+                    </ul>
+                </div>
+                <div class="glass p-6 rounded-2xl border-r-4 border-gold">
+                    <h4 class="text-gold font-bold mb-3">❓ 關鍵問題</h4>
+                    <p class="font-bold text-white mb-2">慈愛上帝為什麼會「後悔」？</p>
+                    <p class="text-sm text-slate-400">這是一種「擬人化」表達，描述上帝面對極度罪惡時的強烈反應與心碎決定。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl italic text-slate-400 text-sm">
+                    "罪不僅僅是做壞事，罪是把好東西變成了終極的東西，取代了上帝的位置。" —— 提摩太·凱勒
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 Detail -->
+        <section id="section2" class="space-y-12">
+            <div class="border-b border-white/10 pb-4">
+                <h2 class="text-3xl font-extrabold text-gradient">第二段：在絕望處遇見恩典——與神同行的義人</h2>
+                <p class="text-slate-500 mt-2">創世記 6:8-12</p>
+            </div>
+            <div class="bento-grid">
+                <div class="glass p-6 rounded-2xl md:col-span-2">
+                    <h4 class="text-gold font-bold mb-3 flex items-center gap-2">📖 引用經文</h4>
+                    <p class="italic text-slate-300 leading-relaxed">惟有挪亞在耶和華眼前蒙恩。挪亞是個義人，在當時的世代是個完全人。挪亞與神同行。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-accent font-bold mb-3 flex items-center gap-2">🔍 關鍵原文</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><span class="text-white font-bold">蒙恩 (Chen):</span> 聖經首次出現「恩典」。</li>
+                        <li><span class="text-white font-bold">完全人 (Tamim):</span> 全心全意的專一與忠誠。</li>
+                        <li><span class="text-white font-bold">與神同行 (Halakh):</span> 穩定、親密的日常。</li>
+                    </ul>
+                </div>
+                <div class="glass p-6 rounded-2xl border-l-4 border-accent">
+                    <h4 class="text-accent font-bold mb-3">❓ 關鍵問題</h4>
+                    <p class="font-bold text-white mb-2">因完全而蒙恩，還是因蒙恩而完全？</p>
+                    <p class="text-sm text-slate-400">恩典是起點，義是果子。挪亞是因上帝恩典先臨到，才能出淤泥而不染。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl italic text-slate-400 text-sm">
+                    "只有相信的人才能順服，也只有順服的人才算相信。" —— 潘霍華
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Detail -->
+        <section id="section3" class="space-y-12">
+            <div class="border-b border-white/10 pb-4">
+                <h2 class="text-3xl font-extrabold text-gradient">第三段：荒謬中的極致順服——用生命打造方舟</h2>
+                <p class="text-slate-500 mt-2">創世記 6:13-22</p>
+            </div>
+            <div class="bento-grid">
+                <div class="glass p-6 rounded-2xl md:col-span-2">
+                    <h4 class="text-gold font-bold mb-3 flex items-center gap-2">📖 引用經文</h4>
+                    <p class="italic text-slate-300 leading-relaxed">你要用歌斐木造一隻方舟...挪亞就這樣行。凡神所吩咐的，他都照樣行了。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h4 class="text-accent font-bold mb-3 flex items-center gap-2">🔍 關鍵原文</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><span class="text-white font-bold">方舟 (Tebah):</span> 無舵無帆的箱子，全權交託。</li>
+                        <li><span class="text-white font-bold">照樣行 (Asah):</span> 毫不打折扣的絕對順服。</li>
+                    </ul>
+                </div>
+                <div class="glass p-6 rounded-2xl border-b-4 border-gold">
+                    <h4 class="text-gold font-bold mb-3">❓ 關鍵問題</h4>
+                    <p class="font-bold text-white mb-2">當呼召看似荒謬，代價為何？</p>
+                    <p class="text-sm text-slate-400">面對浩大工程與社會嘲笑，挪亞選擇信靠神的真實而非環境的荒謬。</p>
+                </div>
+                <div class="glass p-6 rounded-2xl italic text-slate-400 text-sm">
+                    "順服神，並把所有的後果交給祂。" —— 查爾斯·史丹利
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="space-y-12">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">🎙️</span>
+                <h2 class="text-2xl font-bold text-gold uppercase tracking-widest">講章文稿</h2>
+            </div>
+            <div class="glass p-8 md:p-12 rounded-3xl space-y-8 leading-loose text-slate-300">
+                <p class="text-xl font-bold text-white border-l-4 border-gold pl-4">創6:1-22：在洪流中築舟：黑暗世代中的恩典與順服</p>
+                
+                <p>各位弟兄姐妹，平安。如果我們環顧今天的世界，你會看到戰爭、欺壓、道德的崩潰。其實，這種感嘆並不是現代人的專利。創世記第六章，上古時代的人類，也曾將世界推向萬劫不復的深淵。</p>
+
+                <div>
+                    <h4 class="text-gold font-bold text-xl mb-4">當慾望淹沒大地</h4>
+                    <p>罪不是突然爆發的，它是從「思想」開始腐蝕。當人「終日所思想的盡都是惡」，上帝的反應是「後悔」與「憂傷」。這是一位聖潔慈父的心碎。正如提摩太·凱勒所說，<span class="text-gold font-bold">當人類把慾望當作神，洪水的毀滅就成為必然的結局。</span></p>
+                </div>
+
+                <div>
+                    <h4 class="text-gold font-bold text-xl mb-4">在絕望處遇見恩典</h4>
+                    <p>在徹底黑暗中，聖經亮起一盞燈：「<span class="text-white font-bold bg-white/10 px-2">惟有挪亞在耶和華眼前蒙恩</span>」。這不是因為挪亞完美，而是因為上帝的恩典先臨到了他。恩典不是炫耀的資本，是在污濁世界中保持潔淨的力量。</p>
+                </div>
+
+                <div>
+                    <h4 class="text-gold font-bold text-xl mb-4">荒謬中的極致順服</h4>
+                    <p>上帝呼召挪亞在旱地上造「箱子」。在世人眼中，這簡直是瘋子。但挪亞沒有討價還價。經文下了一句震撼的註解：「<span class="text-accent font-bold underline">挪亞就這樣行。凡神所吩咐的，他都照樣行了。</span>」</p>
+                </div>
+
+                <p class="bg-gold/5 p-6 rounded-xl border border-gold/20 italic">
+                    今天，神也在呼召我們建造「方舟」。或許是結束一段不討神喜悅的關係，或許是在職場中持守誠信。我們究竟是被洪流捲走，還是在洪流中堅定地築舟？
+                </p>
+            </div>
+        </section>
+
+        <!-- Application & Conclusion -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xl font-bold text-gold mb-6 flex items-center gap-2">🎯 實踐行動</h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="bg-gold/20 text-gold w-8 h-8 rounded-full flex items-center justify-center shrink-0">1</span>
+                        <p><span class="text-white font-bold">心思意念的潔淨：</span>本週睡前省察思想，切斷帶來試探的媒體。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="bg-gold/20 text-gold w-8 h-8 rounded-full flex items-center justify-center shrink-0">2</span>
+                        <p><span class="text-white font-bold">與神同行時間：</span>每天15分鐘安靜向神禱告，練習聆聽。</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="bg-gold/20 text-gold w-8 h-8 rounded-full flex items-center justify-center shrink-0">3</span>
+                        <p><span class="text-white font-bold">踏出築舟第一步：</span>行動一件神感動你去做、但你一直逃避的事。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass p-8 rounded-3xl flex flex-col justify-center items-center text-center">
+                <h3 class="text-xl font-bold text-gold mb-6">結論關鍵字</h3>
+                <div class="space-y-4">
+                    <div class="text-5xl font-black text-white tracking-widest">恩典</div>
+                    <div class="text-5xl font-black text-accent tracking-widest">同行</div>
+                    <div class="text-5xl font-black text-gold tracking-widest">順服</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="space-y-8">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">✨</span>
+                <h2 class="text-2xl font-bold text-gold uppercase tracking-widest">名言佳句</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 glass rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="italic text-slate-300 mb-4">「當基督呼召一個人時，祂是叫他來死。」</p>
+                    <cite class="text-gold text-sm">— 潘霍華 《作門徒的代價》</cite>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="italic text-slate-300 mb-4">「信心和順服是綁在同一根軸上的兩匹馬，你無法將它們分開。」</p>
+                    <cite class="text-gold text-sm">— 司布真 《司布真講道集》</cite>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="italic text-slate-300 mb-4">「上帝不能將祂豐盛的賜福，降臨在一個不肯絕對順服的心中。」</p>
+                    <cite class="text-gold text-sm">— 慕安德烈 《絕對的順服》</cite>
+                </div>
+                <div class="p-6 glass rounded-2xl hover:translate-y-[-5px] transition-transform">
+                    <p class="italic text-slate-300 mb-4">「順服是信心的真正考驗。沒有順服的信心，只不過是死寂的理智認同。」</p>
+                    <cite class="text-gold text-sm">— 陶恕 《渴慕神》</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning -->
+        <div class="text-center text-slate-500 text-sm pb-12">
+            <p>網路資料可能出錯，請小心查證、謹慎使用。</p>
+        </div>
+
+    </main>
+
+    <!-- Floating Top Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold text-darkBg rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 animate-float">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
+</body>
+</html>

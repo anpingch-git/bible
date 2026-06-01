@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽5:1-7：恩典的期盼與野葡萄的悲歌</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        crimson: '#991B1B',
+                        deepBg: '#0A0A0A',
+                        glass: 'rgba(255, 255, 255, 0.05)',
+                        accent: '#FCD34D',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'subtle-bounce': 'subtleBounce 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        subtleBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-3px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0A;
+            color: #E5E7EB;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .banner-mask {
+            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FCD34D 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .outline-btn {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .outline-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        @keyframes breath {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        .breath-anim {
+            animation: breath 8s ease-in-out infinite;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '賽5:1-7',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '賽',         // 動態注入書卷縮寫，例如：出
+              'note_title': '恩典的期盼與野葡萄的悲歌' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-gold font-bold text-sm md:text-base truncate">
+                賽5:1-7
+            </div>
+            <div class="flex gap-4 md:gap-8 text-xs md:text-sm font-medium">
+                <a href="#prayer" class="nav-link text-gray-300">禱告</a>
+                <a href="#outline" class="nav-link text-gray-300">大綱</a>
+                <a href="#sermon" class="nav-link text-gray-300">講章</a>
+                <a href="#quotes" class="nav-link text-gray-300">名言</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="top" class="relative h-[70vh] md:h-[85vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <img src="image/img_d0596c75-3a71-47be-a1f4-230ae7624090.jpg" alt="Isaiah 5" class="w-full h-full object-cover breath-anim">
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                <span class="block text-gray-400 text-lg md:text-2xl font-light mb-2">賽5:1-7</span>
+                <span class="text-gradient">恩典的期盼與野葡萄的悲歌</span>
+            </h1>
+            
+            <div class="inline-block mt-8 animate-subtle-bounce">
+                <p class="text-lg md:text-2xl italic text-white/90 leading-relaxed font-light">
+                    「我指望的是公平，誰知倒有暴虐；<br class="hidden md:block">指望的是公義，誰知倒有冤聲。」
+                </p>
+                <p class="text-gold mt-4 font-bold text-sm md:text-lg">—— 賽 5:7</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
+        
+        <!-- Prayer Section -->
+        <section id="prayer" class="scroll-mt-24">
+            <div class="glass-card p-8 md:p-12 relative overflow-hidden group">
+                <div class="absolute -right-10 -top-10 opacity-5 group-hover:opacity-10 transition-opacity">
+                    <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C13.1 2 14 2.9 14 4V7C14 8.1 13.1 9 12 9S10 8.1 10 7V4C10 2.9 10.9 2 12 2M12 11C13.1 11 14 11.9 14 13V16C14 17.1 13.1 18 12 18S10 17.1 10 16V13C10 11.9 10.9 11 12 11M6.5 13C7.6 13 8.5 13.9 8.5 15V18C8.5 19.1 7.6 20 6.5 20S4.5 19.1 4.5 18V15C4.5 13.9 5.4 13 6.5 13M17.5 13C18.6 13 19.5 13.9 19.5 15V18C19.5 19.1 18.6 20 17.5 20S15.5 19.1 15.5 18V15C15.5 13.9 16.4 13 17.5 13Z"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold text-gold flex items-center gap-3 mb-8">
+                    <span class="text-4xl">🙏</span> 禱告詞
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed italic">
+                    親愛的天父，感謝祢在我們生命中傾注了無比的恩典，如同精心栽培葡萄園的園主。主啊，求祢赦免我們時常結出苦澀的野葡萄，享受祢的恩典卻忽略了祢所看重的公平與公義。求聖靈光照我們的心，修剪我們的生命，使我們不再虛有其表，而是能結出與悔改的心相稱的果子，在生活中行公義、好憐憫，與祢同行。奉主耶穌基督的聖名祈求，阿們。
+                </p>
+            </div>
+        </section>
+
+        <!-- Background Info -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-white/40 uppercase tracking-widest flex items-center gap-3">
+                <span class="h-px w-12 bg-white/20"></span> 背景分析
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <p class="text-gray-300 leading-relaxed">
+                        以賽亞書第五章的背景大約在公元前八世紀的猶大國。當時正值烏西雅王和約坦王統治時期，國家經歷了前所未有的經濟繁榮與軍事強盛。
+                    </p>
+                </div>
+                <div class="space-y-4 border-l border-white/10 pl-6">
+                    <p class="text-gray-300 leading-relaxed">
+                        然而，在物質富裕的表象下，社會內部卻充滿了極大的貧富差距、道德淪喪與社會不公。先知以賽亞藉由中東民謠形式，將這首「情歌」轉變為嚴厲的法庭控訴。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outline Buttons -->
+        <section id="outline" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-gold flex items-center gap-3 mb-10">
+                <span class="text-4xl">📜</span> 講道大綱
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="#part1" class="outline-btn p-6 glass-card border-gold/30 hover:border-gold">
+                    <span class="text-gold text-xs font-bold block mb-2">第一段 | 賽 5:1-2</span>
+                    <h3 class="text-xl font-bold">竭盡所能的愛</h3>
+                    <p class="text-gray-400 text-sm mt-2">上帝精心的栽培與預備</p>
+                </a>
+                <a href="#part2" class="outline-btn p-6 glass-card border-crimson/30 hover:border-crimson">
+                    <span class="text-crimson text-xs font-bold block mb-2">第二段 | 賽 5:3-4</span>
+                    <h3 class="text-xl font-bold text-gray-200">恩典中的背叛</h3>
+                    <p class="text-gray-400 text-sm mt-2">令人心碎的野葡萄</p>
+                </a>
+                <a href="#part3" class="outline-btn p-6 glass-card border-white/20 hover:border-white">
+                    <span class="text-gray-300 text-xs font-bold block mb-2">第三段 | 賽 5:5-7</span>
+                    <h3 class="text-xl font-bold">公義的審判</h3>
+                    <p class="text-gray-400 text-sm mt-2">撤去籬笆的警鐘與嘆息</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Deep Dive Section -->
+        <section class="space-y-32">
+            <!-- Part 1 -->
+            <div id="part1" class="scroll-mt-24 space-y-8">
+                <div class="flex items-end gap-4 border-b border-gold/50 pb-4">
+                    <h3 class="text-4xl font-black text-gold">01</h3>
+                    <h4 class="text-2xl font-bold text-white">竭盡所能的愛</h4>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="bg-gold/10 border-l-4 border-gold p-6 rounded-r-lg italic text-lg">
+                            「他刨挖園子，撿去石頭，栽種上等的葡萄樹...指望結好葡萄，反倒結了野葡萄。」
+                        </div>
+                        <div class="space-y-4 text-gray-300">
+                            <p><strong class="text-gold">核心解析：</strong> 上帝「主動的恩典」與「毫無保留的付出」。祂排除了所有障礙（撿去石頭），提供最高規格保護（蓋樓）。這提醒我們，生命中一切豐盛皆非理所當然。</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 space-y-4">
+                        <h5 class="text-gold font-bold flex items-center gap-2"><span class="text-xl">🔍</span> 關鍵原文</h5>
+                        <ul class="text-sm space-y-2">
+                            <li><span class="text-white font-semibold">肥美的山岡：</span> 原文象徵極度肥沃土地。</li>
+                            <li><span class="text-white font-semibold">上等的葡萄樹：</span> 指最優質品種(soreq)。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2 -->
+            <div id="part2" class="scroll-mt-24 space-y-8">
+                <div class="flex items-end gap-4 border-b border-crimson/50 pb-4">
+                    <h3 class="text-4xl font-black text-crimson">02</h3>
+                    <h4 class="text-2xl font-bold text-white">恩典中的背叛</h4>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="bg-crimson/10 border-l-4 border-crimson p-6 rounded-r-lg italic text-lg">
+                            「耶路撒冷的居民哪，請在我和葡萄園中斷定是非。我為葡萄園所做之外，還有甚麼可做的呢？」
+                        </div>
+                        <div class="space-y-4 text-gray-300">
+                            <p><strong class="text-crimson">核心解析：</strong> 人類罪性的奧秘。雖然擁有完美的環境，卻因自由意志的濫用而產出「發臭」的行為。宗教形式（外表的葡萄）無法取代內在生命的真實翻轉。</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 space-y-4">
+                        <h5 class="text-crimson font-bold flex items-center gap-2"><span class="text-xl">🔍</span> 關鍵原文</h5>
+                        <ul class="text-sm space-y-2">
+                            <li><span class="text-white font-semibold">野葡萄 (be'ushiym)：</span> 意為「發臭、腐敗」，非一般野果。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div id="part3" class="scroll-mt-24 space-y-8">
+                <div class="flex items-end gap-4 border-b border-gray-400 pb-4">
+                    <h3 class="text-4xl font-black text-gray-400">03</h3>
+                    <h4 class="text-2xl font-bold text-white">公義的審判</h4>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="md:col-span-2 space-y-6">
+                        <div class="bg-gray-800/50 border-l-4 border-gray-400 p-6 rounded-r-lg italic text-lg">
+                            「他指望的是公平，誰知倒有暴虐；指望的是公義，誰知倒有冤聲。」
+                        </div>
+                        <div class="space-y-4 text-gray-300">
+                            <p><strong class="text-gray-300 underline underline-offset-4">雙關語震撼：</strong> 公平(mishpat) vs 暴虐(mispaḥ)；公義(tsedaqah) vs 冤聲(tse'aqah)。讀音相近，生命卻南轅北轍。</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 space-y-4 border-white/5">
+                        <h5 class="text-gray-300 font-bold flex items-center gap-2"><span class="text-xl">⚠️</span> 警鐘</h5>
+                        <p class="text-sm text-gray-400">撤去籬笆不是上帝失控，而是任憑人承擔行為的後果。蒙揀選是更大的責任，而非免死金牌。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sermon Script -->
+        <section id="sermon" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-gold flex items-center gap-3 mb-10">
+                <span class="text-4xl">📖</span> 講章文稿
+            </h2>
+            <div class="glass-card p-8 md:p-16 space-y-10 text-gray-300 leading-relaxed text-lg">
+                <header class="text-center space-y-4 mb-16">
+                    <h3 class="text-3xl md:text-4xl font-black text-white">恩典的期盼與野葡萄的悲歌</h3>
+                    <div class="h-1 w-24 bg-gold mx-auto"></div>
+                </header>
+
+                <div class="space-y-8">
+                    <p>弟兄姐妹們，今天我們要一同進入以賽亞書第五章，這是一首極其美麗卻又令人心碎的「葡萄園之歌」。我們將透過這段經文，看見上帝對我們生命的深切期盼，以及祂對真實信仰的要求。</p>
+
+                    <h4 class="text-2xl font-bold text-gold border-l-4 border-gold pl-4">第一段：竭盡所能的愛</h4>
+                    <p>上帝選擇了最肥沃的土壤，親手刨挖、撿去絆腳的石頭...這代表什麼？這代表在我們的生命中，上帝已經傾注了祂所有的恩典。約翰·衛斯理曾說：<span class="text-white font-bold">「上帝的恩典總是先於我們的行動。」</span>我們今天擁有的一切才幹、資源與救恩，全是神極致的愛與預備。</p>
+
+                    <h4 class="text-2xl font-bold text-crimson border-l-4 border-crimson pl-4">第二段：恩典中的背叛</h4>
+                    <p>上帝發出了心碎的質問：「<span class="text-white font-bold italic">我指望結好葡萄，怎麼倒結了野葡萄呢？</span>」這裡的「野葡萄」，在原文中是發臭、酸澀、腐敗的壞果子。潘霍華嚴厲的提醒：<span class="text-crimson font-bold">「廉價的恩典是我們教會的死敵。」</span>我們是否把上帝的恩典變得廉價了？</p>
+
+                    <h4 class="text-2xl font-bold text-white border-l-4 border-white pl-4">第三段：公義的審判</h4>
+                    <p>上帝宣告：「我必撤去籬笆，使它被吞滅...」上帝尋找的是<span class="text-gold font-bold">公平(mishpat)</span>，看到的卻是<span class="text-crimson font-bold">暴虐(mispaḥ)</span>；上帝尋找的是<span class="text-gold font-bold">公義(tsedaqah)</span>，聽見的卻是窮人的<span class="text-crimson font-bold">冤聲(tse'aqah)</span>。提摩太·凱勒牧師說得好：<span class="text-white font-bold">「如果你的信仰沒有讓你走向那些邊緣、貧窮的人，那麼你的信仰就只是為了你自己。」</span></p>
+
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10 mt-12">
+                        <h5 class="text-gold font-bold text-xl mb-4">結論與實踐</h5>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                            <div class="space-y-2">
+                                <span class="text-gold font-bold">1. 每週生命盤點</span>
+                                <p>寫下自己在言語、財務上是否結出公平的果子。</p>
+                            </div>
+                            <div class="space-y-2">
+                                <span class="text-gold font-bold">2. 實際關懷弱勢</span>
+                                <p>參與關懷行動，將信仰化為具體的愛心。</p>
+                            </div>
+                            <div class="space-y-2">
+                                <span class="text-gold font-bold">3. 職場中的正直</span>
+                                <p>勇敢拒絕不誠實的決策，選擇以聖經原則行事。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Quotes -->
+        <section id="quotes" class="scroll-mt-24 space-y-10">
+            <h2 class="text-3xl font-bold text-gold flex items-center gap-3 mb-10">
+                <span class="text-4xl">✨</span> 名言佳句
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="glass-card p-8 hover:bg-white/5 transition-colors">
+                    <p class="text-white text-lg mb-4 italic">「恩典並非讓人安逸於罪中的藉口，而是將人從罪的權勢中釋放出來，去行善的力量。」</p>
+                    <cite class="text-gold font-bold">— 馬丁·路德 (Martin Luther)</cite>
+                </div>
+                <!-- Quote 2 -->
+                <div class="glass-card p-8 hover:bg-white/5 transition-colors">
+                    <p class="text-white text-lg mb-4 italic">「廉價的恩典是我們教會的死敵。這是一種不需要悔改的恩典，不需要十字架的恩典。」</p>
+                    <cite class="text-gold font-bold">— 潘霍華 (Dietrich Bonhoeffer)</cite>
+                </div>
+                <!-- Quote 3 -->
+                <div class="glass-card p-8 hover:bg-white/5 transition-colors">
+                    <p class="text-white text-lg mb-4 italic">「上帝的公義與上帝的慈愛是不可分割的。沒有公義的慈愛是溺愛，沒有慈愛的公義是暴政。」</p>
+                    <cite class="text-gold font-bold">— 唐崇榮 (Stephen Tong)</cite>
+                </div>
+                <!-- Quote 4 -->
+                <div class="glass-card p-8 hover:bg-white/5 transition-colors">
+                    <p class="text-white text-lg mb-4 italic">「恩典使我們成為最謙卑的人，同時也使我們成為最積極去維護社會公義的人。」</p>
+                    <cite class="text-gold font-bold">— 提摩太·凱勒 (Timothy Keller)</cite>
+                </div>
+            </div>
+            
+            <div class="text-center py-12">
+                <p class="text-gray-500 text-sm tracking-widest uppercase">
+                    網路資料可能出錯，請小心查證、謹慎使用。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <a href="#top" class="fixed bottom-8 right-8 w-14 h-14 bg-gold rounded-full flex items-center justify-center text-deepBg shadow-2xl hover:scale-110 transition-transform active:scale-95 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </a>
+
+    <script>
+        // Smooth scroll adjustment for anchor links with fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80; // height of the fixed nav
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = target.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add a simple scroll animation reveal effect
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

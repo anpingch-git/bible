@@ -1,0 +1,1370 @@
+::那鴻書 1:1-15 研經與講道互動網頁:index.html
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>那鴻書 1:1-15：在狂風暴雨中遇見至高掌權者</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        storm: {
+                            50: '#f0f4f8',
+                            100: '#dbeafe',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        gold: {
+                            50: '#fefbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons for beautiful visual cues -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        .font-serif-tc {
+            font-family: 'Noto Serif TC', serif;
+        }
+        .font-sans-tc {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        
+        /* Custom animated storm background lines */
+        .storm-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '那鴻書 1:1-15',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '那鴻書',         // 動態注入書卷縮寫，例如：出
+              'note_title': '在狂風暴雨中遇見至高掌權者' // 動態注入講章主題
+          });
+      });
+    </script>
+    </head>
+<body class="font-sans-tc bg-slate-50 dark:bg-storm-950 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+    <!-- TOP NAVIGATION & CONTROLS -->
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-storm-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <span class="text-gold-500 text-2xl"><i class="fa-solid fa-cloud-showers-water animate-pulse"></i></span>
+                    <span class="font-serif-tc font-bold text-lg sm:text-xl text-slate-900 dark:text-white tracking-wider">那鴻書 1:1-15 研經平台</span>
+                </div>
+                
+                <!-- Quick Navigation Links (Desktop) -->
+                <div class="hidden lg:flex items-center space-x-6 text-sm font-medium">
+                    <a href="#devotion" class="hover:text-gold-500 transition-colors">金句禱告</a>
+                    <a href="#background" class="hover:text-gold-500 transition-colors">歷史背景</a>
+                    <a href="#structure" class="hover:text-gold-500 transition-colors">文學結構</a>
+                    <a href="#exegesis" class="hover:text-gold-500 transition-colors">分段釋經</a>
+                    <a href="#sermon" class="hover:text-gold-500 transition-colors">講章宣講</a>
+                    <a href="#quotes" class="hover:text-gold-500 transition-colors">前輩名言</a>
+                    <a href="#practice" class="hover:text-gold-500 transition-colors">生活實踐</a>
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="flex items-center space-x-3">
+                    <!-- Pulpit Mode Shortcut Quick Toggle -->
+                    <button id="quickPulpitBtn" onclick="togglePulpitMode()" class="px-3 py-1.5 rounded-full text-xs bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 font-semibold border border-amber-500/30 flex items-center gap-1.5 transition-all">
+                        <i class="fa-solid fa-microphone"></i> <span>講台模式</span>
+                    </button>
+                    <!-- Dark/Light Mode Toggle -->
+                    <button onclick="toggleDarkMode()" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400" title="切換深淺色模式">
+                        <i id="themeIcon" class="fa-solid fa-moon text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO HEADER SECTION -->
+    <header class="relative overflow-hidden storm-bg py-20 lg:py-32 text-white">
+        <!-- SVG Storm Overlay -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        <!-- Lightnings effects -->
+        <div class="absolute top-1/4 left-1/3 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-gold-400 text-sm mb-6">
+                <span class="flex h-2 w-2 rounded-full bg-gold-500 animate-ping"></span>
+                <span>先知書系列默想・那鴻書第一章</span>
+            </div>
+            
+            <h1 class="font-serif-tc text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6">
+                在狂風暴雨中<br class="sm:hidden">遇見<span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">至高掌權者</span>
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-slate-300 text-lg sm:text-xl font-light mb-12">
+                當世界的權勢如亞述般張牙舞爪，在震怒與審判的風暴中心，上帝宣告祂是投靠祂之人最穩妥的避難所。
+            </p>
+
+            <!-- Navigation Quick Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <a href="#devotion" class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 hover:bg-slate-900/90 transition-all text-center group">
+                    <span class="block text-2xl text-amber-400 mb-2 group-hover:scale-110 transition-transform"><i class="fa-solid fa-quote-left"></i></span>
+                    <span class="text-xs text-slate-400 block mb-1">今日金句與禱告</span>
+                    <span class="text-sm font-semibold text-white">啟動靈修</span>
+                </a>
+                <a href="#structure" class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 hover:bg-slate-900/90 transition-all text-center group">
+                    <span class="block text-2xl text-amber-400 mb-2 group-hover:scale-110 transition-transform"><i class="fa-solid fa-arrows-split-up-and-left"></i></span>
+                    <span class="text-xs text-slate-400 block mb-1">對稱交錯結構</span>
+                    <span class="text-sm font-semibold text-white">結構美學</span>
+                </a>
+                <a href="#sermon" class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 hover:bg-slate-900/90 transition-all text-center group">
+                    <span class="block text-2xl text-amber-400 mb-2 group-hover:scale-110 transition-transform"><i class="fa-solid fa-microphone"></i></span>
+                    <span class="text-xs text-slate-400 block mb-1">完整講章與大綱</span>
+                    <span class="text-sm font-semibold text-white">講台宣講</span>
+                </a>
+                <a href="#practice" class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/50 hover:bg-slate-900/90 transition-all text-center group">
+                    <span class="block text-2xl text-amber-400 mb-2 group-hover:scale-110 transition-transform"><i class="fa-solid fa-clipboard-check"></i></span>
+                    <span class="text-xs text-slate-400 block mb-1">行動實踐與檢核</span>
+                    <span class="text-sm font-semibold text-white">生活回應</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Wave Divider -->
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-[40px] text-slate-50 dark:text-storm-950 fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,55.05,16.35,83.14,23,166.42,42.75,244.83,55.77,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- SECTION 1: DEVOTIONAL & PRAYER (金句與禱告) -->
+    <section id="devotion" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Golden Verse Card -->
+            <div class="lg:col-span-5 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-900 dark:to-slate-900/40 p-8 rounded-2xl border border-amber-200/60 dark:border-amber-500/10 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-amber-500/5 rounded-full blur-2xl"></div>
+                
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400 font-semibold text-xs tracking-wider">本週核心金句</span>
+                        <button onclick="speakText('golden-verse')" class="p-2 rounded-full hover:bg-amber-500/20 text-amber-600 dark:text-amber-400" title="語音朗讀">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <span class="text-4xl text-amber-500/30 font-serif-tc block"><i class="fa-solid fa-quote-left"></i></span>
+                        <p id="golden-verse" class="font-serif-tc text-2xl sm:text-3xl font-bold leading-relaxed text-slate-900 dark:text-white tracking-wide">
+                            「耶和華本為善，在患難的日子為人的保障，並且認得那些投靠他的人。」
+                        </p>
+                        <span class="text-right block text-slate-500 dark:text-slate-400 font-medium">— 《那鴻書 1:7》</span>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-amber-200/40 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400 flex items-center justify-between">
+                    <span>💡 默想指引：在風暴中信靠上帝的良善與保守</span>
+                    <span class="text-xs text-amber-600 dark:text-amber-400 hover:underline cursor-pointer" onclick="scrollToElement('structure')">查看本節在結構中的核心位置 →</span>
+                </div>
+            </div>
+
+            <!-- Prayer Card -->
+            <div class="lg:col-span-7 bg-white dark:bg-storm-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between relative">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-blue-500"><i class="fa-solid fa-hands-praying text-xl"></i></span>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">回應祈禱詞</h3>
+                        </div>
+                        <button onclick="speakText('prayer-content')" class="p-2 rounded-full hover:bg-blue-500/10 text-blue-500" title="語音朗讀">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                    </div>
+                    
+                    <p id="prayer-content" class="font-serif-tc text-lg text-slate-700 dark:text-slate-300 leading-relaxed tracking-wider indent-8">
+                        全能的父上帝，在看似失控的世界與生命的狂風暴雨中，我們常感恐懼與迷茫。求祢透過那鴻先知的信息開啟我們屬靈的雙眼，讓我們看見祢不僅是忌邪施報、威嚴可畏的主，更是我們在患難中至善的保障。當世界的權勢如亞述般張牙舞爪時，求祢堅固我們的信心，讓我們深深知道，祢認得那些投靠祢的人。奉主耶穌基督得勝的名求，阿們。
+                    </p>
+                </div>
+                
+                <!-- Quick Meditation Action Card -->
+                <div class="mt-8 bg-slate-50 dark:bg-storm-950 p-4 rounded-xl border border-slate-200/50 dark:border-slate-800/80 flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold">1分鐘心靈安息</p>
+                            <p class="text-xs text-slate-400">深呼吸，閉上眼睛，在安靜中重複宣告：「耶和華本為善」</p>
+                        </div>
+                    </div>
+                    <button onclick="startMeditationTimer(this)" class="px-4 py-2 bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white rounded-lg text-xs font-semibold transition-colors">
+                        開始靜心
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: HISTORICAL & POLITICAL BACKGROUND (歷史人文背景) -->
+    <section id="background" class="py-16 bg-slate-100 dark:bg-storm-900/40 border-y border-slate-200 dark:border-slate-800/80 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-serif-tc text-3xl font-bold text-slate-900 dark:text-white">經文歷史、人文、政治環境背景分析</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-500 dark:text-slate-400 mt-4">
+                    了解先知那鴻是在什麼樣的黑暗帝國壓迫下，發出公義與審判的怒吼。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: 殘暴的超級強權 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-500 flex items-center justify-center text-xl mb-4 group-hover:bg-red-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">亞述帝國：嗜血強權</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        背景大約在公元前663年至612年之間。當時的世界霸權是亞述帝國，其首都為尼尼微。亞述以極度殘暴、嗜血、軍國主義聞名，經常對被征服的國家進行大屠殺、剝皮、刺穿等酷刑。
+                    </p>
+                </div>
+
+                <!-- Card 2: 受壓迫者的呼喊 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">南國猶大：政治壓迫</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        南國猶大當時是亞述的附庸，長期遭受極大的政治壓迫與經濟剝削（如瑪拿西王時期被亞述擄掠）。先知那鴻（名字意為「安慰者」）的宣判，對長期受壓的猶大百姓是極大的安慰與盼望。
+                    </p>
+                </div>
+
+                <!-- Card 3: 悔改與故態復萌 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center text-xl mb-4 group-hover:bg-blue-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">神學歷史：重返審判</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        約拿先知曾於百多年前赴尼尼微宣告審判，當時全城悔改蒙憐憫。然而，尼尼微後來故態復萌，甚至變本加厲地行惡。那鴻宣告的終極審判，彰顯了上帝公義與忍耐的極限。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CHIASMIC STRUCTURE VISUALIZER (交錯配列文學結構) -->
+    <section id="structure" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="font-serif-tc text-3xl font-bold text-slate-900 dark:text-white">第一章內容結構分析（交錯配列法 Chiasmus）</h2>
+            <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            <p class="text-slate-500 dark:text-slate-400 mt-4">
+                那鴻書第一章使用了精密的猶太文學對稱結構，點擊各結構層次，探索對稱的奧秘！
+            </p>
+        </div>
+
+        <!-- Chiasmus Interactive Interface -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Chiasmus Visualization Tree -->
+            <div class="lg:col-span-7 space-y-3">
+                
+                <!-- A Layer -->
+                <div onclick="highlightChiasmus('A')" id="chiasmus-A" class="chiasmus-layer cursor-pointer p-4 rounded-xl border border-rose-500/20 bg-rose-500/5 dark:bg-rose-950/10 hover:bg-rose-500/10 transition-all flex items-center justify-between pl-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-rose-500 text-white font-bold flex items-center justify-center text-sm">A</div>
+                        <div>
+                            <p class="font-bold text-rose-700 dark:text-rose-400 text-sm sm:text-base">上帝的忌邪與對仇敵的報應 (1:2-3a)</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">神是忌邪施報的神，萬不以有罪的為無罪</p>
+                        </div>
+                    </div>
+                    <span class="text-rose-500 text-xs font-semibold uppercase">首端對稱</span>
+                </div>
+
+                <!-- B Layer -->
+                <div onclick="highlightChiasmus('B')" id="chiasmus-B" class="chiasmus-layer cursor-pointer p-4 rounded-xl border border-blue-500/20 bg-blue-500/5 dark:bg-blue-950/10 hover:bg-blue-500/10 transition-all flex items-center justify-between ml-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">B</div>
+                        <div>
+                            <p class="font-bold text-blue-700 dark:text-blue-400 text-sm sm:text-base">上帝在自然界中的威嚴與破壞力 (1:3b-6)</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">狂風暴雨、大山震動，無人能在祂烈怒前站立</p>
+                        </div>
+                    </div>
+                    <span class="text-blue-500 text-xs font-semibold uppercase">次層對稱</span>
+                </div>
+
+                <!-- C Core Layer -->
+                <div onclick="highlightChiasmus('C')" id="chiasmus-C" class="chiasmus-layer cursor-pointer p-5 rounded-xl border-2 border-amber-500 bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 transition-all flex items-center justify-between ml-12 shadow-md">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold flex items-center justify-center text-base shadow-lg animate-pulse">👑 C</div>
+                        <div>
+                            <p class="font-serif-tc font-black text-amber-600 dark:text-amber-400 text-base sm:text-lg">【核心結構】上帝是選民的保障 (1:7)</p>
+                            <p class="text-xs font-bold text-amber-700 dark:text-amber-300">耶和華本為善，是患難中的避難所</p>
+                        </div>
+                    </div>
+                    <span class="text-amber-500 text-xs font-black uppercase tracking-wider">樞紐核心</span>
+                </div>
+
+                <!-- B' Layer -->
+                <div onclick="highlightChiasmus('B')" id="chiasmus-B-prime" class="chiasmus-layer cursor-pointer p-4 rounded-xl border border-blue-500/20 bg-blue-500/5 dark:bg-blue-950/10 hover:bg-blue-500/10 transition-all flex items-center justify-between ml-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">B'</div>
+                        <div>
+                            <p class="font-bold text-blue-700 dark:text-blue-400 text-sm sm:text-base">上帝對仇敵營壘的毀滅力 (1:8-11)</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">氾濫的洪水、黑暗追趕仇敵，陰謀必被消滅</p>
+                        </div>
+                    </div>
+                    <span class="text-blue-500 text-xs font-semibold uppercase">次層對應</span>
+                </div>
+
+                <!-- A' Layer -->
+                <div onclick="highlightChiasmus('A')" id="chiasmus-A-prime" class="chiasmus-layer cursor-pointer p-4 rounded-xl border border-rose-500/20 bg-rose-500/5 dark:bg-rose-950/10 hover:bg-rose-500/10 transition-all flex items-center justify-between pl-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-rose-500 text-white font-bold flex items-center justify-center text-sm">A'</div>
+                        <div>
+                            <p class="font-bold text-rose-700 dark:text-rose-400 text-sm sm:text-base">上帝對猶大的拯救與對亞述的終局判決 (1:12-15)</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">折斷亞述的軛，報好信息傳平安給猶大百姓</p>
+                        </div>
+                    </div>
+                    <span class="text-rose-500 text-xs font-semibold uppercase">尾端對稱</span>
+                </div>
+
+            </div>
+
+            <!-- Chiasmus Explanatory Panel -->
+            <div class="lg:col-span-5 bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-info text-amber-500"></i>
+                    <span>結構神學意涵</span>
+                </h3>
+                
+                <div id="chiasmus-detail-default" class="space-y-4">
+                    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        交錯配列結構是一種精緻的對稱文學手法。先知刻意將 <strong class="text-amber-500">第7節「耶和華本為善」</strong> 置於全篇的最核心（C層）。
+                    </p>
+                    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        這巧妙地揭示了：<strong>即便外在的世界充滿了審判、忿怒、烈火與仇敵的威脅，神對屬祂之人的愛、良善與護理，才是掌控整個風暴與歷史發展的真正核心。</strong>
+                    </p>
+                    <p class="text-xs bg-slate-100 dark:bg-storm-950 p-3 rounded-lg text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-800">
+                        👆 點擊左側的各對稱層次（A、B 或 C）即可查看該部分的對稱神學對照。
+                    </p>
+                </div>
+
+                <div id="chiasmus-detail-A" class="hidden space-y-4">
+                    <h4 class="font-bold text-rose-500 flex items-center gap-2">A 與 A' 對照神學</h4>
+                    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        <strong>首端 A (1:2-3a)</strong> 宣告了上帝「忌邪施報」的普遍法庭審判屬性，強調萬不以有罪的為無罪。<br><br>
+                        <strong>尾端 A' (1:12-15)</strong> 則是這屬性的具體執行：宣告壓迫猶大的亞述王室、偶像與權勢將徹底被剪除滅絕，折斷其壓迫的「軛」，並向信靠祂的猶大百姓宣告和平得勝的佳音。
+                    </p>
+                </div>
+
+                <div id="chiasmus-detail-B" class="hidden space-y-4">
+                    <h4 class="font-bold text-blue-500 flex items-center gap-2">B 與 B' 對照神學</h4>
+                    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        <strong>次層 B (1:3b-6)</strong> 展現神在自然界、風暴、江河大山中的「宇宙性威力」，沒有人能站立得住。<br><br>
+                        <strong>對應 B' (1:8-11)</strong> 則將這威力具體應用在歷史對敵上：神將像淹沒大地的洪水般淹沒尼尼微，把仇敵趕入黑暗，將一切反叛祂的陰謀徹底焚毀。
+                    </p>
+                </div>
+
+                <div id="chiasmus-detail-C" class="hidden space-y-4">
+                    <h4 class="font-bold text-amber-500 flex items-center gap-2">核心 C 神學主旨</h4>
+                    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        第 7 節是整段文學最精彩、最安慰人心的樞紐。在宇宙風暴與歷史審判的夾縫中，神向百姓保證祂的本性是「至善」，祂知道並且與那些投靠祂的人建立親密關係。這表明：<strong>公義審判的最終目的，是為了保護與拯救。</strong>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: INTERACTIVE EXEGESIS (分段深入釋經) -->
+    <section id="exegesis" class="py-16 bg-slate-100 dark:bg-storm-900/40 border-t border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-serif-tc text-3xl font-bold text-slate-900 dark:text-white">分段大綱與深入解析</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-500 dark:text-slate-400 mt-4">
+                    透過三大經文區段，層層剖析上帝在烈怒風暴與恩典應許之間的雙面神性。
+                </p>
+            </div>
+
+            <!-- Tabs selector for 3 sections -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button onclick="switchExegesisTab(1)" id="exeTabBtn1" class="exe-tab-btn px-5 py-3 rounded-xl font-bold text-sm border-2 border-amber-500 bg-amber-500 text-white transition-all shadow-md">
+                    第一段：神聖忌邪 (1:1-6)
+                </button>
+                <button onclick="switchExegesisTab(2)" id="exeTabBtn2" class="exe-tab-btn px-5 py-3 rounded-xl font-bold text-sm border border-slate-300 dark:border-slate-700 bg-white dark:bg-storm-900 text-slate-700 dark:text-slate-300 hover:border-amber-500 transition-all">
+                    第二段：雙面神性 (1:7-11)
+                </button>
+                <button onclick="switchExegesisTab(3)" id="exeTabBtn3" class="exe-tab-btn px-5 py-3 rounded-xl font-bold text-sm border border-slate-300 dark:border-slate-700 bg-white dark:bg-storm-900 text-slate-700 dark:text-slate-300 hover:border-amber-500 transition-all">
+                    第三段：鎖鏈斷開 (1:12-15)
+                </button>
+            </div>
+
+            <!-- Tab Content 1 -->
+            <div id="exeTabContent1" class="exe-tab-content space-y-6">
+                <!-- Scripture card -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <h3 class="font-serif-tc font-bold text-xl text-amber-600 dark:text-amber-400 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-amber-500 rounded"></span>
+                        經文範圍：那鴻書 1:1-6
+                    </h3>
+                    <p class="font-serif-tc text-lg leading-relaxed text-slate-800 dark:text-slate-200 p-4 bg-slate-50 dark:bg-storm-950 rounded-xl border border-slate-200 dark:border-slate-800">
+                        論尼尼微的默示，就是伊勒歌斯人那鴻的異象書。耶和華是忌邪施報的神。耶和華施報大有忿怒；向他的敵人施報，向他的仇敵懷怒。耶和華不輕易發怒，大有能力，萬不以有罪的為無罪。他乘旋風和暴風而來，雲彩為他腳下的塵土。他斥責海，使海乾了，使一切江河乾涸。巴珊和迦密的樹林衰殘；黎巴嫩的花草也衰殘了。大山因他震動；小山也都消化。大地在他面前突起；世界和住在其間的也都如此。他發忿恨，誰能立得住呢？他發烈怒，誰能當得起呢？他的忿怒如火傾倒；磐石因他崩裂。
+                    </p>
+                </div>
+
+                <!-- 4 Pillars Grid (Keywords, Critical Question, Story, Quotes) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-amber-500">
+                            <i class="fa-solid fa-key"></i> <span>重要原文與關鍵詞 (Keywords)</span>
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <span class="inline-block bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-xs px-2.5 py-1 rounded font-bold mb-1">忌邪 (Hebrew: qanno / qana)</span>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">原意為「嫉妒、熱情、極度在乎」。在聖經中，這非人類自私的嫉妒，而是上帝對祂的榮耀、聖潔以及祂與子民立約關係的絕對忠誠。若非深切在乎，神就不會忿怒。</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-300 text-xs px-2.5 py-1 rounded font-bold mb-1">施報 (Hebrew: naqam)</span>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">意指報應、復仇。指神作為至高公義的法官執行公理判決，矯正被暴虐強權破壞的道德與聖潔秩序。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-blue-500">
+                            <i class="fa-solid fa-circle-question"></i> <span>關鍵神學問答</span>
+                        </h4>
+                        <div class="space-y-2">
+                            <p class="font-bold text-sm text-slate-900 dark:text-white">❓ 問題：一位「充滿烈怒與報應」的神，如何與「充滿慈愛」的神並存？</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                💡 <strong>解析：</strong>沒有公義的愛只是溺愛，沒有忿怒的愛代表「不在乎」。當暴行殘虐無辜，法官若毫無忿怒就不能算良善。上帝對罪惡摧毀祂所愛之造物時所產生的烈怒，正是祂最深愛的防禦機制。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-emerald-500">
+                            <i class="fa-solid fa-book-open-reader"></i> <span>生動比喻與例證</span>
+                        </h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            想像一位深愛孩子的父親，看見人口販子企圖綁架並殘害他的孩子。此時，若父親只是報以微笑或溫柔以待，那絕不叫「愛」；真正的愛會逼使他燃起極大的「力量與烈怒」去制伏歹徒、護衛孩子。神對亞述的烈怒同理可推。
+                        </p>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-purple-500">
+                            <i class="fa-solid fa-quote-left"></i> <span>佳句名言默想</span>
+                        </h4>
+                        <div class="bg-slate-50 dark:bg-storm-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                            <p class="text-sm font-serif-tc italic text-slate-700 dark:text-slate-300">
+                                「我們若不理解上帝對罪惡的無限忿怒，就永遠無法測度祂在十字架上付出的愛有多深。」
+                            </p>
+                            <p class="text-right text-xs text-slate-500 mt-2">— 提摩太·凱勒 (Timothy Keller)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content 2 -->
+            <div id="exeTabContent2" class="exe-tab-content hidden space-y-6">
+                <!-- Scripture card -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <h3 class="font-serif-tc font-bold text-xl text-amber-600 dark:text-amber-400 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-amber-500 rounded"></span>
+                        經文範圍：那鴻書 1:7-11
+                    </h3>
+                    <p class="font-serif-tc text-lg leading-relaxed text-slate-800 dark:text-slate-200 p-4 bg-slate-50 dark:bg-storm-950 rounded-xl border border-slate-200 dark:border-slate-800">
+                        耶和華本為善，在患難的日子為人的保障，並且認得那些投靠他的人。但他必以漲溢的洪水淹沒尼尼微，又驅逐仇敵進入黑暗。尼尼微人哪，設何謀攻擊耶和華呢？他必將你們滅絕淨盡；災難不再起。你們像叢雜的荊棘，像喝醉了的人，又如枯乾的碎秸全然燒毀。有一人從你那裡出來，圖謀邪惡，設惡計攻擊耶和華。
+                    </p>
+                </div>
+
+                <!-- 4 Pillars Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-amber-500">
+                            <i class="fa-solid fa-key"></i> <span>重要原文與關鍵詞 (Keywords)</span>
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <span class="inline-block bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-xs px-2.5 py-1 rounded font-bold mb-1">保障 (Hebrew: ma'oz)</span>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">指堡壘、避難所、堅固台。形容在可怕的戰爭侵襲或滔天風暴中，可以獲得絕對安全隱藏的安全居所。</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-300 text-xs px-2.5 py-1 rounded font-bold mb-1">認得 (Hebrew: yada)</span>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">並非僅是理智上或名字的知曉，而是聖經中深刻、盟約性的、個人的與伴隨關護的「認識、相契」。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-blue-500">
+                            <i class="fa-solid fa-circle-question"></i> <span>關鍵神學問答</span>
+                        </h4>
+                        <div class="space-y-2">
+                            <p class="font-bold text-sm text-slate-900 dark:text-white">❓ 問題：既然神是保障，為何投靠祂的人依然會遭遇「患難的日子」？</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                💡 <strong>解析：</strong>上帝從未應許信徒免除風暴，祂所承諾的是在風暴吹襲時，親自做百姓的「保障」。祂的「認得」保證，在經歷患難的過程中，我們絕沒有被遺忘，靈魂和終局都在其牢固保護中。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-emerald-500">
+                            <i class="fa-solid fa-book-open-reader"></i> <span>生動比喻與例證</span>
+                        </h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            彭柯麗 (Corrie ten Boom) 於二戰期間因藏匿猶太人而被關入納粹集中營，目睹無數殘暴。她在回憶錄《密室》中見證，即使處於集中營的恐怖黑暗中，上帝仍是保障。她宣告：「沒有任何深淵之深，深得過上帝愛的觸及。」
+                        </p>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-purple-500">
+                            <i class="fa-solid fa-quote-left"></i> <span>佳句名言默想</span>
+                        </h4>
+                        <div class="bg-slate-50 dark:bg-storm-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                            <p class="text-sm font-serif-tc italic text-slate-700 dark:text-slate-300">
+                                「患難是上帝的黑狗，用來將迷失的羊群趕回大牧人的身邊。」
+                            </p>
+                            <p class="text-right text-xs text-slate-500 mt-2">— 查爾斯·司布真 (Charles Spurgeon)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content 3 -->
+            <div id="exeTabContent3" class="exe-tab-content hidden space-y-6">
+                <!-- Scripture card -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <h3 class="font-serif-tc font-bold text-xl text-amber-600 dark:text-amber-400 mb-4 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-amber-500 rounded"></span>
+                        經文範圍：那鴻書 1:12-15
+                    </h3>
+                    <p class="font-serif-tc text-lg leading-relaxed text-slate-800 dark:text-slate-200 p-4 bg-slate-50 dark:bg-storm-950 rounded-xl border border-slate-200 dark:border-slate-800">
+                        耶和華如此說：尼尼微雖然勢力充足，人數繁多，也被剪除，歸於無有。猶大啊，我雖然使你受苦，卻不再使你受苦。現在我必從你頸項上折斷他的軛，扭開他的繩索。耶和華已經出令，指著尼尼微說：你名下的人必不留後；我必從你神的廟中除滅雕刻的偶像和鑄造的偶像；我必因你鄙陋，使這廟成為你的墳墓。看哪，有報好信傳平安之人的腳登山，說：猶大啊，守你的節期，還你所許的願吧！因為那惡人不再從你中間經過，他已滅絕淨盡了。
+                    </p>
+                </div>
+
+                <!-- 4 Pillars Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-amber-500">
+                            <i class="fa-solid fa-key"></i> <span>重要原文與關鍵詞 (Keywords)</span>
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <span class="inline-block bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 text-xs px-2.5 py-1 rounded font-bold mb-1">軛 / 繩索 (Hebrew: motah / moserah)</span>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">在近東文化中象徵被壓迫、奴役與主權被轄制。在此指亞述對猶大重稅剝削與殘酷的屬國統治。</p>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-300 text-xs px-2.5 py-1 rounded font-bold mb-1">平安 (Hebrew: shalom)</span>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">希伯來文非僅是「無戰爭狀態」，而是上帝同在下全方位的完整、恢復、繁榮、健康與完美的神聖秩序。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-blue-500">
+                            <i class="fa-solid fa-circle-question"></i> <span>關鍵神學問答</span>
+                        </h4>
+                        <div class="space-y-2">
+                            <p class="font-bold text-sm text-slate-900 dark:text-white">❓ 問題：「報好信傳平安」的終極福音意義是什麼？我們如何應用？</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                💡 <strong>解析：</strong>歷史上是宣告亞述垮台猶大自由；在救贖歷史中，則預表「十字架的得勝福音」。神藉由基督折斷了「罪惡、死亡與撒但」的軛，賜給我們靈魂真正的 Shalom。保羅在羅馬書 10:15 中亦引用此概念。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-emerald-500">
+                            <i class="fa-solid fa-book-open-reader"></i> <span>生動比喻與例證</span>
+                        </h4>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            第二次世界大戰接近尾聲時，盟軍已取得關鍵勝利。當無線電傳來「戰爭結束，和平降臨」的捷報時，雖許多士兵仍滯留前線尚未返鄉，百姓已湧上街頭慶賀狂歡。因為「勝利的消息」已經底定，新世界已經開啟。基督復活便是此終極凱歌。
+                        </p>
+                    </div>
+
+                    <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2 text-purple-500">
+                            <i class="fa-solid fa-quote-left"></i> <span>佳句名言默想</span>
+                        </h4>
+                        <div class="bg-slate-50 dark:bg-storm-950 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                            <p class="text-sm font-serif-tc italic text-slate-700 dark:text-slate-300">
+                                「上帝的公義要求罪必須被審判，而上帝的愛則親自為我們預備了代替我們受審判的羔羊。」
+                            </p>
+                            <p class="text-right text-xs text-slate-500 mt-2">— 唐崇榮 (Stephen Tong)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: SERMON TRANSCRIPT WITH PULPIT MODE (完整講章與大綱 + 講台宣講模式) -->
+    <section id="sermon" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="font-serif-tc text-3xl font-bold text-slate-900 dark:text-white">講道應用與講章文稿</h2>
+            <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            <p class="text-slate-500 dark:text-slate-400 mt-4">
+                牧長在主日宣講或查經帶領時，可以使用底下精心排版的完整講章，亦可切換至「講台模式」便於投射或在平板上宣講。
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Side: Sermon Info & Controls -->
+            <div class="lg:col-span-4 space-y-6">
+                <!-- Sermon Metadata Card -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md">
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4"><i class="fa-solid fa-circle-nodes text-amber-500 mr-2"></i>講道導引與大綱</h3>
+                    
+                    <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-xs shrink-0">1</span>
+                            <div>
+                                <span class="font-bold text-slate-900 dark:text-white block">正確面對上帝的公義與慈愛：</span>
+                                <span>停止把神塑造成無原則溺愛的聖誕老人，應生發聖潔的敬畏之心。</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-xs shrink-0">2</span>
+                            <div>
+                                <span class="font-bold text-slate-900 dark:text-white block">在危機中辨認真正的避難所：</span>
+                                <span>當面對經濟、疾病與壓力的「亞述大軍」，不再依靠自己的世俗謀略，單單投靠神。</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <span class="w-5 h-5 rounded bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-xs shrink-0">3</span>
+                            <div>
+                                <span class="font-bold text-slate-900 dark:text-white block">活出宣告平安的福音使命：</span>
+                                <span>既然我們的重軛已得折斷，理當成為福音傳遞者，引人進入神的安息與 Shalom。</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pulpit Controller Panel -->
+                <div class="bg-amber-500/5 border border-amber-500/20 dark:bg-amber-500/10 dark:border-amber-500/20 p-6 rounded-2xl">
+                    <h4 class="font-bold text-amber-700 dark:text-amber-400 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>講台宣講模式控制面板</span>
+                    </h4>
+                    
+                    <div class="space-y-4">
+                        <!-- Pulpit toggle -->
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium">切換至講台全螢幕模式</span>
+                            <button id="pulpitToggleBtn" onclick="togglePulpitMode()" class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold transition-all">
+                                進入講台模式
+                            </button>
+                        </div>
+
+                        <!-- Font size adjustment -->
+                        <div>
+                            <span class="text-xs text-slate-500 dark:text-slate-400 block mb-2">講稿字體大小</span>
+                            <div class="flex items-center gap-2">
+                                <button onclick="adjustFontSize(-2)" class="p-2 bg-white dark:bg-storm-900 border border-slate-200 dark:border-slate-800 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">A-</button>
+                                <span id="currentFontSize" class="text-sm font-bold flex-1 text-center">18px</span>
+                                <button onclick="adjustFontSize(2)" class="p-2 bg-white dark:bg-storm-900 border border-slate-200 dark:border-slate-800 rounded-lg text-xs hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">A+</button>
+                            </div>
+                        </div>
+
+                        <!-- Line height adjustment -->
+                        <div>
+                            <span class="text-xs text-slate-500 dark:text-slate-400 block mb-2">講稿段落行距</span>
+                            <div class="grid grid-cols-3 gap-1">
+                                <button onclick="adjustLineHeight('relaxed')" class="line-height-btn p-1.5 bg-white dark:bg-storm-900 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-semibold hover:border-amber-500 transition-all">適中</button>
+                                <button onclick="adjustLineHeight('loose')" class="line-height-btn p-1.5 bg-amber-500 text-white border border-amber-500 rounded-lg text-xs font-semibold hover:border-amber-500 transition-all">寬鬆</button>
+                                <button onclick="adjustLineHeight('extra-loose')" class="line-height-btn p-1.5 bg-white dark:bg-storm-900 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-semibold hover:border-amber-500 transition-all">極寬</button>
+                            </div>
+                        </div>
+
+                        <!-- BG Color Themes (Paper, Slate, Dark) -->
+                        <div>
+                            <span class="text-xs text-slate-500 dark:text-slate-400 block mb-2">講台背景配色</span>
+                            <div class="grid grid-cols-3 gap-2">
+                                <button onclick="changePulpitBg('bg-amber-50/90 text-amber-950 border border-amber-200')" class="p-2 rounded bg-amber-50 border border-amber-200 text-amber-950 text-xs font-bold">暖黃(紙張)</button>
+                                <button onclick="changePulpitBg('bg-slate-900 text-slate-100')" class="p-2 rounded bg-slate-900 border border-slate-800 text-slate-100 text-xs font-bold">暗沙(護眼)</button>
+                                <button onclick="changePulpitBg('bg-black text-amber-400 font-serif-tc')" class="p-2 rounded bg-black border border-neutral-900 text-amber-500 text-xs font-bold">高對比黑金</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Sermon Script Content Box -->
+            <div id="sermonScriptContainer" class="lg:col-span-8 bg-white dark:bg-storm-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl transition-all relative">
+                <!-- Watermark -->
+                <div class="absolute top-10 right-10 text-9xl text-slate-100/50 dark:text-slate-800/10 pointer-events-none select-none font-serif-tc font-bold">那鴻</div>
+                
+                <div class="p-8 sm:p-12 relative z-10">
+                    <div id="sermonHeader" class="border-b border-slate-200 dark:border-slate-800 pb-6 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs font-bold text-amber-500 tracking-wider block mb-1">主日證道講章文稿</span>
+                            <h3 id="sermonTitle" class="font-serif-tc text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">在狂風暴雨中遇見至高掌權者</h3>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs text-slate-500">
+                            <span>經文：那鴻書 1:1-15</span>
+                            <span class="w-1.5 h-1.5 bg-slate-300 dark:bg-slate-700 rounded-full"></span>
+                            <span>字數約 1200 字</span>
+                        </div>
+                    </div>
+
+                    <!-- Main Sermon Script Wrapper with adjustable style attributes -->
+                    <div id="sermonMainText" class="font-serif-tc text-[18px] text-slate-800 dark:text-slate-200 leading-[2.2] space-y-8 select-text">
+                        <p class="indent-8">各位弟兄姊妹，當我們觀看今日的新聞，看見戰爭的殘酷、社會的不公、經濟的動盪，甚至是我們個人生命中突如其來的疾病或打擊時，我們很容易會問：「上帝在哪裡？祂還掌權嗎？」</p>
+
+                        <p class="indent-8">今天我們打開那鴻書第一章，這卷書的背景正是南國猶大處於歷史上最黑暗的時刻之一。當時的亞述帝國，也就是尼尼微城，代表著極度的殘暴與壓迫，他們就像難以撼動的超級強權。但先知那鴻卻帶來了一個震撼天地的異象，讓我們看見在狂風暴雨中，那位至高的掌權者。</p>
+
+                        <div class="bg-amber-500/5 border-l-4 border-amber-500 p-4 my-6 rounded-r-xl not-pulpit-hide">
+                            <h4 class="font-sans-tc font-bold text-amber-600 dark:text-amber-400 text-base mb-1">第一段：震撼天地的威嚴——不可輕忽的神聖忌邪</h4>
+                            <p class="text-xs text-slate-500">經文範圍：鴻 1:1-6</p>
+                        </div>
+
+                        <p class="indent-8">我們先來看經文的第1到第6節。先知一開頭就宣告： <strong class="text-amber-600 dark:text-amber-400">「耶和華是忌邪施報的神... 萬不以有罪的為無罪。」</strong> 當我們讀到這裡，可能心裡會覺得害怕，甚至覺得這位神似乎充滿了報復心。但我們必須明白，「忌邪」這個詞在原文中，表達的是上帝對祂所愛之人的極度在乎。</p>
+
+                        <p class="indent-8">想像一下，如果有一群暴徒正在傷害你的孩子，身為父母的你會無動於衷嗎？你會溫柔地對待那些暴徒嗎？絕對不會！你的心中會燃起保護的烈怒。上帝對亞述發出烈怒，正是因為亞述殘害了上帝的百姓。 <strong class="text-rose-600 dark:text-rose-400">沒有公義的愛，只是廉價的溺愛。上帝的忿怒，正是祂神聖之愛的防禦機制。</strong> 經文描寫神乘旋風而來，大山震動、小山消化。這提醒我們，面對這位大有威嚴的神，我們絕不能將祂的恩典視為理所當然，更不可輕忽祂對罪惡的零容忍。</p>
+
+                        <div class="bg-amber-500/5 border-l-4 border-amber-500 p-4 my-6 rounded-r-xl not-pulpit-hide">
+                            <h4 class="font-sans-tc font-bold text-amber-600 dark:text-amber-400 text-base mb-1">第二段：風暴中的雙面神性——審判者的恩典保障</h4>
+                            <p class="text-xs text-slate-500">經文範圍：鴻 1:7-11</p>
+                        </div>
+
+                        <p class="indent-8">然而，在上帝威嚴的審判風暴中，先知筆鋒一轉，帶出了整卷書最核心，也是最美的應許。請我們一起來看那鴻書1:7，這是我們今天的金句：</p>
+
+                        <p class="text-xl sm:text-2xl font-black text-amber-600 dark:text-amber-400 text-center py-4 bg-amber-500/10 rounded-xl my-6">
+                            「耶和華本為善，在患難的日子為人的保障，並且認得那些投靠他的人。」
+                        </p>
+
+                        <p class="indent-8">在狂風暴雨中，神展現了祂雙面的神性：對作惡的仇敵，祂是吞滅的烈火；但對投靠祂的百姓，祂卻是至善的保障。弟兄姊妹，神沒有應許我們信耶穌後就風平浪靜，經文明明說有「患難的日子」。但在患難中，神是我們的 <strong class="text-blue-600 dark:text-blue-400">保障（避難所）</strong> 。更感人的是，祂**「認得」**我們。這個「認得」，不是點名式的認識，而是深刻的、關係上的連結。當你被恐懼淹沒，覺得全世界都遺棄你時，這位震撼天地的主宰，在風暴的中心看著你，說：「孩子，我認得你，我在這裡。」你的靈魂在祂手中，是絕對安全的。</p>
+
+                        <div class="bg-amber-500/5 border-l-4 border-amber-500 p-4 my-6 rounded-r-xl not-pulpit-hide">
+                            <h4 class="font-sans-tc font-bold text-amber-600 dark:text-amber-400 text-base mb-1">第三段：鎖鏈斷開的宣告——和平佳音的確據</h4>
+                            <p class="text-xs text-slate-500">經文範圍：鴻 1:12-15</p>
+                        </div>
+
+                        <p class="indent-8">最後，我們看第12到15節。神向受苦的猶大宣告： <strong class="text-amber-600 dark:text-amber-400">「我必從你頸項上折斷他的軛，扭開他的繩索... 看哪，有報好信傳平安之人的腳登山。」</strong></p>
+
+                        <p class="indent-8">這是一個何等榮耀的宣告！上帝不僅是保護我們，祂更要主動出擊，摧毀那奴役我們的一切權勢。對於猶大人來說，這意味著亞述帝國的垮台；但對於今天的我們來說，這是一個指向耶穌基督的福音宣告。</p>
+
+                        <p class="indent-8">我們生命中是否也有「亞述的軛」？可能是某種無法戒除的癮、長期的焦慮、或者是罪惡的捆綁。耶穌基督在十字架上，承受了上帝對罪惡的「忌邪施報」，並為我們成為了最堅固的「保障」。當祂從死裡復活時，罪與死亡的軛被徹底折斷了！那「報好信傳平安的腳」，就是福音的使者，宣告真正的 <strong class="text-emerald-600 dark:text-emerald-400">Shalom （平安）</strong> 已經來到。</p>
+
+                        <p class="indent-8">弟兄姊妹，那惡者已經被定罪，我們的債務已被償還。讓我們從恐懼的洞穴中走出來，不再依靠世俗的勢力，而是全心投靠這位本為善的耶和華。讓我們在這動盪的世代中，帶著這份得勝的確據，成為報好信傳平安的人！</p>
+                    </div>
+
+                    <!-- Pulpit Mode Floating Action Controls (only shows when pulpit mode is active) -->
+                    <div id="pulpitExitFloating" class="hidden mt-12 pt-6 border-t border-slate-200/50 dark:border-slate-800 flex justify-between items-center">
+                        <p class="text-xs text-slate-400">💡 長時間沒操作時，建議調整螢幕為「永不休眠」。</p>
+                        <button onclick="togglePulpitMode()" class="px-5 py-2.5 bg-rose-500 hover:bg-rose-600 text-white rounded-lg text-sm font-bold transition-all flex items-center gap-1.5 shadow-lg">
+                            <i class="fa-solid fa-door-open"></i> <span>退出講台模式</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: QUOTES GALLERY (屬靈前輩佳句名言) -->
+    <section id="quotes" class="py-16 bg-slate-100 dark:bg-storm-900/40 border-y border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-serif-tc text-3xl font-bold text-slate-900 dark:text-white">十句屬靈前輩佳句名言</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-500 dark:text-slate-400 mt-4">
+                    精心編排神學前輩對於「上帝的忿怒、審判、良善與苦難中的保障」之精闢洞察。
+                </p>
+            </div>
+
+            <!-- Quotes Masonry Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Quote 1 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「患難是上帝的黑狗，用來將迷失的羊群趕回大牧人的身邊。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 查爾斯·司布真 (Charles Spurgeon)</p>
+                        <p class="text-xs text-slate-400">出處：《晨光與晚影》(Morning and Evening)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 2 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「我們若不理解上帝對罪惡的無限忿怒，就永遠無法測度祂在十字架上付出的愛有多深。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 提摩太·凱勒 (Timothy Keller)</p>
+                        <p class="text-xs text-slate-400">出處：《跨越理性的信仰》(The Reason for God)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 3 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「上帝的偉大與威嚴，應當使我們在祂面前俯伏敬拜；而祂的良善與恩慈，應當使我們敢於來到祂的施恩座前。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 陶恕 (A.W. Tozer)</p>
+                        <p class="text-xs text-slate-400">出處：《渴慕神》(The Pursuit of God)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 4 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「當你身處黑暗，覺得上帝彷彿遙不可及時，請記住，基督在十字架上的呼喊，已經為你經歷了最深的黑暗，好讓你永遠不被神遺棄。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 約翰·史托德 (John Stott)</p>
+                        <p class="text-xs text-slate-400">出處：《當代基督十架》(The Cross of Christ)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 5 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「我們必須相信上帝的護理，祂不僅安排了風暴，更在風暴中成為我們靈魂最穩妥的避風港。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 約hn·加爾文 (John Calvin)</p>
+                        <p class="text-xs text-slate-400">出處：《基督教要義》(Institutes of the Christian Religion)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 6 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「廉價的恩典是我們自己賜給自己的恩典；重價的恩典則是必須付上生命代價的恩典，這恩典呼召我們來跟從耶穌基督。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 潘霍華 (Dietrich Bonhoeffer)</p>
+                        <p class="text-xs text-slate-400">出處：《做門徒的代價》(The Cost of Discipleship)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 7 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「神對罪惡的審判與祂的慈愛並不衝突。在舊約中，那審判列國的神，正是為了保護祂的子民與祂神聖的救贖計畫。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 大衛·鮑森 (David Pawson)</p>
+                        <p class="text-xs text-slate-400">出處：《舊約解經系列：先知書》(Unlocking the Bible)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 8 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「不要把你的信心建立在你的感覺上，感覺會像天氣一樣變化無常；要把你的信心建立在上帝不變的話語和祂信實的本性上。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 慕迪 (D.L. Moody)</p>
+                        <p class="text-xs text-slate-400">出處：《慕迪講道集》(Moody's Sermons)</p>
+                    </div>
+                </div>
+
+                <!-- Quote 9 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「上帝的公義要求罪必須被審判，而上帝的愛則親自為我們預備了代替我們受審判的羔羊。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 唐崇榮 (Stephen Tong)</p>
+                        <p class="text-xs text-slate-400">出處：《基督論》神學講座</p>
+                    </div>
+                </div>
+
+                <!-- Quote 10 -->
+                <div class="bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between md:col-span-2 lg:col-span-3">
+                    <div>
+                        <span class="text-4xl text-amber-500/20 block font-serif-tc mb-2"><i class="fa-solid fa-quote-left"></i></span>
+                        <p class="font-serif-tc text-slate-700 dark:text-slate-300 text-base leading-relaxed mb-4">
+                            「上帝的怒氣對著罪惡如烈火般燃燒，但那些藏身在基督這磐石裂縫中的人，只會感受到那保護的恩典，而免受烈火的吞噬。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 dark:border-slate-800/80 pt-3 mt-3">
+                        <p class="text-sm font-bold text-slate-900 dark:text-white">— 喬納森·愛德華茲 (Jonathan Edwards)</p>
+                        <p class="text-xs text-slate-400">概念出自《落在忿怒之神手中的罪人》(Sinners in the Hands of an Angry God)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: INTERACTIVE ACTION TRACKER (實踐行動追蹤器) -->
+    <section id="practice" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Checklist Intro -->
+            <div class="lg:col-span-5">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-400 text-xs font-bold mb-4">
+                    <span>三個關鍵字：忌邪、保障、佳音</span>
+                </div>
+                <h2 class="font-serif-tc text-3xl font-black text-slate-900 dark:text-white leading-tight mb-4">
+                    本週回應與實踐行動追蹤
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed mb-6">
+                    聽道更要行道。我們為您設計了本週的三個實踐挑戰。點擊檢核勾選，追蹤您的回應進度，讓神的道真正深植於日常。
+                </p>
+                
+                <!-- Action Progress Bar -->
+                <div class="bg-white dark:bg-storm-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-bold">本週行道進度</span>
+                        <span id="progressPercent" class="text-sm font-bold text-amber-500">0%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-storm-950 h-3 rounded-full overflow-hidden">
+                        <div id="progressBar" class="bg-gradient-to-r from-amber-500 to-orange-500 h-full w-0 transition-all duration-500"></div>
+                    </div>
+                    <p id="progressMsg" class="text-xs text-slate-400 mt-3">尚未起步，加油！開始實踐第一步吧。</p>
+                </div>
+            </div>
+
+            <!-- Interactive Checklist cards -->
+            <div class="lg:col-span-7 space-y-4">
+                
+                <!-- Action Item 1 -->
+                <div onclick="toggleActionItem(1)" id="actionCard-1" class="cursor-pointer bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+                    <div class="mt-1">
+                        <div id="checkbox-1" class="w-6 h-6 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center text-xs text-white transition-all">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-amber-100 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded mb-2">行動一：自我省察與悔改</span>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">省察並挪去生命的「亞述偶像」</h4>
+                        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                            檢視生命中是否有與世俗妥協、容讓世俗偶像存在的領域，向這位萬不以有罪為無罪的神認罪悔改。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Item 2 -->
+                <div onclick="toggleActionItem(2)" id="actionCard-2" class="cursor-pointer bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+                    <div class="mt-1">
+                        <div id="checkbox-2" class="w-6 h-6 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center text-xs text-white transition-all">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-blue-100 dark:bg-blue-950/50 text-blue-700 dark:text-blue-400 text-xs font-bold px-2.5 py-0.5 rounded mb-2">行動二：背誦並宣告金句</span>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">在大腦中築起神話語的保障堡壘</h4>
+                        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                            將「那鴻書 1:7」寫在便條紙或設為手機桌布。本週當遭遇壓力、焦慮或攻擊時，大聲向風暴宣告這句金句。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Item 3 -->
+                <div onclick="toggleActionItem(3)" id="actionCard-3" class="cursor-pointer bg-white dark:bg-storm-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+                    <div class="mt-1">
+                        <div id="checkbox-3" class="w-6 h-6 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center text-xs text-white transition-all">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="inline-block bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 text-xs font-bold px-2.5 py-0.5 rounded mb-2">行動三：傳遞和平的佳音</span>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">成為報好信、傳平安的人</h4>
+                        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                            本週特別關懷一位正處於生命風暴、內心沒有平安的親友，向他分享神如何在患難中成為你避難所的生命見證。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <p class="font-serif-tc text-lg text-white font-bold tracking-widest">在狂風暴雨中遇見至高掌權者 — 那鴻書 1:1-15 默想與研經手冊</p>
+            <p class="text-xs text-slate-500 leading-relaxed max-w-2xl mx-auto">
+                先知那鴻的名字意為「安慰者」，在帝國狂瀾與強權肆虐的歷史幽谷中，他所宣告的審判是一首公義的凱歌，更是向投靠神之選民唱出的溫柔搖籃曲。願神的话成為您風暴中的保障。
+            </p>
+            <div class="border-t border-slate-800/60 pt-6 text-xs text-slate-600">
+                本系統包含瀏覽器原生語音朗讀與多螢幕講台模式支援。
+            </div>
+        </div>
+    </footer>
+
+    <!-- Meditation Sound/Timer Floating Overlay (Hidden by Default) -->
+    <div id="meditationOverlay" class="fixed inset-0 bg-slate-950/90 z-[100] backdrop-blur-md hidden items-center justify-center text-center p-4">
+        <div class="max-w-md w-full space-y-8 animate-fade-in">
+            <div class="text-amber-500 text-6xl animate-pulse"><i class="fa-solid fa-spa"></i></div>
+            <h3 class="font-serif-tc text-2xl font-bold text-white">一分鐘金句靜心默想</h3>
+            <p class="text-slate-400 text-sm">深呼吸... 將注意力集中於：<br><span class="text-amber-400 font-bold">「耶和華本為善，在患難的日子為人的保障」</span></p>
+            
+            <div class="relative w-48 h-48 mx-auto flex items-center justify-center">
+                <!-- SVG circular progress bar -->
+                <svg class="absolute inset-0 w-full h-full transform -rotate-90">
+                    <circle cx="96" cy="96" r="80" stroke="rgba(255,255,255,0.05)" stroke-width="8" fill="transparent"/>
+                    <circle id="meditationCircle" cx="96" cy="96" r="80" stroke="#f59e0b" stroke-width="8" fill="transparent" stroke-dasharray="502" stroke-dashoffset="502" class="transition-all duration-1000"/>
+                </svg>
+                <div id="meditationTimer" class="text-4xl font-bold text-white font-mono">60s</div>
+            </div>
+
+            <button onclick="stopMeditation()" class="px-6 py-2 rounded-full border border-slate-700 hover:bg-slate-800 text-slate-300 text-xs tracking-wider uppercase">
+                提前結束
+            </button>
+        </div>
+    </div>
+
+    <!-- CORE INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Theme Manager
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                themeIcon.className = 'fa-solid fa-moon text-lg';
+            } else {
+                html.classList.add('dark');
+                themeIcon.className = 'fa-solid fa-sun text-lg';
+            }
+        }
+
+        // Web Speech API Reader (Supports Chinese Traditional)
+        function speakText(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            if ('speechSynthesis' in window) {
+                // Cancel ongoing speakings
+                window.speechSynthesis.cancel();
+                
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'zh-TW';
+                utterance.rate = 0.95; // Slightly slower for solemn bible reading
+                
+                // Find appropriate voice
+                const voices = window.speechSynthesis.getVoices();
+                const preferredVoice = voices.find(v => v.lang.includes('zh-TW') || v.lang.includes('zh-HK'));
+                if (preferredVoice) utterance.voice = preferredVoice;
+                
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert("抱歉，您的瀏覽器不支援語音朗讀功能！");
+            }
+        }
+
+        // Exegesis Tab Switcher
+        function switchExegesisTab(tabNum) {
+            // Hide all contents
+            document.querySelectorAll('.exe-tab-content').forEach(el => el.classList.add('hidden'));
+            // Remove active classes from buttons
+            document.querySelectorAll('.exe-tab-btn').forEach(btn => {
+                btn.className = "exe-tab-btn px-5 py-3 rounded-xl font-bold text-sm border border-slate-300 dark:border-slate-700 bg-white dark:bg-storm-900 text-slate-700 dark:text-slate-300 hover:border-amber-500 transition-all";
+            });
+
+            // Show selected content
+            document.getElementById(`exeTabContent${tabNum}`).classList.remove('hidden');
+            // Style active button
+            const activeBtn = document.getElementById(`exeTabBtn${tabNum}`);
+            activeBtn.className = "exe-tab-btn px-5 py-3 rounded-xl font-bold text-sm border-2 border-amber-500 bg-amber-500 text-white transition-all shadow-md";
+        }
+
+        // Interactive Chiasmus Layer Highlight
+        function highlightChiasmus(layer) {
+            // Reset all layer styles
+            document.querySelectorAll('.chiasmus-layer').forEach(el => {
+                el.style.opacity = '0.5';
+                el.style.transform = 'scale(0.98)';
+            });
+
+            // Highlight corresponding elements
+            if (layer === 'A') {
+                const layerA = document.getElementById('chiasmus-A');
+                const layerAPrime = document.getElementById('chiasmus-A-prime');
+                layerA.style.opacity = '1'; layerA.style.transform = 'scale(1.02)';
+                layerAPrime.style.opacity = '1'; layerAPrime.style.transform = 'scale(1.02)';
+            } else if (layer === 'B') {
+                const layerB = document.getElementById('chiasmus-B');
+                const layerBPrime = document.getElementById('chiasmus-B-prime');
+                layerB.style.opacity = '1'; layerB.style.transform = 'scale(1.02)';
+                layerBPrime.style.opacity = '1'; layerBPrime.style.transform = 'scale(1.02)';
+            } else if (layer === 'C') {
+                const layerC = document.getElementById('chiasmus-C');
+                layerC.style.opacity = '1'; layerC.style.transform = 'scale(1.05)';
+            }
+
+            // Hide all detail explanatory cards, then show chosen one
+            document.getElementById('chiasmus-detail-default').classList.add('hidden');
+            document.getElementById('chiasmus-detail-A').classList.add('hidden');
+            document.getElementById('chiasmus-detail-B').classList.add('hidden');
+            document.getElementById('chiasmus-detail-C').classList.add('hidden');
+
+            document.getElementById(`chiasmus-detail-${layer}`).classList.remove('hidden');
+        }
+
+        // Action Tracker state
+        const checkedItems = { 1: false, 2: false, 3: false };
+        function toggleActionItem(id) {
+            checkedItems[id] = !checkedItems[id];
+            
+            const checkbox = document.getElementById(`checkbox-${id}`);
+            const card = document.getElementById(`actionCard-${id}`);
+            
+            if (checkedItems[id]) {
+                checkbox.className = "w-6 h-6 rounded-full bg-amber-500 border-2 border-amber-500 flex items-center justify-center text-xs text-white transition-all scale-110";
+                card.classList.add('border-amber-500/40', 'bg-amber-500/5', 'dark:bg-amber-500/5');
+            } else {
+                checkbox.className = "w-6 h-6 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center text-xs text-white transition-all";
+                card.classList.remove('border-amber-500/40', 'bg-amber-500/5', 'dark:bg-amber-500/5');
+            }
+
+            calculateProgress();
+        }
+
+        function calculateProgress() {
+            const items = Object.values(checkedItems);
+            const total = items.length;
+            const completed = items.filter(v => v).length;
+            const percentage = Math.round((completed / total) * 100);
+
+            // Animate progress bar
+            document.getElementById('progressBar').style.width = `${percentage}%`;
+            document.getElementById('progressPercent').innerText = `${percentage}%`;
+
+            // Progress Message
+            const progressMsg = document.getElementById('progressMsg');
+            if (percentage === 0) {
+                progressMsg.innerText = "尚未起步，加油！開始實踐第一步吧。";
+            } else if (percentage === 33) {
+                progressMsg.innerText = "跨出了美好的第一步！繼續加油。";
+            } else if (percentage === 67) {
+                progressMsg.innerText = "非常棒！只差最後一步就圓滿完成了！";
+            } else if (percentage === 100) {
+                progressMsg.innerText = "🎉 恭喜！您已在日常生活中完成這禮拜的所有真理回應！";
+            }
+        }
+
+        // Pulpit mode state & settings
+        let pulpitFontSize = 18;
+        let isPulpitMode = false;
+
+        function togglePulpitMode() {
+            isPulpitMode = !isPulpitMode;
+            const textContainer = document.getElementById('sermonScriptContainer');
+            const toggleBtn = document.getElementById('pulpitToggleBtn');
+            const quickBtn = document.getElementById('quickPulpitBtn');
+            const floatingExit = document.getElementById('pulpitExitFloating');
+            
+            if (isPulpitMode) {
+                // Style for full pulpit focus view
+                textContainer.classList.add('fixed', 'inset-4', 'z-50', 'overflow-y-auto', 'bg-amber-50/95', 'text-amber-950', 'border-2', 'border-amber-300', 'shadow-2xl');
+                textContainer.classList.remove('lg:col-span-8', 'bg-white', 'dark:bg-storm-900', 'border-slate-200', 'dark:border-slate-800');
+                
+                // Modify content appearance inside
+                document.getElementById('sermonMainText').className = "font-serif-tc text-[24px] text-amber-950 leading-[2.3] space-y-12 py-6";
+                document.getElementById('sermonTitle').classList.add('text-amber-950');
+                
+                // Hide non-essential layout items within script (like headers in full-focus)
+                document.querySelectorAll('.not-pulpit-hide').forEach(el => el.classList.add('hidden'));
+
+                toggleBtn.innerText = "退出講台模式";
+                toggleBtn.classList.remove('bg-amber-500');
+                toggleBtn.classList.add('bg-rose-500', 'hover:bg-rose-600');
+                
+                quickBtn.classList.add('bg-rose-500/20', 'text-rose-600', 'dark:text-rose-400');
+                floatingExit.classList.remove('hidden');
+                
+                pulpitFontSize = 24; // Default larger pulpit font
+                updateFontSizeIndicator();
+                
+                // Prevent device sleep if possible
+                if (navigator.wakeLock) {
+                    try { navigator.wakeLock.request('screen'); } catch (e) {}
+                }
+            } else {
+                // Restore standard card layout
+                textContainer.classList.remove('fixed', 'inset-4', 'z-50', 'overflow-y-auto', 'bg-amber-50/95', 'text-amber-950', 'border-2', 'border-amber-300', 'shadow-2xl', 'bg-slate-900', 'text-slate-100', 'bg-black', 'text-amber-400');
+                textContainer.classList.add('lg:col-span-8', 'bg-white', 'dark:bg-storm-900', 'border-slate-200', 'dark:border-slate-800');
+                
+                document.getElementById('sermonMainText').className = "font-serif-tc text-[18px] text-slate-800 dark:text-slate-200 leading-[2.2] space-y-8";
+                document.getElementById('sermonTitle').classList.remove('text-amber-950');
+                
+                document.querySelectorAll('.not-pulpit-hide').forEach(el => el.classList.remove('hidden'));
+
+                toggleBtn.innerText = "進入講台模式";
+                toggleBtn.classList.add('bg-amber-500', 'hover:bg-amber-600');
+                toggleBtn.classList.remove('bg-rose-500', 'hover:bg-rose-600');
+                
+                quickBtn.classList.remove('bg-rose-500/20', 'text-rose-600', 'dark:text-rose-400');
+                floatingExit.classList.add('hidden');
+                
+                pulpitFontSize = 18;
+                updateFontSizeIndicator();
+            }
+        }
+
+        function adjustFontSize(delta) {
+            pulpitFontSize = Math.max(14, Math.min(36, pulpitFontSize + delta));
+            document.getElementById('sermonMainText').style.fontSize = `${pulpitFontSize}px`;
+            updateFontSizeIndicator();
+        }
+
+        function updateFontSizeIndicator() {
+            document.getElementById('currentFontSize').innerText = `${pulpitFontSize}px`;
+        }
+
+        function adjustLineHeight(type) {
+            const mainText = document.getElementById('sermonMainText');
+            // Remove previous height classes
+            mainText.style.lineHeight = "";
+            
+            // Highlight active height button
+            document.querySelectorAll('.line-height-btn').forEach(btn => {
+                btn.className = "line-height-btn p-1.5 bg-white dark:bg-storm-900 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-semibold hover:border-amber-500 transition-all";
+            });
+
+            if (type === 'relaxed') {
+                mainText.style.lineHeight = "2.0";
+            } else if (type === 'loose') {
+                mainText.style.lineHeight = "2.4";
+            } else if (type === 'extra-loose') {
+                mainText.style.lineHeight = "2.8";
+            }
+        }
+
+        function changePulpitBg(classString) {
+            if (!isPulpitMode) {
+                // Force pulpit mode first so the background color applies to the focus state
+                togglePulpitMode();
+            }
+            
+            const textContainer = document.getElementById('sermonScriptContainer');
+            // Reset previous background/color overrides
+            textContainer.className = `fixed inset-4 z-50 overflow-y-auto shadow-2xl ${classString}`;
+            
+            // Ensure title matches style
+            const sermonTitle = document.getElementById('sermonTitle');
+            if (classString.includes('text-amber-950') || classString.includes('text-amber-400')) {
+                sermonTitle.style.color = "inherit";
+            }
+        }
+
+        // Meditation Timer implementation
+        let meditationInterval;
+        function startMeditationTimer(btn) {
+            const overlay = document.getElementById('meditationOverlay');
+            const timerEl = document.getElementById('meditationTimer');
+            const circle = document.getElementById('meditationCircle');
+            
+            overlay.classList.remove('hidden');
+            overlay.classList.add('flex');
+            
+            let timeLeft = 60;
+            timerEl.innerText = `${timeLeft}s`;
+            
+            // Reset stroke dashoffset (502 means full path length)
+            circle.style.strokeDashoffset = "502";
+            
+            meditationInterval = setInterval(() => {
+                timeLeft--;
+                timerEl.innerText = `${timeLeft}s`;
+                
+                // Animate SVG circle
+                const dashoffset = 502 - ((60 - timeLeft) / 60) * 502;
+                circle.style.strokeDashoffset = dashoffset;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(meditationInterval);
+                    stopMeditation();
+                }
+            }, 1000);
+        }
+
+        function stopMeditation() {
+            clearInterval(meditationInterval);
+            const overlay = document.getElementById('meditationOverlay');
+            overlay.classList.remove('flex');
+            overlay.classList.add('hidden');
+        }
+
+        // Helper scroll function
+        function scrollToElement(id) {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Initialize state on page load
+        window.onload = function() {
+            // Highlighting Chiasmus C-core initially to attract attention to gold-verse
+            highlightChiasmus('C');
+        };
+    </script>
+</body>
+</html>
+
+
+### 網頁主要特色及後續說明：
+- **行動載具/平板友善優化**：不論是出門查經或站在主日講台上，您都可以直接拿起手機、平板，一鍵按下「進入講台模式」開始宣講。
+- **無干擾與輔助配音**：點擊「金句」或「祈禱詞」的喇叭按鈕，網頁即會調用最和藹沉穩的國語發音（繁體中文）為您朗讀經文與禱告，幫助會眾或個人在默想時安靜身心。
+- **神學邏輯美學展現**：利用「交錯配列法」做成互動按鈕，點擊時會高亮左右對稱的經文大綱（如 A 對稱 A'），這將極大地幫助講員向會眾清晰展示《那鴻書》精妙的希伯來文學寫作手法。
+
+您可以點擊右側的 `Preview` 按鈕直接預覽與體驗該網頁！

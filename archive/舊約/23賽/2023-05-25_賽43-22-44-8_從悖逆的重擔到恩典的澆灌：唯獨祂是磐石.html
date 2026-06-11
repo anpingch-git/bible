@@ -56,10 +56,31 @@
         .hero-mask {
             mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
         }
+		.breathing { animation: breathe 4s ease-in-out infinite; }
+        @keyframes breathe {
+            0%, 100% { opacity: 1; filter: brightness(1); }
+            50% { opacity: 0.85; filter: brightness(0.8); }
+        }
         .scroll-mt-nav {
             scroll-margin-top: 100px;
         }
     </style>
+	 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JJVSHYMW5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8JJVSHYMW5');
+
+      // 當從 LINE 或外部直接開啟此網頁時，自動觸發章節觀看事件
+      window.addEventListener('DOMContentLoaded', () => {
+          gtag('event', 'view_chapter', {
+              'chapter_name': '賽43:22-44:8',       // 動態注入章節，例如：出1:1-22
+              'book_abbr': '賽',         // 動態注入書卷縮寫，例如：出
+              'note_title': '從悖逆的重擔到恩典的澆灌：唯獨祂是磐石' // 動態注入講章主題
+          });
+      });
+    </script>
 </head>
 <body class="antialiased font-sans">
 
@@ -81,15 +102,14 @@
     <!-- Banner / Hero Section -->
     <header class="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0 hero-mask">
-            <img src='https://opal.google/board/blobs/b4428c47-f08b-4100-af92-b8879636cd56' alt='Celestial/Desert imagery' class="w-full h-full object-cover opacity-60 scale-105" />
+            <img src='image/img_d57524a8-3bc8-45ff-845c-ce5a92b076ab.jpg' alt='Celestial/Desert imagery' class="w-full h-full object-cover breathing scale-105" />
             <div class="absolute inset-0 bg-gradient-to-t from-deep via-transparent to-transparent"></div>
         </div>
         <div class="relative z-10 text-center px-6 max-w-4xl">
-            <h1 class="text-4xl md:text-7xl font-black font-display text-gradient mb-6 leading-tight">
-                從悖逆的重擔到恩典的澆灌：<br/>唯獨祂是磐石
-            </h1>
+            <h1 class="text-4xl md:text-7xl font-black font-display text-gradient mb-6 leading-tight">悖逆的重擔到恩典的澆灌<br/>唯獨祂是磐石</h1>
             <p class="text-gray-300 text-lg md:text-2xl font-light tracking-widest uppercase">以賽亞書 43:22 - 44:8</p>
         </div>
+		
     </header>
 
     <main class="max-w-screen-xl mx-auto px-6 pb-32">
@@ -114,6 +134,17 @@
                 <p class="text-xl md:text-2xl text-gray-300 leading-relaxed font-light italic">
                     主啊，我們承認有時我們的敬拜流於形式，甚至用我們的罪孽使祢厭煩。但祢是為自己的緣故塗抹我們過犯的神。求祢今天將聖靈澆灌在我們這片乾旱的心田上，使我們重新發芽生長，歡喜宣告「我是屬耶和華的」。在動盪的世代中，幫助我們不再恐懼，因為唯獨祢是我們生命無可撼動的磐石。奉主耶穌基督的名求，阿們。
                 </p>
+            </div>
+        </section>
+		<!-- 背景分析 -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h2 class="text-xl text-amber-400 mb-4">📜 歷史人文政治環境</h2>
+                <p class="text-gray-300 text-sm leading-relaxed">以賽亞書 40-55 章被稱為「安慰之書」，背景為巴比倫帝國脅迫下的被擄絕望處境。以色列人面臨信仰危機，懷疑耶和華是否已離棄他們。神在此點出：人的敬拜若失去真實連結，僅存外表獻祭，終將導致內心枯竭。</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h2 class="text-xl text-amber-400 mb-4">🧮 文學結構分析</h2>
+                <p class="text-gray-300 text-sm leading-relaxed">運用精密的「交錯配列」結構，由「人的厭煩與罪孽」轉向「神的赦免與聖靈澆灌」，最後以「神的絕對主權」作總結，形成對稱性的救贖敘事。</p>
             </div>
         </section>
 
